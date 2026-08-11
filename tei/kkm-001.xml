@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gekochter Fisch mit Ingwer</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/kkm-001/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Koch vnd Kellermeysterey von allen Speisen vnd Getrencken</title>
+          <date when="1574">1574</date>
+          <idno type="URI">https://www.uni-giessen.de/de/fbz/fb05/germanistik/absprache/sprachverwendung/gloning/tx/kochkell.htm</idno>
+          <note>Transkription: Thomas Gloning, Universität Giessen (Digitale Edition)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="kkm-001">
+        <head>Gekochter Fisch mit Ingwer</head>
+        <div type="original" xml:id="kkm-001-orig" xml:lang="de-x-fnhd" corresp="#kkm-001-trans">
+          <p>Fisch wol sieden.
+
+Mache stets darunter ein gut Fewr on Rauch/ wenn die Gräd abgehen/ so haben sie sein genug/ scheum sie schön/ vnd mach sie ab zu rechter maß/ mit Würtzen vnd Saltz/ versuch sie wol/ vnd trücken sie denn mit Essig ab/ vnd lege sie in trucken oder naß/ vnd trag sie für. Werden sie trucken für getragen/ so strewe viel guten gestossen Jmber darauff.</p>
+        </div>
+        <div type="translation" xml:id="kkm-001-trans" xml:lang="de" corresp="#kkm-001-orig">
+          <p>Siede den Fisch gut. Halte stets ein gutes, rauchfreies Feuer darunter. Wenn sich die Gräten leicht lösen, ist der Fisch gar. Schäume ihn schön ab und nimm ihn dann in angemessener Weise mit Gewürzen und Salz vom Feuer. Schmecke ihn gut ab und beträufle ihn dann mit Essig. Serviere ihn entweder trocken oder nass. Wird er trocken aufgetragen, streue viel guten, gestoßenen Ingwer darüber.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="fish" orig="Fisch" commodity="wikidata:Q600396" source="#corema-ingredient-index">Fisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="Würtzen" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="guten gestossen Jmber">gemahlener Ingwer</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#kkm-001-trans" resp="#fyndling">Welches Gericht ist das? Schlicht gesottener Fisch mit Ingwer - die Grundtechnik des Fischkochens, wie sie die mittelalterliche Fastenküche zu Tausenden kannte. Kein Schnickschnack: ganzer Fisch im Wasser gar gezogen, abgeschmeckt, mit Essig beträufelt und entweder "nass" in der Brühe oder "trocken" mit einer dicken Lage Ingwer serviert. Der direkte Verwandte ist der pochierte Fisch von heute - Forelle blau, Karpfen blau.
+
+Der Garpunkt wird am Ablösen der Gräten erkannt: wenn die Gräd abgehen, ist der Fisch gar. Das ist bis heute der verlässlichste Test - das Fleisch löst sich dann sauber vom Knochen. Wichtig ist das rauchfreie Feuer (Fewr on Rauch): Rauch zieht in das zarte, wasserumspülte Fleisch und macht es bitter; man will eine ruhige, saubere Hitze, kein loderndes, qualmendes Feuer.
+
+Die zwei Servierarten teilen das Gericht: naß heißt mit Sud, fast wie eine leichte Suppe; trucken heißt abgetropft, dafür großzügig mit gestoßenem Ingwer bestreut. Der Ingwer ist hier kein bloßes Gewürz, sondern die ganze Sauce - scharf, wärmend, ein Statusgewürz, das den schlichten Fisch aufwertet. Der Essig setzt den sauren Gegenpol.
+
+Praxis. Einen ganzen Fisch (Karpfen, Forelle, Schleie oder festen Weißfisch wie Kabeljau) in leicht gesalzenes, nur sanft siedendes Wasser legen - nicht sprudelnd kochen, sonst zerfällt das Fleisch. Den aufsteigenden Schaum abschöpfen. Gar ist er, sobald sich die Gräten leicht lösen (bei einem mittleren Fisch 10-15 Minuten Ziehzeit). Mit etwas Pfeffer und Salz abschmecken, mit einem Spritzer Essig beträufeln. Trocken serviert kräftig mit gemahlenem Ingwer bestreuen; nass im Sud auftragen.</note>
+        <note type="gloss" target="#kkm-001-orig" n="Fewr on Rauch" resp="#fyndling">Rauchfreies Feuer - Rauch würde in das zarte, wasserumspülte Fischfleisch ziehen und es bitter machen; gebraucht wird eine ruhige, saubere Glut.</note>
+        <note type="gloss" target="#kkm-001-orig" n="wenn die Gräd abgehen" resp="#fyndling">Garprobe: sobald sich die Gräten leicht lösen, ist der Fisch durch - bis heute der verlässlichste Test.</note>
+        <note type="gloss" target="#kkm-001-orig" n="trucken oder naß" resp="#fyndling">Zwei Servierarten - abgetropft ("trocken", dann üppig mit Ingwer bestreut) oder mit dem Sud ("nass").</note>
+        <note type="gloss" target="#kkm-001-orig" n="gestossen Jmber" resp="#fyndling">Gestoßener, also gemahlener Ingwer - hier kein Beigewürz, sondern die eigentliche Würzschicht des Gerichts.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

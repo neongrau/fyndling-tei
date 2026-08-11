@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Graue Mandel-Rosinen-Sauce zu schwarzen Hühnern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-10">2026-07-10</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-223/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.222</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-223">
+        <head>Graue Mandel-Rosinen-Sauce zu schwarzen Hühnern</head>
+        <div type="original" xml:id="mon-223-orig" xml:lang="de-x-fnhd" corresp="#mon-223-trans">
+          <p>WElt ir machen grabew salsen czw + Swarczen hunern so nym mandel vnd weinper geleich reib sy chlain slach sy durich ein tuech mit wein vnd mit esseich gburcz es so wirt es guett</p>
+        </div>
+        <div type="translation" xml:id="mon-223-trans" xml:lang="de" corresp="#mon-223-orig">
+          <p>Wollt ihr eine graue Sauce zu schwarzen Hühnern machen, so nehmt Mandeln und Rosinen gleichermaßen. Zerreibt sie klein und schlagt sie durch ein Tuch mit Wein und mit Essig. Würzt es, so wird es gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, gemahlen</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weinper" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="esseich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Weinessig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gburcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze (z.B. Pfeffer, Ingwer, Zimt)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Swarczen hunern">Hühnerfleisch</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-223-trans" resp="#fyndling">Welches Gericht ist das? Keine Zubereitung des Huhns selbst, sondern die Anleitung für eine kalte, durch ein Tuch geschlagene Würzsauce zu einem als ‚Swarczen hunern‘ bekannten Bankett-Schaugericht: gemahlene Mandeln und Rosinen zu gleichen Teilen, mit Wein und Essig abgeschmeckt. Sie gehört in die Ahnenreihe der Wein-Essig-Nuss-Saucen, aus denen später die ‚Sauce Cameline‘ hervorgeht, und lebt im Grundprinzip - Essig, Rosinen, mahlende Bindung - bis heute im rheinischen Sauerbraten fort.
+
+Praxis. Mandeln und Rosinen im Verhältnis 1:1 fein mahlen oder im Mörser zerstoßen - dabei erleichtert schon etwas vom Wein den Arbeitsgang, auch wenn der Text erst das trockene Zerreiben und danach das Anrühren mit Flüssigkeit nennt. Mit Rotwein und Weinessig zu einer streichfähigen Paste verrühren und durch ein feines Passiertuch drücken, bis eine glatte Sauce entsteht; das Durchdrücken der dickflüssigen Nuss-Rosinen-Masse braucht spürbar Kraft und Zeit. Der Text nennt kein festes Mengenverhältnis für Wein und Essig - wie beim Zwilling koe-028 hilft hier nur Abschmecken. Mit Gewürzen (etwa Pfeffer, Ingwer, Zimt) abschmecken. Das Ergebnis ist naturgemäß graubraun, nicht schwarz - wer die historische, tiefschwarze Variante nachstellen möchte, kann wie im verwandten Rezept mha-182 etwas verbrannten Lebkuchen unterrühren. Die Sauce wird kalt oder lauwarm zu gebratenem oder pochiertem Hühnerfleisch gereicht.</note>
+        <note type="gloss" target="#mon-223-orig" n="salsen" resp="#fyndling">Eine ‚Salse‘ ist eine würzige Tunke oder Sauce, nicht Speisesalz. Hier eine gebundene Sauce zu Fleisch.</note>
+        <note type="gloss" target="#mon-223-orig" n="tuech" resp="#fyndling">Ein Passiertuch oder Käsetuch, um die Sauce zu klären und eine feine Textur zu erhalten.</note>
+        <note type="gloss" target="#mon-223-orig" n="Swarczen hunern" resp="#fyndling">Vermutlich nicht eine dunkelfleischige Hühnerrasse, sondern der Name des Gerichts innerhalb eines belegten Bankett-Motivs farbig codierter Geflügel-Schaugerichte (weiß, grün, schwarz, rot). Der fast wortgleiche Zwilling koe-028 sowie mha-182 mit seinem expliziten Farb-Hühner-Reigen stützen diese Lesart.</note>
+        <note type="gloss" target="#mon-223-orig" n="gburcz" resp="#fyndling">Mittelbairische b/w-Schreibvariante zu ‚Gewürz‘/‚würzen‘ - hier als Verb-Imperativ mit angehängtem Pronomen (‚gburcz es‘ = ‚würzt es‘), vgl. dieselbe Konstruktion in mon-099 (‚gburcz das‘) und mon-216.</note>
+        <note type="interpretive_choice" target="#mon-223-orig" n="grabew" resp="#fyndling">Als ‚grau‘ übersetzt. Für mittelhochdeutsches ‚grâ‘ (grau) gibt es etablierte Wörterbuchbelege (Grimm, Lexer, MHDBDB), während für eine Lautform ‚grabew‘ zu ‚braun‘ keine vorliegen. Auch inhaltlich passt Grau besser: Mandeln, Rosinen, Wein und Essig ergeben ohne Verbrennung ein graubraunes, kein tiefschwarzes Resultat - stimmig mit einer bewusst helleren Substitutssauce für die eigentlich ‚schwarze‘ Bankettspeise.</note>
+        <note type="interpretive_choice" target="#mon-223-orig" n="weinper" resp="#fyndling">Als ‚Rosinen‘ (getrocknete Weinbeeren) übersetzt. Obwohl CoReMA ‚grape‘ (frische Weintraube) glossiert, ist im mittelalterlichen Kontext bei unklarer Spezifikation oft die getrocknete Form gemeint, die sich leichter zu einer Paste verarbeiten lässt und ganzjährig verfügbar war.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

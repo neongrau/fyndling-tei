@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gebratenes Schwein oder Spanferkel</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-141/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-141">
+        <head>Gebratenes Schwein oder Spanferkel</head>
+        <div type="original" xml:id="men-141-orig" xml:lang="fro" corresp="#men-141-trans">
+          <p>Porc. Eschaudé, roty en la broche, et mectre du sain doulx en la paelle, et au bout d'un baston avoir des plumes, et oindre l'escorche ou couanne du porc afin qu'elle ne se arde et endurcisse, ou larder. Et autel couvient il faire a ung cochon, ou le larder, et est mengié au vertjus de grain, ou vertjus vieil, et ciboule.</p>
+        </div>
+        <div type="translation" xml:id="men-141-trans" xml:lang="de" corresp="#men-141-orig">
+          <p>Schwein. Brühe es ab, brate es am Spieß. Gib süßes Schmalz in eine Pfanne. Befestige Federn an einem Stock und bepinsle damit die Schwarte oder Haut des Schweins, damit sie nicht verbrennt und hart wird, oder spicke es. Dasselbe gilt für ein Spanferkel: spicke es oder bepinsle es. Es wird mit Verjus aus Trauben oder altem Verjus und Frühlingszwiebeln gegessen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Porc / cochon">Schweinefleisch oder Spanferkel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="sain doulx">Süßes Schweineschmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="plumes">Federn</ingredient>
+            </item>
+            <item>
+              <ingredient orig="vertjus de grain, ou vertjus vieil">Verjus</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ciboule">Frühlingszwiebeln</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-141-trans" resp="#fyndling">Welches Gericht ist das? Ein klassischer Spießbraten vom Schwein oder Spanferkel (porc / cochon), gegessen mit einer sauren Verjus-Zwiebel-Beilage - der direkte Vorfahr unseres Spanferkels vom Grill, bei dem die knusprige Schwarte das Ziel ist.
+
+Der Kniff steckt in der Schwarten-Pflege: Damit die couanne (Schwarte/Haut) beim Braten ne se arde et endurcisse - nicht verbrennt und steinhart wird - bindet man Federn an einen Stock und bepinselt die Haut immer wieder mit sain doulx, ungesalzenem frischem Schweineschmalz. Das Fett hält die Schwarte geschmeidig und sorgt für gleichmäßiges, goldenes Bräunen statt verbrannter Stellen - dieselbe Funktion wie das Begießen (Arrosieren) heute.
+
+Ou larder - "oder spicken" - ist die genannte Alternative zum Bepinseln: Statt von außen zu fetten, zieht man Speckstreifen ins Fleisch ein, die es von innen saftig halten. Der Text lässt beide Wege offen.
+
+Sain doulx heißt wörtlich "süßes Fett": gemeint ist ungesalzenes, frisch ausgelassenes Schweineschmalz (im Gegensatz zu gesalzenem Pökelfett), das nicht zu kräftig schmeckt.
+
+Praxis. Schwein oder Spanferkel abbrühen (eschaudé), an den Spieß stecken und über guter, gleichmäßiger Glut braten. Daneben eine Pfanne mit ausgelassenem, ungesalzenem Schmalz warmhalten; mit einem Federwedel oder Pinsel die Schwarte regelmäßig einstreichen - alternativ das Fleisch mit Speckstreifen spicken. Dazu reicht man eine schnelle Beilage aus Verjus (Saft unreifer Trauben oder gereiftem alten Verjus) und fein geschnittenen Frühlingszwiebeln (ciboule), deren Säure das fette Bratenfleisch bricht. Verwandt mit dem gefüllten Spanferkel am Spieß rfk-051, boc-016 und via-143.</note>
+        <note type="gloss" target="#men-141-orig" n="Eschaudé" resp="#fyndling">Brühen oder Abbrühen, kurz in heißes Wasser tauchen, um die Haut zu festigen oder Haare zu entfernen.</note>
+        <note type="gloss" target="#men-141-orig" n="roty en la broche" resp="#fyndling">Am Spieß gebraten.</note>
+        <note type="gloss" target="#men-141-orig" n="sain doulx" resp="#fyndling">Süßes Schmalz, also ungesalzenes, aus frischem Schweinefett gewonnenes Schmalz.</note>
+        <note type="gloss" target="#men-141-orig" n="couanne" resp="#fyndling">Die Schwarte oder Haut des Schweins.</note>
+        <note type="gloss" target="#men-141-orig" n="larder" resp="#fyndling">Spicken, d.h. mageres Fleisch mit Speckstreifen durchziehen.</note>
+        <note type="gloss" target="#men-141-orig" n="vertjus de grain, ou vertjus vieil" resp="#fyndling">Verjus aus Trauben oder alter Verjus. Verjus ist der Saft unreifer Weintrauben.</note>
+        <note type="gloss" target="#men-141-orig" n="ciboule" resp="#fyndling">Frühlingszwiebel oder Lauchzwiebel.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllter Hecht</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-23">2026-07-23</date>
+        <idno type="url">https://fyndling.de/rezepte/ka2-024/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 793</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, unteres Inntal/Mühldorf am Inn, ca. 1445-1470)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka2-024">
+        <head>Gefüllter Hecht</head>
+        <div type="original" xml:id="ka2-024-orig" xml:lang="de-x-fnhd" corresp="#ka2-024-trans">
+          <p>Gefullt hechten Stich In pey der flossen Im grat ab vnd zeuch Im dy hawt ab vnd zerhak das prat vnd tue weinper gewurtz als durcheinander vnd richcz an</p>
+        </div>
+        <div type="translation" xml:id="ka2-024-trans" xml:lang="de" corresp="#ka2-024-orig">
+          <p>Stich den Hecht bei der Flosse bis auf den Grat (die Gräte) ein und zieh ihm die Haut ab. Zerhacke das Fischfleisch und mische Weinbeeren und Gewürz alles durcheinander. Richte es an.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="northern pike" orig="hechten" commodity="wikidata:Q83363026" source="#corema-ingredient-index">Hecht</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weinper" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka2-024-trans" resp="#fyndling">Welches Gericht ist das? Ein gefüllter Hecht in eigener Haut: der Fisch wird an der Flosse eingeschnitten, bis auf die Gräte, die Haut im Ganzen abgezogen, das entgrätete Fleisch gehackt und mit Rosinen (Weinbeeren) und Gewürz vermischt. Der Dish-Typ ist im Korpus breit belegt (vgl. bgs-036, bgs-046, koe-003, kkm-003) und hat bis heute lebende Verwandte: Der bayerisch-fränkische „Gefüllte Hecht“ bzw. die „Gefüllten Karpfen“ zu Weihnachten und Silvester folgen derselben Grundtechnik - Haut ablösen, Fleisch entnehmen, würzen, zurückfüllen. Auch die jiddische Bezeichnung „Gefilte Fisch“ (wörtlich „gefüllter Fisch“) geht auf dasselbe Verfahren zurück, bevor sich dort später die lose Klößchen-Form ohne Haut durchsetzte.
+
+Der Einschnitt. „Stich in bei der Flosse im Grat ab“ beschreibt einen einzigen Arbeitsschritt, nicht zwei getrennte: einen Einschnitt an der Flosse, der bis zur Gräte reicht. Erst danach wird die Haut im Ganzen abgezogen - so bleibt sie als intakte Hülle für die spätere Füllung erhalten.
+
+Die Rückfüllung. Der Transkript-Text nennt für das Zurückfüllen der gewürzten Masse in die Fischhaut kein eigenes Verb - er endet mit „richt an“ (anrichten). Dass die Fülle tatsächlich zurück in die Haut kommt, ergibt sich aus dem Rezepttitel „Gefüllt hechten“ und dem sonst im Korpus belegten Dish-Typ, ist im vorliegenden kurzen Text aber nicht wörtlich ausgesprochen.
+
+Praxis. Hecht ausnehmen, an der Flosse ansetzen und bis auf die Gräte einschneiden, dann die Haut vorsichtig im Ganzen abziehen. Das entgrätete Fleisch fein hacken und mit Rosinen und Gewürz (Pfeffer, Ingwer, Zimt, Nelken) durchmischen, danach die Masse zurück in die Fischhaut füllen. Ein Bindemittel für die Füllung nennt der Text nicht - ohne Ei oder Semmelbrösel droht sie beim Garen auseinanderzufallen, wer sicher gehen will, ergänzt eines. Auch die Garmethode fehlt im Text; zum vollständigen Durchgaren empfiehlt sich Braten oder Backen, bis Fisch und Füllung durcherhitzt sind.</note>
+        <note type="gloss" target="#ka2-024-orig" n="grat" resp="#fyndling">Das Rückgrat oder die Fischgräte.</note>
+        <note type="gloss" target="#ka2-024-orig" n="prat" resp="#fyndling">In diesem Kontext ist ‚prat‘ das Fleisch des Fisches, nicht ein Bratenstück.</note>
+        <note type="gloss" target="#ka2-024-orig" n="gewurtz" resp="#fyndling">Eine allgemeine Bezeichnung für Gewürze. Typische mittelalterliche Gewürze für Fisch waren Pfeffer, Ingwer, Zimt und Nelken.</note>
+        <note type="gloss" target="#ka2-024-orig" n="richcz an" resp="#fyndling">Richte es an, serviere es. Die genaue Garmethode ist im Rezept nicht explizit beschrieben, ein gefüllter Hecht wurde aber typischerweise gebraten oder gebacken.</note>
+        <note type="interpretive_choice" target="#ka2-024-orig" n="Rückfüll-Schritt (nicht wörtlich im Transkript)" resp="#fyndling">Die gehackte, gewürzte Masse wird zurück in die abgezogene Fischhaut gefüllt (gestützt durch den Rezepttitel „Gefüllt hechten“ und den im Korpus breit belegten Dish-Typ „in eigener Haut“, vgl. bgs-036, bgs-046, koe-003).</note>
+        <note type="interpretive_choice" target="#ka2-024-orig" n="richcz an (Garmethode)" resp="#fyndling">Vor dem Servieren vollständig durchgaren (braten oder backen), bis Fisch und Füllung durcherhitzt sind - im Text nicht explizit benannt, aber praktisch notwendig.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

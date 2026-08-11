@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Eier im Pfeffer</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-27">2026-06-27</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-009/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.9</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-009">
+        <head>Eier im Pfeffer</head>
+        <div type="original" xml:id="mon-009-orig" xml:lang="de-x-fnhd" corresp="#mon-009-trans">
+          <p>ITem willdw mach air ym phefferr so mach sy also vnd sewd sy herdt vnd spal schels sy vnd spalcz sy von ein ander vnd rost sy ym smalcz vnd tue sy In die gruenn varib vnd nymb honig wein vnd slachs durch legs dar ein vnd machs ab asso ist es gerecht etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-009-trans" xml:lang="de" corresp="#mon-009-orig">
+          <p>Wenn du Eier im Pfeffer zubereiten willst, so mache sie folgendermaßen:</p>
+          <p>Siede die Eier hart. Schäle sie und spalte sie voneinander. Röste sie in Schmalz.</p>
+          <p>Gib die gerösteten Eier dann in die grüne Farbe. Nimm Honig und Wein, schlage es durch und gib die Mischung dazu. Schmecke ab. So ist es recht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="air" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="smalcz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="die gruenn varib">Grüne Kräutersauce (Petersilie, Wein, Honig)</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-009-trans" resp="#fyndling">Welches Gericht? Hartgekochte Eier, halbiert und in Schmalz angebraten, dann in eine grüne Kräuter-Honig-Wein-Sauce eingelegt. „Pfeffer“ im Titel ist der Gattungsname für eine würzige Sauce - die Sauce heißt Pfeffer, enthält aber im Rezepttext kein Pfeffer-Gewürz als Einzelzutat. Schwesterrezepte auf demselben Folium 012r: Eier mit Petersilien-Weinsauce (mon-007, kalte Variante) und Grüne Eier im Schmalz (mon-008, nahezu identische Technik mit expliziter Saucenbeschreibung).
+
+Crux: spal schels sy vnd spalcz sy von ein ander. Das „spal“ vor „schels“ ist ein Schreibversprecher des Kopisten: Er beginnt mit „spalcz“ (spalten), bricht ab und setzt mit „schels sy“ (schäle sie) neu an. Danach folgt der eigentlich beabsichtigte Schritt vollständig: „spalcz sy von ein ander“ = spalte sie voneinander. Die korrekte Sequenz lautet also: schälen, dann halbieren - nicht drei separate Befehle.
+
+Crux: die gruenn varib. Wörtlich „die grüne Farbe“ (mhd. varwe): eine fertige Kräutersauce, kein bloßer Farbstoff. mon-008 beschreibt die Herstellung auf demselben Fol. 012r: Petersilie fein stoßen, mit Wein durchschlagen (slachs durch), Honig zugeben, mit Gewürz abschmecken. mon-009 setzt diese Technik als bekannt voraus und nennt sie nur verkürzt. Der Unterschied zur Schwester: mon-008 bereitet die Sauce zuerst, dann kommen die Eier hinein; mon-009 röstet die Eier zuerst, dann wird die Sauce mit Honig und Wein aufgezogen - zwei Wege zur selben grünen Sauce.
+
+Crux: machs ab. Im Mondseer Kochbuch Standardformel für abschmecken und fertigstellen (belegt mon-004, mon-006, mon-008). Bedeutet nicht nur anrichten, sondern das letzte Würzen und Justieren.
+
+Praxis. Eier können vorgekocht zum Markt mitgebracht werden. Petersilie überlebt den Tag problemlos. Schmalz-Rösten in der Eisenpfanne dauert 2-3 Minuten, Schnittfläche nach unten. Petersilie frisch im Mörser stoßen, mit Wein aufgießen, durch ein Tuch oder ein feines Sieb passieren - so entsteht die grüne Sauce. Honig einrühren. Geröstete Eier einlegen, kurz durchziehen lassen, abschmecken. Gewürz (Pfeffer, Ingwer) nach Belieben - der Rezepttext nennt keines explizit; mon-008 hat „gburcz“ = Gewürz allgemein.</note>
+        <note type="gloss" target="#mon-009-orig" n="gruenn varib" resp="#fyndling">Mhd. varwe (MHDBDB Lemma varwe, Bedeutungsfeld Farben/Visuell): die fertige grüne Kräutersauce, kein bloßer Farbstoff. mon-008 beschreibt die Herstellung auf demselben Fol. 012r: Petersilie fein stoßen, mit Wein durchschlagen, Honig zugeben, mit Gewürz abschmecken. mon-009 setzt diese Technik als bekannt voraus und nennt sie nur verkürzt.</note>
+        <note type="gloss" target="#mon-009-orig" n="phefferr" resp="#fyndling">Gattungsname für eine würzige Sauce (Glossar Ehlert1999: „würzige, gebundene Sauce / ein Pfeffer-Gericht“; Götze: „pfeffer m. gewürzte sauce.“). Im Rezepttext selbst erscheint kein Pfeffer-Gewürz als Zutat - „phefferr“ benennt nur die Saucengattung.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="willdw" resp="#fyndling">„willst du“ - gängige frühneuhochdeutsche Form der Anrede, die eine Handlungsaufforderung einleitet. Mondseer Standardöffner (vgl. mon-002).</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="phefferr" resp="#fyndling">Gattungsname für eine würzige Sauce (Glossar Ehlert1999: „würzige, gebundene Sauce / ein Pfeffer-Gericht“; MHDBDB Lemma phëffer, Bedeutungsfeld Nahrungszubereitung). Erscheint ausschließlich im Titel „air ym phefferr“, nicht als Zutat im Zubereitungstext. Kein Beleg für Pfeffer-Gewürz als Einzelzutat im Rezept.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="spal schels sy" resp="#fyndling">Schreibversprecher des Kopisten: „spal“ ist der abgebrochene Schreibansatz von „spalcz“ (spalten). Der Schreiber korrigiert sich und setzt mit „schels sy“ (= schäle sie) neu an. Die eigentlich beabsichtigte Spaltung folgt danach vollständig als „spalcz sy von ein ander“. Die korrekte Sequenz lautet: schälen, dann halbieren - zwei Handlungen, kein eigenständiger dritter Befehl (Lexer: „useinander spal-“; MHDBDB Lemma spalten).</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="sewd" resp="#fyndling">„siede“ - Imperativform des Verbs „sieden“ (kochen). MHDBDB Lemma sieden, belegt in 24 Rezepten.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="schels" resp="#fyndling">„schäle“ - Imperativform des Verbs „schälen“. Belegt in mon-004, mon-006, ka1-012, m384-028.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="spalcz" resp="#fyndling">„spalte“ - Imperativform des Verbs „spalten“. MHDBDB Lemma spalten, belegt in 16 Rezepten. Hier: „spalcz sy von ein ander“ = spalte/halbiere sie voneinander.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="nymb" resp="#fyndling">„nimm“ - Imperativform des Verbs „nehmen“. Mondseer Standardform.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="slachs durch" resp="#fyndling">„schlage es durch“ - Passieren oder Verrühren zur glatten Mischung. MHDBDB Lemma slahen; in mon-007 und mon-008 als Extraktionsverfahren für Petersiliensaft belegt (Kräuter mit Wein durchschlagen). Hier ohne explizite Kräuter, daher eher Verrühren/Emulgieren von Honig und Wein.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="die gruenn varib" resp="#fyndling">„die grüne Farbe“ (mhd. varwe, MHDBDB Lemma varwe, Bedeutungsfeld Ästhetisches Empfinden/Visuell/Farben) = fertige grüne Kräutersauce, kein bloßer Farbstoff. mon-008 auf demselben Fol. 012r beschreibt die Herstellung explizit (Petersilie stoßen, mit Wein durchschlagen, Honig zugeben). mon-009 setzt diese Technik als bekannt voraus.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="legs dar ein" resp="#fyndling">„lege es (die Honig-Wein-Mischung) da hinein“ - die Eier sind zu diesem Zeitpunkt bereits in der grünen Farbe („tue sy In die gruenn varib“). „legs dar ein“ bezieht sich daher auf die Honig-Wein-Sauce, die zu den Eiern in die grüne Farbe gegeben wird. Parallele mon-007: Sauce wird an die Eier gegeben, nicht umgekehrt.</note>
+        <note type="interpretive_choice" target="#mon-009-orig" n="machs ab" resp="#fyndling">„mache es fertig / schmecke ab“ - Standardformel für das letzte Würzen und Fertigstellen. Im Mondseer Kochbuch belegt in mon-004 („mach ein air prue dar czw vnd machs ab“), mon-008 („machs mit gburcz ab“). Bedeutet Abschmecken und Anrichten, nicht nur das reine Anrichten.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#machs-ab"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

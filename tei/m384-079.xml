@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Käsestreifen in Brühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/m384-079/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 384</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M2 (CC BY 4.0, hdl.handle.net/11471/562.10)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 2. Hälfte 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m384-079">
+        <head>Käsestreifen in Brühe</head>
+        <div type="original" xml:id="m384-079-orig" xml:lang="de-x-fnhd" corresp="#m384-079-trans">
+          <p>baches In ainem Jussel
+
+CZuo ainem bachem In ainem Jussel nyem geryben kasz vnd mell vnd schlach daran ayer vnd bewurtz es wol vnd knytz vnder ain andren vnd will es vff ainem brett vnd mach daruss lang schrentzen vnd dunne vnd bachs In schmaltz dar nach so schnutz in ainen Jussel</p>
+        </div>
+        <div type="translation" xml:id="m384-079-trans" xml:lang="de" corresp="#m384-079-orig">
+          <p>Nimm für ein Backwerk in Brühe geriebenen Käse und Mehl, schlage Eier daran und würze es gut. Knete es untereinander und welle es auf einem Brett aus. Forme daraus lange und dünne Streifen.</p>
+          <p>Backe die Streifen in Schmalz aus. Danach schneide sie in eine Brühe.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="geryben kasz">Käse, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mell" commodity="wikidata:Q36465" source="#corema-ingredient-index">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayer" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="bewurtz es wol">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="schmaltz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Jussel">Brühe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m384-079-trans" resp="#fyndling">Welches Gericht ist das? Das ist im Geiste eine Art herzhafte, gebratene Käsespätzle oder -nocken, die in einer kräftigen Brühe serviert werden - ein einfaches, aber sättigendes Gericht, verwandt mit den mittelalterlichen Käse-Krapfen.
+
+So gelingt es. Der Schlüssel liegt in der richtigen Teigkonsistenz und der Hitzeführung beim Braten. Nimm als Startpunkt gleiche Mengen geriebenen, festen Käses und Mehls. Schlage dann gerade so viele Eier daran, dass ein fester, gut knetbarer Teig entsteht - er sollte nicht kleben. Knete ihn gründlich, bis er geschmeidig ist. Rolle den Teig auf einem leicht bemehlten Brett wirklich dünn aus, etwa 1-2 Millimeter, und schneide daraus lange, schmale Streifen. Erhitze das Schmalz in einer Pfanne auf mittlere Hitze; es sollte heiß genug sein, dass die Streifen schnell goldbraun werden, aber nicht verbrennen. Backe die Streifen portionsweise aus, bis sie ansprechend gebräunt und gar sind. Der häufigste Fehler ist ein zu weicher Teig, der sich schlecht ausrollen lässt oder beim Braten zerfällt; gib dann noch etwas Mehl dazu. Nach dem Braten werden die Streifen direkt in die heiße Brühe geschnitten.
+
+So wird es richtig gut. Die Qualität der Brühe ist entscheidend; eine kräftige, klare Fleisch- oder Gemüsebrühe bildet die perfekte Basis. Würze den Teig selbst gut aus - frisch gemahlener Pfeffer und eine Prise Muskat passen hervorragend zum Käse. Du kannst auch eine Spur Ingwerpulver hinzufügen, um die mittelalterliche Würzung zu unterstreichen. Achte darauf, dass die Brühe gut abgeschmeckt ist, vielleicht mit einem Hauch Verjus oder Essig, um eine feine Säurenote zu erhalten, die die Fettigkeit des Schmalzes ausbalanciert und das Gericht belebt. Serviere die Käse-Streifen sofort in der heißen Brühe, damit sie sich leicht vollsaugen können, aber noch ihren Biss behalten.</note>
+        <note type="gloss" target="#m384-079-orig" n="Jussel" resp="#fyndling">Eine Brühe oder Suppe, in der das Backwerk serviert wird (Ehlert: ‚Suppe, Brühe‘). Der Begriff geht auf französisch jus zurück und ist mit dem modernen ‚Jus‘ verwandt.</note>
+        <note type="gloss" target="#m384-079-orig" n="schrentzen" resp="#fyndling">Die langen, dünnen Teigstreifen. Das Wort gehört zu schranz (‚Riß, Spalt, Scharte‘); Ehlert übersetzt es hier ausdrücklich als ‚Streifen‘. Die Schwesterhandschriften (Reichenauer Kochbuch, Inntal-Kochbuch) sprechen an dieser Stelle von strützel.</note>
+        <note type="gloss" target="#m384-079-orig" n="bewurtz es wol" resp="#fyndling">‚Würze es gut‘. Typische Gewürze der Zeit für herzhafte Gerichte waren Salz, Pfeffer, Ingwer und Muskat.</note>
+        <note type="gloss" target="#m384-079-orig" n="Schmalz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das zum Ausbacken verwendet wurde. In der Fastenzeit wurde stattdessen Pflanzenöl oder Mandelmilch-Fett verwendet.</note>
+        <note type="interpretive_choice" target="#m384-079-orig" n="baches / bachem" resp="#fyndling">‚Backwerk‘ oder ‚Gebäck‘. Dies bezieht sich auf eine Art von ausgebackenem Teig.</note>
+        <note type="interpretive_choice" target="#m384-079-orig" n="schrentzen" resp="#fyndling">‚Streifen‘. Das Wort gehört zu schranz (‚Riß, Spalt, Scharte‘, Lexer II,787); Ehlert glossiert es ausdrücklich ‚hier soviel wie: Streifen‘ und übersetzt entsprechend.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

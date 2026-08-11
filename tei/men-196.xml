@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Thunfisch nach Languedoc-Art</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-196/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-196">
+        <head>Thunfisch nach Languedoc-Art</head>
+        <div type="original" xml:id="men-196-orig" xml:lang="fro" corresp="#men-196-trans">
+          <p>Ton est ung poisson qui est trouvé en la mer ou estancs marinaulx des parties de Languedoc, et n'a aucunes arrestes fors l'eschine, et a dure pel; et se doit cuire en eaue, et se mengut au poivre jaunet.</p>
+        </div>
+        <div type="translation" xml:id="men-196-trans" xml:lang="de" corresp="#men-196-orig">
+          <p>Thunfisch ist ein Fisch, den man im Meer oder in den Meeresteichen des Languedoc findet. Er hat keine Gräten außer dem Rückgrat und eine harte Haut. Koche ihn in Wasser. Serviere ihn mit gelbem Pfeffer.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Ton">Ganzer Thunfisch oder Thunfischsteaks</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eaue">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="poivre jaunet">Gelber Pfeffer</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-196-trans" resp="#fyndling">Welches Gericht ist das? Schlicht gesottener Thunfisch mit einer gelben Pfeffersauce - ein Fischgericht aus dem Languedoc, wo der Monsieur den Thunfisch (ton) im Meer und in den Küstenlagunen verortet. Bei Martino taucht Thunfisch mehrfach auf, dort vor allem haltbar gemacht (mar-260 in Essig eingelegt, mar-259 Thunfischbauch, mar-263 als Bottarga) - hier dagegen frisch gekocht.
+
+Der Fisch (ton). Der Text beschreibt ihn treffend: keine Gräten außer dem Rückgrat (eschine) und eine harte Haut (dure pel) - genau das macht Thunfisch zum dankbaren "Steakfisch". Ein dickes Stück wird einfach in Wasser gar gezogen.
+
+Gelber Pfeffer (poivre jaunet). Keine eigene Pfeffersorte, sondern eine gelb gefärbte Pfeffersauce: Pfeffer, dessen Gelbton periodentypisch von Safran (ersatzweise Ingwer) kommt. Gelb war die vornehme Speisefarbe schlechthin. Eine moderne Annäherung: schwarzer Pfeffer mit einer Prise Safran, in etwas Brühe oder Verjus angerührt.
+
+Praxis. Thunfischsteak in leicht gesalzenem Wasser nur knapp gar ziehen lassen (er wird sonst trocken und mehlig), herausnehmen und mit der gelben Pfeffersauce servieren. Safran echt nehmen - nicht Kurkuma -, das trifft Farbe und Aroma der Zeit.</note>
+        <note type="gloss" target="#men-196-orig" n="Ton" resp="#fyndling">Thunfisch; im Text als grätenarmer Fisch mit nur einem Rückgrat und harter Haut beschrieben.</note>
+        <note type="gloss" target="#men-196-orig" n="estancs marinaulx" resp="#fyndling">Meeresteiche/Küstenlagunen des Languedoc, wo der Thunfisch gefangen wurde.</note>
+        <note type="gloss" target="#men-196-orig" n="poivre jaunet" resp="#fyndling">"Gelber Pfeffer" - keine eigene Sorte, sondern eine mit Safran (oder Ingwer) gelb gefärbte Pfeffersauce; Gelb war die vornehme Speisefarbe der Zeit.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

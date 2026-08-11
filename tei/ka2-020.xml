@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wildbret in Pfeffersauce</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-23">2026-07-23</date>
+        <idno type="url">https://fyndling.de/rezepte/ka2-020/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 793</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, unteres Inntal/Mühldorf am Inn, ca. 1445-1470)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka2-020">
+        <head>Wildbret in Pfeffersauce</head>
+        <div type="original" xml:id="ka2-020-orig" xml:lang="de-x-fnhd" corresp="#ka2-020-trans">
+          <p>Wiltprat aus einem guten pfeffer das prenn von erst ab vnd nim ein grune gute prue vnd waichs darein vnd slachs durch mit wein oder essich vnd hak zwifal chlain vnd nim smaltz vnd tues darein vnd swaiffs ab</p>
+        </div>
+        <div type="translation" xml:id="ka2-020-trans" xml:lang="de" corresp="#ka2-020-orig">
+          <p>Wildbret in einer guten Pfeffersauce.</p>
+          <p>Brate das Wildbret zuerst scharf an.</p>
+          <p>Nimm eine gute, frische Brühe und lege das Fleisch darin ein, damit es weich wird.</p>
+          <p>Schlage die Brühe mit Wein oder Essig durch ein Tuch oder Sieb, sodass eine glatte Sauce entsteht.</p>
+          <p>Hacke die Zwiebel klein und gib sie dazu.</p>
+          <p>Nimm Schmalz, gib es in die Sauce und schwenke sie zum Schluss ab, bis alles verbunden ist.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Wiltprat">Wildbret</ingredient>
+            </item>
+            <item>
+              <ingredient orig="grune gute prue">Fleischbrühe, frisch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wein oder essich">Wein oder Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="onion" orig="zwifal" commodity="wikidata:Q3406628" source="#corema-ingredient-index">Zwiebel</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka2-020-trans" resp="#fyndling">Welches Gericht ist das?
+
+Wildbret wird zuerst scharf angebraten und dann in einer guten Brühe weichgezogen, bevor die Garflüssigkeit mit Wein oder Essig durch ein Tuch geschlagen, mit Zwiebel und Schmalz angereichert und abschließend glattgerührt wird - ein "Pfeffer" im spätmittelalterlichen Wortsinn: eine kräftige Würzsauce zu Fleisch, nicht das Gewürz selbst. Das Gericht steht in derselben Gerichtsfamilie wie der Vorläufer des heutigen "Hasenpfeffers" und die französischen Civet-Gerichte: Wildbret in einer sauren, gebundenen Sauce - hier nicht mit Blut, sondern über durchgeschlagene Brühe, Säure und Schmalz gebunden.
+
+Grune gute prue.
+
+"grun/gruen" ist im Korpus mehrfach als Lesefalle belegt: bei Fleisch meint es meist "roh/unverarbeitet", bei Gewürzen "frisch/ungetrocknet". Da eine Brühe keinen Garzustand im Sinne von roh/gekocht hat wie Fleisch, liegt hier die zweite Lesart näher: eine frische, milde Brühe. Die Parallelstelle ka2-047 ("ein gute grune prue oder haiss wasser") stützt das, dort erscheint dieselbe Brühe als milde Alternative zu heißem Wasser.
+
+Waichs darein.
+
+Das angebratene Fleisch wird in dieser Brühe weichgezogen - eine zweite, sanftere Garstufe nach dem scharfen Anbraten. Ein fast identischer Beleg in mha-058 ("rugkein prot waichs In essich", Roggenbrot in Essig eingeweicht) zeigt dieselbe Konstruktion Substantiv+waichs+in+Flüssigkeit und stützt die Weichzieh-Lesart.
+
+Swaiffs ab.
+
+"sweifen" heißt ursprünglich schwingen/kreisen. Gemeint ist hier vermutlich das abschließende Glattrühren der Sauce, nachdem Zwiebel und Schmalz eingearbeitet sind - denkbar wäre auch ein reines Abschöpfen von überschüssigem Fett, für die Praxis ändert sich das Ergebnis kaum.
+
+Praxis.
+
+Wildbret in Stücken scharf anbraten, dann in milder Brühe bei kleiner Hitze weichziehen. Die Garflüssigkeit mit Wein oder Essig durch ein Tuch oder Sieb schlagen, damit Fleischfasern und Fettpartikel zurückbleiben. Klein gehackte Zwiebel und einen Löffel Schmalz einrühren und kurz ziehen lassen, zum Schluss glattrühren. Ohne Brot-, Ei- oder Mandelbindung bleibt die Sauce eher schlank als sämig - das entspricht dem Rezept, nicht einem Mangel daran.</note>
+        <note type="gloss" target="#ka2-020-orig" n="pfeffer" resp="#fyndling">Bezeichnet hier den Namen eines Saucentyps ('ein Pfeffer'), nicht das Gewürz selbst. Gemeint ist eine kräftige Würzsauce zu Fleisch, wie sie im Spätmittelalter häufig unter diesem Namen belegt ist.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="gloss" target="#ka2-020-orig" n="prenn" resp="#fyndling">'brennen' meint hier 'scharf anbraten/sengen', nicht verbrennen im heutigen Wortsinn.</note>
+        <note type="gloss" target="#ka2-020-orig" n="waichs" resp="#fyndling">Innerhalb der Ka2-Handschrift nur an dieser Stelle belegt, im Gesamtkorpus aber auch in mha-058 ('rugkein prot waichs In essich' - Roggenbrot in Essig einweichen) bezeugt. Dieselbe Konstruktion Substantiv+waichs+in+Flüssigkeit stützt die Lesart 'weiche es ein': das angebratene Fleisch zieht in der Brühe weich.</note>
+        <note type="gloss" target="#ka2-020-orig" n="swaiffs ab" resp="#fyndling">'sweifen' heißt ursprünglich schwingen/kreisen. Hier vermutlich das abschließende Glattrühren oder Abschöpfen des überschüssigen Fetts.</note>
+        <note type="interpretive_choice" target="#ka2-020-orig" n="grune gute prue" resp="#fyndling">'frische, milde Brühe' - im Unterschied zu abgestandener oder stark reduzierter Brühe.</note>
+        <note type="interpretive_choice" target="#ka2-020-orig" n="swaiffs ab" resp="#fyndling">'schwenke/rühre es ab': die fertige Sauce wird zum Schluss glattgerührt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

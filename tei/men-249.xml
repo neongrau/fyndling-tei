@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Schweinefleisch-Pastete</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-249/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-249">
+        <head>Schweinefleisch-Pastete</head>
+        <div type="original" xml:id="men-249-orig" xml:lang="fro" corresp="#men-249-trans">
+          <p>Autre tartre. Nota que de la farcissure d'un cochon peut l'en faire une tartre couverte; et que la farce soit bien faicte.</p>
+        </div>
+        <div type="translation" xml:id="men-249-trans" xml:lang="de" corresp="#men-249-orig">
+          <p>Eine weitere Pastete. Beachte, dass man aus der Füllung eines Schweins eine bedeckte Pastete zubereiten kann. Sorge dafür, dass die Füllung gut gemacht ist.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="farcissure d'un cochon">Füllung eines Schweins</ingredient>
+            </item>
+            <item>
+              <ingredient orig="tartre couverte">Pastetenteig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-249-trans" resp="#fyndling">Welches Gericht ist das? Eine gedeckte Fleischpastete - eine tartre couverte, also eine Pastete mit Teigboden und Teigdeckel, gefüllt mit der gewürzten Schweinefarce, die man sonst in ein ganzes Spanferkel füllt. Der direkte Verwandte ist die klassische gedeckte Schweinefleisch-Pastete (engl. pork pie), und im Korpus die Fleischpasteten von foc-164 oder die hohe Pastete m384-020.
+
+Farcissure d'un cochon. Das ist die Pointe des Rezepts: Der Ménagier schreibt keine eigene Füllung, sondern verweist auf die Farce, die andernorts fürs ganze gefüllte Schwein beschrieben ist - gehacktes Schweinefleisch mit Ei, eingeweichtem Brot und Gewürzen gebunden. Statt das Schwein damit zu füllen und am Spieß zu braten, schlichtet man die Farce in eine Teighülle und backt sie als Pastete. Ein klassischer Resteverwerter-Tipp: dieselbe Masse, andere Form.
+
+Tartre couverte. Gedeckt heißt: Boden und Deckel aus Teig. Mittelalterlich war die feste, derbe Teighülle (coffin, huff paste) oft nur Garbehälter und Transportschutz, nicht unbedingt zum Mitessen - die Farce gart darin im eigenen Saft.
+
+Praxis. Eine kräftige Schweinefarce anrühren (ca. 600 g durchwachsenes Schweinehack, 1 Ei, 1 Handvoll in Brühe eingeweichtes und ausgedrücktes Weißbrot, Salz, Pfeffer, Ingwer, etwas Zimt und Safran). Einen festen Mürbe- oder Roggen-Wasser-Öl-Teig ausrollen, in eine Form legen, die Farce einfüllen, mit Teigdeckel verschließen und bei 180 Grad rund 60-75 Minuten backen, bis die Kerntemperatur durch ist. Die Füllung lässt sich gut zu Hause vorbereiten.</note>
+        <note type="gloss" target="#men-249-orig" n="tartre couverte" resp="#fyndling">gedeckte Pastete - mit Teigboden und Teigdeckel; die Farce gart in der Hülle im eigenen Saft.</note>
+        <note type="gloss" target="#men-249-orig" n="farcissure d'un cochon" resp="#fyndling">die gewürzte Füllung (Farce), die sonst in ein ganzes Spanferkel kommt - der Ménagier verweist hier auf das andernorts beschriebene Rezept, statt es zu wiederholen.</note>
+        <note type="gloss" target="#men-249-orig" n="farce soit bien faicte" resp="#fyndling">‚die Füllung sei gut gemacht‘ - der ganze Wert der Pastete steckt in der sorgfältig gewürzten und gebundenen Farce.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

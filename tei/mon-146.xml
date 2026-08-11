@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kalbsinnereien-Wurst</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-05">2026-07-05</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-146/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.146</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-146">
+        <head>Kalbsinnereien-Wurst</head>
+        <div type="original" xml:id="mon-146-orig" xml:lang="de-x-fnhd" corresp="#mon-146-trans">
+          <p>Item von dem after darInn Nym den affter darInn von dem kalb vnd mach den gar sewr vnd hack dy lungel vnd spek vnder ein ander vnd gwurcz vnd feribs vnd fasß das In denn darm vnd sewdt dy w= urst vnd pracz dar nach ysß also truken</p>
+        </div>
+        <div type="translation" xml:id="mon-146-trans" xml:lang="de" corresp="#mon-146-orig">
+          <p>Nimm den Enddarm vom Kalb und mache ihn ganz sauber. Hacke die Lunge und den Speck untereinander. Würze und färbe die Masse. Fülle sie dann in den Darm. Siede die Wurst und brate sie danach. Iss sie so trocken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="den affter darInn von dem kalb">Kalbs-Enddarm (als Wursthülle)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dy lungel">Kalbslunge</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="spek" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-146-trans" resp="#fyndling">Welches Gericht ist das? Eine Brühwurst aus Kalbslunge und Speck, im Kalbs-Enddarm gefüllt, erst gesiedet, dann gebraten und ganz ohne Sauce ("trocken") gegessen - ein deftiges, einfaches Innereien-Gericht ohne die aufwändige Würzung anderer Wurst-Rezepte des Buchs.
+
+So gelingt es. Der Enddarm muss wirklich gründlich gereinigt werden (der Text betont das ausdrücklich), aber - anders als bei vielen anderen Darm-Rezepten im Buch - ohne Säuern, da das Milde des Darms hier offenbar erwünscht ist. Kalbslunge und Speck fein und gleichmäßig hacken, würzen (Pfeffer als Standard-Annahme) und färben (Safran für Gelb, oder Petersilie für Grün - im Text nicht spezifiziert). Die Masse locker in den vorbereiteten Darm füllen, damit beim Sieden noch Platz zum Ausdehnen bleibt.
+
+So wird es richtig gut. Erst sieden (bindet die Füllung und macht die Wurst schnittfest), dann erst braten (für Röstaromen und eine krossere Haut) - diese Zweistufigkeit ist der Kern der Technik. Da die Wurst „trocken“, also ohne Sauce, gegessen wird, sollte die Würzung in der Füllung selbst kräftig genug sein, um für sich zu bestehen.</note>
+        <note type="gloss" target="#mon-146-orig" n="after darInn" resp="#fyndling">NICHT ‚Innereien‘ allgemein: mhd./fnhd. ‚after‘ = ‚hinten/danach‘ - der ‚after darInn‘ ist der End-/Mastdarm (der letzte, dickste Darmabschnitt), die traditionelle Hülle für dicke Würste, weil er viel Füllung aufnimmt und beim Sieden+Braten formstabil bleibt. Der nahezu wortgleiche Zwillingstext mha-020 (‚Wurst machstu aus ainem affter darmm von ainem kalb‘) bestätigt diese Lesart eindeutig - dort ist unmissverständlich der Darm als Wursthülle gemeint, nicht die Innereien insgesamt.</note>
+        <note type="gloss" target="#mon-146-orig" n="mach den gar sewr" resp="#fyndling">NICHT ‚sauer zubereiten‘: Der Zwillingstext mha-020 hat an exakt derselben Stelle ‚mach den gar sauber‘ (mache ihn ganz sauber) - ‚sewr‘ ist hier vermutlich eine Schreiber-Verwechslung von mhd. ‚sûr‘ (sauer) mit dem lautlich ähnlichen ‚sûber‘ (sauber), oder schlicht ein Kopierfehler. Gemeint ist die gründliche Reinigung des Enddarms, bevor er mit der Lungen-Speck-Masse gefüllt wird - eine Standard-Vorbereitung bei der Wurstherstellung, kein Säuerungsprozess.</note>
+        <note type="gloss" target="#mon-146-orig" n="lungel" resp="#fyndling">Eine Diminutivform von Lunge, hier die Kalbslunge.</note>
+        <note type="gloss" target="#mon-146-orig" n="darm" resp="#fyndling">Bezeichnet denselben Enddarm, der zuvor gereinigt wurde (siehe ‚after darInn‘) - hier wird er mit der fertigen Lungen-Speck-Masse gefüllt.</note>
+        <note type="gloss" target="#mon-146-orig" n="pracz" resp="#fyndling">Eine bairische Lautvariante des Verbs ‚braten‘, hier im Imperativ: brate es.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pracz"/></note>
+        <note type="interpretive_choice" target="#mon-146-orig" n="after darInn" resp="#fyndling">‚After darInn‘ = der End-/Mastdarm des Kalbes, verwendet als Wursthülle - nicht die Innereien im Allgemeinen. Der nahezu wortgleiche Zwillingstext mha-020 (‚Wurst machstu aus ainem affter darmm von ainem kalb‘) bestätigt diese Lesart eindeutig.</note>
+        <note type="interpretive_choice" target="#mon-146-orig" n="sewr" resp="#fyndling">‚Sauber‘, nicht ‚sauer‘ - der Zwillingstext mha-020 hat an derselben Position exakt ‚mach den gar sauber‘. ‚Sewr‘ ist vermutlich eine Schreiber-Verwechslung der lautlich ähnlichen mhd. Wörter ‚sûr‘ (sauer) und ‚sûber‘ (sauber).</note>
+        <note type="interpretive_choice" target="#mon-146-orig" n="gwurcz" resp="#fyndling">‚Gwurcz‘ wird als Verb ‚würze‘ im Imperativ interpretiert, was eine Anweisung zum Würzen der Masse darstellt.</note>
+        <note type="interpretive_choice" target="#mon-146-orig" n="feribs" resp="#fyndling">‚Feribs‘ wird als Verb ‚färbe es‘ im Imperativ gelesen, was die Anweisung gibt, die Wurstmasse farblich zu gestalten.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

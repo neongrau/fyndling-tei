@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mus von Hirn</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/m384-055/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 384</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M2 (CC BY 4.0, hdl.handle.net/11471/562.10)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 2. Hälfte 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m384-055">
+        <head>Mus von Hirn</head>
+        <div type="original" xml:id="m384-055-orig" xml:lang="de-x-fnhd" corresp="#m384-055-trans">
+          <p>muosz von hiern
+
+Hiern czuch durch mit brott vnd mach muosz darusz mit ayern vnd mit milch ob du wilt wisz oder gefaerbt</p>
+        </div>
+        <div type="translation" xml:id="m384-055-trans" xml:lang="de" corresp="#m384-055-orig">
+          <p>Nimm das Hirn und passiere es mit Brot durch. Mache daraus ein Mus mit Eiern und mit Milch. Du kannst es weiß lassen oder färben, ganz nach Belieben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="brain" orig="Hiern" commodity="wikidata:Q719458" source="#corema-ingredient-index">Hirn</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="brott" commodity="wikidata:Q7802" source="#corema-ingredient-index">Brot</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayern" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="milk" orig="milch" commodity="wikidata:Q8495" source="#corema-ingredient-index">Milch</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m384-055-trans" resp="#fyndling">Welches Gericht ist das? Ein feines Hirn-Mus: Tierhirn (Kalb oder Schwein) wird mit Brot durch ein Tuch passiert und mit Eiern und Milch zu einem zarten Mus verkocht - wahlweise hell belassen oder gefärbt. Hirn galt als delikate, weiche Zutat; das Durchpassieren mit Brot bindet und macht es besonders fein. Technisch das Zwillingsverfahren zum Fischrogen-Mus Mus von Fischrogen (Innerei + Brot durchstreichen → Mus); für eine gebackene Hirn-Variante vgl. Gebratenes Hirn.
+
+czuch durch = durchpassieren. Das Hirn wird durch Sieb oder Tuch gestrichen (nicht nur zerdrückt), um die für ein muosz typische glatte Konsistenz zu erreichen. Ehlert übersetzt czuch durch schlicht mit „ziehe durch".</note>
+        <note type="gloss" target="#m384-055-orig" n="Hiern" resp="#fyndling">Gehirn, meist vom Kalb oder Schwein, das in der mittelalterlichen Küche häufig verwendet wurde.</note>
+        <note type="gloss" target="#m384-055-orig" n="czuch durch" resp="#fyndling">Bedeutet ‚durchziehen‘ oder ‚passieren‘, um eine feine, breiige Konsistenz zu erhalten, wie es für ein Mus typisch ist.</note>
+        <note type="gloss" target="#m384-055-orig" n="muosz" resp="#fyndling">Mus oder Brei, eine häufige Zubereitungsform für Fleisch, Fisch, Gemüse oder Obst im Mittelalter.</note>
+        <note type="gloss" target="#m384-055-orig" n="wisz oder gefaerbt" resp="#fyndling">Die Wahl, das Mus entweder weiß zu lassen (z.B. durch die Verwendung von Eiweiß und Verzicht auf färbende Gewürze) oder es zu färben (z.B. mit Safran für Gelb oder Eidottern für ein kräftigeres Gelb/Orange).</note>
+      </div>
+    </back>
+  </text>
+</TEI>

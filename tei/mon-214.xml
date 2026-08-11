@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mohnkäse mit Mohnmilch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-10">2026-07-10</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-214/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.213</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-214">
+        <head>Mohnkäse mit Mohnmilch</head>
+        <div type="original" xml:id="mon-214-orig" xml:lang="de-x-fnhd" corresp="#mon-214-trans">
+          <p>ITem wil dw machen ein chas von magen So nym magen vnd wasch den schon vnd stoz denn in dy schotten obem vnd mach ab ain kass da von schol man nuss milich ein machen vnd mit czucker mach die milich suesss vnd ge= wss sy dan auff den chass</p>
+        </div>
+        <div type="translation" xml:id="mon-214-trans" xml:lang="de" corresp="#mon-214-orig">
+          <p>Wenn du einen Käse aus Mohn machen willst, dann nimm Mohn und wasche ihn gründlich. Stoße ihn dann, bis sich oben der Schotten absetzt - nimm ihn ab und mach daraus einen Käse.</p>
+          <p>Dazu soll man Mohnmilch zubereiten und diese mit Zucker süßen. Gieße die gesüßte Mohnmilch dann auf den Käse.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="magen">Mohn</ingredient>
+            </item>
+            <item>
+              <ingredient en="quark" orig="schotten" commodity="wikidata:Q259642" source="#corema-ingredient-index">Schotten (Mohn-Quark)</ingredient>
+            </item>
+            <item>
+              <ingredient en="nut milk" orig="nuss milich" commodity="wikidata:Q107246657" source="#corema-ingredient-index">Mohnmilch</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="czucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-214-trans" resp="#fyndling">Welches Gericht ist das? Ein pflanzliches „Käse“-Imitat aus Mohn für die Fastenzeit: Mohn wird gewaschen, zerstoßen und mit Wasser zu einer Mohnmilch verarbeitet, die beim Erhitzen aufschwimmende, quarkartige Masse abgeschöpft und zu einem Laib geformt - anschließend mit gesüßter Mohnmilch übergossen. Ein fast wortgleicher Zwilling dieses Verfahrens findet sich im Kochbuch Meister Hans unter dem Titel „Mohnkäse“, verwandt sind auch dortige Mandel- und Hanf-Schotten-Rezepte - allesamt Milch- und Käseimitate für die Fastenzeit, gewonnen durch Kochen und Abschöpfen pflanzlicher Nussmilch statt Tiermilch.
+
+Der Kern der Zubereitung liegt im Wort „Schotten“: Es bezeichnet nicht ein Gefäß oder eine Form, sondern die beim Sieden der Mohnmilch oben aufschwimmende, geronnene Masse - ein Quark-Analogon, das rein physikalisch durch Verdunsten und Abtropfen der Flüssigkeit entsteht, ganz ohne Lab, Ei oder Mehlschwitze. Die knappe Formulierung des Originals setzt den Kochschritt (Mohn mit Wasser aufkochen) stillschweigend voraus, wie in dieser Handschrift öfter.
+
+Praxis. Mohn gründlich waschen und im Mörser fein zerstoßen, mit Wasser zu einer dickflüssigen Mohnmilch verrühren und kurz aufkochen. Die sich dabei oben absetzende feste Masse abschöpfen, durch ein Tuch abtropfen lassen und zu einem Laib pressen - das Ergebnis ist keine schnittfeste Käsemasse, sondern eine weiche, feuchte Curd-artige Konsistenz, vergleichbar mit frischem Ricotta. Separat eine zweite Portion Mohnmilch zubereiten, mit Zucker süßen und über den geformten Mohnkäse gießen. Ohne Kühlbedarf am offenen Feuer zubereitbar.</note>
+        <note type="gloss" target="#mon-214-orig" n="magen" resp="#fyndling">Hier im Sinne von Mohn (Schlafmohn), nicht der anatomische Magen. Mohn war eine wichtige Zutat für Fastenspeisen und Süßspeisen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="gloss" target="#mon-214-orig" n="schotten" resp="#fyndling">Bezeichnet hier nicht ein Gefäß oder eine Form, sondern die beim Kochen der Mohnmilch oben aufschwimmende, quarkartige Masse - ein pflanzliches Quark-Analogon aus Mohn, das abgeschöpft und zu einem Käse geformt wird. Dieselbe Bedeutung trägt „Schotten“/„Sotten“ auch im fast wortgleichen Mohnkäse-Rezept des Kochbuchs Meister Hans.</note>
+        <note type="gloss" target="#mon-214-orig" n="nuss milich" resp="#fyndling">Wörtlich 'Nussmilch', aber im Kontext von Mohn als Hauptzutat ist hier Mohnmilch gemeint. Diese wurde aus gemahlenem Mohn und Wasser hergestellt und diente als pflanzliche Milchalternative.</note>
+        <note type="gloss" target="#mon-214-orig" n="czucker" resp="#fyndling">Im 15. Jahrhundert war Zucker ein teures Importgut und wurde oft als Statussymbol verwendet. Hier ist unraffinierter Rohrzucker gemeint, der eine leicht bräunliche Farbe hatte.</note>
+        <note type="interpretive_choice" target="#mon-214-orig" n="schotten obem" resp="#fyndling">‚Schotten oben‘ - die beim Erhitzen der Mohn-Wasser-Masse oben aufschwimmende, geronnene Masse (ein Quark-Analogon aus Mohn), die abgeschöpft und zu einem Käse geformt wird. 'Obem' = 'oben' (bairisches Adverb, vgl. Schmeller-Wörterbuch).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schotten-obem"/></note>
+        <note type="interpretive_choice" target="#mon-214-orig" n="nuss milich" resp="#fyndling">‚Mohnmilch‘. Im Kontext des 'Käses aus Mohn' ist die 'Nussmilch' hier spezifisch als Mohnmilch zu verstehen, die aus der gleichen Hauptzutat gewonnen wird.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

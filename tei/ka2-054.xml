@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Eier-Mus mit Schaumlöffel-Frittern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-26">2026-07-26</date>
+        <idno type="url">https://fyndling.de/rezepte/ka2-054/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 793</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, unteres Inntal/Mühldorf am Inn, ca. 1445-1470)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka2-054">
+        <head>Eier-Mus mit Schaumlöffel-Frittern</head>
+        <div type="original" xml:id="ka2-054-orig" xml:lang="de-x-fnhd" corresp="#ka2-054-trans">
+          <p>Ein gmus zeuch einen taig mit iij aiern ab vnd gews den selben taig durch einen schawmloffel der In schmalcz wol gehiczt sey gemachssam so geracz ? zu arbais vnd zeuchs aus der pfann vnd mach ein aier prue vnd legs In dy aier prue vnd machs ab</p>
+        </div>
+        <div type="translation" xml:id="ka2-054-trans" xml:lang="de" corresp="#ka2-054-orig">
+          <p>Für ein Mus bereite einen Teig mit drei Eiern zu.</p>
+          <p>Und gieße diesen Teig gemächlich durch einen Schaumlöffel in das gut erhitzte Schmalz, sodass es zu Erbsen gerät. Nimm es aus der Pfanne.</p>
+          <p>Und mache eine Eierbrühe. Lege die Frittern in die Eierbrühe und schmecke es ab.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="iij aiern">Eier</ingredient> - 3</item>
+            <item>
+              <ingredient en="animal fat" orig="schmalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg stock" orig="aier prue" commodity="wikidata:Q107246599" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg stock" orig="aier prue" commodity="wikidata:Q107246599" source="#corema-ingredient-index">Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Gewürz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka2-054-trans" resp="#fyndling">Welches Gericht ist das? Ein dünner Eierteig wird tropfenweise durch einen gelöcherten Schaumlöffel in gut erhitztes Schmalz gegossen; die Tropfen stocken darin zu erbsengroßen Klümpchen, die anschließend in eine gebundene Eierbrühe gelegt werden. Die lebende Verwandtschaft ist unübersehbar: die bis heute gekochte österreichisch-bayerische Backerbsensuppe - kleine, aus dünnem Teig in heißem Fett geformte, erbsengroße Frittern als Brüheinlage. Form, Technik und Verwendung stimmen auffällig überein, auch wenn sich daraus keine durchgehend belegte Überlieferungslinie über die Jahrhunderte ableiten lässt.
+
+Zur Teig-Frage. Der Text nennt für den Teig ausschließlich Eier, kein Mehl. Ein reiner, dünnflüssiger Eierteig neigt beim Träufeln durch den Schaumlöffel eher zu feinen Fäden als zu festen, erbsenförmigen Klümpchen; etwas Bindung (Mehl oder feines Brot) würde das Ergebnis erleichtern. Wir folgen dennoch der reinen Eierteig-Lesart als Primärlesart, weisen aber auf diese praktische Spannung hin.
+
+Praxis. Drei Eier gut verquirlen. Das Schmalz in einer Pfanne gut erhitzen, ohne es rauchen zu lassen. Den Eierteig gemächlich durch einen Schaumlöffel hindurchgießen, sodass runde, erbsengroße Stücke entstehen, und diese darin fertig backen. Mit dem Schaumlöffel aus dem Fett heben. Parallel eine einfache Brühe mit verquirltem Ei binden, die Frittern hineinlegen und mit Gewürz und Salz abschmecken.</note>
+        <note type="gloss" target="#ka2-054-orig" n="gmus" resp="#fyndling">Ein ‚Mus‘ bezeichnete im Mittelalter eine breiige Speise, oft aus zerstoßenen Zutaten. Hier ist es ein Gericht aus kleinen Frittern.</note>
+        <note type="gloss" target="#ka2-054-orig" n="schawmloffel" resp="#fyndling">Ein Schaumlöffel ist eine Kelle mit Löchern, die zum Abschöpfen von Schaum oder zum Herausheben von Gargut aus Flüssigkeiten verwendet wird. Hier dient er als Formgeber für die Frittern.</note>
+        <note type="gloss" target="#ka2-054-orig" n="schmalcz" resp="#fyndling">Tierisches Fett, meist von Schwein oder Gans, das zum Braten und Kochen verwendet wurde. In der Fastenzeit wurde es durch Pflanzenöl ersetzt.</note>
+        <note type="gloss" target="#ka2-054-orig" n="aier prue" resp="#fyndling">Eine Brühe, die mit Eiern verfeinert oder gebunden wird. Die Basis variiert im Korpus stark (etwa Fischschuppen-, Schweinsfüße- oder Hausenblasenbrühe); für dieses Rezept nennt der Text die genaue Grundlage nicht.</note>
+        <note type="gloss" target="#ka2-054-orig" n="arbais" resp="#fyndling">Erbsen; hier als reiner Vergleich für die runde, kleine Form der Frittern gebraucht, nicht als Zutat. Das Gericht hat eine auffällige lebende Verwandte: die bis heute gekochte österreichisch-bayerische Backerbsensuppe mit kleinen, in heißem Fett geformten Fritterstückchen als Brüheinlage.</note>
+        <note type="interpretive_choice" target="#ka2-054-orig" n="taig mit iij aiern" resp="#fyndling">Wir übersetzen 'Teig mit drei Eiern' als einen einfachen Eierteig oder eine Eierbatter, die hauptsächlich aus Eiern besteht, da kein Mehl explizit genannt wird.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

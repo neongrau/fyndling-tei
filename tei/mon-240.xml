@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rote Geislitz</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-11">2026-07-11</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-240/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.239</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-240">
+        <head>Rote Geislitz</head>
+        <div type="original" xml:id="mon-240-orig" xml:lang="de-x-fnhd" corresp="#mon-240-trans">
+          <p>Welt Ir machen rottew geysslicz So nempt ain ? 1/2 talentum weinper slachs durch mit der geysslycz gewurcz woll vnd saffrian thue dar an wann sy nun gesotten isst so gewss sy auff ain schussell vnd lass chalt werden vnd gibs hin also etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-240-trans" xml:lang="de" corresp="#mon-240-orig">
+          <p>Wollt ihr eine rote Geislitz zubereiten, so nehmt ein halbes Pfund Rosinen. Passiert diese gut mit den Gewürzen für die Geislitz und gebt Safran hinzu. Wenn die Masse gesotten ist, gießt sie auf eine Schüssel und lasst sie kalt werden. Serviert sie dann so.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ain ? 1/2 talentum weinper">Rosinen</ingredient> - 250 g</item>
+            <item>
+              <ingredient en="spice" orig="gewurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze (für die Geislitz)</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffrian" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-240-trans" resp="#fyndling">Welches Gericht ist das? Eine gekochte, mit Rosinen und Gewürzen versetzte Masse, die auf eine Schüssel gegossen wird und beim Erkalten fest wird - kein Getränk und keine dünne Sauce, sondern eine gestockte Frucht-Süßspeise, wie man sie heute am ehesten von einem festen Fruchtaufstrich oder einer Latwerge kennt.
+
+Die stillschweigend vorausgesetzte Flüssigkeit. Der Text nennt weder Wasser noch Wein zum Einweichen der Rosinen, doch trockene Rosinen lassen sich kaum roh „durchschlagen“ (passieren) - dafür braucht es vorheriges Einweichen oder kurzes Erwärmen in etwas Flüssigkeit. Das Rezept setzt diesen Zwischenschritt vermutlich als bekannt voraus, wie es die gleiche Formel „slachs durch“ auch im Schwesterrezept mon-239 tut.
+
+Praxis. Rosinen (250 g) mit einem Schuss Wasser oder Wein kurz erwärmen, bis sie weich sind, dann zusammen mit den Gewürzen für die Geislitz fein durch ein Sieb oder eine Reibe passieren, bis eine glatte Masse entsteht. Safran erst danach unterrühren, er braucht keine lange Kochzeit. Die Masse kurz aufkochen und einkochen lassen, bis sie sich verdickt, dann in eine Schüssel gießen und an einem kühlen, schattigen Ort (oder über Nacht) fest werden lassen. Kalt servieren.</note>
+        <note type="gloss" target="#mon-240-orig" n="geysslicz" resp="#fyndling">Der Begriff „Geislitz“ (von slawisch „kyselice“) bezeichnete ursprünglich eine saure Hafergrütze. Im Spätmittelalter erweiterte sich die Bedeutung jedoch auf verschiedene Arten von festen, gegossenen und kalt gestockten Speisen, oft auf Frucht- oder Weinbasis. Hier handelt es sich um eine gewürzte, gesüßte und gefärbte Variante.</note>
+        <note type="gloss" target="#mon-240-orig" n="talentum" resp="#fyndling">Ein „Talentum“ war ein mittelalterliches Gewichtsmaß, das regional variierte. Im süddeutschen und österreichischen Raum entsprach es oft einem Pfund, also etwa 500 g. Ein halbes Talentum sind demnach etwa 250 g.</note>
+        <note type="gloss" target="#mon-240-orig" n="slachs durch" resp="#fyndling">„Slachs durch“ (von „schlagen durch“) bedeutet hier, die Rosinen zu passieren oder sehr fein zu zerstoßen/pürieren, um eine glatte Masse zu erhalten, die sich gießen und stocken lässt.</note>
+        <note type="gloss" target="#mon-240-orig" n="geysslycz gewurcz" resp="#fyndling">„Der Geislitz-Gewürz“ (mit bestimmtem Artikel) legt eine feststehende, für Geislitz-Gerichte übliche Gewürzmischung nahe statt allgemeiner Gewürze. Im Schwesterrezept mon-239 steht an derselben Stelle eine namentlich benannte Mischung („Rumanie“) - ein Hinweis, dass solche Mischungen rezeptintern als Fachbegriff behandelt wurden.</note>
+        <note type="gloss" target="#mon-240-orig" n="weinper" resp="#fyndling">Die CoReMA-GAMS-Objektseite zu diesem Rezept glossiert „weinper“ allgemein als „grape“, ohne zwischen frisch und getrocknet zu unterscheiden. Im Kontext (feste Gewichtsmenge, Verarbeitung zu einer stichfesten, passierten Masse) bleibt „Rosinen“ die im Korpus übliche und hier plausiblere Lesart.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#mon-240-orig" n="geysslicz / geysslycz" resp="#fyndling">„Geislitz“ als Gerichtname, eine Art gewürzte, gesüßte und kalt gestockte Speise auf Frucht- oder Weinbasis. Die CoReMA-GAMS-Glosse „sauce (dish)“ unterstützt eine breite Interpretation als zubereitetes Gericht, das auch eine sämige Konsistenz haben kann. Die „rottew“-Färbung und die Zutaten (Rosinen, Safran) passen zu einer solchen Speise.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandelkäse</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-21">2026-06-21</date>
+        <idno type="url">https://fyndling.de/rezepte/m5919-042/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 5919</title>
+          <date when="1505" cert="low">um 1500</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m9/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m9</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m9</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M9 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, Regensburg, um 1500-1510)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m5919-042">
+        <head>Mandelkäse</head>
+        <div type="original" xml:id="m5919-042-orig" xml:lang="de-x-fnhd" corresp="#m5919-042-trans">
+          <p>Von mandel ain gmus das las wir nu stann von mandel gmus wel wir iner han man mus machen ain mandel= käs vnd wan dy milch Nu gesoten ist so thu sy auf ain schussel das scheiblich sey In der schussel ste vnd geus mus milch dy mustu mit zucher machen gut wildu nu den kas haben so pesteck den kas mit nus kernen</p>
+        </div>
+        <div type="translation" xml:id="m5919-042-trans" xml:lang="de" corresp="#m5919-042-orig">
+          <p>Vom Mandelmus: Daraus macht man einen Mandelkäse. Setze eine Mandelmilch an, die du gut mit Zucker süßt, und koche sie auf. Wenn die Milch gekocht ist, gieße sie auf eine Schüssel, sodass sie dort scheibenförmig erstarrt. Übergieße sie dann mit einer gezuckerten Mandelmilch. Willst du den Käse anrichten, so bestecke ihn mit Nusskernen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="mandel gmus">Mandelmus</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zucher" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="nut" orig="nus kernen" commodity="wikidata:Q11009" source="#corema-ingredient-index">Nusskerne</ingredient>
+            </item>
+            <item>
+              <ingredient en="milk" orig="milch" commodity="wikidata:Q8495" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m5919-042-trans" resp="#fyndling">Welches Gericht ist das? Ein Mandelkäse - gesüßte, dick gekochte Mandelmilch, die auf einer Schüssel scheibenförmig erstarrt und, mit Nusskernen besteckt, mit einer gezuckerten Mandelmilch als Begleitsauce serviert wird. Teil der großen Mandelkäse-/Mandelmus-Sippe (bgs-072, bgs-039, mha-004, koe-017).
+
+Bindung (ehrlich). Das Rezept nennt kein Geliermittel; die Masse erstarrt durch die dick eingekochte, mandelreiche Milch beim Abkühlen. Wer sie sicher schnittfest will, bindet wie die Verwandten mit etwas Hausenblase/Gelatine (vgl. mha-004) oder Reismehl.
+
+Praxis. Aus Mandelmus/gemahlenen Mandeln eine dicke Mandelmilch ansetzen, gut zuckern, aufkochen und auf einer flachen Schüssel erkalten und erstarren lassen; vor dem Servieren mit gezuckerter Mandelmilch übergießen und mit ganzen Mandel-/Nusskernen bestecken.</note>
+        <note type="gloss" target="#m5919-042-orig" n="mandel=käs" resp="#fyndling">Mandelkäse - eine Art fester Pudding oder Gelee aus Mandelmilch, oft mit Gewürzen oder Früchten zubereitet. Er war eine beliebte Fastenspeise, da er ohne tierische Produkte auskommt.</note>
+        <note type="gloss" target="#m5919-042-orig" n="scheiblich" resp="#fyndling">Scheibenförmig, so dass es in Scheiben geschnitten werden kann. Dies deutet auf eine feste, schnittfähige Konsistenz hin, die durch ein Bindemittel oder starkes Reduzieren der Flüssigkeit erreicht wird.</note>
+        <note type="gloss" target="#m5919-042-orig" n="pesteck" resp="#fyndling">Verzieren, bestecken. Hier: mit Nusskernen belegen oder garnieren.</note>
+        <note type="interpretive_choice" target="#m5919-042-orig" n="das las wir nu stann von mandel gmus wel wir iner han" resp="#fyndling">Diese Phrase wurde als allgemeine Einleitung oder als Hinweis auf die Verfügbarkeit des Mandelmus als Basis verstanden: ‚Lasst uns nun das Mandelmus beiseitelegen, das wir zur Hand haben wollen.‘</note>
+        <note type="interpretive_choice" target="#m5919-042-orig" n="mus milch" resp="#fyndling">gemeint ist die Mandelmilch (bzw. dünne Mandelmus-Milch), die als gezuckerte Begleitsauce über den erstarrten Mandelkäse gegossen wird.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

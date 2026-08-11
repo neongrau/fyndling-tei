@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Klebwurst aus Bocksleber</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-16">2026-07-16</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-059/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-059">
+        <head>Klebwurst aus Bocksleber</head>
+        <div type="original" xml:id="ka1-059-orig" xml:lang="de-x-fnhd" corresp="#ka1-059-trans">
+          <p>Kleb wurst Nem ains bocks leber vnd hack sy klain also grun mit aiger mit wysem brot vnd bewurtz es vnd faerbs vnd bewind es mit ainem mit ainem netz vnd roschs oder brauts du macht ouch dar vnder hacken speck vnd peterlin etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-059-trans" xml:lang="de" corresp="#ka1-059-orig">
+          <p>Für eine Klebwurst nimm die Leber eines Bocks und hacke sie klein, [noch] roh. Mische sie mit Eiern und weißem Brot. Würze die Masse und färbe sie nach Belieben. Wickle die Masse dann in ein Fettnetz und röste es oder brate es. Du kannst auch Speck und Petersilie darunter hacken, etc.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ains bocks leber">Bocksleber</ingredient> - 1</item>
+            <item>
+              <ingredient en="chicken egg" orig="aiger" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="wysem brot" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Weißbrot</ingredient>
+            </item>
+            <item>
+              <ingredient orig="bewurtz es">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="caul fat" orig="netz" commodity="wikidata:Q662490" source="#corema-ingredient-index">Fettnetz</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="speck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="peterlin" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-059-trans" resp="#fyndling">Welches Gericht ist das? Eine rohe, klein gehackte Leberfarce aus Bocksleber, gebunden mit Ei und Weißbrot, gewürzt, in ein Fettnetz gewickelt und darin geröstet oder gebraten. Trotz des Namens ist das keine Wurst im heutigen Sinn - kein Darm, keine Brühwurst-Technik -, sondern eine im Netz gegarte Farce. Lebende Verwandte sind die französische Crépinette de foie, die englischen Faggots und der süddeutsche Netz- beziehungsweise Wickelbraten aus Innereien; das Bindeprinzip aus Ei und Weißbrot lebt bis heute in Frikadelle und Fleischpflanzerl fort.
+
+Was bedeutet 'klain also grun'? Die Anweisung meint nicht die Farbe, sondern den Garzustand der Leber beim Hacken: 'grun'/'gruen' steht hier für 'frisch, roh, unverarbeitet' - die Leber wird also roh und klein gehackt, bevor die Masse gegart wird. Dieselbe Formel findet sich wortgleich in den Schwesterrezepten ka1-031, m384-047 und m384-070.
+
+Praxis. Die rohe Bocksleber fein hacken oder im Mörser zerkleinern, mit Ei und Weißbrot (frisch oder eingeweicht - der Text legt sich nicht fest) zu einer streichfähigen Masse verbinden. Nach Belieben würzen (etwa Pfeffer, Ingwer, Nelken, Muskat) und färben - period-treu etwa mit Safran für Gelb oder Petersiliensaft für Grün, nicht mit modernen Farbstoffen. Die Masse in ein Fettnetz wickeln; das Netzfett bastet die sonst fettarme Leber-Ei-Masse beim Garen von außen. Rösten über der Glut oder Braten in der Pfanne, je nach Vorliebe. Da rohe Leber und rohes Ei verarbeitet werden, sollte die Masse vollständig durchgegart werden, bis kein roher Kern mehr vorhanden ist - der Text selbst nennt keinen Gargrad, aus Sicherheitsgründen ist das aber die empfohlene Praxis. Speck und Petersilie können optional untergehackt werden.</note>
+        <note type="gloss" target="#ka1-059-orig" n="Kleb wurst" resp="#fyndling">Eine ‚Klebwurst‘ oder ‚Klobwurst‘ war im Mittelalter eine Art Wurst oder Frikadelle, oft aus gehacktem Fleisch oder Innereien, die in ein Fettnetz gewickelt und dann gebraten oder geröstet wurde. Der Name könnte sich auf die klebrige Konsistenz der Füllung oder die Art der Zubereitung (‚kleben‘ im Fettnetz) beziehen.</note>
+        <note type="gloss" target="#ka1-059-orig" n="grun" resp="#fyndling">Die Anweisung, die Leber ‚grün‘ zu hacken, bezieht sich nicht auf eine Farbe, sondern auf ihren Garzustand: ‚grün‘/‚gruen‘ bedeutet in diesem Kontext ‚frisch, roh, unverarbeitet‘ - die Leber wird also klein gehackt, während sie noch roh ist, bevor die Masse gemeinsam mit Ei und Weißbrot gegart wird. Die eng verwandten Rezepte ka1-031, m384-047 und m384-070 verwenden dieselbe Formel und stützen diese Lesart.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
+        <note type="gloss" target="#ka1-059-orig" n="faerbs" resp="#fyndling">Die allgemeine Anweisung ‚färbe es‘ ist typisch für mittelalterliche Rezepte. Ohne spezifische Angabe des Farbstoffs überließ man die Wahl dem Koch. Je nach gewünschtem Effekt konnten Safran (gelb), Blut (rotbraun) oder Kräuter (grün) verwendet werden. Hier ist eine natürliche Färbung durch die Zutaten oder eine leichte Bräunung beim Garen wahrscheinlich gemeint.</note>
+        <note type="gloss" target="#ka1-059-orig" n="netz" resp="#fyndling">Das ‚Netz‘ ist das sogenannte ‚Fettnetz‘ oder ‚Netzfett‘ (Omentum majus), eine dünne Fettschicht, die die Eingeweide von Schweinen, Rindern oder Lämmern umhüllt. Es wird in der Küche verwendet, um Füllungen oder Frikadellen zu umwickeln, damit sie beim Garen saftig bleiben und eine schöne Form erhalten.</note>
+        <note type="gloss" target="#ka1-059-orig" n="roschs oder brauts" resp="#fyndling">Hier werden zwei Zubereitungsarten angeboten: ‚rösten‘ (über offener Flamme oder Glut) oder ‚braten‘ (in der Pfanne mit Fett). Beide Methoden waren im Mittelalter gebräuchlich.</note>
+        <note type="gloss" target="#ka1-059-orig" n="etc." resp="#fyndling">Die Abkürzung ‚etc.‘ (et cetera) am Ende des Rezepts deutet darauf hin, dass weitere optionale Zutaten oder Zubereitungsschritte üblich waren, aber hier nicht explizit aufgeführt werden. Dies war in mittelalterlichen Kochbüchern nicht unüblich.</note>
+        <note type="interpretive_choice" target="#ka1-059-orig" n="grun" resp="#fyndling">‚grün‘/‚gruen‘ bezieht sich auf den Garzustand der Leber beim Hacken - ‚frisch, roh, unverarbeitet‘ - nicht auf eine Farbe.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
+        <note type="interpretive_choice" target="#ka1-059-orig" n="ainem mit ainem netz" resp="#fyndling">Die Wiederholung ‚mit ainem mit ainem‘ ist ein scribaler Fehler und bedeutet ‚mit einem Netz‘.</note>
+        <note type="interpretive_choice" target="#ka1-059-orig" n="faerbs" resp="#fyndling">‚färbe es‘ ist eine allgemeine Anweisung zur optischen Gestaltung des Gerichts, ohne einen spezifischen Farbstoff vorzuschreiben.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

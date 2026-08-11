@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Knoblauchsauce zu Speisen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-08-04">2026-08-04</date>
+        <idno type="url">https://fyndling.de/rezepte/mha-144/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Maister Hannsen des von Wirtenberg Koch</title>
+          <date when="1460">1460</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.bs1/TEI_SOURCE.2021-01-15</idno>
+          <idno type="corema-sigle">bs1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.bs1</idno>
+          <idno type="corema-recipe">bs1.144</idno>
+          <note>Transkription: Astrid Böhm &amp; Helmut W. Klug, CoReMA TEI-Edition (Uni Graz, 2021, CC BY 4.0); Sekundäredition: Anton Birlinger, Alemannia 1, Bonn 1865 (Public Domain)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch-schwäbisch, 1460)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mha-144">
+        <head>Knoblauchsauce zu Speisen</head>
+        <div type="original" xml:id="mha-144-orig" xml:lang="de-x-fnhd" corresp="#mha-144-trans">
+          <p>Ain salsen von knofflach zue gemuess also
+
+Item salsen von knofflach zue gemuess Nym vnd reib mandel keren vnd semel zue dem knofflach das ist guot ze essen zue dem gemusz</p>
+        </div>
+        <div type="translation" xml:id="mha-144-trans" xml:lang="de" corresp="#mha-144-orig">
+          <p>Nimm Knoblauch. Reibe Mandelkerne und Semmelbrösel dazu. Dies ist eine gute Sauce, die du zu Speisen essen kannst.</p>
+          <p>Hinweis zur Zubereitung: Der FNHD-Text ist sehr knapp gehalten und nennt keine Flüssigkeit - die ergäbe sich aber automatisch beim Reiben/Stoßen im Mörser. Vergleichbare Knoblauchsaucen im Korpus verwenden: Wasser (mar-117 Agliata Bianca, identische Zutaten + Wasser), Verjus (men-274), Essig (mar-118, bgs-032) oder Brühe (boc-073). Eine plausible Ergänzung wären 2-4 Esslöffel Wasser oder Verjus, mit etwas Salz nach Geschmack.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="garlic" orig="knofflach" commodity="wikidata:Q21546392" source="#corema-ingredient-index">Knoblauch</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond" orig="mandel keren" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandelkerne</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="semel" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Semmelbrösel</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="gloss" target="#mha-144-orig" n="gemuess" resp="#fyndling">Im Frühneuhochdeutschen konnte ‚gemuess‘ sowohl ‚Gemüse‘ als auch allgemein ‚Speise‘ oder ‚Gericht‘ bedeuten. Die CoReMA-Objektseite zu diesem Rezept verknüpft den Begriff hier zusätzlich mit dem Wikidata-Konzept ‚Mus/Brei‘ (puree) - der Schreiber rahmt das Wort im Text sogar doppelt (‚zue gemuess also‘ am Anfang, ‚zue dem gemusz‘ am Ende). Naheliegend ist daher, dass hier speziell eine mus- beziehungsweise breiartige Beilage gemeint ist, zu der die Sauce gereicht wird - nicht zwingend Gemüse im engeren Sinn.</note>
+        <note type="gloss" target="#mha-144-orig" n="semel" resp="#fyndling">Hier sind Semmelbrösel gemeint, die zum Binden und Andicken der Sauce dienen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+        <note type="interpretive_choice" target="#mha-144-orig" n="fehlende Flüssigkeit (Skelett-Rezept)" resp="#fyndling">Das Rezept nennt explizit nur Knoblauch + Mandelkerne + Semmelbrösel und keine Flüssigkeit. Drei trockene Zutaten ergeben aber keine Sauce - eine flüssige Komponente fehlt. Das ist typisch für mittelalterliche "Skelett-Rezepte", die viel Vorwissen voraussetzen und die Grundlagen nicht wiederholen. Plausible Ergänzungen aus der quellenübergreifende Knoblauchsaucen-Familie: Wasser (mar-117 "Agliata Bianca" - identische Zutaten + Wasser zur Mörser-Befeuchtung), Verjus (men-274 "Weiße/grüne Knoblauchsauce"), Essig (mar-118 "Lila Knoblauchsauce"), oder Brühe (boc-073 "Knoblauchsuppe"). Praktischer Modus: 2-4 EL Wasser oder Verjus, mit Salz nach Geschmack.</note>
+        <note type="interpretive_choice" target="#mha-144-orig" n="gemuess" resp="#fyndling">Der Begriff ‚gemuess‘ wird hier im Sinne von ‚Gericht‘ oder ‚Speise‘ verwendet, zu der die Sauce gereicht wird. Der Schreiber rahmt das Wort doppelt (‚zue gemuess also‘ am Anfang, ‚zue dem gemusz‘ am Ende) - ein mögliches bewusstes Stilmittel.</note>
+        <note type="interpretive_choice" target="#mha-144-orig" n="semel" resp="#fyndling">Mit ‚semel‘ sind hier Semmelbrösel gemeint, die zum Binden und Andicken der Sauce dienen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hammel-Eintopf nach Ménagier</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-27">2026-06-27</date>
+        <idno type="url">https://fyndling.de/rezepte/men-064/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-064">
+        <head>Hammel-Eintopf nach Ménagier</head>
+        <div type="original" xml:id="men-064-orig" xml:lang="fro" corresp="#men-064-trans">
+          <p>Hericot de mouton. Despeciez par petites pieces, puis le mectez pourboulir une onde, puis le frisiez en sain de lart, et frisiez avec des ongnons menuz minciez et cuiz, et deffaictes du boullon de beuf. Et mectez avec matiz, parcil, ysope et sauge, et faictes boulir ensemble.</p>
+        </div>
+        <div type="translation" xml:id="men-064-trans" xml:lang="de" corresp="#men-064-orig">
+          <p>Schneide das Hammelfleisch in kleine Stücke. Blanchiere es dann einmal kurz in kochendem Wasser. Brate das Fleisch anschließend in ausgelassenem Speckschmalz an. Brate gleichzeitig fein gehackte und bereits gegarte Zwiebeln mit. Löse die Bratrückstände mit Rinderbrühe ab und gib sie zum Fleisch. Füge Majoran, Petersilie, Ysop und Salbei hinzu. Lasse alles zusammen aufkochen und gar köcheln.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Hericot de mouton">Hammelfleisch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="une onde">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="sain de lart">Speckschmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ongnons menuz minciez et cuiz">Zwiebeln, fein gehackt</ingredient>
+            </item>
+            <item>
+              <ingredient orig="boullon de beuf">Rinderbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="matiz">Macis (Muskatblute)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="parcil">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#corema-ingredient-index">Ysop</ingredient>
+            </item>
+            <item>
+              <ingredient orig="sauge">Salbei</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="gloss" target="#men-064-orig" n="Hericot" resp="#fyndling">Ein mittelalterlicher Eintopf, oft mit Fleisch und Gemüse.</note>
+        <note type="gloss" target="#men-064-orig" n="une onde" resp="#fyndling">Wörtlich 'eine Welle', hier im Sinne von 'einmal kurz aufkochen' oder 'blanchieren'.</note>
+        <note type="gloss" target="#men-064-orig" n="sain de lart" resp="#fyndling">Ausgelassenes Speckschmalz.</note>
+        <note type="gloss" target="#men-064-orig" n="deffaictes" resp="#fyndling">Hier im Sinne von 'ablösen', 'auflösen' oder 'mit Flüssigkeit aufgießen'.</note>
+        <note type="gloss" target="#men-064-orig" n="matiz" resp="#fyndling">'matiz' = 'maciz' (Macis/Muskatblute) - c/t-Verwechslung in gotischer Kursive. Macis war im Menagier ein Standardgewurz fur Fleischgerichte.</note>
+        <note type="interpretive_choice" target="#men-064-orig" n="matiz" resp="#fyndling">Macis (Muskatblute) - 'matiz' = 'maciz'; c/t-Verwechslung in gotischer Kursive. Macis war im Menagier ein ubliches Gewurz fur Hammelfleisch.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frische Erbsen: Fleisch- und Fastentag</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-030/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-030">
+        <head>Frische Erbsen: Fleisch- und Fastentag</head>
+        <div type="original" xml:id="men-030-orig" xml:lang="fro" corresp="#men-030-trans">
+          <p>Quant est de pois nouveaulx, aucunesfoiz ils sont cuiz a jour de char et a l'eaue de char, et du percil broyé pour faire potage vert, et c'est a jour de char; et a jour de poisson l'en les cuit au lait, de gingembre et du saffran dedens; et aucunesfoiz a la cretonnee, dont il sera parlé cy apres.</p>
+        </div>
+        <div type="translation" xml:id="men-030-trans" xml:lang="de" corresp="#men-030-orig">
+          <p>Was die frischen Erbsen betrifft: Manchmal werden sie an Fleischtagen in Fleischbrühe gekocht, mit im Mörser zerstoßener Petersilie, um einen grünen Eintopf zu bereiten; dies ist für Fleischtage. Und an Fastentagen kocht man sie in Mandelmilch, mit Ingwer und Safran darin. Und manchmal auch mit einer Cretonnée, wovon später die Rede sein wird.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="pois nouveaulx">Frische Erbsen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eaue de char">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="percil broyé">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient orig="lait">Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gingembre">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-030-trans" resp="#fyndling">Welches Gericht ist das? Junge, frische Erbsen als gebundene Beilage - die direkte Ahnin der französischen purée de pois bzw. des deutschen Erbspürees. Der Ménagier gibt zwei Versionen je nach Kirchenkalender: an jours de char (Fleischtagen) ein grüner Eintopf mit Fleischbrühe und Petersilie, an jours de poisson (Fastentagen) milchig mit Mandelmilch, Ingwer und Safran.
+
+potage vert - der grüne Eintopf. Die im Mörser zerstoßene Petersilie (percil broyé) färbt und aromatisiert die Erbsen zugleich. Potage meint hier kein klares Süppchen, sondern eine dicke, löffelbare Masse - näher am Brei als an der Suppe. Das Grün kommt rein aus der Petersilie, nicht aus einem Farbmittel.
+
+lait an Fastentagen = Mandelmilch. An Fastentagen waren Kuhmilch und Butter verboten. Wenn ein Fastenrezept schlicht „Milch“ sagt, ist immer Mandelmilch gemeint - der Standard-Ersatz der mittelalterlichen Fastenküche. Safran gibt Farbe und Status, Ingwer die Wärme.
+
+Praxis. Frische oder TK-Erbsen weich kochen. Fleischtag-Variante: in kräftiger Brühe garen, eine gute Handvoll Petersilie fein mörsern oder pürieren, untermengen, zu einem dicken Mus zerdrücken. Fastentag-Variante: in Mandelmilch köcheln, mit einer Messerspitze Ingwer und einigen Safranfäden würzen. Die im Schlusssatz erwähnte Cretonnée ist eine eigene, sämig gebundene Zubereitung (vgl. men-048).</note>
+        <note type="gloss" target="#men-030-orig" n="potage vert" resp="#fyndling">Grüner Eintopf bzw. grünes Mus - eine dicke, gebundene Speise, keine klare Suppe. Das Grün stammt aus der Petersilie.</note>
+        <note type="gloss" target="#men-030-orig" n="percil broyé" resp="#fyndling">Im Mörser zerstoßene Petersilie; färbt und würzt zugleich.</note>
+        <note type="gloss" target="#men-030-orig" n="lait (jour de poisson)" resp="#fyndling">An Fastentagen war Kuhmilch verboten; gemeint ist Mandelmilch als erlaubter Ersatz.</note>
+        <note type="gloss" target="#men-030-orig" n="cretonnee" resp="#fyndling">Eine sämig gebundene Erbsen-/Bohnen-Zubereitung; eigenes Rezept im Kapitel der gebundenen Eintöpfe (vgl. men-048).</note>
+      </div>
+    </back>
+  </text>
+</TEI>

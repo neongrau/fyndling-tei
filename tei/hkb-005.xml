@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Saure Mandelmilch aus Mandelkernen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-23">2026-06-23</date>
+        <idno type="url">https://fyndling.de/rezepte/hkb-005/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Kogebog / Libellus de arte coquinaria</title>
+          <date when="1300" cert="low">~1300</date>
+          <idno type="URI">https://tekstnet.dk/books/harpestreng-h_skrifter-nks66/004/</idno>
+          <note>Transkription: Jonathan Adams &amp; Ebba Hjorth, Tekstnet.dk / Det Danske Sprog- og Litteraturselskab (DSL), 2006</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="da-x-old">Altdänisch (ca. 1300)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="hkb-005">
+        <head>Saure Mandelmilch aus Mandelkernen</head>
+        <div type="original" xml:id="hkb-005-orig" xml:lang="da-x-old" corresp="#hkb-005-trans">
+          <p>Quomodo fit lac acetuosum de amigdalis
+
+Aftær skal man takæ ammandæls kiærnæ oc gør thær af thiuk miælk oc latæ thær til ædikæ ællær win oc sætæ .a. hetæ gløthæ. alt til thæt thiuknær. thæt ær æm got sum suur faræ miælk.</p>
+        </div>
+        <div type="translation" xml:id="hkb-005-trans" xml:lang="de" corresp="#hkb-005-orig">
+          <p>Wie man saure Mandelmilch aus Mandeln macht.</p>
+          <p>Nimm danach Mandelkerne und mache dicke Milch daraus. Gib Essig oder Wein hinzu und setze es auf heiße Glut, bis es eindickt. Das ist so gut wie saure Schafsmilch.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ammandæls kiærnæ">Mandelkerne</ingredient>
+            </item>
+            <item>
+              <ingredient>Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ædikæ">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#hkb-005-trans" resp="#fyndling">Welches Gericht ist das? Ein Mandel-Quark - dicke Mandelmilch wird durch Säure (Essig oder Wein) und Hitze zum Gerinnen gebracht, bis eine quarkartige Masse entsteht. Das Rezept sagt selbst, wozu es taugt: Das Ergebnis sei æm got sum suur faræ miælk - „so gut wie saure Schafsmilch“, also ein pflanzlicher Ersatz für gesäuerte Tiermilch in der Fastenzeit. Es gehört zur Familie der Mandelkäse/Mandelquark-Gerichte: derselbe Vorgang wie beim Mandelbutter-Rezept hkb-003 im selben Manuskript und beim Mandelkäse wes-026 und bgs-039.
+
+Die Gerinnung durch Säure. Der Clou ist, dass hier Säure statt Lab arbeitet: Essig (ædikæ) oder Wein (win) bringt das Mandelfett-Eiweiß-Gemisch beim Erhitzen zum Stocken. Säure plus Hitze fällt die gelösten Mandelbestandteile aus - genau wie Essig echte Milch zu Frischkäse gerinnen lässt. Ob man Essig oder Wein nimmt, lässt der Text offen (beides liefert die nötige Säure).
+
+Auf heißer Glut, nicht in der Flamme. sætæ a hetæ gløthæ - sanftes Erhitzen über Glut, nicht stürmisches Kochen. Bei zu großer Hitze würde die Masse zäh oder körnig; die milde Glut lässt sie gleichmäßig eindicken.
+
+Praxis. Aus blanchierten, gestoßenen Mandeln dicke Mandelmilch gewinnen (viel Mandeln, wenig Wasser) und durchs Tuch passieren. In einem Topf über milder Glut erhitzen, dabei löffelweise Weinessig oder sauren Wein einrühren, bis die Masse sichtbar gerinnt und eindickt. Wer eine festere, quarkähnliche Masse will, gibt die geronnene Milch in ein Tuch und lässt sie kurz abtropfen (so wird sie zum Mandelbutter wie in hkb-003). Warm oder kalt als Fasten-Quark.</note>
+        <note type="gloss" target="#hkb-005-orig" n="thiuk miælk" resp="#fyndling">Dicke Mandelmilch aus gestoßenen Mandelkernen und Wasser - Ausgangsmasse, die durch Säure und Hitze zum Quark gerinnt.</note>
+        <note type="gloss" target="#hkb-005-orig" n="ædikæ ællær win" resp="#fyndling">Essig oder Wein - beide liefern die Säure, die das Gerinnen auslöst. Der Text lässt die Wahl offen.</note>
+        <note type="gloss" target="#hkb-005-orig" n="hetæ gløthæ" resp="#fyndling">Heiße Glut - sanftes Erhitzen über der Glut, nicht stürmisches Kochen, damit die Masse gleichmäßig eindickt und nicht körnig wird.</note>
+        <note type="gloss" target="#hkb-005-orig" n="suur faræ miælk" resp="#fyndling">Saure Schafsmilch - der Vergleichsmaßstab des Rezepts: Das fertige Mandelprodukt soll deren Konsistenz und Säure haben, ein pflanzlicher Fasten-Ersatz für gesäuerte Tiermilch.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

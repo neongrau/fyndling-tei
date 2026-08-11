@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Küchentipps für den Kochtopf</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-002/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-002">
+        <head>Küchentipps für den Kochtopf</head>
+        <div type="original" xml:id="men-002-orig" xml:lang="fro" corresp="#men-002-trans">
+          <p>Item, pour garder que ton potage ne s'aourse tu le doiz remuer ou fons du pot et regarder que les tisons ne touchent au fons; et s'il est ja commencé a aourser tu doiz tantost rechanger en ung autre pot. Item, de lait garder de tourner. Item, que le pot ne s'en voise de dessus le feu.</p>
+        </div>
+        <div type="translation" xml:id="men-002-trans" xml:lang="de" corresp="#men-002-orig">
+          <p>Um zu verhindern, dass dein Potage anbrennt, rühre ihn am Boden des Topfes um und achte darauf, dass die Glut nicht den Boden berührt. Und wenn er bereits angefangen hat anzubrennen, wechsle ihn sofort in einen anderen Topf. Auch, um Milch vor dem Gerinnen zu bewahren. Auch, dass der Topf nicht vom Feuer fällt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ton potage">Potage</ingredient>
+            </item>
+            <item>
+              <ingredient orig="de lait">Milch</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-002-trans" resp="#fyndling">Worum geht es hier? Kein Rezept, sondern drei knappe Küchen-Merksätze aus dem Ménagier de Paris (um 1393), wie der Hausherr sie seiner jungen Frau für die Aufsicht über die Köche mitgibt. Sie behandeln die drei klassischen Pannen am offenen Feuer: Anbrennen, gerinnende Milch und der Topf, der vom Feuer kippt.
+
+aourser - das Anbrennen. Der Kern-Tipp: einen potage (hier ein dicker, gebundener Eintopf, nicht bloß eine klare Suppe) am Topfboden umrühren und darauf achten, dass die Glut (tisons) nicht direkt am Boden anliegt. Ist schon etwas angebrannt, sofort in einen anderen Topf umfüllen - so wandert der verbrannte Geschmack nicht ins ganze Gericht. Das ist bis heute der richtige Reflex.
+
+Milch und Standsicherheit. Die beiden Schlusssätze sind nur angerissen: Milch vor dem Gerinnen bewahren (also nicht zu stark/zu schnell erhitzen, nicht mit Saurem zusammenbringen) und den Topf so stellen, dass er nicht vom Feuer fällt.
+
+Praxis. Direkt am Lagerfeuer anwendbar: dicke Eintöpfe nie auf voller Glut stehen lassen, sondern an den Rand ziehen und regelmäßig vom Boden her aufrühren; bei angebranntem Topf umfüllen statt durchrühren; Milchspeisen nur sanft und unter Rühren erwärmen.</note>
+        <note type="gloss" target="#men-002-orig" n="aourser" resp="#fyndling">Anbrennen, am Topfboden festkleben.</note>
+        <note type="gloss" target="#men-002-orig" n="potage" resp="#fyndling">Dicker, gebundener Eintopf - im Mittelalter ein weiter Begriff, nicht nur klare Suppe.</note>
+        <note type="gloss" target="#men-002-orig" n="tisons" resp="#fyndling">Glut, glühende Holzscheite.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

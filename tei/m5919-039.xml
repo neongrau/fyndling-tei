@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ein gutes Kernmus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-22">2026-06-22</date>
+        <idno type="url">https://fyndling.de/rezepte/m5919-039/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 5919</title>
+          <date when="1505" cert="low">um 1500</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m9/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m9</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m9</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M9 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, Regensburg, um 1500-1510)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m5919-039">
+        <head>Ein gutes Kernmus</head>
+        <div type="original" xml:id="m5919-039-orig" xml:lang="de-x-fnhd" corresp="#m5919-039-trans">
+          <p>Ain gut kernen mus wildu machen kernen mus So nim mandel vnd weinper darzw vnd thue zucher genueg darein so wirt das mus gut vnd nimm salcz gnug</p>
+        </div>
+        <div type="translation" xml:id="m5919-039-trans" xml:lang="de" corresp="#m5919-039-orig">
+          <p>Willst du Kernmus zubereiten, so nimm Mandeln und Weinbeeren dazu. Gib genügend Zucker hinein, so wird das Mus gut. Und nimm genügend Salz.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, gemahlen</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weinper" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="zucher genueg">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="salcz gnug">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m5919-039-trans" resp="#fyndling">Welches Gericht ist das? Ein einfaches Kernmus - ein süßes Mus aus gemahlenen Mandeln und Rosinen mit reichlich Zucker. Im Korpus die direkten Geschwister mha-022 (Kernmus mit Wein und Zucker) und mha-241 (Mus mit Weinbeeren und Mandeln).
+
+weinper. Nach Korpus-Default Rosinen (getrocknete Weinbeeren), da keine Frisch-Indikatoren genannt sind; das Schwester-Rezept mha-241 nennt sie ausdrücklich.
+
+Praxis. Mandeln fein mahlen, mit Rosinen (und etwas Wasser oder Wein) zu einem dicken Mus kochen, gut zuckern. Eine Prise Salz rundet ab - das salcz gnug des Originals meint Würzbalance, keine kräftige Salzung.</note>
+        <note type="gloss" target="#m5919-039-orig" n="kernen mus" resp="#fyndling">Ein Mus aus Kernen oder Samen. Hier sind Mandeln und Weinbeeren die Hauptbestandteile.</note>
+        <note type="gloss" target="#m5919-039-orig" n="weinper" resp="#fyndling">Weinbeeren, also Rosinen oder getrocknete Trauben. Im Mittelalter ein gängiges Süßungsmittel und Zutat für Mus-Speisen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="gloss" target="#m5919-039-orig" n="genueg / gnug" resp="#fyndling">Bedeutet ‚genug‘ oder ‚nach Geschmack‘. Die genaue Menge ist dem Koch überlassen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

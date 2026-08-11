@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Bärenkopf mit Pfeffersauce</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-16">2026-07-16</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-025/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-025">
+        <head>Bärenkopf mit Pfeffersauce</head>
+        <div type="original" xml:id="ka1-025-orig" xml:lang="de-x-fnhd" corresp="#ka1-025-trans">
+          <p>berenkopf Nem ainen beren kopf vnd beseng den gar wol vnd schlach in von enander vnd sud in gar wol vnd leg in vf ainen rost vnd braut in gar wol vnd bestrow in mit gewurtz vnd wenn du in geben welist so gib ain schwartzen pfeffer dar zuo etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-025-trans" xml:lang="de" corresp="#ka1-025-orig">
+          <p>Nimm einen Bärenkopf und senge ihn sehr gut ab. Zerlege ihn und siede ihn sehr gut. Lege ihn auf einen Rost und brate ihn sehr gut. Bestreue ihn mit Gewürz. Und wenn du ihn servieren willst, so gib eine schwarze Pfeffersauce dazu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="berenkopf">Bärenkopf</ingredient> - 1</item>
+            <item>
+              <ingredient en="spice" orig="gewurtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürzmischung</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain schwartzen pfeffer">Schwarze Pfeffersauce</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-025-trans" resp="#fyndling">Welches Gericht ist das? Ein ganzer Bärenkopf wird gesengt, zerlegt, gesotten und anschließend auf dem Rost fertiggebraten, mit Gewürz bestreut und mit einer dunklen Pfeffersauce serviert. Diese Doppelgar-Technik - erst sieden, dann rösten/grillen - ist dieselbe Methode, die bis heute bei traditionellen Wildschweinkopf-Gerichten der Landküche und in der modernen Nose-to-Tail-Küche zu finden ist.
+
+Die Zubereitungsschritte im Einzelnen. Das Sengen entfernt Haare und Borsten von der Kopfhaut. Das Zerlegen ('von enander schlagen') verkleinert den Kopf, damit er in den Kessel passt und gleichmäßiger gart. Das anschließende gründliche Sieden macht das knorpel- und knochenreiche Kopffleisch zart, bevor die trockene Hitze des Rostes die Oberfläche bräunt. Diese Sieden-vor-Rösten-Abfolge findet sich im Korpus bei mehreren Kopf- und Sülzgerichten wieder.
+
+Was ist 'schwartzen pfeffer'? Trotz des Namens ist damit kein gemahlenes Gewürz gemeint, sondern eine eigene Saucenkategorie: eine dunkle, meist mit geröstetem Brot gebundene Sauce, die im Korpus unter genau diesem Stichwort mehrfach als eigenständiges Rezept auftaucht und traditionell zu Wildbret gereicht wurde.
+
+Praxis. Eine nahezu wortgleiche Fassung dieses Rezepts findet sich im Kochbuch Cgm 384 - dort fehlt der Zerlege- und Siede-Schritt vor dem Rösten, dafür wird der Kopf beim Rösten mit heißem Schmalz übergossen. Ka1-025 selbst erwähnt diese Fett-Übergießung nicht; wer den Kopf nur trocken auf dem Rost röstet, sollte mit einer trockeneren, weniger stark gebräunten Oberfläche rechnen als bei der geschmalzten Variante - das ist keine Übersetzungslücke, sondern eine echte Variante zwischen den beiden Textzeugen. Mit legalem Ersatz (Schweine- oder Wildschweinkopf) lässt sich die Abfolge sengen - zerlegen - sieden - rösten - würzen 1:1 nachvollziehen; für den Kopf allein sollte mit mehreren Stunden Sied- und Röstzeit sowie einem großen Kessel und einer Feuerstelle mit Rost gerechnet werden.</note>
+        <note type="gloss" target="#ka1-025-orig" n="berenkopf" resp="#fyndling">Der Lautstand 'beren' (e-Vokal) gehört zur selben Wortfamilie wie 'Bär' - der Korpus-Glossar unterscheidet ausdrücklich zwischen 'beren' (e-Vokal, Bär) und 'biren/piren' (i-Vokal, Birne). Eine Verwechslung mit 'Birne' ist damit lautlich ausgeschlossen. Die Zubereitungsschritte 'sengen', 'zerteilen', 'sieden' und 'braten' bestätigen zusätzlich zweifelsfrei die Lesart 'Bärenkopf'. Bären waren im Mittelalter eine begehrte Jagdbeute und ihr Fleisch eine Statusspeise des Adels.</note>
+        <note type="gloss" target="#ka1-025-orig" n="beseng den gar wol" resp="#fyndling">Das Absengen dient dazu, Haare oder Borsten von der Haut des Tierkopfes zu entfernen, bevor er weiterverarbeitet wird.</note>
+        <note type="gloss" target="#ka1-025-orig" n="schlach in von enander" resp="#fyndling">Den Kopf in mehrere Teile zerlegen, um ihn besser sieden und braten zu können.</note>
+        <note type="gloss" target="#ka1-025-orig" n="rost" resp="#fyndling">Ein Rost zum Braten über offenem Feuer oder Glut. Dies konnte ein einfacher Holzrost aus frischem Hartholz sein, der nur für eine Garung verwendet wurde, oder ein Metallrost.</note>
+        <note type="gloss" target="#ka1-025-orig" n="schwartzen pfeffer" resp="#fyndling">Im mittelalterlichen Kontext bezeichnet 'Pfeffer' oft nicht nur das Gewürz, sondern eine ganze Gattung von würzigen Saucen, die oft mit Brot gebunden und dunkel gefärbt waren. Eine 'schwarze Pfeffersauce' war eine typische Begleitung zu Wildbret.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#ka1-025-orig" n="schwartzen pfeffer" resp="#fyndling">Die Lesart 'Schwarze Pfeffersauce' (eine dunkle, würzige Sauce) wurde gewählt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

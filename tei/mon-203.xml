@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Lungenmus mit Speck</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-09">2026-07-09</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-203/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.202</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-203">
+        <head>Lungenmus mit Speck</head>
+        <div type="original" xml:id="mon-203-orig" xml:lang="de-x-fnhd" corresp="#mon-203-trans">
+          <p>ITem wil dw machen ein guet gemuss von kue lungel wenn sy nun gesotten Sindt So hack sy chlain vnd thue sy ann guette fleisch prue vnd secz sy auff ain + guette chluett vnd lass es merr sieden vnd reib ein pratt dar an vnd stupp es dann ab vnd sneidt speck chlain wurfflat vnd Smelcz es in einer phann vnd wan dw das gmus an richcz So thue den speck dar an vnd versalcz nicht etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-203-trans" xml:lang="de" corresp="#mon-203-orig">
+          <p>Item, wenn du ein gutes Mus von Kuh-Lunge zubereiten willst: Nachdem die Lunge gekocht ist, hacke sie klein. Gib sie dann in gute Fleischbrühe und setze sie auf gute Glut. Lass es weiter sieden und reibe Brot daran. Bestreue es dann. Schneide Speck klein würfelig und schmelze ihn in einer Pfanne. Wenn du das Mus anrichtest, gib den Speck dazu und versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="cattle lung" orig="kue lungel" commodity="wikidata:Q107246461" source="#corema-ingredient-index">Rinderlunge</ingredient>
+            </item>
+            <item>
+              <ingredient orig="guette fleisch prue">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="sausage meat" orig="pratt" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="speck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+            <item>
+              <ingredient orig="stupp es dann ab">Gewürze (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="versalcz nicht">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-203-trans" resp="#fyndling">Welches Gericht ist das? Ein Lungenmus aus Rinderlunge: gekocht, klein gehackt, in Fleischbrühe auf Glut weitergezogen, mit geriebenem Brot gebunden und mit ausgelassenem Speck angerichtet - die nüchterne, ungesäuerte Vorform des heute noch bekannten Wiener Beuschels. Anders als das moderne Beuschel (Kalbslunge und Herz in saurer Rahmsauce) kommt dieses Mus ohne Säure aus: Die Bindung übernimmt allein das eingeriebene Brot, keine Mehlschwitze, und der Speck liefert Fett und Röstaroma statt der Sahne.
+
+Bei stupp es dann ab bleibt offen, ob damit ein allgemeines Bestäuben/Bestreuen gemeint ist oder eine konkrete Gewürzzugabe. Das Verb „stuppen“ heißt wörtlich „bestäuben“, eine zeitgleiche Glosse zur Handschrift ordnet die Stelle aber als Gewürz-Zugabe ein - beide Lesarten sind plausibel, das Rezept selbst nennt keine konkrete Mischung.
+
+Praxis. Die Lunge zuerst gar kochen, roh ist sie zäh und schwer zu verarbeiten. Danach klein hacken und in gute Fleischbrühe geben, auf Glut - nicht auf offener Flamme - sanft weiterköcheln lassen: Das hält die Hitze gleichmäßig und verhindert Anbrennen der bereits zerkleinerten Lunge. Geriebenes Brot bindet die Brühe zum Mus. Parallel dazu Speck kleinwürfelig schneiden und in der Pfanne auslassen. Der Speck kommt erst beim Anrichten zum Mus dazu, so bleibt er kross statt im Sud weich zu werden. Nicht nachsalzen: Fleischbrühe und Speck bringen bereits genug Salz mit.</note>
+        <note type="gloss" target="#mon-203-orig" n="kue lungel" resp="#fyndling">Rinderlunge. Ein häufig verwendetes Innereien-Gericht im Mittelalter, oft zu Mus oder Pasteten verarbeitet.</note>
+        <note type="gloss" target="#mon-203-orig" n="chluett" resp="#fyndling">Glut. Das Gericht wird auf glühenden Kohlen weitergekocht, was eine sanfte und gleichmäßige Hitze ermöglicht.</note>
+        <note type="gloss" target="#mon-203-orig" n="pratt" resp="#fyndling">Brot. Hier als Bindemittel und zur Texturgebung verwendet, typisch für mittelalterliche Muse und Pürees.</note>
+        <note type="gloss" target="#mon-203-orig" n="stupp es dann ab" resp="#fyndling">Wörtlich ‚bestäube es dann ab‘. Das Rezept nennt keine spezifischen Gewürze, aber eine Mischung aus Pfeffer, Ingwer und Muskatblüte wäre zeitgenössisch und passend.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#stupp"/></note>
+        <note type="gloss" target="#mon-203-orig" n="wurfflat" resp="#fyndling">Würfelig. Eine Schnitttechnik, bei der Zutaten in kleine Würfel geschnitten werden, hier für den Speck.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#wurfflat"/></note>
+        <note type="interpretive_choice" target="#mon-203-orig" n="stupp es dann ab" resp="#fyndling">Bestreue es dann. (Das Verb ‚stuppen‘ bedeutet ‚bestäuben‘ oder ‚bestreuen‘. Da keine Zutat genannt wird, ist eine allgemeine Anweisung am plausibelsten, die eine Würzung impliziert.)<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#stupp"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

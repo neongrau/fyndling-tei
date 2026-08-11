@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnenmus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/m384-059/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 384</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M2 (CC BY 4.0, hdl.handle.net/11471/562.10)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 2. Hälfte 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m384-059">
+        <head>Birnenmus</head>
+        <div type="original" xml:id="m384-059-orig" xml:lang="de-x-fnhd" corresp="#m384-059-trans">
+          <p>muosz vnd von biern
+
+Bieren muosz czuch bieren durch wolgesotten vnd duo geriben bimezelten daran vnd sud es wol vnd tuo honig vnd gwurtz daran</p>
+        </div>
+        <div type="translation" xml:id="m384-059-trans" xml:lang="de" corresp="#m384-059-orig">
+          <p>Nimm Birnen und koche sie gut weich. Passiere die gut gekochten Birnen durch ein Tuch oder Sieb.</p>
+          <p>Gib geriebene Gewürzkuchen (Fladenbäck) zu dem Mus und siede es gut. Füge Honig und Gewürz hinzu und rühre alles gut durch.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="bieren" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geriben bimezelten">Geriebenes Gewürz-Fladenbäck (Pfeffer-/Lebzelten)</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwurtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m384-059-trans" resp="#fyndling">Welches Gericht ist das? Ein gewürztes Birnenmus: weichgekochte Birnen werden durch ein Tuch passiert, mit geriebenem Gewürz-Fladenbäck (bimezelten) gebunden, aufgekocht und mit Honig und Gewürz abgeschmeckt. Ein einfaches, wärmend gewürztes Fruchtmus - verwandt mit dem Birnenmus bgs-081 und mha-272 sowie dem Birnen-Konfit foc-128.
+
+bimezelten = gewürztes Fladenbäck. Trude Ehlert deutet das Wort als flaches Backwerk (mhd. zelten = flacher Kuchen/Fladen, vgl. Lebzelten), das mit biment - mhd. für ‚Gewürz, Spezerei' (lat. pigmentum) - gebacken ist. (Die ältere Ableitung von ‚Piment'/Nelkenpfeffer verwirft Ehlert ausdrücklich als anachronistisch: das mittelamerikanische Piment kam erst nach Kolumbus nach Europa.) Gerieben wirkt das Bäck zugleich als Binder UND Gewürzträger; der Binder bringt also schon Würze mit, bevor Honig und Gewürz dazukommen.</note>
+        <note type="gloss" target="#m384-059-orig" n="bieren" resp="#fyndling">Im Frühneuhochdeutschen ist ‚bieren' der Plural von Birne. Hier sind also Birnen gemeint, nicht Beeren.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#bieren"/></note>
+        <note type="gloss" target="#m384-059-orig" n="bimezelten" resp="#fyndling">Laut Trude Ehlert ein flaches Backwerk (mhd. ‚zelten' = flacher Kuchen/Fladen, vgl. Lebzelten), das mit ‚biment' - mhd. für ‚Gewürz, Spezerei' (lat. ‚pigmentum') - gebacken ist. Die ältere Deutung als ‚Piment'/Nelkenpfeffer verwirft Ehlert als anachronistisch (das mittelamerikanische Piment kam erst nach Kolumbus nach Europa). Gerieben dient es als Bindemittel und bringt zugleich Würze ins Mus. Ersatzweise geriebener Lebkuchen. Die Schwesterüberlieferung (Reichenauer Kochbuch) hat ‚bymenczelten'.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#bimezelten"/></note>
+        <note type="gloss" target="#m384-059-orig" n="czuch bieren durch" resp="#fyndling">Wörtlich ‚ziehe Birnen durch'. Dies ist eine Anweisung zum Passieren der gekochten Birnen durch ein Sieb oder Tuch, um ein feines Mus zu erhalten.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#bieren"/></note>
+        <note type="interpretive_choice" target="#m384-059-orig" n="bimezelten" resp="#fyndling">Laut Ehlert ein flaches Backwerk (mhd. ‚zelten' = Fladen/flacher Kuchen), das mit ‚biment' (mhd. ‚Gewürz, Spezerei', lat. ‚pigmentum') gebacken ist - also ein gewürztes Fladenbäck, gerieben als Binder UND Gewürzträger. Die Schwesterüberlieferung (Reichenauer Kochbuch) hat ‚bymenczelten'.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#bimezelten"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

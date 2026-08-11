@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gebratener Reiher mit süß-würziger Sauce</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-23">2026-07-23</date>
+        <idno type="url">https://fyndling.de/rezepte/ka2-030/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 793</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, unteres Inntal/Mühldorf am Inn, ca. 1445-1470)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka2-030">
+        <head>Gebratener Reiher mit süß-würziger Sauce</head>
+        <div type="original" xml:id="ka2-030-orig" xml:lang="de-x-fnhd" corresp="#ka2-030-trans">
+          <p>Von raiger gepraten vnd gespikcht Vnd mach ein salsen mit wein honig gutem gewurtz vnd erwell das gewurcz vnd richcz an</p>
+        </div>
+        <div type="translation" xml:id="ka2-030-trans" xml:lang="de" corresp="#ka2-030-orig">
+          <p>Nimm einen gebratenen und gespickten Reiher. Bereite dazu eine Sauce mit Wein, Honig und guten Gewürzen zu. Koche die Gewürze auf und richte das Gericht dann an.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="egret" orig="raiger" commodity="wikidata:Q3060012" source="#corema-ingredient-index">Reiher</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gespikcht">Speck (zum Spicken)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein (rot oder weiß)</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gutem gewurtz">Gewürzmischung</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka2-030-trans" resp="#fyndling">Welches Gericht ist das? Gebratenes und gespicktes Wildgeflügel in einer süß-würzigen Wein-Honig-Sauce. Der Titel „Von raiger gepraten vnd gespikcht“ beschreibt einen Zustand, keinen Arbeitsschritt: Braten und Spicken des Vogels gelten hier bereits als erledigt, das eigentliche Rezept behandelt ausschließlich die Sauce. Die Grundidee - mageres Wildgeflügel gespickt, dazu eine süß-würzige Tunke aus Wein und Honig - lebt in der Zubereitungslogik heutiger Wildgeflügel-Gerichte mit fruchtig-süßer Sauce fort (etwa Ente mit Orangen- oder Portwein-Honig-Sauce), auch wenn der Reiher selbst als Speisetier durch den Artenschutz verschwunden ist.
+
+„Gutem gewurtz“ - feste Mischung oder Qualitätsanspruch? Die Formulierung lässt zwei Lesarten zu: eine typische Gewürzmischung der Zeit (Pfeffer, Ingwer, Zimt, Nelken, Muskatblüte) oder einen allgemeinen Qualitätsanspruch ohne feste Rezeptur. Beide sind plausibel; für die Praxis läuft es auf dasselbe hinaus.
+
+Praxis. Als Ersatz für den Reiher eignet sich eine bereits gebratene und gespickte Gans oder Pute. Für die Sauce Wein und Honig mit den gewählten Gewürzen aufkochen ("erwell das gewurcz"), bis sich die Aromen in der Flüssigkeit lösen. Der Text nennt kein Bindemittel wie Brot, Ei oder Mandeln - die Sauce bleibt dünnflüssig und wird direkt über das aufgeschnittene Geflügel gegeben. Mengenangaben fehlen im Original vollständig; Wein, Honig und Gewürze nach Geschmack dosieren, mit einer süß-würzigen Balance als Richtschnur.</note>
+        <note type="gloss" target="#ka2-030-orig" n="raiger" resp="#fyndling">Der Graureiher (*Ardea cinerea*) ist ein großer, in Europa heimischer Wasservogel. Im Mittelalter wurde er als Jagdwild und Speisevogel geschätzt, ist heute jedoch in Deutschland und der EU streng geschützt und darf nicht gejagt oder gehandelt werden.</note>
+        <note type="gloss" target="#ka2-030-orig" n="gespikcht" resp="#fyndling">Das Spicken ist eine mittelalterliche Kochtechnik, bei der mageres Fleisch mit Streifen von Speck oder anderem Fett durchzogen wird. Dies macht das Fleisch saftiger und aromatischer, besonders bei Wildgeflügel, das von Natur aus wenig Fett hat.</note>
+        <note type="gloss" target="#ka2-030-orig" n="gutem gewurtz" resp="#fyndling">Die Angabe ‚gute Gewürze‘ ist typisch für mittelalterliche Rezepte und meint eine Mischung der damals gängigen und geschätzten Gewürze. Dazu gehörten oft Pfeffer, Ingwer, Zimt, Nelken und Muskatblüte. Safran wurde häufig zum Färben verwendet, ist hier aber nicht explizit genannt.</note>
+        <note type="gloss" target="#ka2-030-orig" n="erwell das gewurcz" resp="#fyndling">Das Aufkochen oder Erwärmen der Gewürze in Flüssigkeit war eine gängige Methode, um ihre Aromen freizusetzen und in die Sauce zu überführen. Dies war besonders bei ganzen oder grob gemahlenen Gewürzen wichtig.</note>
+        <note type="interpretive_choice" target="#ka2-030-orig" n="gutem gewurtz" resp="#fyndling">Eine typische mittelalterliche Gewürzmischung, die in wohlhabenden Haushalten verwendet wurde.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

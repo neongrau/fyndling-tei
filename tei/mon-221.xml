@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Sauce zu weißen Hühnern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-10">2026-07-10</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-221/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.220</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-221">
+        <head>Sauce zu weißen Hühnern</head>
+        <div type="original" xml:id="mon-221-orig" xml:lang="de-x-fnhd" corresp="#mon-221-trans">
+          <p>+ Salsen czw weyssen hunern So nempt walischew weinpern vnd reib dy chlain slachs durich ein tuech mit guetten wein vnd gburcz woll So hastu ain guette salssen</p>
+        </div>
+        <div type="translation" xml:id="mon-221-trans" xml:lang="de" corresp="#mon-221-orig">
+          <p>Sauce zu weißen Hühnern: Nimm welsche (importierte) Weinbeeren (Rosinen) und reibe sie klein. Schlage sie dann durch ein Tuch mit gutem Wein und würze es gut. So hast du eine gute Sauce.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="raisin" orig="walischew weinpern" commodity="wikidata:Q13186" source="#corema-ingredient-index">Rosinen (welsche/importierte)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gburcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-221-trans" resp="#fyndling">Welches Gericht ist das? Eine glattpassierte Rosinen-Wein-Sauce zu hellem Geflügel ("weißen Hühnern"): Rosinen werden fein gerieben, durch ein Tuch mit Wein passiert und gewürzt. Dieselbe Grundtechnik - Frucht fein zerkleinert, durchs Tuch mit Wein verzogen - lebt bis heute in der deutschen Rosinensauce fort, wie sie etwa zu Weihnachtskarpfen in schlesisch-böhmischer Tradition oder zu Ochsenzunge gereicht wird, und auch die Rosinen-Komponente mancher Sauerbraten-Saucen folgt demselben Prinzip. mon-221 ist gewissermaßen deren spätmittelalterliche Vorläuferin, nur für Geflügel statt Rinderbraten.
+
+Schlagen oder Passieren? "Slachs durich ein tuech" heißt wörtlich "schlage durch ein Tuch" - gemeint ist das Durchschlagen bzw. Passieren der geriebenen Rosinenmasse durch ein Tuch, nicht bloßes Rühren. Das Tuch trennt Häutchen, Kerne und grobe Fasern ab; zurück bleibt eine glatte, sämige Flüssigkeit. Die Bindung entsteht dabei allein durch das gelöste Rosinenmus (Frucht-Pektin und Zucker) - keine Mehlschwitze, ganz zeittypisch. Dieselbe Zwei-Schritt-Konstruktion ("reib klein" + "slachs durch [Flüssigkeit]") begegnet im Mondseer Kochbuch mehrfach, etwa bei Petersilien-Wein-Saucen und bei einer Mandel-Rainfal-Sauce - eine im Haus etablierte Standardtechnik für passierte Saucen, keine Einzel-Erfindung.
+
+Praxis. Der Text nennt keinen Hitzeschritt - die ganze Zubereitung ist mechanisch: Rosinen reiben (im Mörser realistischer als auf einer Metallreibe, an der Rosinen kleben), mit gutem Wein durch ein feines Tuch oder Passiertuch streichen, bis eine glatte Sauce entsteht, dann würzen. Kein Kochtopf nötig - die Sauce ist kalt fertig und wird kühl oder zimmerwarm zum bereits gegarten Geflügel gereicht. Für die Würze eignen sich helle Gewürze wie weißer Pfeffer, Ingwer oder Muskatblüte, damit die helle Farbe der Sauce erhalten bleibt.</note>
+        <note type="gloss" target="#mon-221-orig" n="Salsen" resp="#fyndling">‚Salse‘ ist der mittelalterliche Begriff für eine würzige Tunke oder Sauce.</note>
+        <note type="gloss" target="#mon-221-orig" n="walischew weinpern" resp="#fyndling">‚Welsche Weinbeeren‘ bezieht sich auf Rosinen, die aus romanischsprachigen Ländern (wie Italien oder Frankreich) importiert wurden und als besonders hochwertig galten - nicht zu verwechseln mit dem modernen ‚walisisch‘ (aus Wales). Dieselbe Lesefalle korpusweit bestätigt, u.a. bei ‚welsche winber‘ in bgs-060 (Buch von guter Speise).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#walischew"/></note>
+        <note type="gloss" target="#mon-221-orig" n="durich ein tuech" resp="#fyndling">Das Passieren durch ein Tuch (Käsetuch) war eine gängige Methode, um Saucen zu klären und eine feine, glatte Textur zu erzielen.</note>
+        <note type="gloss" target="#mon-221-orig" n="weyssen hunern" resp="#fyndling">Teil einer im Manuskript belegten Farbenfolge von Hühnersaucen: schwarze Hühner (mit Lebkuchen geschwärzt, mit Blattgold/-silber dekoriert), weiße Hühner (hier, mit heller Rosinen-Wein-Sauce), grüne (Petersilie) und graue (Mandel-Rosinen) - das Manuskript selbst verweist ausdrücklich auf diese Gruppe andersfarbiger Geflügelgerichte.</note>
+        <note type="interpretive_choice" target="#mon-221-orig" n="walischew" resp="#fyndling">‚Welsch‘ im Sinne von ‚aus romanischen Ländern importiert‘ (nicht das moderne ‚walisisch‘ = aus Wales, reiner False-Friend). CoReMA glossiert ‚walischew weinpern‘ als ‚raisin‘, wobei ‚walischew‘ die Herkunft oder Qualität der Rosinen beschreibt - dieselbe Lesefalle ist korpusweit bei ‚welsche winber‘ in bgs-060 bestätigt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#walischew"/></note>
+        <note type="interpretive_choice" target="#mon-221-orig" n="slachs" resp="#fyndling">‚schlage sie durch‘ im Sinne von passieren oder durchdrücken. Im Kontext des Passierens einer flüssigen Masse durch ein Tuch ist dies die kulinarisch sinnvollste Lesart.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

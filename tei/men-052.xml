@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dunkle Poree mit Speck</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-28">2026-06-28</date>
+        <idno type="url">https://fyndling.de/rezepte/men-052/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-052">
+        <head>Dunkle Poree mit Speck</head>
+        <div type="original" xml:id="men-052-orig" xml:lang="fro" corresp="#men-052-trans">
+          <p>Poree noire est celle qui est faicte a la ribellecte de lart. C'est assavoir que la poree est esleue, lavee, puis mincee, et esverdee en eaue boulant, puis fricte en la gresse des lardons, et puis alayer d'eaue chaude fremiant. Et dient aucuns, qui la laveroit d'eaue froide, qu'elle seroit plus laide et noire. Puis couvient mectre sur chascune escuelle deux lardons.</p>
+        </div>
+        <div type="translation" xml:id="men-052-trans" xml:lang="de" corresp="#men-052-orig">
+          <p>Dunkle Poree wird auf rustikale Art mit Speck zubereitet. Wähle die Poree aus, wasche sie und schneide sie dann fein. Blanchiere sie in kochendem Wasser. Brate sie anschließend im Fett der Speckwürfel an. Gieße dann mit heißem, siedendem Wasser auf. Einige sagen, dass sie hässlicher und dunkler würde, wenn man sie mit kaltem Wasser wäscht. Lege schließlich auf jede Schale zwei Speckwürfel.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Poree">Lauchgemüse</ingredient> - 500 g</item>
+            <item><ingredient orig="lart / lardons">geräucherter Bauchspeck</ingredient> - 150 g</item>
+            <item>
+              <ingredient orig="eaue boulant">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eaue chaude fremiant">Heißes, siedendes Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="gloss" target="#men-052-orig" n="Poree noire" resp="#fyndling">Ein Gericht aus dunklem Lauchgemüse oder anderen grünen Blättern, das durch Blanchieren und Braten seine dunkle Farbe erhält.</note>
+        <note type="gloss" target="#men-052-orig" n="ribellecte de lart" resp="#fyndling">Bezieht sich auf eine rustikale, einfache Zubereitungsart mit Speck.</note>
+        <note type="gloss" target="#men-052-orig" n="esverdee" resp="#fyndling">Blanchiert, kurz in kochendem Wasser gegart, um die Farbe zu fixieren und vorzugaren.</note>
+        <note type="gloss" target="#men-052-orig" n="gresse des lardons" resp="#fyndling">Das ausgelassene Fett der Speckwürfel, das zum Anbraten des Gemüses verwendet wird.</note>
+        <note type="gloss" target="#men-052-orig" n="alayer" resp="#fyndling">Mit Flüssigkeit verdünnen oder aufgießen.</note>
+        <note type="gloss" target="#men-052-orig" n="fremiant" resp="#fyndling">Siedend, leicht kochend, zitternd (vom Wasser).</note>
+        <note type="gloss" target="#men-052-orig" n="lardons" resp="#fyndling">Kleine Würfel oder Streifen von geräuchertem oder gepökeltem Schweinebauch.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Reihermus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-06">2026-07-06</date>
+        <idno type="url">https://fyndling.de/rezepte/mha-264/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Maister Hannsen des von Wirtenberg Koch</title>
+          <date when="1460">1460</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.bs1/TEI_SOURCE.2021-01-15</idno>
+          <idno type="corema-sigle">bs1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.bs1</idno>
+          <idno type="corema-recipe">bs1.264</idno>
+          <note>Transkription: Astrid Böhm &amp; Helmut W. Klug, CoReMA TEI-Edition (Uni Graz, 2021, CC BY 4.0); Sekundäredition: Anton Birlinger, Alemannia 1, Bonn 1865 (Public Domain)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch-schwäbisch, 1460)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mha-264">
+        <head>Reihermus</head>
+        <div type="original" xml:id="mha-264-orig" xml:lang="de-x-fnhd" corresp="#mha-264-trans">
+          <p>Von dem Raiger also
+
+Item stoeß Raigerpain klain als dann das fleisch ist dauon nym vnd hack das klain vnd stoesz das In ainem morser vnd weiss prot vnd ayer klar vnd schlahe das durch miteinander vnd lass es wol erwallen vnd gewurcz das wol vnd gibs hin .</p>
+        </div>
+        <div type="translation" xml:id="mha-264-trans" xml:lang="de" corresp="#mha-264-orig">
+          <p>Nimm das Reiherfleisch von den Knochen. Hacke es klein und stoße es anschließend in einem Mörser zu einer feinen Farce.</p>
+          <p>Gib Weißbrot und Eiklar hinzu und schlage alles gut miteinander durch. Lasse die Masse gut aufwallen und würze sie kräftig. Serviere das Gericht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Raigerpain / fleisch">Reiherfleisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="weiss prot" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Weißbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="ayer klar" commodity="wikidata:Q796758" source="#corema-ingredient-index">Eiklar</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mha-264-trans" resp="#fyndling">Welches Gericht ist das? Reihermus gehört zur spätmittelalterlichen Familie der Mortrews: mageres Fleisch wird fein gemörsert, mit eingeweichtem Weißbrot und Eiklar gebunden, gewürzt und gegart. Am nächsten verwandt ist das bereits verlinkte Mortrews von Huhn und Schwein (foc-043) - gleiches Grundprinzip aus gehackter, gemörserter Fleischmasse mit Brot-Ei-Bindung. Reiher galt als hochgeschätzte Jagdbeute der Falknerei und stand auf herrschaftlichen Tafeln; heute ist er streng geschützt, weshalb sich die Zubereitung nur mit anderem Geflügel nachvollziehen lässt.
+
+Zur Textur. Das Fleisch wird von den Knochen gelöst, klein gehackt und im Mörser zu einer feinen Farce gestoßen - der Text nennt keine Mengenangaben für Brot und Eiklar, hier hilft nur schrittweises Herantasten: wenig Weißbrot einweichen, mit dem Fleisch und etwas Eiklar vermengen und die Konsistenz prüfen, bis eine geschmeidige, gut bindende Masse entsteht.
+
+Zum Garen. Die Anweisung lautet, die Masse gut aufwallen zu lassen. Der Text sagt nicht, worin - ob direkt im Topf, in Wasser oder in Brühe, bleibt offen. Ein sanftes Garen bei nicht zu starker Hitze ist naheliegend, damit die Farce nicht austrocknet.
+
+Zur Würze. Das Original nennt kein einziges konkretes Gewürz, nur die Anweisung, gut zu würzen. Zeittypisch wären etwa Pfeffer, Ingwer, Galgant, Nelken, Muskat oder Safran denkbar, doch welche davon hier tatsächlich verwendet wurden, ist aus dem Text nicht zu erschließen. Serviert wird das Mus ohne weitere Angabe im Rezept.</note>
+        <note type="gloss" target="#mha-264-orig" n="Raigerpain" resp="#fyndling">Reiherknochen. Das Rezept impliziert, dass das Fleisch von den Knochen gelöst wird.</note>
+        <note type="gloss" target="#mha-264-orig" n="ayer klar" resp="#fyndling">Eiklar, also das Eiweiß. Im Mittelalter oft verwendet, um Speisen hell zu halten oder zu binden.</note>
+        <note type="gloss" target="#mha-264-orig" n="erwallen" resp="#fyndling">Aufwallen lassen, zum Kochen bringen.</note>
+        <note type="gloss" target="#mha-264-orig" n="gewurcz das wol" resp="#fyndling">Würze es gut. Typische mittelalterliche Gewürze wären Pfeffer, Ingwer, Galgant, Nelken, Muskat oder Safran.</note>
+        <note type="interpretive_choice" target="#mha-264-orig" n="Raigerpain klain als dann das fleisch ist dauon nym" resp="#fyndling">Nimm das Reiherfleisch von den Knochen. Die Anweisung, die Knochen klein zu stoßen, könnte für eine spätere Verwendung (z.B. Brühe) gedacht sein, ist aber für die Farce nicht relevant.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

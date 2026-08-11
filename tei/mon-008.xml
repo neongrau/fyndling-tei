@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Grüne Eier im Schmalz</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-27">2026-06-27</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-008/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.8</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-008">
+        <head>Grüne Eier im Schmalz</head>
+        <div type="original" xml:id="mon-008-orig" xml:lang="de-x-fnhd" corresp="#mon-008-trans">
+          <p>ITem wil man herte air sol machen gruen So nymb pettersill vnd stoß den vnd slachs in mit wein durch vnd nymb honig dar czw vnd machs mit gburcz ab vnd rast sy ym smalcz vnd thue sy in dy gruen varb also werden sy gerecht vnd guett</p>
+        </div>
+        <div type="translation" xml:id="mon-008-trans" xml:lang="de" corresp="#mon-008-orig">
+          <p>Wenn du hartgekochte Eier grün färben möchtest: Nimm Petersilie und stoße sie. Schlage sie mit Wein durch und gib Honig dazu. Würze sie mit Gewürz ab. Röste die Eier im Schmalz und gib sie dann in die grüne Farbe. So werden sie recht und gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="herte air">Eier, hartgekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="pettersill" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gburcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürz</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="smalcz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-008-trans" resp="#fyndling">Welches Gericht? Hartgekochte Eier, kurz in Schmalz angebraten, in einer grünen Honig-Wein-Petersiliensauce - eine vereinfachte mittelalterliche Grünsauce vom Typ der Agliata verde, ohne Knoblauch, mit Honig gesüßt statt mit Essig gesäuert. Das Direktnachbarrezept mon-007 zeigt dieselbe Grundtechnik in der schlichten Alltagsform: kalt, ohne Honig, ohne Rösten. Mon-008 ist die reichere, wärmere Festtagsvariante.
+
+Technik: „slachs in mit wein durch“ Das ist der Kern des Rezepts. Die gestoßene Petersilie wird mit Wein vermengt und durch ein Leinentuch oder grobes Sieb geschlagen - nicht verrührt. Das Durchpressen löst das Chlorophyll aus den Zellen und ergibt eine kräftig grüne, herb-weinige Flüssigkeit. Nur diese Technik liefert die versprochene Farbe; bloßes Umrühren ergibt ein blasses Ergebnis. Dieselbe Technik steht explizit in meb-006: „schlach es durch ain tuch oder durch ain sib“ - Tuch oder Sieb werden dort direkt genannt. Honig und gburcz (Gewürz, bairisch-österreichisch für Gewürzmischung) werden in die Flüssigkeit eingerührt. Als Gewürz passt Ingwer am besten zu Honig und Wein; Pfeffer ergänzt gut, Zimt kann den Grünton optisch beeinträchtigen.
+
+Praxis. Reihenfolge: Erst Sauce bereiten (Petersilie stoßen, mit Wein durch Tuch schlagen, Honig einrühren, abschmecken). Dann Eier in heißem Schmalz rundum anbraten - ganz gebraten entstehen schöne Röststellen, halbiert bräunt die Schnittfläche. Heiß aus der Pfanne sofort in die grüne Sauce legen oder die Sauce darübergießen. Die Sauce nicht kochen - sie bleibt roh und frisch. Kurz vor dem Servieren herstellen, sie oxidiert und verblasst wenn sie steht. Die Abschlussformel „also werden sy gerecht vnd guett“ ist eine feste Schlussformel des Mondseer Kochbuchs, wortgleich auch in mon-007 und m725-004 belegt.</note>
+        <note type="gloss" target="#mon-008-orig" n="herte air" resp="#fyndling">Hartgekochte Eier.</note>
+        <note type="gloss" target="#mon-008-orig" n="slachs in mit wein durch" resp="#fyndling">Schlage die gestoßene Petersilie mit Wein durch ein Tuch oder Sieb - nicht verrühren. Das Durchpressen extrahiert den grünen Farbstoff und das Aroma. Dieselbe Technik steht in meb-006 explizit: „schlach es durch ain tuch oder durch ain sib“. Belege auch in mon-007 und mon-009 (selbe Handschrift).</note>
+        <note type="gloss" target="#mon-008-orig" n="gburcz" resp="#fyndling">Ein allgemeiner Begriff für Gewürze. Im Spätmittelalter waren dies typischerweise Pfeffer, Ingwer, Zimt, Nelken, Muskat oder Galgant. Die Schreibung gburcz ist eine bairisch-österreichische Variante von „Gewürz“.</note>
+        <note type="gloss" target="#mon-008-orig" n="rast sy ym smalcz" resp="#fyndling">Die hartgekochten Eier werden kurz in Schmalz angebraten, um eine leichte Röstung und zusätzlichen Geschmack zu erhalten. Rast steht hier als Verb (anbraten/rösten); Parallele m5919-060: „rost es darinen ab vnd rast es kull auff kolen“.</note>
+        <note type="gloss" target="#mon-008-orig" n="gruen varb" resp="#fyndling">Die grüne Farbe - konkret: die zuvor hergestellte grüne Petersilien-Wein-Honig-Sauce. Nicht metaphorisch, sondern ein Verweis auf die Extraktionsflüssigkeit aus dem Durchschlag-Schritt.</note>
+        <note type="interpretive_choice" target="#mon-008-orig" n="sol mach sol machen gruen" resp="#fyndling">Schreiber-Dittographie: der Kopist hat „sol mach“ begonnen, abgebrochen und „sol machen gruen“ neu angesetzt. Inhalt: „soll man grün machen“. Kein eigenständiger Bedeutungsunterschied.</note>
+        <note type="interpretive_choice" target="#mon-008-orig" n="gburcz" resp="#fyndling">Als „Gewürz“ (allgemeine Gewürzmischung) übersetzt.</note>
+        <note type="interpretive_choice" target="#mon-008-orig" n="slachs in mit wein durch" resp="#fyndling">Schlage die gestoßene Petersilie mit Wein durch ein Tuch oder Sieb (Passieren/Durchschlagen zur Farbstoffextraktion). Belegt durch meb-006 („schlach es durch ain tuch oder durch ain sib“), mon-007/mon-009 (selbe Handschrift), m384-026 und weitere Korpusbelege.</note>
+        <note type="interpretive_choice" target="#mon-008-orig" n="rast sy ym smalcz" resp="#fyndling">Anbraten/Rösten der Eier im Schmalz. In m5919-060 steht „rost es darinen ab vnd rast es kull auff kolen“ - dort beschreibt die Abfolge Anbraten und Nachgaren; in mon-008 ist „rast“ mit Akkusativobjekt „sy“ und Hitzemedium „ym smalcz“ eindeutig ein Bratvorgang.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

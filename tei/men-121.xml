@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Lombardischer Potage</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-121/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-121">
+        <head>Lombardischer Potage</head>
+        <div type="original" xml:id="men-121-orig" xml:lang="fro" corresp="#men-121-trans">
+          <p>Potage de Lombars. Quant la char est cuicte, si la trayez, et mectez l'eaue de la char en ung autre pot, maiz gardez bien qu'il n'y coule ne fondrilles ne osseletz. Puiz ayez moyeulx de oeufz batuz longuement avec du vertjus et pouldre, et filez dedens le pot en filant et en remuant. Puis faictes vos souppes. Autres potages lyans sans char</p>
+        </div>
+        <div type="translation" xml:id="men-121-trans" xml:lang="de" corresp="#men-121-orig">
+          <p>Wenn das Fleisch gar gekocht ist, nimm es aus dem Topf. Gib das Kochwasser des Fleisches in einen anderen Topf, doch achte wohl darauf, dass weder Bodensatz noch kleine Knochen hineingelangen. Dann nimm Eigelb, das du lange mit Verjus und Gewürzpulver geschlagen hast. Gieße diese Mischung fadenförmig in den Topf, während du stetig rührst. Dann bereite deine Brotsuppen zu.</p>
+          <p>Andere bindende Potages ohne Fleisch</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="char">Fleisch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eaue de la char">Kochwasser vom Fleisch / Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="moyeulx de oeufz">Eigelb</ingredient>
+            </item>
+            <item>
+              <ingredient orig="vertjus">Verjus</ingredient>
+            </item>
+            <item>
+              <ingredient orig="pouldre">Gewürzpulver</ingredient>
+            </item>
+            <item>
+              <ingredient orig="souppes">Brot</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-121-trans" resp="#fyndling">Welches Gericht ist das? Ein Potage de Lombars, ein "lombardischer" gebundener Eintopf - im Kern eine Fleischbrühe, die mit Eigelb und Verjus legiert (sämig gebunden) und über Brotscheiben gegeben wird. Das Verfahren ist der direkte Vorfahr der bis heute lebendigen Eier-Legierung (man denke an die griechische Avgolemono-Suppe): Eigelb plus Säure binden eine Brühe samtig, ohne Mehl.
+
+Potage meint hier keinen klaren Brühentopf im modernen Sinn, sondern eine dickliche, gebundene Speise - die mittelalterliche Grundbedeutung. Das "lombardisch" verweist auf die als besonders raffiniert geltende oberitalienische Küche, der die Pariser Bürgerküche solche Legier-Techniken zuschrieb.
+
+Die souppes sind nicht "Suppe", sondern die Brotschnitten selbst (frz. soupe = eingeweichte Brotscheibe): altbackenes Brot wird in den Teller gelegt, die gebundene Brühe darüber gegossen. Daher der Hinweis am Ende - erst die Bindung fertigstellen, dann "deine Brotsuppen bereiten".
+
+Der angehängte Satz Andere bindende Potages ohne Fleisch ist eine Rubrik-Überschrift der Handschrift, die zur nächsten Rezeptgruppe (Fastenvarianten ohne Fleisch) überleitet - kein Bestandteil dieses Gerichts.
+
+Praxis. Mageres Brüh-Fleisch (Rind, Huhn) gar kochen, herausnehmen. Die Brühe in einen sauberen Topf abseihen, damit Bodensatz und Knochensplitter draußen bleiben. 3-4 Eigelb mit einem kräftigen Schuss Verjus und einer Prise Gewürzpulver (Ingwer, Zimt, etwas Pfeffer) gründlich verschlagen. Topf vom stärksten Feuer ziehen, die Eimasse in dünnem Faden unter ständigem Rühren einlaufen lassen - nicht mehr kochen, sonst flockt das Ei. Über altbackene Brotscheiben im Teller gießen. Verwandt mit dem Innereien-Potage via-128, der dieselbe Eigelb-Verjus-Bindung nutzt.</note>
+        <note type="gloss" target="#men-121-orig" n="Potage" resp="#fyndling">Ein Potage im Mittelalter war ein dicker, gebundener Eintopf, oft mit Fleisch oder Gemüse, und nicht eine klare Suppe wie heute.</note>
+        <note type="gloss" target="#men-121-orig" n="Souppes" resp="#fyndling">Als 'Souppes' oder 'Brotsuppen' bezeichnete man im Mittelalter dünne Scheiben altbackenen Brotes, die in den Eintopf oder die Brühe getunkt wurden, um sie aufzusaugen und zu essen.</note>
+        <note type="interpretive_choice" target="#men-121-orig" n="pouldre" resp="#fyndling">Gewürzpulver, eine Mischung aus gängigen mittelalterlichen Gewürzen wie Ingwer, Zimt, Nelken und Pfeffer.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

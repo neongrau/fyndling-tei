@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kutteln auf Gelb</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-069/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-069">
+        <head>Kutteln auf Gelb</head>
+        <div type="original" xml:id="men-069-orig" xml:lang="fro" corresp="#men-069-trans">
+          <p>Trippes au jaunet. Qui veult cuire tripes, il n'y couvient point mectre de sel au cuire, car ilz noirciroient. Item, les piez, la queue, et la caillecte, qui sont noirs, doivent cuire apart, et la pance et autres choses blanches d'autre part.</p>
+        </div>
+        <div type="translation" xml:id="men-069-trans" xml:lang="de" corresp="#men-069-orig">
+          <p>Wer Kutteln zubereiten möchte, soll beim Kochen kein Salz hinzufügen, denn sie würden sonst schwarz werden. Desgleichen sollen die Füße, der Schwanz und die Kuttelhaube, die von Natur aus dunkel sind, gesondert garen. Der Pansen und andere helle Teile kochen wiederum für sich.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="tripes">Kutteln</ingredient>
+            </item>
+            <item>
+              <ingredient orig="sel">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="les piez">Tierfüße</ingredient>
+            </item>
+            <item>
+              <ingredient orig="la queue">Tierschwanz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="la caillecte">Kuttelhaube</ingredient>
+            </item>
+            <item>
+              <ingredient orig="la pance">Pansen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="autres choses blanches">Andere helle Innereien</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-069-trans" resp="#fyndling">Welches Gericht ist das? Die Vorbereitung von Kutteln für ein Trippes au jaunet - Kutteln in gelber Safransauce. Der überlieferte Text behandelt nur die entscheidende Vorgar-Stufe; die gelbe Sauce, die dem Gericht den Namen gibt, schließt sich an. Im Kern der Vorfahr aller geschmorten Kuttelgerichte wie der lyoner Tablier de sapeur oder der Kutteln nach Trésor-Art.
+
+au jaunet - das Gelb. Die namensgebende Farbe kommt von Safran, dem mittelalterlichen Standard-Gelb. Er wird der Sauce zugesetzt, in der die vorgegarten Kutteln fertig ziehen.
+
+Kein Salz beim Kochen. Der zentrale Kniff: Salz im Kochwasser lässt die Kutteln dunkel/grau werden. Darum bleibt das Salzen dem fertigen Gericht vorbehalten - eine Beobachtung über Optik, die das Rezept ausdrücklich hervorhebt.
+
+Helle und dunkle Teile trennen. Füße, Schwanz und caillecte (Labmagen) sind von Natur aus dunkel und färben ab; pance (Pansen) und andere helle Teile garen darum getrennt, damit das helle Fleisch sauber hell bleibt. Auch das ist reine Ästhetik.
+
+Praxis. Vorgereinigte Kutteln (vom Metzger) ohne Salz lange weich köcheln - je nach Vorbehandlung 2-3 Stunden. Dunkle Teile (Füße, Schwanz) in einem eigenen Topf. Danach in eine mit Safran gelb gefärbte, leicht gebundene Brühe geben und erst jetzt salzen, mündig abschmecken.</note>
+        <note type="gloss" target="#men-069-orig" n="Trippes au jaunet" resp="#fyndling">Kutteln in gelber Sauce; das Gelb stammt von Safran.</note>
+        <note type="gloss" target="#men-069-orig" n="caillecte" resp="#fyndling">Labmagen (vierter Magen der Wiederkäuer); von Natur aus dunkel, färbt beim Kochen ab.</note>
+        <note type="gloss" target="#men-069-orig" n="pance" resp="#fyndling">Pansen (erster, größter Magen); helles Gewebe, gart darum getrennt von den dunklen Teilen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

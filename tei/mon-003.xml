@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ein Mus von Eidottern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-27">2026-06-27</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-003/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.3</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-003">
+        <head>Ein Mus von Eidottern</head>
+        <div type="original" xml:id="mon-003-orig" xml:lang="de-x-fnhd" corresp="#mon-003-trans">
+          <p>ITem ain gmuess von airen So nymb dar czw walsch wein vnd ain wenig von ainer semel vnd streich es durch ain ander vnd thue dar ein czugker hastu das nicht so nymb honig an die stat thue es In ain chlains heffen und secz es auff ain cho= ller vnd ruer es ymber als es dick wirdt so hebs her ab so wirdt es guet etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-003-trans" xml:lang="de" corresp="#mon-003-orig">
+          <p>Ein Mus von Eidottern: Nimm dazu welschen Wein und ein wenig geriebene Semmel. Streiche alles mit den Eidottern miteinander durch ein Tuch und gib Zucker hinzu. Hast du keinen Zucker, so nimm Honig stattdessen.</p>
+          <p>Gib die Masse in ein kleines Häfchen und setze es auf glühende Kohlen. Rühre es stets, bis es dick wird. Dann hebe es von der Glut, so wird es gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="airen" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eidotter</ingredient>
+            </item>
+            <item>
+              <ingredient en="southern wine" orig="walsch wein" commodity="wikidata:Q107262744" source="#corema-ingredient-index">Welscher Wein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain wenig von ainer semel">Semmel, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="czugker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-003-trans" resp="#fyndling">Welches Gericht ist das? Ein süßes Eidotter-Wein-Mus - ein Vorfahr der Zabaglione/Weinschaumcreme: Eidotter mit welschem Wein, etwas geriebener Semmel und Zucker (oder Honig) auf der Glut cremig dick gerührt. Im Mondseer Korpus steht es neben der eilosen Fasten-Variante mon-001; hier ist es aber die echte Eierspeise.
+
+Der Titel und die fehlenden Eier. Der Mondseer Schreiber nennt die Eier nur im Titel von airen und lässt sie im Verfahrenstext aus - eine Auslassung, keine Absicht. Die fast wortgleichen Schwesterrezepte m5919-014 und ri15632-027 tragen den Titel ayr totteren / ayer toter (Eidotter) und belegen, dass die Dotter zum Binden gehören; sie sind hier ergänzt, nicht erfunden.
+
+Welscher Wein, nicht Weißwein. Walsch wein meint welschen, also romanisch-südländischen (oft süßen) Importwein - die Schwester m5919-014 schreibt welhisch wein. Ein süßer Dessertwein trifft den Charakter am besten.
+
+Praxis. Eidotter, welschen Wein, Zucker und die geriebene Semmel verrühren und durch ein Tuch streichen. In einem kleinen Häfchen über milder Glut stetig rühren (ruer es ymber = rühre es stets), bis es cremig eindickt - nicht sprudelnd kochen, sonst gerinnt der Dotter und ‚legt sich an'. Sobald es bindet, sofort von der Glut nehmen. Die Säure des Weins verlangt sanfte Hitze.</note>
+        <note type="gloss" target="#mon-003-orig" n="walsch wein" resp="#fyndling">Welscher (italienischer/südländischer) Wein - meist ein süßerer, kräftiger Importwein; nicht zu verwechseln mit ‚Weißwein'.</note>
+        <note type="gloss" target="#mon-003-orig" n="airen" resp="#fyndling">Eier, hier die Eidotter - die Bindung des Muses. Im Mondseer Verfahrenstext nur über den Titel ‚von airen' genannt, in den fast wortgleichen Schwesterrezepten als ‚ayr totteren' (Eidotter) ausgeschrieben.</note>
+        <note type="interpretive_choice" target="#mon-003-orig" n="cho= ller" resp="#fyndling">‚Glut' / glühende Kohlen - die Masse wird zum Eindicken auf die Glut gesetzt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

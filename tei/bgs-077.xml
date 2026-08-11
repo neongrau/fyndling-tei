@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Blancmanger mit Veilchenblüten</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-08-08">2026-08-08</date>
+        <idno type="url">https://fyndling.de/rezepte/bgs-077/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Daz buoch von guoter spîse</title>
+          <date when="1350" cert="low">~1350</date>
+          <idno type="URI">https://www.uni-giessen.de/de/fbz/fb05/germanistik/absprache/sprachverwendung/gloning/tx/bvgs.htm</idno>
+          <idno type="corema-sigle">m11</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m11</idno>
+          <idno type="corema-recipe">m11.81</idno>
+          <note>Transkription: Thomas Gloning, Universität Giessen (Digitale Edition)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="gmh">Mittelhochdeutsch</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="bgs-077">
+        <head>Blancmanger mit Veilchenblüten</head>
+        <div type="original" xml:id="bgs-077-orig" xml:lang="gmh" corresp="#bgs-077-trans">
+          <p>Einen blamensir.
+ Ein blamenser gemaht von geceysten huenern an der brust. vnd
+ mache eine guote mandelmilich, abe geruert huener
+ dinne in der mandelmilich mit ris mele. getzworn fial bluomen vnd
+ smaltz gib gnuoc dar zvo vnd suedez gar vnd zuckers genuoc dar zvo.
+ daz heizt auch ein blamenser.</p>
+        </div>
+        <div type="translation" xml:id="bgs-077-trans" xml:lang="de" corresp="#bgs-077-orig">
+          <p>Ein Blancmanger, zubereitet aus den Brüsten von Kapaunen. Bereitet eine gute Mandelmilch zu. Rührt das zerrupfte oder fein geschnittene Hühnerfleisch zusammen mit Reismehl in die Mandelmilch ein. Gebt reichlich zerstoßene Veilchenblüten, Schmalz und Zucker hinzu. Kocht es gründlich durch. Auch dies nennt man einen Blancmanger.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="geceysten huenern an der brust">Brustfleisch von Kapaunen</ingredient> - 500 g</item>
+            <item><ingredient orig="guote mandelmilich">Mandelmilch</ingredient> - 1 l</item>
+            <item><ingredient en="rice flour" orig="ris mele" commodity="wikidata:Q1269205" source="#corema-ingredient-index">Reismehl</ingredient> - 100 g</item>
+            <item><ingredient orig="getzworn fial bluomen">zerstoßene Veilchenblüten</ingredient> - 2 EL</item>
+            <item><ingredient en="animal fat" orig="smaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient> - 50 g</item>
+            <item><ingredient en="unrefined cane sugar" orig="zuckers" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient> - 100 g</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#bgs-077-trans" resp="#fyndling">Welches Gericht ist das? Ein überaus feiner, süß-herzhafter Geflügel-Pudding oder -Ragout, im Geiste verwandt mit einer sehr delikaten Panna Cotta oder einem cremigen Hühnerfrikassee, aber mit der besonderen, floralen Note und Farbe von Veilchenblüten - ein echtes Prunkstück der mittelalterlichen Küche.
+
+So gelingt es. Zuerst die Kapaunbrust gar kochen oder dämpfen, bis sie zart ist, dann sehr fein zupfen oder schneiden, damit sie sich gut in die cremige Masse einfügt. Bereite eine gute, nicht zu dünne Mandelmilch (als Startpunkt etwa 500 ml) zu und erhitze sie sanft in einem Topf. Das Reismehl (beginne mit 2-3 Esslöffeln für 500 ml Flüssigkeit) rührst du am besten mit etwas kalter Mandelmilch oder Wasser glatt, bevor du es unter ständigem Rühren in die heiße Mandelmilch gibst. Lass es langsam andicken, bis es eine sämige Konsistenz erreicht. Nun gib das fein zerrupfte Hühnerfleisch, 1-2 Esslöffel Schmalz und 1-2 Esslöffel Zucker hinzu - die genaue Zuckermenge hängt von deinem Geschmack ab, es soll eine Balance zwischen süß und herzhaft entstehen. Die zerstoßenen Veilchenblüten (etwa 1-2 Esslöffel, je nach Intensität) rührst du zuletzt ein. Lass alles noch einmal sanft köcheln, damit sich die Aromen verbinden und das Reismehl vollständig gart. Der häufigste Fehler ist das Anbrennen oder Klümpchenbildung: Rühre stets gut um und halte die Hitze niedrig.
+
+So wird es richtig gut. Die Textur ist entscheidend: Sie sollte samtig-cremig sein, wie ein dicker Brei oder eine sehr sämige Sauce, die sich zart auf der Zunge auflöst. Die Balance zwischen der Süße des Zuckers, dem Umami des Kapaunfleisches und dem zarten, floralen Aroma der Veilchen ist der Schlüssel. Eine Prise Salz kann die Aromen noch hervorheben und die Süße erden. Serviere das Blancmanger lauwarm, denn dann entfalten sich die feinen Veilchennoten am besten. Für das Anrichten kannst du die zarte violette Farbe durch ein paar frische Veilchenblüten als Garnitur betonen, das macht optisch viel her.</note>
+        <note type="gloss" target="#bgs-077-orig" n="blamensir" resp="#fyndling">Blancmanger, ein beliebtes Gericht des Mittelalters, oft süß, aus Hühnerfleisch, Mandelmilch, Reismehl und Zucker.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#blamensir"/></note>
+        <note type="gloss" target="#bgs-077-orig" n="geceysten huenern" resp="#fyndling">Kapaunen, kastrierte Hähne, die für ihr zartes und fettreiches Fleisch geschätzt wurden.</note>
+        <note type="gloss" target="#bgs-077-orig" n="fial bluomen" resp="#fyndling">Veilchenblüten, die im Mittelalter häufig zum Färben und Aromatisieren von Speisen verwendet wurden.</note>
+        <note type="gloss" target="#bgs-077-orig" n="smaltz" resp="#fyndling">Schmalz, tierisches Fett (z.B. Schweineschmalz oder Gänsefett), das zum Kochen und Braten verwendet wurde.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

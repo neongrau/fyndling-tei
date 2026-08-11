@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Feigenmus-Krapfen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-02">2026-07-02</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-051/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.51</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-051">
+        <head>Feigenmus-Krapfen</head>
+        <div type="original" xml:id="mon-051-orig" xml:lang="de-x-fnhd" corresp="#mon-051-trans">
+          <p>ITem wil dw ein mueß von veigen chochen so nym nuß veigen vntter Ein anderen ineinem morsar vnd geburcz das woll vnd verib es dar nach woll vnd legs num in ein phann vnd thue oll dar an vnd erbelles vnd mach ein chrapfen weiß In einen er haben taig dar nach pach es woll In oll vnd gib es chalt czw essen etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-051-trans" xml:lang="de" corresp="#mon-051-orig">
+          <p>Wenn du ein Mus von Feigen kochen willst, so nimm getrocknete Feigen und zerstoße sie gut in einem Mörser. Würze das Mus gut und reibe es danach fein. Lege es nun in eine Pfanne, gib Öl dazu und lass es aufkochen. Mache daraus Krapfen, wie du sie haben willst, in einem aufgegangenen Teig. Danach backe sie gut in Öl und gib sie kalt zu essen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="nuß veigen">Feigen, getrocknet</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="geburcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="cooking oil" orig="oll" commodity="wikidata:Q427457" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+            </item>
+            <item>
+              <ingredient en="dough" orig="taig" commodity="wikidata:Q178024" source="#corema-ingredient-index">Weizenmehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="dough" orig="taig" commodity="wikidata:Q178024" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-051-trans" resp="#fyndling">Welches Gericht ist das? Dies sind feigengefüllte Krapfen aus Hefeteig, in Öl frittiert und kalt serviert - ein Vorfahre der süßen Fastenkrapfen mit Trockenfrüchtefüllung, wie sie im bairisch-österreichischen Raum bis heute zur Fastenzeit gebacken werden. Ein fast wortgleiches Schwesterrezept aus Clm 15632 (ri15632-005, "Gefüllte Krapfen mit Nuss-Feigen-Paste") teilt Zutaten, Verfahren und sogar die Schlussformel "gibs kalt ze essen" - beide Fassungen gehören derselben Rezeptfamilie an.
+
+Erbelles - erwellen, nicht formen. Die Handschrift schreibt "erbelles". Im bairischen Dialekt wechselt b häufig mit w (vgl. "erbelten" = "erwellen" im Glossar), sodass die naheliegendere Lesart "erwelle es" - lass es kurz aufkochen bzw. erwärme es gut - ist. Das Schwesterrezept ri15632-005 hat an derselben Stelle wörtlich "vnd erwell ez wol darnach mach krapffen", was diese Lesart stützt. Küchentechnisch ergibt das auch mehr Sinn: Die krümelige Feigenmasse alleine ist zu trocken zum Einwickeln, erst das kurze Erhitzen mit Öl in der Pfanne bindet sie zu einer geschmeidigen, formbaren Paste.
+
+Erhaben Teig - ein Hefeteig. Die Formulierung "In einen er haben taig" ist am plausibelsten als "in einen erhaben(en) Teig" zu lesen, also einen mit Sauerteig oder Hefe aufgegangenen Teig. Auch hier bestätigt das Schwesterrezept diese Lesart wörtlich ("In erhaben taig"). Der Teig braucht also vorherige Gehzeit an einer warmen Stelle - ein Aufwand, der sich gegenüber einem ungetriebenen Teig lohnt, weil der Hefeteig beim Frittieren zusätzlich aufgeht und die Krapfen luftig-knusprig werden.
+
+Praxis. Getrocknete Feigen im Mörser (oder ersatzweise in einer Küchenmaschine) zu einer groben Masse zerstoßen, mit Gewürzen (Zimt, Ingwer, Nelken, Muskatblüte) würzen und anschließend fein durchreiben oder passieren, um Kerne und Fasern zu entfernen. Die Masse mit etwas Öl in einer Pfanne kurz erhitzen, bis sie geschmeidig und formbar ist. Aus einem zuvor angesetzten und gegangenen Hefeteig kleine Teigstücke ausrollen, mit der warmen Feigenmasse füllen und zu Krapfen verschließen. In reichlich heißem Öl goldbraun ausbacken, abkühlen lassen und kalt servieren.</note>
+        <note type="gloss" target="#mon-051-orig" n="nuß veigen" resp="#fyndling">‚Nussfeigen‘ bezeichnet getrocknete Feigen, die durch den Trocknungsprozess eine feste, nussartige Konsistenz erhalten.</note>
+        <note type="gloss" target="#mon-051-orig" n="geburcz" resp="#fyndling">Das Verb ‚geburcz‘ bedeutet ‚würzen‘. Welche Gewürze genau gemeint sind, wird nicht spezifiziert - im Mittelalter waren dafür Mischungen aus Zimt, Ingwer, Nelken und Muskatblüte üblich.</note>
+        <note type="gloss" target="#mon-051-orig" n="morsar" resp="#fyndling">Im mittelalterlichen Kochkontext ist ein ‚Mörser‘ ein großes, schweres Gefäß aus Stein oder Metall, das zum Zerstoßen von Fleisch, Nüssen oder feuchten Zutaten zu einer feinen Paste verwendet wurde. Es ist das Äquivalent einer modernen Küchenmaschine.</note>
+        <note type="gloss" target="#mon-051-orig" n="chrapfen" resp="#fyndling">‚Krapfen‘ sind im Mittelalter eine Sammelbezeichnung für verschiedene Arten von frittiertem Gebäck, ähnlich heutigen Krapfen oder Berlinern, oft süß oder gefüllt.</note>
+        <note type="gloss" target="#mon-051-orig" n="erbelles" resp="#fyndling">Bairische b/w-Lesefalle: ‚erbelles‘ ist wahrscheinlich ‚erwelle es‘ (von ‚erwellen‘ - aufkochen, gut erhitzen), nicht ‚erballen‘ (zu Bällchen formen). Das Schwesterrezept ri15632-005 hat an derselben Stelle wörtlich ‚erwell ez wol‘, was diese Lesart stützt.</note>
+        <note type="gloss" target="#mon-051-orig" n="In einen er haben taig" resp="#fyndling">Vermutlich ‚in einen erhaben(en) Teig‘ - einen mit Sauerteig oder Hefe aufgegangenen Teig. Das Schwesterrezept ri15632-005 hat an derselben Position ‚In erhaben taig‘ und stützt diese Lesart gegenüber einem ungetriebenen Teig.</note>
+        <note type="interpretive_choice" target="#mon-051-orig" n="geburcz" resp="#fyndling">‚Würze‘ - als Verb ‚würzen‘, die Zutat sind die Gewürze selbst.</note>
+        <note type="interpretive_choice" target="#mon-051-orig" n="chrapfen weiß" resp="#fyndling">‚Krapfen, wie du sie haben willst‘ - ‚weiß‘ ist wahrscheinlich eine Verschreibung/Kürzung von ‚als‘ (wîse, Art und Weise), nicht das Farbadjektiv ‚weiß‘.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

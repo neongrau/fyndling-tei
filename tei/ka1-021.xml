@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fisch-Galrain mit Honig-Pfeffer-Brot</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-16">2026-07-16</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-021/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-021">
+        <head>Fisch-Galrain mit Honig-Pfeffer-Brot</head>
+        <div type="original" xml:id="ka1-021-orig" xml:lang="de-x-fnhd" corresp="#ka1-021-trans">
+          <p>galrain Ouch mach ain galrain von win essich vnd von fischen brugen gewurtzet vnd gefaerbet mit hong vnd mit pfeffer brot vnd blouß erwelt vnd gib kalt neben fischen gesotten gesoten oder gebrauten als ain saeltz etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-021-trans" xml:lang="de" corresp="#ka1-021-orig">
+          <p>Mache ein Galrain aus Wein, Essig und Fischbrühe. Würze und färbe es mit Honig und Pfefferbrot, und lass es nur einmal aufkochen. Serviere es kalt neben gekochten oder gebratenen Fischen als eine Sauce.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fischen brugen">Fischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="hong" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper bread" orig="pfeffer brot" commodity="wikidata:Q107262039" source="#corema-ingredient-index">Pfefferbrot</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-021-trans" resp="#fyndling">Welches Gericht ist das? Eine kalte, süß-saure Würzsauce zu Fisch: Wein, Essig und Fischbrühe, mit Honig gesüßt und gefärbt, mit zerstoßenem Pfefferbrot gebunden, einmal aufgekocht und kalt zu gesottenem oder gebratenem Fisch gereicht. Der Name „Galrain“ erinnert an Gallerte oder Aspik, doch weder hier noch in den benachbarten Ka1-Rezepten (ka1-019, ka1-020) wird ein Geliermittel genannt - gemeint ist eine dickliche, kalte Würzsauce, keine schnittfeste Sülze.
+
+Der Fund in der Schwester-Handschrift. In Cgm 384 (München) steht mit m384-037 eine nahezu wortgleiche Fassung desselben Rezepts. Sie klärt zwei Stellen: „blouß erwelt“ gehört zum Verb erwellen (aufkochen, aufwallen lassen) - eine dokumentierte Kochtechnik, keine Aussage über eine „Auswahl“ von Zutaten. Und „saeltz“ meint „Salse“, also eine würzige Tunke, nicht Speisesalz.
+
+Praxis. Die Fischbrühe kochen (bei kollagenreichem Fisch dickt sie dabei leicht an), dann mit Wein, Essig und Honig verrühren, mit zerstoßenem Pfefferbrot binden und würzen, und die Mischung einmal kurz aufkochen lassen. Danach abkühlen lassen und kalt zu gesottenem oder gebratenem Fisch als Sauce servieren. Da die Sauce warm angesetzt und erst danach kaltgestellt wird, zügig verarbeiten und kühl oder schattig lagern statt sie stundenlang in der Sonne stehen zu lassen.</note>
+        <note type="gloss" target="#ka1-021-orig" n="galrain" resp="#fyndling">Ein „Galrain“ (verwandt mit Gallerte) erinnert im Namen an Aspik, ist aber ohne genanntes Geliermittel - wie auch die benachbarten Ka1-Rezepte (ka1-019, ka1-020) und die Schwester-Handschrift m384-037 zeigen - eine dickliche, kalte Würzsauce, keine schnittfeste Sülze. Sie dient als Beilage zu Fisch oder Fleisch.</note>
+        <note type="gloss" target="#ka1-021-orig" n="fischen brugen" resp="#fyndling">Hier als „Fischbrühe“ übersetzt: eine Brühe, die aus Fischresten (Köpfen, Gräten) gekocht wird und bei kollagenreichem Fisch leicht geliert.</note>
+        <note type="gloss" target="#ka1-021-orig" n="pfeffer brot" resp="#fyndling">Ein dunkles, gewürztes Brot, das im Mittelalter häufig als Bindemittel, Farbstoff und Geschmacksgeber in Saucen und Eintöpfen verwendet wurde. Es liefert hier die Würzung und die dunkle Farbe.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="gloss" target="#ka1-021-orig" n="blouß erwelt" resp="#fyndling">Vom Verb erwellen: kurz aufkochen oder aufwallen lassen - ein im Korpus vielfach belegter Kochterminus (u. a. Lexer „er-wëllen“, Grimm/DWB „fervefacere“). Die Schwester-Handschrift m384-037 hat an derselben Stelle „blosz erwolt“ und bestätigt diese Lesart. Gemeint ist, dass die Sauce nur einmal kurz aufgekocht wird - keine Aussage über eine „Auswahl“ von Zutaten.</note>
+        <note type="gloss" target="#ka1-021-orig" n="saeltz" resp="#fyndling">„Saeltz“ meint hier „Salse“, also eine würzige Tunke oder Sauce, nicht Speisesalz - so auch von der Schwester-Handschrift m384-037 an derselben Stelle annotiert.</note>
+        <note type="interpretive_choice" target="#ka1-021-orig" n="gesotten gesoten" resp="#fyndling">Als einmal ‚gesotten‘ (gekocht) übersetzt, da die doppelte Nennung als Schreibfehler oder Redundanz im Originaltext interpretiert wird.</note>
+        <note type="interpretive_choice" target="#ka1-021-orig" n="gewurtzet vnd gefaerbet mit hong vnd mit pfeffer brot" resp="#fyndling">Die Formulierung wird so interpretiert, dass Honig und Pfefferbrot die spezifischen Mittel sind, die sowohl zum Würzen als auch zum Färben des Galrain verwendet werden, ohne dass weitere Gewürze impliziert sind.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

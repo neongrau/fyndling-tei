@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Halbierte Eier und Eierkügelchen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-16">2026-07-16</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-063/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-063">
+        <head>Halbierte Eier und Eierkügelchen</head>
+        <div type="original" xml:id="ka1-063-orig" xml:lang="de-x-fnhd" corresp="#ka1-063-trans">
+          <p>Gehabierti aiger Ouch gehabierti ayer mach dar vß mach kugelin als aiger vnd schnid mit haur von en ander vnd farb die in der milch ain wenig vnd gib sie in ainen essich vnd peterlin oder ainen supen war vf du wilt oder in ainer saelcz etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-063-trans" xml:lang="de" corresp="#ka1-063-orig">
+          <p>Nimm halbierte Eier.</p>
+          <p>Auch aus den halbierten Eiern forme daraus Kügelchen, die wie kleine Eier aussehen. Schneide sie mit einem Haar (einem dünnen Faden) voneinander und färbe sie ein wenig in Milch. Gib sie dann in Essig und Petersilie, oder in eine Suppe deiner Wahl, oder in eine Sauce.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Gehabierti aiger / ayer">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="milk" orig="milch" commodity="wikidata:Q8495" source="#corema-ingredient-index">Milch</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="peterlin" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient orig="supen">Suppe (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="saelcz">Sauce (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-063-trans" resp="#fyndling">Welches Gericht ist das? Zwei Varianten einer einfachen Ei-Beilage: halbierte, gekochte Eier sowie aus Eiern geformte, eiförmige Kügelchen - beide serviert in Essig-Petersilie, wahlweise in einer Suppe oder Sauce. Die halbierten Eier entsprechen im Prinzip dem bis heute bekannten Ei in saurer Kräutersauce als Suppen- oder Salatbeilage. Für die Kügelchen-Variante gibt es keinen direkten heutigen Nachfahren, aber sie gehört zur selben Familie von Form-Gerichten wie die Kalbfleischkügelchen in ka1-057 aus demselben Buch.
+
+Kügelchen aus Eiern. Der Text nennt kein Bindemittel und keine Formmethode für die Kügelchen - vermutlich wird zerdrücktes Eigelb (möglicherweise mit etwas Eiweiß) zu kleinen, eiförmigen Kugeln gepresst. Das ist eine echte Lücke im Originaltext, die hier offen bleibt, statt mit einer erfundenen Methode gefüllt zu werden.
+
+Schneiden „mit Haar“. „schnid mit haur von en ander“ heißt wörtlich: mit einem Haar (einem dünnen Faden) voneinander trennen. Das ist keine bildliche Redewendung für hauchdünnes Schneiden, sondern eine reale, bis heute gebräuchliche Küchentechnik: weiche, klebrige Speisen wie Ei oder Käse lassen sich mit einem Haar oder Faden statt mit einer Messerklinge sauber trennen, ohne dass das Eigelb verschmiert oder die Kügelchen aneinanderkleben.
+
+Färben in Milch. „farb die in der milch ain wenig“ heißt: die Eier ein wenig in Milch färben/tönen. Der Text nennt kein Hitzeverfahren - ob damit ein kurzes Eintauchen ohne Erwärmen oder ein leichtes Erwärmen gemeint ist, bleibt offen; ein Pochieren oder anderes Garverfahren ist im Wortlaut nicht belegt.
+
+Praxis. Eier hart kochen, dann halbieren oder das Eigelb zu kleinen Kugeln formen und mit einem dünnen Faden (statt Messer) voneinander trennen. Kurz in kalte Milch tauchen, dann in Essig mit gehackter Petersilie anrichten - alternativ in eine Suppe oder Sauce geben. Am Feuer/Stand machbar, durch das Formen und Trennen der Kügelchen aber etwas zeitaufwändiger als eine reine Kalt-Beilage.</note>
+        <note type="gloss" target="#ka1-063-orig" n="Gehabierti aiger / ayer" resp="#fyndling">Vermutlich ‚halbierte Eier‘ - eine lexikalisch nicht abschließend gesicherte Lesart (‚gehabiert‘/‚habieren‘ ist außerhalb dieser Stelle nicht belegt), aber im Rezeptkontext (halbierte vs. zu Kügelchen geformte Eier) durchgängig plausibel.</note>
+        <note type="gloss" target="#ka1-063-orig" n="schnid mit haur von en ander" resp="#fyndling">Wörtlich ‚mit einem Haar voneinander trennen‘. MHDBDB bestätigt ‚haur‘ als Schreibvariante von ‚hâr‘ (Haar). Das Trennen weicher Speisen mit einem Haar oder Faden statt einem Messer ist eine real belegte, bis heute genutzte Küchentechnik - keine gesicherte Redewendung für ‚hauchdünn‘.</note>
+        <note type="gloss" target="#ka1-063-orig" n="farb die in der milch ain wenig" resp="#fyndling">‚Färbe sie ein wenig in Milch‘. ‚farb‘ ist als Färbe-/Tönungsverb belegt, nicht als Kochverfahren - ob ein kurzes Eintauchen ohne Hitze oder ein leichtes Erwärmen gemeint ist, bleibt offen.</note>
+        <note type="gloss" target="#ka1-063-orig" n="supen" resp="#fyndling">‚Suppe‘. Hier als eine der möglichen Servieroptionen für die zubereiteten Eier genannt.</note>
+        <note type="gloss" target="#ka1-063-orig" n="saelcz" resp="#fyndling">‚Sauce‘. Eine weitere Servieroption für die Eier, neben Essig-Petersilie oder Suppe.</note>
+        <note type="interpretive_choice" target="#ka1-063-orig" n="schnid mit haur von en ander" resp="#fyndling">Mit einem Haar (einem dünnen Faden) voneinander trennen - eine reale Küchentechnik zum sauberen Zerteilen weicher Speisen ohne Messer.</note>
+        <note type="interpretive_choice" target="#ka1-063-orig" n="farb die in der milch ain wenig" resp="#fyndling">Die Eier ein wenig in Milch färben/tönen (Eintauchen ohne Hitze).</note>
+      </div>
+    </back>
+  </text>
+</TEI>

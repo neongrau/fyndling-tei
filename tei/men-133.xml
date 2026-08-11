@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gebundene Milch mit pochierten Eiern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-133/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-133">
+        <head>Gebundene Milch mit pochierten Eiern</head>
+        <div type="original" xml:id="men-133-orig" xml:lang="fro" corresp="#men-133-trans">
+          <p>Lait de vasche lyé. Soit prins le lait a eslite, comme dit est cy devant ou chappitre des potages, et soit bouly une onde, puiz mis hors du pot. Puiz y filez par l'estamine grant foison de moyeulx de oeufz, et ostez la germe. Puiz broyez une cloche de gingembre et saffran, et mectez dedens, et tenez chaudement empres le feu. Puiz ayez des oeufz pochez en eaue, et mectez ii ou iii oeufz pochez en l'escuelle, et le lait dessus.</p>
+        </div>
+        <div type="translation" xml:id="men-133-trans" xml:lang="de" corresp="#men-133-orig">
+          <p>Nimm die ausgewählte Kuhmilch, wie bereits im Kapitel der Eintöpfe beschrieben. Koche sie einmal auf, dann nimm sie vom Herd. Seihe anschließend eine große Menge Eigelb durch ein feines Tuch und entferne dabei die Hagelschnur. Zerstoße danach eine 'Glocke' Ingwer und Safran und gib beides zur Milch. Halte die Mischung warm am Feuer. Bereite dann pochierte Eier zu und lege zwei oder drei davon in eine Schale, bevor du die gewürzte Milch darüber gießt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Lait de vasche">Kuhmilch</ingredient> - 1 l</item>
+            <item><ingredient orig="moyeulx de oeufz">Eigelb</ingredient> - 6</item>
+            <item><ingredient orig="gingembre">gemahlener Ingwer</ingredient> - 1 TL</item>
+            <item><ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safranfäden</ingredient> - 1 Prise</item>
+            <item><ingredient orig="oeufz pochez">Eier</ingredient> - 4</item>
+            <item>
+              <ingredient orig="eaue">Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-133-trans" resp="#fyndling">Welches Gericht ist das? Eine warme, mit Eigelb und Safran gebundene Milch, die über pochierte Eier gegossen wird - im Kern eine frühe lait lié, also gebundene Milch, eng verwandt mit einer dünnen Crème oder einem Eierstich-Guss. Der direkte Zwilling ist foc-087 im Forme of Cury (pochierte Eier mit Ingwer-Safran-Sauce), nah dazu die gestockte Eier-Milch-Speise foc-079. Ein fleischloses maigre-Gericht, also für Fastentage geeignet.
+
+Lyé heißt gebunden: Die Bindung leisten hier die reichlich durch ein Tuch passierten Eigelbe, nicht Brot oder Mehl. Wichtig ist die Reihenfolge - die Milch wird zuerst einmal aufgekocht (bouly une onde) und vom Feuer genommen, erst dann kommen die passierten Eigelbe hinein. So bindet das Eigelb cremig, statt zu stocken oder die Milch gerinnen zu lassen.
+
+Ostez la germe - den Keim (die Hagelschnur/Keimscheibe) der Eigelbe entfernen - ist höfische Feinarbeit für eine glatte Bindung; das Durchseihen durch die estamine fängt zusätzlich alle Flöckchen ab. Une cloche de gingembre et saffran ist eine heute nicht mehr eindeutige Kleinmengen-Angabe (eine glockenförmige Gewürzschale); praktisch eine kleine Prise bis ein knapper Teelöffel.
+
+Praxis. Vollmilch einmal aufkochen, vom Feuer ziehen. 6-8 Eigelbe durch ein feines Tuch streichen (Keimscheibe wegnehmen), in die heiße, aber nicht mehr kochende Milch rühren. Eine kleine Prise gemahlenen Ingwer und Safran zugeben, an der Feuerkante warm und unter ständigem Rühren leicht eindicken lassen - keinesfalls kochen, sonst gerinnt es. Parallel Eier in leicht essigsaurem Wasser pochieren, zwei bis drei pro Schale anrichten und die gewürzte Safranmilch darübergießen.</note>
+        <note type="gloss" target="#men-133-orig" n="lyé" resp="#fyndling">gebunden / angedickt. Die Bindung leisten hier die passierten Eigelbe.</note>
+        <note type="gloss" target="#men-133-orig" n="bouly une onde" resp="#fyndling">einmal kurz aufgekocht. Die Milch wird zuerst aufgekocht und vom Feuer genommen, bevor das Eigelb hineinkommt - sonst gerinnt sie.</note>
+        <note type="gloss" target="#men-133-orig" n="ostez la germe" resp="#fyndling">den Keim bzw. die Hagelschnur des Eigelbs entfernen - höfische Feinarbeit für eine glatte Bindung.</note>
+        <note type="gloss" target="#men-133-orig" n="cloche" resp="#fyndling">eine glockenförmige Gewürzschale als unbestimmtes Kleinmaß; praktisch eine Prise bis knapper Teelöffel.</note>
+        <note type="gloss" target="#men-133-orig" n="estamine" resp="#fyndling">Feines Seihtuch zum Durchseihen der Eigelbe.</note>
+        <note type="interpretive_choice" target="#men-133-orig" n="une cloche de gingembre et saffran" resp="#fyndling">Eine glockenförmige Gewürzschale als unbestimmtes Kleinmaß; mangels bekanntem Volumen als Prise bis knapper Teelöffel umgesetzt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

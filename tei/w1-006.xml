@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rotes gefülltes Huhn</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-08-06">2026-08-06</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-006/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.5</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-006">
+        <head>Rotes gefülltes Huhn</head>
+        <div type="original" xml:id="w1-006-orig" xml:lang="de-x-fnhd" corresp="#w1-006-trans">
+          <p>Von raten huner NIm ayr vnd saffrawun vnd mel vnd sol dem tun als vor vnd gewurcz wol gib es hin sy schulln vor gevvlt sein mit roter vvll</p>
+        </div>
+        <div type="translation" xml:id="w1-006-trans" xml:lang="de" corresp="#w1-006-orig">
+          <p>Nimm Eier, Safran und Mehl. Verfahre damit, wie zuvor beschrieben. Würze diese Mischung gut. Gib sie dann über die Hühner. Die Hühner sollen zuvor mit einer roten Füllung gefüllt sein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken" orig="huner" commodity="wikidata:Q864693" source="#corema-ingredient-index">Huhn</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffrawun" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#corema-ingredient-index">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient orig="roter vvll">Rote Füllung</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-006-trans" resp="#fyndling">Welches Gericht ist das? Ein ganzes Huhn mit einer roten Füllung im Inneren, außen mit einer golden-gelben Safran-Ei-Mehl-Glasur überzogen. Modernes Analogon: ein gefülltes Bratenhuhn mit glänzender Glasur, wie man es heute zu Festtagen macht - Vorfahre des klassischen gefüllten Bratenhuhns und der französischen volaille farcie, verwandt mit der bis heute üblichen, mit Ei bepinselten Bratenkruste bei Pasteten.
+
+Der Verweis "sol dem tun als vor". Die Anweisung setzt eine zuvor beschriebene oder bekannte Standardprozedur voraus. Der wortgleiche Zwilling b4-005 aus derselben CoReMA-Doppeltradition (B4) legt nahe, dass damit das unmittelbar vorangehende Rezept im Manuskript gemeint ist - in B4 das benachbarte, weiße Hühner-Rezept b4-004: Die Eier-Safran-Mehl-Masse wird über das bereits gefüllte Huhn gegeben, dieses zurück ans Feuer gestellt und dort gegart, bis die Masse gestockt ist.
+
+Die rote Füllung. Der Text nennt die Zusammensetzung der roten Füllung nicht - sie ist ein vorgelagerter, hier nicht ausgeführter Arbeitsschritt. Rot ist offenbar nur diese innere Füllung; die äußere Eier-Safran-Schicht ist golden-gelb, kein zweites Rot.
+
+Praxis. Eier, Safran und Mehl zu einer bindenden Masse verrühren, kräftig würzen und über das bereits gefüllte, vorgegarte Huhn geben; zurück ans Feuer, bis die Masse gestockt ist (Eiklar gerinnt ab etwa 60 bis 70 Grad) - reine Feuertechnik, kein Ofen nötig. Gardauer und Garprobe nennt der Text nicht; in der Praxis Huhn samt Füllung durchgaren, bis auch der Kern der Füllung heiß bzw. durch ist. Die rote Füllung selbst muss vorher separat zubereitet werden - der Text bleibt hier offen, plausibel sind Brotkrumen, Gewürze und Rotwein oder Sandelholz für die Farbe.</note>
+        <note type="gloss" target="#w1-006-orig" n="als vor" resp="#fyndling">Diese Phrase ist eine Standardanweisung in mittelalterlichen Kochbüchern und bedeutet, dass eine zuvor beschriebene oder allgemein bekannte Zubereitungsweise angewendet werden soll.</note>
+        <note type="gloss" target="#w1-006-orig" n="gevvlt" resp="#fyndling">Eine Schreibvariante von 'gefüllt'. Das Huhn soll also mit einer Füllung versehen werden.</note>
+        <note type="gloss" target="#w1-006-orig" n="vvll" resp="#fyndling">Eine Schreibvariante von 'Füllung' oder 'Fülle', hier im Sinne einer Speisefüllung.</note>
+        <note type="interpretive_choice" target="#w1-006-orig" n="raten huner" resp="#fyndling">rotes Huhn</note>
+        <note type="interpretive_choice" target="#w1-006-orig" n="Garprobe (aus Parallelstelle b4-004: &quot;vncz sy gerecht werden&quot;)" resp="#fyndling">Modernes Sicherheitsmaß: Huhn samt Füllung durchgaren, bis auch der Kern der Füllung heiß bzw. durch ist</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Langen Schinken entsalzen und kochen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-011/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-011">
+        <head>Langen Schinken entsalzen und kochen</head>
+        <div type="original" xml:id="men-011-orig" xml:lang="fro" corresp="#men-011-trans">
+          <p>Nota que, se ung jambon est salé de longue saleure comme d'un moiz, il couvient des le soir devant le mectre tremper en eaue froide et l'endemain rere et laver en eaue chaude pour mectre cuirer et mectre cuire primo en eaue et en vin, et gecter ceste premiere bouture et puis cuire en autre eaue.</p>
+        </div>
+        <div type="translation" xml:id="men-011-trans" xml:lang="de" corresp="#men-011-orig">
+          <p>Man beachte: Ist ein Schinken über längere Zeit gesalzen worden, etwa einen Monat lang, so musst du ihn bereits am Abend zuvor in kaltem Wasser einweichen. Am nächsten Morgen schabe ihn ab und wasche ihn in warmem Wasser, um ihn zum Kochen vorzubereiten. Koche ihn zuerst in Wasser und Wein. Schütte diesen ersten Sud weg und koche den Schinken anschließend in frischem Wasser weiter.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ung jambon">Schinken</ingredient> - 1</item>
+            <item>
+              <ingredient orig="eaue froide">Kaltes Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eaue chaude">Warmes Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eaue et en vin">Wasser und Wein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="autre eaue">Frisches Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-011-trans" resp="#fyndling">Welches Gericht ist das? Kein Gericht, sondern die Grundtechnik, um einen lange gepökelten Schinken überhaupt genießbar zu machen - das Wässern und Entsalzen, das jedem Kochen vorausgeht. Wer heute einen Rohschinken oder ein Stück Pökelfleisch kocht, macht im Prinzip dasselbe. Verwandt mit dem Schinken-Rezept bei Martino (vgl. mar-036).
+
+Warum überhaupt wässern? Ein longue saleure (lang gepökelter) Schinken - hier etwa einen Monat im Salz - ist durch und durch salzgesättigt und so nicht essbar. Das Einweichen über Nacht in kaltem Wasser zieht das Salz langsam aus dem Inneren an die Oberfläche und ins Wasser.
+
+Rere - das Abschaben. Am Morgen wird der Schinken gerere (geschabt) und in warmem Wasser gewaschen: die äußere, besonders salzige und oft trockene oder ranzige Randschicht kommt weg, das warme Wasser löst Restsalz und Schmutz.
+
+Das doppelte Kochen. Der Schinken wird zuerst in Wasser und Wein angekocht; dieser erste Sud (premiere bouture) nimmt das meiste Restsalz auf und wird weggeschüttet. Erst im zweiten, frischen Wasser gart der Schinken fertig - so bleibt er kräftig, aber nicht versalzen. Der Wein im ersten Sud bringt Säure und Aroma, die Salz und etwaige Strenge mildern.
+
+Praxis. Gepökelten Schinken am Vorabend in reichlich kaltem Wasser einweichen. Am nächsten Tag die Außenschicht abschaben, in warmem Wasser abwaschen. In Wasser mit einem guten Schuss Wein aufsetzen, einmal aufkochen lassen, diesen Sud abgießen. Mit frischem Wasser erneut aufsetzen und sanft gar ziehen lassen (nicht sprudelnd kochen). Eine Geschmacksprobe vom Sud zeigt, ob noch ein weiterer Wasserwechsel nötig ist.</note>
+        <note type="gloss" target="#men-011-orig" n="longue saleure" resp="#fyndling">Lange Pökelung - hier etwa einen Monat im Salz; macht das Wässern zwingend.</note>
+        <note type="gloss" target="#men-011-orig" n="ung moiz" resp="#fyndling">Ein Monat.</note>
+        <note type="gloss" target="#men-011-orig" n="rere" resp="#fyndling">Schaben, abkratzen - die salzige, trockene Randschicht des Schinkens vor dem Kochen entfernen.</note>
+        <note type="gloss" target="#men-011-orig" n="premiere bouture" resp="#fyndling">Der erste Sud (Kochwasser) - er nimmt das Restsalz auf und wird weggeschüttet.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

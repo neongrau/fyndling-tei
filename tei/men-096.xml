@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fisch-Cretonnee für Fastentage</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-096/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-096">
+        <head>Fisch-Cretonnee für Fastentage</head>
+        <div type="original" xml:id="men-096-orig" xml:lang="fro" corresp="#men-096-trans">
+          <p>Cretonnee a jour de poisson. Soit la friture faicte de tanches, brochectz, soles ou lymandes frictes.</p>
+        </div>
+        <div type="translation" xml:id="men-096-trans" xml:lang="de" corresp="#men-096-orig">
+          <p>Cretonnee für den Fischtag. Die Fritüre soll aus gebratenen Schleien, Hechten, Seezungen oder Limanden bestehen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="tanches, brochectz, soles ou lymandes frictes">festfleischiger Fisch</ingredient> - 500 g</item>
+            <item>
+              <ingredient orig="(implied for 'friture')">Pflanzenöl oder Schmalz zum Frittieren</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-096-trans" resp="#fyndling">Welches Gericht ist das? Eine cretonnee ist im Ménagier ein dicker, gebundener Eintopf - die Fleischvariante kocht das Geflügel in Milch und bindet sie mit Brot und Eigelb (vgl. den nahen Comminié men-098). Hier steht nur der Fasten-Auftakt: an fleischlosen Tagen liefert nicht Fleisch, sondern gebratener Fisch die Einlage. Der direkte Schwester-Eintrag ist die ausführliche Fisch-Cretonnee via-010 im Viandier, die zeigt, wie es weitergeht: gebratener Fisch in einer Erbsenpüree-Brühe statt in Milch.
+
+Die friture meint hier nicht Frittiertes im modernen Sinn, sondern in reichlich Fett ausgebackenen oder kräftig gebratenen Fisch. Tanches (Schleie), brochectz (Hecht), soles (Seezunge) und lymandes (Kliesche/Limande) sind allesamt festfleischige Fische, die beim Garen in Stücken nicht zerfallen - genau das braucht ein Eintopf.
+
+Praxis. Festen Weißfisch (Zander, Kabeljaurücken, oder klassisch Hecht/Schleie) in mundgerechte Stücke teilen, leicht mehlieren und in reichlich Öl oder Butterschmalz goldbraun braten. Für die volle cretonnee dann nach Vorbild von via-010 weiterarbeiten: ein durchgeseihtes Erbsenpüree als Fastenbrühe ansetzen, mit Ingwer, Zimt und Nelken würzen, mit Safran gelb färben, den gebratenen Fisch einlegen und kurz ziehen lassen. Wer es bei der bloßen Fischbeilage belässt, hat eine schnelle Fastenpfanne; die Bindung macht erst das Gericht.</note>
+        <note type="gloss" target="#men-096-orig" n="Cretonnee" resp="#fyndling">Ein dicker, gebundener Eintopf des Ménagier; die Fleischvariante wird in Milch gegart und mit Brot und Eigelb gebunden. Hier nur die Fisch-Einlage für Fastentage.</note>
+        <note type="gloss" target="#men-096-orig" n="friture" resp="#fyndling">In reichlich Fett ausgebackener oder kräftig gebratener Fisch - nicht zwingend frittiert im modernen Sinn.</note>
+        <note type="gloss" target="#men-096-orig" n="tanches, brochectz, soles, lymandes" resp="#fyndling">Schleie, Hecht, Seezunge und Kliesche (Limande) - festfleischige Fische, die in Stücken nicht zerfallen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

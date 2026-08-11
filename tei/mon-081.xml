@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Königshühner</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-03">2026-07-03</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-081/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.81</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-081">
+        <head>Königshühner</head>
+        <div type="original" xml:id="mon-081-orig" xml:lang="de-x-fnhd" corresp="#mon-081-trans">
+          <p>ITem wil dw aber anderlay hunerm machen czw glider gepratnew hunerm vnd Slach air mit ymberr vnd ein chlain a= anneis gewß das mit hunernn Ineinen vaisten haissen morsar laß es pachen ge= leich gewß es mit einem chlain smalcz das haissent chunig hunernn</p>
+        </div>
+        <div type="translation" xml:id="mon-081-trans" xml:lang="de" corresp="#mon-081-orig">
+          <p>Willst du wieder eine andere Art Hühner zubereiten, so nimm gebratenes Huhn, in Stücke zerteilt. Schlage Eier mit Ingwer und ein wenig Anis. Gieße diese Mischung zusammen mit dem Hühnerfleisch in einen feisten, heißen Mörser. Lass es gleichmäßig backen. Gieße es dann mit ein wenig Schmalz an. Dies nennt man Königshühner.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="czw glider gepratnew hunerm">gebratenes Huhn</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="air" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="ymberr" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="chlain a= anneis">Anis</ingredient>
+            </item>
+            <item>
+              <ingredient orig="chlain smalcz">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-081-trans" resp="#fyndling">Welches Gericht ist das? Königshühner sind ein Ei-Fleisch-Gericht: bereits gebratenes, in Stücke zerteiltes Huhn wird mit einer gewürzten Eimasse aus Ingwer und Anis übergossen und in einem großen, gefetteten heißen Kochgefäß gestockt. Strukturell ist das eine frühe Verwandte der Frittata beziehungsweise eines Hühnerauflaufs - Ei als alleiniges Bindemittel, kein Mehl, keine Mehlschwitze.
+
+Mit ‚Mörser' ist hier kein Zerkleinerungswerkzeug gemeint, sondern ein großes, feuerfestes Kochgefäß nach Art eines Dutch Ovens, das direkt in der Glut oder am offenen Feuer steht. Für Oberhitze eignet sich zusätzliche Glut auf einem Deckel.
+
+‚Feist' (vaisten) heißt gefettet - der heiße Mörser wird also eingefettet, damit die Ei-Fleisch-Masse beim Stocken nicht anhaftet, ganz wie beim Einfetten einer Auflaufform.
+
+Praxis. Brate ein Huhn (oder verwende Reste von einem bereits gebratenen) und zerteile das Fleisch in mundgerechte Stücke. Verquirle Eier mit Ingwer und wenig Anis. Fette einen großen, feuerfesten Topf oder eine Gusseisenpfanne ein, erhitze ihn und gib das Hühnerfleisch hinein. Gieße die Ei-Gewürz-Mischung darüber und lass sie bei mittlerer Hitze - im Idealfall mit etwas Oberhitze durch Deckelglut - gleichmäßig stocken, bis die Eimasse fest ist. Zum Schluss etwas Schmalz darüber verteilen: Das dient nur noch dem Glanz und der Saftigkeit, nicht mehr dem Garen.</note>
+        <note type="gloss" target="#mon-081-orig" n="gepratnew hunerm (czw glider)" resp="#fyndling">‚Gepratnew' ist hier das Partizip gebraten vor dem Substantiv ‚hunerm' (Huhn/Hühner) - nicht die artikellose Substantivform ‚geprät' (mhd. ‚gebræt' = rohe Farce). ‚Czw glider' bedeutet ‚zu Gliedern/Stücken [zerteilt]', keine Mengenangabe. Gemeint ist also bereits gebratenes Hühnerfleisch, das in Stücke zerlegt wird - nicht rohes Hühnerbrät. Bestätigt durch die wortnahen Zwillinge m5919-065 (‚prattini huner ... zu gliden' = zerteile gebratene Hühner in Stücke), bgs-028 (junge, gebratene Hühner, zerteilt) und koe-013 (gebratene Hühner, klein gehackt) sowie durch das strukturell identische mon-080 (‚gepratten huen czw glid das chlain').</note>
+        <note type="gloss" target="#mon-081-orig" n="morsar" resp="#fyndling">Im mittelalterlichen Kochkontext war der ‚Mörser' oft ein großes, feuerfestes Gefäß aus Stein oder Metall, das auch zum Kochen und Backen über offenem Feuer verwendet wurde, ähnlich einem modernen Dutch Oven oder einem großen Schmortopf.</note>
+        <note type="gloss" target="#mon-081-orig" n="chunig hunernn / künic" resp="#fyndling">‚Chunig' ist mhd. ‚künic' (König). Der Name ‚Königshühner' ist kein singulärer Mondsee-Befund: fast wortgleiche Fassungen finden sich im Cgm 5919 (‚kunigs huen') und im Königsberger Kochbuch (‚kungs huner'), was auf ein gemeinsames, überregional zirkulierendes Rezept-Repertoire im spätmittelalterlichen bairisch-österreichischen und ostmitteldeutschen Raum hindeutet.</note>
+        <note type="interpretive_choice" target="#mon-081-orig" n="hunerm / hunernn" resp="#fyndling">Das Wort ‚hunerm' (und seine Variante ‚hunernn') wird als ‚Hühner' oder ‚Hühnerfleisch' übersetzt. Die genaue Bedeutung variiert je nach Kontext im Rezept (als allgemeine Bezeichnung für Geflügelgerichte, als Zutat oder als Teil des Gerichtsnamens).</note>
+        <note type="interpretive_choice" target="#mon-081-orig" n="anderlay" resp="#fyndling">Übersetzt als ‚andererlei', was ‚eine andere Art' oder ‚eine andere Sorte' bedeutet.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Feigenbraten am Spieß</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-02">2026-07-02</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-057/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.57</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-057">
+        <head>Feigenbraten am Spieß</head>
+        <div type="original" xml:id="mon-057-orig" xml:lang="de-x-fnhd" corresp="#mon-057-trans">
+          <p>ITem wil dw ein pratten von veigen machen so nym ein 1/2 libra veigen vnd Stoß die chlain vnd machs mit gburcz vnd gancz weinper ab vnd stoß an ainen spiß der hulczen sey vnd spick in mit mandel vnd leg in czw vnd laß in praten</p>
+        </div>
+        <div type="translation" xml:id="mon-057-trans" xml:lang="de" corresp="#mon-057-orig">
+          <p>Willst du einen Braten aus Feigen zubereiten, so nimm 250 g Feigen und zerstoße sie klein. Würze sie mit Gewürz und gib ganze Weinbeeren hinzu.</p>
+          <p>Stecke die Masse auf einen hölzernen Spieß und spicke sie mit Mandeln. Lege ihn ans Feuer, an die Glut, und lass ihn braten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="1/2 libra veigen">Feigen</ingredient> - 0.5 kg</item>
+            <item>
+              <ingredient en="spice" orig="gburcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze (z.B. Zimt, Ingwer, Nelken)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gancz weinper">Rosinen</ingredient>
+            </item>
+            <item><ingredient orig="spiß der hulczen sey">Holzspieß</ingredient> - 1 Stück</item>
+            <item>
+              <ingredient en="almond" orig="mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, geschält</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-057-trans" resp="#fyndling">Welches Gericht ist das? Kein Braten im heutigen Sinn - es kommt kein Fleisch auf den Spieß. Aus gestoßenen Feigen, Süßgewürz und ganzen Rosinen wird eine klebrige Masse geformt, auf einen hölzernen Spieß gesteckt, mit Mandeln gespickt und über der Glut geröstet. Alle Zutaten sind pflanzlich - das ist eine Fastenspeise, die sich bewusst als Fleischbraten verkleidet: Der Spieß und das Wort pratten zitieren die Form eines Fleischbratens, gefüllt ist die Speise aber rein mit Trockenfrüchten - eine Konfekt-Schauspeise, wie sie in der spätmittelalterlichen Festtagsküche an Fasttagen neben (oder statt) echten Fleischbraten auf die Tafel kam. Nächste lebende Verwandte sind mediterrane Feigen-Mandel-Rollen der winterlichen Vorratsküche, auch wenn dort heute kalt gepresst statt am Feuer geröstet wird.
+
+Praxis. Getrocknete Feigen im Mörser oder auf dem Brett fein zerstoßen, bis eine formbare Masse entsteht - das ist kein Garschritt, sondern reine Zerkleinerung. Süßgewürz und ganze Rosinen einarbeiten; die Rosinen bleiben als Biss-Kontrast ganz. Die Masse fest um einen frischen, grünen Holzspieß formen und mit geschälten Mandeln spicken - die Mandeln liefern nicht nur Röstaroma, sie fixieren auch die klebrige Masse am Spieß. Den Spieß seitlich an die Glut legen, nicht in die offene Flamme, und drehend rösten, bis die Oberfläche Farbe nimmt und die Mandeln anziehen. Da die Masse bereits essfertig ist, geht es nur um Röstung und Karamellisierung der Außenseite - eine feste Zeitangabe braucht es nicht, das Auge entscheidet.</note>
+        <note type="gloss" target="#mon-057-orig" n="libra" resp="#fyndling">„Pfund“; im 15. Jahrhundert entsprach ein Pfund in der Regel etwa 500 g.</note>
+        <note type="gloss" target="#mon-057-orig" n="gburcz" resp="#fyndling">Eine gängige frühneuhochdeutsche Schreibweise für „Gewürz“. Es ist eine allgemeine Bezeichnung, die eine Mischung aus gängigen süßen Gewürzen wie Zimt, Ingwer und Nelken impliziert.</note>
+        <note type="gloss" target="#mon-057-orig" n="weinper" resp="#fyndling">„Weinbeeren“; in diesem Kontext sind getrocknete Weinbeeren, also Rosinen, am wahrscheinlichsten.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="gloss" target="#mon-057-orig" n="hulczen spiß" resp="#fyndling">„Hölzerner Spieß“; im Mittelalter wurden oft frische, grüne Hartholzspieße verwendet, die über der Glut nicht sofort verbrennen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

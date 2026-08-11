@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wildbret-Knödel für Fürsten</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-23">2026-07-23</date>
+        <idno type="url">https://fyndling.de/rezepte/ka2-022/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 793</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, unteres Inntal/Mühldorf am Inn, ca. 1445-1470)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka2-022">
+        <head>Wildbret-Knödel für Fürsten</head>
+        <div type="original" xml:id="ka2-022-orig" xml:lang="de-x-fnhd" corresp="#ka2-022-trans">
+          <p>Von wiltprat chnoll chnodel Auf ein furst essen viij aier slach dy ein vnd gewurtz darczu vnd chlain gehakten spek vnd In dy prue petersil oder saluay vnd richcz an</p>
+        </div>
+        <div type="translation" xml:id="ka2-022-trans" xml:lang="de" corresp="#ka2-022-orig">
+          <p>Für ein fürstliches Mahl nimm Wildbret. Schlage acht Eier ein und gib Gewürze sowie klein gehackten Speck dazu. Gib Petersilie oder Salbei in die Brühe und richte die Knödel darin an.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="wiltprat">Wildbret</ingredient>
+            </item>
+            <item><ingredient orig="viij aier">Eier</ingredient> - 8</item>
+            <item>
+              <ingredient en="spice" orig="gewurtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient orig="chlain gehakten spek">Speck, fein gehackt</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="prue" commodity="wikidata:Q3075310" source="#corema-ingredient-index">Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="petersil oder saluay">Petersilie oder Salbei</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka2-022-trans" resp="#fyndling">Welches Gericht ist das? Ein Klassiker der spätmittelalterlichen Küche: fein gehacktes Wildbret wird mit Ei, Gewürzen und Speck zu einer bindigen Masse vermengt, zu Knödeln geformt und in einer mit Petersilie oder Salbei gewürzten Brühe gegart und darin angerichtet. Lebendige Verwandtschaft gibt es bis heute - etwa in der klaren deutschen Fleischklößchensuppe oder, international betrachtet, in Fleischbällchen-in-Brühe-Gerichten wie der italienischen Wedding Soup. Im eigenen Korpus findet sich mit mon-118 („Kalbsfleischknödel in gelber Brühe“) ein nahezu identischer Verwandter - dort mit Kalbfleisch und Semmelbröseln statt Wildbret und Speck, aber demselben Grundverfahren aus Fleisch, Ei und Gewürz, geformt und in heißer Flüssigkeit gegart.
+
+Was bedeutet „chnoll chnodel“? Der Rezepttitel nennt das Gericht so - eine Verstärkung aus „chnoll“ (bei Grimm als Erdscholle, Klumpen belegt) und „chnodel“. Dass damit tatsächlich Knödel gemeint sind und nicht bloß knorrige, ungeformte Fleischstücke, stützt der Buchzwilling mon-118: dort steht „chnodel“ wörtlich für geformte Kalbfleischknödel im fast identischen Ablauf. Der eigentliche Formschritt selbst wird im Text von ka2-022 nicht mit einem eigenen Verb benannt - dass die Masse zu Knödeln geformt wird, ergibt sich aus dem Titel und aus dem wortgleichen Beleg im Schwesterrezept ka2-014 („forme daraus Knödel“).
+
+Fürstliches Mahl oder vorderstes Gericht? „Auf ein furst essen“ wird hier als „für ein fürstliches Mahl“ gelesen. Das mittelhochdeutsche Adjektiv „vürst“ kann aber auch „vorderst, erst“ bedeuten (Rang, Ordnung - der etymologische Ursprung von „Fürst“ selbst) und würde eher auf ein besonders hochrangiges Gericht in der Gangfolge eines Mahls deuten, ein Muster, das sich auch in anderen Rezepten des Korpus findet (etwa ka2-027, ka2-047, ka2-048, mha-045, mon-144). Beide Lesarten laufen praktisch auf ein gehobenes, herausgehobenes Gericht hinaus.
+
+Praxis. Das Wildbret fein hacken oder wolfen (der Text nennt für das Fleisch selbst kein Hack-Verb, nur für den Speck „klein gehackt“ - für eine bindige Knödelmasse braucht es aber eine vergleichbar feine Struktur), mit den acht Eiern, den Gewürzen und dem fein gehackten Speck zu einer festen Masse verkneten und zu Knödeln formen. Die Knödel in siedender, mit Petersilie oder Salbei gewürzter Brühe pochieren, bis sie fest und durchgegart sind - Gartest: Der Knödel schwimmt auf, ist fest, beim Anschneiden ist kein rohes Fleisch mehr sichtbar. Das ist bei Wildbret aus Sicherheitsgründen wichtig; der Urtext selbst nennt für diesen Schritt weder ein Gar-Verb noch eine Gardauer. In der gewürzten Brühe anrichten und servieren.</note>
+        <note type="gloss" target="#ka2-022-orig" n="wiltprat" resp="#fyndling">Mittelhochdeutsch für Wildbret, also Fleisch von Wildtieren wie Hirsch, Reh, Wildschwein oder Hase.</note>
+        <note type="gloss" target="#ka2-022-orig" n="chnoll chnodel" resp="#fyndling">Eine Verstärkung aus „chnoll“ (bei Grimm als Erdscholle, Klumpen belegt) und „chnodel“, das im CoReMA-Glossenkorpus - u.a. im Schwesterrezept mon-118 - direkt als „Knödel“ belegt ist. Hier als geformte Wildbret-Knödel gelesen; zur Alternativlesart siehe interpretive_choices.</note>
+        <note type="gloss" target="#ka2-022-orig" n="furst essen" resp="#fyndling">Meist als „fürstliches Mahl“ gelesen (furst = Fürst, für eine hochgestellte Persönlichkeit bestimmt). Da das mittelhochdeutsche „vürst“ auch „vorderst, erst“ bedeuten kann, ist auch die Lesart „als vorderstes/erstes Gericht“ (Rang in der Gangfolge eines Mahls) nicht auszuschließen - siehe interpretive_choices. Beide Lesarten deuten auf ein gehobenes, herausgehobenes Gericht hin.</note>
+        <note type="gloss" target="#ka2-022-orig" n="viij" resp="#fyndling">Die römische Ziffer für acht.</note>
+        <note type="gloss" target="#ka2-022-orig" n="slach dy ein" resp="#fyndling">Schlage sie ein, hier im Sinne von Eier aufschlagen und zur Masse geben.</note>
+        <note type="gloss" target="#ka2-022-orig" n="gewurtz" resp="#fyndling">Allgemeine Bezeichnung für Gewürze. Im Kontext eines herausgehobenen Mahls wären dies typischerweise teure Importgewürze wie Pfeffer, Ingwer, Nelken oder Muskatblüte.</note>
+        <note type="gloss" target="#ka2-022-orig" n="chlain gehakten spek" resp="#fyndling">Fein gehackter Speck, der der Masse Fett und Geschmack verleiht.</note>
+        <note type="gloss" target="#ka2-022-orig" n="prue" resp="#fyndling">Brühe, in der die Knödel gegart werden.</note>
+        <note type="gloss" target="#ka2-022-orig" n="petersil oder saluay" resp="#fyndling">Petersilie oder Salbei, zwei gängige Kräuter der mittelalterlichen Küche, die hier zur Aromatisierung der Brühe dienen.</note>
+        <note type="gloss" target="#ka2-022-orig" n="richcz an" resp="#fyndling">Richte es an, also serviere das Gericht.</note>
+        <note type="interpretive_choice" target="#ka2-022-orig" n="chnoll chnodel" resp="#fyndling">Die Begriffe „chnoll chnodel“ werden als Knödel oder Klöße aus Wildbret gelesen, die geformt und in Brühe gegart werden. Der eigentliche Formschritt wird im Text nicht mit einem eigenen Verb benannt - er ergibt sich aus dem Titel selbst und aus dem wortgleichen Beleg im Schwesterrezept ka2-014 („forme daraus Knödel“).</note>
+        <note type="interpretive_choice" target="#ka2-022-orig" n="furst essen (Auf ein furst essen)" resp="#fyndling">Gelesen als „auf ein fürstliches Mahl“ - furst = Fürst, ein Mahl für einen Fürsten oder eine hochgestellte Persönlichkeit.</note>
+        <note type="interpretive_choice" target="#ka2-022-orig" n="vnd In dy prue ... vnd richcz an (Gargrad der Knödel)" resp="#fyndling">Die rohe Wildbret-Ei-Speck-Masse wird zu Knödeln geformt und in der siedenden, gewürzten Brühe gegart (pochiert), bis sie fest und durchgegart ist, dann darin angerichtet.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Reis für Fasten- und Fleischtage</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-311/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-311">
+        <head>Reis für Fasten- und Fleischtage</head>
+        <div type="original" xml:id="men-311-orig" xml:lang="fro" corresp="#men-311-trans">
+          <p>Ris. Esliziez le, et lavez en deux ou troiz paires d'eaues chaudes tant que l'eaue reviengne toute clere. Puis le faictes aussi comme demy cuire. Puis le purez, et mectez sur tranchouers en platz pour esgouter et seicher devant le feu. Puis cuisiez bien espoiz avec l'eaue de la gresse de char de beuf et avec du saffran, se c'est jour de char. Et se c'est jour de poisson, n'y mectez pas eaue de char, maiz en ce lieu mectez amandes bien finement broyees et sans couler, puis succrer fort, et sans saffran. Autres menues choses qui ne sont de neccessité</p>
+        </div>
+        <div type="translation" xml:id="men-311-trans" xml:lang="de" corresp="#men-311-orig">
+          <p>Nimm den Reis, sortiere ihn und wasche ihn in zwei oder drei Wechseln warmen Wassers, bis das Wasser ganz klar wird. Dann koche ihn halb gar. Püriere ihn dann und lege ihn auf Platten oder Schneidebretter zum Abtropfen und Trocknen vor dem Feuer.</p>
+          <p>Für Fleischtage: Koche den Reis dann sehr dickflüssig mit Rinderbrühe und mit Safran.</p>
+          <p>Für Fastentage: Ist es jedoch ein Fastentag, so verwende keine Rinderbrühe, sondern gib stattdessen sehr fein zerstoßene Mandeln hinzu, ohne sie zu seihen, süße dann kräftig und verzichte auf Safran.</p>
+          <p>Weitere Kleinigkeiten sind nicht zwingend erforderlich.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="rice" orig="Ris" commodity="wikidata:Q5090" source="#corema-ingredient-index">Reis</ingredient> - 250 g</item>
+            <item><ingredient orig="deux ou troiz paires d'eaues chaudes">warmes Wasser</ingredient> - 1 l</item>
+            <item><ingredient orig="l'eaue de la gresse de char de beuf">Rinderbrühe</ingredient> - 500 ml</item>
+            <item><ingredient orig="du saffran">Safranfäden</ingredient> - 1 Prise</item>
+            <item><ingredient orig="amandes bien finement broyees">Mandeln, sehr fein gemahlen</ingredient> - 150 g</item>
+            <item><ingredient orig="succrer fort">Zucker</ingredient> - 50 g</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-311-trans" resp="#fyndling">Welches Gericht ist das? Ein püriertes Reis-Mus mit zwei Varianten - herzhaft mit Rinderbrühe und Safran für Fleischtage, süß mit Mandeln und Zucker für Fastentage. Der direkte Verwandte im Korpus ist foc-009 (Reis mit Mandelmilch und Safran); der Reis-Mandel-Brei zieht sich durch die ganze höfische Küche Europas (vgl. mar-178, kkm-046). Wer Milchreis kennt, kennt das Prinzip.
+
+Waschen, halbgaren, trocknen. Der Reis wird sortiert und in mehreren Wasserwechseln gewaschen, bis das Wasser klar bleibt (tant que l'eaue reviengne toute clere) - das entfernt Stärkestaub. Dann nur halb gegart, püriert und auf Brettern vor dem Feuer getrocknet. Dieses Vortrocknen lässt den Reis im zweiten, langsamen Garen die Flüssigkeit (Brühe oder Mandelmilch) gezielt aufsaugen und gibt das gewünschte espoiz (dickflüssig-cremige) Ergebnis.
+
+Die zwei Fasten-Varianten. Am Fleischtag (jour de char) gibt kräftige Rinderbrühe Geschmack, Safran die goldene Festfarbe. Am Fastentag (jour de poisson) ersetzt man die Brühe durch fein gestoßene Mandeln, die ohne Seihen (sans couler) direkt in den Reis kommen - also dicke Mandelmasse, nicht dünne Mandelmilch -, süßt kräftig und lässt den Safran weg. Das ist der typische Fasten-Trick: Mandelmilch tritt an die Stelle von Fleischbrühe.
+
+Sans couler. Ein bewusster Kontrast zur sonst üblichen, durchgeseihten Mandelmilch: hier bleibt die ganze gemahlene Mandelmasse drin und macht das Mus reichhaltiger und sättigender.
+
+Praxis. 250 g Rundkornreis waschen, in reichlich Wasser halb garen (ca. 8 Min.), abgießen, grob zerdrücken. Fleischtag: mit 500 ml kräftiger Rinderbrühe und einer Prise Safran sämig fertig garen. Fastentag: 150 g sehr fein gemahlene Mandeln und 50-100 g Zucker einrühren, mit etwas Wasser zu dickem Mus garen, ohne Safran.</note>
+        <note type="gloss" target="#men-311-orig" n="Esliziez le" resp="#fyndling">auslesen, verlesen - den Reis von Steinchen und Spelzen befreien.</note>
+        <note type="gloss" target="#men-311-orig" n="paires d'eaues" resp="#fyndling">Wasser-Wechsel, nicht ‚Paare‘ - in zwei, drei frischen Wassern waschen, bis es klar bleibt.</note>
+        <note type="gloss" target="#men-311-orig" n="demy cuire" resp="#fyndling">halb garen - der Reis saugt die Brühe bzw. Mandelmilch erst beim zweiten, langsamen Garen voll auf.</note>
+        <note type="gloss" target="#men-311-orig" n="espoiz" resp="#fyndling">dickflüssig, sämig - die angestrebte cremige Mus-Konsistenz.</note>
+        <note type="gloss" target="#men-311-orig" n="eaue de la gresse de char de beuf" resp="#fyndling">kräftige Rinderbrühe, mit dem Fett vom Rindfleisch ausgekocht - die herzhafte Basis für den Fleischtag.</note>
+        <note type="gloss" target="#men-311-orig" n="sans couler" resp="#fyndling">‚ohne zu seihen‘ - die ganze gemahlene Mandelmasse bleibt im Reis (dickes Mus), nicht nur die abgeseihte Mandelmilch.</note>
+        <note type="gloss" target="#men-311-orig" n="Autres menues choses qui ne sont de neccessité" resp="#fyndling">‚weitere Kleinigkeiten, die nicht nötig sind‘ - der typische Schluss-Hinweis, dass das Rezept vollständig ist und Verfeinerungen freistehen.</note>
+        <note type="interpretive_choice" target="#men-311-orig" n="eaue de la gresse de char de beuf" resp="#fyndling">Kräftige Rinderbrühe, beim Auskochen von fettem Rindfleisch gewonnen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

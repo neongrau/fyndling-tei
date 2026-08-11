@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Eichhörnchen mit Zwiebeln und Schmalz</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-04">2026-07-04</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-121/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.121</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-121">
+        <head>Eichhörnchen mit Zwiebeln und Schmalz</head>
+        <div type="original" xml:id="mon-121-orig" xml:lang="de-x-fnhd" corresp="#mon-121-trans">
+          <p>ITem wil dw aichoren geraitten So nym vnd sewd die aichoren vnd faysß fleysch dar an gehackts vnd stupp sy dar nach prayt dy aichoren vnd czw glider sy vnd nym czwiffal vnd rost in einem smalcz smalcz vnd leg dy aichoren dar ein vnd laß ein wenig dar in sieden so werden sy guett</p>
+        </div>
+        <div type="translation" xml:id="mon-121-trans" xml:lang="de" corresp="#mon-121-orig">
+          <p>Willst du Eichhörnchen zubereiten, so nimm die Eichhörnchen und siede sie. Gib fettes, gehacktes Fleisch hinzu und würze sie danach mit Gewürzpulver.</p>
+          <p>Bereite die Eichhörnchen zu und zerteile sie in Glieder. Nimm Zwiebeln und röste sie in Schmalz. Lege die Eichhörnchen dazu und lass sie ein wenig darin sieden, so werden sie gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="red squirrel" orig="aichoren" commodity="wikidata:Q4388" source="#corema-ingredient-index">Eichhörnchen</ingredient>
+            </item>
+            <item>
+              <ingredient en="fatty meat" orig="faysß fleysch" commodity="wikidata:Q107262066" source="#corema-ingredient-index">Fettes Fleisch</ingredient>
+            </item>
+            <item>
+              <ingredient>Gewürzpulver</ingredient>
+            </item>
+            <item>
+              <ingredient orig="czwiffal">Zwiebeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-121-trans" resp="#fyndling">Welches Gericht ist das? Ein schlichtes Wildgericht: gesottenes Eichhörnchenfleisch, mit fettem Fleisch angereichert und mit Gewürzpulver bestreut, danach in Glieder zerteilt und kurz mit angerösteten Zwiebeln in Schmalz nachgezogen. Eichhörnchen waren im Spätmittelalter eine bekannte, wenn auch seltene Jagdbeute für kleinere Wildgerichte.
+
+Historisches Dokument, kein Nachkoch-Rezept. Eichhörnchen stehen in Deutschland und der gesamten EU unter strengem Artenschutz und dürfen weder gejagt noch gehandelt werden. Anders als bei den meisten Wildarten im Korpus gibt es hier keinen sinnvollen modernen Ersatz, der dieselbe Zubereitung nachvollziehbar machen würde - wir dokumentieren das Rezept daher als historisches Zeugnis der mittelalterlichen Jagdküche, nicht zur Nachahmung.</note>
+        <note type="gloss" target="#mon-121-orig" n="stupp" resp="#fyndling">Das Verb ‚stuppen‘ bedeutet ‚bepudern‘ oder ‚bestreuen‘. Hier ist es im Sinne von ‚würzen‘ mit Gewürzpulver zu verstehen, um dem Gericht Geschmack zu verleihen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#stupp"/></note>
+        <note type="interpretive_choice" target="#mon-121-orig" n="aichoren" resp="#fyndling">‚Eichhörnchen‘ - Die Lesart ‚Eichhörnchen‘ ist aufgrund der Erwähnung von ‚fleisch‘ und der Anweisung, das Tier in ‚glider‘ (Glieder) zu zerteilen, die plausibelste. Eichhörnchen waren im Mittelalter eine bekannte, wenn auch seltene Jagdbeute.</note>
+        <note type="interpretive_choice" target="#mon-121-orig" n="geraitten" resp="#fyndling">‚zubereiten‘ oder ‚richten‘ - Das Verb ‚geraitten‘ wird hier im Sinne von ‚zubereiten‘ oder ‚zurichten‘ verstanden, da es die allgemeine Vorbereitung der Eichhörnchen beschreibt, bevor spezifische Kochschritte folgen.</note>
+        <note type="interpretive_choice" target="#mon-121-orig" n="faysß" resp="#fyndling">‚fettes‘ - ‚faysß‘ ist eine bairische Variante von ‚feiß‘ oder ‚feist‘, was ‚fett‘ oder ‚beleibt‘ bedeutet. Dies passt gut zu magerem Wildfleisch wie Eichhörnchen, das oft mit zusätzlichem Fett angereichert wurde.</note>
+        <note type="interpretive_choice" target="#mon-121-orig" n="czwiffal" resp="#fyndling">‚Zwiebeln‘ - ‚czwiffal‘ ist eine plausible bairische Schreibvariante für ‚Zwiebel‘. Zwiebeln sind eine gängige Zutat in mittelalterlichen Fleischgerichten.</note>
+        <note type="interpretive_choice" target="#mon-121-orig" n="smalcz smalcz" resp="#fyndling">‚in Schmalz‘ - Die Wiederholung von ‚smalcz‘ ist höchstwahrscheinlich ein Schreibfehler oder eine emphatische Wiederholung des Schreibers, die als ‚in Schmalz‘ zu verstehen ist.</note>
+        <note type="interpretive_choice" target="#mon-121-orig" n="stupp sy" resp="#fyndling">‚bestreue sie (mit Gewürzpulver)‘ - Basierend auf der Glossar-Definition von ‚stupp‘ als ‚bepudern/bestreuen mit feinem Pulver‘ und dem Kontext, dass das Gericht ‚guett‘ (gut/schmackhaft) werden soll, ist das Würzen mit Gewürzpulver die plausibelste Interpretation.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#stupp"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

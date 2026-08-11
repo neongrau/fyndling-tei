@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Weiße und braune Bratensauce</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-22">2026-07-22</date>
+        <idno type="url">https://fyndling.de/rezepte/mha-235/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Maister Hannsen des von Wirtenberg Koch</title>
+          <date when="1460">1460</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.bs1/TEI_SOURCE.2021-01-15</idno>
+          <idno type="corema-sigle">bs1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.bs1</idno>
+          <idno type="corema-recipe">bs1.235</idno>
+          <note>Transkription: Astrid Böhm &amp; Helmut W. Klug, CoReMA TEI-Edition (Uni Graz, 2021, CC BY 4.0); Sekundäredition: Anton Birlinger, Alemannia 1, Bonn 1865 (Public Domain)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch-schwäbisch, 1460)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mha-235">
+        <head>Weiße und braune Bratensauce</head>
+        <div type="original" xml:id="mha-235-orig" xml:lang="de-x-fnhd" corresp="#mha-235-trans">
+          <p>Ain weisse Sallsen mach also Item weiss Sallsen mach aus mandel hastu der nicht So wirt das praten so guot Nym nuss an der stat hastu dann zucker den nym auch dar zue . Die praunn Sallsen mach von weinperen Schlahe die durch mit guotem wein wiltu sy guot haben So thue zucker daran .</p>
+        </div>
+        <div type="translation" xml:id="mha-235-trans" xml:lang="de" corresp="#mha-235-orig">
+          <p>Weiße Sauce: Mache eine weiße Sauce aus Mandeln. Hast du keine Mandeln zur Hand, wird der Braten trotzdem genauso gut, nimm dann einfach Nüsse an ihrer Stelle. Hast du außerdem Zucker im Haus, gib den ebenfalls dazu.</p>
+          <p>Braune Sauce: Die braune Sauce mache aus Weinbeeren (Rosinen). Schlage sie durch mit gutem Wein. Willst du sie besonders gut haben, gib noch Zucker dazu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, gemahlen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weinperen" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Weinbeeren (Rosinen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Guter Wein</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mha-235-trans" resp="#fyndling">Welches Gericht ist das? Zwei Kontrastsaucen zum Braten - eine helle Mandel- oder Nusssauce und eine dunkle Rosinen-Wein-Sauce. Kein eigenständiges Gericht, sondern ein Begleitpaar (Sallsen). Die helle Sauce ist eine Vorläuferin heutiger Mandel- oder Nussbratensaucen, wie sie etwa zu Wild und Geflügel gereicht werden; die dunkle Rosinen-Wein-Sauce präfiguriert süß-saure Frucht-Wein-Saucen, wie sie bis heute zu Wild oder Sauerbraten serviert werden.
+
+„Schlahe die durch". Das Verb bezeichnet hier nicht modernes „Schlagen" oder Rühren, sondern das Passieren - die Rosinen werden mit Wein durchgepresst, wodurch sich Fruchtfleisch und Farbe lösen. Das Original nennt an dieser Stelle kein Tuch ausdrücklich, in der Praxis presst man aber durch ein feines Tuch oder Sieb.
+
+Für die helle Sauce nennt der Text keine Bindeflüssigkeit - nur Mandeln oder Nüsse, optional mit Zucker. Das ist eine echte Lücke im Original; sie bleibt hier unkommentiert stehen statt mit einer erfundenen Flüssigkeit aufgefüllt zu werden.
+
+Praxis. Für die helle Sauce Mandeln (oder ersatzweise Walnüsse/Haselnüsse) fein reiben oder mahlen, nach Belieben mit Zucker abschmecken. Für die dunkle Sauce Rosinen mit gutem Wein durch ein feines Tuch oder Sieb pressen, bis Fruchtfleisch und Farbe im Wein aufgehen; wer mag, süßt zusätzlich mit Zucker. Beide Saucen brauchen kein Feuer und sind in wenigen Minuten fertig.</note>
+        <note type="gloss" target="#mha-235-orig" n="Sallsen" resp="#fyndling">Sauce/Tunke, hier zwei Varianten zum Braten - kein eigenständiges Gericht, sondern eine Begleit-Sauce.</note>
+        <note type="gloss" target="#mha-235-orig" n="praten" resp="#fyndling">Braten (das Gericht), für das die beiden Saucen gedacht sind.</note>
+        <note type="gloss" target="#mha-235-orig" n="weinperen" resp="#fyndling">Wörtlich 'Weinbeeren', im Korpus meist als Rosinen (getrocknete Weinbeeren) gelesen, nicht als frische Weintrauben - siehe interpretive_choices.</note>
+        <note type="gloss" target="#mha-235-orig" n="Schlahe die durch" resp="#fyndling">Bedeutet 'passiere sie' (durch ein Tuch oder Sieb pressen), nicht modernes 'schlagen/rühren' - bestätigte Lesefalle im Korpus (vgl. mha-032, mha-184, mha-274).</note>
+        <note type="interpretive_choice" target="#mha-235-orig" n="weinperen" resp="#fyndling">Rosinen (getrocknete Weinbeeren), gemäß Korpus-Standardlesart. Gestützt durch die Parallelrezepte mha-184 und mha-274, die 'weinper' vor dem Durchschlagen fein reiben bzw. erwellen (aufquellen/aufkochen) lassen - typische Behandlungsschritte für getrocknete, harte Rosinen, nicht für saftige frische Trauben.</note>
+        <note type="interpretive_choice" target="#mha-235-orig" n="hastu der nicht So wirt das praten so guot" resp="#fyndling">Hast du keine Mandeln, wird der Braten trotzdem genauso gut, wenn man ersatzweise Nüsse verwendet - als zusammenhängender Substitutionshinweis gelesen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

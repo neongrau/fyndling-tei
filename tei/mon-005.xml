@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllte Eier am Spieß</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-27">2026-06-27</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-005/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.5</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-005">
+        <head>Gefüllte Eier am Spieß</head>
+        <div type="original" xml:id="mon-005-orig" xml:lang="de-x-fnhd" corresp="#mon-005-trans">
+          <p>ITem wildw aber machen von aier So thue sy auff ann paiden orten vnd thue dy tutter dar awß vnd nymb ein smalcz vnd tue dy tutter dar ein vnd ruer es mit pettersill vnd gburcz vnd full dy air wider vnd vber prenß stoß sy dar nach an ain spyß vnd pracz also werden sew gerecht</p>
+        </div>
+        <div type="translation" xml:id="mon-005-trans" xml:lang="de" corresp="#mon-005-orig">
+          <p>Wenn du wiederum Eier zubereiten willst, so öffne sie an beiden Enden und nimm nur das Eigelb heraus - das Eiweiß bleibt in der Schale. Nimm dann Schmalz und gib das Eigelb hinein. Rühre es mit Petersilie und Gewürz.</p>
+          <p>Fülle die noch mit Eiweiß gefüllten Schalen wieder und lass sie kurz anziehen. Danach stecke sie auf einen Spieß und brate sie. So werden sie richtig zubereitet.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="aier" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="yolk" orig="tutter" commodity="wikidata:Q16336079" source="#corema-ingredient-index">Eigelb</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="smalcz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="pettersill" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gburcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-005-trans" resp="#fyndling">Welches Gericht? Eine spätmittelalterliche Schau- und Tafelspeise: gefüllte Eier am Spieß. Das Ei wirkt äußerlich ganz, ist aber neu gewürzt - der Reiz liegt in der Optik beim Servieren, nicht in einer raffinierten Technik. Dasselbe Gericht steht fast wortgleich als Gefüllte Eier am Spieß im Tegernseer Speisenbuch und als Krause Eier im Rheinfränkischen Kochbuch. Innerhalb derselben Quelle ist es die Spieß-Variante zum unmittelbar vorausgehenden gefüllten Eierrezept auf demselben Folio.
+
+Die Mondseer Notiz nimmt nur den Dotter heraus (thue dy tutter dar awß), das rohe Eiweiß bleibt in der Schale. Genau deshalb folgt der eigene Zwischenschritt vber prenß: die wieder gefüllte Schale wird kurz über der Glut oder in heißem Fett angezogen, damit Füllung und verbliebenes Eiweiß stocken, bevor das Ei auf den Spieß kommt. Das Wort gehört zum Stamm brennen (überbrennen, kurz über Feuer ziehen) - kein Verbrennen, sondern ein gezieltes Festigen. Die engsten Parallelen garen die Masse stattdessen vor dem Füllen; die Mondseer Fassung nennt das Stocken eigens, weil hier eben rohes Eiweiß in der Schale blieb.
+
+Praxis. Eier roh an beiden Spitzen aufstechen - unten ein Nadelstich, oben ein etwas größeres Loch. Das Ei mit dem größeren Loch nach unten halten und leicht pusten: der runde Dotter (feste Membran, glatte Oberfläche) rutscht durch das Loch heraus, während das viskose Eiweiß an der Schaleninnenwand klebt und zurückbleibt. Das gelingt nur mit sehr frischen Eiern - bei älteren Eiern reißt die Dottermembran sofort und die Trennung scheitert. Den Dotter mit zerlassenem Schmalz, feingehackter Petersilie und einer Prise Gewürz (Pfeffer, Ingwer, Muskat) glattrühren und zurück in die Schale füllen. Die gefüllte Schale kurz dicht über der Glut oder in heißem Fett anziehen lassen, bis Eiweiß und Füllung gestockt sind - erst dann hält das Ei am Spieß. Auf ein dünnes Spießlein stecken und über ruhiger Glut rundum bräunen. Die Schalenränder sind scharf, also vorsichtig aufstecken.</note>
+        <note type="gloss" target="#mon-005-orig" n="tutter" resp="#fyndling">Das Eigelb des Eis.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#tutter"/></note>
+        <note type="gloss" target="#mon-005-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz. Für eine vegetarische Variante kann Pflanzenöl oder Butter verwendet werden.</note>
+        <note type="gloss" target="#mon-005-orig" n="pettersill" resp="#fyndling">Petersilie, ein häufig verwendetes Kraut in der mittelalterlichen Küche.</note>
+        <note type="gloss" target="#mon-005-orig" n="gburcz" resp="#fyndling">Ein unspezifischer Begriff für Gewürze. Typische Gewürze der Zeit waren Pfeffer, Ingwer, Nelken, Muskat oder Galgant.</note>
+        <note type="gloss" target="#mon-005-orig" n="spyß" resp="#fyndling">Ein Spieß, auf den die gefüllten Eier zum Braten gesteckt werden.</note>
+        <note type="interpretive_choice" target="#mon-005-orig" n="vber prenß" resp="#fyndling">Als 'kurz anziehen / stocken lassen' übersetzt (Stamm 'brennen', überbrennen): Die wieder gefüllte Schale wird kurz über der Glut oder in heißem Fett gefestigt, damit das verbliebene rohe Eiweiß und die Füllung stocken, bevor das Ei auf den Spieß kommt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

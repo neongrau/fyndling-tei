@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Flämische Chaudée</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-20">2026-06-20</date>
+        <idno type="url">https://fyndling.de/rezepte/men-303/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-303">
+        <head>Flämische Chaudée</head>
+        <div type="original" xml:id="men-303-orig" xml:lang="fro" corresp="#men-303-trans">
+          <p>Chaudeau flament. Mectez ung pou d'eaue boulir. Puis pour chascune escuelle iiii moyeulx d'oeufz batuz avec vin blanc, et versez a fil en vostre eaue et remuez tresbien; et du sel y mectez bien a point; et quant il avra bien boulu tirez le arriere du feu. Nota, qui n'en fait fors une escuelle pour ung malade, l'en y met cinq moyeuz.</p>
+        </div>
+        <div type="translation" xml:id="men-303-trans" xml:lang="de" corresp="#men-303-orig">
+          <p>Lasse ein wenig Wasser aufkochen. Dann schlage für jede Schale vier Eigelb mit Weißwein und gieße es in einem dünnen Strahl in dein Wasser, dabei rühre sehr gut um. Würze es mit Salz, genau passend. Sobald es gut gekocht hat, ziehe es vom Feuer. Beachte: Wer nur eine Schale für einen Kranken zubereitet, verwende fünf Eigelb.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ung pou d'eaue">etwas Wasser</ingredient>
+            </item>
+            <item><ingredient orig="iiii moyeulx d'oeufz">Eigelb</ingredient> - 4</item>
+            <item>
+              <ingredient orig="vin blanc">Weißwein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="du sel">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#men-303-trans" resp="#fyndling">Welches Gericht ist das? Ein Chaudeau - ein warmes, mit Eigelb gebundenes Wein-Getränk, sämig wie eine dünne Zabaione oder ein Eierpunsch. Der lebende Verwandte ist der süße Caudle / Eierpunsch und die italienische Zabaione; im Korpus der englische Cawdel Ferry (foc-040) und das Kranken-Süppchen kkm-051. Hier in der „flämischen" Machart und ausdrücklich auch als Stärkung für Kranke gedacht.
+
+Moyeulx d'oeufz - Eigelb als Bindung. Pro Schale vier Eigelb (für Kranke fünf) mit Weißwein verquirlen und in einem dünnen Strahl (a fil) ins nur leicht köchelnde Wasser gießen, dabei kräftig rühren. Das ist die klassische Eier-Liaison: das Eigelb bindet die Flüssigkeit zu einer samtigen, leicht schaumigen Creme. Heikel ist die Hitze - bei zu starkem Kochen gerinnt das Ei zu Rührei-Flöckchen.
+
+Salzig, nicht süß. Anders als der süße englische Cawdel ist diese flämische Version mit Salz abgeschmeckt (du sel y mectez bien a point) - ein herzhaftes, stärkendes Getränk, kein Dessert.
+
+Praxis. Pro Portion ca. 150 ml Wasser leicht köcheln. 4 Eigelb mit 50 ml Weißwein verquirlen, vom Feuer gezogen oder bei kleinster Hitze langsam einrühren, ständig rühren, bis es leicht sämig bindet (nicht über 80 Grad - sonst flockt es). Mit Salz abschmecken, sofort warm servieren. Für Kranke 5 statt 4 Eigelb (reicher, nahrhafter).</note>
+        <note type="gloss" target="#men-303-orig" n="Chaudeau" resp="#fyndling">warmes, eiergebundenes Wein-Getränk (von chaud = warm) - sämig wie eine dünne Zabaione, oft als Stärkung für Kranke.</note>
+        <note type="gloss" target="#men-303-orig" n="moyeulx d'oeufz" resp="#fyndling">Eigelb (moyeu = Dotter) - das alleinige Bindemittel; gibt die samtige Konsistenz.</note>
+        <note type="gloss" target="#men-303-orig" n="a fil" resp="#fyndling">‚in dünnem Strahl‘ - das verquirlte Ei langsam einlaufen lassen und rühren, damit es nicht zu Flöckchen gerinnt.</note>
+        <note type="gloss" target="#men-303-orig" n="bien a point" resp="#fyndling">‚genau passend‘ - mit Salz exakt abschmecken; diese flämische Version ist herzhaft, nicht süß.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

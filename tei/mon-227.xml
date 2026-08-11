@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Reis in Mandelmilch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-11">2026-07-11</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-227/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.226</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-227">
+        <head>Reis in Mandelmilch</head>
+        <div type="original" xml:id="mon-227-orig" xml:lang="de-x-fnhd" corresp="#mon-227-trans">
+          <p>wElt ier machen reiss in der milich So nembt reis chlaubt den schonn sewdt sein als auff ein vierdung Nym ain 1/2 talentum mandel slach die durch vnd gewss / vnd dy milich an den reis etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-227-trans" xml:lang="de" corresp="#mon-227-orig">
+          <p>Wollt ihr Reis in der Milch zubereiten, so nehmt Reis und verlest ihn gründlich. Siedet davon etwa ein Viertelpfund. Nehmt ein halbes Pfund Mandeln, schlagt sie durch (im Mörser zerstoßen und passieren) und gießt die Milch an den Reis. Süßt ihn nach Belieben und serviert ihn.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="rice" orig="reis" commodity="wikidata:Q5090" source="#corema-ingredient-index">Reis</ingredient> - 125 g</item>
+            <item>
+              <ingredient en="milk" orig="milich" commodity="wikidata:Q8495" source="#corema-ingredient-index">Mandelmilch</ingredient>
+            </item>
+            <item><ingredient orig="1/2 talentum mandel">Mandeln, gemahlen</ingredient> - 250 g</item>
+            <item>
+              <ingredient en="water" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="etc.">Zucker oder Honig (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-227-trans" resp="#fyndling">Welches Gericht ist das? Reis in Mandelmilch ist die unmittelbare Vorstufe des heutigen Milchreis beziehungsweise der internationalen Riz-au-lait-Familie: vorgekochter Reis wird in gesüßter Mandelmilch fertiggegart. Anders als der berühmte Blanc-Mangier - Reis, Mandelmilch und zerzupftes Hühnerfleisch - fehlt hier das Fleisch ganz; es ist die entfleischte, fastentaugliche Schwester desselben Grundmusters. Sein engster lebender Verwandter im Korpus ist teg-022 (Reismues mit Mandeln) aus dem Tegernseer Speisenbuch, das dasselbe Verfahren beschreibt.
+
+Was mit „vierdung“ gemeint ist. Die Formulierung „sewdt sein als auff ein vierdung“ wurde bislang so gelesen, dass der Reis kocht, „bis er um ein Viertel an Volumen zugenommen hat“. Dafür gibt es im Text kein Verb und im Korpus keinen Beleg: „vierdung“ bezeichnet an allen anderen Stellen - etwa in bgs-001, wo „einen vierdung rises“ wörtlich „ein Viertelpfund Reis“ meint - ausschließlich eine feste Gewichtsmenge, nie eine Zunahme beim Garen. Näherliegend ist daher, dass mit dem Reis von vornherein eine Menge von etwa einem Viertelpfund (rund 125 g) gemeint ist - passend zur direkt danach genannten halben Talentum Mandeln (rund 250 g), die die Mengenrelation der beiden Hauptzutaten festlegt.
+
+Praxis. Der Reis wird zunächst in Wasser vorgegart, danach mit der frisch gepressten Mandelmilch vermengt. Der Text bricht nach dem Zusammengießen mit „etc.“ ab, doch praktisch braucht es hier noch ein kurzes gemeinsames Aufkochen: Reis und Mandelmilch werden zusammen weitergeköchelt, bis der Reis vollends gar und die Masse sämig eingedickt ist - erst dann wird gesüßt und serviert. Ein Ansatz von etwa einem Viertelpfund (125 g) Reis auf ein halbes Pfund (250 g) gemahlene Mandeln ergibt eine ausgewogene, nicht zu dünne Konsistenz. Für 2-3 Portionen sollte man für das Mandelstoßen und -Durchschlagen von Hand eher 15-20 Minuten zusätzlich einplanen.</note>
+        <note type="gloss" target="#mon-227-orig" n="talentum" resp="#fyndling">Ein „talentum“ war ein mittelalterliches Gewichtsmaß, dessen Wert regional variierte. Im süddeutschen Raum entsprach es oft einem Pfund (ca. 500 g). Hier ist ein halbes Talentum, also ca. 250 g, gemeint.</note>
+        <note type="gloss" target="#mon-227-orig" n="milich" resp="#fyndling">Im Kontext dieses Rezepts und laut CoReMA-Glosse ist mit „Milich“ Mandelmilch gemeint, eine häufige Zutat in der mittelalterlichen Küche, besonders in der Fastenzeit.</note>
+        <note type="gloss" target="#mon-227-orig" n="chlaubt den schonn" resp="#fyndling">„Schonn“ ist eine bairisch-österreichische Variante von „schon“, hier im Sinne von „gründlich“ oder „sauber“. Der Reis soll also sorgfältig verlesen und gereinigt werden.</note>
+        <note type="gloss" target="#mon-227-orig" n="vierdung" resp="#fyndling">„Vierdung“ ist im Korpus durchweg ein Gewichts-/Mengenmaß von etwa einem Viertelpfund (ca. 125 g), niemals ein Faktor für eine Volumenzunahme beim Garen (vgl. bgs-001 „einen vierdung rises“ = ein Viertelpfund Reis, mha-004/005 „vierdung zucker“). Hier bezeichnet es die für dieses Rezept vorgesehene Reismenge.</note>
+        <note type="interpretive_choice" target="#mon-227-orig" n="sewdt sein als auff ein vierdung" resp="#fyndling">Siedet den Reis, [und zwar] etwa auf ein Viertelpfund (rund 125 g) - „vierdung“ bezeichnet hier die vorgesehene Reismenge, nicht eine Volumenzunahme beim Garen.</note>
+        <note type="interpretive_choice" target="#mon-227-orig" n="etc." resp="#fyndling">Die Abkürzung „etc.“ deutet an, dass das Gericht nach dem Kochen der Mandelmilch mit dem Reis vermutlich gesüßt und serviert werden soll, wie es bei Milchreis üblich ist.</note>
+        <note type="interpretive_choice" target="#mon-227-orig" n="vnd gewss / vnd dy milich an den reis etc." resp="#fyndling">Nach dem Zusammengießen von Mandelmilch und vorgegartem Reis wird die Masse vermutlich noch gemeinsam weitergekocht, bis der Reis vollends gar und die Mischung eingedickt ist - erst danach gesüßt und serviert.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

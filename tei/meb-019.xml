@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hecht auf dreierlei Art</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/meb-019/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Augsburg, Universitätsbibliothek, Cod. III.1.2°43 (CoReMA A1)</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.a1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">a1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.a1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. A1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="meb-019">
+        <head>Hecht auf dreierlei Art</head>
+        <div type="original" xml:id="meb-019-orig" xml:lang="de-x-fnhd" corresp="#meb-019-trans">
+          <p>Wiltu machenn dreyerlej essens an einem visch So nym ein hecht vnd slach vmb das mittel teyl ein naß tuch vnd leg in auff ein rost vnd saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb vnd begeuß mit schmaltz das heyß sej vnd das tuch begeuß mit heissem wein vnd das hinder teyl prett sich selbs auff dem rost</p>
+        </div>
+        <div type="translation" xml:id="meb-019-trans" xml:lang="de" corresp="#meb-019-orig">
+          <p>Willst du dreierlei Speisen aus einem Fisch zubereiten, so nimm einen Hecht.</p>
+          <p>Schlage um das Mittelteil ein nasses Tuch, lege den Fisch auf einen Rost, salze ihn und lass ihn braten. Das vordere Teil besprenge mit Mehl und begieße es mit heißem Schmalz. Das Tuch begieße mit heißem Wein, und das hintere Teil brät sich selbst auf dem Rost.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ein hecht">Hecht</ingredient> - 1</item>
+            <item><ingredient orig="ein naß tuch">Nasses Tuch</ingredient> - 1 Stück</item>
+            <item>
+              <ingredient en="table salt" orig="saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="melb" commodity="wikidata:Q36465" source="#corema-ingredient-index">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="schmaltz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#meb-019-trans" resp="#fyndling">Welches Gericht ist das? Ein Schaugericht der Festtafel: Ein einziger ganzer Hecht wird über seine Länge in drei Zonen gleichzeitig gegart, sodass drei Garweisen an einem Fisch sichtbar werden - und der Fisch dennoch ganz erscheint. Das ist die knappe bairische Fassung Meister Eberhards (Landshut, ~1450) eines europaweit verbreiteten Typus; der nahezu wortgleiche Schwesterzeuge ist Drei Zubereitungen von einem Hecht (Regensburg, Cgm 5919). Weitere Verwandte sind Fisch auf dreierlei Art (Meister Hans), Fisch auf dreierlei Art (Rheinfränkisch), der dreifach zubereitete ganze Fisch bei Martino und der vierfache Hecht der Koch- und Kellermeisterei.
+
+Das nasse Tuch und der heiße Wein. Um das Mittelteil wird ein naß tuch geschlagen und fortwährend mit heißem Wein begossen. So bleibt das Mittelstück feucht und gart im Dampf - ein Vorläufer des Garens en papillote, der das Fleisch zugleich von außen würzt. Im Regensburger Schwesterzeugen steht dafür fursich (fortwährend, immer wieder) - das Tuch darf nicht trockenfallen, sonst verkohlt es und das Garen bricht ab.
+
+Mehl und Schmalz am Vorderteil. Das foderr teil wird mit melb (Mehl) besprengt und mit heißem schmaltz übergossen. Das ergibt am mageren, knochigen Vorderteil eine schützende, bräunende Kruste, kein Frittieren und kein Konfit. Dieselbe Schmalz-Mehl-Behandlung steht fast wörtlich in mha-279 und rfk-070; im Regensburger Zeugen ist dieses Stück ausdrücklich das Vorderteil mit dem Kopf.
+
+Praxis. Die drei Zonen liegen gleichzeitig am selben Fisch auf dem Rost und brauchen unterschiedliche Hitze - das ist der eigentliche Knackpunkt. Bewährt hat sich die Lösung aus mar-265: flache Steine unter den Rost legen, sodass die volle Glut nur unter das Mittelteil kommt, während Vorder- und Hinterteil mildere Hitze bekommen. Den heißen Wein in einem Topf am Feuer bereithalten und das Tuch immer wieder begießen, solange der Fisch gart. Ein ganzer Hecht ist so in etwa 30-45 Minuten durch.</note>
+        <note type="gloss" target="#meb-019-orig" n="naß tuch" resp="#fyndling">Das nasse Tuch um das Mittelteil, fortwährend mit heißem Wein begossen, hält diesen Abschnitt feucht und gart ihn im Dampf, während die anderen Teile braten.</note>
+        <note type="gloss" target="#meb-019-orig" n="rost" resp="#fyndling">Ein Rost zum Garen über offener Glut, im Mittelalter oft aus frischem, grünem Hartholz gebaut. Siehe auch die Grundlagen-Seite zu hölzernen Rosten.</note>
+        <note type="interpretive_choice" target="#meb-019-orig" n="prett" resp="#fyndling">Hier finites Verb „(es) brät" (zu „braten"), nicht das Substantiv „Brät / Farce". Der Kontext „prett sich selbs auff dem rost" macht das eindeutig: Das hintere Teil brät von selbst auf dem Rost.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

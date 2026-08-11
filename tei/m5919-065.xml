@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Königshühner aus dem Mörser</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-03">2026-07-03</date>
+        <idno type="url">https://fyndling.de/rezepte/m5919-065/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 5919</title>
+          <date when="1505" cert="low">um 1500</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m9/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m9</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m9</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M9 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, Regensburg, um 1500-1510)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m5919-065">
+        <head>Königshühner aus dem Mörser</head>
+        <div type="original" xml:id="m5919-065-orig" xml:lang="de-x-fnhd" corresp="#m5919-065-trans">
+          <p>aber von huner merck anderlay zu gliden ing-? prattini huner vnd slach ayr mit ymbir vnd ain klain anneis geus das mit hunneren in ain faisten haissen morser las es pachen geleich geus es mit ainem klain smaltz ditz haissent kunigs huen</p>
+        </div>
+        <div type="translation" xml:id="m5919-065-trans" xml:lang="de" corresp="#m5919-065-orig">
+          <p>Nimm gebratene Hühner und zerteile sie in kleine Stücke. Schlage frische Eier auf und vermenge sie mit gestoßenem Ingwer und ein wenig Anis. Gieße diese Mischung zusammen mit den Hühnerstücken in einen gefetteten, heißen Mörser. Lass es darin gleichmäßig backen und gib zum Schluss ein wenig Schmalz dazu.</p>
+          <p>Dies nennt man Königshühner.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken" orig="huner" commodity="wikidata:Q864693" source="#corema-ingredient-index">gebratenes Huhn</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="ymbir" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain klain anneis">Anis</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m5919-065-trans" resp="#fyndling">Welches Gericht ist das? „Königshühner aus dem Mörser“ - bereits gebratene Hühner werden in kleine Stücke zerteilt, mit einer gewürzten Ei-Glasur (Ingwer, etwas Anis) übergossen und in einem gefetteten, heißen Mörser am Feuer überbacken. Das Gericht lebt im Korpus als breit bezeugter Gerichtstyp: dieselbe Logik (gegartes Geflügel, mit Ei und Gewürz überzogen, im heißen gefetteten Gefäß gegart) findet sich nahezu wortgleich in bgs-028 („Königs-Hühner“), koe-002 und koe-013 sowie - mit abgewandeltem Verfahren - beim direkten Schwesterrezept m5919-063 desselben Schreibers.
+
+Die eine echte Crux ist prattini huner. Das ist „gebratene Hühner“ (Partizip, bairisch p/b-Wechsel), nicht „Hühnerbrät“ - man kann nur ganze, gare Vögel „zergliedern“. Die bairische Lesefalle „geprät = Brät“ liegt hier in umgekehrter Richtung vor; alle Familien-Parallelen lesen „gebraten“. Das verstümmelte Fragment ing-? steht dort, wo bgs-028 „junge“ hat, ist also plausibel ein Adjektiv vor den Hühnern - mangels Eich-Edition für Cgm 5919 bleibt das offen.
+
+Die zweite Crux ist faisten haissen morser. Anders als beim Stampf-Mörser ist hier ein gefettetes, vorgeheiztes Gefäß als Garbgefäß gemeint: Man gießt die Ei-Mischung mit den Hühnern hinein und lässt es am Feuer überbacken (pachen geleich), wobei man das Gefäß häufig zum Feuer dreht. koe-002 belegt es wörtlich („morser mytt frschenn Smalltz ... kere den morser dicke zu dem fure“).
+
+Praxis. Richtwerte für 2-4 Personen: ca. 300-400 g gegartes/gebratenes Hähnchen (Keule saftiger als Brust), klein zerteilt; 3-4 Eier, mit etwa 1/2 TL geriebenem oder gestoßenem Ingwer und einer kleinen Prise gemahlenem Anis verquirlt (Anis sparsam, sonst lakritzig-dominant); eine Prise Salz (im Text nicht genannt, küchentechnisch nötig); einige Safranfäden sind familientypisch (in bgs-028/koe-002 ergänzt) und geben die königsgelbe Farbe. Statt eines Steinmörsers nimmt man heute eine gut gefettete, vorgeheizte gusseiserne Pfanne oder einen schweren Topf mit Deckel: Hühnerstücke einlegen, Ei-Mischung darübergießen, etwas Schmalz zugeben und bei mittlerer Hitze mit Deckel gleichmäßig stocken/überbacken lassen, bis das Ei fest und goldgelb ist. Über Glut den Topf gelegentlich drehen, damit er ringsum gleichmäßig heiß wird.</note>
+        <note type="gloss" target="#m5919-065-orig" n="prattini huner" resp="#fyndling">„(Ge)bratene Hühner“ - das Partizip „praten/gebraten“ (bairisch p/b-Wechsel), NICHT „Hühnerbrät“. Man kann nur ganze, gare Vögel „zergliedern“ (zerteilen), und die Familien-Parallelen lesen einhellig „gebraten“: bgs-028 („junge gebratene huenre, an kleine mursel“), koe-002 und koe-013 („gebrottenn huner ... hacke die zu clenne stucklenn“). Die bairische Lesefalle „geprät = Brät“ liegt hier in der umgekehrten Richtung vor und wird durch den Korpus aufgelöst.</note>
+        <note type="gloss" target="#m5919-065-orig" n="faisten haissen morser" resp="#fyndling">Ein gefetteter, heißer Mörser, der hier als Garbgefäß dient: Die übergossenen Hühnerstücke werden darin am Feuer überbacken. „Faisten“ = mit Schmalz gefettet (vgl. koe-002 „ein morser mytt frschenn Smalltz“), „haissen“ = vorgeheizt. Die Parallelen drehen den Mörser dabei „dicke zu dem fure“ (häufig zum Feuer hin), damit er gleichmäßig heiß wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#faisten"/></note>
+        <note type="gloss" target="#m5919-065-orig" n="kunigs huen" resp="#fyndling">„Königshühner“ - ein im deutschsprachigen Korpus breit bezeugtes höfisches Gericht („kueniges huenre“), das von der safrangelben Inszenierung lebt.</note>
+        <note type="interpretive_choice" target="#m5919-065-orig" n="ing-? prattini huner" resp="#fyndling">gebratene Hühner, in kleine Stücke zerteilt. Die Eröffnung „zu gliden ... prattini huner“ = „zergliedere/zerteile gebratene Hühner“ ist durch die fast wortgleichen Korpus-Parallelen gesichert (bgs-028 „Nim junge gebratene huenre, an kleine mursel“; koe-002/koe-013 „gebrottenn huner ... zu clenne stucklenn“). Das verstümmelte Fragment „ing-?“ steht an genau der Stelle, an der bgs-028 „junge“ hat - plausibel ein Adjektiv vor den Hühnern; mangels deutscher Eich-Edition für Cgm 5919 bleibt das unsicher.</note>
+        <note type="interpretive_choice" target="#m5919-065-orig" n="faisten haissen morser" resp="#fyndling">gefetteter, vorgeheizter Mörser als Garbgefäß am Feuer. „Pachen“ (backen) im Mörser ist hier kein Zerstoßen, sondern das Überbacken der übergossenen Hühnerstücke. Cross-Source gesichert: koe-002 „nim ein morser mytt frschenn Smalltz ... kere den morser dicke zu dem fure“, bgs-028 „guez daz in einen moerser, der heiz si ... lazze sie backen glich heiz mit ein wenic smaltzes“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#faisten"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

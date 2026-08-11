@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllte Eier vom Spieß</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-11">2026-07-11</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-252/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.251</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-252">
+        <head>Gefüllte Eier vom Spieß</head>
+        <div type="original" xml:id="mon-252-orig" xml:lang="de-x-fnhd" corresp="#mon-252-trans">
+          <p>ITem ein kost von airen dy sewd len vnd thue sy auff paiden arteren auff vnd thue die tutter dar auß vnd nym ein hayß smalcz vnd thue dy tutter dar In ruers mit pettersill vnd gwurcz vnd fuls wider vnd verprens vnd schels dar nach vnd stoz an ein spiß vnd pracz</p>
+        </div>
+        <div type="translation" xml:id="mon-252-trans" xml:lang="de" corresp="#mon-252-orig">
+          <p>Für ein Gericht aus Eiern die Eier sieden lassen. Danach an beiden Enden öffnen und die Dotter herausnehmen.</p>
+          <p>Heißes Schmalz nehmen und die Dotter hineingeben, mit Petersilie und Gewürz verrühren, dann die Masse wieder in die Eier füllen. Die Öffnungen verschließen.</p>
+          <p>Danach die Eier schälen, auf einen Spieß stecken und braten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="airen" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="hayß smalcz">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="pettersill" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürzmischung</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-252-trans" resp="#fyndling">Welches Gericht ist das? mon-252 ist ein Schaugericht: Ein hartgesottenes Ei wird an beiden Enden geöffnet, der Dotter entnommen, mit heißem Schmalz, Petersilie und Gewürz zu einer Creme verrührt, zurückgefüllt, wieder verschlossen und am Spieß gebräunt - am Ende soll es wieder wie ein unversehrtes Ei aussehen. Der nächste lebende Verwandte ist das gefüllte Ei (Deviled Egg), allerdings nur was Zutaten und Grundprinzip betrifft; die eigentliche Pointe, die Illusion des ganzen Eis samt Spieß-Bräunung, hat im Alltag keine direkte Entsprechung mehr.
+
+Beide Enden statt Längsschnitt. Das Ei wird nicht der Länge nach halbiert, sondern an beiden Enden vorsichtig geöffnet, sodass die Eiweiß-Hülle als dünne Röhre stehen bleibt - durch diese Öffnungen wird der feste Dotter herausgedrückt. Zwei unabhängige Parallelrezepte im Korpus (rfk-047, m725-020) öffnen die Eier ebenfalls an beiden Spitzen bzw. Enden statt sie längs zu teilen, was diese Lesart deutlich stützt.
+
+Das Wiederverschließen. Nach dem Neubefüllen müssen die Öffnungen wieder verschlossen werden, sonst fällt die Füllung beim Schälen und Spießen heraus. Real ist dabei vor allem die Bruchgefahr: Die dünne Eiweiß-Röhre reißt leicht, wenn man nicht behutsam vorgeht - eine Schwierigkeit, die der Text selbst nicht benennt.
+
+Praxis. Eier hart sieden, an beiden Enden vorsichtig eine kleine Öffnung schaffen und den Dotter behutsam herausdrücken. Dotter in heißem Schmalz mit Petersilie und Gewürz zu einer geschmeidigen Paste verrühren und zurückfüllen - die Paste sollte weder zu flüssig noch zu fest sein, damit sie weder ausläuft noch sich schlecht einfüllen lässt. Öffnungen andrücken und kurz erwärmen, danach erst schälen, auf einen Spieß stecken und über der Glut bräunen, bis die Oberfläche leicht kross ist.</note>
+        <note type="gloss" target="#mon-252-orig" n="tutter" resp="#fyndling">Bairisch für Eidotter - im ganzen Korpus belegte Lesart, kein Verwechslungswort.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#tutter"/></note>
+        <note type="gloss" target="#mon-252-orig" n="pracz" resp="#fyndling">Imperativ von 'braten' (bair. p/b-Wechsel) - 'brat es', nicht das Substantiv 'Bratwurst'.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pracz"/></note>
+        <note type="gloss" target="#mon-252-orig" n="arteren" resp="#fyndling">Bairische Nebenform zu mhd. 'ort' (Ende, Spitze) - die Eier werden an beiden Enden geöffnet. Das Wort taucht auch im Zwillingsrezept mon-247 auf; zwei unabhängige Parallelrezepte (rfk-047, m725-020) beschreiben ebenfalls ein Öffnen an beiden Enden bzw. Spitzen statt einer Längshalbierung, was diese Lesart stützt.</note>
+        <note type="gloss" target="#mon-252-orig" n="verprens" resp="#fyndling">Unklares Verb, vermutlich das Verschließen/Versiegeln der wieder befüllten Öffnungen, möglicherweise durch leichtes Anwärmen der Ränder. Die Handschrift zeigt durchgängigen bairischen p/b-Wechsel (u.a. 'pracz' = braten im selben Rezept), was eine Lesart als 'verbrenn's' im Sinn von 'versenge es kurz' naheliegend macht - eine sichere Zuordnung bleibt aber offen, da die genaue Schreibform sonst nicht belegt ist.</note>
+        <note type="interpretive_choice" target="#mon-252-orig" n="verprens" resp="#fyndling">Als 'versiegeln/verschließen (ggf. durch kurzes Erwärmen der Ränder)' gelesen - die Öffnungen an den Enden des Eis werden nach dem Neubefüllen wieder verschlossen, bevor das Ei geschält, gespießt und gebraten wird.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

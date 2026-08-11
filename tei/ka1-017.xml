@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kalte Hirschleber-Galantine</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-14">2026-07-14</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-017/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-017">
+        <head>Kalte Hirschleber-Galantine</head>
+        <div type="original" xml:id="ka1-017-orig" xml:lang="de-x-fnhd" corresp="#ka1-017-trans">
+          <p>Niem ain hierß leber vnd braut die dar nach schnid daz ? vsser dar ab vnd stoß es in ainem morser mit rugin brot vnd honig vnd win vnd trib es durch ain tuoch vnd bewuertz vnd erwell die lebran dar nach gib daz kalt zuo essen daz ist ain leber galrain etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-017-trans" xml:lang="de" corresp="#ka1-017-orig">
+          <p>Nimm eine Hirschleber und brate sie. Danach schneide das Äußere ab (im Original steht davor noch ein unleserliches Wort, dessen genaue Bedeutung offenbleibt).</p>
+          <p>Stoße das Fleisch im Mörser, zusammen mit Roggenbrot, Honig und Wein. Treibe die Masse durch ein Tuch und würze sie.</p>
+          <p>Lass die Lebermasse danach noch einmal aufwallen. Gib sie kalt zum Essen: Das ist eine Leber-Galantine.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="deer liver" orig="hierß leber" commodity="wikidata:Q96756392" source="#corema-ingredient-index">Hirschleber</ingredient> - 1</item>
+            <item>
+              <ingredient en="rye bread" orig="rugin brot" commodity="wikidata:Q3893120" source="#corema-ingredient-index">Roggenbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="bewuertz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-017-trans" resp="#fyndling">Welches Gericht ist das? Eine kalt servierte, fein passierte Wildleber-Paste: Hirschleber wird gebraten, mit eingeweichtem Roggenbrot, Honig und Wein im Mörser zerstoßen, durch ein Tuch getrieben, gewürzt und noch einmal aufgekocht. Die nächste lebende Verwandtschaft ist die Leberpastete bzw. Terrine - trotz des Namens 'Galrai/Galantine' aber keine echte Aspik-Sülze, denn ein Geliermittel wird nicht genannt. Die Bindung kommt allein vom Roggenbrot, das Ergebnis ist eher ein dickes Leber-Mus als eine schnittfeste Terrine.
+
+Die unleserliche Stelle. 'schnid daz ? vsser dar ab' enthält ein in der Handschrift unleserliches Wort zwischen 'daz' und 'vsser'. 'Vsser' selbst (='das Äußere') ist durch die Parallelüberlieferung eindeutig belegt - abgeschnitten wird die äußere Schicht der gebratenen Leber. Was genau das unleserliche Zusatzwort näher bestimmt hätte, bleibt offen.
+
+Warum zweimal erhitzt wird. Das Braten macht die Leber fest genug zum Zerstoßen und gibt Röstaromen. Das spätere Aufwallen ('erwellen') nach dem Passieren gart auch die roh zugesetzten Zutaten - Honig und Wein - noch einmal mit durch, bevor die Masse kalt serviert wird.
+
+Praxis. Leber braten, auskühlen lassen, äußere Schicht abschneiden. Im Mörser (ersatzweise Stabmixer) mit eingeweichtem Roggenbrot, Honig und Wein zerstoßen, durch ein Tuch (ersatzweise feines Sieb) treiben, würzen und kurz aufkochen. Danach gut durchkühlen lassen und kalt servieren.</note>
+        <note type="gloss" target="#ka1-017-orig" n="leber galrain / leber galray" resp="#fyndling">Bezeichnet eine 'Leber-Galantine': eine kalt servierte, gewürzte Leberpaste. Da im Text kein Geliermittel genannt wird, ist hier eher ein dickes Mus als eine feste Aspik-Terrine gemeint - die Bindung kommt vom eingekochten Roggenbrot.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#galray"/></note>
+        <note type="gloss" target="#ka1-017-orig" n="rugin brot" resp="#fyndling">Roggenbrot dient hier als Bindemittel für die Leberpaste, ganz im Sinne der Zeit: gebunden wurde mit Brot, Mandeln oder Ei, nicht mit Mehl.</note>
+        <note type="gloss" target="#ka1-017-orig" n="erwell" resp="#fyndling">Von mhd. 'erwellen' = aufwallen, aufkochen lassen. Die durchgetriebene Lebermasse wird hier noch einmal kurz erhitzt, bevor sie zum Auskühlen weggestellt wird.</note>
+        <note type="gloss" target="#ka1-017-orig" n="bewuertz" resp="#fyndling">Verb-Imperativ 'bewürze/würze es' - eine allgemeine Anweisung zum Nachwürzen, ohne dass ein bestimmtes Gewürz genannt wird.</note>
+        <note type="gloss" target="#ka1-017-orig" n="daz ? vsser dar ab" resp="#fyndling">'Vsser' (='das Äußere') ist ein cross-ms bezeugter, stabiler Begriff (vgl. m384-033, m5919-054, ri15632-016: 'schnid/schneid/schneyd daz/das ausser darab'). Das unleserliche Zeichen in ka1 markiert ein zusätzliches Wort vor 'vsser', das in keiner der Parallelhandschriften vorkommt - vermutlich eine buchspezifische nähere Bestimmung, deren genauer Wortlaut offenbleibt.</note>
+        <note type="interpretive_choice" target="#ka1-017-orig" n="daz ? vsser dar ab" resp="#fyndling">Zwischen dem Artikel 'daz' und dem gut bezeugten Wort 'vsser' (='das Äußere') steht in der Handschrift ein zusätzliches, unleserliches Wort. 'Vsser' selbst ist eindeutig - abgeschnitten wird die äußere Schicht der gebratenen Leber; offen bleibt nur, was das unleserliche Zusatzwort näher bestimmt hätte.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

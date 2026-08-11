@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Welscher Eierkuchen (Kräuter-Frittata)</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/meb-011/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Augsburg, Universitätsbibliothek, Cod. III.1.2°43 (CoReMA A1)</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.a1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">a1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.a1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. A1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="meb-011">
+        <head>Welscher Eierkuchen (Kräuter-Frittata)</head>
+        <div type="original" xml:id="meb-011-orig" xml:lang="de-x-fnhd" corresp="#meb-011-trans">
+          <p>Wiltu machen ein meyschen kuchenn So nym auff zehen eyer vnd zuslach sie wol vnd nym darzu peterlein vnd rurr es vndereinander vnd nym einen morserr vnd setz auff ein kolenn vnd thue dar ein einen loeffel vol schmaltz vnd laß es heyß werdenn vnd geuß die eyerr darein vnd laß es kul pachen vnd thu es also gantz auff ein schussel versaltz es nit</p>
+        </div>
+        <div type="translation" xml:id="meb-011-trans" xml:lang="de" corresp="#meb-011-orig">
+          <p>Nimm zehn Eier und schlage sie gut auf. Gib Petersilie hinzu und rühre es untereinander. Nimm einen Mörser und stelle ihn auf glühende Kohlen. Gib einen Löffel voll Schmalz hinein und lass es heiß werden. Gieße die Eier hinein und lass es langsam backen. Lege es dann ganz auf eine Schüssel und versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="zehen eyer">Eier</ingredient> - 10</item>
+            <item>
+              <ingredient en="parsley" orig="peterlein" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item><ingredient orig="einen loeffel vol schmaltz">Schmalz</ingredient> - 1 EL</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#meb-011-trans" resp="#fyndling">Welches Gericht ist das? Ein welscher (italienischer) Eierkuchen - im Kern eine Kräuter-Frittata: zehn verquirlte Eier mit Petersilie, in heißem Schmalz langsam gestockt und ganz auf eine Schüssel gestürzt. Lebende Verwandte: die italienische frittata di erbe und die spanische tortilla de hierbas. Es ist die schlankste Variante der Eierkuchen-Familie des Korpus - ohne Käse, ohne Füllung, ohne Süße (vgl. die reicheren bgs-052, boc-043, boc-044). Fast wortgleich überliefert als koe-015 im Königsberger Kochbuch.
+
+Technik. Der morserr ist hier ein Kochgefäß, kein Stoßmörser: auf die Glut gesetzt, ein Löffel Schmalz darin erhitzt, die Eiermasse hineingegeben und kul (kühl = bei milder Hitze) gestockt, damit sie nicht bräunt. Ein dickwandiger Metallmörser oder kleiner Topf gibt genau die sanfte, gleichmäßige Hitze, die das kul pachen verlangt. Die Warnung versaltz es nit ist eine Küchenwarnung, keine Salzmenge - das Schmalz trägt schon Würze, also sparsam salzen.
+
+Praxis. Modern: 10 Eier mit reichlich gehackter Petersilie verquirlen, in einer schweren oder gusseisernen Pfanne 1 EL Schmalz (oder Butter/Pflanzenöl) richtig heiß werden lassen, dann die Hitze zurücknehmen und die Masse bei milder Hitze langsam durchstocken. Zu starke Unterhitze verbrennt den Boden, bevor die Mitte fest ist. Am Schluss ganz auf die Schüssel stürzen (gerösteter Boden oben), nicht wenden. Ergibt einen sättigenden, kräuterdurchzogenen Fladen für 2-4 Personen.</note>
+        <note type="gloss" target="#meb-011-orig" n="meyschen kuchenn" resp="#fyndling">‚meyschen' ist hier mit hoher Wahrscheinlichkeit ein Verschreiber für ‚weyschen' = welisch = italienisch (welscher Kuchen). Der Wort-für-Wort-Zwilling koe-015 im Königsberger Kochbuch hat an gleicher Stelle ‚weyschenn kuchen'; m und w sind in der Schreiberhand der Periode leicht verwechselbar. ‚Welscher Eierkuchen' = eine frühe Kräuter-Frittata.</note>
+        <note type="gloss" target="#meb-011-orig" n="morserr" resp="#fyndling">Hier dient der Mörser nicht zum Zerstoßen, sondern als feuerfestes Kochgefäß, das direkt auf die Glut gesetzt wird - ein im Korpus mehrfach belegtes Muster (vgl. koe-015, koe-002, koe-013). Modern entspricht das einer kleinen, schweren Pfanne oder einem flachen Topf über milder Glut.</note>
+        <note type="gloss" target="#meb-011-orig" n="kul pachen" resp="#fyndling">‚kühl backen' meint im Kontext des Garens über Glut ein langsames, schonendes Stocken bei moderater Hitze, damit der dicke Eierkuchen gleichmäßig durchgart, ohne anzubrennen.</note>
+        <note type="interpretive_choice" target="#meb-011-orig" n="meyschen kuchenn" resp="#fyndling">‚welischer (italienischer) Kuchen‘ - eine Kräuter-Frittata nach welscher Art. Belegt durch den fast wortgleichen Zwilling koe-015, der an gleicher Stelle ‚weyschenn kuchen‘ liest; ‚meyschen‘ ist mit hoher Wahrscheinlichkeit ein Verschreiber (m statt w).</note>
+        <note type="interpretive_choice" target="#meb-011-orig" n="morserr" resp="#fyndling">Wir interpretieren ‚morserr‘ hier als ein feuerfestes Kochgefäß (Topf oder Pfanne), das auf Kohlen gesetzt wird. Dasselbe Muster zeigt der Zwilling koe-015 sowie koe-002 und koe-013.</note>
+        <note type="interpretive_choice" target="#meb-011-orig" n="kul pachen" resp="#fyndling">Wir interpretieren ‚kul pachen‘ als ‚langsam und schonend backen‘ bei moderater Hitze - so bleibt der Eierkuchen hell und zart, der Rand brennt nicht an, bevor die Mitte stockt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hasen-Innereien in Blutsauce</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-14">2026-07-14</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-014/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-014">
+        <head>Hasen-Innereien in Blutsauce</head>
+        <div type="original" xml:id="ka1-014-orig" xml:lang="de-x-fnhd" corresp="#ka1-014-trans">
+          <p>furhess Zuo ainem furhess niem ain lungun vnd die lebren vnd vnd wust von dem hasen vnd zerschnid daz wirflot vnd fanch den schwaiss vnd sud es da mit vnd tuo ain wenig win oder essich vnd hong vnd speck dar zuo So haustu ain guot furhesß etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-014-trans" xml:lang="de" corresp="#ka1-014-orig">
+          <p>Für ein Fürhess nimm die Lunge, die Leber und die übrigen Innereien vom Hasen. Schneide alles würfelig klein. Fange das Blut des Tiers auf und siede die Innereien darin mit. Gib ein wenig Wein oder Essig dazu, außerdem Honig und Speck. So hast du ein gutes Fürhess.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ain lungun">Lunge vom Hasen</ingredient> - 1</item>
+            <item>
+              <ingredient orig="die lebren">Leber vom Hasen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wust">weitere Innereien vom Hasen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="den schwaiss">Blut vom Hasen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="win oder essich">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="hong" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="speck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-014-trans" resp="#fyndling">Welches Gericht ist das? Ein mit dem eigenen Blut des Tieres gebundenes Innereien-Ragout vom Hasen: Lunge, Leber und weitere Innereien werden gewürfelt und im aufgefangenen Blut mit Wein oder Essig, Honig und Speck gesotten. Ein früher Verwandter des heute noch bekannten Hasenpfeffers - dessen Namen zwar überlebt hat, dessen namensgebende Blutbindung aber in modernen Rezepten meist fehlt. Näher an der hier beschriebenen Technik sind bis heute das französische Civet de lièvre und das englische Jugged Hare, die beide nach wie vor mit dem Blut des Tieres gebunden werden.
+
+Was ist mit „wust" gemeint? Der Begriff steht hier als drittes Innereien-Element neben Lunge und Leber, seine genaue Abgrenzung ist im Mittelhochdeutschen nicht sicher zu bestimmen. Eine eng verwandte Fassung desselben Rezepts in einer anderen Handschrift (m384-030) hat an exakt derselben Stelle das Wort „westin", dort als Gekröse gedeutet - ein Hinweis auf eine konkretere Bedeutung, aber kein Beweis, da die andere Handschrift ihr eigenes Wort verwendet. Die vorsichtigste Übersetzung bleibt deshalb der allgemeine Sammelbegriff „weitere Innereien".
+
+Das Blut auffangen. „Schwaiss" ist der jägersprachliche Begriff für das Blut des erlegten Wilds. Das Rezept nennt keinen Zeitpunkt dafür - es sagt nur, dass das Blut aufgefangen wird, nicht wann. Praktisch ergibt sich der Zeitpunkt beim Erlegen des Tieres von selbst, doch das steht nicht im Text und wird hier bewusst offengelassen.
+
+Praxis. Lunge, Leber und die weiteren Innereien würfeln und im aufgefangenen Blut mit Wein oder Essig, Honig und Speck sanft köcheln, nicht kräftig aufkochen: Blut flockt bei zu starker Hitze grob aus, statt die Sauce sämig zu binden. Der Text selbst spricht nur von „sieden" ohne Angabe der Hitzeintensität - eine wörtlichere Lesart als kräftiges Aufwallen (vgl. die Schwester-Fassung m384-031: „lass es aufwallen") ist möglich, führt aber eher zu einer körnigen als zu einer glatten Sauce. Insgesamt eine schlanke, in 30-40 Minuten am offenen Feuer machbare Zubereitung ohne Ofen oder Ruhezeit - der eigentliche Engpass ist die Beschaffung von frischem Hasenblut und den passenden Innereien, die es nur direkt vom Jäger oder bei Eigenjagd gibt.</note>
+        <note type="gloss" target="#ka1-014-orig" n="furhess" resp="#fyndling">Name eines mittelalterlichen Innereien-Gerichts in dunkler, blutgebundener Pfeffersauce, oft als eigener Gang gereicht - kein Zutatname.</note>
+        <note type="gloss" target="#ka1-014-orig" n="wirflot" resp="#fyndling">Würfelig, in Würfelform geschnitten. Bezieht sich auf die Schnittform der Innereien.</note>
+        <note type="gloss" target="#ka1-014-orig" n="schwaiss" resp="#fyndling">Jägersprachlicher Begriff für das Blut des erlegten Wilds, nicht für Körperschweiß.</note>
+        <note type="gloss" target="#ka1-014-orig" n="wust" resp="#fyndling">Sammelbegriff für weitere Innereien, hier neben Lunge und Leber genannt - genaue Abgrenzung unsicher, siehe interpretive_choices.</note>
+        <note type="interpretive_choice" target="#ka1-014-orig" n="wust" resp="#fyndling">Als Sammelbegriff für weitere Innereien des Hasens übersetzt, die neben Lunge und Leber in den Topf kommen.</note>
+        <note type="interpretive_choice" target="#ka1-014-orig" n="win oder essich" resp="#fyndling">Als Alternative gelesen: entweder Wein oder Essig wird zugegeben, nicht beides gleichzeitig.</note>
+        <note type="interpretive_choice" target="#ka1-014-orig" n="sud (Siedeintensität)" resp="#fyndling">Als sanftes Ziehen/Köcheln der Blutsauce knapp unter dem Siedepunkt gelesen, um ein grobes Ausflocken des Bluteiweißes zu vermeiden.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

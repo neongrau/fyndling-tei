@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gesülzte Morcheln</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-09">2026-07-09</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-205/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.204</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-205">
+        <head>Gesülzte Morcheln</head>
+        <div type="original" xml:id="mon-205-orig" xml:lang="de-x-fnhd" corresp="#mon-205-trans">
+          <p>ITem will dw machen gesulczt maw= rochen So full dy mawrochen mit einer guetten full von airen vnd stozz sy dan an spyssel vnd pratt sy schon vnd gewss dar an ain guette prue dy von fleisch sey gemacht vnd thue yn ain guette hyllff von hawssen platteren oder von wee dw wilt das es holl gestee vnd versalcz nicht so ist es guett</p>
+        </div>
+        <div type="translation" xml:id="mon-205-trans" xml:lang="de" corresp="#mon-205-orig">
+          <p>Willst du gesülzte Morcheln zubereiten, so fülle die Morcheln mit einer guten Eierfüllung.</p>
+          <p>Stecke sie dann an Spieße und brate sie gründlich. Gieße danach eine gute Fleischbrühe darüber, die von Fleisch gemacht sei.</p>
+          <p>Gib eine gute Zugabe von Hausenblase oder von dem, was du willst, hinzu, damit es hohl fest werde. Versalze es nicht, so ist es gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="morel" orig="mawrochen" commodity="wikidata:Q1129282" source="#corema-ingredient-index">Morcheln</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg stuffing" orig="full von airen" commodity="wikidata:Q96756339" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="spyssel">Spieße</ingredient>
+            </item>
+            <item>
+              <ingredient orig="guette prue dy von fleisch sey gemacht">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="isinglass" orig="hawssen platteren" commodity="wikidata:Q1255331" source="#corema-ingredient-index">Hausenblase</ingredient>
+            </item>
+            <item>
+              <ingredient>Anderes Geliermittel (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="versalcz nicht">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-205-trans" resp="#fyndling">Welches Gericht ist das? Gefüllte, am Spieß gebratene Morcheln, die anschließend in einer mit Hausenblase geklärten Fleischbrühe zur Sülze erstarren - ein aufwendiges Schaugericht der gehobenen spätmittelalterlichen Küche. Die nächsten lebenden Verwandten sind die klassische deutsche Sülzenplatte und die französische Aspik-Terrine: eine mit Ei gefüllte, in klarem Gelee stehende Pilzkappe ist im Kern eine vegetarische Miniatur-Galantine. Eng verwandt mit m5919-046 (nahezu wortgleiche Fasten-Variante mit Fischbrühe statt Fleischbrühe) und kkm-041 (Gesülzte Morcheln mit Mandeln).
+
+Die Hohlform als Pointe. "damit es holl gestee" ist keine bloße Floskel für "fest werden": Die Morchel ist von Natur aus hohl und wird mit der Eierfüllung bestückt - beim Gelieren soll genau diese charakteristische Hohlform erhalten bleiben, statt beim Erkalten in sich zusammenzufallen. Die Hausenblase liefert dafür die nötige Festigkeit.
+
+Praxis. Frische oder eingeweichte getrocknete Morcheln vorsichtig mit einer gut verrührten Eierfüllung stopfen - die gefüllten Hüte sind fragil, am sichersten lassen sie sich an der dickeren Stielseite aufspießen, nicht am dünnen Rand. Über offenem Feuer gründlich (nicht nur oberflächlich) durchbraten, damit die rohe Eierfüllung vollständig gart. Danach mit kräftiger, warmer Fleischbrühe übergießen, in der zuvor eingeweichte Hausenblase (ersatzweise Blattgelatine) vollständig aufgelöst wurde. Kühl und ungestört fest werden lassen, bis die Sülze klar geliert - und erst danach abschmecken, denn eine kalt-feste Gallerte wirkt im warmen Zustand milder, als sie später serviert schmeckt.</note>
+        <note type="gloss" target="#mon-205-orig" n="mawrochen" resp="#fyndling">Morcheln, eine hochgeschätzte Speisepilzart, die im Mittelalter oft für festliche Gerichte verwendet wurde.</note>
+        <note type="gloss" target="#mon-205-orig" n="full von airen" resp="#fyndling">Eine Füllung aus Eiern, die den Morcheln zusätzliche Substanz und Geschmack verleiht.</note>
+        <note type="gloss" target="#mon-205-orig" n="spyssel" resp="#fyndling">Ein Spieß, auf den die gefüllten Morcheln zum Braten gesteckt werden.</note>
+        <note type="gloss" target="#mon-205-orig" n="schon" resp="#fyndling">Bedeutet hier 'gründlich' oder 'ausreichend lange', nicht 'schön' im ästhetischen Sinne.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="gloss" target="#mon-205-orig" n="hawssen platteren" resp="#fyndling">Hausenblase, ein traditionelles Geliermittel, das aus der Schwimmblase des Störs gewonnen wird. Sie sorgt für eine sehr klare und feste Gelierung.</note>
+        <note type="gloss" target="#mon-205-orig" n="holl gestee" resp="#fyndling">'holl' = 'hohl' (im selben Manuskript eindeutig belegt, an anderer Stelle beim Aushöhlen einer Semmel); 'gestee' (zu mhd. gestân/gestên) = 'fest werden, gerinnen', auch im Buch selbst und im eng verwandten Regensburger Kochbuch (Cgm 5919) für das Stocken von Sülze belegt. Gemeint ist: Die Sülze soll so binden, dass die charakteristische hohle Form der gefüllten Morchel beim Gelieren erhalten bleibt.</note>
+        <note type="interpretive_choice" target="#mon-205-orig" n="holl gestee" resp="#fyndling">'hohl fest werde' - die Sülze soll beim Gelieren so binden, dass die charakteristische hohle Form der gefüllten Morchel erhalten bleibt. 'holl' = 'hohl' ist im selben Manuskript eindeutig belegt (Aushöhlen einer Semmel in einem anderen Mondseer Rezept); 'gestee' (zu mhd. gestân/gestên) = 'fest werden, gerinnen', ebenfalls im Buch selbst und im eng verwandten Regensburger Kochbuch (Cgm 5919) für das Stocken von Sülze belegt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

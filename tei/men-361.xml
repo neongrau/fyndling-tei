@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gebratener Hase im Schweinenetz</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-28">2026-06-28</date>
+        <idno type="url">https://fyndling.de/rezepte/men-361/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Le Ménagier de Paris</title>
+          <date when="1393" cert="low">~1393</date>
+          <idno type="URI">https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/raw/main/TEIP5-BFM/menagier.xml</idno>
+          <note>Transkription: Base de Français Médiéval, ENS Lyon (Etalab Open License)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fro">Moyen Français</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="men-361">
+        <head>Gebratener Hase im Schweinenetz</head>
+        <div type="original" xml:id="men-361-orig" xml:lang="fro" corresp="#men-361-trans">
+          <p>Lyevre rosty. J'ay veu rosty lievre enveloppé en la toille de la fressure d'un porc que l'en dit la crespine, et couste iii blans. Et par ce le lievre n'est autrement lardé. Item, je l'ay veu lardé.</p>
+        </div>
+        <div type="translation" xml:id="men-361-trans" xml:lang="de" corresp="#men-361-orig">
+          <p>Ich habe gesehen, wie Hase gebraten wurde, eingewickelt in das Netzfett eines Schweines, das man 'Crespine' nennt. Dies kostete drei Blancs. Dadurch erübrigt sich das Spicken des Hasen. Man kann ihn aber auch spicken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Lyevre">Hase</ingredient> - 1</item>
+            <item><ingredient orig="toille de la fressure d'un porc que l'en dit la crespine">Schweinenetz</ingredient> - 200 g</item>
+            <item><ingredient orig="lardé (implied)">Speck zum Spicken</ingredient> - 50 g</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="gloss" target="#men-361-orig" n="Lyevre" resp="#fyndling">Hase</note>
+        <note type="gloss" target="#men-361-orig" n="fressure" resp="#fyndling">Innereien, hier speziell das Netzfett</note>
+        <note type="gloss" target="#men-361-orig" n="crespine" resp="#fyndling">Netzfett (Omentum majus), ein dünnes, fetthaltiges Gewebe, das die Innereien von Schweinen oder Rindern umhüllt und beim Braten schmilzt, um das Fleisch saftig zu halten.</note>
+        <note type="gloss" target="#men-361-orig" n="blans" resp="#fyndling">Blanc, eine historische französische Silbermünze des 14. Jahrhunderts.</note>
+        <note type="gloss" target="#men-361-orig" n="lardé" resp="#fyndling">Gespickt; das Einziehen von Speckstreifen in mageres Fleisch, um es saftiger zu machen und Geschmack zu verleihen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

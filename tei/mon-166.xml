@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllte Morcheln vom Spieß (Fastenzeit)</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-06">2026-07-06</date>
+        <idno type="url">https://fyndling.de/rezepte/mon-166/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Graz, Universitätsbibliothek, Ms. 1609 (CoReMA GR1)</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.gr1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">gr1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.gr1</idno>
+          <idno type="corema-recipe">gr1.165</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. GR1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mon-166">
+        <head>Gefüllte Morcheln vom Spieß (Fastenzeit)</head>
+        <div type="original" xml:id="mon-166-orig" xml:lang="de-x-fnhd" corresp="#mon-166-trans">
+          <p>ITem von dem selbigen pratten In der vasten sol man nemmen morchen haist mans maurachen vnd sol die fullen mit weinper vnd mit mandel chlain gehackt durch ein ander vnd einen spiß gestossen vnd pratten betrawppf sy mit oll od mit smalcz etc.</p>
+        </div>
+        <div type="translation" xml:id="mon-166-trans" xml:lang="de" corresp="#mon-166-orig">
+          <p>Nimm von dem besagten Braten in der Fastenzeit Morcheln, die man auch Maurachen nennt.</p>
+          <p>Fülle diese Morcheln mit Weinbeeren und klein gehackten Mandeln, die du zuvor miteinander vermischt hast. Stecke sie dann auf einen Spieß und brate sie.</p>
+          <p>Beträufle die Morcheln beim Braten mit Öl oder (pflanzlichem) Schmalz.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="morchen haist mans maurachen">Morcheln</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weinper" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="mandel chlain gehackt">Mandeln, gehackt</ingredient>
+            </item>
+            <item>
+              <ingredient en="cooking oil" orig="oll" commodity="wikidata:Q427457" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Pflanzenfett (Fasten-Schmalz)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mon-166-trans" resp="#fyndling">Welches Gericht ist das? Gefüllte, am Spieß gebratene Morcheln mit süß-nussiger Füllung aus Rosinen und gehackten Mandeln - eine gehobene Fastenspeise, die den Rang eines Fleischbratens imitiert. Der lebende Verwandte ist der gefüllte Grillpilz (Portobello, Champignon vom Rost); wegen der süßen Füllung steht das Gericht aber ebenso den gefüllten Datteln oder marzipangefüllten Früchten nahe. Der Pilz ist hier das Gefäß: seine natürliche Hohlkammer wird gefüllt.
+
+Die Füllung. Getrocknete Weinbeeren (Rosinen) und klein gehackte Mandeln werden vermischt in den Hohlraum der Morchel gestopft. Beide Zutaten sind bewusst trocken - sie geben beim Braten keine überschüssige Feuchte ab und machen die Füllung nicht matschig; deshalb Rosinen statt frischer Trauben. Die Mandeln werden fein gehackt, damit die Stücke in die enge Kammer passen und nicht herausfallen.
+
+Das Beträufeln. Die dünnwandige Pilzhaube und die trockene Füllung neigen über der Glut zum Austrocknen und Anbrennen. Das kontinuierliche Beträufeln mit Öl oder pflanzlichem Fett während des Bratens (nicht danach) hält die Oberfläche saftig und trägt Aroma ein. Fasten-konform bleibt es, solange pflanzliches Fett verwendet wird.
+
+Sicherheit - unbedingt beachten. Echte Morcheln sind roh giftig: sie enthalten hitzelabile, blutzersetzende Stoffe und lösen roh oder halbgar das sogenannte Morchel-Syndrom aus (Magen-Darm-Beschwerden, in seltenen Fällen neurologische Symptome). Sie müssen zwingend vollständig durchgegart werden. Ein kurzes Anbraten am Spieß leistet das nicht sicher - gare die Morcheln daher lange genug über mäßiger Glut, oder gare sie vor. Getrocknete Morcheln vollständig einweichen und rehydrieren; das Einweichwasser wegen möglicher Verunreinigungen verwerfen.
+
+Praxis. Getrocknete Morcheln rehydrieren (Einweichwasser weggießen), Rosinen und gehackte Mandeln mischen, die Morcheln damit füllen und quer auf einen Spieß stecken. Über mäßiger, nicht zu direkter Glut braten - bei zu heißem Feuer verbrennt die Haube außen, bevor der Pilz innen durch ist. Beim Braten fortlaufend mit Öl oder pflanzlichem Fett beträufeln. Ausreichend lange garen, bis der Pilz durch und durch gegart ist. Für eine Handvoll kleiner Morcheln als Beilage oder Schaugang rechnet man eher mit 2 Personen.</note>
+        <note type="gloss" target="#mon-166-orig" n="morchen haist mans maurachen" resp="#fyndling">‚Morcheln, die man auch Maurachen nennt' - eine Namensgleichsetzung, die den echten Pilz meint. ‚Maurachen'/‚Morchen' ist die oberdeutsch-bairische Bezeichnung der Morchel (Grimm belegt ‚morchen, morcheln oder maurachen' nebeneinander). Hier wird der echte Pilz gefüllt und am Spieß gebraten. Nicht verwechseln mit dem benachbarten mon-148: Dort steht ‚maurochen' zwar in der Überschrift, das Rezept formt aber Birnen aus einer Trauben-Mandel-Masse - dort kommen gar keine Morcheln vor. Dass die CoReMA-Edition beide Rezeptseiten mit ‚Fake morels' etikettiert, stiftet zusätzliche Verwirrung (siehe Editorische Notiz).</note>
+        <note type="gloss" target="#mon-166-orig" n="von dem selbigen pratten In der vasten" resp="#fyndling">Rückverweis auf die vorangehende Fasten-Imitations-Serie (mon-163 ff.): ‚von demselben Braten in der Fastenzeit'. Gemeint ist kein bestimmter Fleischbraten, sondern das Serienmuster der Fastenbraten, die festliche Gerichte nachbilden.</note>
+        <note type="gloss" target="#mon-166-orig" n="weinper" resp="#fyndling">‚Weinbeeren' meint hier getrocknete Weinbeeren, also Rosinen, da diese sich besser für eine Füllung eignen und beim Braten keine überschüssige Feuchte abgeben.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#mon-166-orig" n="smalcz" resp="#fyndling">Pflanzenfett (Fasten-Schmalz) - da das Rezept explizit für die Fastenzeit ist, ist die Verwendung von tierischem Schmalz ausgeschlossen. ‚Smaltz' konnte im Mittelhochdeutschen auch pflanzliche Fette bezeichnen, die als Ersatz dienten.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fischmus in Mandelmilch (mit essiggebeiztem Fisch)</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/meb-009/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Augsburg, Universitätsbibliothek, Cod. III.1.2°43 (CoReMA A1)</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.a1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">a1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.a1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. A1 (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="meb-009">
+        <head>Fischmus in Mandelmilch (mit essiggebeiztem Fisch)</head>
+        <div type="original" xml:id="meb-009-orig" xml:lang="de-x-fnhd" corresp="#meb-009-trans">
+          <p>Wiltu machen ein gebraten muß vonn vischennn So nym per visch die peyß in essig vnd wurff die in ein mandel milch die mit reyß sein wol gemengt vnd ein wenig schmaltz dar an das wellig sej versaltz es nit</p>
+        </div>
+        <div type="translation" xml:id="meb-009-trans" xml:lang="de" corresp="#meb-009-orig">
+          <p>Nimm den Fisch, beize ihn in Essig und wirf ihn dann in eine Mandelmilch, die gut mit Reis vermengt ist, und gib ein wenig Schmalz dazu, sodass es sämig wird. Versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="vischennn">Fisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond milk" orig="mandel milch" commodity="wikidata:Q975953" source="#corema-ingredient-index">Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient en="rice" orig="reyß" commodity="wikidata:Q5090" source="#corema-ingredient-index">Reis</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="schmaltz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#meb-009-trans" resp="#fyndling">Welches Gericht ist das? Ein gebundenes, essiggebeiztes Fischmus - ein frühes Fisch-Frikassee in cremig-säuerlicher Mandelmilch-Sauce, gebunden mit Reis. Der Titel ein gebraten muß meint hier das fertige, gebundene Gericht und ist eine feststehende Mus-Bezeichnung; gebraten wird nichts. Der einzige Garschritt ist sanftes Aufwallen in der Milch. Das Rezept teilt seinen Textstamm fast wörtlich mit dem rund hundert Jahre älteren Fischmus in Reismilch aus dem Buch von guter Speise, das an gleicher Stelle ein gebacken muos schreibt - dieselbe Speise, dieselbe Namensformel.
+
+peyß = beizen. die peyß in essig - der Fisch wird in Essig gebeizt (eingelegt/mariniert), nicht zerteilt. Der Zwilling bgs-055 belegt es eindeutig mit gebeizt in ezzig. Das Beizen säuert und festigt das Fleisch und bringt eigene Würze mit, daher anschließend sehr zurückhaltend salzen.
+
+Reis als Bindung. mit reyß sein wol gemengt - der Reis bindet die Mandelmilch sämig. Praktisch entweder Reismehl kalt einrühren (klümpchensicher) oder gekochten Reis fein zerstoßen; etwas Schmalz gibt Schmelz.
+
+das wellig sej = nur aufwallen. das wellig sej heißt: einmal aufwallen lassen, bis es sämig ist - nicht durchkochen. Sonst wird der Fisch trocken und die gebeizte Milch kann gerinnen. Knapp unter dem Siedepunkt ziehen lassen.
+
+Praxis. Auf ~500 g festen Weißfisch (Hecht, Zander, Karpfen) etwa 25 g Reismehl kalt in 500 ml Mandelmilch einrühren, einen Löffel Schmalz zugeben und unter Rühren leicht andicken lassen. Den vorab gebeizten Fisch sanft darin gar ziehen, knapp unter dem Siedepunkt. Sehr zurückhaltend salzen.</note>
+        <note type="gloss" target="#meb-009-orig" n="muß" resp="#fyndling">Ein gebundenes, brei- oder saucenartiges Gericht - hier ein gebundenes Fischmus, kein Brat- oder Backgericht.</note>
+        <note type="gloss" target="#meb-009-orig" n="gebraten muß" resp="#fyndling">Feststehende Bezeichnung für das fertige, gebundene Mus; gebraten wird nichts. Der Schwester-Twin bgs-055 schreibt an gleicher Stelle 'gebacken muos' - ebenfalls ohne Garmethode.</note>
+        <note type="gloss" target="#meb-009-orig" n="peyß" resp="#fyndling">Beizen - den Fisch in Essig einlegen/marinieren (zu mhd. beizen), nicht 'zerteilen'. Belegt durch den Zwilling bgs-055 'gebeizt in ezzig'.</note>
+        <note type="interpretive_choice" target="#meb-009-orig" n="peyß" resp="#fyndling">‚Beize ihn in Essig' - peyß (zu mhd. beizen) bezeichnet das Einlegen/Marinieren des Fischs in Essig. Diese Lesart ist durch den nahezu wörtlichen Zwilling bgs-055 extern belegt, der an gleicher Stelle gebeizt in ezzig hat.</note>
+        <note type="interpretive_choice" target="#meb-009-orig" n="per visch" resp="#fyndling">Generischer, unbestimmter Fisch (‚den/jeden Fisch') - die Fischart bleibt offen; per ist am ehesten ein verschriebenes Demonstrativ/Artikel oder eine Überlieferungslücke. Die Twins lösen die Art nicht auf (bgs-055 nennt Karpfen/Hecht als Beispiel, mha-211 'allerlei Fische').</note>
+        <note type="interpretive_choice" target="#meb-009-orig" n="gebraten muß" resp="#fyndling">Feststehende Mus-Bezeichnung für das fertige, gebundene Gericht - kein Bratverfahren. Der einzige Garschritt ist das Aufwallen in der Milch.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Schwarzer Pfeffer zu Wildbret</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-06-26">2026-06-26</date>
+        <idno type="url">https://fyndling.de/rezepte/m384-022/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Cgm 384</title>
+          <date notBefore="1400" notAfter="1499">2. Hälfte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M2 (CC BY 4.0, hdl.handle.net/11471/562.10)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 2. Hälfte 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="m384-022">
+        <head>Schwarzer Pfeffer zu Wildbret</head>
+        <div type="original" xml:id="m384-022-orig" xml:lang="de-x-fnhd" corresp="#m384-022-trans">
+          <p>pfeffer schwartz
+
+Ainen schwartzen pfeffer also nyem gebattes brott ruggis vnd czuch es durch mit der bruege vnd mit win vnd essich das es genuog sy vnd bewurtz es vnd tuo speck darIn als vor ist ge= schriben vnd erwoll das wild pratt</p>
+        </div>
+        <div type="translation" xml:id="m384-022-trans" xml:lang="de" corresp="#m384-022-orig">
+          <p>Für einen schwarzen Pfeffer nimm geröstetes Roggenbrot und durchtränke es mit der Brühe, mit Wein und Essig, bis es genug ist, und würze es. Gib Speck hinzu, wie zuvor beschrieben, und koche das Wildbret darin.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="gebattes brott ruggis">Geröstetes Roggenbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="bruege" commodity="wikidata:Q3075310" source="#corema-ingredient-index">Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="bewurtz es">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="speck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wild pratt">Wildbret</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#m384-022-trans" resp="#fyndling">Welches Gericht ist das? Ein Schwarzer Pfeffer zu Wildbret - ein „Pfeffer" im Sinne einer dunklen, mit Brot gebundenen Würzsauce, in der das Wildfleisch gegart wird. Die dunkle Farbe kommt vom gerösteten Roggenbrot und den Gewürzen.
+
+Technik: Geröstetes Roggenbrot (gebättes brott = gebäht/geröstet, nicht gebacken) wird mit Brühe, Wein und Essig durchtränkt und passiert - das Brot bindet die Sauce. Kräftig würzen, ausgelassenen Speck zugeben (auf ein früheres Rezept verwiesen) und das Wildbret darin gar köcheln.
+
+Praxis: Dunkles Roggenbrot rösten, in Brühe + Wein + etwas Essig einweichen und durch ein Sieb streichen. Mit Pfeffer, Ingwer, Nelken würzen, Speckwürfel/-fett zugeben und das Wildbret (Hirsch, Reh, Wildschwein) in der Sauce schmoren, bis es gar ist.</note>
+        <note type="gloss" target="#m384-022-orig" n="pfeffer schwartz" resp="#fyndling">Ein Schwarzer Pfeffer - eine dunkle, mit Brot gebundene Würzsauce (kein Gewürz). Die dunkle Farbe kommt hier vom gerösteten Roggenbrot und den Gewürzen; der Text nennt kein Blut.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="gloss" target="#m384-022-orig" n="gebättes brott ruggis" resp="#fyndling">Geröstetes Roggenbrot - gebättes von bähen (rösten/erwärmen, Ehlert-Glossar), nicht ‚gebacken'. Es bindet die Sauce.</note>
+        <note type="gloss" target="#m384-022-orig" n="als vor ist geschriben" resp="#fyndling">‚Wie zuvor geschrieben' - Verweis auf die Speck-Zubereitung in einem früheren Rezept der Handschrift (gewürfelt, ausgelassen).</note>
+        <note type="gloss" target="#m384-022-orig" n="erwoll das wild pratt" resp="#fyndling">‚Koche das Wildbret darin' (Ehlert) - das Fleisch wird in der fertigen Sauce gar gekocht.</note>
+        <note type="interpretive_choice" target="#m384-022-orig" n="gebättes brott ruggis" resp="#fyndling">Geröstetes Roggenbrot (gebättes von bähen = rösten; Ehlert-Glossar) als Bindemittel - nicht ‚gebackenes' Brot.</note>
+        <note type="interpretive_choice" target="#m384-022-orig" n="pfeffer schwartz" resp="#fyndling">Eine dunkle, mit geröstetem Roggenbrot gebundene Würzsauce; die Farbe kommt von Brot und Gewürzen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

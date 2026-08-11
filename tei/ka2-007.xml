@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Käse-Strutzel aus der Pfanne</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-23">2026-07-23</date>
+        <idno type="url">https://fyndling.de/rezepte/ka2-007/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 793</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka2/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka2</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka2</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (mittelbairisch, unteres Inntal/Mühldorf am Inn, ca. 1445-1470)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka2-007">
+        <head>Käse-Strutzel aus der Pfanne</head>
+        <div type="original" xml:id="ka2-007-orig" xml:lang="de-x-fnhd" corresp="#ka2-007-trans">
+          <p>Zu ainem pachen In ainer schussel Nim geriben chas vnd mel geleich vnd slach daran aier vnd gewurcz es wol vnd chnit es durcheinander vnd walg es auf ainem pret vnd mach struczel daraus vnd pachs In einer pfann In smalcz darnach sneids In ainer schussel</p>
+        </div>
+        <div type="translation" xml:id="ka2-007-trans" xml:lang="de" corresp="#ka2-007-orig">
+          <p>Nimm in einer Schüssel geriebenen Käse und Mehl zu gleichen Teilen. Schlage Eier dazu und würze alles gut. Knete den Teig gründlich durch und walze ihn auf einem Brett aus.</p>
+          <p>Forme Strutzel daraus und backe sie in einer Pfanne in Schmalz aus. Danach schneide sie in einer Schüssel in Stücke.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="geriben chas">Geriebener Käse</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#corema-ingredient-index">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="aier" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka2-007-trans" resp="#fyndling">Welches Gericht ist das? Geriebener Käse und Mehl zu gleichen Teilen werden mit Ei zu einem Teig verknetet, dünn ausgewalkt, zu Strutzel - langen, dünnen Teigstreifen, nicht Strudel und nicht Nudeln - geformt und in der Pfanne in Schmalz ausgebacken. Das Transkript ist nahezu wortgleich zu m5919-052 (Cgm 5919, München) und reiht sich in eine im Korpus mehrfach belegte spätmittelalterliche Rezeptfamilie für frittierte Käse-Mehl-Streifen ein - eine Vorstufe heutiger Käsestangen.
+
+Kneten - wie intensiv? Der Text sagt „chnit es durcheinander“. Die Übersetzung folgt hier der Lesart „gründlich durchkneten“; denkbar ist auch ein schlichteres „zusammenkneten“ - der nahezu wortgleiche Zwilling m5919-052 formuliert an derselben Stelle „kint es wol vnter einander“ (knete es gut untereinander), was eher in diese Richtung weist (siehe interpretive_choices). Praktisch führen beide Lesarten zum selben Ziel: ein homogener, gut formbarer Teig.
+
+Praxis. Käse und Mehl zu gleichen Teilen in einer Schüssel vermengen, Ei und Gewürze zugeben und zu einem Teig verkneten. Auf einem Brett dünn auswalzen - je dünner, desto gleichmäßiger gart der Teig beim Ausbacken durch, ohne außen zu verbrennen, während die Mitte noch roh bleibt. Zu Strutzel (Streifen) formen und in der Pfanne in reichlich heißem Schmalz ausbacken, bis sie goldbraun sind. Zum Servieren in einer Schüssel in Stücke schneiden.</note>
+        <note type="gloss" target="#ka2-007-orig" n="struczel" resp="#fyndling">‚Strutzel‘ bezeichnet lange, dünne Teigstreifen - nicht Strudel, nicht Nudeln und keine kleinen gedrehten Gebäckstücke. Der cross-source-Vergleich mit m5919-052, mha-121 und ka1-077 bestätigt diese Lesart durchgängig (‚lang(e) struczel/strutzel ... dunn(e)‘); das Diefenbach-Glossar belegt zusätzlich ‚tortellus = struczel‘.</note>
+        <note type="gloss" target="#ka2-007-orig" n="pachs In einer pfann In smalcz" resp="#fyndling">Die Anweisung ‚backe es in einer Pfanne in Schmalz‘ bedeutet, dass die Strutzel in heißem Fett ausgebacken, also frittiert oder gebraten werden, und nicht im Ofen gebacken.</note>
+        <note type="interpretive_choice" target="#ka2-007-orig" n="durcheinander" resp="#fyndling">Die Lesart ‚gründlich‘ wurde gewählt, um das Kneten des Teiges zu beschreiben, was eine intensive und vollständige Vermischung der Zutaten impliziert.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

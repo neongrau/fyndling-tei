@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rebhuhn-Imitat aus Fisch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-07-05">2026-07-05</date>
+        <idno type="url">https://fyndling.de/rezepte/ri15632-001/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>München, Bayerische Staatsbibliothek, Clm 15632</title>
+          <date notBefore="1458" notAfter="1464">1458/1464</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.m10/TEI_SOURCE</idno>
+          <idno type="corema-sigle">m10</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.m10</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz, Ms. M10 (CC BY 4.0, hdl.handle.net/11471/562.10)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch, Benediktinerkloster Rott am Inn, 1458/1464)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ri15632-001">
+        <head>Rebhuhn-Imitat aus Fisch</head>
+        <div type="original" xml:id="ri15632-001-orig" xml:lang="de-x-fnhd" corresp="#ri15632-001-trans">
+          <p>Item nym czway holtzer die man zw samen leg vnd Innen geformiert sein als ein rep huen vnd nym visch vnd thue die grat vnd die schueppen da uon vnd hack daz geprat gar clain vnder ein ander vnd gewurtz daz wol vnd leg daz in die furem holtzer vnd sewt das also vast darnach prat es vnd spick es mit hechten prat</p>
+        </div>
+        <div type="translation" xml:id="ri15632-001-trans" xml:lang="de" corresp="#ri15632-001-orig">
+          <p>Nimm zwei Holzformen, die man zusammenlegen kann und die innen wie ein Rebhuhn geformt sind.</p>
+          <p>Nimm Fisch und entferne Gräten und Schuppen. Hacke das Brät sehr fein, vermenge es und würze es gut. Lege es dann in die Formhölzer und siede es kräftig, bis es fest ist.</p>
+          <p>Danach brate es und spicke es mit Hechtbrät.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="czway holtzer die man zw samen leg vnd Innen geformiert sein als ein rep huen">Holzformen (Rebhuhn-Form)</ingredient> - 2 Stück</item>
+            <item>
+              <ingredient en="fish" orig="visch" commodity="wikidata:Q600396" source="#corema-ingredient-index">Fisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="northern pike filet" orig="hechten prat" commodity="wikidata:Q67773148" source="#corema-ingredient-index">Hechtbrät</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ri15632-001-trans" resp="#fyndling">Welches Gericht ist das? Dies ist ein klassisches Fasten-Schaugericht, das die Illusion eines Rebhuhns aus Fisch erzeugt - ein Zeugnis der mittelalterlichen Kochkunst, die auch an Fastentagen nicht auf opulente Darbietung verzichten wollte. Es ist heute eine ungewöhnliche, aber faszinierende Technik.
+
+So gelingt es. Der Schlüssel liegt in der sorgfältigen Vorbereitung des Fischbräts. Wähle mageres Weißfischfilet, etwa Hecht oder Zander, entgräte es penibel und hacke es dann sehr fein. Am besten zerstößt du es anschließend im Mörser zu einer ganz glatten Masse. Würze das Brät kräftig - hier sind zeittypische Gewürze wie Pfeffer, Ingwer oder Muskatblüte denkbar. Die zweiteiligen Holzformen, die innen wie ein Rebhuhn geformt sind, solltest du vorab gut fetten. Fülle das Brät fest hinein und presse die Hälften sorgfältig zusammen. Das so geformte Fisch-Rebhuhn wird dann nicht gekocht, sondern sanft in einem Sud poschiert, bis die Masse fest gestockt ist; achte darauf, dass der Sud nicht sprudelnd kocht. Nach dem Garen löst du das Imitat vorsichtig aus der Form. Für die Farbe und die perfekte Fleisch-Illusion wird das Fisch-Rebhuhn zum Schluss kurz angebraten oder geröstet. Das Spicken mit Hechtbrät dient als Fasten-Bardierung und verstärkt die optische Täuschung eines echten Bratens. Für eine glatte Oberfläche hilft es, das Brät mit angefeuchteten Messern in die Form zu streichen - so klebt es nicht an der Klinge.</note>
+        <note type="gloss" target="#ri15632-001-orig" n="rep huen" resp="#fyndling">Ein Rebhuhn. Hier ein Fischgericht, das in Form eines Rebhuhns zubereitet wird, um in der Fastenzeit ein Fleischgericht zu imitieren.</note>
+        <note type="gloss" target="#ri15632-001-orig" n="grat" resp="#fyndling">Fischgräten. Werden vor der Weiterverarbeitung sorgfältig entfernt (nicht mitverarbeitet).</note>
+        <note type="gloss" target="#ri15632-001-orig" n="schueppen" resp="#fyndling">Fischschuppen. Werden ebenfalls vor der Zubereitung entfernt (nicht mitverarbeitet).</note>
+        <note type="gloss" target="#ri15632-001-orig" n="geprät" resp="#fyndling">Das Brät - das (rohe) Fischfleisch, das sehr fein zerkleinert (faschiert) wird, bis eine glatte Farce entsteht. Nicht von 'braten' (geprät ≠ gebraten); gebraten wird erst ganz am Schluss. Ehlert (Münchner Kochbuchhandschriften 1999) überträgt 'geprät' ebenfalls als 'Brät'.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#gepraet"/></note>
+        <note type="gloss" target="#ri15632-001-orig" n="sewt das also vast" resp="#fyndling">Siede/poschiere es kräftig in den Formen, bis die Farce fest und schnittfähig gestockt ist.</note>
+        <note type="gloss" target="#ri15632-001-orig" n="spick es mit hechten prät" resp="#fyndling">Spicken meint hier eine Fasten-Bardierung: Stücke bzw. Streifen von (gebratenem) Hecht werden außen auf das geformte 'Rebhuhn' gelegt. Sie übernehmen die Rolle der Speckstreifen eines echten Geflügelbratens - sie bräunen mit und lassen das Fisch-Imitat wie einen gespickten Braten aussehen. Reine Schau-Optik der Fastenküche: alles sieht aus wie Fleisch mit Speck, ist aber Fisch. Im Detail beim Zwilling rfk-003 (und rfk-004) beschrieben.</note>
+        <note type="interpretive_choice" target="#ri15632-001-orig" n="geprät" resp="#fyndling">'geprät' = 'Brät': das rohe, fein zu zerkleinernde Fischfleisch (die Farce). Bestätigt durch die Ehlert-Edition (§2.6 Rott am Inn), die 'geprät' als 'Brät' und 'hechten prät' als 'Hechtbrät' überträgt. Es ist KEINE Form von 'braten' (geprät ≠ gebraten) - das Braten folgt erst am Ende ('darnach prat es').<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#gepraet"/></note>
+        <note type="interpretive_choice" target="#ri15632-001-orig" n="furem holtzer" resp="#fyndling">'furem holtzer' = 'Formhölzer' (die zweiteiligen, innen wie ein Rebhuhn geschnitzten Schnitzformen). Bestätigt durch die Ehlert-Edition (§2.6: 'Formhölzer').</note>
+      </div>
+    </back>
+  </text>
+</TEI>
