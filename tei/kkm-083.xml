@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -72,7 +80,7 @@ Man mag Krapffen füllen mit der füll als man gestürtzt Eyer/ Opffel vnd Hüne
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="chicken egg" orig="Eyer" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="Eyer" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="ein drittheil Milch">Milch</ingredient>
@@ -81,10 +89,10 @@ Man mag Krapffen füllen mit der füll als man gestürtzt Eyer/ Opffel vnd Hüne
               <ingredient orig="weis Mehl">Weizenmehl</ingredient>
             </item>
             <item>
-              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safranfäden</ingredient>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#fyndling-corema-index">Safranfäden</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="Wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient>
+              <ingredient en="wine" orig="Wein" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient>
             </item>
             <item>
               <ingredient orig="Peterlinsafft">Petersiliensaft</ingredient>
@@ -93,10 +101,10 @@ Man mag Krapffen füllen mit der füll als man gestürtzt Eyer/ Opffel vnd Hüne
               <ingredient orig="Kornblumen">Kornblumenblüten</ingredient>
             </item>
             <item>
-              <ingredient en="apple" orig="Opffel" commodity="wikidata:Q89" source="#corema-ingredient-index">Äpfel</ingredient>
+              <ingredient en="apple" orig="Opffel" commodity="wikidata:Q89" source="#fyndling-corema-index">Äpfel</ingredient>
             </item>
             <item>
-              <ingredient en="pear" orig="Biern" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen</ingredient>
+              <ingredient en="pear" orig="Biern" commodity="wikidata:Q13099586" source="#fyndling-corema-index">Birnen</ingredient>
             </item>
             <item>
               <ingredient orig="Kelberhirn">Kalbshirn</ingredient>

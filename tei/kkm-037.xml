@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -70,8 +78,8 @@ Schneid kleine schnitzlin in wenig milch oder wein/ Würtz/ Saltz vnd Schmaltz/ 
           <list type="ingredients">
             <item><ingredient en="apple" orig="kleine schnitzlin" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient> - 500 g</item>
             <item><ingredient orig="wenig milch oder wein">Milch oder Weißwein</ingredient> - 100 ml</item>
-            <item><ingredient en="spice" orig="Würtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient> - 1 TL</item>
-            <item><ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient> - 1 Prise</item>
+            <item><ingredient en="spice" orig="Würtz" commodity="wikidata:Q42527" source="#fyndling-corema-index">Gewürze</ingredient> - 1 TL</item>
+            <item><ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz</ingredient> - 1 Prise</item>
             <item><ingredient en="fat, unspecified" orig="Schmaltz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz oder Butter</ingredient> - 1 EL</item>
           </list>
         </div>

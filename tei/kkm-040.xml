@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -75,17 +83,17 @@ Solche Biern aus eim Brotpfeffer essen/ ist ein gut armer Leut speis/ Rockenbrot
           <list type="ingredients">
             <item><ingredient orig="dürren Biern">getrocknete Birnen</ingredient> - 250 g</item>
             <item><ingredient orig="Mehl">Weizenmehl</ingredient> - 100 g</item>
-            <item><ingredient en="gingerbread for sauce" orig="Lebkuchen" commodity="wikidata:Q1468150" source="#corema-ingredient-index">Lebkuchen</ingredient> - 50 g</item>
+            <item><ingredient en="gingerbread for sauce" orig="Lebkuchen" commodity="wikidata:Q1468150" source="#fyndling-corema-index">Lebkuchen</ingredient> - 50 g</item>
             <item><ingredient en="wine" orig="gilb Wein" commodity="wikidata:Q282" source="#fyndling-ingredient-name">Weißwein</ingredient> - 100 ml</item>
-            <item><ingredient en="milk" orig="Milch" commodity="wikidata:Q8495" source="#corema-ingredient-index">Milch</ingredient> - 50 ml</item>
+            <item><ingredient en="milk" orig="Milch" commodity="wikidata:Q8495" source="#fyndling-corema-index">Milch</ingredient> - 50 ml</item>
             <item><ingredient orig="frisches Ey">Ei</ingredient> - 1</item>
             <item><ingredient orig="gelbes Teiglin">Mehl, 1 Ei, 50 ml Wein oder Milch</ingredient> - 50 g</item>
-            <item><ingredient en="wine" orig="Wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 100 ml</item>
-            <item><ingredient en="honey" orig="Honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient> - 50 g</item>
+            <item><ingredient en="wine" orig="Wein" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 100 ml</item>
+            <item><ingredient en="honey" orig="Honig" commodity="wikidata:Q10987" source="#fyndling-corema-index">Honig</ingredient> - 50 g</item>
             <item><ingredient en="rye bread" orig="Rockenbrot" commodity="wikidata:Q3893120" source="#fyndling-ingredient-name">Roggenbrot</ingredient> - 200 g</item>
-            <item><ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient> - 1 Prise</item>
+            <item><ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz</ingredient> - 1 Prise</item>
             <item><ingredient en="ginger" orig="lauterm Jmber" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwer, gemahlen</ingredient> - 1 TL</item>
-            <item><ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient> - 50 ml</item>
+            <item><ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#fyndling-corema-index">Essig</ingredient> - 50 ml</item>
             <item><ingredient orig="in die pfannen">Pflanzenöl oder Schmalz</ingredient> - 200 ml</item>
           </list>
         </div>

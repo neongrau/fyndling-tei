@@ -37,7 +37,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -83,7 +91,7 @@ Du solt auch den sagen, die den win drottent, daz sie nit dem wine [182r] zu noh
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Trauben</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Trauben</ingredient>
             </item>
             <item>
               <ingredient orig="laup">Laub</ingredient>
@@ -143,7 +151,7 @@ Wiltu machen edeln wine, wann du sihest aller erste den most yeren vnd er noch w
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="fruit juice" orig="most" commodity="wikidata:Q20932605" source="#corema-ingredient-index">Traubenmost</ingredient>
+              <ingredient en="fruit juice" orig="most" commodity="wikidata:Q20932605" source="#fyndling-corema-index">Traubenmost</ingredient>
             </item>
           </list>
         </div>
@@ -201,7 +209,7 @@ Wer den wine verkauffen wil, der fliße sich, daz er laße die winkeiffer die fa
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
           </list>
         </div>
@@ -226,12 +234,12 @@ Wiltu daz selbe aber anderwerbe versuchen, so guß oley in ein hafen vnd mache i
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
-              <ingredient en="pear" orig="byren" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen</ingredient>
+              <ingredient en="pear" orig="byren" commodity="wikidata:Q13099586" source="#fyndling-corema-index">Birnen</ingredient>
             </item>
-            <item><ingredient en="chicken egg" orig="eye" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Ei</ingredient> - 1</item>
+            <item><ingredient en="chicken egg" orig="eye" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Ei</ingredient> - 1</item>
             <item>
               <ingredient orig="cleine ror, daz do wehsset in dem wasser">Schilfrohr</ingredient>
             </item>
@@ -242,10 +250,10 @@ Wiltu daz selbe aber anderwerbe versuchen, so guß oley in ein hafen vnd mache i
               <ingredient orig="sebde">Binse</ingredient>
             </item>
             <item>
-              <ingredient en="elder flower" orig="holder" commodity="wikidata:Q67778134" source="#corema-ingredient-index">Holunderholz</ingredient>
+              <ingredient en="elder flower" orig="holder" commodity="wikidata:Q67778134" source="#fyndling-corema-index">Holunderholz</ingredient>
             </item>
             <item>
-              <ingredient en="cooking oil" orig="öle" commodity="wikidata:Q427457" source="#corema-ingredient-index">Öl</ingredient>
+              <ingredient en="cooking oil" orig="öle" commodity="wikidata:Q427457" source="#fyndling-corema-index">Öl</ingredient>
             </item>
             <item>
               <ingredient>Neuer Tonkrug</ingredient>
@@ -267,7 +275,7 @@ Die zit, also sich der win verkeret vnd verwandelt, daz [183r] ist allermeiste, 
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
           </list>
         </div>
@@ -289,7 +297,7 @@ Man mag das auch wol bewaren vnd behuten, daz der wine sich nit verkeren mag von
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item><ingredient orig="ein ysen">Eisen</ingredient> - 1</item>
           </list>
@@ -311,7 +319,7 @@ Hie sol man leren die zeichen, daby man erkennet, obe sich der wine verkeren wil
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wine" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="trusen">Weinhefe</ingredient>
@@ -357,7 +365,7 @@ Mercke auch, wann der wine ein frischen gesmacke hat vnd springet in dem glase o
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
           </list>
         </div>
@@ -416,10 +424,10 @@ Zu dem andern male so sude win vnd schude most darin, so wirt der win werhafftig
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
-              <ingredient en="fruit juice" orig="most" commodity="wikidata:Q20932605" source="#corema-ingredient-index">Traubenmost</ingredient>
+              <ingredient en="fruit juice" orig="most" commodity="wikidata:Q20932605" source="#fyndling-corema-index">Traubenmost</ingredient>
             </item>
             <item>
               <ingredient orig="bucken samen">Bockshornsamen</ingredient>
@@ -463,7 +471,7 @@ Wann der herbest kalt ist, oder wie ez ist, daz die wine nit wollent geren, so s
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein, der nicht gären will</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein, der nicht gären will</ingredient>
             </item>
             <item>
               <ingredient orig="neßel wortzel">Nesselwurzel</ingredient>
@@ -488,7 +496,7 @@ Wann du in dem herbest in dinen win henckest wecholter spene vnd buckensame oder
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="wecholter spene">Wacholderzweige</ingredient>
@@ -523,7 +531,7 @@ Krang win sol man abelassen in dem winter vnd starg win in dem lentzen oder in d
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
           </list>
         </div>
@@ -546,7 +554,7 @@ Ist aber der win abgelaßen vnd wirt trübe, so nym daz wiß von xxiiij eyern vn
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item><ingredient en="egg white" orig="daz wiß von xxiiij eyern" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiklar</ingredient> - 24</item>
             <item>
@@ -673,7 +681,7 @@ Auch wann du win schenckest, so hencke daryn dry wecholter spene oder kornblumen
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item><ingredient orig="dry wecholter spene oder kornblumen">Wacholderspäne</ingredient> - 3</item>
             <item><ingredient orig="ein lynen duch">Leinentuch</ingredient> - 1</item>
@@ -735,7 +743,7 @@ Wiltu einem krancken wine helffen, daz er besser werde, so nym zymmyn vnd also v
               <ingredient en="cinnamon" orig="zymmyn" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient>
             </item>
             <item>
-              <ingredient en="unrefined cane sugar" orig="zuckers" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+              <ingredient en="unrefined cane sugar" orig="zuckers" commodity="wikidata:Q57656231" source="#fyndling-corema-index">Zucker</ingredient>
             </item>
             <item>
               <ingredient orig="gebrant hirtzhorn">Gebranntes Hirschhorn</ingredient>
@@ -762,7 +770,7 @@ Wellich win sin farwe verlorn hat, der neme zu eym fuder ij lib mandelkernen, ei
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item><ingredient orig="ij lib mandelkernen">Mandelkerne</ingredient> - 1000 g</item>
             <item>

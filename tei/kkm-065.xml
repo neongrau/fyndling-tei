@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -71,18 +79,18 @@ Thu es vor klein gehackt in ein Mörser/ schlahe eitel Eyertotter darein/ vnd ei
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="veal" orig="Kalbfleisch" commodity="wikidata:Q957434" source="#corema-ingredient-index">Kalbfleisch</ingredient> - 500 g</item>
+            <item><ingredient en="veal" orig="Kalbfleisch" commodity="wikidata:Q957434" source="#fyndling-corema-index">Kalbfleisch</ingredient> - 500 g</item>
             <item><ingredient en="yolk" orig="eitel Eyertotter" commodity="wikidata:Q16336079" source="#fyndling-ingredient-name">Eigelb</ingredient> - 2</item>
             <item><ingredient orig="ein wenig schön Mehl">Weizenmehl</ingredient> - 1 EL</item>
             <item>
-              <ingredient en="table salt" orig="saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+              <ingredient en="table salt" orig="saltz" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz</ingredient>
             </item>
             <item><ingredient en="egg white" orig="das weis von den Eyern" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient> - 2</item>
             <item><ingredient orig="Speck/ Schmaltz oder Buttern">Speck, Schmalz oder Butter</ingredient> - 50 g</item>
             <item><ingredient orig="Speck oder gar buttern drein füllen">Speckwürfel oder Butter</ingredient> - 50 g</item>
             <item><ingredient en="ginger" orig="gestossenen Jmber" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
             <item><ingredient orig="Fleischbrüh">Fleischbrühe</ingredient> - 200 ml</item>
-            <item><ingredient en="butter" orig="Buttern" commodity="wikidata:Q34172" source="#corema-ingredient-index">Butter</ingredient> - 2 EL</item>
+            <item><ingredient en="butter" orig="Buttern" commodity="wikidata:Q34172" source="#fyndling-corema-index">Butter</ingredient> - 2 EL</item>
             <item><ingredient en="saffron" orig="gilb ein Fleischbrüh (impliziert)" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
           </list>
         </div>

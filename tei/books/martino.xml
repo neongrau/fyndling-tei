@@ -37,7 +37,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -197,7 +205,7 @@ Cicerone, over cigno, ocha, anetra, grua, ocha salvatica, airone et cicogna vogl
               <ingredient orig="pepe">Pfeffer</ingredient>
             </item>
             <item>
-              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#fyndling-corema-index">Salbei</ingredient>
             </item>
             <item>
               <ingredient en="chicken" orig="gallina" commodity="wikidata:Q864693" source="#fyndling-ingredient-name">Huhn</ingredient>
@@ -366,7 +374,7 @@ Per far brodo lardiero de ogni carne salvacina: in prima lava la carne in bon vi
               <ingredient orig="lardo">Speck</ingredient>
             </item>
             <item>
-              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#fyndling-corema-index">Salbei</ingredient>
             </item>
             <item>
               <ingredient en="spice" orig="bone spetie, come se dice de sopra" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürze</ingredient>
@@ -415,7 +423,7 @@ Per fare civero de carne salvacina: in prima coci la carne in aqua miscolata con
               <ingredient orig="zenzevero">Ingwer</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient>
             </item>
             <item><ingredient en="onion" orig="una cipolla" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebel</ingredient> - 1</item>
           </list>
@@ -796,7 +804,7 @@ Per fare pollastro arrosto si vuole cocere arrosto; et quando è cotto togli suc
               <ingredient en="unrefined cane sugar" orig="zuccharo" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient>
             </item>
           </list>
         </div>
@@ -1161,7 +1169,7 @@ Togli la carne salata che [sia] vergellata di grasso et magro inseme, et taglial
               <ingredient en="unrefined cane sugar" orig="zuccharo" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient>
             </item>
             <item>
               <ingredient orig="petrosello tagliato menuto">Fein geschnittene Petersilie</ingredient>
@@ -1394,7 +1402,7 @@ Piglia la pancia del vitello et fagli un bugio nel canto tanto che tu ce possi m
               <ingredient orig="maiorana">Majoran</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
           </list>
         </div>
@@ -1479,7 +1487,7 @@ Taglia ciaschuna de le creste in tre parti et li figatelli in quattro, et li tes
             </item>
             <item><ingredient orig="trenta o quaranta cerase brusche et secche">saure getrocknete Kirschen</ingredient> - 30</item>
             <item>
-              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient>
             </item>
             <item>
               <ingredient orig="zenzevero">Ingwer</ingredient>
@@ -1905,7 +1913,7 @@ Fa' como è ditto del farre. Ma molti sonno che non vogliono ova col riso. Sicch
             <item><ingredient orig="brodo de carne">Fleischbrühe</ingredient> - 750 ml</item>
             <item><ingredient orig="ova">Eier</ingredient> - 2 Stück</item>
             <item>
-              <ingredient en="table salt" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz, nach Geschmack</ingredient>
+              <ingredient en="table salt" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz, nach Geschmack</ingredient>
             </item>
           </list>
         </div>
@@ -2065,7 +2073,7 @@ Togli fava, et salvia, et cipolla, et fiche, et pomi como è ditto di sopra, et 
           <list type="ingredients">
             <item><ingredient orig="fava">Saubohnen</ingredient> - 200 g</item>
             <item>
-              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#fyndling-corema-index">Salbei</ingredient>
             </item>
             <item><ingredient en="onion" orig="cipolla" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebel</ingredient> - 1</item>
             <item><ingredient en="fig" orig="fiche" commodity="wikidata:Q2746643" source="#fyndling-ingredient-name">Feigen</ingredient> - 2</item>
@@ -2119,7 +2127,7 @@ Piglia de la carne magra di vitello cotta allesso, et battila menuta, et ponila 
               <ingredient orig="maiorana">Majoran</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
             <item>
               <ingredient orig="un pocho d'agresto">Etwas Verjus</ingredient>
@@ -2227,7 +2235,7 @@ Fa cocere queste ova un pocho allesso. Dapoi cavale fore del brodo, et spartile 
               <ingredient orig="petrosillo">Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
           </list>
         </div>
@@ -2250,7 +2258,7 @@ Mittili accocere con brodo di carne. Et quando sonno presso che cotti mettevi un
               <ingredient orig="petrosillo">Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
             <item><ingredient orig="mollicha">Brotkrumen</ingredient> - 50 g</item>
             <item><ingredient en="spice" orig="spetie" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürze</ingredient> - 1 Prise</item>
@@ -2576,7 +2584,7 @@ Coci le poma cotogne in brodo di carne magra. Dapoi pistale e stemperale con lat
               <ingredient orig="zenzevero">Ingwer</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+              <ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient>
             </item>
             <item>
               <ingredient orig="zafrano">Safran</ingredient>
@@ -3007,7 +3015,7 @@ Piglia le fave et mondale con l'acqua calda como se fanno le amandole, et poi le
               <ingredient orig="petrosillo">Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
             <item>
               <ingredient orig="bona carne salata">Gutes gesalzenes Fleisch</ingredient>
@@ -3064,6 +3072,76 @@ Habi le herbe; et prima le fa' bollire como è ditto di sopra. Et di quelle fara
           <list type="ingredients">
             <item>
               <ingredient en="herb" orig="le herbe" commodity="wikidata:Q207123" source="#fyndling-ingredient-name">Kräuter</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mar-098">
+        <head>Holunderblüten-Mus (Fasten- und Fleischzeit)</head>
+        <div type="original" xml:id="mar-098-orig" xml:lang="it-x-med" corresp="#mar-098-trans">
+          <p>Menestra de fior de sambuco.
+
+Per farne dudici menestre in tempo quadragesimale prendirai una libra et meza di amandole monde et pistale bene como è ditto di sopra. Et prenderai tre once di fiori di sambucho quando è secco. Et prima tenerailo a moglio in acqua frescha per spatio de una hora strengendo et premendo fore l'acqua. Et de li dicti fiori pistarane la mità con le mandole agiongendovi la mollicha d'un pane biancho, et meza libra di zuccharo, con un pocho de zenzevero. Et se voi che sia giallo vi mitterai un pocho di zafrano, et tutto il passarai per la stamegna; et mettiralo accocere como è ditto in l'altro capitolo precedente. Et posto al focho ve mettirai di sopra quell'altra mità di fiori sopra scripti così integri. Et quando sia cotta a sufficientia farai le menestre mectendogli di sopra de bone spetie dolci.
+Et se a tempo di carne vorrai fare la dicta menestra gli metterai tre rossi d'ova, et distemperarala con brodo di pollo grosso, o altro bon brodo, passandola per la stamegna, et mettendogli il zuccharo con le altre spetie con i fiori integri como è ditto di sopra. Ma nota quando che sia meza cotta da giongervi doi once de bono strutto, o di butiro frescho.</p>
+        </div>
+        <div type="translation" xml:id="mar-098-trans" xml:lang="de" corresp="#mar-098-orig">
+          <p>Um zwölf Portionen dieses Muses in der Fastenzeit zuzubereiten, nimm anderthalb Pfund geschälte Mandeln und zerstoße sie fein, wie bereits oben beschrieben. Nimm zudem drei Unzen getrocknete Holunderblüten. Halte die Blüten zuerst etwa eine Stunde lang in frischem Wasser eingeweicht, drücke das Wasser dann kräftig aus. Die Hälfte der so vorbereiteten Blüten zerstoße zusammen mit den Mandeln, gib die Krume eines Weißbrots, ein halbes Pfund Zucker und etwas Ingwer hinzu. Wenn du möchtest, dass das Mus gelb wird, füge etwas Safran hinzu. Passiere die gesamte Masse durch ein feines Tuch oder Sieb und setze sie zum Kochen auf, wie im vorhergehenden Kapitel beschrieben. Sobald es auf dem Feuer steht, gib die andere Hälfte der Holunderblüten unzerstoßen hinzu. Wenn das Mus ausreichend gekocht ist, richte die Portionen an und bestreue sie mit guten süßen Gewürzen.</p>
+          <p>Wenn du dasselbe Mus in der Fleischzeit zubereiten möchtest, gib drei Eigelb hinzu und verrühre es mit dicker Hühnerbrühe oder einer anderen guten Brühe. Passiere es ebenfalls durch ein feines Tuch oder Sieb und füge den Zucker mit den anderen Gewürzen und den ganzen Blüten wie oben beschrieben hinzu. Beachte jedoch, dass du, sobald es halb gekocht ist, zwei Unzen gutes Schmalz oder frische Butter einrühren sollst.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="una libra et meza di amandole monde">geschälte Mandeln</ingredient> - 1.5 Pfund</item>
+            <item><ingredient>getrocknete Holunderblüten</ingredient> - 90 g</item>
+            <item>
+              <ingredient orig="acqua frescha">Frisches Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="mollicha d'un pane biancho">Krume eines Weißbrots</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="meza libra di zuccharo" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 0.5 Pfund</item>
+            <item>
+              <ingredient orig="un pocho de zenzevero">Etwas Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="un pocho di zafrano">Etwas Safran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="bone spetie dolci">Süße Gewürze</ingredient>
+            </item>
+            <item><ingredient en="yolk" orig="tre rossi d'ova" commodity="wikidata:Q16336079" source="#fyndling-ingredient-name">Eigelb</ingredient> - 3</item>
+            <item>
+              <ingredient orig="brodo di pollo grosso, o altro bon brodo">Dicke Hühnerbrühe oder andere gute Brühe</ingredient>
+            </item>
+            <item><ingredient orig="doi once de bono strutto, o di butiro frescho">gutes Schmalz oder frische Butter</ingredient> - 60 g</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mar-099">
+        <head>Weißer Mandelmilch-Pudding mit Holunderblüten</head>
+        <div type="original" xml:id="mar-099-orig" xml:lang="it-x-med" corresp="#mar-099-trans">
+          <p>Zanzarelli bianchi.
+
+Per farne dece menestre : inprimamente pigliarai una libra de mandole monde et piste como è ditto di sopra pistando con esse un pocho di fiori di sambuche; et distemperale con acqua frescha passandole per la stamegnia. Et quando vederai haver passata la quantità de octo menestre mettirai questa materia così liquida accocere in un vaso, servandone prima de la cruda la quantità de un bicchiero comuno; et prenderai doi molliche di pane biancho ben grattugiato, et prenderai dece albumi, o bianchi d'ova. Et quel bicchieri de lacte sopra ditto con il pane grattugiato et tutte queste cose battirai inseme, agiongen- dovi meza libra di zuccharo. Quando il latte preditto al principio cominciarà a bollire gli mettirai di sopra questa altra compositione, et non la moverai ne moverai niente con il cocchiaro. Poi como la vederai pigliata inseme, farai le menestre mectendogli sopra de le spetie dolci.</p>
+        </div>
+        <div type="translation" xml:id="mar-099-trans" xml:lang="de" corresp="#mar-099-orig">
+          <p>Für zehn Portionen: Nimm zuerst ein Pfund geschälte und gemahlene Mandeln, wie oben beschrieben, und zerstoße sie zusammen mit ein wenig Holunderblüten. Verdünne sie mit frischem Wasser und passiere die Mischung durch ein feines Tuch oder Sieb. Wenn du etwa acht Portionen dieser flüssigen Masse passiert hast, gib sie in einen Topf zum Kochen. Behalte zuvor einen gewöhnlichen Becher voll von der rohen Mandelmilch zurück. Nimm zwei gut geriebene Krümel von Weißbrot und zehn Eiweiße. Schlage den zuvor zurückbehaltenen Becher Mandelmilch zusammen mit dem geriebenen Brot und allen anderen Zutaten. Füge dabei ein halbes Pfund Zucker hinzu. Sobald die Mandelmilch im Topf zu kochen beginnt, gib diese zweite Mischung vorsichtig darauf. Rühre sie nicht um und bewege nichts mit dem Löffel. Sobald du siehst, dass die Masse fest geworden ist, richte die Portionen an und bestreue sie mit süßen Gewürzen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="una libra de mandole monde et piste">geschälte und gemahlene Mandeln</ingredient> - 1 Pfund</item>
+            <item>
+              <ingredient orig="un pocho di fiori di sambuche">etwas Holunderblüten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="acqua frescha">frisches Wasser</ingredient>
+            </item>
+            <item><ingredient orig="doi molliche di pane biancho ben grattugiato">Krümel geriebenes Weißbrot</ingredient> - 2</item>
+            <item><ingredient orig="dece albumi, o bianchi d'ova">Eiweiße</ingredient> - 10</item>
+            <item>
+              <ingredient orig="meza libra di zuccharo">½ Pfund Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="spetie dolci">süße Gewürze</ingredient>
             </item>
           </list>
         </div>
@@ -3312,7 +3390,7 @@ Prenderai di qual si voglia o ti piace de queste carne nominate qui sopra script
             <item><ingredient orig="tetta di vitella">Kalbseuter</ingredient> - 200 g</item>
             <item><ingredient orig="pepe">Pfeffer</ingredient> - 1 TL</item>
             <item><ingredient en="ginger" orig="zenzevero" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
-            <item><ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient> - 0.5 TL</item>
+            <item><ingredient en="cinnamon" orig="cannella" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient> - 0.5 TL</item>
             <item><ingredient en="saffron" orig="zafrano" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
           </list>
         </div>
@@ -3561,7 +3639,7 @@ Habi del fiore de la farina et un poco di lievito, et distemperali con l'erbe ta
               <ingredient en="unrefined cane sugar" orig="zuccaro" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
             </item>
             <item>
-              <ingredient en="flour" orig="mele" commodity="wikidata:Q36465" source="#corema-ingredient-index">Honig</ingredient>
+              <ingredient en="honey" orig="mele" commodity="wikidata:Q10987" source="#fyndling-ingredient-context">Honig</ingredient>
             </item>
           </list>
         </div>
@@ -3691,13 +3769,13 @@ Battirai l'ova molto bene, et inseme un poca de acqua, et un poco di lacte per f
               <ingredient orig="borragine">Borretsch</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
             <item>
               <ingredient orig="maiorana">Majoran</ingredient>
             </item>
             <item>
-              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+              <ingredient en="common sage" orig="salvia" commodity="wikidata:Q1111359" source="#fyndling-corema-index">Salbei</ingredient>
             </item>
             <item>
               <ingredient en="cooking oil" orig="oglio" commodity="wikidata:Q427457" source="#fyndling-ingredient-name">Pflanzenöl</ingredient>
@@ -3795,7 +3873,7 @@ Fa' bollire l'ova fresche in l'acqua sane, che siano ben dure, et cotte monderal
               <ingredient orig="maiorana">Majoran</ingredient>
             </item>
             <item>
-              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#corema-ingredient-index">Minze</ingredient>
+              <ingredient en="mint" orig="menta" commodity="wikidata:Q27640062" source="#fyndling-corema-index">Minze</ingredient>
             </item>
             <item>
               <ingredient orig="bianchi d'ova">Eiweiße</ingredient>
@@ -4716,7 +4794,7 @@ De l'anguilla n'è ditto in un altro capitolo abastanza, ma per ricordo, quando 
               <ingredient orig="acqua">Wasser</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="vino" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="vino" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient en="herb" orig="herbe" commodity="wikidata:Q207123" source="#fyndling-ingredient-name">Kräuter</ingredient>
@@ -6379,6 +6457,35 @@ Eine eindeutige Klärung würde eine systematische Auswertung der Liber-de-Coqui
         <note type="interpretive_choice" target="#mar-094-orig" n="como è ditto di sopra" resp="#fyndling">Die Anweisung „wie oben beschrieben“ wurde als Verweis auf eine vorhergehende, hier nicht abgedruckte Anleitung zum Blanchieren oder Vorkochen der Kräuter interpretiert.</note>
         <note type="interpretive_choice" target="#mar-094-orig" n="menestre grasse, o magre" resp="#fyndling">„Fette oder magere Speisen“ bezieht sich auf die Anpassung des Gerichts an Fastenzeiten (mager, ohne tierische Produkte außer Fisch) oder normale Tage (fett, mit tierischen Fetten, Käse oder Brühe).</note>
         <note type="interpretive_choice" target="#mar-094-orig" n="le herbe" resp="#fyndling">Kräuter</note>
+        <note type="gloss" target="#mar-098-orig" n="libra" resp="#fyndling">Historisches Pfund, in Norditalien ca. 340 Gramm.</note>
+        <note type="gloss" target="#mar-098-orig" n="once" resp="#fyndling">Historische Unze, in Norditalien ca. 28 Gramm.</note>
+        <note type="gloss" target="#mar-098-orig" n="menestre" resp="#fyndling">Wörtlich ‚Portionen‘ oder ‚Schüsseln‘, hier im Sinne von einzelnen Servierportionen eines Gerichts.</note>
+        <note type="gloss" target="#mar-098-orig" n="pistale bene como è ditto di sopra" resp="#fyndling">Bezieht sich auf eine frühere Anweisung im Kochbuch, Mandeln sehr fein im Mörser zu zerstoßen, bis sie eine pastenartige Konsistenz haben.</note>
+        <note type="gloss" target="#mar-098-orig" n="stamegna" resp="#fyndling">Ein feines Seihtuch oder Sieb, oft aus Wolle oder Leinen, zum Passieren von Flüssigkeiten und Pürees.</note>
+        <note type="gloss" target="#mar-098-orig" n="accocere como è ditto in l'altro capitolo precedente" resp="#fyndling">Bezieht sich auf eine allgemeine Kochanweisung, die Masse unter Rühren zu erhitzen und einzudicken.</note>
+        <note type="gloss" target="#mar-098-orig" n="tempo quadragesimale" resp="#fyndling">Die Fastenzeit vor Ostern, in der auf Fleisch, Eier und tierische Fette verzichtet wurde.</note>
+        <note type="gloss" target="#mar-098-orig" n="tempo di carne" resp="#fyndling">Die Zeit außerhalb der Fastenzeit, in der Fleisch und tierische Produkte erlaubt waren.</note>
+        <note type="gloss" target="#mar-098-orig" n="spetie dolci" resp="#fyndling">Eine Mischung aus süßen Gewürzen, typischerweise Zimt, Nelken, Muskatnuss, Kardamom oder Galgant.</note>
+        <note type="gloss" target="#mar-098-orig" n="strutto" resp="#fyndling">Schmalz, meist Schweineschmalz, als tierisches Fett.</note>
+        <note type="gloss" target="#mar-098-orig" n="butiro frescho" resp="#fyndling">Frische Butter.</note>
+        <note type="interpretive_choice" target="#mar-098-orig" n="Menestra de fior de sambuco" resp="#fyndling">Übersetzt als 'Holunderblüten-Mus'. 'Menestra' kann auch 'Gericht' oder 'Suppe' bedeuten, aber die Zubereitung als eingedickte, passierte Masse mit Mandeln und Brotkrume deutet auf ein Mus oder Püree hin.</note>
+        <note type="interpretive_choice" target="#mar-098-orig" n="pistale bene como è ditto di sopra / accocere como è ditto in l'altro capitolo precedente" resp="#fyndling">Diese Verweise auf frühere Kapitel wurden als allgemeine Anweisungen zum feinen Zerstoßen (im Mörser) und zum Kochen/Eindicken interpretiert, da die genauen Details in diesem Rezept nicht wiederholt werden.</note>
+        <note type="interpretive_choice" target="#mar-098-orig" n="bone spetie dolci" resp="#fyndling">Als 'süße Gewürze' übersetzt und im normalisierten Zutatenfeld Beispiele wie Zimt, Nelken und Muskat genannt, da dies die gängigsten süßen Gewürze der Zeit waren.</note>
+        <note type="gloss" target="#mar-099-orig" n="Zanzarelli bianchi" resp="#fyndling">Name des Gerichts, wörtlich ‚weiße Mücken‘ oder ‚weiße Moskitos‘.</note>
+        <note type="gloss" target="#mar-099-orig" n="dece menestre" resp="#fyndling">Zehn Portionen.</note>
+        <note type="gloss" target="#mar-099-orig" n="libra" resp="#fyndling">Pfund, eine mittelalterliche Maßeinheit, die in Norditalien etwa 340 Gramm entsprach.</note>
+        <note type="gloss" target="#mar-099-orig" n="mandole monde et piste" resp="#fyndling">Geschälte und zerstoßene/gemahlene Mandeln.</note>
+        <note type="gloss" target="#mar-099-orig" n="fiori di sambuche" resp="#fyndling">Holunderblüten.</note>
+        <note type="gloss" target="#mar-099-orig" n="stamegnia" resp="#fyndling">Ein Seihtuch oder Sieb, oft aus grobem Wollstoff.</note>
+        <note type="gloss" target="#mar-099-orig" n="bicchiero comuno" resp="#fyndling">Ein gewöhnlicher Becher als Maßeinheit.</note>
+        <note type="gloss" target="#mar-099-orig" n="molliche di pane biancho" resp="#fyndling">Die weiche Krume von Weißbrot, hier gerieben.</note>
+        <note type="gloss" target="#mar-099-orig" n="albumi, o bianchi d'ova" resp="#fyndling">Eiweiße.</note>
+        <note type="gloss" target="#mar-099-orig" n="lacte" resp="#fyndling">Milch. Im Kontext dieses Rezepts bezieht sich dies auf die zuvor hergestellte Mandelmilch.</note>
+        <note type="gloss" target="#mar-099-orig" n="zuccharo" resp="#fyndling">Zucker.</note>
+        <note type="gloss" target="#mar-099-orig" n="spetie dolci" resp="#fyndling">Süße Gewürze, typischerweise eine Mischung aus Zimt, Muskat, Nelken und/oder Ingwer.</note>
+        <note type="interpretive_choice" target="#mar-099-orig" n="Zanzarelli bianchi" resp="#fyndling">Der Name des Gerichts wird als ‚Weiße Zanzarelli‘ oder ‚Weißer Mandelmilch-Pudding mit Holunderblüten‘ übersetzt, wobei ‚Zanzarelli‘ als humorvoller Eigenname für die Speise interpretiert wird.</note>
+        <note type="interpretive_choice" target="#mar-099-orig" n="lacte" resp="#fyndling">Obwohl ‚lacte‘ wörtlich ‚Milch‘ bedeutet, wird es hier im Kontext der zuvor hergestellten Mandelmilch als ‚Mandelmilch‘ interpretiert, da das Gericht auf einer Mandelbasis aufbaut und keine Kuhmilch erwähnt wird.</note>
+        <note type="interpretive_choice" target="#mar-099-orig" n="molliche di pane biancho" resp="#fyndling">‚Molliche‘ wird als ‚Krümel‘ oder ‚weiche Krume‘ von Weißbrot übersetzt, was die weiche, innere Brotmasse bezeichnet, die gerieben wird.</note>
         <note type="gloss" target="#mar-100-orig" n="menestre" resp="#fyndling">Portionen oder Gänge</note>
         <note type="gloss" target="#mar-100-orig" n="libra" resp="#fyndling">Historisches Pfund, in Norditalien ca. 340 Gramm</note>
         <note type="gloss" target="#mar-100-orig" n="once" resp="#fyndling">Historische Unze, in Norditalien ca. 28 Gramm</note>

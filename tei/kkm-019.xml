@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -68,12 +76,12 @@ Zeuch jm die Haut ab bis ans Haubt/ schneide jn auff/ Nim das eingereusch vnd di
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="eel" orig="Al" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Aal</ingredient> - 1</item>
+            <item><ingredient en="eel" orig="Al" commodity="wikidata:Q79213588" source="#fyndling-corema-index">Aal</ingredient> - 1</item>
             <item>
-              <ingredient en="parsley" orig="Peterlin" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+              <ingredient en="parsley" orig="Peterlin" commodity="wikidata:Q25284" source="#fyndling-corema-index">Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="common sage" orig="Salbey" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+              <ingredient en="common sage" orig="Salbey" commodity="wikidata:Q1111359" source="#fyndling-corema-index">Salbei</ingredient>
             </item>
             <item>
               <ingredient orig="Beimenten">Krauseminze (Mentha crispa)</ingredient>
@@ -81,13 +89,13 @@ Zeuch jm die Haut ab bis ans Haubt/ schneide jn auff/ Nim das eingereusch vnd di
             <item>
               <ingredient orig="Metrin">ungeklärtes Kraut (Metrin)</ingredient>
             </item>
-            <item><ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient> - 2 EL</item>
+            <item><ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#fyndling-corema-index">Essig</ingredient> - 2 EL</item>
             <item><ingredient en="wine" orig="gutem Wein" commodity="wikidata:Q282" source="#fyndling-ingredient-name">Weißwein</ingredient> - 50 ml</item>
-            <item><ingredient en="ginger" orig="Jmber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwerpulver</ingredient> - 1 TL</item>
-            <item><ingredient en="clove" orig="Negelin" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelkenpulver</ingredient> - 0.5 TL</item>
-            <item><ingredient en="nutmeg" orig="Muscat" commodity="wikidata:Q83165" source="#corema-ingredient-index">Muskatnuss</ingredient> - 0.25 TL</item>
+            <item><ingredient en="ginger" orig="Jmber" commodity="wikidata:Q15046077" source="#fyndling-corema-index">Ingwerpulver</ingredient> - 1 TL</item>
+            <item><ingredient en="clove" orig="Negelin" commodity="wikidata:Q15622897" source="#fyndling-corema-index">Nelkenpulver</ingredient> - 0.5 TL</item>
+            <item><ingredient en="nutmeg" orig="Muscat" commodity="wikidata:Q83165" source="#fyndling-corema-index">Muskatnuss</ingredient> - 0.25 TL</item>
             <item>
-              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz nach Geschmack</ingredient>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz nach Geschmack</ingredient>
             </item>
             <item>
               <ingredient orig="Salsen oder gestossen Jmber">Saucen oder gemahlener Ingwer</ingredient>

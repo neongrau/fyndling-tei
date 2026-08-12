@@ -37,7 +37,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -239,7 +247,7 @@ Take Oynouns and erbes and hewe hem small and do þes to gode broth. and aray it
               <ingredient en="onion" orig="Oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient>
             </item>
             <item>
-              <ingredient en="garden pea" orig="erbes" commodity="wikidata:Q29472543" source="#corema-ingredient-index">Kräuter</ingredient>
+              <ingredient en="herb" orig="erbes" commodity="wikidata:Q207123" source="#fyndling-ingredient-context">Kräuter</ingredient>
             </item>
             <item>
               <ingredient orig="gode broth">Gute Brühe</ingredient>
@@ -311,7 +319,7 @@ Take Ryse and waishe hem clene. and do hem in erthen pot with gode broth and lat
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="rice" orig="Ryse" commodity="wikidata:Q5090" source="#corema-ingredient-index">Reis</ingredient>
+              <ingredient en="rice" orig="Ryse" commodity="wikidata:Q5090" source="#fyndling-corema-index">Reis</ingredient>
             </item>
             <item>
               <ingredient orig="gode broth">Gute Brühe</ingredient>
@@ -380,7 +388,7 @@ Take the whyte of Lekes. slype hem and shrede hem small. take Noumbles of swyne 
               <ingredient orig="broth">Fleischbrühe</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Rotwein</ingredient>
             </item>
             <item>
               <ingredient orig="brode blode">Frisches Schweineblut</ingredient>
@@ -419,7 +427,7 @@ Take the Noumbles of Calf. Swyne. or of Shepe. parboile hem and skerne hem to dy
               <ingredient orig="gode broth">Gute Brühe</ingredient>
             </item>
             <item>
-              <ingredient en="garden pea" orig="erbes" commodity="wikidata:Q29472543" source="#corema-ingredient-index">Kräuter</ingredient>
+              <ingredient en="herb" orig="erbes" commodity="wikidata:Q207123" source="#fyndling-ingredient-context">Kräuter</ingredient>
             </item>
             <item>
               <ingredient orig="chyballes . smale y hewe.">Schnittlauch oder junge Zwiebeln, fein gehackt</ingredient>
@@ -456,9 +464,9 @@ Take noumbles of Deer oþer of oþer beest parboile hem kerf hem to dyce. take t
           <list type="ingredients">
             <item><ingredient orig="noumbles of Deer oþer of oþer beest">Innereien (Nieren, Herz, Leber) von Wild oder anderem Tier</ingredient> - 500 g</item>
             <item><ingredient orig="the self broth or better">Wildbrühe oder andere kräftige Brühe</ingredient> - 500 ml</item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient> - 100 g</item>
+            <item><ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient> - 100 g</item>
             <item><ingredient en="vinegar" orig="vyneger" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 100 ml</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein oder Weißwein</ingredient> - 100 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Rotwein oder Weißwein</ingredient> - 100 ml</item>
             <item><ingredient en="onion" orig="oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient> - 2</item>
             <item><ingredient orig="blode">frisches Tierblut</ingredient> - 50 ml</item>
             <item><ingredient orig="powdour fort">scharfe Gewürzmischung</ingredient> - 1 TL</item>
@@ -482,8 +490,8 @@ Take the lire of the Deer oþer of the Roo parboile it on smale peces. seeþ it 
           <list type="ingredients">
             <item><ingredient orig="the lire of the Deer oþer of the Roo">Rehfleisch</ingredient> - 500 g</item>
             <item><ingredient orig="water">Wasser</ingredient> - 500 ml</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein</ingredient> - 500 ml</item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient> - 100 g</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Rotwein</ingredient> - 500 ml</item>
+            <item><ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient> - 100 g</item>
             <item><ingredient orig="blode">Schweine- oder Rinderblut</ingredient> - 100 ml</item>
             <item><ingredient en="ginger" orig="powdour fort of gynger oþer of canell . and macys" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
             <item><ingredient en="cinnamon" orig="powdour fort of gynger oþer of canell . and macys" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimtpulver</ingredient> - 0.5 TL</item>
@@ -505,7 +513,7 @@ Take Brede and grate it. make a lyre of rawe ayrenn and do þerto Safroun and po
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="sausage meat" orig="Brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient> - 200 g</item>
+            <item><ingredient en="bread" orig="Brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient> - 200 g</item>
             <item><ingredient orig="rawe ayrenn">rohe Eier</ingredient> - 2</item>
             <item><ingredient en="saffron" orig="Safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item><ingredient orig="powdour douce">milde Gewürzmischung</ingredient> - 1 TL</item>
@@ -533,7 +541,7 @@ Take Veel oþer Moton and smite it to gobettes seeþ it in gode broth. cast þer
             <item><ingredient orig="a quantite of Oynouns mynced">große Zwiebel, gehackt</ingredient> - 1</item>
             <item><ingredient orig="Powdour fort">scharfe Gewürzmischung</ingredient> - 1 TL</item>
             <item><ingredient en="saffron" orig="Safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
-            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 2</item>
+            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 2</item>
             <item><ingredient en="verjuice" orig="verious" commodity="wikidata:Q1060458" source="#fyndling-ingredient-name">Verjus</ingredient> - 50 ml</item>
           </list>
         </div>
@@ -618,7 +626,7 @@ Take blanched Almandes grynde hem and temper hem up with gode broth take Oynouns
             <item><ingredient orig="grece oþer in oyle">Schmalz oder Öl</ingredient> - 2 EL</item>
             <item><ingredient orig="clowes an flour of canel hool">ganze Nelken und 2 Zimtstangen</ingredient> - 1 EL</item>
             <item><ingredient en="ginger" orig="powdour gyngur" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 EL</item>
-            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimtpulver</ingredient> - 1 TL</item>
+            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimtpulver</ingredient> - 1 TL</item>
             <item><ingredient orig="clower">Nelkenpulver</ingredient> - 1 TL</item>
             <item><ingredient orig="saundres">Sandelholzpulver</ingredient> - 1 TL</item>
             <item><ingredient orig="brawn of Capouns yteysed . oþer of Fesauntes teysed small">gekochtes, gezupftes Fleisch von Kapaun oder Fasan</ingredient> - 500 g</item>
@@ -667,14 +675,14 @@ Take Capons and rost hem right hoot þat þey be not half y nouhz and hewe hem t
             <item><ingredient orig="Capons">Kapaune</ingredient> - 1</item>
             <item><ingredient orig="clene broth">klare Brühe</ingredient> - 1 l</item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient>
             </item>
             <item><ingredient orig="strong Powdour">scharfe Gewürzmischung</ingredient> - 1 TL</item>
             <item><ingredient en="saffron" orig="Safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item>
               <ingredient orig="Salt">Salz</ingredient>
             </item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 4</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 4</item>
             <item>
               <ingredient orig="clowes">Ganze Nelken</ingredient>
             </item>
@@ -749,7 +757,7 @@ Take Connynges and smyte hem on peces. and seeþ hem in gode broth, mynce Oynoun
             <item><ingredient en="onion" orig="Oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient> - 2</item>
             <item><ingredient orig="grece">Schmalz</ingredient> - 2 EL</item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient>
             </item>
             <item><ingredient orig="blode">frisches Tierblut</ingredient> - 100 ml</item>
             <item><ingredient en="vinegar" orig="vynegur" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 2 EL</item>
@@ -814,7 +822,7 @@ Take fylettes of Pork and rost hem half ynowh smyte hem on pecys. drawe a lyour 
               <ingredient orig="fylettes of Pork">Schweinefilet</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient orig="blode">Blut</ingredient>
@@ -857,7 +865,7 @@ Take Pigges yskaldid and quarter hem and seeþ hem in water and salt, take hem a
             <item>
               <ingredient en="common sage" orig="sawge" commodity="wikidata:Q1111359" source="#fyndling-ingredient-name">Salbei</ingredient>
             </item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Weißbrot</ingredient> - 100 g</item>
+            <item><ingredient en="white bread" orig="brede" commodity="wikidata:Q1501889" source="#fyndling-ingredient-context">altbackenes Weißbrot</ingredient> - 100 g</item>
             <item><ingredient orig="zolkes of ayrenn harde ysode">Eigelb von hartgekochten Eiern</ingredient> - 4</item>
             <item><ingredient orig="vyneger">Weißweinessig</ingredient> - 100 ml</item>
           </list>
@@ -882,7 +890,7 @@ Take sawge. persel. ysope. and saueray. quinces. and peeres , garlek and Grapes.
               <ingredient orig="persel">Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#corema-ingredient-index">Ysop</ingredient>
+              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#fyndling-corema-index">Ysop</ingredient>
             </item>
             <item>
               <ingredient en="savory" orig="saueray" commodity="wikidata:Q22858" source="#fyndling-ingredient-name">Bohnenkraut</ingredient>
@@ -905,7 +913,7 @@ Take sawge. persel. ysope. and saueray. quinces. and peeres , garlek and Grapes.
             </item>
             <item><ingredient orig="galytyne">Geflügelbrühe</ingredient> - 500 ml</item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="powdour of galyngale">Galgantpulver</ingredient>
@@ -942,7 +950,7 @@ Take Gees and smyte hem on pecys. cast hem in a Pot do þerto half wyne and half
             <item>
               <ingredient orig="erbest">gemischte Kräuter</ingredient>
             </item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient> - 100 g</item>
+            <item><ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient> - 100 g</item>
             <item><ingredient orig="blode">frisches Tierblut</ingredient> - 200 ml</item>
             <item><ingredient orig="powdour fort">scharfe Gewürzmischung</ingredient> - 1 EL</item>
           </list>
@@ -1173,7 +1181,7 @@ Take Pork and seeþ it wel. hewe it smale. cast it in a panne. breke ayrenn and 
               <ingredient en="pork" orig="Pork" commodity="wikidata:Q191768" source="#fyndling-ingredient-name">Schweinefleisch</ingredient>
             </item>
             <item>
-              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="Cowe mylke">Kuhmilch</ingredient>
@@ -1262,7 +1270,7 @@ Take brede ygrated and ayrenn and swyng it togydre. do þerto safroun, sawge. an
               <ingredient orig="brede ygrated">Geriebenes Brot</ingredient>
             </item>
             <item>
-              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient>
@@ -1353,10 +1361,10 @@ Take Pork and Hennes and seeþ hem as to fore. bray almandes blaunched, and temp
             <item><ingredient en="ginger" orig="powdour of gyngur" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
             <item><ingredient en="unrefined cane sugar" orig="sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 2 EL</item>
             <item>
-              <ingredient en="table salt" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+              <ingredient en="table salt" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz</ingredient>
             </item>
             <item>
-              <ingredient en="water" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+              <ingredient en="water" commodity="wikidata:Q283" source="#fyndling-corema-index">Wasser</ingredient>
             </item>
           </list>
         </div>
@@ -1458,7 +1466,7 @@ Take pork ysode and grynde it small with safroun, medle it with ayrenn and raiso
           <list type="ingredients">
             <item><ingredient orig="pork ysode">gekochtes Schweinefleisch</ingredient> - 500 g</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 2</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 2</item>
             <item><ingredient orig="raisons of coraunce">Korinthen</ingredient> - 50 g</item>
             <item><ingredient en="spice" orig="powdour fort" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 1 TL</item>
             <item>
@@ -1511,7 +1519,7 @@ Take thyk mylke as to fore welled . cast þerto sugur a gode porcioun pynes. Dat
             <item><ingredient en="unrefined cane sugar" orig="sugur a gode porcioun" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 100 g</item>
             <item><ingredient orig="pynes">Pinienkerne</ingredient> - 50 g</item>
             <item><ingredient orig="Dates ymynced">Datteln, fein gehackt</ingredient> - 50 g</item>
-            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient> - 1 TL</item>
+            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient> - 1 TL</item>
             <item><ingredient en="ginger" orig="powdour gynger" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 0.5 TL</item>
             <item><ingredient orig="flores of white Rosis">weiße Rosenblüten</ingredient> - 2 EL</item>
             <item><ingredient en="rice flour" orig="flour of rys" commodity="wikidata:Q1269205" source="#fyndling-ingredient-name">Reismehl</ingredient> - 2 EL</item>
@@ -1645,7 +1653,7 @@ Take Almandes unblanched, waisshe hem, grynde hem, drawe hem up with gode broth.
               <ingredient orig="sandres">Sandelholzpulver</ingredient>
             </item>
             <item>
-              <ingredient en="anise" orig="aneys" commodity="wikidata:Q33873455" source="#corema-ingredient-index">Anis</ingredient>
+              <ingredient en="anise" orig="aneys" commodity="wikidata:Q33873455" source="#fyndling-corema-index">Anis</ingredient>
             </item>
             <item>
               <ingredient orig="cheweryes">Kerbel</ingredient>
@@ -1666,7 +1674,7 @@ Take brede and frye it in grece oþer in oyle, take it and lay it in rede wyne. 
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient orig="grece oþer in oyle">Schmalz oder Öl</ingredient>
@@ -1736,7 +1744,7 @@ Take smale fylettes of Pork and rost hem half and smyte hem to gobettes and do h
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="smale fylettes of Pork">Schweinefilet</ingredient> - 500 g</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient> - 200 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient> - 200 ml</item>
             <item><ingredient en="vinegar" orig="Vynegur" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 100 ml</item>
             <item><ingredient orig="Oynouns ymynced">Zwiebeln, gehackt</ingredient> - 2</item>
             <item><ingredient en="spice" orig="gode poudours" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 1 TL</item>
@@ -1793,7 +1801,7 @@ Take gode Cowe mylke and do it in a pot. take parsel. sawge. ysope. saueray and 
               <ingredient en="common sage" orig="sawge" commodity="wikidata:Q1111359" source="#fyndling-ingredient-name">Salbei</ingredient>
             </item>
             <item>
-              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#corema-ingredient-index">Ysop</ingredient>
+              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#fyndling-corema-index">Ysop</ingredient>
             </item>
             <item>
               <ingredient en="savory" orig="saueray" commodity="wikidata:Q22858" source="#fyndling-ingredient-name">Bohnenkraut</ingredient>
@@ -1941,7 +1949,7 @@ Take Connynges and smyte hem in gobetes and waissh hem and do hem in feyre water
             <item>
               <ingredient orig="feyre water">Wasser</ingredient>
             </item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 250 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 250 ml</item>
             <item><ingredient en="vinegar" orig="vynegur" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 50 ml</item>
             <item><ingredient en="ginger" orig="powdour or gynger" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 EL</item>
             <item>
@@ -1993,7 +2001,7 @@ Take parsel and grynde with a Cowe mylk, medle it with ayrenn and lard ydyced ta
               <ingredient orig="parsel">Petersilie</ingredient>
             </item>
             <item><ingredient orig="Cowe mylk">Kuhmilch</ingredient> - 500 ml</item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 4</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 4</item>
             <item><ingredient orig="lard ydyced">gewürfelter Speck</ingredient> - 100 g</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item><ingredient orig="amydoun">Weizenstärke</ingredient> - 2 EL</item>
@@ -2036,7 +2044,7 @@ Take pesoun and seeþ hem fast and covere hem til þei berst. þenne take up hem
           <list type="ingredients">
             <item><ingredient en="garden pea" orig="pesoun" commodity="wikidata:Q29472543" source="#fyndling-ingredient-name">Erbsen</ingredient> - 500 g</item>
             <item><ingredient en="onion" orig="oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient> - 2</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Öl</ingredient> - 2 EL</item>
+            <item><ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Öl</ingredient> - 2 EL</item>
             <item><ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 1 TL</item>
             <item>
               <ingredient en="table salt" orig="salt" commodity="wikidata:Q11254" source="#fyndling-ingredient-name">Salz nach Geschmack</ingredient>
@@ -2129,13 +2137,13 @@ Take and seeþ white peson and take oute þe perrey &amp; parboile erbis &amp; h
               <ingredient orig="white peson">Weiße Erbsen</ingredient>
             </item>
             <item>
-              <ingredient en="garden pea" orig="erbis" commodity="wikidata:Q29472543" source="#corema-ingredient-index">Kräuter</ingredient>
+              <ingredient en="herb" orig="erbis" commodity="wikidata:Q207123" source="#fyndling-ingredient-context">Kräuter</ingredient>
             </item>
             <item>
               <ingredient en="onion" orig="oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
             <item>
               <ingredient orig="salt">Salz</ingredient>
@@ -2174,7 +2182,7 @@ Take drawen benes and seeþ hem wel. take hem up of the water and cast hem in a 
               <ingredient en="onion" orig="Oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
           </list>
         </div>
@@ -2193,7 +2201,7 @@ Pill garlec and cast it in a pot with water and oile. and seeþ it, do þerto sa
           <list type="ingredients">
             <item><ingredient orig="garlec">Knolle Knoblauch</ingredient> - 1</item>
             <item><ingredient orig="water">Wasser</ingredient> - 500 ml</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient> - 2 EL</item>
+            <item><ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient> - 2 EL</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item>
               <ingredient en="table salt" orig="salt" commodity="wikidata:Q11254" source="#fyndling-ingredient-name">Salz nach Geschmack</ingredient>
@@ -2252,7 +2260,7 @@ Take blades of Fenkel. shrede hem not to smale, do hem to seeþ in water and oil
               <ingredient orig="blades of Fenkel">Fenchelgrün</ingredient>
             </item>
             <item><ingredient orig="water">Wasser</ingredient> - 500 ml</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient> - 2 EL</item>
+            <item><ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient> - 2 EL</item>
             <item><ingredient orig="oynouns mynced">Zwiebel, gehackt</ingredient> - 1</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item>
@@ -2279,7 +2287,7 @@ Take elena campana and seeþ it water . take it up and grynde it wel in a morter
           <list type="ingredients">
             <item><ingredient orig="elena campana">Alantwurzel</ingredient> - 100 g</item>
             <item><ingredient orig="water">Wasser</ingredient> - 500 ml</item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 3</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 3</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item><ingredient orig="salt">Salz</ingredient> - 1 Prise</item>
             <item><ingredient orig="powdour douce">Milde Gewürzmischung</ingredient> - 1 TL</item>
@@ -2341,16 +2349,16 @@ Take white of Lekes and slyt hem, and do hem to seeþ in wyne, oile and salt, ro
               <ingredient orig="white of Lekes">Lauch</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
             <item>
               <ingredient orig="salt">Salz</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
           </list>
         </div>
@@ -2367,7 +2375,7 @@ Take Ayrenn and wryng hem thurgh a styunour and do þerto cowe mylke with butter
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 4</item>
+            <item><ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 4</item>
             <item><ingredient orig="cowe mylke">Kuhmilch</ingredient> - 500 ml</item>
             <item><ingredient en="butter" orig="butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient> - 50 g</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
@@ -2388,7 +2396,7 @@ Take Almaundes brayed, drawe hem up with wyne. ooile it, cast þeruppon safroun 
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="Almaundes brayed">gemahlene Mandeln</ingredient> - 200 g</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 500 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 500 ml</item>
             <item><ingredient en="cooking oil" orig="ooile" commodity="wikidata:Q427457" source="#fyndling-ingredient-name">Pflanzenöl</ingredient> - 2 EL</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item><ingredient orig="salt">Salz</ingredient> - 1 Prise</item>
@@ -2417,7 +2425,7 @@ Take half fyges and half raisouns pike hem and waisshe hem in water skalde hem i
             <item>
               <ingredient orig="water">Wasser</ingredient>
             </item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein</ingredient> - 250 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Rotwein</ingredient> - 250 ml</item>
             <item><ingredient orig="powdour of peper">Pfefferpulver</ingredient> - 1 TL</item>
             <item><ingredient en="spice" orig="ooþer good powdours" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 1 TL</item>
             <item><ingredient en="rice flour" orig="flour of Rys" commodity="wikidata:Q1269205" source="#fyndling-ingredient-name">Reismehl</ingredient> - 50 g</item>
@@ -2445,7 +2453,7 @@ Take heppes and make hem clene. take Almaundes blaunched, frye hem in oile and b
           <list type="ingredients">
             <item><ingredient orig="heppes">Hagebutten</ingredient> - 200 g</item>
             <item><ingredient orig="Almaundes blaunched">blanchierte Mandeln</ingredient> - 200 g</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient> - 2 EL</item>
+            <item><ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient> - 2 EL</item>
             <item><ingredient orig="rede wyne">Rotwein</ingredient> - 200 ml</item>
             <item>
               <ingredient orig="sugur ynowhz">nach Geschmack Zucker</ingredient>
@@ -2495,7 +2503,7 @@ Take Almaundes blaunched and drawe hem up with wyne, do þerto powdour of gyngur
               <ingredient orig="Almaundes blaunched">Blanchierte Mandeln</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient en="ginger" orig="powdour of gyngur" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient>
@@ -2521,7 +2529,7 @@ Take erbes, boile hem, hewe hem and grynde hem smale. and drawe hem up with wate
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="garden pea" orig="erbes" commodity="wikidata:Q29472543" source="#corema-ingredient-index">gemischte Kräuter</ingredient> - 500 g</item>
+            <item><ingredient en="herb" orig="erbes" commodity="wikidata:Q207123" source="#fyndling-ingredient-context">gemischte Kräuter</ingredient> - 500 g</item>
             <item><ingredient orig="water">Wasser</ingredient> - 200 ml</item>
             <item><ingredient>Mandelmilch</ingredient> - 500 ml</item>
             <item><ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 1 TL</item>
@@ -2548,7 +2556,7 @@ Take Almaundes blanched, grynde hem and drawe hem up with water and wyne: quarte
               <ingredient orig="water">Wasser</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient en="fig" orig="quarter fygur" commodity="wikidata:Q2746643" source="#fyndling-ingredient-name">Feigen</ingredient>
@@ -2581,7 +2589,7 @@ Take Ayrenn and breke hem in scaldyng hoot water. and whan þei bene sode ynowh.
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="scaldyng hoot water">Heißes Wasser</ingredient>
@@ -2616,7 +2624,7 @@ Take ayrenn, water and butter, and seeþ hem yfere with safroun and gobettes of 
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 6</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 6</item>
             <item><ingredient orig="water">Wasser</ingredient> - 500 ml</item>
             <item><ingredient en="butter" orig="butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient> - 50 g</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
@@ -2670,13 +2678,13 @@ Take wyne and hony and found it togyder and skym it clene. and seeþ it long, do
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient> - 500 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient> - 500 ml</item>
             <item><ingredient orig="hony">Honig</ingredient> - 100 g</item>
             <item><ingredient en="ginger" orig="powdour of gyngur" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
             <item><ingredient orig="peper">Pfeffer</ingredient> - 0.5 TL</item>
             <item><ingredient orig="salt">Salz</ingredient> - 1 Prise</item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item><ingredient orig="pecys of gyngur">frischer Ingwer</ingredient> - 1 Stück</item>
           </list>
@@ -2701,7 +2709,7 @@ Take the Powche and the Lyuour of haddok, codlyng and hake and of ooþer fisshe,
               <ingredient orig="self broth">Fischbrühe</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient>
             </item>
             <item>
               <ingredient en="bread" orig="a layour of brede of galyntyne" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Altbackenes Weißbrot</ingredient>
@@ -2737,7 +2745,7 @@ Take bolas and scald hem with wyne and drawe hem with a straynour do hem in a po
               <ingredient orig="bolas">Bolas-Pflaumen</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="hony">Honig</ingredient>
@@ -2990,7 +2998,7 @@ Take Tenches, pykes , eelys, turbut and plays , kerue hem to pecys. scalde hem &
               <ingredient en="vinegar" orig="vyneger" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="powdour of pep">Pfefferpulver</ingredient>
@@ -3026,7 +3034,7 @@ Take swyner feet &amp; snowter and the eerys . capouns. connynges calues fete. &
             <item>
               <ingredient orig="calues fete">Kalbsfüße</ingredient>
             </item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient> - 2 l</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient> - 2 l</item>
             <item><ingredient en="vinegar" orig="vyneger" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 2 l</item>
             <item><ingredient orig="water">Wasser</ingredient> - 2 l</item>
             <item>
@@ -3036,7 +3044,7 @@ Take swyner feet &amp; snowter and the eerys . capouns. connynges calues fete. &
               <ingredient>Galgantpulver</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimtpulver</ingredient>
+              <ingredient en="cinnamon" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimtpulver</ingredient>
             </item>
             <item>
               <ingredient>Salz</ingredient>
@@ -3066,7 +3074,7 @@ Take Roches. hole Tenches and plays &amp; sinyte hem to gobettes. fry hem in oyl
               <ingredient orig="oyle">Pflanzenöl zum Frittieren</ingredient>
             </item>
             <item><ingredient orig="blaunche almaundes">blanchierte Mandeln</ingredient> - 100 g</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 500 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 500 ml</item>
             <item><ingredient en="vinegar" orig="vyneger" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Weinessig</ingredient> - 250 ml</item>
             <item><ingredient orig="fyges drawen">durchgeseihte Feigen</ingredient> - 100 g</item>
             <item><ingredient orig="powdour fort">scharfe Gewürzmischung</ingredient> - 1 TL</item>
@@ -3104,7 +3112,7 @@ Take the Conger and scald hym. and smyte hym in pecys &amp; seeþ hym. take pars
               <ingredient orig="a litul sawge">Ein wenig Salbei</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient orig="salt">Salz</ingredient>
@@ -3134,7 +3142,7 @@ Take Ryghzes and make hem clene and do hem to seeþ, pyke hem clene and frye hem
           <list type="ingredients">
             <item><ingredient orig="Ryghzes">Kaulbarsche</ingredient> - 4</item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
             <item><ingredient orig="Almandes">Mandeln</ingredient> - 100 g</item>
             <item><ingredient orig="water or wyne">Wasser oder Weißwein</ingredient> - 200 ml</item>
@@ -3250,7 +3258,7 @@ Take Eelys and hilde hem and kerue hem to pecys and do hem to seeþ in water and
               <ingredient orig="water">Wasser</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient en="common sage" orig="sawge" commodity="wikidata:Q1111359" source="#fyndling-ingredient-name">Salbei</ingredient>
@@ -3269,7 +3277,7 @@ Take Eelys and hilde hem and kerue hem to pecys and do hem to seeþ in water and
               <ingredient orig="galyngale">Galgantpulver</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimtpulver</ingredient>
+              <ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimtpulver</ingredient>
             </item>
             <item>
               <ingredient orig="peper">Pfeffer</ingredient>
@@ -3296,10 +3304,10 @@ Take Crustes of brede and wyne and make a lyour, do þerto oynouns ymynced, powd
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="Crustes of brede">Brotkrusten</ingredient> - 100 g</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 200 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 200 ml</item>
             <item><ingredient orig="oynouns ymynced">Zwiebeln, gehackt</ingredient> - 2</item>
             <item><ingredient en="spice" orig="powdour" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 1 TL</item>
-            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient> - 0.5 TL</item>
+            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient> - 0.5 TL</item>
             <item><ingredient orig="a litel water">Wasser</ingredient> - 100 ml</item>
             <item>
               <ingredient orig="salt">Salz</ingredient>
@@ -3307,10 +3315,10 @@ Take Crustes of brede and wyne and make a lyour, do þerto oynouns ymynced, powd
             <item><ingredient orig="Eelis">Aal</ingredient> - 500 g</item>
             <item><ingredient orig="the guttes of Samoun">Lachs-Innereien</ingredient> - 200 g</item>
             <item><ingredient orig="the white of Lekes">Stangen Lauch</ingredient> - 2</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient> - 2 EL</item>
+            <item><ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient> - 2 EL</item>
             <item><ingredient orig="Samoun icorne">Lachsfilet, gewürfelt</ingredient> - 300 g</item>
             <item><ingredient orig="Almaundes mylke">Mandelmilch</ingredient> - 200 ml</item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Weißbrot</ingredient> - 50 g</item>
+            <item><ingredient en="white bread" orig="brede" commodity="wikidata:Q1501889" source="#fyndling-ingredient-context">Weißbrot</ingredient> - 50 g</item>
             <item><ingredient en="spice" orig="spices" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 1 TL</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
           </list>
@@ -3333,12 +3341,12 @@ Take Plays and smyte hem to pecys and fry hem in oyle. drawe a lyour of brede &a
               <ingredient orig="oyle">Ausreichend Pflanzenöl zum Braten</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient>
             </item>
             <item><ingredient orig="gode broth">gute Brühe</ingredient> - 200 ml</item>
             <item><ingredient en="vinegar" orig="vyneger" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 2 EL</item>
             <item><ingredient en="ginger" orig="powdour gynger" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">gemahlener Ingwer</ingredient> - 0.5 TL</item>
-            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient> - 0.25 TL</item>
+            <item><ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient> - 0.25 TL</item>
             <item><ingredient orig="peper">Pfeffer</ingredient> - 0.25 TL</item>
             <item>
               <ingredient en="table salt" orig="salt" commodity="wikidata:Q11254" source="#fyndling-ingredient-name">Salz nach Geschmack</ingredient>
@@ -3371,7 +3379,7 @@ Take clene pork and boile it tendre. þenne hewe it small and bray it smal in a 
               <ingredient orig="tendre chese">Weicher Käse</ingredient>
             </item>
             <item>
-              <ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="powdour of pepper">Pfefferpulver</ingredient>
@@ -3422,7 +3430,7 @@ Take the blode of pykes oþer of conger and nyme the paunches of pykes. of conge
             <item>
               <ingredient orig="safroun">nach Geschmack Safran</ingredient>
             </item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 100 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 100 ml</item>
             <item><ingredient en="vinegar" orig="vynegur" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient> - 50 ml</item>
             <item><ingredient orig="aysell oþer alegur">Ale-Essig</ingredient> - 50 ml</item>
           </list>
@@ -3521,7 +3529,7 @@ Take Pork, and rost it tyl the blode be tryed out &amp; þe broth . take crustes
               <ingredient orig="parsel">Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#corema-ingredient-index">Ysop</ingredient>
+              <ingredient en="hyssop" orig="ysope" commodity="wikidata:Q137931" source="#fyndling-corema-index">Ysop</ingredient>
             </item>
             <item>
               <ingredient orig="rede wyne oþer white grece">Rotwein oder Schweineschmalz</ingredient>
@@ -3597,7 +3605,7 @@ Take Sooles and hylde hem, seeþ hem in water, smyte hem on pecys and take away 
               <ingredient orig="fynnes">Seezungenflossen</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Altbackenes Brot</ingredient>
             </item>
             <item>
               <ingredient orig="powdour fort">Scharfe Gewürzmischung</ingredient>
@@ -3625,7 +3633,7 @@ Take Tenches and smyte hem to pecys, fry hem, drawe a lyour of Raysouns coraunce
           <list type="ingredients">
             <item><ingredient orig="Tenches">Schleien</ingredient> - 2</item>
             <item><ingredient orig="Raysouns coraunce">Korinthen</ingredient> - 100 g</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein oder Weißwein</ingredient> - 200 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Rotwein oder Weißwein</ingredient> - 200 ml</item>
             <item><ingredient orig="water">Wasser</ingredient> - 100 ml</item>
             <item><ingredient en="raisin" orig="hool raisouns" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient> - 50 g</item>
             <item><ingredient en="ginger" orig="powdour of gyngur" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
@@ -3656,7 +3664,7 @@ Schyl Oysters and seeþ hem in wyne and in hare own broth. cole the broth thurgh
               <ingredient orig="Oysters">Austern</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="hare own broth">Austernsaft</ingredient>
@@ -3737,7 +3745,7 @@ Take Oysters parboile hem in her owne broth, make a lyour of crustes of brede &a
               <ingredient en="onion" orig="oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient>
             </item>
             <item>
-              <ingredient en="garden pea" orig="erbes" commodity="wikidata:Q29472543" source="#corema-ingredient-index">Frische Kräuter</ingredient>
+              <ingredient en="herb" orig="erbes" commodity="wikidata:Q207123" source="#fyndling-ingredient-context">Frische Kräuter</ingredient>
             </item>
             <item>
               <ingredient en="spice" orig="powdour fort" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient>
@@ -3761,13 +3769,13 @@ Take and seeþ muskels, pyke hem clene, and waisshe hem clene in wyne. take alma
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="muskels">Miesmuscheln</ingredient> - 1 kg</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 200 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 200 ml</item>
             <item><ingredient orig="almandes">Mandeln</ingredient> - 100 g</item>
             <item><ingredient orig="faire water">Wasser</ingredient> - 200 ml</item>
             <item><ingredient en="verjuice" orig="verious" commodity="wikidata:Q1060458" source="#fyndling-ingredient-name">Verjus</ingredient> - 50 ml</item>
             <item><ingredient en="vinegar" orig="vyneger" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Weinessig</ingredient> - 50 ml</item>
             <item><ingredient orig="whyte of lekes">Stangen Lauch</ingredient> - 2</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Olivenöl</ingredient> - 2 EL</item>
+            <item><ingredient en="olive oil" orig="oile" commodity="wikidata:Q93165" source="#fyndling-ingredient-context">Olivenöl</ingredient> - 2 EL</item>
             <item><ingredient en="onion" orig="oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient> - 2</item>
             <item><ingredient orig="powdour fort">scharfe Gewürzmischung</ingredient> - 1 TL</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
@@ -3814,7 +3822,7 @@ Take codlyng, haddok, oþ hake and lynours with the rawnes and seeþ it wel in w
               <ingredient orig="almaundes">Mandeln</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient orig="the self broth">Fischbrühe</ingredient>
@@ -3982,7 +3990,7 @@ Take Raysouns, grynde hem with crustes of brede; and drawe it up with wyne. do �
           <list type="ingredients">
             <item><ingredient en="raisin" orig="Raysouns" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient> - 200 g</item>
             <item><ingredient orig="crustes of brede">getrocknete Brotkrusten</ingredient> - 50 g</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">trockener Wein</ingredient> - 200 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">trockener Wein</ingredient> - 200 ml</item>
             <item><ingredient en="spice" orig="gode powdours" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 1 TL</item>
             <item>
               <ingredient orig="salt">nach Geschmack Salz</ingredient>
@@ -4020,7 +4028,7 @@ Take crome of almaundes. dry it in a cloth. and whan it is dryed do it in a vess
               <ingredient orig="Juys of Fenel">Fenchelsaft</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
           </list>
         </div>
@@ -4130,7 +4138,7 @@ Take Almaundes and grynde hem. take the tweydel of wyne oþer the þriddell of v
             <item><ingredient orig="Almaundes">Mandeln, blanchiert und geschält</ingredient> - 500 g</item>
             <item><ingredient en="wine" orig="tweydel of wyne" commodity="wikidata:Q282" source="#fyndling-ingredient-name">Weißwein</ingredient> - 400 ml</item>
             <item><ingredient orig="þriddell of vynegur">Weißweinessig</ingredient> - 200 ml</item>
-            <item><ingredient en="anise" orig="anys" commodity="wikidata:Q33873455" source="#corema-ingredient-index">Anis, gemahlen</ingredient> - 1 TL</item>
+            <item><ingredient en="anise" orig="anys" commodity="wikidata:Q33873455" source="#fyndling-corema-index">Anis, gemahlen</ingredient> - 1 TL</item>
             <item><ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 2 EL</item>
             <item><ingredient orig="branches of fenel grene a few">grüne Fenchelzweige</ingredient> - 2</item>
             <item><ingredient en="cinnamon" orig="poudour of canell" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimtpulver</ingredient> - 1 TL</item>
@@ -4157,7 +4165,7 @@ Take Brede &amp; fry it in grece. drawe it up with broth and vynegur, take þert
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="sausage meat" orig="Brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="Brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient orig="grece">Fett</ingredient>
@@ -4226,7 +4234,7 @@ Take the lyuer of Capons and roost it wel. take anyse and greynes de Parys . gyn
               <ingredient orig="gyngur">Ingwer</ingredient>
             </item>
             <item>
-              <ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+              <ingredient en="cinnamon" orig="canel" commodity="wikidata:Q28165" source="#fyndling-corema-index">Zimt</ingredient>
             </item>
             <item>
               <ingredient orig="a lytill crust of brede">Eine kleine Brotkruste</ingredient>
@@ -4318,13 +4326,13 @@ Take parsel. mynt. garlek. a litul serpell and sawge, a litul canel. gyngur. pip
               <ingredient orig="gyngur">Ingwer</ingredient>
             </item>
             <item>
-              <ingredient en="pepper" orig="piper" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+              <ingredient en="pepper" orig="piper" commodity="wikidata:Q3143131" source="#fyndling-corema-index">Pfeffer</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient en="vinegar" orig="vynegur" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient>
@@ -4351,7 +4359,7 @@ Take brede and blode iboiled. and grynde it and drawe it thurgh a cloth with Vyn
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">Brot</ingredient>
+              <ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Brot</ingredient>
             </item>
             <item>
               <ingredient orig="blode iboiled">Gekochtes Blut</ingredient>
@@ -4432,10 +4440,10 @@ Take þe lyuer and þe offall of the Swannes &amp; do it to seeþ in gode broth.
               <ingredient orig="powdour of clowes">Nelkenpulver</ingredient>
             </item>
             <item>
-              <ingredient en="pepper" orig="piper" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+              <ingredient en="pepper" orig="piper" commodity="wikidata:Q3143131" source="#fyndling-corema-index">Pfeffer</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="salt">Salz</ingredient>
@@ -4489,7 +4497,7 @@ Take Mustard seed and waishe it &amp; drye it in an ovene, grynde it drye. farse
               <ingredient orig="hony">Honig</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient en="vinegar" orig="vynegur" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient>
@@ -4560,13 +4568,13 @@ Take Almandes blaunched and grynde hem al to doust, do þise in a thynne foile. 
               <ingredient orig="Almandes blaunched">Blanchierte Mandeln</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="Oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Öl</ingredient>
+              <ingredient en="cooking oil" orig="Oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Öl</ingredient>
             </item>
             <item>
               <ingredient orig="hony">Honig</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="Wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="Wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient orig="thynne foile">Dünnes Teigblatt</ingredient>
@@ -4590,8 +4598,8 @@ Take skyrwater and pasternakes and apples, &amp; parboile hem, make a batour of 
             <item><ingredient orig="pasternakes">Pastinaken</ingredient> - 2</item>
             <item><ingredient en="apple" orig="apples" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient> - 2</item>
             <item><ingredient orig="flour">Weizenmehl</ingredient> - 150 g</item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 2</item>
-            <item><ingredient en="eel" orig="ale" commodity="wikidata:Q79213588" source="#corema-ingredient-index">helles Bier</ingredient> - 100 ml</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 2</item>
+            <item><ingredient en="beer" orig="ale" commodity="wikidata:Q44" source="#fyndling-ingredient-context">helles Bier</ingredient> - 100 ml</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item><ingredient orig="salt">Salz</ingredient> - 1 Prise</item>
             <item>
@@ -4663,7 +4671,7 @@ Take swyne lyuoers and seeþ hem wel. take brede &amp; grate it. and take zolkes
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient en="liver" orig="swyne lyuoers" commodity="wikidata:Q1470283" source="#fyndling-ingredient-name">Schweineleber</ingredient> - 500 g</item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Brot</ingredient> - 100 g</item>
+            <item><ingredient en="bread" orig="brede" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">altbackenes Brot</ingredient> - 100 g</item>
             <item><ingredient en="yolk" orig="zolkes of ayrenn" commodity="wikidata:Q16336079" source="#fyndling-ingredient-name">Eigelb</ingredient> - 2</item>
             <item><ingredient orig="a lytull of lard carnoun lyche a dee">gewürfelten Speck</ingredient> - 50 g</item>
             <item><ingredient orig="chese gratyd">geriebenen Käse</ingredient> - 50 g</item>
@@ -4697,7 +4705,7 @@ Take Ayrenn and wryng hem thurgh a cloth. take powdour fort, brede igrated, &amp
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="powdour fort">Scharfe Gewürzmischung</ingredient>
@@ -4743,7 +4751,7 @@ Take peiouns , chykens, and smale briddes smyte hem in gobettes. &amp; seeþ hem
             <item>
               <ingredient orig="salt">Salz</ingredient>
             </item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 4</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 4</item>
           </list>
         </div>
       </div>
@@ -4763,7 +4771,7 @@ Hewe Pork al to pecys and medle it with ayrenn &amp; chese igrated. do þerto po
               <ingredient en="pork" orig="Pork" commodity="wikidata:Q191768" source="#fyndling-ingredient-name">Schweinefleisch</ingredient>
             </item>
             <item>
-              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="chese igrated">Geriebener Käse</ingredient>
@@ -4814,7 +4822,7 @@ Take loches, laumprouns, and Eelis. smyte hem on pecys, and stewe hem wiþ Almau
               <ingredient en="verjuice" commodity="wikidata:Q1060458" source="#fyndling-ingredient-name">Verjus</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
             <item>
               <ingredient orig="powdour fort">Scharfe Gewürzmischung</ingredient>
@@ -4874,7 +4882,7 @@ Take gode Eerbys and grynde hem smale with wallenotes pyked clene. a grete porti
               <ingredient en="fish" orig="fyssh" commodity="wikidata:Q600396" source="#fyndling-ingredient-name">Fisch</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
             <item>
               <ingredient en="spice" orig="gode Powdour" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient>
@@ -4943,7 +4951,7 @@ Drawe a thick almaunde Mylke wiþ water. take dates and pyke hem clene with appl
               <ingredient orig="saundres">Sandelholzpulver</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient>
             </item>
             <item>
               <ingredient orig="coffyn">Pastetenteig</ingredient>
@@ -4964,7 +4972,7 @@ Take a Wastel and hewe out þe crummes. take ayrenn &amp; shepis talow &amp; þe
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="a Wastel">Wastel-Brötchen</ingredient> - 1</item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 2</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 2</item>
             <item><ingredient orig="shepis talow">Schafstalg</ingredient> - 50 g</item>
             <item>
               <ingredient orig="þe crummes of þe same Wastell">Krume des Wastel-Brötchens</ingredient>
@@ -4993,7 +5001,7 @@ Take sawge. grynde it and temper it up with ayrenn. a saweyster &amp; kerf hym t
               <ingredient en="common sage" orig="sawge" commodity="wikidata:Q1111359" source="#fyndling-ingredient-name">Frischer Salbei</ingredient>
             </item>
             <item>
-              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient>
             </item>
             <item>
               <ingredient orig="a saweyster">Eine Wurst oder Fleischfarce</ingredient>
@@ -5023,7 +5031,7 @@ Take Pork and seeþ it wel and grinde it smale and medle it wiþ ayren &amp; bre
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient en="pork" orig="Pork" commodity="wikidata:Q191768" source="#fyndling-ingredient-name">Schweinefleisch</ingredient> - 500 g</item>
-            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 2</item>
+            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 2</item>
             <item><ingredient orig="brede. ygrated.">geriebenes Brot</ingredient> - 50 g</item>
             <item><ingredient orig="powdour fort">scharfe Gewürzmischung</ingredient> - 1 TL</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
@@ -5098,7 +5106,7 @@ Take pork ysode. hewe it &amp; bray it. do þerto ayrenn. Raisouns sugur and pow
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="pork ysode">gekochtes Schweinefleisch</ingredient> - 500 g</item>
-            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 3</item>
+            <item><ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 3</item>
             <item><ingredient en="raisin" orig="Raisouns" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient> - 100 g</item>
             <item><ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 50 g</item>
             <item><ingredient en="ginger" orig="powdour of gyngur" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwerpulver</ingredient> - 1 TL</item>
@@ -5129,8 +5137,8 @@ Take and parboile Oynouns presse out þe water &amp; hewe hem smale. take brede 
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient en="onion" orig="Oynouns" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln</ingredient> - 500 g</item>
-            <item><ingredient en="sausage meat" orig="brede" commodity="wikidata:Q995566" source="#corema-ingredient-index">altbackenes Weißbrot</ingredient> - 100 g</item>
-            <item><ingredient en="chicken egg" orig="Ayren" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 3</item>
+            <item><ingredient en="white bread" orig="brede" commodity="wikidata:Q1501889" source="#fyndling-ingredient-context">altbackenes Weißbrot</ingredient> - 100 g</item>
+            <item><ingredient en="chicken egg" orig="Ayren" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 3</item>
             <item><ingredient en="butter" orig="butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient> - 50 g</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item>
@@ -5186,7 +5194,7 @@ Take Fyges &amp; Raysouns. &amp; waisshe hem in Wyne. and grinde hem smale with 
               <ingredient en="raisin" orig="Raysouns" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="Wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+              <ingredient en="wine" orig="Wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Wein</ingredient>
             </item>
             <item>
               <ingredient en="apple" orig="apples" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient>
@@ -5376,7 +5384,7 @@ Take parsel, myntes , sauerey, &amp; sauge, tansey, veruayn, clarry, rewe, ditay
             <item>
               <ingredient en="southernwood" orig="southrenwode" commodity="wikidata:Q79106872" source="#fyndling-ingredient-name">Eberraute</ingredient>
             </item>
-            <item><ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 3</item>
+            <item><ingredient en="chicken egg" orig="Ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 3</item>
             <item><ingredient en="butter" orig="butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient> - 50 g</item>
           </list>
         </div>
@@ -5403,7 +5411,7 @@ Take þere þridde part of sowre Dokkes and flour þerto. &amp; bete it togeder 
               <ingredient orig="salt">Salz</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl zum Frittieren</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl zum Frittieren</ingredient>
             </item>
             <item>
               <ingredient en="unrefined cane sugar" orig="suger" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
@@ -5431,7 +5439,7 @@ Take þe lire of Pork rawe. and grynde it smale. medle it up wiþ powdre fort, s
             <item><ingredient en="egg white" orig="white of ayrenn" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient> - 2</item>
             <item><ingredient orig="boillyng water">Wasser</ingredient> - 1 l</item>
             <item><ingredient orig="parsel ygronde">gemahlene Petersilie</ingredient> - 2 EL</item>
-            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 2</item>
+            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 2</item>
             <item><ingredient orig="a party of flour">Weizenmehl</ingredient> - 2 EL</item>
           </list>
         </div>
@@ -5619,7 +5627,7 @@ Take benes and seeþ hem almost til þey bersten. take and wryng out þer water 
             <item><ingredient orig="benes">getrocknete Bohnen</ingredient> - 250 g</item>
             <item><ingredient orig="Oynouns ysode and ymynced">Zwiebeln, gekocht und gehackt</ingredient> - 2</item>
             <item><ingredient en="garlic" orig="garlec" commodity="wikidata:Q21546392" source="#fyndling-ingredient-name">Knoblauch</ingredient> - 2 Zehe</item>
-            <item><ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl</ingredient> - 2 EL</item>
+            <item><ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl</ingredient> - 2 EL</item>
             <item><ingredient orig="oþer in grece">Schmalz</ingredient> - 2 EL</item>
             <item><ingredient orig="powdour douce">milde Gewürzmischung</ingredient> - 1 TL</item>
           </list>
@@ -5644,7 +5652,7 @@ Take Fyges and raisouns. pyke hem and waisshe hem in Wyne. grynde hem wiþ apple
               <ingredient en="raisin" orig="raisouns" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="Wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient>
+              <ingredient en="wine" orig="Wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient>
             </item>
             <item>
               <ingredient en="apple" orig="apples" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient>
@@ -5659,7 +5667,7 @@ Take Fyges and raisouns. pyke hem and waisshe hem in Wyne. grynde hem wiþ apple
               <ingredient orig="hole spices">Ganze Gewürze</ingredient>
             </item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl zum Frittieren</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl zum Frittieren</ingredient>
             </item>
           </list>
         </div>
@@ -5678,7 +5686,7 @@ Take Creme of Cowe mylke. oþer of Almandes. do þerto ayren with sugur, safroun
           <list type="ingredients">
             <item><ingredient orig="Creme of Cowe mylke.">Sahne von Kuhmilch</ingredient> - 200 ml</item>
             <item><ingredient orig="oþer of Almandes.">Mandelmilch</ingredient> - 200 ml</item>
-            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 3</item>
+            <item><ingredient en="chicken egg" orig="ayren" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier</ingredient> - 3</item>
             <item><ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 50 g</item>
             <item><ingredient en="saffron" orig="safroun" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient> - 1 Prise</item>
             <item><ingredient orig="salt">Salz</ingredient> - 1 Prise</item>
@@ -5770,11 +5778,11 @@ Take Turbut. haddok. Codlyng. and hake. and seeþ it. grynde it smale. and do þ
             <item><ingredient orig="salt">Salz</ingredient> - 1 Prise</item>
             <item><ingredient orig="Coffyn">Mürbeteig</ingredient> - 250 g</item>
             <item>
-              <ingredient en="eel" orig="oile" commodity="wikidata:Q79213588" source="#corema-ingredient-index">Pflanzenöl zum Braten</ingredient>
+              <ingredient en="cooking oil" orig="oile" commodity="wikidata:Q427457" source="#fyndling-ingredient-context">Pflanzenöl zum Braten</ingredient>
             </item>
             <item><ingredient orig="gyngur">Ingwer</ingredient> - 1 TL</item>
             <item><ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 1 EL</item>
-            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Weißwein</ingredient> - 100 ml</item>
+            <item><ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Weißwein</ingredient> - 100 ml</item>
           </list>
         </div>
       </div>
@@ -5835,7 +5843,7 @@ Take Fyges and Raisouns. pyke hem and waisshe hem clene, skalde hem in wyne. gry
               <ingredient en="raisin" orig="Raisouns" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient>
             </item>
             <item>
-              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#corema-ingredient-index">Süßer Weißwein</ingredient>
+              <ingredient en="wine" orig="wyne" commodity="wikidata:Q282" source="#fyndling-corema-index">Süßer Weißwein</ingredient>
             </item>
             <item>
               <ingredient en="unrefined cane sugar" orig="sugur" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
@@ -5915,7 +5923,7 @@ Take and make a foyle of gode past with a roller of a foot brode. &amp; lyngur b
               <ingredient orig="creme of Cowe mylke">Kuhmilchcreme (Sahne), 250 ml</ingredient>
             </item>
             <item>
-              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier, 2 Stück</ingredient>
+              <ingredient en="chicken egg" orig="ayrenn" commodity="wikidata:Q15260613" source="#fyndling-corema-index">Eier, 2 Stück</ingredient>
             </item>
             <item>
               <ingredient orig="saundres">Sandelholzpulver, 1 TL</ingredient>

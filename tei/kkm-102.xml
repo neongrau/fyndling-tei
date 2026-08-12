@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -83,38 +91,38 @@ Knoblauchsalß die vermisch mit Wurmsamen/ ist gut mit allerley speiß zu essen 
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient en="sour cherry" orig="Weichsel oder Amerellen" commodity="wikidata:Q68438267" source="#fyndling-ingredient-name">Sauerkirschen</ingredient> - 500 g</item>
-            <item><ingredient en="gingerbread for sauce" orig="Lebkuchen" commodity="wikidata:Q1468150" source="#corema-ingredient-index">Lebkuchen</ingredient> - 50 g</item>
+            <item><ingredient en="gingerbread for sauce" orig="Lebkuchen" commodity="wikidata:Q1468150" source="#fyndling-corema-index">Lebkuchen</ingredient> - 50 g</item>
             <item><ingredient orig="gutem Wein">guter Rotwein</ingredient> - 200 ml</item>
-            <item><ingredient en="clove" orig="Negelin" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient> - 1 TL</item>
+            <item><ingredient en="clove" orig="Negelin" commodity="wikidata:Q15622897" source="#fyndling-corema-index">Nelken</ingredient> - 1 TL</item>
             <item><ingredient orig="allerley starcke Würtz">gemischte starke Gewürze</ingredient> - 1 TL</item>
             <item>
-              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#fyndling-corema-index">Salz</ingredient>
             </item>
             <item>
-              <ingredient en="parsley" orig="Peterlins" commodity="wikidata:Q25284" source="#corema-ingredient-index">Frische Petersilie</ingredient>
+              <ingredient en="parsley" orig="Peterlins" commodity="wikidata:Q25284" source="#fyndling-corema-index">Frische Petersilie</ingredient>
             </item>
             <item>
-              <ingredient en="common rue" orig="Rauten" commodity="wikidata:Q25062" source="#corema-ingredient-index">Frische Raute</ingredient>
+              <ingredient en="common rue" orig="Rauten" commodity="wikidata:Q25062" source="#fyndling-corema-index">Frische Raute</ingredient>
             </item>
             <item>
-              <ingredient en="common sage" orig="Salbey" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Frischer Salbei</ingredient>
+              <ingredient en="common sage" orig="Salbey" commodity="wikidata:Q1111359" source="#fyndling-corema-index">Frischer Salbei</ingredient>
             </item>
             <item>
               <ingredient orig="Boley">Frische Polei-Minze</ingredient>
             </item>
             <item>
-              <ingredient en="meadowsweet" orig="Meyland" commodity="wikidata:Q147176" source="#corema-ingredient-index">Frischer Majoran</ingredient>
+              <ingredient en="meadowsweet" orig="Meyland" commodity="wikidata:Q147176" source="#fyndling-corema-index">Frischer Majoran</ingredient>
             </item>
-            <item><ingredient en="garlic" orig="Knoblauch" commodity="wikidata:Q21546392" source="#corema-ingredient-index">Knoblauch</ingredient> - 2 Zehe</item>
+            <item><ingredient en="garlic" orig="Knoblauch" commodity="wikidata:Q21546392" source="#fyndling-corema-index">Knoblauch</ingredient> - 2 Zehe</item>
             <item><ingredient orig="Brotbrosam gebeutelet">gesiebte Brotkrümel</ingredient> - 50 g</item>
-            <item><ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient> - 100 ml</item>
+            <item><ingredient en="vinegar" orig="Essig" commodity="wikidata:Q41354" source="#fyndling-corema-index">Essig</ingredient> - 100 ml</item>
             <item><ingredient orig="mager Fleischbrüh">magere Fleischbrühe</ingredient> - 100 ml</item>
-            <item><ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safranfäden</ingredient> - 1 Prise</item>
+            <item><ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#fyndling-corema-index">Safranfäden</ingredient> - 1 Prise</item>
             <item>
               <ingredient orig="Beimenten">Krauseminze (Mentha crispa)</ingredient>
             </item>
             <item><ingredient orig="sawer Würtz">Handvoll saure Kräuter</ingredient> - 1</item>
-            <item><ingredient en="almond milk" orig="Mandelmilch" commodity="wikidata:Q975953" source="#corema-ingredient-index">Mandelmilch</ingredient> - 50 ml</item>
+            <item><ingredient en="almond milk" orig="Mandelmilch" commodity="wikidata:Q975953" source="#fyndling-corema-index">Mandelmilch</ingredient> - 50 ml</item>
             <item><ingredient orig="Wurmsamen">Wurmsamen</ingredient> - 1 TL</item>
           </list>
         </div>

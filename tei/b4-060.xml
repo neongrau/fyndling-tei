@@ -15,7 +15,7 @@
         <availability status="restricted">
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
         </availability>
-        <date when="2026-08-08">2026-08-08</date>
+        <date when="2026-08-12">2026-08-12</date>
         <idno type="url">https://fyndling.de/rezepte/b4-060/</idno>
         <idno type="w3id">https://w3id.org/fyndling/b4-060</idno>
       </publicationStmt>
@@ -42,7 +42,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -96,8 +104,8 @@ Das Crux-Wort „preattigs“. Die Lesart „gebratenes“ folgt dem im Korpus m
 Praxis. Mandeln, Henne und Kalbfleisch werden jeweils fein zerstoßen beziehungsweise gehackt - für die 500 Gramm Mandeln ist das im Mörser reine Handarbeit und dauert spürbar länger, als die knapp bemessene Zubereitungszeit vermuten lässt; fertig gemahlene Mandeln aus dem Handel sind die realistischere Option für die Lagerküche. Henne und Kalbfleisch sind beim Verarbeiten bereits durchgegart, ein Rohfleisch-Risiko besteht nicht. Alles zusammen kommt in die Milch und wird einmal kräftig aufgekocht; die gestoßenen Mandeln binden die Milch zu einer sämigen Sauce, ganz ohne Mehlschwitze. Der Text nennt weder eine Milchmenge noch eine Garzeit für das Sieden - diese Lücke wird hier bewusst nicht mit erfundener Präzision gefüllt. Ein Topf am offenen Feuer reicht, ein Ofen wird nicht gebraucht; die Milch braucht dabei durchgehende Aufsicht, damit sie nicht anbrennt oder ausflockt.</note>
         <note type="gloss" target="#b4-060-orig" n="gemuess" resp="#fyndling">Bedeutet hier ein feines Mus oder eine Breispeise aus zerstoßenen Zutaten, nicht ein Gemüsegericht im modernen Sinn.</note>
         <note type="gloss" target="#b4-060-orig" n="heffen" resp="#fyndling">Bairisch für Topf oder Kochgefäß, nicht zu verwechseln mit Hefe (Backtriebmittel).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#heffen"/></note>
-        <note type="gloss" target="#b4-060-orig" n="preattigs" resp="#fyndling">Vermutlich 'gebratenes' mit dem im Korpus mehrfach belegten b/p-Lautwechsel (vgl. 'pracz' = braten, 'gepraten' = gebraten). Das Wort selbst ist sonst nicht bezeugt, siehe interpretive_choices.</note>
-        <note type="interpretive_choice" target="#b4-060-orig" n="preattigs" resp="#fyndling">Gelesen als 'gebratenes' (b/p-Wechsel wie bei 'pracz' = braten, 'gepraten' = gebraten) - also gebratenes oder geröstetes Kalbfleisch, das zusammen mit der Henne fein gehackt wird.</note>
+        <note type="gloss" target="#b4-060-orig" n="preattigs" resp="#fyndling">Die Bedeutung der Fleischbezeichnung bleibt offen. Eine Lesung als ‚gebraten‘ ist möglich, eine Deutung in Richtung Kalbsbrät ebenfalls; die parallelen W1- und MHA-Fassungen lösen die Stelle nicht auf.</note>
+        <note type="interpretive_choice" target="#b4-060-orig" n="preattigs" resp="#fyndling">Die Bedeutung der Fleischbezeichnung bleibt offen. Eine Lesung als ‚gebratenes Kalbfleisch‘ ist möglich, aber nicht gesichert.</note>
       </div>
     </back>
   </text>

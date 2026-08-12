@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -1916,6 +1924,148 @@
           </list>
         </div>
       </div>
+      <div type="recipe" xml:id="w1-060">
+        <head>Kachelmus mit Ei und Safran</head>
+        <div type="original" xml:id="w1-060-orig" xml:lang="de-x-fnhd" corresp="#w1-060-trans">
+          <p>Ein kachel mus NIm gute suesse milch die solt du walln lassen vnd solt ayr ausslahen vnd geus sie doran vnd mach es ab mit guetem gwurcz vnd mit saffran daz sol er durich ein tuch slahen vnd salcz das zu massen vnd das solt du tun in die milch die ayr vnd solt ez sieden lassen vnd ain raines smalcz daran</p>
+        </div>
+        <div type="translation" xml:id="w1-060-trans" xml:lang="de" corresp="#w1-060-orig">
+          <p>Nimm gute, süße Milch und lass sie aufwallen. Schlage Eier auf und gieße sie dazu. Würze mit gutem Gewürz und Safran. Schlage es durch ein Tuch und salze es nach Maß. Gib es zu Milch und Eiern und lass es sieden. Füge reines Schmalz hinzu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="gute suesse milch">Süße Milch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ayr">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="guetem gwurcz">Gewürzmischung</ingredient>
+            </item>
+            <item>
+              <ingredient orig="saffran">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="salcz">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="raines smalcz">Reines Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="w1-061">
+        <head>Gestockte Milch und Eier</head>
+        <div type="original" xml:id="w1-061-orig" xml:lang="de-x-fnhd" corresp="#w1-061-trans">
+          <p>En gepratne NIm ein suesse milch vnd l ayr slach daran durich ein tuch wann das welt vnd dy milch welt so geus das daran vnd rur die milch vmb In dem hafen das die ayr dy milch begreifen wann sy dikch wil werden so solt du haben ein tuch daz rain sey vnd wann sy nu wellent daz dy ayr zusamen wallent so geus es auf daz tuch so magstu die milch wol gepraten vnd geus auf daz tuech vnd lass kalt werden so sneidest du sye wie du wild</p>
+        </div>
+        <div type="translation" xml:id="w1-061-trans" xml:lang="de" corresp="#w1-061-orig">
+          <p>Nimm süße Milch und schlage fünfzig Eier durch ein Tuch. Wenn dies und die Milch aufwallen, gieße es dazu und rühre die Milch im Topf, damit die Eier die Milch binden. Wenn sie dick zu werden beginnt, halte ein sauberes Tuch bereit. Wenn die Eier nun weiter aufwallen und sich zusammenballen, gieße alles auf das Tuch. So kannst du die Milch gut verfestigen. Gieße sie auf das Tuch und lass sie kalt werden. Dann schneide sie, wie du willst.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="suesse milch">Süße Milch</ingredient>
+            </item>
+            <item><ingredient orig="l ayr">Eier</ingredient> - 50</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="w1-062">
+        <head>Schwarzes Hühner-Mus mit Blut</head>
+        <div type="original" xml:id="w1-062-orig" xml:lang="de-x-fnhd" corresp="#w1-062-trans">
+          <p>Aber Ein ander gmues das swartz NIm kalbes swais mach tu das nicht gehaben darczue so nym huner swais von Iungen huneren vnd lass den In wein sieden vnd nym ein gesotne henn vnd hakch die vnd ein halbe semel vnd leg daz In den siedunden swais vnd lass wallen vnd wann es erwellt so mach ez ab mit honig das es nicht zu suess noch zu saur sey vnd bespreng das mit gestossen negeleinn vnd Ingwer vnd czuker vnd gib es hin</p>
+        </div>
+        <div type="translation" xml:id="w1-062-trans" xml:lang="de" corresp="#w1-062-orig">
+          <p>Ein weiteres schwarzes Mus:</p>
+          <p>Nimm Kalbsblut. Wenn du das nicht bekommen kannst, nimm Blut von jungen Hühnern und lass es in Wein sieden. Nimm ein gekochtes Huhn und hacke es. Gib eine halbe Semmel dazu, lege alles in das siedende Blut und lass es aufwallen.</p>
+          <p>Wenn es aufgewallt ist, vollende es mit Honig, sodass es weder zu süß noch zu sauer sei. Bestreue das Mus mit gestoßenen Nelken, Ingwer und Zucker und serviere es.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="kalbes swais">Kalbsblut</ingredient>
+            </item>
+            <item>
+              <ingredient orig="huner swais von Iungen huneren">Hühnerblut von jungen Hühnern</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wein">Wein</ingredient>
+            </item>
+            <item><ingredient orig="ein gesotne henn">Huhn, gekocht</ingredient> - 1</item>
+            <item><ingredient orig="ein halbe semel">Semmel, altbacken</ingredient> - 0.5</item>
+            <item>
+              <ingredient orig="honig">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="negeleinn">Nelken, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Ingwer">Ingwer, gemahlen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="czuker">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="w1-063">
+        <head>Hühner-Kalbfleisch-Mus mit Mandeln</head>
+        <div type="original" xml:id="w1-063-orig" xml:lang="de-x-fnhd" corresp="#w1-063-trans">
+          <p>Aber ein ander gmues NIm ein libra mandel vnd stoz die klain vnd nym ein gesotne henn vnd stoz die klain vnd nym ein preatigs kalbvleisch vnd hakch das mit der hennen klain vnd loss sie sieden In der milch vnd die milch als mit einander in dem hefn lass das zurecht sieden versalcz ez nicht</p>
+        </div>
+        <div type="translation" xml:id="w1-063-trans" xml:lang="de" corresp="#w1-063-orig">
+          <p>Hier ist ein weiteres Mus:</p>
+          <p>Nimm ein Pfund Mandeln und stoße sie fein. Nimm eine gekochte Henne und stoße sie ebenfalls fein. Nimm preatiges Kalbfleisch (die Lesung ist unsicher) und hacke es zusammen mit der Henne sehr klein.</p>
+          <p>Lass alles zusammen in Milch in einem Topf sieden. Lass es ordentlich sieden und versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ein libra mandel">Mandeln, gemahlen</ingredient> - 500 g</item>
+            <item><ingredient orig="ein gesotne henn">Huhn, gekocht</ingredient> - 1</item>
+            <item>
+              <ingredient orig="ein preatigs kalbvleisch">Kalbfleisch (Lesung unsicher)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="milch">Milch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="versalcz ez nicht">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="w1-064">
+        <head>Holunderblütenmus für die Fastenzeit</head>
+        <div type="original" xml:id="w1-064-orig" xml:lang="de-x-fnhd" corresp="#w1-064-trans">
+          <p>Ein mues von holer in der vastenn NIm holear plued vnd lasz den sieden In wasser vnd nymm ein libra mandel vnd stoz den klain vnd slach den mandel duich vnd lasz sieden vmerduz tue daran so wirt er dikch vnd czuker tue daran so wirt er suesz versalcz nicht</p>
+        </div>
+        <div type="translation" xml:id="w1-064-trans" xml:lang="de" corresp="#w1-064-orig">
+          <p>Ein Mus aus Holunderblüten für die Fastenzeit.</p>
+          <p>Nimm Holunderblüten und lass sie in Wasser sieden. Nimm ein Pfund Mandeln, stoße sie fein und schlage die Mandeln durch. Lass sie sieden. Gib Stärke hinzu, damit es dick wird, und Zucker, damit es süß wird. Versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="holear plued">Holunderblüten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wasser">Wasser</ingredient>
+            </item>
+            <item><ingredient orig="ein libra mandel">Mandeln, gemahlen</ingredient> - 500 g</item>
+            <item>
+              <ingredient orig="vmerduz">Stärke (Art offen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="czuker">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="versalcz nicht">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
       <div type="recipe" xml:id="w1-267">
         <head>Grüner Met von jungen Bienen</head>
         <div type="original" xml:id="w1-267-orig" xml:lang="de-x-fnhd" corresp="#w1-267-trans">
@@ -2869,6 +3019,97 @@ Anrichten. Das weiße Gefäß liefert zunächst kreuzweise Fäden längs der Sch
         <note type="interpretive_choice" target="#w1-059-orig" n="saffran darein" resp="#fyndling">Die doppelte Formel ‚saffran darein‘ wird nur einmal übersetzt. Da sie in der parallelen B4-Fassung fehlt, ist eine Dittographie wahrscheinlicher als eine beabsichtigte Wiederholung, aber nicht sicher nachweisbar.</note>
         <note type="interpretive_choice" target="#w1-059-orig" n="fean" resp="#fyndling">Die Form bleibt als Wort offen. Die Stellung nach der Eigelbmasse und die parallelen Fassungen sprechen funktional für Durchstreichen oder Passieren durch ein Tuch, nicht für eine gesicherte lexikalische Auflösung.</note>
         <note type="interpretive_choice" target="#w1-059-orig" n="mit dem her auf" resp="#fyndling">Die Stelle wird als Abschluss der vorangehenden Zugbewegung verstanden: ‚höre mit dem Ziehen auf‘. Der Paralleltext mha-032 hat an entsprechender Stelle ausdrücklich ‚mit dem zug hor auf‘.</note>
+        <note type="preparation_tip" target="#w1-060-trans" resp="#fyndling">Quellenablauf. Das Kachelmus beginnt mit guter, ‚süßer‘ Milch; damit ist hier frische, nicht gesäuerte Milch gemeint, nicht gezuckerte Milch. Sie soll aufwallen. Danach folgen aufgeschlagene Eier, gutes Gewürz, Safran und Salz nach Maß. Zuletzt nennt die Quelle Sieden und reines Schmalz. Zucker, Honig, eine konkrete Gewürzmischung oder ein Dessertcharakter stehen nicht im Text. Der Name verweist wahrscheinlich auf ein irdenes Gefäß, dessen genaue Form offenbleibt.
+
+Die schwierige Tuchstelle. Daz sol er durich ein tuch slahen … hat keinen eindeutigen Bezug. Möglich ist, dass Safran und Gewürz, die gesamte Eier-Milch-Speise oder ein nicht näher bestimmter Zwischenschritt durchs Tuch gehen sollen. W1 und die Parallelhandschrift B4-057 bewahren dieselbe Schwierigkeit; mha-033 ist eng verwandt, entscheidet die Frage aber ebenfalls nicht. Das Tuch darf daher nicht als sicherer Beleg für eine glatte Konsistenz oder eine bestimmte Passiermethode ausgegeben werden.
+
+Moderne Annäherung. Wer die belegte Reihenfolge erproben möchte, erhitzt frische Milch, gibt verquirlte Eier sowie Safran und eine selbst gewählte, ausdrücklich moderne Würzung zu und salzt maßvoll. Das Tuch bleibt als unsicherer Schritt kenntlich: Man kann getrennt prüfen, ob nur die Würzung oder die gesamte Masse damit gemeint sein könnte, statt eine Variante als überliefert festzuschreiben. Nach dem anschließenden Sieden wird Schmalz zugegeben. Mengen, Dauer, die genaue Mechanik des Tuchs und die Konsistenz nennt der Text nicht; moderne Bindemittel oder eine künstliche Glättung ersetzen diese offene historische Technik nicht.
+
+Einordnung. Die Kombination von Milch, Ei, Safran, Gewürz und Schmalz ergibt eine herzhafte, gebundene Speise; eine entfernte moderne Nähe zu Eier-Milch-Gerichten kann bei der Vorstellung helfen, ist aber keine historische Gleichsetzung.</note>
+        <note type="gloss" target="#w1-060-orig" n="kachel mus" resp="#fyndling">Der Name verweist auf eine ‚Kachel‘, also ein irdenes Gefäß. Dass ein Gefäßbezug vorliegt, ist gut begründet; die genaue Form des Gefäßes nennt der Text nicht.</note>
+        <note type="gloss" target="#w1-060-orig" n="walln lassen" resp="#fyndling">Bedeutet ‚aufwallen lassen‘ oder ‚zum Kochen bringen‘, also die Milch erhitzen, bis sie Blasen wirft.</note>
+        <note type="gloss" target="#w1-060-orig" n="ausslahen" resp="#fyndling">Hier im Sinne von ‚aufschlagen‘ oder ‚verquirlen‘, wie man Eier für eine Speise vorbereitet.</note>
+        <note type="gloss" target="#w1-060-orig" n="mach es ab" resp="#fyndling">Eine gängige mittelalterliche Kochformel, die ‚abschmecken und fertigstellen‘ bedeutet, oft durch Zugabe von Gewürzen oder anderen Zutaten.</note>
+        <note type="gloss" target="#w1-060-orig" n="gwurcz" resp="#fyndling">Allgemeiner Begriff für eine als gut geltende Würzung. Welche einzelnen Gewürze hier gemeint sind, sagt die Quelle nicht.</note>
+        <note type="gloss" target="#w1-060-orig" n="durich ein tuch slahen" resp="#fyndling">Wörtlich ‚durch ein Tuch schlagen‘. Der Satz lässt offen, ob sich dies auf Safran und Gewürz, auf die Eier-Milch-Mischung oder auf einen anderen vorausgesetzten Teil der Speise bezieht; auch der Zweck wird nicht erklärt.</note>
+        <note type="gloss" target="#w1-060-orig" n="zu massen" resp="#fyndling">Bedeutet ‚nach Maß‘ oder ‚in Maßen‘, also die Zutat (hier Salz) wohldosiert und nach eigenem Ermessen hinzufügen.</note>
+        <note type="gloss" target="#w1-060-orig" n="raines smalcz" resp="#fyndling">Gereinigtes Schmalz. Die Tierart benennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#w1-060-orig" n="kachel mus" resp="#fyndling">Die Bezeichnung verweist auf ein Mus mit Bezug zu einer ‚Kachel‘, einem irdenen Gefäß.</note>
+        <note type="interpretive_choice" target="#w1-060-orig" n="daz sol er durich ein tuch slahen vnd salcz das zu massen vnd das solt du tun in die milch die ayr vnd solt ez sieden lassen" resp="#fyndling">‚daz‘ bezieht sich auf einen vorhergehenden, im knappen Satzgefüge nicht eindeutig bestimmbaren Bestandteil. Der Text ordnet an, ihn durch ein Tuch zu schlagen, nach Maß zu salzen, zu Milch und Eiern zu geben und zu sieden; weder ein erneutes Zurückgeben noch ein zusätzliches Gefäß steht dort.</note>
+        <note type="preparation_tip" target="#w1-061-trans" resp="#fyndling">Welches Gericht ist das? Die Anweisung führt zu einer im Topf erhitzten, im Tuch aufgefangenen und kalt schneidbaren Milch-Ei-Masse. „Gepraten“ meint hier nicht das Braten in Fett, sondern das Verfestigen durch Hitze. Die fast wortgleiche B4-058 und die verwandten Rezepte mha-034 sowie foc-079 zeigen dieselbe Gerichtsfamilie, ohne sie mit einer heutigen Käsesorte gleichzusetzen. Zwei von ihnen belegen die Lesart an genau derselben Satzstelle: mha-034 schreibt statt gepraten das Wort beraitten (bereiten, fertigmachen), und foc-079 formuliert die Anweisung unmissverständlich als „loke þat it be stondyng“ - achte darauf, dass es fest ist. Damit steht die Deutung nicht auf einer Vermutung, sondern auf zwei unabhängigen Zeugen.
+
+Fünfzig Eier, aber keine Milchmenge. Das Zeichen vor ayr ist kein einzelnes Ei, sondern ein römisches L: Die B4-Parallelfassung schreibt ausdrücklich „fumffczigk ayr“. Die Quelle lässt die Milchmenge offen. Damit sind weder die ursprüngliche Portionszahl noch ein überliefertes Verhältnis von Milch zu Eiern bekannt.
+
+Die offene Mittelpassage. „Wann das welt vnd dy milch welt, so geus das daran“ nennt Aufwallen, anschließendes Zugießen und Rühren im hafen. Nicht eindeutig ist, ob „das“ dieselbe Masse oder eine zweite Komponente meint. Auch der Zweck des Tuchs wird nicht erklärt. Diese Unsicherheiten lassen sich nicht durch einen erfundenen Ein-Topf-Ablauf, ein bestimmtes Sieben oder ein modernes Mengenverhältnis auflösen.
+
+Praxis. Für einen heutigen Versuch ist die Quellenfolge klar genug: frische Milch und durch ein Tuch geschlagene Eier werden am Feuer gerührt, bis die Masse dick wird und die Eier sich zusammenballen; danach kommt sie auf ein sauberes Tuch, wird kalt und geschnitten. Weil die Quelle zwar fünfzig Eier, aber keine Milchmenge und keine Zeiten nennt, muss ein heutiger kleiner Testansatz seine Menge selbst ermitteln; er rekonstruiert damit kein historisches Verhältnis.</note>
+        <note type="gloss" target="#w1-061-orig" n="gepraten" resp="#fyndling">Der Titel bedeutet wörtlich „gebraten“. Im Rezept bezeichnet er das durch Hitze verfestigte, kalt schneidbare Milch-Ei-Gericht, nicht einen Pfannenbraten.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#gepraten"/></note>
+        <note type="gloss" target="#w1-061-orig" n="suesse milch" resp="#fyndling">„Süße Milch“ meint frische, ungesäuerte Milch, nicht mit Zucker gesüßte Milch.</note>
+        <note type="gloss" target="#w1-061-orig" n="l ayr" resp="#fyndling">Das Zeichen ist als römisches L zu lesen: fünfzig Eier. Die parallele B4-Fassung schreibt die Menge ausdrücklich als „fumffczigk ayr“.</note>
+        <note type="gloss" target="#w1-061-orig" n="welt / wellent" resp="#fyndling">Die Formen bezeichnen das Aufwallen. In der ersten Nennung bleibt offen, ob „das“ dieselbe Masse oder eine zweite, zuvor nicht näher bezeichnete Komponente meint.</note>
+        <note type="gloss" target="#w1-061-orig" n="hafen" resp="#fyndling">Der „Hafen“ ist das Kochgefäß, also ein Topf.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+        <note type="gloss" target="#w1-061-orig" n="begreifen" resp="#fyndling">Die Eier sollen die Milch „begreifen“, also binden und zur festen Masse zusammenführen.</note>
+        <note type="gloss" target="#w1-061-orig" n="tuch" resp="#fyndling">Ein sauberes Tuch wird zuerst beim Durchschlagen der Eier und später zum Auffangen der Masse genannt. Einen genaueren Zweck erklärt der Text nicht.</note>
+        <note type="interpretive_choice" target="#w1-061-orig" n="wann das welt vnd dy milch welt, so geus das daran" resp="#fyndling">„Das“ und die Milch sollen aufwallen; anschließend wird „das“ zugegeben und die Milch im Topf gerührt, bis die Eier binden.</note>
+        <note type="preparation_tip" target="#w1-062-trans" resp="#fyndling">Welches Gericht ist das? Ein blutgebundenes Hühner-Mus mit Wein, Honig und Gewürzen. Es ist strukturell mit Schwarzsauer und anderen Blutgerichten verwandt, aber nicht mit ihnen gleichzusetzen: Hier verlangt der Text ausdrücklich eine Balance zwischen süß und sauer. Zucker und Honig machen das Gericht deshalb nicht zu einer Nachspeise.
+
+Zur Bezeichnung. Das Wort gmues meint eine zubereitete Speise oder ein Mus, nicht Gemüse im heutigen Sinn. Die Zutatenfolge erklärt den Titel: Blut wird in Wein gesiedet, dazu kommen gehackte gekochte Henne und eine halbe Semmel. Die Semmel ist die im Text genannte Bindung; eine andere Bindetechnik wird nicht erwähnt.
+
+Praxis. Der Quellentext gibt die Reihenfolge klar vor, aber keine Mengen für Blut, Wein, Honig oder Gewürze und keine Garzeit. Kalbsblut in Wein sieden, bei fehlender Verfügbarkeit Blut von jungen Hühnern verwenden. Die gekochte Henne hacken, zusammen mit der halben Semmel in das siedende Blut geben und aufwallen lassen. Erst danach mit Honig so abschmecken, dass das Mus weder zu süß noch zu sauer ist. Gestoßene Nelken, Ingwer und Zucker werden zum Schluss darübergestreut. Für eine heutige Umsetzung bleiben die Mengen und der genaue Zeitpunkt des Aufwallens offen; sie sind im Rezept nicht überliefert.</note>
+        <note type="gloss" target="#w1-062-orig" n="gmues" resp="#fyndling">Bezeichnet hier eine zubereitete Speise oder ein Mus, nicht Gemüse im heutigen Sinn. Mit Henne und Semmel ist kein glattes Püree gemeint.</note>
+        <note type="gloss" target="#w1-062-orig" n="swais" resp="#fyndling">Bezeichnet hier Tierblut, nicht Schweiß: Das Rezept nennt Kalbsblut und als Ersatz Blut von jungen Hühnern.</note>
+        <note type="gloss" target="#w1-062-orig" n="semel" resp="#fyndling">Eine halbe Semmel dient zusammen mit dem Blut als Bindung des Mus.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+        <note type="gloss" target="#w1-062-orig" n="erwellt" resp="#fyndling">Aufgewallt, aufgekocht.</note>
+        <note type="gloss" target="#w1-062-orig" n="negeleinn" resp="#fyndling">Gewürznelken, hier gestoßen verwendet.</note>
+        <note type="preparation_tip" target="#w1-063-trans" resp="#fyndling">Welches Gericht ist das?
+
+Ein herzhaftes Mus aus Mandeln, einer gesottenen Henne und Kalbfleisch, das zusammen in ausdrücklich genannter Milch siedet. Die Quelle verlangt feines Stoßen und Hacken, nennt aber weder eine Milchmenge noch eine Garzeit oder eine Zielkonsistenz.
+
+Die offene Fleischbezeichnung.
+
+Das W1 schreibt ‚preatigs kalbvleisch‘. Die fast wortgleiche Berliner Parallelfassung b4-060 hat ‚preattigs chalb fleisch‘, die weiter ausgeführte Fassung mha-189 ‚praetig kalb fleisch‘. ‚Gebratenes Kalbfleisch‘ ist eine mögliche Lesung; ebenso bleibt eine Deutung in Richtung Kalbsbrät denkbar. Keine dieser Deutungen wird durch die Paralleltexte oder einen Wörterbuchbeleg entschieden. Für eine heutige Kochfassung muss deshalb bewusst festgelegt werden, welches Kalbfleisch verwendet und wie es gegart wird; das ist eine moderne Umsetzung, nicht eine Anweisung der Quelle.
+
+Praxis.
+
+Die Mandeln, die gesottene Henne und das Kalbfleisch werden nach dem Text sehr fein zerstoßen beziehungsweise gehackt und dann gemeinsam mit Milch in einem Topf gesiedet. Gemahlene Mandeln können die Mörserarbeit heute erleichtern. Der Text nennt keinen Zeitpunkt für Salz außer der Warnung, nicht zu versalzen. Wie viel Milch nötig ist, wie lange das Mus siedet und wodurch genau seine Konsistenz entsteht, bleibt unbezeichnet und wird hier nicht mit Zahlen oder Kochregeln ergänzt.
+
+Lagerküche.
+
+Ein großer Mörser und ein Topf genügen grundsätzlich, doch die feine Zerkleinerung ist arbeitsintensiv. Milch und Fleisch verarbeitet man ohne Kühlmöglichkeit am selben Tag.</note>
+        <note type="gloss" target="#w1-063-orig" n="gmues" resp="#fyndling">Ein ‚Mus‘ bezeichnet hier eine breiige Speise aus fein zerstoßenen Zutaten, nicht ein Gemüsegericht im modernen Sinn.</note>
+        <note type="gloss" target="#w1-063-orig" n="libra" resp="#fyndling">Ein ‚Libra‘ war ein mittelalterliches Pfund, dessen Gewicht regional variierte. Für dieses Rezept wird eine Umrechnung von etwa 500 Gramm angenommen.</note>
+        <note type="gloss" target="#w1-063-orig" n="stoz die klain" resp="#fyndling">‚Stoßen‘ bedeutet hier, die Zutaten im Mörser zu zerkleinern, bis sie eine sehr feine, breiige Konsistenz haben. ‚Klaine‘ bedeutet ‚fein‘ oder ‚klein‘.</note>
+        <note type="gloss" target="#w1-063-orig" n="hefn" resp="#fyndling">Ein ‚Hefn‘ ist ein Topf oder ein Kochgefäß, eine bairisch-österreichische Bezeichnung.</note>
+        <note type="gloss" target="#w1-063-orig" n="preatigs" resp="#fyndling">Die Bedeutung der Fleischbezeichnung bleibt offen. Eine Lesung als ‚gebraten‘ ist möglich, eine Deutung in Richtung Kalbsbrät ebenfalls; die nahezu gleiche B4-Fassung löst die Stelle nicht auf.</note>
+        <note type="interpretive_choice" target="#w1-063-orig" n="preatigs kalbvleisch" resp="#fyndling">Die Fleischbezeichnung bleibt offen. Eine Lesung als ‚gebratenes Kalbfleisch‘ ist möglich, aber nicht gesichert.</note>
+        <note type="preparation_tip" target="#w1-064-trans" resp="#fyndling">Welches Gericht ist das?
+
+Ein süßes, mit Holunderblüten aromatisiertes Mus für die Fastenzeit. Die Quelle nennt Holunderblüten, Wasser, Mandeln, Stärke und Zucker und schließt ausdrücklich mit der Warnung, nicht zu versalzen.
+
+Was der Text tatsächlich beschreibt.
+
+Zuerst sollen die Holunderblüten in Wasser sieden. Die Mandeln werden fein gestoßen und anschließend ‚durchgeschlagen‘; danach heißt es erneut, sie zu sieden. Dann kommt vmerduz hinzu, damit das Mus dick werde, schließlich Zucker, damit es süß werde. Für vmerduz ist ‚Stärke‘ gut gestützt: die Berliner Parallelfassung b4-061 schreibt an derselben Stelle vmedumb, was dem lateinischen amidum näher steht, und der Korpus führt amidon beziehungsweise amidum zwanzigmal in genau dieser eindickenden Funktion. Die konkrete Stärkeart bleibt aber offen. Ebenso nennt die Quelle weder die Menge des Wassers noch eine Dauer, eine Hitze oder die gewünschte Endkonsistenz.
+
+Die Mandeln.
+
+‚Stoßen‘ und ‚durchschlagen‘ zeigen eine feine Bearbeitung der Mandeln an. Anders als bei Rezepten, die Mandelmilch ausdrücklich nennen oder ein Tuch verlangen, steht hier weder ein Tuch noch weitere Flüssigkeit noch Mandelmilch im Wortlaut. Daraus lässt sich keine historische Herstellungstechnik ergänzen.
+
+Heutige Praxis.
+
+Für einen heutigen Versuch kann man die Mandeln fein mahlen oder im Mörser stoßen und die Blüten zunächst in Wasser erhitzen. Wie die Mandelmasse eingearbeitet und wie die Stärke angerührt wird, muss eine moderne Entscheidung bleiben, weil der Text diese Schritte nicht erklärt. Die ungefähr 500 Gramm Mandeln sind nur eine praktische Umrechnung der libra, kein gesichertes historisches Gewicht.
+
+Lagerküche.
+
+Die trockenen Zutaten lassen sich gut vorbereiten und mitführen; frische Holunderblüten sind dagegen saisonal. Ein Topf, Feuer und ein Mörser reichen als Grundausstattung.</note>
+        <note type="gloss" target="#w1-064-orig" n="mues" resp="#fyndling">Ein ‚Mus‘ ist eine dicke, breiige Speise; die genaue Zielkonsistenz benennt dieses Rezept nicht.</note>
+        <note type="gloss" target="#w1-064-orig" n="holear plued" resp="#fyndling">Holunderblüten. Die CoReMA-Sachglosse bestimmt die Verbindung eindeutig als elder flower.</note>
+        <note type="gloss" target="#w1-064-orig" n="libra" resp="#fyndling">Eine ‚libra‘ ist ein mittelalterliches Pfund. Sein Gewicht war regional verschieden; etwa 500 Gramm sind allein eine moderne Arbeitsgröße.</note>
+        <note type="gloss" target="#w1-064-orig" n="slach den mandel duich" resp="#fyndling">Nach dem feinen Stoßen sollen die Mandeln ‚durchgeschlagen‘ werden. Das weist auf weiteres Zerkleinern oder Passieren; ein Tuch, zusätzliche Flüssigkeit und die Herstellung von Mandelmilch nennt der Text jedoch nicht.</note>
+        <note type="gloss" target="#w1-064-orig" n="vmerduz" resp="#fyndling">Die CoReMA-Sachglosse und die parallele B4-Fassung stützen die Lesung als Stärke. Welche Stärkequelle gemeint ist, bleibt offen.</note>
+        <note type="gloss" target="#w1-064-orig" n="versalcz nicht" resp="#fyndling">Die ausdrückliche Schlussanweisung lautet, das Mus nicht zu versalzen.</note>
+        <note type="interpretive_choice" target="#w1-064-orig" n="holear plued" resp="#fyndling">Holunderblüten. Die CoReMA-Sachglosse bestimmt die Verbindung als elder flower.</note>
+        <note type="interpretive_choice" target="#w1-064-orig" n="vmerduz" resp="#fyndling">Stärke. Dafür sprechen die CoReMA-Sachglosse, die fast wortgleiche B4-Fassung mit ‚vmedumb‘ und die Wortfamilie vmbedum/vmerdum.</note>
+        <note type="interpretive_choice" target="#w1-064-orig" n="slach den mandel duich" resp="#fyndling">Die fein gestoßenen Mandeln werden weiter durchgearbeitet oder passiert.</note>
         <note type="preparation_tip" target="#w1-267-trans" resp="#fyndling">Welches Getränk ist das?
 
 Dieses Rezept ist kein eigenständiges Verfahren, sondern ein knapper Nachtrag zu einem anderen, ausführlicheren Met-Rezept in derselben Handschrift (dort Honig-Wasser-Ansatz, Aufkochen, Seihen, Hefezugabe). Neu ist hier nur die Auswahl: heller, junger Honig für den "grünen", also hellen und frischen Met - und das ausdrückliche Verbot, dunklen Honig hinzuzufügen. Ein direkter Zwilling (b4-265) überliefert praktisch denselben Text in derselben Handschriftenfamilie.

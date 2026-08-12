@@ -39,7 +39,15 @@
       <appInfo>
         <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
           <label>CoReMA-Zutatenindex</label>
-          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular; für die französischen, englischen, italienischen und lateinischen Quellen greift er systematisch nicht, dort bleiben die Attribute leer. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
         </application>
         <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
           <label>Kontextregeln Fyndling</label>
@@ -1930,17 +1938,17 @@
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient orig="holler pluett">Holunderblüten</ingredient>
+              <ingredient en="elder flower" orig="holler pluett" commodity="wikidata:Q67778134" source="#corema-ingredient-index">Holunderblüten</ingredient>
             </item>
             <item>
-              <ingredient orig="wasser">Wasser</ingredient>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
             </item>
             <item><ingredient orig="ain phunntt mandel">Mandeln</ingredient> - 500 g</item>
             <item>
-              <ingredient orig="vmedumb">Stärke</ingredient>
+              <ingredient en="starch" orig="vmedumb" commodity="wikidata:Q41534" source="#corema-ingredient-index">Stärke</ingredient>
             </item>
             <item>
-              <ingredient orig="zukcher">Zucker</ingredient>
+              <ingredient en="unrefined cane sugar" orig="zukcher" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
             </item>
             <item>
               <ingredient orig="versalcz nicht">Salz</ingredient>
@@ -1963,11 +1971,11 @@
             <item><ingredient orig="ein phunnt Mandel">Mandeln</ingredient> - 500 g</item>
             <item><ingredient orig="ein vierdung reyzz">Reis (für die Milch)</ingredient> - 125 g</item>
             <item>
-              <ingredient orig="milich">Milch</ingredient>
+              <ingredient en="milk" orig="milich" commodity="wikidata:Q8495" source="#corema-ingredient-index">Milch</ingredient>
             </item>
             <item><ingredient orig="ein phunnt Reyss">Reis (für das Mus)</ingredient> - 500 g</item>
             <item>
-              <ingredient orig="wasser">Wasser</ingredient>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
             </item>
             <item>
               <ingredient orig="ain zukcher">Zucker</ingredient>
@@ -1979,7 +1987,144 @@
               <ingredient orig="ein susse milich">Süße Milch</ingredient>
             </item>
             <item>
-              <ingredient orig="mandel kernn">Mandelkerne</ingredient>
+              <ingredient en="almond" orig="mandel kernn" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandelkerne</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="b4-063">
+        <head>Gestockter Mohnkäse mit Nüssen</head>
+        <div type="original" xml:id="b4-063-orig" xml:lang="de-x-fnhd" corresp="#b4-063-trans">
+          <p>Ein keas von magen NYm magen vnd mach den zu milich das ir genug sey zu einem essen vnd nym ein lott hawsen plater vnd sewd sy das sy zergee In einem wasser da slach es mit durch Wann du es nu durch geslagen hast . So sol die milich als dikch sein als die mandel milich gews die milich an die hausen plater vnd rueers durch einander vnd tue ein zukcher daran versalcz nicht vnd sol suezz sein Nu gews In In ein schussel die nicht . ze weitt sey als ein keas napph Wann es nu kalt worden ist So wirt sy hertt so tue den kes auff ein ander schussel vnd pestekch den keas mit nuss kernn vnd wild du gernn So sneid In zu vier stukchen vnd mach ein suesse mandel mich oder ein nuss milich darczu vnd gib es hin</p>
+        </div>
+        <div type="translation" xml:id="b4-063-trans" xml:lang="de" corresp="#b4-063-orig">
+          <p>Nimm Mohn und mache daraus eine Milch, so viel wie für eine Mahlzeit gebraucht wird. Nimm ein Lot Hausenblase und siede sie in Wasser, bis sie sich auflöst. Schlage sie gut durch, sobald sie zergangen ist.</p>
+          <p>Die Mohnmilch soll so dick sein wie Mandelmilch. Gieße die Mohnmilch zur aufgelösten Hausenblase und rühre beides gut durcheinander. Gib Zucker dazu, aber versalze es nicht, es soll süß schmecken.</p>
+          <p>Gieße die Masse in eine Schüssel, die nicht zu weit ist, ähnlich einem Käsenapf. Wenn sie kalt geworden ist, wird sie fest. Stürze den Käse auf eine andere Schüssel und bestecke ihn mit Nusskernen. Wer mag, schneidet ihn in vier Stücke und richtet dazu eine süße Mandelmilch oder Nussmilch an. So wird er aufgetragen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="magen">Mohn</ingredient>
+            </item>
+            <item><ingredient orig="ein lott hawsen plater">Hausenblase</ingredient> - 15 g</item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zukcher" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="nut" orig="nuss kernn" commodity="wikidata:Q11009" source="#corema-ingredient-index">Nusskerne</ingredient>
+            </item>
+            <item>
+              <ingredient orig="mandel mich oder ein nuss milich">Mandelmilch</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="b4-064">
+        <head>Fasten-Hanfkäse mit Mandeln</head>
+        <div type="original" xml:id="b4-064-orig" xml:lang="de-x-fnhd" corresp="#b4-064-trans">
+          <p>Ein andernn keas von haniff NIm haniff der Rach sey vnd stozz den vnd slach In zwir oder drey= stund durch mit gesotten wasser vnd nym ein lott hausen platter darczu vnd ein halb phunnt mandel zu einer suessen milich So machest du wol ein haniff keas vnd pestekch In wol mit wew du wild vnd versalcz In nicht</p>
+        </div>
+        <div type="translation" xml:id="b4-064-trans" xml:lang="de" corresp="#b4-064-orig">
+          <p>Nimm Hanf, der roh ist, und stoße ihn. Schlage ihn zwei- oder dreimal mit gesottenem Wasser durch.</p>
+          <p>Gib dazu ein Lot Hausenblase und ein halbes Pfund Mandeln, zu einer süßen Milch verarbeitet. So machst du gut einen Hanfkäse.</p>
+          <p>Lass ihn gut fest werden, mit was du magst, und versalze ihn nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="haniff der Rach sey">Hanf</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gesotten wasser">Wasser, gesotten</ingredient>
+            </item>
+            <item><ingredient orig="ein lott hausen platter">Hausenblase</ingredient> - 15 g</item>
+            <item><ingredient orig="ein halb phunnt mandel">Mandeln</ingredient> - 250 g</item>
+            <item>
+              <ingredient orig="versalcz">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="b4-065">
+        <head>Nusskäse mit Hausenblase</head>
+        <div type="original" xml:id="b4-065-orig" xml:lang="de-x-fnhd" corresp="#b4-065-trans">
+          <p>Ein keas von nussen NIm Nuss vnd schell die gar . schon vnd stozz die chlain vnd sewd ein lott hausen platter vnd nym das gesotten wasser slach es damit durch vnd mach die milich suezz mit zuker vnd lass nicht sieden vnd tue sy In ein keas char vnd lass sy der kaltten mach ein dunne susse milich darczu sneid In oder lass In gancz vnd versalcz nicht Also machest du aller lay keas</p>
+        </div>
+        <div type="translation" xml:id="b4-065-trans" xml:lang="de" corresp="#b4-065-orig">
+          <p>Nimm Nüsse und schäle sie gründlich sauber. Stoße sie klein.</p>
+          <p>Sied ein Lot Hausenblase in Wasser auf. Nimm das gesottene Wasser und schlage es durch die zerstoßenen Nüsse, sodass eine Nussmilch entsteht.</p>
+          <p>Mach diese Milch süß mit Zucker, lass sie danach aber nicht mehr sieden. Gieß die Masse in eine Käseform und lass sie kalt werden.</p>
+          <p>Mach dazu eine dünne, gesüßte Milch als Sauce. Schneide den fertigen Käse in Stücke oder lass ihn ganz, und versalze ihn nicht. So machst du allerlei Käse.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="nut" orig="Nuss" commodity="wikidata:Q11009" source="#corema-ingredient-index">Walnüsse</ingredient>
+            </item>
+            <item><ingredient orig="ein lott hausen platter">Hausenblase</ingredient> - 15 g</item>
+            <item>
+              <ingredient orig="gesotten wasser">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zuker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dunne susse milich">Nussmilch, dünn und gesüßt, als Sauce</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="b4-066">
+        <head>Nussmilchsuppe mit Brot</head>
+        <div type="original" xml:id="b4-066-orig" xml:lang="de-x-fnhd" corresp="#b4-066-trans">
+          <p>Ain Suppen von Nussen NIm Nussen vnd mach Daraus ein milich vnd sewd Sy Wenn du wild So sneid ein prott darein als du einer Mandel milich tuest dasselb tust du von dem magen auch wol</p>
+        </div>
+        <div type="translation" xml:id="b4-066-trans" xml:lang="de" corresp="#b4-066-orig">
+          <p>Nimm Nüsse und mache daraus eine Milch, dann lass sie aufsieden.</p>
+          <p>Wenn du magst, schneide Brot hinein, so wie du es bei einer Mandelmilch machst. Dasselbe gelingt auch gut mit Mohn.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="nut" orig="Nussen" commodity="wikidata:Q11009" source="#corema-ingredient-index">Nüsse</ingredient>
+            </item>
+            <item>
+              <ingredient>Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="prott" commodity="wikidata:Q7802" source="#corema-ingredient-index">Brot</ingredient>
+            </item>
+            <item>
+              <ingredient orig="magen">Mohn (optional, als Alternative zu den Nüssen)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="b4-067">
+        <head>Bohnenmus mit süßer Milch</head>
+        <div type="original" xml:id="b4-067-orig" xml:lang="de-x-fnhd" corresp="#b4-067-trans">
+          <p>Ain preynn von pon NIm die pon vnd mach die schon In kallttgussen vnd secz sy zu In einem schonen haffen vnd lass sy trukchen sieden das sy nicht zu waich werden Vnd nym ain rain scheaffel vnd reib sy vnczt das du sy wild an richten So peleiben sy weis vnd mach ein milich darczu welher lay du gehaben machtt das sy suess sey die tue daran vnd gib sy hin</p>
+        </div>
+        <div type="translation" xml:id="b4-067-trans" xml:lang="de" corresp="#b4-067-orig">
+          <p>Die Bohnen nehmen und in Kalklauge gründlich reinigen.</p>
+          <p>Danach in einen sauberen Topf setzen und trocken sieden lassen, damit sie nicht zu weich werden.</p>
+          <p>Ein reines Schaff nehmen und die Bohnen darin reiben, bis sie zum Anrichten bereit sind: so bleiben sie weiß.</p>
+          <p>Dazu eine Milch bereiten, welcherlei man bekommen kann, so dass sie süß ist. Die Milch über die Bohnen geben und das Gericht anrichten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="broad bean" orig="pon" commodity="wikidata:Q61672189" source="#corema-ingredient-index">Dicke Bohnen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kallttgussen">Kalklauge</ingredient>
+            </item>
+            <item>
+              <ingredient en="milk" orig="milich" commodity="wikidata:Q8495" source="#corema-ingredient-index">Milch, gesüßt</ingredient>
             </item>
           </list>
         </div>
@@ -2896,8 +3041,8 @@ Das Crux-Wort „preattigs“. Die Lesart „gebratenes“ folgt dem im Korpus m
 Praxis. Mandeln, Henne und Kalbfleisch werden jeweils fein zerstoßen beziehungsweise gehackt - für die 500 Gramm Mandeln ist das im Mörser reine Handarbeit und dauert spürbar länger, als die knapp bemessene Zubereitungszeit vermuten lässt; fertig gemahlene Mandeln aus dem Handel sind die realistischere Option für die Lagerküche. Henne und Kalbfleisch sind beim Verarbeiten bereits durchgegart, ein Rohfleisch-Risiko besteht nicht. Alles zusammen kommt in die Milch und wird einmal kräftig aufgekocht; die gestoßenen Mandeln binden die Milch zu einer sämigen Sauce, ganz ohne Mehlschwitze. Der Text nennt weder eine Milchmenge noch eine Garzeit für das Sieden - diese Lücke wird hier bewusst nicht mit erfundener Präzision gefüllt. Ein Topf am offenen Feuer reicht, ein Ofen wird nicht gebraucht; die Milch braucht dabei durchgehende Aufsicht, damit sie nicht anbrennt oder ausflockt.</note>
         <note type="gloss" target="#b4-060-orig" n="gemuess" resp="#fyndling">Bedeutet hier ein feines Mus oder eine Breispeise aus zerstoßenen Zutaten, nicht ein Gemüsegericht im modernen Sinn.</note>
         <note type="gloss" target="#b4-060-orig" n="heffen" resp="#fyndling">Bairisch für Topf oder Kochgefäß, nicht zu verwechseln mit Hefe (Backtriebmittel).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#heffen"/></note>
-        <note type="gloss" target="#b4-060-orig" n="preattigs" resp="#fyndling">Vermutlich 'gebratenes' mit dem im Korpus mehrfach belegten b/p-Lautwechsel (vgl. 'pracz' = braten, 'gepraten' = gebraten). Das Wort selbst ist sonst nicht bezeugt, siehe interpretive_choices.</note>
-        <note type="interpretive_choice" target="#b4-060-orig" n="preattigs" resp="#fyndling">Gelesen als 'gebratenes' (b/p-Wechsel wie bei 'pracz' = braten, 'gepraten' = gebraten) - also gebratenes oder geröstetes Kalbfleisch, das zusammen mit der Henne fein gehackt wird.</note>
+        <note type="gloss" target="#b4-060-orig" n="preattigs" resp="#fyndling">Die Bedeutung der Fleischbezeichnung bleibt offen. Eine Lesung als ‚gebraten‘ ist möglich, eine Deutung in Richtung Kalbsbrät ebenfalls; die parallelen W1- und MHA-Fassungen lösen die Stelle nicht auf.</note>
+        <note type="interpretive_choice" target="#b4-060-orig" n="preattigs" resp="#fyndling">Die Bedeutung der Fleischbezeichnung bleibt offen. Eine Lesung als ‚gebratenes Kalbfleisch‘ ist möglich, aber nicht gesichert.</note>
         <note type="preparation_tip" target="#b4-061-trans" resp="#fyndling">Welches Gericht ist das? Ein glattes, gesüßtes Mandelmilch-Mus mit Holunderblüten-Aroma, mit Stärke gebunden - im Kern ein Fasten-Pudding ganz ohne tierische Zutat, das seinen Geschmack allein aus Zucker und den Blüten selbst zieht. Nahezu wortgleich liegt das Rezept auch im Zwilling w1-064 vor; verwandt, aber mit Weißbrot statt Stärke gebunden, sind zwei Fasten-Rezepte des italienischen Kochs Maestro Martino (mar-098, mar-099) - eine der im Korpus am breitesten bezeugten Fastenspeisen dieser Art. Lebende Verwandte sind heutige Holunderblüten-Süßspeisen und milchfreie, stärkegebundene Puddings.
 
 Mandeln zu Mandelmilch. Stoßen und Durchschlagen der Mandeln ist die im Korpus wiederkehrende Standardtechnik, um aus ganzen Mandeln eine milchige Flüssigkeit zu gewinnen - dieselbe Wortfolge erscheint in b4-035 und w1-038 ausdrücklich im Zusammenhang mit der Mandelmilch-Herstellung. Praktisch heißt das: die Mandeln im Mörser fein zerstoßen und die Masse durch ein Tuch pressen, das den festen Trester zurückhält und nur die milchige Flüssigkeit durchlässt.
@@ -2925,6 +3070,70 @@ Praxis. Mandeln und den kleineren Teil Reis (ein Viertelpfund) in Wasser vollst�
         <note type="interpretive_choice" target="#b4-062-orig" n="milich (erste Nennung)" resp="#fyndling">Wir lesen die erste 'milich' als zugegebene Milch, die über die vorbereiteten Mandeln und den Reis gegossen wird.</note>
         <note type="interpretive_choice" target="#b4-062-orig" n="ein vierdung reyzz / ein phunnt Reyss" resp="#fyndling">Wir lesen zwei getrennte Reismengen: ein Viertelpfund Reis für die Milch-Zubereitung im ersten Schritt, und separat ein ganzes Pfund Reis für das eigentliche Mus im zweiten Schritt.</note>
         <note type="interpretive_choice" target="#b4-062-orig" n="flozz" resp="#fyndling">Wir lesen 'flözen' als 'abschöpfen' - der gekochte Reis wird mit dem Löffel aus dem Siedewasser genommen, bevor er auf das Tuch kommt.</note>
+        <note type="preparation_tip" target="#b4-063-trans" resp="#fyndling">Welches Gericht ist das? Ein mit Hausenblase gestocktes, gesüßtes Mohnmilch-Dessert, das in einer schmalen, hohen Schüssel geformt, gestürzt und mit Nusskernen besteckt wird - ein Fastenimitat von Käse, kein Gebäck. Technisch folgt es derselben Grundidee wie eine heutige gelierte Milch(ersatz)-Süßspeise nach dem Panna-cotta-Prinzip: pflanzliche "Milch" plus Geliermittel ergibt eine feste, sturzfähige Masse - nur mit Mohnmilch statt Sahne und Hausenblase statt Blattgelatine.
+
+Was heißt "da slach es mit durch"? Nachdem sich die Hausenblase im Wasser aufgelöst hat, verlangt der Text "da slach es mit durch" - primär als "schlage/rühre es gut durch" gelesen, ein gründliches Verrühren der geschmolzenen Masse. Der textlich fast identische W1-Zwilling (w1-066) liest dieselbe Stelle ("durich geslagen") dagegen ausdrücklich als Passieren durch ein Tuch, um die Hausenblasen-Lösung von Verunreinigungen zu klären, und führt das als eigenen Auslegungspunkt. Beide Lesarten passen zur Stelle; wer mag, seiht die aufgelöste Hausenblase probeweise durch ein feines Tuch, bevor sie mit der Mohnmilch vermischt wird.
+
+Praxis. Mohn zu einer Milch verarbeiten, die etwa so dick ist wie Mandelmilch - Menge und genaues Verfahren nennt das Original nicht, Einweichen und feines Vermahlen/Passieren ist die naheliegende moderne Umsetzung. Ein Lot (ca. 15 g) Hausenblase in Wasser aufkochen, bis sie sich löst, dann durchschlagen bzw. -seihen (siehe oben). Mit der Mohnmilch verrühren, süßen, nicht salzen. In eine enge, hohe Schüssel füllen und vollständig auskühlen lassen, bis die Masse fest ist. Stürzen, mit Nusskernen bestecken, nach Belieben vierteln und mit süßer Mandel- oder Nussmilch anrichten. Weil die Hausenblase-Gallerte erst im vollständig Kalten fest wird und bei Wärme wieder zerläuft, gehört dieses Dessert zuhause vorbereitet und gekühlt zum Markt mitgebracht, nicht an die Feuerküche.</note>
+        <note type="gloss" target="#b4-063-orig" n="keas von magen" resp="#fyndling">Wörtlich 'Käse aus Mohn' - eine Fastenspeise, die Konsistenz und Form von Käse imitiert, aber ohne Milchprodukt zubereitet wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="gloss" target="#b4-063-orig" n="hawsen plater" resp="#fyndling">Hausenblase, der getrocknete Schwimmblasenleim vom Stör. Wurde in Wasser aufgelöst als Geliermittel verwendet, ähnlich wie heute Gelatine.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plater"/></note>
+        <note type="gloss" target="#b4-063-orig" n="lott" resp="#fyndling">Ein Lot war ein historisches Gewichtsmaß, süddeutsch/bairisch etwa 15 g.</note>
+        <note type="gloss" target="#b4-063-orig" n="keas napph" resp="#fyndling">Ein 'Käsenapf' war ein schmales, hohes Gefäß, in dem frischer Käse zum Abtropfen und Formen gesetzt wurde - hier als Größenvergleich für die passende Schüssel genannt.</note>
+        <note type="interpretive_choice" target="#b4-063-orig" n="da slach es mit durch / durch geslagen" resp="#fyndling">Als 'schlage/rühre es gut durch' gelesen: die Anweisung, die geschmolzene, aufgelöste Hausenblase gründlich zu verrühren, sobald sie zergangen ist.</note>
+        <note type="preparation_tip" target="#b4-064-trans" resp="#fyndling">Welches Gericht ist das? Ein festwerdender Pflanzenmilch-Käse ohne Milchanteil: Hanfsamen werden wie Mandeln zu einer milchigen Flüssigkeit verarbeitet und mit Hausenblase zu einer festen Masse gebunden. Die nächste heutige Entsprechung sind vegane Nuss- oder Saatenmilch-Käsealternativen, die Pflanzenmilch mit einem Geliermittel binden - dieselbe Grundidee, nur dass dort heute meist Agar-Agar statt Fischgelatine zum Einsatz kommt.
+
+Roher Hanf. Die Textstelle „der roh sey" wurde früher als „reif" gelesen. Der wortgleiche Zwilling im Wiener Cod. 2897 hat an derselben Stelle „der roch sey" und übersetzt dies selbst eindeutig als „roh" - unverarbeiteter, roher Hanf. Auch ein zweites Rezept aus derselben Handschrift übersetzt dasselbe Wort so. Diese Lesart wird hier übernommen.
+
+Praxis. Die Hanfsamen werden zerstoßen (etwa im Mörser) und zwei- bis dreimal mit heißem Wasser durchgeschlagen und durch ein Tuch gepresst - ganz wie bei der Mandelmilch, die im selben Zug entsteht. Der Text nennt keinen eigenen Erhitzungsschritt für die Hausenblase; sie löst sich am ehesten, wenn sie der noch warmen Hanf-Mandel-Milch zugegeben wird, bevor die Masse zum Fest-Werden beiseitegestellt wird. Für Gefäß oder Form macht das Rezept bewusst keine Vorgabe („mit was du magst") - eine Schale oder ein kleines Sieb genügen. Für das Fest-Werden zusätzlich mehrere Stunden kühl einplanen, über die reine Arbeitszeit hinaus.</note>
+        <note type="gloss" target="#b4-064-orig" n="keas" resp="#fyndling">Käse - hier kein Milchkäse, sondern ein Fasten-Käseersatz aus Hanf- und Mandelmilch, gebunden mit Hausenblase.</note>
+        <note type="gloss" target="#b4-064-orig" n="haniff" resp="#fyndling">Hanf, hier die Samen, die wie Mandeln zu einer milchigen Flüssigkeit verarbeitet werden.</note>
+        <note type="gloss" target="#b4-064-orig" n="hausen platter" resp="#fyndling">Hausenblase, ein Geliermittel aus der Schwimmblase des Hausen (Stör). Diente im Mittelalter zum Binden von Käseimitaten und Sülzen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="gloss" target="#b4-064-orig" n="lott" resp="#fyndling">Lot, ein historisches Gewichtsmaß von etwa 15 Gramm.</note>
+        <note type="gloss" target="#b4-064-orig" n="suessen milich" resp="#fyndling">Süße Milch - gemeint ist hier keine Kuhmilch, sondern die milchige Flüssigkeit aus Hanf und Mandeln.</note>
+        <note type="gloss" target="#b4-064-orig" n="pestekch" resp="#fyndling">Von 'peste' = fest werden, gelieren. Die Anweisung meint, den Käse gut fest werden zu lassen.</note>
+        <note type="interpretive_choice" target="#b4-064-orig" n="pestekch" resp="#fyndling">Gelesen als Verbform von 'peste' (fest werden, gelieren) mit Bezug auf den Käse - 'lass ihn fest werden'.</note>
+        <note type="preparation_tip" target="#b4-065-trans" resp="#fyndling">Welches Gericht ist das?
+
+Ein gelierter, gesüßter Käseersatz aus Nussmilch: Statt dass Milch gerinnt, wird hier Nussmilch mit Hausenblase (Fischgelatine vom Stör) gebunden. Verwandt mit dem bekannteren Mandelziger, hier aber mit Nüssen statt Mandeln. Textlich fast wortgleich ist die Wiener Parallelhandschrift w1-068; dieselbe Grundformel - Nuss- oder Mohnmilch, Hausenblase, Käseform, kalt fest werden lassen, süße Milch als Sauce dazu - findet sich auch bei Meister Hans (mha-200) und in der Mohn-Variante w1-066.
+
+Welche Nuss ist gemeint?
+
+Der Text nennt nur „Nuss“ ohne Zusatz. Im Mittelhochdeutschen meint das meist die Walnuss, doch auch Haselnüsse wurden gelegentlich schlicht so bezeichnet - beide Lesarten bleiben vertretbar (siehe interpretive_choices).
+
+Die Sauce: zweite Nussmilch oder Kuhmilch?
+
+Für die „dünne, süße Milch“ als Sauce nennt der Text keine Zutat ausdrücklich. Nächstliegend ist eine zweite, dünnere Nussmilch analog zur ersten; ebenso denkbar ist einfache gesüßte Kuhmilch, da der Text bei dieser zweiten Milch keine Nüsse mehr erwähnt.
+
+Praxis.
+
+Das Schälen der Nüsse entfernt die bittere Haut und ergibt eine helle, milde Nussmilch. Das Kleinstoßen vergrößert die Oberfläche, damit sich beim Durchschlagen mit dem heißen Hausenblase-Wasser möglichst viel Nussfett und -eiweiß löst - für die Extraktion eignet sich, wie bei Mandelmilch üblich, ein Tuch oder ein feines Sieb, auch wenn der Text selbst kein Werkzeug nennt. Das heiße, gelatinehaltige Wasser übernimmt dabei zwei Aufgaben in einem Schritt: Es presst die Nussmilch heraus und verteilt gleichzeitig die gelöste Gelatine darin. Nach dem Süßen nicht mehr aufkochen - vermutlich, damit die bereits gelöste Gelatine ihre Bindekraft behält. Die Masse in eine Käseform füllen und kühl stellen, bis sie fest ist: Gelatine geliert beim Abkühlen. Für den Markttag heißt das: das Stück fertig und durchgekühlt mitbringen, nicht erst vor Ort ansetzen - in der Sommerhitze wird die Masse sonst nicht fest.</note>
+        <note type="gloss" target="#b4-065-orig" n="keas" resp="#fyndling">Kein echter Milchkäse, sondern ein Fasten-Käseimitat aus Nussmilch, das durch Hausenblase gebunden wird. Verwandt mit dem Mandelziger, aber mit Nüssen statt Mandeln.</note>
+        <note type="gloss" target="#b4-065-orig" n="hausen platter" resp="#fyndling">Hausenblase, die getrocknete Schwimmblase des Hausen (Stör), diente als Geliermittel. Heute stammt Isinglass fast immer aus industrieller Fischverarbeitung, nicht aus Wildfang.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="gloss" target="#b4-065-orig" n="lott" resp="#fyndling">Historisches Gewichtsmaß, im süddeutschen Raum etwa 15 bis 16 Gramm.</note>
+        <note type="gloss" target="#b4-065-orig" n="versalcz nicht" resp="#fyndling">Die Warnung, nicht zu versalzen, wirkt bei einem süßen Gericht seltsam. Vermutlich stammt die Formel aus der allgemeinen Käse-Schlussformel, die für mehrere Käsevarianten gleichzeitig galt, darunter auch salzige.</note>
+        <note type="interpretive_choice" target="#b4-065-orig" n="Nuss" resp="#fyndling">Als Walnüsse gelesen, da 'Nuss' ohne Zusatz im Mittelhochdeutschen meist die Walnuss meint, während Mandeln eigens als 'Mandel' benannt würden.</note>
+        <note type="interpretive_choice" target="#b4-065-orig" n="dunne susse milich" resp="#fyndling">Als eine zweite, dünnere Nussmilch gelesen, die als süße Sauce zum fertigen Käse gereicht wird, analog zur ersten Nussmilch im Rezept.</note>
+        <note type="preparation_tip" target="#b4-066-trans" resp="#fyndling">Welches Gericht ist das?
+
+Eine Nussmilch-Brotsuppe: gemahlene Nüsse (oder ersatzweise Mohn) werden mit Wasser zu einer pflanzlichen "Milch" verarbeitet, kurz aufgekocht und mit eingeschnittenem Brot angedickt - nach demselben Prinzip wie Mandelmilch. Die bis heute in Teilen Bayerns und Österreichs gepflegte Mandelmilchsuppe ist im Grunde die lebende Verwandte dieser Nuss-Variante, mit derselben Grundtechnik.
+
+Praxis.
+
+Nüsse fein stoßen oder mahlen, mit Wasser verrühren und durch ein Tuch seihen, um eine trinkbare Nussmilch statt einer Nusspaste zu bekommen - der Text benennt nur das fertige "milich", nicht diesen Zwischenschritt, setzt ihn aber technisch voraus, genau wie bei der Mandelmilch. Die Milch kurz aufsieden lassen, dann nach Belieben Brot einschneiden, um der dünnen Nussmilch Körper zu geben. Dieselbe Zubereitung gelingt mit Mohn statt Nüssen ebenso gut.</note>
+        <note type="gloss" target="#b4-066-orig" n="magen" resp="#fyndling">Hier nicht das Körperorgan Magen, sondern Mohn (Schlafmohn). Mohnmilch war neben Mandelmilch eine gängige Grundlage der spätmittelalterlichen Küche, besonders für Fastenspeisen. Die Lesung ist doppelt bestätigt: durch eine CoReMA-Sachglosse (Mohn, Papaver somniferum) zu diesem Rezept und zum Nachbarrezept 'Von ainem Magen keas', sowie durch die Parallelstelle in der Schwesterhandschrift W1 (w1-069), die an derselben Stelle eindeutig 'mahn' schreibt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="gloss" target="#b4-066-orig" n="Mandel milich" resp="#fyndling">Mandelmilch dient hier nur als Vergleichsmaßstab für die Zubereitungsweise, sie ist keine Zutat dieses Rezepts.</note>
+        <note type="gloss" target="#b4-066-orig" n="milich" resp="#fyndling">Gemeint ist eine aus zerstoßenen Nüssen und Wasser gewonnene Nussmilch, nicht Tiermilch.</note>
+        <note type="interpretive_choice" target="#b4-066-orig" n="Nussen" resp="#fyndling">Nüsse allgemein, ohne festgelegte Sorte im Originaltext.</note>
+        <note type="preparation_tip" target="#b4-067-trans" resp="#fyndling">Welches Gericht ist das? Ein gestampftes Bohnenmus, das mit gesüßter Milch übergossen angerichtet wird - strukturell der Vorläufer der milchgebundenen Hülsenfrucht-Pürees, die nach der Verbreitung der Kartoffel den Platz des Kartoffelbreis mit Milch einnahmen. Ein direkter Nachfolger mit identischem Namen ist nicht bekannt.
+
+Was ist die Vorreinigung 'kallttgussen'? Ob damit eine kalte Kalklauge zum Lösen der Bohnenschale oder ein bloßes mehrfaches Übergießen mit kaltem Wasser gemeint ist, lässt sich aus dem Wortlaut allein nicht sicher entscheiden. Für die schlichtere Wasser-Lesart spricht, dass der spätere Schritt - das Reiben im sauberen Trog - die Schalen ohnehin mechanisch löst; eine zusätzliche Laugenbehandlung für denselben Zweck wäre doppelt gemacht. Wer keine Kalklauge ansetzen möchte, schält die Bohnen von Hand und spült sie kalt ab - beide Wege führen zum selben Ergebnis.
+
+Praxis. Getrocknete Dicke Bohnen über Nacht einweichen, dann in wenig Flüssigkeit trocken sieden lassen, etwa eine Stunde, bis sie gar, aber nicht matschig sind - das feste Garergebnis trägt den nächsten Schritt. Kurz vor dem Anrichten die Bohnen in einem sauberen Trog oder einer Schüssel zerreiben: je frischer gerieben, desto heller bleibt die Farbe. Erst zuletzt eine gesüßte Milch darübergeben, Kuhmilch oder an Fastentagen Mandelmilch, und sofort servieren - die Milch wird nicht mitgekocht, sie ist reine Anrichte-Sauce, kein Bindemittel.</note>
+        <note type="gloss" target="#b4-067-orig" n="preynn" resp="#fyndling">Brei bzw. Mus, hier aus Bohnen gestampft. CoReMA vergleicht das Gericht mit dem slowenischen 'Žganci', einem festen Getreidebrei.</note>
+        <note type="gloss" target="#b4-067-orig" n="kallttgussen" resp="#fyndling">Vermutlich eine kalte Kalklauge, in der die Bohnen eingeweicht wurden, um die Schale zu lösen und die Bohnen weiß und sauber zu halten. Die genaue Zusammensetzung ist unklar.</note>
+        <note type="gloss" target="#b4-067-orig" n="scheaffel" resp="#fyndling">Ein sauberes Schaff, also ein hölzernes Gefäß oder ein flacher Trog, in dem die gegarten Bohnen zerrieben wurden.</note>
+        <note type="gloss" target="#b4-067-orig" n="schon" resp="#fyndling">Hier im Sinn von 'sauber, gründlich' gemeint, nicht als ästhetisches 'schön'.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="interpretive_choice" target="#b4-067-orig" n="kallttgussen" resp="#fyndling">Als Kalklauge gelesen, eine kalte, alkalische Lösung zum Reinigen und Entfernen der Bohnenschalen, gestützt durch die CoReMA-Sachglosse 'lye'.</note>
         <note type="preparation_tip" target="#b4-267-trans" resp="#fyndling">Welches Getränk ist das?
 
 Honig wird mit der doppelten Menge Wasser aufgekocht - ein klassischer Met (Honig-Wasser-Gärgetränk), keine Gewürzwein-Variante wie Hippocras (moderner Vergleichsbegriff, steht so nicht im Text) und auch kein Pyment (Honig + Wein) oder Melomel (Honig + Frucht): Wein kommt im Rezept nicht vor, und die Birne dient nur als Schwimmkörper, nicht als Zutat im fertigen Getränk. Die Konzentration wird per Schwimmprobe geprüft: Ein frisches Ei zeigt sich an der Oberfläche, sobald genug Wasser zugegeben ist; ist keins zur Hand, leistet ersatzweise eine frische Birne denselben Dienst. Solche Honig-Wasser-Gärgetränke werden bis heute unter der Bezeichnung Met (Mead) hergestellt - der historische Ei-/Birnentest hat darin ein modernes Gegenstück im Aräometer oder Refraktometer, das denselben Zweck mit einem Messgerät erfüllt (keine Abstammungslinie, nur eine Funktionsparallele).
