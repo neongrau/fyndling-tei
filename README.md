@@ -153,7 +153,14 @@ Jedes Rezept hat eine stabile Adresse:
 https://fyndling.de/rezepte/<id>/
 https://fyndling.de/o:fyndling.<id>
 ```
-Ein persistenter Bezeichner (w3id.org) ist vorbereitet, aber noch nicht aktiv.
+Bevorzugt der persistente Bezeichner, er ueberlebt einen Umzug der Daten:
+
+```
+https://w3id.org/fyndling/<id>
+```
+
+Er handelt die Repraesentation aus: `Accept: text/html` fuehrt zur Seite,
+`Accept: application/tei+xml` zur TEI-Datei.
 
 Wo die Handschrift im CoReMA-Korpus erfasst ist, löst auch deren Kennung
 auf: `https://fyndling.de/o:corema.<sigle>.<nr>`
