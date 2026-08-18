@@ -5,18 +5,25 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**2808 Rezepte** aus **36 Kochbüchern**, dazu
-36 Buchdateien mit den Quellenangaben.
+**2808 Rezepte** aus **36 Rezeptsammlungen**, dazu
+36 Dateien auf Sammlungsebene mit den Quellenangaben.
 
-Die Bücher sind unterschiedlich weit erschlossen - von einzelnen Rezepten
-bis zum vollständigen Bestand. Die Tabelle unten nennt pro Buch, wie viele
+Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
+späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
+wurde erst ab 1485 (Küchenmeisterei), alles Ältere sind Lagen aus Papier
+oder Pergament. Wir sagen deshalb Sammlung, wo es um den Text geht, und
+Handschrift oder Druck, wo der Gegenstand gemeint ist. Dank an Helmut W.
+Klug für die Präzisierung.
+
+Die Sammlungen sind unterschiedlich weit erschlossen - von einzelnen Rezepten
+bis zum vollständigen Bestand. Die Tabelle unten nennt pro Sammlung, wie viele
 es sind.
 
 ## Aufbau
 
 ```
 tei/<rezept-id>.xml        ein Rezept
-tei/books/<quelle>.xml     Buchebene: Handschrift, Edition, Lizenz
+tei/books/<quelle>.xml     Sammlungsebene: Handschrift bzw. Druck, Edition, Lizenz
 index.json                 maschinenlesbares Verzeichnis
 ```
 
@@ -41,7 +48,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 
 ## Bücher
 
-| Buch | Datierung | Rezepte | CoReMA |
+| Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
 | Ménagier de Paris | ~1393 | 286 |  |
