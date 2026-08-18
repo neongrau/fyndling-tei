@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**2796 Rezepte** aus **36 Kochbüchern**, dazu
+**2808 Rezepte** aus **36 Kochbüchern**, dazu
 36 Buchdateien mit den Quellenangaben.
 
 Die Bücher sind unterschiedlich weit erschlossen - von einzelnen Rezepten
@@ -59,11 +59,11 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Registrum Coquine | ~1431-1435 | 70 |  |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
+| Das Kochbuch der Sabina Welserin | 1553 | 56 |  |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
-| Rheinfränkisches Kochbuch | ~1445 | 52 | [B1](https://gams.uni-graz.at/o:corema.b1) |
+| Rheinfränkisches Kochbuch | ~1445 | 53 | [B1](https://gams.uni-graz.at/o:corema.b1) |
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Le Viandier de Taillevent | ~1300 | 49 |  |
-| Das Kochbuch der Sabina Welserin | 1553 | 46 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
@@ -72,7 +72,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 24 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |
-| Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 12 | [M5](https://gams.uni-graz.at/o:corema.m5) |
+| Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |
 | Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
 | Hausbuch aus Dietramszell (Cgm 467) | um 1477 | 3 | [M4](https://gams.uni-graz.at/o:corema.m4) |

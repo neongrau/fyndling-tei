@@ -153,32 +153,32 @@ Zwei Arbeitsschritte, die zusammengehören. Erst wird der Honig allein aufgekoch
 
 Die Würzung ist an eine zweite Bedingung geknüpft, kein Pflichtschritt. Der Text sagt ausdrücklich: "Willst du den Kirschmet richtig gut haben, so nimm danach ..." - strukturell dieselbe Wenn-dann-Formel wie die Eingangsbedingung des Rezepts. Erst wenn man dieses Extra will, kommen nach einigen Wochen im Fass die grob gestoßenen Gewürze in ein mit einem Stein beschwertes Säckchen, das mittig im Fass hängt, für weitere zehn bis zwölf Wochen. Die Zeitangabe im Original ("so er gesotten wirt") heißt wörtlich "wenn er gekocht/gesotten wird" - im Fass kann nach Wochen aber nichts mehr sieden, deshalb wird die Stelle hier kontextuell als "wenn er durchgegoren ist" gelesen (siehe Anmerkung zu "gesotten" und die ausgewiesene Lesart-Entscheidung dazu). Sicher ist nur: die Würzung folgt der Gärung, nicht umgekehrt - das schont die Gewürzaromen und lässt sich in der Stärke steuern, weil das Säckchen früher herausgenommen werden kann.
 
-Für Metmacher: die Zahlen. Modellrechnung aus Literaturwerten (must_model.rb, Verhältnis 2 Som Honig : 4 Som Kirschsaft, keine Wasserzugabe), keine Messung an diesem Rezept:
+Für Metmacher: die Zahlen. Modellrechnung aus Literaturwerten (must_model.rb, Verhältnis 2 Som Honig : 4 Som Kirschsaft, keine Wasserzugabe; der Kirschsaft geht direkt als Saft ein - eine frühere Fassung hatte ihn versehentlich über einen Brombeer-Kalibrierwert angenähert, siehe Korrektur unten), keine Messung an diesem Rezept:
 
 | Variante | Zucker g/l | SG (OG) | °Oe | °Brix | Säure g/l | ABV (rechnerisches Potenzial bis zur Trockene) |
 |---|---|---|---|---|---|---|
-| Ansatz 1:2 Honig:Kirschsaft, ohne Wasserzusatz (alle Boiloff-Bänder) | 432-719 | 1,167-1,277 | 167-277 | ca. 37-57 | 2,2-10,3 | 25,7-42,7 % |
+| Ansatz 1:2 Honig:Kirschsaft, ohne Wasserzusatz (alle Boiloff-Bänder) | 179-339 | 1,069-1,131 | 69-131 | 16,8-30,4 | 6,6-18,0 | 10,6-20,1 % |
 
-Die Konzentration ist rechnerisch unabhängig vom absoluten Som-Wert (großes Handelsmaß oder kleineres Haushaltsmaß, siehe ausgewiesene Lesart-Entscheidungen) - beide Lesarten liefern identische Werte, weil Honig und Kirschsaft im selben Verhältnis mitskalieren. Das theoretische Potenzial von 25,7-42,7 % Vol. ist mit keiner bekannten Hefe erreichbar:
+Die Konzentration ist rechnerisch unabhängig vom absoluten Som-Wert (großes Handelsmaß oder kleineres Haushaltsmaß, siehe ausgewiesene Lesart-Entscheidungen) - beide Lesarten liefern identische Werte, weil Honig und Kirschsaft im selben Verhältnis mitskalieren. Anders als in einer früheren, fehlerhaften Fassung dieser Rechnung ist dieses Potenzial (10,6-20,1 % Vol.) mit bekannten Hefen erreichbar oder zumindest nah dran:
 
-| Hefequelle | Realistische Gärgrenze | Vergorener Zuckeranteil | Ergebnis |
-|---|---|---|---|
-| Wilde Luft-/Kirschhautflora auf dem rohen Saft | ca. 5 % Vol. | winziger Bruchteil des Zuckers | dickflüssiger, kaum vergorener Sirup |
-| Eingefahrene Kellerpopulation im Fassholz (das Buch widmet einen großen Abschnitt der laufenden Lagerwein-Pflege) | ca. 15-18 % Vol. (physiologische Obergrenze) | größer, aber weit unter dem theoretischen Potenzial | süßer, niedrigprozentiger Met mit erheblichem Restzucker |
+| Hefequelle | Realistische Gärgrenze | Ergebnis je Band |
+|---|---|---|
+| Wilde Luft-/Kirschhautflora auf dem rohen Saft | ca. 5 % Vol. | bleibt in allen drei Bändern deutlich unter dem Potenzial stecken - ca. 95 g/l Restzucker im niedrigen, 158 g/l im mittleren, 255 g/l im hohen Band: ein süßer bis sehr süßer Met |
+| Eingefahrene Kellerpopulation im Fassholz (das Buch widmet einen großen Abschnitt der laufenden Lagerwein-Pflege), physiologische Obergrenze ca. 15-18 % Vol. | im niedrigen (10,6 %) und mittleren Band (14,4 %) liegt das gesamte Zuckerpotenzial UNTER dieser Grenze - ein praktisch trockener Met ist hier plausibel; erst im hohen Band (20,1 %) reicht die Hefe nicht mehr durch, ca. 36-87 g/l Restzucker bleiben |
 
-Beide Szenarien liegen deutlich außerhalb der üblichen Modell-Standardannahmen für leichtes Steckenbleiben - hier ist in beiden Fällen mit einem starken Steckenbleiben zu rechnen. Essigbildung ist eher unwahrscheinlich: Die hohe Zuckerdichte senkt die Wasseraktivität und bremst damit auch Essigsäurebakterien, ähnlich wie bei Konfitüren.
+Essigbildung bleibt in jedem Band unwahrscheinlich: Die für einen Melomel typische Zuckerdichte und die Säure des Kirschsafts bremsen Essigsäurebakterien.
 
 Bei dieser Modellrechnung offen bzw. für 1450 nicht belegt:
 
-- Kirschsaft wurde im Werkzeug über einen Brombeer-Kalibrierwert angenähert (an ganze Frucht kalibriert, nicht an fertigen Saft) - Richtung der Verzerrung nicht sicher bestimmbar.
+- Der Kirschsaft-Zuckerwert (8,62-15,38 g/100g) stammt aus einer Sortenstudie an GANZEN Sauerkirschen (Molecules 25(19):4587, 2020, 21 poln. Sorten), nicht an tatsächlich gepresstem historischem Saft gemessen - als Näherung vertretbar, weil Kirschen kaum Trester-Verlust haben und der untere Wert sich mit einem realen 100%-Direktsaft deckt (Rabenhorst Sauerkirsch-Muttersaft: 9,4 g Zucker/100ml, ohne Wasserzusatz). Ersetzt eine frühere Fassung, die stattdessen einen Kalibrierwert für Brombeeren verwendet hatte - eine andere Frucht, keine belegte Näherung für Kirschsaft.
 - Das Boiloff-Band ist der Werkzeug-Standard (15-40 %); der Text beschreibt nur kurzes Aufwallen ohne Reduktionsangabe wie im Schwesterrezept d792-001 - die tatsächliche Konzentration könnte am unteren Rand oder darunter liegen.
 - Honig-Dichte und Säurewerte sind moderne Messwerte, für 1450 nicht belegt, bei Honig als Naturprodukt aber vergleichsweise stabil.
 - Der Som-Absolutwert bleibt offen (siehe ausgewiesene Lesart-Entscheidungen) - für die hier gezeigte Konzentration ist das nachweislich irrelevant.
 - Der Text nennt keine Hefezugabe. Angenommen wird entweder die Wildflora des rohen Kirschsafts oder eine im Fassholz eingefahrene Kellerpopulation (plausibel, weil dasselbe Buch einen großen Abschnitt der laufenden Lagerwein-Pflege widmet) - beide Quellen sind möglich, der Text entscheidet nicht.
 
-Praxis. Für einen Hausansatz das 1:2-Verhältnis Honig:Kirschsaft direkt in trinkbarer Größe umsetzen: ca. 1,7 l Honig auf 3,3 l frischen, unvergorenen Sauerkirschsaft für 5 l Gesamtmenge (3,3 l / 6,7 l für 10 l). Honig kann dafür leicht erwärmt werden, um ihn besser zu lösen.
+Praxis. Für einen Hausansatz das 1:2-Verhältnis Honig:Kirschsaft direkt in trinkbarer Größe umsetzen: ca. 2,4 kg Honig auf 3,3 l frischen, unvergorenen Sauerkirschsaft für 5 l Gesamtmenge (4,7 kg / 6,7 l für 10 l). Honig wird abgewogen, nicht mit dem Messbecher abgemessen - im Handel wird er ohnehin nach Gewicht verkauft, und flüssiger Honig im Messbecher ist nur eine klebrige Sauerei. Der Honig kann vor dem Abwiegen leicht erwärmt werden, damit er sich später besser löst.
 
-Diese Konzentration ist für jede bekannte Hefe zu hoch, um trocken durchzugären (s. o.) - wer einen klassisch trockenen Met will, muss vom Originalverhältnis abweichen und zusätzlich Wasser zusetzen (eine bewusste moderne Abweichung, keine Rekonstruktion). Wer nah am Original bleiben will, sollte einen deutlich süßen, niedrigprozentigen Ansatz einplanen und mit Weinhefe animpfen, die zumindest weiter vergärt als reine Wildflora.
+Ob das trocken durchgärt, hängt vom tatsächlichen Zuckergehalt des verwendeten Honigs und Safts ab (Modellbandbreite 10,6-20,1 % Potenzial, s. o.): mit milderem Honig und normal reifen Kirschen (unteres bis mittleres Band) schafft das auch eine gewöhnliche Weinhefe trocken; bei sehr zuckerreichem Honig und Saft (oberes Band) bleibt selbst mit einer alkoholtoleranten Hefe (Champagner-/Weinhefestämme mit Toleranz bis ca. 18 % Vol.) ein kleiner Rest. Mit reiner Wildflora bleibt es in jedem Fall deutlich süß.
 
 Bei der Würzung NICHT das Originalverhältnis linear herunterrechnen. Bezogen auf einen möglichen großtechnischen Fasssatz (2 Som Honig + 4 Som Kirschsaft bei einem für diesen Text nicht belegten großen Som-Wert) kämen auf 5 l nur rund 0,1-0,3 g je Gewürz - eine Menge, die keine Küchenwaage mehr auflöst und die im Original nur über zehn bis zwölf Wochen Ziehzeit im riesigen Fass wirkt. Für den Hausgebrauch sinnvoller: Menge deutlich hochsetzen, Ziehzeit dafür drastisch verkürzen. Grobe Richtwerte für 5 l: je 1-2 g Ingwer, langer Pfeffer und Paradieskörner, ca. 0,5-1 g Nelken (bei gleichem Gewicht deutlich kräftiger als die anderen), 4-6 g Zimt (entspricht dem im Original ca. 3,5-fachen Anteil) - für 10 l die doppelte Menge. Im Säckchen nur noch 3-7 Tage statt zehn bis zwölf Wochen ziehen lassen, ab Tag 2-3 probieren und bei erreichter Wunschstärke sofort entfernen.
 
