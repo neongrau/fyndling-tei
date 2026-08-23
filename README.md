@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**2887 Rezepte** aus **36 Rezeptsammlungen**, dazu
+**2897 Rezepte** aus **36 Rezeptsammlungen**, dazu
 36 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -61,7 +61,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
-| Das Kochbuch der Sabina Welserin | 1553 | 95 |  |
+| Das Kochbuch der Sabina Welserin | 1553 | 100 |  |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Reichenauer Kochbuch | 15. Jh. | 75 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
@@ -73,9 +73,9 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Le Viandier de Taillevent | ~1300 | 49 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
+| Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 31 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
 | Solothurner Küchenmeisterei | um 1487 | 26 | [So1](https://gams.uni-graz.at/o:corema.so1) |
-| Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 26 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Alemannisches Büchlein von guter Speise (N1) | 1492 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 24 | [K1](https://gams.uni-graz.at/o:corema.k1) |
