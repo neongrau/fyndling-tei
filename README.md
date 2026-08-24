@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**2897 Rezepte** aus **36 Rezeptsammlungen**, dazu
+**2945 Rezepte** aus **36 Rezeptsammlungen**, dazu
 36 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -56,12 +56,12 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | The Forme of Cury | ~1390 | 192 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
-| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 122 | [B4](https://gams.uni-graz.at/o:corema.b4) |
-| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 120 | [W1](https://gams.uni-graz.at/o:corema.w1) |
+| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 127 | [B4](https://gams.uni-graz.at/o:corema.b4) |
+| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 125 | [W1](https://gams.uni-graz.at/o:corema.w1) |
+| Das Kochbuch der Sabina Welserin | 1553 | 117 |  |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
-| Das Kochbuch der Sabina Welserin | 1553 | 100 |  |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Reichenauer Kochbuch | 15. Jh. | 75 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
@@ -69,11 +69,11 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
 | Rheinfränkisches Kochbuch | ~1445 | 53 | [B1](https://gams.uni-graz.at/o:corema.b1) |
+| Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 52 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Le Viandier de Taillevent | ~1300 | 49 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
-| Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 31 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
 | Solothurner Küchenmeisterei | um 1487 | 26 | [So1](https://gams.uni-graz.at/o:corema.so1) |
 | Alemannisches Büchlein von guter Speise (N1) | 1492 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
