@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**2945 Rezepte** aus **36 Rezeptsammlungen**, dazu
+**2969 Rezepte** aus **36 Rezeptsammlungen**, dazu
 36 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -56,9 +56,9 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | The Forme of Cury | ~1390 | 192 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
-| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 127 | [B4](https://gams.uni-graz.at/o:corema.b4) |
-| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 125 | [W1](https://gams.uni-graz.at/o:corema.w1) |
-| Das Kochbuch der Sabina Welserin | 1553 | 117 |  |
+| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 133 | [B4](https://gams.uni-graz.at/o:corema.b4) |
+| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 131 | [W1](https://gams.uni-graz.at/o:corema.w1) |
+| Das Kochbuch der Sabina Welserin | 1553 | 129 |  |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
