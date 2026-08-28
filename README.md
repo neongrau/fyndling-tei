@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3025 Rezepte** aus **36 Rezeptsammlungen**, dazu
+**3043 Rezepte** aus **36 Rezeptsammlungen**, dazu
 36 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -55,10 +55,10 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | The Forme of Cury | ~1390 | 192 |  |
-| Das Kochbuch der Sabina Welserin | 1553 | 157 |  |
+| Das Kochbuch der Sabina Welserin | 1553 | 163 |  |
+| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 147 | [B4](https://gams.uni-graz.at/o:corema.b4) |
+| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 145 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
-| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 141 | [W1](https://gams.uni-graz.at/o:corema.w1) |
-| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 139 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
@@ -195,7 +195,7 @@ Dritten und stehen unter deren Lizenz mit Namensnennung; Übersetzung,
 Anmerkungen und Zutatenerschließung sind unsere Arbeit unter
 **CC BY-SA 4.0**. Die Herkunft steht pro Datei im `teiHeader`.
 
-**Achtung, zwei Lizenzen.** 18 Rezepte aus dem Rheinfränkischen Kochbuch
+**Achtung, zwei Lizenzen.** 20 Rezepte aus Haus- und Arzneibuch (792) und Rheinfränkisches Kochbuch
 stehen unter CC BY-**NC**-SA 4.0, sind also nicht kommerziell nutzbar. Alle
 übrigen stehen unter CC BY-SA 4.0. Sie sind trotzdem alle enthalten - was
 für welche Datei gilt, steht in der Datei selbst und ist maschinenlesbar:
