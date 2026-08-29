@@ -45,6 +45,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -484,7 +488,7 @@
               <ingredient en="skin" orig="heawtt" commodity="wikidata:Q1074" source="#corema-ingredient-index">Hechthaut</ingredient>
             </item>
             <item>
-              <ingredient orig="magen">Hechtmagen</ingredient>
+              <ingredient en="northern pike stomach" orig="magen" commodity="wikidata:Q107304840" source="#fyndling-ingredient-context">Hechtmagen</ingredient>
             </item>
             <item><ingredient orig="zway stukch oder drew">Hechtstücke</ingredient> - 2 Stück</item>
             <item>
@@ -520,7 +524,7 @@
               <ingredient en="liver" orig="leber" commodity="wikidata:Q1470283" source="#corema-ingredient-index">Hechtleber</ingredient>
             </item>
             <item>
-              <ingredient orig="magen">Hechtmagen</ingredient>
+              <ingredient en="northern pike stomach" orig="magen" commodity="wikidata:Q107304840" source="#fyndling-ingredient-context">Hechtmagen</ingredient>
             </item>
             <item>
               <ingredient en="fat, unspecified" orig="vaists" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Schmalz</ingredient>
@@ -1035,7 +1039,7 @@
               <ingredient orig="taig als kraepphlein">Teig, wie für Krapfen</ingredient>
             </item>
             <item>
-              <ingredient en="rabbit" orig="den hasen gancz" commodity="wikidata:Q3556748" source="#corema-ingredient-index">Hase, ganz (optional, als Variante zum Rehrücken)</ingredient>
+              <ingredient en="hare" orig="den hasen gancz" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hase, ganz (optional, als Variante zum Rehrücken)</ingredient>
             </item>
           </list>
         </div>
@@ -4002,7 +4006,7 @@
               <ingredient en="chicken liver" orig="huner leber" commodity="wikidata:Q67210929" source="#corema-ingredient-index">Hühnerleber</ingredient>
             </item>
             <item>
-              <ingredient en="opium poppy" orig="magen" commodity="wikidata:Q2007388" source="#fyndling-ingredient-name">Hühnermägen</ingredient>
+              <ingredient en="chicken stomach" orig="magen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen</ingredient>
             </item>
             <item>
               <ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
@@ -4400,13 +4404,13 @@
               <ingredient en="table salt" orig="salcz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
             </item>
             <item>
-              <ingredient en="cooking oil or animal fat" orig="Oll oder smalcz" commodity="wikidata:Q427457 wikidata:Q1423543" cert="low" source="#fyndling-ingredient-context">Öl</ingredient>
+              <ingredient en="cooking oil or lard" orig="Oll oder smalcz" commodity="wikidata:Q427457 wikidata:Q72827" cert="low" source="#fyndling-ingredient-context">Öl</ingredient>
             </item>
           </list>
         </div>
       </div>
       <div type="recipe" xml:id="b4-143">
-        <head>Gesottener Stör mit Pfeffersauce oder süßem Senf</head>
+        <head>Gesottener Stör oder Lachs mit Pfeffersauce oder süßem Senf</head>
         <div type="original" xml:id="b4-143-orig" xml:lang="de-x-fnhd" corresp="#b4-143-trans">
           <p>Ain essen von Stueren NYm Stueren oder lachsen oder hausen waikch Sy in wasser ain nacht wasch in vnd sewd In nahen gar chuell in nym ab die Suppen mit dem messer sneid In zu duennen stukchen mach darauff ein gutten pheffer Oder wildu In kalt haben So mach ein suessen seniff gilb In mit wurczen gews . Inn darauff gib es hin versalcz nicht</p>
         </div>

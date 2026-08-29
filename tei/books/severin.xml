@@ -43,6 +43,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -182,7 +186,7 @@ Vezmi chleba, vína, piva, vinného octa a v tom jednom, v kterém chceš, vymej
               <ingredient orig="vína / piva / vinného octa">Wein, Bier oder Weinessig</ingredient>
             </item>
             <item>
-              <ingredient orig="chleba">Altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="chleba" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Altbackenes Brot</ingredient>
             </item>
             <item>
               <ingredient en="apple" orig="jablek" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient>
@@ -361,7 +365,7 @@ Vezmi krve z něho na víno a ať se ustojí na víně u tichého ohně, vezmi p
               <ingredient en="beef stock" orig="polevku z hovězího masa" commodity="wikidata:Q96362190" source="#fyndling-ingredient-context">Rinderbrühe</ingredient>
             </item>
             <item>
-              <ingredient en="rabbit" orig="zajíc" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase (ganz)</ingredient>
+              <ingredient en="hare" orig="zajíc" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase (ganz)</ingredient>
             </item>
             <item>
               <ingredient en="white bread" orig="bílého chleba" commodity="wikidata:Q1501889">Weißbrot</ingredient>
@@ -459,7 +463,7 @@ Vezmi krev vod něho, neb od slepice na víno, a to zvař, znenáhla odpec zají
               <ingredient orig="krev vod něho, neb od slepice">Hasenblut oder Hühnerblut</ingredient>
             </item>
             <item>
-              <ingredient en="rabbit" orig="zajíc" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient>
+              <ingredient en="hare" orig="zajíc" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient>
             </item>
             <item>
               <ingredient en="lard" orig="sádlem" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient>
@@ -542,7 +546,7 @@ Vyvař zvěřinu v několika vodách, aby slaná nebyla, a když uvře, zkrájej
               <ingredient en="water" orig="několika vodách" commodity="wikidata:Q283">Wasser</ingredient>
             </item>
             <item>
-              <ingredient orig="topenek">Altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="topenek" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Altbackenes Brot</ingredient>
             </item>
             <item>
               <ingredient en="vinegar" orig="octem" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient>
@@ -1722,7 +1726,7 @@ Vezmi slepice, odbeř je čistě, a vezmi zvěřiny srní neb jeleniny a mandlů
               <ingredient en="clove" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Nelken, gemahlen</ingredient>
             </item>
             <item>
-              <ingredient orig="skořicí">Zimt, gemahlen</ingredient>
+              <ingredient en="cinnamon" orig="skořicí" commodity="wikidata:Q28165">Zimt, gemahlen</ingredient>
             </item>
             <item>
               <ingredient en="saffron" orig="šafránem" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safranfäden</ingredient>
@@ -1901,7 +1905,7 @@ Zastav koury, vlož na ně petružel, muškat, celý zazvor, pepř, skořici cel
               <ingredient orig="pepř">Pfeffer (ganz)</ingredient>
             </item>
             <item>
-              <ingredient orig="skořici celú">Zimtstange (ganz)</ingredient>
+              <ingredient en="cinnamon" orig="skořici celú" commodity="wikidata:Q28165">Zimtstange (ganz)</ingredient>
             </item>
             <item>
               <ingredient en="mace" orig="květ celý" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte (ganze Blüten)</ingredient>
@@ -5176,7 +5180,7 @@ Krev, pivo, polovicí vody, vař v tom, vlože tři jablka a vypera zajíc, jíc
               <ingredient en="water" orig="polovicí vody" commodity="wikidata:Q283">Wasser</ingredient>
             </item>
             <item><ingredient en="apple" orig="tři jablka" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient> - 3</item>
-            <item><ingredient en="rabbit" orig="zajíc" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
+            <item><ingredient en="hare" orig="zajíc" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
             <item>
               <ingredient en="rye bread" orig="topénku z režného chleba" commodity="wikidata:Q3893120" source="#fyndling-ingredient-name">Roggenbrot</ingredient>
             </item>

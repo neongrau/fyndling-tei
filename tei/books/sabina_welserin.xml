@@ -43,6 +43,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -768,7 +772,7 @@ daraúff.</p>
               <ingredient orig="fligel">Gänseflügel</ingredient>
             </item>
             <item>
-              <ingredient orig="magen">Gänsemagen</ingredient>
+              <ingredient en="stomach" orig="magen" commodity="wikidata:Q1029907" source="#fyndling-ingredient-context">Gänsemagen</ingredient>
             </item>
             <item>
               <ingredient orig="kragen">Gänsehals</ingredient>
@@ -1146,7 +1150,7 @@ resten vnnd jns fúrhesß thon.</p>
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="rabbit" orig="den hassen" commodity="wikidata:Q3556748" source="#corema-ingredient-index">Hase</ingredient> - 1</item>
+            <item><ingredient en="hare" orig="den hassen" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hase</ingredient> - 1</item>
             <item>
               <ingredient en="blood" orig="den schwais" commodity="wikidata:Q494268" source="#fyndling-ingredient-context">Hasenblut</ingredient>
             </item>
@@ -2392,7 +2396,7 @@ was dú gúts hast.</p>
               <ingredient en="unrefined cane sugar" orig="zúcker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
             </item>
             <item>
-              <ingredient orig="hogen zimerrerlach">Zimtstangen</ingredient>
+              <ingredient en="cinnamon" orig="hogen zimerrerlach" commodity="wikidata:Q28165">Zimtstangen</ingredient>
             </item>
             <item>
               <ingredient en="roasted fish" orig="fischbrattes" commodity="wikidata:Q899617" source="#fyndling-ingredient-name">Gebratener Fisch (optional)</ingredient>
@@ -5007,7 +5011,7 @@ jn jn der tortenpfanen bachen.</p>
               <ingredient orig="die stain all heraústhon">Kirschsteine (zu entfernen)</ingredient>
             </item>
             <item><ingredient en="unrefined cane sugar" orig="ain halb pfúnd zúcker" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 250 g</item>
-            <item><ingredient orig="ain lot zimerrerlach, klaingestossen">Zimt, fein gestoßen</ingredient> - 15 g</item>
+            <item><ingredient en="cinnamon" orig="ain lot zimerrerlach, klaingestossen" commodity="wikidata:Q28165">Zimt, fein gestoßen</ingredient> - 15 g</item>
             <item>
               <ingredient orig="boden, aus schenem mel gemacht">Mehl für den Tortenboden</ingredient>
             </item>
@@ -5034,7 +5038,7 @@ vnnd macht ain taig zú ainer torten vnnd streichts aúff.</p>
               <ingredient en="apple" orig="epffel" commodity="wikidata:Q89" source="#corema-ingredient-index">Äpfel</ingredient>
             </item>
             <item><ingredient en="unrefined cane sugar" orig="ain halb pfúnd zúcker" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 250 g</item>
-            <item><ingredient orig="ain lot zimerrerlach, klaingestossen">Zimt, fein gestoßen</ingredient> - 15 g</item>
+            <item><ingredient en="cinnamon" orig="ain lot zimerrerlach, klaingestossen" commodity="wikidata:Q28165">Zimt, fein gestoßen</ingredient> - 15 g</item>
             <item>
               <ingredient orig="ain taig">Tortenteig</ingredient>
             </item>
@@ -6229,7 +6233,7 @@ pret.</p>
               <ingredient orig="ain lattwerin von weixlen">Weichsel-Latwerge</ingredient>
             </item>
             <item>
-              <ingredient orig="rerlen">Zimtstangen</ingredient>
+              <ingredient en="cinnamon" orig="rerlen" commodity="wikidata:Q28165">Zimtstangen</ingredient>
             </item>
             <item>
               <ingredient orig="streiblentaig">Strauben-Teig</ingredient>
@@ -6251,6 +6255,224 @@ pret.</p>
             </item>
             <item>
               <ingredient en="flatbread" orig="fladen" commodity="wikidata:Q666242" source="#fyndling-ingredient-context">Fladen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="saw-155">
+        <head>Hühner in Rosmarinbrühe</head>
+        <div type="original" xml:id="saw-155-orig" xml:lang="de-x-fnhd" corresp="#saw-155-trans">
+          <p>Hiener jn rosmarin einzúmachen
+Setz die hiener zú jn ainer fleschbrie, das die brie bloß
+jber die hiener gang, lasß sý halb sieden/ vnnd lasß den
+rosmarin ains glidt langs am steidlin/ thú ain zimliche
+handtúol an die hiener aúf ain disch, vnnd nit gar zúuil/ das
+es nit pitter werd/ nim darnach die leberlen alle von hienern/
+ain súdt thon jn der súpen/ thu dan ain wenig gút
+múscatblie daran, lasß woll anainander sieden, bis dús anrichst.</p>
+        </div>
+        <div type="translation" xml:id="saw-155-trans" xml:lang="de" corresp="#saw-155-orig">
+          <p>Setze die Hühner in eine Fleischbrühe, sodass die Brühe die Hühner gerade eben bedeckt. Lass sie halb gar sieden.</p>
+          <p>Schneide den Rosmarin fingerlang von den Zweigen. Miss eine ordentliche Handvoll davon auf dem Tisch ab und gib sie zu den Hühnern, aber nicht zu viel, damit es nicht bitter wird.</p>
+          <p>Nimm danach alle Leberlein von den Hühnern und lass sie einmal in der Suppe aufwallen. Gib dann ein wenig gute Muskatblüte dazu und lass alles gut miteinander sieden, bis du es anrichtest.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken" orig="hiener" commodity="wikidata:Q864693" source="#fyndling-ingredient-name">Hühner</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="fleschbrie" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="rosemary" orig="rosmarin" commodity="wikidata:Q122679" source="#corema-ingredient-index">Rosmarin</ingredient>
+            </item>
+            <item>
+              <ingredient orig="leberlen">Hühnerleberchen</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="múscatblie" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="saw-156">
+        <head>Weinbeermus mit Schmalz und Semmel</head>
+        <div type="original" xml:id="saw-156-orig" xml:lang="de-x-fnhd" corresp="#saw-156-trans">
+          <p>Weinbermúsß machen
+Mach die weinber vor saúber vnnd wasch so schen vnnd
+drúck sý aús/ nim ain wenig, thú schmaltz darein, thú es
+jber das feúr gleich wie ain gewallen wein vnnd reib ain
+semel klain darein, langsam, das es nit knollet werde, vnnd
+lasß sieden vnnd richt es an/ vnnd see zúcker daraúf, so jst
+es gút.</p>
+        </div>
+        <div type="translation" xml:id="saw-156-trans" xml:lang="de" corresp="#saw-156-orig">
+          <p>Die Weinbeeren zuerst sauber machen, schön waschen und gut ausdrücken.</p>
+          <p>Nimm etwas von der ausgedrückten Masse und gib Schmalz dazu. Stelle es über das Feuer, ganz so wie einen aufwallenden Wein.</p>
+          <p>Reibe eine Semmel fein hinein, dabei langsam vorgehen, damit es nicht klumpig wird. Lass es sieden, richte es an und streue Zucker darüber. So ist es gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="raisin" orig="weinber" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item><ingredient en="white bread" orig="semel" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Semmel</ingredient> - 1</item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zúcker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="saw-157">
+        <head>Hühnerfrikassee mit Petersilienbrühe</head>
+        <div type="original" xml:id="saw-157-orig" xml:lang="de-x-fnhd" corresp="#saw-157-trans">
+          <p>Kalbflesch oder hennen ainzúmachen
+Wan dú wilt ain gút kalbflesch, júngen henner oder hennen/
+wilt einmachen, so schneid die hiener oder hennen jn 4
+tail vnnd seúdt sý jn ainer gúten súpen gleich alle/ als wan
+dú sý gantz súdtest, vnnd wan sý woll halb gesotten jst, so
+nim ain wenig des grenen krauts von petterling/ vnnd 3 gebet
+schniten von ainer semel vnnd die leber von ainer henen
+oder hiener/ vnnd reib sý woll jn ainem scherblin vnnd nim
+die súpen, darin sý gesotten send/ treib sý dúrch ain siblin,
+geúß es jber die hennen oder hiener, lasß es ob ainer klainen
+glút sieden/ thu ain wenig saffera vnnd pfeffer daran, so
+hastú ain gútte brie von dem petterling, vnnd setz sý mit den
+henen zú, so schmeckts woll daruon.</p>
+        </div>
+        <div type="translation" xml:id="saw-157-trans" xml:lang="de" corresp="#saw-157-orig">
+          <p>Willst du ein gutes Kalbfleisch, junge Hühner oder Hennen einmachen, so schneide die Hühner oder Hennen in vier Teile und siede sie in einer guten Brühe genauso, wie wenn du sie ganz sieden würdest.</p>
+          <p>Wenn sie schon halb gegart sind, nimm ein wenig grünes Kraut von der Petersilie, drei geröstete Scheiben Weißbrot und die Leber von einer Henne oder einem Huhn. Reibe das alles gut in einer kleinen Schüssel fein. Nimm dann die Brühe, worin das Fleisch gesotten wurde, und treibe sie durch ein Sieb.</p>
+          <p>Gieß diese durchgetriebene Brühe über die Hennen oder Hühner und lass es bei kleiner Glut weitersieden. Gib ein wenig Safran und Pfeffer dazu, so hast du eine gute Brühe von der Petersilie. Vereinige sie mit den Hennen, so schmeckt es gut davon.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="kalbflesch, júngen henner oder hennen">Kalbfleisch oder Huhn</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="ainer gúten súpen" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="des grenen krauts von petterling">Petersilie</ingredient>
+            </item>
+            <item><ingredient orig="3 gebet schniten von ainer semel">geröstete Weißbrotscheiben</ingredient> - 3 Scheibe</item>
+            <item><ingredient orig="die leber von ainer henen oder hiener">Hühnerleber</ingredient> - 1</item>
+            <item>
+              <ingredient en="saffron" orig="saffera" commodity="wikidata:Q25434" source="#fyndling-ingredient-context">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="saw-158">
+        <head>Würzige Brotsauce für Vögel</head>
+        <div type="original" xml:id="saw-158-orig" xml:lang="de-x-fnhd" corresp="#saw-158-trans">
+          <p>Brie jber fegel
+Nim gebett schniten, treib es mit ainer fleschbrie dúrch
+vnnd ain wenig essich, thú darnach saffera daran, negellen,
+pfeffer vnnd ain wenig zúcker vnnd weinberlen daran.</p>
+        </div>
+        <div type="translation" xml:id="saw-158-trans" xml:lang="de" corresp="#saw-158-orig">
+          <p>Nimm geröstete Brotschnitten und treibe sie zusammen mit einer Fleischbrühe und ein wenig Essig durch ein Sieb oder Tuch.</p>
+          <p>Gib danach Safran, Nelken, Pfeffer und ein wenig Zucker sowie Rosinen dazu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="gebett schniten">Brot, geröstet</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="fleschbrie" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffera" commodity="wikidata:Q25434" source="#fyndling-ingredient-context">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="negellen" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zúcker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weinberlen" commodity="wikidata:Q13186" source="#fyndling-ingredient-name">Rosinen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="saw-159">
+        <head>Safran-Zimt-Brühe für Rebhühner</head>
+        <div type="original" xml:id="saw-159-orig" xml:lang="de-x-fnhd" corresp="#saw-159-trans">
+          <p>Brielen jber rephiener
+Gebet semel vnnd die meglen von den hienern vnnd ain
+wenig petterling, vnnd reibs vnnd treibs mitainander saúber
+dúrch, thú saffera, zimet vnnd ain wenig brie daran.</p>
+        </div>
+        <div type="translation" xml:id="saw-159-trans" xml:lang="de" corresp="#saw-159-orig">
+          <p>Nimm Semmel und die Mägen der Hühner zusammen mit einem wenig Petersilie.</p>
+          <p>Reibe und treibe alles miteinander sauber durch ein Sieb, damit eine feine, glatte Masse entsteht.</p>
+          <p>Gib Safran, Zimt und ein wenig Brühe dazu und richte die fertige Sauce über die Rebhühner an.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="white bread" orig="semel" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Semmel</ingredient>
+            </item>
+            <item>
+              <ingredient en="opium poppy" orig="die meglen von den hienern" commodity="wikidata:Q2007388" source="#fyndling-ingredient-name">Hühnermägen</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="petterling" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffera" commodity="wikidata:Q25434" source="#fyndling-ingredient-context">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="ain wenig brie" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="partridge" orig="rephiener" commodity="wikidata:Q26106" source="#fyndling-ingredient-name">Rebhühner</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="saw-161">
+        <head>Weiße Eiweiß-Sträublein backen</head>
+        <div type="original" xml:id="saw-161-orig" xml:lang="de-x-fnhd" corresp="#saw-161-trans">
+          <p>Weisse streiblen zú bachen
+Nim das weisß von airen, klops woll, vnd ain wenig
+weisßmell, mach ain tins taiglin daraús, lasß dúrch ain
+schomleffel, kers bald vmb jm schmaltz, windts vmb ain
+walgelholtz, so werden sý krúm.</p>
+        </div>
+        <div type="translation" xml:id="saw-161-trans" xml:lang="de" corresp="#saw-161-orig">
+          <p>Nimm das Weiße von Eiern und schlage es tüchtig. Gib ein wenig weißes Mehl dazu und rühre daraus ein dünnes Teiglein an. Lass den Teig durch einen Schaumlöffel laufen und wende ihn rasch um im Schmalz. Wickle es um ein Wellholz, so werden sie krumm.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="egg white" orig="das weisß von airen" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain wenig weisßmell">Weißmehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz zum Backen</ingredient>
             </item>
           </list>
         </div>
@@ -8435,6 +8657,74 @@ Praxis. Für die dünnen Fladen die Pfanne mit Butterschmalz heiß werden lassen
         <note type="interpretive_choice" target="#saw-154-orig" n="zann" resp="#fyndling">Ein Zaun bzw. dekorativer Rand aus Gewürzen rund um die Lammfigur.</note>
         <note type="interpretive_choice" target="#saw-154-orig" n="jbereck" resp="#fyndling">In eine Ecke bzw. 'über Eck', als Ortsangabe für die getrennt aufgelegten Eier-Häufchen.</note>
         <note type="interpretive_choice" target="#saw-154-orig" n="magsts" resp="#fyndling">Kontraktion aus 'magst du es' - 'du kannst es (vergolden oder versilbern)'.</note>
+        <note type="preparation_tip" target="#saw-155-trans" resp="#fyndling">Welches Gericht ist das? Ein Suppenhuhn wird in Fleischbrühe mit Rosmarin gar gezogen und mit den eigenen Hühnerlebern sowie Muskatblüte verfeinert - eine unaufwendige Kraftbrühe mit Innereien-Einlage. Nächste lebende Verwandte sind die deutsche Hühnersuppe mit Suppenhuhn und Kräutern sowie das spätere Hühnerfrikassee, das ebenfalls Innereien wie Leber mitverwertet, hier aber noch ohne dessen später übliche Ei-Zitronen-Legierung.
+
+Reihenfolge und Garzeiten. Der Ablauf folgt der Gartechnik: Die Hühner brauchen die längste Zeit und kommen zuerst in die knapp bedeckende Brühe, ziehen dort halb gar. Der Rosmarin wird bewusst dosiert zugegeben - der Text warnt selbst vor Bitterstoffen bei zu viel Rosmarin und zu langem Sieden. Die kleinen, schnell garenden Leberlein kommen erst spät dazu, damit sie nicht verkochen, die Muskatblüte als Gewürz ganz zum Schluss.
+
+Praxis. Hühner (oder Hühnerteile) ohne Anbraten in Fleischbrühe knapp bedeckt ansetzen und halb gar ziehen lassen. Rosmarinzweige fingerlang schneiden, eine Handvoll dazugeben - nicht mehr, sonst wird die Brühe bitter - und weiterköcheln. Hühnerlebern erst gegen Ende zugeben; anders als der knappe Wortlaut "ein Aufwallen" nahelegt, empfiehlt es sich heute, die Leberlein bis zum sicheren Durchgaren mitsieden zu lassen, da Geflügelleber durchgegart serviert werden sollte (die wörtliche Lesart ist unter den interpretatorischen Entscheidungen dokumentiert). Zum Schluss mit Muskatblüte abschmecken und bis zum Anrichten weitersieden.</note>
+        <note type="gloss" target="#saw-155-orig" n="fleschbrie" resp="#fyndling">Fleischbrühe. 'Brie' ist in diesem Buch der stehende Begriff für eine gebundene Brühe oder Sauce, nicht der französische Käse.</note>
+        <note type="gloss" target="#saw-155-orig" n="steidlin" resp="#fyndling">Verkleinerungsform von 'Stiel/Steid', gemeint ist der Zweig des Rosmarins.</note>
+        <note type="gloss" target="#saw-155-orig" n="leberlen" resp="#fyndling">Verkleinerungsform von 'Lebern', hier die kleinen Hühnerlebern.</note>
+        <note type="gloss" target="#saw-155-orig" n="múscatblie" resp="#fyndling">Muskatblüte, auch Macis genannt, die getrocknete Samenhülle der Muskatnuss.</note>
+        <note type="gloss" target="#saw-155-orig" n="ains glidt langs" resp="#fyndling">Ein Fingerglied lang, also etwa 2-3 cm - eine gängige Maßangabe für Schnittlängen in diesem Buch.</note>
+        <note type="interpretive_choice" target="#saw-155-orig" n="fleschbrie" resp="#fyndling">Fleischbrühe, im Sinne von 'brie' als gebundener Brühe/Sauce, wie im gesamten Buch üblich.</note>
+        <note type="interpretive_choice" target="#saw-155-orig" n="steidlin" resp="#fyndling">Verkleinerungsform von Stiel/Steid, also der Zweig oder Stängel des Rosmarins, an dem die Länge gemessen wird.</note>
+        <note type="interpretive_choice" target="#saw-155-orig" n="aúf ain disch" resp="#fyndling">Wörtlich 'auf einen Tisch' - gemeint ist die Arbeitsfläche, auf der die Rosmarinmenge abgemessen bzw. portioniert wird, bevor sie zu den Hühnern gegeben wird. Das Buch verwendet 'aúf den disch' an anderen Stellen (saw-065, saw-067, saw-070, saw-129) ebenfalls wörtlich für den Tisch als Arbeitsfläche.</note>
+        <note type="interpretive_choice" target="#saw-155-orig" n="ain súdt thon" resp="#fyndling">Praktische Empfehlung für heute: die Leberlein bis zum sicheren Durchgaren mitsieden lassen, auch wenn das länger dauert als ein einzelnes Aufwallen - Geflügelleber sollte durchgegart serviert werden.</note>
+        <note type="preparation_tip" target="#saw-156-trans" resp="#fyndling">Welches Gericht ist das? Ein mit Semmelbröseln gebundenes, gezuckertes Weinbeerenmus - keine Mehlspeise im modernen Sinn, sondern eine Vorstufe der süddeutschen Familie, die Frucht mit Fett erhitzt und mit Brot statt Mehl bindet, wie später etwa Apfelkoch mit Bröseln oder der Scheiterhaufen.
+
+Weinbeeren: Rosinen oder frische Trauben? Der Text nennt nur saubermachen, waschen, auspressen - kein Einweichen. Bei getrockneten Rosinen ist das für sich genommen wenig ergiebig, aus Trockenobst presst sich ohne vorheriges Einweichen kaum Flüssigkeit; bei frischen Weintrauben zur Erntezeit ergibt derselbe Wortlaut ohne Zusatzannahme Saft und Fruchtfleisch. Der Text selbst entscheidet die Frage nicht.
+
+Praxis. Wer mit Rosinen arbeitet, weicht sie vor dem Waschen und Auspressen kurz in warmem Wasser ein - der Text erwähnt diesen Schritt nicht, aber ohne ihn lässt sich aus Trockenobst kaum etwas auspressen. Bei frischen Weintrauben entfällt dieser Schritt. Die ausgedrückte Masse mit Schmalz in einen Topf geben und bei mittlerer Hitze erwärmen, bis sie blubbert wie kochender Wein. Eine Semmel fein hineinreiben, dabei langsam vorgehen, damit sich keine Klumpen bilden. Kurz weitersieden lassen, anrichten und mit Zucker bestreuen.</note>
+        <note type="gloss" target="#saw-156-orig" n="weinber" resp="#fyndling">Weinbeeren - im Zweifel getrocknete Rosinen. Denkbar ist auch die frische Traube zur Erntezeit, siehe interpretive_choices. Das Transkript nennt nur saubermachen, waschen und auspressen - ein Einweichen wird nicht erwähnt.</note>
+        <note type="gloss" target="#saw-156-orig" n="gewallen wein" resp="#fyndling">Vergleich mit aufwallendem, gekochtem Wein - eine Bild-Angabe für die richtige Hitze und Blasenbildung, kein Weinzusatz im Rezept.</note>
+        <note type="gloss" target="#saw-156-orig" n="semel" resp="#fyndling">Geriebene Semmel dient als Bindemittel, nicht Mehl - eine typische Bindetechnik der Zeit vor der Mehlschwitze.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+        <note type="gloss" target="#saw-156-orig" n="knollet" resp="#fyndling">Klumpig - ein im Augsburger Dialekt echtes Wort, das vor dem Verklumpen des Bindemittels warnt.</note>
+        <note type="interpretive_choice" target="#saw-156-orig" n="weinber" resp="#fyndling">Getrocknete Weinbeeren (Rosinen) - Standardlesart des Begriffs im Korpus. Das Transkript belegt nur saubermachen, waschen und auspressen; ein Einweichen vor der Verarbeitung wird nicht erwähnt.</note>
+        <note type="preparation_tip" target="#saw-157-trans" resp="#fyndling">Welches Gericht ist das? Ein brühgesottenes Huhn (wahlweise Kalbfleisch), dessen Kochsud mit geröstetem Weißbrot, Hühnerleber und Petersilie zu einer gebundenen, safrangelben Sauce verarbeitet und über das Fleisch zurückgegossen wird. Das ist strukturell ein frühes Hühnerfrikassee: Das Fleisch wird separat gegart, die Garflüssigkeit zur Sauce veredelt und über das Fleisch zurückgegeben - dieselbe Grundidee wie beim heutigen fricassée de volaille oder, mit Kalbfleisch, der späteren blanquette de veau. Der Unterschied: 1553 binden noch Brot und Leber, nicht Mehlschwitze oder Eigelb-Sahne.
+
+Zur Reibschale. Scherblin ist Diminutiv von Scherbe. Der Text lässt offen, ob eine kleine Reib- oder Mörserschale oder ein kleiner irdener Tiegel gemeint ist - für das Zerreiben von Leber, Brot und Petersilie macht das keinen praktischen Unterschied.
+
+Zur Bindemasse. Der Text sagt nicht ausdrücklich, wann die fein zerriebene Masse aus Leber, Brot und Petersilie wieder zur Brühe kommt - nach dem Reiben ist nur noch vom Sieben und Übergießen der Brühe die Rede. Rein wörtlich bliebe die Masse damit ungenutzt, was der erkennbaren Bindefunktion von Brot und Leber widerspräche. Praktisch sinnvoll: die Masse beim bzw. kurz vor dem Durchtreiben der Brühe durchs Sieb mit einrühren, sodass sie beim Weitersieden vollständig mitgart - das gilt besonders für die rohe Hühnerleber, die durchgegart sein muss, bevor serviert wird.
+
+Praxis. Hühner (oder Kalbfleisch) vierteln und in Brühe knapp halbgar sieden. Petersilie, drei geröstete Weißbrotscheiben und eine rohe Hühnerleber in einer kleinen Schale fein zerreiben. Die Brühe durch ein Sieb treiben, mit der geriebenen Masse verrühren, über das Fleisch zurückgießen und bei kleiner Glut weitersieden lassen, bis die Leber durchgegart und die Sauce sämig ist. Mit Safran und Pfeffer abschmecken.</note>
+        <note type="gloss" target="#saw-157-orig" n="ainzúmachen / einmachen" resp="#fyndling">Bezeichnet hier keine Vorratshaltung, sondern eine Zubereitungstechnik: Fleisch wird in einer mit Leber, Brot und Kräutern gebundenen Brühe fertiggegart, vergleichbar einem frühen Frikassee.</note>
+        <note type="gloss" target="#saw-157-orig" n="gebet" resp="#fyndling">Geröstet, leicht gebähtes Weißbrot, das zusammen mit Leber und Petersilie die Sauce bindet.</note>
+        <note type="gloss" target="#saw-157-orig" n="brie" resp="#fyndling">In diesem Kochbuch der Standardbegriff für eine gebundene, oft safrangelb gefärbte Sauce oder Brühe, nicht der Käse.</note>
+        <note type="gloss" target="#saw-157-orig" n="scherblin" resp="#fyndling">Kleine Reib- oder Mörserschale, in der Leber, Brot und Petersilie fein zerrieben werden.</note>
+        <note type="gloss" target="#saw-157-orig" n="henner" resp="#fyndling">Hapax im Korpus, wahrscheinlich eine dialektale Nebenform zu 'hiener' (Hühner) - Birlingers Schwäbisch-Augsburgisches Wörterbuch glossiert 'hun pl. hiener'. Nicht als eigene Bezeichnung für männliche Tiere ('Hahn') zu lesen: Der Text verwendet durchgehend 'hiener oder hennen' als feste Dublette, ein 'Han' kommt sonst nicht vor.</note>
+        <note type="interpretive_choice" target="#saw-157-orig" n="scherblin" resp="#fyndling">Kleine Reib- oder Mörserschale, in der Leber, Brot und Petersilie fein zerrieben werden.</note>
+        <note type="interpretive_choice" target="#saw-157-orig" n="Zeitpunkt der Zugabe von Leber, Brot und Petersilie" resp="#fyndling">Die geriebene Masse aus Leber, Brot und Petersilie wird beim bzw. kurz vor dem Durchtreiben der Brühe durchs Sieb mit eingerührt und beim Weitersieden mitgegart.</note>
+        <note type="preparation_tip" target="#saw-158-trans" resp="#fyndling">Welches Gericht ist das? Eine mit geröstetem Brot gebundene, safrangelbe, süß-säuerliche Gewürzsauce für Vögel: Essig gegen die Süße von Zucker und Rosinen, Safran fürs Gilben, Nelken und Pfeffer für die Schärfe. Die Brotbindung statt Mehl teilt sie mit einer ganzen Familie von Saucen im Korpus, die sich selbst oft Galantine nennen (siehe verwandte Rezepte); strukturell ist sie die deutsche Verwandte der englischen bread sauce zu Truthahn oder Huhn, geschmacklich aber näher an der bis heute bekannten süß-sauren Gewürzsauce zu Gans oder Wildgeflügel.
+
+Praxis. Brot rösten (bähen) - das entzieht Feuchtigkeit und macht die Krume fest genug zum sauberen Durchtreiben. Mit heißer, bereits fertiger Fleischbrühe und etwas Essig durch ein Sieb oder Tuch treiben, bis keine Klümpchen mehr da sind; der Urtext nennt dabei keinen eigenen Kochschritt, die Wärme kommt allein aus der schon heißen Brühe. Danach Safran, Nelken, Pfeffer, Zucker und Rosinen dazugeben. Mengenverhältnisse von Brot, Brühe und Essig nennt der Urtext nicht - hier nach Augenmaß bis zur gewünschten sämigen Konsistenz arbeiten.</note>
+        <note type="gloss" target="#saw-158-orig" n="Brie" resp="#fyndling">Frühneuhochdeutsch für 'Brühe' oder gebundene Sauce, nicht der französische Weichkäse. Im Titel 'Brie über Vögel' also 'Sauce über Vögel'; das Wort ist mit 59 Belegen eines der häufigsten im Buch, kein Einzelbeleg.</note>
+        <note type="gloss" target="#saw-158-orig" n="fleschbrie" resp="#fyndling">Zusammengesetzt aus 'flesch' (Fleisch, entrundete schwäbische Form) und 'brie' (Brühe): Fleischbrühe.</note>
+        <note type="gloss" target="#saw-158-orig" n="gebett schniten" resp="#fyndling">Geröstete oder gebähte Brotschnitten, die hier als Bindemittel für die Sauce dienen, ganz wie im 16. Jahrhundert üblich mit Brot statt mit Mehl gebunden wurde.</note>
+        <note type="gloss" target="#saw-158-orig" n="weinberlen" resp="#fyndling">Verkleinerungs- und Sammelform von 'Weinbeeren', im Buch durchgehend im Sinne von getrockneten Rosinen verwendet.</note>
+        <note type="preparation_tip" target="#saw-159-trans" resp="#fyndling">Welches Gericht ist das? Eine mit Semmel und Hühnermägen gebundene, mit Safran und Zimt gewürzte Brühe (ein „Brielein“) zu gebratenem Federwild - der vormoderne Verwandte einer Innereien-Bratensauce (giblet gravy). Die Bindung läuft über Brot statt Mehlschwitze, die Geschmackstiefe kommt aus den mitverarbeiteten Mägen, ganz wie bei der klassischen englischen giblet gravy zum Braten, hier aber mit Safran und Zimt statt Thymian und Lorbeer gewürzt, wie es die reiche Augsburger Patriziertafel vorgibt.
+
+Werden die Mägen gegart? Der Text nennt an keiner Stelle ein Sieden oder Kochen für die Mägen - wörtlich genommen werden sie roh gerieben und durch ein Sieb getrieben. Praktisch ist das mühsam: rohes Muskelgewebe lässt sich kaum fein reiben. Empfehlung für die Praxis: die Mägen vor dem Reiben kurz blanchieren oder dünsten, dann mit der Semmel fein reiben und durchtreiben - das ist eine Ergänzung aus Gründen der Verarbeitbarkeit und Lebensmittelsicherheit, keine wörtlich belegte Vorgabe des Textes.
+
+Wird die fertige Masse noch erhitzt? Auch das sagt der Text nicht - er endet nach der Zugabe von Safran, Zimt und Brühe ohne Sieden-Verb, anders als viele Parallelrezepte im selben Buch, die ausdrücklich „lasß sieden“ schreiben. Für die Praxis empfiehlt sich, die Masse kurz zu erwärmen oder leicht köcheln zu lassen, bevor sie über die Rebhühner kommt.
+
+Praxis. Semmel und rohe (oder kurz blanchierte) Hühnermägen mit etwas Petersilie fein reiben, durch ein feines Sieb oder Passiertuch treiben, bis eine glatte Masse entsteht. Safran, Zimt und ein wenig Hühnerbrühe unterrühren, kurz erwärmen und über gebratene Rebhühner (ersatzweise Perlhuhn oder Wachtel) anrichten. Ohne Ofen machbar, Sieb und Feuerstelle genügen.</note>
+        <note type="gloss" target="#saw-159-orig" n="Brielen" resp="#fyndling">Brühlein, also kleine gebundene Saucen. Titelgebender Begriff, bestätigt die Lesart von 'brie' im Rezepttext als Brühe, nicht als Käse Brie und nicht als Brei.</note>
+        <note type="gloss" target="#saw-159-orig" n="meglen" resp="#fyndling">Mägelein, also (Hühner-)Mägen. Sie werden hier zusammen mit der Semmel als Binde- und Geschmacksträger für die Sauce verwendet.</note>
+        <note type="gloss" target="#saw-159-orig" n="rephiener" resp="#fyndling">Rebhühner, das Federwild, über das die Brühe am Ende gegossen wird.</note>
+        <note type="gloss" target="#saw-159-orig" n="semel" resp="#fyndling">Semmel als Bindemittel. Mehl als Bindung war im 16. Jahrhundert noch unüblich, gebunden wurde mit Brot, Mandeln, Ei oder Reis.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+        <note type="interpretive_choice" target="#saw-159-orig" n="brie" resp="#fyndling">Brühe beziehungsweise Brühlein, eine dünne gebundene Sauce, bestätigt durch den Rezepttitel 'Brielen'.</note>
+        <note type="interpretive_choice" target="#saw-159-orig" n="Garzustand der Hühnermägen" resp="#fyndling">Praxisempfehlung: Mägen vor dem Reiben kurz blanchieren oder dünsten, dann mit der Semmel fein reiben und durch ein Sieb treiben - der Text nennt kein Gar-Verb, aus Gründen der Verarbeitbarkeit und Lebensmittelsicherheit bei rohen Geflügelinnereien aber sinnvoll.</note>
+        <note type="interpretive_choice" target="#saw-159-orig" n="Erhitzung der fertigen Masse" resp="#fyndling">Praxisempfehlung: die fertige Masse mit Safran, Zimt und Brühe kurz erwärmen oder leicht köcheln lassen, bevor sie angerichtet wird.</note>
+        <note type="preparation_tip" target="#saw-161-trans" resp="#fyndling">Welches Gericht ist das? Diese „weißen Sträublein" sind ein gezogenes Schmalzgebäck: ein dünnflüssiger Eiweißteig läuft durch einen Schaumlöffel ins heiße Fett und wird dort um ein Wellholz gewickelt. Es ist die unmittelbare Vorstufe der bis heute in Bayern und Österreich, vor allem Tirol, verbreiteten Strauben (Kirtagsstrauben, Rahmstrauben) - Technik und Name sind seit dem 16. Jahrhundert im Kern unverändert. Im selben Kochbuch stehen mit den „Gebackenen Strauben" (mit einem Trichter statt dem Schaumlöffel) und dem „Struben-Teig für einen Tisch" zwei weitere Fassungen desselben Gerichts, dort jeweils mit ganzem statt nur weißem Ei.
+
+Was heißt „ein dünnes Teiglein"? Die Wortform „tins" vor „taiglin" lässt sich weder bei Lexer noch bei Benecke belegen und bleibt unsicher. Die Lesart „ein dünnes Teiglein" stützt sich auf den Zusammenhang - ein Teig, der durch die Löcher eines Schaumlöffels laufen soll, muss flüssig genug dafür sein - und auf zwei wortgleiche Belege im selben Buch (saw-047, saw-143: „ain tins taiglin"), die dort ebenfalls als „dünnes Teiglein" übersetzt sind. Kein Wörterbuch führt „tins" in dieser Bedeutung, die Deutung bleibt kontextgestützt, nicht wörtlich belegt.
+
+Praxis. Das Eiweiß wird tüchtig geschlagen - aber nicht zu Schnee, sonst läuft es nicht mehr als Faden durch die Löcher des Schaumlöffels, sondern bleibt als Klumpen hängen. Mit wenig Mehl zu einem dünnflüssigen Teig verrührt, lässt man ihn durch einen Schaumlöffel in Fäden ins heiße Schmalz laufen; dort wird er kurz gewendet, denn dünne Fäden bräunen schnell. Sofort danach, solange die Fäden noch heiß und biegsam sind, werden sie um ein Wellholz gewickelt - beim Erkalten behalten sie dann die charakteristische krumme Form. Alles ist mit Topf, Schaumlöffel und Wellholz über offenem Feuer machbar, ohne Ofen.</note>
+        <note type="gloss" target="#saw-161-orig" n="streiblen" resp="#fyndling">Sträublein bzw. Struben, ein gezogenes Schmalzgebäck aus dünnem Teig, das spiralig in heißes Fett getropft und dort geformt wird.</note>
+        <note type="gloss" target="#saw-161-orig" n="schomleffel" resp="#fyndling">Schaumlöffel, ein gelochter Schöpflöffel, durch den der dünne Teig portionsweise ins heiße Fett gelassen wird.</note>
+        <note type="gloss" target="#saw-161-orig" n="walgelholtz" resp="#fyndling">Walgerholz bzw. Wellholz, das Rollholz, um das die gebackenen Teigstränge gewickelt werden, damit sie ihre krumme Form bekommen.</note>
+        <note type="interpretive_choice" target="#saw-161-orig" n="tins taiglin" resp="#fyndling">ein dünnes Teiglein - 'tins' als dialektale Lautform von 'dünnes' (d→t-Verhärtung, ü→i-Verengung im Augsburgischen).</note>
         <note type="preparation_tip" target="#saw-163-trans" resp="#fyndling">Welches Gericht ist das? Ein Gewürzhonig-Model-Gebäck, das im Text selbst schon 1553 als „Niernberger lezeltlach" bezeichnet wird - der direkte Vorläufer des heutigen, geografisch geschützten Nürnberger Lebkuchens. Die Familie reicht weiter: mitteleuropäische Gewürzhonig-Model-Gebäcke wie die Basler Läckerli oder die böhmischen Perníky gehören zur selben Tradition aus Honig, grobem Gewürz und Model-Prägung.
 
 Wie viel Mehl ist „ain vierling"? Der Vierling war ein regionales Hohlmaß, dessen genaue Größe für Augsburg 1553 nicht sicher überliefert ist. Ein Zwillingsrezept aus demselben Themenkreis (wo10-023) belegt für dieselbe Zutat ausdrücklich „das mel hat kein antzal" - also ohne festes Maß - und bestätigt damit unabhängig, dass die Menge nach Konsistenz statt nach fester Zahl zu bemessen ist. Beim Nachkochen an der Teigkonsistenz orientieren, nicht an einer festen Gramm-Zahl.

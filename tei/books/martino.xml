@@ -43,6 +43,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -111,19 +115,19 @@ Carne grossa di bove et de vacca vole esser allessa; carne de vitello, zioè il 
               <ingredient orig="Carne di capretto">Ziegenkitzfleisch, gesotten oder gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="la parte de drieto (de capretto)" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Hinteres Ziegenkitzfleisch, gebraten</ingredient>
+              <ingredient en="goat meat" orig="la parte de drieto (de capretto)" commodity="wikidata:Q449506" source="#fyndling-ingredient-context">Hinteres Ziegenkitzfleisch, gebraten</ingredient>
             </item>
             <item>
               <ingredient orig="l'agnello">Lammfleisch, gesotten oder gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne de capra" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Ziegenfleisch (im Januar), mit Knoblauchsauce</ingredient>
+              <ingredient en="goat meat" orig="Carne de capra" commodity="wikidata:Q449506" source="#fyndling-ingredient-context">Ziegenfleisch (im Januar), mit Knoblauchsauce</ingredient>
             </item>
             <item>
               <ingredient orig="agliata">Knoblauchsauce</ingredient>
             </item>
             <item>
-              <ingredient en="stock" orig="Carne del cervo la parte denanzi" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Hirschfleisch (vorderer Teil), in fetter Brühe</ingredient>
+              <ingredient en="venison" orig="Carne del cervo la parte denanzi" commodity="wikidata:Q2296872" source="#fyndling-ingredient-context">Hirschfleisch (vorderer Teil), in fetter Brühe</ingredient>
             </item>
             <item>
               <ingredient orig="le lonze (del cervo)">Hirschlenden, am Spieß gebraten</ingredient>
@@ -132,28 +136,28 @@ Carne grossa di bove et de vacca vole esser allessa; carne de vitello, zioè il 
               <ingredient orig="le cosse (del cervo)">Hirschkeulen, in trockener Pastete oder als Frikadellen</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne del capriolo" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Rehfleisch, wie Hirschfleisch zubereitet</ingredient>
+              <ingredient en="roe deer meat" orig="Carne del capriolo" commodity="wikidata:Q65244403" source="#fyndling-ingredient-context">Rehfleisch, wie Hirschfleisch zubereitet</ingredient>
             </item>
             <item>
               <ingredient orig="Carne de porco salvatico">Wildschweinfleisch, in Pfeffersauce, als Wildschmorbraten oder in fetter Brühe</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne de lepore" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Hasenfleisch (ganz), gebraten</ingredient>
+              <ingredient en="hare meat" orig="Carne de lepore" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hasenfleisch (ganz), gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="la parte de drieto (de lepore)" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Hinteres Hasenfleisch, gebraten</ingredient>
+              <ingredient en="hare meat" orig="la parte de drieto (de lepore)" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hinteres Hasenfleisch, gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="la parte denanzi (de lepore)" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Vorderes Hasenfleisch, in Sauce</ingredient>
+              <ingredient en="hare meat" orig="la parte denanzi (de lepore)" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Vorderes Hasenfleisch, in Sauce</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne de coniglio" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Kaninchenfleisch, am Spieß gebraten</ingredient>
+              <ingredient en="rabbit meat" orig="Carne de coniglio" commodity="wikidata:Q3556748" source="#fyndling-ingredient-context">Kaninchenfleisch, am Spieß gebraten</ingredient>
             </item>
             <item>
               <ingredient orig="li lumbi (de coniglio)">Kaninchenlenden, am Spieß gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne di urso" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Bärenfleisch, in Pasteten</ingredient>
+              <ingredient en="bear meat" orig="Carne di urso" commodity="wikidata:Q17222480" source="#fyndling-ingredient-context">Bärenfleisch, in Pasteten</ingredient>
             </item>
           </list>
         </div>
@@ -301,7 +305,7 @@ Per fare bona peperata de capriolo, o lepore, o porco salvatico, o d'altra salva
         <div type="translation" xml:id="mar-005-trans" xml:lang="de" corresp="#mar-005-orig">
           <p>Für eine gute Peperata vom Reh, Hasen, Wildschwein oder anderem Wildfleisch nimm so viel Wasser wie Rotwein und wasche das Fleisch darin gut. Danach passiere diese Waschlösung durch ein feines Tuch oder Sieb und gib so viel Salz hinzu, wie dir nötig erscheint. Lege das Fleisch in das besagte Wasser und den Wein und lasse es kochen. Wenn es gar ist, nimm es heraus.</p>
           <p>Willst du zwei Platten davon zubereiten, so nimm anderthalb Pfund Rosinen und lasse sie sehr gut zerstoßen. Nimm ebenso viel Brot, in Scheiben geschnitten und gut über dem Grill geröstet, und weiche es gut in gutem Essig ein. Zerstoße es zusammen mit den besagten Rosinen. Kannst du Blut oder die Innereien (Herz, Leber, Lunge) des Wildes bekommen, so wäre es hervorragend, diese mit den anderen Zutaten zu zerstoßen.</p>
-          <p>Die gut zerstoßenen Zutaten verdünne mit der Brühe des Fleisches, mit ein wenig Sapa (das ist eingekochter Traubenmost) und mit dem Essig, in dem das Brot eingeweicht wurde. Danach passiere diese Masse durch ein feines Tuch oder Sieb in einen Topf und gib Gewürze, Pfeffer, Nelken und Zimt oder Cassia hinzu, je nachdem, wie es dir nötig erscheint. Diese Peperata mache stark oder mild im Geschmack, sowohl mit Essig als auch mit Gewürzen, ganz nach dem allgemeinen Geschmack oder dem deines Herrn.</p>
+          <p>Die gut zerstoßenen Zutaten verdünne mit der Brühe des Fleisches, mit ein wenig Sapa (das ist eingekochter Traubenmost) und mit dem Essig, in dem das Brot eingeweicht wurde. Danach passiere diese Masse durch ein feines Tuch oder Sieb in einen Topf und gib Gewürze, Pfeffer, Nelken und Zimt hinzu, je nachdem, wie es dir nötig erscheint. Diese Peperata mache stark oder mild im Geschmack, sowohl mit Essig als auch mit Gewürzen, ganz nach dem allgemeinen Geschmack oder dem deines Herrn.</p>
           <p>Danach lasse die Sauce eine halbe Stunde über der Glut kochen, so dass sie nicht mehr Feuer auf einer Seite hat als auf der anderen, und rühre sie oft mit einem Löffel um. Brate das zuvor gekochte Fleisch mit gutem Schmalz an, verteile es auf den Platten und bedecke es mit der erwähnten Peperata, die, je schwärzer sie ist, desto schöner erscheint.</p>
         </div>
         <div type="ingredients">
@@ -341,7 +345,7 @@ Per fare bona peperata de capriolo, o lepore, o porco salvatico, o d'altra salva
               <ingredient en="clove" orig="garofali" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Nelken</ingredient>
             </item>
             <item>
-              <ingredient orig="cannella, over cinnamomo">Zimt oder Cassia</ingredient>
+              <ingredient en="cinnamon" orig="cannella, over cinnamomo" commodity="wikidata:Q28165">Zimt</ingredient>
             </item>
             <item>
               <ingredient en="lard" orig="bono lardo" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient>
@@ -457,7 +461,7 @@ Per far pastello de carne de cervo o de capriolo: in prima taglia la carne in pe
               <ingredient en="pepper" orig="pepero" commodity="wikidata:Q3143131">Pfeffer</ingredient>
             </item>
             <item>
-              <ingredient orig="cannella polverizata">gemahlener Zimt</ingredient>
+              <ingredient en="cinnamon" orig="cannella polverizata" commodity="wikidata:Q28165">gemahlener Zimt</ingredient>
             </item>
             <item>
               <ingredient orig="buon lardo">guter Speck</ingredient>
@@ -1055,7 +1059,7 @@ Togli quaranta piedi de castroni et scorticali et cacciane fore le ossa et pon l
             <item><ingredient orig="una quarta di pepe sano">Quarta ganzer Pfeffer</ingredient> - 1</item>
             <item><ingredient orig="una quarta de pepe longho">Quarta Langer Pfeffer</ingredient> - 1</item>
             <item><ingredient orig="una quarta de grano de paradiso">Quarta Paradieskörner</ingredient> - 1</item>
-            <item><ingredient orig="una quarta di cannella integra">Quarta ganze Zimtstangen</ingredient> - 1</item>
+            <item><ingredient en="cinnamon" orig="una quarta di cannella integra" commodity="wikidata:Q28165">Quarta ganze Zimtstangen</ingredient> - 1</item>
             <item><ingredient orig="meza quarta di spiconardo">Quarta Spiknarde</ingredient> - 0.5</item>
             <item><ingredient orig="dece bianchi d'ova">Eiweiße</ingredient> - 10</item>
             <item>
@@ -1652,7 +1656,7 @@ Piglia de queste cose et nettale molto bene. Et se vorrai consumare un cappone e
             <item><ingredient en="meat" orig="una oncia de carne salata magra" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">mageres Pökelfleisch</ingredient> - 30 g</item>
             <item><ingredient orig="trenta o quaranta granelli di pepe rotto">zerstoßene Pfefferkörner</ingredient> - 30</item>
             <item>
-              <ingredient orig="un pocha di canella rotta">etwas zerbrochener Zimt</ingredient>
+              <ingredient en="cinnamon" orig="un pocha di canella rotta" commodity="wikidata:Q28165">etwas zerbrochener Zimt</ingredient>
             </item>
             <item><ingredient en="clove" orig="tre o quattro garofoli" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Nelken</ingredient> - 3</item>
             <item><ingredient orig="cinque o sei foglie di salvia rotta in tre pezzi">Salbeiblätter, in drei Stücke gebrochen</ingredient> - 5</item>
@@ -1989,7 +1993,7 @@ Piglia quattro rossi d'ova fresche, meza oncia di canella, quattro oncie di zucc
           <list type="ingredients">
             <item><ingredient orig="quattro rossi d'ova fresche">frische Eigelb</ingredient> - 4</item>
             <item>
-              <ingredient orig="meza oncia di canella">½ Unze Zimt</ingredient>
+              <ingredient en="cinnamon" orig="meza oncia di canella" commodity="wikidata:Q28165">½ Unze Zimt</ingredient>
             </item>
             <item><ingredient en="unrefined cane sugar" orig="quattro oncie di zuccharo" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 120 g</item>
             <item><ingredient en="rose water" orig="doi oncie de acqua rosata" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient> - 60 g</item>
@@ -2930,7 +2934,7 @@ Per farne octo menestre : togli una libra et meza di ciceri et lavali con acqua 
               <ingredient orig="circha vinti granelli di pepe rotto">Ca. 20 zerstoßene Pfefferkörner</ingredient>
             </item>
             <item>
-              <ingredient orig="un pocha di canella pista">Etwas gemahlener Zimt</ingredient>
+              <ingredient en="cinnamon" orig="un pocha di canella pista" commodity="wikidata:Q28165">Etwas gemahlener Zimt</ingredient>
             </item>
             <item><ingredient en="water" orig="tre bocali d'acqua" commodity="wikidata:Q283">Wasser</ingredient> - 2.25 l</item>
             <item>
@@ -3417,7 +3421,7 @@ Habi dell'uva passa et pistala molto bene. Et habi doi o tre fette di pane brusc
               <ingredient en="vinegar" orig="aceto" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient>
             </item>
             <item>
-              <ingredient orig="bona canella et assai">reichlich Zimt</ingredient>
+              <ingredient en="cinnamon" orig="bona canella et assai" commodity="wikidata:Q28165">reichlich Zimt</ingredient>
             </item>
             <item>
               <ingredient orig="un pochi di garofoli">einige Nelken</ingredient>
@@ -3752,7 +3756,7 @@ Sequirai l'ordine del capitolo sopra scripto, excepto che non bisogna gli metti 
               <ingredient en="garlic" commodity="wikidata:Q21546392" source="#fyndling-ingredient-name">Knoblauch</ingredient>
             </item>
             <item>
-              <ingredient>Altbackenes Brot</ingredient>
+              <ingredient en="bread" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Altbackenes Brot</ingredient>
             </item>
             <item>
               <ingredient en="vinegar" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Essig</ingredient>
@@ -5116,7 +5120,7 @@ Piglia un poco di fiore di farina, et distemperala con ova et zuccaro, et un poc
               <ingredient en="unrefined cane sugar" orig="zuccaro" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
             </item>
             <item>
-              <ingredient orig="un poca di canella">Etwas Zimt</ingredient>
+              <ingredient en="cinnamon" orig="un poca di canella" commodity="wikidata:Q28165">Etwas Zimt</ingredient>
             </item>
             <item>
               <ingredient en="saffron" orig="zafrano" commodity="wikidata:Q25434">Safran</ingredient>
@@ -7641,6 +7645,7 @@ Praxis. Reh, Hase oder Wildschwein in Wein-Wasser mit Salz garen. Brotscheiben r
         <note type="gloss" target="#mar-005-orig" n="pignatta" resp="#fyndling">Ein irdener Kochtopf, typisch für die mittelalterliche Küche.</note>
         <note type="gloss" target="#mar-005-orig" n="brascia" resp="#fyndling">Glut oder glühende Kohlen, die für eine gleichmäßige und kontrollierte Hitzequelle genutzt werden.</note>
         <note type="gloss" target="#mar-005-orig" n="lardo" resp="#fyndling">Schweineschmalz oder Speckfett, das zum Braten und Verfeinern verwendet wird.</note>
+        <note type="gloss" target="#mar-005-orig" n="cinnamomo" resp="#fyndling">Martino nennt den Zimt hier doppelt: mit dem volkssprachlichen cannella und dem gelehrten cinnamomo. Ob over zwei Handelssorten trennt oder nur den zweiten Namen derselben Ware nachreicht, laesst der Text offen - an den uebrigen Stellen im Buch steht mal das eine, mal das andere Wort allein fuer denselben Grundstoff. Sicher ist nur, was NICHT drinsteht: eine botanische Unterscheidung. Gehandelt wurde nach Gueteklassen; die Trennung Ceylon-Zimt / Cassia ist eine Kategorie des 18. Jahrhunderts.</note>
         <note type="preparation_tip" target="#mar-006-trans" resp="#fyndling">Welches Gericht ist das? Ein brodo lardiero - eine fette, gewürzte Wildbrühe, in der das Fleisch gart und die selbst zur sämigen, reichhaltigen Sauce wird. Im Kern ein höfischer Wildeintopf, naher Verwandter von Martinos Peperata (mar-005) und seinem Civet (mar-007); die deutsche Entsprechung ist der Wildpfeffer/Fürhess der Innereien-Familie.
 
 Garen in der eigenen Waschlösung - der Schlüsseltrick. Martino wäscht das Wild in Weißwein-Wasser und kocht es in derselben Flüssigkeit, ausdrücklich per non perdere quel sangue - um die beim Waschen austretenden Säfte (das Blut) nicht zu verlieren. Nichts geht in den Ausguss; der ganze Wildgeschmack bleibt in der Brühe. Dieselbe Logik nennt er für die Peperata.

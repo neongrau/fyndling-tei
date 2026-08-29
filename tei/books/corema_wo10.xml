@@ -45,6 +45,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -147,7 +151,7 @@
               <ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
             </item>
             <item>
-              <ingredient orig="zimetrorlen">Zimtröllen</ingredient>
+              <ingredient en="cinnamon" orig="zimetrorlen" commodity="wikidata:Q28165">Zimtröllen</ingredient>
             </item>
             <item>
               <ingredient orig="siedents honig">Honig, siedend</ingredient>
@@ -174,7 +178,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient orig="5 lot zimetrorlen">Zimtröllchen</ingredient>
+              <ingredient en="cinnamon" orig="5 lot zimetrorlen" commodity="wikidata:Q28165">Zimtröllchen</ingredient>
             </item>
             <item>
               <ingredient en="clove" orig="3 lot Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient>
@@ -214,7 +218,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient orig="zimetrorlen">Zimtröllchen</ingredient>
+              <ingredient en="cinnamon" orig="zimetrorlen" commodity="wikidata:Q28165">Zimtröllchen</ingredient>
             </item>
             <item>
               <ingredient en="ginger" orig="Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
@@ -437,7 +441,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="opium poppy" orig="honermaglen" commodity="wikidata:Q2007388" source="#fyndling-ingredient-name">Hühnermägen (getrocknet, gemahlen)</ingredient> - 1</item>
+            <item><ingredient en="chicken stomach" orig="honermaglen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen (getrocknet, gemahlen)</ingredient> - 1</item>
             <item><ingredient en="mastic" orig="Mastix" commodity="wikidata:Q318367" source="#corema-ingredient-index">Mastix</ingredient> - 0.5</item>
             <item><ingredient orig="Galgat">Galgant</ingredient> - 0.5</item>
             <item><ingredient en="ginger" orig="Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient> - 0.5</item>
@@ -463,7 +467,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="opium poppy" orig="honermaglen 1 lot" commodity="wikidata:Q2007388" source="#fyndling-ingredient-name">Hühnermägen</ingredient> - 15 g</item>
+            <item><ingredient en="chicken stomach" orig="honermaglen 1 lot" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen</ingredient> - 15 g</item>
             <item><ingredient en="cinnamon" orig="zimetrinden 1/2 lot" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimtrinde</ingredient> - 7.5 g</item>
             <item><ingredient orig="Galgat">Galgant</ingredient> - 3.75 g</item>
             <item><ingredient orig="lignum Aloes">Aloesholz</ingredient> - 3.75 g</item>
@@ -486,7 +490,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="opium poppy" orig="Honermaglen" commodity="wikidata:Q2007388" source="#fyndling-ingredient-name">Hühnermägen</ingredient> - 15.0 g</item>
+            <item><ingredient en="chicken stomach" orig="Honermaglen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen</ingredient> - 15.0 g</item>
             <item><ingredient en="cinnamon" orig="zimetrinden" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimtrinde</ingredient> - 30.0 g</item>
             <item><ingredient orig="Galgat">Galgant</ingredient> - 7.5 g</item>
             <item><ingredient en="ginger" orig="Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient> - 7.5 g</item>
@@ -519,7 +523,7 @@
             <item><ingredient en="mastic" orig="Mastix" commodity="wikidata:Q318367" source="#corema-ingredient-index">Mastix</ingredient> - 3.75 g</item>
             <item><ingredient orig="lignum Aloes">Agarholz</ingredient> - 3.75 g</item>
             <item><ingredient orig="Rot korallen zuberait">Rote Koralle, zubereitet</ingredient> - 3.75 g</item>
-            <item><ingredient en="opium poppy" orig="honermaglen Iegklichs 1 quint" commodity="wikidata:Q2007388" source="#fyndling-ingredient-name">Hühnermägen</ingredient> - 3.75 g</item>
+            <item><ingredient en="chicken stomach" orig="honermaglen Iegklichs 1 quint" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen</ingredient> - 3.75 g</item>
             <item><ingredient en="unrefined cane sugar" orig="2 pfund zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient> - 1 kg</item>
           </list>
         </div>
@@ -581,7 +585,7 @@
             <item><ingredient en="sweet flag" orig="Calmus" commodity="wikidata:Q158008" source="#corema-ingredient-index">Kalmus</ingredient> - 3.75 g</item>
             <item><ingredient en="coriander" orig="Coriander" commodity="wikidata:Q20856764" source="#corema-ingredient-index">Koriander</ingredient> - 3.75 g</item>
             <item><ingredient en="white ginger" orig="weissen Imber" commodity="wikidata:Q107262395" source="#fyndling-ingredient-name">Weißer Ingwer</ingredient> - 3.75 g</item>
-            <item><ingredient orig="zimetrorlen">Zimtröllchen</ingredient> - 3.75 g</item>
+            <item><ingredient en="cinnamon" orig="zimetrorlen" commodity="wikidata:Q28165">Zimtröllchen</ingredient> - 3.75 g</item>
             <item><ingredient en="unrefined cane sugar" orig="1 1/2 vierdung zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient> - 187.5 g</item>
           </list>
         </div>
@@ -598,7 +602,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient orig="zimetrorlen 4 lot">Zimtröllchen</ingredient> - 60 g</item>
+            <item><ingredient en="cinnamon" orig="zimetrorlen 4 lot" commodity="wikidata:Q28165">Zimtröllchen</ingredient> - 60 g</item>
             <item><ingredient en="ginger" orig="Imber 2 lot" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient> - 30 g</item>
             <item><ingredient en="long pepper" orig="langenpfeffer" commodity="wikidata:Q685336" source="#fyndling-ingredient-name">Langer Pfeffer</ingredient> - 15 g</item>
             <item><ingredient en="lesser galangal" orig="Galgant" commodity="wikidata:Q27653540" source="#corema-ingredient-index">Galgant</ingredient> - 15 g</item>
@@ -628,7 +632,7 @@
           <list type="ingredients">
             <item><ingredient en="ginger" orig="Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient> - 1.0 EL</item>
             <item><ingredient en="clove" orig="Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Gewürznelken</ingredient> - 1.0 EL</item>
-            <item><ingredient orig="zimetrorlen">Zimtröllchen</ingredient> - 1.0 EL</item>
+            <item><ingredient en="cinnamon" orig="zimetrorlen" commodity="wikidata:Q28165">Zimtröllchen</ingredient> - 1.0 EL</item>
             <item><ingredient en="nutmeg" orig="muscat" commodity="wikidata:Q83165" source="#corema-ingredient-index">Muskatnuss</ingredient> - 1.0 EL</item>
             <item><ingredient en="mace" orig="Muscatplue" commodity="wikidata:Q1882876" source="#corema-ingredient-index">Muskatblüte</ingredient> - 1.0 EL</item>
             <item><ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient> - 6.0 EL</item>
@@ -647,7 +651,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient orig="ein gantze Muscatnuß">Muskatnuss</ingredient> - 1</item>
-            <item><ingredient orig="2 lot Rorlen">Zimtröhrchen</ingredient> - 30 g</item>
+            <item><ingredient en="cinnamon" orig="2 lot Rorlen" commodity="wikidata:Q28165">Zimtröhrchen</ingredient> - 30 g</item>
             <item><ingredient en="water" orig="4 mass wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient> - 4.6 l</item>
             <item><ingredient orig="1 quertlin geleutert Honig">Honig, geläutert</ingredient> - 288 ml</item>
           </list>
@@ -667,7 +671,7 @@
           <list type="ingredients">
             <item><ingredient en="unrefined cane sugar" orig="2 pfund zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient> - 1000 g</item>
             <item><ingredient en="ginger" orig="4 lot Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient> - 60 g</item>
-            <item><ingredient orig="5 lot Rorlen">Zimtröhrchen</ingredient> - 75 g</item>
+            <item><ingredient en="cinnamon" orig="5 lot Rorlen" commodity="wikidata:Q28165">Zimtröhrchen</ingredient> - 75 g</item>
             <item><ingredient orig="6 pfund lezelten mel">Lebkuchenmehl</ingredient> - 3 kg</item>
             <item><ingredient orig="zwo mass wasser">Wasser</ingredient> - 2 l</item>
             <item><ingredient en="honey" orig="ain mass Honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient> - 1 l</item>
@@ -693,7 +697,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient en="unrefined cane sugar" orig="i 1/2 pfund zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient> - 750 g</item>
-            <item><ingredient orig="7 lot Rorlen">Zimtröhrchen</ingredient> - 105 g</item>
+            <item><ingredient en="cinnamon" orig="7 lot Rorlen" commodity="wikidata:Q28165">Zimtröhrchen</ingredient> - 105 g</item>
             <item><ingredient orig="4 lot Muscatnuss">Muskatnuss</ingredient> - 60 g</item>
             <item><ingredient en="ginger" orig="6 lot Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient> - 90 g</item>
             <item><ingredient en="clove" orig="1 lot Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient> - 15 g</item>
@@ -813,7 +817,7 @@
             <item><ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient> - 750 g</item>
             <item><ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient> - 1 l</item>
             <item>
-              <ingredient orig="Rorlen">Zimtstangen</ingredient>
+              <ingredient en="cinnamon" orig="Rorlen" commodity="wikidata:Q28165">Zimtstangen</ingredient>
             </item>
             <item>
               <ingredient en="clove" orig="Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Gewürznelken</ingredient>
@@ -841,7 +845,7 @@
               <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
             </item>
             <item>
-              <ingredient orig="Rorlen">Zimtstangenstücke</ingredient>
+              <ingredient en="cinnamon" orig="Rorlen" commodity="wikidata:Q28165">Zimtstangenstücke</ingredient>
             </item>
             <item>
               <ingredient en="clove" orig="Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Gewürznelken</ingredient>
@@ -922,7 +926,7 @@
             <item><ingredient en="rose water" orig="1 quertlin Rosen= wasser" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient> - 288 ml</item>
             <item><ingredient orig="1 quertlin lauendel wasser">Lavendelwasser</ingredient> - 288 ml</item>
             <item>
-              <ingredient orig="Rorlen">Zimtröhrchen (Zimt)</ingredient>
+              <ingredient en="cinnamon" orig="Rorlen" commodity="wikidata:Q28165">Zimtröhrchen (Zimt)</ingredient>
             </item>
             <item><ingredient orig="2 lot ebulirim">Ebulirim (unbekanntes Gewürz)</ingredient> - 30 g</item>
             <item><ingredient orig="2 quint Emblicorum">Amla (Indische Stachelbeere)</ingredient> - 8 g</item>
@@ -967,7 +971,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient orig="3 lot Rorlen">Zimtröhrchen (Zimtstangen)</ingredient> - 45 g</item>
+            <item><ingredient en="cinnamon" orig="3 lot Rorlen" commodity="wikidata:Q28165">Zimtröhrchen (Zimtstangen)</ingredient> - 45 g</item>
             <item><ingredient en="clove" orig="3 lot Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Gewürznelken</ingredient> - 45 g</item>
             <item><ingredient orig="2 lot muscatnuss">Muskatnuss</ingredient> - 30 g</item>
             <item>
@@ -1000,7 +1004,7 @@
             <item><ingredient en="wine" orig="5 mass gutten wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient> - 5 l</item>
             <item><ingredient orig="2 gantz Imber zehen">Ingwerwurzelstücke</ingredient> - 2</item>
             <item><ingredient en="clove" orig="40 Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Gewürznelken</ingredient> - 40 Stück</item>
-            <item><ingredient orig="6 k rorlen">Zimtröhrchen</ingredient> - 6</item>
+            <item><ingredient en="cinnamon" orig="6 k rorlen" commodity="wikidata:Q28165">Zimtröhrchen</ingredient> - 6</item>
             <item><ingredient en="mace" orig="4 k muscatplue" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient> - 4</item>
             <item><ingredient orig="spicanardy 2 hend vol">Spiknarde</ingredient> - 2 Bund</item>
             <item><ingredient orig="2 muscatnus">Muskatnuss (optional)</ingredient> - 2</item>
@@ -1435,10 +1439,10 @@
               <ingredient en="quince" orig="gutt kuttin" commodity="wikidata:Q2751465" source="#corema-ingredient-index">Quitten</ingredient>
             </item>
             <item>
-              <ingredient orig="rorlen">Zimtstangen</ingredient>
+              <ingredient en="cinnamon" orig="rorlen" commodity="wikidata:Q28165">Zimtstangen</ingredient>
             </item>
             <item>
-              <ingredient orig="gestossen Rorlen">Zimt, gemahlen</ingredient>
+              <ingredient en="cinnamon" orig="gestossen Rorlen" commodity="wikidata:Q28165">Zimt, gemahlen</ingredient>
             </item>
             <item>
               <ingredient en="clove" orig="negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient>
@@ -1476,7 +1480,7 @@
               <ingredient en="animal fat" orig="potterschmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Butterschmalz</ingredient>
             </item>
             <item>
-              <ingredient orig="Rorlen">Zimtröhrchen (Zimt)</ingredient>
+              <ingredient en="cinnamon" orig="Rorlen" commodity="wikidata:Q28165">Zimtröhrchen (Zimt)</ingredient>
             </item>
             <item>
               <ingredient en="clove" orig="negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient>
@@ -1529,7 +1533,7 @@
               <ingredient en="clove" orig="Negelen" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient>
             </item>
             <item>
-              <ingredient orig="Rorlen">Zimtstangen</ingredient>
+              <ingredient en="cinnamon" orig="Rorlen" commodity="wikidata:Q28165">Zimtstangen</ingredient>
             </item>
             <item>
               <ingredient orig="gelben vom Ay">Eigelb</ingredient>

@@ -45,6 +45,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -113,19 +117,19 @@ Carne grossa di bove et de vacca vole esser allessa; carne de vitello, zioè il 
               <ingredient orig="Carne di capretto">Ziegenkitzfleisch, gesotten oder gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="la parte de drieto (de capretto)" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Hinteres Ziegenkitzfleisch, gebraten</ingredient>
+              <ingredient en="goat meat" orig="la parte de drieto (de capretto)" commodity="wikidata:Q449506" source="#fyndling-ingredient-context">Hinteres Ziegenkitzfleisch, gebraten</ingredient>
             </item>
             <item>
               <ingredient orig="l'agnello">Lammfleisch, gesotten oder gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne de capra" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Ziegenfleisch (im Januar), mit Knoblauchsauce</ingredient>
+              <ingredient en="goat meat" orig="Carne de capra" commodity="wikidata:Q449506" source="#fyndling-ingredient-context">Ziegenfleisch (im Januar), mit Knoblauchsauce</ingredient>
             </item>
             <item>
               <ingredient orig="agliata">Knoblauchsauce</ingredient>
             </item>
             <item>
-              <ingredient en="stock" orig="Carne del cervo la parte denanzi" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Hirschfleisch (vorderer Teil), in fetter Brühe</ingredient>
+              <ingredient en="venison" orig="Carne del cervo la parte denanzi" commodity="wikidata:Q2296872" source="#fyndling-ingredient-context">Hirschfleisch (vorderer Teil), in fetter Brühe</ingredient>
             </item>
             <item>
               <ingredient orig="le lonze (del cervo)">Hirschlenden, am Spieß gebraten</ingredient>
@@ -134,28 +138,28 @@ Carne grossa di bove et de vacca vole esser allessa; carne de vitello, zioè il 
               <ingredient orig="le cosse (del cervo)">Hirschkeulen, in trockener Pastete oder als Frikadellen</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne del capriolo" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Rehfleisch, wie Hirschfleisch zubereitet</ingredient>
+              <ingredient en="roe deer meat" orig="Carne del capriolo" commodity="wikidata:Q65244403" source="#fyndling-ingredient-context">Rehfleisch, wie Hirschfleisch zubereitet</ingredient>
             </item>
             <item>
               <ingredient orig="Carne de porco salvatico">Wildschweinfleisch, in Pfeffersauce, als Wildschmorbraten oder in fetter Brühe</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne de lepore" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Hasenfleisch (ganz), gebraten</ingredient>
+              <ingredient en="hare meat" orig="Carne de lepore" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hasenfleisch (ganz), gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="la parte de drieto (de lepore)" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Hinteres Hasenfleisch, gebraten</ingredient>
+              <ingredient en="hare meat" orig="la parte de drieto (de lepore)" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hinteres Hasenfleisch, gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="la parte denanzi (de lepore)" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Vorderes Hasenfleisch, in Sauce</ingredient>
+              <ingredient en="hare meat" orig="la parte denanzi (de lepore)" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Vorderes Hasenfleisch, in Sauce</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne de coniglio" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Kaninchenfleisch, am Spieß gebraten</ingredient>
+              <ingredient en="rabbit meat" orig="Carne de coniglio" commodity="wikidata:Q3556748" source="#fyndling-ingredient-context">Kaninchenfleisch, am Spieß gebraten</ingredient>
             </item>
             <item>
               <ingredient orig="li lumbi (de coniglio)">Kaninchenlenden, am Spieß gebraten</ingredient>
             </item>
             <item>
-              <ingredient en="meat" orig="Carne di urso" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Bärenfleisch, in Pasteten</ingredient>
+              <ingredient en="bear meat" orig="Carne di urso" commodity="wikidata:Q17222480" source="#fyndling-ingredient-context">Bärenfleisch, in Pasteten</ingredient>
             </item>
           </list>
         </div>

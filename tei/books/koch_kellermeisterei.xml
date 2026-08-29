@@ -43,6 +43,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -304,10 +308,10 @@ Diese Fisch mach zu guten stücken/ spisse je zwey oder drey guter stück in ein
               <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
             </item>
             <item>
-              <ingredient en="spice" orig="Würtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+              <ingredient en="spice" orig="Würtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-context">Gewürze</ingredient>
             </item>
             <item>
-              <ingredient en="stock" orig="Brod" commodity="wikidata:Q3075310" source="#corema-ingredient-index">Altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="Brod" commodity="wikidata:Q7802" source="#fyndling-ingredient-context">Altbackenes Brot</ingredient>
             </item>
             <item>
               <ingredient orig="Lorberbletter">Lorbeerblätter</ingredient>
@@ -3790,7 +3794,7 @@ NJm Fuchslungen/ wesch sie mit weissem Wein/ sauber/ also fein frisch/ vnd schne
             <item><ingredient en="fig" orig="Feigen" commodity="wikidata:Q2746643" source="#corema-ingredient-index">getrocknete Feigen</ingredient> - 50 g</item>
             <item><ingredient en="water" orig="Wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient> - 50 ml</item>
             <item><ingredient en="rose water" orig="Rosenwasser" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient> - 1 EL</item>
-            <item><ingredient orig="gestossen Zimetrinden">gemahlene Zimtrinde</ingredient> - 1 TL</item>
+            <item><ingredient en="cinnamon" orig="gestossen Zimetrinden" commodity="wikidata:Q28165">gemahlene Zimtrinde</ingredient> - 1 TL</item>
             <item><ingredient orig="Fuchslungen">Teil Fuchslunge</ingredient> - 1</item>
             <item><ingredient orig="Wermutbletter">Handvoll Wermutblätter</ingredient> - 1</item>
             <item><ingredient en="pea stock" orig="vngesaltzen Erbsbrü" commodity="wikidata:Q107246700" source="#fyndling-ingredient-context">ungesalzene Erbsenbrühe</ingredient> - 100 ml</item>
@@ -3909,7 +3913,7 @@ Weissen Rettich/ Jsop/ Alant/ Diptan/ vnd Jmber/ stoß zu Pulffer/ temperier sie
               <ingredient en="cubeb" orig="Cubeben" commodity="wikidata:Q161927" source="#corema-ingredient-index">Menge nach Belieben Kubebenpfeffer</ingredient>
             </item>
             <item>
-              <ingredient orig="Zimetrinde">Menge nach Belieben Zimtrinde</ingredient>
+              <ingredient en="cinnamon" orig="Zimetrinde" commodity="wikidata:Q28165">Menge nach Belieben Zimtrinde</ingredient>
             </item>
             <item>
               <ingredient orig="Muscatblüh">Menge nach Belieben Muskatblüte</ingredient>

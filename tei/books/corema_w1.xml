@@ -45,6 +45,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -531,7 +535,7 @@
           <list type="ingredients">
             <item><ingredient en="northern pike" orig="ain andern hecht" commodity="wikidata:Q83363026">Hecht</ingredient> - 1</item>
             <item><ingredient en="northern pike" orig="ij stukch oder iij" commodity="wikidata:Q83363026" source="#fyndling-ingredient-context">Hechtfleisch (aus dem Hecht)</ingredient> - 2 Stück</item>
-            <item><ingredient orig="magen">Hechtmagen (aus dem Hecht)</ingredient> - 1</item>
+            <item><ingredient en="northern pike stomach" orig="magen" commodity="wikidata:Q107304840" source="#fyndling-ingredient-context">Hechtmagen (aus dem Hecht)</ingredient> - 1</item>
             <item>
               <ingredient en="blood" orig="swais" commodity="wikidata:Q494268" source="#corema-ingredient-index">Hechtblut</ingredient>
             </item>
@@ -563,7 +567,7 @@
               <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
             </item>
             <item><ingredient en="liver" orig="leber" commodity="wikidata:Q1470283" source="#corema-ingredient-index">Hechtleber</ingredient> - 1 Stück</item>
-            <item><ingredient orig="magen">Hechtmagen</ingredient> - 1 Stück</item>
+            <item><ingredient en="northern pike stomach" orig="magen" commodity="wikidata:Q107304840" source="#fyndling-ingredient-context">Hechtmagen</ingredient> - 1 Stück</item>
             <item>
               <ingredient en="northern pike" orig="stukch" commodity="wikidata:Q83363026" source="#fyndling-ingredient-context">Hechtfleisch</ingredient>
             </item>
@@ -1089,7 +1093,7 @@
               <ingredient en="northern pike" orig="hecht" commodity="wikidata:Q83363026" source="#corema-ingredient-index">Hecht (als Vergleich für Gargrad)</ingredient>
             </item>
             <item>
-              <ingredient en="rabbit" orig="hasen gancz" commodity="wikidata:Q3556748" source="#corema-ingredient-index">Hase, ganz</ingredient>
+              <ingredient en="hare" orig="hasen gancz" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hase, ganz</ingredient>
             </item>
           </list>
         </div>
@@ -3678,7 +3682,7 @@
               <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
             </item>
             <item>
-              <ingredient en="almond milk" orig="dikche mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-name">Dicke Mandelmilch</ingredient>
+              <ingredient en="almond milk" orig="dikche mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-context">Dicke Mandelmilch</ingredient>
             </item>
             <item>
               <ingredient en="rice flour" orig="reis mel" commodity="wikidata:Q1269205" source="#corema-ingredient-index">Reismehl</ingredient>
@@ -4152,7 +4156,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item><ingredient en="chicken liver" orig="huner leber" commodity="wikidata:Q67210929" source="#corema-ingredient-index">Hühnerleber</ingredient> - 150 g</item>
-            <item><ingredient orig="magen">Hühnermagen</ingredient> - 150 g</item>
+            <item><ingredient en="chicken stomach" orig="magen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermagen</ingredient> - 150 g</item>
             <item><ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient> - 2 EL</item>
             <item><ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient> - 3</item>
             <item>
@@ -4216,7 +4220,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="almond milk" orig="dikche mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-name">Mandelmilch, dick</ingredient>
+              <ingredient en="almond milk" orig="dikche mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-context">Mandelmilch, dick</ingredient>
             </item>
             <item>
               <ingredient en="rice flour" orig="rismelbe" commodity="wikidata:Q1269205" source="#corema-ingredient-index">Reismehl</ingredient>
@@ -4278,7 +4282,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="almond milk" orig="dikche mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-name">Mandelmilch, dickflüssig</ingredient>
+              <ingredient en="almond milk" orig="dikche mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-context">Mandelmilch, dickflüssig</ingredient>
             </item>
             <item>
               <ingredient orig="huner prust ge zaist">Hühnerbrust, zerzupft</ingredient>

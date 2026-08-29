@@ -43,6 +43,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -564,7 +568,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="rabbit" orig="ung lievre" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
+            <item><ingredient en="hare" orig="ung lievre" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
             <item>
               <ingredient en="table salt" orig="sel" commodity="wikidata:Q11254">Salz</ingredient>
             </item>
@@ -1206,7 +1210,7 @@
               <ingredient orig="saulcisses">Würste</ingredient>
             </item>
             <item>
-              <ingredient en="rabbit" orig="lievre" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient>
+              <ingredient en="hare" orig="lievre" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient>
             </item>
             <item>
               <ingredient orig="fourques">Fleischstücke</ingredient>
@@ -2211,7 +2215,7 @@
               <ingredient en="hyssop" orig="d'isope" commodity="wikidata:Q137931" source="#fyndling-ingredient-name">Ysop</ingredient>
             </item>
             <item>
-              <ingredient orig="du pain">Altbackenes Brot</ingredient>
+              <ingredient en="bread" orig="du pain" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Altbackenes Brot</ingredient>
             </item>
             <item>
               <ingredient en="lard" orig="lart" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient>
@@ -2465,7 +2469,7 @@
             </item>
             <item><ingredient en="lard" orig="sain de lart" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient> - 2 EL</item>
             <item><ingredient en="ginger" orig="gingembre" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">gemahlener Ingwer</ingredient> - 1 TL</item>
-            <item><ingredient orig="canelle">gemahlener Zimt</ingredient> - 1 TL</item>
+            <item><ingredient en="cinnamon" orig="canelle" commodity="wikidata:Q28165">gemahlener Zimt</ingredient> - 1 TL</item>
             <item><ingredient orig="giroffle">gemahlene Nelken</ingredient> - 0.5 TL</item>
             <item><ingredient orig="graine">gemahlene Paradieskörner</ingredient> - 0.5 TL</item>
             <item><ingredient en="verjuice" orig="vertjus" commodity="wikidata:Q1060458" source="#fyndling-ingredient-name">Verjus</ingredient> - 200 ml</item>
@@ -2578,7 +2582,7 @@
             <item><ingredient en="ginger" orig="gingembre" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">gemahlener Ingwer</ingredient> - 1 TL</item>
             <item><ingredient orig="graine">gemahlene Paradieskörner</ingredient> - 0.5 TL</item>
             <item><ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safranfäden</ingredient> - 1 Prise</item>
-            <item><ingredient orig="etc. (implied spices)">gemahlener Zimt</ingredient> - 0.5 TL</item>
+            <item><ingredient en="cinnamon" orig="etc. (implied spices)" commodity="wikidata:Q28165">gemahlener Zimt</ingredient> - 0.5 TL</item>
             <item><ingredient orig="etc. (implied spices)">gemahlene Nelken</ingredient> - 0.5 TL</item>
             <item><ingredient en="pepper" orig="etc. (implied spices)" commodity="wikidata:Q3143131" source="#fyndling-ingredient-name">schwarzer Pfeffer</ingredient> - 0.5 TL</item>
             <item><ingredient orig="vin">Rotwein</ingredient> - 100 ml</item>
@@ -2916,7 +2920,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="rabbit" orig="lievre" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
+            <item><ingredient en="hare" orig="lievre" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
             <item><ingredient orig="ongnons cuiz">gekochte Zwiebeln</ingredient> - 2</item>
             <item><ingredient en="lard" orig="sain" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient> - 2 EL</item>
             <item>
@@ -5863,7 +5867,7 @@
             <item><ingredient en="wine" orig="vin" commodity="wikidata:Q282" source="#fyndling-ingredient-name">Weißwein</ingredient> - 250 ml</item>
             <item><ingredient en="lard" orig="saing de lart" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient> - 2 EL</item>
             <item><ingredient en="ginger" orig="gingembre" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">gemahlener Ingwer</ingredient> - 1 TL</item>
-            <item><ingredient orig="canelle">gemahlener Zimt</ingredient> - 1 TL</item>
+            <item><ingredient en="cinnamon" orig="canelle" commodity="wikidata:Q28165">gemahlener Zimt</ingredient> - 1 TL</item>
             <item><ingredient orig="giroffle">gemahlene Nelken</ingredient> - 0.5 TL</item>
             <item><ingredient orig="graine">gemahlene Paradieskörner</ingredient> - 0.5 TL</item>
             <item><ingredient en="verjuice" orig="vertjus" commodity="wikidata:Q1060458" source="#fyndling-ingredient-name">Verjus</ingredient> - 100 ml</item>
@@ -5874,7 +5878,7 @@
               <ingredient orig="pain hazé">geröstetes Weißbrot</ingredient>
             </item>
             <item>
-              <ingredient orig="poudre de canelle">Zimtpulver zum Bestreuen</ingredient>
+              <ingredient en="cinnamon" orig="poudre de canelle" commodity="wikidata:Q28165">Zimtpulver zum Bestreuen</ingredient>
             </item>
           </list>
         </div>
@@ -7258,7 +7262,7 @@
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient orig="foison de bonne canelle">Reichlich Zimt</ingredient>
+              <ingredient en="cinnamon" orig="foison de bonne canelle" commodity="wikidata:Q28165">Reichlich Zimt</ingredient>
             </item>
             <item>
               <ingredient en="ginger" orig="gingembre" commodity="wikidata:Q15046077">Ingwer</ingredient>
@@ -7296,7 +7300,7 @@
           <list type="ingredients">
             <item><ingredient orig="Une queue de sangler">Wildschweinschwanz</ingredient> - 1</item>
             <item><ingredient orig="nombletz de porc">Schweinefilet</ingredient> - 500 g</item>
-            <item><ingredient en="rabbit" orig="lievres" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
+            <item><ingredient en="hare" orig="lievres" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
             <item><ingredient orig="oiseaulx de riviere">Flussvögel</ingredient> - 2</item>
             <item><ingredient orig="vin franc">kräftiger Rotwein</ingredient> - 500 ml</item>
             <item><ingredient en="vinegar" orig="vinaigre" commodity="wikidata:Q41354" source="#fyndling-ingredient-name">Weinessig</ingredient> - 100 ml</item>
@@ -7869,14 +7873,14 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient orig="ung quarteron de tresfine canelle triee a la dent">sehr feiner Zimt</ingredient> - 125 g</item>
+            <item><ingredient en="cinnamon" orig="ung quarteron de tresfine canelle triee a la dent" commodity="wikidata:Q28165">sehr feiner Zimt</ingredient> - 125 g</item>
             <item><ingredient orig="demy quarteron de fleur de canelle fine">feine Zimtblüten</ingredient> - 62.5 g</item>
             <item><ingredient en="white ginger" orig="1o de gingembre de Mesche trié fin blanc" commodity="wikidata:Q107262395" source="#fyndling-ingredient-name">weißer Ingwer</ingredient> - 28 g</item>
             <item><ingredient en="grain of paradise" orig="1o de graine de paradiz" commodity="wikidata:Q1503476" source="#fyndling-ingredient-name">Paradieskörner</ingredient> - 28 g</item>
             <item><ingredient orig="ung sizain de nois muguectes et de garingal ensemble">Muskatnuss und Galgant</ingredient> - 4.6 g</item>
             <item><ingredient en="unrefined cane sugar" orig="deux quarterons de succre" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 250 g</item>
             <item><ingredient orig="une quarte de vin a la mesure de Paris">L Wein</ingredient> - 0.95</item>
-            <item><ingredient orig="v drames de canelle fine triee et mondee">feiner Zimt</ingredient> - 15.5 g</item>
+            <item><ingredient en="cinnamon" orig="v drames de canelle fine triee et mondee" commodity="wikidata:Q28165">feiner Zimt</ingredient> - 15.5 g</item>
             <item><ingredient en="white ginger" orig="gingembre blanc trié et paré, iii drames" commodity="wikidata:Q107262395" source="#fyndling-ingredient-name">weißer Ingwer</ingredient> - 9.3 g</item>
             <item><ingredient en="spice" orig="de giroffle, graine, matiz, garingal, nois muguectes, espicnardi, de tout ensemble une drame et ung quart" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürzmischung</ingredient> - 3.9 g</item>
             <item><ingredient orig="une livre et demy quarteron au gros pois de succre en roche">Kandiszucker</ingredient> - 562.5 g</item>
@@ -8622,7 +8626,7 @@
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient en="rabbit" orig="Lyevre" commodity="wikidata:Q3556748" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
+            <item><ingredient en="hare" orig="Lyevre" commodity="wikidata:Q55557452" source="#fyndling-ingredient-name">Hase</ingredient> - 1</item>
             <item><ingredient en="caul fat" orig="toille de la fressure d'un porc que l'en dit la crespine" commodity="wikidata:Q662490" source="#fyndling-ingredient-name">Schweinenetz</ingredient> - 200 g</item>
             <item><ingredient orig="lardé (implied)">Speck zum Spicken</ingredient> - 50 g</item>
           </list>

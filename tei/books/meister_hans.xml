@@ -45,6 +45,10 @@
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
         </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
           <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
@@ -2064,7 +2068,7 @@ Item nym allte huner vnd prat sy halb vnd hau sy zue stucken nym halb suppen vnd
         </div>
         <div type="ingredients">
           <list type="ingredients">
-            <item><ingredient orig="magen">Schweinemagen</ingredient> - 1</item>
+            <item><ingredient en="stomach" orig="magen" commodity="wikidata:Q1029907" source="#fyndling-ingredient-context">Schweinemagen</ingredient> - 1</item>
             <item>
               <ingredient en="pork" commodity="wikidata:Q191768" source="#fyndling-ingredient-context">Schweinefleisch, gehackt</ingredient>
             </item>
@@ -2380,7 +2384,7 @@ Item ain lamps haubt . Nym vnd seud es gar wol nym das flaisch dauon das die pai
               <ingredient en="chicken liver" orig="huner leber" commodity="wikidata:Q67210929" source="#corema-ingredient-index">Hühnerleber</ingredient>
             </item>
             <item>
-              <ingredient en="opium poppy" orig="maegen" commodity="wikidata:Q2007388" source="#corema-ingredient-index">Hühnermägen</ingredient>
+              <ingredient en="chicken stomach" orig="maegen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen</ingredient>
             </item>
             <item>
               <ingredient en="lard" orig="schmalcz" commodity="wikidata:Q72827" source="#corema-ingredient-index">Schweineschmalz</ingredient>
@@ -4310,7 +4314,7 @@ Item zue allem gewurcz . Sol man gewurcz machen vnd daran thuen In den hafen Dan
               <ingredient en="venison" orig="hirseim" commodity="wikidata:Q2296872" source="#corema-ingredient-index">Hirschfleisch</ingredient>
             </item>
             <item>
-              <ingredient en="rabbit" orig="hasen" commodity="wikidata:Q3556748" source="#corema-ingredient-index">Hase</ingredient>
+              <ingredient en="hare" orig="hasen" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hase</ingredient>
             </item>
             <item>
               <ingredient en="red squirrel" orig="Aichoren" commodity="wikidata:Q4388" source="#corema-ingredient-index">Eichhörnchen</ingredient>
@@ -5805,7 +5809,7 @@ Item von hennen zue kochen . Nym zwo allt hennen vnd zwaj pfunt mandels vnd das 
               <ingredient en="liver" orig="lebern" commodity="wikidata:Q1470283" source="#corema-ingredient-index">Hühnerlebern</ingredient>
             </item>
             <item>
-              <ingredient en="opium poppy" orig="maegen" commodity="wikidata:Q2007388" source="#corema-ingredient-index">Hühnermägen</ingredient>
+              <ingredient en="chicken stomach" orig="maegen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermägen</ingredient>
             </item>
           </list>
         </div>
@@ -5891,7 +5895,7 @@ Item wir komen In ain Stat da fannd wir annders nichts dann kalbfleisch vnd mein
               <ingredient en="rumen" orig="wampen" commodity="wikidata:Q427652" source="#fyndling-ingredient-context">Kalbs-Pansen</ingredient>
             </item>
             <item>
-              <ingredient orig="magen">Kalbsmagen</ingredient>
+              <ingredient en="stomach" orig="magen" commodity="wikidata:Q1029907" source="#fyndling-ingredient-context">Kalbsmagen</ingredient>
             </item>
             <item>
               <ingredient en="liver" orig="leberen" commodity="wikidata:Q1470283" source="#corema-ingredient-index">Kalbsleber</ingredient>
@@ -6105,7 +6109,7 @@ Item aber ein sallsen wollen wir haben weiss schwarcz oder grun wie du sy aller 
               <ingredient en="liver" orig="Lebern" commodity="wikidata:Q1470283" source="#corema-ingredient-index">Hechtleber</ingredient>
             </item>
             <item>
-              <ingredient orig="Magen">Hechtmagen</ingredient>
+              <ingredient en="northern pike stomach" orig="Magen" commodity="wikidata:Q107304840" source="#fyndling-ingredient-context">Hechtmagen</ingredient>
             </item>
             <item><ingredient en="northern pike" orig="zwaj stuck oder drew" commodity="wikidata:Q83363026" source="#fyndling-ingredient-context">Hechtfleisch</ingredient> - 2 Stück</item>
             <item>
@@ -6141,7 +6145,7 @@ Item aber ein sallsen wollen wir haben weiss schwarcz oder grun wie du sy aller 
               <ingredient en="liver" orig="die lebern" commodity="wikidata:Q1470283" source="#fyndling-ingredient-name">Hechtleber</ingredient>
             </item>
             <item>
-              <ingredient orig="der mag">Hechtmagen</ingredient>
+              <ingredient en="stomach" orig="der mag" commodity="wikidata:Q1029907" source="#fyndling-ingredient-context">Hechtmagen</ingredient>
             </item>
             <item>
               <ingredient en="fat, unspecified" orig="ain vaistne" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Speck</ingredient>
@@ -6205,7 +6209,7 @@ Item aber ein sallsen wollen wir haben weiss schwarcz oder grun wie du sy aller 
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="opium poppy" orig="maegen" commodity="wikidata:Q2007388" source="#corema-ingredient-index">Hühnermagen</ingredient>
+              <ingredient en="chicken stomach" orig="maegen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermagen</ingredient>
             </item>
             <item><ingredient en="isinglass" orig="ain lot hausen plater" commodity="wikidata:Q1255331" source="#corema-ingredient-index">Hausenblase</ingredient> - 15 g</item>
             <item>
@@ -7709,7 +7713,7 @@ Item Nym weinper mandel guoten wein vnd zucker genuog daran vnd salcz zue massen
               <ingredient en="chicken feet" orig="huner fuesz" commodity="wikidata:Q41384" source="#corema-ingredient-index">Hühnerfüße</ingredient>
             </item>
             <item>
-              <ingredient orig="magen">Hühnermagen</ingredient>
+              <ingredient en="chicken stomach" orig="magen" commodity="wikidata:Q67210992" source="#fyndling-ingredient-context">Hühnermagen</ingredient>
             </item>
             <item>
               <ingredient en="veal" orig="kalbflaisch" commodity="wikidata:Q957434" source="#corema-ingredient-index">Kalbfleisch</ingredient>
@@ -9175,7 +9179,7 @@ Zwei-Stufen-Logik. Das Rezept trennt bewusst Vorrat und Tafelfertigmachung: Die 
 
 „tuoch das enng sey“ = ein engmaschiges Tuch (Leinen-Filtertuch oder modernes Käsetuch): hält Schalen- und Hülsenreste der Senfsaat zurück, sodass die Paste glatt wird.
 
-Zimtblüten-Substitution. Echte Zimtblüten (Cinnamomum-Blütenknospen) gibt es im Gewürzhandel oder online. Eine sparsame Prise gemahlener Ceylon-Zimt oder Cassia ist eine praktische Alternative - sehr sparsam dosieren, da Zimtrinde intensiver schmeckt als die Blüte.
+Zimtblüten-Substitution. Echte Zimtblüten (Cinnamomum-Blütenknospen) gibt es im Gewürzhandel oder online. Eine sparsame Prise gemahlener Cassia-Zimt (ersatzweise Ceylon) ist eine praktische Alternative - sehr sparsam dosieren, da Zimtrinde intensiver schmeckt als die Blüte.
 
 Praxis. Senfsaat reinigen, im Mörser fein zerstoßen und durch ein engmaschiges Tuch reiben. Zerstoßene Zimtblüte einmischen, dann in zwei Durchgängen kräftig mit Honig zu einer musartigen Paste verrühren. Diese Paste hält sich als Vorrat; zum Anrichten jeweils eine kleine Portion mit Wein zu einer löffelfähigen Sauce anrühren. Das Rezept nennt keine Mengenverhältnisse von Senfsaat, Honig und Zimtblüte - Konsistenz und Schärfe der fertigen Paste hängen von der eigenen Erfahrung ab; wer es milder mag, nimmt mehr Honig, wer es schärfer mag, weniger.
 

@@ -15,7 +15,7 @@
         <availability status="restricted">
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
         </availability>
-        <date when="2026-08-15">2026-08-15</date>
+        <date when="2026-08-29">2026-08-29</date>
         <idno type="url">https://fyndling.de/rezepte/mar-005/</idno>
         <idno type="w3id">https://w3id.org/fyndling/mar-005</idno>
       </publicationStmt>
@@ -44,6 +44,10 @@
         <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
           <label>Namensbasierte Zuordnung Fyndling</label>
           <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
         </application>
         <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
           <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
@@ -74,7 +78,7 @@ Per fare bona peperata de capriolo, o lepore, o porco salvatico, o d'altra salva
         <div type="translation" xml:id="mar-005-trans" xml:lang="de" corresp="#mar-005-orig">
           <p>Für eine gute Peperata vom Reh, Hasen, Wildschwein oder anderem Wildfleisch nimm so viel Wasser wie Rotwein und wasche das Fleisch darin gut. Danach passiere diese Waschlösung durch ein feines Tuch oder Sieb und gib so viel Salz hinzu, wie dir nötig erscheint. Lege das Fleisch in das besagte Wasser und den Wein und lasse es kochen. Wenn es gar ist, nimm es heraus.</p>
           <p>Willst du zwei Platten davon zubereiten, so nimm anderthalb Pfund Rosinen und lasse sie sehr gut zerstoßen. Nimm ebenso viel Brot, in Scheiben geschnitten und gut über dem Grill geröstet, und weiche es gut in gutem Essig ein. Zerstoße es zusammen mit den besagten Rosinen. Kannst du Blut oder die Innereien (Herz, Leber, Lunge) des Wildes bekommen, so wäre es hervorragend, diese mit den anderen Zutaten zu zerstoßen.</p>
-          <p>Die gut zerstoßenen Zutaten verdünne mit der Brühe des Fleisches, mit ein wenig Sapa (das ist eingekochter Traubenmost) und mit dem Essig, in dem das Brot eingeweicht wurde. Danach passiere diese Masse durch ein feines Tuch oder Sieb in einen Topf und gib Gewürze, Pfeffer, Nelken und Zimt oder Cassia hinzu, je nachdem, wie es dir nötig erscheint. Diese Peperata mache stark oder mild im Geschmack, sowohl mit Essig als auch mit Gewürzen, ganz nach dem allgemeinen Geschmack oder dem deines Herrn.</p>
+          <p>Die gut zerstoßenen Zutaten verdünne mit der Brühe des Fleisches, mit ein wenig Sapa (das ist eingekochter Traubenmost) und mit dem Essig, in dem das Brot eingeweicht wurde. Danach passiere diese Masse durch ein feines Tuch oder Sieb in einen Topf und gib Gewürze, Pfeffer, Nelken und Zimt hinzu, je nachdem, wie es dir nötig erscheint. Diese Peperata mache stark oder mild im Geschmack, sowohl mit Essig als auch mit Gewürzen, ganz nach dem allgemeinen Geschmack oder dem deines Herrn.</p>
           <p>Danach lasse die Sauce eine halbe Stunde über der Glut kochen, so dass sie nicht mehr Feuer auf einer Seite hat als auf der anderen, und rühre sie oft mit einem Löffel um. Brate das zuvor gekochte Fleisch mit gutem Schmalz an, verteile es auf den Platten und bedecke es mit der erwähnten Peperata, die, je schwärzer sie ist, desto schöner erscheint.</p>
         </div>
         <div type="ingredients">
@@ -114,7 +118,7 @@ Per fare bona peperata de capriolo, o lepore, o porco salvatico, o d'altra salva
               <ingredient en="clove" orig="garofali" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Nelken</ingredient>
             </item>
             <item>
-              <ingredient orig="cannella, over cinnamomo">Zimt oder Cassia</ingredient>
+              <ingredient en="cinnamon" orig="cannella, over cinnamomo" commodity="wikidata:Q28165">Zimt</ingredient>
             </item>
             <item>
               <ingredient en="lard" orig="bono lardo" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient>
@@ -147,6 +151,7 @@ Praxis. Reh, Hase oder Wildschwein in Wein-Wasser mit Salz garen. Brotscheiben r
         <note type="gloss" target="#mar-005-orig" n="pignatta" resp="#fyndling">Ein irdener Kochtopf, typisch für die mittelalterliche Küche.</note>
         <note type="gloss" target="#mar-005-orig" n="brascia" resp="#fyndling">Glut oder glühende Kohlen, die für eine gleichmäßige und kontrollierte Hitzequelle genutzt werden.</note>
         <note type="gloss" target="#mar-005-orig" n="lardo" resp="#fyndling">Schweineschmalz oder Speckfett, das zum Braten und Verfeinern verwendet wird.</note>
+        <note type="gloss" target="#mar-005-orig" n="cinnamomo" resp="#fyndling">Martino nennt den Zimt hier doppelt: mit dem volkssprachlichen cannella und dem gelehrten cinnamomo. Ob over zwei Handelssorten trennt oder nur den zweiten Namen derselben Ware nachreicht, laesst der Text offen - an den uebrigen Stellen im Buch steht mal das eine, mal das andere Wort allein fuer denselben Grundstoff. Sicher ist nur, was NICHT drinsteht: eine botanische Unterscheidung. Gehandelt wurde nach Gueteklassen; die Trennung Ceylon-Zimt / Cassia ist eine Kategorie des 18. Jahrhunderts.</note>
       </div>
     </back>
   </text>
