@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3072 Rezepte** aus **36 Rezeptsammlungen**, dazu
+**3085 Rezepte** aus **36 Rezeptsammlungen**, dazu
 36 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -56,14 +56,14 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | The Forme of Cury | ~1390 | 192 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 169 |  |
+| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 154 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 152 | [W1](https://gams.uni-graz.at/o:corema.w1) |
-| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 147 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
+| Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 86 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
-| Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 80 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Reichenauer Kochbuch | 15. Jh. | 75 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
