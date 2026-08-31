@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frittierte Mandaten mit Mandelfüllung</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-08-31">2026-08-31</date>
+        <idno type="url">https://fyndling.de/rezepte/wo10-092/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wo10-092</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4°</title>
+          <date when="1543">1543</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.wo10/TEI_SOURCE</idno>
+          <idno type="corema-sigle">wo10</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.wo10</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wo10-092">
+        <head>Frittierte Mandaten mit Mandelfüllung</head>
+        <div type="original" xml:id="wo10-092-orig" xml:lang="de-x-fnhd" corresp="#wo10-092-trans">
+          <p>Mandaten zubachen So nimb Mandel stoss sie fast klain vnd stoss ein zucker daran das wol siess werd vnd thue ein Rosen wasser dar= ein vnd nimb ein Mandaten vnd streichs darauff auf das aller dinnest vnd thue ein ander mandaten daruber vnd trucks wol zu vnd schneid vier thail aus aim vnnd mach den Mandel nit zu dinn vnd nimb ayr vnd wasser mach ein taiglin daraus vnnd gilbs wol vnd zeuch das obgemelt an den orttern dardurch eines roggenhalms gross vnnd mach das taiglin dinn wie zu den zog= nen schnitten vnd legs In ain haiss schmaltz vnd geus das schmaltz daruber Bachs resch herab so gand sy auff</p>
+        </div>
+        <div type="translation" xml:id="wo10-092-trans" xml:lang="de" corresp="#wo10-092-orig">
+          <p>Für die Mandel-Füllung: Nimm Mandeln und stoße sie sehr fein. Stoße Zucker dazu, sodass die Masse gut süß wird. Gib Rosenwasser hinein und vermische alles gut. Die Mandelmasse soll nicht zu dünn sein.</p>
+          <p>Für die Mandaten: Nimm ein Mandaten-Blatt und streiche die Mandelmasse hauchdünn darauf. Lege ein weiteres Mandaten-Blatt darüber und drücke es gut zusammen. Schneide aus dem Stück vier Teile.</p>
+          <p>Für das Teiglein: Nimm Eier und Wasser und bereite daraus ein kleines Teiglein. Färbe es gut gelb (durch die Eigelbe). Mach das Teiglein dünn, wie für gezogene Schnitten.</p>
+          <p>Zieh die Ränder der zusammengedrückten Mandaten-Stücke durch dieses gelbe Teiglein, etwa in der Breite eines Roggenhalms.</p>
+          <p>Lege die vorbereiteten Gebäcke in heißes Schmalz und gieße weiteres Schmalz darüber. Backe sie knusprig heraus, sodass sie schön aufgehen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="Mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, gemahlen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Rosen wasser" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="lard" orig="schmaltz" commodity="wikidata:Q72827" source="#corema-ingredient-index">Schweineschmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wo10-092-trans" resp="#fyndling">Welches Gericht/Konfekt ist das? Gefüllte, in Schmalz frittierte dünne Teigtaschen mit gesüßter Mandel-Rosenwasser-Füllung, an den Rändern durch Eintauchen in gelb gefärbtes Teiglein versiegelt. Strukturell am nächsten an heutigen gefüllten, frittierten Süßgebäck-Taschen - dem Prinzip nach verwandt mit Schlupfkrapfen oder süßen frittierten Ravioli-artigen Gebäcken wie sizilianischen Cassatelle, aber ohne einen einzelnen konkreten Namensnachfahren.
+
+Die Hüllen selbst - im Text ‚Mandaten' genannt - sind fertige, dünne Waffel- oder Oblatenblätter, keine aus dem Ei-Wasser-Teiglein ausgerollten Scheiben. Das zeigt der unmittelbar folgende Nachbar-Eintrag im selben Buch: Er füllt dieselben ‚Mandaten' mit Apfel oder Birne statt Mandeln und setzt das Teiglein bereits als bekanntes, separates Element voraus. Der nahezu wortgleiche Zwilling Ain gut baches (Kochbuch der Sabina Welserin) bestätigt das: Dort heißt die Hülle ausdrücklich ‚Oblaten', während ein eigenes Teiglein nur zum Randtauchen dient. Ob ‚Mandaten' eine Schreibvariante von ‚Oblaten' ist oder ein eigenständiges regionales Wort, bleibt ungeklärt.
+
+Das Teiglein dient also nicht der Hülle, sondern ausschließlich dazu, die Ränder der zusammengedrückten Stücke vor dem Frittieren einzutauchen und gelb zu färben. Die Gelbfärbung erfolgt nach der naheliegendsten Lesart durch die Eigelbe selbst; eine Safranzugabe ist historisch denkbar, aber im Text nicht genannt und angesichts der Ei-Wasser-Basis auch nicht nötig.
+
+Praxis. Für das Lager reicht eine tiefe Pfanne oder ein Dutch Oven mit ausreichend heißem Schmalz über offenem Feuer, ein Ofen ist nicht nötig. Fertige, ungesüßte, dünne Oblaten- oder Waffelblätter übernehmen die Rolle der ‚Mandaten' und werden mit der fein gestoßenen Mandel-Zucker-Rosenwasser-Masse dünn bestrichen, mit einem zweiten Blatt bedeckt, fest zusammengedrückt und geviertelt. Vor dem Frittieren die Ränder kurz durch das gelb gefärbte Ei-Wasser-Teiglein ziehen. Mengenangaben für Mandeln, Zucker, Rosenwasser, Eier und Schmalz fehlen im Original vollständig - hier nach Bedarf und Erfahrung dosieren. Die Ausbeute von vier Stücken aus einem Ansatz ist für mehrere Personen knapp; für die angegebene Portionszahl empfiehlt sich, Teig und Füllung mehrfach anzusetzen.</note>
+        <note type="gloss" target="#wo10-092-orig" n="Mandaten" resp="#fyndling">‚Mandaten' ist hier ein eigenständiger Waffel-/Oblaten-Begriff für die Hüllblätter des Gebäcks - unabhängig von dem später im Text beschriebenen Ei-Wasser-Teiglein, das nur zum Randtauchen dient. Belegt durch das folgende Rezept wo10-093 (‚Mandaten Bachas zubachen'), das dieselben ‚Mandaten' mit Apfel oder Birne statt Mandeln füllt, und durch den Zwilling saw-147, der an gleicher Stelle ‚Oblaten' für die Hülle verwendet.</note>
+        <note type="gloss" target="#wo10-092-orig" n="zubachen" resp="#fyndling">Im Kontext dieses Rezepts, das die Zubereitung in heißem Schmalz beschreibt, bedeutet ‚zubachen' ‚frittieren' oder ‚in Fett ausbacken', nicht im Ofen backen.</note>
+        <note type="gloss" target="#wo10-092-orig" n="gilbs wol" resp="#fyndling">Die Anweisung, den Teig gut gelb zu färben, wird hier primär durch die Eigelbe erreicht. Optional könnte auch eine Prise Safran für eine intensivere Farbe verwendet werden.</note>
+        <note type="gloss" target="#wo10-092-orig" n="roggenhalms gross" resp="#fyndling">Die Ränder der zusammengedrückten Mandaten-Stücke werden durch das gelb gefärbte Ei-Wasser-Teiglein gezogen (getaucht), und zwar etwa in der Breite eines Roggenhalms - ein Tauch-/Färbeschritt vor dem Frittieren, kein Formen oder Crimpen mit einem Werkzeug.</note>
+        <note type="gloss" target="#wo10-092-orig" n="zognen schnitten" resp="#fyndling">Bezieht sich auf sehr dünn ausgerollten oder gezogenen Teig, ähnlich wie für Strudel oder dünne, frittierte Teigwaren (z.B. ‚Ausgezogene Nudeln' oder ‚Schmalznudeln').</note>
+        <note type="gloss" target="#wo10-092-orig" n="resch herab" resp="#fyndling">Bedeutet, die Gebäcke knusprig und goldbraun auszubacken.</note>
+        <note type="interpretive_choice" target="#wo10-092-orig" n="Mandaten" resp="#fyndling">Ein eigenständiger Waffel- oder Oblatenblatt-Begriff für die Hüllen des Gebäcks, unabhängig vom später beschriebenen Ei-Wasser-Teiglein. Belegt durch das unmittelbar folgende Rezept wo10-093, das dieselben ‚Mandaten' mit Apfel oder Birne statt Mandeln füllt, sowie durch den fast wortgleichen Zwilling saw-147, der an identischer Stelle ‚Oblaten' (‚olblaten') für die Hülle und ein separates, nur zum Randtauchen dienendes Teiglein verwendet.</note>
+        <note type="interpretive_choice" target="#wo10-092-orig" n="gilbs wol" resp="#fyndling">Die Gelbfärbung des Teigs wird primär durch die Eigelbe der verwendeten Eier erreicht.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
