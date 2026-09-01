@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Aufgegangene Apfel-Salbei-Krapfen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-01">2026-09-01</date>
+        <idno type="url">https://fyndling.de/rezepte/wo10-095/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wo10-095</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4°</title>
+          <date when="1543">1543</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.wo10/TEI_SOURCE</idno>
+          <idno type="corema-sigle">wo10</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.wo10</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wo10-095">
+        <head>Aufgegangene Apfel-Salbei-Krapfen</head>
+        <div type="original" xml:id="wo10-095-orig" xml:lang="de-x-fnhd" corresp="#wo10-095-trans">
+          <p>Aufgelaufen opffel vnd saluen zubachen Nimb mel vnd thue ein kalt wasser daran darnach ruer In gnugsam dickh vnd schlag In gar wol darnach so schlag ein Ay oder 3 darein nacheinander das es ein wenig dinner sey dann ein streiblen taig will er zu dickh sein so schlag von ainem Ay nur das waiss darein vnd die Opffell sollen gross sein vnd rund geschnitten vff das aller dinnest vnd ker sy In ainem taig vmb vnnd nachmals aus einem haissen schmaltz Resch gebachen vnd mit ainem loffell das schmaltz darauff gegossen so gand sie hoch auff</p>
+        </div>
+        <div type="translation" xml:id="wo10-095-trans" xml:lang="de" corresp="#wo10-095-orig">
+          <p>Nimm Mehl und gib kaltes Wasser dazu. Rühre es danach ausreichend dick und schlage es sehr gut. Schlage anschließend ein bis drei Eier nacheinander hinein, sodass der Teig etwas dünner ist als ein Strauben-Teig. Sollte er zu dick sein, schlage nur das Eiweiß von einem Ei hinein. Die Äpfel sollen groß und so dünn wie möglich in runde Scheiben geschnitten werden. Wende sie im Teig und backe sie danach knusprig in heißem Schmalz. Gieße dabei mit einem Löffel das Schmalz über die Krapfen, damit sie hoch aufgehen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#fyndling-ingredient-registry">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kalt wasser">Kaltes Wasser</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="ein Ay oder 3" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Ei</ingredient> - 1</item>
+            <item><ingredient en="egg white" orig="das waiss" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß (optional, zur Teigverdünnung)</ingredient> - 1</item>
+            <item>
+              <ingredient en="apple" orig="Opffell" commodity="wikidata:Q89" source="#corema-ingredient-index">Große Äpfel</ingredient>
+            </item>
+            <item>
+              <ingredient en="lard" orig="haissen schmaltz" commodity="wikidata:Q72827" source="#fyndling-ingredient-name">Schweineschmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="common sage" orig="saluen" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei (Verwendung im Text nicht spezifiziert)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wo10-095-trans" resp="#fyndling">Welches Gericht ist das? Dünne Apfelscheiben werden durch einen fließenden Ei-Mehl-Teig gezogen und in heißem Schmalz gebacken, bis sie aufgehen. Der Kern ist bis heute bekannt: Apfelringe im Backteig, Apfelküchle, oder die französischen Beignets aux pommes folgen demselben Prinzip.
+
+Der Titel nennt neben den Äpfeln auch „saluen“ (Salbei) als zweites, zu backendes Element - der Fließtext führt dazu aber keine eigene Anweisung aus. Offen bleibt daher, wie Salbei eingesetzt wurde: als Würze im Teig, als Garnitur, oder - denkbar, aber ebenso unbelegt - als eigene frittierte Zutat, deren Blätter wie die Apfelscheiben einzeln durch denselben Teig gezogen und mitgebacken wurden. Da keine dieser Lesarten im Text ausgeführt ist, bleibt die praktische Umsetzung von Salbei in diesem Rezept offen.
+
+Praxis. Mehl mit kaltem Wasser glattrühren und kräftig schlagen, dann ein bis drei Eier nacheinander einschlagen, bis der Teig etwas dünner ist als ein Straubenteig. Ist er zu dick, hilft Eiweiß allein zum Verdünnen, ohne zusätzliches Eigelb-Fett einzubringen. Die Apfelscheiben groß, rund und so dünn wie möglich schneiden, im Teig wenden und im heißen Schmalz resch backen. Während des Backens mit einem Löffel heißes Schmalz über die Scheiben gießen - das gart die nicht vollständig untergetauchte Oberseite mit und unterstützt das Aufgehen des Teigmantels.</note>
+        <note type="gloss" target="#wo10-095-orig" n="Aufgelaufen" resp="#fyndling">‚Aufgegangen‘ oder ‚aufgebläht‘. Bezieht sich auf die Eigenschaft der Krapfen, beim Backen im heißen Fett hoch aufzugehen.</note>
+        <note type="gloss" target="#wo10-095-orig" n="Resch gebachen" resp="#fyndling">‚Knusprig gebacken‘.</note>
+        <note type="gloss" target="#wo10-095-orig" n="Schmalz" resp="#fyndling">Tierisches Fett, hier zum Frittieren verwendet.</note>
+        <note type="gloss" target="#wo10-095-orig" n="saluen" resp="#fyndling">Im selben Buch zweimal eindeutig als Substantiv „Salbei“ belegt: wo10-075 nennt ihn in einer Kräuterreihe („Maseron saluen petterling Rosmarin“), wo10-083 spricht von „saluenpletlen“ (Salbeiblättern). Zwei CoReMA-Sachglossen aus anderen Wolfenbütteler Handschriften (bs2.5, wo8.283) bestätigen unabhängig „saluen“ = Salbei (Wikidata Q1111359).</note>
+        <note type="gloss" target="#wo10-095-orig" n="streiblen taig" resp="#fyndling">„Streiblein“ bzw. „Straube“ bezeichnet ein Fettgebäck aus dünnem, fließendem Teig. Grimm belegt „krapseck, streibleinbeck“ als verwandte Bezeichnung für Krapfen- und Straubengebäck.</note>
+        <note type="interpretive_choice" target="#wo10-095-orig" n="Aufgelaufen" resp="#fyndling">‚Aufgegangen‘ oder ‚aufgebläht‘.</note>
+        <note type="interpretive_choice" target="#wo10-095-orig" n="saluen" resp="#fyndling">Salbei</note>
+      </div>
+    </back>
+  </text>
+</TEI>

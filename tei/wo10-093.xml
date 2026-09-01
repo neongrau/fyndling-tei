@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frittierte Mandaten mit Apfel- oder Birnenfüllung</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-01">2026-09-01</date>
+        <idno type="url">https://fyndling.de/rezepte/wo10-093/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wo10-093</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4°</title>
+          <date when="1543">1543</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.wo10/TEI_SOURCE</idno>
+          <idno type="corema-sigle">wo10</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.wo10</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wo10-093">
+        <head>Frittierte Mandaten mit Apfel- oder Birnenfüllung</head>
+        <div type="original" xml:id="wo10-093-orig" xml:lang="de-x-fnhd" corresp="#wo10-093-trans">
+          <p>Mandaten Bachas zubachen So nimb Opffel oder Birn vnd schwem sy vnd stoss darnach wol In ainem Mor= ser vnd thue sy heraus In ain pfannen vnd thue ein wein trauben seltz daran auch Imber Rorlen vnnd zucker vnd thus vber das feur so gewint es ein farb streichs auf den Mandaten deckh aine daruber vnd bestreichs an den orttern mit dem obgemelten taig das gelb ist vnd bachs Resch herab In ainem haissen schmaltz</p>
+        </div>
+        <div type="translation" xml:id="wo10-093-trans" xml:lang="de" corresp="#wo10-093-orig">
+          <p>Um Mandaten mit Apfel- oder Birnenfüllung zuzubereiten: Nimm Äpfel oder Birnen und wasche sie. Zerstoße sie danach gut in einem Mörser und gib sie heraus in eine Pfanne. Gib Weintraubenmus, Ingwer, gestoßene Zimtstangen und Zucker hinzu und stelle es über das Feuer, damit es Farbe annimmt.</p>
+          <p>Streiche diese Masse auf ein Mandaten-Blatt. Lege ein weiteres Mandaten-Blatt darüber und bestreiche die Ränder mit dem bereits erwähnten, gelben Teig. Backe es knusprig in heißem Schmalz.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="apple or pear" orig="Opffel oder Birn" commodity="wikidata:Q89 wikidata:Q13099586" cert="low" source="#fyndling-ingredient-context">Äpfel oder Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wein trauben seltz">Weintraubenmus</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Imber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Rorlen" commodity="wikidata:Q28165">Zimtstangen, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond" orig="Mandaten" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandaten (Oblaten-/Waffelblätter)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="obgemelten taig das gelb ist">Gelber Teig (Ei-Wasser-Teiglein, siehe wo10-092)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="haissen schmaltz">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wo10-093-trans" resp="#fyndling">Welches Gericht/Konfekt ist das? Ein aus zwei dünnen Waffel-/Oblatenblättern (‚Mandaten') zusammengesetztes, mit Apfel- oder Birnenmus gefülltes und in heißem Schmalz ausgebackenes Gebäckstück - keine Pastete im heutigen Sinn (Mürbe- oder Blätterteig-Hülle), sondern ein gefülltes, frittiertes Oblatenkonfekt. wo10-093 ist das unmittelbar folgende Schwesterrezept zu wo10-092, das dieselbe Konstruktion mit Mandelmasse statt Fruchtmus füllt. Der fast wortgleiche Zwilling Ain gut baches (Kochbuch der Sabina Welserin, saw-147) nennt die Hülle an gleicher Stelle ausdrücklich ‚Oblaten' und bestätigt ‚Bachas' als eigenständiges Nomen für ‚Gebäckstück'.
+
+Das Buch führt einen eigenen, klar abgegrenzten Pastetenteig-Zyklus (etwa wo10-053, Birnenpastete mit Gewürzen): ein geschlossener ‚Hafen' aus Pastetenteig, im Ofen gebacken, vor dem Backen mit Eigelb bestrichen. wo10-093 hat davon nichts - zwei flache Oblatenblätter, randversiegelt und in heißem Schmalz frittiert, kein Ofen, keine geschlossene Teighülle. ‚Pastete' im bisherigen Titel war eine unbelegte spätere Übersetzungsentscheidung; der Originaltitel lautet ‚Mandaten Bachas zubachen'.
+
+Der ‚bereits erwähnte gelbe Teig' wird in wo10-093 selbst nicht beschrieben - er ist ein wörtlicher Rückverweis auf das unmittelbar vorangehende Rezept wo10-092, das ihn aus Eiern und Wasser herstellt und gut gelb färbt. Er dient dort wie hier ausschließlich zum Versiegeln der Ränder vor dem Frittieren, nicht als Hülle selbst.
+
+Der Text sagt ‚schwem sy' - das ist ‚schwemmen' im Sinn von ‚abspülen, im Wasser waschen', nicht ‚weich kochen'. Für Letzteres kennt dasselbe Buch ein eigenes Verb, ‚schwellen'/‚geschwelt'. Die Äpfel oder Birnen werden also roh gewaschen und erst danach im Mörser zerstoßen - weich und gar werden sie erst im nächsten Schritt, wenn die Masse mit Traubenmus, Ingwer, Zimt und Zucker über dem Feuer eingekocht wird. Getrocknetes Obst ist damit auszuschließen: Dieselbe Handschrift markiert Dörrobst ausdrücklich als ‚gedorrt' (so bei den Damaszener Pflaumen in wo10-056/057/059) - bei ‚Opffel oder Birn' fehlt dieser Zusatz, und rohes Steinobst ließe sich ohnehin nicht sinnvoll im Mörser zerstoßen, ohne es vorher weich zu kochen, was der Text nicht vorsieht.
+
+Dass frisch zerstoßenes Obst zu Matsch würde, der die Oblaten vor dem Frittieren aufweicht, greift hier nicht: Die Masse wird nicht roh auf die Oblate gestrichen, sondern zuerst mit Traubenmus, Gewürzen und Zucker über dem Feuer eingekocht, ‚bis sie Farbe annimmt' - also zu einer dickflüssigen, reduzierten Paste ähnlich einem Fruchtmus oder einer Latwerge, nicht zu losem Fruchtbrei. Genau dieselbe Sorgfalt um die Konsistenz zeigt das unmittelbare Schwesterrezept wo10-092 bei seiner Mandelfüllung (‚mach den Mandel nit zu dinn' - die Masse soll nicht zu dünn sein), bevor sie zwischen zwei Oblaten gepresst wird.
+
+Praxis. Für das Lager reicht Topf oder Dutch Oven am offenen Feuer, ein Ofen ist nicht nötig. Äpfel oder Birnen waschen, entkernen/schälen und im Mörser (oder ersatzweise in der Küchenmaschine) zerstoßen - das gelingt am leichtesten mit weichem, reifem Obst. Danach mit Weintraubenmus, Ingwer, gestoßenen Zimtstangen und Zucker in einer Pfanne über dem Feuer kurz einkochen, bis die Masse Farbe annimmt. Die Füllung auf ein dünnes, ungesüßtes Oblaten- oder Waffelblatt streichen, ein zweites Blatt darüberlegen und die Ränder mit dem gelb gefärbten Ei-Wasser-Teiglein (siehe wo10-092) bestreichen, damit die Füllung beim Frittieren nicht ausläuft. In heißem Schmalz knusprig ausbacken. Mengenangaben fehlen im Original vollständig - hier nach Bedarf und Erfahrung dosieren.</note>
+        <note type="gloss" target="#wo10-093-orig" n="Mörser" resp="#fyndling">Im Mittelalter ein großer Fleischmörser aus Stein oder Metall, nicht der kleine Gewürzmörser. Er diente zum Zerstoßen von Fleisch, Fisch, Nüssen oder feuchten Zutaten zu einer feinen Paste.</note>
+        <note type="gloss" target="#wo10-093-orig" n="Schmalz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz. Für eine vegetarische Variante kann Pflanzenöl verwendet werden.</note>
+        <note type="gloss" target="#wo10-093-orig" n="Resch" resp="#fyndling">Bedeutet ‚knusprig' oder ‚kross'.</note>
+        <note type="gloss" target="#wo10-093-orig" n="Mandaten" resp="#fyndling">‚Mandaten' bezeichnet auch hier kein Mandel-Gebäck, sondern dünne Waffel- oder Oblatenblätter, die als Hülle für die Füllung dienen - dieselben Blätter wie im unmittelbar vorangehenden Rezept wo10-092, das sie mit Mandelmasse statt Fruchtmus füllt. Der Zwilling saw-147 nennt die Hülle an gleicher Stelle ‚Oblaten'.</note>
+        <note type="gloss" target="#wo10-093-orig" n="Bachas" resp="#fyndling">Dialektales Nomen für ‚Gebäck/Backwerk', kein isoliertes Rätselwort - bestätigt durch saw-147 (Titel dort wörtlich ‚Ain gut baches' = ‚ein gutes Gebäck') und durch saw-162, das dieselbe Titelformel ‚X bachas zubachen' zitiert.</note>
+        <note type="gloss" target="#wo10-093-orig" n="schwem" resp="#fyndling">‚schwemmen' heißt hier ‚abspülen, im Wasser waschen', nicht ‚weich kochen' - für Letzteres verwendet dasselbe Buch das eigene Verb ‚schwellen'/‚geschwelt'. Das spricht für frisches, nicht getrocknetes Obst: Wenn dieselbe Handschrift Dörrobst meint, markiert sie es ausdrücklich als ‚gedorrt' (so bei den Damaszener Pflaumen in wo10-056/057/059) - bei ‚Opffel oder Birn' fehlt dieser Zusatz.</note>
+        <note type="interpretive_choice" target="#wo10-093-orig" n="Mandaten Bachas zubachen" resp="#fyndling">‚Gebackene Mandaten mit Apfel- oder Birnenfüllung' - ‚Mandaten' bezeichnet dünne Waffel- oder Oblatenblätter (nicht Mandelgebäck), belegt durch das unmittelbar vorangehende Rezept wo10-092 (dieselbe Konstruktion mit Mandelfüllung) und den Zwilling saw-147 (‚Oblaten' an gleicher Stelle). ‚Bachas' ist ein dialektales Nomen für ‚Gebäck/Backwerk', bestätigt durch saw-147 (‚Ain gut baches') und saw-162 (zitiert dieselbe Titelformel ‚X bachas zubachen').</note>
+        <note type="interpretive_choice" target="#wo10-093-orig" n="wein trauben seltz" resp="#fyndling">‚Weintraubenmus' - ‚seltz' bezeichnet hier eingekochtes, dickflüssiges Fruchtmus, belegt durch den Glossareintrag ‚kers-seltz' (Kirschenmus) in saw-046/saw-007.</note>
+        <note type="interpretive_choice" target="#wo10-093-orig" n="Opffel oder Birn ... schwem sy vnd stoss darnach wol In ainem Morser" resp="#fyndling">Frische Äpfel oder Birnen, roh gewaschen und im Mörser zerstoßen, nicht getrocknetes Obst. Die Handschrift markiert Dörrobst an anderer Stelle ausdrücklich als ‚gedorrt' (Damaszener Pflaumen in wo10-056/057/059) - bei ‚Opffel oder Birn' fehlt dieser Zusatz.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
