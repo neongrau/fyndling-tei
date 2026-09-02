@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3117 Rezepte** aus **36 Rezeptsammlungen**, dazu
-36 Dateien auf Sammlungsebene mit den Quellenangaben.
+**3169 Rezepte** aus **37 Rezeptsammlungen**, dazu
+37 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -54,8 +54,8 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Ménagier de Paris | ~1393 | 287 |  |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
+| Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
 | The Forme of Cury | ~1390 | 192 |  |
-| Das Kochbuch der Sabina Welserin | 1553 | 189 |  |
 | Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 154 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 152 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
@@ -73,10 +73,11 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Le Viandier de Taillevent | ~1300 | 49 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
+| Das Kochbuch des Balthasar Staindl | 1545 | 35 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
 | Solothurner Küchenmeisterei | um 1487 | 26 | [So1](https://gams.uni-graz.at/o:corema.so1) |
-| Alemannisches Büchlein von guter Speise (N1) | 1492 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
+| Alemannisches Büchlein von guter Speise (N1) | 1492-1494 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 24 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |

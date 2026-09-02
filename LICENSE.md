@@ -17,7 +17,7 @@ Texte weiterverwendet, muss die dort genannte Herkunft nennen.
 
 ## 0. Kurzfassung
 
-Der Bestand ist **gemischt lizenziert**. Für 3097 Rezepte gilt CC BY-SA 4.0,
+Der Bestand ist **gemischt lizenziert**. Für 3149 Rezepte gilt CC BY-SA 4.0,
 für 20 Rezepte aus Haus- und Arzneibuch (792) und Rheinfränkisches Kochbuch gilt CC BY-**NC**-SA 4.0 -
 diese sind nicht kommerziell nutzbar.
 
