@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3188 Rezepte** aus **37 Rezeptsammlungen**, dazu
+**3205 Rezepte** aus **37 Rezeptsammlungen**, dazu
 37 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -70,10 +70,10 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
 | Rheinfränkisches Kochbuch | ~1445 | 53 | [B1](https://gams.uni-graz.at/o:corema.b1) |
+| Das Kochbuch des Balthasar Staindl | 1545 | 52 |  |
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Le Viandier de Taillevent | ~1300 | 49 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
-| Das Kochbuch des Balthasar Staindl | 1545 | 35 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
 | Solothurner Küchenmeisterei | um 1487 | 26 | [So1](https://gams.uni-graz.at/o:corema.so1) |
