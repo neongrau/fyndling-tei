@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Weißes Zotatz-Mus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-05">2026-09-05</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-151/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-151</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.150</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-151">
+        <head>Weißes Zotatz-Mus</head>
+        <div type="original" xml:id="w1-151-orig" xml:lang="de-x-fnhd" corresp="#w1-151-trans">
+          <p>Ein weiss zotatz gmues NIm schon semeln mel zeuch ein taig ab mit weissen von ayren vnd hab ein siedunde milch in einer phann nym den taig vnd zeuch in klain darIn dy weil sy seudet dy milch sol varhin gesalczen sein ein smalcz tue auch doran schaw das es gewermelt beleib versalcz nicht gib es hin</p>
+        </div>
+        <div type="translation" xml:id="w1-151-trans" xml:lang="de" corresp="#w1-151-orig">
+          <p>Nimm feines Semmelmehl und forme mit Eiweiß einen Teig. Halte siedende Milch in einer Pfanne bereit. Nimm den Teig und ziehe ihn in kleinen Stücken hinein, während die Milch siedet. Die Milch soll zuvor gesalzen sein. Gib auch Schmalz hinzu. Achte darauf, dass es gewermelt bleibt. Versalze es nicht. Serviere es.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="semeln mel">Feines Semmelmehl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="weissen von ayren">Eiweiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="milch">Milch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gesalczen">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="smalcz">Schweineschmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-151-trans" resp="#fyndling">Welches Gericht ist das? Ein herzhaft gesalzenes Milchgericht mit kleinen, in die siedende Milch eingezogenen Stücken aus Eiweißteig. Es erinnert lose an Nockerln, kleine Klöße oder Spätzle in Milch, doch Form, Werkzeug und Konsistenz sind nicht überliefert. „Mus“ ist hier die historische allgemeine Speisebezeichnung und bezeichnet nicht zwingend einen pürierten Brei.
+
+Zotatz. Der Titelbegriff ist ungeklärt. Die Parallelhandschrift B4 überliefert die nahe Form „zottacz“, löst ihre Bedeutung aber ebenfalls nicht auf. Deshalb bleibt das Wort im modernen Titel erhalten.
+
+Semmelmehl. Ob „semeln mel“ hier feines Weizenmehl oder fein geriebene Weißbrotkrume bezeichnet, lässt sich nicht sicher entscheiden. Die Parallelhandschrift bewahrt denselben Ausdruck, ohne den Stoff eindeutig festzulegen. Für einen Nachkochversuch muss diese Wahl daher als moderne Arbeitshypothese kenntlich bleiben.
+
+Gewermelt. W1 verlangt, dass die Speise „gewermelt“ bleibt; B4 hat an derselben Stelle „gewurmelet“. Der bezeichnete Endzustand ist ungeklärt, weshalb daraus weder Warmhalten noch ein bestimmter Garpunkt abgeleitet wird.
+
+Moderne Praxis. Milch und Eiweiß bis unmittelbar vor dem Kochen kühl halten. Mit einer kleinen Probemenge prüfen, welche Teigkonsistenz sich in kleinen Stücken in die siedende Milch ziehen lässt, und die Stücke vollständig durchgaren. Die Quelle nennt weder Mengen noch Garzeit; vorsichtig salzen, weil sie ausdrücklich vor dem Versalzen warnt.</note>
+        <note type="gloss" target="#w1-151-orig" n="zotatz" resp="#fyndling">Ungeklärte Titelform. Die Parallelhandschrift B4 überliefert „zottacz“, ohne damit die Bedeutung als „Zusatz“, „Beilage“ oder „Zutat“ zu sichern.</note>
+        <note type="gloss" target="#w1-151-orig" n="gmues" resp="#fyndling">Historische allgemeine Speisebezeichnung, die weder modernes Gemüse noch zwingend eine pürierte oder breiige Konsistenz meint.</note>
+        <note type="gloss" target="#w1-151-orig" n="semeln mel" resp="#fyndling">Der Ausdruck bezeichnet Semmelmehl; ob hier feines Weizenmehl oder geriebene Weißbrotkrume gemeint ist, bleibt zwischen den herangezogenen Belegen offen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
+        <note type="gloss" target="#w1-151-orig" n="varhin" resp="#fyndling">Die Parallelhandschrift B4 schreibt „vor hin“ und stützt damit die Übersetzung „zuvor“: Die Milch soll bereits gesalzen sein.</note>
+        <note type="gloss" target="#w1-151-orig" n="gewermelt" resp="#fyndling">Ungeklärte Zustandsangabe. Die Parallelhandschrift B4 liest an derselben Stelle „gewurmelet“ und stützt daher weder die Deutung „gewärmt“ noch „warm gehalten“.</note>
+        <note type="interpretive_choice" target="#w1-151-orig" n="zotatz" resp="#fyndling">Als ungeklärte Titelform „Zotatz“ beibehalten, statt eine ungesicherte moderne Bedeutung einzusetzen.</note>
+        <note type="interpretive_choice" target="#w1-151-orig" n="gewermelt" resp="#fyndling">Die Form im Übersetzungstext beibehalten, ohne sie semantisch als „warm“ aufzulösen.</note>
+        <note type="interpretive_choice" target="#w1-151-orig" n="semeln mel" resp="#fyndling">Neutral als „Semmelmehl“ wiedergeben; die genaue Stoffzuordnung bleibt offen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Süßes Eidotter-Mus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-05">2026-09-05</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-152/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-152</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.151</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-152">
+        <head>Süßes Eidotter-Mus</head>
+        <div type="original" xml:id="w1-152-orig" xml:lang="de-x-fnhd" corresp="#w1-152-trans">
+          <p>Ein ander gmues von tutern NIm die tutter vnd zetreib sy wol vnd geus ain suesse milch daran vnd zukerrs genueg tue sy in ein schone phann nym kain smalcz derwell es ob einem gluetlen hab es nicht auf bis das man essen wil oder es gerint das ist den hirrn gut den we in dem pauch ist es sol auch dunn sein das man es sauft mit einem leffel</p>
+        </div>
+        <div type="translation" xml:id="w1-152-trans" xml:lang="de" corresp="#w1-152-orig">
+          <p>Ein anderes Mus von Eidottern:</p>
+          <p>Nimm die Eidotter und zerreib sie gut. Gieße süße Milch und ausreichend Zucker daran. Gib die Mischung in eine saubere Pfanne und verwende kein Schmalz.</p>
+          <p>Erwärme sie über einer kleinen Glut, doch bringe sie erst kurz vor dem Essen zum Aufwallen, sonst gerinnt sie. Das ist den Herren gut, denen im Bauch weh ist. Sie soll auch dünn sein, sodass man sie mit einem Löffel schlürfen kann.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="tutter">Eidotter</ingredient>
+            </item>
+            <item>
+              <ingredient orig="suesse milch">Milch, süß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="zukerrs genueg">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kain smalcz">Schmalz (nicht verwenden)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-152-trans" resp="#fyndling">Welches Gericht ist das? Eine dünne, süße Eidotter-Milch-Speise, die eher an Eiermilch oder eine gießfähige Custardsauce als an eine feste Creme erinnert. Der historische Begriff „Mus“ umfasst hier ausdrücklich eine Speise, die man mit dem Löffel trinken kann. Eine direkte Entwicklungslinie zu einem heutigen Gericht ist nicht belegt.
+
+Die schwierige Stelle. Die nahezu wortgleiche Parallelfassung b4-147 klärt drei missverständliche Stellen: Gemeint sind ausreichend Zucker, Herren mit Bauchweh und ein Aufwallen erst kurz vor dem Essen. Das Gerinnen ist dabei die unerwünschte Folge einer zu frühen oder zu langen Erhitzung. Mengen, Dauer und eine genaue Garstufe nennt die Quelle nicht.
+
+Praxis. Für eine moderne Erprobung Milch und Eidotter bis zur Zubereitung zuverlässig kühlen und möglichst pasteurisierte Zutaten verwenden. Die Eidotter glattrühren, zunächst nur wenig Milch zugeben und mit Zucker abschmecken. Dann nur so weit verdünnen, dass die Mischung löffel-trinkbar bleibt. In einer sauberen, fettfreien Pfanne über kleiner Glut erst unmittelbar vor dem Servieren behutsam bis zum beginnenden Aufwallen erhitzen und frisch ausgeben.</note>
+        <note type="gloss" target="#w1-152-orig" n="gmues" resp="#fyndling">Historischer Sammelbegriff für eine breiige oder löffelbare Speise; hier soll das Mus ausdrücklich so dünn sein, dass man es mit einem Löffel trinken kann.</note>
+        <note type="gloss" target="#w1-152-orig" n="tutter" resp="#fyndling">Eidotter.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#tutter"/></note>
+        <note type="gloss" target="#w1-152-orig" n="suesse milch" resp="#fyndling">Frische, ungesäuerte Milch im Gegensatz zu saurer Milch; die Parallelfassung b4-147 überliefert dieselbe Formulierung.</note>
+        <note type="gloss" target="#w1-152-orig" n="schone phann" resp="#fyndling">Eine saubere Pfanne.</note>
+        <note type="gloss" target="#w1-152-orig" n="smalcz" resp="#fyndling">Schmalz, also tierisches Fett. Das Rezept verlangt ausdrücklich, keines zu verwenden; einen medizinischen oder fastenzeitlichen Grund nennt es nicht.</note>
+        <note type="gloss" target="#w1-152-orig" n="gluetlen" resp="#fyndling">Verkleinerungsform zu Glut: eine kleine Glut beziehungsweise schwache Hitze.</note>
+        <note type="gloss" target="#w1-152-orig" n="den hirrn gut" resp="#fyndling">Als „den Herren gut“ zu lesen, durch b4-147 „den herren gutt“ gesichert. Gemeint sind Herren, denen im Bauch weh ist, nicht Gehirne.</note>
+        <note type="gloss" target="#w1-152-orig" n="sauft mit einem leffel" resp="#fyndling">Wörtlich mit einem Löffel trinken beziehungsweise schlürfen; damit beschreibt der Text die gewünschte dünne Konsistenz.</note>
+        <note type="interpretive_choice" target="#w1-152-orig" n="derwell ... auf" resp="#fyndling">Als Anweisung zum Erwärmen beziehungsweise Aufwallen gelesen: Die Mischung steht über kleiner Glut, soll aber erst unmittelbar vor dem Essen aufwallen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

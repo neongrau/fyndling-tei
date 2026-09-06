@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3222 Rezepte** aus **37 Rezeptsammlungen**, dazu
+**3317 Rezepte** aus **37 Rezeptsammlungen**, dazu
 37 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -56,8 +56,9 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
 | The Forme of Cury | ~1390 | 192 |  |
-| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 154 | [B4](https://gams.uni-graz.at/o:corema.b4) |
-| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 152 | [W1](https://gams.uni-graz.at/o:corema.w1) |
+| Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 159 | [B4](https://gams.uni-graz.at/o:corema.b4) |
+| Das Kochbuch des Balthasar Staindl | 1545 | 156 |  |
+| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 155 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
@@ -66,7 +67,6 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Reichenauer Kochbuch | 15. Jh. | 75 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
-| Das Kochbuch des Balthasar Staindl | 1545 | 69 |  |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
