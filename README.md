@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3451 Rezepte** aus **38 Rezeptsammlungen**, dazu
+**3464 Rezepte** aus **38 Rezeptsammlungen**, dazu
 38 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 |---|---|---:|---|
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
 | Ménagier de Paris | ~1393 | 287 |  |
-| Das Kochbuch des Balthasar Staindl | 1545 | 270 |  |
+| Das Kochbuch des Balthasar Staindl | 1545 | 283 |  |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
