@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gute Würste machen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-13">2026-09-13</date>
+        <idno type="url">https://fyndling.de/rezepte/mst-047/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mst-047</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Augspurger Kochbuoch, worinnen enthalten fürtreffliche Rezepte für Frawen &amp; Junckfrawen</title>
+          <date when="1554">1554</date>
+          <idno type="URI">https://www.digitale-sammlungen.de/de/view/bsb00076173</idno>
+          <note>Transkription: eigenes OCR (Kraken, german_print.mlmodel) aus dem BSB-Digitalisat des 1886er Neudrucks - unautorisiert, gegen das Bilddigitalisat zu prüfen</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (schwäbisch/augsburgisch, Mitte 16. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mst-047">
+        <head>Gute Würste machen</head>
+        <div type="original" xml:id="mst-047-orig" xml:lang="de-x-fnhd" corresp="#mst-047-trans">
+          <p>Gut würst zu machen.
+
+Item wiltu gut wurſt machen, nimb drey pfundt ſchweinis
+pret, vnnd zway Ruͤndern vnnd zway pfund ſpeck, thu daran
+ſiben lot ſaltz, zway lot pfeffer ain maſs waſſer, vnd fuͤr
+zwien pfening darein.</p>
+        </div>
+        <div type="translation" xml:id="mst-047-trans" xml:lang="de" corresp="#mst-047-orig">
+          <p>Wenn du gute Würste machen willst, nimm anderthalb Kilogramm Schweinebrät, ein Kilogramm Rindfleisch und ein Kilogramm Speck. Gib dazu 105 Gramm Salz, 30 Gramm Pfeffer und einen Liter Wasser.</p>
+          <p>Füge außerdem Gewürze im Wert von zwei Pfennig hinzu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="drey pfundt ſchweinis pret">Schweinebrät</ingredient> - 1.5 kg</item>
+            <item><ingredient en="beef" orig="zway Ruͤndern" commodity="wikidata:Q192628" source="#fyndling-ingredient-context">Rindfleisch</ingredient> - 1.0 kg</item>
+            <item><ingredient en="bacon" orig="zway pfund ſpeck" commodity="wikidata:Q11106" source="#fyndling-ingredient-registry">Speck</ingredient> - 1.0 kg</item>
+            <item><ingredient en="table salt" orig="ſiben lot ſaltz" commodity="wikidata:Q11254" source="#fyndling-ingredient-registry">Salz</ingredient> - 105.0 g</item>
+            <item><ingredient en="pepper" orig="zway lot pfeffer" commodity="wikidata:Q3143131" source="#fyndling-ingredient-registry">Pfeffer</ingredient> - 30.0 g</item>
+            <item><ingredient en="water" orig="ain maſs waſſer" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient> - 1.0 l</item>
+            <item>
+              <ingredient en="spice" orig="fuͤr zwien pfening" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürze (im Wert von zwei Pfennig)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mst-047-trans" resp="#fyndling">Welches Gericht ist das?
+
+Eine würzige Hausmacher-Wurstmasse aus Schweinebrät, Rindfleisch und Speck, gesalzen, gepfeffert und mit einer unbezifferten Zusatzgewürzmischung ("für zwei Pfennig") versehen. Der Text bricht nach der Zutatenliste ab, ohne Füll- oder Reifetechnik zu nennen - das rückt das Rezept näher an eine frische Bratwurst- oder Mettwurstmasse als an eine getrocknete Dauerwurst. Nächste Verwandte sind grobe deutsche Bratwurst- und Hausmacherwurst-Mischungen aus Schwein, Rind, Speck, Salz und Pfeffer.
+
+Schweinebrät oder Schweinefleisch?
+
+"pret" lesen wir als Brät - fein zerkleinertes Fleisch für die Wurstfüllung. Eine allgemeinere Lesart als Schweinefleisch bleibt möglich, ist aber schwächer belegt.
+
+Wie geht es nach der Gewürzzugabe weiter?
+
+Der Text endet mit der Zugabe der Gewürze - Zerkleinern, Füllen in Därme und Garen oder Reifen werden nicht mehr beschrieben. Da weder Aufhängen noch Trocknen erwähnt wird, gehen wir von einer frischen, zu garenden Wurst aus. Offen bleibt auch der Zerkleinerungsgrad von Rindfleisch und Speck; genannt wird Feinheit nur für das Brät.
+
+Praxis.
+
+Schweinefleisch fein wolfen (Brät), Rindfleisch und Speck ebenso fein verarbeiten für eine homogene Masse. Salz, Pfeffer und Wasser unterkneten, bis die Masse bindet, dann mit weiteren Gewürzen abschmecken - der Zwilling saw-025 nennt für dieselbe Wurst konkret eine Prise Salbei und Majoran, ein plausibler Anhaltspunkt für die im Original nur wertmäßig bezifferten Gewürze. In Naturdärme füllen und vor dem Verzehr vollständig durchgaren (kochen oder braten) - eine rohe Fleisch-Speck-Mischung ohne beschriebenen Reifeprozess sollte nicht roh verzehrt werden.</note>
+        <note type="gloss" target="#mst-047-orig" n="pfundt" resp="#fyndling">Ein 'Pfund' entsprach zur Entstehungszeit dieses Rezepts (Augsburg, 1554) etwa 500 Gramm.</note>
+        <note type="gloss" target="#mst-047-orig" n="lot" resp="#fyndling">Ein 'Lot' war eine kleinere Gewichtseinheit, die je nach Region zwischen 14 und 17 Gramm variierte; wir rechnen hier mit 15 Gramm.</note>
+        <note type="gloss" target="#mst-047-orig" n="maſs" resp="#fyndling">Ein 'Maß' war eine Volumeneinheit, die regional stark variierte. Für Flüssigkeiten wird sie oft mit etwa einem Liter gleichgesetzt.</note>
+        <note type="gloss" target="#mst-047-orig" n="pfening" resp="#fyndling">Ein 'Pfennig' war eine kleine Währungseinheit der frühen Neuzeit.</note>
+        <note type="gloss" target="#mst-047-orig" n="Ruͤndern" resp="#fyndling">Rindfleisch, nicht 'Rinder' (lebende Tiere) - die Mengenangabe 'Pfund' wird elliptisch aus dem vorangehenden 'drey pfundt' übernommen. Bestätigt durch das Zwillingsrezept saw-025: 'vnnd 4 pfund rinderis' (dieselbe Form für Rindfleisch).</note>
+        <note type="interpretive_choice" target="#mst-047-orig" n="schweinis pret" resp="#fyndling">Schweinebrät - fein zerkleinertes Fleisch für die Wurstfüllung. Fischer und das Schweizerische Idiotikon belegen 'Brät' übereinstimmend als rohes, fein zu zerkleinerndes Fleisch (Farce); im Corpus ist zudem die Verwechslungsgefahr 'geprät' (nicht 'gebraten') als eigene Lesefalle dokumentiert, was die Brät-Lesart hier zusätzlich stützt.</note>
+        <note type="interpretive_choice" target="#mst-047-orig" n="Garen oder Reifen nach der Gewürzzugabe" resp="#fyndling">Das Transkript endet mit der Gewürzzugabe; da weder Aufhängen noch Trocknen genannt wird, gehen wir von einer frischen, vor dem Verzehr vollständig zu garenden Wurst aus (kochen oder braten).</note>
+        <note type="interpretive_choice" target="#mst-047-orig" n="Zerkleinerungsgrad von Rindfleisch und Speck" resp="#fyndling">Der Text nennt Feinheit nur für das Schweinebrät ('pret'). Für eine homogene Wurstmasse empfehlen wir, Rindfleisch und Speck ebenso fein zu verarbeiten (Fleischwolf).</note>
+      </div>
+    </back>
+  </text>
+</TEI>
