@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3512 Rezepte** aus **38 Rezeptsammlungen**, dazu
+**3547 Rezepte** aus **38 Rezeptsammlungen**, dazu
 38 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -64,13 +64,13 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
+| Das Kochbuch der Maria Stenglerin | 1554 | 90 |  |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Reichenauer Kochbuch | 15. Jh. | 75 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
-| Das Kochbuch der Maria Stenglerin | 1554 | 55 |  |
 | Rheinfränkisches Kochbuch | ~1445 | 53 | [B1](https://gams.uni-graz.at/o:corema.b1) |
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Le Viandier de Taillevent | ~1300 | 49 |  |
