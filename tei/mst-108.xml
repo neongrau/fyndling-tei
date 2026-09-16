@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Quitten-Latwerge</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-16">2026-09-16</date>
+        <idno type="url">https://fyndling.de/rezepte/mst-108/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mst-108</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Augspurger Kochbuoch, worinnen enthalten fürtreffliche Rezepte für Frawen &amp; Junckfrawen</title>
+          <date when="1554">1554</date>
+          <idno type="URI">https://www.digitale-sammlungen.de/de/view/bsb00076173</idno>
+          <note>Transkription: eigenes OCR (Kraken, german_print.mlmodel) aus dem BSB-Digitalisat des 1886er Neudrucks - unautorisiert, gegen das Bilddigitalisat zu prüfen</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (schwäbisch/augsburgisch, Mitte 16. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mst-108">
+        <head>Quitten-Latwerge</head>
+        <div type="original" xml:id="mst-108-orig" xml:lang="de-x-fnhd" corresp="#mst-108-trans">
+          <p>Ain Latquerin zu machen.
+
+Item wiltu ain latquerin machen, durch die preſs, ſo
+nimb zwai hundert kuͤttine, dempfs im hafen, thu waſſer
+daran, vnd ſeuds vier ſtund, laſs ain weil ſton, ſchlags dann
+in die ledlen, laſs erkalten, vnd zeuch den faimb herab, ſo
+würts ſchoͤn lautter, vnd den zucker leuͤttere mit aine ay oder
+mit waſſer.</p>
+        </div>
+        <div type="translation" xml:id="mst-108-trans" xml:lang="de" corresp="#mst-108-orig">
+          <p>Wenn du eine Latwerge machen willst - mit der Presse -, nimm zweihundert Quitten, dämpfe sie im Topf, gib Wasser dazu und siede sie vier Stunden lang. Lass es eine Weile stehen, schlage es dann in die kleinen Formen, lass es erkalten und zieh den Schaum herab. So wird es schön klar.</p>
+          <p>Läutere den Zucker mit einem Ei oder mit Wasser.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="quince" orig="zwai hundert kuͤttine" commodity="wikidata:Q2751465" source="#fyndling-ingredient-name">Quitten</ingredient> - 200 Stück</item>
+            <item>
+              <ingredient en="water" orig="waſſer" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="aine ay" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Ei (optional, zum Läutern)</ingredient> - 1</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mst-108-trans" resp="#fyndling">Welches Gericht ist das? Eine eingedickte Quitten-Latwerge, die in kleine Formen geschlagen beim Erkalten fest wird - ein Vorläufer der heutigen Quittenpaste (dulce de membrillo, marmelada): ein anschneidbarer, formfester Fruchtblock statt eines streichfähigen Aufstrichs.
+
+Die Presse. „Durch die preſs" meint eine Presse, kein Tuch, und keinen eigenständigen ersten Arbeitsschritt an den rohen Früchten. Gepresst wird der bereits gekochte Brei, nach den vier Stunden Sieden, um Schale und Kerngehäuse abzutrennen - erst das ergibt die im Text versprochene Klarheit („schön lautter"). Der Buchzwilling wo10-027 zeigt dasselbe Verfahren ausführlicher: dort presst man den gedämpften Brei durch ein Säcklein, und nur wer keine Presse besitzt, treibt ihn ersatzweise durch ein grobes Tuch.
+
+Die Formen. „Ledlen" sind kleine Formen oder Kästchen, in die die heiße Masse zum Auskühlen und Festwerden geschlagen wird - derselbe Wortgebrauch findet sich an gleicher Verfahrensstelle in den Buchzwillingen wo10-027 und wo10-039.
+
+Praxis. Für zweihundert Quitten braucht es einen entsprechend großen Kessel und mehrere Stunden ununterbrochene Feuerpflege - für eine Nachkoch-Portion lohnt sich eine deutlich kleinere Charge. Die Quitten zunächst im Topf andämpfen, dann mit Wasser knapp bedeckt vier Stunden sieden, bis sie weich sind - so viel Wasser, dass nichts anbrennt. Den Brei anschließend warm durch ein feines Sieb oder Passiertuch streichen, in kleine Formen füllen und auskühlen lassen, dabei den aufsteigenden Schaum abschöpfen. Den Zucker separat mit etwas Ei oder Wasser läutern und in die passierte Masse einrühren.</note>
+        <note type="gloss" target="#mst-108-orig" n="Latquerin" resp="#fyndling">Eine ‚Latwerge‘ ist ein eingekochtes Frucht- oder Kräutermus, das oft als süßer Brotaufstrich oder auch als Heilmittel verwendet wurde. Der Begriff ist verwandt mit dem modernen ‚Latwerge‘ oder ‚Latwerg‘.</note>
+        <note type="gloss" target="#mst-108-orig" n="hafen" resp="#fyndling">Ein ‚Hafen‘ bezeichnet im Frühneuhochdeutschen einen Topf oder Kochkessel, nicht den modernen Seehafen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+        <note type="gloss" target="#mst-108-orig" n="faimb" resp="#fyndling">Der ‚Faimb‘ ist der Schaum, der beim Kochen von Früchten oder Zucker entsteht und abgeschöpft wird, um das Endprodukt klarer zu machen.</note>
+        <note type="gloss" target="#mst-108-orig" n="leuͤttere" resp="#fyndling">‚Läutern‘ bedeutet hier, den Zucker zu klären. Dies geschieht durch Zugabe von Eiweiß oder Wasser, das Verunreinigungen bindet und an die Oberfläche bringt, wo sie abgeschöpft werden können.</note>
+        <note type="gloss" target="#mst-108-orig" n="ledlen" resp="#fyndling">Kleine Formen oder Kästchen (Lädlein), in die die fertige Latwerge zum Auskühlen und Festwerden gefüllt wird. Der Buchzwilling wo10-027 verwendet an derselben Verfahrensstelle dasselbe Wort ('schlags In die ledlen') und übersetzt es dort selbst als 'Förmchen'.</note>
+        <note type="gloss" target="#mst-108-orig" n="preſs" resp="#fyndling">Die ‚preſs‘ ist eine Presse, kein Tuch. Der Buchzwilling wo10-027 beschreibt dieselbe Zubereitung ausführlicher und unterscheidet dort ausdrücklich zwei getrennte Methoden: Pressen mit einer Presse, oder ersatzweise, falls keine vorhanden ist, das Durchtreiben durch ein grobes Tuch.</note>
+        <note type="interpretive_choice" target="#mst-108-orig" n="Wassermenge (thu waſſer daran)" resp="#fyndling">Der Text nennt keine Menge. Praxisnah: so viel Wasser, dass die Quitten knapp bedeckt sind, um bei der langen Kochzeit ein Anbrennen zu vermeiden.</note>
+        <note type="interpretive_choice" target="#mst-108-orig" n="durch die preſs" resp="#fyndling">Das Pressen bzw. Passieren des gekochten Quittenbreis nach den vier Stunden Sieden, um Schale und Kerngehäuse zu entfernen - das ergibt die im Text versprochene Klarheit ('schön lautter').</note>
+        <note type="interpretive_choice" target="#mst-108-orig" n="Verwendung des geläuterten Zuckers" resp="#fyndling">Der geläuterte Zuckersirup wird zum passierten Quittenbrei gegeben, um die Latwerge zu süßen und haltbar zu machen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
