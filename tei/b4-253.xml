@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Guter Senf</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-24">2026-09-24</date>
+        <idno type="url">https://fyndling.de/rezepte/b4-253/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/b4-253</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.b4/TEI_SOURCE</idno>
+          <idno type="corema-sigle">b4</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.b4</idno>
+          <idno type="corema-recipe">b4.253</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="b4-253">
+        <head>Guter Senf</head>
+        <div type="original" xml:id="b4-253-orig" xml:lang="de-x-fnhd" corresp="#b4-253-trans">
+          <p>Zu einem gutten seniff NIm Seniff Sam vnd Sawber den vnd stozz den In einem Morser gar chlain vnd slach es denn durch ein tuech vnd stozz czymed plued vnd musch es vnder den Seniff vnd ruer es mit honigsam vast vnder einander recht als der wachs per Vnd wenn du wild . So nym desselben ein wenig vnd reib es . mit wein so hastu gutten seniff</p>
+        </div>
+        <div type="translation" xml:id="b4-253-trans" xml:lang="de" corresp="#b4-253-orig">
+          <p>Für einen guten Senf: Nimm Senfsaat und reinige sie. Stoße sie dann in einem Mörser sehr fein und seihe sie durch ein Tuch.</p>
+          <p>Stoße Zimtblüte und mische sie unter den Senf. Rühre alles mit Honigseim kräftig untereinander, bis es die Konsistenz von Wachs hat. Und wenn du möchtest, nimm ein wenig davon und reibe es mit Wein an, so hast du guten Senf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="mustard seed" orig="Seniff Sam" commodity="wikidata:Q1937700" source="#corema-ingredient-index">Senfsaat</ingredient>
+            </item>
+            <item>
+              <ingredient orig="czymed plued">Zimtblüte</ingredient>
+            </item>
+            <item>
+              <ingredient en="nectar" orig="honigsam" commodity="wikidata:Q171934" source="#corema-ingredient-index">Honigseim</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#b4-253-trans" resp="#fyndling">Welches Gericht ist das? Ein zähflüssiger, mit Honig gesüßter und mit Zimtblüte gewürzter Senf, der zum Anrühren mit Wein gedacht ist. Er erinnert an heutige süße, gewürzte Honig-Senf-Zubereitungen, wie sie in der süddeutschen Küche bis heute verbreitet sind - ohne dass sich eine ununterbrochene Rezeptlinie dorthin belegen ließe.
+
+Die Formulierung „recht als der wachs per" (wörtlich: gerade wie das Wachs ist/wird) legt die Zielkonsistenz fest: dickflüssig und geschmeidig wie weiches Wachs, nicht dünnflüssig wie ein moderner Tafelsenf.
+
+Praxis. Die gereinigte Senfsaat wird im großen Mörser fein zerstoßen - erst das Aufbrechen der harten Schale setzt das Öl frei - und anschließend durch ein Tuch gestrichen, um die groben Schalenreste abzutrennen. Separat gestoßene Zimtblüte wird untergemischt, danach alles kräftig mit Honigseim verrührt, bis die Masse wachsartig fest ist - reine Handarbeit ohne Hitzequelle, Honig übernimmt Süße, Textur und Konservierung. Zum Servieren wird jeweils eine kleine Portion mit etwas Wein angerührt und verdünnt. Moderner Tipp: frisch angerührter Senf schmeckt zunächst bitter-scharf und wird erst nach einigen Stunden bis Tagen milder; der Text beschreibt nur die unmittelbare Zubereitung, eine Ruhezeit ist historisch nicht belegt, aber sensorisch sinnvoll.</note>
+        <note type="gloss" target="#b4-253-orig" n="Seniff Sam" resp="#fyndling">Senfsaat, die Körner des Senfs.</note>
+        <note type="gloss" target="#b4-253-orig" n="Morser" resp="#fyndling">Ein großer Mörser, wie er im Mittelalter zum Zerkleinern von Fleisch, Nüssen und Gewürzen verwendet wurde, nicht der kleine Gewürzmörser.</note>
+        <note type="gloss" target="#b4-253-orig" n="tuech" resp="#fyndling">Ein feines Tuch, wie ein Passiertuch oder Käsetuch, zum Abseihen der Senfmasse.</note>
+        <note type="gloss" target="#b4-253-orig" n="czymed plued" resp="#fyndling">Die getrockneten Blütenknospen des Zimtbaums (Cassia-Zimt), die ein feineres, blumigeres Zimtaroma als die Rinde besitzen. Siehe auch Zimtblüte.</note>
+        <note type="gloss" target="#b4-253-orig" n="honigsam" resp="#fyndling">Honigseim ist der von selbst aus den Waben fließende, unverarbeitete Honig. Er ist flüssiger und aromatischer als industriell verarbeiteter Honig.</note>
+        <note type="gloss" target="#b4-253-orig" n="wachs per" resp="#fyndling">Diese Formulierung beschreibt die gewünschte Konsistenz des Senfs: dickflüssig und cremig wie weiches Wachs.</note>
+        <note type="interpretive_choice" target="#b4-253-orig" n="recht als der wachs per" resp="#fyndling">Die Formulierung beschreibt die gewünschte Konsistenz des Senfs: dickflüssig und cremig wie weiches Wachs. 'per' ist hier als 'ist' oder 'wird' zu verstehen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
