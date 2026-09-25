@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gebackener Hühnerfladen im Mörser</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-230/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-230</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.229</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-230">
+        <head>Gebackener Hühnerfladen im Mörser</head>
+        <div type="original" xml:id="w1-230-orig" xml:lang="de-x-fnhd" corresp="#w1-230-trans">
+          <p>Ain gepachens von huner NIm geprotne huner zuleg sy gancz nym weiss prot mach ein duannen ayr taig saffran vnd pheffer stos vnd tue das zusamen vnd tu es in ein moerser mit einem frischen smalcz vnd stoz das alles vnd ebems obem mit einem loffel vnd dekcz ez ebem mit einer schussel zu vnd ker den moerser dikch gein feur das er gleich hais hab vnd beleib wenn er hert wirt so seiag ab das smalcz vnd schutt das hin auf ain schussl vnd gib es hin versalcz nicht</p>
+        </div>
+        <div type="translation" xml:id="w1-230-trans" xml:lang="de" corresp="#w1-230-orig">
+          <p>Nimm gebratene Hühner und zerlege sie ganz. Nimm Weißbrot und mache daraus einen dünnen Eierteig.</p>
+          <p>Stoße Safran und Pfeffer. Gib das alles zusammen und fülle es in einen Mörser mit frischem Schmalz. Stoße alles gut durch und ebne die Oberfläche mit einem Löffel.</p>
+          <p>Decke ihn gleichmäßig mit einer Schüssel zu und drehe den Mörser oft zum Feuer, sodass er gleichmäßige Hitze erhält. Bleibe dabei, bis der Inhalt hart wird. Dann seihe das Schmalz ab und schütte den Fladen auf eine Schüssel. Serviere ihn, aber versalze ihn nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="geprotne huner">Gebratenes Huhn</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="weiss prot" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Weißbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Ei</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pheffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="frischen smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-name">Frisches Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-230-trans" resp="#fyndling">Welches Gericht ist das? Ein im Mörser gegartes Gemisch aus bereits gebratenem Huhn, Weißbrot und dünnem Eierteig, gewürzt mit Safran und Pfeffer, direkt über der Glut gegart und gestürzt. Vergleichbar mit einer herzhaften Geflügelterrine: verarbeitet wird kein rohes Fleisch, sondern schon gebratenes Huhn, das mit Brot und Eierteig zu einer festen Masse gebunden wird.
+
+„Oft“ oder „dicht“ zum Feuer? Die Anweisung ker den moerser dikch gein feur trägt zwei belegte Lesarten: den Mörser „oft“ (häufig) zum Feuer drehen oder ihn „dicht“ (nah) ans Feuer stellen. Die hier gewählte Lesart „oft“ passt zum im Text genannten Ziel gleichmäßiger Hitze; der Paralleltext B4-228 verwendet an derselben Stelle dieselbe Schreibung und trifft dieselbe Wahl, ohne dass die Frage damit endgültig geklärt wäre.
+
+Der Mörser als Backgefäß. Das schwere Steingefäß speichert Hitze, die aufgesetzte Schüssel wirkt als Deckel, das wiederholte Drehen gleicht die einseitig von der Glut kommende Hitze aus. Die Garprobe steht im Text selbst: Sobald die Masse hart wird, ist sie fertig - das Ei aus dem Eierteig bindet dabei die Masse.
+
+Praxis. Aufwendig, aber machbar. Ein schwerer Mörser ist kein Standardgerät am Marktstand, das Zerstoßen von Fleisch, Brot und Ei zu einer homogenen Masse kostet Kraft, und das wiederholte Drehen eines schweren, heißen Gefäßes über offener Glut verlangt Aufmerksamkeit. Ein schwerer, gedeckelter Topf über der Glut ersetzt ihn ersatzweise; Küchenmaschine oder Blender übernehmen das Zerkleinern. Mengen bleiben im Originaltext offen. Serviert wird ungesalzen - offenbar liefert das gebratene Huhn bereits genug Salz.</note>
+        <note type="gloss" target="#w1-230-orig" n="gepachens" resp="#fyndling">Ein „Gebackenes“ bezeichnet ein Gericht, das in einer Form gebacken wird. Hier ist der Mörser selbst die Backform.</note>
+        <note type="gloss" target="#w1-230-orig" n="moerser" resp="#fyndling">Im Mittelalter war der Mörser oft ein großes, schweres Gefäß aus Stein oder Metall, das als Küchenmaschine zum Zerkleinern von Fleisch, Fisch oder Nüssen diente. In diesem Rezept wird er jedoch als Backform verwendet, die von außen erhitzt wird.</note>
+        <note type="gloss" target="#w1-230-orig" n="versalcz nicht" resp="#fyndling">Eine häufige Warnung in mittelalterlichen Rezepten, die auf die Wichtigkeit der richtigen Würzung hinweist und davor warnt, das Gericht zu übersalzen.</note>
+        <note type="interpretive_choice" target="#w1-230-orig" n="ker den moerser dikch gein feur" resp="#fyndling">„Dreh den Mörser oft zum Feuer“ - Lesung von dikch als „dicke“ im Sinn von „oft/häufig“, passend zum im Text genannten Ziel gleichmäßiger Hitze.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

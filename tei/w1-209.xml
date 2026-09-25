@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Sieben Farben für Gebäck: Blau</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-209/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-209</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.208</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-209">
+        <head>Sieben Farben für Gebäck: Blau</head>
+        <div type="original" xml:id="w1-209-orig" xml:lang="de-x-fnhd" corresp="#w1-209-trans">
+          <p>Von manigerlay gepachen ZV dem gepachen must du sibem varb habem dy vindest du nach ein ander vnd du must durich das Iar nach trachten dy erst vindest in dem sumer plab pluemen der muest du habem vil dy solt du derren in einem ofen vnd das in nicht zu hays sey wann sy nu getrukchen sein so stosz sy rain behalt dy varb vnd mach ein gemues von slehen vnd tu der varb daran do wirt es plab von vnd tu honig doran so wirt es suesz mit guetem gwurcz mach ez wol ab vnd gibs hin</p>
+        </div>
+        <div type="translation" xml:id="w1-209-trans" xml:lang="de" corresp="#w1-209-orig">
+          <p>Von mancherlei Gebackenem. Zu dem Gebackenen musst du sieben Farben haben, die du nacheinander finden wirst.</p>
+          <p>Und du musst sie das ganze Jahr über suchen. Die erste findest du im Sommer: blaue Blumen. Davon musst du viele haben. Die sollst du in einem Ofen dörren, und achte darauf, dass es nicht zu heiß ist. Wenn sie nun getrocknet sind, so zerstoße sie rein. Behalte die Farbe und mache ein Mus von Schlehen.</p>
+          <p>Gib die Farbe daran, dann wird es blau davon. Gib Honig daran, dann wird es süß mit gutem Gewürz. Mach es gut fertig und gib es hin.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="plab pluemen">Blaue Blumen</ingredient>
+            </item>
+            <item>
+              <ingredient en="sloe" orig="slehen" commodity="wikidata:Q12059685" source="#corema-ingredient-index">Schlehen</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="guetem gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gutes Gewürz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-209-trans" resp="#fyndling">Welches Gericht ist das? Das ist kein Gericht im eigentlichen Sinn, sondern die Herstellung einer pflanzlichen Speisefarbe für Gebäck - die erste einer siebenteiligen Farbenserie in dieser Handschrift. Das lebende Pendant ist die pflanzliche Lebensmittelfarbe, wie sie heute etwa aus Schmetterlingserbsen-Extrakt oder Blaukraut-Sud für naturbelassene blaue Konditoreifarben gewonnen wird.
+
+Zur Färbung. Ob getrocknete blaue Blütenpigmente in einem sauren Schlehenmus zuverlässig blau bleiben, ist küchenchemisch nicht selbstverständlich - solche Pflanzenfarbstoffe neigen im sauren Milieu eher ins Rötlich-Violette. Der Text behauptet das Blauwerden als gegeben; ob es gelingt, hängt von der verwendeten Blüte und dem Säuregrad des Muses ab.
+
+Praxis. Getrocknete blaue Blüten im Mörser zu feinem Pulver zerstoßen, dieses in ein fertiges Schlehenmus einrühren, mit Honig und Gewürz abschmecken. Das Dörren selbst braucht einen Ofen mit sanfter, gleichmäßiger Hitze, damit die Blütenfarbe nicht verblasst oder verbrennt - am offenen Feuer im Lager kaum kontrollierbar. Fertig getrocknete und zerstoßene Farbe lässt sich dagegen leicht vorbereitet mitbringen und am Feuer nur noch ins Mus einrühren: als Vorführung der historischen Färbetechnik mit vorbereiteten Zutaten gut geeignet, als komplette Feuerküche nicht.</note>
+        <note type="gloss" target="#w1-209-orig" n="derren" resp="#fyndling">Trocknen oder dörren, um Zutaten haltbar zu machen.</note>
+        <note type="gloss" target="#w1-209-orig" n="stoszen" resp="#fyndling">Zerstoßen im Mörser, um eine feine Pulverform zu erhalten.</note>
+        <note type="gloss" target="#w1-209-orig" n="gemues" resp="#fyndling">Ein Mus oder Püree, hier aus Schlehen.</note>
+        <note type="gloss" target="#w1-209-orig" n="mach ez wol ab" resp="#fyndling">Mittelalterliche Kochsprache für ‚die Zubereitung fertigstellen, abschließen‘ - nicht für ‚abschmecken‘, wie man beim Lesen zunächst vermuten könnte.</note>
+        <note type="gloss" target="#w1-209-orig" n="varb" resp="#fyndling">Lebensmittelfarbe, hier aus natürlichen Blüten gewonnen.</note>
+        <note type="interpretive_choice" target="#w1-209-orig" n="ZV" resp="#fyndling">Die Buchstabenfolge ‚ZV‘ ist ein Platzhalter für eine fehlende Initiale im Originalmanuskript. Im Kontext der Phrase ‚ZV dem gepachen‘ wurde sie als ‚Zu‘ gelesen.</note>
+        <note type="interpretive_choice" target="#w1-209-orig" n="trachten" resp="#fyndling">Suchen. Die Phrase ‚durich das Iar nach trachten‘ (das ganze Jahr über danach trachten) impliziert ein aktives Suchen oder Aufspüren der Zutaten.</note>
+        <note type="interpretive_choice" target="#w1-209-orig" n="mach ez wol ab" resp="#fyndling">Richte es/vollende es gut - bereite die Zubereitung fertig. Belegt im FWB (Art. ‚abmachen‘, Sinn 1: eine Speise abschließend zubereiten/fertigstellen) und im DWB zur alten Kochsprache.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

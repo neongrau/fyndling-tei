@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fisch in Gewürzsülze</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-201/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-201</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.200</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-201">
+        <head>Fisch in Gewürzsülze</head>
+        <div type="original" xml:id="w1-201-orig" xml:lang="de-x-fnhd" corresp="#w1-201-trans">
+          <p>Von vischen NIm frisch hecht persch vnd ander gut visch dy du in der galraid haben wild schuepp sy hakch sew zu stukchen leg sy in ein schaf geus doran wein vnd esseich zemassen sauber salcz sie seud sy schon so sy gesoten sein so tu dorin gestossen Ingwer czimey galgant negeln anis pheffer saffran temperirr es nach dem gesmach das es gut werd lass es erwallen mit den vischen leg dy visch in schusseln vnd lasz sy kalten das sy gesten</p>
+        </div>
+        <div type="translation" xml:id="w1-201-trans" xml:lang="de" corresp="#w1-201-orig">
+          <p>Nimm frischen Hecht, Barsch und andere gute Fische, die du in der Sülze haben möchtest. Schuppe sie, hacke sie in Stücke und lege sie in ein Gefäß. Gieße Wein und Essig in angemessener Menge darüber und salze sie gründlich.</p>
+          <p>Siede die Fische gut, und wenn sie gar sind, gib gestoßenen Ingwer, Zimt, Galgant, Nelken, Anis, Pfeffer und Safran hinzu. Schmecke es nach Geschmack ab, sodass es gut wird. Lass es mit den Fischen aufwallen. Lege die Fische in Schüsseln und lass sie erkalten, damit sie fest werden.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="northern pike" orig="frisch hecht" commodity="wikidata:Q83363026" source="#corema-ingredient-index">Hecht</ingredient>
+            </item>
+            <item>
+              <ingredient en="berch" orig="persch" commodity="wikidata:Q746136" source="#corema-ingredient-index">Barsch</ingredient>
+            </item>
+            <item>
+              <ingredient en="fish" orig="ander gut visch" commodity="wikidata:Q600396" source="#fyndling-ingredient-name">Fisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="esseich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="salcz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Ingwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="czimey" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="lesser galangal" orig="galgant" commodity="wikidata:Q27653540" source="#corema-ingredient-index">Galgant, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="negeln" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="anise" orig="anis" commodity="wikidata:Q33873455" source="#corema-ingredient-index">Anis, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pheffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-201-trans" resp="#fyndling">Welches Gericht ist das? Eine Galraid, eine würzige Fischsülze: Hecht, Barsch und andere feste Fische werden in Wein-Essig-Sud gegart, gewürzt und kalt gestellt, bis der Sud zur Gallerte erstarrt. Der lebendige Nachfahre ist der bis heute bekannte Fisch in Aspik, eine kalte Vorspeise mit derselben Grundidee.
+
+Warum die Sülze fest wird. Das Rezept nennt weder Fischmenge noch Garzeit und sagt nicht ausdrücklich, dass Haut und Gräten an den Stücken bleiben müssen - genau das trägt aber die Gelierung: Beim Sieden löst sich Kollagen aus Fischhaut und Gräten und lässt den Sud beim Kaltstellen zur Gallerte erstarren. Mit reinem, hautlosem Filet ohne Gräten bindet die Sülze nicht.
+
+Praxis. Fisch schuppen, in Stücke hacken und mit Haut und Gräten im Wein-Essig-Sud garen - das ist keine Lücke des Rezepts, sondern seine stille Voraussetzung. Die Gewürze erst nach dem Garen zugeben und nur kurz mit aufwallen lassen, damit die teuren, flüchtigen Aromen von Anis und Safran nicht verkochen. Anschließend in Schüsseln füllen und mehrere Stunden kalt stellen, bis der Sud fest geworden ist. Für den Sommermarkt ohne Kühlkette ist dieses Gericht nicht geeignet.</note>
+        <note type="gloss" target="#w1-201-orig" n="galraid" resp="#fyndling">Die ‚Galraid‘ (auch Gallerte oder Sülze) ist eine Speise, bei der Fleisch, Fisch oder Gemüse in einem gelierten Sud aus Brühe, Wein und Essig eingelegt wird. Sie diente der Konservierung und war eine beliebte Festtagsspeise.</note>
+        <note type="gloss" target="#w1-201-orig" n="schon" resp="#fyndling">Im Mittelhochdeutschen bedeutet ‚schon‘ hier ‚gründlich‘ oder ‚sorgfältig‘, nicht ‚schön‘ im ästhetischen Sinne.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="gloss" target="#w1-201-orig" n="erwallen" resp="#fyndling">‚Erwallen‘ bedeutet ‚aufwallen lassen‘ oder ‚zum Kochen bringen‘, also kurz erhitzen, bis die Flüssigkeit Blasen wirft.</note>
+        <note type="gloss" target="#w1-201-orig" n="zemassen" resp="#fyndling">Diese Formulierung bedeutet ‚nach Maß‘ oder ‚in angemessener Menge‘, also nach eigenem Ermessen und Geschmack.</note>
+        <note type="gloss" target="#w1-201-orig" n="czimey" resp="#fyndling">Eine frühneuhochdeutsche Schreibweise für Zimt.</note>
+        <note type="interpretive_choice" target="#w1-201-orig" n="schuepp sy" resp="#fyndling">Die Phrase ‚schuepp sy‘ wurde als Verb ‚schuppe sie‘ (die Fische) übersetzt. Dies ist eine Anweisung zur Vorbereitung des Fisches.</note>
+        <note type="interpretive_choice" target="#w1-201-orig" n="zemassen" resp="#fyndling">Die Formulierung ‚zemassen‘ wurde als ‚in angemessener Menge‘ übersetzt, was ‚nach Maß‘ oder ‚nach Belieben‘ bedeutet.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

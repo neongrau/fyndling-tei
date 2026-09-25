@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fastenfladen mit Fisch und Mandelmilch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-232/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-232</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.231</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-232">
+        <head>Fastenfladen mit Fisch und Mandelmilch</head>
+        <div type="original" xml:id="w1-232-orig" xml:lang="de-x-fnhd" corresp="#w1-232-trans">
+          <p>Ain vasten Fladen NIm visch vnd waich sy in ein smalcz vnd geus dorvber ein dikche makein mandel mandel milch meng es wol mit reis mel vnd tu ein wenig smalcz daran Vnd meng es wol mit wurczen vnd tu sy auf ain plat von taig vnd losz sy waikchen vnd gib sy hin versalcz nicht etc.</p>
+        </div>
+        <div type="translation" xml:id="w1-232-trans" xml:lang="de" corresp="#w1-232-orig">
+          <p>Nimm Fisch und dünste ihn weich in Pflanzenfett. Gieße danach eine dicke Mohn- oder Mandelmilch darüber und vermenge alles gut mit Reismehl. Gib noch ein wenig Pflanzenfett hinzu und vermische es gut mit Gewürzen. Lege die Masse auf ein Teigblatt und lasse sie darin weich werden. Serviere sie und salze nicht zu stark.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="fish" orig="visch" commodity="wikidata:Q600396" source="#corema-ingredient-index">Fisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="fat, unspecified" orig="smalcz" commodity="wikidata:Q2789594 wikidata:Q1423543 wikidata:Q427457" cert="low" source="#fyndling-ingredient-context">Pflanzenfett</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond milk" orig="dikche makein mandel mandel milch" commodity="wikidata:Q975953" source="#fyndling-ingredient-name">Dicke Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient en="rice flour" orig="reis mel" commodity="wikidata:Q1269205" source="#corema-ingredient-index">Reismehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurczen" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="dough sheet" orig="plat von taig" commodity="wikidata:Q107261744" source="#corema-ingredient-index">Teigblatt</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-232-trans" resp="#fyndling">Welches Gericht ist das? Ein mit Fisch und dicker Mohn- oder Mandelmilch gefülltes Teigblatt, mit Reismehl gebunden - näher an einer Fischtasche oder Pirogge als an einem heutigen, süßen und in Fett gebackenen Krapfen. Der Fisch wird in Pflanzenfett weich gedünstet und mit der dicken Milch, Reismehl und Gewürzen zu einer streichfähigen Füllung vermengt.
+
+Der textnahe Zwilling in der Berliner Handschrift (b4-230) liest die Anfangswendung an derselben Stelle als "dünste ihn weich" statt als bloßes Einweichen - der rohe Fisch wird dadurch tatsächlich gegart, nicht nur mit Fett benetzt. Dieser Lesart folgt auch dieses Rezept.
+
+Das Reismehl bindet die Fisch-Milch-Masse zu einer streichfähigen Füllung - ein zeittypisches Bindemittel, keine Mehlschwitze.
+
+Offen bleibt, ob das Teigblatt nach dem Belegen mit der Füllung noch eigens gegart wurde: der Text nennt dafür keinen Back- oder Frittierschritt, nur dass die Füllung darauf "weich werden" lässt. Auch der wortgleiche Zwilling lässt diese Frage unaufgelöst.
+
+Praxis. Fisch in wenig Pflanzenfett sanft dünsten, bis er zart ist. Dicke Mohn- oder Mandelmilch darübergießen, mit Reismehl binden und würzen. Die Masse auf ein dünnes Teigblatt streichen. Da roher Mehlteig heute nicht bedenkenlos gegessen wird, empfiehlt es sich, das belegte Teigblatt vor dem Servieren kurz zu backen oder in Fett auszubacken - eine moderne Ergänzung, die der Text selbst nicht verlangt.</note>
+        <note type="gloss" target="#w1-232-orig" n="vasten" resp="#fyndling">‚Vasten‘ bedeutet ‚Fasten‘. Dieses Rezept ist für die Fastenzeit gedacht, in der der Verzehr von Fleisch und tierischen Produkten (außer Fisch) untersagt war.</note>
+        <note type="gloss" target="#w1-232-orig" n="smalcz" resp="#fyndling">Obwohl ‚Schmalz‘ im Mittelhochdeutschen oft tierisches Fett bezeichnete, ist in einem Fastenrezept wie diesem von einem pflanzlichen Fett auszugehen, wie etwa Öl.</note>
+        <note type="gloss" target="#w1-232-orig" n="plat von taig" resp="#fyndling">Ein ‚Teigblatt‘ ist eine dünne, ausgerollte Teigschicht, die als Basis oder Hülle für das Gericht dient, ähnlich einem modernen Blätterteig oder Filoteig.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
+        <note type="interpretive_choice" target="#w1-232-orig" n="vnd waich sy in ein smalcz" resp="#fyndling">"und dünste ihn weich in Pflanzenfett" - der Fisch wird im Fett gegart, nicht kalt eingeweicht.</note>
+        <note type="interpretive_choice" target="#w1-232-orig" n="dikche makein mandel mandel milch" resp="#fyndling">"eine dicke Mohn- oder Mandelmilch" - Angleichung an den textlich fast identischen Zwilling b4-230, der an derselben Stelle "ein dikch magen oder mandel milich" liest. "Makein" ist wahrscheinlich eine verschriebene Form von "magen" (Mohn), die zusätzlich mit dem folgenden "mandel" verdoppelt wurde.</note>
+        <note type="interpretive_choice" target="#w1-232-orig" n="vnd losz sy waikchen" resp="#fyndling">"und lasse sie darin weich werden" - die Füllung soll nach dem Auflegen auf das Teigblatt ziehen, um zart zu werden.</note>
+        <note type="interpretive_choice" target="#w1-232-orig" n="Garmethode des Teigblatts" resp="#fyndling">Der Text nennt für das Teigblatt keinen eigenen Gar-Schritt - nur das Auflegen der Füllung und das Weichwerdenlassen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Lombardische Sülze</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-206/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-206</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.205</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-206">
+        <head>Lombardische Sülze</head>
+        <div type="original" xml:id="w1-206-orig" xml:lang="de-x-fnhd" corresp="#w1-206-trans">
+          <p>Mer ein essen das von einer sulcz Allso mach sulczen nim fues vnd was dorczue gehort das seud vil gar so nym denn weisz prot Ingwerrs mer denn pheffers anais saffran das mal mit esseich vnd mit dunnem pir nicht zu saur mit disem condiment seud dy sulcz vollen gar leg sy in ein vas geus das condiment darauf daz haist lappertisch sulcz etc.</p>
+        </div>
+        <div type="translation" xml:id="w1-206-trans" xml:lang="de" corresp="#w1-206-orig">
+          <p>Noch ein Gericht, das von einer Sülze handelt. So mache Sülze: Nimm Schweinefüße und was dazu gehört, das siede sehr gar. Dann nimm Weißbrot, Ingwer (mehr als Pfeffer), Anis und Safran. Mahle dies mit Essig und Dünnbier, nicht zu sauer. Mit diesem Würzmittel siede die Sülze ganz gar. Lege sie in ein Gefäß und gieße das Würzmittel darauf. Das nennt man Lombardische Sülze.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pig's trotters" orig="fues" commodity="wikidata:Q17118905" source="#corema-ingredient-index">Schweinefüße</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="was dorczue gehort" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="was dorczue gehort" commodity="wikidata:Q11254" source="#fyndling-ingredient-registry">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="weisz prot" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Weißbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Ingwerrs" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pheffers" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="anise" orig="anais" commodity="wikidata:Q33873455" source="#corema-ingredient-index">Anis</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="esseich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dunnem pir">Dünnbier</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-206-trans" resp="#fyndling">Welches Gericht ist das? Eine gewürzte, mit Essig und Dünnbier gesäuerte Schweinefuß-Sülze - der direkte Vorläufer der heutigen (Schweins-)Sülze bzw. des Aspiks. Die nächste lebende Verwandte ist die bairisch-österreichische saure Sulz bzw. der Presssack aus Schweinefüßen, wie sie bis heute in Wirtshäusern serviert wird: Das Grundprinzip - Kollagen aus Schweinefüßen, saurer Würzsud - ist über die Jahrhunderte kaum verändert.
+
+Doppeltes Garen. Die Schweinefüße werden zunächst für sich lange ausgekocht; dabei löst sich aus Haut und Sehnen das Kollagen, die eigentliche Gelierbasis. Erst danach zieht das Fleisch ein zweites Mal gar, diesmal in der mit Essig und Dünnbier angerührten Würzsauce aus Weißbrot, Ingwer, Pfeffer, Anis und Safran - so nimmt es Geschmack und Säure auf, bevor die Sauce kalt darübergegossen wird. Das Brot in der Sauce bindet nicht die Sülze selbst, sondern verdickt die aufgegossene Würzflüssigkeit; die Gallerte entsteht allein aus dem nativen Kollagen der Füße, ganz ohne Mehlschwitze oder Zusatzmittel.
+
+Praxis. Der Text nennt weder Mengen für Brot, Essig und Dünnbier noch Kochzeiten oder eine Standdauer bis zum Fest-Werden - hier ist die Erfahrung des Kochs gefragt. Wer es nachkochen will: Schweinefüße so lange auskochen, bis sich das Fleisch vom Knochen löst, dann in der abgeschmeckten Würzsauce nochmals vollständig gar ziehen lassen, in ein Gefäß schichten, mit der heißen Sauce übergießen und kühl fest werden lassen.</note>
+        <note type="gloss" target="#w1-206-orig" n="sulcz / sulczen" resp="#fyndling">Eine Sülze oder Aspik, ein Gericht, das durch das Gelieren von kollagenreichen Zutaten (hier Schweinefüße) fest wird.</note>
+        <note type="gloss" target="#w1-206-orig" n="fues" resp="#fyndling">Schweinefüße, die aufgrund ihres hohen Kollagengehalts eine natürliche Gelatinequelle sind und Sülzen ihre typische Konsistenz verleihen.</note>
+        <note type="gloss" target="#w1-206-orig" n="Ingwerrs mer denn pheffers" resp="#fyndling">Diese Formulierung gibt ein Mengenverhältnis an: Es soll mehr Ingwer als Pfeffer verwendet werden, was auf eine süßlich-würzige Geschmacksrichtung hindeutet.</note>
+        <note type="gloss" target="#w1-206-orig" n="dunnem pir" resp="#fyndling">Dünnbier war ein leichtes, alkoholarmes Bier, das oft als Alltagsgetränk und zum Kochen verwendet wurde. Es diente als Flüssigkeit und Säurekomponente.</note>
+        <note type="gloss" target="#w1-206-orig" n="condiment" resp="#fyndling">Ein Würzmittel oder eine Sauce, die hier aus gemahlenem Brot, Gewürzen, Essig und Dünnbier besteht und zum weiteren Garen der Sülze verwendet wird.</note>
+        <note type="gloss" target="#w1-206-orig" n="vas" resp="#fyndling">Ein Gefäß, hier vermutlich ein Fass oder ein Steinguttopf, in dem die Sülze zur Lagerung und zum Erkalten aufbewahrt wird.</note>
+        <note type="gloss" target="#w1-206-orig" n="lappertisch" resp="#fyndling">Bairische Schreibvariante von 'lampartisch' (mp/pp-Verwechslung, Vokalsenkung), abgeleitet von 'lombardisch'. Die eng verwandten Fassungen b4-202 und mha-065 belegen unabhängig voneinander dieselbe Lesart.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllter Lammkopf im Eierteig</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-223/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-223</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.222</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-223">
+        <head>Gefüllter Lammkopf im Eierteig</head>
+        <div type="original" xml:id="w1-223-orig" xml:lang="de-x-fnhd" corresp="#w1-223-trans">
+          <p>Von lampes haupp NIm lampes haupp vnd seud es gar nym alles das vleisch das dy pain beleibem tu darczu herte ayr vnd saluay vnd hakch es klain meng dorczu rohe ayr gesniten spekch pheffer kum dicz condiment full in dy huner schal vnd wirk es an dy stat do es ee was zeuch es durich ein ayr taig vnd pach es in smalcz also mach das rech haup vnd des spenferch leins haupp</p>
+        </div>
+        <div type="translation" xml:id="w1-223-trans" xml:lang="de" corresp="#w1-223-orig">
+          <p>Nimm einen Lammkopf und siede ihn gar. Nimm alles Fleisch ab, sodass die Knochen übrig bleiben. Gib dazu hartgekochte Eier und Salbei und hacke es klein.</p>
+          <p>Mische dazu rohe Eier, geschnittenen Speck, Pfeffer und Kümmel. Fülle dieses Würzmittel in den entbeinten Schädel und wirke es an die Stelle, wo es zuvor war.</p>
+          <p>Ziehe den gefüllten Kopf durch einen Eierteig und backe ihn in Schmalz. Ebenso mache den Rehkopf und den Spanferkelkopf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="lamb head" orig="lampes haupp" commodity="wikidata:Q107246638" source="#corema-ingredient-index">Lammkopf</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="herte ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Hartgekochte Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="common sage" orig="saluay" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="rohe ayr" commodity="wikidata:Q15260613" source="#fyndling-ingredient-name">Rohe Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="gesniten spekch" commodity="wikidata:Q11106" source="#fyndling-ingredient-name">Speck, geschnitten</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pheffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="caraway" orig="kum" commodity="wikidata:Q22978145" source="#corema-ingredient-index">Kümmel</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg dough" orig="ayr taig" commodity="wikidata:Q107262035" source="#corema-ingredient-index">Eierteig</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="roe-deer head" orig="rech haup" commodity="wikidata:Q107246728" source="#corema-ingredient-index">Rehkopf (optional, als Alternative)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="des spenferch leins haupp">Spanferkelkopf (optional, als Alternative)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-223-trans" resp="#fyndling">Welches Gericht ist das? Ein ausgekochter, entbeinter Lammkopf, gefüllt mit einer Ei-Speck-Kräuter-Masse, durch Eierteig gezogen und in Schmalz gebacken - am Ende variiert mit Reh- und Spanferkelkopf. Zwei entfernte lebende Verwandte: die Ballotine der klassischen französischen Küche und der bis ins 20. Jahrhundert in Wien und Südbayern belegte gebackene, panierte Kalbskopf.
+
+Die Schädelhöhle als Form. Der Kopf wird gar gekocht, bis sich das Fleisch löst, dann entbeint. Der leere Schädel dient als natürliche Backform: Die gehackte Füllung aus hartem Ei, Salbei, rohem Ei, Speck, Pfeffer und Kümmel wird genau an die Stelle zurückgesetzt, wo vorher das Fleisch saß. Das rohe Ei bindet die Masse; der gekochte Kopf allein wäre nach dem Sieden zu mager und zu locker, um in Form zu bleiben.
+
+Backdauer der Füllung. Der Text nennt keine Zeit- oder Garangabe für das letzte Frittieren im Eierteig. Praxis-Empfehlung: so lange ausbacken, bis die roh-ei-gebundene Füllung im Kern durchgegart ist - kein rohes Ei mehr in der Mitte, das ist heute der Sicherheitsstandard für eine Masse mit rohem Ei und Speck. Ein historisch denkbarer, aber nach heutigem Maßstab unsicherer Weg wäre ein kürzeres Ausbacken nur bis zur Kruste in der Annahme, dass die ohnehin vorgekochten Bestandteile auch so durchziehen - das wird hier nicht empfohlen.
+
+Praxis. Lammkopf weich kochen, entbeinen, Füllung aus hartem Ei, Salbei, rohem Ei, Speck, Pfeffer und Kümmel anrichten, zurück in die Schädelhöhle drücken, durch einen dünnen Eierteig ziehen und im Schmalzkessel über dem Feuer ausbacken, bis die Füllung durchgegart ist. Für Reh- oder Spanferkelkopf gleich verfahren.</note>
+        <note type="gloss" target="#w1-223-orig" n="lampes haupp" resp="#fyndling">Der Kopf eines Lammes, der hier als Hauptzutat dient und dessen Fleisch für die Füllung verwendet wird, während der entbeinte Schädel als Form dient.</note>
+        <note type="gloss" target="#w1-223-orig" n="seud es gar" resp="#fyndling">Koche den Lammkopf, bis er vollständig gar ist und sich das Fleisch leicht von den Knochen lösen lässt.</note>
+        <note type="gloss" target="#w1-223-orig" n="saluay" resp="#fyndling">Salbei, ein aromatisches Kraut, das in der mittelalterlichen Küche häufig verwendet wurde, insbesondere zu Fleischgerichten.</note>
+        <note type="gloss" target="#w1-223-orig" n="condiment" resp="#fyndling">Bezeichnet hier nicht das moderne Tafelgewürz, sondern die vorbereitete Würz-/Füllmasse (lat. condimentum) aus gehacktem Fleisch, Eiern, Speck und Gewürzen, die in den Schädel zurückgegeben wird.</note>
+        <note type="gloss" target="#w1-223-orig" n="huner schal" resp="#fyndling">Nicht wörtlich ‚Hühnerschale‘. Die Parallelhandschrift B4 liest an derselben Stelle hyernn schall - ein klarer Verwandter von ‚Hirnschale‘, dem üblichen Wort für Schädel. ‚huner‘ in W1 ist damit vermutlich eine Verschreibung von ‚hirn‘, kein eigenständiges Wort. Gemeint ist die Schädelhöhle, die als Form für die Füllung dient.</note>
+        <note type="gloss" target="#w1-223-orig" n="ayr taig" resp="#fyndling">Ein Teig, der hauptsächlich aus Eiern besteht und zum Ummanteln des gefüllten Kopfes vor dem Frittieren verwendet wird.</note>
+        <note type="gloss" target="#w1-223-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das hier zum Ausbacken des gefüllten Kopfes verwendet wird.</note>
+        <note type="gloss" target="#w1-223-orig" n="rech haup" resp="#fyndling">Der Kopf eines Rehs, der als alternative Hauptzutat für dieses Rezept genannt wird und eine festliche, wildbretbasierte Variante darstellt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rech"/></note>
+        <note type="gloss" target="#w1-223-orig" n="spenferch leins haupp" resp="#fyndling">Der Kopf eines Spanferkels, der ebenfalls als Alternative zum Lammkopf vorgeschlagen wird und ein beliebtes Festtagsgericht war.</note>
+        <note type="interpretive_choice" target="#w1-223-orig" n="huner schal" resp="#fyndling">‚Schädel(-höhle)‘ als Form für die Füllung. Gestützt durch die Parallelhandschrift B4, die an derselben Stelle hyernn schall liest - ein Kognat zu ‚Hirnschale‘ (mhd./fnhd. gut belegtes Wort für Schädel). ‚huner‘ in W1 ist demnach wahrscheinlich eine bairische Verschreibung von ‚hirn‘, nicht das eigenständige Wort ‚huner‘ (=Huhn).</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hühnersülze</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-198/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-198</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.197</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-198">
+        <head>Hühnersülze</head>
+        <div type="original" xml:id="w1-198-orig" xml:lang="de-x-fnhd" corresp="#w1-198-trans">
+          <p>Ein sulcz von huner NIm sulcz von huner so nym Iunge huner vnd seud dy in esseich vnd nym ir fuesz domit vnd merkch das man alle huner dy man zu galraid machen wil so lassen halbem In wasser sieden vnd halbem weg in esseich vnd baide Iunge huner vnd alt noch der wall der suppem ist aber dy galraid zu vaist obem wenn sy gestet so nym geus siedens wasser darauf so wirt sy lautter vnd naig dy schussel auf ain seitten das das wasser kain weil darauf beleib oder sy zu gieng</p>
+        </div>
+        <div type="translation" xml:id="w1-198-trans" xml:lang="de" corresp="#w1-198-orig">
+          <p>Nimm für eine Hühnersülze junge Hühner und siede sie in Essig, und verwende auch ihre Füße dazu. Merke: Alle Hühner, die man zu Gallerte verarbeiten will, soll man zur Hälfte in Wasser und zur Hälfte in Essig sieden lassen, sowohl junge als auch alte Hühner, bis die Brühe aufgewallt ist.</p>
+          <p>Ist die Gallerte oben zu fett, wenn sie gestockt ist, so gieße siedendes Wasser darauf; dadurch wird sie klarer. Neige die Schüssel auf eine Seite, damit das Wasser nicht lange darauf verbleibt oder sie zergeht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Iunge huner">Junge Hühner</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="esseich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fuesz">Hühnerfüße</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken stock" orig="suppem" commodity="wikidata:Q96362076" source="#fyndling-ingredient-context">Hühnerbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="siedens wasser">Siedendes Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-198-trans" resp="#fyndling">Welches Gericht ist das? Eine kalte Hühnersülze: Junge (und alte) Hühner werden samt ihren Füßen in einer Essig-Wasser-Brühe gegart; beim Erkalten geliert die Brühe von selbst durch das aus den Füßen austretende Kollagen, ganz ohne zugesetztes Geliermittel. Das Prinzip lebt bis heute unverändert in der deutschen Sülze und im französischen poulet en gelée fort.
+
+Garpunkt statt Garzeit. Der Text nennt keine feste Kochdauer, sondern bindet das Ende des Siedens an das Aufwallen der Brühe. Für den heutigen Nachkoch-Alltag empfiehlt sich trotzdem, die Hühner vollständig durchzugaren, bis sich das Fleisch von den Knochen löst (etwa 1,5-2 Stunden leises Sieden) - keine rohen oder halbgaren Stellen.
+
+Praxis. Huhn und Füße halb in Wasser, halb in Essig ansetzen und sieden, bis die Brühe kräftig aufwallt und das Fleisch gar ist. Die Brühe abkühlen und in einer Schüssel stocken lassen. Ist die fertige, kalte Sülze obenauf zu fettig, kurz mit siedendem Wasser übergießen und die Schüssel sofort zur Seite neigen, damit Wasser und geschmolzenes Fett sogleich abfließen - reines Fettschmelzen zur Klärung, ohne die gestockte Gallerte selbst zu beschädigen.</note>
+        <note type="gloss" target="#w1-198-orig" n="sulcz / galraid" resp="#fyndling">Beide Begriffe bezeichnen eine Sülze oder Gallerte, ein Gericht, bei dem Fleisch oder Fisch in einer gelierten Brühe (oft mit Essig) konserviert und serviert wird. Die Gelierung erfolgt traditionell durch kollagenreiche Zutaten wie Knochen, Haut oder Füße.</note>
+        <note type="gloss" target="#w1-198-orig" n="fuesz" resp="#fyndling">Hier sind die Hühnerfüße gemeint, die aufgrund ihres hohen Kollagengehalts als natürliches Geliermittel dienen. Sie werden mitgekocht, um die Brühe zu verdicken und zu festigen.</note>
+        <note type="gloss" target="#w1-198-orig" n="noch der wall der suppem ist" resp="#fyndling">'Wall' gehört zu 'wallen' (sieden, aufkochen) und meint das Aufwallen der Brühe - den Punkt, an dem sie einmal richtig kocht. Die Wendung markiert also einen Siede-/Garpunkt, keine frei wählbare Konsistenz.</note>
+        <note type="gloss" target="#w1-198-orig" n="zu vaist obem" resp="#fyndling">Bedeutet 'zu fett obenauf'. Die Anweisung beschreibt, wie man eine zu fettige Sülze klärt, indem man heißes Wasser darüber gießt und das überschüssige Fett abgießt.</note>
+        <note type="interpretive_choice" target="#w1-198-orig" n="noch der wall der suppem ist" resp="#fyndling">'Wall' zu 'wallen' (sieden/aufkochen) - 'bis die Brühe (einmal) aufgewallt ist'. Belegt durch Lexer/BMZ sowie durch 'ein wal thun' im eigenen Korpus (mha-011, mon-021, mst-002, mst-051, phw-017) und durch mha-135, das denselben Ausdruck 'wall der suppen' exakt in dieser Bedeutung verwendet.</note>
+        <note type="interpretive_choice" target="#w1-198-orig" n="Garzustand der Hühner" resp="#fyndling">Der Text nennt keine Garzeit, sondern bindet das Ende des Siedens an das Aufwallen der Brühe - keine feste Dauer.</note>
+        <note type="interpretive_choice" target="#w1-198-orig" n="naig" resp="#fyndling">'neige' (von neigen, kippen). Obwohl ein Hapax in diesem Korpus, ist die Bedeutung 'die Schüssel auf eine Seite neigen' die einzig plausible im Kontext des Abgießens von Wasser.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

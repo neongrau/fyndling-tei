@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Weinbeeren-Sülze mit Schau-Effekt</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-193/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-193</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.192</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-193">
+        <head>Weinbeeren-Sülze mit Schau-Effekt</head>
+        <div type="original" xml:id="w1-193-orig" xml:lang="de-x-fnhd" corresp="#w1-193-trans">
+          <p>Ein sulcz von weinperrn NIm ein talentum weinper vnd wasch dy schon vnd reib dy chlain vnd hab ein hausen plater dy sol gesoten sein mit wein nym des als vil das man es durich slach vnd tue daran gut gwurcz vnd czuker vnd tue ez auf ain schussel vnd losz kalt werden vnd sneid es zu stukchen wie du wild vnd nym nu nus milch vnd muest hausen plater haben die sol gesoten sein in wasser der prue sol als vil sein als zu einem essen vnd mach sy suesz mit czuker dy milch sol auch suesz sein vnd besteat denn mach der pru nicht zuvil vnd dy prue sol weisz sein vnd losz sy stoan nu nym 1/2 mandel vnd sol in reibem vnd aber I lot hausen ploter vnd sol es als daran giessen dy milch vnd sol sy suess machen vnd tu si auf ain schussel vnd losz erkalten vnd nym 1/2 weinper dy wasch schon vnd reib sy klain vnd 1/2 lot hausen plater vnd slach dy weinper durich vnd dy milch sol als dikch sein als ain mandel milch vnd mach sy mit guetem gwurcz vnd negeln vnd wann du es auf ain schussl tust das es stee so sneid sy virenden vnd nym dy zway stukch herraus nicht dy bey einander vnd tu das swarcz von den weinperrn dorin so wirt dy schussl wider gancz vnd lasz kalt werden vnd gib es hin etc.</p>
+        </div>
+        <div type="translation" xml:id="w1-193-trans" xml:lang="de" corresp="#w1-193-orig">
+          <p>Nimm ein Pfund Weinbeeren und wasche sie gründlich. Reibe sie fein. Halte eine Hausenblase bereit, die in Wein gesotten sein soll. Nimm davon so viel, dass man es durchseihen kann, und gib gute Gewürze und Zucker hinzu. Gib es auf eine Schüssel und lass es kalt werden. Schneide es dann in Stücke, wie du möchtest.</p>
+          <p>Nimm nun Nussmilch und du musst Hausenblase haben, die in Wasser gesotten sein soll. Die Brühe davon soll so viel sein, wie für ein Gericht benötigt wird. Süße sie mit Zucker; die Milch soll ebenfalls süß sein. Wenn es dann fest wird, mach nicht zu viel Brühe. Die Brühe soll weiß sein und lass sie stehen.</p>
+          <p>Nimm nun 250 g Mandeln und reibe sie. Gib dann 15 g Hausenblase hinzu und gieße die Milch darüber. Süße die Milch und gib sie auf eine Schüssel. Lass sie erkalten.</p>
+          <p>Nimm 250 g Weinbeeren, wasche sie gründlich und reibe sie fein. Gib 7,5 g Hausenblase hinzu und seihe die Weinbeeren durch. Die Milch soll so dick sein wie Mandelmilch. Bereite sie mit guten Gewürzen und Nelken zu.</p>
+          <p>Wenn du es auf eine Schüssel gibst, sodass es fest ist, dann schneide es in vier Teile. Nimm zwei Stücke heraus, die nicht nebeneinander liegen. Gib das Dunkle von den Weinbeeren hinein, so wird die Schüssel wieder ganz. Lass es kalt werden und serviere es.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="raisin" orig="ein talentum weinper" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="isinglass" orig="ein hausen plater" commodity="wikidata:Q1255331" source="#corema-ingredient-index">Hausenblase</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gut gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="czuker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="nut milk" orig="nus milch" commodity="wikidata:Q107246657" source="#corema-ingredient-index">Nussmilch</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item><ingredient en="almond" orig="1/2 mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, gemahlen</ingredient> - 250 g</item>
+            <item><ingredient en="isinglass" orig="I lot hausen ploter" commodity="wikidata:Q1255331" source="#corema-ingredient-index">Hausenblase</ingredient> - 15 g</item>
+            <item><ingredient en="raisin" orig="1/2 weinper" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient> - 250 g</item>
+            <item><ingredient en="isinglass" orig="1/2 lot hausen plater" commodity="wikidata:Q1255331" source="#corema-ingredient-index">Hausenblase</ingredient> - 7.5 g</item>
+            <item>
+              <ingredient en="clove" orig="negeln" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-193-trans" resp="#fyndling">Welches Gericht ist das? Eine zweifarbige Sülze aus Weinbeeren-Extrakt und Mandel-Nussmilch, beide mit Hausenblase geliert - ein Schaugericht ohne Alltags-Nachfahren in der heutigen Küche; am ehesten vergleichbar mit modernen zweifarbigen Gelee-Desserts, die statt Hausenblase mit Gelatine binden.
+
+Zwei getrennte Sülzen. Die dunkle Weinbeeren-Sülze entsteht aus fein geriebenen, durchgeseihten Weinbeeren mit weingesottener Hausenblase, gewürzt und gesüßt. Die helle Sülze wird aus Mandelmilch mit wassergesottener Hausenblase angesetzt, ebenfalls gesüßt. Für den Schlusstrick kommt eine zweite, diesmal ungesüßte Weinbeeren-Charge hinzu, die als dunkle Füllmasse dient.
+
+Praxis. Für die Mandelmilch-Charge nennt der Text keinen eigenen Erhitzungsschritt, Hausenblase löst sich aber nur in warmer Flüssigkeit - die Milch vor dem Vermengen erwärmen. Beide Sülzen müssen vollständig durchgekühlt und schnittfest sein, bevor die helle Sülze geviertelt, zwei gegenüberliegende Viertel entnommen und mit der dunklen Weinbeerenmasse gefüllt werden - ein reiner Präsentationstrick ohne geschmackliche Funktion. Für eine Vorführung lassen sich beide Sülzen am Vortag ansetzen und kühl stellen; die Endmontage erfolgt kurz vor dem Servieren.</note>
+        <note type="gloss" target="#w1-193-orig" n="sulcz" resp="#fyndling">Eine Sülze oder Aspik ist eine Speise, die durch Gelierung von Fleisch-, Fisch- oder Gemüsebrühe mit einem Geliermittel (hier Hausenblase) hergestellt wird und kalt serviert wird.</note>
+        <note type="gloss" target="#w1-193-orig" n="talentum" resp="#fyndling">Talentum war ursprünglich eine antike Gewichtseinheit, wurde im spätmittelalterlichen Küchenlatein aber auch als gelehrtes Synonym für Pfund verwendet - der fast textgleiche Rezeptzwilling b4-189 hat an derselben Stelle wörtlich "ein phuntt weinper". Gemeint ist also ein Pfund Weinbeeren.</note>
+        <note type="gloss" target="#w1-193-orig" n="hausen plater" resp="#fyndling">Hausenblase ist ein traditionelles Geliermittel, das aus der Schwimmblase des Hausens (einer Störart) gewonnen wird. Sie wurde im Mittelalter häufig zum Klären und Gelieren von Speisen verwendet. Heute ist der Hausen streng geschützt, daher wird Hausenblase nur noch selten und teuer gehandelt. Alternativ kann moderne Gelatine verwendet werden.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="gloss" target="#w1-193-orig" n="durich slach" resp="#fyndling">„Durchschlagen“ oder „durchseihen“ bedeutet hier, die Flüssigkeit durch ein Tuch oder Sieb zu passieren, um sie zu klären und von Feststoffen zu befreien.</note>
+        <note type="gloss" target="#w1-193-orig" n="nus milch" resp="#fyndling">Nussmilch ist ein pflanzlicher Milchersatz, der aus gemahlenen Nüssen (oft Mandeln) und Wasser hergestellt wird. Sie war im Mittelalter besonders in der Fastenzeit beliebt, da sie keine tierischen Produkte enthielt.</note>
+        <note type="gloss" target="#w1-193-orig" n="I lot" resp="#fyndling">Ein Lot war eine historische Gewichtseinheit, die regional variierte. Im süddeutschen Raum entsprach ein Lot etwa 15 bis 17,5 Gramm.</note>
+        <note type="gloss" target="#w1-193-orig" n="virenden" resp="#fyndling">„Vierendeln“ oder „vierteln“ bedeutet, etwas in vier gleich große Stücke zu teilen.</note>
+        <note type="gloss" target="#w1-193-orig" n="das swarcz von den weinperrn" resp="#fyndling">Hiermit ist die dunkle, durchgeseihte Masse der Weinbeeren gemeint, die nach dem Reiben und Passieren übrig bleibt und als farblicher Kontrast dient.</note>
+        <note type="interpretive_choice" target="#w1-193-orig" n="besteat" resp="#fyndling">„fest werden“ oder „gelieren“ - im Kontext der Sülzenzubereitung ist dies die plausibelste Bedeutung, da es um das Erstarren der Masse geht.</note>
+        <note type="interpretive_choice" target="#w1-193-orig" n="weinperrn / weinper" resp="#fyndling">„Rosinen“ (getrocknete Weinbeeren) - die Anweisung, sie zu reiben und durchzuseihen, sowie die Erwähnung des „Schwarzen von den Weinbeeren“, deutet auf eine konzentrierte, dunkle Masse hin, die typischerweise aus Rosinen gewonnen wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

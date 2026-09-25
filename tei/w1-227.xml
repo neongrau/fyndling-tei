@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ein Englischer Käsefladen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-227/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-227</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.226</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-227">
+        <head>Ein Englischer Käsefladen</head>
+        <div type="original" xml:id="w1-227-orig" xml:lang="de-x-fnhd" corresp="#w1-227-trans">
+          <p>Ein Englischer flad WAichen keas putern pheffer das meng zusamen vnd mach ein toph von taig vnd full den mit dem keas mer denn vber halbs lass in pachen in einem ofen das haist ein englischer flade etc.</p>
+        </div>
+        <div type="translation" xml:id="w1-227-trans" xml:lang="de" corresp="#w1-227-orig">
+          <p>Nimm weichen Käse, Butter und Pfeffer und vermenge dies alles miteinander. Forme dann einen Topf aus Teig und fülle ihn mehr als zur Hälfte mit der Käsemischung. Lass ihn in einem Ofen backen. Dies nennt man einen englischen Fladen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="soft cheese" orig="WAichen keas" commodity="wikidata:Q16637316" source="#corema-ingredient-index">Weichkäse</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="putern" commodity="wikidata:Q34172" source="#corema-ingredient-index">Butter</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="pheffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="taig">Teig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-227-trans" resp="#fyndling">Welches Gericht ist das? Ein in einen selbsttragenden Teigmantel gefüllter, im Ofen gebackener Weichkäse mit Butter und Pfeffer - strukturell verwandt mit der heutigen herzhaften Käsepastete oder Käse-Quiche, ohne belegte direkte Rezeptlinie. Der Teig übernimmt zugleich die Form eines Gefäßes und die Hülle der Füllung.
+
+Praxis. Käse, Butter und Pfeffer werden kalt verrührt; erhitzt wird nur einmal, beim Backen selbst. Ein Backofen liefert die gleichmäßige Ober- und Unterhitze, die der freistehende Teig-Topf zum Ausbacken braucht, ohne einzufallen oder auszulaufen; im Dutch Oven mit guter Erfahrung und konstanter Feuerpflege ebenfalls machbar. Der Text nennt weder eine bestimmte Teigsorte noch eine Form oder einen Formkern - in der Praxis bewährt sich ein fester Mürbe- oder Brotteig, der beim Befüllen mit der weichen Käsemasse nicht sofort nachgibt. Die Füllung reicht bewusst nur bis knapp über die Hälfte, damit die beim Backen weicher werdende Käsemasse Raum zum Ausdehnen hat.</note>
+        <note type="gloss" target="#w1-227-orig" n="Englischer flad" resp="#fyndling">Ein „Fladen“ bezeichnete im Mittelalter üblicherweise ein flaches Gebäck; das hier beschriebene Gericht ist trotz des Namens ein aufrecht geformter Teig-„Topf“, kein flaches Gebäck. Ob die Bezeichnung „Englisch“ auf eine tatsächliche Herkunft verweist oder ein allgemeines Attribut für als fein oder fremdländisch geltende Speisen war, lässt sich aus diesem einen Rezept nicht entscheiden.</note>
+        <note type="gloss" target="#w1-227-orig" n="toph von taig" resp="#fyndling">Ein „Topf aus Teig“ ist eine mittelalterliche Form der Pastete oder des Pies, bei der der Teig selbst die Form des Kochgefäßes bildet und die Füllung umschließt.</note>
+        <note type="gloss" target="#w1-227-orig" n="WAichen keas" resp="#fyndling">„Weicher Käse“ bezieht sich auf Frischkäse oder einen jungen, unreifen Käse, der sich gut mit Butter und Gewürzen vermengen lässt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

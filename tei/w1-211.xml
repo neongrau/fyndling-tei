@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Buntes Schichtkonfekt ohne Feuer</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-211/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-211</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.210</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-211">
+        <head>Buntes Schichtkonfekt ohne Feuer</head>
+        <div type="original" xml:id="w1-211-orig" xml:lang="de-x-fnhd" corresp="#w1-211-trans">
+          <p>Ein fremdes gepachens DO muest du all varb zue habem do must du von yegleicher varb ein full machen do nym oblat dor czu dy dunn vnd weisz sein dy scheyblat sein zu ygl eicher vvll nym iiij plat dy vvll sol abgemacht sein mit gwuercz vnd an das weiss must du zuker habem in vir plat vnd bestreichs mit einer varb vnd das der vvll icht zuvil sey vnd dy vir plat leg recht auf ainander mit der vvll so nym ein ander varb vnd bestreich sy auch domit vir plat vnd leg vnd leg zusamen vnd leg sy auf dy andern dy vor geschribem hast nu nym aber ein andre varb vnd tue dem selbem auch allso vnd leg sy all auf ainander das yeder plat iiij auf ain ander sein wann du dy pleter alle gefult hast dunkch es dich klain sein wann sy nu ligen auf ainander so heb wider an mit der ersten vvllen vnd mach als du es var gemacht hast vnd leg dann das als auf ainander vnd leg es dann auf ain tisch oder auf ain tisch pret vnd leg darauf zwayr zyegel swear vnd la es dann ain nacht dorvnder stan so wirt es hert vnd kalt das sol von zuker suesz sein so macht du es suesz gebem wann du wild oder behalten wye lang du wild wann du es nu gebem wild so nym ein scharffs messer vnd sneid es wie du wild vnd leg es auf ain schussel so siechest du dy varb gar das ist ein gepachens an feur vnd dy varb solt du all sibem habem das solt du chochen das Iar von</p>
+        </div>
+        <div type="translation" xml:id="w1-211-trans" xml:lang="de" corresp="#w1-211-orig">
+          <p>Dazu musst du alle Farben zur Hand haben. Von jeder Farbe musst du eine Füllung zubereiten. Nimm Oblaten dazu, die dünn und weiß sein sollen. Für jede Füllung nimm vier Oblaten als Lagen.</p>
+          <p>Die Füllung soll mit Gewürzen abgeschmeckt sein. Für die weiße Füllung musst du Zucker in vier Lagen geben. Bestreiche die Lagen mit einer Farbe und achte darauf, dass die Füllung nicht zu viel ist. Lege die vier Lagen genau aufeinander mit der Füllung.</p>
+          <p>Dann nimm eine andere Farbe und bestreiche ebenfalls vier Lagen damit. Lege sie zusammen und lege sie auf die anderen, die du zuvor genannt hast. Nun nimm wieder eine andere Farbe und verfahre ebenso. Lege sie alle aufeinander, sodass jede Lage vierfach übereinander liegt.</p>
+          <p>Wenn du alle Lagen gefüllt hast, mag es dir klein erscheinen. Wenn sie nun aufeinander liegen, beginne erneut mit der ersten Füllung und verfahre wie zuvor. Lege dann alles aufeinander und platziere es auf einem Tisch oder einem Tischbrett. Lege zwei schwere Ziegel darauf und lass es eine Nacht darunter stehen. So wird es hart und kalt.</p>
+          <p>Das Konfekt soll von Zucker süß sein. Du kannst es süß servieren, wann immer du willst, oder so lange aufbewahren, wie du möchtest. Wenn du es nun servieren willst, nimm ein scharfes Messer und schneide es, wie du willst. Lege es auf eine Schüssel, so siehst du die Farben ganz. Das ist ein Konfekt ohne Feuer, und du sollst alle sieben Farben haben. Du sollst es das ganze Jahr über zubereiten können.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="wafer" orig="oblat dor czu dy dunn vnd weisz sein" commodity="wikidata:Q1226651" source="#fyndling-ingredient-name">Oblaten (dünn, weiß)</ingredient>
+            </item>
+            <item>
+              <ingredient en="food coloring" orig="varb" commodity="wikidata:Q753009" source="#corema-ingredient-index">Farbmassen der sieben Farben</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwuercz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Süße Gewürzmischung</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zuker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-211-trans" resp="#fyndling">Welches Gericht ist das? Vorfahre der heutigen gefüllten Neapolitaner-Waffeln beziehungsweise Wafer-Schnitten: Dünne Oblaten werden mit farbiger, gewürzter Füllung bestrichen, gestapelt, über Nacht unter Gewicht gepresst und dann quer aufgeschnitten, damit die Farbschichten im Anschnitt sichtbar werden - genau das Prinzip, nach dem auch moderne Wafer-Schnitten hergestellt werden.
+
+Die Füllungen. Für jede Farbe wird eine eigene Füllung aus Farbe, Gewürz und - bei der weißen Füllung - Zucker angerührt. Eine Bindeflüssigkeit nennt der Text nicht. In der Praxis lässt sich die Füllung mit wenig Wasser oder Rosenwasser zu einer streichfähigen Paste anrühren; belegt ist das im Rezept selbst nicht.
+
+Der Aufbau. Je vier Oblaten werden mit einer Füllung bestrichen und exakt übereinandergelegt, dann folgt der nächste Farbblock darauf. Wirkt der Stapel nach einem Durchgang noch klein, wird der gesamte Zyklus ein zweites Mal wiederholt, bis alle Farben verarbeitet sind.
+
+Das Pressen. Der fertige Stapel kommt auf ein Brett, zwei schwere Ziegel dienen als Gewicht. Über Nacht an einem kühlen Ort wird er fest und kalt - ganz ohne Ofen. Der Effekt hängt allein an der Kälte der Nacht und ist an einem warmen Sommertag nicht garantiert.
+
+Praxis. Das Konfekt steht und fällt mit den Farbmassen aus den beiden vorangehenden Einträgen; wer sie nicht vorrätig hat, lässt das Rezept besser bleiben, als es mit Lebensmittelfarbe nachzustellen. Mit drei oder vier dieser Massen ist der Effekt schon deutlich. Zum Servieren mit einem scharfen Messer quer zu den Schichten aufschneiden, damit der Farbquerschnitt sichtbar wird.</note>
+        <note type="gloss" target="#w1-211-orig" n="gepachens an feur" resp="#fyndling">„Gebackenes ohne Feuer“. Eine Süßspeise, die nicht im Ofen gebacken, sondern kalt gesetzt oder gepresst wird.</note>
+        <note type="gloss" target="#w1-211-orig" n="oblat / plat / scheyblat" resp="#fyndling">Oblaten, dünne, ungesäuerte Waffeln oder Hostien, hier auch als „Scheiben“ (scheyblat) oder „Blätter“ (plat) bezeichnet.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
+        <note type="gloss" target="#w1-211-orig" n="varb" resp="#fyndling">Gemeint sind die sieben Farben, die die beiden vorangehenden Einträge dieser Handschrift beschreiben: Blau aus getrockneten Blumen in Schlehenmus, Rot als eingekochte Beerenkonserve, Grün aus Petersilie, Braun aus Weichseln, Grau aus Weiß und Schwarz gemischt, Schwarz aus Honig und Lebkuchen, Gelb aus Safran. Es sind also gefärbte Mus- und Konservenmassen, keine Farbpulver und keine Lebensmittelfarbe im heutigen Sinn.</note>
+        <note type="gloss" target="#w1-211-orig" n="full / vvll" resp="#fyndling">Füllung. Hier eine farbige, gewürzte Masse.</note>
+        <note type="gloss" target="#w1-211-orig" n="gwuercz" resp="#fyndling">Gewürze. Eine allgemeine Bezeichnung für eine Mischung aus teuren Importgewürzen wie Pfeffer, Ingwer, Zimt, Nelken, Muskat.</note>
+        <note type="gloss" target="#w1-211-orig" n="zyegel" resp="#fyndling">Ziegelsteine werden hier als Gewichte verwendet, um das geschichtete Konfekt über Nacht zu pressen, damit es fest wird und seine Form behält.</note>
+        <note type="gloss" target="#w1-211-orig" n="sibem" resp="#fyndling">Sieben. Bezieht sich auf die Anzahl der Farben, die vorrätig sein sollen.</note>
+        <note type="interpretive_choice" target="#w1-211-orig" n="scheyblat" resp="#fyndling">„Scheiben“ oder „Lagen“. Dies bezieht sich auf die einzelnen Oblaten, die als Schichten verwendet werden.</note>
+        <note type="interpretive_choice" target="#w1-211-orig" n="gwuercz" resp="#fyndling">„süße Gewürzmischung“. Im Kontext eines süßen Konfekts sind damit typischerweise wärmende Gewürze wie Zimt, Ingwer, Nelken oder Muskatblüte gemeint.</note>
+        <note type="interpretive_choice" target="#w1-211-orig" n="full / vvll" resp="#fyndling">„Füllung (süß, gewürzt)“. Dies ist eine streichfähige Paste, die aus den Farben, Gewürzen und Zucker hergestellt wird, vermutlich mit einer kleinen Menge Flüssigkeit angerührt.</note>
+        <note type="interpretive_choice" target="#w1-211-orig" n="dunkch es dich klain sein" resp="#fyndling">„dünkt es dich klein sein“ (es erscheint dir klein). Dies ist eine dialektale Form von „dünken“ (scheinen, erscheinen).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dich"/></note>
+        <note type="interpretive_choice" target="#w1-211-orig" n="Bindeflüssigkeit der Füllung (im Text nicht genannt)" resp="#fyndling">nicht angegeben - für die Praxis mit wenig Wasser oder Rosenwasser zu einer streichfähigen Paste anrühren.</note>
+        <note type="interpretive_choice" target="#w1-211-orig" n="DO (Platzhalter für fehlende Initiale)" resp="#fyndling">Platzhalter für eine im Manuskript fehlende Initiale am Anfang des Rezepts; keine eigenständige Übersetzung.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

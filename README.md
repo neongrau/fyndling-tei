@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3714 Rezepte** aus **38 Rezeptsammlungen**, dazu
+**3759 Rezepte** aus **38 Rezeptsammlungen**, dazu
 38 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -57,8 +57,8 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
+| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 200 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | The Forme of Cury | ~1390 | 192 |  |
-| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 155 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Das Kochbuch der Maria Stenglerin | 1554 | 144 |  |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |

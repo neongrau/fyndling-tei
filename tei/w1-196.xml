@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hirschleber-Gallerte</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-25">2026-09-25</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-196/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-196</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.195</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-196">
+        <head>Hirschleber-Gallerte</head>
+        <div type="original" xml:id="w1-196-orig" xml:lang="de-x-fnhd" corresp="#w1-196-trans">
+          <p>Von einer hirssen leber NIm ein hirsleber vnd prat dy dornach sneid das ausser darab vnd stosz es In einem morser rokein prot vnd mit honig vnd wein vnd esseich vnd reib es durich ein tuech vnd gwurcz vnd erwell dy leber dornoch vnd gib es kalt zessen das ist leber galraid</p>
+        </div>
+        <div type="translation" xml:id="w1-196-trans" xml:lang="de" corresp="#w1-196-orig">
+          <p>Nimm eine Hirschleber und brate sie. Danach schneide die äußere, gebratene Schicht davon ab. Stoße die vorbereitete Leber in einem Mörser zusammen mit Roggenbrot, Honig, Wein und Essig zu einer feinen Masse. Reibe diese Masse durch ein Tuch und würze sie. Erhitze die Lebermasse danach kurz, bis sie aufwallt. Gib sie kalt zu essen. Das ist Hirschleber-Gallerte.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="deer liver" orig="hirssen leber / hirsleber / leber" commodity="wikidata:Q96756392" source="#fyndling-ingredient-context">Hirschleber</ingredient>
+            </item>
+            <item>
+              <ingredient en="rye bread" orig="rokein prot" commodity="wikidata:Q3893120" source="#corema-ingredient-index">Roggenbrot (altbacken)</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Rotwein (trocken)</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="esseich" commodity="wikidata:Q41354" source="#corema-ingredient-index">Weinessig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze (Pfeffer, Ingwer, Zimt, Nelken)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-196-trans" resp="#fyndling">Welches Gericht ist das?
+
+Kalte Hirschleber-Gallerte: Die gebratene Leber wird zu einer feinen Paste zerstoßen, mit Roggenbrot gebunden, mit Honig, Wein und Essig süß-sauer abgeschmeckt, durch ein Tuch passiert, noch einmal aufgewallt und kalt serviert. Die nächsten lebenden Verwandten sind die kalte Leberpastete beziehungsweise Leberterrine und die Leber-Sülze.
+
+Warum die äußere Schicht abgeschnitten wird.
+
+Der Text lässt offen, ob die Leber ganz durchgebraten und danach die äußere Schicht abgeschnitten wird, oder ob nur die Oberfläche angebraten und diese Schicht wieder entfernt wird. Zwei wortgleiche Parallelfassungen (b4-192 und ka1-022 aus dem Reichenauer Kochbuch) folgen derselben Lesart wie hier: erst ganz braten, dann die äußere Schicht abschneiden. Geschmacklich gehen dabei Röstaromen verloren, dafür bleibt der Kern für die Paste gleichmäßig zart.
+
+Warum zweimal erhitzt wird.
+
+Nach dem Braten wird die Masse noch einmal kurz aufgewallt (erwellen). Das lässt die Stärke des eingeweichten Roggenbrots quellen, worauf die Festigkeit der Gallerte beim Erkalten beruht - nicht auf Gelatine aus Knochensud.
+
+Praxis.
+
+Hirschleber kurz scharf durchbraten, die gebratene Außenschicht abschneiden. Das Innere im Mörser oder in der Küchenmaschine mit eingeweichtem Roggenbrot, Honig, Wein und Essig zu einer feinen Paste zerstoßen und durch ein feines Tuch streichen. Würzen, noch einmal kurz aufkochen lassen und vollständig auskühlen, bevor serviert wird. Ohne durchgehende Kühlung wird die Masse nicht zuverlässig fest und lebensmittelsicher - für Sommermarkt-Lagerküche ohne Kühlmöglichkeit ungeeignet, mit Kühlbox oder kaltem Keller machbar.</note>
+        <note type="gloss" target="#w1-196-orig" n="galraid" resp="#fyndling">Eine ‚Gallerte‘ (auch Sülze oder Aspik) ist ein Gericht, das durch das Gelieren von Fleisch- oder Fischbrühe entsteht und kalt serviert wird. Hier wird die Lebermasse durch das Roggenbrot und das Aufkochen gebunden und geliert beim Abkühlen.</note>
+        <note type="gloss" target="#w1-196-orig" n="erwell" resp="#fyndling">‚Erwellen‘ bedeutet hier, die Masse kurz aufzukochen oder aufwallen zu lassen, um die Bindung zu aktivieren und die Zutaten zu verbinden.</note>
+        <note type="gloss" target="#w1-196-orig" n="Mörser" resp="#fyndling">Im mittelalterlichen Kochkontext ist ein ‚Mörser‘ ein großes, schweres Gefäß aus Stein oder Metall mit einem kräftigen Stößel, das zum Zerkleinern und Pürieren von Fleisch, Fisch oder anderen festen Zutaten verwendet wurde. Er diente als eine Art Küchenmaschine.</note>
+        <note type="gloss" target="#w1-196-orig" n="tuech" resp="#fyndling">Ein ‚Tuch‘ bezeichnet hier ein Passiertuch oder Käsetuch, das verwendet wird, um die Masse von groben Bestandteilen zu befreien und eine feine, glatte Konsistenz zu erzielen.</note>
+        <note type="gloss" target="#w1-196-orig" n="gwurcz" resp="#fyndling">Der allgemeine Begriff ‚Gewürze‘ umfasste im Mittelalter typischerweise eine Mischung aus Pfeffer, Ingwer, Zimt und Nelken, oft ergänzt durch Galgant oder Muskat.</note>
+        <note type="interpretive_choice" target="#w1-196-orig" n="prat dy dornach sneid das ausser darab" resp="#fyndling">‚Brate die Leber, danach schneide das Äußere davon ab.‘ Dies impliziert ein vollständiges Braten der Leber, gefolgt vom Entfernen der gebräunten oder festeren Außenschicht.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
