@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kalb zerlegen und verwerten</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-26">2026-09-26</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-240/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-240</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.239</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-240">
+        <head>Kalb zerlegen und verwerten</head>
+        <div type="original" xml:id="w1-240-orig" xml:lang="de-x-fnhd" corresp="#w1-240-trans">
+          <p>Ich kom in ein do fand ich nicht anderrs den ein kalb vnd must doch dauon zessen machen SO nym ein kalb vnd slach das vnd vach den swais in ain haissen wein vnd haer das kalb also gancz vnd slach im das haupp ab vnd kleub das haupp von einander vnd nym das hiernn daraus vnd das ander wasch schon vnd seud es rain douon mach ein haupp pressen nu nym dy fuesz vnd mach daraus ain sulczen nym das kres das reib vnd mach es schon nu nym den wampem vnd den magen v</p>
+        </div>
+        <div type="translation" xml:id="w1-240-trans" xml:lang="de" corresp="#w1-240-orig">
+          <p>Ich kam herein, da fand ich nichts anderes als ein Kalb und musste doch davon ein Essen zubereiten.</p>
+          <p>So nimm ein Kalb und schlachte es und fange das Blut in einem heißen Wein auf. Häute das Kalb ganz und gar und schlage ihm den Kopf ab. Zerlege den Kopf und nimm das Hirn heraus. Wasche die übrigen Teile des Kopfes gründlich und siede sie rein. Daraus mache eine Kopf-Sülze.</p>
+          <p>Nun nimm die Füße und mache daraus eine Sülze. Nimm das Gekröse, reibe es und mache es sauber. Nun nimm die Wampen und den Magen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="veal" orig="ein kalb" commodity="wikidata:Q957434" source="#corema-ingredient-index">Kalb</ingredient> - 1</item>
+            <item>
+              <ingredient en="calf blood" orig="den swais" commodity="wikidata:Q107246442" source="#fyndling-ingredient-context">Kalbsblut</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain haissen wein">Wein, heiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="das haupp">Kalbskopf</ingredient>
+            </item>
+            <item>
+              <ingredient orig="das hiernn">Kalbsgehirn</ingredient>
+            </item>
+            <item>
+              <ingredient en="calf's trotters" orig="dy fuesz" commodity="wikidata:Q1722084" source="#fyndling-ingredient-name">Kalbsfüße</ingredient>
+            </item>
+            <item>
+              <ingredient en="offal" orig="das kres" commodity="wikidata:Q157484" source="#corema-ingredient-index">Kalbsgekröse</ingredient>
+            </item>
+            <item>
+              <ingredient orig="den wampem">Kalbswampen</ingredient>
+            </item>
+            <item>
+              <ingredient en="stomach" orig="den magen" commodity="wikidata:Q1029907" source="#fyndling-ingredient-context">Kalbsmagen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-240-trans" resp="#fyndling">Welches Gericht ist das? Keine einzelne Speise, sondern eine Anleitung zur Ganzverwertung eines frisch geschlachteten Kalbes: Kopf-Sülze, Fuß-Sülze und das gereinigte Gekröse, dazu Wampen und Magen als weitere Ausgangsstoffe. Die direkte lebende Nachfahrin ist der Presskopf/die Sülze, wie sie bis heute bei Metzgereien in Deutschland, Österreich und der Schweiz erhältlich ist - keine Wiederbelebung, sondern ununterbrochene Tradition. Verwandt über dasselbe Grundprinzip (kollagenreiche Teile auskochen, kalt gelieren lassen) sind das französische fromage de tête und das englische brawn/headcheese.
+
+Blut in heißem Wein. Der Text lässt offen, wozu das beim Schlachten aufgefangene Blut-Wein-Gemisch weiterverwendet wird - das Rezept bricht ab, bevor dazu etwas gesagt wird. Heißer Wein würde Blut eher gerinnen lassen als es flüssig zu halten, anders als das sonst übliche Auffangen in kaltem, gerührtem Zustand; ob das im Text so beabsichtigt war, bleibt unklar.
+
+Das Gekröse. Der Text sagt nur „das reib vnd mach es schon“: Das Gekröse wird gerieben und sauber gemacht. Kochmethode und Endform nennt er nicht. Die Berliner Parallelhandschrift b4-238 schreibt an derselben Stelle „das reyzz“ und nennt damit Reis; in der Wiener Fassung kommt kein Reis vor.
+
+Praxis. Kopf und Füße gründlich waschen und in reichlich Wasser weich auskochen, bis sich das Fleisch vom Knochen löst; die ausgekochte Flüssigkeit enthält genug Kollagen, um beim Erkalten von selbst zu einer Sülze zu binden - Fleisch und Sud in eine Form geben und kühl fest werden lassen. Das Hirn vor dem Verzehr vollständig durchgaren, wie es der heutige Lebensmittelsicherheits-Standard verlangt; der Text macht dazu keine Angabe. Ebenso sollte ein Blut-Wein-Gemisch vor dem Verzehr erhitzt werden. Das Gekröse gründlich waschen und abreiben; wie es danach zubereitet wird, bleibt offen; Wampen und Magen benennt das Rezept nur noch, ohne eine Anweisung dazu zu geben - der Text bricht hier ab.</note>
+        <note type="gloss" target="#w1-240-orig" n="swais" resp="#fyndling">Das mittelhochdeutsche Wort ‚Swaiss‘ bezeichnet hier das Blut des geschlachteten Tieres, das für die weitere Zubereitung aufgefangen wird.</note>
+        <note type="gloss" target="#w1-240-orig" n="haer" resp="#fyndling">‚Haer‘ ist eine Form von ‚häuten‘, also das Abziehen der Haut vom geschlachteten Tier.</note>
+        <note type="gloss" target="#w1-240-orig" n="kleub" resp="#fyndling">‚Chlewb‘ bedeutet ‚klieben‘ oder ‚spalten‘, hier im Sinne von das Zerlegen des Kalbskopfes.</note>
+        <note type="gloss" target="#w1-240-orig" n="schon" resp="#fyndling">‚Schon‘ bedeutet hier ‚sauber‘ oder ‚gründlich‘, nicht ‚schön‘ im ästhetischen Sinne. Es weist auf eine sorgfältige Reinigung hin.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="gloss" target="#w1-240-orig" n="haupp pressen" resp="#fyndling">Eine ‚Hauptt pressen‘ ist eine Sülze oder ein Aspik, das aus dem gekochten und zerlegten Kalbskopf zubereitet wird.</note>
+        <note type="gloss" target="#w1-240-orig" n="sulczen" resp="#fyndling">‚Sulczen‘ bezeichnet eine Sülze oder Gallerte, die durch das Auskochen kollagenreicher Teile (hier die Kalbsfüße) und anschließendes Erkalten entsteht.</note>
+        <note type="gloss" target="#w1-240-orig" n="kres" resp="#fyndling">‚Krass‘ bezieht sich auf das Gekröse oder die Eingeweide des Kalbes, also verschiedene Innereien.</note>
+        <note type="gloss" target="#w1-240-orig" n="wampem" resp="#fyndling">‚Wamppen‘ sind die Wampen oder das Bauchfleisch des Kalbes.</note>
+        <note type="gloss" target="#w1-240-orig" n="magen" resp="#fyndling">Im Kontext der Innereien-Aufzählung bezieht sich ‚Magen‘ auf den Magen des Kalbes.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="interpretive_choice" target="#w1-240-orig" n="das reib" resp="#fyndling">„reib“ ist der Imperativ von „reiben“, „das“ das vorangestellte Objekt: „nym das kres das reib vnd mach es schon“ heißt „nimm das Gekröse, reibe es und mache es sauber“. Reiben und Säubern gehören als Arbeitsschritte zusammen.</note>
+        <note type="interpretive_choice" target="#w1-240-orig" n="pressen / sulczen" resp="#fyndling">Beide Begriffe werden als ‚Sülze‘ oder ‚Aspik‘ übersetzt, da dies die gängige Bedeutung im mittelalterlichen Kochbuchkontext für Gerichte ist, die durch Kochen kollagenreicher Teile und anschließendes Erkalten fest werden.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

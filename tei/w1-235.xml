@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllter Krapfen mit Rosinen und Äpfeln</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-26">2026-09-26</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-235/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-235</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.234</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-235">
+        <head>Gefüllter Krapfen mit Rosinen und Äpfeln</head>
+        <div type="original" xml:id="w1-235-orig" xml:lang="de-x-fnhd" corresp="#w1-235-trans">
+          <p>Aber ein kraphen NIm weachlisch weinper vnd als vil ophel dorvnder vnd stoss sy klain vnd tu gwuercz vnd fuls in dy kraphen vnd loszs es waichen versalcz nicht etc.</p>
+        </div>
+        <div type="translation" xml:id="w1-235-trans" xml:lang="de" corresp="#w1-235-orig">
+          <p>Nimm welsche Rosinen und ebenso viele Äpfel dazu. Stoße sie klein und gib Gewürze hinzu. Fülle sie in die Krapfen und lass sie weich werden. Versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="kraphen">Krapfenteig</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="weachlisch weinper" commodity="wikidata:Q13186" source="#corema-ingredient-index">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="apple" orig="ophel" commodity="wikidata:Q89" source="#corema-ingredient-index">Äpfel</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwuercz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="versalcz nicht" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-235-trans" resp="#fyndling">Welches Gericht ist das? Ein gefüllter Krapfen: Teigtaschen mit einer klein gestoßenen Apfel-Rosinen-Füllung, in Fett ausgebacken. Näher am heutigen Apfelkrapfen oder Apfelküchlein als am marmeladengefüllten Berliner - die Füllung ist grob zerstoßenes Obst, keine Konfitüre.
+
+Die fehlende Garanweisung. Der Text beschreibt nur die Füllung und bricht vor dem eigentlichen Back- oder Frittierschritt ab - typisch für einen Varianteneintrag ("Aber ein Krapfen"), der sich auf ein vorangehendes Grundrezept bezieht, im Text selbst aber trotzdem eine Lücke lässt.
+
+Praxis. Stoße Rosinen und Äpfel im Mörser oder mit dem Blitzhacker zu einer groben Paste, im Verhältnis etwa 1:1. Würze nach Geschmack, zum Beispiel mit Zimt und Ingwer. Fülle die Paste in vorbereiteten, rohen Krapfenteig und backe die Taschen in heißem Fett aus. Wie lange die gefüllten Teiglinge vor dem Backen ruhen sollen, nennt der Text nicht - vermutlich ist eine kurze Ruhezeit gemeint. Die Salzwarnung am Ende bezieht sich vermutlich auf den Teig.</note>
+        <note type="gloss" target="#w1-235-orig" n="Krapfen" resp="#fyndling">Ein Krapfen ist ein in Fett ausgebackenes Gebäck, das süß oder herzhaft gefüllt sein kann. Die hier beschriebene Füllung ist süß-würzig.</note>
+        <note type="gloss" target="#w1-235-orig" n="weinper" resp="#fyndling">Weinbeeren sind hier als getrocknete Rosinen zu verstehen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="gloss" target="#w1-235-orig" n="gwuercz" resp="#fyndling">Die Gewürze waren im Mittelalter eine Mischung aus Zimt, Ingwer, Nelken und Muskat, oft auch Galgant oder Paradieskörner. Für süße Speisen wurden bevorzugt helle Gewürze verwendet, um die Farbe nicht zu beeinträchtigen.</note>
+        <note type="gloss" target="#w1-235-orig" n="gwuercz" resp="#fyndling">Anders als der eng verwandte Text in b4-233, der an dieser Stelle nur die Ellipse "tu darczu" (gib dazu, ohne Objekt) führt, benennt diese Handschrift die Gewürze ausdrücklich.</note>
+        <note type="interpretive_choice" target="#w1-235-orig" n="weachlisch" resp="#fyndling">welsch (im Sinne von importiert, aus romanischen Ländern)</note>
+        <note type="interpretive_choice" target="#w1-235-orig" n="gwuercz" resp="#fyndling">Gewürze (als allgemeine Bezeichnung für eine Mischung)</note>
+        <note type="interpretive_choice" target="#w1-235-orig" n="loszs es waichen" resp="#fyndling">lass es weichen/ruhen (der Text nennt keinen Zweck)</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**3759 Rezepte** aus **38 Rezeptsammlungen**, dazu
+**3806 Rezepte** aus **38 Rezeptsammlungen**, dazu
 38 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -55,9 +55,9 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Ménagier de Paris | ~1393 | 289 |  |
 | Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 269 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
+| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 234 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
-| Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 200 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | The Forme of Cury | ~1390 | 192 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Das Kochbuch der Maria Stenglerin | 1554 | 144 |  |
@@ -66,7 +66,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
-| Reichenauer Kochbuch | 15. Jh. | 76 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
+| Reichenauer Kochbuch | 15. Jh. | 75 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
@@ -82,12 +82,12 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 24 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |
+| Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |
 | Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
 | Hausbuch aus Dietramszell (Cgm 467) | um 1477 | 3 | [M4](https://gams.uni-graz.at/o:corema.m4) |
 | Haus- und Arzneibuch im Codex Donaueschingen 792 | um 1450/1452 (Hoffmann/Sturm 2025) | 2 |  |
-| Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 1 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 
 ## Wie das Material entsteht - und was das bedeutet
 
