@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Welsches Kraut</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-28">2026-09-28</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-102/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/ka1-102</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-102">
+        <head>Welsches Kraut</head>
+        <div type="original" xml:id="ka1-102-orig" xml:lang="de-x-fnhd" corresp="#ka1-102-trans">
+          <p>walsch krut ain walsch krut brich luieschen oder jungen mangolt der kol krut zwisch den henden vnd sud daz jn flaisch supun</p>
+        </div>
+        <div type="translation" xml:id="ka1-102-trans" xml:lang="de" corresp="#ka1-102-orig">
+          <p>Für ein welsches Kraut zerbrich luieschen, jungen Mangold oder Kohlkraut zwischen den Händen und siede es dann in Fleischbrühe.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="luieschen">luieschen (ungeklärtes Blattgemüse, wahlweise)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="jungen mangolt">junger Mangold (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cabbage" orig="kol krut" commodity="wikidata:Q35051" source="#fyndling-ingredient-name">Kohl (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="flaisch supun" commodity="wikidata:Q67860017" source="#corema-ingredient-index">Fleischbrühe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-102-trans" resp="#fyndling">Welches Gericht ist das? Ein schlichtes, in Fleischbrühe gegartes Blattgemüse - der Vorfahr heutiger gedünsteter Mangold- oder Kohlgerichte in Brühe. Dasselbe Verfahren, Kohl mit den Händen brechen und sieden, beschreibt Maestro Martino in seinem Wirsing auf römische Art.
+
+luieschen. Was mit dem Wort gemeint ist, ist nicht geklärt. Es steht gleichrangig neben jungem Mangold und Kohlkraut, wird also wie ein Blattgemüse behandelt.
+
+Praxis. Jungen Mangold oder Kohlkraut mit den Händen in Stücke brechen und in Fleischbrühe weich sieden. Eine der einfachsten Zubereitungen des Buchs.</note>
+        <note type="gloss" target="#ka1-102-orig" n="walsch krut" resp="#fyndling">welsch heißt italienisch oder romanisch. Ob walsch krut eine Kohlsorte meint (Welschkraut ist ein späterer Name für den Wirsing) oder ein Gericht auf welsche Art, lässt der Text offen: Er nennt drei Blattgemüse, die wahlweise genommen werden.</note>
+        <note type="gloss" target="#ka1-102-orig" n="luieschen" resp="#fyndling">Ein Wort, das im Buch nur hier vorkommt und nicht geklärt ist. Es steht gleichrangig neben jungem Mangold und Kohlkraut und wird wie diese mit der Hand gebrochen und in Brühe gesotten, meint also wohl ein Blattgemüse.</note>
+        <note type="interpretive_choice" target="#ka1-102-orig" n="walsch krut ain walsch krut" resp="#fyndling">Die erste Nennung ‚walsch krut‘ wurde als Titel des Rezepts interpretiert, die zweite Nennung ‚ain walsch krut‘ als allgemeine Bezeichnung für die im Folgenden aufgeführten Blattgemüse-Optionen.</note>
+        <note type="interpretive_choice" target="#ka1-102-orig" n="luieschen" resp="#fyndling">Ungeklärtes Blattgemüse, das wie Mangold und Kohlkraut gebrochen und in Brühe gesotten wird. Die Wörterbücher kennen liesche nur als Namen von Sumpfpflanzen (Riedgras, Schilf, Rohrkolben); eine Küchenverwendung dafür ist nicht belegt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

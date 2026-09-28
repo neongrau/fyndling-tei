@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gewundenes Backwerk in Brühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-27">2026-09-27</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-078/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/ka1-078</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-078">
+        <head>Gewundenes Backwerk in Brühe</head>
+        <div type="original" xml:id="ka1-078-orig" xml:lang="de-x-fnhd" corresp="#ka1-078-trans">
+          <p>baches in aim jussel Ain gewundes bachen yn ainem jussel bach vnd gesaltzne pletter jn ainer pfannen vnd stro griben simlan dar vf oder oder geribnen kaess oder klaine winber oder ghackt flaisch dinges oder grunß allenthalb vnd wind es zuo samen als ainen strutzel gar fast vnd schnid stuklan dar vß vnd beschwar vnder zwai taellern vnd bachs vnd gibs jn ainem juessel etc.</p>
+        </div>
+        <div type="translation" xml:id="ka1-078-trans" xml:lang="de" corresp="#ka1-078-orig">
+          <p>Ein gewundenes Backwerk in Brühe: Backe gesalzene Fladen in einer Pfanne. Streue geriebene Semmeln darauf, oder geriebenen Käse, oder kleine Weinbeeren, oder gehacktes Fleisch, oder Grünzeug, überall darauf verteilt. Winde alles sehr fest wie einen Strudel zusammen und schneide Stückchen daraus. Beschwere diese unter zwei Tellern und backe sie. Serviere sie in einer Brühe.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="stock" orig="jussel" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gesaltzne pletter">Gesalzene Fladen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="stro griben simlan">Geriebene Semmeln</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geribnen kaess">Geriebener Käse (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="klaine winber">Kleine Weinbeeren (Rosinen, optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat" orig="ghackt flaisch dinges" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Gehacktes Fleisch (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="grunß">Grünzeug (Kräuter, optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="gesaltzne" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-078-trans" resp="#fyndling">Welches Gericht ist das? Ein herzhaft gefüllter, straff gewickelter Strudel, der in Scheiben geschnitten, unter zwei Tellern gepresst, nachgebacken und in klarer Brühe serviert wird.
+
+Was sind die "gesalzenen Blätter"? Gemeint sind vermutlich keine Gemüseblätter, sondern dünne, gebackene Fladen: Dasselbe Wort steht im Korpus wiederholt für Fladen oder Teigblätter, nie für Blattgemüse, und nur ein fester, biegsamer Fladen lässt sich backen, straff rollen und die Naht durch Pressen unter Gewicht fixieren.
+
+Die Füllung. Der Text nennt fünf Möglichkeiten - geriebene Semmeln, geriebenen Käse, Rosinen, gehacktes Fleisch oder Grünzeug -, davon jeweils nur eine, nicht alle zusammen.
+
+Praxis. Backe einen dünnen, gesalzenen Fladen (wie eine herzhafte Palatschinke) in der Pfanne. Bestreue ihn mit der gewählten Füllung, rolle ihn straff wie einen Strudel auf und schneide ihn in Stücke. Presse die Stücke kurz unter zwei Tellern zusammen, backe sie nochmals und serviere sie in heißer Brühe.</note>
+        <note type="gloss" target="#ka1-078-orig" n="jussel" resp="#fyndling">Eine Brühe oder Suppe, die hier als Flüssigkeit zum Backen und Servieren dient.</note>
+        <note type="gloss" target="#ka1-078-orig" n="gewundes bachen" resp="#fyndling">Ein ‚gewundenes Backwerk‘ ist ein Gebäck, das in einer spiralförmigen oder gedrehten Form zubereitet wird, ähnlich einem Strudel.</note>
+        <note type="gloss" target="#ka1-078-orig" n="pletter" resp="#fyndling">Dünne, gebackene Fladen, die als Hülle für die Füllung dienen - so wird das Wort auch anderswo im Korpus durchgehend verwendet, nie als Blattgemüse.</note>
+        <note type="gloss" target="#ka1-078-orig" n="stro griben simlan" resp="#fyndling">Dies wird als ‚geriebene Semmeln‘ (Brotkrume) interpretiert, die als Füllung oder Bindemittel dienen.</note>
+        <note type="gloss" target="#ka1-078-orig" n="winber" resp="#fyndling">Im Mittelalter waren ‚Weinbeeren‘ meist getrocknete Rosinen.</note>
+        <note type="gloss" target="#ka1-078-orig" n="ghackt flaisch dinges" resp="#fyndling">‚Gehacktes Fleisch‘; was ‚dinges‘ hier genau bezeichnet, bleibt unklar.</note>
+        <note type="gloss" target="#ka1-078-orig" n="grunß" resp="#fyndling">Allgemeiner Begriff für Grünzeug, hier wahrscheinlich frische Kräuter oder feines Blattgemüse.</note>
+        <note type="gloss" target="#ka1-078-orig" n="strutzel" resp="#fyndling">Ein ‚Strudel‘, ein Gebäck aus gerolltem Teig mit Füllung, das hier als Formvorlage dient.</note>
+        <note type="gloss" target="#ka1-078-orig" n="beschwar vnder zwai taellern" resp="#fyndling">Eine Technik, bei der das geformte Backwerk unter dem Gewicht von zwei Tellern gepresst wird, um es zu verdichten und in Form zu halten, bevor es gebacken wird.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="baches in aim jussel Ain gewundes bachen yn ainem jussel bach" resp="#fyndling">Der erste Teil ‚baches in aim jussel‘ wird als beschreibender Titel ‚Gebackenes in Brühe‘ verstanden, der zweite Teil ‚Ain gewundes bachen yn ainem jussel bach‘ als die erste Handlungsanweisung ‚Ein gewundenes Backwerk in einer Brühe backen‘.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="stro griben simlan" resp="#fyndling">‚stro‘ wird als Imperativ des Verbs ‚streuen‘ gelesen, ‚griben simlan‘ als ‚geriebene Semmeln‘. Die Phrase bedeutet somit ‚streue geriebene Semmeln darauf‘.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="pletter" resp="#fyndling">‚Blätter‘ werden hier als dünne, gebackene Fladen verstanden - so wird das Wort auch anderswo im Korpus durchgehend verwendet, nie als Blattgemüse.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="ghackt flaisch dinges" resp="#fyndling">‚ghackt flaisch dinges‘ wird als ‚gehacktes Fleisch‘ übersetzt; was ‚dinges‘ hier genau bezeichnet, ist unklar.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="bachs" resp="#fyndling">‚bachs‘ wird als ‚backe es‘ übersetzt, was die Zubereitung im Ofen oder in einem geschlossenen Gefäß wie einem Dutch Oven impliziert.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

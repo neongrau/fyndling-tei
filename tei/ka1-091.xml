@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gesottener Mangold</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-28">2026-09-28</date>
+        <idno type="url">https://fyndling.de/rezepte/ka1-091/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/ka1-091</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Karlsruhe, Badische Landesbibliothek, Cod. Aug. pap. 125 (Ka1)</title>
+          <date notBefore="1400" notAfter="1499">15. Jh.</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.ka1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">ka1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.ka1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, südwestdeutsch, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ka1-091">
+        <head>Gesottener Mangold</head>
+        <div type="original" xml:id="ka1-091-orig" xml:lang="de-x-fnhd" corresp="#ka1-091-trans">
+          <p>Compostmangolt Zuo aime guoten kunpost nim mangolt vnd wasch den gar suber vnd schab die wurtza vnd sud in mit pleter vnd mit in gesalczem wasser</p>
+        </div>
+        <div type="translation" xml:id="ka1-091-trans" xml:lang="de" corresp="#ka1-091-orig">
+          <p>Für einen guten Kunpost nimm Mangold und wasche ihn ganz sauber. Schabe die Wurzeln und sied ihn mit den Blättern in gesalzenem Wasser.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chard" orig="mangolt" commodity="wikidata:Q157954" source="#corema-ingredient-index">Mangold</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="gesalczem wasser" commodity="wikidata:Q11254" source="#fyndling-ingredient-registry">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ka1-091-trans" resp="#fyndling">Welches Gericht ist das? Ein schlicht gesalzenes Mangoldgericht: gewaschene Blätter und geschabte Wurzeln gemeinsam in Salzwasser gesotten. Der eigene Text nennt weder Honig noch Wein noch Früchte - so bleibt es eine einfache Gemüsebeilage, wie man sie bis heute ganz ähnlich kocht.
+
+Kunpost, nicht Kompott. Das mittelalterliche Wort für dieses Gericht war kunpost (mhd. cumpost), und das bezeichnete oft eingelegtes oder fermentiertes Gemüse, nicht das moderne süße Obstkompott. Eine nah verwandte Handschrift setzt für ein sehr ähnlich beginnendes Rezept Honig, Wein, Feigen und Rosinen an - der hier vorliegende Text bricht aber schon nach dem Sieden in Salzwasser ab, ohne eine dieser Zutaten zu nennen. Ob es sich um eine kürzere, ungesüßte Fassung desselben Grundrezepts handelt oder der Text schlicht unvollständig überliefert ist, lässt sich am vorliegenden Wortlaut nicht entscheiden.
+
+Praxis. Mangold waschen, die Wurzeln schaben, um die zähe Außenhaut zu entfernen. Blätter und Wurzeln gemeinsam in gesalzenem Wasser etwa 15-20 Minuten weich sieden. Als einfache Beilage servieren.</note>
+        <note type="gloss" target="#ka1-091-orig" n="kunpost" resp="#fyndling">'Kunpost' (mhd. 'cumpost') bezeichnete im Mittelalter oft eingelegtes oder fermentiertes Gemüse, nicht das moderne süße Obstkompott. Eine nah verwandte Überlieferung setzt für ein sehr ähnlich beginnendes Rezept Honig, Wein und Früchte an - der hier vorliegende Text selbst bricht aber vor jeder Süßungsangabe ab und bleibt ein schlicht gesalzenes Mangoldgericht.</note>
+        <note type="gloss" target="#ka1-091-orig" n="mangolt" resp="#fyndling">Mangold ist ein Blattgemüse, das im Mittelalter häufig verwendet wurde. Hier werden sowohl die Blätter als auch die Wurzeln verarbeitet.</note>
+        <note type="interpretive_choice" target="#ka1-091-orig" n="Compostmangolt / kunpost" resp="#fyndling">Kunpost von Mangold - ein schlicht gesalzenes Mangoldgericht, wie es der eigene Text beschreibt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
