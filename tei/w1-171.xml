@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rebhuhn-Gallerte in Essig</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-18">2026-09-18</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-171/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-171</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.170</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-171">
+        <head>Rebhuhn-Gallerte in Essig</head>
+        <div type="original" xml:id="w1-171-orig" xml:lang="de-x-fnhd" corresp="#w1-171-trans">
+          <p>Ein anders SEwd rephuner in esseich als zulide vnd mach ain galraid douon vnd gwurcz sy wol</p>
+        </div>
+        <div type="translation" xml:id="w1-171-trans" xml:lang="de" corresp="#w1-171-orig">
+          <p>Ein weiteres Rezept:</p>
+          <p>Siede Rebhühner in Essig, bis sie an den Gelenken zerfallen. Mache daraus eine Gallerte und würze sie gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="partridge" orig="rephuner" commodity="wikidata:Q26106" source="#corema-ingredient-index">Rebhuhn</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="esseich" commodity="wikidata:Q41354" source="#fyndling-ingredient-registry">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-171-trans" resp="#fyndling">Welches Gericht ist das? Eine essigsaure, gewürzte Geflügelgallerte: Rebhühner werden in Essig weichgekocht, bis das Fleisch an den Gelenken zerfällt, dann wird die kollagenreiche Kochflüssigkeit zu einer Gallerte verarbeitet. Die nächsten lebenden Verwandten sind die deutsche Wild- oder Geflügelsülze und das französische en gelée - das Fleisch gart in essiggesäuerter Flüssigkeit, kühlt aus und geliert allein durch die eigene Kollagenkraft, ganz ohne zugesetzte Gelatine.
+
+Das Wort "zulide" für den Garzustand ist nicht mit letzter Sicherheit zu lesen. Am wahrscheinlichsten beschreibt es, dass die Rebhühner in Essig so lange sieden, bis sie an den Gelenken auseinanderfallen - genau der Punkt, an dem das Kollagen aus Knochen und Haut vollständig gelöst ist und die Flüssigkeit von selbst geliert. Der textnahe Zwilling b4-168 überliefert dieselbe Stelle als "zuglide" und liest sie ebenso primär als "Zerfallen an den Gelenken"; eine schwächere Nebenlesart wäre "bis sie zart sind", die aber weniger Kollagenlösung und damit eine unsichere Gallerte liefert.
+
+Praxis. Rebhühner (oder ersatzweise Wachteln bzw. Perlhuhn) in reichlich Essig langsam köcheln, bis das Fleisch mühelos von den Knochen und Gelenken löst - der Text nennt weder Verdünnung noch eine Garzeit, den Garpunkt also über die Konsistenz des Fleisches prüfen, nicht über die Uhr. Ob vor oder nach dem Erkalten gewürzt wird, sagt der Text nicht, beides ist möglich. Ob die Brühe vor dem Erkalten abgeseiht wird, bleibt ebenfalls offen; für eine klare Gallerte ist es heute üblich. Die gewürzte Flüssigkeit mit dem Fleisch mehrere Stunden bis über Nacht kühl stellen (im Kühlschrank), bis sie fest wird.</note>
+        <note type="gloss" target="#w1-171-orig" n="galraid" resp="#fyndling">Eine Gallerte (oder Sülze) ist ein Gericht, bei dem Fleisch, Fisch oder Gemüse in einer gelierten Brühe oder einem Sud konserviert wird. Die Gelierung erfolgt durch kollagenreiche Zutaten (z.B. Knochen, Fischblase) oder durch Zugabe von Gelatine.</note>
+        <note type="gloss" target="#w1-171-orig" n="rephuner" resp="#fyndling">Das Rebhuhn war im Mittelalter ein beliebtes Wildgeflügel. Heute ist es in Deutschland und der EU streng geschützt und darf nicht gehandelt werden. Als Ersatz eignen sich Zucht-Wachteln oder Perlhuhn. Die Schreibung mit einfachem p statt b zeigt den bairischen p/b-Wechsel.</note>
+        <note type="gloss" target="#w1-171-orig" n="gwurcz" resp="#fyndling">Im Mittelalter waren Gewürze wie Pfeffer, Ingwer, Zimt, Nelken und Galgant sehr beliebt und wurden oft großzügig verwendet, um den Status des Gastgebers zu zeigen.</note>
+        <note type="interpretive_choice" target="#w1-171-orig" n="als zulide" resp="#fyndling">bis sie an den Gelenken zerfallen</note>
+      </div>
+    </back>
+  </text>
+</TEI>

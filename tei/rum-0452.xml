@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gams-Lebermus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-03">2026-10-03</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0452/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0452</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0452">
+        <head>Gams-Lebermus</head>
+        <div type="original" xml:id="rum-0452-orig" xml:lang="de-x-fnhd" corresp="#rum-0452-trans">
+          <p>3. Du kanst auch ein Lebermuß machen/ wie vermeldt ist von einer Schweinen Leber zu machen.</p>
+        </div>
+        <div type="translation" xml:id="rum-0452-trans" xml:lang="de" corresp="#rum-0452-orig">
+          <p>Du kannst auch ein Lebermus machen, so wie es bei der Schweineleber erwähnt ist.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="liver" orig="Lebermuß" commodity="wikidata:Q1470283" source="#fyndling-ingredient-context">Gamsleber</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0452-trans" resp="#fyndling">Welches Gericht ist das? Kein ausgeschriebenes Rezept, sondern ein Verweis: Nr. 3 im Gamsn-Kapitel nennt nur das Gericht, ein Lebermus von der Gamsleber, und verweist für das Verfahren auf die Schweineleber. Das Ergebnis ist, wie bei Rumpolts anderen Lebermusen, ein dickes, durchgestrichenes und mit Brot gebundenes Mus aus gebratener Leber, süßlich gewürzt.
+
+Welches Schweine-Rezept? Ein Lebermus von der Schweineleber steht im Buch nicht ausgeschrieben. Wir lesen den Verweis als das Wildschwein-Lebermus (rum-0415), dessen Kapitel unmittelbar vor der Gams steht. Das verweist selbst nur auf das Rehlebermus (rum-0363), und dort steht das ganze Verfahren. Die Kette führt also von der Gams über das Wildschwein zum Reh; das Tier wird ausgetauscht, die Schritte bleiben.
+
+Die Schritte nach dem Reh-Rezept. Die Leber in drei oder vier Stücke schneiden und auf dem Rost gar braten. Mit gewaschenen, verlesenen kleinen schwarzen Rosinen und ein oder zwei gerösteten Weißbrotscheiben im Mörser gut durcheinanderstoßen. Die Masse mit warmem Wein oder fettarmer Rinderbrühe lösen und durch ein feines Tuch streichen, sodass ein dickes Mus bleibt; im Tuch bleiben Fasern und Rosinenhäute zurück. Mit Zimt, Ingwer, wenig Nelken und Zucker würzen, unter ständigem Rühren mit dem Holzlöffel aufkochen lassen, damit nichts anbrennt, und abschmecken. Erst beim Aufkochen bindet das geröstete Brot.
+
+Wie gar, wie süß? Die Leber braten wir auf dem Rost vollständig durch, bis sie innen nicht mehr rosa ist; danach kocht das Mus ohnehin noch einmal auf. Ob es süß wird, stellt Rumpolt beim Reh frei. Wir würzen wie dort mit Zimt, Ingwer, wenig Nelken und Zucker; den Zucker kann man weglassen, die Rosinen geben dann allein die Süße. Andere Gewürze sind nicht belegt.
+
+Praxis. Gamsleber bekommst du nur beim Jäger oder Wildhändler, meist auf Bestellung. Reh- oder Kalbsleber ist ein heutiger Ersatz, den der Text nicht nennt; beim Lamm schreibt Rumpolt selbst, ein solches Mus lasse sich „von allerley Lebern“ machen. Mengen und Zeiten gibt er weder hier noch beim Reh; Brot, Rosinen und Flüssigkeit nach der Größe der Leber bemessen. Die rohe Leber bis zum Braten kühl halten und das fertige Mus bald essen.</note>
+        <note type="gloss" target="#rum-0452-orig" n="Lebermuß" resp="#fyndling">Lebermus, eine breiige Speise aus Leber. Bei Rumpolt keine Pastete und kein Aufstrich, sondern gebratene Leber, mit geröstetem Brot und Rosinen im Mörser gestoßen, durch ein Tuch gestrichen und aufgekocht, wie er es beim Reh beschreibt (rum-0363). Süß oder nicht süß stellt er dort frei.</note>
+        <note type="gloss" target="#rum-0452-orig" n="wie vermeldt ist von einer Schweinen Leber zu machen" resp="#fyndling">Vermeldt heißt „erwähnt“, gesagt. Ein ausgeschriebenes Lebermus von der Schweineleber gibt es im Buch nicht. Am nächsten liegt das Wildschwein-Lebermus (rum-0415), Nr. 9 im Kapitel „Vom Schweinen Wildpret“, das unmittelbar vor dem Gamsn-Kapitel steht; es verweist seinerseits auf das Rehlebermus (rum-0363), wo das Verfahren ausgeschrieben ist. Dass Rumpolt hier das Wildschwein meint, ist unsere Lesart, der Text sagt nur „Schweinen Leber“.</note>
+        <note type="interpretive_choice" target="#rum-0452-orig" n="von einer Schweinen Leber" resp="#fyndling">Das Wildschwein-Lebermus (rum-0415): Es ist das einzige Lebermus von einem Schwein im Buch, und sein Kapitel „Vom Schweinen Wildpret“ steht unmittelbar vor der Gams. Da rum-0415 selbst nur auf das Reh verweist, gilt das Verfahren des Rehlebermus (rum-0363). Die Leber ist die der Gams, das Verfahren wird übernommen.</note>
+        <note type="interpretive_choice" target="#rum-0452-orig" n="Garzustand der Leber" resp="#fyndling">Wie beim Reh: die Leber auf dem Rost „gar an die statt“ braten und danach im Mus noch einmal aufsieden lassen. Für die Gams nennt Rumpolt keinen eigenen Wert.</note>
+        <note type="interpretive_choice" target="#rum-0452-orig" n="Würzung und Süße" resp="#fyndling">Wie beim Reh: Zimt, Ingwer, wenig Nelken und Zucker, mit warmem Wein oder fettarmer Rinderbrühe gelöst; ob es süß wird, stellt Rumpolt dort ausdrücklich frei. Für die Gams gibt der Verweis keine eigene Würzung vor.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

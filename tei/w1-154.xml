@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ein magisches Licht aus Eidechsenfett</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-18">2026-09-18</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-154/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-154</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.153</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-154">
+        <head>Ein magisches Licht aus Eidechsenfett</head>
+        <div type="original" xml:id="w1-154-orig" xml:lang="de-x-fnhd" corresp="#w1-154-trans">
+          <p>Ein liecht NIm grun edechsen vnd nym das smalcz aus in vnd mach douon ain dacht vnd zunt des nachtz an das kain ander liecht mer prunn dan das ain wer das liecht an siecht der wil wenn dy went seynn silbren</p>
+        </div>
+        <div type="translation" xml:id="w1-154-trans" xml:lang="de" corresp="#w1-154-orig">
+          <p>Nimm rohe Eidechsen und entnimm ihnen das Fett. Daraus forme einen Docht. Zünde diesen Docht des Nachts an, sodass kein anderes Licht brennt als dieses eine. Wer dieses Licht erblickt, wird meinen, die Wände seien silbern.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="grun edechsen">Eidechsen (roh)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="smalcz aus in">Eidechsenfett</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dacht">Docht</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-154-trans" resp="#fyndling">Was ist das? Kein Speiserezept, sondern eine Anleitung für einen illusionistischen Docht aus Eidechsenfett, dessen Licht die Wände silbern erscheinen lassen soll. Das Stück gehört zur Gattung der Wunderbüchlein und Geheimnisliteratur, wie sie neben Kochrezepten in Sammelhandschriften dieser Zeit überliefert wurde - eine kulinarische Nachfahrin hat es nicht, sein lebender Verwandter ist gattungsmäßig die heutige Zauberkunst-Anleitung.
+
+Der B4-Zwilling. b4-151 überliefert dieselbe Anweisung nahezu wortgleich (‚Grunn Edekchsen‘ / ‚grun edechsen‘). Beide Fassungen stimmen auch in der Einordnung überein: kein Speiserezept, keine Lagerküchen-Eignung.
+
+Warum das funktionieren soll. Der Text verlangt ausdrücklich, dass nachts kein anderes Licht brennt als dieses eine - eine einzige, isolierte Flamme im dunklen Raum entzieht dem Auge jeden Vergleichswert für die Wandfarbe. Das ist der einzige im Text selbst angelegte Mechanismus für den behaupteten Effekt.
+
+Praxis. Nicht nachstellbar: Eidechsen stehen unter Artenschutz, eine Nachstellung ist rechtlich und ethisch ausgeschlossen. Auch unabhängig davon bleibt der Text an zwei Stellen offen, die hier nicht ausgefüllt werden - wie viele Tiere für einen brauchbaren Docht nötig wären, nennt er nicht, und einen faserigen Kern für den Docht, wie er sonst üblich ist, erwähnt er ebenfalls nicht. Ein Ersatzfett würde den behaupteten Effekt ohnehin nicht belegen, deshalb steht hier keine Rekonstruktion.</note>
+        <note type="gloss" target="#w1-154-orig" n="edechsen" resp="#fyndling">Eidechsen. Im Mittelalter wurden Tiere oft für medizinische, alchemistische oder illusionistische Zwecke verwendet. Heute stehen Eidechsen unter Artenschutz und dürfen nicht gefangen oder getötet werden.</note>
+        <note type="gloss" target="#w1-154-orig" n="smalcz" resp="#fyndling">Schmalz, tierisches Fett. Hier speziell das Fett der Eidechsen, das für die Herstellung des Dochts benötigt wird.</note>
+        <note type="gloss" target="#w1-154-orig" n="dacht" resp="#fyndling">Ein Docht, der als Brennstoffträger für eine Lampe oder Kerze dient. Hier wird er aus dem Eidechsenfett geformt.</note>
+        <note type="gloss" target="#w1-154-orig" n="liecht" resp="#fyndling">Licht. Das Wort wird hier sowohl für die Lichtquelle selbst als auch für den visuellen Effekt verwendet, den es erzeugt.</note>
+        <note type="gloss" target="#w1-154-orig" n="grun" resp="#fyndling">Roh, unverarbeitet. Die Eidechsen sollen lebend oder frisch getötet verwendet werden, um das Fett zu entnehmen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
+        <note type="gloss" target="#w1-154-orig" n="silbren" resp="#fyndling">Silbern. Das Licht soll die Illusion erzeugen, dass die Wände silbern glänzen, ein magischer oder scherzhafter Effekt.</note>
+        <note type="interpretive_choice" target="#w1-154-orig" n="Ein liecht" resp="#fyndling">Die Überschrift ‚Ein liecht‘ wurde als ‚Ein magisches Licht‘ übersetzt, um den illusionistischen Charakter des Stücks hervorzuheben - der Text selbst behauptet einen Silbereffekt an den Wänden, keine gewöhnliche Lichtquelle.</note>
+        <note type="interpretive_choice" target="#w1-154-orig" n="wil wenn" resp="#fyndling">Als bairisch-österreichische Form von ‚wähnen‘ (ohne Umlaut) gelesen: ‚wird meinen/fälschlich glauben‘. Wer das Licht sieht, wird irrig glauben, die Wände seien silbern.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hasenlebermus</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-03">2026-10-03</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0389/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0389</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0389">
+        <head>Hasenlebermus</head>
+        <div type="original" xml:id="rum-0389-orig" xml:lang="de-x-fnhd" corresp="#rum-0389-trans">
+          <p>3. Hasenleber Muß/ wie man es von einer Rehleber macht.</p>
+        </div>
+        <div type="translation" xml:id="rum-0389-trans" xml:lang="de" corresp="#rum-0389-orig">
+          <p>Hasenlebermus, wie man es aus einer Rehleber macht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="liver" orig="Hasenleber" commodity="wikidata:Q1470283" source="#fyndling-ingredient-context">Hasenleber</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0389-trans" resp="#fyndling">Welches Gericht ist das? Kein ausgeschriebenes Rezept, sondern ein Verweis: Nr. 3 im Hasen-Kapitel nennt nur das Gericht, ein Lebermus vom Hasen, und das Verfahren, das man von der Rehleber kennt. Gemeint ist das Rehlebermus (rum-0363), das Rumpolt im Reh-Kapitel ausführlich beschreibt und selbst „Lebermuß“ nennt. Das Ergebnis ist ein dickes, durchgestrichenes und mit Brot gebundenes Mus aus gebratener Leber, süßlich gewürzt; heute erinnert es am ehesten an eine fein passierte Leberpaste mit Rosinen.
+
+Welche Leber, welches Verfahren? Wir lesen die Hasenleber als Zutat und das Rehlebermus als Vorlage für die Schritte. Rumpolt baut solche Verweise im ganzen Buch gleich: Das Damhirsch-Lebermus richtet sich nach der Kalbsleber (rum-0337), das Wildschwein-Lebermus nach dem Reh (rum-0415), das Gams-Lebermus nach der Schweineleber (rum-0452). Beim Lamm (rum-0205) beschreibt er dasselbe Verfahren und fügt an, ein solches Mus könne man „von allerley Lebern“ machen.
+
+Die Schritte nach dem Reh-Rezept. Die Leber in Stücke schneiden und auf dem Rost gar braten. Mit gewaschenen, verlesenen kleinen schwarzen Rosinen und ein oder zwei gerösteten Weißbrotscheiben im Mörser gut durcheinanderstoßen. Die Masse mit warmem Wein oder fettarmer Rinderbrühe lösen und durch ein feines Tuch streichen, sodass ein dickes Mus bleibt. Mit Zimt, Ingwer, wenig Nelken und Zucker würzen, unter ständigem Rühren mit dem Holzlöffel aufkochen lassen und abschmecken. Erst beim Aufkochen bindet das geröstete Brot.
+
+Wein oder Brühe, süß oder nicht. Für den Hasen sagt der Text dazu nichts. Wir nehmen wie beim Reh warmen Wein oder fettarme Rinderbrühe und würzen mit Zimt, Ingwer, wenig Nelken und Zucker; andere Gewürze kommen nicht hinzu. Den Zucker stellt Rumpolt beim Reh frei.
+
+Praxis. Hasenleber bekommst du nur beim Jäger oder Wildhändler, meist auf Bestellung. Sie ist deutlich kleiner als eine Rehleber, also Brot, Rosinen und Flüssigkeit knapper bemessen; Mengen und Zeiten nennt Rumpolt weder hier noch beim Reh. Kaninchenleber ist ein heutiger Ersatz, milder im Geschmack. Die rohe Leber bis zum Braten kühl halten und das fertige Mus bald essen.</note>
+        <note type="gloss" target="#rum-0389-orig" n="Muß" resp="#fyndling">Mus, eine breiige Speise. Hier ein Lebermus, wie Rumpolt es beim Reh beschreibt (rum-0363): gebratene Leber, mit geröstetem Brot und Rosinen im Mörser gestoßen, durch ein Tuch gestrichen und aufgekocht.</note>
+        <note type="gloss" target="#rum-0389-orig" n="wie man es von einer Rehleber macht" resp="#fyndling">Verweis auf das Rehlebermus, Nr. 6 im Reh-Kapitel (rum-0363). Mit derselben Kurzform verweist Rumpolt bei Damhirsch, Wildschwein und Gams auf ein anderes Tier (rum-0337, rum-0415, rum-0452).</note>
+        <note type="interpretive_choice" target="#rum-0389-orig" n="von einer Rehleber" resp="#fyndling">Hasenleber als Zutat, zubereitet nach dem Rehlebermus Nr. 6 (rum-0363): Das Wort „Muß“ zeigt auf das Rezept im Reh-Kapitel, das Rumpolt selbst „ein Lebermuß“ nennt, und die übrigen Lebermus-Verweise im Buch sind gleich gebaut (rum-0337, rum-0415, rum-0452).</note>
+        <note type="interpretive_choice" target="#rum-0389-orig" n="Wein oder Brühe, süß oder nicht" resp="#fyndling">Für den Hasen offen: Das Reh-Rezept lässt warmen Wein oder fettarme Rinderbrühe gleichrangig zu und stellt die Süße frei („Du magst es suͤß machen oder nicht“). Beide Lesarten gelten; weitere Gewürze als Zimt, Ingwer, wenig Nelken und Zucker sind nicht belegt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hirschhoden auf dem Rost</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-01">2026-10-01</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0303/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0303</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0303">
+        <head>Hirschhoden auf dem Rost</head>
+        <div type="original" xml:id="rum-0303-orig" xml:lang="de-x-fnhd" corresp="#rum-0303-trans">
+          <p>15. Geil vom Hirsch/ Zeuch sie auß/ wie die vom Bock/ schneidt sie voneinander/ vnd quell sie in einem heissen Wasser/ thu sie in ein kaltes Wasser/ vnd saͤuber sie fein auß/ denn es hat viel zehe Haͤutlein/ Nim̃ sie/ vnnd steck sie an einen hoͤltzern Spieß/ bestraͤw sie mit Pfeffer vnnd Saltz/ leg sie auff ein Roßt/ vnnd brat sie geschwindt hinweg/ vnnd begeuß sie mit geschnittenem Speck/ vnnd wenn sie gebraten seindt/ so richt sie an in eine Schuͤssel/ vnnd gib sie trucken/ wie du die Griff hast geben. Also kanstu die Geil auff vielerley manier kochen/ es sey schwartz oder gelb/ weiß mit Limonien/ oder in ein Pasteten eynmachen/ wie du es haben wilt. Muß man es doch nicht alles in das Maul keuwen/ sonderlich einem faulen Koch oder Koͤchin/ die gern lange schlaffen.</p>
+        </div>
+        <div type="translation" xml:id="rum-0303-trans" xml:lang="de" corresp="#rum-0303-orig">
+          <p>Nimm die Hoden vom Hirsch, löse sie aus wie die vom Bock, schneide sie voneinander und überbrühe sie in heißem Wasser. Lege sie dann in kaltes Wasser und säubere sie gründlich, denn sie haben viele zähe Häutchen. Nimm sie und stecke sie auf einen hölzernen Spieß. Bestreue sie mit Pfeffer und Salz, lege sie auf einen Rost und brate sie zügig durch. Begieße sie dabei mit geschnittenem Speck.</p>
+          <p>Wenn sie gebraten sind, richte sie in einer Schüssel an und gib sie trocken, wie du die Griff gegeben hast.</p>
+          <p>Weitere Arten. So kannst du die Hoden auf vielerlei Weise kochen, sei es schwarz oder gelb, weiß mit Zitronen, oder in eine Pastete einmachen, wie du es haben willst. Man muss doch nicht alles in den Mund vorkauen, besonders nicht einem faulen Koch oder einer Köchin, die gern lange schlafen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Geil vom Hirsch">Hirschhoden</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="geschnittenem Speck" commodity="wikidata:Q11106" source="#fyndling-ingredient-name">Speck, geschnitten</ingredient>
+            </item>
+            <item>
+              <ingredient en="lemon" orig="Limonien" commodity="wikidata:Q1093742" source="#fyndling-ingredient-name">Zitronen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0303-trans" resp="#fyndling">Welches Gericht ist das? Hirschhoden, abgebrüht und geputzt, auf dem Holzspieß über dem Rost zügig gebraten und ohne Sauce angerichtet. Heute am ehesten vergleichbar mit gegrillten Lamm- oder Kalbshoden.
+
+Auslösen und Putzen. „Zeuch sie auß, wie die vom Bock“ verweist auf Rumpolts Bockshoden (rum-0165), wo die zähe Haut im Feuer abspringt und dann abgeschnitten wird. Hier beschreibt Rumpolt den Arbeitsgang nicht noch einmal. Praktisch heißt das: die Hoden aus ihrer äußeren Hülle lösen, voneinander trennen, kurz in heißem Wasser überbrühen, kalt abschrecken und die zähen Häutchen gründlich abziehen.
+
+Der Speck. „Begeuß sie mit geschnittenem Speck“ lässt offen, ob Speckschnitten an die Spieße gehalten werden, bis ihr Fett abtropft, oder ob der Speck vorher ausgelassen wird. Am einfachsten: Speckwürfel oder -scheiben am Rand der Glut auslassen und die Hoden beim Braten immer wieder mit dem Fett begießen. Sie sind mager und trocknen über dem Rost sonst aus.
+
+Garen. „Geschwindt hinweg“ heißt zügig, also bei kräftiger Hitze. Einen Garpunkt nennt Rumpolt nicht. Innereien brät man heute durch, bis sie fest sind und innen kein Rosa mehr zeigen.
+
+Anrichten. „Trucken“ heißt ohne Sauce. Beim Griff (rum-0302) richtet Rumpolt in der zweiten Fassung die Stücke in eine Schüssel an und bestreut sie nur mit Salz und Pfeffer; so ist es auch hier gemeint.
+
+Praxis. Mengen nennt der Text keine. Die Varianten am Schluss (schwarz, gelb, weiß mit Zitronen, in Pasteten) sind nur Stichworte und hier nicht ausgeführt.</note>
+        <note type="gloss" target="#rum-0303-orig" n="Geil" resp="#fyndling">Hoden (FWB geile, Lexer geile „hode“). Rumpolt verwendet das Wort ebenso für Hammel-, Bocks- und Geißhoden.</note>
+        <note type="gloss" target="#rum-0303-orig" n="Bock" resp="#fyndling">„Wie die vom Bock“ verweist auf Rumpolts Eintrag zu Hammels- oder Bockshoden (rum-0165); dort wird die zähe Haut im Feuer abgesprengt und abgeschnitten. Welcher Bock genau gemeint ist, sagt der Text nicht.</note>
+        <note type="gloss" target="#rum-0303-orig" n="quellen" resp="#fyndling">In heißem Wasser abbrühen, kurz ansetzen; vgl. „quells wol ab“ bei den Bockshoden (rum-0165).</note>
+        <note type="gloss" target="#rum-0303-orig" n="fein auß" resp="#fyndling">Bedeutet ‚gründlich‘ oder ‚sorgfältig‘ reinigen, nicht ästhetisch ‚schön‘.</note>
+        <note type="gloss" target="#rum-0303-orig" n="zehe Haͤutlein" resp="#fyndling">Zähe Häutchen, die vor dem Braten entfernt werden.</note>
+        <note type="gloss" target="#rum-0303-orig" n="hoͤltzern Spieß" resp="#fyndling">Ein Spieß aus Holz; die Holzart nennt Rumpolt nicht.</note>
+        <note type="gloss" target="#rum-0303-orig" n="Roßt" resp="#fyndling">Bratrost über der Glut, auf den die Spieße gelegt werden.</note>
+        <note type="gloss" target="#rum-0303-orig" n="geschwindt hinweg" resp="#fyndling">Zügig, rasch durchbraten.</note>
+        <note type="gloss" target="#rum-0303-orig" n="Griff" resp="#fyndling">Festes Nierenfettstück (FWB grif). Rumpolt verweist auf den unmittelbar vorangehenden Eintrag Nr. 14, Griff vom Hirsch (rum-0302); dort werden die Stücke in der zweiten Fassung ohne Sauce, nur mit Salz und Pfeffer bestreut, angerichtet.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#griff"/></note>
+        <note type="gloss" target="#rum-0303-orig" n="Limonien" resp="#fyndling">Zitronen.</note>
+        <note type="gloss" target="#rum-0303-orig" n="Maul keuwen" resp="#fyndling">keuwen = kauen. Sinngemäß: man muss nicht alles vorkauen, schon gar nicht einem faulen Koch. Rumpolt deutet die weiteren Zubereitungsarten nur an und überlässt die Ausführung dem Koch.</note>
+        <note type="interpretive_choice" target="#rum-0303-orig" n="Zeuch sie auß / wie die vom Bock" resp="#fyndling">Die Hoden auslösen, wie Rumpolt es für die Bockshoden beschreibt (rum-0165: ins Feuer werfen, bis die zähe Haut abspringt, dann abschneiden); der Arbeitsgang wird hier nur per Verweis genannt.</note>
+        <note type="interpretive_choice" target="#rum-0303-orig" n="quell sie in einem heissen Wasser" resp="#fyndling">Kurz überbrühen bzw. ansetzen: danach folgen Abschrecken, Putzen und Braten, das Garen geschieht erst auf dem Rost.</note>
+        <note type="interpretive_choice" target="#rum-0303-orig" n="begeuß sie mit geschnittenem Speck" resp="#fyndling">Speckschnitten an oder über die Spieße halten bzw. legen, sodass ihr Fett beim Braten auf die Hoden tropft.</note>
+        <note type="interpretive_choice" target="#rum-0303-orig" n="brat sie geschwindt hinweg" resp="#fyndling">Zügig bei kräftiger Hitze bräunen und durchbraten; einen Garpunkt nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0303-orig" n="Maul keuwen" resp="#fyndling">Vorkauen: man muss (einem faulen Koch) nicht alles bis ins Letzte vorgeben; Rumpolt lässt die Varianten deshalb unausgeführt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

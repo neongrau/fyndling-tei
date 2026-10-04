@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Würste vom Damhirsch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-01">2026-10-01</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0333/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0333</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0333">
+        <head>Würste vom Damhirsch</head>
+        <div type="original" xml:id="rum-0333-orig" xml:lang="de-x-fnhd" corresp="#rum-0333-trans">
+          <p>8. Wuͤrst vom Dendel kanstu machen/ wie vorhin vermeldt ist von einem Hirsch/ es sey zum kochen/ braten/ oder kalt/ wie man die Zurwanada zuricht.</p>
+        </div>
+        <div type="translation" xml:id="rum-0333-trans" xml:lang="de" corresp="#rum-0333-orig">
+          <p>Würste vom Damhirsch kannst du machen, wie es vorhin von einem Hirsch beschrieben ist, sei es zum Kochen, zum Braten oder kalt, so wie man die Zurwanada zubereitet.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="venison" orig="Dendel" commodity="wikidata:Q2296872" source="#fyndling-ingredient-context">Damhirschfleisch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Darm zum Füllen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0333-trans" resp="#fyndling">Welches Gericht ist das? Kein ausgeführtes Rezept, sondern ein Verweis. Rumpolt sagt nur, dass man Würste vom Damhirsch so macht wie die vom Hirsch, und dass man sie kochen, braten oder kalt essen kann, wie die Zurwanada. Mengen, Gewürze und Arbeitsschritte stehen nicht im Text; sie müssen aus dem Hirschkapitel geliehen werden.
+
+Welche Hirschwurst? Das Hirschkapitel hat zwei Würste. Die Wurst im Hirschdarm (rum-0301): Fleisch mit Nierenfett und Speck hacken, mit Gewürz, Pfeffer und Ingwer abschmecken, Eier darunter, in den Darm füllen, zubinden, in heißem Wasser gar sieden und auf dem Rost beidseitig anrösten. Die Zurwanada (rum-0313): Fleisch klein schneiden, mit Salz und Pfeffer einreiben, fest in den Darm stopfen und im kalten Rauch trocknen. Welche Rumpolt hier meint, sagt er nicht. Zum Nachkochen ist die erste die naheliegende Grundlage, weil sie gekocht, gebraten oder kalt gegessen werden kann.
+
+Das Fett. Rumpolt begründet beim Hirsch, warum Speck dazugehört: Hirschfett wird kalt hart und klebt am Gaumen. Für das ebenfalls magere Damwild gilt das sinngemäß; im Text dieses Rezepts steht es nicht. Praktisch also Speck oder fettes Schweinefleisch unter das Damwild hacken.
+
+Kochen, braten oder kalt. Nach der Hirschwurst wird die Wurst erst in heißem Wasser gar gezogen; wer sie braten will, röstet sie danach auf dem Rost. Kalt isst man sie nach dem Garen ausgekühlt.
+
+Praxis. Damwild gibt es beim Wildhändler oder beim Jäger, Därme beim Metzger. Das Wasser zum Garen knapp unter dem Kochen halten, damit die Därme nicht platzen. Wer die Zurwanada-Art versuchen will, findet Verfahren und Hinweise in rum-0313; das ist eine Dauerwurst für den Winter und für eine Lagerküche nicht geeignet.</note>
+        <note type="gloss" target="#rum-0333-orig" n="Dendel" resp="#fyndling">Damhirsch (Dama dama). Dendel ist eine Nebenform von Dandel (Grimm, Deutsches Wörterbuch, s. v. dandel, mit den Nebenformen dendel, dendl). Das Kapitel heißt „Vom Dendel Wildpret“ und folgt bei Rumpolt direkt auf das Hirschkapitel. Nicht zu verwechseln mit Tändel oder mittelniederdeutsch dendelen (schlagen).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dendel"/></note>
+        <note type="gloss" target="#rum-0333-orig" n="wie vorhin vermeldt ist von einem Hirsch" resp="#fyndling">Verweis auf das Hirschkapitel. Dort beschreibt Rumpolt zwei Würste: die Wurst im Hirschdarm, gesotten und auf dem Rost geröstet (rum-0301), und die geräucherte welsche Zurwanada vom Hirsch (rum-0313). Welche er meint, sagt der Satz nicht.</note>
+        <note type="gloss" target="#rum-0333-orig" n="Zurwanada" resp="#fyndling">Rumpolts Name für eine Wurst, die er „welsch“ nennt. Im Buch auch als Zurwonada (rum-0061) und Ziewonada (rum-0020); ausgeführt beim Hirsch in rum-0313. Die Herkunft des Namens ist offen.</note>
+        <note type="gloss" target="#rum-0333-orig" n="zuricht" resp="#fyndling">Zubereitet, herrichtet.</note>
+        <note type="interpretive_choice" target="#rum-0333-orig" n="Dendel" resp="#fyndling">Damhirsch. Grimm, Deutsches Wörterbuch, führt das Wort unter dandel mit den Nebenformen dendel, dendl; das Kapitel steht direkt hinter dem Hirschkapitel, und die Kapitelnachbarn lesen es ebenso.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dendel"/></note>
+        <note type="interpretive_choice" target="#rum-0333-orig" n="wie vorhin vermeldt ist von einem Hirsch" resp="#fyndling">Verweis auf die Hirschwürste des Hirschkapitels. Die Aufzählung „kochen, braten oder kalt“ passt am besten zur Wurst im Hirschdarm (rum-0301), die gesotten und auf dem Rost geröstet wird; die Zurwanada dient dann als Vergleich dafür, wie man die Wurst auf den Tisch bringt.</note>
+        <note type="interpretive_choice" target="#rum-0333-orig" n="wie man die Zurwanada zuricht" resp="#fyndling">Der Vergleich bezieht sich auf alle drei Arten (kochen, braten, kalt); die Übersetzung lässt den Bezug offen wie der Druck.</note>
+        <note type="interpretive_choice" target="#rum-0333-orig" n="Fett in der Füllung" resp="#fyndling">Wie bei der Hirschwurst: Nierenfett vom Wild und ein wenig Ochsenfett, besser aber Speck, weil Hirschfett kalt „herb vnd hart“ wird (rum-0301). Für den Damhirsch steht das nicht im Text, es folgt aus dem Verweis.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

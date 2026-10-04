@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hühnerbällchen mit Knochengriff</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-09-19">2026-09-19</date>
+        <idno type="url">https://fyndling.de/rezepte/w1-185/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/w1-185</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Wien, Österr. Nationalbibl., Cod. 2897</title>
+          <date notBefore="1400" notAfter="1499">Mitte 15. Jh. (Teil I)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.w1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">w1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.w1</idno>
+          <idno type="corema-recipe">w1.184</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch-österreichisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="w1-185">
+        <head>Hühnerbällchen mit Knochengriff</head>
+        <div type="original" xml:id="w1-185-orig" xml:lang="de-x-fnhd" corresp="#w1-185-trans">
+          <p>Ain essen von huner NIm drewu huner auf ein essen loez das pretig als douon vnd hakch das klain mach ez mit guetem gwurcz vnd mit petersil vnd nym geribem prot dorvnder vnd klain gehakchten spekch vnd ayr vnd hakch das durich ein ander so dy pain von den huner mach dy pellein in der hand vnd verpirig dy pain darin das es vnden ein wenig furgee leg sy in ein wallende prue dy nicht versalczen sey vnd lasz sy sieden vncz an dy stat vnd hakch spekch vnd petersil daran gibs hin</p>
+        </div>
+        <div type="translation" xml:id="w1-185-trans" xml:lang="de" corresp="#w1-185-orig">
+          <p>Nimm drei Hühner für ein Gericht. Löse das Brät davon ab und hacke es klein. Bereite es mit gutem Gewürz und mit Petersilie zu.</p>
+          <p>Gib geriebenes Brot, klein gehackten Speck und Eier hinzu und hacke das alles durcheinander. Nimm die Knochen von den Hühnern. Forme die Bällchen in der Hand und verberge die Knochen darin, sodass es unten ein wenig hervorsteht.</p>
+          <p>Lege sie in eine wallende Brühe, die nicht versalzen sei, und lass sie sieden, bis sie gar sind. Hacke Speck und Petersilie dazu und serviere es.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="chicken" orig="drewu huner" commodity="wikidata:Q864693" source="#fyndling-ingredient-name">Hühner</ingredient> - 3.0 Stück</item>
+            <item>
+              <ingredient en="chicken breast" orig="das pretig" commodity="wikidata:Q2607161" source="#corema-ingredient-index">Hühnerbrustfleisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="guetem gwurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürzmischung</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="petersil" commodity="wikidata:Q25284" source="#fyndling-ingredient-registry">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="geribem prot" commodity="wikidata:Q7802" source="#corema-ingredient-index">Geriebenes Brot</ingredient>
+            </item>
+            <item>
+              <ingredient orig="klain gehakchten spekch">Klein gehackter Speck</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken bone" orig="pain von den huner" commodity="wikidata:Q107246465" source="#corema-ingredient-index">Hühnerknochen</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="wallende prue" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Brühe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#w1-185-trans" resp="#fyndling">Welches Gericht ist das? Hühner-Farce-Bällchen mit eingebettetem Knochen als Griff, in unversalzener Brühe gegart - der Vorfahr der Fleischklößchen- und Frikadellen-Küche: gehacktes Fleisch mit Brot, Ei und Speck gebunden, in Brühe pochiert, ist bis heute Standardtechnik. Die Besonderheit liegt in der Präsentation - der Knochen bleibt bewusst als Griff sichtbar, damit man ohne Besteck zugreifen kann. Kein ganzer gefüllter Vogel, sondern Klößchen mit verstecktem Knochen; ein belegbares direktes modernes Gegenstück gibt es nicht, wohl aber dasselbe Lösungsprinzip.
+
+Der Textzeuge hat an einer Stelle eine Lücke: Wo ein eng verwandter Textzeuge dieses Rezepts ausdrücklich ‚Nimm die Knochen von den Hühnern‘ anweist, steht hier nur ein knappes ‚so‘ ohne eigenes Verb. Wir übernehmen den Schritt trotzdem als eigene Anweisung, weil ihn die folgende Handlung - Knochen in die Bällchen stecken - zwingend voraussetzt.
+
+Zum Zustand des Fleischs zu Beginn übersetzen wir als Brät, gestützt durch einen belegten Wörterbucheintrag mit Fisch-Parallelbeleg. Eine ältere Sachglosse zu diesem Rezept liest dieselbe Stelle als Hühnerbrust - eine endgültige Klärung ist mit dem vorliegenden Text nicht möglich, siehe die dokumentierte Alternative.
+
+Praxis. Der Text verlangt eine wallende, also kräftig kochende Brühe. Das ist für eine eibrot-gebundene Farce strukturell nicht ganz unproblematisch - kräftig kochende Flüssigkeit kann die Bällchen eher aufreißen als sanftes Ziehen. Der Text kennt dazu aber keine schonendere Alternative, die Spannung bleibt offen. Zur Größe und Garprüfung macht der Text keine Angabe außer ‚bis sie gar sind‘; wer sichergehen will, formt die Bällchen golfballgroß und gleichmäßig und sichert den Garpunkt über Kerntemperatur (74 °C) oder Anschnitt statt nur über den Augenschein.</note>
+        <note type="gloss" target="#w1-185-orig" n="pretig" resp="#fyndling">Das mittelhochdeutsche Wort ‚Brät‘ bezeichnet fein zerkleinertes, meist rohes Fleisch, das hier als Farce für die Bällchen verwendet wird.</note>
+        <note type="gloss" target="#w1-185-orig" n="gwurcz" resp="#fyndling">Eine allgemeine Bezeichnung für eine Gewürzmischung. Im Mittelalter waren dies oft ‚Pfeffer, Ingwer, Zimt, Nelken und Galgant‘.</note>
+        <note type="gloss" target="#w1-185-orig" n="pellein" resp="#fyndling">Kleine Bällchen oder Kügelchen, hier geformt aus der Fleischmasse.</note>
+        <note type="gloss" target="#w1-185-orig" n="pain" resp="#fyndling">Die Knochen der Hühner, die nach dem Entbeinen in den Bällchen verbleiben und dort als Griff bzw. Präsentationselement dienen, sodass sie unten ein wenig hervorstehen.</note>
+        <note type="gloss" target="#w1-185-orig" n="vncz an dy stat" resp="#fyndling">Eine mittelalterliche Redewendung, die bedeutet: ‚bis sie gar sind‘ oder ‚bis zum richtigen Garpunkt‘.</note>
+        <note type="interpretive_choice" target="#w1-185-orig" n="pretig" resp="#fyndling">Wir übersetzen ‚pretig‘ als Brät (fein zerkleinertes Fleisch), gestützt durch einen belegten Wörterbucheintrag (‚geprät/prät‘ = Brät, mit dem Parallelbeleg ‚hechten praet‘ = Hechtbrät) und den bereits durchreviewten Zwillingstext, der an derselben Stelle zu diesem Ergebnis kommt.</note>
+        <note type="interpretive_choice" target="#w1-185-orig" n="loez" resp="#fyndling">lösen (debonieren)</note>
+        <note type="interpretive_choice" target="#w1-185-orig" n="so dy pain von den huner" resp="#fyndling">Der Nebensatz setzt das Herausnehmen der Knochen als eigenen Schritt voraus, auch wenn die Handschrift hier kein eigenes Imperativ-Verb nennt; wir übersetzen ihn deshalb als eigenständige Anweisung (‚Nimm die Knochen von den Hühnern‘).</note>
+        <note type="interpretive_choice" target="#w1-185-orig" n="furgee" resp="#fyndling">hervorstehen oder herausragen</note>
+        <note type="interpretive_choice" target="#w1-185-orig" n="vncz an dy stat" resp="#fyndling">bis sie gar sind (bis zum Garpunkt)</note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hirschnieren vom Spieß</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-01">2026-10-01</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0305/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0305</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0305">
+        <head>Hirschnieren vom Spieß</head>
+        <div type="original" xml:id="rum-0305-orig" xml:lang="de-x-fnhd" corresp="#rum-0305-trans">
+          <p>17. Nieren zu braten vom Hirsch. Wenn man den Hirsch frisch zulegt/ so schneidt die Nieren herauß/ sampt dem Feißt/ vnd wasch auß kaltem Wasser/ vnd schneidt es voneinander/ saltz es mit Saltz vnd Pfeffer/ steck es an/ vnd brats/ vnnd wenns gebraten ist/ so gib es trucken auff ein Tisch/ vnnd pfeffers. Wiltu es aber nicht trucken geben/ so gib ein braune Bruͤh daruͤber/ es sey saur oder nicht. Also kanstu die Nieren auff vielerley manier kochen/ schwartz oder gelb/ auch auff Boͤhemisch mit Zwibeln/ wie man von allerley Vieh kocht.</p>
+        </div>
+        <div type="translation" xml:id="rum-0305-trans" xml:lang="de" corresp="#rum-0305-orig">
+          <p>Wenn du einen Hirsch frisch zerlegst, schneide die Nieren samt dem Fett heraus. Wasche sie in kaltem Wasser und schneide sie auseinander. Würze sie mit Salz und Pfeffer, stecke sie an den Spieß und brate sie. Wenn sie gebraten sind, trage sie trocken auf den Tisch und pfeffere sie.</p>
+          <p>Willst du sie aber nicht trocken geben, so gib eine braune Brühe darüber, sie sei sauer oder nicht. So kannst du die Nieren auf vielerlei Art kochen: schwarz oder gelb, auch auf Böhmisch mit Zwiebeln, wie man es von allerlei Vieh kocht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Nieren">Hirschnieren</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="braune Bruͤh" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Braune Brühe (nur wenn nicht trocken serviert)</ingredient>
+            </item>
+            <item>
+              <ingredient en="onion" orig="Zwibeln" commodity="wikidata:Q3406628" source="#fyndling-ingredient-name">Zwiebeln (nur für die böhmische Art)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0305-trans" resp="#fyndling">Welches Gericht ist das? Hirschnieren, mit Salz und Pfeffer gewürzt und am Spieß gebraten. Rumpolt gibt sie entweder trocken, nur noch einmal gepfeffert, oder mit einer braunen Brühe übergossen, die sauer sein darf oder nicht. Heute erinnert das am ehesten an gebratene Nierenspieße, wie man sie von Lamm oder Kalb kennt.
+
+Fett ab oder aufschneiden? Schneidt es voneinander lässt zwei Wege offen: das mit herausgeschnittene Nierenfett von den Nieren lösen, oder die Nieren selbst aufschneiden, wie Rumpolt es zwei Nummern vorher bei den Hirschhoden verlangt. In der Praxis macht man heute beides: Fett und weißen Strang entfernen und die Niere längs halbieren, damit sie am Spieß gleichmäßig gart.
+
+Waschen. Das kalte Wasser spült Blut ab. Der Text verlangt nur das Abwaschen, kein langes Wässern.
+
+Garpunkt. Rumpolt sagt nur wenns gebraten ist. Hirschnieren sind klein und mager; am Spieß über guter Glut sind sie erfahrungsgemäß nach etwa 10 bis 15 Minuten gar. Saftig bleiben sie, wenn man sie gerade durchbrät und nicht hart werden lässt.
+
+Die braune Brühe. Woraus sie besteht, sagt Rumpolt hier nicht. Wer sie nachkochen will, nimmt eine kräftige, dunkle Fleischbrühe oder den aufgefangenen Bratensaft und säuert sie nach Wunsch mit etwas Essig - das ist eine heutige Wahl, keine Vorgabe des Textes.
+
+Die anderen Arten. Schwarz, gelb und böhmisch mit Zwiebeln nennt Rumpolt nur als Möglichkeiten, ohne sie hier auszuführen.
+
+Praxis. Ein Spieß, Glut, Salz und Pfeffer genügen. Hirschnieren gibt es nur beim Wildhändler oder Jäger, meist auf Vorbestellung in der Jagdzeit; Lamm- oder Kalbsnieren sind der naheliegende Ersatz.</note>
+        <note type="gloss" target="#rum-0305-orig" n="zulegt" resp="#fyndling">Hier wohl ‚zerlegt, zerteilt‘: Erst wird der Hirsch zerlegt, dann kommen die Nieren heraus. Die Bedeutung ergibt sich aus dem Zusammenhang; ein Wörterbuchbeleg dafür fehlt.</note>
+        <note type="gloss" target="#rum-0305-orig" n="Feißt" resp="#fyndling">Fett, hier das Nierenfett, das die Nieren umhüllt. Es wird mit herausgeschnitten.</note>
+        <note type="gloss" target="#rum-0305-orig" n="steck es an" resp="#fyndling">An den Bratspieß stecken.</note>
+        <note type="gloss" target="#rum-0305-orig" n="trucken" resp="#fyndling">Trocken, also ohne Brühe oder Soße aufgetragen. Rumpolt verwendet die Formel ‚trucken geben‘ häufig.</note>
+        <note type="gloss" target="#rum-0305-orig" n="es sey saur oder nicht" resp="#fyndling">Bezieht sich auf die braune Brühe: Sie darf gesäuert sein oder nicht. Womit gesäuert wird, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
+        <note type="gloss" target="#rum-0305-orig" n="schwartz oder gelb" resp="#fyndling">Die Farbe der Zubereitung. Womit gefärbt wird, sagt der Text nicht.</note>
+        <note type="gloss" target="#rum-0305-orig" n="Boͤhemisch mit Zwibeln" resp="#fyndling">Rumpolts eigene Herkunftsangabe: auf böhmische Art, mit Zwiebeln. Wie das bei den Nieren aussehen soll, führt er hier nicht aus.</note>
+        <note type="interpretive_choice" target="#rum-0305-orig" n="schneidt es voneinander" resp="#fyndling">Nieren und mitgeschnittenes Fett voneinander trennen: ‚es‘ nimmt das herausgeschnittene Stück ‚Nieren samt dem Feißt‘ auf.</note>
+        <note type="interpretive_choice" target="#rum-0305-orig" n="zulegt" resp="#fyndling">‚zerlegt, zerteilt‘: Nach dem Zerlegen werden die Nieren herausgeschnitten; die Bedeutung ist aus dem Zusammenhang erschlossen.</note>
+        <note type="interpretive_choice" target="#rum-0305-orig" n="wenns gebraten ist" resp="#fyndling">Rumpolt nennt keine Garzeit und keinen Garpunkt; der Text legt nichts fest.</note>
+        <note type="interpretive_choice" target="#rum-0305-orig" n="braune Bruͤh, es sey saur oder nicht" resp="#fyndling">Eine braune Brühe, deren Bestandteile Rumpolt hier nicht nennt; ergänzt wird nichts.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>
