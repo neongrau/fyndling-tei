@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fasan in Kapaunenbrühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-05">2026-10-05</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0574/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0574</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0574">
+        <head>Fasan in Kapaunenbrühe</head>
+        <div type="original" xml:id="rum-0574-orig" xml:lang="de-x-fnhd" corresp="#rum-0574-trans">
+          <p>20. Eyngemachten Fasanen/ vnd fein zugericht mit einer Kappaunenbruͤh/ mit Pettersilgen Wurtzel vnd Muscatenbluͤt/ auch mit gantzem Pfeffer/ laß damit sieden mit feiner lautern Bruͤh/ wie man es pflegt zum ersten zu geben.</p>
+        </div>
+        <div type="translation" xml:id="rum-0574-trans" xml:lang="de" corresp="#rum-0574-orig">
+          <p>Eingemachte Fasane, also in Brühe angerichtet, fein zugerichtet, mit Kapaunenbrühe, mit Petersilienwurzel und Muskatblüte, auch mit ganzem Pfeffer. Lass sie damit in einer feinen, klaren Brühe sieden, wie man es zuerst zu geben pflegt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Fasanen">Fasan</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken stock" orig="Kappaunenbruͤh" commodity="wikidata:Q96362076" source="#fyndling-ingredient-context">Kapaunenbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Pettersilgen Wurtzel">Petersilienwurzel</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="Muscatenbluͤt" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gantzem Pfeffer">Pfeffer, ganz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0574-trans" resp="#fyndling">Welches Gericht ist das? Ein Fasan, in klarer Kapaunenbrühe mit Petersilienwurzel, Muskatblüte und ganzem Pfeffer gesotten. „Eingemacht“ heißt hier: in Brühe angerichtet. Das Gericht ist ein enger Verwandter von Nr. 7 desselben Kapitels, wo der Fasan ebenfalls in klarer Brühe mit Petersilie, Muskatblüte und ganzem Pfeffer siedet, dort zusätzlich mit Ingwer.
+
+Der Fasan. „Fein zugericht“ sagt nicht, ob der Vogel ganz, zerteilt oder schon vorgegart in den Topf kommt. In der Praxis nimmst du ihn gerupft und ausgenommen, ganz oder halbiert, und lässt ihn in der Brühe garen.
+
+Eine Brühe oder zwei? Der Text nennt Kapaunenbrühe und eine „feine lautere“, also klare Brühe. Am einfachsten liest man beides als dieselbe Brühe: eine kräftige Kapaunen- oder Hühnerbrühe, die klar bleibt. Das Abschäumen steht nicht im Text, hilft aber, die Brühe klar zu halten.
+
+Würze. Petersilienwurzel, Muskatblüte und ganzer Pfeffer sieden mit. Wie die Wurzel geschnitten wird, sagt der Text nicht; in Stücken oder Scheiben gibt sie ihre Süße an die Brühe ab. Den ganzen Pfeffer kannst du vor dem Anrichten herausfischen oder in der Brühe lassen.
+
+Praxis. Rumpolt nennt keine Garzeit. Heute rechnet man für einen ganzen Fasan in schwach siedender Brühe etwa 1 bis 1,5 Stunden, bis die Keulen gar sind; die Brust ist früher fertig. Die Zubereitungszeit von etwa 90 Minuten ist eine Schätzung, der Text gibt keine Zeit an. Serviert wird der Fasan mit seiner Brühe.</note>
+        <note type="gloss" target="#rum-0574-orig" n="Eyngemachten Fasanen" resp="#fyndling">„Eingemacht“ heißt bei Rumpolt für Fleisch und Fisch: in einer Brühe oder Soße angerichtet. Mit Konservieren hat das hier nichts zu tun, der Fasan siedet in klarer Brühe.</note>
+        <note type="gloss" target="#rum-0574-orig" n="Kappaunenbruͤh" resp="#fyndling">Brühe von einem Kapaun, einem kastrierten Masthahn.</note>
+        <note type="gloss" target="#rum-0574-orig" n="lautern Bruͤh" resp="#fyndling">lauter = klar, rein, ungetrübt; gemeint ist eine klare Brühe.</note>
+        <note type="gloss" target="#rum-0574-orig" n="wie man es pflegt zum ersten zu geben" resp="#fyndling">Wörtlich: wie man es zuerst zu geben pflegt. Gemeint ist wohl der Anfang des Mahls, der erste Gang. Ob sich das „es“ auf das Fasangericht oder auf die klare Brühe bezieht, lässt der Satz offen.</note>
+        <note type="interpretive_choice" target="#rum-0574-orig" n="Eyngemachten Fasanen" resp="#fyndling">In Brühe angerichtete Fasane. Rumpolt gebraucht „eingemacht“ für Fleisch und Fisch durchgehend so (etwa „Eyngemachten Hausen in lauter Bruͤh“ im Fischteil), und der Satz selbst lässt den Fasan in klarer Brühe sieden.</note>
+        <note type="interpretive_choice" target="#rum-0574-orig" n="Kappaunenbruͤh / feiner lautern Bruͤh" resp="#fyndling">Der Text nennt Kapaunenbrühe und „feine lautere Brühe“ nebeneinander; möglich ist, dass der Fasan in Kapaunenbrühe gart und mit weiterer klarer Brühe aufgefüllt oder darin angerichtet wird.</note>
+        <note type="interpretive_choice" target="#rum-0574-orig" n="fein zugericht" resp="#fyndling">Der Fasan ist vorbereitet, vielleicht schon zerteilt oder vorgegart, und zieht in der Brühe nur noch durch; „eingemacht“ und „fein zugericht“ lassen beides zu.</note>
+        <note type="interpretive_choice" target="#rum-0574-orig" n="laß damit sieden" resp="#fyndling">Sieden, bis der Fasan gar ist. Rumpolt nennt weder Zeit noch Hitzegrad.</note>
+        <note type="interpretive_choice" target="#rum-0574-orig" n="wie man es pflegt zum ersten zu geben" resp="#fyndling">Das Gericht wird zu Beginn des Mahls gegeben, im ersten Gang.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
