@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Knödel vom Gänsemagen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-06">2026-10-06</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0603/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0603</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0603">
+        <head>Knödel vom Gänsemagen</head>
+        <div type="original" xml:id="rum-0603-orig" xml:lang="de-x-fnhd" corresp="#rum-0603-trans">
+          <p>6. Knoͤdel auß dem Magen zu machen. Nim̃ den Magen also roh/ vñ hack jn klein mit einem Rindtfeißt/ vnd ein wenig Speck/ wuͤrtz es ab mit gestossenem Pfeffer/ vnd ein wenig Saffran/ thu darvnter gruͤne wolschmeckende Kraͤuter/ vnd hacks wol durcheinander/ auch etliche Eyerdotter/ vnd klein Brot/ vnd schaw versaltz es nicht. Nim̃ darnach ein gute Rindtfleischbruͤh/ die lindt ist/ setz auff ein Feuwer/ vnd laß sieden/ zeuch die Knoͤdel darein/ vnnd laß sie sieden/ zeuch sie auß mit einem Faumloͤffel in ein laulichts Wasser/ vnd saͤubers auß/ seig die Bruͤh/ da die Knoͤdel jnnen gesotten/ widerumb daruͤber/ thu darein Muscatenbluͤt vnnd Pettersilgen Wurtzel/ da Kern außgeschnitten. Du magst solche Knoͤdel auff vielerley manier zurichten vnd kochen/ es sey schwartz oder gelb/ oder eyngedaͤmpfft mit Wacholderbeern/ wenn sie abgebreunt seind auff dem Roßt/ so daͤmpff mans eyn/ es sey mit Pettersilgen oder nicht/ ist es auff beyde manier gut.</p>
+        </div>
+        <div type="translation" xml:id="rum-0603-trans" xml:lang="de" corresp="#rum-0603-orig">
+          <p>Knödel aus dem Magen zu machen. Nimm den Magen roh und hacke ihn klein mit Rinderfett und ein wenig Speck. Würze es mit gestoßenem Pfeffer und ein wenig Safran. Gib grüne, wohlschmeckende Kräuter darunter und hacke alles gut durcheinander, auch etliche Eigelb und zerkleinertes Brot. Und achte darauf, dass du es nicht versalzt.</p>
+          <p>Nimm danach eine gute, milde Rinderbrühe, setze sie auf ein Feuer und lass sie sieden. Gib die Knödel hinein und lass sie sieden. Hebe sie mit einem Schaumlöffel heraus in lauwarmes Wasser und säubere sie. Seihe die Brühe, in der die Knödel gesotten haben, wieder darüber. Gib Muskatblüte und Petersilienwurzel hinein, aus der der Kern ausgeschnitten ist.</p>
+          <p>Du kannst solche Knödel auf vielerlei Weise zubereiten und kochen, sei es schwarz oder gelb, oder eingedämpft mit Wacholderbeeren. Wenn sie auf dem Rost abgebräunt sind, so dämpft man sie ein, sei es mit Petersilie oder nicht. Es ist auf beide Weisen gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="stomach" orig="Magen" commodity="wikidata:Q1029907" source="#fyndling-ingredient-context">Gänsemagen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Rindtfeißt">Rinderfett</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="Speck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="gestossenem Pfeffer" commodity="wikidata:Q3143131" source="#fyndling-ingredient-name">Pfeffer, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gruͤne wolschmeckende Kraͤuter">Grüne Kräuter</ingredient>
+            </item>
+            <item>
+              <ingredient en="yolk" orig="Eyerdotter" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eigelb</ingredient>
+            </item>
+            <item>
+              <ingredient orig="klein Brot">Brot, zerkleinert</ingredient>
+            </item>
+            <item>
+              <ingredient en="beef stock" orig="Rindtfleischbruͤh" commodity="wikidata:Q96362190" source="#fyndling-ingredient-context">Rinderbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="Muscatenbluͤt" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Pettersilgen Wurtzel">Petersilienwurzel</ingredient>
+            </item>
+            <item>
+              <ingredient en="juniper berry" orig="Wacholderbeern" commodity="wikidata:Q3251025" source="#fyndling-ingredient-name">Wacholderbeeren</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="Pettersilgen" commodity="wikidata:Q25284" source="#fyndling-ingredient-registry">Petersilie</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0603-trans" resp="#fyndling">Welches Gericht ist das? Knödel aus rohem, fein gehacktem Gänsemagen mit Rinderfett und etwas Speck, gewürzt mit Pfeffer und Safran, gebunden mit Eigelb und Brot, in milder Rinderbrühe gesotten und mit Muskatblüte und Petersilienwurzel aufgetragen. Am nächsten kommen heute Leber- oder Innereienknödel; einen Knödel aus Gänsemagen kennt die heutige Küche kaum.
+
+Die Masse. Der Magen ist mager und fest, deshalb hackt Rumpolt ihn roh mit Rinderfett und Speck sehr klein: Das Fett macht die Masse saftig, Eigelb und Brot binden sie. Rumpolt schreibt nur „klein Brot“. Am einfachsten nimmst du altbackenes Weißbrot, fein gerieben oder mitgehackt; vom Einweichen sagt der Text hier nichts. Kräuter nennt er nicht einzeln, nur „grüne wohlschmeckende Kräuter“. Sparsam salzen, wie er selbst mahnt.
+
+Sieden und Säubern. Die Brühe aufsetzen und sieden lassen, die geformten Knödel hineingeben und gar sieden. Weil der Magen roh in die Masse geht, die Knödel gut durchgaren; Rumpolt nennt keine Garzeit. Mit dem Schaumlöffel in lauwarmes Wasser heben und den anhaftenden Schaum abspülen. Die Brühe durch ein Sieb wieder über die Knödel gießen.
+
+Petersilienwurzel ohne Kern. Aus der Wurzel wird das holzige Herz herausgeschnitten. Rumpolt begründet es an anderer Stelle selbst: So wird sie bald gar.
+
+Die Varianten. Rumpolt nennt sie nur als Stichworte: schwarz oder gelb, oder mit Wacholderbeeren eingedämpft, wobei die Knödel vorher auf dem Rost gebräunt werden können, mit oder ohne Petersilie. Womit die Brühe schwarz oder gelb wird, sagt er hier nicht; Mengen und Verfahren gibt er für keine der Varianten an.
+
+Praxis. Die Zubereitungszeit von etwa 75 Minuten ist eine Schätzung, der Text gibt keine Zeit an. Gänsemagen bekommst du meist nur auf Vorbestellung beim Geflügelmetzger.</note>
+        <note type="gloss" target="#rum-0603-orig" n="Magen" resp="#fyndling">Der Text nennt kein Tier; das Rezept steht im Kapitel über die Hausgans, gemeint ist also der Gänsemagen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="gloss" target="#rum-0603-orig" n="Faumloͤffel" resp="#fyndling">Schaumlöffel; Faum ist Schaum, Rumpolt nennt das Abschäumen verfaumen.</note>
+        <note type="gloss" target="#rum-0603-orig" n="abgebreunt" resp="#fyndling">Abgebräunt, auf dem Rost braun geröstet. Vgl. die länglichen Hammelknödel, die Rumpolt ebenfalls erst auf den Rost legt und dann mit Wacholderbeeren eindämpft.</note>
+        <note type="gloss" target="#rum-0603-orig" n="eyngedaͤmpfft" resp="#fyndling">Eingedämpft, mit einer Beigabe im geschlossenen Topf gegart. Hier nennt Rumpolt nur die Wacholderbeeren, keine Flüssigkeit. Mit „eingemacht“ im Sinn von Konservieren hat das nichts zu tun.</note>
+        <note type="gloss" target="#rum-0603-orig" n="Kern außgeschnitten" resp="#fyndling">Aus der Petersilienwurzel wird das holzige Herz herausgeschnitten, damit sie rasch gar wird.</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="seig die Bruͤh" resp="#fyndling">Seihe die Brühe wieder darüber: seig ist der Imperativ von seigen, seihen, wie überall bei Rumpolt.</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="zeuch die Knoͤdel darein" resp="#fyndling">Gib die Knödel hinein: darein ist eine Richtungsangabe, die Knödel kommen in die siedende Brühe.</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="klein Brot" resp="#fyndling">Zerkleinertes Brot: Rumpolt sagt nur „klein Brot“, gehackt oder klein geschnitten, ohne Einweichen.</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="da Kern außgeschnitten" resp="#fyndling">Aus der Petersilienwurzel ist der holzige Kern herausgeschnitten; Rumpolt begründet das bei den Kalbs-Hattele selbst (so wird sie bald gar).</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="abgebreunt seind auff dem Roßt" resp="#fyndling">Auf dem Rost abgebräunt, also braun geröstet, und danach eingedämpft; so liest sich die Wendung in Rumpolts übrigen Rezepten.</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="schwartz oder gelb" resp="#fyndling">Zwei Farbvarianten der Brühe, ohne Angabe des Färbemittels; wir ergänzen keins.</note>
+        <note type="interpretive_choice" target="#rum-0603-orig" n="Garzeit" resp="#fyndling">Rumpolt gibt nur „laß sie sieden“, keine Dauer.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

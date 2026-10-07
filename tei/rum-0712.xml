@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frikassierte Hühner</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-06">2026-10-06</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0712/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0712</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0712">
+        <head>Frikassierte Hühner</head>
+        <div type="original" xml:id="rum-0712-orig" xml:lang="de-x-fnhd" corresp="#rum-0712-trans">
+          <p>2. Gefricusierte Huͤnner. Nim̃ die Huͤnner/ zeuch jhnen die Haut ab/ glid Fluͤgel vnd Fuͤß ab/ zerklopffs wol mit einem Messerruͤck/ vnnd thu in ein Pfannen Butter/ vnd laß sie heiß werden/ Wirff darnach die geklopffte Huͤnner darein/ vnd roͤßts in der Butter/ seig die Butter wider herab/ vnd geuß daruͤber ein gute Rindtfleischbruͤh/ vnnd ein wenig Essig oder Agrastbruͤh/ wuͤrtz es an mit Jngwer vnd Pfeffer/ auch mit gruͤnen wolschmeckenden Kraͤutern/ die fein klein gehackt seind/ vnnd mit Agrastbeern/ die gantz seyn/ laß darmit nur ein Sudt auffthun/ so wirdt es gut vnd wolgeschmack. Du magsts gelb machen/ oder weiß lassen.</p>
+        </div>
+        <div type="translation" xml:id="rum-0712-trans" xml:lang="de" corresp="#rum-0712-orig">
+          <p>Nimm die Hühner, zieh ihnen die Haut ab und trenne Flügel und Füße ab. Zerklopfe das Fleisch gut mit einem Messerrücken und gib Butter in eine Pfanne. Lass die Butter heiß werden, wirf danach die geklopften Hühner hinein und röste sie in der Butter an.</p>
+          <p>Seihe die Butter wieder ab und gieße darüber eine gute Rindfleischbrühe und ein wenig Essig oder Verjus. Würze es mit Ingwer und Pfeffer, auch mit grünen, wohlschmeckenden Kräutern, die fein klein gehackt sind, und mit ganzen Agrastbeeren. Lass es damit nur einmal aufkochen, so wird es gut und wohlschmeckend. Du kannst es gelb machen oder weiß lassen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken" orig="die Huͤnner" commodity="wikidata:Q864693" source="#corema-ingredient-index">junge Hühner</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="Butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="Rindtfleischbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Rindfleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="Essig oder Agrastbruͤh" commodity="wikidata:Q41354" source="#fyndling-ingredient-registry">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gruͤnen wolschmeckenden Kraͤutern">grüne Kräuter</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Agrastbeern">Agrastbeeren</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0712-trans" resp="#fyndling">Welches Gericht ist das? Junge Hühner ohne Haut, zerlegt und mit dem Messerrücken geklopft, in heißer Butter geröstet, dann ohne das Bratfett mit Rindfleischbrühe, etwas Essig oder Verjus, Ingwer, Pfeffer, fein gehackten grünen Kräutern und ganzen Agrastbeeren nur einmal aufgekocht. Das Ergebnis erinnert an ein helles Hühnerfrikassee, hat aber weder Mehl noch Sahne noch Eigelb: Die Brühe bleibt dünn und säuerlich.
+
+Gefricusiert heißt geröstet. Rumpolt meint mit dem Wort das Rösten in heißem Fett, nicht ein Schmoren in gebundener Sauce. Das Fleisch wird in der Butter angebraten, die Butter wird abgegossen, danach kommt die Brühe dazu und wallt nur ein einziges Mal auf.
+
+Zerlegen und Klopfen. Der Text sagt, dass Flügel und Füße abgetrennt werden, nicht, ob die Hühner entbeint werden. Geklopft wird am leichtesten Fleisch ohne Knochen; mit Knochen reicht das kurze Aufkochen bei größeren Stücken kaum zum Durchgaren. Heute nimmt man deshalb am besten Hähnchenbrust und ausgelöste Keulen in kleinen Stücken.
+
+Die Säure. Essig oder Verjus stehen im Text als Wahl, nicht zusammen. Dazu kommen ganze Agrastbeeren; am nächsten kommen heute kleine, grüne, saure Weintrauben.
+
+Gelb oder weiß. Womit gelb gemacht wird, sagt der Text nicht. Wer nachkocht, lässt das Gericht am einfachsten weiß.
+
+Praxis. Eine Pfanne genügt. Die Butter richtig heiß werden lassen, die geklopften Stücke rundum anrösten, das Fett abgießen, Brühe und Säure angießen, würzen und einmal aufkochen lassen. Moderner Hinweis: Geflügel vor dem Servieren auf Durchgaren prüfen; bleiben die Stücke innen roh, kurz weiterköcheln. Die Zubereitungszeit von etwa 45 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#rum-0712-orig" n="Gefricusierte" resp="#fyndling">Lehnwort aus dem französischen fricassée. Rumpolt gebraucht es für Fleisch, das in heißer Butter geröstet wird, und erklärt es an anderer Stelle selbst: „Also nennet man es gefricusiert.“ Gemeint ist weder Frittieren noch das heutige Frikassee in heller Sauce.</note>
+        <note type="gloss" target="#rum-0712-orig" n="glid" resp="#fyndling">Von gliedern, am Gelenk zerlegen: „glid Flügel und Füß ab“ heißt Flügel und Füße abtrennen. Ebenso beim Kapaun: „glid darnach ab Diechel vnd Flügel“.</note>
+        <note type="gloss" target="#rum-0712-orig" n="Agrastbruͤh" resp="#fyndling">Verjus, der saure Saft unreifer Trauben; hier als Wahl neben dem Essig.</note>
+        <note type="gloss" target="#rum-0712-orig" n="Agrastbeern" resp="#fyndling">Unreife Weintrauben; das Wort kann auch Stachelbeeren meinen. Rumpolt will sie ganz.</note>
+        <note type="gloss" target="#rum-0712-orig" n="Sudt auffthun" resp="#fyndling">Einmal aufwallen lassen; Rumpolt schreibt ausdrücklich „nur ein Sudt“.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="gefricusiert" resp="#fyndling">In heißem Fett rösten. Rumpolt definiert das Wort selbst („Also nennet man es gefricusiert“), und das Deutsche Wörterbuch belegt 1616 fricassiren als „braten, rösten“. Der Text bestätigt es: rösten in Butter, Butter abgießen, Brühe nur einmal aufkochen.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="glid Fluͤgel vnd Fuͤß ab" resp="#fyndling">glid ... ab ist ein Verb (abgliedern): Flügel und Füße werden abgetrennt. So auch beim Kapaun: „glid darnach ab Diechel vnd Fluͤgel“.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Huͤnner" resp="#fyndling">Junge Hühner. Der Rezepttext sagt nur „Hühner“, das Kapitel heißt aber „Von jungen Hühnern“.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Agrastbruͤh" resp="#fyndling">Verjus, der Saft unreifer Trauben, als Alternative zum Essig („ein wenig Essig oder Agrastbrüh“).</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Agrastbeern" resp="#fyndling">Unreife Weintrauben, ganz eingelegt; passt zur Verjus-Säure im selben Satz.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Zerlegen mit oder ohne Knochen" resp="#fyndling">Historisch: die Hühner in Stücken mit Knochen, nur Flügel und Füße abgetrennt und das Fleisch geklopft. Ob entbeint wird, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="gelb machen" resp="#fyndling">Der Text lässt offen, womit das Gericht gelb gemacht wird; Rumpolt stellt gelb und weiß gleichberechtigt nebeneinander.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
