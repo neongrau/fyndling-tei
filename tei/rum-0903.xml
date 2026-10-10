@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Lachs-Küchlein</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-10">2026-10-10</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0903/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0903</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0903">
+        <head>Lachs-Küchlein</head>
+        <div type="original" xml:id="rum-0903-orig" xml:lang="de-x-fnhd" corresp="#rum-0903-trans">
+          <p>4. Turtelet zu machen von einem Salm. Nim̃ ein stuͤck Salm/ der gesotten ist/ gerieben Weck/ vnd gruͤne wolschmeckende Kraͤuter/ hack es klein durcheinander/ mach es ab mit gestossenem Jngwer/ vnnd versaltz es nicht. Vnnd wenn du es hast angemacht/ so nim̃ Butter in ein Turtenpfannen/ mach sie heiß/ nim̃ ein hoͤltzern Loͤffel/ zeuchs darmit eyn/ vnnd mach runde Turtelet darauß in der Pfannen/ die fein duͤnn seind/ kehrs mit einem hoͤltzern Scheuffelein vmb/ backs fein auß/ vnd gibs trucken also warm auff ein Tisch. So nennt man es Turtelet von einem Salm.</p>
+        </div>
+        <div type="translation" xml:id="rum-0903-trans" xml:lang="de" corresp="#rum-0903-orig">
+          <p>Nimm ein Stück Lachs, der gekocht ist, dazu geriebenes Weißbrot und grüne, wohlschmeckende Kräuter, und hacke es klein durcheinander. Schmecke es mit gestoßenem Ingwer ab und versalze es nicht.</p>
+          <p>Wenn du die Masse angemacht hast, nimm Butter in eine Tortenpfanne und mache sie heiß. Nimm einen hölzernen Löffel, ziehe die Masse damit in die Pfanne ein und mache runde Küchlein daraus, die schön dünn sind. Kehre sie mit einem kleinen hölzernen Spatel um, backe sie schön aus und gib sie trocken und so warm auf den Tisch. So nennt man es Turtelet von einem Lachs.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ein stuͤck Salm/ der gesotten ist">Lachs, gekocht</ingredient> - 1 Stück</item>
+            <item>
+              <ingredient en="white bread" orig="gerieben Weck" commodity="wikidata:Q1501889" source="#fyndling-ingredient-name">Weißbrot, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gruͤne wolschmeckende Kraͤuter">Kräuter, grün</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="gestossenem Jngwer" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwer, gemahlen</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="Butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0903-trans" resp="#fyndling">Welches Gericht ist das? Kleine, dünne Küchlein aus gekochtem Lachs, geriebenem Weißbrot und grünen Kräutern, mit Ingwer gewürzt und in heißer Butter von beiden Seiten gebacken. Es gibt keinen Teig und keine Hülle; trotz des Namens ist das kein Gebäck im heutigen Sinn. Rumpolt macht Gänsehirn und Hennenbrust auf dieselbe Weise, gibt dort aber Eigelb dazu.
+
+Der Lachs. Rumpolt setzt voraus, dass er bereits gesotten ist. Ein Stück Lachs in siedendem Wasser gar ziehen lassen, abtropfen lassen, Haut und Gräten entfernen. Wie lange er kocht, sagt der Text nicht.
+
+Die Masse. Mengen fehlen ganz. Als Ausgangspunkt eignen sich etwa zwei Teile Lachs auf einen Teil geriebenes Weißbrot, Kräuter nach Geschmack; alles fein durcheinanderhacken. Ingwer ist die einzige Würze. „Versaltz es nicht“ heißt: sparsam salzen.
+
+Ohne Ei. Anders als bei den Schwesterrezepten nennt der Text kein Eigelb. Die Masse soll allein über das Brot und die Feuchtigkeit des gekochten Fischs zusammenhalten; deshalb dünn setzen und vorsichtig wenden. Ein Ei ist hier nicht ergänzt.
+
+Einziehen und Backen. Die Butter in der Pfanne heiß werden lassen. Mit dem Holzlöffel die Masse portionsweise in die heiße Butter geben und flach zu runden, dünnen Küchlein streichen. Hat die Unterseite Farbe, mit einem Pfannenwender umdrehen und fertig backen. Weil der Lachs schon gar ist, geht das schnell; heiße Butter sorgt dafür, dass die Küchlein rasch bräunen, bevor sie zerfallen. Butterschmalz oder Butter mit etwas Öl verbrennt weniger leicht; der Text nennt nur Butter.
+
+Praxis. „Trucken also warm“ heißt: ohne Sauce und warm auftragen. Eine Personenzahl nennt Rumpolt nicht. Die Zubereitungszeit von etwa 45 Minuten, einschließlich des Kochens des Lachses, ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#rum-0903-orig" n="Weck" resp="#fyndling">Weißes Weizenbrot, als Weck oft ein längliches Brötchen. Hier wird es gerieben und bindet die Masse.</note>
+        <note type="gloss" target="#rum-0903-orig" n="mach es ab" resp="#fyndling">Formelhafte Wendung für „abschmecken und fertig machen“, meist gefolgt von der Zutat, mit der abgeschmeckt wird.</note>
+        <note type="gloss" target="#rum-0903-orig" n="Turtenpfannen" resp="#fyndling">Tortenpfanne, eine Pfanne zum Tortenbacken. Rheinische Belege von 1657 und 1683 nennen sie aus Kupfer, 1683 ausdrücklich „mit dem Deckel“. Rumpolt deckt sie in anderen Rezepten mit einem Topfdeckel zu und legt Glut darauf, damit die Hitze von unten und oben kommt (rum-0113), oder schiebt sie in den Ofen. Hier dient sie offen zum Backen in heißer Butter.</note>
+        <note type="gloss" target="#rum-0903-orig" n="Scheuffelein" resp="#fyndling">Verkleinerung von „Schaufel“, hier ein kleiner Spatel oder Pfannenwender.</note>
+        <note type="gloss" target="#rum-0903-orig" n="Turtelet" resp="#fyndling">Verkleinerung zu Turte (Torte, damals allgemein Kuchen, Gebäck). Rumpolt nennt mehrere gleich gemachte Pfannengerichte so, etwa von Gänsehirn und von Hennenbrust. Gemeint sind kleine, in Butter gebackene Küchlein ohne Teighülle; ein Wörterbuchbeleg für diese Bedeutung fehlt.</note>
+        <note type="gloss" target="#rum-0903-orig" n="trucken" resp="#fyndling">Trocken, also ohne Brühe oder Sauce angerichtet.</note>
+        <note type="interpretive_choice" target="#rum-0903-orig" n="Turtelet" resp="#fyndling">Küchlein: kleine, dünne, in Butter in der Pfanne gebackene und gewendete Stücke ohne Teighülle. Rumpolt nennt dieselbe Zubereitung bei Gänsehirn und Hennenbrust Turtelet, deshalb heißt das Gericht wie dort Küchlein.</note>
+        <note type="interpretive_choice" target="#rum-0903-orig" n="Turtenpfannen" resp="#fyndling">Die Tortenpfanne, hier offen zum Backen in heißer Butter benutzt: Der Text lässt die Butter heiß werden, gibt die Masse hinein und wendet die Stücke.</note>
+        <note type="interpretive_choice" target="#rum-0903-orig" n="zeuchs darmit eyn" resp="#fyndling">Die Masse mit dem hölzernen Löffel in die heiße Butter einziehen, also löffelweise einsetzen und zu dünnen runden Küchlein ausstreichen. So verfahren die gleich gebauten Rezepte: beim Gänsehirn ein Holzlöffel voll in das heiße Fett, bei der Hennenbrust die Masse dünn auseinandertreiben.</note>
+        <note type="interpretive_choice" target="#rum-0903-orig" n="Menge von Brot und Kräutern" resp="#fyndling">Der Text nennt keine Mengen; das Verhältnis von Lachs, Brot und Kräutern bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0903-orig" n="Bindung ohne Ei" resp="#fyndling">Kein Ei: Die Masse bindet nur über das geriebene Brot. Rumpolt nennt hier, anders als bei Gänsehirn und Hennenbrust, kein Eigelb.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

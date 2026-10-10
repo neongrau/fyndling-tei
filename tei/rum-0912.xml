@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hattele vom Salm</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-10">2026-10-10</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-0912/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-0912</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-0912">
+        <head>Hattele vom Salm</head>
+        <div type="original" xml:id="rum-0912-orig" xml:lang="de-x-fnhd" corresp="#rum-0912-trans">
+          <p>13. Hattele vom Salm/ es sey gebraten oder aber in Pasteten eyngemacht.</p>
+        </div>
+        <div type="translation" xml:id="rum-0912-trans" xml:lang="de" corresp="#rum-0912-orig">
+          <p>Hattele vom Salm, es sei gebraten oder aber in Pasteten eingeschlossen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="salmon" orig="Salm" commodity="wikidata:Q83363028" source="#fyndling-ingredient-name">Lachs</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-0912-trans" resp="#fyndling">Welches Gericht ist das? Kein ausgearbeitetes Rezept, sondern eine Überschrift im Kapitel vom Salm: Hattele vom Lachs, die man braten oder in eine Pastete geben kann. Zutaten, Mengen, Würze und Garzeiten nennt der Text nicht. Heute erinnert das entfernt an Lachsröllchen oder eine Lachspastete; das ist ein Vergleich, keine Übersetzung.
+
+Was heißt Hattele? Das Wort ist in den geprüften Wörterbüchern nicht belegt, die Bedeutung bleibt offen. Rumpolt beschreibt die Speise nur beim Kalb (rum-0121): dünne, geklopfte Scheiben, mit gehacktem Rinderfett und Kräutern aufgewickelt und am Spieß gebraten. Ob er beim Salm dasselbe Wickeln meint, sagt diese Zeile nicht. Wir lassen das Wort deshalb stehen und deuten es nicht als bestimmtes Stück vom Fisch.
+
+Zwei Verwendungen. Gebraten und in Pasteten stehen gleichrangig nebeneinander, die Wahl bleibt dem Koch. „In Pasteten eyngemacht“ heißt hier, dass die Hattele in eine Pastete kommen, nicht, dass sie in einer Sauce garen. Ob roh oder vorgegart, als Einzelstücke oder als Füllung, bleibt offen. Die Pastete mit Hattele beschreibt Rumpolt beim Kalb (rum-0126), eine Lachspastete im selben Kapitel kurz bei rum-0905.
+
+Praxis. Eine eigene Anleitung gibt es nicht. Zum Nachkochen nimmt man Lachs vom Fischhändler, brät ihn oder gibt ihn in Pastetenteig und backt ihn. Die Arbeitsschritte für Hattele stehen beim Kalb: am Spieß (rum-0121) und warm in der Pastete (rum-0126). Wer sie auf Lachs übertragen will, entscheidet Zuschnitt, Hitze und Garzeit selbst, weil Rumpolt hier nichts vorgibt.</note>
+        <note type="gloss" target="#rum-0912-orig" n="Hattele" resp="#fyndling">Rumpolts Name für die Speise, in der Druckform belassen. In den geprüften Wörterbüchern ist das Wort nicht belegt, die Bedeutung ist offen. Beim Kalb (Nr. 31, rum-0121) beschreibt Rumpolt sie selbst: dünn geschnittene, mit dem Messerrücken geklopfte Scheiben, mit gehacktem Rinderfett und Kräutern bestreut, aufgewickelt und am Spieß gebraten. Er gebraucht das Wort bei vielen Tieren, im Fischteil auch bei Hausen, Hecht und Karpfen; ob beim Salm dieselbe Machart gemeint ist, sagt der Text nicht.</note>
+        <note type="gloss" target="#rum-0912-orig" n="in Pasteten eyngemacht" resp="#fyndling">Hier heißt „eyngemacht“, dass die Hattele in eine Pastete kommen, nicht, dass sie in einer Sauce gegart oder haltbar gemacht werden. Dieselbe Wendung steht im selben Kapitel bei rum-0905.</note>
+        <note type="interpretive_choice" target="#rum-0912-orig" n="Hattele" resp="#fyndling">Druckform beibehalten, Bedeutung offen. Das Wort ist in den geprüften Wörterbüchern nicht belegt; das Schweizerische Idiotikon kennt nur ein gleichlautendes „hattle“ im Sinn von kichern, das nicht einschlägig ist. Rumpolt beschreibt die Speise beim Kalb (rum-0121) und gebraucht das Wort bei Fleisch, Wild, Geflügel und Fisch, also eher für eine Zubereitungsart als für ein Stück vom Tier.</note>
+        <note type="interpretive_choice" target="#rum-0912-orig" n="in Pasteten eyngemacht" resp="#fyndling">In eine Pastete eingeschlossen; der Wortlaut sagt nur, dass die Hattele in Pasteten kommen. Ob als einzelne Stücke in einer Teighülle oder als Füllung, ob roh oder vorgegart, bleibt offen. So übersetzt auch die gleiche Wendung im selben Kapitel (rum-0905).</note>
+        <note type="interpretive_choice" target="#rum-0912-orig" n="Salm" resp="#fyndling">Lachs, zu Rumpolts Zeit wild gefangen. Im Kapitel stehen „Salm“ und „Lachs“ nebeneinander für denselben Fisch.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
