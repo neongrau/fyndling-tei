@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hechtrogen in Sauerkraut</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-12">2026-10-12</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-1001/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-1001</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-1001">
+        <head>Hechtrogen in Sauerkraut</head>
+        <div type="original" xml:id="rum-1001-orig" xml:lang="de-x-fnhd" corresp="#rum-1001-trans">
+          <p>34. Nim̃ ein Hecht Rogen/ thu jn in einen Moͤrsel/ vnd stoß jn wol/ thu jn in ein saures Kraut/ das schoͤn gesotten hat/ vnd ruͤrs wol vmb/ so wirt es weiß sehen/ als wenn man ein sauren Rahm darein gegossen hett/ laß es sieden mit dem Kraut ein stundt oder mehr/ vnd schmaͤltz es mit Butter/ so wirt es gut vnd wolgeschmack.</p>
+        </div>
+        <div type="translation" xml:id="rum-1001-trans" xml:lang="de" corresp="#rum-1001-orig">
+          <p>Nimm den Rogen eines Hechts, gib ihn in einen Mörser und stoße ihn gut. Gib ihn in ein Sauerkraut, das gut gekocht ist, und rühre es gut um. Dann sieht es weiß aus, als hätte man sauren Rahm hineingegossen.</p>
+          <p>Lass es mit dem Kraut eine Stunde oder länger sieden und gib Butter dazu. So wird es gut und wohlschmeckend.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Hecht Rogen">Hechtrogen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="saures Kraut">Sauerkraut</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="Butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-1001-trans" resp="#fyndling">Welches Gericht ist das? Gestoßener Hechtrogen wird unter vorgekochtes Sauerkraut gerührt und eine Stunde oder länger mitgekocht, zum Schluss kommt Butter dazu. Dass das Kraut dann weiß aussieht, als hätte man sauren Rahm hineingegossen, beschreibt Rumpolt selbst.
+
+Stoßen und Mitkochen. Das Stoßen im Mörser zerteilt den Rogen, damit er sich beim Umrühren gleichmäßig im Kraut verteilt und keine Klümpchen bildet. Beim Sieden gerinnt er und gart vollständig durch; die Garzeit von einer Stunde oder mehr steht im Text.
+
+Das Kraut. Das Sauerkraut muss schon gekocht sein, bevor der Rogen hineinkommt. Wie viel Flüssigkeit dabei ist, sagt der Text nicht, eine eigene Brühe ist hier nicht vorgesehen. Gewürze nennt Rumpolt in dieser Nummer keine.
+
+Die Butter. Schmälzen heißt Fett dazugeben. Am einfachsten gibt man die Butter am Ende ins heiße Kraut und rührt sie unter; ebenso gut lässt sie sich zerlassen darübergießen. Der Text legt das nicht fest.
+
+Praxis. Ein gewöhnlicher Mörser mit Stößel genügt für den Rogen eines Hechts. Mengen nennt der Text nicht. Die Zubereitungszeit von etwa 75 Minuten ist eine Schätzung, der Text gibt nur die Siedezeit an; das Vorkochen des Krauts ist nicht mitgerechnet.</note>
+        <note type="gloss" target="#rum-1001-orig" n="Hecht Rogen" resp="#fyndling">Rogen sind die Eier eines Fisches, hier vom Hecht. „Ein Hecht Rogen“ meint den Rogen eines einzelnen Hechts.</note>
+        <note type="gloss" target="#rum-1001-orig" n="Moͤrsel" resp="#fyndling">Ein Mörser mit Stößel; hier wird darin der Rogen zerstoßen.</note>
+        <note type="gloss" target="#rum-1001-orig" n="schoͤn gesotten" resp="#fyndling">Schön steht hier als Gradwort für „gut, ordentlich“: Das Kraut soll schon gut gekocht sein, bevor der Rogen dazukommt.</note>
+        <note type="gloss" target="#rum-1001-orig" n="schmaͤltz es mit Butter" resp="#fyndling">Schmälzen heißt „mit Fett anmachen, Fett daran tun“, hier mit Butter. Ob die Butter eingerührt oder zerlassen darübergegeben wird, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-1001-orig" n="schmaͤltz es mit Butter" resp="#fyndling">Butter als Fett dazugeben, die Art der Zugabe bleibt offen: schmälzen ist „mit Fett anmachen, Fett daran tun“; Rumpolt gebraucht das Wort in Nr. 35 desselben Kapitels ebenso für Baumöl.</note>
+        <note type="interpretive_choice" target="#rum-1001-orig" n="schoͤn gesotten" resp="#fyndling">„gut, ordentlich gekocht“: schön als Gradwort; gemeint ist vorgegartes Kraut.</note>
+        <note type="interpretive_choice" target="#rum-1001-orig" n="Menge von Rogen und Kraut" resp="#fyndling">Der Text nennt nur den Rogen eines Hechts; Krautmenge, Flüssigkeit und Verhältnis bleiben offen, eine Portionszahl wird deshalb nicht angegeben.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
