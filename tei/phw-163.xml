@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,8 +131,8 @@ Praxis. Zehn Eigelb und Eiweiß trennen. Eigelb in kochende Milch rühren, bis s
         <note type="gloss" target="#phw-163-orig" n="zin schisel" resp="#fyndling">Eine Schüssel aus Zinn. Zinn war ein gängiges Material für Essgeschirr und Servierplatten in wohlhabenden Haushalten.</note>
         <note type="gloss" target="#phw-163-orig" n="milich rom" resp="#fyndling">Milchrahm, also Sahne oder Obers.</note>
         <note type="gloss" target="#phw-163-orig" n="eget schnitz" resp="#fyndling">„Eget“ bedeutet viereckig - die Eier-Milch-Masse wird in vier viereckige Stücke geschnitten.</note>
-        <note type="interpretive_choice" target="#phw-163-orig" n="vn geforlich" resp="#fyndling">Die Lesart ‚ungefähr‘ wurde gewählt, da sie im Kontext einer Zeitangabe ('ungefähr so lange') am plausibelsten ist.</note>
-        <note type="interpretive_choice" target="#phw-163-orig" n="dayg" resp="#fyndling">Das Wort ‚dayg‘ bezeichnet an dieser Stelle keinen Mehlteig, sondern die durch Erhitzen und Abseihen fest gewordene Eier-Milch-Masse.</note>
+        <note type="interpretive_choice" target="#phw-163-orig" n="vn geforlich" resp="#fyndling" subtype="lexical">Die Lesart ‚ungefähr‘ wurde gewählt, da sie im Kontext einer Zeitangabe ('ungefähr so lange') am plausibelsten ist.<list type="alternatives"><item>Eine alternative Lesart wäre ‚gefährlich‘.<note type="rationale">Diese Lesart ist im Kontext einer Kochanleitung, die eine Zeitspanne angibt, jedoch nicht sinnvoll.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-163-orig" n="dayg" resp="#fyndling" subtype="contextual">Das Wort ‚dayg‘ bezeichnet an dieser Stelle keinen Mehlteig, sondern die durch Erhitzen und Abseihen fest gewordene Eier-Milch-Masse.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Masse‘.<note type="rationale">Obwohl ‚Masse‘ die Konsistenz gut beschreibt, verwendet der Originaltext explizit ‚dayg‘, was als Begriff dokumentiert, aber nicht wörtlich übersetzt wird.</note></item></list></note>
       </div>
     </back>
   </text>

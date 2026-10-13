@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,7 +119,7 @@ Praxis. Die feste, Butter dient als Fett- und Feuchtigkeitsquelle, die beim Back
         <note type="gloss" target="#rum-0009-orig" n="Treib eine Pasteten auff" resp="#fyndling">Die Anweisung ‚auftreiben‘ bedeutet hier, eine Pastetenform aus Teig zu formen oder auszurollen.</note>
         <note type="gloss" target="#rum-0009-orig" n="vnzerlassene Butter" resp="#fyndling">‚Unzerlassen‘ bedeutet hier ‚ungeschmolzen‘ oder ‚fest‘. Die Butter soll in festen Stücken in die Pastete gegeben werden.</note>
         <note type="gloss" target="#rum-0009-orig" n="gesaltzen Limonien" resp="#fyndling">Gesalzene Zitronen: in Salz eingelegte, dadurch haltbar gemachte Zitronen mit salzig-saurem Aroma.</note>
-        <note type="interpretive_choice" target="#rum-0009-orig" n="Garzustand der Ochsenzunge beim Einlegen" resp="#fyndling">Roh geschnitten eingelegt und im langen Ofenbacken der selbsttragenden Teighülle durchgegart - der Text nennt kein Vorkochen, nur "schneidt ... fein breit darein".</note>
+        <note type="interpretive_choice" target="#rum-0009-orig" n="Garzustand der Ochsenzunge beim Einlegen" resp="#fyndling" subtype="contextual">Roh geschnitten eingelegt und im langen Ofenbacken der selbsttragenden Teighülle durchgegart - der Text nennt kein Vorkochen, nur "schneidt ... fein breit darein".<list type="alternatives"><item>Zunge vorher weich kochen oder pochieren, dann in Scheiben schneiden<note type="rationale">Sichert Garpunkt und Textur unabhängig von der Backzeit der Pastete; moderne Nachkoch-Empfehlung, im Text selbst nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,9 +120,9 @@ Praxis. Rebhühner braten, ganz auskühlen lassen und abgliedern. Zitronen auspr
         <note type="gloss" target="#rum-0755-orig" n="Safft" resp="#fyndling">Im Druck steht an allen drei Stellen Safft; gemeint ist jedes Mal der ausgepresste Zitronensaft.</note>
         <note type="gloss" target="#rum-0755-orig" n="Bruͤh" resp="#fyndling">Keine gekochte Fleischbrühe, sondern die kalte, ungekochte Mischung aus Zitronensaft, geschnittenen Zitronen und Zimtzucker, die über das Fleisch gegossen wird.</note>
         <note type="gloss" target="#rum-0755-orig" n="Feldthun" resp="#fyndling">Feldhuhn, hier gleichbedeutend mit Rebhuhn; im selben Kapitel wechselt Rumpolt zwischen Rephun und Feldhun.</note>
-        <note type="interpretive_choice" target="#rum-0755-orig" n="Plutzty Huͤnner" resp="#fyndling">Druckform beibehalten, Bedeutung offen. Das Tier ist das Rebhuhn: Das Rezept steht im Rebhuhnkapitel, und derselbe Satzzusammenhang nennt das Fleisch später Feldthun. Die einzige Parallele bei Rumpolt (rum-0714) verwendet die Fügung als Gerichtsüberschrift und löst sie ebenfalls nicht auf.</note>
-        <note type="interpretive_choice" target="#rum-0755-orig" n="das ander von den Limonien schneidt klein vnd duͤnn" resp="#fyndling">Der ausgepresste Rest der Zitrone ohne Schälhinweis, also mit Schale und weißer Haut, klein und dünn geschnitten. Im Rezept davor (rum-0754) nennt Rumpolt das Schälen ausdrücklich, hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-0755-orig" n="daß innwendig fein duͤnn wirt von dem Safft" resp="#fyndling">Die Mischung aus geschnittenen Zitronen und Zimtzucker soll vom Saft durchzogen und dünnflüssig werden, also keine dicke Paste bleiben. Dazu passt, dass sie danach als Brühe über das Fleisch gegossen wird.</note>
+        <note type="interpretive_choice" target="#rum-0755-orig" n="Plutzty Huͤnner" resp="#fyndling" subtype="lexical">Druckform beibehalten, Bedeutung offen. Das Tier ist das Rebhuhn: Das Rezept steht im Rebhuhnkapitel, und derselbe Satzzusammenhang nennt das Fleisch später Feldthun. Die einzige Parallele bei Rumpolt (rum-0714) verwendet die Fügung als Gerichtsüberschrift und löst sie ebenfalls nicht auf.<list type="alternatives"><item>Ableitung von plutzen (fallen, hinwerfen) aus rheinischen, pfälzischen und elsässischen Wörterbüchern oder von plutzig (aufgedunsen)<note type="rationale">Lautlich naheliegend, aber ohne jeden Beleg für eine Verwendung in der Küche; beide Wörter sind vermutlich nur gleich klingend. Nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0755-orig" n="das ander von den Limonien schneidt klein vnd duͤnn" resp="#fyndling" subtype="contextual">Der ausgepresste Rest der Zitrone ohne Schälhinweis, also mit Schale und weißer Haut, klein und dünn geschnitten. Im Rezept davor (rum-0754) nennt Rumpolt das Schälen ausdrücklich, hier nicht.<list type="alternatives"><item>Praxis: unbehandelte Zitrone mit Schale sehr dünn schneiden und die Kerne entfernen<note type="rationale">Entspricht dem Text und vermeidet die Kerne; so in der Zubereitungsnotiz.</note></item><item>Nur das Fruchtfleisch ohne Schale verwenden<note type="rationale">Milder, aber vom Text nicht gedeckt; möglich, wenn die Bitterkeit der Schale stört.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0755-orig" n="daß innwendig fein duͤnn wirt von dem Safft" resp="#fyndling" subtype="contextual">Die Mischung aus geschnittenen Zitronen und Zimtzucker soll vom Saft durchzogen und dünnflüssig werden, also keine dicke Paste bleiben. Dazu passt, dass sie danach als Brühe über das Fleisch gegossen wird.<list type="alternatives"><item>Die Zitronenstücke sollen im Saft innen weich werden<note type="rationale">Die knappe Syntax lässt das zu. Praktisch läuft es auf dasselbe hinaus: gut durchrühren und kurz ziehen lassen.</note></item></list></note>
       </div>
     </back>
   </text>

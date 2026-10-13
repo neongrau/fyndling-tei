@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,7 +128,7 @@ Geflügel oder Wildbret in Wasser aufsetzen und vollständig durchgaren, dabei d
         <note type="gloss" target="#std-174-orig" n="verſcheüms" resp="#fyndling">Das Abschäumen ist ein wichtiger Schritt beim Kochen von Fleisch oder Brühen, um Trübstoffe und Verunreinigungen zu entfernen und eine klare Flüssigkeit zu erhalten.</note>
         <note type="gloss" target="#std-174-orig" n="pfeffer" resp="#fyndling">Im mittelalterlichen Kochbuchkontext bezeichnet "Pfeffer" oft eine dunkle, würzige Sauce, die mit Brot gebunden und kräftig gewürzt ist, nicht nur das Gewürz selbst.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
         <note type="gloss" target="#std-174-orig" n="geſcherb" resp="#fyndling">Ein eigenständiges Gericht aus geschnittenen, in Schmalz gerösteten Apfelscheiben (mitunter auch Zwiebeln), keine Teighülle oder Pastete. Das Frühneuhochdeutsche Wörterbuch glossiert das verwandte "gescherbe" als "Obstschnitzel, -scheiben"; im selben Buch erscheint der Begriff mehrfach als dritte Anrichte-Variante neben Pfeffersauce und Süpplein (etwa std-047, std-202, std-203, std-208).</note>
-        <note type="interpretive_choice" target="#std-174-orig" n="Siededauer (nicht angegeben)" resp="#fyndling">Vollständig durchgaren, erst danach entbeinen - vor allem bei Geflügel aus Gründen der Lebensmittelsicherheit die empfehlenswerte moderne Praxis.</note>
+        <note type="interpretive_choice" target="#std-174-orig" n="Siededauer (nicht angegeben)" resp="#fyndling">Vollständig durchgaren, erst danach entbeinen - vor allem bei Geflügel aus Gründen der Lebensmittelsicherheit die empfehlenswerte moderne Praxis.<list type="alternatives"><item>Historisch wohl kürzeres Aufkochen, bis sich das Fleisch leicht vom Knochen löst.<note type="rationale">Der Text nennt keine Garzeit; ein kürzeres Sieden wäre mit der handwerklichen Praxis der Zeit vereinbar, moderne Küchenhygiene empfiehlt aber das vollständige Durchgaren von Geflügel.</note></item></list></note>
       </div>
     </back>
   </text>

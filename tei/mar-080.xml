@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,8 +123,8 @@ So wird es richtig gut. Die zerstoßene Kräutermasse in fette Brühe geben und 
         <note type="gloss" target="#mar-080-orig" n="brodo grasso" resp="#fyndling">Fette Brühe, meist Fleischbrühe</note>
         <note type="gloss" target="#mar-080-orig" n="mortale" resp="#fyndling">Mörser</note>
         <note type="gloss" target="#mar-080-orig" n="pignatta" resp="#fyndling">irdener Kochtopf</note>
-        <note type="interpretive_choice" target="#mar-080-orig" n="viete" resp="#fyndling">Mangoldblätter - Diese Lesart wurde gewählt, da Mangold heute weit verbreitet und geschmacklich ähnlich ist.</note>
-        <note type="interpretive_choice" target="#mar-080-orig" n="Menestra" resp="#fyndling">Gericht / Gang / Portion - Diese Lesart spiegelt Martinos Verwendung des Begriffs wider, der oft eine breite Palette von Speisen bezeichnete, die in Schüsseln serviert wurden.</note>
+        <note type="interpretive_choice" target="#mar-080-orig" n="viete" resp="#fyndling">Mangoldblätter - Diese Lesart wurde gewählt, da Mangold heute weit verbreitet und geschmacklich ähnlich ist.<list type="alternatives"><item>Rübenblätter<note type="rationale">‚Viete' kann auch die Blätter von Rüben (z.B. Rote Bete) bezeichnen, die im Mittelalter ebenfalls häufig verwendet wurden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-080-orig" n="Menestra" resp="#fyndling">Gericht / Gang / Portion - Diese Lesart spiegelt Martinos Verwendung des Begriffs wider, der oft eine breite Palette von Speisen bezeichnete, die in Schüsseln serviert wurden.<list type="alternatives"><item>Suppe<note type="rationale">Obwohl ‚Menestra' im modernen Italienisch oft ‚Suppe' bedeutet, war die mittelalterliche Bedeutung breiter gefasst und umfasste viele Arten von gekochten Gerichten, die nicht unbedingt flüssig waren.</note></item></list></note>
       </div>
     </back>
   </text>

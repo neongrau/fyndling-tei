@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,9 +120,9 @@ So wird es richtig gut. Den Topf auf die Glut setzen, fern vom offenen Feuer - d
         <note type="gloss" target="#mar-076-orig" n="stamegnia" resp="#fyndling">Ein feines Seihtuch oder Sieb.</note>
         <note type="gloss" target="#mar-076-orig" n="brascia" resp="#fyndling">Holzkohleglut oder glühende Asche.</note>
         <note type="gloss" target="#mar-076-orig" n="spetie dolci" resp="#fyndling">Eine Mischung aus süßen Gewürzen, typisch für die mittelalterliche Küche, oft Zimt, Nelken, Muskat, Macis.</note>
-        <note type="interpretive_choice" target="#mar-076-orig" n="Menestra" resp="#fyndling">Portion / Gericht - Im Kontext von Martino ist „menestra“ oft ein Gericht, das in einer Schüssel serviert wird, nicht zwingend eine dünne Suppe.</note>
-        <note type="interpretive_choice" target="#mar-076-orig" n="una mollicha di pane" resp="#fyndling">eine Brotkrume - Dies bezieht sich auf das weiche Innere des Brotes, ohne Rinde, das als Bindemittel dient.</note>
-        <note type="interpretive_choice" target="#mar-076-orig" n="spetie dolci" resp="#fyndling">Süße Gewürze - Eine typische Mischung aus Zimt, Nelken, Muskat, Macis, die in der mittelalterlichen Küche häufig für süße und süß-saure Gerichte verwendet wurde.</note>
+        <note type="interpretive_choice" target="#mar-076-orig" n="Menestra" resp="#fyndling">Portion / Gericht - Im Kontext von Martino ist „menestra“ oft ein Gericht, das in einer Schüssel serviert wird, nicht zwingend eine dünne Suppe.<list type="alternatives"><item>Suppe<note type="rationale">Obwohl ‚menestra‘ im modernen Italienisch ‚Suppe‘ bedeutet, war es im 15. Jahrhundert ein allgemeinerer Begriff für einen Gang oder ein Gericht, oft von dickerer Konsistenz.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-076-orig" n="una mollicha di pane" resp="#fyndling">eine Brotkrume - Dies bezieht sich auf das weiche Innere des Brotes, ohne Rinde, das als Bindemittel dient.<list type="alternatives"><item>ein Stück Brot<note type="rationale">Der Begriff kann auch ein kleines Stück Brot allgemein meinen, aber ‚mollicha‘ betont das weiche Innere.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-076-orig" n="spetie dolci" resp="#fyndling">Süße Gewürze - Eine typische Mischung aus Zimt, Nelken, Muskat, Macis, die in der mittelalterlichen Küche häufig für süße und süß-saure Gerichte verwendet wurde.<list type="alternatives"><item>Süßigkeiten / Konfekt<note type="rationale">Obwohl ‚spezie‘ auch Süßigkeiten bedeuten kann, ist im Kochkontext ‚Gewürze‘ die primäre Lesart, insbesondere wenn sie als Streuung über ein Gericht gegeben werden.</note></item></list></note>
       </div>
     </back>
   </text>

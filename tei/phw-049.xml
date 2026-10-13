@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -189,11 +194,11 @@ Kräuter und Mangold roh klein hacken und, wenn sauber, ungewaschen, in heißem 
         <note type="gloss" target="#phw-049-orig" n="er losen butter" resp="#fyndling">Zerlassene Butter, die über die fast fertige Torte gegeben wird.</note>
         <note type="gloss" target="#phw-049-orig" n="yber se" resp="#fyndling">‚Yber se‘ ist eine Form von ‚bestreuen‘, hier mit Zucker.</note>
         <note type="gloss" target="#phw-049-orig" n="fol bachenn" resp="#fyndling">Die Torte soll vollständig durchgebacken werden, bis sie gar ist.</note>
-        <note type="interpretive_choice" target="#phw-049-orig" n="andyfye" resp="#fyndling">‚Andyfye‘ wird als Endivie gelesen, ein Salatgemüse, das auch in der mittelalterlichen Küche bekannt war.</note>
-        <note type="interpretive_choice" target="#phw-049-orig" n="buraugenn" resp="#fyndling">‚Buraugenn‘ wird als Borretsch gelesen, ein Kraut mit gurkenähnlichem Geschmack.</note>
-        <note type="interpretive_choice" target="#phw-049-orig" n="kerma krautt" resp="#fyndling">Kerbel. Hayers Wörterverzeichnis zu dieser Handschrift vermerkt ‚kerma-, kera krautt‘ als Kerbel, versieht die Lesart aber selbst mit einem Fragezeichen.</note>
-        <note type="interpretive_choice" target="#phw-049-orig" n="Backhitze/-führung (las bachen)" resp="#fyndling">Der Text nennt für das Backen keine Ofenart, kein Backgerät und keine Temperatur, nur ‚backen lassen‘.</note>
-        <note type="interpretive_choice" target="#phw-049-orig" n="keß dar ein des aller bestenn" resp="#fyndling">‚Der allerbeste Käse‘ ist ein Qualitätsurteil, keine Angabe zu Käseart oder Reifegrad.</note>
+        <note type="interpretive_choice" target="#phw-049-orig" n="andyfye" resp="#fyndling" subtype="lexical">‚Andyfye‘ wird als Endivie gelesen, ein Salatgemüse, das auch in der mittelalterlichen Küche bekannt war.<list type="alternatives"><item>Die Schreibung ‚Andyfye‘ könnte eine andere Blattgemüseart bezeichnen, deren Name sich im Laufe der Zeit verändert hat.<note type="rationale">Die Schreibung weicht leicht von modernen Formen ab, was eine alternative Lesart zulassen könnte.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-049-orig" n="buraugenn" resp="#fyndling" subtype="lexical">‚Buraugenn‘ wird als Borretsch gelesen, ein Kraut mit gurkenähnlichem Geschmack.<list type="alternatives"><item>Die Schreibung ‚Buraugenn‘ könnte eine andere Blattgemüseart bezeichnen, deren Name sich im Laufe der Zeit verändert hat.<note type="rationale">Die Schreibung weicht leicht von modernen Formen ab, was eine alternative Lesart zulassen könnte.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-049-orig" n="kerma krautt" resp="#fyndling" subtype="lexical">Kerbel. Hayers Wörterverzeichnis zu dieser Handschrift vermerkt ‚kerma-, kera krautt‘ als Kerbel, versieht die Lesart aber selbst mit einem Fragezeichen.<list type="alternatives"><item>Ein anderes, im Buch nicht weiter belegtes Kraut.<note type="rationale">Hayer selbst markiert die Lesart als unsicher; ohne weiteren Beleg im Buch oder in Vergleichstexten bleibt die Identifikation offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-049-orig" n="Backhitze/-führung (las bachen)" resp="#fyndling" subtype="contextual">Der Text nennt für das Backen keine Ofenart, kein Backgerät und keine Temperatur, nur ‚backen lassen‘.<list type="alternatives"><item>Eine Tortenpfanne mit Glut auf dem Deckel, wie für andere Torten des Buchs üblich.<note type="rationale">Nicht im Text dieses Rezepts selbst genannt, sondern nur aus der sonstigen Backkonvention des Buchs erschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-049-orig" n="keß dar ein des aller bestenn" resp="#fyndling" subtype="contextual">‚Der allerbeste Käse‘ ist ein Qualitätsurteil, keine Angabe zu Käseart oder Reifegrad.<list type="alternatives"><item>Sowohl ein junger als auch ein gereifter Käse sind mit dieser Formulierung vereinbar.<note type="rationale">Der Text bewertet nur die Güte, nicht das Alter des Käses.</note></item></list></note>
       </div>
     </back>
   </text>

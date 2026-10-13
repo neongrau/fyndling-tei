@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Für den Wasserteig genügt Mehl nach Gefühl, bis eine puddingartige Masse ents
         <note type="gloss" target="#phw-115-orig" n="streybla dayg" resp="#fyndling">Ein dünner Teig für ‚Sträublein‘ - im Buch auch als Straubenteig bezeichnet -, der durch Ausbacken in Fett zu einem spritzgebäckartigen Gebäck wird.</note>
         <note type="gloss" target="#phw-115-orig" n="briete kiechla" resp="#fyndling">‚Briete kiechla‘ (im Buch auch ‚bryette kiechla‘ geschrieben) bezeichnet durchgängig ein Windbeutel- bzw. Brandteiggebäck, kein Fleischgericht. Hier dient der Begriff nur als Vergleich für Form und Konsistenz des fertigen Küchleins.</note>
         <note type="gloss" target="#phw-115-orig" n="bach" resp="#fyndling">Im frühneuhochdeutschen Kontext kann ‚backen‘ sowohl das Backen im Ofen als auch das Braten in Fett bedeuten, wie es hier in der Pfanne über dem Feuer beschrieben wird.</note>
-        <note type="interpretive_choice" target="#phw-115-orig" n="dayg" resp="#fyndling">Da der Teig mit Wasser angesetzt wird, wurde Mehl als implizite Zutat für den Teig angenommen, obwohl es nicht explizit genannt wird.</note>
-        <note type="interpretive_choice" target="#phw-115-orig" n="Garzustand beim zweiten Backgang" resp="#fyndling">Der Text nennt für den zweiten Backgang keinen Zeit- oder Farbhinweis; die Übersetzung geht von einem vollständig durchgebackenen Küchlein aus, da die Masse durch das eingeschlagene Ei einen rohen Anteil enthält.</note>
+        <note type="interpretive_choice" target="#phw-115-orig" n="dayg" resp="#fyndling" subtype="contextual">Da der Teig mit Wasser angesetzt wird, wurde Mehl als implizite Zutat für den Teig angenommen, obwohl es nicht explizit genannt wird.</note>
+        <note type="interpretive_choice" target="#phw-115-orig" n="Garzustand beim zweiten Backgang" resp="#fyndling" subtype="contextual">Der Text nennt für den zweiten Backgang keinen Zeit- oder Farbhinweis; die Übersetzung geht von einem vollständig durchgebackenen Küchlein aus, da die Masse durch das eingeschlagene Ei einen rohen Anteil enthält.<list type="alternatives"><item>Ein weicherer, cremigerer Kern könnte im 16. Jahrhundert als gewünschte Konsistenz gegolten haben, wie sie ein Nachbarrezept für den Teig selbst mit dem Vergleich zu einem Kindermus beschreibt.<note type="rationale">Der Text trifft zum Garzustand des zweiten Backgangs keine eigene Aussage; die Analogie stammt aus einem Nachbarrezept mit einer anderen Konsistenzangabe.</note></item></list></note>
       </div>
     </back>
   </text>

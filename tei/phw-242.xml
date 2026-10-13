@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -240,9 +245,10 @@ Praxis. Garzeit und -grad für Kapaunbrust und Hecht bleiben im Text unbeziffert
         <note type="gloss" target="#phw-242-orig" n="stockh fisch" resp="#fyndling">Stockfisch ist getrockneter, ungesalzener Fisch (meist Kabeljau oder Dorsch), der vor der Zubereitung gewässert werden muss.</note>
         <note type="gloss" target="#phw-242-orig" n="zuckhen" resp="#fyndling">Bedeutet ‚zerzupfen‘ oder ‚zerfasern‘, ähnlich wie bei der Hühnerbrust.</note>
         <note type="gloss" target="#phw-242-orig" n="heyfflen" resp="#fyndling">Bedeutet ‚löffeln‘ oder ‚mit einem Löffel schöpfen‘.</note>
-        <note type="interpretive_choice" target="#phw-242-orig" n="sarvet" resp="#fyndling">Tuch. Dies passt zum Kontext des Einwickelns von zerzupftem Fleisch, um es feucht zu halten. Der buchinterne Zwilling phw-233 löst dieselbe Textstelle mit ‚Saluet‘ auf, lautlich näher an frz./lat. ‚salveta‘ (Serviette/Tuch) als an ‚Sarnet‘.</note>
-        <note type="interpretive_choice" target="#phw-242-orig" n="Garzustand der Kapaunbrust (&quot;nit gar zu vast&quot;)" resp="#fyndling">Praxis-Empfehlung: bis durchgegart, aber noch saftig-fest garen, da das Fleisch später im heißen Mus noch einmal erhitzt wird.</note>
-        <note type="interpretive_choice" target="#phw-242-orig" n="Garzustand des Hechts (&quot;wie sunst ainen hechten&quot;)" resp="#fyndling">Praxis-Empfehlung: durchgaren, bis sich der Fisch vom Knochen löst, um rohe oder halbgare Fischreste im fertigen Mus zu vermeiden.</note>
+        <note type="interpretive_choice" target="#phw-242-orig" n="sarvet" resp="#fyndling" subtype="lexical">Tuch. Dies passt zum Kontext des Einwickelns von zerzupftem Fleisch, um es feucht zu halten. Der buchinterne Zwilling phw-233 löst dieselbe Textstelle mit ‚Saluet‘ auf, lautlich näher an frz./lat. ‚salveta‘ (Serviette/Tuch) als an ‚Sarnet‘.<list type="alternatives"><item>Sarnet (ein feines Gewebe)<note type="rationale">Paläographisch ähnlich, aber gegenüber der Buchlesart aus phw-233 die schwächere Deutung.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-242-orig" n="Garzustand der Kapaunbrust (&quot;nit gar zu vast&quot;)" resp="#fyndling" subtype="contextual">Praxis-Empfehlung: bis durchgegart, aber noch saftig-fest garen, da das Fleisch später im heißen Mus noch einmal erhitzt wird.<list type="alternatives"><item>Der Text nennt nur die negative Abgrenzung (nicht zu lange gekocht), keine positive Zielgröße.<note type="rationale">Keine Zeit- oder Temperaturangabe im Transkript - wie fest im Detail gemeint war, bleibt offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-242-orig" n="Garzustand des Hechts (&quot;wie sunst ainen hechten&quot;)" resp="#fyndling" subtype="contextual">Praxis-Empfehlung: durchgaren, bis sich der Fisch vom Knochen löst, um rohe oder halbgare Fischreste im fertigen Mus zu vermeiden.<list type="alternatives"><item>Der Text verweist nur auf die sonst übliche Praxis, ohne diese näher zu beschreiben.<note type="rationale">Welchen genauen Garzustand ‚wie sonst einen Hecht‘ meint, bleibt offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-242-orig" n="fehen" resp="#fyndling" subtype="philological" cert="unknown">Durch ein Tuch oder Sieb seihen: wahrscheinlich ‚ſehen‘ mit langem ſ, also seihen. Der Buchzwilling phw-233 hat an derselben Stelle ‚gefaimbt‘, wohl ‚geſaimbt‘ = geseimt (DWB s. v. seimen, läutern). Beide meinen dieselbe Handlung.<list type="alternatives"><item>‚fehen‘ mit f als eigenes Wort<note type="rationale">Kein Wörterbuchbeleg für ein Verb ‚fehen‘ im Sinn von sieben; f und langes ſ werden in Druck und Handschrift leicht verwechselt.</note></item></list></note>
       </div>
     </back>
   </text>

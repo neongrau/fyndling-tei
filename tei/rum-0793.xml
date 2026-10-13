@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,9 +105,9 @@ Praxis. Das Fleisch vor dem Hacken gar machen, am nächsten an Rumpolt durch Bra
         <note type="gloss" target="#rum-0793-orig" n="gehack" resp="#fyndling">Gehacktes, klein gehacktes Fleisch. Wo Rumpolt das Gericht ausführt, etwa beim Rebhuhn (rum-0750) und beim Fasan (rum-0570), ist es aus schon gebratenem Fleisch. Diese Nummer sagt nicht, ob das Fleisch vorher gebraten oder gekocht ist.</note>
         <note type="gloss" target="#rum-0793-orig" n="Limoniensafft" resp="#fyndling">Zitronensaft. Limonien sind bei Rumpolt Zitronen; „frisch“ heißt frisch gepresst.</note>
         <note type="gloss" target="#rum-0793-orig" n="darauff gedruckt" resp="#fyndling">„darauf gedrückt“, also den Saft über das Gehackte ausgepresst. Dieselbe Formel steht beim Gehackten vom Rebhuhn (rum-0750).</note>
-        <note type="interpretive_choice" target="#rum-0793-orig" n="Ein gehack von einer Turteltauben" resp="#fyndling">Das Fleisch der schon gebratenen Turteltaube, klein gehackt. Der Text sagt das nicht, aber Rumpolts nahezu gleichlautende Zeilen nennen ausdrücklich den gebratenen Vogel: bei der Haustaube (rum-0784) und beim Rebhuhn (rum-0750), und beim Fasan (rum-0570) führt er das Gehackte aus gebratenem Fleisch aus.</note>
-        <note type="interpretive_choice" target="#rum-0793-orig" n="darauff gedruckt" resp="#fyndling">Den Saft frisch über das Gehackte ausdrücken; drucken ist die oberdeutsche Form von „drücken, pressen“. So gebraucht Rumpolt die Formel auch beim Rebhuhn (rum-0750) und beim Fasan (rum-0570).</note>
-        <note type="interpretive_choice" target="#rum-0793-orig" n="Limoniensafft" resp="#fyndling">Zitronensaft, wie Rumpolts Limonien im Buch durchweg als Zitronen wiedergegeben werden, etwa bei der Taube (rum-0784) und beim Rebhuhn (rum-0750).</note>
+        <note type="interpretive_choice" target="#rum-0793-orig" n="Ein gehack von einer Turteltauben" resp="#fyndling" subtype="contextual">Das Fleisch der schon gebratenen Turteltaube, klein gehackt. Der Text sagt das nicht, aber Rumpolts nahezu gleichlautende Zeilen nennen ausdrücklich den gebratenen Vogel: bei der Haustaube (rum-0784) und beim Rebhuhn (rum-0750), und beim Fasan (rum-0570) führt er das Gehackte aus gebratenem Fleisch aus.<list type="alternatives"><item>Das Fleisch auf andere Weise vorgegart, etwa gekocht, und dann gehackt<note type="rationale">Nicht ausgeschlossen, weil diese Nummer die Garung gar nicht nennt; die Parallelen sprechen aber für den Braten.</note></item><item>Für die Praxis: das Fleisch in jedem Fall vor dem Hacken gar machen, gebraten oder gekocht<note type="rationale">So in der Zubereitungsnotiz; rohes Hack ist bei Rumpolts Gehacktem nirgends gemeint.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0793-orig" n="darauff gedruckt" resp="#fyndling" subtype="lexical">Den Saft frisch über das Gehackte ausdrücken; drucken ist die oberdeutsche Form von „drücken, pressen“. So gebraucht Rumpolt die Formel auch beim Rebhuhn (rum-0750) und beim Fasan (rum-0570).<list type="alternatives"><item>Den Saft darübergießen und mit dem Gehackten aufkochen<note type="rationale">Nicht im Text. Beim Fasan (rum-0570) lässt Rumpolt das Gehackte nach dem Saft aufsieden, hier sagt er davon nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0793-orig" n="Limoniensafft" resp="#fyndling" subtype="lexical">Zitronensaft, wie Rumpolts Limonien im Buch durchweg als Zitronen wiedergegeben werden, etwa bei der Taube (rum-0784) und beim Rebhuhn (rum-0750).<list type="alternatives"><item>Saft einer kleineren, dünnschaligen Zitronenart<note type="rationale">Wörterbücher führen Limone auch so; am Geschmack, sauer und frisch, ändert das für die Praxis nichts.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,8 +126,8 @@ Praxis. Lass die Pastete nach dem Backen im Teig auskühlen und schneide sie kal
         <note type="gloss" target="#rum-1733-orig" n="Roßt" resp="#fyndling">Der Bratrost. Auf ihm wird der Braten nur braun gemacht, gebacken wird er danach im Ofen.</note>
         <note type="gloss" target="#rum-1733-orig" n="Ruckenteig" resp="#fyndling">Roggenteig. "Rucken" ist eine Nebenform von Roggen: Lexer führt rucken-brôt als Roggenbrot, das Mittelniederdeutsche Handwörterbuch verweist bei ruckenbrôt auf roggenbrôt. Für "Ruckenteig" selbst gibt es keinen eigenen Wörterbucheintrag, Rumpolt gebraucht das Wort aber durchgehend für den Teig, in den er Braten einschlägt. Eine Teigzusammensetzung nennt er nicht.</note>
         <note type="gloss" target="#rum-1733-orig" n="vngeschmaͤltzte Butter" resp="#fyndling">Frische Butter, die nicht zerlassen ist. Rumpolt erklärt es bei der Kuheuter-Pastete im selben Kapitel selbst: "frische Butter, die vngeschmaͤltzt ist".</note>
-        <note type="interpretive_choice" target="#rum-1733-orig" n="vngeschmaͤltzte Butter" resp="#fyndling">Frische, nicht zerlassene Butter. "Geschmältzt" steht bei Rumpolt sonst für zerlassenes oder ausgelassenes Fett, und bei der Kuheuter-Pastete (rum-1732) setzt er "frische Butter, die vngeschmaͤltzt ist" gleich.</note>
-        <note type="interpretive_choice" target="#rum-1733-orig" n="Backzeit und Hitze" resp="#fyndling">Rumpolt nennt weder Backzeit noch Hitze, nur "laß backen vnd kalt werden". Für dasselbe Stück im selben Teig gibt er in der Schwesterfassung rum-0115 "drey stundt im Ofen" an; das ist ein Hinweis, kein Beleg für dieses Rezept.</note>
+        <note type="interpretive_choice" target="#rum-1733-orig" n="vngeschmaͤltzte Butter" resp="#fyndling" subtype="lexical">Frische, nicht zerlassene Butter. "Geschmältzt" steht bei Rumpolt sonst für zerlassenes oder ausgelassenes Fett, und bei der Kuheuter-Pastete (rum-1732) setzt er "frische Butter, die vngeschmaͤltzt ist" gleich.<list type="alternatives"><item>Ungesalzene Butter<note type="rationale">"Schmalzen" kann auch "mit Fett oder Salz anmachen" heißen. Rumpolts eigener Gebrauch spricht für "nicht zerlassen"; ungesalzene Butter schadet hier aber nicht, weil ohnehin mit Salz gewürzt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1733-orig" n="Backzeit und Hitze" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Backzeit noch Hitze, nur "laß backen vnd kalt werden". Für dasselbe Stück im selben Teig gibt er in der Schwesterfassung rum-0115 "drey stundt im Ofen" an; das ist ein Hinweis, kein Beleg für dieses Rezept.<list type="alternatives"><item>Moderne Praxis: etwa 1,5 bis 2 Stunden bei mäßiger Hitze, je nach Größe, und das Fleisch auf Garheit prüfen<note type="rationale">Der Braten ist hier schon auf dem Rost angebräunt, ein kleineres Stück kann kürzer brauchen. Das ist eine moderne Schätzung, keine Angabe Rumpolts.</note></item></list></note>
       </div>
     </back>
   </text>

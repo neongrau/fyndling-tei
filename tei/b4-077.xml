@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,10 +134,10 @@ Praxis. Rindfleisch (roh oder bereits vorgegart) kurz vorkochen und fein hacken.
         <note type="gloss" target="#b4-077-orig" n="slaecht" resp="#fyndling">Vermutlich 'schlicht/glatt' - die Masse wird durch das Schmalz geschmeidig.</note>
         <note type="gloss" target="#b4-077-orig" n="puluer" resp="#fyndling">Gewürzpulver, das am Ende zum Bestreuen aufgetragen wird, typischerweise eine Mischung aus Pfeffer, Ingwer oder Zimt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#puluer"/></note>
         <note type="gloss" target="#b4-077-orig" n="prat" resp="#fyndling">Brot, nicht Brät. Der generische CoReMA-Zutatenindex kennt 'prat' primär als 'Brät' (Q995566, ausdrücklich mit 'warningKONTEXT' markiert - also selbst als kontextabhängig gekennzeichnet), doch die recipe-eigene Sachglosse zu genau diesem Rezept (b4.77) verlinkt 'prat' explizit auf 'bread' (Q7802). Der Kontext stützt Brot eindeutig: der Satz beschreibt einen Bindeschritt ('reib darIn') neben dem bereits separat genannten gehackten Rindfleisch, kein zusätzliches Fleischprodukt. Dasselbe Wort 'prat' ist im CoReMA-Korpus stark kontextabhängig - je nach Rezept auch 'Braten', 'Fischstück' oder 'Rehfleisch' belegt.</note>
-        <note type="interpretive_choice" target="#b4-077-orig" n="swaiz / swais" resp="#fyndling">Blut (Hühner- oder Lammblut), gestützt durch die CoReMA-Sachglosse, die die Stelle direkt als 'chicken blood' bzw. 'lamb blood' identifiziert.</note>
-        <note type="interpretive_choice" target="#b4-077-orig" n="vorsieden" resp="#fyndling">Vorher sieden/anbrühen: das Rindfleisch wird kurz vorgekocht, bevor es klein gehackt wird.</note>
+        <note type="interpretive_choice" target="#b4-077-orig" n="swaiz / swais" resp="#fyndling">Blut (Hühner- oder Lammblut), gestützt durch die CoReMA-Sachglosse, die die Stelle direkt als 'chicken blood' bzw. 'lamb blood' identifiziert.<list type="alternatives"><item>Schweiß im Sinn von Ausdünstung oder Brühe<note type="rationale">Naheliegende moderne Wort-Assoziation, ergibt aber keinen kulinarischen Sinn und wird durch die Sachglosse widerlegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-077-orig" n="vorsieden" resp="#fyndling">Vorher sieden/anbrühen: das Rindfleisch wird kurz vorgekocht, bevor es klein gehackt wird.<list type="alternatives"><item>Lange vor sich hin sieden lassen<note type="rationale">Das Wort ist im Korpus unbelegt (Hapax); die kompositionelle Lesart vor+sieden als kurzer Vorgar-Schritt passt aber besser zum unmittelbar folgenden Kleinhacken.</note></item></list></note>
         <note type="interpretive_choice" target="#b4-077-orig" n="slaecht" resp="#fyndling">Schlicht/glatt: durch das Schmalz wird die Masse geschmeidig und glatt.</note>
-        <note type="interpretive_choice" target="#b4-077-orig" n="grunn / gedigen" resp="#fyndling">Roh oder bereits gegart: 'grunn' (grün) bezeichnet den rohen, unverarbeiteten Garzustand, 'gedigen' das Gegenteil - bereits gekocht/gegart. Korpusweit belegtes Gegensatzpaar (u.a. ka1-031, ka1-059, m384-047, m384-070), unabhängig durch den Zwilling w1-080 bestätigt.</note>
+        <note type="interpretive_choice" target="#b4-077-orig" n="grunn / gedigen" resp="#fyndling">Roh oder bereits gegart: 'grunn' (grün) bezeichnet den rohen, unverarbeiteten Garzustand, 'gedigen' das Gegenteil - bereits gekocht/gegart. Korpusweit belegtes Gegensatzpaar (u.a. ka1-031, ka1-059, m384-047, m384-070), unabhängig durch den Zwilling w1-080 bestätigt.<list type="alternatives"><item>Frischegrad des Fleisches (frisch vs. gut abgehangen)<note type="rationale">Naheliegende moderne Assoziation von 'grün' mit Frische, passt aber schlechter zum unmittelbar folgenden 'das lass vorsieden' - bei bereits gegartem Fleisch wäre das nur ein Aufwärmen, bei rohem das eigentliche Garen.</note></item></list></note>
       </div>
     </back>
   </text>

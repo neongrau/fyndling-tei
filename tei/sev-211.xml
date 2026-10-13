@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,9 +123,9 @@ Vybeř maso s kostí, sekaj to maso, a bude-liť málo, přičiň, kažiž sobě
         <note type="gloss" target="#sev-211-orig" n="řeckého vína" resp="#fyndling">Griechischer Wein, oft ein süßer oder harziger Wein wie Retsina, aber auch einfach Wein aus Griechenland</note>
         <note type="gloss" target="#sev-211-orig" n="hřebičky" resp="#fyndling">Nelken</note>
         <note type="gloss" target="#sev-211-orig" n="rožně" resp="#fyndling">Bratspieß</note>
-        <note type="interpretive_choice" target="#sev-211-orig" n="řeckého vína" resp="#fyndling">Griechischer Wein</note>
-        <note type="interpretive_choice" target="#sev-211-orig" n="mandluov" resp="#fyndling">Mandeln (gemahlen)</note>
-        <note type="interpretive_choice" target="#sev-211-orig" n="sundejž to v hromadu" resp="#fyndling">Vermenge alles gut</note>
+        <note type="interpretive_choice" target="#sev-211-orig" n="řeckého vína" resp="#fyndling">Griechischer Wein<list type="alternatives"><item>Süßer Wein aus dem Mittelmeerraum<note type="rationale">Im Mittelalter waren Weine aus dem östlichen Mittelmeerraum oft süß und aromatisch, was die Bezeichnung 'griechisch' umfasste.</note></item><item>Harziger Wein (Retsina)<note type="rationale">Retsina ist ein traditioneller griechischer Wein, der durch die Zugabe von Harz während der Gärung seinen charakteristischen Geschmack erhält und historisch belegt ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-211-orig" n="mandluov" resp="#fyndling">Mandeln (gemahlen)<list type="alternatives"><item>ganze Mandeln (gehackt)<note type="rationale">Für eine Füllung ist gemahlen oder sehr fein gehackt wahrscheinlicher, um eine homogene Masse zu erhalten, die sich gut verarbeiten lässt.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-211-orig" n="sundejž to v hromadu" resp="#fyndling">Vermenge alles gut<list type="alternatives"><item>Gib es in einen Haufen<note type="rationale">Die wörtliche Übersetzung 'nimm es in einen Haufen' bedeutet im Kontext des Kochens, Zutaten zusammenzuführen und zu mischen, nicht nur auf einen Haufen zu legen.</note></item></list></note>
       </div>
     </back>
   </text>

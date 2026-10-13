@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,10 +123,10 @@ Vezmi lžíci, neb dvě švestek, a vondaj je do vína, ať rozevruo, a protáhn
         <note type="gloss" target="#sev-169-orig" n="polí je" resp="#fyndling">gieße darüber (polít = übergießen)</note>
         <note type="gloss" target="#sev-169-orig" n="řeckého vína" resp="#fyndling">griechischer Wein</note>
         <note type="gloss" target="#sev-169-orig" n="pospi trágí" resp="#fyndling">bestreue mit Tragant (posypat = bestreuen, tragant = Tragantgummi)</note>
-        <note type="interpretive_choice" target="#sev-169-orig" n="švestek / vondaj je do vína, ať rozevruo" resp="#fyndling">getrocknete Pflaumen, die in Wein eingeweicht werden</note>
-        <note type="interpretive_choice" target="#sev-169-orig" n="Kaše černá" resp="#fyndling">Schwarzer Pflaumenmus</note>
-        <note type="interpretive_choice" target="#sev-169-orig" n="jícha" resp="#fyndling">Pflaumenmasse / Mus</note>
-        <note type="interpretive_choice" target="#sev-169-orig" n="řeckého vína" resp="#fyndling">Griechischer Wein (süß, z.B. Mavrodaphne)</note>
+        <note type="interpretive_choice" target="#sev-169-orig" n="švestek / vondaj je do vína, ať rozevruo" resp="#fyndling">getrocknete Pflaumen, die in Wein eingeweicht werden<list type="alternatives"><item>Frische Pflaumen, die in Wein gekocht werden<note type="rationale">Obwohl ‚švestky' auch frische Pflaumen bedeuten kann, deutet die Anweisung ‚ať rozevruo' (damit sie sich öffnen/aufquellen) stark auf getrocknete Früchte hin, die durch das Einweichen weich werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-169-orig" n="Kaše černá" resp="#fyndling">Schwarzer Pflaumenmus<list type="alternatives"><item>Dunkler Pflaumenbrei<note type="rationale">‚Černá' bedeutet schwarz, kann aber auch dunkelbraun oder dunkelrot bedeuten. Die Farbe ergibt sich aus den getrockneten Pflaumen und dem Rotwein.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-169-orig" n="jícha" resp="#fyndling">Pflaumenmasse / Mus<list type="alternatives"><item>Sauce<note type="rationale">‚Jícha' kann auch Brühe oder Sauce bedeuten, aber im Kontext von ‚Kaše' (Brei/Mus) ist die Pflaumenmasse die plausiblere Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-169-orig" n="řeckého vína" resp="#fyndling">Griechischer Wein (süß, z.B. Mavrodaphne)<list type="alternatives"><item>Ein beliebiger griechischer Wein<note type="rationale">Historisch waren süße Weine aus dem Mittelmeerraum (Malvasia, Commandaria, Retsina) in Mitteleuropa verbreitet. Ein süßer Wein passt auch besser zu einem Dessert.</note></item></list></note>
       </div>
     </back>
   </text>

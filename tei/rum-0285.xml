@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,11 +119,11 @@ Praxis. Spanferkelteile kalt aufsetzen, zum Sieden bringen und den aufsteigenden
         <note type="gloss" target="#rum-0285-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte oder Macis, der Samenmantel der Muskatnuss.</note>
         <note type="gloss" target="#rum-0285-orig" n="Pettersilgen Wurtzel" resp="#fyndling">Petersilienwurzel, also die Wurzel, nicht das Kraut.</note>
         <note type="gloss" target="#rum-0285-orig" n="Sawbruͤh" resp="#fyndling">„Sau-Brühe“, der Name, den Rumpolt dieser Brühe selbst gibt.</note>
-        <note type="interpretive_choice" target="#rum-0285-orig" n="gantzem Pfeffer" resp="#fyndling">Ganze Pfefferkörner als Gewürz: Der Pfeffer steht in einer Aufzählung mit Ingwer und „gantzer Muscatenbluͤt“, die alle in die Brühe gehen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0285-orig" n="Ganzes Spanferkel oder Teile" resp="#fyndling">Der Text sagt nur „gekocht von einer Spensaw“: ein Spanferkel, ohne Teilung und ohne Garzeit; denkbar ist das ganze Tier oder der Rumpf im Kessel.</note>
-        <note type="interpretive_choice" target="#rum-0285-orig" n="Ganze Gewürze in der Brühe" resp="#fyndling">Der Text nennt die Gewürze „gantz“, aber kein Abseihen; sie können in der Brühe bleiben.</note>
-        <note type="interpretive_choice" target="#rum-0285-orig" n="Salz" resp="#fyndling">Der Text nennt kein Salz; die Brühe kann ungesalzen gekocht und erst bei der Verwendung gewürzt werden.</note>
-        <note type="interpretive_choice" target="#rum-0285-orig" n="Pettersilgen Wurtzel" resp="#fyndling">Nur die Wurzel, ohne Kraut und ohne Menge, wie der Text sie nennt.</note>
+        <note type="interpretive_choice" target="#rum-0285-orig" n="gantzem Pfeffer" resp="#fyndling" subtype="contextual">Ganze Pfefferkörner als Gewürz: Der Pfeffer steht in einer Aufzählung mit Ingwer und „gantzer Muscatenbluͤt“, die alle in die Brühe gehen.<list type="alternatives"><item>„Pfeffer“ als Pfeffersauce<note type="rationale">Im Frühneuhochdeutschen kann „Pfeffer“ auch eine gebundene Pfeffersauce bezeichnen. „Gantz“ und die Gewürzreihe schließen das hier praktisch aus.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0285-orig" n="Ganzes Spanferkel oder Teile" resp="#fyndling" subtype="contextual">Der Text sagt nur „gekocht von einer Spensaw“: ein Spanferkel, ohne Teilung und ohne Garzeit; denkbar ist das ganze Tier oder der Rumpf im Kessel.<list type="alternatives"><item>Spanferkelteile (Schulter, Keule, Knochen) im großen Topf, etwa 1,5 bis 2,5 Stunden schwach gesiedet<note type="rationale">Heutige Praxis, im Haushaltstopf machbar; Zeit ist eine Schätzung, keine Textangabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0285-orig" n="Ganze Gewürze in der Brühe" resp="#fyndling" subtype="contextual">Der Text nennt die Gewürze „gantz“, aber kein Abseihen; sie können in der Brühe bleiben.<list type="alternatives"><item>Gewürze mitkochen und vor dem Anrichten abseihen<note type="rationale">Heutige Praxis für eine klare Brühe; nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0285-orig" n="Salz" resp="#fyndling" subtype="contextual">Der Text nennt kein Salz; die Brühe kann ungesalzen gekocht und erst bei der Verwendung gewürzt werden.<list type="alternatives"><item>Nach Geschmack salzen<note type="rationale">Heutige Praxis; Rumpolt nennt nur Pfeffer, Ingwer, Muskatblüte und Petersilienwurzel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0285-orig" n="Pettersilgen Wurtzel" resp="#fyndling" subtype="lexical">Nur die Wurzel, ohne Kraut und ohne Menge, wie der Text sie nennt.<list type="alternatives"><item>Geputzte Wurzel im Ganzen oder in Stücken mitkochen<note type="rationale">Heutige Praxis; Form und Menge offen.</note></item></list></note>
       </div>
     </back>
   </text>

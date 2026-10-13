@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,7 +123,7 @@ Habi di rossi d'ovo cotti duri, et figatelli di pollo cotti allesso, et amandole
         <note type="gloss" target="#mar-103-orig" n="stamegnia" resp="#fyndling">Ein Seihtuch oder Sieb, oft aus grobem Wollstoff.</note>
         <note type="interpretive_choice" target="#mar-103-orig" n="pista inseme" resp="#fyndling">Zusammenstoßen oder zerstampfen im Mörser.</note>
         <note type="interpretive_choice" target="#mar-103-orig" n="stamegnia" resp="#fyndling">Durch ein feines Tuch oder Sieb passieren.</note>
-        <note type="interpretive_choice" target="#mar-103-orig" n="sapore" resp="#fyndling">Im Kontext dieses Rezepts bezieht sich 'sapore' auf die zubereitete Sauce selbst.</note>
+        <note type="interpretive_choice" target="#mar-103-orig" n="sapore" resp="#fyndling">Im Kontext dieses Rezepts bezieht sich 'sapore' auf die zubereitete Sauce selbst.<list type="alternatives"><item>Geschmack oder Würze<note type="rationale">Obwohl 'sapore' auch 'Geschmack' bedeuten kann, ist im Satz 'tal sapore vole essere un pocho cotto' klar die physische Substanz der Sauce gemeint, die gekocht werden soll.</note></item></list></note>
       </div>
     </back>
   </text>

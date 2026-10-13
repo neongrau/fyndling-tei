@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,7 +106,7 @@ Praxis. Die Leberstücke jeweils in ein Stück Lammsnetz (ersatzweise Schweinene
         <note type="gloss" target="#saw-021-orig" n="kalbsmillichlach" resp="#fyndling">Verkleinerungsplural - kleine Stücke von Kalbsbries (Thymusdrüse), dienen hier nur als Größenvergleich für die geschnittenen Leberstückchen, nicht als eigene Zutat im Rezept.</note>
         <note type="gloss" target="#saw-021-orig" n="lamsnetzlin" resp="#fyndling">Kleines Netzfett (Kaulfett) vom Lamm, das den Bratstücken diente, um sie beim Rösten saftig zu halten.</note>
         <note type="gloss" target="#saw-021-orig" n="spisßvegellen" resp="#fyndling">Kleine, am Spieß gebratene Vögel - hier als Vergleich für die schnelle, feuernahe Brattechnik auf dem Rost.</note>
-        <note type="interpretive_choice" target="#saw-021-orig" n="Garzustand der Leber" resp="#fyndling">Braten bis die Leber vollständig durchgegart ist (nicht mehr roh/blutig im Kern), wie es die Vergleichstechnik mit kleinen Spießvögeln nahelegt.</note>
+        <note type="interpretive_choice" target="#saw-021-orig" n="Garzustand der Leber" resp="#fyndling">Braten bis die Leber vollständig durchgegart ist (nicht mehr roh/blutig im Kern), wie es die Vergleichstechnik mit kleinen Spießvögeln nahelegt.<list type="alternatives"><item>Kurze, sehr heiße Direkthitze könnte den Kern rosa gelassen haben<note type="rationale">Der Text nennt keinen Garzustand explizit; die implizite Schnelligkeit der Vergleichstechnik (Spießvögel) legt eine kurze Garzeit nahe, ohne dass sich daraus ein rosa/blutiger Kern zweifelsfrei belegen lässt.</note></item></list></note>
       </div>
     </back>
   </text>

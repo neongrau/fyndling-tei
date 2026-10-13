@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -136,12 +141,12 @@ Praxis. Mengen nennt der Text nicht. Zum Schluss alles einmal kräftig aufkochen
         <note type="gloss" target="#rum-0693-orig" n="vnzerlassen" resp="#fyndling">Ungeschmolzen. Die Butter kommt fest hinein und schmilzt in der heißen Brühe.</note>
         <note type="gloss" target="#rum-0693-orig" n="einen starcken Sudt auffthun" resp="#fyndling">Einmal kräftig aufwallen lassen.</note>
         <note type="gloss" target="#rum-0693-orig" n="Pertrumkraut" resp="#fyndling">Das Kraut einer Bertram-Pflanze. Welche Art gemeint ist, bleibt offen: Bertram war der Name verschiedener Pflanzen, darunter die Bertram-Schafgarbe. Rumpolt nennt es hier nur als Möglichkeit.</note>
-        <note type="interpretive_choice" target="#rum-0693-orig" n="Pertrumkraut" resp="#fyndling">Das grüne Kraut einer Bertram-Pflanze, Art offen. Der Druck sagt ausdrücklich Kraut, und es wird darunter geschnitten.</note>
-        <note type="interpretive_choice" target="#rum-0693-orig" n="Limonien" resp="#fyndling">Frische Zitronen. Der Text sagt nur Limonien, nicht gesaltzen Limonien.</note>
-        <note type="interpretive_choice" target="#rum-0693-orig" n="fein breit" resp="#fyndling">Fein und breit geschnitten, also dünne, breite Scheiben.</note>
-        <note type="interpretive_choice" target="#rum-0693-orig" n="Nim̃ die Bruͤh herab" resp="#fyndling">Die Brühe vom Feuer nehmen und die Henne einlegen.</note>
-        <note type="interpretive_choice" target="#rum-0693-orig" n="die Heñe/ die halb gesotten ist ... einen starcken Sudt auffthun" resp="#fyndling">Die Henne kommt halb gesotten in die Brühe; nach Rumpolt genügt danach ein kräftiges Aufkochen. Eine weitere Garzeit nennt er nicht, und ob die Henne ganz oder zerteilt eingelegt wird, sagt er auch nicht.</note>
-        <note type="interpretive_choice" target="#rum-0693-orig" n="eyngebrennt Mehl" resp="#fyndling">Eine Einbrenne zum Binden, hell gehalten, weil das Gericht „fein weiß“ werden soll. Ein Fett nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0693-orig" n="Pertrumkraut" resp="#fyndling" subtype="lexical">Das grüne Kraut einer Bertram-Pflanze, Art offen. Der Druck sagt ausdrücklich Kraut, und es wird darunter geschnitten.<list type="alternatives"><item>Bertram (Anacyclus pyrethrum), die Bertramwurzel<note type="rationale">Die Wörterbücher führen Bertram vor allem als Pyrethrum-Wurzel, eine Heil- und Gewürzdroge. Rumpolt nennt aber das Kraut, nicht die Wurzel.</note></item><item>Bertram-Schafgarbe<note type="rationale">Das Frühneuhochdeutsche Wörterbuch nennt die Bertram-Schafgarbe unter Bertram. Möglich, aber im Text nicht festgelegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0693-orig" n="Limonien" resp="#fyndling" subtype="contextual">Frische Zitronen. Der Text sagt nur Limonien, nicht gesaltzen Limonien.<list type="alternatives"><item>Gesalzene Zitronen<note type="rationale">Bei der Schafbrust (rum-0469) und den Ochsenfüßen (rum-0078) verlangt Rumpolt sie in derselben Würzung ausdrücklich. Hier steht davon nichts, deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0693-orig" n="fein breit" resp="#fyndling" subtype="contextual">Fein und breit geschnitten, also dünne, breite Scheiben.<list type="alternatives"><item>Feine, breite Streifen oder Schnitze<note type="rationale">Die Schnittform legt der Text nicht fest; auch Streifen treffen fein breit.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0693-orig" n="Nim̃ die Bruͤh herab" resp="#fyndling" subtype="contextual">Die Brühe vom Feuer nehmen und die Henne einlegen.<list type="alternatives"><item>Die Brühe in ein anderes Gefäß abgießen<note type="rationale">Ebenfalls möglich; für das Gericht ohne Folgen, weil es danach wieder aufgekocht wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0693-orig" n="die Heñe/ die halb gesotten ist ... einen starcken Sudt auffthun" resp="#fyndling" subtype="contextual">Die Henne kommt halb gesotten in die Brühe; nach Rumpolt genügt danach ein kräftiges Aufkochen. Eine weitere Garzeit nennt er nicht, und ob die Henne ganz oder zerteilt eingelegt wird, sagt er auch nicht.<list type="alternatives"><item>Suppenhuhn zerteilt halb gar vorkochen und in der Sauce ziehen lassen, bis es gar ist<note type="rationale">Heutige Praxis: Eine halb gare alte Henne wird durch einmaliges Aufkochen allein nicht gar, sie muss am Ende aber durchgegart sein.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0693-orig" n="eyngebrennt Mehl" resp="#fyndling" subtype="lexical">Eine Einbrenne zum Binden, hell gehalten, weil das Gericht „fein weiß“ werden soll. Ein Fett nennt der Text nicht.<list type="alternatives"><item>Wenig Mehl in Butter hell angeschwitzt<note type="rationale">Heutige Praxis; das Fett ist ergänzt.</note></item><item>Gebräunte Einbrenne<note type="rationale">Passt nicht zu „so wirt es fein weiß“; auch bei den Ochsenfüßen in weißer Butterbrühe (rum-0078) bleibt die Einbrenne hell.</note></item></list></note>
       </div>
     </back>
   </text>

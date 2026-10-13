@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,8 +121,8 @@ Praxis. Nach dem Abtropfen über dem Rost mit Baumöl und Essig übergießen und
         <note type="gloss" target="#saw-109-orig" n="rost" resp="#fyndling">Ein Rost oder Gitter, über dem der gekochte, entgrätete Fisch abgedrückt und abgetropft wird.</note>
         <note type="gloss" target="#saw-109-orig" n="bamell" resp="#fyndling">Vermutlich lautliche Schreibvariante von 'Baumöl', dem gängigen frühneuzeitlichen Begriff für Olivenöl.</note>
         <note type="gloss" target="#saw-109-orig" n="grat" resp="#fyndling">Die Gräte bzw. das Rückgrat des Fisches, das nach dem Sieden entfernt wird.</note>
-        <note type="interpretive_choice" target="#saw-109-orig" n="ainmachen" resp="#fyndling">Ein Zubereitungs-/Einlegeverfahren, das den Fisch nach dem Sieden mit Öl und Essig anrichtet - ähnlich einem eingelegten, mariniert servierten Fisch.</note>
-        <note type="interpretive_choice" target="#saw-109-orig" n="bratpfannen" resp="#fyndling">Eine flache Pfanne oder Platte, in die der bereits gesottene Fisch zum Anrichten gelegt wird, kein erneutes Braten.</note>
+        <note type="interpretive_choice" target="#saw-109-orig" n="ainmachen" resp="#fyndling">Ein Zubereitungs-/Einlegeverfahren, das den Fisch nach dem Sieden mit Öl und Essig anrichtet - ähnlich einem eingelegten, mariniert servierten Fisch.<list type="alternatives"><item>Allgemein 'zubereiten/kochen' ohne Konservierungs-Absicht<note type="rationale">Da der Fisch offenbar direkt gegessen wird und keine längere Lagerung erwähnt ist, könnte 'ainmachen' hier auch nur allgemein 'anrichten' bedeuten.</note></item></list></note>
+        <note type="interpretive_choice" target="#saw-109-orig" n="bratpfannen" resp="#fyndling">Eine flache Pfanne oder Platte, in die der bereits gesottene Fisch zum Anrichten gelegt wird, kein erneutes Braten.<list type="alternatives"><item>Eine tatsächliche Bratpfanne für einen weiteren Brat-Schritt<note type="rationale">Der Wortbestandteil 'brat-' könnte auf einen zusätzlichen Röst- oder Bratvorgang hindeuten, der Text nennt aber keine erneute Hitzequelle.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,9 +101,9 @@
         <note type="gloss" target="#wo10-002-orig" n="wogglen" resp="#fyndling">Die Bedeutung des Wortes ist nicht gesichert - Prüfung in Grimm, Lexer, Idiotikon, Schmeller, Fischer, Diefenbach und Pritzel ergibt keinen Beleg für 'wogglen'/'woggerl'/'wockerl' in dieser oder einer verwandten Bedeutung; im Gesamtkorpus ist die Stelle ein Hapax. Der Satz bezeichnet nur Stücke, die aus dem breit gemachten Teig geschnitten und nach Wunsch klein oder groß gemacht werden - vergleichbar dem Ausstechen oder Zuschneiden von Lebkuchenstücken aus einer Platte.</note>
         <note type="gloss" target="#wo10-002-orig" n="krapffenpfannen" resp="#fyndling">Genannt ist eine Krapfenpfanne; ihre Bauart und die konkrete Backweise werden nicht beschrieben.</note>
         <note type="gloss" target="#wo10-002-orig" n="glutt" resp="#fyndling">Glut.</note>
-        <note type="interpretive_choice" target="#wo10-002-orig" n="zwirbachen" resp="#fyndling">Bezug auf Zwieback: Der Teig soll so gemacht werden, wie man Zwieback machen würde.</note>
-        <note type="interpretive_choice" target="#wo10-002-orig" n="wogglen" resp="#fyndling">Nicht näher bestimmtes, aus dem breit gemachten Teig geschnittenes Gebäckstück.</note>
-        <note type="interpretive_choice" target="#wo10-002-orig" n="krapffenpfannen" resp="#fyndling">Als Krapfenpfanne bezeichnetes Backgerät.</note>
+        <note type="interpretive_choice" target="#wo10-002-orig" n="zwirbachen" resp="#fyndling">Bezug auf Zwieback: Der Teig soll so gemacht werden, wie man Zwieback machen würde.<list type="alternatives"><item>Genauere Teig- oder Backtechnik<note type="rationale">Der Text nennt keinen weiteren Arbeitsschritt. Eine zweite Backphase oder eine bestimmte feste beziehungsweise trockene Konsistenz ist daher nicht sicher ableitbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#wo10-002-orig" n="wogglen" resp="#fyndling">Nicht näher bestimmtes, aus dem breit gemachten Teig geschnittenes Gebäckstück.<list type="alternatives"><item>Spezifische Gebäckform<note type="rationale">Die Form ist nicht erklärt; Gleichsetzungen mit Waffeln, Rollen oder Krapfen wären über den Wortlaut hinausgehend.</note></item></list></note>
+        <note type="interpretive_choice" target="#wo10-002-orig" n="krapffenpfannen" resp="#fyndling">Als Krapfenpfanne bezeichnetes Backgerät.<list type="alternatives"><item>Näher bestimmte Pfannenbauart oder Frittiergefäß<note type="rationale">Weder Mulden noch Fett noch Frittieren werden im Text genannt.</note></item></list></note>
         <note type="interpretive_choice" target="#wo10-002-orig" n="anprinnen" resp="#fyndling">anbrennen</note>
       </div>
     </back>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -145,9 +150,9 @@ Praxis. Für Variante 1: Äpfel schälen, in etwas Wein weich dünsten, durch ei
         <note type="gloss" target="#phw-166-orig" n="krauß" resp="#fyndling">Beschreibt die Textur des gebratenen Apfelmuses, das durch das Umrühren und Braten eine leicht krümelige, 'gekräuselte' Oberfläche erhält.</note>
         <note type="gloss" target="#phw-166-orig" n="hafenn" resp="#fyndling">Der Topf, in dem das Mus in der ersten Variante fertig gegart wird.</note>
         <note type="gloss" target="#phw-166-orig" n="hefalin" resp="#fyndling">An anderen Stellen des Buchs als Diminutiv von 'Hafen' belegt, dort auch als 'glaseyrttz hefalin' - ein kleines, glasiertes Töpfchen.</note>
-        <note type="interpretive_choice" target="#phw-166-orig" n="gedemptst" resp="#fyndling">Die Lesart 'gedämpft' wurde gewählt, basierend auf der editorischen Korrektur [gedempft] im Originaltext.</note>
-        <note type="interpretive_choice" target="#phw-166-orig" n="dreybs" resp="#fyndling">Die Lesart 'treibe es' (im Sinne von durch ein Tuch pressen) wurde gewählt, da dies die gängige Methode war, um ein feines Mus zu erhalten.</note>
-        <note type="interpretive_choice" target="#phw-166-orig" n="ries ye vm" resp="#fyndling">Die Lesart 'rühre es immer wieder um' wurde gewählt, um die kontinuierliche Bewegung während des Siedens und Bratens zu betonen.</note>
+        <note type="interpretive_choice" target="#phw-166-orig" n="gedemptst" resp="#fyndling" subtype="orthographic">Die Lesart 'gedämpft' wurde gewählt, basierend auf der editorischen Korrektur [gedempft] im Originaltext.</note>
+        <note type="interpretive_choice" target="#phw-166-orig" n="dreybs" resp="#fyndling" subtype="lexical">Die Lesart 'treibe es' (im Sinne von durch ein Tuch pressen) wurde gewählt, da dies die gängige Methode war, um ein feines Mus zu erhalten.</note>
+        <note type="interpretive_choice" target="#phw-166-orig" n="ries ye vm" resp="#fyndling" subtype="contextual">Die Lesart 'rühre es immer wieder um' wurde gewählt, um die kontinuierliche Bewegung während des Siedens und Bratens zu betonen.</note>
       </div>
     </back>
   </text>

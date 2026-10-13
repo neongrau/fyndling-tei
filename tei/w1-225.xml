@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,9 +127,9 @@ Der Teig. Das Rezept spricht nur von "des taigs" und setzt ihn als bekannt vorau
         <note type="gloss" target="#w1-225-orig" n="kraphen" resp="#fyndling">Krapfen waren im Mittelalter oft herzhaft gefüllte Teigtaschen, die in Fett ausgebacken wurden, nicht ausschließlich süßes Gebäck.</note>
         <note type="gloss" target="#w1-225-orig" n="plat des taigs" resp="#fyndling">Bezeichnet hier eine dünne Teigplatte, die als Hülle für die Füllung dient.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
         <note type="gloss" target="#w1-225-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das zum Ausbacken verwendet wurde. Für eine vegetarische Variante kann Pflanzenöl oder Butterschmalz verwendet werden.</note>
-        <note type="interpretive_choice" target="#w1-225-orig" n="claib" resp="#fyndling">Gelesen als Form von mhd./fnhd. "kleiben" (kleben, ankleben, festmachen): Die Füllung wird auf den ersten Teigfladen geklebt.</note>
-        <note type="interpretive_choice" target="#w1-225-orig" n="wint also fladen" resp="#fyndling">Übersetzt als "forme daraus einen Fladen" - der gefüllte Teigfladen wird in seine endgültige Form gebracht.</note>
-        <note type="interpretive_choice" target="#w1-225-orig" n="Größe/Dicke der Teigfladen" resp="#fyndling">Der Text nennt keine Maße für die beiden Teigfladen.</note>
+        <note type="interpretive_choice" target="#w1-225-orig" n="claib" resp="#fyndling" subtype="philological">Gelesen als Form von mhd./fnhd. "kleiben" (kleben, ankleben, festmachen): Die Füllung wird auf den ersten Teigfladen geklebt.<list type="alternatives"><item>Frühere Lesart "schneiden".<note type="rationale">Drei unabhängige Parallelstellen an exakt derselben Satzposition (b4-223 "chlen", mha-084 "kleb", m5919-085 "cleb") zeigen übereinstimmend eine Form von "kleiben". "claib" ist damit als dasselbe Verb bestätigt, nicht als eigenständiges Wort für "schneiden".</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-225-orig" n="wint also fladen" resp="#fyndling" subtype="lexical">Übersetzt als "forme daraus einen Fladen" - der gefüllte Teigfladen wird in seine endgültige Form gebracht.<list type="alternatives"><item>"winden/drehen" könnte spezifischer ein Eindrehen bzw. Verschließen des Randes meinen.<note type="rationale">Für einen kulinarisch eindeutigen Beleg dieser engeren Bedeutung liegt keine gesicherte Quelle vor; auch der Zwilling b4-223 hat an derselben Stelle nur dieselbe knappe Form ohne Zweitlesart. Die Übersetzung bleibt daher beim allgemeineren "formen".</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-225-orig" n="Größe/Dicke der Teigfladen" resp="#fyndling" subtype="contextual">Der Text nennt keine Maße für die beiden Teigfladen.<list type="alternatives"><item>Große, dicke Fladen, wie es das Wort "Fladen" nahelegt.<note type="rationale">Bei großen, dicken Fladen ist unsicher, ob roher, gehackter Speck und Ei im Kern in der Frittierzeit vollständig durchgaren, bevor die Außenseite bräunt. Für die Praxis wird deshalb eine dünnere, handtellergroße Variante empfohlen (siehe Zubereitungshinweis), die diese Unsicherheit vermeidet, ohne dass der Text selbst dafür einen Beleg liefert.</note></item></list></note>
       </div>
     </back>
   </text>

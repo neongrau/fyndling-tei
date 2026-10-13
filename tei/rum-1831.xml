@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,12 +117,12 @@ Praxis. Mandeln schneiden, mit Rosinen, Zucker nach Geschmack und einem Schuss R
         <note type="gloss" target="#rum-1831-orig" n="schwartze Weinbeer" resp="#fyndling">Getrocknete dunkle Weinbeeren, also schwarze Rosinen. Im selben Kapitel heißen sie auch „kleine schwartze Rosein“; frische Trauben wären eigens als frisch bezeichnet.</note>
         <note type="gloss" target="#rum-1831-orig" n="Turten" resp="#fyndling">Rumpolts Wort für die Torte: gebackener Teig mit Füllung. Den Teig dafür beschreibt er am Anfang des Kapitels „Von allerley Turten“ (rum-1795); Pasteten behandelt er gesondert.</note>
         <note type="gloss" target="#rum-1831-orig" n="Rosenwasser" resp="#fyndling">Ein Destillat aus Rosenblüten, das Speisen parfümiert. Es süßt nicht; die Süße kommt hier vom Zucker.</note>
-        <note type="interpretive_choice" target="#rum-1831-orig" n="schwartze Weinbeer" resp="#fyndling">Schwarze Rosinen: Weinbeer steht im Kapitel und im ganzen Buch für getrocknete Trauben, Rumpolt nennt dieselbe Zutat in den Nachbarrezepten „schwartze Rosein“ (rum-1795, rum-1812).</note>
-        <note type="interpretive_choice" target="#rum-1831-orig" n="biß der Teig gar ist" resp="#fyndling">Der Teig ist Rumpolts Tortenteig vom Kapitelanfang (rum-1795): Eigelb und Butter ins Mehl, dünn ausgetrieben, gesalzen.</note>
-        <note type="interpretive_choice" target="#rum-1831-orig" n="schneidt sie fein duͤnn vnnd laͤnglicht" resp="#fyndling">Die Mandeln werden in feine, dünne, längliche Stücke geschnitten und bleiben stückig.</note>
-        <note type="interpretive_choice" target="#rum-1831-orig" n="Thu auch Rosenwasser vnter die Mandeln" resp="#fyndling">Das Rosenwasser kommt vor dem Backen unter die Mandelmischung; „vnter die Mandeln“ meint das Untermischen in die Füllung.</note>
-        <note type="interpretive_choice" target="#rum-1831-orig" n="backs in einer Turten" resp="#fyndling">Offen gebacken: der Text nennt keinen Deckel.</note>
-        <note type="interpretive_choice" target="#rum-1831-orig" n="Mengen von Zucker und Rosenwasser" resp="#fyndling">Rumpolt nennt keine Mengen.</note>
+        <note type="interpretive_choice" target="#rum-1831-orig" n="schwartze Weinbeer" resp="#fyndling" subtype="lexical">Schwarze Rosinen: Weinbeer steht im Kapitel und im ganzen Buch für getrocknete Trauben, Rumpolt nennt dieselbe Zutat in den Nachbarrezepten „schwartze Rosein“ (rum-1795, rum-1812).<list type="alternatives"><item>frische dunkle Weintrauben<note type="rationale">Nur bei ausdrücklichem Frisch- oder Reife-Marker, den der Text nicht hat.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1831-orig" n="biß der Teig gar ist" resp="#fyndling" subtype="contextual">Der Teig ist Rumpolts Tortenteig vom Kapitelanfang (rum-1795): Eigelb und Butter ins Mehl, dünn ausgetrieben, gesalzen.<list type="alternatives"><item>moderner Mürbeteig oder fertiger Tortenteig<note type="rationale">Praktisch und gut verwendbar, aber eine moderne Wahl; Rumpolts Teig enthält keinen Zucker.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1831-orig" n="schneidt sie fein duͤnn vnnd laͤnglicht" resp="#fyndling" subtype="contextual">Die Mandeln werden in feine, dünne, längliche Stücke geschnitten und bleiben stückig.<list type="alternatives"><item>gemahlen oder gestoßen<note type="rationale">So macht es das Nachbarrezept rum-1812 mit „geriebenen Mandeln“; hier sagt der Text ausdrücklich schneiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1831-orig" n="Thu auch Rosenwasser vnter die Mandeln" resp="#fyndling" subtype="contextual">Das Rosenwasser kommt vor dem Backen unter die Mandelmischung; „vnter die Mandeln“ meint das Untermischen in die Füllung.<list type="alternatives"><item>nach dem Backen über die Torte geben<note type="rationale">Der Satz steht nach der Backanweisung, die Formulierung spricht aber vom Mischen mit den Mandeln.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1831-orig" n="backs in einer Turten" resp="#fyndling" subtype="contextual">Offen gebacken: der Text nennt keinen Deckel.<list type="alternatives"><item>mit Teigdeckel<note type="rationale">Möglich, aber im Text nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1831-orig" n="Mengen von Zucker und Rosenwasser" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Mengen.<list type="alternatives"><item>Zucker nach Geschmack, Rosenwasser sparsam<note type="rationale">Moderner Praxisansatz zum Nachbacken, keine Angabe der Quelle.</note></item></list></note>
       </div>
     </back>
   </text>

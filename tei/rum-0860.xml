@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Praxis. Vorgehen wie beim blau gesottenen Hausenrogen (Nr. 6): sieden, in der Br
         <note type="gloss" target="#rum-0860-orig" n="Cassenadt" resp="#fyndling">Rumpolt erklärt das Wort selbst, allerdings an anderer Stelle, im Kapitel von den Kressen: Der Fisch wird abgesotten, man lässt ihn kalt werden, richtet ihn an und gießt Essig und grüne Petersilie darüber, „so nennet man es ein Cassenadt“. Er gebraucht das Wort oft, bei Fischen, bei Hühnern und bei Füßen von Lamm, Ziege und Reh. Ein Wörterbuchbeleg fehlt, die Herkunft ist offen.</note>
         <note type="gloss" target="#rum-0860-orig" n="Rogen" resp="#fyndling">Fischeier. Die Zeile nennt nur den Rogen; dass es Rogen vom Hausen (Huso huso, Beluga, eine Störart) ist, ergibt sich aus dem Kapitel „Von einem Hausen“.</note>
         <note type="gloss" target="#rum-0860-orig" n="wie vorhin vermeldet ist" resp="#fyndling">„Wie vorher beschrieben“. Vorher steht im Kapitel nur ein Rogenrezept, Nr. 6, der blau gesottene Hausenrogen; auf dieses beziehen wir den Verweis.</note>
-        <note type="interpretive_choice" target="#rum-0860-orig" n="Cassenadt" resp="#fyndling">Name einer Anrichtung: gesotten, kalt werden lassen, mit Essig und grüner Petersilie übergossen. So erklärt Rumpolt das Wort selbst im Kapitel von den Kressen; die Druckform wird beibehalten, ein Wörterbuchbeleg fehlt.</note>
-        <note type="interpretive_choice" target="#rum-0860-orig" n="wie vorhin vermeldet ist" resp="#fyndling">Verweis auf Nr. 6 desselben Kapitels („Rogen vom Hausen“, blau gesotten): das einzige vorherige Rogenrezept im Kapitel, dort mit kaltem Essig und grüner Petersilie angerichtet, also genau Rumpolts Cassenadt-Muster. Die Zuordnung ist erschlossen, nicht ausgesprochen.</note>
-        <note type="interpretive_choice" target="#rum-0860-orig" n="Hausenrogen (Titel)" resp="#fyndling">Das Tier ist aus der Kapitelüberschrift „Von einem Hausen“ ergänzt; die Zeile selbst sagt nur „Rogen“.</note>
+        <note type="interpretive_choice" target="#rum-0860-orig" n="Cassenadt" resp="#fyndling" subtype="lexical">Name einer Anrichtung: gesotten, kalt werden lassen, mit Essig und grüner Petersilie übergossen. So erklärt Rumpolt das Wort selbst im Kapitel von den Kressen; die Druckform wird beibehalten, ein Wörterbuchbeleg fehlt.<list type="alternatives"><item>Ein besonderer Sud, in dem gekocht wird<note type="rationale">„In Cassenadt gekocht“ ließe sich auf eine Kochflüssigkeit beziehen, ebenso „in Cassenat abgesotten“ bei den Lammfüßen. Rumpolts eigene Erklärung meint aber den ganzen Vorgang bis zum kalten Anrichten mit Essig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0860-orig" n="wie vorhin vermeldet ist" resp="#fyndling" subtype="contextual">Verweis auf Nr. 6 desselben Kapitels („Rogen vom Hausen“, blau gesotten): das einzige vorherige Rogenrezept im Kapitel, dort mit kaltem Essig und grüner Petersilie angerichtet, also genau Rumpolts Cassenadt-Muster. Die Zuordnung ist erschlossen, nicht ausgesprochen.<list type="alternatives"><item>Verweis auf die allgemeine Cassenadt-Anrichtung, die Rumpolt in anderen Kapiteln beschreibt (Kressen, Hühner, Füße)<note type="rationale">Möglich, weil „wie man ihn kochen soll“ sich auch auf das Cassenadt beziehen kann; für das Verfahren macht es kaum einen Unterschied, denn beide Wege enden kalt mit Essig und Petersilie.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0860-orig" n="Hausenrogen (Titel)" resp="#fyndling" subtype="contextual">Das Tier ist aus der Kapitelüberschrift „Von einem Hausen“ ergänzt; die Zeile selbst sagt nur „Rogen“.<list type="alternatives"><item>Störrogen allgemein<note type="rationale">Zu weit: Rumpolt behandelt Hausen und Stör in eigenen Kapiteln.</note></item></list></note>
       </div>
     </back>
   </text>

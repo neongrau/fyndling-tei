@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,10 +107,10 @@ Praxis. Nachkochen lässt sich das nur über die Verweisrezepte: Hühner kochen,
         <note type="gloss" target="#rum-0730-orig" n="Weinbrühe" resp="#fyndling">Eine Brühe, deren Hauptbestandteil Wein ist (Adelung, Campe, DWB). Bei Rumpolt wird sie andernorts mit Eidottern dick und süß gemacht (rum-0668, rum-0624); hier führt er sie nicht aus.</note>
         <note type="gloss" target="#rum-0730-orig" n="gelb oder grün" resp="#fyndling">Farbangabe ohne Färbemittel. Beim gelben Kapaun (rum-0668) nennt Rumpolt nur Eidotter, beim grünen Kapaun (rum-0666) Petersiliensaft, bei der grünen Gans (rum-0625) „Eyer“.</note>
         <note type="gloss" target="#rum-0730-orig" n="geben" resp="#fyndling">Hier im Sinn von „auftragen, anrichten“, wie bei den kalten Hühnern im Rezept davor (rum-0729).</note>
-        <note type="interpretive_choice" target="#rum-0730-orig" n="Weinbruͤh" resp="#fyndling">Eine Brühe, deren Hauptbestandteil Wein ist (Adelung, Campe, DWB). Bei Rumpolt ist sie andernorts eine mit Eidottern dick und süß gemachte Weinbrühe (rum-0668, rum-0624); dass er hier dieselbe meint, ist naheliegend, aber nicht gesagt.</note>
-        <note type="interpretive_choice" target="#rum-0730-orig" n="gelb oder gruͤn" resp="#fyndling">Die Farbe bleibt offen; Rumpolt nennt hier kein Färbemittel, also wird keines ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0730-orig" n="Huͤnner (Garart)" resp="#fyndling">Der Text nennt keine Garart; ob die Hühner gesotten oder gebraten werden, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0730-orig" n="geben" resp="#fyndling">„auftragen, anrichten“, wie bei den kalten Hühnern im Rezept davor (rum-0729).</note>
+        <note type="interpretive_choice" target="#rum-0730-orig" n="Weinbruͤh" resp="#fyndling" subtype="lexical">Eine Brühe, deren Hauptbestandteil Wein ist (Adelung, Campe, DWB). Bei Rumpolt ist sie andernorts eine mit Eidottern dick und süß gemachte Weinbrühe (rum-0668, rum-0624); dass er hier dieselbe meint, ist naheliegend, aber nicht gesagt.<list type="alternatives"><item>Wein, mit Fleisch- oder Hühnerbrühe verlängert, ohne Eidotter<note type="rationale">Vom Wortlaut nicht ausgeschlossen; Rumpolts Parallelen sprechen aber für die Eidotter-Weinbrühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0730-orig" n="gelb oder gruͤn" resp="#fyndling" subtype="contextual">Die Farbe bleibt offen; Rumpolt nennt hier kein Färbemittel, also wird keines ergänzt.<list type="alternatives"><item>Gelb durch Eidotter wie beim gelben Kapaun (rum-0668)<note type="rationale">Beste Parallele für „gelb“ mit Weinbrühe; Safran nennt Rumpolt dort nicht.</note></item><item>Grün durch Petersiliensaft wie beim grünen Kapaun (rum-0666) oder „mit Eyern“ wie bei der grünen Gans (rum-0625)<note type="rationale">Beide Wege sind bei Rumpolt belegt, keiner ist für dieses Rezept gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0730-orig" n="Huͤnner (Garart)" resp="#fyndling" subtype="contextual">Der Text nennt keine Garart; ob die Hühner gesotten oder gebraten werden, bleibt offen.<list type="alternatives"><item>Junge Hühner gekocht und in der Brühe angerichtet<note type="rationale">Praktischer Standard und naheliegend, weil Rumpolt die Weinbrühe beim Kapaun über das gekochte Tier gießt (rum-0668); im Text nicht gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0730-orig" n="geben" resp="#fyndling" subtype="lexical">„auftragen, anrichten“, wie bei den kalten Hühnern im Rezept davor (rum-0729).<list type="alternatives"><item>„zubereiten“<note type="rationale">Möglich, aber im Kontext der Schlussformel geht es um das Auftragen; die Zubereitung nennt der Satz nicht.</note></item></list></note>
       </div>
     </back>
   </text>

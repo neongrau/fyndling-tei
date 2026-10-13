@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,9 +117,9 @@ Praxis. Einen ganzen Hecht in Wasser gar ziehen, in Stücke teilen, kurz in 200 
         <note type="gloss" target="#sev-090-orig" n="jiše" resp="#fyndling">Brühe, Sud.</note>
         <note type="gloss" target="#sev-090-orig" n="hartuch" resp="#fyndling">Grobes Leinen-/Passiertuch zum Abseihen; siehe Sieb/Seihtuch. Nicht zu verwechseln mit 'rúchu'.</note>
         <note type="gloss" target="#sev-090-orig" n="rúchu" resp="#fyndling">Falscher Freund: wörtlich 'Gewand' (roucho), meint hier die gelatinöse Flüssigkeit aus der ausgekochten Hechthaut, die die Sülze bindet.</note>
-        <note type="interpretive_choice" target="#sev-090-orig" n="roztáhal" resp="#fyndling">'Gar ziehen lassen' (sanft pochieren, bis der Fisch weich ist).</note>
-        <note type="interpretive_choice" target="#sev-090-orig" n="rúchu" resp="#fyndling">Gallerte / gelatinöse Gelier-Flüssigkeit aus der Hechthaut.</note>
-        <note type="interpretive_choice" target="#sev-090-orig" n="koření dáš, jako i svrchu" resp="#fyndling">'Würze mit Gewürzen, wie oben (in einem früheren Rezept) beschrieben.'</note>
+        <note type="interpretive_choice" target="#sev-090-orig" n="roztáhal" resp="#fyndling">'Gar ziehen lassen' (sanft pochieren, bis der Fisch weich ist).<list type="alternatives"><item>Wörtlich 'ausdehnen/strecken' - den Fisch entspannen/auseinanderziehen, um die Haut leichter zu lösen.<note type="rationale">'Roztáhnout' heißt eigentlich 'ausdehnen'; im Garkontext und mangels alttschechischer Eich-Edition bleibt offen, ob das sanfte Garziehen oder ein mechanisches Vorbereiten gemeint ist - beide zielen aufs leichtere Häuten.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-090-orig" n="rúchu" resp="#fyndling">Gallerte / gelatinöse Gelier-Flüssigkeit aus der Hechthaut.<list type="alternatives"><item>Schlicht 'Brühe/Sud'.<note type="rationale">Eine bloße Brühen-Lesart unterschlägt die spezifische Gelierfunktion, um die es in einer Sülze geht; die gelatinöse Hautbrühe ist gemeint.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-090-orig" n="koření dáš, jako i svrchu" resp="#fyndling">'Würze mit Gewürzen, wie oben (in einem früheren Rezept) beschrieben.'<list type="alternatives"><item>Wie bereits in diesem Rezept genannt.<note type="rationale">Da dieses Rezept selbst keine Gewürze nennt, verweist 'svrchu' am ehesten auf eine andernorts im Buch beschriebene Standard-Gewürzmischung.</note></item></list></note>
       </div>
     </back>
   </text>

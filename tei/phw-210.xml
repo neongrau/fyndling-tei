@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -189,10 +194,10 @@ Praxis. Karpfen und Hecht in Rainfal (oder der Ersatzmischung) gar sieden, dabei
         <note type="gloss" target="#phw-210-orig" n="layder" resp="#fyndling">Bedeutet hier ‚klar‘, im Kontext der Sülze, die durch Alaun geklärt werden soll.</note>
         <note type="gloss" target="#phw-210-orig" n="alet" resp="#fyndling">Alaun, ein Salz, das im Mittelalter häufig als Klär- und Konservierungsmittel in der Küche verwendet wurde.</note>
         <note type="gloss" target="#phw-210-orig" n="gerenn gesten" resp="#fyndling">Eine Dopplung von Verben, die ‚gerinnen‘ und ‚fest werden‘ bedeuten. Es beschreibt den Prozess des Gelierens der Sülze.</note>
-        <note type="interpretive_choice" target="#phw-210-orig" n="schyepten" resp="#fyndling">Als ‚Fischschuppen‘ übersetzt, die zusammen mit der Hausenblase mitgesotten und durch ein Tuch gepresst werden, um Kollagen als Geliermittel zu gewinnen.</note>
-        <note type="interpretive_choice" target="#phw-210-orig" n="resch" resp="#fyndling">Als ‚scharf‘ oder ‚herb‘ im Geschmack übersetzt. Im Kontext von Ingwer, der zuletzt hinzugefügt wird, um eine bestimmte Geschmacksintensität zu vermeiden.</note>
-        <note type="interpretive_choice" target="#phw-210-orig" n="so leg erwas dar ein (wenn die Sülze nicht gerinnt)" resp="#fyndling">Der Text nennt nicht, was zusätzlich hineingegeben werden soll, falls die Sülze nicht fest wird. Naheliegend ist ein Nachlegen von Hausenblase oder Gelatine, da beide Geliermittel im Rezept bereits etabliert sind.</note>
-        <note type="interpretive_choice" target="#phw-210-orig" n="ain fingers lang zimet (beim Einlegen der Fische)" resp="#fyndling">Neben der gestoßenen Zimtmenge in der Zutatenliste wird beim Einlegen der Fische zusätzlich ein ganzes, fingerlanges Stück Zimt in die Schüssel gelegt - eine eigene, unquantifizierte dekorative/aromatische Einlage.</note>
+        <note type="interpretive_choice" target="#phw-210-orig" n="schyepten" resp="#fyndling" subtype="lexical">Als ‚Fischschuppen‘ übersetzt, die zusammen mit der Hausenblase mitgesotten und durch ein Tuch gepresst werden, um Kollagen als Geliermittel zu gewinnen.<list type="alternatives"><item>Könnte ‚Fischscheiben‘ bedeuten.<note type="rationale">Weniger plausibel als Geliermittel, da Fischscheiben selbst die Hauptzutat sind und nicht extra ‚ausgedrückt‘ würden. Die Lesart ‚Fischschuppen‘ wird zudem durch zwei Rezepte mit derselben Technik gestützt (Fischschuppen im Tuch mitgesotten, um zu binden).</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-210-orig" n="resch" resp="#fyndling" subtype="lexical">Als ‚scharf‘ oder ‚herb‘ im Geschmack übersetzt. Im Kontext von Ingwer, der zuletzt hinzugefügt wird, um eine bestimmte Geschmacksintensität zu vermeiden.<list type="alternatives"><item>Könnte ‚knusprig‘ oder ‚durchgebacken‘ bedeuten.<note type="rationale">Diese Bedeutung ist im Buch für Gebäck belegt, passt aber nicht zum Geschmack von Ingwer in einer Sülze.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-210-orig" n="so leg erwas dar ein (wenn die Sülze nicht gerinnt)" resp="#fyndling" subtype="contextual">Der Text nennt nicht, was zusätzlich hineingegeben werden soll, falls die Sülze nicht fest wird. Naheliegend ist ein Nachlegen von Hausenblase oder Gelatine, da beide Geliermittel im Rezept bereits etabliert sind.<list type="alternatives"><item>Könnte auch zusätzliche Fischschuppen oder Ei meinen.<note type="rationale">Der Text differenziert nicht, welches der beiden im Rezept genannten Bindemittel gemeint ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-210-orig" n="ain fingers lang zimet (beim Einlegen der Fische)" resp="#fyndling" subtype="contextual">Neben der gestoßenen Zimtmenge in der Zutatenliste wird beim Einlegen der Fische zusätzlich ein ganzes, fingerlanges Stück Zimt in die Schüssel gelegt - eine eigene, unquantifizierte dekorative/aromatische Einlage.<list type="alternatives"><item>Denkbar, dass die zwei Lot Zimt insgesamt gemeint sind und ein Teil davon ungestoßen für die Einlage reserviert wird.<note type="rationale">Der Text differenziert die Mengen nicht, sodass offenbleibt, ob es sich um eine zusätzliche Menge oder einen abgezweigten Teil handelt.</note></item></list></note>
       </div>
     </back>
   </text>

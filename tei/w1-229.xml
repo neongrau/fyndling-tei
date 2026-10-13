@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,7 +120,7 @@ Praxis. Birnen und Äpfel weich braten, klein hacken und mit Pfeffer und rohem E
         <note type="gloss" target="#w1-229-orig" n="schon prot" resp="#fyndling">Schön prot ist das mittelhochdeutsche schœnbrôt, Weißbrot aus feinerem Mehl (BMZ, mit Beleg aus dem Buch von guter Speise). „Schön“ meint hier fein, nicht sauber.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
         <note type="gloss" target="#w1-229-orig" n="plat" resp="#fyndling">Ein ‚Plat‘ ist hier ein dünner Fladen, ähnlich einem Pfannkuchen, der aus Eidottern gebacken wird und als Hülle dient.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
         <note type="gloss" target="#w1-229-orig" n="ayr tutern" resp="#fyndling">Eidotter werden hier als Bindemittel und für die goldgelbe Farbe des Fladens verwendet.</note>
-        <note type="interpretive_choice" target="#w1-229-orig" n="Garprobe des rohen Eis in der Füllung" resp="#fyndling">Der Text nennt für das fertig gefüllte Brot keine Gardauer oder -temperatur, sondern ausschließlich die Bräunung der Außenseite ('bis das es rot werd').</note>
+        <note type="interpretive_choice" target="#w1-229-orig" n="Garprobe des rohen Eis in der Füllung" resp="#fyndling" subtype="contextual">Der Text nennt für das fertig gefüllte Brot keine Gardauer oder -temperatur, sondern ausschließlich die Bräunung der Außenseite ('bis das es rot werd').<list type="alternatives"><item>Nur bis zur äußeren Rotfärbung braten, wie wörtlich beschrieben, ohne separate Garprobe des Kerns.<note type="rationale">Historische Lesart nah am Wortlaut; moderne Praxis empfiehlt aus Lebensmittelsicherheit trotzdem, auch den Kern durchzugaren (siehe Zubereitungshinweis).</note></item></list></note>
       </div>
     </back>
   </text>

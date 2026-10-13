@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,9 +103,9 @@ Praxis. Gebratene oder gebackene Gans, die kalt gegessen werden soll, nach dem G
         <note type="gloss" target="#rum-0605-orig" n="gespickt" resp="#fyndling">Spicken heißt, Fleisch mit Stiften zu bestecken oder zu durchziehen, meist mit Speckstreifen (Mittelniederdeutsches Wörterbuch: mit Speckstreifen durchziehen). Rumpolt spickt auch mit Gewürzen, etwa eine Ochsenzunge mit Zimt und Nelken (rum-0013). Womit hier gespickt wird, sagt der Satz nicht.</note>
         <note type="gloss" target="#rum-0605-orig" n="kalt lassen werden" resp="#fyndling">Wortstellung der Zeit; gemeint ist „kalt werden lassen“.</note>
         <note type="gloss" target="#rum-0605-orig" n="auff beyde manier" resp="#fyndling">Auf beide Arten. Ob die beiden Arten Pastete und Braten meinen oder gefüllt und gespickt, lässt der Satz offen.</note>
-        <note type="interpretive_choice" target="#rum-0605-orig" n="Kalte Ganß Pasteten/ oder gebraten" resp="#fyndling">Zwei Serviermöglichkeiten derselben Gans: als kalte Pastete oder gebraten und erkaltet. Das „oder“ stellt die Pastete dem Braten gegenüber, „kalt“ gilt für beide.</note>
-        <note type="interpretive_choice" target="#rum-0605-orig" n="gefüllt oder gespickt (Bezug)" resp="#fyndling">Offen gelassen: „es“ kann die Pastete oder den Braten meinen. Grammatisch möglich ist die Aufteilung, dass „gefüllt“ zur Pastete gehört und „gespickt“ zum offenen Braten.</note>
-        <note type="interpretive_choice" target="#rum-0605-orig" n="Teig und Füllung der Gänsepastete" resp="#fyndling">Offen gelassen: Im Druck steht nur „Pasteten“. Teigart, Füllung und ob die Gans ganz oder zerteilt eingebacken wird, nennt die Nummer nicht.</note>
+        <note type="interpretive_choice" target="#rum-0605-orig" n="Kalte Ganß Pasteten/ oder gebraten" resp="#fyndling" subtype="contextual">Zwei Serviermöglichkeiten derselben Gans: als kalte Pastete oder gebraten und erkaltet. Das „oder“ stellt die Pastete dem Braten gegenüber, „kalt“ gilt für beide.<list type="alternatives"><item>Nur die Pastete ist gemeint, „gebraten“ beschreibt die Gans darin, die vor dem Einbacken gebraten wird<note type="rationale">Syntaktisch nicht ausgeschlossen, aber das „oder“ trennt eher zwei Formen derselben Gans.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0605-orig" n="gefüllt oder gespickt (Bezug)" resp="#fyndling" subtype="contextual">Offen gelassen: „es“ kann die Pastete oder den Braten meinen. Grammatisch möglich ist die Aufteilung, dass „gefüllt“ zur Pastete gehört und „gespickt“ zum offenen Braten.<list type="alternatives"><item>Beides gilt für beide Formen: Die Gans wird gefüllt oder gespickt und dann als Pastete gebacken oder gebraten<note type="rationale">Die einfachste Ausführung für heute und so im Zubereitungshinweis gewählt; der Text entscheidet es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0605-orig" n="Teig und Füllung der Gänsepastete" resp="#fyndling" subtype="contextual">Offen gelassen: Im Druck steht nur „Pasteten“. Teigart, Füllung und ob die Gans ganz oder zerteilt eingebacken wird, nennt die Nummer nicht.<list type="alternatives"><item>Gans im festen Teigmantel gebacken und kalt gegessen<note type="rationale">Was das Wort Pastete vorgibt; die praktische Ausführung für heute.</note></item><item>Roggenteig nach dem Pastetenkapitel (rum-1759: „Gaͤnß Pasteten kalt in Ruckenteig eyngeschlagen“)<note type="rationale">Rumpolts eigene Angabe zur kalten Gänsepastete an anderer Stelle, auch dort ohne Verfahren; bei dieser Nummer steht sie nicht.</note></item></list></note>
       </div>
     </back>
   </text>

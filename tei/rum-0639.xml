@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,7 +98,7 @@ Was offen bleibt. Ob die Knödel weiß oder gelb, in Brühe, in einer Sauce, ein
 
 Praxis. Nichts festlegen und kein Rezept ergänzen. Die ausgeführten Knödelrezepte, etwa die weißen Kalbsknödel in Brühe oder die Kalbsknödel in Mandel-Rosinen-Sauce, zeigen Rumpolts Verfahren im Ganzen.</note>
         <note type="gloss" target="#rum-0639-orig" n="Endten" resp="#fyndling">Der Eintrag steht im Kapitel „Von wilden Endten“, gemeint ist also die Wildente, nicht die Hausente.</note>
-        <note type="interpretive_choice" target="#rum-0639-orig" n="Art der Knödel (Garweise, Bindung, Sauce)" resp="#fyndling">Offen gelassen: Rumpolt nennt nur „Auch Knödel von Endten“ ohne Garweise, Bindung oder Sauce. Als Serienkontext zeigen seine ausgeführten Knödelrezepte das Verfahren, vor allem bei Kalb (rum-0117 weiß in Brühe, rum-0133 in Mandel-Rosinen-Sauce), und bei Wildgeflügel nennt er weiße, gelbe, eingedämpfte oder in Pasteten gegarte Knödel (rum-0592 Gans, rum-0770 Schnepfe, rum-0790 Taube). Für die Wildente selbst ist keine dieser Varianten belegt.</note>
+        <note type="interpretive_choice" target="#rum-0639-orig" n="Art der Knödel (Garweise, Bindung, Sauce)" resp="#fyndling" subtype="contextual">Offen gelassen: Rumpolt nennt nur „Auch Knödel von Endten“ ohne Garweise, Bindung oder Sauce. Als Serienkontext zeigen seine ausgeführten Knödelrezepte das Verfahren, vor allem bei Kalb (rum-0117 weiß in Brühe, rum-0133 in Mandel-Rosinen-Sauce), und bei Wildgeflügel nennt er weiße, gelbe, eingedämpfte oder in Pasteten gegarte Knödel (rum-0592 Gans, rum-0770 Schnepfe, rum-0790 Taube). Für die Wildente selbst ist keine dieser Varianten belegt.<list type="alternatives"><item>Nichts festlegen, kein Rezept ergänzen<note type="rationale">Moderne Lesepraxis: Der Eintrag bleibt eine Überschrift. Wer nachkochen will, wählt bewusst eines der ausgeführten Knödelrezepte als Vorlage und weiß, dass das eine eigene Entscheidung ist.</note></item></list></note>
       </div>
     </back>
   </text>

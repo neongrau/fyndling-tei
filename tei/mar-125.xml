@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,9 +135,9 @@ Piglia altretanto cascio frescho como è ditto di sopra et pistalo molto bene, e
         <note type="gloss" target="#mar-125-orig" n="brodetto" resp="#fyndling">eine dicke Brühe oder Sauce</note>
         <note type="gloss" target="#mar-125-orig" n="ad ascio di sotto et di sopra" resp="#fyndling">mit mäßigem Feuer von unten und von oben (Backmethode in einer Pfanne mit Glut auf dem Deckel)</note>
         <note type="gloss" target="#mar-125-orig" n="Herbolata" resp="#fyndling">Kräutertorte</note>
-        <note type="interpretive_choice" target="#mar-125-orig" n="cascio frescho como è ditto di sopra" resp="#fyndling">Frischkäse (z.B. Ricotta oder Quark)</note>
-        <note type="interpretive_choice" target="#mar-125-orig" n="brodetto" resp="#fyndling">eine dicke Brühe oder Sauce</note>
-        <note type="interpretive_choice" target="#mar-125-orig" n="vietole in bona quantità, cioè per la maiore parte" resp="#fyndling">Veilchen (Blüten und Blätter) als Hauptbestandteil der Kräuter</note>
+        <note type="interpretive_choice" target="#mar-125-orig" n="cascio frescho como è ditto di sopra" resp="#fyndling">Frischkäse (z.B. Ricotta oder Quark)<list type="alternatives"><item>Ein spezifischer, in einem vorherigen Rezept beschriebener Käse<note type="rationale">Der Verweis ‚wie oben erwähnt‘ deutet auf eine genaue Sorte hin, die jedoch ohne den Kontext des gesamten Buches nicht eindeutig identifizierbar ist. Ricotta oder Quark sind plausible Annahmen für einen frischen, weichen Käse.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-125-orig" n="brodetto" resp="#fyndling">eine dicke Brühe oder Sauce<list type="alternatives"><item>Eine dünne Brühe<note type="rationale">Das Wort ‚brodetto‘ bedeutet wörtlich ‚kleine Brühe‘, aber im Kontext des Andickens ‚sich zu binden beginnt‘ ist eine dickere, sämige Konsistenz gemeint, die eher einer Sauce oder einem Brei ähnelt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-125-orig" n="vietole in bona quantità, cioè per la maiore parte" resp="#fyndling">Veilchen (Blüten und Blätter) als Hauptbestandteil der Kräuter<list type="alternatives"><item>Eine allgemeine Bezeichnung für ‚Kräuter‘, wobei Veilchen nur eine Option sind<note type="rationale">Obwohl ‚violette‘ spezifisch Veilchen bedeutet, könnte der Zusatz ‚per la maiore parte‘ auch bedeuten, dass Veilchen die größte Menge der verwendeten Kräuter ausmachen sollen, nicht dass sie die einzigen sind. Die Betonung der grünen Farbe im Schlusssatz unterstützt jedoch die Verwendung von viel Grünzeug, wofür Veilchenblätter gut geeignet sind.</note></item></list></note>
       </div>
     </back>
   </text>

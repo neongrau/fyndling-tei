@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,7 +107,7 @@ Praxis. Fleisch nach Wahl (der Text nennt keine bestimmte Sorte) in kaltem Wasse
         <note type="gloss" target="#w1-247-orig" n="erwell es wol" resp="#fyndling">‚Erwellen‘ bedeutet hier, das Fleisch gut aufwallen oder aufkochen zu lassen.</note>
         <note type="gloss" target="#w1-247-orig" n="allerhand" resp="#fyndling">Bedeutet ‚allerlei‘ bzw. jede Art von; bezieht sich hier auf beliebige Fleischstücke, keine bestimmte Sorte.</note>
         <note type="gloss" target="#w1-247-orig" n="gar" resp="#fyndling">Die Berliner Parallelhandschrift schreibt an dieser Stelle nur „lass es sieden", ohne Angabe zum Garzustand.</note>
-        <note type="interpretive_choice" target="#w1-247-orig" n="Garzeit im zweiten Wassergang" resp="#fyndling">Der Text nennt für das zweite Sieden ausdrücklich eine Garzustandsangabe: es soll sieden, bis es gar ist („sieden gar").</note>
+        <note type="interpretive_choice" target="#w1-247-orig" n="Garzeit im zweiten Wassergang" resp="#fyndling" subtype="contextual">Der Text nennt für das zweite Sieden ausdrücklich eine Garzustandsangabe: es soll sieden, bis es gar ist („sieden gar").</note>
       </div>
     </back>
   </text>

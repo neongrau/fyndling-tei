@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,8 +99,8 @@ Warm statt in Gallerte. Für die Gallerte muss der Braten auskühlen. Die warme 
 Federn am Kopf, Hals und Schwanz? Ob der warm aufgetragene Adler die Federzier aus der ersten Nummer behält, sagt der Text nicht. Wir lassen das offen.
 
 Praxis. Nachkochen lässt sich das nicht, weil Adler nicht zu bekommen ist. Die eigentliche Zubereitung steht in der ersten Nummer des Kapitels; diese Nummer fügt nur die Möglichkeit hinzu, den Braten warm statt in Gallerte zu servieren.</note>
-        <note type="interpretive_choice" target="#rum-0504-orig" n="auch wol warm" resp="#fyndling">Gegenstück zu Nr. 1: Dort wird der gebratene Adler in eine Gallerte gesetzt, also kalt angerichtet. „Auch warm“ bietet an, ihn ohne Gallerte gleich warm aufzutragen.</note>
-        <note type="interpretive_choice" target="#rum-0504-orig" n="Federschmuck beim warmen Auftragen" resp="#fyndling">Der warme Adler ist wie in Nr. 1 zubereitet und trägt dann womöglich noch die belassenen Federn an Kopf, Hals und Schwanz; für Nr. 2 sagt der Text das nicht ausdrücklich.</note>
+        <note type="interpretive_choice" target="#rum-0504-orig" n="auch wol warm" resp="#fyndling" subtype="contextual">Gegenstück zu Nr. 1: Dort wird der gebratene Adler in eine Gallerte gesetzt, also kalt angerichtet. „Auch warm“ bietet an, ihn ohne Gallerte gleich warm aufzutragen.<list type="alternatives"><item>Allgemeiner Hinweis, dass ein Adlerbraten auch warm gegessen werden kann<note type="rationale">Nicht ausgeschlossen, aber das „auch“ bezieht sich am natürlichsten auf die unmittelbar vorangehende kalte Fassung in Nr. 1.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0504-orig" n="Federschmuck beim warmen Auftragen" resp="#fyndling" subtype="contextual">Der warme Adler ist wie in Nr. 1 zubereitet und trägt dann womöglich noch die belassenen Federn an Kopf, Hals und Schwanz; für Nr. 2 sagt der Text das nicht ausdrücklich.<list type="alternatives"><item>Offen lassen und keine Federzier behaupten<note type="rationale">Vorgehen in der Zubereitungsnotiz: Nr. 2 sagt nur „warm geben auff ein Tisch“ und nichts über die Darbietung.</note></item></list></note>
       </div>
     </back>
   </text>

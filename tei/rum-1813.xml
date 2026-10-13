@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,10 +114,10 @@ Praxis. Wer es nachbaut, braucht einen Tortenboden nach eigener Wahl und einen O
         <note type="gloss" target="#rum-1813-orig" n="Kaͤß Turten" resp="#fyndling">Eine herzhafte Torte mit einer Masse aus Hartkäse, Eiern und Butter. Mit dem heutigen süßen Käsekuchen aus Quark hat sie nichts zu tun.</note>
         <note type="gloss" target="#rum-1813-orig" n="mach jn mit Eyern ab" resp="#fyndling">abmachen heißt hier anmachen, vermengen: Eier und Butter binden den geriebenen Käse zu einer Masse. So gebraucht Rumpolt das Wort auch bei anderen Füllungen, die mit Eiern gebunden werden.</note>
         <note type="gloss" target="#rum-1813-orig" n="nicht faul" resp="#fyndling">faul heißt „von Fäulnis befallen“, also verdorben. Gemeint ist ein Käse, der hart und einwandfrei ist, nicht angegangen oder verschimmelt.</note>
-        <note type="interpretive_choice" target="#rum-1813-orig" n="nicht faul" resp="#fyndling">Nicht verdorben: faul in der Grundbedeutung „von Fäulnis befallen“ (Pfälzisches und Rheinisches Wörterbuch, faul 1a). Rumpolt schließt angegangenen oder verschimmelten Käse aus.</note>
-        <note type="interpretive_choice" target="#rum-1813-orig" n="mach jn mit Eyern ab" resp="#fyndling">Anmachen, vermengen: Eier und Butter binden den Käse zur Füllung, wie bei anderen eiergebundenen Füllungen im Buch.</note>
-        <note type="interpretive_choice" target="#rum-1813-orig" n="Teigboden und Backen" resp="#fyndling">Rumpolt setzt Turtenteig und Backen im Ofen über das Kapitel voraus; im selben Kapitel nennen andere Torten das Backen ausdrücklich (rum-1818 „wenns gebacken ist“, rum-1819 mit Teig und Ofen).</note>
-        <note type="interpretive_choice" target="#rum-1813-orig" n="Mengenverhältnis Käse, Eier, Butter" resp="#fyndling">Rumpolt gibt keine Mengen; das Verhältnis liegt im Ermessen des Kochs.</note>
+        <note type="interpretive_choice" target="#rum-1813-orig" n="nicht faul" resp="#fyndling" subtype="lexical">Nicht verdorben: faul in der Grundbedeutung „von Fäulnis befallen“ (Pfälzisches und Rheinisches Wörterbuch, faul 1a). Rumpolt schließt angegangenen oder verschimmelten Käse aus.<list type="alternatives"><item>Nicht überreif, nicht zu stark gereift<note type="rationale">Möglich, wenn Rumpolt einen weich und scharf gewordenen Käse meint; ein Wörterbuchbeleg speziell für Käse fehlt, darum bleibt die Grundbedeutung die gewählte Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1813-orig" n="mach jn mit Eyern ab" resp="#fyndling" subtype="lexical">Anmachen, vermengen: Eier und Butter binden den Käse zur Füllung, wie bei anderen eiergebundenen Füllungen im Buch.<list type="alternatives"><item>Abschmecken, würzen<note type="rationale">So gebraucht Rumpolt abmachen, wenn Gewürze folgen. Hier folgen Eier und Butter, also Bindemittel, und es wird kein Gewürz genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1813-orig" n="Teigboden und Backen" resp="#fyndling" subtype="contextual">Rumpolt setzt Turtenteig und Backen im Ofen über das Kapitel voraus; im selben Kapitel nennen andere Torten das Backen ausdrücklich (rum-1818 „wenns gebacken ist“, rum-1819 mit Teig und Ofen).<list type="alternatives"><item>Nichts ergänzen, nur die Füllung beschreiben<note type="rationale">Der Text dieses Rezepts nennt weder Teig noch Backen, Temperatur oder Zeit; die Nachbau-Hinweise halten sich deshalb an die Füllung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1813-orig" n="Mengenverhältnis Käse, Eier, Butter" resp="#fyndling" subtype="contextual">Rumpolt gibt keine Mengen; das Verhältnis liegt im Ermessen des Kochs.<list type="alternatives"><item>Ein festes Verhältnis vorgeben<note type="rationale">Wäre eine Erfindung; der Text trägt keine Zahl, darum bleibt auch die Portionsangabe offen.</note></item></list></note>
       </div>
     </back>
   </text>

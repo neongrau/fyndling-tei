@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,10 +98,10 @@ Praxis. Es gibt keinen überlieferten Arbeitsschritt, den man prüfen oder nachk
         <note type="gloss" target="#rum-1765-orig" n="Drappen" resp="#fyndling">Die Trappe, ein großer, kranichartiger Vogel. Rumpolt schreibt den Namen hier mit D; in seinem eigenen Trappenkapitel heißt sie Trappe (rum-0513).</note>
         <note type="gloss" target="#rum-1765-orig" n="mit Neglein vnd Zimmet gespickt" resp="#fyndling">Nelken und Zimt werden ins Fleisch gesteckt, so wie man sonst mit Speck spickt. Mengen nennt Rumpolt nicht. Dieselbe Würzung trägt die Truthahnpastete zwei Nummern weiter (rum-1766).</note>
         <note type="gloss" target="#rum-1765-orig" n="kalt" resp="#fyndling">Rumpolts Kategorie: Er unterscheidet in diesem Kapitel kalte und warme Pasteten. Ob die Pastete kalt gegessen oder nur kalt angerichtet wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-1765-orig" n="auffrichtigem Kopff" resp="#fyndling">Mit aufrechtem Kopf: frühneuhochdeutsch aufrichtig = senkrecht, aufrecht stehend. Rumpolt gebraucht das Wort auch beim Fasan („fein auffrichtig steht“, rum-0559) und bei Schwan und Pfau im selben Kapitel (rum-1764, rum-1768) in diesem Sinn.</note>
-        <note type="interpretive_choice" target="#rum-1765-orig" n="Kopf an der Pastete" resp="#fyndling">Der Text sagt nur, dass der Kopf aufrecht steht. Ob er aus der Pastete ragt, aufgesetzt oder nur dargestellt ist und wie er hält, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-1765-orig" n="Drappen Pasteten" resp="#fyndling">Singular „Trappenpastete“: Rumpolts Register führt denselben Eintrag mit Artikel als „Ein Drappen Pasteten kalt“; Pasteten ist hier die alte Singularform.</note>
-        <note type="interpretive_choice" target="#rum-1765-orig" n="Drappen" resp="#fyndling">Trappe (der Vogel), mit D geschrieben; im Trappenkapitel schreibt Rumpolt Trappe (rum-0512 bis rum-0516).</note>
+        <note type="interpretive_choice" target="#rum-1765-orig" n="auffrichtigem Kopff" resp="#fyndling" subtype="lexical">Mit aufrechtem Kopf: frühneuhochdeutsch aufrichtig = senkrecht, aufrecht stehend. Rumpolt gebraucht das Wort auch beim Fasan („fein auffrichtig steht“, rum-0559) und bei Schwan und Pfau im selben Kapitel (rum-1764, rum-1768) in diesem Sinn.<list type="alternatives"><item>„mit aufrichtigem Kopf“ wörtlich stehen lassen<note type="rationale">Heute heißt aufrichtig ehrlich; die wörtliche Form führt in die Irre.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1765-orig" n="Kopf an der Pastete" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass der Kopf aufrecht steht. Ob er aus der Pastete ragt, aufgesetzt oder nur dargestellt ist und wie er hält, bleibt offen.<list type="alternatives"><item>Aufrechter, aus der Pastete ragender Kopf als sichtbares Zeichen, welcher Vogel darin steckt<note type="rationale">Naheliegende heutige Vorstellung und so in der Praxis-Notiz verwendet; Befestigung und Herrichtung des Kopfes beschreibt Rumpolt nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1765-orig" n="Drappen Pasteten" resp="#fyndling" subtype="philological">Singular „Trappenpastete“: Rumpolts Register führt denselben Eintrag mit Artikel als „Ein Drappen Pasteten kalt“; Pasteten ist hier die alte Singularform.<list type="alternatives"><item>Plural „Trappenpasteten“<note type="rationale">Formal möglich, aber das Register mit „Ein“ spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1765-orig" n="Drappen" resp="#fyndling" subtype="orthographic">Trappe (der Vogel), mit D geschrieben; im Trappenkapitel schreibt Rumpolt Trappe (rum-0512 bis rum-0516).</note>
       </div>
     </back>
   </text>

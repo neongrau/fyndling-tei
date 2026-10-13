@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -138,11 +143,11 @@
         <note type="gloss" target="#men-142-orig" n="cameline" resp="#fyndling">Cameline-Sauce</note>
         <note type="gloss" target="#men-142-orig" n="lardé" resp="#fyndling">gespickt</note>
         <note type="gloss" target="#men-142-orig" n="pigons" resp="#fyndling">Tauben</note>
-        <note type="interpretive_choice" target="#men-142-orig" n="pelé" resp="#fyndling">häuten</note>
-        <note type="interpretive_choice" target="#men-142-orig" n="yssues" resp="#fyndling">Innereien</note>
-        <note type="interpretive_choice" target="#men-142-orig" n="fin frommage vieil" resp="#fyndling">Alter, harter Käse</note>
-        <note type="interpretive_choice" target="#men-142-orig" n="broyez" resp="#fyndling">im Mörser zerstoßen</note>
-        <note type="interpretive_choice" target="#men-142-orig" n="grant foison" resp="#fyndling">reichlich</note>
+        <note type="interpretive_choice" target="#men-142-orig" n="pelé" resp="#fyndling">häuten<list type="alternatives"><item>abschaben<note type="rationale">Das Abbrühen von Schweinen diente dazu, die Borsten und die äußere Hautschicht abzuschaben, nicht immer die gesamte Haut zu entfernen.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-142-orig" n="yssues" resp="#fyndling">Innereien<list type="alternatives"><item>Auswurf<note type="rationale">Der Begriff 'yssues' kann allgemein für das stehen, was aus dem Tier entfernt wird, also auch für den Darminhalt oder andere nicht verwertbare Teile.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-142-orig" n="fin frommage vieil" resp="#fyndling">Alter, harter Käse<list type="alternatives"><item>gereifter Hartkäse<note type="rationale">Der Begriff 'fin' deutet auf Qualität hin, 'vieil' auf Reifung. Ein gereifter Hartkäse wie Parmesan oder Pecorino passt gut zum Geschmacksprofil.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-142-orig" n="broyez" resp="#fyndling">im Mörser zerstoßen<list type="alternatives"><item>fein pürieren<note type="rationale">Das Zerstoßen im Mörser zielte auf eine sehr feine, pastöse Konsistenz ab, die heute am besten mit einem Pürierstab oder einer Küchenmaschine erreicht wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-142-orig" n="grant foison" resp="#fyndling">reichlich<list type="alternatives"><item>große Menge<note type="rationale">Der Ausdruck betont die Großzügigkeit bei der Verwendung der Gewürze, was typisch für die mittelalterliche Küche war.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,7 +138,7 @@ Ofen auf ca. 180-200°C vorheizen. Torte backen, bis der Deckel gerade fest ist 
         <note type="gloss" target="#phw-043-orig" n="blad" resp="#fyndling">Ein „Blad“ (Blatt) bezeichnet hier einen dünnen Teigfladen, der als Deckel auf die Torte gelegt wird.</note>
         <note type="gloss" target="#phw-043-orig" n="zerschnides" resp="#fyndling">Der Teigfladen wird nach dem Auflegen eingeschnitten, damit beim Backen Dampf entweichen und später das aufgegossene Schmalz durch die Schnitte in die Füllung sickern kann.</note>
         <note type="gloss" target="#phw-043-orig" n="weyn ber" resp="#fyndling">„Weinber“ sind Weinbeeren, also Rosinen. Sie werden hier zusammen mit Zucker und Zimt zur Füllung.</note>
-        <note type="interpretive_choice" target="#phw-043-orig" n="Back-Temperatur und -Dauer (halb bachenn / fol bachenn)" resp="#fyndling">Moderne Ofenangabe als praktische Näherung (siehe Praxis-Hinweis).</note>
+        <note type="interpretive_choice" target="#phw-043-orig" n="Back-Temperatur und -Dauer (halb bachenn / fol bachenn)" resp="#fyndling" subtype="contextual">Moderne Ofenangabe als praktische Näherung (siehe Praxis-Hinweis).<list type="alternatives"><item>Historisch wurde der Garpunkt ausschließlich über Augenmaß und Bräunungsgrad am offenen Feuer mit Glut auf dem Deckel der Tortenpfanne bestimmt, ohne feste Zeit- oder Temperaturangabe.<note type="rationale">Der Text nennt für beide Backphasen nur den Garzustand („halb“, „fol“ gebacken), keine Zeit- oder Temperaturwerte - die Ofenangabe ist eine moderne Übertragung, keine Aussage des Originals.</note></item></list></note>
       </div>
     </back>
   </text>

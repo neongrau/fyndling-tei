@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -104,10 +109,10 @@ Praxis. Ein nachkochbares Verfahren gibt dieser Eintrag nicht her. Am nächsten 
         <note type="gloss" target="#rum-0841-orig" n="Eyerdottern" resp="#fyndling">Eierdotter, also Eigelb.</note>
         <note type="gloss" target="#rum-0841-orig" n="fein weiß saͤurlich" resp="#fyndling">Beschreibt die Sauce: hell und mild säuerlich. Welche Zutat die Säure gibt, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0841-orig" n="wolschmeckenden" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0841-orig" n="eyngemacht" resp="#fyndling">In einer Sauce gegart. So liest Rumpolt das Wort bei Fleisch und Geflügel durchgehend; dieselbe Formel steht bei Wachteln (rum-0813) mit einer Brühe, die über die gesottenen Tiere gegeben wird.</note>
-        <note type="interpretive_choice" target="#rum-0841-orig" n="weiß" resp="#fyndling">Farbe der Sauce: hell. Im Kapitel stehen daneben schwarz (rum-0839) und gelb (rum-0840) eingemachte Vögel; bei Wildente (rum-0632) und Wachteln (rum-0813) steht die weiße Eigelbsauce ebenso neben anders gefärbten Spielarten.</note>
-        <note type="interpretive_choice" target="#rum-0841-orig" n="saͤurlich (Säurequelle)" resp="#fyndling">Die säuernde Zutat bleibt ungenannt; nichts ergänzen. Im selben Kapitel säuert Rumpolt die Vögel mit Limonien und Essig (rum-0849); Essig, Wein oder Agrast wären zeitgemäß, belegt ist hier keins davon.</note>
-        <note type="interpretive_choice" target="#rum-0841-orig" n="Vögel (Arten und Vorbereitung)" resp="#fyndling">Kleine Vögel ohne Artangabe: Der Kapitelkopf nennt nur „allerley kleinen Vögeln“. Ob sie ganz oder ausgenommen in die Sauce kommen, steht nicht da.</note>
+        <note type="interpretive_choice" target="#rum-0841-orig" n="eyngemacht" resp="#fyndling" subtype="lexical">In einer Sauce gegart. So liest Rumpolt das Wort bei Fleisch und Geflügel durchgehend; dieselbe Formel steht bei Wachteln (rum-0813) mit einer Brühe, die über die gesottenen Tiere gegeben wird.<list type="alternatives"><item>Haltbar eingemacht, als Konserve<note type="rationale">Heutige Wortbedeutung; im Zusammenhang mit Eigelb, Kräutern und den Nachbarnummern (schwarz, gelb) ergibt sie keinen Sinn.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0841-orig" n="weiß" resp="#fyndling" subtype="contextual">Farbe der Sauce: hell. Im Kapitel stehen daneben schwarz (rum-0839) und gelb (rum-0840) eingemachte Vögel; bei Wildente (rum-0632) und Wachteln (rum-0813) steht die weiße Eigelbsauce ebenso neben anders gefärbten Spielarten.<list type="alternatives"><item>Garweise: die Vögel ohne Bräunung gegart<note type="rationale">Für diese Bedeutung gibt es keinen Beleg; die Farbreihe im Kapitel spricht für die Saucenfarbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0841-orig" n="saͤurlich (Säurequelle)" resp="#fyndling" subtype="contextual">Die säuernde Zutat bleibt ungenannt; nichts ergänzen. Im selben Kapitel säuert Rumpolt die Vögel mit Limonien und Essig (rum-0849); Essig, Wein oder Agrast wären zeitgemäß, belegt ist hier keins davon.<list type="alternatives"><item>Säuerlich abschmecken, ohne ein bestimmtes Säuerungsmittel festzulegen<note type="rationale">Heutiger Weg zum Nachkochen; das gewählte Mittel ist dann eine eigene Entscheidung, keine Angabe Rumpolts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0841-orig" n="Vögel (Arten und Vorbereitung)" resp="#fyndling" subtype="contextual">Kleine Vögel ohne Artangabe: Der Kapitelkopf nennt nur „allerley kleinen Vögeln“. Ob sie ganz oder ausgenommen in die Sauce kommen, steht nicht da.<list type="alternatives"><item>Eine bestimmte Vogelart<note type="rationale">Weder Zeile noch Kapitelkopf legen eine Art fest; jede Festlegung wäre Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

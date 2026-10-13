@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -145,10 +150,13 @@ geviertelt und getrennt gesotten, und die Sauce entsteht aus dem Sud.</note>
         <note type="gloss" target="#saw-157-orig" n="brie" resp="#fyndling">In diesem Kochbuch der Standardbegriff für eine gebundene, oft safrangelb gefärbte Sauce oder Brühe, nicht der Käse.</note>
         <note type="gloss" target="#saw-157-orig" n="scherblin" resp="#fyndling">Kleine Reib- oder Mörserschale, in der Leber, Brot und Petersilie fein zerrieben werden.</note>
         <note type="gloss" target="#saw-157-orig" n="henner" resp="#fyndling">Hapax im Korpus, wahrscheinlich eine dialektale Nebenform zu 'hiener' (Hühner) - Birlingers Schwäbisch-Augsburgisches Wörterbuch glossiert 'hun pl. hiener'. Nicht als eigene Bezeichnung für männliche Tiere ('Hahn') zu lesen: Der Text verwendet durchgehend 'hiener oder hennen' als feste Dublette, ein 'Han' kommt sonst nicht vor.</note>
-        <note type="interpretive_choice" target="#saw-157-orig" n="scherblin" resp="#fyndling">Kleine Reib- oder Mörserschale, in der Leber, Brot und Petersilie fein zerrieben werden.</note>
-        <note type="interpretive_choice" target="#saw-157-orig" n="Zeitpunkt der Zugabe von Leber, Brot und Petersilie" resp="#fyndling">Die geriebene Masse aus Leber, Brot und Petersilie wird beim bzw. kurz vor dem Durchtreiben der Brühe durchs Sieb mit eingerührt und beim Weitersieden mitgegart.</note>
+        <note type="interpretive_choice" target="#saw-157-orig" n="scherblin" resp="#fyndling">Kleine Reib- oder Mörserschale, in der Leber, Brot und Petersilie fein zerrieben werden.<list type="alternatives"><item>Kleiner irdener Tiegel (Scherbe)<note type="rationale">Das Wort ist Diminutiv von 'Scherbe' und könnte auch ein kleines Tongefäß meinen; die genaue Form ist im Text nicht belegt, die Funktion des Zerreibens bleibt in beiden Fällen gleich.</note></item></list></note>
+        <note type="interpretive_choice" target="#saw-157-orig" n="Zeitpunkt der Zugabe von Leber, Brot und Petersilie" resp="#fyndling">Die geriebene Masse aus Leber, Brot und Petersilie wird beim bzw. kurz vor dem Durchtreiben der Brühe durchs Sieb mit eingerührt und beim Weitersieden mitgegart.<list type="alternatives"><item>Rein wörtlich bleibt die Masse im Text unverbunden stehen - nach dem Reiben ist nur noch von der (allein gesiebten) Brühe die Rede.<note type="rationale">Diese strengere Lesart würde Leber, Brot und Petersilie ungenutzt lassen, was der erkennbaren Bindefunktion widerspricht, und ist deshalb praktisch unplausibel; der Zugabeschritt selbst steht aber nicht ausdrücklich im Transkript.</note></item></list></note>
         <note type="interpretive_choice" target="#saw-157-orig" n="ainzúmachen" resp="#fyndling">Zubereitungsart „eingemacht": in Brühe gegartes Fleisch mit einer aus dem Sud gebundenen
-Sauce. Fachlich ein Blankett.</note>
+Sauce. Fachlich ein Blankett.<list type="alternatives"><item>Frikassee.<note type="rationale">Naheliegend, weil Huhn in heller gebundener Sauce heute meist so heißt. Zwei Merkmale
+sprechen dagegen: Das Fleisch wird geviertelt statt mundgerecht geschnitten, und es gart
+getrennt von der Sauce statt in ihr.</note></item><item>Einwecken, Haltbarmachen.<note type="rationale">Die heutige Hauptbedeutung von „einmachen", im 16. Jahrhundert an dieser Stelle aber nicht
+gemeint: Das Rezept endet mit dem Anrichten, nicht mit dem Lagern.</note></item></list></note>
       </div>
     </back>
   </text>

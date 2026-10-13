@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -143,14 +148,14 @@ Praxis. Putze den Magen gründlich, hacke Kalbfleisch, Rinderfett und Speck mit 
         <note type="gloss" target="#rum-0036-orig" n="vberzinten Fischkessel" resp="#fyndling">Ein innen verzinnter, länglicher Kessel, wie man ihn für Fisch nutzte; hier dient er als langes Gefäß zum Anrichten und Nachziehen.</note>
         <note type="gloss" target="#rum-0036-orig" n="Suͤltzen" resp="#fyndling">Bei Rumpolt Kutteln, hier der gefüllte Löser; keine Sülze im heutigen Sinn.</note>
         <note type="gloss" target="#rum-0036-orig" n="gekochet" resp="#fyndling">„Gekocht auf Ungarisch“: Rumpolts Name für diese Zubereitung der Kutteln, also nach ungarischer Art gekocht. „heisset man“ heißt „nennt man“; „gekochet“ ist das deutsche Partizip „gekocht“, kein ungarisches Wort.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="Loͤser / Manigfalt" resp="#fyndling">Blättermagen (Omasum). Manigfalt ist als Magenteil belegt; Löser wird aus der Paarung mit Manigfalt erschlossen und ist in den geprüften Wörterbüchern nicht direkt belegt.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="Suͤltzen" resp="#fyndling">Kutteln bzw. Rindermagen. Rumpolt paart Sültzen in rum-0023 mit Kaldaunen; hier wird der Löser gesotten, geschnitten und in Brühe nachgekocht.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="gekochet" resp="#fyndling">Der Schlusssatz gibt den Namen des Gerichts: Diese Kutteln heißen „auf ungarische Art gekocht“. „auff Vngerisch“ gebraucht Rumpolt auch sonst adverbial für „nach ungarischer Art“.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="die Bruͤh" resp="#fyndling">Der Sud vom ersten Sieden, nahegelegt durch den bestimmten Artikel.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="gar an die statt sieden" resp="#fyndling">Bis zum Garpunkt sieden; keine Zeit im Text.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="schneidt es wie du es haben wilt" resp="#fyndling">Schnittgröße freigestellt.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="Eyern" resp="#fyndling">Menge offen; Eier binden die Füllung.</note>
-        <note type="interpretive_choice" target="#rum-0036-orig" n="Gewuͤrtz" resp="#fyndling">Unspezifisches Gewürz nach Wahl des Kochs, neben Pfeffer und Safran; keine Liste ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="Loͤser / Manigfalt" resp="#fyndling" subtype="lexical">Blättermagen (Omasum). Manigfalt ist als Magenteil belegt; Löser wird aus der Paarung mit Manigfalt erschlossen und ist in den geprüften Wörterbüchern nicht direkt belegt.<list type="alternatives"><item>Löser als anderes Organ<note type="rationale">Kein Beleg; die Paarung mit Manigfalt und die Füllung der einzelnen Blätter sprechen für den Blättermagen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="Suͤltzen" resp="#fyndling" subtype="lexical">Kutteln bzw. Rindermagen. Rumpolt paart Sültzen in rum-0023 mit Kaldaunen; hier wird der Löser gesotten, geschnitten und in Brühe nachgekocht.<list type="alternatives"><item>Sülze im heutigen Sinn (Aspik, Gallert)<note type="rationale">Verworfen: Nichts wird geliert oder gekühlt; Gallert führt das Buch getrennt als Galrat.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="gekochet" resp="#fyndling" subtype="philological">Der Schlusssatz gibt den Namen des Gerichts: Diese Kutteln heißen „auf ungarische Art gekocht“. „auff Vngerisch“ gebraucht Rumpolt auch sonst adverbial für „nach ungarischer Art“.<list type="alternatives"><item>ungarisch ‚gekocht‘<note type="rationale">Nicht belegt; die Form ließe sich auch anders deuten.</note></item><item>„gekochet“ als ungarisches Wort für das Gericht<note type="rationale">Verworfen: „gekochet“ ist das deutsche Partizip; „auff Vngerisch“ steht bei Rumpolt adverbial.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="die Bruͤh" resp="#fyndling" subtype="contextual">Der Sud vom ersten Sieden, nahegelegt durch den bestimmten Artikel.<list type="alternatives"><item>Frische Rinderbrühe<note type="rationale">So in rum-0037 ausdrücklich genannt; hier nicht, als Praxis möglich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="gar an die statt sieden" resp="#fyndling" subtype="contextual">Bis zum Garpunkt sieden; keine Zeit im Text.<list type="alternatives"><item>Bei leisem Sieden mehrere Stunden<note type="rationale">Praxisrichtwert für Blättermagen, nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="schneidt es wie du es haben wilt" resp="#fyndling" subtype="contextual">Schnittgröße freigestellt.<list type="alternatives"><item>Scheiben von etwa 2 cm<note type="rationale">Moderne Praxisempfehlung, keine Vorgabe der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="Eyern" resp="#fyndling" subtype="contextual">Menge offen; Eier binden die Füllung.<list type="alternatives"><item>Etwa 1 Ei je 250 g Hack<note type="rationale">Praxiswert, nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0036-orig" n="Gewuͤrtz" resp="#fyndling" subtype="contextual">Unspezifisches Gewürz nach Wahl des Kochs, neben Pfeffer und Safran; keine Liste ergänzt.<list type="alternatives"><item>Bestimmte Gewürzmischung<note type="rationale">Der Text nennt keine.</note></item></list></note>
       </div>
     </back>
   </text>

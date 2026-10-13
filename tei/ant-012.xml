@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -128,8 +133,8 @@ Praxis. Geschälte Rübenstücke 5-8 Minuten vorkochen, abgießen, abtrocknen. I
         <note type="gloss" target="#ant-012-orig" n="distemperate col detto brodo" resp="#fyndling">Verdünnt mit der erwähnten Brühe. Dies kann das Kochwasser der Rüben oder eine allgemeine Fleisch- oder Gemüsebrühe sein.</note>
         <note type="gloss" target="#ant-012-orig" n="carne appezzata o tritata" resp="#fyndling">Fleisch in Stücken oder gehackt, als optionale Zugabe zur Anreicherung des Gerichts.</note>
         <note type="gloss" target="#ant-012-orig" n="latte di capra" resp="#fyndling">Ziegenmilch, eine weitere optionale Zutat zur Verfeinerung.</note>
-        <note type="interpretive_choice" target="#ant-012-orig" n="navoni" resp="#fyndling">Wir haben 'Rübenköpfe' als Speiserüben interpretiert, da diese im Mittelalter weit verbreitet waren.</note>
-        <note type="interpretive_choice" target="#ant-012-orig" n="detto brodo" resp="#fyndling">Die 'erwähnte Brühe' wurde als allgemeine Brühe oder das Kochwasser der Rüben interpretiert, um die geschlagenen Eier zu verdünnen.</note>
+        <note type="interpretive_choice" target="#ant-012-orig" n="navoni" resp="#fyndling">Wir haben 'Rübenköpfe' als Speiserüben interpretiert, da diese im Mittelalter weit verbreitet waren.<list type="alternatives"><item>Alternativ könnten auch Steckrüben oder Kohlrabi gemeint sein, die ebenfalls in der mittelalterlichen Küche verwendet wurden.<note type="rationale">Der Begriff 'navoni' war im Toskanischen des 14. Jahrhunderts nicht immer spezifisch und konnte verschiedene Wurzelgemüse umfassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#ant-012-orig" n="detto brodo" resp="#fyndling">Die 'erwähnte Brühe' wurde als allgemeine Brühe oder das Kochwasser der Rüben interpretiert, um die geschlagenen Eier zu verdünnen.<list type="alternatives"><item>Es könnte sich spezifisch auf das Kochwasser der Rüben beziehen, das bereits im Topf vorhanden wäre.<note type="rationale">Der Text ist nicht explizit, aber das Kochwasser wäre die naheliegendste Flüssigkeit im Kontext des Rezepts.</note></item></list></note>
       </div>
     </back>
   </text>

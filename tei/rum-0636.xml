@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,10 +105,10 @@ Praxis. Ente zerlegen und in Salzwasser etwa 1 bis 1,5 Stunden sieden, bis sie z
         <note type="gloss" target="#rum-0636-orig" n="Auch widerumb" resp="#fyndling">„Ebenfalls, ebenso“: eine weitere Zubereitung der Wildente, kein Wiederholungsschritt.</note>
         <note type="gloss" target="#rum-0636-orig" n="Hiersebrey" resp="#fyndling">Hirsebrei. Bei Rumpolt das Gargut, in dem der Vogel gekocht wird (so ausgeführt bei der Wildgans, rum-0586), keine bloße Beilage.</note>
         <note type="gloss" target="#rum-0636-orig" n="wie vorhin vermeldet ist von einer Ganß zu kochen" resp="#fyndling">Verweis auf die Wildgans in Hirsebrei (rum-0586, Nr. 7 im Kapitel der wilden Gans). Das Verfahren steht dort und wird hier nicht wiederholt.</note>
-        <note type="interpretive_choice" target="#rum-0636-orig" n="widerumb" resp="#fyndling">„ebenfalls, ebenso“: nach „Auch“ leitet es eine weitere Zubereitung im Kapitel ein.</note>
-        <note type="interpretive_choice" target="#rum-0636-orig" n="Hiersebrey" resp="#fyndling">Hirsebrei, in dem die Ente gegart wird: Rumpolt gibt bei der Gans den gesottenen Vogel zum Schluss in den Brei und lässt ihn darin noch einmal sieden (rum-0586).</note>
-        <note type="interpretive_choice" target="#rum-0636-orig" n="Fett für den Brei" resp="#fyndling">Für die Ente nennt Rumpolt nichts; bei der Gans verlangt er „viel Feißt von der Ganß“. Übertragen heißt das: das Fett aus dem Entensud.</note>
-        <note type="interpretive_choice" target="#rum-0636-orig" n="Zerlegen und Garzeit der Ente" resp="#fyndling">Der Text nennt weder Zerlegen noch Zeit; bei der Gans heißt es „glid sie ab“ (zerlege sie), eine Garzeit fehlt auch dort.</note>
+        <note type="interpretive_choice" target="#rum-0636-orig" n="widerumb" resp="#fyndling" subtype="contextual">„ebenfalls, ebenso“: nach „Auch“ leitet es eine weitere Zubereitung im Kapitel ein.<list type="alternatives"><item>„nochmals, erneut“ als Verfahrensschritt<note type="rationale">So im Gänserezept rum-0586 („wasch jn widerumb auß“); hier steht kein vorausgehender Schritt, den es wiederholen könnte.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0636-orig" n="Hiersebrey" resp="#fyndling" subtype="lexical">Hirsebrei, in dem die Ente gegart wird: Rumpolt gibt bei der Gans den gesottenen Vogel zum Schluss in den Brei und lässt ihn darin noch einmal sieden (rum-0586).<list type="alternatives"><item>Hirsebrei als getrennt gereichte Beilage<note type="rationale">Vom Bezugsrezept nicht gedeckt; dort wird der Vogel im Brei gekocht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0636-orig" n="Fett für den Brei" resp="#fyndling" subtype="contextual">Für die Ente nennt Rumpolt nichts; bei der Gans verlangt er „viel Feißt von der Ganß“. Übertragen heißt das: das Fett aus dem Entensud.<list type="alternatives"><item>Abgeschöpftes Entenfett, bei Bedarf mit etwas Schmalz ergänzt<note type="rationale">Moderne Praxis, weil eine Ente weniger Fett liefert als eine Gans; vom Text nicht vorgegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0636-orig" n="Zerlegen und Garzeit der Ente" resp="#fyndling" subtype="contextual">Der Text nennt weder Zerlegen noch Zeit; bei der Gans heißt es „glid sie ab“ (zerlege sie), eine Garzeit fehlt auch dort.<list type="alternatives"><item>Ente zerlegt etwa 1 bis 1,5 Stunden sieden, bis sie zart ist<note type="rationale">Moderne Richtgröße für eine Wildente, nicht aus der Quelle.</note></item></list></note>
       </div>
     </back>
   </text>

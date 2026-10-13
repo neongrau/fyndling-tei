@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,7 +119,7 @@ Praxis. 500 g gemahlene Mandeln und eingeweichtes Brot von Hand durch ein feines
         <note type="gloss" target="#phw-140-orig" n="syblin" resp="#fyndling">Ein Sieblein ist ein kleines Sieb, ein Diminutiv von Sieb.</note>
         <note type="gloss" target="#phw-140-orig" n="mander" resp="#fyndling">Eine dialektale Schreibweise für „Mandel“, hier im Sinne der Mandelmasse - dieselbe Form findet sich im Buch auch für Mandelmilch.</note>
         <note type="gloss" target="#phw-140-orig" n="seutt" resp="#fyndling">„Las ain seutt don“ bedeutet „lass es einmal sieden“ oder „lass es einmal aufkochen“.</note>
-        <note type="interpretive_choice" target="#phw-140-orig" n="seydlin" resp="#fyndling">Die Mengenangabe „ain seydlin“ wird als 525 ml (rund 0,52 Liter) gelesen - im Buch die durchgängig belegte halbe Augsburger Maß.</note>
+        <note type="interpretive_choice" target="#phw-140-orig" n="seydlin" resp="#fyndling" subtype="philological">Die Mengenangabe „ain seydlin“ wird als 525 ml (rund 0,52 Liter) gelesen - im Buch die durchgängig belegte halbe Augsburger Maß.<list type="alternatives"><item>Losgelöst vom Buchkontext wäre auch ein Seidel von 0,35 oder 0,5 Litern denkbar, da historische Hohlmaße regional stark variierten.<note type="rationale">Innerhalb dieses Buchs lösen mehrere andere Rezepte mit derselben Mengenangabe „seydlin“ durchgängig auf 525 ml auf - diese buchinterne Konsistenz wiegt schwerer als eine allgemeine, unbelegte Annahme.</note></item></list></note>
       </div>
     </back>
   </text>

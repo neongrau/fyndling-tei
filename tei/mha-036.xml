@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -137,8 +142,8 @@ Praxis. Der größere Teil der Masse soll Fisch bleiben, Lebkuchen und Brot dien
         <note type="gloss" target="#mha-036-orig" n="arbes pruee" resp="#fyndling">Erbsenbrühe, ein Sud aus gekochten Erbsen, diente als fleischlose Gar- und Kochflüssigkeit für Fastenspeisen.</note>
         <note type="gloss" target="#mha-036-orig" n="wallsch wein" resp="#fyndling">Welscher Wein meint im Mittelhochdeutschen konkret italienischen Wein (von 'welsch' = romanisch/italienisch), nicht 'ausländischen Wein' allgemein.</note>
         <note type="gloss" target="#mha-036-orig" n="weinper" resp="#fyndling">Weinbeeren, hier vermutlich getrocknete Rosinen statt frischer Weintrauben, wie in ähnlichen Rezepten der Zeit üblich.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
-        <note type="interpretive_choice" target="#mha-036-orig" n="das merer tail visch" resp="#fyndling">Der größere Teil (Mehrheit) der Masse soll Fisch sein, nicht Brot oder Lebkuchen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#tail"/></note>
-        <note type="interpretive_choice" target="#mha-036-orig" n="weinper" resp="#fyndling">Getrocknete Rosinen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#mha-036-orig" n="das merer tail visch" resp="#fyndling">Der größere Teil (Mehrheit) der Masse soll Fisch sein, nicht Brot oder Lebkuchen.<list type="alternatives"><item>'tail' als 'Teig' gelesen, im Sinn von 'der übrige Teig soll Fisch sein'.<note type="rationale">Im Korpus wird 'tail' andernorts als 'Teig' gelesen, hier spricht die feststehende Redewendung 'mererteil' (= die Mehrheit) aber stark für die klassische Bedeutung 'Teil'.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#tail"/></note>
+        <note type="interpretive_choice" target="#mha-036-orig" n="weinper" resp="#fyndling">Getrocknete Rosinen.<list type="alternatives"><item>Frische Weintrauben.<note type="rationale">Wörtlich 'Weinbeeren', doch in Parallelrezepten des Korpus meist als getrocknete Rosinen belegt, besonders wenn sie fein gerieben werden sollen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
       </div>
     </back>
   </text>

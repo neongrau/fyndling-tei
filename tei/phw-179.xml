@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,8 +128,8 @@ Hecht in leicht gesalzenem Wasser oder Sud halb gar ziehen lassen. Parallel 250 
         <note type="gloss" target="#phw-179-orig" n="greuben" resp="#fyndling">Grieben, die knusprigen Rückstände vom Auslassen von Speck oder anderem tierischen Fett.</note>
         <note type="gloss" target="#phw-179-orig" n="schmaltz" resp="#fyndling">Schmalz, ausgelassenes tierisches Fett, hier vom Speck.</note>
         <note type="gloss" target="#phw-179-orig" n="brye" resp="#fyndling">Brühe, hier eine einfache Fleisch- oder Gemüsebrühe.</note>
-        <note type="interpretive_choice" target="#phw-179-orig" n="glauben" resp="#fyndling">Grieben. Im Kontext des Auslassens von Speck sind 'Grieben' die knusprigen Rückstände des Fettes.</note>
-        <note type="interpretive_choice" target="#phw-179-orig" n="las wol an ain ander syeden" resp="#fyndling">Kurzes, kräftiges Aufwallen, bis der Fisch durchgegart ist.</note>
+        <note type="interpretive_choice" target="#phw-179-orig" n="glauben" resp="#fyndling" subtype="lexical">Grieben. Im Kontext des Auslassens von Speck sind 'Grieben' die knusprigen Rückstände des Fettes.<list type="alternatives"><item>Glaube (im religiösen Sinne).<note type="rationale">Das Wort 'glauben' ist im Frühneuhochdeutschen ein Homograph. Im Kontext des Auslassens von Speck ist die Lesart 'Grieben' kulinarisch eindeutig, während 'Glaube' hier keinen Sinn ergeben würde. Das Rezept selbst verwendet an anderer Stelle die Schreibung 'greuben' für dasselbe Wort.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-179-orig" n="las wol an ain ander syeden" resp="#fyndling" subtype="contextual">Kurzes, kräftiges Aufwallen, bis der Fisch durchgegart ist.<list type="alternatives"><item>Längeres gemeinsames Köcheln.<note type="rationale">'wol sieden' nennt keine Dauer. Der Wortlaut lässt offen, ob ein kurzes Aufwallen oder ein längeres Köcheln gemeint ist; beide Lesarten sind mit dem Text vereinbar.</note></item></list></note>
       </div>
     </back>
   </text>

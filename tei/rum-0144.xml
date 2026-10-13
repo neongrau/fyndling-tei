@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -140,11 +145,11 @@ Praxis. Statt des Fischkessels genügt ein großer Topf, wegen Essig und Zitrone
         <note type="gloss" target="#rum-0144-orig" n="gesaltzen Limonien" resp="#fyndling">Salzzitronen, also in Salz eingelegte Zitronen; Limonie ist bei Rumpolt die Zitrone. Er verwendet sie mehrfach zu hellen Brühen, etwa zu Ochsenfüßen. Hier werden sie in dünne runde Scheiben geschnitten.</note>
         <note type="gloss" target="#rum-0144-orig" n="ein Sudt" resp="#fyndling">Ein Aufwallen: Die Brühe mit der Butter einmal aufsieden lassen.</note>
         <note type="gloss" target="#rum-0144-orig" n="schier" resp="#fyndling">Bald, gleich: kurz bevor man anrichtet.</note>
-        <note type="interpretive_choice" target="#rum-0144-orig" n="schon" resp="#fyndling">Konzessiv „selbst wenn“: Auch wenn man keinen Essig nimmt, wird die Brühe von der Butter weiß. Der Satz nennt eine Bedingung, die das Ergebnis nicht ändert.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
-        <note type="interpretive_choice" target="#rum-0144-orig" n="brenn Mehl darein" resp="#fyndling">Mehl einbrennen zum Binden, ohne Farbe. Der Text nennt kein Fett; historisch ist denkbar, dass das Mehl trocken oder direkt in der Brühe eingebrannt wird, bis sie dick ist.</note>
-        <note type="interpretive_choice" target="#rum-0144-orig" n="koch sie an die statt" resp="#fyndling">Gar kochen; der Folgesatz „Weñ die Fuͤß gesotten seyn“ setzt das Durchgaren voraus.</note>
-        <note type="interpretive_choice" target="#rum-0144-orig" n="kuͤl vnd seuber sie auß" resp="#fyndling">Abkühlen lassen und säubern, also Haare und Klauenreste entfernen.</note>
-        <note type="interpretive_choice" target="#rum-0144-orig" n="gesaltzen Limonien" resp="#fyndling">In Salz eingelegte Zitronen, in dünne runde Scheiben geschnitten; wie sie eingelegt sind, beschreibt Rumpolt hier nicht.</note>
+        <note type="interpretive_choice" target="#rum-0144-orig" n="schon" resp="#fyndling" subtype="contextual">Konzessiv „selbst wenn“: Auch wenn man keinen Essig nimmt, wird die Brühe von der Butter weiß. Der Satz nennt eine Bedingung, die das Ergebnis nicht ändert.<list type="alternatives"><item>Zeitlich „bereits“ („wenn du es bereits nicht sauer machst“).<note type="rationale">Ergibt im Satz keinen Sinn; der Punkt ist, dass die Butter auch ohne Säure für die weiße Farbe sorgt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="interpretive_choice" target="#rum-0144-orig" n="brenn Mehl darein" resp="#fyndling" subtype="contextual">Mehl einbrennen zum Binden, ohne Farbe. Der Text nennt kein Fett; historisch ist denkbar, dass das Mehl trocken oder direkt in der Brühe eingebrannt wird, bis sie dick ist.<list type="alternatives"><item>Mehl in etwas Butter hell anschwitzen, mit der Brühe aufgießen und aufkochen (heutige Praxis).<note type="rationale">Sicherer gegen Klümpchen und hält die Farbe hell; die Butter nennt der Text aber erst später, als Zutat zum Aufsieden.</note></item><item>Gebräunte Einbrenne.<note type="rationale">Widerspricht Rumpolts Ziel, das Gericht weiß zu machen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0144-orig" n="koch sie an die statt" resp="#fyndling" subtype="contextual">Gar kochen; der Folgesatz „Weñ die Fuͤß gesotten seyn“ setzt das Durchgaren voraus.<list type="alternatives"><item>Nur ankochen und später in der Brühe fertig garen.<note type="rationale">Nicht gedeckt: Die Füße sollen danach nur noch kurz mit den Zitronen sieden, und Rumpolt nennt sie ausdrücklich gesotten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0144-orig" n="kuͤl vnd seuber sie auß" resp="#fyndling" subtype="contextual">Abkühlen lassen und säubern, also Haare und Klauenreste entfernen.<list type="alternatives"><item>Die Füße zusätzlich ausbeinen.<note type="rationale">Möglich und angenehmer beim Essen, der Text sagt es aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0144-orig" n="gesaltzen Limonien" resp="#fyndling" subtype="lexical">In Salz eingelegte Zitronen, in dünne runde Scheiben geschnitten; wie sie eingelegt sind, beschreibt Rumpolt hier nicht.<list type="alternatives"><item>Frische Zitrone mit etwas Salz.<note type="rationale">Nur ein moderner Notbehelf; eine eingelegte Zitrone ist weicher und runder im Geschmack als frische Zitrone mit Salz.</note></item></list></note>
       </div>
     </back>
   </text>

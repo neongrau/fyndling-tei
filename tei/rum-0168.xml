@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,11 +113,11 @@ Praxis. Weiße Zwiebeln sehr fein schneiden, das Fleisch damit und mit Salz rund
         <note type="gloss" target="#rum-0168-orig" n="haͤßleu Stauden" resp="#fyndling">Haselstaude, also der Haselnussstrauch. Den Grund für den Haselspieß nennt Rumpolt selbst beim „Ungarischen Braten“ vom Kalbshaxen: Das Holz gebe dem Braten einen guten Geschmack und keinen seltsamen Nachgeschmack wie anderes Holz. Mehr zum Spieß auf der Grundlagen-Seite.</note>
         <note type="gloss" target="#rum-0168-orig" n="geschwindt hinweg" resp="#fyndling">Zügig durchbraten. Dieselbe Formel steht bei Rumpolt unter vielen Spießbraten; eine Zeit- oder Hitzeangabe enthält sie nicht.</note>
         <note type="gloss" target="#rum-0168-orig" n="Tuͤrken" resp="#fyndling">Rumpolts eigene Angabe: So zubereitet essen es die Türken gern. Ähnliche Schlusssätze setzt er auch unter andere Gerichte, etwa mit Polen oder Ungarn als Essern.</note>
-        <note type="interpretive_choice" target="#rum-0168-orig" n="den Braten … die Braten … brat sie" resp="#fyndling">Mehrere Bratenstücke auf einem Spieß: Der Text wechselt nach dem ersten Satz in die Mehrzahl („steck die Braten daran … so werden sie gut“).</note>
-        <note type="interpretive_choice" target="#rum-0168-orig" n="Castraun oder Hammel (Kapitel)" resp="#fyndling">Hammel, weil das Rezept im Kapitel „Von einem Castraun oder Hammel“ steht; der Rezepttext selbst nennt kein Tier.</note>
-        <note type="interpretive_choice" target="#rum-0168-orig" n="haͤßleu Stauden" resp="#fyndling">Adjektiv „häßlen“ (von Hasel), also Haselstaude; die Endung -leu steht wohl für -len, wie in „haͤßlen Spieß“ bei Rumpolts Ungarischem Braten und „heßlen Ruhte“ in einem Nachbarrezept.</note>
-        <note type="interpretive_choice" target="#rum-0168-orig" n="Zwiebeln beim Braten am Fleisch" resp="#fyndling">Der Text sagt nichts vom Abstreifen; Zwiebelbrei und Salz können am Fleisch bleiben und mitbraten.</note>
-        <note type="interpretive_choice" target="#rum-0168-orig" n="geschwindt hinweg brat" resp="#fyndling">Zügig durchbraten, ohne Zeit- oder Hitzeangabe; „schnell“ kann heiße Glut oder kleine Stücke meinen.</note>
+        <note type="interpretive_choice" target="#rum-0168-orig" n="den Braten … die Braten … brat sie" resp="#fyndling" subtype="contextual">Mehrere Bratenstücke auf einem Spieß: Der Text wechselt nach dem ersten Satz in die Mehrzahl („steck die Braten daran … so werden sie gut“).<list type="alternatives"><item>Ein einzelnes Bratenstück<note type="rationale">Der erste Satz spricht von „dem Braten“; für die Mehrzahl im Rest des Textes spricht aber der Wortlaut.</note></item><item>Die Nierenbraten aus dem vorangehenden Rezept Nr. 18<note type="rationale">Nr. 18 beginnt mit „die Braten, die hinter den Nieren sind“; ein Bezug ist möglich, aber im Text nicht ausgesprochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0168-orig" n="Castraun oder Hammel (Kapitel)" resp="#fyndling" subtype="contextual">Hammel, weil das Rezept im Kapitel „Von einem Castraun oder Hammel“ steht; der Rezepttext selbst nennt kein Tier.<list type="alternatives"><item>Lamm<note type="rationale">Das Lammkapitel folgt bei Rumpolt erst später; hier ist Hammel vorgegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0168-orig" n="haͤßleu Stauden" resp="#fyndling" subtype="orthographic">Adjektiv „häßlen“ (von Hasel), also Haselstaude; die Endung -leu steht wohl für -len, wie in „haͤßlen Spieß“ bei Rumpolts Ungarischem Braten und „heßlen Ruhte“ in einem Nachbarrezept.<list type="alternatives"><item>Eigenständige Form „häßleu“<note type="rationale">Ohne Parallele im Buch; die Bedeutung Hasel bleibt in jedem Fall gleich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0168-orig" n="Zwiebeln beim Braten am Fleisch" resp="#fyndling" subtype="contextual">Der Text sagt nichts vom Abstreifen; Zwiebelbrei und Salz können am Fleisch bleiben und mitbraten.<list type="alternatives"><item>Vor dem Aufstecken abstreifen oder abtupfen<note type="rationale">Heutige Praxis, damit feine Zwiebelreste über starker Glut nicht verbrennen; bei Rumpolt nicht verlangt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0168-orig" n="geschwindt hinweg brat" resp="#fyndling" subtype="contextual">Zügig durchbraten, ohne Zeit- oder Hitzeangabe; „schnell“ kann heiße Glut oder kleine Stücke meinen.<list type="alternatives"><item>Garzeit nach Kerntemperatur<note type="rationale">Moderne Absicherung: gleichmäßige Stücke, Hammel durchgaren und mit dem Thermometer prüfen.</note></item></list></note>
       </div>
     </back>
   </text>

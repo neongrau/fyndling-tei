@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,8 +99,8 @@ Was heißt Karwenada? Bei Rumpolt ist das ein wiederkehrender Gerichtsname, kein
 Praxis. Der Eintrag gibt keine Methode vor, deshalb behaupten wir keine. Wer etwas daraus machen will, findet in der Karwenada vom Hammelschlegel (rum-0181) die nächste Parallele im selben Buch, sollte sie aber als eigene Übertragung auf das Reh verstehen.</note>
         <note type="gloss" target="#rum-0377-orig" n="Karwenada" resp="#fyndling">Ein Gerichtsname, der bei Rumpolt immer wieder vorkommt, vom Hammel über Geflügel bis zum Fisch. Er steht nicht für ein einheitliches Verfahren. Beim Hammelschlegel (rum-0181) und bei den Hammelrippen (rum-0171) wird das Fleisch dünn geklopft und auf dem Rost rasch gebraten; bei der Kalbs-Hacksen (rum-0122) hängt es vorher eine Stunde im Rauch. Für das Reh gibt Rumpolt keine Beschreibung. Der Name erinnert an französisch carbonnade und deutsch Karbonade (gebratenes Rippen- oder Fleischstück).</note>
         <note type="gloss" target="#rum-0377-orig" n="Rehschlegel" resp="#fyndling">Der Schlegel ist die Keule, also das Hinterbein des Rehs. Beim Hammel heißt das entsprechende Stück Hammelschlegel (rum-0181).</note>
-        <note type="interpretive_choice" target="#rum-0377-orig" n="Karwenada" resp="#fyndling">Den Namen Karwenada stehen lassen, ohne eine Garmethode festzulegen: Rumpolt beschreibt das Gericht für das Reh nicht, und seine anderen Karwenada-Rezepte sind nicht einheitlich.</note>
-        <note type="interpretive_choice" target="#rum-0377-orig" n="Zubereitung der Rehkeule" resp="#fyndling">Historisch am nächsten liegt das Verfahren des Hammelschlegels (rum-0181): das Fleisch dünn vom Knochen schneiden, klopfen, salzen, pfeffern und auf dem Rost rasch braten. Für das Reh ist das aus dem Buch erschlossen, nicht belegt.</note>
+        <note type="interpretive_choice" target="#rum-0377-orig" n="Karwenada" resp="#fyndling" subtype="contextual">Den Namen Karwenada stehen lassen, ohne eine Garmethode festzulegen: Rumpolt beschreibt das Gericht für das Reh nicht, und seine anderen Karwenada-Rezepte sind nicht einheitlich.<list type="alternatives"><item>Gericht vom Rost: dünn geschnittene, geklopfte Scheiben, rasch auf dem Rost gebraten<note type="rationale">So beim Hammelschlegel (rum-0181) und bei den Hammelrippen (rum-0171), bei der Kalbs-Hacksen (rum-0122) mit Räuchern davor. Für die Rehkeule ist das nur eine Parallele, kein Befund, zumal Rumpolt in rum-0171 auch Sieden und Dämpfen zulässt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0377-orig" n="Zubereitung der Rehkeule" resp="#fyndling" subtype="contextual">Historisch am nächsten liegt das Verfahren des Hammelschlegels (rum-0181): das Fleisch dünn vom Knochen schneiden, klopfen, salzen, pfeffern und auf dem Rost rasch braten. Für das Reh ist das aus dem Buch erschlossen, nicht belegt.<list type="alternatives"><item>Keine Garmethode behaupten, nur den Namen wiedergeben<note type="rationale">Das ist die vorsichtige Lesart für die Praxis, weil dieser Eintrag selbst keinen Garschritt nennt.</note></item></list></note>
       </div>
     </back>
   </text>

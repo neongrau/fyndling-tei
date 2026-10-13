@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,9 +125,9 @@ Praxis. Altbackenes Weißbrot verwenden, da es fester ist und den Teig beim Durc
         <note type="gloss" target="#w1-212-orig" n="vvll" resp="#fyndling">Eine Füllung oder Farce, die hier als Aufstrich dient. Die genaue Zusammensetzung wird nicht genannt, nur die gewünschte Farbe.</note>
         <note type="gloss" target="#w1-212-orig" n="gel" resp="#fyndling">Wörtlich „gelb". Die Gleichsetzung mit Safran als Ersatzfarbe für die grüne Füllung ist naheliegend, da Safran das gängige Gelbfärbemittel der Zeit war, im Text aber nicht ausdrücklich genannt.</note>
         <note type="gloss" target="#w1-212-orig" n="taig" resp="#fyndling">Ein dünnflüssiger Teig oder Backteig, hier zum Eintauchen der gefüllten Brotscheiben vor dem Backen.</note>
-        <note type="interpretive_choice" target="#w1-212-orig" n="grun" resp="#fyndling">grün (Farbe)<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
-        <note type="interpretive_choice" target="#w1-212-orig" n="seidem" resp="#fyndling">ungeklärt - vermutlich ein bedeutungsleeres Füllwort vor der Bedingung ('wenn du keine grüne Füllung hast')</note>
-        <note type="interpretive_choice" target="#w1-212-orig" n="pachs (Back-/Garverfahren)" resp="#fyndling">Text nennt nur 'backe es', ohne Medium (Pfanne mit Fett vs. Ofen) oder Gargrad der Panade zu spezifizieren.</note>
+        <note type="interpretive_choice" target="#w1-212-orig" n="grun" resp="#fyndling" subtype="lexical">grün (Farbe)<list type="alternatives"><item>roh / unverarbeitet<note type="rationale">Die allgemeine Korpus-Glosse für 'grun' kann auch 'roh' oder 'unverarbeitet' bedeuten. Im Kontext einer Füllung ist dies jedoch weniger plausibel, da die Alternative Safran eine Farbe ist.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
+        <note type="interpretive_choice" target="#w1-212-orig" n="seidem" resp="#fyndling" subtype="philological" cert="unknown">ungeklärt - vermutlich ein bedeutungsleeres Füllwort vor der Bedingung ('wenn du keine grüne Füllung hast')<list type="alternatives"><item>Scheiben<note type="rationale">Orthographisch naheliegend, aber im selben Rezept wird das Wort für Scheiben an anderer Stelle als 'scheybem' geschrieben - die Abweichung spricht gegen diese Lesung. Kein Wörterbuchbeleg für 'seidem' als Scheiben.</note></item><item>Seidentuch<note type="rationale">'Seidem' kann im Mittelhochdeutschen auf 'Seide' verweisen, ist aber im Kontext des Bestreichens einer Füllung kulinarisch nicht sinnvoll.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-212-orig" n="pachs (Back-/Garverfahren)" resp="#fyndling" subtype="contextual">Text nennt nur 'backe es', ohne Medium (Pfanne mit Fett vs. Ofen) oder Gargrad der Panade zu spezifizieren.<list type="alternatives"><item>Anbacken in Fett in der Pfanne über offenem Feuer<note type="rationale">Naheliegend für eine schnelle Garküchen-Zubereitung. Auch der B4-Zwilling ergänzt dies, aber ebenfalls nur als eigene, unbelegte Interpretation.</note></item><item>kurzes, zügiges Anbacken mit weniger vollständig durchgegarter Panade<note type="rationale">Passt zur schnellen Garküchen-Praxis, ist aber textlich nicht gestützt - die moderne Praxis-Empfehlung (vollständig durchgebacken) steht dazu in preparation_note.</note></item></list></note>
       </div>
     </back>
   </text>

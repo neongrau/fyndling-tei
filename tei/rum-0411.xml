@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,8 +110,8 @@ Essig und Salbei: im Sud oder danach? Die Zeile lässt beides zu. Essig und Salb
 Praxis. Wer das Gericht nachkochen will, ergänzt moderne Handgriffe, die nicht von Rumpolt stammen: die Brust in gesalzenem Wasser weich sieden, auskühlen lassen, aufschneiden und mit Essig, Salz und frischen Salbeiblättern anmachen. Zeit und Mengen bleiben freie Wahl. Frisches Wildschwein gibt es beim Wildhändler oder Jäger; es braucht eine durchgehende Kühlung.</note>
         <note type="gloss" target="#rum-0411-orig" n="abgesotten" resp="#fyndling">Partizip zu „absieden“: fertig sieden, gar kochen. Die Formel „kalt abgesotten“ verwendet Rumpolt öfter, etwa beim Rindfleisch (Nr. 55 im Ochsenkapitel), bei Ochsenfüßen und beim Wildschweinhinterlauf, den er „in lauterm Saltz abgesotten/ vñ kalt lassen werden“ beschreibt.</note>
         <note type="gloss" target="#rum-0411-orig" n="Salbey" resp="#fyndling">Salbei (Salvia officinalis).</note>
-        <note type="interpretive_choice" target="#rum-0411-orig" n="in Saltz/ Essig vnd Salbey" resp="#fyndling">Offen gelassen: Der Text nennt Salz, Essig und Salbei, sagt aber nicht, ob sie in den Sud kommen oder erst zum kalten Fleisch. Für das Salz liegt der Sud am nächsten, denn bei derselben Brust im folgenden Rezept lässt Rumpolt sie in Wasser setzen, gut salzen, gar sieden und kalt werden.</note>
-        <note type="interpretive_choice" target="#rum-0411-orig" n="Salbey (frisch oder getrocknet)" resp="#fyndling">Offen: Rumpolt sagt weder, in welcher Form der Salbei verwendet wird, noch, ob er mitkocht oder aufgelegt wird.</note>
+        <note type="interpretive_choice" target="#rum-0411-orig" n="in Saltz/ Essig vnd Salbey" resp="#fyndling" subtype="contextual">Offen gelassen: Der Text nennt Salz, Essig und Salbei, sagt aber nicht, ob sie in den Sud kommen oder erst zum kalten Fleisch. Für das Salz liegt der Sud am nächsten, denn bei derselben Brust im folgenden Rezept lässt Rumpolt sie in Wasser setzen, gut salzen, gar sieden und kalt werden.<list type="alternatives"><item>Essig und Salbei kochen im Sud mit<note type="rationale">Möglich: Essig im Sud kennt Rumpolt auch sonst beim Sieden. Belegt ist es für diese Zeile nicht.</note></item><item>Das Fleisch gar kochen, auskühlen lassen und kalt mit Essig, Salz und Salbei anmachen<note type="rationale">Die naheliegende Ausführung für die heutige Küche und so in den Zubereitungshinweisen vorgeschlagen; vgl. die kalten Ochsenfüße „mit Essig vnd grüner Pettersilgen“. Aus dem Text allein nicht entscheidbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0411-orig" n="Salbey (frisch oder getrocknet)" resp="#fyndling" subtype="contextual">Offen: Rumpolt sagt weder, in welcher Form der Salbei verwendet wird, noch, ob er mitkocht oder aufgelegt wird.<list type="alternatives"><item>Frische Salbeiblätter, mit dem kalten Fleisch angemacht<note type="rationale">Moderne Praxis-Wahl für das Nachkochen, keine Angabe Rumpolts.</note></item></list></note>
       </div>
     </back>
   </text>

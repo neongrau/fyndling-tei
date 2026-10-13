@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,12 +134,12 @@ Praxis. Braten in Pfanne oder auf dem Rost, das Gerät nennt der Text nicht. Wei
         <note type="gloss" target="#rum-0270-orig" n="trucken werden" resp="#fyndling">Trocken werden lassen, also die nasse Haut nach dem kalten Wasser abtrocknen lassen. Wo und wie lange, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0270-orig" n="eynmachen" resp="#fyndling">Bei Fleisch meint ‚einmachen‘ in Rumpolts Buch durchgehend: in Brühe oder Soße anrichten, nicht konservieren. ‚Säuerlich‘, ‚gelb oder weiß‘ beschreibt diese Soße. Die Lesart stützt sich auf den Sprachgebrauch des Buchs, einen eigenen Küchenbeleg im Wörterbuch gibt es nicht.</note>
         <note type="gloss" target="#rum-0270-orig" n="breñ nur ein wenig Mehl drein" resp="#fyndling">Einbrennen: Mehl in Fett anschwitzen, um die Soße zu binden. Eine Farbe nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0270-orig" n="eynmachen" resp="#fyndling">In Brühe oder Soße anrichten: So verwendet Rumpolt das Wort bei Fleisch im ganzen Buch, und ‚säurlich … gelb oder weiß‘ beschreibt die Soße.</note>
-        <note type="interpretive_choice" target="#rum-0270-orig" n="breñ nur ein wenig Mehl drein" resp="#fyndling">Mehl einbrennen, um die Soße zu binden, ohne Farbvorgabe: Rumpolt schreibt die Wendung im Buch durchgehend ohne Farbangabe.</note>
-        <note type="interpretive_choice" target="#rum-0270-orig" n="Verhältnis von Speck zu Fleisch" resp="#fyndling">Keine Angabe: Rumpolt verlangt nur, beides durcheinander zu hacken.</note>
-        <note type="interpretive_choice" target="#rum-0270-orig" n="Hinterkeulen Fleisch" resp="#fyndling">Keulenfleisch vom Spanferkel, wie das Kapitel vorgibt.</note>
-        <note type="interpretive_choice" target="#rum-0270-orig" n="Garen der Würste" resp="#fyndling">Rumpolt nennt nur Braten oder Einmachen, eine Gardauer gibt er nicht an.</note>
-        <note type="interpretive_choice" target="#rum-0270-orig" n="Flüssigkeit beim säuerlichen Einmachen" resp="#fyndling">Offen: Der Text sagt nur ‚säurlich eynmachen‘ und nennt weder Brühe noch Säure.</note>
+        <note type="interpretive_choice" target="#rum-0270-orig" n="eynmachen" resp="#fyndling" subtype="contextual">In Brühe oder Soße anrichten: So verwendet Rumpolt das Wort bei Fleisch im ganzen Buch, und ‚säurlich … gelb oder weiß‘ beschreibt die Soße.<list type="alternatives"><item>Konservieren, haltbar einmachen<note type="rationale">Der heutige Wortsinn. Frische Würste, die sofort gebraten oder angerichtet werden, und die Farbangabe der Soße passen nicht dazu; ein Wörterbuchbeleg für die Küchenbedeutung fehlt allerdings, die Lesart ruht auf dem Buchkontext.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0270-orig" n="breñ nur ein wenig Mehl drein" resp="#fyndling" subtype="lexical">Mehl einbrennen, um die Soße zu binden, ohne Farbvorgabe: Rumpolt schreibt die Wendung im Buch durchgehend ohne Farbangabe.<list type="alternatives"><item>Mehl dunkel anrösten, bräunen<note type="rationale">Aus dem Text nicht ableitbar. Weil die Soße gelb oder weiß sein kann, liegt helles Anschwitzen näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0270-orig" n="Verhältnis von Speck zu Fleisch" resp="#fyndling" subtype="contextual">Keine Angabe: Rumpolt verlangt nur, beides durcheinander zu hacken.<list type="alternatives"><item>Ein festes Verhältnis nach heutiger Bratwurstpraxis<note type="rationale">Möglich als moderne Wahl, aber nicht aus dem Text; deshalb wird kein Verhältnis vorgegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0270-orig" n="Hinterkeulen Fleisch" resp="#fyndling" subtype="contextual">Keulenfleisch vom Spanferkel, wie das Kapitel vorgibt.<list type="alternatives"><item>Keulenfleisch von einem anderen Schwein<note type="rationale">Der Satz selbst nennt das Tier nicht, nur die Därme sind ausdrücklich ‚von der Spensaw‘. Heute ist Schweinekeule vom Metzger der praktische Ersatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0270-orig" n="Garen der Würste" resp="#fyndling" subtype="contextual">Rumpolt nennt nur Braten oder Einmachen, eine Gardauer gibt er nicht an.<list type="alternatives"><item>Vollständig durchgaren bis etwa 70 °C Kerntemperatur<note type="rationale">Moderne Praxis für rohes Hack in beiden Varianten; das kalte Wasser gart nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0270-orig" n="Flüssigkeit beim säuerlichen Einmachen" resp="#fyndling" subtype="contextual">Offen: Der Text sagt nur ‚säurlich eynmachen‘ und nennt weder Brühe noch Säure.<list type="alternatives"><item>Brühe mit Essig oder Wein<note type="rationale">Bei Rumpolt häufig und naheliegend, hier aber nicht genannt; deshalb nur als Möglichkeit.</note></item></list></note>
       </div>
     </back>
   </text>

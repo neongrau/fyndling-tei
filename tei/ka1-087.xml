@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -104,7 +109,7 @@ Aufkochen. Erst durch kurzes Aufkochen wird aus der gestoßenen, durchgezogenen 
 Praxis. Älteren, also kräftiger ausgereiften Knoblauch mit Weißbrot und Essig im Mörser zu einer streichfähigen Paste zerstoßen und kurz aufkochen, bis die Salse bindet. Das Weißbrot bindet, der Essig würzt und macht haltbar. Mengenverhältnisse nennt der Text nicht - nach Geschmack dosieren.</note>
         <note type="gloss" target="#ka1-087-orig" n="Saltz" resp="#fyndling">Im Mittelalter bezeichnete ‚Saltz‘ oft eine würzige Tunke oder Salse, nicht nur Speisesalz.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
         <note type="gloss" target="#ka1-087-orig" n="gestossen" resp="#fyndling">Zutaten wurden im Mörser zerstoßen, um eine feine Paste oder Emulsion zu erhalten.</note>
-        <note type="interpretive_choice" target="#ka1-087-orig" n="Saltz" resp="#fyndling">Die Lesart ‚Salse‘ (würzige Tunke) wurde gewählt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#ka1-087-orig" n="Saltz" resp="#fyndling" subtype="lexical">Die Lesart ‚Salse‘ (würzige Tunke) wurde gewählt.<list type="alternatives"><item>Die Lesart ‚Salz‘ (Speisesalz) wäre eine Alternative.<note type="rationale">Der Kontext ‚mach ain saltz‘ und die Kombination der Zutaten (Knoblauch, Brot, Essig) sprechen stark für eine Sauce und nicht für reines Speisesalz. Die historische Verwendung von ‚Saltz‘ als Salse ist gut belegt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
       </div>
     </back>
   </text>

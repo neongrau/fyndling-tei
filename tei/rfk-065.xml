@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -128,10 +133,10 @@ Praxis. Feste Äpfel nehmen und das Kerngehäuse entfernen, entweder durch Aush�
         <note type="gloss" target="#rfk-065-orig" n="heffte … czu samen" resp="#fyndling">Zusammenheften, zusammenstecken - hier mit einem kleinen Holzspießchen (hulczen spisgin).</note>
         <note type="gloss" target="#rfk-065-orig" n="degel" resp="#fyndling">Tiegel, ein Kochgefäß. Die Bedeutung ergibt sich hier aus dem Zusammenhang „backe isz in eime degel mit win“.</note>
         <note type="gloss" target="#rfk-065-orig" n="houelich" resp="#fyndling">Höfisch, fein - ein Qualitätsurteil des Schreibers über das Gericht.</note>
-        <note type="interpretive_choice" target="#rfk-065-orig" n="winbern" resp="#fyndling">Weinbeeren; für die Praxis getrocknet (Rosinen oder Korinthen). Regional heißt „Weinbeere“ auch die getrocknete Beere, und Feigen und Honig sprechen für eine Füllung aus Trockenfrüchten.</note>
-        <note type="interpretive_choice" target="#rfk-065-orig" n="guden dingen" resp="#fyndling">Nicht festgelegt: weitere Zutaten, die der Text nicht benennt.</note>
-        <note type="interpretive_choice" target="#rfk-065-orig" n="heffte isz mit eime hulczen spisgin czu samen" resp="#fyndling">Der gefüllte Apfel wird mit einem Holzspießchen zusammengesteckt; wie er dafür geschnitten wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rfk-065-orig" n="backe isz in eime degel mit win" resp="#fyndling">Im Tiegel mit Wein garen; die Hitzequelle bleibt offen, der Wortlaut legt das Garen im Gefäß über dem Feuer nahe.</note>
+        <note type="interpretive_choice" target="#rfk-065-orig" n="winbern" resp="#fyndling" subtype="lexical">Weinbeeren; für die Praxis getrocknet (Rosinen oder Korinthen). Regional heißt „Weinbeere“ auch die getrocknete Beere, und Feigen und Honig sprechen für eine Füllung aus Trockenfrüchten.<list type="alternatives"><item>frische Weintrauben<note type="rationale">winber ist als Weintraube/Weinbeere belegt, und der Text nennt kein Trocknen. Frische Trauben sind deshalb nicht auszuschließen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-065-orig" n="guden dingen" resp="#fyndling" subtype="contextual">Nicht festgelegt: weitere Zutaten, die der Text nicht benennt.<list type="alternatives"><item>weitere Würzzutaten<note type="rationale">Die Wendung steht direkt neben wurczen und könnte die Würzung fortsetzen.</note></item><item>weitere Füllzutaten<note type="rationale">Die gehackte Masse wird in die Äpfel gefüllt; „gute Dinge“ könnten ebenso weitere Bestandteile dieser Füllung meinen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-065-orig" n="heffte isz mit eime hulczen spisgin czu samen" resp="#fyndling" subtype="contextual">Der gefüllte Apfel wird mit einem Holzspießchen zusammengesteckt; wie er dafür geschnitten wird, sagt der Text nicht.<list type="alternatives"><item>abgeschnittenen Deckel wieder aufstecken<note type="rationale">Ein ganzer Apfel wird oben geöffnet, gefüllt und der Deckel mit dem Spießchen wieder befestigt.</note></item><item>zwei Apfelhälften zusammenstecken<note type="rationale">czu samen heften kann auch das Zusammenfügen zweier Teile um die Füllung meinen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-065-orig" n="backe isz in eime degel mit win" resp="#fyndling" subtype="contextual">Im Tiegel mit Wein garen; die Hitzequelle bleibt offen, der Wortlaut legt das Garen im Gefäß über dem Feuer nahe.<list type="alternatives"><item>im Ofen backen<note type="rationale">„backen“ kann das Garen im Ofen meinen; der Tiegel könnte in den Ofen gestellt worden sein. Der Text nennt keinen Ofen.</note></item></list></note>
       </div>
     </back>
   </text>

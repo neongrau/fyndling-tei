@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,7 +131,7 @@ Praxis. Eine Hechtportion (ersatzweise Zander oder ein anderer fester Süßwasse
         <note type="gloss" target="#sev-066-orig" n="Štika protažená s cibulí" resp="#fyndling">Wörtlich: ‚Hecht durchgezogen mit Zwiebeln'. ‚Durchziehen' kann hier für das Eindicken der Zwiebeln stehen, die dann als sämige Komponente dienen.</note>
         <note type="gloss" target="#sev-066-orig" n="oblup štiku čistě" resp="#fyndling">Wörtlich ‚schäle den Hecht sauber'. Dies bezieht sich wahrscheinlich auf das sorgfältige Enthäuten des Fisches nach dem ersten Dünstvorgang, um eine gräten- und schuppenfreie, feine Textur zu erzielen.</note>
         <note type="gloss" target="#sev-066-orig" n="protáhni cibuli dobře hustě" resp="#fyndling">Wörtlich ‚ziehe die Zwiebeln gut dick durch'. Dies wird als Reduzieren oder Pürieren der Zwiebeln interpretiert, um eine sämige Konsistenz zu erreichen, die als Bindemittel oder Sauce dient.</note>
-        <note type="interpretive_choice" target="#sev-066-orig" n="oblup štiku čistě" resp="#fyndling">Der Hecht wird nach dem ersten Dünsten enthäutet.</note>
+        <note type="interpretive_choice" target="#sev-066-orig" n="oblup štiku čistě" resp="#fyndling">Der Hecht wird nach dem ersten Dünsten enthäutet.<list type="alternatives"><item>Der Hecht wird vor dem Garen sorgfältig entschuppt.<note type="rationale">Das Verb obloupit kann auch das Entfernen von Schuppen bezeichnen. Die Reihenfolge im Rezept (erst dünsten, dann schälen, dann in kaltes Wasser) spricht jedoch klar für das Enthäuten nach dem Vorgaren.</note></item></list></note>
       </div>
     </back>
   </text>

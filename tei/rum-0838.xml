@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,8 +104,8 @@ Welche Brühe? Das sagt der Text nicht. Am nächsten am Wortlaut bleibt man, wen
 Praxis. Vogelart, Mengen, Würzung und Garzeit nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0838-orig" n="auff die Bruͤh" resp="#fyndling">Wörtlich „auf die Brühe“. Rumpolt gebraucht die Wendung für Gebratenes, das auf einer Brühe angerichtet wird, etwa beim Lammbraten (rum-0221) oder bei der Wildgans (rum-0594). Welche Brühe hier gemeint ist, sagt die Zeile nicht.</note>
         <note type="gloss" target="#rum-0838-orig" n="Kleine gebraten Voͤgel" resp="#fyndling">Rumpolt nennt keine bestimmte Vogelart. Der Abschnitt handelt „von allerley kleinen Voͤgeln“.</note>
-        <note type="interpretive_choice" target="#rum-0838-orig" n="auff die Bruͤh" resp="#fyndling">Die Vögel werden gebraten und dann auf einer Brühe angerichtet. So verwendet Rumpolt die Wendung auch an anderen Stellen des Buchs, etwa bei der gebratenen Leber, die er auf eine Hennenbrühe legt (rum-0650).</note>
-        <note type="interpretive_choice" target="#rum-0838-orig" n="Bruͤh (welche Brühe)" resp="#fyndling">Eine Fleischbrühe aus Rumpolts Küche, wie sie in den Nachbarrezepten vorkommt, etwa die Rindfleischbrühe mit unreifen Trauben in Nr. 1 (rum-0836) oder die Hennenbrühe bei der gebratenen Leber (rum-0650). Welche gemeint ist, sagt diese Zeile nicht.</note>
+        <note type="interpretive_choice" target="#rum-0838-orig" n="auff die Bruͤh" resp="#fyndling" subtype="contextual">Die Vögel werden gebraten und dann auf einer Brühe angerichtet. So verwendet Rumpolt die Wendung auch an anderen Stellen des Buchs, etwa bei der gebratenen Leber, die er auf eine Hennenbrühe legt (rum-0650).<list type="alternatives"><item>Die gebratenen Vögel werden in der Brühe noch einmal kurz mitgegart<note type="rationale">Die Zeile nennt keinen Garschritt nach dem Braten; möglich, aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0838-orig" n="Bruͤh (welche Brühe)" resp="#fyndling" subtype="contextual">Eine Fleischbrühe aus Rumpolts Küche, wie sie in den Nachbarrezepten vorkommt, etwa die Rindfleischbrühe mit unreifen Trauben in Nr. 1 (rum-0836) oder die Hennenbrühe bei der gebratenen Leber (rum-0650). Welche gemeint ist, sagt diese Zeile nicht.<list type="alternatives"><item>Praxis: keine bestimmte Brühe festlegen, die gebratenen Vögel einfach auf etwas Brühe anrichten<note type="rationale">Hält sich an den Wortlaut und ergänzt nichts, was Rumpolt nicht nennt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@
 
 Praxis. Wildschweinleber immer vollständig durchgaren.</note>
         <note type="gloss" target="#b4-204-orig" n="mach auch also" resp="#fyndling">Stehende Verweisformel im Korpus: ‚bereite ebenso zu‘ - zeigt auf die Zubereitungsweise eines vorausgehenden Rezepts, ersetzt eine eigene Anleitung (vgl. auch mha-070).</note>
-        <note type="interpretive_choice" target="#b4-204-orig" n="mach auch also" resp="#fyndling">Verweis-Formel: bezieht sich vermutlich auf die unmittelbar vorausgehende Rinderleber-Zubereitung (b4-203: rösten, mehrstündig wässern, gargaren, kalt stellen, mit einer Essig-Gewürz-Masse verarbeiten, nochmals kalt stellen) - dieselbe Formel bestätigt sich im nahezu wortgleichen Rezept mha-070.</note>
-        <note type="interpretive_choice" target="#b4-204-orig" n="gute Brühe dazugeben" resp="#fyndling">Zusätzlicher, in b4-204 eigens genannter Schritt - im einfachsten Verständnis eine Servier- oder Anrichtesauce, die am Ende zur gegarten Leber gegeben wird.</note>
-        <note type="interpretive_choice" target="#b4-204-orig" n="Gargrad der Leber" resp="#fyndling">Nicht genannt - text_modern trifft keine Aussage über den Gargrad.</note>
+        <note type="interpretive_choice" target="#b4-204-orig" n="mach auch also" resp="#fyndling" subtype="contextual">Verweis-Formel: bezieht sich vermutlich auf die unmittelbar vorausgehende Rinderleber-Zubereitung (b4-203: rösten, mehrstündig wässern, gargaren, kalt stellen, mit einer Essig-Gewürz-Masse verarbeiten, nochmals kalt stellen) - dieselbe Formel bestätigt sich im nahezu wortgleichen Rezept mha-070.<list type="alternatives"><item>Die Formel verweist auf eine andere, im Buch nicht mehr auffindbare oder nur allgemein vorausgesetzte Zubereitung; b4-204 wäre dann eine eigenständige Kurzanweisung (Leber garen, mit Brühe servieren).<note type="rationale">Die Verweisformel selbst nennt kein Zielrezept; die Nachbarschaft zu b4-203 (gleiches Organ, gleiches Wort ‚prue‘) macht diese Lesart naheliegend, aber nicht bewiesen - auch mha-070 bestätigt als Twin nur die Formel selbst, nicht ihr konkretes Ziel.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-204-orig" n="gute Brühe dazugeben" resp="#fyndling" subtype="contextual">Zusätzlicher, in b4-204 eigens genannter Schritt - im einfachsten Verständnis eine Servier- oder Anrichtesauce, die am Ende zur gegarten Leber gegeben wird.<list type="alternatives"><item>Die Brühe könnte auch die Brühe oder das Wasser ersetzen, in dem die Leber in b4-203 drei Stunden gewaschen wird, oder eine vereinfachte Fassung der dortigen Essig-Gewürz-Masse sein.<note type="rationale">Der Text legt den Zeitpunkt der Brühe-Zugabe nicht fest; beide Lesarten sind mit dem Wortlaut vereinbar, keine wird durch den Twin oder eine Edition gestützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-204-orig" n="Gargrad der Leber" resp="#fyndling" subtype="contextual">Nicht genannt - text_modern trifft keine Aussage über den Gargrad.<list type="alternatives"><item>Folgt man der referenzierten Technik aus b4-203, wäre die Leber zunächst geröstet und dann gar gebraten (‚prat sy dann gar‘), bevor sie kalt weiterverarbeitet wird.<note type="rationale">Nur gültig, wenn die Verweis-Lesart oben zutrifft; ohne diesen Rückverweis liesse der knappe Text auch eine kürzere Zubereitung offen. Für die Praxis gilt unabhängig davon: vollständig durchgaren (siehe Praxis-Absatz).</note></item></list></note>
       </div>
     </back>
   </text>

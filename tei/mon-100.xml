@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,8 +132,8 @@ Praxis. Trauben, Äpfel und Birnen weich köcheln und zu einem Mus verarbeiten. 
         <note type="gloss" target="#mon-100-orig" n="varib" resp="#fyndling">Farbe. Die Farbgebung wird im Text als eigenständiges Zubereitungsziel behandelt, getrennt vom Geschmack - typisch für die spätmittelalterliche Tafelästhetik, bei der Farbkontraste (hier: dunkles gegen helles Mus) einen eigenen Stellenwert hatten.</note>
         <note type="gloss" target="#mon-100-orig" n="muß" resp="#fyndling">Mus. Ein Brei oder Püree aus zerstoßenen Früchten oder anderen Zutaten.</note>
         <note type="gloss" target="#mon-100-orig" n="salcz ein maß" resp="#fyndling">Salz nach [rechtem] Maß, also eine angemessene, wohldosierte Menge - keine Mini-Prise. Der wortnahe Zwilling im Kochbuch M5919 ("salcz sein mas") verwendet dieselbe Formel und bestätigt sie als feste, korpusweite Wendung für 'nach eigenem Ermessen salzen'.</note>
-        <note type="interpretive_choice" target="#mon-100-orig" n="ein maß" resp="#fyndling">Salz nach [gutem] Maß, also eine angemessene, bewusst dosierte Menge - nicht als Hauptwürze, sondern zur Kontrastierung der Süße.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#ein-mass"/></note>
-        <note type="interpretive_choice" target="#mon-100-orig" n="weinper" resp="#fyndling">Weinbeeren = Rosinen, die korpusweite Standardlesart, da der Text keinen ausdrücklichen Frisch-Marker nennt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#mon-100-orig" n="ein maß" resp="#fyndling">Salz nach [gutem] Maß, also eine angemessene, bewusst dosierte Menge - nicht als Hauptwürze, sondern zur Kontrastierung der Süße.<list type="alternatives"><item>Eine Prise (vage Kleinstmenge)<note type="rationale">Naheliegend für moderne Köche, aber korpusweit widerlegt: 'ein maß' + Zutat ist im Mondseer/CoReMA-Korpus durchgehend eine konkrete, bemessene Mengenangabe (z. B. 'ein maß honig dar zu', 'ein maß wasser'), nie eine vage Kleinstmenge. Der wortgleiche Zwilling m5919-040 hat exakt denselben Satz ('salcz sein mas') und wird dort als 'salze es nach deinem Maß' übersetzt - das stützt die Lesart 'nach Maß/Ermessen' gegenüber 'Prise'.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#ein-mass"/></note>
+        <note type="interpretive_choice" target="#mon-100-orig" n="weinper" resp="#fyndling">Weinbeeren = Rosinen, die korpusweite Standardlesart, da der Text keinen ausdrücklichen Frisch-Marker nennt.<list type="alternatives"><item>Frische Weintrauben.<note type="rationale">In dieser Obst-Mischung mit Äpfeln und Birnen kulinarisch nicht unplausibel (anders als in reinen Mandel-Mus-Kontexten), aber ohne Textbeleg - der Zwilling m5919-040 legt sich an derselben Stelle ebenfalls nicht fest.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
       </div>
     </back>
   </text>

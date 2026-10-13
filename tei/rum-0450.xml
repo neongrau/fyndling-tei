@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,11 +123,11 @@ Praxis. Den Kopf beim Jäger oder Wildhändler anfragen. Nötig sind ein Topf, d
         <note type="gloss" target="#rum-0450-orig" n="an die statt sieden" resp="#fyndling">Rumpolts feste Wendung für „gar kochen“. Eine Zeit nennt er dabei nicht.</note>
         <note type="gloss" target="#rum-0450-orig" n="Schauwessen" resp="#fyndling">Schauessen: eine Speise, die vor allem zur Zier auf die Tafel kommt. Rumpolt nennt den Kopf so, wenn die Hörner vergoldet oder versilbert sind.</note>
         <note type="gloss" target="#rum-0450-orig" n="Gallrat" resp="#fyndling">Gallerte oder Sülze: erstarrte, kollagenreiche Brühe (frühneuhochdeutsch auch galreide). „In die mitt setzen“ heißt, den Kopf mittig in die Gallerte zu stellen.</note>
-        <note type="interpretive_choice" target="#rum-0450-orig" n="laß an die statt sieden (Garzeit)" resp="#fyndling">Gar sieden, bis der Kopf durch ist. Die Lesart „gar“ stützt sich auf Rumpolts häufiges „an die statt sieden“ im selben Buch; eine Zeit nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0450-orig" n="and die statt" resp="#fyndling">Zu lesen als „an die statt“: So steht es im Druck von 1581, und so schreibt Rumpolt die Wendung auch sonst.</note>
-        <note type="interpretive_choice" target="#rum-0450-orig" n="sampt den Hoͤrnern ... sieden biß das Haar abgehet" resp="#fyndling">Die Hörner bleiben beim Sieden am Kopf, entfernt wird nur das Haar. Von der Haut sagt der Text nichts; sie bleibt also dran.</note>
-        <note type="interpretive_choice" target="#rum-0450-orig" n="die Hoͤrner vberguͤlden oder vbersilbern" resp="#fyndling">Nur die Hörner werden vergoldet oder versilbert, nicht das Fleisch. Womit, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0450-orig" n="in ein Gallrat in die mitt setzen" resp="#fyndling">Den kalten Kopf mittig in eine Gallerte setzen. Wie die Gallerte gemacht und gefasst wird, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0450-orig" n="laß an die statt sieden (Garzeit)" resp="#fyndling" subtype="contextual">Gar sieden, bis der Kopf durch ist. Die Lesart „gar“ stützt sich auf Rumpolts häufiges „an die statt sieden“ im selben Buch; eine Zeit nennt der Text nicht.<list type="alternatives"><item>Heute: schwach siedend etwa drei Stunden, mit dem Messer prüfen<note type="rationale">Praxisrichtwert für einen Kopf dieser Größe, nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0450-orig" n="and die statt" resp="#fyndling" subtype="philological">Zu lesen als „an die statt“: So steht es im Druck von 1581, und so schreibt Rumpolt die Wendung auch sonst.<list type="alternatives"><item>„and“ als eigenes Wort<note type="rationale">Ergibt im Satz keinen Sinn; die Wendung ist im Buch nur als „an die statt“ belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0450-orig" n="sampt den Hoͤrnern ... sieden biß das Haar abgehet" resp="#fyndling" subtype="contextual">Die Hörner bleiben beim Sieden am Kopf, entfernt wird nur das Haar. Von der Haut sagt der Text nichts; sie bleibt also dran.<list type="alternatives"><item>Heute: brühen, bis sich das Haar abschaben lässt, Reste abflammen<note type="rationale">Moderne Praxis für das Enthaaren; Rumpolt nennt nur das Sieden.</note></item><item>Haut abziehen statt enthaaren<note type="rationale">Dagegen spricht „biß das Haar abgehet“: Das Sieden dient gerade dem Enthaaren.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0450-orig" n="die Hoͤrner vberguͤlden oder vbersilbern" resp="#fyndling" subtype="contextual">Nur die Hörner werden vergoldet oder versilbert, nicht das Fleisch. Womit, sagt der Text nicht.<list type="alternatives"><item>Heute: Blattgold oder Blattsilber auf einer dünnen Haftschicht<note type="rationale">Moderne Ausführung; das Material nennt Rumpolt nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0450-orig" n="in ein Gallrat in die mitt setzen" resp="#fyndling" subtype="contextual">Den kalten Kopf mittig in eine Gallerte setzen. Wie die Gallerte gemacht und gefasst wird, sagt der Text nicht.<list type="alternatives"><item>Heute: Kopf in eine Schüssel stellen, kräftige Brühe oder Aspik darumgießen und fest werden lassen<note type="rationale">Moderne Ausführung; Gefäß und Gelierart nennt Rumpolt nicht.</note></item></list></note>
       </div>
     </back>
   </text>

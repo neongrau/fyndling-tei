@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,11 +116,11 @@ Praxis. Mengen, Zeiten und Hitze nennt der Text nicht. Wildschweinleber gibt es 
         <note type="gloss" target="#rum-0414-orig" n="gefricusierte Leber" resp="#fyndling">Rumpolts eigener Name für das Gericht, von französisch fricasser. Er meint damit klein geschnittene, in heißer Butter geröstete Leber; in dieser Nummer kommen danach nur Pfeffer, Kräuter und etwas Säure dazu, keine Brühe. Ein Frikassee in heller Sauce ist nicht gemeint.</note>
         <note type="gloss" target="#rum-0414-orig" n="roͤßts geschwindt in Butter hinweg" resp="#fyndling">hinweg rösten: zügig durchrösten, ohne Aufenthalt. Dieselbe Wendung gebraucht Rumpolt bei der Lammleber („brat sie geschwindt hinweg“) und bei der Leberwurst im Netz in der Nummer davor.</note>
         <note type="gloss" target="#rum-0414-orig" n="mach es ab" resp="#fyndling">abmachen heißt eine Speise abschließend zubereiten, fertigstellen (FWB „abmachen“ 1); hier also würzen mit Pfeffer und gehackten Kräutern.</note>
-        <note type="interpretive_choice" target="#rum-0414-orig" n="die Leber" resp="#fyndling">Wildschweinleber: Der Text nennt kein Tier, aber die Nummer steht im Kapitel „Vom Schweinen Wildpret“, und die Nachbarnummern sprechen von der Wildschweinleber.</note>
-        <note type="interpretive_choice" target="#rum-0414-orig" n="mach es ein wenig saͤurlich" resp="#fyndling">Historisch: Der Text nennt kein Säuerungsmittel. Bei der gefricusierten Leber vom Hammel und vom Lamm nimmt Rumpolt Essig, deshalb steht Essig als Zutat.</note>
-        <note type="interpretive_choice" target="#rum-0414-orig" n="roͤßts geschwindt in Butter hinweg" resp="#fyndling">Historisch: zügig rösten; „geschwindt“ betont die kurze Garzeit. Ob die Leber rosa oder durch sein soll, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0414-orig" n="gehackten gruͤnen Kraͤutern" resp="#fyndling">Historisch: nur „grüne Kräuter“, ohne Sorte; die Auswahl bleibt offen, nichts wird ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0414-orig" n="mach es ab" resp="#fyndling">„schmecke sie ab“: nach dem Rösten in der Pfanne würzen, wie bei der Hammelleber.</note>
+        <note type="interpretive_choice" target="#rum-0414-orig" n="die Leber" resp="#fyndling" subtype="contextual">Wildschweinleber: Der Text nennt kein Tier, aber die Nummer steht im Kapitel „Vom Schweinen Wildpret“, und die Nachbarnummern sprechen von der Wildschweinleber.<list type="alternatives"><item>Leber vom Hausschwein<note type="rationale">Nicht die Lesart des Textes, da das Kapitel vom Wildschwein handelt; zum Nachkochen ein erhältlicher Ersatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0414-orig" n="mach es ein wenig saͤurlich" resp="#fyndling" subtype="contextual">Historisch: Der Text nennt kein Säuerungsmittel. Bei der gefricusierten Leber vom Hammel und vom Lamm nimmt Rumpolt Essig, deshalb steht Essig als Zutat.<list type="alternatives"><item>Verjus oder Agrestsaft<note type="rationale">Rumpolt säuert auch sonst mit sauren Säften; für die Leber-Serie ist das nicht belegt, als Säure aber gleichwertig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0414-orig" n="roͤßts geschwindt in Butter hinweg" resp="#fyndling" subtype="contextual">Historisch: zügig rösten; „geschwindt“ betont die kurze Garzeit. Ob die Leber rosa oder durch sein soll, sagt der Text nicht.<list type="alternatives"><item>Praxis: Wildschweinleber in kleinen Stücken bei guter Hitze wenige Minuten rösten und durchgaren<note type="rationale">Heutige Praxis bei Wildinnereien; im Text nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0414-orig" n="gehackten gruͤnen Kraͤutern" resp="#fyndling" subtype="contextual">Historisch: nur „grüne Kräuter“, ohne Sorte; die Auswahl bleibt offen, nichts wird ergänzt.<list type="alternatives"><item>Praxis: gehackte Petersilie, Pfeffer nach Geschmack<note type="rationale">Moderne Auswahl als Ausgangspunkt, im Text nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0414-orig" n="mach es ab" resp="#fyndling" subtype="lexical">„schmecke sie ab“: nach dem Rösten in der Pfanne würzen, wie bei der Hammelleber.<list type="alternatives"><item>„mache es fertig“<note type="rationale">Genauer nach FWB „abmachen“ 1 (Speisen abschließend zubereiten); für die Küche ohne Unterschied, weil nur Pfeffer und Kräuter folgen.</note></item></list></note>
       </div>
     </back>
   </text>

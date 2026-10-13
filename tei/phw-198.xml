@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Praxis. Essig und reduzierten Wein (oder Zucker) mit gestoßenem Ingwer, Pfeffer
         <note type="gloss" target="#phw-198-orig" n="glaut" resp="#fyndling">Glut, also glühende Kohlen. Diese werden hier nicht nur unter die Pfanne, sondern auch auf den Deckel gelegt, um Oberhitze zu erzeugen - eine Technik, die dem modernen Backen im Dutch Oven ähnelt. "Ain gutten glaut" meint dabei eine gut bemessene, nicht ausdrücklich große Menge Glut.</note>
         <note type="gloss" target="#phw-198-orig" n="bregla" resp="#fyndling">Brutzeln/Rösten in der geschlossenen, mit Glut bedeckten Pfanne. Der Text nennt einen Klangwechsel beim Brutzeln als Prüfpunkt für die Fertigstellung.</note>
         <note type="gloss" target="#phw-198-orig" n="safern" resp="#fyndling">Safran, ein kostbares Gewürz, das dem Gericht nicht nur Geschmack, sondern auch eine leuchtend gelbe Farbe verleiht.</note>
-        <note type="interpretive_choice" target="#phw-198-orig" n="bregla" resp="#fyndling">Brutzeln/Rösten. Hayers Glossar gibt für 'bregla (bräglen)' 'im Schmalz backen, schwach rösten'; die Grundbedeutung des Verbs umfasst laut Schmeller/Grimm/Fischer sowohl das Rösten/Schmoren als auch das dabei entstehende Geräusch. Für phw-198 stützt der Text selbst mit dem expliziten Hörtest ('bys dus herst klinge') die akustische Lesart am stärksten.</note>
-        <note type="interpretive_choice" target="#phw-198-orig" n="ain gutten glaut" resp="#fyndling">Eine gute, richtig bemessene Glut - 'gutten' als Qualitätsangabe (angemessen, ordentlich), keine Mengenangabe.</note>
+        <note type="interpretive_choice" target="#phw-198-orig" n="bregla" resp="#fyndling" subtype="lexical">Brutzeln/Rösten. Hayers Glossar gibt für 'bregla (bräglen)' 'im Schmalz backen, schwach rösten'; die Grundbedeutung des Verbs umfasst laut Schmeller/Grimm/Fischer sowohl das Rösten/Schmoren als auch das dabei entstehende Geräusch. Für phw-198 stützt der Text selbst mit dem expliziten Hörtest ('bys dus herst klinge') die akustische Lesart am stärksten.<list type="alternatives"><item>Backen/Rösten ohne akustischen Bezug.<note type="rationale">So in phw-204 ('bräunen') und phw-205 ('braten/anbraten') übersetzt. Beide Lesarten sind nicht falsch - Bräunen erzeugt dasselbe Geräusch -, aber uneinheitlich gegenüber phw-198 formuliert; eine Vereinheitlichung des Buchs an dieser Stelle steht noch aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-198-orig" n="ain gutten glaut" resp="#fyndling" subtype="lexical">Eine gute, richtig bemessene Glut - 'gutten' als Qualitätsangabe (angemessen, ordentlich), keine Mengenangabe.<list type="alternatives"><item>Reichlich/viel Glut.<note type="rationale">Naheliegende, aber durch den Text nicht gedeckte Verstärkung des Gradadverbs 'gutten'; der Wortlaut belegt nur eine gut bemessene Menge, keine große.</note></item></list></note>
       </div>
     </back>
   </text>

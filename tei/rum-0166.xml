@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,10 +125,10 @@ Praxis. Mengen, Garzeit und Salz nennt Rumpolt nicht. Heute lässt man den Schwa
         <note type="gloss" target="#rum-0166-orig" n="schier gesotten" resp="#fyndling">Fast gar gesotten.</note>
         <note type="gloss" target="#rum-0166-orig" n="seurlich machen" resp="#fyndling">Leicht säuern. Womit, sagt der Text nicht; an anderen Stellen säuert Rumpolt mit Essig („seurlich mit essig“).</note>
         <note type="gloss" target="#rum-0166-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0166-orig" n="vberzinten" resp="#fyndling">„überzinnt“, also innen mit Zinn überzogen (verzinnt). So lösen Grimm und das übrige Buch das Wort auf; Zinn ist die übliche Auskleidung von Kupferkesseln.</note>
-        <note type="interpretive_choice" target="#rum-0166-orig" n="seurlich machen (Säuerungsmittel)" resp="#fyndling">Der Text nennt kein Säuerungsmittel. Die Zutatenliste führt deshalb nur ein „Säuerungsmittel, z. B. Essig“; Essig ist naheliegend, weil Rumpolt auf derselben Seite und bei der Zunge „seurlich mit essig“ schreibt.</note>
-        <note type="interpretive_choice" target="#rum-0166-orig" n="„daß sie schier gesotten seind“ (Bezug von „sie“)" resp="#fyndling">„Sie“ steht im Plural und meint grammatisch die Zwiebeln: Wenn die Zwiebeln fast weich sind, wird gesäuert.</note>
-        <note type="interpretive_choice" target="#rum-0166-orig" n="Garzeit und Salz" resp="#fyndling">Rumpolt nennt weder Garzeit noch Salz; er lässt sieden, bis es „schier gesotten“ ist.</note>
+        <note type="interpretive_choice" target="#rum-0166-orig" n="vberzinten" resp="#fyndling" subtype="lexical">„überzinnt“, also innen mit Zinn überzogen (verzinnt). So lösen Grimm und das übrige Buch das Wort auf; Zinn ist die übliche Auskleidung von Kupferkesseln.<list type="alternatives"><item>„überzinkt“, mit Zink überzogen<note type="rationale">Verworfen: eine Zinkschicht auf Kochgeschirr passt nicht in die Zeit, und das Wort hängt an Zinn.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0166-orig" n="seurlich machen (Säuerungsmittel)" resp="#fyndling" subtype="contextual">Der Text nennt kein Säuerungsmittel. Die Zutatenliste führt deshalb nur ein „Säuerungsmittel, z. B. Essig“; Essig ist naheliegend, weil Rumpolt auf derselben Seite und bei der Zunge „seurlich mit essig“ schreibt.<list type="alternatives"><item>Verjus oder saurer Wein<note type="rationale">Ebenso möglich; der Text schließt nichts aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0166-orig" n="„daß sie schier gesotten seind“ (Bezug von „sie“)" resp="#fyndling" subtype="philological">„Sie“ steht im Plural und meint grammatisch die Zwiebeln: Wenn die Zwiebeln fast weich sind, wird gesäuert.<list type="alternatives"><item>Gemeint ist der Schwanz, der fast gar ist<note type="rationale">Möglich, weil es um das Garen des Fleischs geht; Rumpolt bezeichnet den Schwanz sonst aber mit „jn/jhn“ im Singular.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0166-orig" n="Garzeit und Salz" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Garzeit noch Salz; er lässt sieden, bis es „schier gesotten“ ist.<list type="alternatives"><item>Heute: schwach sieden, bis das Fleisch weich ist, und mit Salz abschmecken<note type="rationale">Moderne Praxis, nicht im Text.</note></item></list></note>
       </div>
     </back>
   </text>

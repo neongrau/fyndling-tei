@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,8 +137,8 @@ Praxis. Für die Mandelmilch-Charge nennt der Text keinen eigenen Erhitzungsschr
         <note type="gloss" target="#w1-193-orig" n="I lot" resp="#fyndling">Ein Lot war eine historische Gewichtseinheit, die regional variierte. Im süddeutschen Raum entsprach ein Lot etwa 15 bis 17,5 Gramm.</note>
         <note type="gloss" target="#w1-193-orig" n="virenden" resp="#fyndling">„Vierendeln“ oder „vierteln“ bedeutet, etwas in vier gleich große Stücke zu teilen.</note>
         <note type="gloss" target="#w1-193-orig" n="das swarcz von den weinperrn" resp="#fyndling">Hiermit ist die dunkle, durchgeseihte Masse der Weinbeeren gemeint, die nach dem Reiben und Passieren übrig bleibt und als farblicher Kontrast dient.</note>
-        <note type="interpretive_choice" target="#w1-193-orig" n="besteat" resp="#fyndling">„fest werden“ oder „gelieren“ - im Kontext der Sülzenzubereitung ist dies die plausibelste Bedeutung, da es um das Erstarren der Masse geht.</note>
-        <note type="interpretive_choice" target="#w1-193-orig" n="weinperrn / weinper" resp="#fyndling">„Rosinen“ (getrocknete Weinbeeren) - die Anweisung, sie zu reiben und durchzuseihen, sowie die Erwähnung des „Schwarzen von den Weinbeeren“, deutet auf eine konzentrierte, dunkle Masse hin, die typischerweise aus Rosinen gewonnen wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#w1-193-orig" n="besteat" resp="#fyndling" subtype="lexical">„fest werden“ oder „gelieren“ - im Kontext der Sülzenzubereitung ist dies die plausibelste Bedeutung, da es um das Erstarren der Masse geht.<list type="alternatives"><item>„am besten“ - als Superlativ von „gut“. Dies würde den Satz zu „am besten mach nicht zu viel Brühe“ ändern, was grammatikalisch möglich, aber im Kontext der Gelierung weniger präzise ist.<note type="rationale">Obwohl „beste“ als Superlativ von „gut“ belegt ist, passt die Bedeutung „fest werden“ besser zur Anweisung, die Brühe nicht zu reichlich zu machen, damit die Sülze die gewünschte Konsistenz erreicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-193-orig" n="weinperrn / weinper" resp="#fyndling" subtype="lexical">„Rosinen“ (getrocknete Weinbeeren) - die Anweisung, sie zu reiben und durchzuseihen, sowie die Erwähnung des „Schwarzen von den Weinbeeren“, deutet auf eine konzentrierte, dunkle Masse hin, die typischerweise aus Rosinen gewonnen wird.<list type="alternatives"><item>„frische Weintrauben“ - obwohl „Weinbeeren“ wörtlich frische Trauben bedeuten kann, ist das Reiben und Durchseihen von frischen Trauben für eine dunkle, konzentrierte Masse weniger effizient und die Konsistenz wäre anders.<note type="rationale">Im mittelalterlichen Kochkontext wurden „Weinbeeren“ oft synonym für Rosinen verwendet, insbesondere wenn sie zu einer Paste verarbeitet werden sollten. Frische Trauben würden mehr Flüssigkeit und weniger intensive Farbe ergeben.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -95,10 +100,10 @@ Kalt werden lassen. Der einzige weitere Schritt. Wer nachkocht, lässt den Brate
 
 Praxis. Ein Schwan ist heute praktisch nicht zu bekommen. Als Ersatz taugt eine Gans, ausdrücklich als Ersatz: im Ofen braten, mit dem Bratthermometer prüfen, erkalten lassen, kalt aufschneiden.</note>
         <note type="gloss" target="#rum-0519-orig" n="Gebraten vnd kalt lassen werden" resp="#fyndling">Die Zeile nennt nur zwei Schritte: braten und erkalten lassen. Einen Grund für das Erkalten gibt Rumpolt nicht an. Ausführlich beschreibt er einen gebratenen, erkalteten Schwan erst in der folgenden Nummer (rum-0520), dort mit Gallerte.</note>
-        <note type="interpretive_choice" target="#rum-0519-orig" n="Schwan" resp="#fyndling">Schwan, weil das Rezept als Nr. 3 im Kapitel „Vom Schwan seindt viererley Speiß vnd Trachten zu machen“ steht; die Zeile selbst nennt kein Tier.</note>
-        <note type="interpretive_choice" target="#rum-0519-orig" n="Gebraten (ganzer Vogel oder Teilstück)" resp="#fyndling">Ein ganzer Schwan: Nr. 4 beginnt mit „Widerumb ein Schwan gebraten“, was nahelegt, dass auch Nr. 3 einen ganzen gebratenen Schwan meint. Das ist eine Lesart, kein ausdrücklicher Beleg.</note>
-        <note type="interpretive_choice" target="#rum-0519-orig" n="Bratart und Garzeit" resp="#fyndling">Am Spieß gebraten, wie Rumpolt es in Nr. 4 (rum-0520) für den Schwan beschreibt; für Nr. 3 selbst ist das nicht ausgesagt.</note>
-        <note type="interpretive_choice" target="#rum-0519-orig" n="kalt lassen werden" resp="#fyndling">Kalt zur Tafel gegeben, als Gegenstück zu Nr. 1 „Trucken warm abgebraten“: Die beiden Nummern unterscheiden sich dem Wortlaut nach vor allem durch die Temperatur.</note>
+        <note type="interpretive_choice" target="#rum-0519-orig" n="Schwan" resp="#fyndling" subtype="contextual">Schwan, weil das Rezept als Nr. 3 im Kapitel „Vom Schwan seindt viererley Speiß vnd Trachten zu machen“ steht; die Zeile selbst nennt kein Tier.<list type="alternatives"><item>Ein anderer Vogel<note type="rationale">Nicht gedeckt: Die Nachbarn Nr. 2 und Nr. 4 desselben Kapitels handeln ausdrücklich vom Schwan.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0519-orig" n="Gebraten (ganzer Vogel oder Teilstück)" resp="#fyndling" subtype="contextual">Ein ganzer Schwan: Nr. 4 beginnt mit „Widerumb ein Schwan gebraten“, was nahelegt, dass auch Nr. 3 einen ganzen gebratenen Schwan meint. Das ist eine Lesart, kein ausdrücklicher Beleg.<list type="alternatives"><item>Teilstücke vom Schwan<note type="rationale">Möglich, weil die Zeile nichts über die Form sagt; das „widerumb“ in Nr. 4 spricht aber eher für den ganzen Vogel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0519-orig" n="Bratart und Garzeit" resp="#fyndling" subtype="contextual">Am Spieß gebraten, wie Rumpolt es in Nr. 4 (rum-0520) für den Schwan beschreibt; für Nr. 3 selbst ist das nicht ausgesagt.<list type="alternatives"><item>Im Ofen mit Bratthermometer<note type="rationale">Moderner Weg für Nachkochende; die Zeile legt keine Bratart fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0519-orig" n="kalt lassen werden" resp="#fyndling" subtype="contextual">Kalt zur Tafel gegeben, als Gegenstück zu Nr. 1 „Trucken warm abgebraten“: Die beiden Nummern unterscheiden sich dem Wortlaut nach vor allem durch die Temperatur.<list type="alternatives"><item>Nur nach dem Braten vollständig erkalten lassen<note type="rationale">Wörtlich genommen sagt die Zeile nur das; ob der Schwan danach kalt aufgetragen oder weiterverarbeitet wird, bleibt offen.</note></item></list></note>
       </div>
     </back>
   </text>

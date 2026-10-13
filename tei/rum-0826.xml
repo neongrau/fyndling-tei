@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,11 +124,11 @@ Praxis. Mehl hell anschwitzen, mit Wein und einem Schuss Essig ablöschen, Zibeb
         <note type="gloss" target="#rum-0826-orig" n="auffsieden" resp="#fyndling">Aufkochen; die Einbrenne bindet erst beim Erhitzen.</note>
         <note type="gloss" target="#rum-0826-orig" n="pfeffers" resp="#fyndling">Verb: mit Pfeffer würzen.</note>
         <note type="gloss" target="#rum-0826-orig" n="Kramatsvoͤgel" resp="#fyndling">Aus der Kapitelüberschrift. Krammetsvogel ist der alte Name der Wacholderdrossel; das Wort geht auf „Kranewitt“, Wacholder, zurück. Im weiteren Sinn kann es auch andere Drosseln meinen. Der Rezepttext selbst nennt keinen Vogel.</note>
-        <note type="interpretive_choice" target="#rum-0826-orig" n="Weinbeer" resp="#fyndling">Getrocknete Weinbeeren, also Rosinen. Rumpolt stellt sie neben die Zibeben, was auf eine zweite, kleinere getrocknete Sorte deutet; Glossar und Wörterbücher stützen „Rosine“.</note>
-        <note type="interpretive_choice" target="#rum-0826-orig" n="mach es gelb vnd suͤß" resp="#fyndling">Der Text nennt kein Färbe- und kein Süßmittel. Gelb kann von der hellen Einbrenne und den Früchten kommen, die Süße allein von Zibeben und Weinbeeren.</note>
-        <note type="interpretive_choice" target="#rum-0826-orig" n="eyngebrennt Mehl" resp="#fyndling">Der Text nennt kein Fett; offen bleibt, ob das Mehl in Fett angeschwitzt oder trocken geröstet wird. Hell halten, weil die Sauce gelb werden soll.</note>
-        <note type="interpretive_choice" target="#rum-0826-orig" n="Eyngemacht (Sauce oder Garflüssigkeit)" resp="#fyndling">Der Text nennt keine Vögel. Nach der Überschrift „Eyngemacht“ (in einer Sauce gegart) und dem Vorbild von Nr. 7 werden die Vögel des Kapitels wahrscheinlich in der Sauce gegart.</note>
-        <note type="interpretive_choice" target="#rum-0826-orig" n="Mengen" resp="#fyndling">Der Text nennt keine Mengen und keine Personenzahl; nur Essig und Mehl sind als „ein wenig“ gekennzeichnet.</note>
+        <note type="interpretive_choice" target="#rum-0826-orig" n="Weinbeer" resp="#fyndling" subtype="lexical">Getrocknete Weinbeeren, also Rosinen. Rumpolt stellt sie neben die Zibeben, was auf eine zweite, kleinere getrocknete Sorte deutet; Glossar und Wörterbücher stützen „Rosine“.<list type="alternatives"><item>Frische Weintrauben<note type="rationale">„Weinbeere“ kann auch die frische Traube meinen, doch der Text gibt keinen Hinweis auf frische Früchte, und die Paarung mit Zibeben spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0826-orig" n="mach es gelb vnd suͤß" resp="#fyndling" subtype="contextual">Der Text nennt kein Färbe- und kein Süßmittel. Gelb kann von der hellen Einbrenne und den Früchten kommen, die Süße allein von Zibeben und Weinbeeren.<list type="alternatives"><item>Mit Safran gelb und mit Zucker süß machen<note type="rationale">Im selben Kapitel nennt Nr. 6 Safran und Nr. 7 Zucker ausdrücklich; für eine kräftig gelbe, deutlich süße Sauce die naheliegende Ergänzung, im Text aber nicht gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0826-orig" n="eyngebrennt Mehl" resp="#fyndling" subtype="contextual">Der Text nennt kein Fett; offen bleibt, ob das Mehl in Fett angeschwitzt oder trocken geröstet wird. Hell halten, weil die Sauce gelb werden soll.<list type="alternatives"><item>Mehl in Butter oder Schmalz hell anschwitzen<note type="rationale">Übliches Verfahren einer Einbrenne und die praktische Umsetzung für heute.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0826-orig" n="Eyngemacht (Sauce oder Garflüssigkeit)" resp="#fyndling" subtype="contextual">Der Text nennt keine Vögel. Nach der Überschrift „Eyngemacht“ (in einer Sauce gegart) und dem Vorbild von Nr. 7 werden die Vögel des Kapitels wahrscheinlich in der Sauce gegart.<list type="alternatives"><item>Sauce, die zu bereits gegarten Vögeln gereicht wird<note type="rationale">Ebenso mit dem Text vereinbar, da er nur die Sauce beschreibt; für die heutige Küche die einfachere Umsetzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0826-orig" n="Mengen" resp="#fyndling" subtype="contextual">Der Text nennt keine Mengen und keine Personenzahl; nur Essig und Mehl sind als „ein wenig“ gekennzeichnet.<list type="alternatives"><item>Wein als Hauptflüssigkeit, Essig und Mehl sparsam<note type="rationale">Wörtliche Umsetzung der Mengenangaben „ein wenig“; genaue Mengen nach Geschmack.</note></item></list></note>
       </div>
     </back>
   </text>

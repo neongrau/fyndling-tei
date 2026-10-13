@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,9 +128,9 @@ Zwei Eier mit etwas Wein und Mehl zu einem dünnflüssigen Rührteig verquirlen 
         <note type="gloss" target="#phw-134-orig" n="behedla" resp="#fyndling">„Behedla“ (behedlen) bedeutet „mit einer Hülle umgeben“ - die Äpfel werden mit dem Teig bedeckt bzw. umhüllt.</note>
         <note type="gloss" target="#phw-134-orig" n="dau" resp="#fyndling">Bezieht sich auf das Ablassen bzw. Abziehen des Fettes während des Backvorgangs.</note>
         <note type="gloss" target="#phw-134-orig" n="deller" resp="#fyndling">Ein Teller, der hier als Hilfsmittel zum Wenden des Backwerks in der Pfanne verwendet wird.</note>
-        <note type="interpretive_choice" target="#phw-134-orig" n="behedla" resp="#fyndling">„behedla“ (behedlen) wird als „bedecken/umhüllen“ gelesen - die Äpfel werden mit dem Teig behedla.</note>
-        <note type="interpretive_choice" target="#phw-134-orig" n="dau" resp="#fyndling">„dau“ wird im Sinne von „tun“ (tuon) gelesen, hier mit der Partikel „herab“ als „abtun/abziehen“ des Schmalzes vor dem Wenden.</note>
-        <note type="interpretive_choice" target="#phw-134-orig" n="las fein langsam bachen (Garzustand)" resp="#fyndling">Der Text nennt keinen Garzustand oder Bräunungsgrad als Endpunkt, sondern überlässt Timing und Garprobe der Erfahrung des Kochenden.</note>
+        <note type="interpretive_choice" target="#phw-134-orig" n="behedla" resp="#fyndling" subtype="lexical">„behedla“ (behedlen) wird als „bedecken/umhüllen“ gelesen - die Äpfel werden mit dem Teig behedla.<list type="alternatives"><item>Nicht mehr vertreten: die frühere Einstufung als unbelegter Hapax.<note type="rationale">Ursprünglich als sehr unsichere Hapax-Lesart eingestuft; Hayers Glossar zu dieser Handschrift führt den Eintrag „behedla, behedlett (behedlen) mit einer Hülle (Haut) umgeben“ jedoch direkt - die Lesart ist damit gestützt, nicht nur kontextuell erschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-134-orig" n="dau" resp="#fyndling" subtype="lexical">„dau“ wird im Sinne von „tun“ (tuon) gelesen, hier mit der Partikel „herab“ als „abtun/abziehen“ des Schmalzes vor dem Wenden.<list type="alternatives"><item>Eine Herleitung aus „douwen“ (tauen/ziehen) ist lexikalisch ebenfalls denkbar.<note type="rationale">Andere Stellen im Buch (mit der Partikel „dar an“) lesen „dau“ konsistent als reduzierte Form von „tun/geben“. Die konkrete Übersetzung folgt hier der Partikel „herab“ (abziehen) und bleibt praktisch gleich; die Herleitung wird an die im Buch etablierte Lesart angeglichen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-134-orig" n="las fein langsam bachen (Garzustand)" resp="#fyndling" subtype="contextual">Der Text nennt keinen Garzustand oder Bräunungsgrad als Endpunkt, sondern überlässt Timing und Garprobe der Erfahrung des Kochenden.<list type="alternatives"><item>Ergänzung eines modernen Garkriteriums (goldgelb, fest) für die Praxis.<note type="rationale">Das Transkript enthält keine Farb- oder Zeitangabe; die Ergänzung eines visuellen Garkriteriums ist eine freie, aber unproblematische Praxis-Hilfe, kein Textbefund.</note></item></list></note>
       </div>
     </back>
   </text>

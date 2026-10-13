@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,9 +138,9 @@ Praxis. Kutteln, hartgekochte Eier, Weißbrot und Salbei fein hacken, bis eine b
         <note type="gloss" target="#b4-205-orig" n="char" resp="#fyndling">Mittelhochdeutsches Gefäßwort für Topf oder Schüssel. Der wortgleiche Zwillingstext schreibt an derselben Stelle „kar" - für das Garen in Brühe ist der Topf die schlüssigere Lesart.</note>
         <note type="gloss" target="#b4-205-orig" n="ayr taig" resp="#fyndling">Eine Eierhülle oder Eiermasse, in der die Knödel vor dem Spießbraten aufgekocht werden. Ob eine dünne Panade oder eine dickere Masse gemeint ist, lässt der Text offen.</note>
         <note type="gloss" target="#b4-205-orig" n="spis" resp="#fyndling">Ein Spieß, auf den die Knödel gesteckt und über offenem Feuer oder Glut gebraten werden.</note>
-        <note type="interpretive_choice" target="#b4-205-orig" n="char" resp="#fyndling">Die Lesart „Topf" wurde gewählt: Der wortgleiche Zwillingstext schreibt an derselben Stelle „kar" statt „char" - ein eindeutiges Gefäßwort -, und das Kochen von Knödeln in Brühe ist in einem Topf kulinarisch sinnvoller als in einer Schüssel.</note>
-        <note type="interpretive_choice" target="#b4-205-orig" n="erwell sy In dem ayr taig" resp="#fyndling">„erwellen" bedeutet „zum Sieden/Aufkochen bringen", nicht bloß erwärmen. Die Knödel werden also in der Eierhülle kurz aufgekocht, nicht nur erwärmt.</note>
-        <note type="interpretive_choice" target="#b4-205-orig" n="Gargrad der Eihülle" resp="#fyndling">Der Text nennt weder Zeit noch Temperatur. Für die moderne Praxis empfiehlt sich, die Eihülle vollständig durchzugaren, bis kein rohes Ei mehr sichtbar ist.</note>
+        <note type="interpretive_choice" target="#b4-205-orig" n="char" resp="#fyndling" subtype="lexical">Die Lesart „Topf" wurde gewählt: Der wortgleiche Zwillingstext schreibt an derselben Stelle „kar" statt „char" - ein eindeutiges Gefäßwort -, und das Kochen von Knödeln in Brühe ist in einem Topf kulinarisch sinnvoller als in einer Schüssel.<list type="alternatives"><item>Eine Schüssel<note type="rationale">CoReMA glossiert „char" für genau dieses Rezept über Wikidata als „bowl" (Schüssel). Das wäre für das Anrichten passend, aber weniger für den Kochvorgang in Flüssigkeit.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-205-orig" n="erwell sy In dem ayr taig" resp="#fyndling" subtype="lexical">„erwellen" bedeutet „zum Sieden/Aufkochen bringen", nicht bloß erwärmen. Die Knödel werden also in der Eierhülle kurz aufgekocht, nicht nur erwärmt.<list type="alternatives"><item>Wälzen, rollen<note type="rationale">Eine verwandte Fassung desselben Rezepts (mha-071) glossiert dasselbe Verb an derselben Stelle eigenständig mit „wälzen, rollen". Ein Aufkochen in der Eierhülle schließt ein Wälzen darin praktisch nicht aus, aber als eigenständige Lesart ist sie schwächer belegt als das Aufkochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-205-orig" n="Gargrad der Eihülle" resp="#fyndling" subtype="contextual">Der Text nennt weder Zeit noch Temperatur. Für die moderne Praxis empfiehlt sich, die Eihülle vollständig durchzugaren, bis kein rohes Ei mehr sichtbar ist.<list type="alternatives"><item>Nur kurz eingetaucht und handwarm erwärmt, ohne dass die Hülle vollständig stockt.<note type="rationale">Läge näher an einer wörtlichen Kurz-Lesart von „aufkochen", bedeutet nach heutigen Maßstäben aber rohes Ei am fertigen Gericht.</note></item></list></note>
       </div>
     </back>
   </text>

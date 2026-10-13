@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,10 +121,10 @@ Praxis. Ein Murmeltier ist heute kaum zu bekommen. Wer das Verfahren nachstellen
         <note type="gloss" target="#rum-0484-orig" n="auß einer Butter breunen" resp="#fyndling">In Butter bräunen, anrösten. Ob die Birnen dafür zerteilt werden, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0484-orig" n="verspeil es mit einẽ hoͤltzern Speil" resp="#fyndling">verspeilen = mit einem Speil (Holzstift, Span) zustecken. Gemeint ist das Verschließen der gefüllten Öffnung, damit die Füllung nicht herausfällt, nicht das Aufstecken auf einen Bratspieß. Rumpolt gebraucht das Wort ebenso beim Lammkopf („verspeil das Hirn, daß es nit herauß fellt“) und bei der gefüllten Gans.</note>
         <note type="gloss" target="#rum-0484-orig" n="flugs" resp="#fyndling">Sofort, ohne Verzug.</note>
-        <note type="interpretive_choice" target="#rum-0484-orig" n="verspeil es mit einẽ hoͤltzern Speil" resp="#fyndling">Die Füllöffnung mit einem hölzernen Speil zustecken. Rumpolt verwendet verspeilen an anderer Stelle eindeutig für das Verschließen (Hirn im Lammkopf, Füllung unter der Gänsehaut).</note>
-        <note type="interpretive_choice" target="#rum-0484-orig" n="geschwindt hinweg braten" resp="#fyndling">Zügig in einem Zug fertig braten; Rumpolt begründet das nur mit der natürlichen Fettigkeit.</note>
-        <note type="interpretive_choice" target="#rum-0484-orig" n="die Biern mustu auß einer Butter breunen" resp="#fyndling">Die Birnen in Butter rösten, bis sie Farbe nehmen, und erst dann zur Füllung geben. Ob roh oder vorgegart, ganz oder zerteilt, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0484-orig" n="Garzeit und Garpunkt" resp="#fyndling">Der Text nennt nur „geschwind“, keine Zeit, keine Hitze, kein Zeichen für den Garpunkt.</note>
+        <note type="interpretive_choice" target="#rum-0484-orig" n="verspeil es mit einẽ hoͤltzern Speil" resp="#fyndling" subtype="lexical">Die Füllöffnung mit einem hölzernen Speil zustecken. Rumpolt verwendet verspeilen an anderer Stelle eindeutig für das Verschließen (Hirn im Lammkopf, Füllung unter der Gänsehaut).<list type="alternatives"><item>Das Tier auf einen hölzernen Bratspieß stecken<note type="rationale">Das Verb heißt verspeilen, nicht „an den Spieß stecken“; Rumpolts eigener Gebrauch spricht für das Zustecken. Womit gebraten wird, Spieß oder Rost, sagt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0484-orig" n="geschwindt hinweg braten" resp="#fyndling" subtype="lexical">Zügig in einem Zug fertig braten; Rumpolt begründet das nur mit der natürlichen Fettigkeit.<list type="alternatives"><item>Schnell und gründlich durchbraten<note type="rationale">„Gründlich“ steht nicht im Text; eine Gradangabe lässt sich aus hinweg nicht ableiten.</note></item><item>Bei großer Hitze braten<note type="rationale">Hitze nennt der Text nicht; möglich, aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0484-orig" n="die Biern mustu auß einer Butter breunen" resp="#fyndling" subtype="contextual">Die Birnen in Butter rösten, bis sie Farbe nehmen, und erst dann zur Füllung geben. Ob roh oder vorgegart, ganz oder zerteilt, bleibt offen.<list type="alternatives"><item>Birnen in Stücke schneiden und in Butter anbräunen<note type="rationale">So wird man es heute machen; der Text nennt keine Zerkleinerung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0484-orig" n="Garzeit und Garpunkt" resp="#fyndling" subtype="contextual">Der Text nennt nur „geschwind“, keine Zeit, keine Hitze, kein Zeichen für den Garpunkt.<list type="alternatives"><item>Durchgaren wie bei jedem Wild<note type="rationale">Heutige Küchenpraxis, nicht aus dem Text.</note></item></list></note>
       </div>
     </back>
   </text>

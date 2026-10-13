@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,8 +103,8 @@ Das Braten. Bratverfahren, Fett und Garzeit fehlen ebenfalls. Die Nummer verläs
 
 Praxis. Den Fasan auf gewohnte Art braten und eine Knoblauchbrühe dazu reichen. Einen Anhaltspunkt gibt Rumpolt selbst beim gebratenen Kapaun, über den eine warme, fein säuerliche braune Brühe mit klein gestoßenem Knoblauch gegossen wird; das ist eine Analogie, keine Anleitung für den Fasan. Fasan gibt es beim Wildhändler, meist saisonal.</note>
         <note type="gloss" target="#rum-0558-orig" n="nicht böß" resp="#fyndling">böß = schlecht. „Nicht böß“ heißt also „nicht schlecht“, eine bei Rumpolt häufige, zurückhaltende Empfehlung.</note>
-        <note type="interpretive_choice" target="#rum-0558-orig" n="Knoblochbrüh" resp="#fyndling">Eine eigene Knoblauchbrühe, die zum gebratenen Fasan kommt. Woraus sie besteht und ob sie darübergegossen oder dazu gereicht wird, sagt der Text nicht. Ausgeführt ist eine solche Brühe bei Rumpolt nur beim gebratenen Kapaun (warme, fein säuerliche braune Brühe mit klein gestoßenem Knoblauch, darübergegossen); das ist eine Parallele, keine Angabe für den Fasan.</note>
-        <note type="interpretive_choice" target="#rum-0558-orig" n="Gebraten" resp="#fyndling">Das Bratverfahren ist nicht angegeben; die Nummer setzt das Braten der vorangehenden Fasan-Zubereitungen voraus, ohne es zu wiederholen.</note>
+        <note type="interpretive_choice" target="#rum-0558-orig" n="Knoblochbrüh" resp="#fyndling" subtype="contextual">Eine eigene Knoblauchbrühe, die zum gebratenen Fasan kommt. Woraus sie besteht und ob sie darübergegossen oder dazu gereicht wird, sagt der Text nicht. Ausgeführt ist eine solche Brühe bei Rumpolt nur beim gebratenen Kapaun (warme, fein säuerliche braune Brühe mit klein gestoßenem Knoblauch, darübergegossen); das ist eine Parallele, keine Angabe für den Fasan.<list type="alternatives"><item>Fasan braten und die Knoblauchbrühe als Sauce dazu reichen<note type="rationale">Praktische Lesart von „gebraten mit“ als „serviert mit“; vom Wortlaut gedeckt, aber nicht festgelegt.</note></item><item>Fasan in der Knoblauchbrühe gegart<note type="rationale">Unwahrscheinlich: „Gebraten“ nennt ausdrücklich das Braten als Garverfahren.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0558-orig" n="Gebraten" resp="#fyndling" subtype="contextual">Das Bratverfahren ist nicht angegeben; die Nummer setzt das Braten der vorangehenden Fasan-Zubereitungen voraus, ohne es zu wiederholen.<list type="alternatives"><item>Wie in den Nachbarrezepten mit heißem Speck- oder Rinderfett<note type="rationale">Nur Analogie aus der Fasanen-Karbonade, keine Aussage dieser Nummer.</note></item><item>Am Spieß oder im Ofen nach eigener Gewohnheit<note type="rationale">Moderne Praxis; der Text lässt das offen.</note></item></list></note>
       </div>
     </back>
   </text>

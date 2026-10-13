@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,10 +138,10 @@ Backe die Torte, bis die eihaltige Füllung sichtbar gestockt ist (Stäbchenprob
         <note type="gloss" target="#phw-028-orig" n="gestosenn" resp="#fyndling">Die Gewürze wurden im Mörser zerstoßen, um ihr Aroma freizusetzen und sie fein in die Masse einarbeiten zu können.</note>
         <note type="gloss" target="#phw-028-orig" n="bedalin" resp="#fyndling">Ein ‚Bedalin' ist ein dünn ausgerollter Teigboden, der als Grundlage für die Torte dient.</note>
         <note type="gloss" target="#phw-028-orig" n="glaudt" resp="#fyndling">‚Glaudt' bezeichnet Glut oder milde, gleichmäßige Hitze. Die Torte wird mit wenig Glut von unten und oben gebacken, was auf die Verwendung eines Topfes oder Dutch Ovens mit Glut auf dem Deckel hindeutet.</note>
-        <note type="interpretive_choice" target="#phw-028-orig" n="bedalin" resp="#fyndling">‚Tortenboden' - ein dünn ausgerollter Teig, der die Basis der Torte bildet.</note>
-        <note type="interpretive_choice" target="#phw-028-orig" n="Sennt / dau" resp="#fyndling">‚Sennt' entspricht ‚sind', ‚dau' ist Imperativ für ‚tue/gib'. Beide Formen stehen nicht in Hayers Wörterverzeichnis, sind aber durch weitere Belege im Buch gesichert.</note>
-        <note type="interpretive_choice" target="#phw-028-orig" n="bachs also mit wenig glaudt vnndenn und obenn" resp="#fyndling">Backdauer und Garzustand sind im Text nicht angegeben, nur die Hitzeintensität (‚wenig'). Praxis-Maßstab: backen, bis die eihaltige Füllung sichtbar gestockt ist.</note>
-        <note type="interpretive_choice" target="#phw-028-orig" n="las jm feur ain wenig brottenn" resp="#fyndling">Die Birnen werden kurz in der Glut gebraten: Die Schale sengt an und wird danach im frischen Wasser abgewaschen, das Fruchtfleisch wird dabei angegart und lässt sich klein reiben.</note>
+        <note type="interpretive_choice" target="#phw-028-orig" n="bedalin" resp="#fyndling" subtype="lexical">‚Tortenboden' - ein dünn ausgerollter Teig, der die Basis der Torte bildet.</note>
+        <note type="interpretive_choice" target="#phw-028-orig" n="Sennt / dau" resp="#fyndling" subtype="lexical">‚Sennt' entspricht ‚sind', ‚dau' ist Imperativ für ‚tue/gib'. Beide Formen stehen nicht in Hayers Wörterverzeichnis, sind aber durch weitere Belege im Buch gesichert.</note>
+        <note type="interpretive_choice" target="#phw-028-orig" n="bachs also mit wenig glaudt vnndenn und obenn" resp="#fyndling" subtype="contextual">Backdauer und Garzustand sind im Text nicht angegeben, nur die Hitzeintensität (‚wenig'). Praxis-Maßstab: backen, bis die eihaltige Füllung sichtbar gestockt ist.<list type="alternatives"><item>Eine wörtliche Lesart von ‚wenig Glut' als kurze, milde Backzeit könnte die Füllung bei acht rohen Eiern untergart bzw. flüssig lassen.<note type="rationale">Bei historischen Cremetorten nicht grundsätzlich auszuschließen, aus heutiger Sicht bei einer eilastigen Füllung aber die vermeidbare, unsichere Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-028-orig" n="las jm feur ain wenig brottenn" resp="#fyndling" subtype="contextual">Die Birnen werden kurz in der Glut gebraten: Die Schale sengt an und wird danach im frischen Wasser abgewaschen, das Fruchtfleisch wird dabei angegart und lässt sich klein reiben.<list type="alternatives"><item>Der Feuerkontakt löst nur die Schale und macht die Birnen griffiger zum Reiben, gegart werden sie dabei nicht.<note type="rationale">Frühere Lesart dieses Rezepts. Beide Zwillinge sprechen dagegen: Sabina Welserin brät die Regelbirnen, „bis die schelff verprent wirt vnnd das ander lind wirt“ (saw-121), Balthasar Staindl brät die Birnen und siedet sie danach in Wein (std-040). Beide treiben das weiche Fruchtfleisch anschließend durch. Das kurze Braten gart die Birnen also an.</note></item></list></note>
       </div>
     </back>
   </text>

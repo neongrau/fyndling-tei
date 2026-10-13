@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,7 +115,7 @@ Praxis. Wasser aufkochen, Mehl einrühren und kräftig verarbeiten, bis die Mass
         <note type="gloss" target="#b4-216-orig" n="Kraphen" resp="#fyndling">Eine Art Schmalzgebäck, oft süß und in Fett ausgebacken. Die Zubereitung ähnelt der von Brandteig.</note>
         <note type="gloss" target="#b4-216-orig" n="Schmalz" resp="#fyndling">Tierisches Fett, hier zum Ausbacken verwendet. Für eine vegetarische Variante kann Pflanzenöl oder Butterschmalz verwendet werden.</note>
         <note type="gloss" target="#b4-216-orig" n="Brühteig" resp="#fyndling">Wasser wird aufgekocht, Mehl eingerührt und anschließend Ei eingeschlagen - dieselbe Grundfolge wie beim späteren Brandteig (Choux), hier aber noch nicht als eigene Technik benannt, sondern schlicht die übliche Art, einen Krapfenteig anzusetzen.</note>
-        <note type="interpretive_choice" target="#b4-216-orig" n="aus dem anderen" resp="#fyndling">Die Lesart ‚aus dem Gefäß‘ wurde gewählt, um zu verdeutlichen, dass der Teig aus dem Behälter, in dem er zubereitet wurde, entnommen und in die Pfanne gestrichen wird.</note>
+        <note type="interpretive_choice" target="#b4-216-orig" n="aus dem anderen" resp="#fyndling" subtype="contextual">Die Lesart ‚aus dem Gefäß‘ wurde gewählt, um zu verdeutlichen, dass der Teig aus dem Behälter, in dem er zubereitet wurde, entnommen und in die Pfanne gestrichen wird.</note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,8 +134,8 @@ Cluster: Leber-gebundene gelbe jícha wie sev-013 und sev-024; Geflügel-Sektion
         <note type="gloss" target="#sev-021-orig" n="protáhni" resp="#fyndling">Passieren oder durchseihen, um eine feine Sauce zu erhalten.</note>
         <note type="gloss" target="#sev-021-orig" n="hřebičky" resp="#fyndling">Nelken, ein beliebtes Gewürz im Mittelalter.</note>
         <note type="gloss" target="#sev-021-orig" n="zavostřil" resp="#fyndling">Den Geschmack schärfen oder abrunden.</note>
-        <note type="interpretive_choice" target="#sev-021-orig" n="přičiň slanin" resp="#fyndling">Der bereits mit den Enten gekochte Speck wird zur Saucenbasis hinzugefügt, um den Geschmack zu intensivieren und die Menge zu erhöhen.</note>
-        <note type="interpretive_choice" target="#sev-021-orig" n="stluc v moždíři" resp="#fyndling">Die Entenlebern, das geröstete Weißbrot, der Speck und die Petersilie werden zusammen im Mörser zu einer feinen Paste zerstoßen.</note>
+        <note type="interpretive_choice" target="#sev-021-orig" n="přičiň slanin" resp="#fyndling">Der bereits mit den Enten gekochte Speck wird zur Saucenbasis hinzugefügt, um den Geschmack zu intensivieren und die Menge zu erhöhen.<list type="alternatives"><item>Es soll eine zusätzliche Menge frischen Specks hinzugefügt werden.<note type="rationale">Dies ist weniger wahrscheinlich, da der Text keine neue Menge angibt und der bereits vorhandene Speck logischerweise verwendet würde, um die Sauce anzureichern.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-021-orig" n="stluc v moždíři" resp="#fyndling">Die Entenlebern, das geröstete Weißbrot, der Speck und die Petersilie werden zusammen im Mörser zu einer feinen Paste zerstoßen.<list type="alternatives"><item>Nur das Brot und die Petersilie werden zerstoßen, während Lebern und Speck später hinzugefügt werden.<note type="rationale">Die Formulierung legt nahe, dass alle genannten Zutaten gemeinsam zu einer homogenen Masse verarbeitet werden sollen, was für die Konsistenz der Sauce sinnvoller ist.</note></item></list></note>
       </div>
     </back>
   </text>

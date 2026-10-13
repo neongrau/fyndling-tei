@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,10 +107,10 @@ Praxis. Den Lachs im Stück oder ganz in schwach gesalzenem Wasser bei kleiner H
         <note type="gloss" target="#rum-0900-orig" n="Salm" resp="#fyndling">Lachs. Das Rezept eröffnet Rumpolts Kapitel „Vom Salmen“.</note>
         <note type="gloss" target="#rum-0900-orig" n="magstu" resp="#fyndling">„magst du“, hier: kannst du, darfst du.</note>
         <note type="gloss" target="#rum-0900-orig" n="versaltzen" resp="#fyndling">Zu stark gesalzen, durch Salz verdorben. Ob sich „es“ auf den Fisch oder auf das Wasser bezieht, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0900-orig" n="im Wasser stehen lassen" resp="#fyndling">Wörtlich „im Wasser“. Naheliegend ist das Wasser, in dem der Lachs gesotten wurde, weil der Satz unmittelbar an das Absieden anschließt; ausdrücklich steht das nicht da.</note>
-        <note type="interpretive_choice" target="#rum-0900-orig" n="weñs nicht versaltzen ist (Bezugswort von „es“)" resp="#fyndling">Offen, mit leichter Neigung zum Wasser: Der Satz wechselt von „jhn“ (den Salm) zu „es“. Dann hieße es, der Fisch kann im Wasser stehen bleiben, solange dieses nicht zu salzig ist.</note>
-        <note type="interpretive_choice" target="#rum-0900-orig" n="Frischer oder schon eingesalzener Salm" resp="#fyndling">Der Text sagt nur „Salm“ und legt sich nicht fest. Denkbar ist auch ein schon eingesalzener Fisch; dann hieße „nicht versalzen“, dass er vor dem Sieden genug gewässert sein muss.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
-        <note type="interpretive_choice" target="#rum-0900-orig" n="Garzeit und Würze des Siedewassers" resp="#fyndling">Rumpolt nennt weder Garzeit noch Salz oder Würze im Wasser. Wir ergänzen in der Übersetzung nichts.</note>
+        <note type="interpretive_choice" target="#rum-0900-orig" n="im Wasser stehen lassen" resp="#fyndling" subtype="contextual">Wörtlich „im Wasser“. Naheliegend ist das Wasser, in dem der Lachs gesotten wurde, weil der Satz unmittelbar an das Absieden anschließt; ausdrücklich steht das nicht da.<list type="alternatives"><item>In frischem Wasser<note type="rationale">Der Wortlaut schließt es nicht aus, ein Beleg dafür fehlt aber ebenso.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0900-orig" n="weñs nicht versaltzen ist (Bezugswort von „es“)" resp="#fyndling" subtype="contextual">Offen, mit leichter Neigung zum Wasser: Der Satz wechselt von „jhn“ (den Salm) zu „es“. Dann hieße es, der Fisch kann im Wasser stehen bleiben, solange dieses nicht zu salzig ist.<list type="alternatives"><item>„es“ meint den Fisch: nur ein nicht versalzener Lachs verträgt das tagelange Liegen im Wasser<note type="rationale">Möglich, wenn „es“ allgemein für die Speise steht. Für die Praxis läuft beides auf dasselbe hinaus: nur schwach salzen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0900-orig" n="Frischer oder schon eingesalzener Salm" resp="#fyndling" subtype="contextual">Der Text sagt nur „Salm“ und legt sich nicht fest. Denkbar ist auch ein schon eingesalzener Fisch; dann hieße „nicht versalzen“, dass er vor dem Sieden genug gewässert sein muss.<list type="alternatives"><item>Frischer Lachs<note type="rationale">Heute die übliche Ware und unsere Annahme für den Zubereitungshinweis; im Text ebenso wenig festgelegt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="interpretive_choice" target="#rum-0900-orig" n="Garzeit und Würze des Siedewassers" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Garzeit noch Salz oder Würze im Wasser. Wir ergänzen in der Übersetzung nichts.<list type="alternatives"><item>In schwach siedendem, leicht gesalzenem Wasser gar ziehen lassen<note type="rationale">Moderne Praxis, siehe Zubereitungshinweis; bei Rumpolt nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,7 +117,7 @@ Praxis. Fisch (Hecht oder Barsch, ersatzweise Kabeljau) in kleine Würfel oder S
         <note type="gloss" target="#bgs-056-orig" n="smaltzes" resp="#fyndling">Wörtlich Schmalz. Der Text nennt für dieses Rezept keinen Fastenkontext.</note>
         <note type="gloss" target="#bgs-056-orig" n="gewuertz gebreit" resp="#fyndling">gebreit = ausgebreitet/verstrichen (zu mhd. breiten); das Gewürz wird in die Masse gemengt, bevor die gesamte, bereits gewürzte Mischung auf das Teigblatt gestrichen wird - keine nachträglich aufgestreute Prise. Kein fester Mengenanteil angegeben.</note>
         <note type="gloss" target="#bgs-056-orig" n="blat von teyge gemacht" resp="#fyndling">ein aus Teig geformtes Blatt, also ein flach ausgerollter Teigboden als Unterlage für den Belag</note>
-        <note type="interpretive_choice" target="#bgs-056-orig" n="smaltzes" resp="#fyndling">Schmalz, wie es der Text ausdrücklich nennt.</note>
+        <note type="interpretive_choice" target="#bgs-056-orig" n="smaltzes" resp="#fyndling">Schmalz, wie es der Text ausdrücklich nennt.<list type="alternatives"><item>Pflanzenöl in einer modernen Fasten-Anpassung<note type="rationale">Rezept 57 nennt ausdrücklich einen Fastenkontext; Rezept 56 tut dies nicht. Die Alternative ist daher modern, nicht quellenphilologisch.</note></item></list></note>
       </div>
     </back>
   </text>

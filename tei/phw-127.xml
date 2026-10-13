@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,9 +122,9 @@ Kürbis breit in Scheiben schneiden, kurz sieden, auf einem Brett antrocknen las
         <note type="gloss" target="#phw-127-orig" n="se zucker dar auf" resp="#fyndling">„se“ ist eine Form von „säen“ und bedeutet hier, den Zucker auf die gebackenen Kürbisstücke zu streuen.</note>
         <note type="gloss" target="#phw-127-orig" n="waram" resp="#fyndling">„waram“ bedeutet „warm“, also das Gericht warm servieren.</note>
         <note type="gloss" target="#phw-127-orig" n="versechnet" resp="#fyndling">„Versechnet“ gehört zur Wortfamilie von „versiegen“ (vertrocknen); Hayers Glossar von 1983 führt „versechnen“ in ebendiesem Sinn.</note>
-        <note type="interpretive_choice" target="#phw-127-orig" n="kir wys" resp="#fyndling">Kürbis. Dieselbe Wortform begegnet im Buch nur noch in phw-042 (dort als Kürbis gesichert über das Pfälzische Wörterbuch, das mit „Kiʳwis“ eine dialektale Nebenform belegt). Auch die Grammatik stützt das: „den kir wys“ und das Pronomen „jn“ sind maskulin, passend zu „der Kürbis“, nicht zu den weiblichen „die Kirschen“.</note>
-        <note type="interpretive_choice" target="#phw-127-orig" n="bachs" resp="#fyndling">Der Text nennt kein Fett zum Backen.</note>
-        <note type="interpretive_choice" target="#phw-127-orig" n="bys versechnet" resp="#fyndling">Der Text nennt keine Zeitspanne für das Antrocknen auf dem Brett oder die Backzeit.</note>
+        <note type="interpretive_choice" target="#phw-127-orig" n="kir wys" resp="#fyndling" subtype="lexical">Kürbis. Dieselbe Wortform begegnet im Buch nur noch in phw-042 (dort als Kürbis gesichert über das Pfälzische Wörterbuch, das mit „Kiʳwis“ eine dialektale Nebenform belegt). Auch die Grammatik stützt das: „den kir wys“ und das Pronomen „jn“ sind maskulin, passend zu „der Kürbis“, nicht zu den weiblichen „die Kirschen“.<list type="alternatives"><item>Kirschen. Der Wortanfang „kir-“ könnte auf Kirsche hindeuten.<note type="rationale">Weder in Hayers Glossar noch sonst im Buch belegt; die Lautähnlichkeit allein trägt die Lesart nicht, zumal der Zwilling phw-042 dieselbe Form bereits gegen Kirsche und für Kürbis entschieden hat.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-127-orig" n="bachs" resp="#fyndling" subtype="contextual">Der Text nennt kein Fett zum Backen.<list type="alternatives"><item>Butter oder Schmalz, wie in den Nachbarrezepten dieses Kapitels üblich.<note type="rationale">Moderne Praxisempfehlung, im Text nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-127-orig" n="bys versechnet" resp="#fyndling" subtype="contextual">Der Text nennt keine Zeitspanne für das Antrocknen auf dem Brett oder die Backzeit.<list type="alternatives"><item>Als Anhaltspunkt eher eine halbe Stunde als 20 Minuten für den ganzen Ablauf einplanen.<note type="rationale">Praktische Schätzung, da das passive Antrocknen zusätzliche Zeit braucht; im Text nicht beziffert.</note></item></list></note>
       </div>
     </back>
   </text>

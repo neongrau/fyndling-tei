@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -145,10 +150,10 @@ Die Apfelschnitze zuerst separat in reichlich Schmalz braun schwenken - das entz
         <note type="gloss" target="#phw-025-orig" n="bestreychs mit aim ay" resp="#fyndling">Bedeutet ‚bestreiche es mit einem Ei‘, um eine schöne Bräunung zu erzielen.</note>
         <note type="gloss" target="#phw-025-orig" n="gemach bachenn" resp="#fyndling">Die Torte soll gemächlich, also langsam und bei moderater Hitze, gebacken werden.</note>
         <note type="gloss" target="#phw-025-orig" n="dorttenn pfannenn" resp="#fyndling">Eine Tortenpfanne, eine flache Backform für Kuchen und Torten.</note>
-        <note type="interpretive_choice" target="#phw-025-orig" n="schwems" resp="#fyndling">‚Schwems‘ (zu mhd./fnhd. ‚swemmen‘, kausativ zu ‚schwimmen‘) wird als ‚in reichlich Schmalz schwimmen/tauchen lassen‘ verstanden.</note>
-        <note type="interpretive_choice" target="#phw-025-orig" n="deler" resp="#fyndling">‚Deler‘ wird als ‚Teller‘ übersetzt, eine flache Unterlage zum Abkühlen der Äpfel.</note>
-        <note type="interpretive_choice" target="#phw-025-orig" n="berlach" resp="#fyndling">‚Berlach‘ wird als ‚Weinbeeren‘ (Rosinen) übersetzt, da dies im Kontext von süßen Backwaren und anderen Gewürzen sehr plausibel ist.</note>
-        <note type="interpretive_choice" target="#phw-025-orig" n="er schnites" resp="#fyndling">‚Er schnites‘ wird als ‚geschnittenes‘ übersetzt, wobei ‚er-‘ als Präfix für das Partizip ‚erschnittenes‘ (ausgeschnittenes) verstanden wird.</note>
+        <note type="interpretive_choice" target="#phw-025-orig" n="schwems" resp="#fyndling" subtype="lexical">‚Schwems‘ (zu mhd./fnhd. ‚swemmen‘, kausativ zu ‚schwimmen‘) wird als ‚in reichlich Schmalz schwimmen/tauchen lassen‘ verstanden.<list type="alternatives"><item>Eine schwächere Lesart wäre ‚schwenken‘, also nur kurzes Anbraten in wenig Fett.<note type="rationale">Lexer und das Mittelhochdeutsche Wörterbuch stützen für ‚swemmen‘ eher die intensivere Lesart. Der Kontext ‚bys brau werdenn‘ (bis sie braun werden) lässt beide Grade offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-025-orig" n="deler" resp="#fyndling" subtype="lexical">‚Deler‘ wird als ‚Teller‘ übersetzt, eine flache Unterlage zum Abkühlen der Äpfel.<list type="alternatives"><item>Eine andere Möglichkeit wäre ‚Brett‘, da auch ein Holzbrett zum Abkühlen von Speisen verwendet wurde.<note type="rationale">Ein weiterer Beleg im selben Buch verwendet ‚deler‘ austauschbar mit ‚Schüssel‘ für ein anderes Gericht, was die Teller/Gefäß-Lesart gegenüber ‚Brett‘ stützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-025-orig" n="berlach" resp="#fyndling" subtype="lexical">‚Berlach‘ wird als ‚Weinbeeren‘ (Rosinen) übersetzt, da dies im Kontext von süßen Backwaren und anderen Gewürzen sehr plausibel ist.<list type="alternatives"><item>Es könnte auch allgemein ‚Beeren‘ bedeuten, ohne weitere Spezifikation.<note type="rationale">Die Kombination mit ‚Wein‘ im Originaltext und der süße Kontext der Torte machen ‚Weinbeeren‘ (Rosinen) zur wahrscheinlichsten Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-025-orig" n="er schnites" resp="#fyndling" subtype="philological">‚Er schnites‘ wird als ‚geschnittenes‘ übersetzt, wobei ‚er-‘ als Präfix für das Partizip ‚erschnittenes‘ (ausgeschnittenes) verstanden wird.<list type="alternatives"><item>Es könnte auch eine unvollständige oder dialektale Form für ‚ein geschnittenes‘ sein.<note type="rationale">Die Form ‚schnites‘ deutet auf ein Partizip hin, und ‚er-‘ ist ein gängiges Präfix im Frühneuhochdeutschen, das eine Handlung abschließt oder ein Ergebnis betont.</note></item></list></note>
       </div>
     </back>
   </text>

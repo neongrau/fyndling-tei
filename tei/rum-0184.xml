@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,11 +126,11 @@ Praxis. In die Brühe ein wenig frisch geschnittenen Knoblauch, einen Schuss Wei
         <note type="gloss" target="#rum-0184-orig" n="gar an die statt braten" resp="#fyndling">Ganz gar braten. Dieselbe Formel gebraucht Rumpolt auch beim Sieden („an die statt sieden“).</note>
         <note type="gloss" target="#rum-0184-orig" n="braune Bruͤh" resp="#fyndling">Eine Brühe von brauner Farbe. Woraus sie hier gemacht wird, sagt das Rezept nicht. In den Nachbarrezepten des Hammelkapitels ist es Brühe, die man von anderen Braten abgegossen hat; Rumpolt rät, sie „allzeit in vorraht“ zu haben.</note>
         <note type="gloss" target="#rum-0184-orig" n="neuwen Knobloch" resp="#fyndling">Neuer, also frischer Knoblauch.</note>
-        <note type="interpretive_choice" target="#rum-0184-orig" n="braune Bruͤh" resp="#fyndling">Braune Brühe, deren Herkunft offen bleibt. In den Kapitelnachbarn Nr. 27 und Nr. 31 ist es Brühe, die von anderen Braten abgegossen wurde, und Nr. 31 verlangt, sie stets vorrätig zu haben; hier fehlt jede Angabe, deshalb wird nur „braune Brühe“ übersetzt.</note>
-        <note type="interpretive_choice" target="#rum-0184-orig" n="neuwen Knobloch" resp="#fyndling">„Neu“ heißt frisch, von der neuen Ernte; gleichbedeutend mit dem „frischen Knoblauch, der gar jung ist“, mit dem der Braten gespickt wird.</note>
-        <note type="interpretive_choice" target="#rum-0184-orig" n="gar an die statt braten" resp="#fyndling">Ganz gar braten, gelesen aus Rumpolts gleichlautender Formel beim Sieden („an die statt sieden“ = gar sieden).</note>
-        <note type="interpretive_choice" target="#rum-0184-orig" n="Garzeit und Garprobe" resp="#fyndling">Der Text nennt weder Zeit noch Hitze, nur „gar an die statt“, also ganz gar.</note>
-        <note type="interpretive_choice" target="#rum-0184-orig" n="ein wenig Essig" resp="#fyndling">Weinessig, der übliche Essig der Zeit; die Menge nennt der Text nur mit „ein wenig“, die Brühe wird säuerlich, nicht sauer.</note>
+        <note type="interpretive_choice" target="#rum-0184-orig" n="braune Bruͤh" resp="#fyndling" subtype="contextual">Braune Brühe, deren Herkunft offen bleibt. In den Kapitelnachbarn Nr. 27 und Nr. 31 ist es Brühe, die von anderen Braten abgegossen wurde, und Nr. 31 verlangt, sie stets vorrätig zu haben; hier fehlt jede Angabe, deshalb wird nur „braune Brühe“ übersetzt.<list type="alternatives"><item>Aus dem Bratensaft desselben Schlegels gemacht<note type="rationale">Möglich, weil der Schlegel am Spieß Saft abgibt; der Text sagt es aber nicht, deshalb nicht als Hauptlesart.</note></item><item>Zum Nachkochen: Bratensaft aus der Fettpfanne mit etwas Fleischbrühe lösen<note type="rationale">Moderne Lösung für jemanden, der nur diesen einen Braten macht; keine Aussage der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0184-orig" n="neuwen Knobloch" resp="#fyndling" subtype="lexical">„Neu“ heißt frisch, von der neuen Ernte; gleichbedeutend mit dem „frischen Knoblauch, der gar jung ist“, mit dem der Braten gespickt wird.<list type="alternatives"><item>Gelagerter, getrockneter Knoblauch<note type="rationale">Widerspricht dem Wort „neu“; nur als Ersatz außerhalb der Saison.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0184-orig" n="gar an die statt braten" resp="#fyndling" subtype="contextual">Ganz gar braten, gelesen aus Rumpolts gleichlautender Formel beim Sieden („an die statt sieden“ = gar sieden).<list type="alternatives"><item>„An die statt“ im Sinn von „an Ort und Stelle“, also am Spieß fertig braten<note type="rationale">Wörtlich denkbar; am Vorgang ändert es nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0184-orig" n="Garzeit und Garprobe" resp="#fyndling" subtype="contextual">Der Text nennt weder Zeit noch Hitze, nur „gar an die statt“, also ganz gar.<list type="alternatives"><item>Hammelkeule am Spieß über mittlerer Glut etwa 2 bis 3 Stunden, gar, wenn beim Einstechen klarer Saft austritt<note type="rationale">Erfahrungswert zum Nachkochen, abhängig von Gewicht und Glut; keine Angabe der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0184-orig" n="ein wenig Essig" resp="#fyndling" subtype="contextual">Weinessig, der übliche Essig der Zeit; die Menge nennt der Text nur mit „ein wenig“, die Brühe wird säuerlich, nicht sauer.<list type="alternatives"><item>Ein Schuss Weinessig, nach Geschmack abgeschmeckt<note type="rationale">Moderne Praxis; die Menge richtet sich nach der Menge Brühe.</note></item></list></note>
       </div>
     </back>
   </text>

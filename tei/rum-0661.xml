@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,10 +126,10 @@ Praxis. Den Magen aufschneiden, die harte Innenhaut abziehen und ausspülen; das
         <note type="gloss" target="#rum-0661-orig" n="Sudt auffthun" resp="#fyndling">Einmal aufkochen lassen.</note>
         <note type="gloss" target="#rum-0661-orig" n="gemach sieden" resp="#fyndling">Schwach sieden, bei kleiner Hitze.</note>
         <note type="gloss" target="#rum-0661-orig" n="Gehackts" resp="#fyndling">Rumpolts eigener Name für die Speise. Das Frühneuhochdeutsche Wörterbuch (gehäkt) erklärt es als Speise aus klein gehackten Nahrungsmitteln, besonders aus Fleisch. Gemeint ist ein in Brühe gegartes Gericht, kein rohes Hackfleisch.</note>
-        <note type="interpretive_choice" target="#rum-0661-orig" n="darnach laß gemach sieden" resp="#fyndling">Der Text nennt keine Dauer: Das gehackte Magenfleisch siedet schwach weiter, bis es gar ist, erst dann kommen Rosinen, Zucker und Eidotter dazu. Anders als beim Gehackten vom Wildgansmagen (rum-0589) wird der Magen hier roh gehackt und erst in der Brühe gegart.</note>
-        <note type="interpretive_choice" target="#rum-0661-orig" n="etliche Eyerdotter/ ruͤrs darein/ vnd laß ein Sudt darmit auffthun" resp="#fyndling">Wörtlich: Eidotter einrühren und einmal aufkochen lassen. Bei kräftigem Aufwallen gerinnt das Eigelb leicht und steht dann in feinen Flocken in der Sauce.</note>
-        <note type="interpretive_choice" target="#rum-0661-orig" n="kleine schwartze Rosein" resp="#fyndling">Kleine, dunkle Rosinen. Rumpolt nennt nur Größe und Farbe, keine Sorte.</note>
-        <note type="interpretive_choice" target="#rum-0661-orig" n="Nim̃ ein Magen von einem Kappaunen/ schneidt vnd hack jn klein" resp="#fyndling">Der Text sagt nichts über das Säubern des Magens; er setzt sofort mit Schneiden und Hacken ein.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="interpretive_choice" target="#rum-0661-orig" n="darnach laß gemach sieden" resp="#fyndling" subtype="contextual">Der Text nennt keine Dauer: Das gehackte Magenfleisch siedet schwach weiter, bis es gar ist, erst dann kommen Rosinen, Zucker und Eidotter dazu. Anders als beim Gehackten vom Wildgansmagen (rum-0589) wird der Magen hier roh gehackt und erst in der Brühe gegart.<list type="alternatives"><item>Etwa 30 bis 45 Minuten bei kleiner Hitze sieden, bis das Gehackte weich ist<note type="rationale">Moderne Praxishilfe, kein Textbefund. Der Muskelmagen ist zäh, fein gehackt wird er aber deutlich schneller weich als im Stück.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0661-orig" n="etliche Eyerdotter/ ruͤrs darein/ vnd laß ein Sudt darmit auffthun" resp="#fyndling" subtype="contextual">Wörtlich: Eidotter einrühren und einmal aufkochen lassen. Bei kräftigem Aufwallen gerinnt das Eigelb leicht und steht dann in feinen Flocken in der Sauce.<list type="alternatives"><item>Topf vom Feuer nehmen, Eigelb mit etwas Brühe glattrühren, einrühren und nur kurz erhitzen, ohne es sprudelnd kochen zu lassen<note type="rationale">Moderne Legier-Praxis für eine glatte, sämige Bindung; der Text verlangt ausdrücklich einen Sud.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0661-orig" n="kleine schwartze Rosein" resp="#fyndling" subtype="lexical">Kleine, dunkle Rosinen. Rumpolt nennt nur Größe und Farbe, keine Sorte.<list type="alternatives"><item>Korinthen (kleine, dunkle getrocknete Weinbeeren)<note type="rationale">Naheliegend, weil Korinthen klein und schwarz sind; der Text legt sich aber auf keine Sorte fest, deshalb nur als offene Deutung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0661-orig" n="Nim̃ ein Magen von einem Kappaunen/ schneidt vnd hack jn klein" resp="#fyndling" subtype="contextual">Der Text sagt nichts über das Säubern des Magens; er setzt sofort mit Schneiden und Hacken ein.<list type="alternatives"><item>Den Muskelmagen vor dem Hacken aufschneiden, die harte Innenhaut abziehen und den Magen ausspülen<note type="rationale">Heute übliche Vorbereitung; ob Rumpolt sie stillschweigend voraussetzt, lässt der Text offen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
       </div>
     </back>
   </text>

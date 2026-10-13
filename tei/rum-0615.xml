@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,9 +114,9 @@ Wie wird die Gans gegart? Auch das steht nicht da. Im selben Kapitel brät Rumpo
 Praxis. Der Eintrag gibt keine Methode vor, deshalb legen wir keine fest. Wer die Gans heute nachkocht, gart sie gefüllt im Ofen, damit die Füllung sicher durchgart. Das ist eine moderne Entscheidung, kein Textbefund.</note>
         <note type="gloss" target="#rum-0615-orig" n="kleinen Voͤgeln" resp="#fyndling">Rumpolt nennt keine Art. Dieselbe unbestimmte Angabe steht bei ihm auch in der Füllung der Spanferkelhaut und bei der gespickten Geiß.</note>
         <note type="gloss" target="#rum-0615-orig" n="Kaͤsten" resp="#fyndling">Kästen oder Kesten: Kastanien. Rumpolt schreibt das Wort auch „Kesten“.</note>
-        <note type="interpretive_choice" target="#rum-0615-orig" n="kleinen Voͤgeln" resp="#fyndling">Kleine Vögel ohne bestimmte Art, wie im Druck. Rumpolt nennt auch an den Parallelstellen (rum-0223, rum-0258) keine Art.</note>
-        <note type="interpretive_choice" target="#rum-0615-orig" n="Kaͤsten" resp="#fyndling">Kastanien. Lexer und das Frühneuhochdeutsche Wörterbuch führen „kestene“ als Kastanie; Rumpolt schreibt „Kesten“ bei der gefüllten Geiß (rum-0223) und „gebraten Kaͤsten“ als Gänsefüllung (rum-0621).</note>
-        <note type="interpretive_choice" target="#rum-0615-orig" n="Zubereitung der kleinen Vögel und Garmethode der Gans" resp="#fyndling">Offen gelassen. Die nächste Parallele im Buch ist die Spanferkelhaut (rum-0258): Vögel teils anbraten, teils absieden und unter die Füllung mischen; die Gans brät Rumpolt im selben Kapitel am Spieß (rum-0598, rum-0621). Das sind Parallelen, keine Angaben dieses Eintrags.</note>
+        <note type="interpretive_choice" target="#rum-0615-orig" n="kleinen Voͤgeln" resp="#fyndling" subtype="lexical">Kleine Vögel ohne bestimmte Art, wie im Druck. Rumpolt nennt auch an den Parallelstellen (rum-0223, rum-0258) keine Art.<list type="alternatives"><item>Bestimmte Arten wie Lerchen, Drosseln oder Finken<note type="rationale">Im Text nicht genannt; eine Festlegung wäre eine Ergänzung ohne Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0615-orig" n="Kaͤsten" resp="#fyndling" subtype="lexical">Kastanien. Lexer und das Frühneuhochdeutsche Wörterbuch führen „kestene“ als Kastanie; Rumpolt schreibt „Kesten“ bei der gefüllten Geiß (rum-0223) und „gebraten Kaͤsten“ als Gänsefüllung (rum-0621).<list type="alternatives"><item>Kästen im heutigen Sinn (Behälter)<note type="rationale">Ergibt in einer Aufzählung von Füllzutaten keinen Sinn.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0615-orig" n="Zubereitung der kleinen Vögel und Garmethode der Gans" resp="#fyndling" subtype="contextual">Offen gelassen. Die nächste Parallele im Buch ist die Spanferkelhaut (rum-0258): Vögel teils anbraten, teils absieden und unter die Füllung mischen; die Gans brät Rumpolt im selben Kapitel am Spieß (rum-0598, rum-0621). Das sind Parallelen, keine Angaben dieses Eintrags.<list type="alternatives"><item>Gefüllte Gans im Ofen braten<note type="rationale">Moderne Praxis für ein sicheres Durchgaren der Füllung; im Text nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

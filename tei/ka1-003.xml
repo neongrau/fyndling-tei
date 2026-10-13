@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -159,9 +164,9 @@ Praxis. Das Rezept selbst nennt nur die Füllung, nicht die Teighülle: Fisch, G
         <note type="gloss" target="#ka1-003-orig" n="peterlin" resp="#fyndling">Petersilie.</note>
         <note type="gloss" target="#ka1-003-orig" n="stuben" resp="#fyndling">Als Fischname nur an dieser Stelle belegt (Hapax). Die Zeichenkette taucht im Korpus vier weitere Male auf, aber stets als 'Stube' (Raum) - ein Homograph ohne Bezug zum Fischkontext.</note>
         <note type="gloss" target="#ka1-003-orig" n="selan" resp="#fyndling">Unsicherer, nicht identifizierbarer Fischname, nur an dieser Stelle belegt (Hapax). Nicht zu verwechseln mit 'Seele' (mhd. sêle), einem unverwandten Homograph.</note>
-        <note type="interpretive_choice" target="#ka1-003-orig" n="trischen" resp="#fyndling">Als 'Trischen/Trüschen' gelesen, eine mundartliche Form für Trüschen (Quappen, Lota lota), da das Wort in der MHDBDB-Kategorie Süßwasserfische geführt wird.</note>
-        <note type="interpretive_choice" target="#ka1-003-orig" n="stuben" resp="#fyndling">Als unsicherer, heute nicht mehr identifizierbarer Fischname belassen, da er im Kontext einer Fischliste steht.</note>
-        <note type="interpretive_choice" target="#ka1-003-orig" n="selan" resp="#fyndling">Als unsicherer, heute nicht mehr identifizierbarer Fischname belassen, da er zwischen eindeutigen Fischnamen (Gangfisch, Felchen) steht - nicht zu verwechseln mit dem lautlich ähnlichen 'Seelen' (Plural von Seele), das hier keinen Sinn ergäbe.</note>
+        <note type="interpretive_choice" target="#ka1-003-orig" n="trischen" resp="#fyndling">Als 'Trischen/Trüschen' gelesen, eine mundartliche Form für Trüschen (Quappen, Lota lota), da das Wort in der MHDBDB-Kategorie Süßwasserfische geführt wird.<list type="alternatives"><item>Ein anderer, heute nicht mehr identifizierbarer Fischname.<note type="rationale">Das Wort ist im gesamten Korpus nur an dieser Stelle belegt (Hapax legomenon), eine sichere Zuordnung ist daher nicht möglich.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-003-orig" n="stuben" resp="#fyndling">Als unsicherer, heute nicht mehr identifizierbarer Fischname belassen, da er im Kontext einer Fischliste steht.<list type="alternatives"><item>Regionale Bezeichnung für Stint (Osmerus eperlanus).<note type="rationale">Lautlich entfernt möglich, aber ohne Beleg reine Spekulation - das Wort ist im Korpus nur hier belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-003-orig" n="selan" resp="#fyndling">Als unsicherer, heute nicht mehr identifizierbarer Fischname belassen, da er zwischen eindeutigen Fischnamen (Gangfisch, Felchen) steht - nicht zu verwechseln mit dem lautlich ähnlichen 'Seelen' (Plural von Seele), das hier keinen Sinn ergäbe.<list type="alternatives"><item>Regionale Kurzform für Seesaibling (Salvelinus umbla), einen typischen Bodensee-Tiefseefisch.<note type="rationale">Passt gut in den Bodensee-Kontext des Rezepts, ist aber lautlich nicht eindeutig herzuleiten und bleibt spekulativ.</note></item></list></note>
       </div>
     </back>
   </text>

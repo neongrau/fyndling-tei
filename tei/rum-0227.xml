@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,10 +113,10 @@ Praxis. Den Ziegenkopf beim Metzger vorbestellen. Das Vorgaren dauert etwa ander
         <note type="gloss" target="#rum-0227-orig" n="vorhin vermeldet" resp="#fyndling">Rückverweis auf das erste Rezept des Kalbskapitels, den weiß gekochten Kalbskopf: mit der Haut brühen, in Salzwasser aufsetzen, abschäumen, mit einem Stück Speck sieden. Eine Pastete ist dort nicht beschrieben; übernommen wird das Kochen und Zurichten.</note>
         <note type="gloss" target="#rum-0227-orig" n="Limonien" resp="#fyndling">Zitronen. Ob Saft, Scheiben oder Schale gemeint sind, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0227-orig" n="fein saͤurlich" resp="#fyndling">Recht säuerlich; fein ist hier ein Gradwort, keine Verstärkung zu „scharf sauer“.</note>
-        <note type="interpretive_choice" target="#rum-0227-orig" n="vorhin vermeldet" resp="#fyndling">Verweis auf das Kochen und Zurichten des Kalbskopfs im ersten Kalbsrezept (Kalbskopf weiß gekocht). Der Satz sagt ausdrücklich „mit einem Kalbskopff zu kochen vnd zu zurichten“; das Backen in der Pastete ist Rumpolts Zusatz für den Geißkopf.</note>
-        <note type="interpretive_choice" target="#rum-0227-orig" n="mit Eyerdottern vnd Limonien" resp="#fyndling">Eigelb und Zitronen gehören zum Kopf, ohne dass Rumpolt sagt, wie: Sie können mit in die Füllung kommen und mitbacken, oder sie begleiten die fertige Pastete. Der Text lässt beides offen.</note>
-        <note type="interpretive_choice" target="#rum-0227-orig" n="Limonien" resp="#fyndling">Frische Zitronen: Der Text nennt schlicht „Limonien“, die „fein saͤurlich“ sind, also für ihre Säure verwendet werden.</note>
-        <note type="interpretive_choice" target="#rum-0227-orig" n="Pastetẽ" resp="#fyndling">Eine gebackene Teighülle um den gekochten Kopf. Teig, Form, Backzeit und Hitze nennt Rumpolt nicht; jeder feste Pastetenteig ist gleich gut gedeckt.</note>
+        <note type="interpretive_choice" target="#rum-0227-orig" n="vorhin vermeldet" resp="#fyndling" subtype="contextual">Verweis auf das Kochen und Zurichten des Kalbskopfs im ersten Kalbsrezept (Kalbskopf weiß gekocht). Der Satz sagt ausdrücklich „mit einem Kalbskopff zu kochen vnd zu zurichten“; das Backen in der Pastete ist Rumpolts Zusatz für den Geißkopf.<list type="alternatives"><item>Verweis auf eine Kalbskopf-Pastete an anderer Stelle im Buch<note type="rationale">Ein solches Rezept ist in Rumpolts Buch nicht zu finden; die Kalbskopf-Rezepte kochen, backen aus oder machen Hirnkuchen, keine Pastete.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0227-orig" n="mit Eyerdottern vnd Limonien" resp="#fyndling" subtype="contextual">Eigelb und Zitronen gehören zum Kopf, ohne dass Rumpolt sagt, wie: Sie können mit in die Füllung kommen und mitbacken, oder sie begleiten die fertige Pastete. Der Text lässt beides offen.<list type="alternatives"><item>Eigelb mit Zitronensaft verrühren und zum Schluss in die gebackene Pastete geben, nicht mehr stark erhitzen<note type="rationale">Unser Praxisvorschlag, damit das Eigelb nicht gerinnt; Rumpolt kennt die Bindung mit Eigelb und Säure beim Kopf auch anderswo (Lammkopf mit Eigelb und Essig), schreibt sie hier aber nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0227-orig" n="Limonien" resp="#fyndling" subtype="lexical">Frische Zitronen: Der Text nennt schlicht „Limonien“, die „fein saͤurlich“ sind, also für ihre Säure verwendet werden.<list type="alternatives"><item>Gesalzene Zitronen<note type="rationale">Rumpolt nennt im selben Kapitel „gesaltzene Limonien“ ausdrücklich; hier fehlt der Zusatz, deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0227-orig" n="Pastetẽ" resp="#fyndling" subtype="contextual">Eine gebackene Teighülle um den gekochten Kopf. Teig, Form, Backzeit und Hitze nennt Rumpolt nicht; jeder feste Pastetenteig ist gleich gut gedeckt.<list type="alternatives"><item>Ein bestimmter Teig aus Rumpolts Pastetenkapitel<note type="rationale">Der Text verweist nicht darauf; eine solche Festlegung wäre unsere Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

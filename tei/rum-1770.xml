@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,8 +132,8 @@ Praxis. Die Teighülle muss dicht sein, weil die Soße beim zweiten Ofengang in 
         <note type="gloss" target="#rum-1770-orig" n="auffgetrieben" resp="#fyndling">Aufgetrieben heißt: Der Teig wird zu einer Pastetenhülle hochgezogen und geformt. An anderen Stellen sagt Rumpolt dafür auch „hoch ziehen“.</note>
         <note type="gloss" target="#rum-1770-orig" n="Rosein" resp="#fyndling">Kleine schwarze Rosinen, nach heutigem Verständnis Korinthen; gewöhnliche Rosinen gehen als Ersatz.</note>
         <note type="gloss" target="#rum-1770-orig" n="Pfeffer" resp="#fyndling">Gemeint ist eine Pfeffersoße, nicht das bloße Gewürz: Rumpolt gebraucht „Pfeffer“ auch als Namen einer mit Pfeffer gewürzten Soße. „Geuß ... darein“ und „laß damit auffsieden“ setzen eine Flüssigkeit voraus. Wie die Soße zubereitet wird, sagt dieses Rezept nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-1770-orig" n="Pfeffer (geuß Pfeffer darein)" resp="#fyndling">Eine zubereitete Pfeffersoße, die in die aufgeschnittene Pastete gegossen wird. Grund: „geuß“ und „auffsieden“ verlangen eine Flüssigkeit, und in verwandten Pasteten nennt Rumpolt den Pfeffer ausdrücklich „angemacht“ (rum-1740, rum-1731).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-1770-orig" n="Rebhühner ganz oder geteilt" resp="#fyndling">Ganz eingelegt: Der Text sagt „leg sie in die Pasteten“ und erwähnt kein Zerteilen.</note>
+        <note type="interpretive_choice" target="#rum-1770-orig" n="Pfeffer (geuß Pfeffer darein)" resp="#fyndling" subtype="lexical">Eine zubereitete Pfeffersoße, die in die aufgeschnittene Pastete gegossen wird. Grund: „geuß“ und „auffsieden“ verlangen eine Flüssigkeit, und in verwandten Pasteten nennt Rumpolt den Pfeffer ausdrücklich „angemacht“ (rum-1740, rum-1731).<list type="alternatives"><item>Gemahlener Pfeffer als trockenes Gewürz<note type="rationale">Passt nicht zu „gießen“ und „aufsieden“; ein Pulver lässt sich nicht eingießen.</note></item><item>Ungarischer Pfeffer wie bei der Ziemerpastete<note type="rationale">Dort steht ausdrücklich „guten Vngerischen Pfeffer“; hier sagt der Text nur „Pfeffer“, welche Soße gemeint ist, bleibt offen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-1770-orig" n="Rebhühner ganz oder geteilt" resp="#fyndling" subtype="contextual">Ganz eingelegt: Der Text sagt „leg sie in die Pasteten“ und erwähnt kein Zerteilen.<list type="alternatives"><item>Halbiert<note type="rationale">Moderne Praxis, wenn die Vögel sonst nicht in die Pastete passen; der Text sagt das nicht.</note></item></list></note>
       </div>
     </back>
   </text>

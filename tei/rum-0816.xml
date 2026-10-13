@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,10 +110,10 @@ Das Kochen. Beim Kraut steht „in“, beim grünen Kohl „mit“; ob damit ein
 Praxis. Küchenfertige Wachteln nehmen, das Rupfen und Ausnehmen setzt der Text voraus. Weißkohl in Streifen schneiden, grünen Kohl von den groben Blattrippen befreien. Die Wachteln brauchen im siedenden Kraut etwa 15 bis 20 Minuten; das ist ein moderner Richtwert, der Text nennt keine Zeit. Salz und Würzung nach eigenem Geschmack, Rumpolt gibt dafür nichts vor.</note>
         <note type="gloss" target="#rum-0816-orig" n="weissem oder saurem Kraut" resp="#fyndling">Kraut steht hier für Kohl: weißes Kraut ist Weißkohl, saures Kraut ist gesäuerter Kohl, also Sauerkraut.</note>
         <note type="gloss" target="#rum-0816-orig" n="Koͤl" resp="#fyndling">Kohl. Rumpolt stellt den grünen Kohl neben das weiße und das saure Kraut; welche grüne Kohlart gemeint ist, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0816-orig" n="weissem … Kraut" resp="#fyndling">Weißkraut, also Weißkohl. In der Reihe mit saurem Kraut und grünem Kohl meint „Kraut“ den Kohl.</note>
-        <note type="interpretive_choice" target="#rum-0816-orig" n="saurem Kraut" resp="#fyndling">Sauerkraut, also gesäuerter Kohl. So auch bei der geräucherten Gans und der Mittelente, wo Rumpolt saures Kraut neben Kohl nennt.</note>
-        <note type="interpretive_choice" target="#rum-0816-orig" n="gruͤnem Koͤl" resp="#fyndling">Grüner Kohl als grüner Blattkohl, Sorte offen. Rumpolt grenzt ihn nur farblich vom weißen Kraut ab.</note>
-        <note type="interpretive_choice" target="#rum-0816-orig" n="gekocht in … Kraut / mit … Koͤl" resp="#fyndling">Wachteln und Kohl garen zusammen im Topf. Wie, mit welcher Flüssigkeit und in welcher Reihenfolge, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0816-orig" n="weissem … Kraut" resp="#fyndling" subtype="lexical">Weißkraut, also Weißkohl. In der Reihe mit saurem Kraut und grünem Kohl meint „Kraut“ den Kohl.<list type="alternatives"><item>Kraut im weiten Sinn als Blattgemüse oder Pflanze allgemein<note type="rationale">Frühneuhochdeutsch möglich; die Nachbarschaft zu saurem Kraut und grünem Kohl spricht hier für Kohl.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0816-orig" n="saurem Kraut" resp="#fyndling" subtype="contextual">Sauerkraut, also gesäuerter Kohl. So auch bei der geräucherten Gans und der Mittelente, wo Rumpolt saures Kraut neben Kohl nennt.<list type="alternatives"><item>Gesäuertes Gemüsekraut allgemein<note type="rationale">Der Text sagt „saures Kraut“, nicht „Sauerkraut“; die Gleichsetzung ist naheliegend, aber nicht durch ein eigenes Rezept gesichert.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0816-orig" n="gruͤnem Koͤl" resp="#fyndling" subtype="lexical">Grüner Kohl als grüner Blattkohl, Sorte offen. Rumpolt grenzt ihn nur farblich vom weißen Kraut ab.<list type="alternatives"><item>Grünkohl im heutigen Sinn<note type="rationale">Naheliegend und heute die übliche Wahl, aber aus dem Text nicht zu sichern.</note></item><item>Wirsing oder ein anderer grüner Kopfkohl<note type="rationale">Ebenso möglich; der Wortlaut schließt keine grüne Kohlsorte aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0816-orig" n="gekocht in … Kraut / mit … Koͤl" resp="#fyndling" subtype="contextual">Wachteln und Kohl garen zusammen im Topf. Wie, mit welcher Flüssigkeit und in welcher Reihenfolge, sagt der Text nicht.<list type="alternatives"><item>Moderne Ausführung: das Kraut zuerst weich garen und die Wachteln erst darin fertig kochen<note type="rationale">Praktisch, weil die kleinen Wachteln schneller gar sind als Weiß- oder Sauerkraut; bei Rumpolt nicht überliefert.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,9 +106,9 @@
         <note type="gloss" target="#men-171-orig" n="pelee" resp="#fyndling">geschält, enthäutet</note>
         <note type="gloss" target="#men-171-orig" n="fricte" resp="#fyndling">gebraten</note>
         <note type="gloss" target="#men-171-orig" n="gravé" resp="#fyndling">Sauce, Brühe</note>
-        <note type="interpretive_choice" target="#men-171-orig" n="sans escharder cuicte en eaue, et puis soit pelee" resp="#fyndling">Der Barsch soll ungeschuppt in Wasser gekocht und anschließend geschält werden, wobei Haut und Schuppen gemeinsam entfernt werden.</note>
-        <note type="interpretive_choice" target="#men-171-orig" n="La fricte soit mis au gravé" resp="#fyndling">Dies ist eine separate Zubereitungsart für gebratenen Barsch, die neben dem gekochten Barsch als Alternative oder Ergänzung erwähnt wird.</note>
-        <note type="interpretive_choice" target="#men-171-orig" n="gravé" resp="#fyndling">Ein allgemeiner Begriff für eine Sauce oder Brühe, hier wahrscheinlich eine einfache Würzsauce, die zum gebratenen Fisch gereicht wird.</note>
+        <note type="interpretive_choice" target="#men-171-orig" n="sans escharder cuicte en eaue, et puis soit pelee" resp="#fyndling">Der Barsch soll ungeschuppt in Wasser gekocht und anschließend geschält werden, wobei Haut und Schuppen gemeinsam entfernt werden.<list type="alternatives"><item>Der Barsch soll ungeschuppt gekocht und dann nachträglich geschuppt werden.<note type="rationale">Dies ist weniger plausibel, da 'pelee' eher das Entfernen der Haut (Schälen) impliziert, was die Schuppen automatisch mit entfernen würde.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-171-orig" n="La fricte soit mis au gravé" resp="#fyndling">Dies ist eine separate Zubereitungsart für gebratenen Barsch, die neben dem gekochten Barsch als Alternative oder Ergänzung erwähnt wird.<list type="alternatives"><item>'fricte' bezieht sich auf den zuvor gekochten Barsch, der dann noch kurz angebraten wird, bevor er in die Sauce gegeben wird.<note type="rationale">Diese Lesart ist weniger wahrscheinlich, da der Satz als eigenständige Anweisung formuliert ist und einen klaren Kontrast zur 'cuicte en eaue' (in Wasser gekocht) Methode bildet.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-171-orig" n="gravé" resp="#fyndling">Ein allgemeiner Begriff für eine Sauce oder Brühe, hier wahrscheinlich eine einfache Würzsauce, die zum gebratenen Fisch gereicht wird.<list type="alternatives"><item>Es handelt sich um eine spezifische, aber hier nicht näher beschriebene mittelalterliche Sauce (z.B. ein 'gravé de poisson').<note type="rationale">Ohne weitere Angaben im Rezept ist es schwierig, eine spezifische 'gravé'-Variante zu identifizieren. Die allgemeine Interpretation ist daher sicherer.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,9 +132,9 @@ Kalbs- oder Rinderlunge in Wasser weich sieden, wie es der Zwilling wo10-084 aus
         <note type="gloss" target="#phw-022-orig" n="millich rom" resp="#fyndling">Milchrahm ist die fettreiche Schicht, die sich auf unhomogenisierter Milch absetzt, vergleichbar mit Sahne.</note>
         <note type="gloss" target="#phw-022-orig" n="wein berlach" resp="#fyndling">Weinbeeren (Rosinen). ‚Berlach‘ ist ein Diminutiv im Plural, gebildet wie ‚rerlach‘ (Zimtröhrlein): Beerlein. Die Wendung ‚wein berlach‘ steht im Buch fest in dieser Form und wird überall als Weinbeeren gelesen; ‚Berlach‘ für sich allein ist im Wörterbuch nur als Augsburger Platzname belegt, steht hier aber nie ohne das vorangestellte ‚Wein‘.</note>
         <note type="gloss" target="#phw-022-orig" n="dorten pfannenn" resp="#fyndling">Eine Tortenpfanne war eine flache, runde Backform, die im Ofen oder mit Ober- und Unterhitze (z.B. mit Glut auf dem Deckel) verwendet wurde.</note>
-        <note type="interpretive_choice" target="#phw-022-orig" n="wiltu du (Rezepttitel)" resp="#fyndling">Schreibversehen: Der Schreiber hat das Pronomen doppelt gesetzt, einmal angehängt („wiltu“) und einmal frei („du“), ohne eines davon zu tilgen. Sonst steht im Buch durchgängig „wilt du“. Übersetzt wird einfach „Willst du“.</note>
-        <note type="interpretive_choice" target="#phw-022-orig" n="Zubereitung der Lunge (Sieden vor dem Hacken?)" resp="#fyndling">Die Lunge wird vor dem Hacken gesotten. Der Text nennt diesen Schritt nicht, setzt ihn aber voraus: Der nahe Zwilling wo10-084 siedet die Kalbslunge ausdrücklich („seud sie vnd hackh sie klain“), und rohe Lunge lässt sich kaum fein hacken.</note>
-        <note type="interpretive_choice" target="#phw-022-orig" n="Wie die Butter in die fast fertige Torte kommt" resp="#fyndling">Der Text benennt nur, dass die Butter zugegeben wird, wenn die Torte fast fertig gebacken ist - der Weg dorthin bleibt unausgesprochen.</note>
+        <note type="interpretive_choice" target="#phw-022-orig" n="wiltu du (Rezepttitel)" resp="#fyndling" subtype="philological">Schreibversehen: Der Schreiber hat das Pronomen doppelt gesetzt, einmal angehängt („wiltu“) und einmal frei („du“), ohne eines davon zu tilgen. Sonst steht im Buch durchgängig „wilt du“. Übersetzt wird einfach „Willst du“.</note>
+        <note type="interpretive_choice" target="#phw-022-orig" n="Zubereitung der Lunge (Sieden vor dem Hacken?)" resp="#fyndling" subtype="contextual">Die Lunge wird vor dem Hacken gesotten. Der Text nennt diesen Schritt nicht, setzt ihn aber voraus: Der nahe Zwilling wo10-084 siedet die Kalbslunge ausdrücklich („seud sie vnd hackh sie klain“), und rohe Lunge lässt sich kaum fein hacken.<list type="alternatives"><item>Die Lunge wird roh gehackt und gart erst beim Backen der Torte durch.<note type="rationale">Frühere Lesart dieses Rezepts. Sie hält sich an den Wortlaut, der kein Sieden nennt. Dass ein Schritt nicht genannt ist, heißt aber nicht, dass er fehlt; der Zwilling wo10-084 nennt ihn.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-022-orig" n="Wie die Butter in die fast fertige Torte kommt" resp="#fyndling" subtype="contextual">Der Text benennt nur, dass die Butter zugegeben wird, wenn die Torte fast fertig gebacken ist - der Weg dorthin bleibt unausgesprochen.<list type="alternatives"><item>Die Butter wird durch eine eigens geschnittene Öffnung in der oberen Teigdecke eingegossen, wie es phw-059 für eine Brühe ausdrücklich beschreibt.<note type="rationale">Diese Technik ist im selben Buch belegt, phw-022 nennt sie an dieser Stelle aber nicht ausdrücklich.</note></item></list></note>
       </div>
     </back>
   </text>

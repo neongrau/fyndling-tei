@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,11 +114,11 @@ Praxis. Die Wachteln in Brühe gar sieden, nach heutiger Erfahrung etwa 20 Minut
         <note type="gloss" target="#rum-0813-orig" n="Eyerdottern" resp="#fyndling">Eierdotter, also Eigelb.</note>
         <note type="gloss" target="#rum-0813-orig" n="fein saͤurlich" resp="#fyndling">Mild säuerlich. Welche Zutat die Säure gibt, sagt der Text nicht. In verwandten Rezepten nennt Rumpolt Limonien (rum-0726, rum-0814) oder Agrastbeeren (rum-0630).</note>
         <note type="gloss" target="#rum-0813-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0813-orig" n="Oder auch" resp="#fyndling">Weitere Spielart der eingemachten Wachteln: Die Zeile reiht sich an grün (rum-0811) und gelb in Weinbrühe (rum-0812) und übernimmt von dort das Tier.</note>
-        <note type="interpretive_choice" target="#rum-0813-orig" n="mit frischer Butter" resp="#fyndling">Die Butter gehört zur Brühe, die über die Wachteln gegeben wird; bei den weiß eingemachten jungen Hühnern (rum-0726) kommt die frische Butter ebenfalls in die Sauce. Die Übersetzung bewahrt die offene Wortstellung.</note>
-        <note type="interpretive_choice" target="#rum-0813-orig" n="weiß" resp="#fyndling">Farbe der Brühe: hell, ohne die Färbung der grünen (rum-0811) und gelben (rum-0812) Nachbarnummern.</note>
-        <note type="interpretive_choice" target="#rum-0813-orig" n="fein saͤurlich (Säurequelle)" resp="#fyndling">Die säuernde Zutat bleibt ungenannt. In verwandten weißen Einmachungen säuert Rumpolt mit Limonien (rum-0726) oder Agrastbeeren (rum-0630), und die folgende Wachtelnummer nimmt sauren Limoniensaft (rum-0814).</note>
-        <note type="interpretive_choice" target="#rum-0813-orig" n="Eigelbbindung (Temperatur)" resp="#fyndling">Der Text sagt nur, dass Eigelb in die Brühe gehört, nicht wann und bei welcher Hitze; denkbar ist das Legieren am Rand des Feuers.</note>
+        <note type="interpretive_choice" target="#rum-0813-orig" n="Oder auch" resp="#fyndling" subtype="contextual">Weitere Spielart der eingemachten Wachteln: Die Zeile reiht sich an grün (rum-0811) und gelb in Weinbrühe (rum-0812) und übernimmt von dort das Tier.<list type="alternatives"><item>Verweis auf ein bestimmtes Grundrezept für die weiße Brühe<note type="rationale">Das Wachtelkapitel führt die weiße Brühe nirgends aus; „solche Brüh“ bezieht sich auf die im selben Satz beschriebene Eigelbbrühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0813-orig" n="mit frischer Butter" resp="#fyndling" subtype="contextual">Die Butter gehört zur Brühe, die über die Wachteln gegeben wird; bei den weiß eingemachten jungen Hühnern (rum-0726) kommt die frische Butter ebenfalls in die Sauce. Die Übersetzung bewahrt die offene Wortstellung.<list type="alternatives"><item>Die Wachteln werden mit frischer Butter (und Brühe) gesotten, danach kommt die Eigelbbrühe darüber<note type="rationale">Der Wortstellung nach steht „mit frischer Butter“ direkt bei „gesotten“; möglich, aber ohne Parallele im Buch für diese Einmachung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0813-orig" n="weiß" resp="#fyndling" subtype="contextual">Farbe der Brühe: hell, ohne die Färbung der grünen (rum-0811) und gelben (rum-0812) Nachbarnummern.<list type="alternatives"><item>Kochart: die Wachteln ohne Bräunung gegart<note type="rationale">Für diesen Kochsinn gibt es keinen Beleg; die Reihe grün, gelb, weiß spricht für die Brühenfarbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0813-orig" n="fein saͤurlich (Säurequelle)" resp="#fyndling" subtype="contextual">Die säuernde Zutat bleibt ungenannt. In verwandten weißen Einmachungen säuert Rumpolt mit Limonien (rum-0726) oder Agrastbeeren (rum-0630), und die folgende Wachtelnummer nimmt sauren Limoniensaft (rum-0814).<list type="alternatives"><item>Ein Schuss Weißweinessig oder Zitronensaft<note type="rationale">Heutige Praxis zum Nachkochen; steht nicht im Text, deshalb nur in der Zubereitungsnotiz und nicht in der Zutatenliste.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0813-orig" n="Eigelbbindung (Temperatur)" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass Eigelb in die Brühe gehört, nicht wann und bei welcher Hitze; denkbar ist das Legieren am Rand des Feuers.<list type="alternatives"><item>Brühe vom Feuer nehmen, Eigelb einrühren, nicht mehr aufkochen<note type="rationale">Heutige Küchenpraxis gegen das Gerinnen; nicht aus dem Text, deshalb nur als Praxis in der Zubereitungsnotiz.</note></item></list></note>
       </div>
     </back>
   </text>

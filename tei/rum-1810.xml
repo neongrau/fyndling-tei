@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,10 +120,10 @@ Süß oder sauer. Süß: Zucker nach Geschmack, im Text nicht genannt. Sauer: S�
         <note type="gloss" target="#rum-1810-orig" n="Haͤrin Tuch" resp="#fyndling">Ein feines Seihtuch. Rumpolt schreibt „Haͤrin Tuch“, ein Tuch aus Haar; Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Welches Haar, sagt keine Quelle. Heute tut es ein feines Passier- oder Mulltuch.</note>
         <note type="gloss" target="#rum-1810-orig" n="Teig" resp="#fyndling">Hier die durch das Tuch gestrichene Eier-Mehl-Masse, die in die Milch gerührt wird, kein knetbarer oder backbarer Teig. Wie dünn sie ist, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-1810-orig" n="fein dick" resp="#fyndling">„fein“ steht hier als Gradwort: recht, ordentlich dick.</note>
-        <note type="interpretive_choice" target="#rum-1810-orig" n="Teig (Konsistenz vor dem Durchstreichen)" resp="#fyndling">Wörtlich Eier und Mehl ohne weitere Flüssigkeit, als zähere Masse durch das Tuch in die Milch gedrückt. So steht es im Text; Mengen nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-1810-orig" n="Haͤrin Tuch" resp="#fyndling">Ein Tuch aus Haar zum Durchseihen (Grimm: Gewebe aus Haaren oder feinem Wollstoff). Welches Haar, sagt keine Quelle.</note>
-        <note type="interpretive_choice" target="#rum-1810-orig" n="süß oder sauer" resp="#fyndling">Nichts ergänzen: Rumpolt erlaubt beide Richtungen, nennt aber kein Mittel.</note>
-        <note type="interpretive_choice" target="#rum-1810-orig" n="Verwendung der dicken Masse" resp="#fyndling">Tortenfüllung (Annahme): Das Rezept steht als Nr. 16 im Tortenkapitel zwischen Füllungen (rum-1821, rum-1833). Der Text nennt Torte und Füllung nicht.</note>
+        <note type="interpretive_choice" target="#rum-1810-orig" n="Teig (Konsistenz vor dem Durchstreichen)" resp="#fyndling" subtype="contextual">Wörtlich Eier und Mehl ohne weitere Flüssigkeit, als zähere Masse durch das Tuch in die Milch gedrückt. So steht es im Text; Mengen nennt er nicht.<list type="alternatives"><item>Dünner Teig aus Eiern, Mehl und etwas Milch, der glatt durch das Tuch läuft.<note type="rationale">Praktisch leichter zu passieren und deshalb als Praxisweg in der Zubereitungsnotiz; der Text erwähnt keine Flüssigkeit vor dem Durchstreichen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1810-orig" n="Haͤrin Tuch" resp="#fyndling" subtype="lexical">Ein Tuch aus Haar zum Durchseihen (Grimm: Gewebe aus Haaren oder feinem Wollstoff). Welches Haar, sagt keine Quelle.<list type="alternatives"><item>Feines Passier- oder Mulltuch, ersatzweise ein feines Sieb.<note type="rationale">Moderner Ersatz mit derselben Funktion, nicht Rumpolts Gerät.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1810-orig" n="süß oder sauer" resp="#fyndling" subtype="contextual">Nichts ergänzen: Rumpolt erlaubt beide Richtungen, nennt aber kein Mittel.<list type="alternatives"><item>Süß mit Zucker, sauer mit Essig oder Verjus.<note type="rationale">Naheliegend, aber Spekulation; der Text nennt keine dieser Zutaten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1810-orig" n="Verwendung der dicken Masse" resp="#fyndling" subtype="contextual">Tortenfüllung (Annahme): Das Rezept steht als Nr. 16 im Tortenkapitel zwischen Füllungen (rum-1821, rum-1833). Der Text nennt Torte und Füllung nicht.<list type="alternatives"><item>Dicker Brei für sich<note type="rationale">Der Text sagt nur, dass die Masse dick werden soll, und gibt keine Verwendung an.</note></item></list></note>
       </div>
     </back>
   </text>

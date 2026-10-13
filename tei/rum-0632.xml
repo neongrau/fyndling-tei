@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,11 +112,11 @@ Praxis. Eine Anleitung gibt die Zeile nicht her. Wer sie nachkochen will, siedet
         <note type="gloss" target="#rum-0632-orig" n="auff Vngerisch" resp="#fyndling">„Auf ungarische Art“ ist Rumpolts Herkunftsangabe; sie steht im Buch bei mehreren Tieren. Ausgeführt hat er die gelbe ungarische Sauce nur bei den Hühnern (rum-0690).</note>
         <note type="gloss" target="#rum-0632-orig" n="Gelb / weiß" resp="#fyndling">Rumpolt benennt seine in Sauce gegarten Gerichte nach der Farbe der Sauce; im Wildentenkapitel folgen schwarz, gelb, weiß und grün aufeinander. Ein Farbmittel nennt diese Zeile nicht.</note>
         <note type="gloss" target="#rum-0632-orig" n="wolschmeckenden Kraͤutern" resp="#fyndling">Gut schmeckende, würzige Kräuter. Welche, sagt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0632-orig" n="fein suͤß" resp="#fyndling">Das Süßungsmittel bleibt offen: Rumpolt nennt keins. Zucker, Honig oder süße Trockenfrüchte wie die Zibeben im Nachbarrezept rum-0629 sind gleichermaßen möglich.</note>
-        <note type="interpretive_choice" target="#rum-0632-orig" n="fein saͤurlich" resp="#fyndling">Das Säuerungsmittel bleibt offen. Im Nachbarrezept rum-0630 heißt „fein säuerlich“ bei der Wildente Zitronen oder Agrastbeeren (unreife Trauben).</note>
-        <note type="interpretive_choice" target="#rum-0632-orig" n="Gelb" resp="#fyndling">Ein Farbmittel nennt der Text nicht; „gelb“ bezeichnet nur die Saucenfarbe im Gegensatz zur weißen Fassung.</note>
-        <note type="interpretive_choice" target="#rum-0632-orig" n="gruͤnen wolschmeckenden Kraͤutern" resp="#fyndling">Sammelbegriff ohne Sorte; der Text legt keine einzelnen Kräuter fest, wir ergänzen keine Liste.</note>
-        <note type="interpretive_choice" target="#rum-0632-orig" n="eyngemacht (Garart der Ente)" resp="#fyndling">Die Ente wird in der Sauce gegart; ob sie vorher in Brühe vorgegart wird, wie lange und bei welcher Hitze, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0632-orig" n="fein suͤß" resp="#fyndling" subtype="contextual">Das Süßungsmittel bleibt offen: Rumpolt nennt keins. Zucker, Honig oder süße Trockenfrüchte wie die Zibeben im Nachbarrezept rum-0629 sind gleichermaßen möglich.<list type="alternatives"><item>Zucker, sparsam<note type="rationale">Heutige Praxis und naheliegend, weil Rumpolt die ausgeführte gelbe ungarische Sauce bei den Hühnern (rum-0690) zuckert; im Text dieser Zeile steht er aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0632-orig" n="fein saͤurlich" resp="#fyndling" subtype="contextual">Das Säuerungsmittel bleibt offen. Im Nachbarrezept rum-0630 heißt „fein säuerlich“ bei der Wildente Zitronen oder Agrastbeeren (unreife Trauben).<list type="alternatives"><item>Zitronensaft<note type="rationale">Heutige Praxis, gedeckt durch rum-0630; im Text dieser Zeile nicht genannt.</note></item><item>Essig<note type="rationale">Rumpolt nimmt Essig in der gelben ungarischen Hühnersauce (rum-0690); hier nennt er ihn nicht, daher nur eine Möglichkeit unter mehreren.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0632-orig" n="Gelb" resp="#fyndling" subtype="contextual">Ein Farbmittel nennt der Text nicht; „gelb“ bezeichnet nur die Saucenfarbe im Gegensatz zur weißen Fassung.<list type="alternatives"><item>Safran<note type="rationale">In der ausgeführten gelben ungarischen Sauce bei den Hühnern (rum-0690) färbt Rumpolt mit Safran; für die Ente ist das ein Vergleich, keine Textangabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0632-orig" n="gruͤnen wolschmeckenden Kraͤutern" resp="#fyndling" subtype="lexical">Sammelbegriff ohne Sorte; der Text legt keine einzelnen Kräuter fest, wir ergänzen keine Liste.<list type="alternatives"><item>Petersilie<note type="rationale">Die grüne Sauce im Nachbarrezept rum-0631 ist eine Petersiliensauce; hier nennt Rumpolt aber keine Sorte, daher nur als Vergleich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0632-orig" n="eyngemacht (Garart der Ente)" resp="#fyndling" subtype="contextual">Die Ente wird in der Sauce gegart; ob sie vorher in Brühe vorgegart wird, wie lange und bei welcher Hitze, sagt der Text nicht.<list type="alternatives"><item>Erst in Brühe weitgehend gar sieden, dann in der Sauce fertig garen<note type="rationale">Heutiger Weg; Rumpolt verfährt so bei der gelben ungarischen Henne (rum-0690), die „gesotten ist, und doch noch sieden bedarf“. Für die Ente ist das nicht überliefert.</note></item></list></note>
       </div>
     </back>
   </text>

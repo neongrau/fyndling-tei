@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,7 +122,7 @@ Praxis. Etwa 1 kg Fisch (Karpfen, Hecht) ausnehmen, entgräten, Kopf, Gräten un
         <note type="gloss" target="#kkm-005-orig" n="Lebkuchen" resp="#fyndling">Hier ein gewürzter Honigkuchen, in die Farce eingearbeitet als Bindemittel und Geschmacksgeber - nicht die moderne Süßigkeit.</note>
         <note type="gloss" target="#kkm-005-orig" n="gegilbet" resp="#fyndling">Gelb gefärbt, zeittypisch mit Safran.</note>
         <note type="gloss" target="#kkm-005-orig" n="Voressen" resp="#fyndling">Ein erster Gang vor dem Hauptgericht, hier aus Fisch-Kopf, -Gräten und -Innereien - kein modernes 'Vorspeise'-Häppchen, sondern ein eigenständiges gekochtes Gericht.</note>
-        <note type="interpretive_choice" target="#kkm-005-orig" n="roh vnd gesotten / [&gt;vngesotten]" resp="#fyndling">Roh und gesotten - die Farce mischt rohes und vorgekochtes Fischfleisch, wie in mittelalterlichen Farces verbreitet.</note>
+        <note type="interpretive_choice" target="#kkm-005-orig" n="roh vnd gesotten / [&gt;vngesotten]" resp="#fyndling">Roh und gesotten - die Farce mischt rohes und vorgekochtes Fischfleisch, wie in mittelalterlichen Farces verbreitet.<list type="alternatives"><item>Die handschriftliche Randkorrektur &gt;vngesotten liest "ungesotten", also rein rohen Fisch.<note type="rationale">Die überlieferte Korrektur deutet auf eine alternative Lesart hin; eine rein rohe Farce gart dann erst beim Backen. Beide Lesarten sind kochtechnisch tragfähig.</note></item></list></note>
       </div>
     </back>
   </text>

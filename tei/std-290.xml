@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,9 +123,9 @@ Praxis. Die essiggetränkte Semmel vollständig durchtrocknen lassen, am besten 
         <note type="gloss" target="#std-290-orig" n="wolgebichten" resp="#fyndling">Der Krug soll gut ausgepicht sein: innen mit einer Pechschicht abgedichtet, damit die poröse Keramik den Essigansatz nicht durchlässt.</note>
         <note type="gloss" target="#std-290-orig" n="stüp" resp="#fyndling">Bezeichnet denselben Stoff wie das zuvor genannte Pulver aus der Semmel - der Text verweist mit „ſelbigen“ ausdrücklich darauf zurück.</note>
         <note type="gloss" target="#std-290-orig" n="taigle" resp="#fyndling">Kleines Teiglein: aus demselben Pulver mit Essig angerührt, bevor es zusammen mit weiterem Essig in den Krug kommt.</note>
-        <note type="interpretive_choice" target="#std-290-orig" n="Trocknungsdauer der essiggetränkten Semmel" resp="#fyndling">Vollständig durchgetrocknet über mehrere Tage, um Schimmelbildung zu vermeiden.</note>
-        <note type="interpretive_choice" target="#std-290-orig" n="Häufigkeit und Menge des warmen Weins beim Nachgießen" resp="#fyndling">Kleine, regelmäßige Nachgüsse in mehrtägigem Abstand, um den Ansatz aktiv zu halten, ohne die Säure zu stark zu verdünnen.</note>
-        <note type="interpretive_choice" target="#std-290-orig" n="Mengenverhältnis von Semmelpulver beziehungsweise Teiglein zu Essig" resp="#fyndling">Kleine Pulver- oder Teigmenge auf vergleichsweise viel Essig, um Kontamination und übermäßige Süße durch das Brot zu vermeiden.</note>
+        <note type="interpretive_choice" target="#std-290-orig" n="Trocknungsdauer der essiggetränkten Semmel" resp="#fyndling">Vollständig durchgetrocknet über mehrere Tage, um Schimmelbildung zu vermeiden.<list type="alternatives"><item>Keine Zeitangabe im Text<note type="rationale">Der Text nennt keine Dauer - die Trocknung erfolgte nach Augenschein und Gefühl.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-290-orig" n="Häufigkeit und Menge des warmen Weins beim Nachgießen" resp="#fyndling">Kleine, regelmäßige Nachgüsse in mehrtägigem Abstand, um den Ansatz aktiv zu halten, ohne die Säure zu stark zu verdünnen.<list type="alternatives"><item>Offen nach Bedarf<note type="rationale">„offt“ und „ain wenig“ sind im Text keine festen Größen, sondern situativ gemeint.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-290-orig" n="Mengenverhältnis von Semmelpulver beziehungsweise Teiglein zu Essig" resp="#fyndling">Kleine Pulver- oder Teigmenge auf vergleichsweise viel Essig, um Kontamination und übermäßige Süße durch das Brot zu vermeiden.<list type="alternatives"><item>Keine Mengenangabe<note type="rationale">Der Text nennt keine Mengen für Pulver, Teigling oder Essig.</note></item></list></note>
       </div>
     </back>
   </text>

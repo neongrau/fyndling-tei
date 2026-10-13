@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,10 +113,10 @@ Praxis. Die Räucherung hat die Leber schon haltbar gemacht und gewürzt; die Sa
         <note type="gloss" target="#rum-0984-orig" n="Pfeffer" resp="#fyndling">Hier das Gericht, eine gebundene Pfeffersauce, nicht das Gewürz. Rumpolt gebraucht „Pfeffer“ häufig so, etwa bei den Wachteln („in Pfeffer eyngemacht“) oder beim Rindfleisch nach Wildbret-Art („in einem Pfeffer zu“).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
         <note type="gloss" target="#rum-0984-orig" n="Mandelgescharb" resp="#fyndling">Klein geschnittene Mandeln (Grimm: geschärbe, zu scharben „klein schneiden“, mit dem Beleg „mandelgescherb“ aus einem Kochbuch). Rumpolt bereitet sie teils als dickliche Sauce in Wein oder Brühe, teils trocken eingesotten zu.</note>
         <note type="gloss" target="#rum-0984-orig" n="eyngemacht" resp="#fyndling">Bei Fisch und Fleisch: in einer Sauce gegart. Nicht im heutigen Sinn eingemacht oder konserviert.</note>
-        <note type="interpretive_choice" target="#rum-0984-orig" n="Mandelgescharb" resp="#fyndling">Klein geschnittene Mandeln (Grimm geschärbe, Beleg „mandelgescherb“); die Zubereitungsform nennt der Eintrag nicht, daher bleibt die Druckform stehen.</note>
-        <note type="interpretive_choice" target="#rum-0984-orig" n="eyngemacht" resp="#fyndling">In einer Sauce gegart; das Wort steht dreimal parallel und gilt für alle drei Saucen.</note>
-        <note type="interpretive_choice" target="#rum-0984-orig" n="mit Spenat" resp="#fyndling">Die Leber wird mit Spinat in einer Sauce gegart; der Spinat gehört zur Sauce.</note>
-        <note type="interpretive_choice" target="#rum-0984-orig" n="Zustand der Leber beim Einmachen" resp="#fyndling">Der Text nennt nur „geraͤuchert“ und „eyngemacht“; Wässern oder Zerteilen ist nicht belegt und wird nicht ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0984-orig" n="Mandelgescharb" resp="#fyndling" subtype="lexical">Klein geschnittene Mandeln (Grimm geschärbe, Beleg „mandelgescherb“); die Zubereitungsform nennt der Eintrag nicht, daher bleibt die Druckform stehen.<list type="alternatives"><item>Dickliche Sauce aus klein geschnittenen Mandeln in Wein oder Brühe, wie bei den Ochsenzungen (Nr. 8).<note type="rationale">Naheliegend, weil die Leber darin gegart werden soll; als Praxisvorschlag gewählt.</note></item><item>Mandeln mit Rosinen, Zucker, Weinessig und Rinderfett trocken eingesotten und über das Gericht gegeben, wie beim Rindfleisch nach Wildbret-Art (Nr. 71).<note type="rationale">Ebenfalls Rumpolts eigene Form; passt schlechter zu „eyngemacht“, ist aber nicht auszuschließen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0984-orig" n="eyngemacht" resp="#fyndling" subtype="contextual">In einer Sauce gegart; das Wort steht dreimal parallel und gilt für alle drei Saucen.<list type="alternatives"><item>In der Sauce angerichtet oder mit ihr serviert.<note type="rationale">Unterschlägt das Garen; bei Fisch und Fleisch meint Rumpolt mit „eyngemacht“ das Ziehen in der Sauce.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0984-orig" n="mit Spenat" resp="#fyndling" subtype="contextual">Die Leber wird mit Spinat in einer Sauce gegart; der Spinat gehört zur Sauce.<list type="alternatives"><item>Spinat als Beilage neben der Leber.<note type="rationale">Spricht gegen die parallele Fügung „in einem Pfeffer / Mandelgescharb / oder mit Spenat eyngemacht“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0984-orig" n="Zustand der Leber beim Einmachen" resp="#fyndling" subtype="contextual">Der Text nennt nur „geraͤuchert“ und „eyngemacht“; Wässern oder Zerteilen ist nicht belegt und wird nicht ergänzt.<list type="alternatives"><item>Geräucherte Leber in Stücken in der fertigen Sauce erhitzen.<note type="rationale">Heutiger Praxisvorschlag, in der Zubereitungsnotiz verwendet.</note></item></list></note>
       </div>
     </back>
   </text>

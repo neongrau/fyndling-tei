@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Praxis. Ein Kochrezept ist das nicht, sondern ein Hinweis, wie man gefüllte Tau
         <note type="gloss" target="#rum-0776-orig" n="Pasteten" resp="#fyndling">Gericht in einer gebackenen Teighülle mit Füllung.</note>
         <note type="gloss" target="#rum-0776-orig" n="eynzumachen" resp="#fyndling">Hier: in die Pastete einschließen. Nicht im heutigen Sinn von Einkochen oder Konservieren.</note>
         <note type="gloss" target="#rum-0776-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0776-orig" n="in Pasteten eynzumachen" resp="#fyndling">Die gefüllten Tauben in eine Pastete setzen, also in eine Teighülle einschließen. Das „in Pasteten“ macht die Hülle zur naheliegenden Lesart.</note>
-        <note type="interpretive_choice" target="#rum-0776-orig" n="Pasteten (Plural)" resp="#fyndling">Der Text legt nicht fest, wie viele Tauben in eine Pastete kommen. Mehrere Tauben in einer großen Pastete sind ebenso lesbar wie eine Pastete je Taube; auch die Taubenpastete zwei Nummern davor steht im Plural.</note>
-        <note type="interpretive_choice" target="#rum-0776-orig" n="kalt zu geben auff ein Tisch" resp="#fyndling">Die gefüllten Tauben werden vorgegart und ohne Pastete kalt aufgetragen; wie sie gegart werden, bleibt offen. Die vorige Nummer „Gefüllte Tauben zum Braten“ legt Braten nahe.</note>
+        <note type="interpretive_choice" target="#rum-0776-orig" n="in Pasteten eynzumachen" resp="#fyndling" subtype="lexical">Die gefüllten Tauben in eine Pastete setzen, also in eine Teighülle einschließen. Das „in Pasteten“ macht die Hülle zur naheliegenden Lesart.<list type="alternatives"><item>Allgemeiner „in Pastetenform zubereiten“<note type="rationale">Rumpolt gebraucht „eynmachen“ auch im Sinn von „zubereiten“, etwa bei der Taubenpastete mit gesalzenen Zitronen. Hier steht aber „in Pasteten“ dabei, deshalb nur nachrangig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0776-orig" n="Pasteten (Plural)" resp="#fyndling" subtype="contextual">Der Text legt nicht fest, wie viele Tauben in eine Pastete kommen. Mehrere Tauben in einer großen Pastete sind ebenso lesbar wie eine Pastete je Taube; auch die Taubenpastete zwei Nummern davor steht im Plural.<list type="alternatives"><item>Eine kleine Pastete je Taube<note type="rationale">Für eine heutige Umsetzung am handlichsten und mit dem Plural vereinbar, aber nicht belegt.</note></item><item>Mehrere Tauben in einer großen Pastete<note type="rationale">Ebenso mit dem Wortlaut vereinbar; der Satz entscheidet es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0776-orig" n="kalt zu geben auff ein Tisch" resp="#fyndling" subtype="contextual">Die gefüllten Tauben werden vorgegart und ohne Pastete kalt aufgetragen; wie sie gegart werden, bleibt offen. Die vorige Nummer „Gefüllte Tauben zum Braten“ legt Braten nahe.<list type="alternatives"><item>Kalte Taubenpastete<note type="rationale">Rumpolt lässt Taubenpasteten auch kalt geben (zwei Nummern davor). Hier steht die kalte Variante aber mit „oder“ neben der Pastete, also eher ohne Teighülle.</note></item></list></note>
       </div>
     </back>
   </text>

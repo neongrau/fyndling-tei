@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,8 +99,8 @@ Das Tier. „Kuͤniglein“ steht nur in der Kapitelüberschrift. Gemeint ist da
 Wie gebraten? Der Text lässt offen, ob am Spieß, auf dem Rost oder im Ofen, ganz oder zerteilt. Für heute: das Kaninchen ganz oder in Stücken im Ofen braten, bis es durch ist.
 
 Praxis. Kaninchen gibt es beim Metzger oder Geflügelhändler, oft auf Vorbestellung. Roh wie gebraten gekühlt halten; für die kalte Fassung den Braten auskühlen lassen und dann in den Kühlschrank stellen.</note>
-        <note type="interpretive_choice" target="#rum-0492-orig" n="Kuͤniglein (Kapitelüberschrift)" resp="#fyndling">Kaninchen. Das Frühneuhochdeutsche Wörterbuch führt „könig“ in der Bedeutung Kaninchen, das Deutsche Wörterbuch stellt „königlein“ zu lateinisch cuniculus. Das Kapitel bestätigt es: Nr. 2 macht das Tier ein „wie man die Hasen eynmacht in einem Pfeffer vnd Schweiß“, Nr. 6 räuchert es, weitere Nummern kochen es in Brühe und backen es in Pasteten.</note>
-        <note type="interpretive_choice" target="#rum-0492-orig" n="Gebraten (Gerät und Form)" resp="#fyndling">Gebraten, ohne dass der Text Gerät, Hitze oder Zeit nennt; historisch naheliegend ist das Braten am Spieß, belegt ist es für dieses Rezept nicht.</note>
+        <note type="interpretive_choice" target="#rum-0492-orig" n="Kuͤniglein (Kapitelüberschrift)" resp="#fyndling" subtype="lexical">Kaninchen. Das Frühneuhochdeutsche Wörterbuch führt „könig“ in der Bedeutung Kaninchen, das Deutsche Wörterbuch stellt „königlein“ zu lateinisch cuniculus. Das Kapitel bestätigt es: Nr. 2 macht das Tier ein „wie man die Hasen eynmacht in einem Pfeffer vnd Schweiß“, Nr. 6 räuchert es, weitere Nummern kochen es in Brühe und backen es in Pasteten.<list type="alternatives"><item>Zaunkönig oder Goldhähnchen (lateinisch regulus)<note type="rationale">Als Wortbedeutung belegt (Lexer, Diefenbach, Grimm), hier aber ausgeschlossen: Ein winziger Singvogel wird nicht wie ein Hase in Pfeffer und Blut eingemacht, nicht geräuchert und nicht als Braten kalt aufgeschnitten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0492-orig" n="Gebraten (Gerät und Form)" resp="#fyndling" subtype="contextual">Gebraten, ohne dass der Text Gerät, Hitze oder Zeit nennt; historisch naheliegend ist das Braten am Spieß, belegt ist es für dieses Rezept nicht.<list type="alternatives"><item>Ganzes Kaninchen im Ofen gebraten<note type="rationale">Heutige Praxis zum Nachkochen; der Text schließt sie nicht aus, nennt sie aber auch nicht.</note></item><item>Zerteilt auf dem Rost gebraten<note type="rationale">Ebenfalls möglich, ob ganz oder in Stücken lässt Rumpolt offen.</note></item></list></note>
       </div>
     </back>
   </text>

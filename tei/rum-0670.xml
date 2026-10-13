@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,9 +114,9 @@ Praxis. Kapaun (etwa 2,5 bis 3 kg) in einen großen Topf legen, knapp mit Wasser
         <note type="gloss" target="#rum-0670-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte, auch Macis: der rote Samenmantel der Muskatnuss, im Aroma feiner als die Nuss selbst.</note>
         <note type="gloss" target="#rum-0670-orig" n="gantzem Pfeffer" resp="#fyndling">Ganze, ungemahlene Pfefferkörner. Ob sie vor dem Anrichten herausgenommen werden, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
         <note type="gloss" target="#rum-0670-orig" n="Pettersilgen Wurtzel" resp="#fyndling">Petersilienwurzel, die Wurzel der Petersilie, nicht das Kraut.</note>
-        <note type="interpretive_choice" target="#rum-0670-orig" n="eygene Bruͤh" resp="#fyndling">Die Brühe, die beim Kochen des Kapauns in Wasser entsteht. So verwendet Rumpolt die Wendung auch bei der Gans (rum-0621) und in der Parallele bei Severin (sev-052).</note>
-        <note type="interpretive_choice" target="#rum-0670-orig" n="geschnittenem Jngwer" resp="#fyndling">Ingwer in Stücken oder Scheiben geschnitten; ob frisch oder getrocknet, sagt der Text nicht. Severin schreibt ebenso nur „in Stücke geschnitten“.</note>
-        <note type="interpretive_choice" target="#rum-0670-orig" n="Anrichten mit oder ohne Brühe" resp="#fyndling">Der Text sagt nicht, wie angerichtet wird; der Kapaun kann mit seiner Brühe auf den Tisch kommen.</note>
+        <note type="interpretive_choice" target="#rum-0670-orig" n="eygene Bruͤh" resp="#fyndling" subtype="contextual">Die Brühe, die beim Kochen des Kapauns in Wasser entsteht. So verwendet Rumpolt die Wendung auch bei der Gans (rum-0621) und in der Parallele bei Severin (sev-052).<list type="alternatives"><item>Eine bereits fertige Fleisch- oder Kapaunenbrühe als Garflüssigkeit<note type="rationale">Rumpolt kennt Kapaunenbrühe als eigene Zutat (rum-0574), sagt das dann aber ausdrücklich. „Seine eigene“ spricht gegen eine fremde Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0670-orig" n="geschnittenem Jngwer" resp="#fyndling" subtype="lexical">Ingwer in Stücken oder Scheiben geschnitten; ob frisch oder getrocknet, sagt der Text nicht. Severin schreibt ebenso nur „in Stücke geschnitten“.<list type="alternatives"><item>Frischer Ingwer in Scheiben<note type="rationale">Heute die naheliegende Praxis, im Text aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0670-orig" n="Anrichten mit oder ohne Brühe" resp="#fyndling" subtype="contextual">Der Text sagt nicht, wie angerichtet wird; der Kapaun kann mit seiner Brühe auf den Tisch kommen.<list type="alternatives"><item>Brühe getrennt als Suppe reichen<note type="rationale">Mit dem Text ebenso vereinbar; Rumpolt nennt nur, dass der Vogel in der Brühe gekocht wird.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,10 +129,10 @@ Praxis. Heute die Keule einige Stunden bis über Nacht kühl in der Beize lassen
         <note type="gloss" target="#rum-0182-orig" n="braune Bruͤh" resp="#fyndling">Bratenbrühe, die von einem anderen Braten abgegossen wurde. Rumpolt rät im selben Kapitel, sie „allzeit in vorraht“ zu haben, sauer oder nicht, denn sie sei „allezeit gut vber das gebraten“.</note>
         <note type="gloss" target="#rum-0182-orig" n="pfeffers" resp="#fyndling">Verb: pfeffere sie, also die Brühe.</note>
         <note type="gloss" target="#rum-0182-orig" n="vorhin" resp="#fyndling">Vorher, zuvor: Die Keule hat schon vor dem Braten im Essig gelegen.</note>
-        <note type="interpretive_choice" target="#rum-0182-orig" n="laß anstecken" resp="#fyndling">An den Spieß stecken und braten: Rumpolt gebraucht „anstecken“ in seinen Bratenrezepten durchgehend für das Aufspießen („steck jn an/ vnd laß jn braten“), und der Schlusssatz nennt das Fleisch „Braten“. Das Wort „Spieß“ steht hier allerdings nicht da.</note>
-        <note type="interpretive_choice" target="#rum-0182-orig" n="Garen der Keule („Braten“)" resp="#fyndling">Am Spieß gebraten; mehr als „anstecken“ und das Wort „Braten“ sagt der Text nicht, Feuer und Garzeit bleiben offen.</note>
-        <note type="interpretive_choice" target="#rum-0182-orig" n="Beizdauer" resp="#fyndling">Der Text nennt keine Dauer; sie bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0182-orig" n="braune Bruͤh" resp="#fyndling">Bratenbrühe, von einem anderen Braten abgegossen, wie Rumpolt sie im selben Kapitel beschreibt und als Vorrat empfiehlt.</note>
+        <note type="interpretive_choice" target="#rum-0182-orig" n="laß anstecken" resp="#fyndling" subtype="contextual">An den Spieß stecken und braten: Rumpolt gebraucht „anstecken“ in seinen Bratenrezepten durchgehend für das Aufspießen („steck jn an/ vnd laß jn braten“), und der Schlusssatz nennt das Fleisch „Braten“. Das Wort „Spieß“ steht hier allerdings nicht da.<list type="alternatives"><item>In der Beize stehen oder ziehen lassen<note type="rationale">Würde das Einlegen nur wiederholen, das schon in „beiß es eyn“ steckt, und den Garschritt streichen. Für das Liegenlassen in der Beize schreibt Rumpolt sonst „laß jhn vber Nacht darinn ligen“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0182-orig" n="Garen der Keule („Braten“)" resp="#fyndling" subtype="contextual">Am Spieß gebraten; mehr als „anstecken“ und das Wort „Braten“ sagt der Text nicht, Feuer und Garzeit bleiben offen.<list type="alternatives"><item>Heute im Ofen oder am Rost braten, bis die Keule gar ist<note type="rationale">Praktische Umsetzung, gleiche Wirkung; der Text nennt kein Gerät.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0182-orig" n="Beizdauer" resp="#fyndling" subtype="contextual">Der Text nennt keine Dauer; sie bleibt offen.<list type="alternatives"><item>Über Nacht, kühl gestellt<note type="rationale">So bei Rumpolts Rinderbraten mit derselben Wacholder-Kümmel-Essig-Beize; für diese Keule nicht ausdrücklich gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0182-orig" n="braune Bruͤh" resp="#fyndling" subtype="lexical">Bratenbrühe, von einem anderen Braten abgegossen, wie Rumpolt sie im selben Kapitel beschreibt und als Vorrat empfiehlt.<list type="alternatives"><item>Eigener Bratensaft oder Bratensatz, mit Wasser losgekocht<note type="rationale">Heute die naheliegende Umsetzung, wenn keine Bratenbrühe von einem anderen Braten vorrätig ist.</note></item><item>Brühe aus gerösteten Knochen und Gemüse<note type="rationale">Moderner dunkler Fond; bei Rumpolt nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,10 +113,10 @@ Praxis. Wer es nachkochen will, siedet die Wildgans in Brühe gar, nimmt die Br�
         <note type="gloss" target="#rum-0597-orig" n="Ganß" resp="#fyndling">Die Nummer steht im Kapitel „Von einer wilden Ganß“. Gemeint ist also die Wildgans, auch wenn der Schlusssatz nur „Gans“ sagt. Die zahme Gans hat bei Rumpolt ein eigenes, folgendes Kapitel.</note>
         <note type="gloss" target="#rum-0597-orig" n="Eyerdottern" resp="#fyndling">Eierdotter, also Eigelb.</note>
         <note type="gloss" target="#rum-0597-orig" n="fleiß darauff wenden" resp="#fyndling">Fleiß darauf verwenden, sich Mühe geben. Der Satz schließt das ganze Wildgans-Kapitel ab und ist kein Rezeptschritt.</note>
-        <note type="interpretive_choice" target="#rum-0597-orig" n="Auch" resp="#fyndling">„Ebenso“: weitere Einmachweise in der Reihe der Wildgans-Nummern; rum-0594 nennt „oder auch weiß eyngemacht“ ausdrücklich, rum-0584, rum-0585 und rum-0596 sind die gelben und grünen Gegenstücke.</note>
-        <note type="interpretive_choice" target="#rum-0597-orig" n="Ganß" resp="#fyndling">Wildgans: Der Kapitelkopf „Von einer wilden Ganß“ gibt das Tier vor; alle Nachbarnummern meinen die Wildgans. Welche Art, sagt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0597-orig" n="weiß eyngemacht" resp="#fyndling">In heller Brühe oder Sauce angerichtet, mit Eigelb und grünen Kräutern; mehr sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0597-orig" n="Brühe und Eigelb (Aufbau der weißen Sauce)" resp="#fyndling">Rumpolt gibt es nicht an. Die Nachbarnummern zeigen verwandte Zubereitungen in Brühe: rum-0594 gesotten und auf die Brühe gegeben, rum-0595 mit Petersilienwurzel und Muskatblüte.</note>
+        <note type="interpretive_choice" target="#rum-0597-orig" n="Auch" resp="#fyndling" subtype="contextual">„Ebenso“: weitere Einmachweise in der Reihe der Wildgans-Nummern; rum-0594 nennt „oder auch weiß eyngemacht“ ausdrücklich, rum-0584, rum-0585 und rum-0596 sind die gelben und grünen Gegenstücke.<list type="alternatives"><item>Verweis auf ein bestimmtes Grundrezept für die weiße Einmachung<note type="rationale">Das Wildgans-Kapitel enthält kein solches Grundrezept; die weiße Sauce wird dort nirgends ausgeführt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0597-orig" n="Ganß" resp="#fyndling" subtype="contextual">Wildgans: Der Kapitelkopf „Von einer wilden Ganß“ gibt das Tier vor; alle Nachbarnummern meinen die Wildgans. Welche Art, sagt Rumpolt nicht.<list type="alternatives"><item>Hausgans<note type="rationale">Der Schlusssatz sagt nur „Ganß“, doch die zahme Gans hat bei Rumpolt ein eigenes Kapitel; hier gilt das Kapiteltier.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0597-orig" n="weiß eyngemacht" resp="#fyndling" subtype="contextual">In heller Brühe oder Sauce angerichtet, mit Eigelb und grünen Kräutern; mehr sagt der Text nicht.<list type="alternatives"><item>Verfahren wie bei den weiß eingemachten Hühnern (rum-0715): Rindfleischbrühe, Petersilienwurzel, Muskatblüte, Pfeffer, eingebranntes Mehl mit Butter, Kräuter zum Schluss<note type="rationale">Einziges ausgeführtes Verfahren für „weiß eyngemacht“ bei Rumpolt, aber für eine andere Tierart und ohne Eigelb; deshalb nur als Vergleich, nicht in die Übersetzung übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0597-orig" n="Brühe und Eigelb (Aufbau der weißen Sauce)" resp="#fyndling" subtype="contextual">Rumpolt gibt es nicht an. Die Nachbarnummern zeigen verwandte Zubereitungen in Brühe: rum-0594 gesotten und auf die Brühe gegeben, rum-0595 mit Petersilienwurzel und Muskatblüte.<list type="alternatives"><item>Heutiger Weg: Wildgans in Brühe gar sieden, Sauce vom Feuer mit Eigelb abziehen, grüne Kräuter dazu, nicht mehr kochen<note type="rationale">Praktikable Ausführung für das Nachkochen, steht aber nicht im Text; deshalb nur in der Zubereitungsnotiz.</note></item></list></note>
       </div>
     </back>
   </text>

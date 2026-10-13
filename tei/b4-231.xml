@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,7 +124,7 @@ Der Teig. Das Rezept nennt nur den fertigen Teig und setzt ihn als bekannt vorau
         <note type="gloss" target="#b4-231-orig" n="mandel milich" resp="#fyndling">Mandelmilch war im Mittelalter ein wichtiger Ersatz für tierische Milch, insbesondere während der Fastenzeit. Sie wurde aus gemahlenen Mandeln und Wasser hergestellt.</note>
         <note type="gloss" target="#b4-231-orig" n="reis melbs" resp="#fyndling">Reismehl wurde häufig als Bindemittel oder zum Andicken von Speisen verwendet, insbesondere in der Fastenküche, da es glutenfrei ist und eine feine Textur ergibt.</note>
         <note type="gloss" target="#b4-231-orig" n="taig" resp="#fyndling">Der Teig bildet die Hülle für die Krapfen. Da es sich um ein Fastengericht handelt, ist davon auszugehen, dass der Teig ohne Butter oder Schmalz zubereitet wird, beispielsweise aus Mehl und Wasser oder Ei.</note>
-        <note type="interpretive_choice" target="#b4-231-orig" n="lass . waikchen" resp="#fyndling">Übersetzt als „lass es ausbacken“, nicht „lass es ruhen“: „waikchen“ steht im Korpus durchgängig für Garen/Weichwerden in einem Medium (Wasser, Lauge, Wein, Fett), nie für bloßes Ruhenlassen ohne Medium. Das Rezept unmittelbar davor im selben Kapitel (Hechtkrapfen, b4-230) trägt dieselbe Schlussformel wörtlich, nachdem es zuvor ausdrücklich das Garen in Schmalz beschreibt.</note>
+        <note type="interpretive_choice" target="#b4-231-orig" n="lass . waikchen" resp="#fyndling" subtype="philological">Übersetzt als „lass es ausbacken“, nicht „lass es ruhen“: „waikchen“ steht im Korpus durchgängig für Garen/Weichwerden in einem Medium (Wasser, Lauge, Wein, Fett), nie für bloßes Ruhenlassen ohne Medium. Das Rezept unmittelbar davor im selben Kapitel (Hechtkrapfen, b4-230) trägt dieselbe Schlussformel wörtlich, nachdem es zuvor ausdrücklich das Garen in Schmalz beschreibt.<list type="alternatives"><item>Der Zwilling w1-233 hat exakt dieselbe Formulierung „lass waichen“ und klärt die Stelle nicht eigenständig; b4-231 selbst nennt weder Fett noch einen Garvorgang wörtlich.<note type="rationale">Die Lesart „ausbacken“ stützt sich auf einen Analogieschluss zum benachbarten Rezept desselben Manuskripts, nicht auf eine explizite Nennung in b4-231 selbst - dieser Rest an Unsicherheit bleibt bestehen und wird hier offen benannt statt verschwiegen.</note></item></list></note>
       </div>
     </back>
   </text>

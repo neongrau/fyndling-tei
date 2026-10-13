@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,9 +104,9 @@ Weiß in Sauce gegart. Die helle Fassung führt Rumpolt drei Einträge weiter au
 Praxis. Für sich allein ist der Eintrag eher ein Hinweis auf Varianten als eine Anleitung. Die Zubereitungszeit von etwa 3 Stunden ist eine Schätzung, der Text gibt keine Zeit an. Geflügel wird heute vollständig durchgegart.</note>
         <note type="gloss" target="#rum-0594-orig" n="eyngemacht" resp="#fyndling">Bei Fleisch und Geflügel heißt „eingemacht“ bei Rumpolt: in einer Brühe oder Soße gegart, nicht in Zucker eingekocht. „Weiß eingemacht“ ist die helle Fassung; Rumpolt führt sie in Nr. 18 desselben Kapitels mit Eigelb und grünen Kräutern aus (rum-0597).</note>
         <note type="gloss" target="#rum-0594-orig" n="auff die Bruͤh gegeben" resp="#fyndling">Wörtlich „auf die Brühe gegeben“: Die gesottene Gans wird mit ihrer Brühe angerichtet.</note>
-        <note type="interpretive_choice" target="#rum-0594-orig" n="eyngemacht" resp="#fyndling">In heller Brühe oder Soße angerichtet. Rumpolt gebraucht das Wort im Wildgans-Kapitel durchgehend so (gelb und grün eingemacht in rum-0584 und rum-0585, weiß eingemacht in rum-0597).</note>
-        <note type="interpretive_choice" target="#rum-0594-orig" n="gefuͤllt (Füllung unbenannt)" resp="#fyndling">Rumpolt nennt keine Füllung. Der Inhalt bleibt offen; hier wird nichts ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0594-orig" n="auff die Bruͤh gegeben (welche Brühe)" resp="#fyndling">Die Brühe, in der die Gans gesotten wurde: Sie wird mit ihr angerichtet. Das folgt am nächsten aus dem Wortlaut „gesotten und auf die Brühe gegeben“.</note>
+        <note type="interpretive_choice" target="#rum-0594-orig" n="eyngemacht" resp="#fyndling" subtype="lexical">In heller Brühe oder Soße angerichtet. Rumpolt gebraucht das Wort im Wildgans-Kapitel durchgehend so (gelb und grün eingemacht in rum-0584 und rum-0585, weiß eingemacht in rum-0597).<list type="alternatives"><item>Eingekocht oder haltbar eingelegt<note type="rationale">Das ist die heutige Bedeutung und bei Obst auch die ältere; im Fleischkapitel passt sie nicht, weil kein Konservierungsschritt genannt wird und die Nachbarrezepte das Wort für die Soße verwenden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0594-orig" n="gefuͤllt (Füllung unbenannt)" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Füllung. Der Inhalt bleibt offen; hier wird nichts ergänzt.<list type="alternatives"><item>Füllung aus kleinen Vögeln, Zwiebeln, Äpfeln, Birnen und Kastanien wie in rum-0615<note type="rationale">Das ist Rumpolts eigene Gänsefüllung, steht aber im Kapitel der zahmen Gans. Für die Wildgans ist sie nicht belegt und wird deshalb nicht übertragen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0594-orig" n="auff die Bruͤh gegeben (welche Brühe)" resp="#fyndling" subtype="contextual">Die Brühe, in der die Gans gesotten wurde: Sie wird mit ihr angerichtet. Das folgt am nächsten aus dem Wortlaut „gesotten und auf die Brühe gegeben“.<list type="alternatives"><item>Eine eigens bereitete kräftige Fleisch- oder Hühnerbrühe<note type="rationale">Praktische Wahl, wenn die Siedbrühe zu fett oder zu dünn ist. Rumpolt gießt bei der geräucherten Gans (rum-0599) eine Rindfleisch- oder Hennenbrühe darüber; für dieses Rezept nennt er keine Brühe.</note></item></list></note>
       </div>
     </back>
   </text>

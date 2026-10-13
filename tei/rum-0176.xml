@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,9 +112,9 @@ Praxis. Die Brühe beim Anrichten über die Keule geben, ein eigenes Aufkochen o
         <note type="gloss" target="#rum-0176-orig" n="saur braune Bruͤh" resp="#fyndling">Eine braune Brühe, die sauer ist. Bei Rumpolt ist die braune Brühe die Brühe von einem Braten. Womit sie hier sauer gemacht wird, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0176-orig" n="von andern Braten hast abgegossen" resp="#fyndling">Die Brühe wird nicht eigens gekocht, sondern von anderen Braten abgegossen, die in derselben Küche ohnehin am Feuer sind.</note>
         <note type="gloss" target="#rum-0176-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0176-orig" n="saur braune Bruͤh (Säuerung)" resp="#fyndling">Das Säuerungsmittel bleibt offen, die Übersetzung sagt nur „sauer“. Historisch naheliegend sind Verjus oder saurer Limoniensaft: Im direkt folgenden Rezept (Nr. 28) säuert Rumpolt einen Hammelschlegel mit dem Saft saurer frischer Limonien.</note>
-        <note type="interpretive_choice" target="#rum-0176-orig" n="Spick jn mit Salbey" resp="#fyndling">Nur Salbei: Salbeiblätter werden in Einschnitte der Keule gesteckt. Der Text nennt kein anderes Spickmaterial.</note>
-        <note type="interpretive_choice" target="#rum-0176-orig" n="zu braten (Gerät)" resp="#fyndling">Am Spieß über Glut, wie bei den gebratenen Schlegeln der Kapitelnachbarn, die „steck jn an“ schreiben. Dieses Rezept selbst nennt kein Gerät.</note>
+        <note type="interpretive_choice" target="#rum-0176-orig" n="saur braune Bruͤh (Säuerung)" resp="#fyndling" subtype="contextual">Das Säuerungsmittel bleibt offen, die Übersetzung sagt nur „sauer“. Historisch naheliegend sind Verjus oder saurer Limoniensaft: Im direkt folgenden Rezept (Nr. 28) säuert Rumpolt einen Hammelschlegel mit dem Saft saurer frischer Limonien.<list type="alternatives"><item>Bratenfond mit einem Schuss Essig abgeschmeckt<note type="rationale">Einfachster Weg zum Nachkochen; beim gebratenen Hammelschlegel Nr. 35 nennt Rumpolt Essig ausdrücklich für die braune Brühe. In diesem Rezept steht er nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0176-orig" n="Spick jn mit Salbey" resp="#fyndling" subtype="contextual">Nur Salbei: Salbeiblätter werden in Einschnitte der Keule gesteckt. Der Text nennt kein anderes Spickmaterial.<list type="alternatives"><item>Zusätzlich mit Speck spicken<note type="rationale">Spicken mit Speck ist die übliche Bedeutung des Worts und bei Rumpolt anderswo belegt, steht hier aber nicht im Text; deshalb nicht ergänzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0176-orig" n="zu braten (Gerät)" resp="#fyndling" subtype="contextual">Am Spieß über Glut, wie bei den gebratenen Schlegeln der Kapitelnachbarn, die „steck jn an“ schreiben. Dieses Rezept selbst nennt kein Gerät.<list type="alternatives"><item>Im Ofen bei mittlerer Hitze<note type="rationale">Heute der praktische Standard und im Ergebnis gleichwertig; der Text schließt ihn nicht aus.</note></item></list></note>
       </div>
     </back>
   </text>

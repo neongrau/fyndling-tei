@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,8 +117,8 @@ Praxis.
 Hagebutten waschen, Blüten- und Stielansätze entfernen, längs aufschneiden und die Kerne samt den reizenden Härchen sorgfältig auskratzen. Die geputzten Früchte mit Honig oder mit geläutertem Zucker in einem Topf vollständig bedecken und bei mäßiger Hitze sieden, bis die Masse dick und sirupartig eingekocht ist. Heiß in ein sauberes Glas füllen.</note>
         <note type="gloss" target="#std-241-orig" n="Hagenbutzen" resp="#fyndling">Die Früchte von Wildrosen, die nach dem ersten Frost geerntet werden können. Sie sind reich an Vitamin C.</note>
         <note type="gloss" target="#std-241-orig" n="geleütertem zucker" resp="#fyndling">Geläuterter Zucker ist gereinigter Zucker, der durch Kochen mit Eiweiß und anschließendem Abschöpfen von Verunreinigungen geklärt wurde. Er ist feiner und weißer als ungeläuterter Zucker. Die Schreibweise 'geleütertem' ist eine dialektale Variante von 'geläutert'.</note>
-        <note type="interpretive_choice" target="#std-241-orig" n="Siedezeit und Endzustand" resp="#fyndling">So lange sieden, bis eine dicke, sirupartige Masse entsteht - für verlässliche Haltbarkeit</note>
-        <note type="interpretive_choice" target="#std-241-orig" n="Mengenverhältnis Hagenbutzen zu Honig/Zucker" resp="#fyndling">So viel Honig oder Zucker zugeben, dass die Früchte vollständig bedeckt sind</note>
+        <note type="interpretive_choice" target="#std-241-orig" n="Siedezeit und Endzustand" resp="#fyndling">So lange sieden, bis eine dicke, sirupartige Masse entsteht - für verlässliche Haltbarkeit<list type="alternatives"><item>Ein dünnerer, kürzer gekochter Ansatz wäre ebenfalls period-plausibel, ist für dieses Rezept im Text aber nicht belegt</item></list></note>
+        <note type="interpretive_choice" target="#std-241-orig" n="Mengenverhältnis Hagenbutzen zu Honig/Zucker" resp="#fyndling">So viel Honig oder Zucker zugeben, dass die Früchte vollständig bedeckt sind<list type="alternatives"><item>Ein knapperes Verhältnis, wie bei anderen Fruchtkonfekten des Buchs, ist möglich, im Text aber nicht angegeben</item></list></note>
       </div>
     </back>
   </text>

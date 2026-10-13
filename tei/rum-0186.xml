@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,11 +128,11 @@ Praxis. Hammelnetz und Hammel- bzw. Schafsdarm beim Metzger vorbestellen. Den Sp
         <note type="gloss" target="#rum-0186-orig" n="Hammelsdarm" resp="#fyndling">Der Darm des Hammels (Schafsdarm) als Wursthülle.</note>
         <note type="gloss" target="#rum-0186-orig" n="ein viertel stundt" resp="#fyndling">Eine Viertelstunde, also etwa 15 Minuten.</note>
         <note type="gloss" target="#rum-0186-orig" n="Roßt" resp="#fyndling">Ein Rost, auf dem die Würste über der Glut gebraten werden.</note>
-        <note type="interpretive_choice" target="#rum-0186-orig" n="Speck" resp="#fyndling">Frischer, ungesalzener Speck. Der Text sagt nur „Speck“, aber im Nachbarrezept Nr. 39, das eine fast gleiche Masse aus Schlegelfleisch, Speck und wenig Zwiebeln ohne Ei beschreibt, verlangt Rumpolt ausdrücklich „frischen vngesaltzenen Speck“.</note>
-        <note type="interpretive_choice" target="#rum-0186-orig" n="auff heisser Eschen" resp="#fyndling">Auf heißer Asche statt auf der Glut, damit das Netz nicht verbrennt und schrumpft. Ob die Würste direkt in der Asche liegen oder auf einem Rost darüber, lässt der Text offen.</note>
-        <note type="interpretive_choice" target="#rum-0186-orig" n="brat sie geschwindt hinweg" resp="#fyndling">Die Darmwürste werden roh gefüllt, nur gewässert und getrocknet und dann zügig auf dem Rost gebraten; ein Brühen oder eine Garprobe nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0186-orig" n="Netz, Speck und Zwiebeln (Mengen)" resp="#fyndling">Der Text nennt weder die Netzgröße noch das Verhältnis von Speck zu Fleisch; bei den Zwiebeln heißt es nur „ein wenig“. Die Mengen bleiben offen.</note>
-        <note type="interpretive_choice" target="#rum-0186-orig" n="so wirt sie fein steiff vnd schoͤn" resp="#fyndling">Das kalte Wasserbad macht die gefüllten Würste steif und ansehnlich; Rumpolt nennt nur diese Wirkung.</note>
+        <note type="interpretive_choice" target="#rum-0186-orig" n="Speck" resp="#fyndling" subtype="contextual">Frischer, ungesalzener Speck. Der Text sagt nur „Speck“, aber im Nachbarrezept Nr. 39, das eine fast gleiche Masse aus Schlegelfleisch, Speck und wenig Zwiebeln ohne Ei beschreibt, verlangt Rumpolt ausdrücklich „frischen vngesaltzenen Speck“.<list type="alternatives"><item>Gesalzener oder geräucherter Speck<note type="rationale">Vom Wortlaut hier nicht ausgeschlossen. Dann bringt der Speck selbst Salz mit, und die Warnung „versaltz es nicht“ wiegt schwerer.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0186-orig" n="auff heisser Eschen" resp="#fyndling" subtype="contextual">Auf heißer Asche statt auf der Glut, damit das Netz nicht verbrennt und schrumpft. Ob die Würste direkt in der Asche liegen oder auf einem Rost darüber, lässt der Text offen.<list type="alternatives"><item>Glut zur Seite ziehen, die Würste in die heiße Asche legen oder auf einem Rost knapp über die Aschebank<note type="rationale">Praktische Umsetzung am offenen Feuer; beide Varianten erfüllen Rumpolts Zweck, die direkte Glut vom Netz fernzuhalten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0186-orig" n="brat sie geschwindt hinweg" resp="#fyndling" subtype="contextual">Die Darmwürste werden roh gefüllt, nur gewässert und getrocknet und dann zügig auf dem Rost gebraten; ein Brühen oder eine Garprobe nennt der Text nicht.<list type="alternatives"><item>Dünn füllen und gründlich durchbraten, bis innen nichts Rohes mehr ist<note type="rationale">Moderne Praxis bei roher Hackfleischfüllung; ergänzt Rumpolts „geschwind“, widerspricht ihm aber nicht, solange die Würste nicht zu dick sind.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0186-orig" n="Netz, Speck und Zwiebeln (Mengen)" resp="#fyndling" subtype="contextual">Der Text nennt weder die Netzgröße noch das Verhältnis von Speck zu Fleisch; bei den Zwiebeln heißt es nur „ein wenig“. Die Mengen bleiben offen.<list type="alternatives"><item>Hammelnetz beim Metzger bestellen, den Speckanteil nach Geschmack wählen<note type="rationale">Nachkochpraxis ohne Textgrundlage für feste Mengen; deshalb keine Zahlen ergänzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0186-orig" n="so wirt sie fein steiff vnd schoͤn" resp="#fyndling" subtype="contextual">Das kalte Wasserbad macht die gefüllten Würste steif und ansehnlich; Rumpolt nennt nur diese Wirkung.<list type="alternatives"><item>Die Kälte festigt das Fett in Füllung und Hülle, die Würste lassen sich danach besser braten<note type="rationale">Naheliegende küchenpraktische Erklärung, steht aber nicht im Text.</note></item></list></note>
       </div>
     </back>
   </text>

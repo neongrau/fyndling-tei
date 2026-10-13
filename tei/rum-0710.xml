@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,12 +121,12 @@ Praxis. Die Knödel erst kurz vor dem Anrichten machen und sofort in der Brühe 
         <note type="gloss" target="#rum-0710-orig" n="vberzinten Fischkessel" resp="#fyndling">Ein innen verzinnter Kessel, wie man ihn zum Fischsieden nutzte (Grimm: ahenum piscarium, Kessel für Fisch). Rumpolt stellt ihn gleichrangig neben einen sauberen Topf (Hafen).</note>
         <note type="gloss" target="#rum-0710-orig" n="Silbern vnd Zinnen Loͤffel" resp="#fyndling">Wörtlich „ein silbern und zinnen Löffel“. Ob ein Löffel aus Silber oder aus Zinn gemeint ist, bleibt offen. Den Zweck des Löffels nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0710-orig" n="schier" resp="#fyndling">bald, gleich. „wenn du schier wilt anrichten“ = kurz vor dem Anrichten.</note>
-        <note type="interpretive_choice" target="#rum-0710-orig" n="Silbern vnd Zinnen Loͤffel" resp="#fyndling">Ein Löffel aus Silber oder aus Zinn. Der Text sagt „ein“ Löffel; „vnd“ reiht hier zwei mögliche Materialien.</note>
-        <note type="interpretive_choice" target="#rum-0710-orig" n="stoß jhn in die Bruͤh" resp="#fyndling">Der Text schreibt nur vor, den Löffel vor jedem Griff in die Masse in die Brühe zu tauchen, und nennt keinen Zweck.</note>
-        <note type="interpretive_choice" target="#rum-0710-orig" n="mach es klein" resp="#fyndling">Kleine Portionen in die Brühe einziehen; der Text nennt weder Form noch Größe der Knödel.</note>
-        <note type="interpretive_choice" target="#rum-0710-orig" n="ein starcken Sudt auffthun" resp="#fyndling">Einmal kräftig aufwallen lassen, dann sind die Knödel „gesotten genug“; eine Zeit nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0710-orig" n="vberzinten Fischkessel" resp="#fyndling">Innen verzinnter Kessel zum Fischsieden, hier als Gefäß für die Brühe, gleichwertig mit einem sauberen Topf.</note>
-        <note type="interpretive_choice" target="#rum-0710-orig" n="Mengenverhältnis Fett, Fleisch und Eier" resp="#fyndling">Der Text nennt keine Mengen; einziges Kriterium ist, dass sich das Fett im Fleisch verliert.</note>
+        <note type="interpretive_choice" target="#rum-0710-orig" n="Silbern vnd Zinnen Loͤffel" resp="#fyndling" subtype="philological">Ein Löffel aus Silber oder aus Zinn. Der Text sagt „ein“ Löffel; „vnd“ reiht hier zwei mögliche Materialien.<list type="alternatives"><item>Ein einzelner Löffel aus beiden Metallen<note type="rationale">Wörtlich möglich, aber sachlich unwahrscheinlich; der Text erklärt nichts dazu.</note></item><item>Zwei Löffel, einer aus Silber, einer aus Zinn<note type="rationale">Würde zum Abstechen mit zwei Löffeln passen, widerspricht aber dem „ein“ im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0710-orig" n="stoß jhn in die Bruͤh" resp="#fyndling" subtype="contextual">Der Text schreibt nur vor, den Löffel vor jedem Griff in die Masse in die Brühe zu tauchen, und nennt keinen Zweck.<list type="alternatives"><item>Der nasse, heiße Löffel lässt die Masse leichter abgleiten<note type="rationale">Naheliegende Küchenlogik, aber nicht im Text belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0710-orig" n="mach es klein" resp="#fyndling" subtype="contextual">Kleine Portionen in die Brühe einziehen; der Text nennt weder Form noch Größe der Knödel.<list type="alternatives"><item>Walnussgroße Knödel<note type="rationale">Moderne Praxisgröße, damit die Knödel beim kurzen Aufwallen durchgaren; nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0710-orig" n="ein starcken Sudt auffthun" resp="#fyndling" subtype="contextual">Einmal kräftig aufwallen lassen, dann sind die Knödel „gesotten genug“; eine Zeit nennt der Text nicht.<list type="alternatives"><item>Gareprobe an einem aufgeschnittenen Knödel<note type="rationale">Heutige Absicherung bei rohem Geflügel und rohen Eiern; ergänzt die Textangabe, ersetzt sie nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0710-orig" n="vberzinten Fischkessel" resp="#fyndling" subtype="contextual">Innen verzinnter Kessel zum Fischsieden, hier als Gefäß für die Brühe, gleichwertig mit einem sauberen Topf.<list type="alternatives"><item>Weiter, flacher Topf<note type="rationale">Heutiger Ersatz; die Form des Gefäßes ist für das Einziehen der Knödel praktisch, aber nicht zwingend.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0710-orig" n="Mengenverhältnis Fett, Fleisch und Eier" resp="#fyndling" subtype="contextual">Der Text nennt keine Mengen; einziges Kriterium ist, dass sich das Fett im Fleisch verliert.<list type="alternatives"><item>Etwa ein Teil Nierenfett auf vier bis fünf Teile Brust<note type="rationale">Moderne Orientierung für einen ersten Versuch, nicht im Text belegt.</note></item></list></note>
       </div>
     </back>
   </text>

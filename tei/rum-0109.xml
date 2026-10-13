@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@ Praxis. Rumpolt nennt weder Garzeit noch Mengen, nur „geschwindt hinweg“: ra
         <note type="gloss" target="#rum-0109-orig" n="geschwindt hinweg" resp="#fyndling">Rasch fertig (braten).</note>
         <note type="gloss" target="#rum-0109-orig" n="Rindtfeißt" resp="#fyndling">Rinderfett, hier zum Begießen der Milz auf dem Rost.</note>
         <note type="gloss" target="#rum-0109-orig" n="Trunck" resp="#fyndling">Das Trinken in geselliger Runde. „Gut zu einem Trunck“ heißt: passt als Happen zum Wein.</note>
-        <note type="interpretive_choice" target="#rum-0109-orig" n="Kehr die KaͤlberMiltz vmb ... wendts wider vmb" resp="#fyndling">Umstülpen, sodass die Würze nach dem Zurückkehren innen liegt. Gestützt nur buchintern durch den Ochsendarm („kehr jn wider vmb/ daß es innwendig kompt“); die Handgriffe an der Milz (Haut lösen, aufschneiden und aufklappen) nennt der Text nicht. Die Lesart ist Deutung, nicht Wortlaut.</note>
-        <note type="interpretive_choice" target="#rum-0109-orig" n="gruͤnen Kraͤutern" resp="#fyndling">Frische Kräuter ohne nähere Angabe; Rumpolt nennt hier keine Sorte (bei der Ochsenmilz dagegen ausdrücklich Feldkümmel).</note>
-        <note type="interpretive_choice" target="#rum-0109-orig" n="brats geschwindt hinweg" resp="#fyndling">Rasch fertig braten. Der Text nennt weder Garzeit noch Garpunkt; gebraten wird nach Sicht und Gefühl.</note>
+        <note type="interpretive_choice" target="#rum-0109-orig" n="Kehr die KaͤlberMiltz vmb ... wendts wider vmb" resp="#fyndling" subtype="contextual">Umstülpen, sodass die Würze nach dem Zurückkehren innen liegt. Gestützt nur buchintern durch den Ochsendarm („kehr jn wider vmb/ daß es innwendig kompt“); die Handgriffe an der Milz (Haut lösen, aufschneiden und aufklappen) nennt der Text nicht. Die Lesart ist Deutung, nicht Wortlaut.<list type="alternatives"><item>Nur wenden oder den Rand aufschlitzen und von beiden Seiten würzen<note type="rationale">Möglich, weil „vmbkehren“ auch schlicht „wenden“ heißen kann. Dann bliebe das zweite „wider vmb“ aber ohne erkennbaren Zweck.</note></item><item>Heute: der Länge nach eine Tasche einschneiden, innen würzen, zuklappen<note type="rationale">Praxislösung für ein kompaktes Organ; erreicht dasselbe Ergebnis, Würze innen. Steht in der Zubereitungsnotiz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0109-orig" n="gruͤnen Kraͤutern" resp="#fyndling" subtype="contextual">Frische Kräuter ohne nähere Angabe; Rumpolt nennt hier keine Sorte (bei der Ochsenmilz dagegen ausdrücklich Feldkümmel).<list type="alternatives"><item>Heute: frische Gartenkräuter der Saison<note type="rationale">Naheliegende Praxis; eine bestimmte Kräuterliste wäre erfunden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0109-orig" n="brats geschwindt hinweg" resp="#fyndling" subtype="contextual">Rasch fertig braten. Der Text nennt weder Garzeit noch Garpunkt; gebraten wird nach Sicht und Gefühl.<list type="alternatives"><item>Heute: kräftige, nicht flammende Glut, gar, wenn die Milz innen nicht mehr blutig ist; Kerntemperatur um 70 °C<note type="rationale">Moderne Orientierung, nicht im Text.</note></item></list></note>
       </div>
     </back>
   </text>

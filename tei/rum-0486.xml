@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,10 +122,10 @@ Praxis. Murmeltier ist kaum zu bekommen. Kaninchen oder Ente lassen sich nach be
         <note type="gloss" target="#rum-0486-orig" n="Agrastbeer" resp="#fyndling">Unreife Weintrauben, aus denen man Verjus presst; das Wort kann auch die Stachelbeere meinen.</note>
         <note type="gloss" target="#rum-0486-orig" n="Klosterbeer" resp="#fyndling">Stachelbeere. Das Grimmsche Wörterbuch führt „klosterbeere“ als rauhe Stachelbeere (grossularia, „grosselbeer, klosterbeer“), das Rheinische Wörterbuch kennt „Klosterbeeren“ ebenso.</note>
         <note type="gloss" target="#rum-0486-orig" n="gelb machen" resp="#fyndling">Ein Färbemittel nennt Rumpolt hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-0486-orig" n="Klosterbeer" resp="#fyndling">Stachelbeere: Das Grimmsche Wörterbuch führt „klosterbeere“ als rauhe Stachelbeere (grossularia, „grosselbeer, klosterbeer“), Adelung und das Rheinische Wörterbuch kennen „Klosterbeeren“ ebenso als Stachelbeeren. Rumpolt verwendet dieselbe Formel bei der Spanferkelpastete.</note>
-        <note type="interpretive_choice" target="#rum-0486-orig" n="Agrastbeer" resp="#fyndling">Unreife Weintrauben, die saure Frucht, aus der man Verjus presst.</note>
-        <note type="interpretive_choice" target="#rum-0486-orig" n="mit einem Koͤl" resp="#fyndling">Ein Kohl, also ein Kohlkopf, der mit dem Fleisch zusammen gekocht wird; die Kohlsorte bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0486-orig" n="gelb machen" resp="#fyndling">Der Text nennt kein Färbemittel; die Pastete bleibt auf Wunsch weiß oder wird gelb gefärbt, womit, sagt Rumpolt nicht.</note>
+        <note type="interpretive_choice" target="#rum-0486-orig" n="Klosterbeer" resp="#fyndling" subtype="lexical">Stachelbeere: Das Grimmsche Wörterbuch führt „klosterbeere“ als rauhe Stachelbeere (grossularia, „grosselbeer, klosterbeer“), Adelung und das Rheinische Wörterbuch kennen „Klosterbeeren“ ebenso als Stachelbeeren. Rumpolt verwendet dieselbe Formel bei der Spanferkelpastete.<list type="alternatives"><item>Johannisbeere<note type="rationale">Für diese Gleichung findet sich kein Beleg; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0486-orig" n="Agrastbeer" resp="#fyndling" subtype="lexical">Unreife Weintrauben, die saure Frucht, aus der man Verjus presst.<list type="alternatives"><item>Stachelbeeren<note type="rationale">Das Frühneuhochdeutsche Wörterbuch kennt „agrest“ auch für die Stachelbeere, und Rumpolt nennt an anderer Stelle Agrast und Grosselbeer als Ersatz füreinander. Weil hier die Klosterbeer als eigene Möglichkeit daneben steht, liegt die Trauben-Lesart näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0486-orig" n="mit einem Koͤl" resp="#fyndling" subtype="contextual">Ein Kohl, also ein Kohlkopf, der mit dem Fleisch zusammen gekocht wird; die Kohlsorte bleibt offen.<list type="alternatives"><item>Kohl allgemein als Gemüse, ohne festgelegte Menge<note type="rationale">„einem“ ist hier wohl Zahlwort und meint einen Kopf; eine Menge im strengen Sinn gibt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0486-orig" n="gelb machen" resp="#fyndling" subtype="contextual">Der Text nennt kein Färbemittel; die Pastete bleibt auf Wunsch weiß oder wird gelb gefärbt, womit, sagt Rumpolt nicht.<list type="alternatives"><item>Safran<note type="rationale">In den Nachbarrezepten färbt Rumpolt mit Safran gelb; hier steht er nicht und wird deshalb nicht ergänzt.</note></item><item>Eidotter<note type="rationale">Auch Eigelb färbt bei Rumpolt gelb; hier ebenfalls nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

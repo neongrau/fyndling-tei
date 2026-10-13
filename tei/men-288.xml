@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,8 +107,8 @@
         <note type="gloss" target="#men-288-orig" n="vertjus" resp="#fyndling">Saft unreifer Weintrauben, sauer wie Essig.</note>
         <note type="gloss" target="#men-288-orig" n="couler" resp="#fyndling">Durch ein Tuch oder Sieb seihen/filtern.</note>
         <note type="gloss" target="#men-288-orig" n="drecier par escuelles" resp="#fyndling">In Schalen anrichten.</note>
-        <note type="interpretive_choice" target="#men-288-orig" n="deux cloches de gingembre" resp="#fyndling">Zwei Knollen oder Stücke Ingwer. Die Formulierung deutet auf frischen Ingwer hin, der im Mörser zerstoßen wird.</note>
-        <note type="interpretive_choice" target="#men-288-orig" n="le quart de vin blanc" resp="#fyndling">Ein Viertel Weißwein, als relative Mengenangabe zum Verjus oder zur Gesamtflüssigkeit.</note>
+        <note type="interpretive_choice" target="#men-288-orig" n="deux cloches de gingembre" resp="#fyndling">Zwei Knollen oder Stücke Ingwer. Die Formulierung deutet auf frischen Ingwer hin, der im Mörser zerstoßen wird.<list type="alternatives"><item>Eine ungenaue Mengenangabe für Ingwer, die sich auf eine 'Glockenform' des Ingwers bezieht oder eine symbolische Menge darstellt.<note type="rationale">Die mittelalterliche Küche verwendete oft ungenaue Maßangaben. Die Klammer 'ou y mectez de la pouldre' (oder gib Pulver hinzu) zeigt, dass die Form des Ingwers (frisch vs. Pulver) hier im Vordergrund steht.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-288-orig" n="le quart de vin blanc" resp="#fyndling">Ein Viertel Weißwein, als relative Mengenangabe zum Verjus oder zur Gesamtflüssigkeit.<list type="alternatives"><item>Ein Viertel einer nicht näher spezifizierten Maßeinheit, die im Kontext des Rezepts als bekannt vorausgesetzt wird.<note type="rationale">Mittelalterliche Rezepte verwenden oft lokale oder implizite Maßeinheiten, die heute nicht mehr eindeutig zuzuordnen sind.</note></item></list></note>
       </div>
     </back>
   </text>

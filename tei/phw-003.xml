@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,8 +126,8 @@ Fertig gekocht, soll oft und warm damit gegurgelt werden. Das Rezept dokumentier
         <note type="gloss" target="#phw-003-orig" n="Rosenhonig" resp="#fyndling">Honig, der mit Rosenblüten aromatisiert oder infundiert wurde. Er wurde sowohl als Süßmittel als auch für seine heilenden Eigenschaften geschätzt.</note>
         <note type="gloss" target="#phw-003-orig" n="Alaun" resp="#fyndling">Alaun, ein Doppelsalz (meist Kaliumaluminiumsulfat), in der Heilkunde das zusammenziehende Mittel schlechthin und daher der Standardzusatz in Gurgelwässern und Mundspülungen. Zu erwähnen ist eine abweichende Lesart: Der Herausgeber Gerold Hayer führt die Schreibungen alet, allan und allet in seinem Wörterverzeichnis gemeinsam als Alant (Inula helenium) auf, also als Pflanze. Dagegen spricht der Gebrauch im Buch selbst - phw-004 verlangt gebrannten Alaun und schreibt, die Kreide sei vorher zu zerstoßen, der allan aber nicht, was einen Mineralklumpen beschreibt und keine Wurzel. Auch unser Korpus hat die Schreibung allan in ätzender Anwendung, mit alun im Parallelrezept.</note>
         <note type="gloss" target="#phw-003-orig" n="herz bar air" resp="#fyndling">Eine feste Zeitmaß-Formel: Sie beschreibt die Kochdauer, die man braucht, um ein Hühnerei hart zu kochen, also etwa 8-10 Minuten. Dieselbe Wendung - „lind“ oder „hart bar Ay(r)“ - für dasselbe Zeitmaß findet sich auch in einer zeitgleich entstandenen Handschrift von 1543 (Wolfenbüttel).</note>
-        <note type="interpretive_choice" target="#phw-003-orig" n="allan" resp="#fyndling">Alaun</note>
-        <note type="interpretive_choice" target="#phw-003-orig" n="herz bar air" resp="#fyndling">hartes Ei</note>
+        <note type="interpretive_choice" target="#phw-003-orig" n="allan" resp="#fyndling" subtype="philological">Alaun<list type="alternatives"><item>Alant (Inula helenium)<note type="rationale">So liest Hayer, der die Schreibungen alet, allan und allet in seinem Wörterverzeichnis gemeinsam als Alant führt. Dagegen spricht der Gebrauch im Buch selbst: phw-004 verlangt gebrannten Alaun und schreibt, die Kreide sei vorher zu zerstoßen, der allan aber nicht - das beschreibt einen Mineralklumpen, keine Wurzel. Auch der Korpus-Zwilling so1-136 hat die Schreibung allan in ätzender Anwendung, während der wortnahe Zwilling k1-171 an derselben Stelle alun schreibt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-003-orig" n="herz bar air" resp="#fyndling" subtype="lexical">hartes Ei</note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -165,9 +170,9 @@ Koche die Vögel einmal kurz in Wasser auf, lege sie dicht auf den ausgerollten,
         <note type="gloss" target="#phw-035-orig" n="rerlach" resp="#fyndling">„Rerlach“ ist eine alte Bezeichnung für Zimt, meist in Form von gestoßenen Zimtstangen.</note>
         <note type="gloss" target="#phw-035-orig" n="gemachfol" resp="#fyndling">„Gemachfol“ bedeutet „gemächlich“ oder „langsam“, was auf eine schonende Backweise hindeutet.</note>
         <note type="gloss" target="#phw-035-orig" n="Trennlinie nach dem Blattwechsel" resp="#fyndling">Zwischen zwei Rezepten steht im Druck gelegentlich eine schmückende Trennlinie aus Kurzstrichen; sie ist kein Bestandteil des Rezepttextes.</note>
-        <note type="interpretive_choice" target="#phw-035-orig" n="dar yber des gantzs sy" resp="#fyndling">darüber, dass er (der Deckel) ganz sei: geschlossen und ohne Öffnung. Erst zur Halbzeit wird ein kleines Loch hineingemacht.</note>
-        <note type="interpretive_choice" target="#phw-035-orig" n="bedalin / deckenn" resp="#fyndling">Beide Wörter bezeichnen im Rezept denselben dünnen Teigdeckel und werden einheitlich als „Teigdeckel“/„Deckel“ übersetzt.</note>
-        <note type="interpretive_choice" target="#phw-035-orig" n="fegalein / fegelin (Vogelart)" resp="#fyndling">Der Text nennt keine Vogelart, nur „kleine Vögel“.</note>
+        <note type="interpretive_choice" target="#phw-035-orig" n="dar yber des gantzs sy" resp="#fyndling" subtype="contextual">darüber, dass er (der Deckel) ganz sei: geschlossen und ohne Öffnung. Erst zur Halbzeit wird ein kleines Loch hineingemacht.<list type="alternatives"><item>sodass er (der Teigdeckel) das Ganze bedeckt<note type="rationale">Frühere Lesart dieses Rezepts. Der Zwilling wo10-082 hat an derselben Stelle „mach ein feins deckelin daruber das ganntz ist“: Der Deckel soll ganz sein. Das passt zum Folgesatz, der erst zur Halbzeit ein Loch hineinmachen lässt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-035-orig" n="bedalin / deckenn" resp="#fyndling" subtype="lexical">Beide Wörter bezeichnen im Rezept denselben dünnen Teigdeckel und werden einheitlich als „Teigdeckel“/„Deckel“ übersetzt.<list type="alternatives"><item>Zwei bewusst unterschiedene Teiglagen<note type="rationale">Das Buch verwendet an anderer Stelle (phw-024/025) für denselben Gegenstand durchgängig das Wort „deckalin“, nicht „bedalin“ - ob der Wechsel hier bedeutungslos oder gewollt ist, bleibt offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-035-orig" n="fegalein / fegelin (Vogelart)" resp="#fyndling" subtype="contextual">Der Text nennt keine Vogelart, nur „kleine Vögel“.<list type="alternatives"><item>Im 16. Jahrhundert dürften oft wild gefangene Singvögel gemeint gewesen sein<note type="rationale">Historischer Kontext ohne Beleg im Text selbst.</note></item></list></note>
       </div>
     </back>
   </text>

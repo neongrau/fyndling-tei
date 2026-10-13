@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,7 +125,7 @@ Geriebener Käse wird mit der halben Menge Mehl vermengt, mit Ei gebunden und gu
         <note type="gloss" target="#b4-212-orig" n="wurst" resp="#fyndling">Hier als Vergleich für die Form des Teiges, der zu einer Rolle geformt wird.</note>
         <note type="gloss" target="#b4-212-orig" n="krumpp als rosseissen" resp="#fyndling">Den Teig krümmen oder biegen, sodass er die Form eines Hufeisens annimmt.</note>
         <note type="gloss" target="#b4-212-orig" n="Smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das zum Ausbacken verwendet wird.</note>
-        <note type="interpretive_choice" target="#b4-212-orig" n="rosseissen" resp="#fyndling">Das Wort 'rosseissen' dient als Vergleichsobjekt für die Form, in die der Teig gebogen werden soll, nämlich die eines Hufeisens.</note>
+        <note type="interpretive_choice" target="#b4-212-orig" n="rosseissen" resp="#fyndling" subtype="lexical">Das Wort 'rosseissen' dient als Vergleichsobjekt für die Form, in die der Teig gebogen werden soll, nämlich die eines Hufeisens.<list type="alternatives"><item>Eine Verwechslung mit 'Rosteisen' (einem Bratrost) ist lautlich möglich, aber im Kontext des Formens von Teig unpassend.<note type="rationale">Die CoReMA-Glosse verlinkt 'rosseissen' mit 'horseshoe (tool)', was die Lesart als Formvergleich eindeutig bestätigt.</note></item></list></note>
       </div>
     </back>
   </text>

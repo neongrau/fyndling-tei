@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,9 +122,9 @@ Praxis. Herz und Lunge vom Reh in Wasser weich sieden, bis das Gewebe mürbe ist
         <note type="gloss" target="#mha-078-orig" n="wurfflat" resp="#fyndling">Bezeichnet eine würfelige oder rautenförmige Schnitttechnik, kein Zerteilen in Lappen oder Streifen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#wurfflat"/></note>
         <note type="gloss" target="#mha-078-orig" n="kain har darInne beleybe" resp="#fyndling">Wörtlich gemeint: beim Abseihen der Innereien-Brühe sollen keine Tierhaare zurückbleiben, praktische Hygiene-Anweisung beim Verarbeiten von Wildinnereien.</note>
         <note type="gloss" target="#mha-078-orig" n="hafen" resp="#fyndling">Meint den Kochtopf, nicht den kleinen Gewürzmörser.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
-        <note type="interpretive_choice" target="#mha-078-orig" n="plat" resp="#fyndling">Rehherz, gestützt durch die CoReMA-Sachglosse (Wikidata Q107246730 'roe-deer heart').<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
-        <note type="interpretive_choice" target="#mha-078-orig" n="reche" resp="#fyndling">Reh (Rehwild), bestätigt durch die Sachglosse zu 'lungel von dem reche' (roe-deer lung).</note>
-        <note type="interpretive_choice" target="#mha-078-orig" n="offen" resp="#fyndling">Offenbar/sichtlich - die Sauce soll erkennbar gleichmäßig dick bleiben.</note>
+        <note type="interpretive_choice" target="#mha-078-orig" n="plat" resp="#fyndling">Rehherz, gestützt durch die CoReMA-Sachglosse (Wikidata Q107246730 'roe-deer heart').<list type="alternatives"><item>Pfannkuchen/Eierkuchen (allgemeine Korpus-Lesart von 'plat')<note type="rationale">An anderen Stellen des Korpus steht 'plat' für einen gebackenen Eierkuchen, hier widerspricht das aber dem Kontext eines Innereien-Gerichts mit Lunge sowie der expliziten Sachglosse.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
+        <note type="interpretive_choice" target="#mha-078-orig" n="reche" resp="#fyndling">Reh (Rehwild), bestätigt durch die Sachglosse zu 'lungel von dem reche' (roe-deer lung).<list type="alternatives"><item>Rechen/Harke (landwirtschaftliches Gerät)<note type="rationale">Das allgemeine mhd. Lemma 'reche' bezeichnet meist ein Ackergerät; im Kontext eines Wildbret-Gerichts ist aber eindeutig das Tier gemeint.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-078-orig" n="offen" resp="#fyndling">Offenbar/sichtlich - die Sauce soll erkennbar gleichmäßig dick bleiben.<list type="alternatives"><item>Backofen (laut CoReMA-Wikidata-Verknüpfung Q36539)<note type="rationale">CoReMA verlinkt 'offen' hier auf einen Backofen, was zum restlichen Rezept aber nicht passt, da alles im Topf am Feuer gegart wird - vermutlich eine automatische Fehlverlinkung. Der Zwilling m5919-077 hat an der Parallelstelle kein Äquivalent zu 'offen', was die Koch-Lesart stützt.</note></item></list></note>
       </div>
     </back>
   </text>

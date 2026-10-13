@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,12 +134,12 @@ Praxis. Ein Topf am Feuer genügt. Mengen und Salz nennt Rumpolt nicht, abgeschm
         <note type="gloss" target="#rum-0726-orig" n="eyngebrennt Mehl" resp="#fyndling">Einbrenne: Mehl in Fett angeschwitzt, eine Mehlschwitze zum Binden der Sauce. Welches Fett und wie dunkel, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0726-orig" n="fein breit" resp="#fyndling">in dünne, breite Scheiben geschnitten.</note>
         <note type="gloss" target="#rum-0726-orig" n="gantze Muscatenbluͤt" resp="#fyndling">Muskatblüte (Macis) ist der getrocknete Samenmantel der Muskatnuss. Hier wird sie ganz mitgekocht.</note>
-        <note type="interpretive_choice" target="#rum-0726-orig" n="quell sie wol" resp="#fyndling">abbrühen: kurz in heißem Wasser überbrühen; gegart wird erst in der Brühe. So auch in den Kapitelparallelen rum-0711 und rum-0715.</note>
-        <note type="interpretive_choice" target="#rum-0726-orig" n="seig ... daruͤber" resp="#fyndling">gieße darüber: die Brühe wird über die Hühner gegeben.</note>
-        <note type="interpretive_choice" target="#rum-0726-orig" n="junge Huͤnner (ganz oder zerteilt)" resp="#fyndling">Offen: Der Text nennt nur junge Hühner, „saͤuber sie auß“ (ausnehmen) passt eher zu ganzen Tieren. Die Kapitelparallelen rum-0711 und rum-0715 erlauben ausdrücklich ganz oder zerteilt.</note>
-        <note type="interpretive_choice" target="#rum-0726-orig" n="mach es saͤuerlich" resp="#fyndling">Säuerlich durch die unmittelbar danach hineingeschnittenen Zitronen; ein eigenes Säuerungsmittel nennt der Text nicht und wird nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0726-orig" n="eyngebrennt Mehl (Farbe)" resp="#fyndling">Hell angeschwitzt: Der Text nennt keine Farbe, die Überschrift „weiß eyngemacht“ verlangt eine helle Sauce.</note>
-        <note type="interpretive_choice" target="#rum-0726-orig" n="fein breit" resp="#fyndling">in dünnen, breiten Scheiben; vgl. rum-0069 „fein duͤnn vñ breit“.</note>
+        <note type="interpretive_choice" target="#rum-0726-orig" n="quell sie wol" resp="#fyndling" subtype="lexical">abbrühen: kurz in heißem Wasser überbrühen; gegart wird erst in der Brühe. So auch in den Kapitelparallelen rum-0711 und rum-0715.<list type="alternatives"><item>länger abkochen, also vorgaren<note type="rationale">Der Text lässt die Hühner danach ausdrücklich in der Brühe sieden; ein Vorgaren ist nicht nötig und nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0726-orig" n="seig ... daruͤber" resp="#fyndling" subtype="lexical">gieße darüber: die Brühe wird über die Hühner gegeben.<list type="alternatives"><item>seihe darüber, also durch ein Sieb darübergießen<note type="rationale">Möglich, wenn die Brühe noch Rückstände hat; der Text nennt aber kein Sieb und keinen Seihschritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0726-orig" n="junge Huͤnner (ganz oder zerteilt)" resp="#fyndling" subtype="contextual">Offen: Der Text nennt nur junge Hühner, „saͤuber sie auß“ (ausnehmen) passt eher zu ganzen Tieren. Die Kapitelparallelen rum-0711 und rum-0715 erlauben ausdrücklich ganz oder zerteilt.<list type="alternatives"><item>in Stücken garen<note type="rationale">Ebenso möglich und kürzer in der Garzeit; die Praxis-Anleitung gart ganz und zerteilt vor dem Anrichten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0726-orig" n="mach es saͤuerlich" resp="#fyndling" subtype="contextual">Säuerlich durch die unmittelbar danach hineingeschnittenen Zitronen; ein eigenes Säuerungsmittel nennt der Text nicht und wird nicht ergänzt.<list type="alternatives"><item>zusätzlich mit Essig oder Zitronensaft säuern<note type="rationale">Nicht im Text; nur wenn die Zitronenscheiben allein nicht sauer genug machen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0726-orig" n="eyngebrennt Mehl (Farbe)" resp="#fyndling" subtype="contextual">Hell angeschwitzt: Der Text nennt keine Farbe, die Überschrift „weiß eyngemacht“ verlangt eine helle Sauce.<list type="alternatives"><item>stärker geröstetes Mehl<note type="rationale">Technisch möglich, widerspricht aber dem „weiß“ der Überschrift.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0726-orig" n="fein breit" resp="#fyndling" subtype="lexical">in dünnen, breiten Scheiben; vgl. rum-0069 „fein duͤnn vñ breit“.<list type="alternatives"><item>fein gehackt<note type="rationale">„breit“ schließt Hacken aus.</note></item></list></note>
       </div>
     </back>
   </text>

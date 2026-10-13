@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -137,13 +142,13 @@ Praxis. Mengen nennt Rumpolt nicht: so viel Brühe, dass die Lunge in einer säm
         <note type="gloss" target="#rum-0155-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Einbrennen, um die Brühe zu binden. Ein Fett nennt der Text an dieser Stelle nicht. Da das Gericht weiß bleiben darf, wird das Mehl nicht gebräunt.</note>
         <note type="gloss" target="#rum-0155-orig" n="vnzerlassene Butter" resp="#fyndling">Frische, nicht zerlassene, also nicht geschmolzene oder ausgelassene Butter. Rumpolt begründet sie nur mit „so wirdt es wolgeschmacker“.</note>
         <note type="gloss" target="#rum-0155-orig" n="schweiß" resp="#fyndling">„Schweißen“ heißt in Rumpolts Küchensprache in Fett anschwitzen, hier die Zwiebeln in Butter.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="Lungen" resp="#fyndling">Hammelslunge: Das Tier ergibt sich aus der Kapitelüberschrift „Von einem Castraun oder Hammel“, der Rezepttext selbst sagt nur „Lungen“.</note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="an die statt sieden" resp="#fyndling">„gar kochen“: Die Lunge wird vollständig durchgegart, bevor sie geschnitten wird.</note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="seuber sie auß" resp="#fyndling">„säubere sie aus“, wörtlich belassen: Die Lunge wird ausgeputzt.</note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Mehl in die Brühe einbrennen, hell, zum Binden; der Text nennt dazu kein Fett.</note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="gelb" resp="#fyndling">Wörtlich „mache es gelb“; der Text nennt kein Färbemittel.</note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="saur" resp="#fyndling">Wörtlich „mache es sauer“; der Text nennt kein Säuerungsmittel.</note>
-        <note type="interpretive_choice" target="#rum-0155-orig" n="gruͤne Kraͤuter" resp="#fyndling">Grüne Kräuter ohne nähere Angabe; die Auswahl bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="Lungen" resp="#fyndling" subtype="contextual">Hammelslunge: Das Tier ergibt sich aus der Kapitelüberschrift „Von einem Castraun oder Hammel“, der Rezepttext selbst sagt nur „Lungen“.<list type="alternatives"><item>Lunge eines anderen Tiers<note type="rationale">Nur als moderner Ersatz, wenn Hammelslunge nicht zu bekommen ist; Rumpolt kocht fast dasselbe Gericht auch mit Kalbslunge (Kalbskapitel, Nr. 13).</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="an die statt sieden" resp="#fyndling" subtype="lexical">„gar kochen“: Die Lunge wird vollständig durchgegart, bevor sie geschnitten wird.<list type="alternatives"><item>nur ankochen<note type="rationale">Nicht gemeint; das folgende Rezept setzt dieselbe Wendung für die fertig gesottene Lunge.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="seuber sie auß" resp="#fyndling" subtype="contextual">„säubere sie aus“, wörtlich belassen: Die Lunge wird ausgeputzt.<list type="alternatives"><item>Luftröhre („Gorgel“) herauslösen<note type="rationale">So sagt es Rumpolt im folgenden Rezept Nr. 7 ausdrücklich; hier steht es nicht, deshalb nur als Kontextlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="brenn ein wenig Mehl darein" resp="#fyndling" subtype="contextual">Mehl in die Brühe einbrennen, hell, zum Binden; der Text nennt dazu kein Fett.<list type="alternatives"><item>Mehlschwitze aus Butter oder Fett, mit Brühe aufgegossen<note type="rationale">Praktische moderne Ausführung, gestützt durch Rumpolts Kalbslungen-Rezept, wo das Mehl unter die in Butter geschwitzten Zwiebeln kommt; hier aber nicht belegt.</note></item><item>gebräunte Einbrenne<note type="rationale">Nicht gemeint, denn das Gericht darf ausdrücklich weiß bleiben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="gelb" resp="#fyndling" subtype="contextual">Wörtlich „mache es gelb“; der Text nennt kein Färbemittel.<list type="alternatives"><item>mit Safran färben<note type="rationale">Im folgenden Hammelslungen-Rezept Nr. 7 nimmt Rumpolt Pfeffer und Safran; für dieses Rezept ein Vorschlag, keine Angabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="saur" resp="#fyndling" subtype="contextual">Wörtlich „mache es sauer“; der Text nennt kein Säuerungsmittel.<list type="alternatives"><item>mit Essig säuern<note type="rationale">Nr. 7 sagt, eine Hammelslunge sei mit Essig besser zu essen; für dieses Rezept ein Vorschlag, keine Angabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0155-orig" n="gruͤne Kraͤuter" resp="#fyndling" subtype="contextual">Grüne Kräuter ohne nähere Angabe; die Auswahl bleibt offen.<list type="alternatives"><item>Petersilie, Schnittlauch<note type="rationale">Naheliegende heutige Wahl, im Text aber nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

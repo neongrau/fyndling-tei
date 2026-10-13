@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,8 +118,8 @@ Praxis. Für eine heutige sichere Rekonstruktion vollständig gegartes Hühnerfl
         <note type="gloss" target="#b4-134-orig" n="plament schir" resp="#fyndling">Bairische Namensform von Blancmanger; in der Parallelhandschrift w1-139 steht „plamenschir“.</note>
         <note type="gloss" target="#b4-134-orig" n="geczaist" resp="#fyndling">Zerzupft oder zerfasert, aus der Wortfamilie zaisen/zeisen. Das Wort bezeichnet hier die Beschaffenheit der Hühnerbrust, nicht sicher einen vorausgehenden Garvorgang.</note>
         <note type="gloss" target="#b4-134-orig" n="reyzz mel" resp="#fyndling">Reismehl dient in dieser Blancmanger-Fassung als Bindemittel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
-        <note type="interpretive_choice" target="#b4-134-orig" n="milich (zweites Vorkommen)" resp="#fyndling">Milch; für die heutige Rekonstruktion wird nochmals Mandelmilch verwendet.</note>
-        <note type="interpretive_choice" target="#b4-134-orig" n="Garzustand und Erhitzung" resp="#fyndling">Für eine heutige Rekonstruktion vollständig gegartes Hühnerfleisch verwenden und die Masse ausreichend erhitzen.</note>
+        <note type="interpretive_choice" target="#b4-134-orig" n="milich (zweites Vorkommen)" resp="#fyndling">Milch; für die heutige Rekonstruktion wird nochmals Mandelmilch verwendet.<list type="alternatives"><item>Gewöhnliche Tiermilch<note type="rationale">Das zweite „milich“ steht ohne den Zusatz „mandel-“ und kann daher auch gewöhnliche Milch bezeichnen. Die Parallelhandschrift w1-139 schreibt ebenfalls nur „milch“ und entscheidet die Frage nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-134-orig" n="Garzustand und Erhitzung" resp="#fyndling">Für eine heutige Rekonstruktion vollständig gegartes Hühnerfleisch verwenden und die Masse ausreichend erhitzen.<list type="alternatives"><item>Historischer Ablauf offen<note type="rationale">B4-134 und die Parallelfassung w1-139 nennen weder einen vorausgehenden Garvorgang noch Sieden, Feuer oder eine Garzeit. Diese Schritte werden deshalb nur als moderne Praxis ausgewiesen.</note></item></list></note>
       </div>
     </back>
   </text>

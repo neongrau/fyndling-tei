@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@ Praxis. In der Pfanne bei mäßiger Hitze braten, bis die Würste rundum gebräu
         <note type="gloss" target="#rum-0368-orig" n="Rehschlegel" resp="#fyndling">Die Keule vom Reh.</note>
         <note type="gloss" target="#rum-0368-orig" n="gestossenẽ Pfeffer" resp="#fyndling">Zerstoßener Pfeffer statt ganzer Körner; er ist die einzige Würze, die der Text nennt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
         <note type="gloss" target="#rum-0368-orig" n="eynmachen" resp="#fyndling">Bei Fleisch meint „einmachen“ in Rumpolts Buch das Anrichten in einer Brühe oder Soße, etwa bei den Spanferkelwürsten „säurlich eynmachen, es sey gelb oder weiß“. Mit dem heutigen Haltbarmachen hat das nichts zu tun; welche Soße gemeint ist, sagt der Text hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-0368-orig" n="zum eynmachen nemmen" resp="#fyndling">In einer Brühe oder Soße anrichten: So verwendet Rumpolt das Wort bei Fleisch im ganzen Buch, etwa bei den Spanferkelwürsten („mit Zwibeln saͤurlich eynmachen, es sey gelb oder weiß“) und bei der Rehbrust („braten oder eynmachen“).</note>
-        <note type="interpretive_choice" target="#rum-0368-orig" n="Verhältnis von Speck zu Fleisch" resp="#fyndling">Keine Angabe: Rumpolt verlangt nur, das Fleisch mit frischem Speck klein zu hacken.</note>
-        <note type="interpretive_choice" target="#rum-0368-orig" n="Garen der Würste" resp="#fyndling">Rumpolt sagt nur „braten“; ob auf dem Rost, am Spieß oder in der Pfanne, und wie lange, lässt er offen.</note>
+        <note type="interpretive_choice" target="#rum-0368-orig" n="zum eynmachen nemmen" resp="#fyndling" subtype="contextual">In einer Brühe oder Soße anrichten: So verwendet Rumpolt das Wort bei Fleisch im ganzen Buch, etwa bei den Spanferkelwürsten („mit Zwibeln saͤurlich eynmachen, es sey gelb oder weiß“) und bei der Rehbrust („braten oder eynmachen“).<list type="alternatives"><item>Haltbar machen (Einlegen, Einkochen in Fett, Pökeln)<note type="rationale">Der heutige Wortsinn. Im Buch gibt es dafür bei Fleisch keinen Beleg, und die Wörterbuchbelege für ein konservierendes Einmachen betreffen Früchte und Kräuter. Die Soßenlesart ruht allerdings auf dem Buchkontext, nicht auf einem Wörterbucheintrag.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0368-orig" n="Verhältnis von Speck zu Fleisch" resp="#fyndling" subtype="contextual">Keine Angabe: Rumpolt verlangt nur, das Fleisch mit frischem Speck klein zu hacken.<list type="alternatives"><item>Ein festes Verhältnis nach heutiger Bratwurstpraxis<note type="rationale">Möglich als moderne Wahl, aber nicht aus dem Text; deshalb wird kein Verhältnis vorgegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0368-orig" n="Garen der Würste" resp="#fyndling" subtype="contextual">Rumpolt sagt nur „braten“; ob auf dem Rost, am Spieß oder in der Pfanne, und wie lange, lässt er offen.<list type="alternatives"><item>In der Pfanne bei mäßiger Hitze durchbraten<note type="rationale">Die heutige Praxis für frische Bratwurst aus rohem Hack; als moderne Wahl in der Zubereitung, nicht als Rumpolts Angabe.</note></item></list></note>
       </div>
     </back>
   </text>

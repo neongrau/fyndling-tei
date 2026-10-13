@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,8 +104,8 @@ Wie werden die Tauben gebraten? Der Text nennt weder Gerät noch Zeit. Rumpolt b
 Praxis. Ein Kochrezept ist das nicht, sondern ein Hinweis zum Anrichten. Wichtig ist nur, dass die Tauben warm sind, wenn die Brühe darüber kommt.</note>
         <note type="gloss" target="#rum-0778-orig" n="braunen Bruͤh" resp="#fyndling">Bei Rumpolt eine Fleischbrühe, die über einen Braten gegossen oder von ihm abgegossen wird und davon braun ist. Hier nennt er ihre Zusammensetzung nicht.</note>
         <note type="gloss" target="#rum-0778-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0778-orig" n="braunen Bruͤh" resp="#fyndling">Rumpolts braune Brühe: eine Fleischbrühe, die über einen Braten gegossen, durchgeseiht und aufgesotten wird und davon braun ist. So beschreibt er sie bei der Hattele vom Kalb, und beim gehackten Rinderbraten nimmt er die braune Brühe von einem Rinderbraten.</note>
-        <note type="interpretive_choice" target="#rum-0778-orig" n="Gebratene" resp="#fyndling">Am Spieß gebraten, wie Rumpolt Braten sonst häufig zubereitet. Belegt ist es für diese Nummer nicht; der Satz nennt weder Gerät noch Zeit.</note>
+        <note type="interpretive_choice" target="#rum-0778-orig" n="braunen Bruͤh" resp="#fyndling" subtype="lexical">Rumpolts braune Brühe: eine Fleischbrühe, die über einen Braten gegossen, durchgeseiht und aufgesotten wird und davon braun ist. So beschreibt er sie bei der Hattele vom Kalb, und beim gehackten Rinderbraten nimmt er die braune Brühe von einem Rinderbraten.<list type="alternatives"><item>Eine braune Brühe aus dem Bratensatz der Tauben, mit etwas Fleisch- oder Geflügelbrühe abgelöscht.<note type="rationale">Heute die praktischste Umsetzung und mit dem Wortlaut vereinbar. Der Satz sagt aber nicht, woher die Brühe kommt, deshalb nur als moderner Vorschlag.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0778-orig" n="Gebratene" resp="#fyndling" subtype="contextual">Am Spieß gebraten, wie Rumpolt Braten sonst häufig zubereitet. Belegt ist es für diese Nummer nicht; der Satz nennt weder Gerät noch Zeit.<list type="alternatives"><item>Im Ofen oder in der Pfanne gebraten, bis das Fleisch durchgegart ist.<note type="rationale">Heutige Küchenpraxis und mit „Gebratene“ vereinbar; der Text schließt es nicht aus.</note></item></list></note>
       </div>
     </back>
   </text>

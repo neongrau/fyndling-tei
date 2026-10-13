@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**5242 Rezepte** aus **40 Rezeptsammlungen**, dazu
+**5332 Rezepte** aus **40 Rezeptsammlungen**, dazu
 40 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -25,6 +25,7 @@ es sind.
 tei/<rezept-id>.xml        ein Rezept
 tei/books/<quelle>.xml     Sammlungsebene: Handschrift bzw. Druck, Edition, Lizenz
 index.json                 maschinenlesbares Verzeichnis
+offene-lesarten.json       alle ungeklärten Wörter und Lesungen, mit Blatt und Alternativen
 ```
 
 Jede Datei trägt im `teiHeader` die Herkunft ihrer Transkription, die
@@ -50,7 +51,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
-| Ein new Kochbuch | 1581 | 1124 |  |
+| Ein new Kochbuch | 1581 | 1214 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
 | Ménagier de Paris | ~1393 | 289 |  |
@@ -172,7 +173,12 @@ zweite Suche nach demselben Wort ohne Netzzugriff auskommt.
 - **Die Transkription ist die härteste Ebene.** Sie stammt aus
   wissenschaftlichen Editionen; Fehler dort sind Fehler der Edition.
 - **Die Übersetzung ist eine Lesart, keine Wahrheit.** Wo mehrere möglich
-  sind, steht das in den `<note type="gloss">`-Anmerkungen. Wo wir uns
+  sind, steht das in den `<note type="gloss">`-Anmerkungen und in den
+  Lesart-Entscheidungen (`<note type="interpretive_choice">` mit den
+  erwogenen Alternativen). Ist ein Wort oder eine Lesung ungeklärt, trägt
+  die Note `cert="unknown"` - per XPath
+  `//note[@type='interpretive_choice'][@cert='unknown']` auffindbar, als
+  Liste in `offene-lesarten.json`. Wo wir uns
   geirrt haben, korrigieren wir es - und die Korrekturhistorie zeigt, dass
   ein erheblicher Teil der Lesarten im Lauf der Zeit inhaltlich ersetzt
   wurde.

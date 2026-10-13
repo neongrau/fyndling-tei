@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,10 +127,10 @@ Praxis. Das Rezept verweist mit 'wie zuvor beschrieben' auf die unmittelbar vora
         <note type="gloss" target="#wbd-022-orig" n="mergelnt" resp="#fyndling">Verb, vermutlich von 'Mergel' (ein Ton-Kalk-Gestein) abgeleitet. Gemeint ist wohl ein erdiger, mineralischer Beigeschmack, den Kreide und Ton dem Wein verleihen.</note>
         <note type="gloss" target="#wbd-022-orig" n="krÿden cleine geriben" resp="#fyndling">Fein gemahlene Kreide, ein mineralisches Färbe- und Trübungsmittel. Nicht zum Verzehr gedacht, sondern eine der beiden im Text genannten Wein-Verfälschungsmethoden.</note>
         <note type="gloss" target="#wbd-022-orig" n="schone" resp="#fyndling">'Schön' meint hier nicht ästhetisch ansprechend, sondern rein/klar - eine im Projekt-Glossar dokumentierte Lesefalle. Bestätigt durch wbd-021, wo 'schöne' und 'luter' (klar) synonym für geklärten Wein verwendet werden.</note>
-        <note type="interpretive_choice" target="#wbd-022-orig" n="blang" resp="#fyndling">Hell/klar (aus franz. 'blanc'), im Text als Verstärkung neben 'wiß' gelesen, nicht als eigenständiges zweites Farbwort.</note>
-        <note type="interpretive_choice" target="#wbd-022-orig" n="mergelnt" resp="#fyndling">Verursachen einen erdig-mineralischen ('mergligen') Beigeschmack, abgeleitet von 'Mergel' (Ton-Kalk-Gestein).</note>
-        <note type="interpretive_choice" target="#wbd-022-orig" n="vnd du also vorgeschriben stat" resp="#fyndling">Wie zuvor beschrieben - ein Rückverweis auf das unmittelbar vorangehende Rezept im selben Buch (wbd-021, 'Wiltu truben win luter machen'), das exakt dieselbe Zubereitung aus Eiweiß von 24 Eiern und einem Kopf voll Semmelmehl beschreibt.</note>
-        <note type="interpretive_choice" target="#wbd-022-orig" n="schone" resp="#fyndling">Rein/klar, nicht ästhetisch 'schön' (dokumentierte Lesefalle: 'schön' bedeutet in Texten dieser Art meist 'sauber/rein', nicht optisch ansprechend).</note>
+        <note type="interpretive_choice" target="#wbd-022-orig" n="blang" resp="#fyndling">Hell/klar (aus franz. 'blanc'), im Text als Verstärkung neben 'wiß' gelesen, nicht als eigenständiges zweites Farbwort.<list type="alternatives"><item>Reines Synonym zu 'wiß', ohne semantischen Unterschied.<note type="rationale">Da beide Wörter Weiß/Helligkeit meinen könnten, ist auch eine bloße Doppelung ohne Bedeutungsnuance denkbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#wbd-022-orig" n="mergelnt" resp="#fyndling">Verursachen einen erdig-mineralischen ('mergligen') Beigeschmack, abgeleitet von 'Mergel' (Ton-Kalk-Gestein).<list type="alternatives"><item>Allgemeiner: schaden dem Wein stark / verändern ihn stark negativ, ohne konkreten Geschmacksbezug.<note type="rationale">Das Verb ist sonst nirgends eindeutig belegt; Lexer führt 'mergeln' als 'mit Mergel düngen', eine allgemeinere Lesart als 'stark schädigen/verändern' ist damit ebenso plausibel wie die spezifische Geschmacks-Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#wbd-022-orig" n="vnd du also vorgeschriben stat" resp="#fyndling">Wie zuvor beschrieben - ein Rückverweis auf das unmittelbar vorangehende Rezept im selben Buch (wbd-021, 'Wiltu truben win luter machen'), das exakt dieselbe Zubereitung aus Eiweiß von 24 Eiern und einem Kopf voll Semmelmehl beschreibt.<list type="alternatives"><item>Eigenständiger, syntaktisch unklarer Einschub, möglicherweise eine verstümmelte oder verschriebene Textstelle.<note type="rationale">Die Formulierung ist grammatisch holprig und lässt sich nicht restlos zwanglos in den Satz einfügen, was auf einen Abschreibfehler hindeuten könnte.</note></item></list></note>
+        <note type="interpretive_choice" target="#wbd-022-orig" n="schone" resp="#fyndling">Rein/klar, nicht ästhetisch 'schön' (dokumentierte Lesefalle: 'schön' bedeutet in Texten dieser Art meist 'sauber/rein', nicht optisch ansprechend).<list type="alternatives"><item>Wörtlich 'schön' im ästhetischen Sinn.<note type="rationale">Ohne Kenntnis der Lesefalle naheliegende, aber im Kontext der Weinklärung unwahrscheinliche Lesart - wbd-021 verwendet 'schöne' synonym mit 'luter' (klar) für geklärten Wein, was die Rein/klar-Lesart stützt.</note></item></list></note>
       </div>
     </back>
   </text>

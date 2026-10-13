@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,11 +135,11 @@ Praxis. Mengen nennt Rumpolt nicht. Die Zubereitungszeit von etwa zweieinhalb St
         <note type="gloss" target="#rum-0601-orig" n="einsieden" resp="#fyndling">Mit etwas zusammen einkochen lassen: Die Gans zieht in der durchgestrichenen Brühe nach, die Brühe dickt dabei etwas ein.</note>
         <note type="gloss" target="#rum-0601-orig" n="machs an" resp="#fyndling">Würzen, fertig machen: Pfeffer und Safran kommen in die Brühe. Nicht im Sinn von „anrichten“.</note>
         <note type="gloss" target="#rum-0601-orig" n="vortheil suchen" resp="#fyndling">Einen Vorteil, also einen Behelf oder Kniff suchen.</note>
-        <note type="interpretive_choice" target="#rum-0601-orig" n="gebehte Schnitten von einem Weck" resp="#fyndling">Geröstete Weißbrotscheiben. Gebeht gehört zu bähen „durch Wärme trocknen, rösten“ (FWB bäen 2, abbähen; DWB bähen). Rumpolt verwendet die Formel mehrfach so (rum-0053, rum-0363), und das Augsburger Schwesterrezept beim Huhn hat „gebet schniten“ in derselben Rolle (saw-157).</note>
-        <note type="interpretive_choice" target="#rum-0601-orig" n="wenn die Ganß vorhin gesotten ist an die statt" resp="#fyndling">Die Gans ist schon gar gesotten, bevor sie in die grüne Brühe kommt. Wie und wie lange sie vorgegart wird, sagt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0601-orig" n="machs an" resp="#fyndling">Würzen: Pfeffer und Safran kommen in die Brühe, bevor sie mit der Gans einsiedet.</note>
-        <note type="interpretive_choice" target="#rum-0601-orig" n="Gänselebern in der Variante mit Wasser und Petersilie" resp="#fyndling">Der Schlusssatz nennt für die Variante nur Wasser und Petersilie; ob die Lebern mitgaren, lässt der Text offen.</note>
-        <note type="interpretive_choice" target="#rum-0601-orig" n="Gänsefett in der Variante" resp="#fyndling">Wird die Gans gleich mit Wasser und Petersilie angesetzt, wird die Brühe fett. Der Text sagt nichts vom Abschöpfen.</note>
+        <note type="interpretive_choice" target="#rum-0601-orig" n="gebehte Schnitten von einem Weck" resp="#fyndling" subtype="lexical">Geröstete Weißbrotscheiben. Gebeht gehört zu bähen „durch Wärme trocknen, rösten“ (FWB bäen 2, abbähen; DWB bähen). Rumpolt verwendet die Formel mehrfach so (rum-0053, rum-0363), und das Augsburger Schwesterrezept beim Huhn hat „gebet schniten“ in derselben Rolle (saw-157).<list type="alternatives"><item>In Brühe eingeweichte Weißbrotscheiben<note type="rationale">Kein Wörterbuchbeleg für bähen im Sinn von „einweichen“. Weich wird das Brot ohnehin, wenn es mit der Brühe durchgestrichen wird.</note></item><item>Nur angewärmte und getrocknete, nicht gebräunte Scheiben<note type="rationale">bähen deckt auch bloßes Trocknen durch Wärme ab. Für die Bindung genügt beides; eine Bräunung schreibt der Text nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0601-orig" n="wenn die Ganß vorhin gesotten ist an die statt" resp="#fyndling" subtype="contextual">Die Gans ist schon gar gesotten, bevor sie in die grüne Brühe kommt. Wie und wie lange sie vorgegart wird, sagt Rumpolt nicht.<list type="alternatives"><item>Praxis: die ganze Gans in Wasser oder Rinderbrühe gar kochen, grob anderthalb bis zwei Stunden<note type="rationale">Eine Schätzung für das Nachkochen, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0601-orig" n="machs an" resp="#fyndling" subtype="contextual">Würzen: Pfeffer und Safran kommen in die Brühe, bevor sie mit der Gans einsiedet.<list type="alternatives"><item>Anrichten, also zum Servieren fertig machen<note type="rationale">Passt nicht zur Reihenfolge: Nach dem machs an wird noch aufgesetzt und eingesotten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0601-orig" n="Gänselebern in der Variante mit Wasser und Petersilie" resp="#fyndling" subtype="contextual">Der Schlusssatz nennt für die Variante nur Wasser und Petersilie; ob die Lebern mitgaren, lässt der Text offen.<list type="alternatives"><item>Die Lebern wie im Hauptverfahren mitgaren und mitstoßen<note type="rationale">Naheliegend, weil sie die Brühe binden, aber nicht ausgesprochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0601-orig" n="Gänsefett in der Variante" resp="#fyndling" subtype="contextual">Wird die Gans gleich mit Wasser und Petersilie angesetzt, wird die Brühe fett. Der Text sagt nichts vom Abschöpfen.<list type="alternatives"><item>Das Fett vor dem Durchstreichen abschöpfen<note type="rationale">Heutige Küchenpraxis, im Text nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

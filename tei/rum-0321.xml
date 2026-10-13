@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,9 +130,9 @@ Praxis. Hirschrücken gibt es beim Wildhändler oder gut sortierten Metzger, mei
         <note type="gloss" target="#rum-0321-orig" n="schlag dz Wildpret darein" resp="#fyndling">Das gegarte Wildbret in den ausgerollten Teig einschlagen.</note>
         <note type="gloss" target="#rum-0321-orig" n="die Butter herauß steigen" resp="#fyndling">Die Butter tritt beim Backen aus dem Teig, „als wenn du es damit begossen hettest“. Rumpolt nimmt das als Zeichen, dass der Teig richtig gerät.</note>
         <note type="gloss" target="#rum-0321-orig" n="Englische Pasteten" resp="#fyndling">Rumpolts eigene Herkunftsangabe: Man nenne es so, weil man es in England auf diese Weise zubereitet gern esse.</note>
-        <note type="interpretive_choice" target="#rum-0321-orig" n="Zemer" resp="#fyndling">Ziemer = Rückenstück; im Kapitel vom Hirsch also Hirschrücken. Rumpolt gebraucht das Wort ebenso beim Hammel und bei der Hirschziemer-Pastete im Roggenteig.</note>
-        <note type="interpretive_choice" target="#rum-0321-orig" n="Gewuͤrtz" resp="#fyndling">Rumpolt sagt nur „Gewürz“ und nennt keine Sorten. Die Zusammensetzung bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0321-orig" n="an die statt sieden / scheub es in Ofen" resp="#fyndling">Gar sieden nach Augenmaß, dann im Holzbackofen backen, ohne dass der Teig verbrennt. Rumpolt nennt weder Zeiten noch Hitze.</note>
+        <note type="interpretive_choice" target="#rum-0321-orig" n="Zemer" resp="#fyndling" subtype="lexical">Ziemer = Rückenstück; im Kapitel vom Hirsch also Hirschrücken. Rumpolt gebraucht das Wort ebenso beim Hammel und bei der Hirschziemer-Pastete im Roggenteig.<list type="alternatives"><item>Ziemer als Krammetsvogel<note type="rationale">Gleichlautendes Wort für einen Vogel; im Hirsch-Kapitel und mit „stuͤck Fleisch“ ausgeschlossen.</note></item><item>Ziemer mit Knochen statt ausgelöst<note type="rationale">Der Text sagt nur „ein stuͤck Fleisch“; ob das Stück ausgelöst wird, lässt er offen. Ausgelöst lässt es sich leichter einschlagen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0321-orig" n="Gewuͤrtz" resp="#fyndling" subtype="contextual">Rumpolt sagt nur „Gewürz“ und nennt keine Sorten. Die Zusammensetzung bleibt offen.<list type="alternatives"><item>Eigene Gewürzwahl des Nachkochers<note type="rationale">Für die Praxis nötig, aber eine moderne Entscheidung, keine Angabe des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0321-orig" n="an die statt sieden / scheub es in Ofen" resp="#fyndling" subtype="contextual">Gar sieden nach Augenmaß, dann im Holzbackofen backen, ohne dass der Teig verbrennt. Rumpolt nennt weder Zeiten noch Hitze.<list type="alternatives"><item>Ziemer etwa 1 bis 1,5 Stunden sieden, Pastete bei etwa 180 bis 200 Grad backen, bis der Teig goldgelb ist<note type="rationale">Moderne Umsetzung; da das Fleisch schon gar ist, bestimmt der Teig die Backzeit.</note></item></list></note>
       </div>
     </back>
   </text>

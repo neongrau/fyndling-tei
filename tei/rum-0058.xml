@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,10 +105,10 @@ Praxis. Stark gesalzenes Räucherfleisch vorher wässern oder das erste Kochwass
         <note type="gloss" target="#rum-0058-orig" n="Gereuchert" resp="#fyndling">Geräuchert. Rumpolt sagt nichts darüber, ob das Fleisch zuvor gepökelt wurde, wie lange es im Rauch hing oder ob es vor dem Kochen gewässert wird.</note>
         <note type="gloss" target="#rum-0058-orig" n="gruͤner Pettersilgen" resp="#fyndling">Grüne Petersilie, also das Kraut und nicht die Petersilienwurzel, die Rumpolt an anderer Stelle eigens als „Pettersilgen Wurtzel“ nennt.</note>
         <note type="gloss" target="#rum-0058-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend. Rumpolts übliche Schlusswendung, kein besonderes Lob.</note>
-        <note type="interpretive_choice" target="#rum-0058-orig" n="gekocht (Kochflüssigkeit)" resp="#fyndling">Der Text nennt keine Flüssigkeit; gekocht wird in Wasser oder Brühe, beides ist mit dem Wortlaut vereinbar.</note>
-        <note type="interpretive_choice" target="#rum-0058-orig" n="mit gruͤner Pettersilgen gekocht (Zeitpunkt)" resp="#fyndling">„Mit Petersilie gekocht“ spricht dafür, dass die Petersilie mitkocht; wann sie in den Topf kommt, lässt der Text offen.</note>
-        <note type="interpretive_choice" target="#rum-0058-orig" n="Wässern des Räucherfleischs" resp="#fyndling">Der Text erwähnt kein Wässern; es gilt deshalb nicht als Teil des Rezepts.</note>
-        <note type="interpretive_choice" target="#rum-0058-orig" n="gruͤner Pettersilgen (Verwendung)" resp="#fyndling">„Grün“ bezeichnet das Kraut, nicht die Wurzel; ob es mitgegessen oder nur als Würze im Sud verwendet wird, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0058-orig" n="gekocht (Kochflüssigkeit)" resp="#fyndling" subtype="contextual">Der Text nennt keine Flüssigkeit; gekocht wird in Wasser oder Brühe, beides ist mit dem Wortlaut vereinbar.<list type="alternatives"><item>In Wasser sanft sieden<note type="rationale">Naheliegende heutige Praxis und in der Zubereitung empfohlen; der Text legt sich aber nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0058-orig" n="mit gruͤner Pettersilgen gekocht (Zeitpunkt)" resp="#fyndling" subtype="contextual">„Mit Petersilie gekocht“ spricht dafür, dass die Petersilie mitkocht; wann sie in den Topf kommt, lässt der Text offen.<list type="alternatives"><item>Petersilie erst gegen Ende zugeben<note type="rationale">Heutige Praxis, damit Farbe und Frische bleiben; vom Wortlaut gedeckt, aber nicht vorgegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0058-orig" n="Wässern des Räucherfleischs" resp="#fyndling" subtype="contextual">Der Text erwähnt kein Wässern; es gilt deshalb nicht als Teil des Rezepts.<list type="alternatives"><item>Vor dem Kochen wässern oder erstes Kochwasser abgießen<note type="rationale">Moderne Vorsichtsmaßnahme bei stark gesalzenem Räucherfleisch, historisch hier nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0058-orig" n="gruͤner Pettersilgen (Verwendung)" resp="#fyndling" subtype="lexical">„Grün“ bezeichnet das Kraut, nicht die Wurzel; ob es mitgegessen oder nur als Würze im Sud verwendet wird, bleibt offen.<list type="alternatives"><item>Blattpetersilie mitkochen und mit dem Sud als Beilage auftragen<note type="rationale">Heutige Lesart für das Anrichten; der Text sagt dazu nichts.</note></item></list></note>
       </div>
     </back>
   </text>

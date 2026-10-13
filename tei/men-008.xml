@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,8 +128,8 @@
         <note type="gloss" target="#men-008-orig" n="espices" resp="#fyndling">Gewürzmischung.</note>
         <note type="gloss" target="#men-008-orig" n="lart" resp="#fyndling">Schmalz (tierisches Fett).</note>
         <note type="interpretive_choice" target="#men-008-orig" n="fagoes" resp="#fyndling">Geschlinge (Herz, Leber, Lunge)</note>
-        <note type="interpretive_choice" target="#men-008-orig" n="haste menue" resp="#fyndling">kleiner Spieß / Lende</note>
-        <note type="interpretive_choice" target="#men-008-orig" n="i sixain de fanoul" resp="#fyndling">eine kleine Menge Fenchel</note>
+        <note type="interpretive_choice" target="#men-008-orig" n="haste menue" resp="#fyndling">kleiner Spieß / Lende<list type="alternatives"><item>Kleine Fleischstücke, die auf einem Spieß gebraten werden<note type="rationale">Der Begriff 'haste' bedeutet Spieß, und 'menue' klein. Es kann sich auf die Art der Zubereitung oder die Größe der Fleischstücke beziehen.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-008-orig" n="i sixain de fanoul" resp="#fyndling">eine kleine Menge Fenchel<list type="alternatives"><item>Ein Bündel Fenchelkraut<note type="rationale">Ein 'sixain' kann auch eine kleine Einheit oder ein Bündel bezeichnen, was bei Kräutern plausibel wäre.</note></item></list></note>
       </div>
     </back>
   </text>

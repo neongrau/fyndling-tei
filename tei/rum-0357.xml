@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,10 +103,10 @@ Praxis. Nicht nachkochbar, weil die Hauptzutat heute nicht zu bekommen ist. Der 
         <note type="gloss" target="#rum-0357-orig" n="Kalb in jr" resp="#fyndling">Das Junge im Leib des geschossenen Tiers, also ein ungeborenes Kalb. „Kalb“ heißt auch in der Jägersprache das Junge von Rot- und Damwild.</note>
         <note type="gloss" target="#rum-0357-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
         <note type="gloss" target="#rum-0357-orig" n="hurtig vnd lustig" resp="#fyndling">hurtig = flink, geschickt; lustig = munter, mit Lust bei der Sache. Gemeint ist der Koch, der sich Mühe gibt, nicht ein Scherz.</note>
-        <note type="interpretive_choice" target="#rum-0357-orig" n="Dendel" resp="#fyndling">Damhirsch. So erklären DWB (unter dandel) und FWB (dändel) das Wort, und Rumpolt führt den Dendel in einem eigenen Kapitel zwischen Hirsch und Reh. Das „in jr“ zeigt, dass ein weibliches Stück gemeint ist; im Deutschen bleibt „Damhirsch“ als Tierart stehen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dendel"/></note>
-        <note type="interpretive_choice" target="#rum-0357-orig" n="schneidt es auff / machs sauber / brat es gantz" resp="#fyndling">Alle drei „es“ meinen das Kalb: Es ist das nächste sächliche Wort vor dem Satz. Das Kalb wird aufgeschnitten und ausgenommen, gesäubert und im Ganzen gebraten. Die Übersetzung lässt das „es“ stehen, wie Rumpolt es schreibt.</note>
-        <note type="interpretive_choice" target="#rum-0357-orig" n="brat es gantz" resp="#fyndling">Im Ganzen braten, unzerlegt. Gerät, Hitze, Zeit, Fett und Würze nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0357-orig" n="hurtig vnd lustig" resp="#fyndling">Flink und mit Lust bei der Sache. Frühneuhochdeutsch lustig heißt munter, gern tätig.</note>
+        <note type="interpretive_choice" target="#rum-0357-orig" n="Dendel" resp="#fyndling" subtype="lexical">Damhirsch. So erklären DWB (unter dandel) und FWB (dändel) das Wort, und Rumpolt führt den Dendel in einem eigenen Kapitel zwischen Hirsch und Reh. Das „in jr“ zeigt, dass ein weibliches Stück gemeint ist; im Deutschen bleibt „Damhirsch“ als Tierart stehen.<list type="alternatives"><item>Hirschkuh (Rotwild) oder Rehgeiß<note type="rationale">Nicht übernommen: Hirsch und Reh haben bei Rumpolt je ein eigenes Kapitel, der Dendel steht dazwischen als dritte Wildart. Das Wörterbuch belegt für dandel nur den Damhirsch.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dendel"/></note>
+        <note type="interpretive_choice" target="#rum-0357-orig" n="schneidt es auff / machs sauber / brat es gantz" resp="#fyndling" subtype="contextual">Alle drei „es“ meinen das Kalb: Es ist das nächste sächliche Wort vor dem Satz. Das Kalb wird aufgeschnitten und ausgenommen, gesäubert und im Ganzen gebraten. Die Übersetzung lässt das „es“ stehen, wie Rumpolt es schreibt.<list type="alternatives"><item>Zuerst wird das geschossene Muttertier aufgebrochen, um das Kalb herauszuholen; erst dann wird das Kalb gesäubert und gebraten.<note type="rationale">Sachlich ohnehin nötig, um an das Kalb zu kommen, und so beschreibt es Rumpolt beim Hirschkalb (rum-0325: „herauß genommen“). Der Wortlaut hier legt sich nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0357-orig" n="brat es gantz" resp="#fyndling" subtype="contextual">Im Ganzen braten, unzerlegt. Gerät, Hitze, Zeit, Fett und Würze nennt der Text nicht.<list type="alternatives"><item>Am Spieß am offenen Feuer<note type="rationale">Rumpolts übliche Bratart für Wild, und beim ungeborenen Hirschkalb (rum-0325) steckt er es ausdrücklich an. Hier steht davon nichts, deshalb nicht in die Übersetzung übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0357-orig" n="hurtig vnd lustig" resp="#fyndling" subtype="lexical">Flink und mit Lust bei der Sache. Frühneuhochdeutsch lustig heißt munter, gern tätig.<list type="alternatives"><item>„lustig“ im heutigen Sinn von witzig, als scherzhafter Schluss<note type="rationale">Nicht übernommen: Der heutige Wortsinn ist jünger, und der Satz spricht von der Arbeitshaltung des Kochs.</note></item></list></note>
       </div>
     </back>
   </text>

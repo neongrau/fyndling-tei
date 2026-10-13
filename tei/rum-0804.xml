@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,8 +108,8 @@ Praxis. Der folgende Ablauf ist eine moderne Ergänzung, nicht Rumpolts Angabe: 
         <note type="gloss" target="#rum-0804-orig" n="eyngemacht" resp="#fyndling">Bei Rumpolt eine Zubereitungsart für Fleisch, Geflügel und Fisch: in einer Brühe oder Sauce gegart. Gemeint ist nicht das heutige „Eingemachte“, also nichts Eingekochtes oder Konserviertes.</note>
         <note type="gloss" target="#rum-0804-orig" n="in jhrer eygenen Bruͤh" resp="#fyndling">In der Brühe, die beim Garen der Wachteln selbst entsteht, ohne zugegossene fremde Brühe und ohne Bindung.</note>
         <note type="gloss" target="#rum-0804-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte (Macis), der getrocknete rote Samenmantel der Muskatnuss.</note>
-        <note type="interpretive_choice" target="#rum-0804-orig" n="in jhrer eygenen Bruͤh" resp="#fyndling">Die Brühe entsteht aus den Wachteln selbst; die Zeile nennt keine fremde Flüssigkeit und sagt nicht, ob Wasser zugegeben wird. Bei Kapaun (rum-0670) und Ziegenköpfchen (rum-0225) steht dieselbe Wendung zusammen mit „gekocht“ bzw. „gesotten“, das Sieden in Wasser ist also aus Parallelen erschlossen, nicht aus dieser Zeile.</note>
-        <note type="interpretive_choice" target="#rum-0804-orig" n="Pettersilgen" resp="#fyndling">Petersilienkraut. Wo Rumpolt die Wurzel meint, schreibt er „Pettersilgen Wurtzel“, etwa bei den Turteltauben (rum-0795) und beim Kapaun (rum-0670); hier fehlt der Zusatz.</note>
+        <note type="interpretive_choice" target="#rum-0804-orig" n="in jhrer eygenen Bruͤh" resp="#fyndling" subtype="contextual">Die Brühe entsteht aus den Wachteln selbst; die Zeile nennt keine fremde Flüssigkeit und sagt nicht, ob Wasser zugegeben wird. Bei Kapaun (rum-0670) und Ziegenköpfchen (rum-0225) steht dieselbe Wendung zusammen mit „gekocht“ bzw. „gesotten“, das Sieden in Wasser ist also aus Parallelen erschlossen, nicht aus dieser Zeile.<list type="alternatives"><item>Wachteln mit wenig Wasser sanft gar ziehen lassen; die entstehende Brühe wird als Sauce mit aufgetragen.<note type="rationale">Moderne Praxisfassung, wie in der Zubereitungsnotiz beschrieben. Sie folgt den Parallelen mit derselben Formel; für die Wachteln selbst ist sie nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0804-orig" n="Pettersilgen" resp="#fyndling" subtype="lexical">Petersilienkraut. Wo Rumpolt die Wurzel meint, schreibt er „Pettersilgen Wurtzel“, etwa bei den Turteltauben (rum-0795) und beim Kapaun (rum-0670); hier fehlt der Zusatz.<list type="alternatives"><item>Petersilienwurzel, mitgegart<note type="rationale">In den Brühe-Rezepten derselben Formel nimmt Rumpolt oft die Wurzel; ausgeschlossen ist sie nicht, hier aber nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

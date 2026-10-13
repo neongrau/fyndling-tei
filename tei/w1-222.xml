@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,10 +121,10 @@ Praxis. Fleisch in Wasser weich sieden, dann hacken. Mit Rosinen, fettem Fleisch
         <note type="gloss" target="#w1-222-orig" n="gemachten taig" resp="#fyndling">„Gemachter Teig“ setzt einen fertigen Krapfenteig voraus, der nicht Teil dieses Rezepts ist. Das Grundrezept steht in den Grundlagen: Mehl, Ei, etwas Wasser oder Wein, warmes Schmalz und Salz zu einem festen, geschmeidigen Teig kneten.</note>
         <note type="gloss" target="#w1-222-orig" n="wilpret" resp="#fyndling">Wildbret ist ein Sammelbegriff für das Fleisch von Wildtieren, wie Hirsch, Reh, Hase oder Wildschwein.</note>
         <note type="gloss" target="#w1-222-orig" n="Aber" resp="#fyndling">Das Wort ‚Aber‘ am Anfang eines Rezepts dient oft als Übergangsformel, vergleichbar mit ‚Nun zu…‘ oder ‚Hier ist ein weiteres Rezept für…‘.</note>
-        <note type="interpretive_choice" target="#w1-222-orig" n="Aber" resp="#fyndling">Als einleitende Übergangsformel ‚Nun zu…‘ oder ‚Hier ist ein weiteres Rezept für…‘, die einen neuen Rezeptabschnitt markiert.</note>
-        <note type="interpretive_choice" target="#w1-222-orig" n="wechlischen" resp="#fyndling">‚Welsch‘, was ‚aus romanischsprachigen Ländern stammend‘ bedeutet und hier auf importierte Rosinen verweist.</note>
-        <note type="interpretive_choice" target="#w1-222-orig" n="vaisten" resp="#fyndling">‚Fett‘ oder ‚fetthaltig‘, abgeleitet von mhd. ‚feist‘.</note>
-        <note type="interpretive_choice" target="#w1-222-orig" n="gemachten taig" resp="#fyndling">‚Gemachter Teig‘, was einen bereits vorbereiteten Teig impliziert, der nicht Teil dieses Rezepts ist.</note>
+        <note type="interpretive_choice" target="#w1-222-orig" n="Aber" resp="#fyndling" subtype="lexical">Als einleitende Übergangsformel ‚Nun zu…‘ oder ‚Hier ist ein weiteres Rezept für…‘, die einen neuen Rezeptabschnitt markiert.<list type="alternatives"><item>Als Konjunktion ‚aber‘ im modernen Sinne, die einen Gegensatz oder eine Einschränkung ausdrückt.<note type="rationale">Obwohl ‚aber‘ auch als Konjunktion verwendet wurde, ist die Platzierung am Anfang eines neuen Rezepts im Kontext historischer Kochbücher typisch für eine einleitende Formel.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-222-orig" n="wechlischen" resp="#fyndling" subtype="lexical">‚Welsch‘, was ‚aus romanischsprachigen Ländern stammend‘ bedeutet und hier auf importierte Rosinen verweist.<list type="alternatives"><item>‚Weichlich‘ im Sinne von ‚weich‘ oder ‚zart‘.<note type="rationale">Die Lautform ‚wechlisch‘ könnte auch von ‚weich‘ abgeleitet sein. Im Kontext von Weinbeeren ist ‚welsch‘ als Herkunftsbezeichnung jedoch die historisch plausiblere Lesart für importierte Trockenfrüchte.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-222-orig" n="vaisten" resp="#fyndling" subtype="philological">‚Fett‘ oder ‚fetthaltig‘, abgeleitet von mhd. ‚feist‘.<list type="alternatives"><item>Eine Verlesung von ‚weißen‘, also ‚weißes Fleisch‘.<note type="rationale">Der v/w-Wechsel ist in bairisch-österreichischen Dialekten möglich. Jedoch ist ‚vaist‘ als ‚fett‘ gut belegt und die Zugabe von Fett in Füllungen war üblich, während ‚weißes Fleisch‘ hier redundant wäre, da Kalb und Huhn bereits hell sind.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-222-orig" n="gemachten taig" resp="#fyndling" subtype="contextual">‚Gemachter Teig‘, was einen bereits vorbereiteten Teig impliziert, der nicht Teil dieses Rezepts ist.<list type="alternatives"><item>‚Teig, der gemacht werden soll‘, also eine Anweisung zur Teigherstellung.<note type="rationale">Die grammatische Form des Partizips ‚gemachten‘ deutet auf einen bereits abgeschlossenen Zustand hin. Wäre die Teigherstellung Teil des Rezepts, würde dies expliziter beschrieben werden.</note></item></list></note>
       </div>
     </back>
   </text>

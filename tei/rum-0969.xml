@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,11 +125,11 @@ Praxis. Den Hecht braten, auf dem Rost oder in der Pfanne (das Rezept sagt nicht
         <note type="gloss" target="#rum-0969-orig" n="Erbsbruͤh" resp="#fyndling">Brühe vom Kochen von Erbsen. Bei Rumpolt eine gängige Flüssigkeit für Fischbrühen; das Rheinische Wörterbuch führt Erbsenbrühe als dünne Erbsensuppe.</note>
         <note type="gloss" target="#rum-0969-orig" n="darvnter gemacht" resp="#fyndling">Hier wohl: dazu gemacht. Die Brühe wird zum Fisch bereitet; wohin sie am Ende kommt, über oder unter den Hecht, lässt Rumpolt offen.</note>
         <note type="gloss" target="#rum-0969-orig" n="frischer Butter/ die nicht gesaltzen ist" resp="#fyndling">Ausdrücklich ungesalzene Butter. In der gleichen Brühe zum Schaiden-Schwanz (rum-0889) steht dagegen vngeschmaͤltzt, also nicht zerlassen; das ist ein anderes Merkmal.</note>
-        <note type="interpretive_choice" target="#rum-0969-orig" n="Bruͤh / Kapernbruͤh" resp="#fyndling">Brühe: eine flüssige Kapernbrühe auf Erbsenbrühe-Basis, wie Rumpolt dieselbe Formel bei der Forelle (rum-0956) und beim Schaiden-Schwanz (rum-0889) verwendet. Im Buch wird Bruͤh durchgehend als Brühe aufgelöst.</note>
-        <note type="interpretive_choice" target="#rum-0969-orig" n="Kapern" resp="#fyndling">Die Kapern kommen in die Brühe und werden mit aufgekocht. Der Text nennt sie nur im Wort Kapernbruͤh; die Parallelstelle zur Forelle (rum-0956) sagt „seudt das miteinander sampt den Kapern“.</note>
-        <note type="interpretive_choice" target="#rum-0969-orig" n="darvnter gemacht mit einer Erbsbruͤh" resp="#fyndling">Die Kapernbrühe wird zum Fisch gemacht und dabei mit Erbsenbrühe angemacht; darvnter heißt hier wohl „dazu“, wie in rum-0889.</note>
-        <note type="interpretive_choice" target="#rum-0969-orig" n="Erbsbruͤh (Herstellung)" resp="#fyndling">Rumpolt setzt die Erbsenbrühe als vorhandene Brühe voraus (an anderer Stelle „ein gute wolgeschmackte Erbsbruͤh“, rum-0977); ob klar oder trüb, sagt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0969-orig" n="Gebraten Hecht" resp="#fyndling">Der Hecht ist schon gebraten; das Rezept beschreibt das Braten nicht. Im selben Kapitel brät Rumpolt Hecht auf dem Rost (rum-0970).</note>
+        <note type="interpretive_choice" target="#rum-0969-orig" n="Bruͤh / Kapernbruͤh" resp="#fyndling" subtype="lexical">Brühe: eine flüssige Kapernbrühe auf Erbsenbrühe-Basis, wie Rumpolt dieselbe Formel bei der Forelle (rum-0956) und beim Schaiden-Schwanz (rum-0889) verwendet. Im Buch wird Bruͤh durchgehend als Brühe aufgelöst.<list type="alternatives"><item>Gebundene, sämige Sauce<note type="rationale">Der Text nennt kein Bindemittel; Erbsenbrühe und Butter allein ergeben keine gebundene Sauce. Nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0969-orig" n="Kapern" resp="#fyndling" subtype="contextual">Die Kapern kommen in die Brühe und werden mit aufgekocht. Der Text nennt sie nur im Wort Kapernbruͤh; die Parallelstelle zur Forelle (rum-0956) sagt „seudt das miteinander sampt den Kapern“.<list type="alternatives"><item>Kapern erst beim Anrichten dazugeben<note type="rationale">Im Text nicht gesagt; heute möglich, wenn die Kapern fest bleiben sollen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0969-orig" n="darvnter gemacht mit einer Erbsbruͤh" resp="#fyndling" subtype="contextual">Die Kapernbrühe wird zum Fisch gemacht und dabei mit Erbsenbrühe angemacht; darvnter heißt hier wohl „dazu“, wie in rum-0889.<list type="alternatives"><item>Untergemischt: die Kapernbrühe wird unter die Erbsenbrühe gerührt<note type="rationale">Wörtlich ebenso möglich; für die Zubereitung ergibt sich dieselbe Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0969-orig" n="Erbsbruͤh (Herstellung)" resp="#fyndling" subtype="contextual">Rumpolt setzt die Erbsenbrühe als vorhandene Brühe voraus (an anderer Stelle „ein gute wolgeschmackte Erbsbruͤh“, rum-0977); ob klar oder trüb, sagt er nicht.<list type="alternatives"><item>Ungesalzenes Kochwasser von gekochten Erbsen, nach Wunsch leicht passiert<note type="rationale">Praktischer Weg für heute, wenn keine Erbsenbrühe vorrätig ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0969-orig" n="Gebraten Hecht" resp="#fyndling" subtype="contextual">Der Hecht ist schon gebraten; das Rezept beschreibt das Braten nicht. Im selben Kapitel brät Rumpolt Hecht auf dem Rost (rum-0970).<list type="alternatives"><item>In der Pfanne braten<note type="rationale">Der Text legt die Garart nicht fest; heute ebenso möglich.</note></item></list></note>
       </div>
     </back>
   </text>

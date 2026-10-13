@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -83,7 +88,7 @@ waser for daus jn die sprytzen las syttig bachen
 wilt du gros schnitzs</p>
         </div>
         <div type="translation" xml:id="phw-091-trans" xml:lang="de" corresp="#phw-091-orig">
-          <p>Gib ein wenig Wasser in eine Pfanne und Schmalz. Erhitze das Schmalz darin, sodass der Teig danach gut trocken wird. Gib den Teig danach in einen warmen Mörser und stoße die Eier nacheinander hinein, bis du denkst, dass der Teig richtig ist. Lege die Eier auch in warmes Wasser, bevor du sie in die Spritzen gibst. Backe sie sachte.</p>
+          <p>Gib ein wenig Wasser in eine Pfanne und Schmalz. Erhitze das Schmalz darin, sodass der Teig danach gut trocken wird. Gib den Teig danach in einen warmen Mörser und stoße die Eier nacheinander hinein, bis du denkst, dass der Teig richtig ist. Lege die Eier vorher auch in warmes Wasser. Gib den Teig in die Spritze. Backe sie sachte.</p>
         </div>
         <div type="ingredients">
           <list type="ingredients">
@@ -92,6 +97,9 @@ wilt du gros schnitzs</p>
             </item>
             <item>
               <ingredient orig="schmaltzs">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="(implied)" commodity="wikidata:Q36465" source="#fyndling-ingredient-registry">Mehl</ingredient>
             </item>
             <item>
               <ingredient orig="dayg">Teig</ingredient>
@@ -111,7 +119,7 @@ Ein durch eine Spritze geformtes Schmalzgebäck aus einer brandteigartigen Masse
 
 Woher kommt das Mehl?
 
-Das Rezept nennt kein Mehl, obwohl der Teig beim Erhitzen erst "trocken" werden soll - ein Vorgang, der Mehl voraussetzt. Die Nachbarrezepte phw-090 und phw-102 verwenden für denselben Trocknungsschritt dieselbe Wendung wie hier, phw-089 aus derselben kleinen Rezeptreihe nennt das Mehl dafür ausdrücklich. Die Mehlzugabe ist hier also stillschweigend vorausgesetzt, keine freie Ergänzung.
+Das Rezept nennt kein Mehl, obwohl der Teig beim Erhitzen erst "trocken" werden soll - ein Vorgang, der Mehl voraussetzt. Die Nachbarrezepte phw-090 und phw-102 verwenden für denselben Trocknungsschritt dieselbe Wendung wie hier, phw-089 aus derselben kleinen Rezeptreihe nennt das Mehl dafür ausdrücklich. Der Zwilling bei Sabina Welserin (saw-162) sagt an genau dieser Stelle „rier ain schen mell darein / das er woll drúcken wirt“. Das Mehl ist hier also stillschweigend vorausgesetzt und steht deshalb als ergänzte Zutat in der Liste.
 
 Warme Eier, warmer Mörser
 
@@ -124,9 +132,9 @@ Wasser mit etwas Schmalz in der Pfanne erhitzen und unter Rühren mit Mehl zu ei
         <note type="gloss" target="#phw-091-orig" n="kiechla" resp="#fyndling">"Kiechla" sind kleine Küchlein - gespritzte, in Schmalz gebackene Gebäckstücke.</note>
         <note type="gloss" target="#phw-091-orig" n="schmaltzs" resp="#fyndling">Schreibvariante von "Schmalz", dem tierischen Fett.</note>
         <note type="gloss" target="#phw-091-orig" n="wilt du gros schnitzs" resp="#fyndling">Diese Zeile beginnt bereits die Überschrift des nächsten Rezepts (Gebackene Sträublein-Schnitze, phw-092), dessen eigener Text unmittelbar mit "bachenn" fortsetzt. Für dieses Rezept gehört die Zeile nicht mehr zum Inhalt.</note>
-        <note type="interpretive_choice" target="#phw-091-orig" n="mayrser" resp="#fyndling">Der 'Mayrser' ist ein Mörser, der hier zum Einarbeiten der Eier in den Teig dient. Es handelt sich um einen großen Fleischmörser, nicht um einen kleinen Gewürzmörser.</note>
-        <note type="interpretive_choice" target="#phw-091-orig" n="druckenn wertt" resp="#fyndling">Gelesen als 'trocken wird' - der Teig wird beim Erhitzen fest und trocken, wie beim Ansetzen eines Brandteigs. Gestützt durch die Parallelstellen in phw-090 und phw-102, die für denselben Vorgang dieselbe Wendung benutzen.</note>
-        <note type="interpretive_choice" target="#phw-091-orig" n="syttig bachen" resp="#fyndling">Gelesen als 'sachte backen', also bei milder, gleichmäßiger Hitze - so durchgängig an über einem Dutzend Stellen im Buch verwendet.</note>
+        <note type="interpretive_choice" target="#phw-091-orig" n="mayrser" resp="#fyndling" subtype="lexical">Der 'Mayrser' ist ein Mörser, der hier zum Einarbeiten der Eier in den Teig dient. Es handelt sich um einen großen Fleischmörser, nicht um einen kleinen Gewürzmörser.</note>
+        <note type="interpretive_choice" target="#phw-091-orig" n="druckenn wertt" resp="#fyndling" subtype="lexical">Gelesen als 'trocken wird' - der Teig wird beim Erhitzen fest und trocken, wie beim Ansetzen eines Brandteigs. Gestützt durch die Parallelstellen in phw-090 und phw-102, die für denselben Vorgang dieselbe Wendung benutzen.</note>
+        <note type="interpretive_choice" target="#phw-091-orig" n="syttig bachen" resp="#fyndling" subtype="philological">Gelesen als 'sachte backen', also bei milder, gleichmäßiger Hitze - so durchgängig an über einem Dutzend Stellen im Buch verwendet.<list type="alternatives"><item>Ein Wörterbuch-Homograph 'süttig' bedeutet stattdessen 'siedend heiß' und ist vereinzelt im frühen 16. Jahrhundert belegt. Bei einem in heißem Schmalz gebackenen Gebäck wie diesem wäre das technisch nicht weniger plausibel. Ob an dieser Stelle 'i' oder 'ü' steht, ist am Druck nicht zu klären und offen.</item></list></note>
       </div>
     </back>
   </text>

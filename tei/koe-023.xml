@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,9 +132,9 @@ Praxis. Fisch in halb Wasser, halb Wein halbgar sieden, Brühe abseihen, entgrä
         <note type="gloss" target="#koe-023-orig" n="Salz" resp="#fyndling">Salz ist im Originaltext nicht explizit genannt, aber für das Würzen des Fisches impliziert.</note>
         <note type="interpretive_choice" target="#koe-023-orig" n="geprest sweinß koppff" resp="#fyndling">„Gepresster Schweinskopf“. Dies ist ein Mock-Gericht, das in der Fastenzeit eine Fleischspeise imitiert.</note>
         <note type="interpretive_choice" target="#koe-023-orig" n="schupen sewdt vnd strewch sie durch" resp="#fyndling">„Die Schuppen siede und streiche sie durch“. Dies bezieht sich auf die Verwendung von Fischschuppen als natürliches Geliermittel; der Text nennt kein Kochmedium für das Sieden der Schuppen.</note>
-        <note type="interpretive_choice" target="#koe-023-orig" n="schnewdt es In ein kalte susse prue" resp="#fyndling">„Schneide es in eine kalte süße Brühe“. Die Sülze wird in Scheiben geschnitten und in einer süßen Brühe serviert.</note>
+        <note type="interpretive_choice" target="#koe-023-orig" n="schnewdt es In ein kalte susse prue" resp="#fyndling">„Schneide es in eine kalte süße Brühe“. Die Sülze wird in Scheiben geschnitten und in einer süßen Brühe serviert.<list type="alternatives"><item>Schneide es und gib es in eine kalte süße Brühe<note type="rationale">Die Formulierung 'in' kann auch 'hinein' bedeuten, was die Servierweise als Beilage in der Brühe unterstreicht.</note></item></list></note>
         <note type="interpretive_choice" target="#koe-023-orig" n="prue einß fingers lanck" resp="#fyndling">„Brühe eines Fingers lang“. Dies ist eine ungefähre Mengenangabe, die „etwa einen Finger breit“ oder „einen Finger hoch“ bedeutet.</note>
-        <note type="interpretive_choice" target="#koe-023-orig" n="los eß sten piß herdt" resp="#fyndling">„Lass es stehen, bis es fest ist“ - der Text nennt keine Dauer oder Temperatur für das Stocken der Sülze.</note>
+        <note type="interpretive_choice" target="#koe-023-orig" n="los eß sten piß herdt" resp="#fyndling">„Lass es stehen, bis es fest ist“ - der Text nennt keine Dauer oder Temperatur für das Stocken der Sülze.<list type="alternatives"><item>Stehenlassen bei kühler Umgebungstemperatur (Keller, Speisekammer) ohne festgelegte Dauer, wie der Text es offen lässt<note type="rationale">Historisch plausibel, aber im sommerlichen Marktbetrieb ohne Kühlkette bei einem Fischprodukt risikobehaftet - moderne Praxis setzt daher auf mehrere Stunden bis über Nacht im Kühlschrank (siehe Praxis-Absatz).</note></item></list></note>
       </div>
     </back>
   </text>

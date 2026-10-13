@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,10 +125,10 @@ Das Tüchlein vor dem Befüllen einfetten, nicht erst danach - sonst lässt sich
         <note type="gloss" target="#phw-109-orig" n="hencks jn ain pfanen mit waser" resp="#fyndling">Diese Anweisung beschreibt das Garen im Wasserbad: das gefüllte und zugebundene Tüchlein wird in eine größere Pfanne mit Wasser gehängt, ohne den Boden zu berühren, damit die Masse sanft und gleichmäßig gart.</note>
         <note type="gloss" target="#phw-109-orig" n="lanng schnitz 2 finger braytt" resp="#fyndling">„Schnitz“ bezeichnet hier den geschnittenen Streifen selbst, keine Maßeinheit - die eigentliche Größenangabe ist „zwei Finger breit“, also etwa 3-4 cm.</note>
         <note type="gloss" target="#phw-109-orig" n="streybla dayg" resp="#fyndling">Der Vergleichsteig zum Sträublein - einem im Buch mehrfach genannten, dünnflüssigen Ausbackteig für Spritzgebäck.</note>
-        <note type="interpretive_choice" target="#phw-109-orig" n="gestosenn baches" resp="#fyndling">Festes, kompaktes Backwerk (Bedeutung „fest/kräftig“, ohne Mörserschritt).</note>
-        <note type="interpretive_choice" target="#phw-109-orig" n="bachenn" resp="#fyndling">Ausbacken/Frittieren (in heißem Schmalz).</note>
-        <note type="interpretive_choice" target="#phw-109-orig" n="bys fein dick wirt (Gargrad im Wasserbad)" resp="#fyndling">Vollständig durchgaren, bis die Masse überall fest ist.</note>
-        <note type="interpretive_choice" target="#phw-109-orig" n="behalt den dayg waram jn ainem waram waser" resp="#fyndling">Der restliche rohe Teig wird im warmen Wasser bereitgehalten, während weitere Portionen nachgegart und ausgebacken werden.</note>
+        <note type="interpretive_choice" target="#phw-109-orig" n="gestosenn baches" resp="#fyndling" subtype="lexical">Festes, kompaktes Backwerk (Bedeutung „fest/kräftig“, ohne Mörserschritt).<list type="alternatives"><item>Durch Stampfen/Mörsern hergestelltes Backwerk.<note type="rationale">Die geläufigere Bedeutung von „gestoßen“ verweist auf einen Mörser. Der Rezepttext nennt aber keinen Stampfschritt und die Zutaten (Eier, Milch, Wasser) enthalten nichts Stoßbares, was diese Lesart unwahrscheinlich, aber nicht sicher ausschließbar macht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-109-orig" n="bachenn" resp="#fyndling" subtype="lexical">Ausbacken/Frittieren (in heißem Schmalz).<list type="alternatives"><item>Backen im Ofen<note type="rationale">„Bachenn“ kann auch Backen im Ofen bedeuten, doch die Anweisung „legs jns schmaltz“ (lege es ins Schmalz) spricht eindeutig für das Ausbacken in Fett.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-109-orig" n="bys fein dick wirt (Gargrad im Wasserbad)" resp="#fyndling" subtype="contextual">Vollständig durchgaren, bis die Masse überall fest ist.<list type="alternatives"><item>Nur bis zur genannten Konsistenz „fein dick“ garen, ohne weitere Prüfung.<note type="rationale">Der Text nennt nur die Konsistenz „fein dick“, keine Zeit, Temperatur oder ein Kriterium für vollständiges Durchgaren des rohen Eis.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-109-orig" n="behalt den dayg waram jn ainem waram waser" resp="#fyndling" subtype="contextual">Der restliche rohe Teig wird im warmen Wasser bereitgehalten, während weitere Portionen nachgegart und ausgebacken werden.<list type="alternatives"><item>Die bereits ausgebackenen, fertigen Schnitze werden im warmen Wasser warmgehalten.<note type="rationale">Der Satz folgt unmittelbar auf das Ausbacken und spricht wörtlich von „den dayg“ (der Teig, Singular) - grammatisch nicht sicher auszuschließen, auch wenn dies die knusprige Kruste sofort aufweichen würde.</note></item></list></note>
       </div>
     </back>
   </text>

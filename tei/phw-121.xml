@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -154,12 +159,12 @@ Praxis. Die Kräuter fein hacken und kurz in Schmalz anschwitzen - das welkt sie
         <note type="gloss" target="#phw-121-orig" n="walglan" resp="#fyndling">Bedeutet ‚dünn ausrollen‘.</note>
         <note type="gloss" target="#phw-121-orig" n="erwas brye" resp="#fyndling">Erbsenbrühe.</note>
         <note type="gloss" target="#phw-121-orig" n="krepfla" resp="#fyndling">‚Krapfen‘ bezeichnet hier kleine Teigtaschen oder Knödel, die in Brühe gesotten werden, nicht die heute üblichen frittierten Krapfen.</note>
-        <note type="interpretive_choice" target="#phw-121-orig" n="krepfla" resp="#fyndling">‚Krapfen‘ (kleine Teigtaschen/Knödel).</note>
-        <note type="interpretive_choice" target="#phw-121-orig" n="1 ⟨?salfenn⟩ blettla" resp="#fyndling">‚1 Blättchen (einer nicht näher bezeichneten Kräuterart)‘.</note>
-        <note type="interpretive_choice" target="#phw-121-orig" n="der nu sey" resp="#fyndling">‚der nun sei‘.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
-        <note type="interpretive_choice" target="#phw-121-orig" n="er er [vor Hayers Konjektur &quot;stark&quot;]" resp="#fyndling">Gelesen als „das er erstar(re)“: „er“ ist das Pronomen (die Masse), „erstar“ das Verb „erstarren“; die Doppelung ist dann keine. Hayers Konjektur „[stark]“ wäre entbehrlich. Das ist Ralfs Lesung am Faksimile (2026-10-07); in der Übersetzung steht „damit es fest wird“.</note>
-        <note type="interpretive_choice" target="#phw-121-orig" n="Verschließen der Teigtaschen" resp="#fyndling">Rand fest andrücken/zukneifen, wie bei gefüllten Brühteigtaschen üblich.</note>
-        <note type="interpretive_choice" target="#phw-121-orig" n="Siedezeit" resp="#fyndling">Sieden, bis die Teigtaschen aufschwimmen und der Teig durchgegart ist.</note>
+        <note type="interpretive_choice" target="#phw-121-orig" n="krepfla" resp="#fyndling" subtype="lexical">‚Krapfen‘ (kleine Teigtaschen/Knödel).<list type="alternatives"><item>‚Knödel‘ oder ‚Nocken‘.<note type="rationale">Obwohl ‚Krapfen‘ heute oft frittiert sind, beschreibt das Rezept das Sieden in Brühe, was eher auf Knödel oder Nocken hindeutet. Der Begriff ‚Krapfen‘ wurde im Mittelalter breiter verwendet.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-121-orig" n="1 ⟨?salfenn⟩ blettla" resp="#fyndling" subtype="philological">‚1 Blättchen (einer nicht näher bezeichneten Kräuterart)‘.<list type="alternatives"><item>‚1 Salbeiblättchen‘.<note type="rationale">Das Wort ‚salfenn‘ ist an dieser Stelle gestrichen und wird deshalb nicht übersetzt. Zwei Belege stützen die Vermutung, dass ursprünglich Salbei gemeint war: der Zwilling mst-067 nennt in seiner Kräuterliste ‚Saluen maseron‘ (Salbei, Majoran), und das buchinterne Nachbarrezept phw-049 führt an derselben Listenposition (vor Majoran) das ungestrichene ‚salfenn blettla‘.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-121-orig" n="der nu sey" resp="#fyndling" subtype="lexical">‚der nun sei‘.<list type="alternatives"><item>‚der nun fest/reif sei‘.<note type="rationale">Die Phrase ist ungewöhnlich und könnte ein Füllwort oder eine Anweisung zum Zustand des Käses sein. Eine wörtliche Übersetzung wurde gewählt, da der genaue Sinn nicht eindeutig ist. Der Zwilling mst-067 hat an der entsprechenden Stelle keine vergleichbare Formulierung.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
+        <note type="interpretive_choice" target="#phw-121-orig" n="er er [vor Hayers Konjektur &quot;stark&quot;]" resp="#fyndling" subtype="philological">Gelesen als „das er erstar(re)“: „er“ ist das Pronomen (die Masse), „erstar“ das Verb „erstarren“; die Doppelung ist dann keine. Hayers Konjektur „[stark]“ wäre entbehrlich. Das ist Ralfs Lesung am Faksimile (2026-10-07); in der Übersetzung steht „damit es fest wird“.<list type="alternatives"><item>Möglicherweise eine im Editionsvermerk nicht erfasste Streichung des ersten ‚er‘, statt einer scribalen Dittographie.<note type="rationale">Der Verdacht lässt sich mit dem vorliegenden Material nicht auflösen und bleibt am Faksimile zu prüfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-121-orig" n="Verschließen der Teigtaschen" resp="#fyndling" subtype="contextual">Rand fest andrücken/zukneifen, wie bei gefüllten Brühteigtaschen üblich.<list type="alternatives"><item>Eine offene oder nur lose gefaltete Form, bei der etwas Füllung bewusst in die Brühe übergeht.<note type="rationale">Der Text beschreibt nur das Einlegen der Füllung in den Teig, nicht das Schließen - beide Lesarten sind mit dem Wortlaut vereinbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-121-orig" n="Siedezeit" resp="#fyndling" subtype="contextual">Sieden, bis die Teigtaschen aufschwimmen und der Teig durchgegart ist.<list type="alternatives"><item>Keine belegte Zeitangabe.<note type="rationale">Der Text nennt keine Siedezeit und überlässt sie der kochenden Person.</note></item></list></note>
       </div>
     </back>
   </text>

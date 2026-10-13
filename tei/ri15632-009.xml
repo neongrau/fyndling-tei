@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,7 +116,7 @@ So gelingt es. Der Schlüssel liegt im sanften Garen und der richtigen Temperatu
 So wird es richtig gut. Die Balance der Säure ist entscheidend; probiere den Sud vor dem Garen des Fisches und passe sie bei Bedarf an. Ein Schuss Verjus statt eines Teils des Essigs kann die Säure milder und fruchtiger machen. Für die ‚Gewürze‘ eignen sich zeittypisch gemahlener Pfeffer, Ingwer oder eine Prise Nelken und Zimt, die dem Sud Tiefe verleihen. Der Safran gibt nicht nur Farbe, sondern auch ein feines Aroma. Achte darauf, dass der Sud nach dem Abkühlen klar bleibt. Serviere den Fisch mit dem klaren, kalten Sud, der eine leichte, sülzartige Konsistenz haben sollte, was dem Gericht eine elegante Note verleiht.</note>
         <note type="gloss" target="#ri15632-009-orig" n="Item" resp="#fyndling">Standard-Einleitung für ein neues Rezept in mittelalterlichen Kochbüchern.</note>
         <note type="gloss" target="#ri15632-009-orig" n="gewurtz" resp="#fyndling">Im Mittelalter war 'Gewürze' oft eine Mischung aus Pfeffer, Ingwer, Galgant, Nelken, Muskat und Zimt. Die genaue Zusammensetzung variierte je nach Verfügbarkeit und Geschmack des Kochs.</note>
-        <note type="interpretive_choice" target="#ri15632-009-orig" n="geleych" resp="#fyndling">zu gleichen Teilen</note>
+        <note type="interpretive_choice" target="#ri15632-009-orig" n="geleych" resp="#fyndling">zu gleichen Teilen<list type="alternatives"><item>gleichmäßig<note type="rationale">Beide Lesarten von ‚geleych' sind möglich; im Kontext der Mengenangabe (Wein, Wasser, Essig) ist ‚zu gleichen Teilen' am gebräuchlichsten.</note></item></list></note>
         <note type="interpretive_choice" target="#ri15632-009-orig" n="kaltz" resp="#fyndling">‚kalt' - die Speise wird abgekühlt/kalt gegeben.</note>
       </div>
     </back>

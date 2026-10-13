@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,9 +130,9 @@ Praxis. Eine ganze Gans braucht im Kohl bei schwacher Hitze gut eineinhalb bis z
         <note type="gloss" target="#rum-0599-orig" n="Pettersilgen" resp="#fyndling">Petersilie.</note>
         <note type="gloss" target="#rum-0599-orig" n="zierlich" resp="#fyndling">Ansehnlich, schön angerichtet.</note>
         <note type="gloss" target="#rum-0599-orig" n="saures Kraut" resp="#fyndling">Sauerkraut.</note>
-        <note type="interpretive_choice" target="#rum-0599-orig" n="Geraͤucherte Gaͤnß" resp="#fyndling">Der Zustand der Gans bleibt offen: Rumpolt lässt sie mit dem Gemüse kochen oder kalt auftragen und sagt nicht, ob sie heiß (gar) oder kalt (roh) geräuchert ist.</note>
-        <note type="interpretive_choice" target="#rum-0599-orig" n="gruͤnem oder weissem Koͤl" resp="#fyndling">Grüner oder weißer Kohl ohne Sortenfestlegung; Rumpolt nennt nur die Farbe.</note>
-        <note type="interpretive_choice" target="#rum-0599-orig" n="so richt man sie an in eine Schuͤssel" resp="#fyndling">Die gesäuberte Gans wird in der Schüssel angerichtet und mit Brühe übergossen; ob sie vorher gekocht wurde, sagt der Satz nicht.</note>
+        <note type="interpretive_choice" target="#rum-0599-orig" n="Geraͤucherte Gaͤnß" resp="#fyndling" subtype="contextual">Der Zustand der Gans bleibt offen: Rumpolt lässt sie mit dem Gemüse kochen oder kalt auftragen und sagt nicht, ob sie heiß (gar) oder kalt (roh) geräuchert ist.<list type="alternatives"><item>Gans im Gemüse gar kochen, dann servieren<note type="rationale">Heutige Vorgabe für die gekochte Fassung; sie funktioniert für rohe wie gare Räuchergans.</note></item><item>Heiß geräucherte, schon gare Gans, nur erwärmt oder kalt aufgeschnitten<note type="rationale">Möglich und für die kalte Fassung nötig, im Text aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0599-orig" n="gruͤnem oder weissem Koͤl" resp="#fyndling" subtype="lexical">Grüner oder weißer Kohl ohne Sortenfestlegung; Rumpolt nennt nur die Farbe.<list type="alternatives"><item>Grünkohl<note type="rationale">Mögliche Deutung von „grün“, vom Text nicht festgelegt.</note></item><item>Wirsing oder ein anderer Blattkohl<note type="rationale">Ebenso möglich; der Wortlaut schließt keine grüne Kohlsorte aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0599-orig" n="so richt man sie an in eine Schuͤssel" resp="#fyndling" subtype="contextual">Die gesäuberte Gans wird in der Schüssel angerichtet und mit Brühe übergossen; ob sie vorher gekocht wurde, sagt der Satz nicht.<list type="alternatives"><item>Gans vorher in Wasser oder Brühe gar kochen, dann mit heißer Brühe anrichten<note type="rationale">Heutige Praxis, damit die Gans sicher gar auf den Tisch kommt; nicht aus dem Text.</note></item></list></note>
       </div>
     </back>
   </text>

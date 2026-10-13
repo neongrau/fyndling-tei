@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,8 +121,8 @@
         <note type="gloss" target="#wes-038-orig" n="deegh cleedse" resp="#fyndling">Eine Teighülle oder Pastetenkruste, die das Gericht umschließt.</note>
         <note type="gloss" target="#wes-038-orig" n="witten barghijn smoute" resp="#fyndling">Weißes Schweineschmalz, ein häufig verwendetes Kochfett im Mittelalter.</note>
         <note type="gloss" target="#wes-038-orig" n="platteele" resp="#fyndling">Eine Platte oder Schale zum Servieren.</note>
-        <note type="interpretive_choice" target="#wes-038-orig" n="pipes" resp="#fyndling">Die Kapaunstücke werden mit einer Farce gefüllt oder gestopft.</note>
-        <note type="interpretive_choice" target="#wes-038-orig" n="ziedse in witten barghijn smoute" resp="#fyndling">Die in Teig gehüllten Kapaunstücke werden in weißem Schweineschmalz gekocht oder gesotten.</note>
+        <note type="interpretive_choice" target="#wes-038-orig" n="pipes" resp="#fyndling">Die Kapaunstücke werden mit einer Farce gefüllt oder gestopft.<list type="alternatives"><item>Die Kapaunstücke werden in eine röhren- oder pfeifenartige Form gebracht.<note type="rationale">Das mittelniederländische Wort ‚pipen‘ kann auch ‚aushöhlen‘ oder ‚in eine bestimmte Form bringen‘ bedeuten, was im Kontext der Füllung ebenfalls denkbar wäre.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-038-orig" n="ziedse in witten barghijn smoute" resp="#fyndling">Die in Teig gehüllten Kapaunstücke werden in weißem Schweineschmalz gekocht oder gesotten.<list type="alternatives"><item>Die Teighülle wird in heißem Schmalz frittiert oder gebacken.<note type="rationale">Obwohl ‚sieden‘ wörtlich ‚kochen‘ bedeutet, könnte es im Kontext von Fett auch ein Frittieren oder Backen in heißem Fett meinen, ähnlich einem Konfit, um eine knusprige Kruste zu erzeugen.</note></item></list></note>
       </div>
     </back>
   </text>

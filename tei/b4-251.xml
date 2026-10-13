@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,8 +117,8 @@ Petersilie oder anderes rohes Küchenkraut verlesen und waschen, grob hacken, mi
         <note type="gloss" target="#b4-251-orig" n="Gruenns chraut" resp="#fyndling">Wörtlich ‚grünes Kraut‘, hier im Sinne von ‚rohes, unverarbeitetes Kraut‘. Im Mittelalter wurde ‚grün‘ oft für den Zustand ‚roh‘ oder ‚frisch‘ verwendet, nicht nur für die Farbe.</note>
         <note type="gloss" target="#b4-251-orig" n="Rain" resp="#fyndling">Bedeutet ‚rein‘ oder ‚sauber‘, nicht ‚schön‘ im ästhetischen Sinne. Die Kräuter sollen sorgfältig verlesen und gewaschen sein.</note>
         <note type="gloss" target="#b4-251-orig" n="slach das durch" resp="#fyndling">Ein feststehender Begriff der Kochsprache: ‚durchschlagen‘ heißt, etwas durch ein Sieb oder Tuch zu pressen bzw. durchzuseihen - nicht bloß zu zerstoßen.</note>
-        <note type="interpretive_choice" target="#b4-251-orig" n="Gruenns chraut" resp="#fyndling">Rohe, unverarbeitete Kräuter. Die Pre-flight-Analyse weist explizit darauf hin, dass ‚grun‘ hier ‚roh/unverarbeitet‘ bedeutet, nicht die Farbe.</note>
-        <note type="interpretive_choice" target="#b4-251-orig" n="slach das durch" resp="#fyndling">‚Durchschlagen‘ ist ein feststehender fnhd. Küchenterminus für das Pressen durch ein Sieb oder Tuch (Durchseihen), belegt in mehreren historischen Wörterbüchern (Pfälzisches Wörterbuch, Rheinisches Wörterbuch, Deutsches Wörterbuch/Grimm).</note>
+        <note type="interpretive_choice" target="#b4-251-orig" n="Gruenns chraut" resp="#fyndling" subtype="lexical">Rohe, unverarbeitete Kräuter. Die Pre-flight-Analyse weist explizit darauf hin, dass ‚grun‘ hier ‚roh/unverarbeitet‘ bedeutet, nicht die Farbe.<list type="alternatives"><item>Grüne Kräuter (bezogen auf die Farbe).<note type="rationale">Die moderne Assoziation von ‚grün‘ bezieht sich primär auf die Farbe. Im Mittelalter war die Bedeutung jedoch breiter gefasst und umfasste auch den Zustand ‚roh‘ oder ‚frisch‘.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-251-orig" n="slach das durch" resp="#fyndling" subtype="lexical">‚Durchschlagen‘ ist ein feststehender fnhd. Küchenterminus für das Pressen durch ein Sieb oder Tuch (Durchseihen), belegt in mehreren historischen Wörterbüchern (Pfälzisches Wörterbuch, Rheinisches Wörterbuch, Deutsches Wörterbuch/Grimm).<list type="alternatives"><item>Zerstoßen/Pürieren im Mörser.<note type="rationale">Küchentechnisch ebenfalls denkbar für eine grobe Kräuter-Essig-Sauce, aber ohne eigenständigen Wörterbuchbeleg für diese Rezeptstelle - das Verb selbst bezeichnet primär das Sieben, nicht das Zerstoßen.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -86,7 +91,7 @@ vnd nim 2 scheyfalin 2 finger brott kers dar mit
 vm vnnd nims dar mit aus</p>
         </div>
         <div type="translation" xml:id="phw-098-trans" xml:lang="de" corresp="#phw-098-orig">
-          <p>Willst du welsche Strauben backen, so lege Eier in warmes Wasser. Gib Wasser in eine Pfanne über Salz und bringe es zum Sieden. Gieße es zu Mehl, rühre es kräftig ab und schlage die Eier darein. Rühre den Teig und mache ihn glatt.</p>
+          <p>Willst du welsche Strauben backen, so lege Eier in warmes Wasser. Setze Wasser in einer Pfanne aufs Feuer, salze es und lass es sieden. Gieße es zu Mehl, rühre es kräftig ab und schlage die Eier darein. Rühre den Teig und mache ihn glatt.</p>
           <p>Nimm ein Trichterlein, wo das kleine Fingerlein bis zum halben Glied hineinpasst. Gib den Teig darein und lass ihn gemächlich durch das Trichterlein in heißes Schmalz laufen. Lege es fein langsam ein, so wird es ein oder zwei Ellen lang, sodass es nicht anklebt. Nimm zwei Scheiflein, zwei Finger breit, kehre es damit um und nimm es damit heraus.</p>
         </div>
         <div type="ingredients">
@@ -129,10 +134,11 @@ Praxis.
 Kochendes Salzwasser wird in Mehl gerührt, bis ein glatter, abgebundener Teig entsteht; die vorgewärmten Eier werden erst danach eingeschlagen, damit der heiße Teig sie nicht sofort stockt. Der glattgerührte Teig läuft langsam durch das Trichterlein in heißes Schmalz, wird mit dem Scheiflein gewendet und einzeln herausgehoben. Die Zutaten sind robust und die Zubereitung passt komplett an den offenen Topf am Feuer - allerdings verlangt der gleichmäßige, nicht klebende Teigfluss durch die enge Öffnung bei konstant heißem Fett etwas Übung.</note>
         <note type="gloss" target="#phw-098-orig" n="welsch" resp="#fyndling">Im Mittelalter ein Sammelbegriff für alles, was aus romanischsprachigen Ländern (Frankreich, Italien) kam. Hier bezieht es sich auf eine Art Gebäck.</note>
         <note type="gloss" target="#phw-098-orig" n="Elle" resp="#fyndling">Ein historisches Längenmaß, das je nach Region variierte, aber typischerweise zwischen 60 und 70 cm lag (z.B. Augsburger Elle ca. 60 cm).</note>
-        <note type="interpretive_choice" target="#phw-098-orig" n="streybla" resp="#fyndling">‚Strauben‘ - eine Art frittiertes Gebäck, das durch eine Tülle in heißes Fett gegeben wird und dabei lange, unregelmäßige Formen annimmt.</note>
-        <note type="interpretive_choice" target="#phw-098-orig" n="drachterlin" resp="#fyndling">‚Trichterlein‘ (kleiner Trichter) - ein Werkzeug mit einer kleinen, fingerbreiten Öffnung, durch die der Teig läuft.</note>
-        <note type="interpretive_choice" target="#phw-098-orig" n="scheyfalin" resp="#fyndling">‚Scheiflein‘ (Diminutiv von Schaufel) - ein kleines, flaches, leicht gebogenes Werkzeug zum Wenden und Herausheben.</note>
-        <note type="interpretive_choice" target="#phw-098-orig" n="⟨?laß⟩" resp="#fyndling">Die Tilgung an dieser Stelle ist unsicher markiert; in der Übersetzung bleibt das Wort unberücksichtigt, der Satz liest sich auch ohne es vollständig (Imperativ mit Finalsatz statt Zeitangabe).</note>
+        <note type="interpretive_choice" target="#phw-098-orig" n="streybla" resp="#fyndling" subtype="lexical">‚Strauben‘ - eine Art frittiertes Gebäck, das durch eine Tülle in heißes Fett gegeben wird und dabei lange, unregelmäßige Formen annimmt.<list type="alternatives"><item>‚Streifen‘ - dünne Teigstreifen, die frittiert werden.<note type="rationale">Obwohl ‚Streifen‘ eine mögliche Lesart ist, passt ‚Strauben‘ besser zur Beschreibung des langen, unregelmäßigen Gebäcks, das durch eine Tülle geformt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-098-orig" n="drachterlin" resp="#fyndling" subtype="lexical">‚Trichterlein‘ (kleiner Trichter) - ein Werkzeug mit einer kleinen, fingerbreiten Öffnung, durch die der Teig läuft.<list type="alternatives"><item>‚Röhrchen‘ oder ‚Tülle‘.<note type="rationale">Diese Lesart passt zur beschriebenen kleinen Öffnung, wird aber vom einschlägigen Wörterverzeichnis nicht gestützt: dort ist ‚drachterlin‘ als Diminutiv von ‚Trichter‘ verzeichnet, und dasselbe Wort ist im Buch an anderer Stelle bereits als ‚Trichterlein‘ aufgelöst.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-098-orig" n="scheyfalin" resp="#fyndling" subtype="lexical">‚Scheiflein‘ (Diminutiv von Schaufel) - ein kleines, flaches, leicht gebogenes Werkzeug zum Wenden und Herausheben.<list type="alternatives"><item>‚Schöpflöffel‘.<note type="rationale">Ein Schöpflöffel ist ein gängiges Frittier-Werkzeug, wird hier aber vom Wörterverzeichnis nicht gestützt, das ‚scheyfalin‘ als Diminutiv von ‚Schaufel‘ verzeichnet - ein flaches statt ein schöpfendes Gerät.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-098-orig" n="⟨?laß⟩" resp="#fyndling" subtype="philological">Die Tilgung an dieser Stelle ist unsicher markiert; in der Übersetzung bleibt das Wort unberücksichtigt, der Satz liest sich auch ohne es vollständig (Imperativ mit Finalsatz statt Zeitangabe).<list type="alternatives"><item>Sollte die Streichung nicht zutreffen, gehörte das Wort zum Satz.<note type="rationale">Ob an dieser Stelle tatsächlich getilgt wurde, lässt sich anhand der Edition allein nicht klären; das bleibt am Faksimile zu prüfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-098-orig" n="dau ain waser jn ainer pfanen jber saltz" resp="#fyndling" subtype="contextual">Setze Wasser in einer Pfanne (aufs Feuer), salze es: „jber tun“ heißt aufs Feuer setzen.<list type="alternatives"><item>„Gib Wasser in eine Pfanne über Salz“<note type="rationale">Frühere Lesart dieses Rezepts. Das Wolfenbütteler Buch hat in der Parallele „thue ein wasser vber vnd saltz vnd schmaltz vnd lass sieden“ (wo10-100); der Zwilling saw-086 siedet das Wasser und salzt es.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
       </div>
     </back>
   </text>

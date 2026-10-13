@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,9 +126,9 @@ Praxis. Mandeln fein hacken, eine Hälfte mit in wenig Wasser gelöstem Safran e
         <note type="gloss" target="#w1-046-orig" n="straubem taig" resp="#fyndling">Ein dünnflüssiger Teig, der durch einen Trichter in heißes Fett gegossen wird, um krauses Schmalzgebäck (‚Strauben‘ oder ‚Trichterkuchen‘) herzustellen. Hier dient er als Vergleich für die gewünschte Konsistenz der Fischrogenmasse.</note>
         <note type="gloss" target="#w1-046-orig" n="ferb das" resp="#fyndling">Die Anweisung, die Fischrogenmasse zu färben, nennt kein Färbemittel. Naheliegend ist die Wiederverwendung des bereits für die Mandeln verwendeten Safrans; denkbar wäre auch ein anderer period-typischer Farbstoff wie Sandelholz.</note>
         <note type="gloss" target="#w1-046-orig" n="fladen" resp="#fyndling">Dünne, flache Kuchen oder Brote, die als Basis für das Gericht dienen. Die Zubereitung dieser Fladen wird im Rezept nicht beschrieben.</note>
-        <note type="interpretive_choice" target="#w1-046-orig" n="geweichten Inder vasten" resp="#fyndling">‚Für weiche Speisen in der Fastenzeit‘ - die Formulierung leitet das Rezept als eine Art von Fastenspeise ein, die eine weiche Konsistenz hat.</note>
-        <note type="interpretive_choice" target="#w1-046-orig" n="weinper" resp="#fyndling">‚Rosinen‘ (getrocknete Weinbeeren) - so liest die gesamte bekannte Zwillingsfamilie (b4-043, mha-031, mon-141, mon-168, ri15632-004) sowie der Korpus-Glossareintrag zu ‚weinper‘. Das Verlesen (‚wol erlesen‘) und das Aufkochen ‚bis rund‘ (Wiederaufquellen) ergeben nur bei getrockneter Ware Sinn.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
-        <note type="interpretive_choice" target="#w1-046-orig" n="pach es in einem offen (Garzustand)" resp="#fyndling">Vollständiges Durchbacken, bis die Rogenmasse sichtbar fest/gestockt und leicht gebräunt ist - bei rohem Fischrogen aus heutiger Lebensmittelsicherheitssicht die einzig empfehlenswerte Praxis.</note>
+        <note type="interpretive_choice" target="#w1-046-orig" n="geweichten Inder vasten" resp="#fyndling">‚Für weiche Speisen in der Fastenzeit‘ - die Formulierung leitet das Rezept als eine Art von Fastenspeise ein, die eine weiche Konsistenz hat.<list type="alternatives"><item>‚Für eingeweichte Speisen in der Fastenzeit‘<note type="rationale">‚Geweicht‘ kann auch ‚eingeweicht‘ bedeuten, was sich auf eine Vorbereitung der Zutaten beziehen könnte. Der Kontext der Fischrogenmasse als ‚Straubenteig‘ deutet jedoch eher auf die Endkonsistenz hin.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-046-orig" n="weinper" resp="#fyndling">‚Rosinen‘ (getrocknete Weinbeeren) - so liest die gesamte bekannte Zwillingsfamilie (b4-043, mha-031, mon-141, mon-168, ri15632-004) sowie der Korpus-Glossareintrag zu ‚weinper‘. Das Verlesen (‚wol erlesen‘) und das Aufkochen ‚bis rund‘ (Wiederaufquellen) ergeben nur bei getrockneter Ware Sinn.<list type="alternatives"><item>‚Frische Weintrauben‘<note type="rationale">Wörtlich ebenfalls möglich, aber ohne ausdrücklichen Frisch-Marker im Text unüblich - der Koch-Schritt ‚bis sie rund werden‘ ergibt bei bereits runden frischen Trauben keinen erkennbaren Zweck.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#w1-046-orig" n="pach es in einem offen (Garzustand)" resp="#fyndling">Vollständiges Durchbacken, bis die Rogenmasse sichtbar fest/gestockt und leicht gebräunt ist - bei rohem Fischrogen aus heutiger Lebensmittelsicherheitssicht die einzig empfehlenswerte Praxis.<list type="alternatives"><item>Kürzeres Backen ohne vollständiges Durchgaren<note type="rationale">Textlich nicht ausgeschlossen, da weder Zeit- noch Temperaturangabe genannt wird - aber nirgends belegt und bei rohem Fischrogen aus heutiger Sicht nicht empfehlenswert.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,11 +104,11 @@ In Zwiebeln. Die Zwiebeln gehören in die Sauce, in der der Fisch gart. Ob sie d
 Praxis. Bindung, Hitze, Garzeit und Reihenfolge sind nicht überliefert. Das Gericht lässt sich deshalb nicht nach dem Text nachkochen, nur frei nach der Überschrift.</note>
         <note type="gloss" target="#rum-0886-orig" n="Schaiden" resp="#fyndling">Der Wels (Silurus glanis). Lexer führt scheide als „scheidfisch, wels, silurus“, das Grimmsche Wörterbuch scheiden, schaiden, schaden als „der wels, silurus“. Das Rezept selbst nennt den Fisch nicht, er ergibt sich aus der Kapitelüberschrift „Vom Schaiden seind vierzenerley Speiß vnd Trachten zu machen“. Nicht zu verwechseln mit dem Schied (Rapfen), einem anderen Fisch.</note>
         <note type="gloss" target="#rum-0886-orig" n="eyngemacht" resp="#fyndling">Bei Rumpolts Fischgerichten heißt das „in einer Sauce gegart“, nicht eingekocht oder haltbar gemacht.</note>
-        <note type="interpretive_choice" target="#rum-0886-orig" n="Schaiden" resp="#fyndling">Wels (Silurus glanis): Lexer (scheide swm. „scheidfisch, wels, silurus“) und das Grimmsche Wörterbuch (scheiden, schaiden, schaden m. „der wels“) belegen diese Gleichung ausdrücklich.</note>
-        <note type="interpretive_choice" target="#rum-0886-orig" n="eyngemacht" resp="#fyndling">In einer Sauce gegart; so löst das Buch eyngemacht bei Fisch durchgehend auf.</note>
-        <note type="interpretive_choice" target="#rum-0886-orig" n="in Zwibeln" resp="#fyndling">Wörtlich „in Zwiebeln“: der Fisch liegt in einer Sauce, in der Zwiebeln stecken.</note>
-        <note type="interpretive_choice" target="#rum-0886-orig" n="gelb" resp="#fyndling">Eine Farbangabe für die Sauce; ein Färbemittel nennt die Zeile nicht.</note>
-        <note type="interpretive_choice" target="#rum-0886-orig" n="saur" resp="#fyndling">Sauer, ohne genanntes Säuerungsmittel.</note>
+        <note type="interpretive_choice" target="#rum-0886-orig" n="Schaiden" resp="#fyndling" subtype="lexical">Wels (Silurus glanis): Lexer (scheide swm. „scheidfisch, wels, silurus“) und das Grimmsche Wörterbuch (scheiden, schaiden, schaden m. „der wels“) belegen diese Gleichung ausdrücklich.<list type="alternatives"><item>Schied oder Rapfen (Aspius aspius)<note type="rationale">Ein CoReMA-Sachglossar setzt schaiden mit dem Rapfen gleich, und das Grimmsche Wörterbuch nennt unter schied den Rapfen. Schied ist aber ein eigenes Stichwort; für die Form schaiden steht dort der Wels.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0886-orig" n="eyngemacht" resp="#fyndling" subtype="lexical">In einer Sauce gegart; so löst das Buch eyngemacht bei Fisch durchgehend auf.<list type="alternatives"><item>Eingelegt oder eingekocht (Konserve)<note type="rationale">Heutige Bedeutung von „eingemacht“. Eine Konservierung nennt die Zeile nicht, und der Nachbar Nr. 2 im selben Kapitel („Weiß eyngemacht mit sauren Limonien“) zeigt dieselbe Wendung als Saucengericht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0886-orig" n="in Zwibeln" resp="#fyndling" subtype="contextual">Wörtlich „in Zwiebeln“: der Fisch liegt in einer Sauce, in der Zwiebeln stecken.<list type="alternatives"><item>Eine Sauce, die hauptsächlich aus Zwiebeln besteht<note type="rationale">Möglich, aber die Zeile sagt nicht, woraus die Sauce besteht; „Zwiebelsauce“ wäre eine Festlegung.</note></item><item>Fisch mit Zwiebeln als Beilage<note type="rationale">Weniger wahrscheinlich, weil eyngemacht das Garen in der Sauce meint und die Zwiebeln darin nennt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0886-orig" n="gelb" resp="#fyndling" subtype="contextual">Eine Farbangabe für die Sauce; ein Färbemittel nennt die Zeile nicht.<list type="alternatives"><item>Mit Safran oder Eigelb gefärbt<note type="rationale">Beides waren übliche Wege, eine Sauce gelb zu machen, steht hier aber nicht da; deshalb nichts ergänzen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0886-orig" n="saur" resp="#fyndling" subtype="contextual">Sauer, ohne genanntes Säuerungsmittel.<list type="alternatives"><item>Mit Essig, Verjus oder Zitrone gesäuert<note type="rationale">Alle drei sind möglich, die Zeile nennt keins.</note></item></list></note>
       </div>
     </back>
   </text>

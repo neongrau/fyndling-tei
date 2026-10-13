@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,9 +110,9 @@
         <note type="gloss" target="#men-043-orig" n="doyes d'espaiz" resp="#fyndling">Finger dick.</note>
         <note type="gloss" target="#men-043-orig" n="gresse de la ribellecte" resp="#fyndling">Ausgelassenes Schweinefett, möglicherweise von gebratenem Bauchspeck oder einer Art Speckkuchen (Ribellette).</note>
         <note type="gloss" target="#men-043-orig" n="pouldre" resp="#fyndling">Ein allgemeines Gewürzpulver, oft eine Mischung aus Ingwer, Zimt, Nelken, Muskatnuss und Paradieskörnern.</note>
-        <note type="interpretive_choice" target="#men-043-orig" n="cuictes jusques a bayennes" resp="#fyndling">Sehr weich gekocht, bis sie aufplatzen.</note>
-        <note type="interpretive_choice" target="#men-043-orig" n="en ung chascun des feves" resp="#fyndling">In jede Portion der Bohnen (des Pürees).</note>
-        <note type="interpretive_choice" target="#men-043-orig" n="gresse de la ribellecte" resp="#fyndling">Ausgelassenes Schweinefett, möglicherweise von gebratenem Bauchspeck.</note>
+        <note type="interpretive_choice" target="#men-043-orig" n="cuictes jusques a bayennes" resp="#fyndling">Sehr weich gekocht, bis sie aufplatzen.<list type="alternatives"><item>Geschält und dann gekocht.<note type="rationale">Obwohl 'bayennes' auch 'geschält' bedeuten könnte, impliziert der Kontext des Pürierens, dass es sich um einen Zustand der Weichheit nach dem Kochen handelt, bei dem die Bohnen ihre Form verlieren.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-043-orig" n="en ung chascun des feves" resp="#fyndling">In jede Portion der Bohnen (des Pürees).<list type="alternatives"><item>Auf jede einzelne Bohne.<note type="rationale">Nach dem Pürieren ist es unmöglich, Brotscheiben 'in' jede einzelne Bohne zu legen. Die Lesart 'in jede Portion des Bohnenpürees' ist logischer und praktikabler für die Zubereitung.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-043-orig" n="gresse de la ribellecte" resp="#fyndling">Ausgelassenes Schweinefett, möglicherweise von gebratenem Bauchspeck.<list type="alternatives"><item>Fett von einer 'Ribellette', einer Art Pastete oder Gericht.<note type="rationale">Der Begriff 'Ribellette' ist in modernen und historischen Kochbüchern selten. Die wahrscheinlichste Interpretation ist, dass es sich um ausgelassenes Fett von einer spezifischen Zubereitung von Schweinefleisch handelt, die als 'Ribellette' bekannt war, oder einfach um eine Art von Schweinefett.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,8 +115,8 @@ Praxis. Frisches Kalbfleisch direkt nach dem Kauf einsalzen. Der Text nennt kein
         <note type="gloss" target="#saw-032-orig" n="metzg" resp="#fyndling">Metzgerei/Schlachthaus, dort wo das Fleisch frisch geschlachtet und verkauft wurde.</note>
         <note type="gloss" target="#saw-032-orig" n="saltzen" resp="#fyndling">Hier eindeutig das Verb 'salzen' im Sinn von Speisesalz auftragen, nicht die Salse (Würzsauce), die anderswo im Korpus mit 'saltz' bezeichnet wird.</note>
         <note type="gloss" target="#saw-032-orig" n="jberreiben" resp="#fyndling">Überreiben, also wiederholt mit Essig abreiben oder einreiben, um das Fleisch konservierend zu behandeln.</note>
-        <note type="interpretive_choice" target="#saw-032-orig" n="jberreiben" resp="#fyndling">Als 'überreiben' gelesen, also das tägliche Abreiben/Einreiben des gesalzenen Fleisches mit Essig zur Konservierung.</note>
-        <note type="interpretive_choice" target="#saw-032-orig" n="Lagerbedingungen während der Salz-Essig-Behandlung" resp="#fyndling">Der Text nennt keinen Lagerort oder keine Temperatur für die tagelange Behandlung; für die heutige Umsetzung wird kühle Lagerung (Kühlschrank) empfohlen.</note>
+        <note type="interpretive_choice" target="#saw-032-orig" n="jberreiben" resp="#fyndling">Als 'überreiben' gelesen, also das tägliche Abreiben/Einreiben des gesalzenen Fleisches mit Essig zur Konservierung.<list type="alternatives"><item>Könnte auch als 'einreiben' im Sinn von vollständigem Durchtränken mit Essig verstanden werden, statt bloß oberflächlichem Abreiben.<note type="rationale">Das Wort ist im Korpus-Glossar nicht belegt; die Vorsilbe 'jber-' (über-) legt aber eher eine wiederholte, oberflächliche Behandlung nahe als ein einmaliges Durchtränken.</note></item></list></note>
+        <note type="interpretive_choice" target="#saw-032-orig" n="Lagerbedingungen während der Salz-Essig-Behandlung" resp="#fyndling">Der Text nennt keinen Lagerort oder keine Temperatur für die tagelange Behandlung; für die heutige Umsetzung wird kühle Lagerung (Kühlschrank) empfohlen.<list type="alternatives"><item>Historisch könnte die Behandlung auch bei gewöhnlicher Haushaltstemperatur ohne aktive Kühlung erfolgt sein, getragen allein vom täglich erneuerten Essigauftrag.<note type="rationale">Der Text schweigt zu Lagerort und Temperatur; ein kühler Keller war im 16. Jahrhundert für ein Augsburger Patrizierhaus wie das der Welserin plausibel, aber nicht ausdrücklich belegt.</note></item></list></note>
       </div>
     </back>
   </text>

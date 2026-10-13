@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,10 +113,10 @@ Praxis. Naturdärme vom Schwein wässern und durchspülen. Den Speck klein hacke
         <note type="gloss" target="#rum-0429-orig" n="frischen Schweinenspeck" resp="#fyndling">„Frisch“ heißt ungesalzen und ungeräuchert. Rumpolt sagt es im selben Kapitel beim gepressten Schweinskopf ausdrücklich: „ein frischen Speck/ der nicht gesaltzen ist“.</note>
         <note type="gloss" target="#rum-0429-orig" n="Roßt" resp="#fyndling">Rost, ein Gitter über der Glut.</note>
         <note type="gloss" target="#rum-0429-orig" n="abbreunt" resp="#fyndling">Hier „abbräunen“: Die gekochten Därme werden auf dem Rost fertig gebräunt. Die Wörterbücher kennen „abbrennen“ nur als niederbrennen oder verbrennen, die Küchenbedeutung ergibt sich aus dem Zusammenhang.</note>
-        <note type="interpretive_choice" target="#rum-0429-orig" n="Schweinen Daͤrm / Schweinenspeck" resp="#fyndling">Hausschwein: Rumpolt beschreibt einen Brauch in Ungarn und spricht im Satz nur von Schweinedärmen und Schweinespeck, ohne Wild zu nennen.</note>
-        <note type="interpretive_choice" target="#rum-0429-orig" n="eins theils" resp="#fyndling">Die Füllung besteht teils aus Brot, teils aus Speck, beides zu gleichen Teilen; „eins so viel als deß andern“ bezieht sich auf Brot und Speck.</note>
-        <note type="interpretive_choice" target="#rum-0429-orig" n="abbreunt" resp="#fyndling">Abbräunen: nach dem Kochen auf dem Rost rundum bräunen. So passt es zum Ablauf kochen, dann auf den Rost.</note>
-        <note type="interpretive_choice" target="#rum-0429-orig" n="kocht" resp="#fyndling">Rumpolt sagt nur „kochen“; worin und wie lange, lässt er offen.</note>
+        <note type="interpretive_choice" target="#rum-0429-orig" n="Schweinen Daͤrm / Schweinenspeck" resp="#fyndling" subtype="contextual">Hausschwein: Rumpolt beschreibt einen Brauch in Ungarn und spricht im Satz nur von Schweinedärmen und Schweinespeck, ohne Wild zu nennen.<list type="alternatives"><item>Wildschwein (Därme und Speck vom Wildschwein)<note type="rationale">Die Nummer steht im Kapitel „Vom Schweinen Wildpret“, und die übrigen Nummern dieses Kapitels meinen das Wildschwein. Für einen allgemein beschriebenen Landesbrauch ist das Kapiteltier aber nicht zwingend.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0429-orig" n="eins theils" resp="#fyndling" subtype="contextual">Die Füllung besteht teils aus Brot, teils aus Speck, beides zu gleichen Teilen; „eins so viel als deß andern“ bezieht sich auf Brot und Speck.<list type="alternatives"><item>Nur ein Teil der Därme wird so gefüllt, die übrigen anders<note type="rationale">Sprachlich möglich, aber Rumpolt nennt keine zweite Füllung; deshalb nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0429-orig" n="abbreunt" resp="#fyndling" subtype="contextual">Abbräunen: nach dem Kochen auf dem Rost rundum bräunen. So passt es zum Ablauf kochen, dann auf den Rost.<list type="alternatives"><item>Ansengen oder scharf anbrennen lassen<note type="rationale">Näher am Wörterbuchsinn von „abbrennen“ (niederbrennen, verbrennen), für ein Gericht, das „trefflich gut“ sein soll, aber unwahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0429-orig" n="kocht" resp="#fyndling" subtype="contextual">Rumpolt sagt nur „kochen“; worin und wie lange, lässt er offen.<list type="alternatives"><item>In leicht siedendem Wasser garen, die Därme dabei nicht prall gefüllt<note type="rationale">Heutige Praxis für Würste mit quellender Brotfüllung; als moderne Wahl in der Zubereitung, nicht als Rumpolts Angabe.</note></item></list></note>
       </div>
     </back>
   </text>

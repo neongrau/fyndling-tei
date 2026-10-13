@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,8 +104,8 @@ Süßung. Zucker ist hier mitgedacht, auch wenn die Überschrift ihn nicht nennt
 Praxis. Wer die Torte backen will, orientiert sich an den Nachbarnummern: den Teig nach rum-1795 bereiten, die Form damit auslegen, die Johannisbeeren hineingeben, reichlich Zucker, je nach Säure der Beeren, und ein wenig Butter darüber, mit oder ohne Teigdeckel backen, bis der Teig durch ist. Das ist eine Ableitung aus dem Kapitel, keine Angabe Rumpolts. Mengen und Backzeit nennt er nicht.</note>
         <note type="gloss" target="#rum-1830-orig" n="Turten" resp="#fyndling">Rumpolts Schreibung für Torte: ein gebackenes Gericht aus dünnem Teig mit Füllung, gebacken im Ofen oder in der Tortenpfanne. Im Kapitel „Von allerley Turten“ stehen süße und deftige Füllungen nebeneinander. Den Teig beschreibt Rumpolt am Kapitelanfang (rum-1795).</note>
         <note type="gloss" target="#rum-1830-orig" n="Johannesbeer" resp="#fyndling">Johannisbeeren (Ribes). Die Schreibung mit „Johannes-“ ist eine geläufige ältere Nebenform. Ob rote, weiße oder schwarze Beeren gemeint sind, sagt die Zeile nicht.</note>
-        <note type="interpretive_choice" target="#rum-1830-orig" n="Johannesbeer" resp="#fyndling">Johannisbeeren ohne Farbangabe. Die Wörterbücher der Zeit führen das Wort als Johannisbeere; Rumpolt nennt keine Sorte, deshalb legt die Übersetzung keine fest.</note>
-        <note type="interpretive_choice" target="#rum-1830-orig" n="Süßung und Füllung" resp="#fyndling">Zucker ist mitgedacht: Johannisbeeren sind so sauer, dass sie ohne Zucker kaum zu essen sind, auch wenn die Nummer nur die Überschrift nennt. Offen bleibt, ob die Beeren roh oder gekocht in die Torte kamen und ob Zimt oder Butter dazukamen.</note>
+        <note type="interpretive_choice" target="#rum-1830-orig" n="Johannesbeer" resp="#fyndling" subtype="lexical">Johannisbeeren ohne Farbangabe. Die Wörterbücher der Zeit führen das Wort als Johannisbeere; Rumpolt nennt keine Sorte, deshalb legt die Übersetzung keine fest.<list type="alternatives"><item>Rote Johannisbeeren (Ribes rubrum)<note type="rationale">Naheliegend, weil die Wörterbücher das Wort so erklären; die Zeile selbst sagt es aber nicht.</note></item><item>Weiße Johannisbeeren<note type="rationale">In anderen Augsburger Kochbüchern des 16. Jahrhunderts ausdrücklich als „weiße“ genannt; bei Rumpolt fehlt jedes Beiwort.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1830-orig" n="Süßung und Füllung" resp="#fyndling" subtype="contextual">Zucker ist mitgedacht: Johannisbeeren sind so sauer, dass sie ohne Zucker kaum zu essen sind, auch wenn die Nummer nur die Überschrift nennt. Offen bleibt, ob die Beeren roh oder gekocht in die Torte kamen und ob Zimt oder Butter dazukamen.<list type="alternatives"><item>Wie bei der Maulbeer- und der Heidelbeertorte (rum-1808, rum-1809) mit Zimt und Zucker angemacht<note type="rationale">Kapitelparallele, kein Beleg für diese Nummer; bei der Brombeertorte (rum-1827) nennt Rumpolt gar keinen Zusatz.</note></item><item>Beeren leicht gezuckert, mit etwas Butter nach dem Grundrezept rum-1795<note type="rationale">Vorschlag beim Nachbacken; die Butter steht im Grundrezept, der Zucker ist moderne Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,8 +136,8 @@ Wildbret vorher weich kochen und klein hacken (Wild ist zäher als Hausschlachtf
         <note type="gloss" target="#b4-080-orig" n="smalcz" resp="#fyndling">Schmalz, ausgelassenes tierisches Fett.</note>
         <note type="gloss" target="#b4-080-orig" n="zymey" resp="#fyndling">Zimt, hier vermutlich gemahlen als abschließende Würzstreu.</note>
         <note type="gloss" target="#b4-080-orig" n="grunn" resp="#fyndling">Bezeichnet den Garzustand (roh, noch nicht gekocht) - NICHT Farbe und NICHT Frische/Präservierung. Korpusweit vierfach bestätigte Lesefalle (u. a. ka1-031, ka1-059, m384-047, m384-070). Der Titel nennt damit das rohe Grundprodukt, bevor der erste Satz ausdrücklich das inzwischen gekochte Stück Wildbret verlangt - roh gegen gekocht ist die tragende Opposition des Rezepts, kein Widerspruch.</note>
-        <note type="interpretive_choice" target="#b4-080-orig" n="swais" resp="#fyndling">Blut des Wilds (Waidmannssprache), bestätigt durch die CoReMA-Wikidata-Verlinkung „blood“ und die im Text genannte Hühnerblut-Alternative.</note>
-        <note type="interpretive_choice" target="#b4-080-orig" n="zestarkch" resp="#fyndling">„Zu stark“ im Sinne von zu intensiv im Geschmack oder zu kräftig gewürzt/gebunden.</note>
+        <note type="interpretive_choice" target="#b4-080-orig" n="swais" resp="#fyndling">Blut des Wilds (Waidmannssprache), bestätigt durch die CoReMA-Wikidata-Verlinkung „blood“ und die im Text genannte Hühnerblut-Alternative.<list type="alternatives"><item>Körperschweiß im modernen Sinn<note type="rationale">Naheliegende moderne Wortassoziation, aber kulinarisch unsinnig und durch die Sachglosse widerlegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-080-orig" n="zestarkch" resp="#fyndling">„Zu stark“ im Sinne von zu intensiv im Geschmack oder zu kräftig gewürzt/gebunden.<list type="alternatives"><item>„Zu fest/dick“ bezogen auf die Konsistenz der Blut-Wein-Sauce<note type="rationale">Da die Sauce durch Blut gebunden wird, könnte „stark“ auch auf die Bindungsdichte statt den Geschmack zielen.</note></item></list></note>
       </div>
     </back>
   </text>

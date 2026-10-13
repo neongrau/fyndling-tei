@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Praxis. Frische Zwetschgen längs einschneiden und den Stein herauslösen. Getro
         <note type="gloss" target="#rum-1798-orig" n="Vngerische Pflaumen" resp="#fyndling">Ungarische Pflaumen, eine Pflaumenart im Handel; Grimm führt „ungarische Pflaume“ als Dattelszwetschge, Colerus kennt sie als Pfropfsorte. Bei Rumpolt stehen sie auch neben oder anstelle von Zibeben. Die Herkunftsangabe ist ein Sortenname, keine Zubereitung „auf ungarische Art“.</note>
         <note type="gloss" target="#rum-1798-orig" n="gruͤn oder duͤrr" resp="#fyndling">Grün heißt hier frisch, dürr heißt getrocknet. Rumpolt lässt beide Zustände gleichwertig zu.</note>
         <note type="gloss" target="#rum-1798-orig" n="zum eynmachen gut" resp="#fyndling">„Einmachen“ heißt in diesem Kapitel: in die Torte einfüllen, nicht konservieren. Die Marillen- und die Pfirsichtorte desselben Kapitels stellen „durchstreichen“ und „gantz eynmachen“ nebeneinander.</note>
-        <note type="interpretive_choice" target="#rum-1798-orig" n="zum eynmachen gut" resp="#fyndling">„gut zum Einfüllen in die Torte“: Das Kapitel „Von allerley Turten“ gebraucht „einmachen“ für das Einfüllen in die Torte („machs in ein Turten eyn“ im ersten Eintrag) und stellt bei Marillen und Pfirsichen „durchstreichen“ gegen „gantz eynmachen“. Entkernte ganze Pflaumen sind demnach die zweite Möglichkeit neben der passierten Pflaumenfüllung des vorigen Eintrags.</note>
-        <note type="interpretive_choice" target="#rum-1798-orig" n="gruͤn oder duͤrr" resp="#fyndling">Frisch oder getrocknet: „dürr“ ist das getrocknete Obst, „grün“ steht als Gegenwort dazu für die frische Frucht.</note>
-        <note type="interpretive_choice" target="#rum-1798-orig" n="Vngerische Pflaumen" resp="#fyndling">Druckform „Ungarische Pflaumen“ beibehalten, wie im vorigen Eintrag: eine Pflaumenart im Handel (Grimm: Dattelszwetschge).</note>
+        <note type="interpretive_choice" target="#rum-1798-orig" n="zum eynmachen gut" resp="#fyndling" subtype="contextual">„gut zum Einfüllen in die Torte“: Das Kapitel „Von allerley Turten“ gebraucht „einmachen“ für das Einfüllen in die Torte („machs in ein Turten eyn“ im ersten Eintrag) und stellt bei Marillen und Pfirsichen „durchstreichen“ gegen „gantz eynmachen“. Entkernte ganze Pflaumen sind demnach die zweite Möglichkeit neben der passierten Pflaumenfüllung des vorigen Eintrags.<list type="alternatives"><item>„so sind sie zum Einmachen gut“ (wörtlich)<note type="rationale">Philologisch näher, wird heute aber als Konservieren gelesen.</note></item><item>mit Zucker oder Honig einmachen, also konservieren<note type="rationale">Diese Bedeutung ist für die Zeit belegt (FWB: einmachen, conficieren) und für diesen Eintrag allein nicht ausgeschlossen; der Tortenkontext des Kapitels spricht aber dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1798-orig" n="gruͤn oder duͤrr" resp="#fyndling" subtype="contextual">Frisch oder getrocknet: „dürr“ ist das getrocknete Obst, „grün“ steht als Gegenwort dazu für die frische Frucht.<list type="alternatives"><item>grün = unreif<note type="rationale">Wörtlich möglich, aber der Gegensatz zu „dürr“ zielt auf frisch gegen getrocknet; eine Reifeangabe macht der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1798-orig" n="Vngerische Pflaumen" resp="#fyndling" subtype="contextual">Druckform „Ungarische Pflaumen“ beibehalten, wie im vorigen Eintrag: eine Pflaumenart im Handel (Grimm: Dattelszwetschge).<list type="alternatives"><item>Zwetschgen<note type="rationale">Sachlich nah und heute der praktische Einkauf; als Übersetzung bleibt die Druckform stehen, weil die Gleichung nur über Grimm gestützt ist.</note></item></list></note>
       </div>
     </back>
   </text>

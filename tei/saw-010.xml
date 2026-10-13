@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -152,8 +157,8 @@ Praxis. Blut, Füße, Flügel, Magen und Hals in halb Wasser und halb Wein aufse
         <note type="gloss" target="#saw-010-orig" n="schwaiß" resp="#fyndling">Bezeichnet in der Jägersprache und in Kochtexten dieser Zeit Blut, hier ausdrücklich das Blut der Gans zur Bindung der Sauce.</note>
         <note type="gloss" target="#saw-010-orig" n="rerlach" resp="#fyndling">Kurzform für 'zimerrerlach', wörtlich Zimt-Röhrlein, also gerollte Zimtstangen. Steht im Buch oft allein in Gewürzaufzählungen.</note>
         <note type="gloss" target="#saw-010-orig" n="brie" resp="#fyndling">Brühe oder Brühlein, hier die Flüssigkeit, in der die Gans gekocht wurde. Nicht der Käse Brie.</note>
-        <note type="interpretive_choice" target="#saw-010-orig" n="rerlach" resp="#fyndling">Zimt, als Kurzform des im Buch häufigen 'zimerrerlach' (Zimt-Röhrlein).</note>
-        <note type="interpretive_choice" target="#saw-010-orig" n="Garzeit/Garzustand des ersten Siedens (Blut, Füße, Flügel, Magen, Hals)" resp="#fyndling">Der Text nennt nur 'seúds' ohne Garprobe oder Zeitangabe. Aus heutiger Lebensmittelsicherheitssicht (rohes Geflügel, rohes Blut) empfiehlt sich vollständiges Durchgaren, bis das Fleisch von den Knochen löst.</note>
+        <note type="interpretive_choice" target="#saw-010-orig" n="rerlach" resp="#fyndling">Zimt, als Kurzform des im Buch häufigen 'zimerrerlach' (Zimt-Röhrlein).<list type="alternatives"><item>Ein unbekanntes eigenständiges Gewürz oder Kraut<note type="rationale">Isoliert betrachtet ist 'rerlach' im allgemeinen Mittelhochdeutschen nicht eindeutig, aber im Sprachgebrauch dieses Buches ist die Kurzform für Zimt vielfach belegt (21 Belege mit zim-Präfix, 27 als bloßes 'rerlach').</note></item></list></note>
+        <note type="interpretive_choice" target="#saw-010-orig" n="Garzeit/Garzustand des ersten Siedens (Blut, Füße, Flügel, Magen, Hals)" resp="#fyndling">Der Text nennt nur 'seúds' ohne Garprobe oder Zeitangabe. Aus heutiger Lebensmittelsicherheitssicht (rohes Geflügel, rohes Blut) empfiehlt sich vollständiges Durchgaren, bis das Fleisch von den Knochen löst.<list type="alternatives"><item>Ein kürzeres, nicht vollständig durchgegartes Sieden<note type="rationale">Der Text selbst begrenzt die Garzeit nicht und schließt ein kürzeres Sieden nicht aus - diese Lesart ist aus heutiger Geflügel- und Bluthygienesicht aber nicht als Standard zu empfehlen.</note></item></list></note>
       </div>
     </back>
   </text>

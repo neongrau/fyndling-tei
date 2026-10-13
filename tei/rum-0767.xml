@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,12 +113,12 @@ Praxis. Küchenfertige Schnepfen am Spieß oder in der Pfanne braten, das dauert
         <note type="gloss" target="#rum-0767-orig" n="Gehack" resp="#fyndling">Klein gehacktes Fleisch, hier von schon gebratenen Schnepfen. Kein rohes Hackfleisch: Bei Rumpolt ist das Fleisch für ein Gehacktes durchweg vorher gebraten.</note>
         <note type="gloss" target="#rum-0767-orig" n="auffsieden" resp="#fyndling">Aufkochen lassen, nur kurz; das Fleisch ist bereits gar.</note>
         <note type="gloss" target="#rum-0767-orig" n="purgieret das Haͤupt" resp="#fyndling">purgieren heißt reinigen, besonders den Körper; das Haupt ist der Kopf. Rumpolt schreibt dem Gericht eine reinigende Wirkung auf den Kopf zu, ohne sie zu erklären.</note>
-        <note type="interpretive_choice" target="#rum-0767-orig" n="Gehack" resp="#fyndling">Gehacktes aus bereits gebratenen Schnepfen: Der Text sagt „die gebraten“, und Rumpolt hackt auch beim Hasen, Hammel, Lamm und Kalb jeweils schon gebratenes Fleisch.</note>
-        <note type="interpretive_choice" target="#rum-0767-orig" n="Umfang des Gehackten" resp="#fyndling">Offen: Rumpolt sagt nur „Gehack von Schnepffen/ die gebraten“; ob Haut, Knochen oder Innereien einbezogen sind, steht nicht im Text.</note>
-        <note type="interpretive_choice" target="#rum-0767-orig" n="geuß daruͤber ein gute Rindtfleischbruͤh" resp="#fyndling">Die Menge ist nicht genannt; es kann auch nur ein Guss zum Anfeuchten gemeint sein.</note>
-        <note type="interpretive_choice" target="#rum-0767-orig" n="so thu ein wenig sauren Senff ... darein" resp="#fyndling">Der Zeitpunkt ist klar, beim Auftragen; ob der Senf in den Topf oder in die einzelne Schüssel kommt, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0767-orig" n="Schnepffen" resp="#fyndling">Schnepfe ohne Artfestlegung: Rumpolt und sein Kapitel nennen keine bestimmte Art.</note>
-        <note type="interpretive_choice" target="#rum-0767-orig" n="purgieret das Haͤupt" resp="#fyndling">„reinigt den Kopf“: purgieren = reinigen, besonders den Körper; die Wendung „das Haupt purgieren“ ist auch aus Arzneitexten belegt.</note>
+        <note type="interpretive_choice" target="#rum-0767-orig" n="Gehack" resp="#fyndling" subtype="lexical">Gehacktes aus bereits gebratenen Schnepfen: Der Text sagt „die gebraten“, und Rumpolt hackt auch beim Hasen, Hammel, Lamm und Kalb jeweils schon gebratenes Fleisch.<list type="alternatives"><item>Rohes Hackfleisch, das erst danach gegart wird<note type="rationale">Das Wort allein ließe es zu, aber „die gebraten“ und der Gebrauch im übrigen Buch sprechen dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0767-orig" n="Umfang des Gehackten" resp="#fyndling" subtype="contextual">Offen: Rumpolt sagt nur „Gehack von Schnepffen/ die gebraten“; ob Haut, Knochen oder Innereien einbezogen sind, steht nicht im Text.<list type="alternatives"><item>Nur das gebratene Fleisch, vom Knochen gelöst und mit dem Messer klein gehackt<note type="rationale">Die einfachste heutige Ausführung, so in der Zubereitung beschrieben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0767-orig" n="geuß daruͤber ein gute Rindtfleischbruͤh" resp="#fyndling" subtype="contextual">Die Menge ist nicht genannt; es kann auch nur ein Guss zum Anfeuchten gemeint sein.<list type="alternatives"><item>Gerade so viel Brühe, dass das Gehackte knapp bedeckt ist<note type="rationale">Praktischer Ausgangspunkt für ein Gehacktes in Brühe, so in der Zubereitung empfohlen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0767-orig" n="so thu ein wenig sauren Senff ... darein" resp="#fyndling" subtype="contextual">Der Zeitpunkt ist klar, beim Auftragen; ob der Senf in den Topf oder in die einzelne Schüssel kommt, bleibt offen.<list type="alternatives"><item>Beim Anrichten ein wenig mit Weinessig angerührten Senf unterziehen, nicht mitkochen<note type="rationale">Hält Schärfe und Säure frisch, so in der Zubereitung beschrieben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0767-orig" n="Schnepffen" resp="#fyndling" subtype="lexical">Schnepfe ohne Artfestlegung: Rumpolt und sein Kapitel nennen keine bestimmte Art.<list type="alternatives"><item>Waldschnepfe<note type="rationale">Denkbar als die gewöhnliche Tafelschnepfe, aber nicht belegt.</note></item><item>Bekassine (Sumpfschnepfe)<note type="rationale">Ebenso möglich, aber ebenfalls nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0767-orig" n="purgieret das Haͤupt" resp="#fyndling" subtype="lexical">„reinigt den Kopf“: purgieren = reinigen, besonders den Körper; die Wendung „das Haupt purgieren“ ist auch aus Arzneitexten belegt.<list type="alternatives"><item>„führt ab“<note type="rationale">purgieren kann auch das Abführen meinen, doch hier steht ausdrücklich das Haupt als Gegenstand.</note></item></list></note>
       </div>
     </back>
   </text>

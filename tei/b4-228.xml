@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,7 +126,7 @@ Praxis. Aufwendig, aber machbar. Ein schwerer Mörser ist kein Standardgerät am
         <note type="gloss" target="#b4-228-orig" n="moser" resp="#fyndling">Ein großer, schwerer Mörser, der im Mittelalter als Küchengerät zum Zerkleinern von Fleisch, Fisch oder anderen Zutaten zu einer feinen Farce diente.</note>
         <note type="gloss" target="#b4-228-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das hier sowohl als Kochmedium als auch als Geschmacksträger dient.</note>
         <note type="gloss" target="#b4-228-orig" n="fewr" resp="#fyndling">Glut oder glühende Kohlen, die für eine gleichmäßige Hitze zum Backen im Mörser verwendet werden.</note>
-        <note type="interpretive_choice" target="#b4-228-orig" n="ker den Moser dikch gein fewr" resp="#fyndling">Dies bedeutet, den Mörser 'oft' oder 'häufig' zum Feuer zu drehen, um eine gleichmäßige Hitzeverteilung zu gewährleisten.</note>
+        <note type="interpretive_choice" target="#b4-228-orig" n="ker den Moser dikch gein fewr" resp="#fyndling" subtype="lexical">Dies bedeutet, den Mörser 'oft' oder 'häufig' zum Feuer zu drehen, um eine gleichmäßige Hitzeverteilung zu gewährleisten.<list type="alternatives"><item>Eine alternative Lesart wäre 'drehe den Mörser dicht zum Feuer', wobei 'dikch' als 'dicht' (nah) gelesen wird.<note type="rationale">Obwohl 'dicht' auch eine mögliche Bedeutung von 'dikch' ist, ist 'oft' im Kontext des gleichmäßigen Erhitzens eines Gefäßes über Glut plausibler, um ein Anbrennen zu verhindern und eine gleichmäßige Garung zu erzielen. Der Paralleltext W1-230 verwendet an derselben Stelle dieselbe Schreibung 'dikch', ohne die Frage endgültig zu klären.</note></item></list></note>
       </div>
     </back>
   </text>

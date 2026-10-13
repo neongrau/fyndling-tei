@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -135,9 +140,9 @@ Praxis. Kutteln, hartgekochte Eier, Weißbrot und Salbei fein hacken, bis eine b
         <note type="gloss" target="#w1-208-orig" n="erwell sy" resp="#fyndling">Die Knödel werden in der Eierhülle aufgekocht, nicht nur erwärmt - das ergibt eine gestockte, mitgegarte Schicht.</note>
         <note type="gloss" target="#w1-208-orig" n="ayr tayg" resp="#fyndling">Eine Eierhülle, in der die schon festen Knödel ein zweites Mal aufgekocht werden, bevor sie auf den Spieß kommen.</note>
         <note type="gloss" target="#w1-208-orig" n="spis" resp="#fyndling">Ein Bratspieß, auf den die Knödel gesteckt und über offenem Feuer oder Glut gebraten werden.</note>
-        <note type="interpretive_choice" target="#w1-208-orig" n="suppem" resp="#fyndling">Als 'Kochsud' oder 'dünne Sauce' interpretiert, in der die Knödel gegart werden, basierend auf der CoReMA-Glosse 'sauce' und dem Kochkontext.</note>
-        <note type="interpretive_choice" target="#w1-208-orig" n="kar" resp="#fyndling">Als 'Topf oder Schüssel' übersetzt, ein hitzebeständiges Gefäß zum Garen in Flüssigkeit. Der wortgleiche Zwillingstext (b4-205) schreibt an derselben Stelle 'char' - ebenfalls ein Behälterwort, kein Korb.</note>
-        <note type="interpretive_choice" target="#w1-208-orig" n="ayr tayg" resp="#fyndling">Als 'Eierhülle' interpretiert, in der die schon festen Knödel ein zweites Mal aufgekocht werden, basierend auf der CoReMA-Glosse 'batter'.</note>
+        <note type="interpretive_choice" target="#w1-208-orig" n="suppem" resp="#fyndling" subtype="lexical">Als 'Kochsud' oder 'dünne Sauce' interpretiert, in der die Knödel gegart werden, basierend auf der CoReMA-Glosse 'sauce' und dem Kochkontext.</note>
+        <note type="interpretive_choice" target="#w1-208-orig" n="kar" resp="#fyndling" subtype="lexical">Als 'Topf oder Schüssel' übersetzt, ein hitzebeständiges Gefäß zum Garen in Flüssigkeit. Der wortgleiche Zwillingstext (b4-205) schreibt an derselben Stelle 'char' - ebenfalls ein Behälterwort, kein Korb.<list type="alternatives"><item>Ein 'Korb' oder 'Geflecht' zum Garen.<note type="rationale">Das Wort 'kar' kann auch 'Korb' bedeuten, ist aber für das Garen in Flüssigkeit ungeeignet und durch den Zwillingsbeleg zusätzlich unwahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-208-orig" n="ayr tayg" resp="#fyndling" subtype="contextual">Als 'Eierhülle' interpretiert, in der die schon festen Knödel ein zweites Mal aufgekocht werden, basierend auf der CoReMA-Glosse 'batter'.<list type="alternatives"><item>Eine dickere, teigartige Hülle statt einer dünnflüssigen Panade.<note type="rationale">Der Text nennt weder Konsistenz noch Zutatenverhältnis; beide Lesarten sind mit dem beschriebenen Aufkochen vereinbar.</note></item></list></note>
       </div>
     </back>
   </text>

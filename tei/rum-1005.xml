@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,9 +136,9 @@ Praxis. Einen ganzen Hecht beim Fischhändler vorbestellen; bei einem kleinen Fi
         <note type="gloss" target="#rum-1005-orig" n="Roßt" resp="#fyndling">Bratrost. Das Material nennt Rumpolt nicht; es kann ein eiserner Grillrost oder ein hölzerner Rost sein.</note>
         <note type="gloss" target="#rum-1005-orig" n="gemach" resp="#fyndling">Langsam, gemächlich. Eine Hitzestufe oder Bratzeit nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-1005-orig" n="magsts" resp="#fyndling">„magst es“: du kannst ihn (so oder so) auftragen.</note>
-        <note type="interpretive_choice" target="#rum-1005-orig" n="Bruͤh darvnter" resp="#fyndling">Wörtlich „darunter“: Die Brühe kommt unter den Fisch. Bei Rumpolt ist das die übliche Formel für die Brühe, mit der ein Gericht angerichtet wird; wann sie dazukommt, sagt der Text nicht, deshalb bleibt „darunter“ im Text stehen.</note>
-        <note type="interpretive_choice" target="#rum-1005-orig" n="Fuͤll den Hecht darmit / zeuch alsdenn die Haut daruͤber" resp="#fyndling">Der Text sagt nur: Haut vom Kopf bis zum Schwanz abziehen, Fleisch von den Gräten schneiden, die Füllung an den Hecht geben und die Haut wieder darüberziehen. Wo der Fisch geöffnet wird und ob die Haut genäht oder gebunden wird, steht nicht da.</note>
-        <note type="interpretive_choice" target="#rum-1005-orig" n="schwartze Rosein" resp="#fyndling">Schwarze, also dunkle Rosinen. Rumpolt schreibt hier nur „schwartze“, nicht „klein vnd schwartz“; die Sorte bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-1005-orig" n="Bruͤh darvnter" resp="#fyndling" subtype="contextual">Wörtlich „darunter“: Die Brühe kommt unter den Fisch. Bei Rumpolt ist das die übliche Formel für die Brühe, mit der ein Gericht angerichtet wird; wann sie dazukommt, sagt der Text nicht, deshalb bleibt „darunter“ im Text stehen.<list type="alternatives"><item>Die Brühe steht in einem Gefäß unter dem Rost und fängt Bratensaft und Fett auf.<note type="rationale">Vom Wort „darunter“ gedeckt, aber der Text nennt kein Gefäß; nicht auszuschließen, nicht belegt.</note></item><item>Praxis heute: Brühe getrennt zubereiten und beim Anrichten unter den gebratenen Fisch auf die Platte geben.<note type="rationale">Einfachste Ausführung, die beide Lesarten nicht verletzt; deshalb in der Zubereitung empfohlen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1005-orig" n="Fuͤll den Hecht darmit / zeuch alsdenn die Haut daruͤber" resp="#fyndling" subtype="contextual">Der Text sagt nur: Haut vom Kopf bis zum Schwanz abziehen, Fleisch von den Gräten schneiden, die Füllung an den Hecht geben und die Haut wieder darüberziehen. Wo der Fisch geöffnet wird und ob die Haut genäht oder gebunden wird, steht nicht da.<list type="alternatives"><item>Praxis heute: Haut vom Kopf her im Ganzen lösen, Filets vom Gerippe schneiden, Füllung aufsetzen, Haut darüberziehen und bei Bedarf mit Küchengarn halten.<note type="rationale">Handwerkliche Ausführung, keine Aussage des Textes; nur als Hilfe beim Nachkochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1005-orig" n="schwartze Rosein" resp="#fyndling" subtype="lexical">Schwarze, also dunkle Rosinen. Rumpolt schreibt hier nur „schwartze“, nicht „klein vnd schwartz“; die Sorte bleibt offen.<list type="alternatives"><item>Korinthen (kleine schwarze Rosinen)<note type="rationale">Wo Rumpolt Korinthen meint, sagt er meist „klein vnd schwartz“; an dieser Stelle fehlt „klein“, darum nicht festgelegt.</note></item></list></note>
       </div>
     </back>
   </text>

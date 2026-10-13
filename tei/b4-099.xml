@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,9 +127,9 @@ Praxis. Salbei fein hacken und in Butter anschwitzen, bis das Aroma austritt. Me
         <note type="gloss" target="#b4-099-orig" n="inputteren" resp="#fyndling">'In Butter' - der Salbei wird in Butter angebraten. Per CoReMA-Sachglosse eindeutig als Butter bestätigt.</note>
         <note type="gloss" target="#b4-099-orig" n="chrewtter" resp="#fyndling">Allgemeiner Begriff für Kräuter, nicht näher spezifiziert - der Text nennt nur Salbei namentlich, weitere Kräuter bleiben offen.</note>
         <note type="gloss" target="#b4-099-orig" n="menig" resp="#fyndling">Quantifiziert nicht die zuvor genannte Butter, sondern die im nächsten Satzteil folgenden Eier ('mehrere/einige Eier'). Die unmittelbar vorangehende Anleitung derselben Handschrift verwendet dieselbe Konstruktion und legt sie eindeutig auf die Eier aus, ebenso zwei Parallelrezepte.</note>
-        <note type="interpretive_choice" target="#b4-099-orig" n="habech muss" resp="#fyndling">Gerichtname für die Ei-Kräuter-Füllung, keine tierische Zutat 'Habicht'. Übersetzt als 'Habichtsmus' als eigenständiger Name, ohne dass Habichtfleisch tatsächlich verwendet wird.</note>
-        <note type="interpretive_choice" target="#b4-099-orig" n="menig" resp="#fyndling">Mengenangabe für die Eier ('mehrere/einige Eier') im Füllmus, nicht für die zuvor genannte Butter.</note>
-        <note type="interpretive_choice" target="#b4-099-orig" n="Gardauer des Siedens" resp="#fyndling">Keine Zeitangabe im Text - sieden, bis das Ei-Kräuter-Mus in der Schale gestockt ist (Garprobe statt fixer Zeit).</note>
+        <note type="interpretive_choice" target="#b4-099-orig" n="habech muss" resp="#fyndling">Gerichtname für die Ei-Kräuter-Füllung, keine tierische Zutat 'Habicht'. Übersetzt als 'Habichtsmus' als eigenständiger Name, ohne dass Habichtfleisch tatsächlich verwendet wird.<list type="alternatives"><item>Wörtliche Lesart als Habichtfleisch-Mus.<note type="rationale">Sprachlich denkbar, aber im Text wird an keiner Stelle Geflügel oder Wildvogel als Zutat genannt oder verarbeitet - eine literale Fleisch-Lesart würde eine nicht vorhandene Zutat erfinden, was gegen die Regel spricht, Gerichtnamen als Zutat zu behandeln.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-099-orig" n="menig" resp="#fyndling">Mengenangabe für die Eier ('mehrere/einige Eier') im Füllmus, nicht für die zuvor genannte Butter.<list type="alternatives"><item>Bezug auf die Buttermenge ('reichlich Butter').<note type="rationale">So wurde es zunächst in die strukturierten Zutaten dieses Rezepts übertragen; widerspricht aber der wortgleichen Passage in der unmittelbar vorangehenden Anleitung derselben Handschrift und in zwei Parallelrezepten, die 'menig' übereinstimmend auf die Eier beziehen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-099-orig" n="Gardauer des Siedens" resp="#fyndling">Keine Zeitangabe im Text - sieden, bis das Ei-Kräuter-Mus in der Schale gestockt ist (Garprobe statt fixer Zeit).<list type="alternatives"><item>Nur kurz sieden.<note type="rationale">Nicht durch den Transkript-Text gedeckt; bei einer rohen Ei-Füllung riskanter, falls zu wörtlich als 'kurz' verstanden - die Garprobe ist die sicherere Praxis-Empfehlung.</note></item></list></note>
       </div>
     </back>
   </text>

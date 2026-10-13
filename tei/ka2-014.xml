@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,8 +121,8 @@ Praxis. Hühnerfleisch von den Knochen lösen und die Knochen beiseitelegen. Fle
         <note type="gloss" target="#ka2-014-orig" n="spek" resp="#fyndling">Meint hier nicht geräucherten Speck, sondern rohes Tierfett (Suet), näher bestimmt durch 'rindreins' (vom Rind) oder 'castrauneins' (vom Hammel).</note>
         <note type="gloss" target="#ka2-014-orig" n="castrauneins" resp="#fyndling">Vom kastrierten Schafbock, also Hammelfleisch bzw. Hammelfett - eine im Spätmittelalter gängige Fleisch- und Fettsorte.</note>
         <note type="gloss" target="#ka2-014-orig" n="knodel" resp="#fyndling">Knödel im Sinn von geformten Fleischklößchen, hier direkt um den Knochen modelliert.</note>
-        <note type="interpretive_choice" target="#ka2-014-orig" n="legs In dy prue" resp="#fyndling">Die Knödel werden bei sanftem Simmern gegart, bis das rohe Hühnerhack-Ei-Gemisch vollständig durchgegart ist - eine moderne Sicherheitsempfehlung, da der Text selbst weder Gardauer noch Hitzegrad nennt.</note>
-        <note type="interpretive_choice" target="#ka2-014-orig" n="hak das mit petersil ader salvay" resp="#fyndling">Das Fett wird zusammen mit Petersilie oder Salbei gehackt und in die Fleisch-Ei-Masse für die Knödel eingearbeitet.</note>
+        <note type="interpretive_choice" target="#ka2-014-orig" n="legs In dy prue" resp="#fyndling">Die Knödel werden bei sanftem Simmern gegart, bis das rohe Hühnerhack-Ei-Gemisch vollständig durchgegart ist - eine moderne Sicherheitsempfehlung, da der Text selbst weder Gardauer noch Hitzegrad nennt.<list type="alternatives"><item>Kürzere, unterbestimmte Ziehzeit ohne durchgehendes Kochen<note type="rationale">Der Text sagt nur 'leg's in die Brühe', ohne Angabe zu Dauer oder Hitze - eine kürzere Garzeit ist textlich nicht ausgeschlossen, aber bei rohem Geflügelhack sicherheitstechnisch nicht empfehlenswert.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka2-014-orig" n="hak das mit petersil ader salvay" resp="#fyndling">Das Fett wird zusammen mit Petersilie oder Salbei gehackt und in die Fleisch-Ei-Masse für die Knödel eingearbeitet.<list type="alternatives"><item>Das gehackte Fett-Kräuter-Gemisch wird separat als Würzzugabe in die Brühe gegeben<note type="rationale">Der Text lässt offen, worauf sich 'das' genau bezieht - eine Zugabe direkt zur Brühe statt zur Fleischmasse wäre ebenso denkbar.</note></item></list></note>
       </div>
     </back>
   </text>

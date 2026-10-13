@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,9 +124,9 @@ Praxis. Petersilie weich kochen und abtropfen. Mit der gerösteten Brotschnitte,
         <note type="gloss" target="#rum-0526-orig" n="gebehten Schnitten Weck" resp="#fyndling">Gebäht heißt durch Hitze getrocknet oder geröstet, nicht eingeweicht. Rumpolt beschreibt das Bähen von Brot an anderer Stelle selbst als Arbeitsschritt („beh es ab“). Gemeint ist eine einzelne geröstete Schnitte von einem Weißbrot.</note>
         <note type="gloss" target="#rum-0526-orig" n="Weck" resp="#fyndling">Weißbrot.</note>
         <note type="gloss" target="#rum-0526-orig" n="durchgestrichen" resp="#fyndling">Passiert, also durch ein Tuch oder Sieb gestrichen. Welches Gerät, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0526-orig" n="gebehten" resp="#fyndling">Geröstet (gebäht): bähen heißt durch Hitze trocknen oder rösten (FWB, DWB, Lexer). Rumpolt gebraucht das Wort selbst für Brot als Arbeitsschritt („beh es ab ... wenns abgebeht ist“), und an anderen Stellen des Buchs stehen „gebähte Schnitten“ als Röstbrot.</note>
-        <note type="interpretive_choice" target="#rum-0526-orig" n="Oder kansts ... eynmachen (Bezug von „es“)" resp="#fyndling">Die gefüllten Flügel und Keulen der Pute aus den vorigen Rezepten: Nr. 4 und 5 machen „solche gefüllte Flügel vnd Diech“ ein, Nr. 6 schließt mit „Oder“ als dritte Variante an. Ob die Stücke gesotten oder gebraten sind, lässt der Text offen.</note>
-        <note type="interpretive_choice" target="#rum-0526-orig" n="Lebern (Garzustand)" resp="#fyndling">Der Text nennt keinen Garzustand. Historisch denkbar: die Leber roh mit Brühe, Brot und Petersilie passiert, gar wird sie beim Aufkochen der Sauce.</note>
+        <note type="interpretive_choice" target="#rum-0526-orig" n="gebehten" resp="#fyndling" subtype="lexical">Geröstet (gebäht): bähen heißt durch Hitze trocknen oder rösten (FWB, DWB, Lexer). Rumpolt gebraucht das Wort selbst für Brot als Arbeitsschritt („beh es ab ... wenns abgebeht ist“), und an anderen Stellen des Buchs stehen „gebähte Schnitten“ als Röstbrot.<list type="alternatives"><item>eingeweicht<note type="rationale">Verworfen. Weder bähen noch Rumpolts Gebrauch decken die Bedeutung „einweichen“.</note></item><item>gebeizt<note type="rationale">Verworfen. Die Herleitung von beizen ist etymologisch falsch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0526-orig" n="Oder kansts ... eynmachen (Bezug von „es“)" resp="#fyndling" subtype="contextual">Die gefüllten Flügel und Keulen der Pute aus den vorigen Rezepten: Nr. 4 und 5 machen „solche gefüllte Flügel vnd Diech“ ein, Nr. 6 schließt mit „Oder“ als dritte Variante an. Ob die Stücke gesotten oder gebraten sind, lässt der Text offen.<list type="alternatives"><item>die ganze gefüllte Pute (Nr. 3)<note type="rationale">Möglich, weil „es“ unbestimmt ist; die unmittelbaren Vorgänger handeln aber von den Stücken.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0526-orig" n="Lebern (Garzustand)" resp="#fyndling" subtype="contextual">Der Text nennt keinen Garzustand. Historisch denkbar: die Leber roh mit Brühe, Brot und Petersilie passiert, gar wird sie beim Aufkochen der Sauce.<list type="alternatives"><item>Leber vorab gar kochen, dann mitpassieren<note type="rationale">Moderne Praxis, leichter zu passieren und sicher gar; im Text nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

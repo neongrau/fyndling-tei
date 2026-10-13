@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,7 +126,7 @@ Der Teig. Das Rezept nennt nur den fertigen Teig und setzt ihn als bekannt vorau
         <note type="gloss" target="#b4-211-orig" n="zymedt plued" resp="#fyndling">Die Zimtblüte, auch Kassia-Blüte genannt, ist die getrocknete Frucht des Zimtbaumes. Sie hat ein feineres, blumigeres Zimtaroma als die Rinde.</note>
         <note type="gloss" target="#b4-211-orig" n="honigsam" resp="#fyndling">„Honigsam“ ist Honigseim, der von selbst aus den Waben fließende, flüssige Honig. Heute genügt ein guter flüssiger Honig.</note>
         <note type="gloss" target="#b4-211-orig" n="recht als der wachs pertt" resp="#fyndling">Dies beschreibt die gewünschte Konsistenz der Paste: fest und formbar wie weiches Wachs, nicht flüssig.</note>
-        <note type="interpretive_choice" target="#b4-211-orig" n="seniff" resp="#fyndling">Senfsaat (als Rohstoff, gemahlen untergemischt). CoReMA glossiert die Stelle als „mustard seed“; dafür spricht vor allem der Schlusssatz „so hastu gutten Seniff“ - erst das Anreiben mit Wein macht aus der Masse Senf, was redundant wäre, wenn schon fertiger Senf darin steckte. Gleiche Entscheidung im Zwilling w1-214.</note>
+        <note type="interpretive_choice" target="#b4-211-orig" n="seniff" resp="#fyndling" subtype="lexical">Senfsaat (als Rohstoff, gemahlen untergemischt). CoReMA glossiert die Stelle als „mustard seed“; dafür spricht vor allem der Schlusssatz „so hastu gutten Seniff“ - erst das Anreiben mit Wein macht aus der Masse Senf, was redundant wäre, wenn schon fertiger Senf darin steckte. Gleiche Entscheidung im Zwilling w1-214.<list type="alternatives"><item>Fertiger Senf (Senfpaste), direkt untergemischt.<note type="rationale">„musch ein vnder ein seniff“ (mische unter einen Senf) lässt sich so lesen; so stand die Stelle hier bis 2026-09-25. Wörterbuchmäßig ist keine der beiden Lesarten hart entscheidbar.</note></item></list></note>
       </div>
     </back>
   </text>

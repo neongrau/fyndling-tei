@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -136,13 +141,13 @@ Praxis. Den Magen beim Metzger vorbestellen und gründlich säubern, aber nicht 
         <note type="gloss" target="#rum-0473-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte (Macis), der Samenmantel der Muskatnuss.</note>
         <note type="gloss" target="#rum-0473-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Mehl einbrennen, um die Brühe zu binden. Eine Farbe verlangt Rumpolt dabei nicht, die Brühe darf ausdrücklich weiß bleiben.</note>
         <note type="gloss" target="#rum-0473-orig" n="schier" resp="#fyndling">Bald, in Kürze: „wenn du es schier wilt anrichten“ heißt „wenn du es bald anrichten willst“.</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="mach sie gelb oder weiß" resp="#fyndling">Die Füllung wird gelb oder bleibt weiß, und die Brühe richtet sich nach ihr. Ein Färbemittel nennt der Text nicht, deshalb steht keins in der Zutatenliste.</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Mehl zum Binden einbrennen, ohne Bräunung, wie in rum-0162 und mit dem „eyngebrennt Mehl“ der gefüllten Brust (rum-0468).</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="Fett für die Einbrenne" resp="#fyndling">Rumpolt nennt kein Fett. Butter oder Fett aus der Brühe sind denkbar, aber nicht belegt.</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="Verschluss des Magens" resp="#fyndling">Der Text schweigt dazu. Beim Hammelmagen (rum-0162) steckt Rumpolt die Öffnung mit einem hölzernen Spießlein zu; Zunähen oder Zubinden ist ebenso möglich, hier aber nicht belegt.</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="seig" resp="#fyndling">Darübergießen: die Brühe wird über den Magen im Kessel gegossen.</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="geschnitten Pettersilgen" resp="#fyndling">Geschnittene Petersilie; ob Kraut oder Wurzel, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0473-orig" n="Tuͤrckisch Schaf" resp="#fyndling">Die Kapitelüberschrift, unter der das Rezept steht. Was Rumpolt mit „türkisch“ meint, erklärt er nicht; die Frage bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="mach sie gelb oder weiß" resp="#fyndling" subtype="contextual">Die Füllung wird gelb oder bleibt weiß, und die Brühe richtet sich nach ihr. Ein Färbemittel nennt der Text nicht, deshalb steht keins in der Zutatenliste.<list type="alternatives"><item>Mit Safran gelb gemacht.<note type="rationale">Naheliegend, denn beim gefüllten Hammelmagen (rum-0162) und beim Rehmagen (rum-0370) nennt Rumpolt Safran in der Füllung. Hier steht er nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="brenn ein wenig Mehl darein" resp="#fyndling" subtype="contextual">Mehl zum Binden einbrennen, ohne Bräunung, wie in rum-0162 und mit dem „eyngebrennt Mehl“ der gefüllten Brust (rum-0468).<list type="alternatives"><item>Mehl braun anrösten.<note type="rationale">Nicht gemeint, denn die Brühe darf weiß bleiben; eine braune Einbrenne passt dazu nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="Fett für die Einbrenne" resp="#fyndling" subtype="contextual">Rumpolt nennt kein Fett. Butter oder Fett aus der Brühe sind denkbar, aber nicht belegt.<list type="alternatives"><item>Nichts ergänzen und nur wenig Mehl einbrennen.<note type="rationale">Hält sich an den Wortlaut, der nur „ein wenig Mehl“ nennt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="Verschluss des Magens" resp="#fyndling" subtype="contextual">Der Text schweigt dazu. Beim Hammelmagen (rum-0162) steckt Rumpolt die Öffnung mit einem hölzernen Spießlein zu; Zunähen oder Zubinden ist ebenso möglich, hier aber nicht belegt.<list type="alternatives"><item>Die Öffnung locker mit Holzspieß, Rouladennadel oder Küchengarn verschließen.<note type="rationale">Moderne Praxis, damit die Füllung beim Sieden nicht austritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="seig" resp="#fyndling" subtype="lexical">Darübergießen: die Brühe wird über den Magen im Kessel gegossen.<list type="alternatives"><item>Durchseihen, also durch ein Tuch oder Sieb auf den Magen gießen.<note type="rationale">Das Wort kann beides heißen; ein Sieb nennt der Text nicht, und für das Verfahren kommt es nicht darauf an.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="geschnitten Pettersilgen" resp="#fyndling" subtype="contextual">Geschnittene Petersilie; ob Kraut oder Wurzel, sagt der Text nicht.<list type="alternatives"><item>Petersilienwurzel.<note type="rationale">Beim Hammelmagen (rum-0162) schreibt Rumpolt ausdrücklich „Pettersilgen Wurtzel“; hier fehlt das Wort Wurzel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0473-orig" n="Tuͤrckisch Schaf" resp="#fyndling" subtype="contextual">Die Kapitelüberschrift, unter der das Rezept steht. Was Rumpolt mit „türkisch“ meint, erklärt er nicht; die Frage bleibt offen.<list type="alternatives"><item>Eine bestimmte Schafrasse aus dem Osmanischen Reich.<note type="rationale">Möglich, aber durch nichts im Text belegt.</note></item></list></note>
       </div>
     </back>
   </text>

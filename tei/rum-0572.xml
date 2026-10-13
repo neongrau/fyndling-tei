@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,9 +101,9 @@ Gekochte oder rohe Brust? Die Zeile sagt nur „auß einer Fasanen Brust“. Bei
 Praxis. Nach rum-0682 arbeiten und die Kapaunenbrust durch Fasanenbrust ersetzen. Was Rumpolt mit den „etlichen Speisen“ meint, zeigt er beim Kapaun und bei der Pute: Krapfen, Torten, Pasteten und ein im Ofen gebackenes Mus (rum-0683, rum-0684, rum-0685, rum-0535, rum-0538, rum-0539).</note>
         <note type="gloss" target="#rum-0572-orig" n="Manscho Blancko" resp="#fyndling">Rumpolts Schreibung für spanisch manjar blanco, „weiße Speise“, den Blancmanger. Rumpolt sagt selbst beim Kapaun: „man nennets auff Spanisch Manscho Blancko“ (rum-0682). Dort ist es ein weißes Mus aus gezupfter Kapaunenbrust, Reismehl, Rahm oder süßer Milch, Zucker und Rosenwasser.</note>
         <note type="gloss" target="#rum-0572-orig" n="etliche Speise" resp="#fyndling">„Mehrere Speisen“. Welche, zählt Rumpolt beim Kapaun auf: Spanische Krapfen, Ungarische Torten und Spanische Pasteten (rum-0683), dazu ein gebackenes Mus (rum-0684) und Krapfen (rum-0685); im Puten-Kapitel ebenso Torte, Krapfen und Mus (rum-0535, rum-0538, rum-0539).</note>
-        <note type="interpretive_choice" target="#rum-0572-orig" n="Manscho Blancko" resp="#fyndling">Spanisch manjar blanco, der Blancmanger. Rumpolt selbst nennt den Namen beim Kapaun (rum-0682) ausdrücklich „auff Spanisch“ und beschreibt das Gericht dort als weißes Mus aus Geflügelbrust, Reismehl und Milch.</note>
-        <note type="interpretive_choice" target="#rum-0572-orig" n="Manscho Blancko als Gattung" resp="#fyndling">Historisch eine musartige, weiße Grundmasse aus gegarter Geflügelbrust, die Rumpolt zu Krapfen, Torten, Pasteten und gebackenem Mus weiterverarbeitet - kein Dessert und kein Pudding im heutigen Sinn.</note>
-        <note type="interpretive_choice" target="#rum-0572-orig" n="auß einer Fasanen Brust" resp="#fyndling">Historisch offen: Die Zeile sagt nicht, ob die Brust roh oder gesotten verarbeitet wird.</note>
+        <note type="interpretive_choice" target="#rum-0572-orig" n="Manscho Blancko" resp="#fyndling" subtype="lexical">Spanisch manjar blanco, der Blancmanger. Rumpolt selbst nennt den Namen beim Kapaun (rum-0682) ausdrücklich „auff Spanisch“ und beschreibt das Gericht dort als weißes Mus aus Geflügelbrust, Reismehl und Milch.<list type="alternatives"><item>Eine eigenständige deutsche oder regionale Schreibform von Blancmanger<note type="rationale">Nicht belegt: Ein Nachschlagen von „manscho“ liefert nur gleich geschriebene Wörter anderer Bedeutung, und Rumpolt ordnet das Wort selbst dem Spanischen zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0572-orig" n="Manscho Blancko als Gattung" resp="#fyndling" subtype="contextual">Historisch eine musartige, weiße Grundmasse aus gegarter Geflügelbrust, die Rumpolt zu Krapfen, Torten, Pasteten und gebackenem Mus weiterverarbeitet - kein Dessert und kein Pudding im heutigen Sinn.<list type="alternatives"><item>Praxis: Blancmanger nach rum-0682 als weißes Mus aus Fasanenbrust, Reismehl und Milch<note type="rationale">So in der Zubereitungsnotiz umgesetzt, weil diese Nummer kein eigenes Verfahren nennt und die Kapaunenfassung die einzige ausgeführte Geflügelfassung im Buch ist.</note></item><item>Mandelmilch-Blancmanger nach der allgemeinen mittelalterlichen Tradition<note type="rationale">Bei Rumpolt nur in der Hechtfassung (rum-0979) belegt; die Geflügelfassung nimmt Rahm oder süße Milch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0572-orig" n="auß einer Fasanen Brust" resp="#fyndling" subtype="contextual">Historisch offen: Die Zeile sagt nicht, ob die Brust roh oder gesotten verarbeitet wird.<list type="alternatives"><item>Brust vorher garen, abkühlen und zupfen<note type="rationale">So in beiden ausgeführten Fassungen (Kapaun halb gesotten und gezupft, Hecht abgesotten und gehackt); deshalb die Praxisvorgabe in der Zubereitungsnotiz.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,9 +135,9 @@ Praxis. Nachkochen lässt sich das Gericht heute kaum, weil die Hauptzutat fehlt
         <note type="gloss" target="#rum-0487-orig" n="an die statt sieden" resp="#fyndling">Rumpolts feste Wendung für „gar sieden“.</note>
         <note type="gloss" target="#rum-0487-orig" n="Pfeffer" resp="#fyndling">Bei Rumpolt meint „ein Pfeffer“ eine gebundene, gewürzte Pfeffersauce, nicht das Gewürz allein. Hier setzt er sie als fertig voraus.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
         <note type="gloss" target="#rum-0487-orig" n="Mandelgescharb" resp="#fyndling">Von scharben, klein schneiden: klein Geschnittenes, hier aus Mandeln (Deutsches Wörterbuch: „mandelgescherb“). Kein Mus, das wäre glatt passiert. Eine Zubereitung nennt Rumpolt an dieser Stelle nicht, nur dass es weiß gemacht und mit Zitronen gesäuert wird.</note>
-        <note type="interpretive_choice" target="#rum-0487-orig" n="Mandelgescharb" resp="#fyndling">Klein geschnittene Mandeln (DWB „mandelgescherb“). Wie sie angemacht werden, sagt Rumpolt hier nicht; die Konsistenz bleibt offen, festgelegt ist nur: weiß und mit Zitronen gesäuert.</note>
-        <note type="interpretive_choice" target="#rum-0487-orig" n="Pfeffer, der fein zugericht ist" resp="#fyndling">Rumpolts eigener, an anderer Stelle beschriebener Pfeffer als fertig vorbereitete, gebundene Sauce; seine Zusammensetzung steht nicht in diesem Rezept.</note>
-        <note type="interpretive_choice" target="#rum-0487-orig" n="laß ein Sudt auffthun" resp="#fyndling">Einmal aufsieden lassen: die Stücke sollen in der Sauce nur kurz aufwallen, nicht weiter garen.</note>
+        <note type="interpretive_choice" target="#rum-0487-orig" n="Mandelgescharb" resp="#fyndling" subtype="contextual">Klein geschnittene Mandeln (DWB „mandelgescherb“). Wie sie angemacht werden, sagt Rumpolt hier nicht; die Konsistenz bleibt offen, festgelegt ist nur: weiß und mit Zitronen gesäuert.<list type="alternatives"><item>In Wein oder Brühe angemachte, helle, dickliche Mandelsauce, mit Zitronensaft gesäuert<note type="rationale">So macht Rumpolt ein Gescharb an anderen Stellen an; hier nicht gesagt, als Ausführung aber möglich.</note></item><item>Glattes Mandelmus<note type="rationale">Mus ist passiert, Gescharb klein geschnitten; das wäre ein anderes Produkt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0487-orig" n="Pfeffer, der fein zugericht ist" resp="#fyndling" subtype="contextual">Rumpolts eigener, an anderer Stelle beschriebener Pfeffer als fertig vorbereitete, gebundene Sauce; seine Zusammensetzung steht nicht in diesem Rezept.<list type="alternatives"><item>Irgendeine vorbereitete, gebundene Pfeffersauce<note type="rationale">Praktischer Weg für die Küche; Gewürze dürfen dann nicht als Rumpolts Angabe gelten, weil der Text keine nennt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0487-orig" n="laß ein Sudt auffthun" resp="#fyndling" subtype="lexical">Einmal aufsieden lassen: die Stücke sollen in der Sauce nur kurz aufwallen, nicht weiter garen.<list type="alternatives"><item>Kurz aufkochen und gleich vom Feuer nehmen<note type="rationale">Gleichbedeutend in der Küchenpraxis; eine längere Garzeit gibt der Text nicht her.</note></item></list></note>
       </div>
     </back>
   </text>

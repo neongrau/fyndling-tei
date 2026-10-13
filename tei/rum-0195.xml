@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,10 +108,10 @@ Praxis. Ein ganzes Lamm beim Metzger oder Direktvermarkter vorbestellen. Warm gl
         <note type="gloss" target="#rum-0195-orig" n="abgebraten" resp="#fyndling">Gar, fertig gebraten (DWB „abbraten“). Womit gebraten wird, am Spieß oder im Ofen, sagt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0195-orig" n="Salsen" resp="#fyndling">Sauce, Tunke (Lexer/BMZ „salse“: Brühe, Tunke; vgl. ital. salsa). Wie viele Saucen es sind und woraus sie bestehen, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0195-orig" n="halb gruͤn vnd halb gelb" resp="#fyndling">Genannt sind nur die Farben, keine Färbemittel. Ob sie die Saucen, die Eier oder die ganze Anrichtung meinen, lässt der Satz offen.</note>
-        <note type="interpretive_choice" target="#rum-0195-orig" n="halb gruͤn vnd halb gelb" resp="#fyndling">Die Zweifarbigkeit gilt der ganzen Anrichtung aus Eiern und Saucen, so wie der Satz sie zusammen nennt. Beim gebratenen Zicklein im Geiß-Kapitel steht dieselbe Osterformel mit „Eyern vnd gruͤnen Salsen“; dort trägt die grüne Sauce das Grün. Was das Gelb liefert, sagt keiner der beiden Texte.</note>
-        <note type="interpretive_choice" target="#rum-0195-orig" n="Eyern" resp="#fyndling">Der Text nennt nur „Eyern“ als Teil der österlichen Anrichtung; ob als Beigabe, als Teil der gelben Hälfte oder als gefärbte Ostereier, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0195-orig" n="abgebraten" resp="#fyndling">„abgebraten“ heißt gar gebraten; Bratgerät und Garzeit nennt Rumpolt hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-0195-orig" n="Salsen" resp="#fyndling">Sauce, Tunke: Lexer/BMZ „salse“ = Brühe, Tunke, entlehnt aus ital. salsa. Rumpolt braucht das Wort auch beim gesottenen Hammelschlegel, wo er eine „gruͤne Salsen“ ausführlich beschreibt.</note>
+        <note type="interpretive_choice" target="#rum-0195-orig" n="halb gruͤn vnd halb gelb" resp="#fyndling" subtype="contextual">Die Zweifarbigkeit gilt der ganzen Anrichtung aus Eiern und Saucen, so wie der Satz sie zusammen nennt. Beim gebratenen Zicklein im Geiß-Kapitel steht dieselbe Osterformel mit „Eyern vnd gruͤnen Salsen“; dort trägt die grüne Sauce das Grün. Was das Gelb liefert, sagt keiner der beiden Texte.<list type="alternatives"><item>Zwei getrennte Saucen, eine grüne und eine gelbe, dazu gekochte Eier<note type="rationale">Naheliegende moderne Ausführung und so auch in der Praxis-Empfehlung verwendet; der Text legt die Zahl der Saucen aber nicht fest.</note></item><item>Eine einzige Sauce, halb grün und halb gelb angerichtet, oder nur die Eier zweifarbig<note type="rationale">Grammatisch möglich; kein Beleg im Buch stützt oder verwirft das.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0195-orig" n="Eyern" resp="#fyndling" subtype="contextual">Der Text nennt nur „Eyern“ als Teil der österlichen Anrichtung; ob als Beigabe, als Teil der gelben Hälfte oder als gefärbte Ostereier, bleibt offen.<list type="alternatives"><item>Hartgekochte Eier als Beilage<note type="rationale">Einfachste Ausführung und in der Praxis-Empfehlung verwendet, aber nicht im Text festgelegt.</note></item><item>Zubereitete Eier in den Saucen oder österlich gefärbte Eier<note type="rationale">Mit dem Wortlaut vereinbar, im Text nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0195-orig" n="abgebraten" resp="#fyndling" subtype="contextual">„abgebraten“ heißt gar gebraten; Bratgerät und Garzeit nennt Rumpolt hier nicht.<list type="alternatives"><item>Am Spieß über Glut oder im großen Ofen, mehrere Stunden<note type="rationale">Übliche praktische Ausführung für ein ganzes Tier; als Praxis-Empfehlung übernommen, nicht als Rumpolts Anweisung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0195-orig" n="Salsen" resp="#fyndling" subtype="lexical">Sauce, Tunke: Lexer/BMZ „salse“ = Brühe, Tunke, entlehnt aus ital. salsa. Rumpolt braucht das Wort auch beim gesottenen Hammelschlegel, wo er eine „gruͤne Salsen“ ausführlich beschreibt.<list type="alternatives"><item>Salz<note type="rationale">Nur Wortanklang; im Kontext mit „halb grün und halb gelb“ und neben den Eiern ergibt Salz keinen Sinn.</note></item></list></note>
       </div>
     </back>
   </text>

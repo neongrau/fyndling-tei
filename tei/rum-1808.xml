@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,8 +106,8 @@
 Was heißt „angemacht“? Der Text sagt nur, dass die Maulbeeren mit Zimt und Zucker angemacht werden. Bei Marillen und Pfirsichen im selben Kapitel (rum-1802, rum-1803) heißt die Wahl: die Früchte ganz mit Zimt und Zucker in die Torte legen oder sie durchstreichen. Bei den Amarellen (rum-1805) steht dieselbe Überschriftformel, gefolgt von einem zweiten Weg mit durchgestrichenen Früchten. Welchen Weg Rumpolt bei den Maulbeeren meint, entscheidet der Text nicht; die Nachbarn sind eine Kapitelparallele, keine Anleitung zu dieser Nummer.
 
 Praxis. Zu dieser Nummer gibt der Druck keine Anleitung, und wir legen keine fest. Wer die Torte trotzdem backen will, kann sich an den Nachbarnummern orientieren: den Teig nach der ersten Nummer des Kapitels (rum-1795), die Maulbeeren roh mit Zimt und Zucker gemischt als Füllung. Das ist eine Ableitung aus dem Kapitel, keine Angabe Rumpolts. Mengen, Hitze und Zeit nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-1808-orig" n="angemacht" resp="#fyndling">Nach den Nachbarnummern am ehesten: die Maulbeeren ganz mit Zimt und Zucker als Füllung in die Torte geben, wie es Rumpolt bei Marillen und Pfirsichen (rum-1802, rum-1803) als „gantz eynmachen“ beschreibt. Das ist eine Kapitelparallele; der Eintrag selbst sagt es nicht.</note>
-        <note type="interpretive_choice" target="#rum-1808-orig" n="Maulbeer" resp="#fyndling">Maulbeeren, die Früchte des Maulbeerbaums; das Wort ist in den Wörterbüchern der Zeit in diesem Sinn belegt. Eine Farbe oder Sorte nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-1808-orig" n="angemacht" resp="#fyndling" subtype="contextual">Nach den Nachbarnummern am ehesten: die Maulbeeren ganz mit Zimt und Zucker als Füllung in die Torte geben, wie es Rumpolt bei Marillen und Pfirsichen (rum-1802, rum-1803) als „gantz eynmachen“ beschreibt. Das ist eine Kapitelparallele; der Eintrag selbst sagt es nicht.<list type="alternatives"><item>Die Maulbeeren durchstreichen und das Mus mit Zimt und Zucker anmachen<note type="rationale">Ebenso möglich: Bei Marillen, Pfirsichen und Amarellen (rum-1805) bietet Rumpolt das Durchstreichen als zweiten Weg an. Bei den Maulbeeren nennt er es nicht.</note></item><item>Keine Festlegung, nur die Überschrift wiedergeben<note type="rationale">So hält es die Übersetzung: Der Text entscheidet die Frage nicht, deshalb steht „angemacht“ wörtlich im modernen Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1808-orig" n="Maulbeer" resp="#fyndling" subtype="lexical">Maulbeeren, die Früchte des Maulbeerbaums; das Wort ist in den Wörterbüchern der Zeit in diesem Sinn belegt. Eine Farbe oder Sorte nennt der Text nicht.<list type="alternatives"><item>Schwarze Maulbeere (Morus nigra) oder weiße Maulbeere (Morus alba)<note type="rationale">Nicht festgelegt: Rumpolt sagt nicht, welche Maulbeere er meint, daher bleibt die Übersetzung beim allgemeinen Wort.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,9 +104,9 @@ Kalt oder warm. Rumpolt lässt offen, ob die Pastete frisch aus dem Ofen oder au
 Teig und Füllung. Beides nennt der Text nicht. Ausgeschriebene Fischpasteten stehen in Rumpolts Kapitel über Fischpasteten, etwa die kalte Hausenpastete, bei der der Fisch in Roggenteig eingeschlagen und gebacken wird. Eine Huchenpastete ist dort nicht darunter; die Hausenpastete ist eine Parallele, keine Angabe für dieses Rezept.
 
 Praxis. Huchen beim Fischhändler vorbestellen und bis zum Einschlagen kühl halten. Backtemperatur und Backdauer nennt Rumpolt nicht; am Fisch die Garprobe machen. Für die kalte Fassung die Pastete vollständig auskühlen lassen und gekühlt aufbewahren.</note>
-        <note type="interpretive_choice" target="#rum-0927-orig" n="es" resp="#fyndling">Der Huchen: Das Kapitel gilt ihm, und auch im Nachbarrezept Nr. 10 steht „es“ für den Fisch.</note>
-        <note type="interpretive_choice" target="#rum-0927-orig" n="kalt oder warm" resp="#fyndling">Rumpolt kennt kalt gegessene Pasteten, die ausgekühlt aufgetragen werden (wie die kalte Hausenpastete), und warm aufgetragene; hier lässt er beides zu.</note>
-        <note type="interpretive_choice" target="#rum-0927-orig" n="Pasteten" resp="#fyndling">Fisch in einer gebackenen Teighülle: So sind Rumpolts ausgeschriebene Fischpasteten gebaut. Die Übersetzung behält das Wort „Pasteten“.</note>
+        <note type="interpretive_choice" target="#rum-0927-orig" n="es" resp="#fyndling" subtype="contextual">Der Huchen: Das Kapitel gilt ihm, und auch im Nachbarrezept Nr. 10 steht „es“ für den Fisch.<list type="alternatives"><item>Die zuvor beschriebene Zubereitung des Fisches<note type="rationale">Grammatisch möglich, weil „es“ neutral ist und der Fisch im Satz nicht genannt wird; der Satz spricht aber von der Verwendung in Pasteten, also vom Fisch selbst.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0927-orig" n="kalt oder warm" resp="#fyndling" subtype="contextual">Rumpolt kennt kalt gegessene Pasteten, die ausgekühlt aufgetragen werden (wie die kalte Hausenpastete), und warm aufgetragene; hier lässt er beides zu.<list type="alternatives"><item>Nur die Serviertemperatur nach dem Backen<note type="rationale">So liest man es heute in der Praxis: dieselbe Pastete frisch oder ausgekühlt servieren. Das widerspricht der historischen Lesart nicht, blendet aber die eigene Gattung der kalten Pastete aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0927-orig" n="Pasteten" resp="#fyndling" subtype="contextual">Fisch in einer gebackenen Teighülle: So sind Rumpolts ausgeschriebene Fischpasteten gebaut. Die Übersetzung behält das Wort „Pasteten“.<list type="alternatives"><item>Pastete als Füllung oder Farce ohne Teighülle<note type="rationale">Der heutige Sprachgebrauch kennt Pastete auch als streichfähige Masse; Rumpolts Fischpasteten sind aber Teighüllen, und der Satz gibt keinen Anlass, davon abzuweichen.</note></item></list></note>
       </div>
     </back>
   </text>

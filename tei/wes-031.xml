@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -92,8 +97,8 @@
     </body>
     <back>
       <div type="annotations">
-        <note type="interpretive_choice" target="#wes-031-orig" n="Galentine te .C. pricken" resp="#fyndling">„Galantinen-Sauce für 100 Spickungen/Stiche“ - Dies deutet auf eine Sauce hin, die für eine Galantine bestimmt ist, die entweder stark gespickt oder durchstochen wird, um Aromen aufzunehmen, oder für eine sehr große Menge an Galantinen-Portionen.</note>
-        <note type="interpretive_choice" target="#wes-031-orig" n="een onsse soffraens" resp="#fyndling">„30 g Safran“ - Dies ist die direkte Umrechnung der historischen Maßeinheit.</note>
+        <note type="interpretive_choice" target="#wes-031-orig" n="Galentine te .C. pricken" resp="#fyndling">„Galantinen-Sauce für 100 Spickungen/Stiche“ - Dies deutet auf eine Sauce hin, die für eine Galantine bestimmt ist, die entweder stark gespickt oder durchstochen wird, um Aromen aufzunehmen, oder für eine sehr große Menge an Galantinen-Portionen.<list type="alternatives"><item>„Galantine für 100 Personen“<note type="rationale">„C“ steht oft für 100, und „pricken“ könnte in diesem Kontext eine vage Mengenangabe für Portionen oder Serviereinheiten bei einem großen Festmahl sein.</note></item><item>„Galantine mit 100 Spießen“<note type="rationale">„pricken“ könnte sich auf kleine Spieße oder Lardiernadeln beziehen, die in der Zubereitung einer Galantine verwendet werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-031-orig" n="een onsse soffraens" resp="#fyndling">„30 g Safran“ - Dies ist die direkte Umrechnung der historischen Maßeinheit.<list type="alternatives"><item>„Eine symbolische Menge Safran“<note type="rationale">Die Menge von 30 g Safran ist für moderne Verhältnisse extrem hoch und teuer. Es ist denkbar, dass dies eine Idealmenge für ein sehr prunkvolles Gericht darstellte oder für eine sehr große Charge des Würzmittels, die nicht zwingend vollständig umgesetzt wurde.</note></item></list></note>
       </div>
     </back>
   </text>

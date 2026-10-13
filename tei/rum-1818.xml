@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,10 +108,10 @@ Praxis. Warm auftragen, wie der Text verlangt. Mengen, Backzeit und Hitze fehlen
         <note type="gloss" target="#rum-1818-orig" n="Kaͤsten" resp="#fyndling">Edelkastanien (Maronen); mittelhochdeutsch kestene, Kastanie.</note>
         <note type="gloss" target="#rum-1818-orig" n="mach sie eyn in ein Turten" resp="#fyndling">In eine Torte füllen bzw. in den Teig einschlagen. „Einmachen“ meint hier nicht Konservieren.</note>
         <note type="gloss" target="#rum-1818-orig" n="Ochsenmarck" resp="#fyndling">Rindermark, also das Knochenmark aus den Röhrenknochen des Rinds.</note>
-        <note type="interpretive_choice" target="#rum-1818-orig" n="mach sie eyn in ein Turten" resp="#fyndling">„Mach sie ein in eine Torte“ im Sinn von einfüllen bzw. in den Teig einschlagen; der Teig wird vorausgesetzt, wie in der ganzen Kapitelreihe.</note>
-        <note type="interpretive_choice" target="#rum-1818-orig" n="Teig der Torte" resp="#fyndling">Offen: Der Text nennt weder Teig noch Backen. Ob die Kastanien in eine Teighülle kommen, offen oder gedeckelt, oder ohne Teig in der Tortenpfanne gemacht werden, sagt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-1818-orig" n="Ochsenmarck" resp="#fyndling">Der Text sagt nur „mit Ochsenmarck“; ob das Mark roh oder vorher ausgelassen hineinkommt, bleibt offen. Ausgelassenes Mark ist eine mögliche historische Ausführung.</note>
-        <note type="interpretive_choice" target="#rum-1818-orig" n="süß oder herzhaft" resp="#fyndling">Herzhaft: Der Text nennt weder Zucker noch Gewürz, nur Kastanien und Ochsenmark; deshalb als Beilage eingeordnet.</note>
+        <note type="interpretive_choice" target="#rum-1818-orig" n="mach sie eyn in ein Turten" resp="#fyndling" subtype="lexical">„Mach sie ein in eine Torte“ im Sinn von einfüllen bzw. in den Teig einschlagen; der Teig wird vorausgesetzt, wie in der ganzen Kapitelreihe.<list type="alternatives"><item>Einmachen im heutigen Sinn von Konservieren<note type="rationale">Ausgeschlossen: Es folgt „gibs warm auff ein Tisch“, das Gericht wird sofort warm gegessen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1818-orig" n="Teig der Torte" resp="#fyndling" subtype="contextual">Offen: Der Text nennt weder Teig noch Backen. Ob die Kastanien in eine Teighülle kommen, offen oder gedeckelt, oder ohne Teig in der Tortenpfanne gemacht werden, sagt er nicht.<list type="alternatives"><item>Tortenteig wie in rum-1795 (Eigelb-Butter-Teig), im Ofen gebacken<note type="rationale">Nächstliegende Basis im selben Kapitel und unsere Praxisempfehlung; eine Lesart, keine Textaussage.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1818-orig" n="Ochsenmarck" resp="#fyndling" subtype="contextual">Der Text sagt nur „mit Ochsenmarck“; ob das Mark roh oder vorher ausgelassen hineinkommt, bleibt offen. Ausgelassenes Mark ist eine mögliche historische Ausführung.<list type="alternatives"><item>Frisch aus dem Markknochen, in Stücken zu den Kastanien<note type="rationale">Praxisempfehlung: Das Mark schmilzt beim Backen ohnehin und verteilt sich in der Füllung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1818-orig" n="süß oder herzhaft" resp="#fyndling" subtype="contextual">Herzhaft: Der Text nennt weder Zucker noch Gewürz, nur Kastanien und Ochsenmark; deshalb als Beilage eingeordnet.<list type="alternatives"><item>Süße Torte (Dessert)<note type="rationale">Möglich, wenn man Zucker ergänzt wie bei der Birnentorte mit Ochsenmark in saw-073; Rumpolt nennt ihn hier nicht.</note></item></list></note>
       </div>
     </back>
   </text>

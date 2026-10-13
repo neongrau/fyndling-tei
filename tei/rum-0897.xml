@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,9 +104,9 @@ Teig und Backen. Welcher Teig, was außer dem Fisch hineinkommt, ob der Fisch vo
 Praxis. Ein nachkochbares Rezept ist das nicht. Belegt sind nur Fisch, Teighülle und dass die Pastete warm wie kalt auf den Tisch kommen kann.</note>
         <note type="gloss" target="#rum-0897-orig" n="Schaiden" resp="#fyndling">Der Wels (Silurus glanis). Das Grimmsche Wörterbuch führt scheiden, schaiden, schaden als „der wels, silurus“, Lexer scheide als „scheidfisch, wels“. Der Fisch steht nicht in dieser Zeile, sondern in der Überschrift des Kapitels „Vom Schaiden seind vierzenerley Speiß vnd Trachten zu machen“; dies ist die zwölfte der vierzehn Speisen. Nicht zu verwechseln mit dem Schied (Rapfen), dem Rumpolt ein eigenes Kapitel gibt.</note>
         <note type="gloss" target="#rum-0897-orig" n="Pasteten" resp="#fyndling">Fisch in einer Teighülle. Es sey warm oder kalt heißt: man kann sie warm oder kalt essen. Teig und weitere Füllung nennt die Zeile nicht.</note>
-        <note type="interpretive_choice" target="#rum-0897-orig" n="Schaiden" resp="#fyndling">Wels (Silurus glanis): Grimm (scheiden, schaiden, schaden „der wels“) und Lexer (scheide „scheidfisch, wels“) belegen die Gleichung; gleiche Lösung wie in den Kapitelnachbarn Nr. 3, 5 und 8 (Rezepte 888, 890, 893). Im Titel bleibt Rumpolts Form „Schaiden“ wie im ganzen Kapitel.</note>
-        <note type="interpretive_choice" target="#rum-0897-orig" n="Auch" resp="#fyndling">„Auch so“: Der Fisch des Kapitels lässt sich auch in Pasteten machen. Rumpolt reiht im Kapitel mehrere Nummern mit „Auch“ oder „Man macht auch“ an (Nr. 7, 8). Übernommen wird nur, was die Zeile sagt: Pastete, warm oder kalt.</note>
-        <note type="interpretive_choice" target="#rum-0897-orig" n="Teig und Backen der Pastete" resp="#fyndling">Nicht überliefert: Die Zeile nennt weder Teigart noch Backzeit, Hitze oder ob der Fisch vorgegart wird.</note>
+        <note type="interpretive_choice" target="#rum-0897-orig" n="Schaiden" resp="#fyndling" subtype="lexical">Wels (Silurus glanis): Grimm (scheiden, schaiden, schaden „der wels“) und Lexer (scheide „scheidfisch, wels“) belegen die Gleichung; gleiche Lösung wie in den Kapitelnachbarn Nr. 3, 5 und 8 (Rezepte 888, 890, 893). Im Titel bleibt Rumpolts Form „Schaiden“ wie im ganzen Kapitel.<list type="alternatives"><item>Schied oder Rapfen (Aspius aspius)<note type="rationale">Manche Wörterbücher führen das Wort auch für den Schied; Rumpolt behandelt den Schied aber in einem eigenen Kapitel und beschreibt den Schaiden als von sich aus fetten Fisch (Nr. 4), was zum Wels passt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0897-orig" n="Auch" resp="#fyndling" subtype="contextual">„Auch so“: Der Fisch des Kapitels lässt sich auch in Pasteten machen. Rumpolt reiht im Kapitel mehrere Nummern mit „Auch“ oder „Man macht auch“ an (Nr. 7, 8). Übernommen wird nur, was die Zeile sagt: Pastete, warm oder kalt.<list type="alternatives"><item>Fortsetzung von Nr. 5, also dieselbe Pastete mit Zitronen gesäuert, nur zusätzlich kalt<note type="rationale">Möglich, weil Nr. 5 dieselbe Pastete warm nennt; die Zeile erwähnt aber keine Zitronen, und zwischen beiden stehen sechs andere Speisen. Deshalb übertragen wir die Säure nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0897-orig" n="Teig und Backen der Pastete" resp="#fyndling" subtype="contextual">Nicht überliefert: Die Zeile nennt weder Teigart noch Backzeit, Hitze oder ob der Fisch vorgegart wird.<list type="alternatives"><item>Ergänzung nach anderen Pasteten des Buches<note type="rationale">Rumpolt beschreibt anderswo Pasteten ausführlicher; diese Beschreibungen sind aber keine Anleitung für diese Nummer, deshalb ergänzen wir nichts.</note></item></list></note>
       </div>
     </back>
   </text>

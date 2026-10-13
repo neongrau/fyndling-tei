@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,10 +108,10 @@ Praxis. Ohne eigene Annahmen lässt sich die Nummer nicht nachkochen. Für die S
         <note type="gloss" target="#rum-0747-orig" n="gelb" resp="#fyndling">Die Farbe der Sauce, im Gegensatz zu „schwarz“ in der ersten und elften Nummer desselben Kapitels. Ein Farbmittel nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0747-orig" n="Limonien" resp="#fyndling">Zitronen. Ob Saft, Scheiben oder Schale gemeint sind, sagt die Zeile nicht.</note>
         <note type="gloss" target="#rum-0747-orig" n="fein suͤß" resp="#fyndling">Gesüßt; womit, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0747-orig" n="gelb" resp="#fyndling">Nur die Saucenfarbe ist überliefert; wodurch sie gelb wird, lässt die Zeile offen. Die Übersetzung schreibt deshalb nur „gelb“ und ergänzt kein Farbmittel.</note>
-        <note type="interpretive_choice" target="#rum-0747-orig" n="Limonien" resp="#fyndling">Zitronen, ohne Angabe, in welcher Form; die Zeile nennt nur „mit Limonien“.</note>
-        <note type="interpretive_choice" target="#rum-0747-orig" n="fein suͤß" resp="#fyndling">Die Sauce ist gesüßt; das Süßungsmittel nennt der Text nicht, die Übersetzung ergänzt keins.</note>
-        <note type="interpretive_choice" target="#rum-0747-orig" n="auff Vngerisch" resp="#fyndling">Herkunftsangabe, die weder Gewürze noch Saucenbasis festlegt; übersetzt als „auf ungarische Art“, nicht ausgedeutet.</note>
+        <note type="interpretive_choice" target="#rum-0747-orig" n="gelb" resp="#fyndling" subtype="contextual">Nur die Saucenfarbe ist überliefert; wodurch sie gelb wird, lässt die Zeile offen. Die Übersetzung schreibt deshalb nur „gelb“ und ergänzt kein Farbmittel.<list type="alternatives"><item>Gelb durch Safran, wie bei den alten Hennen auf ungarische Art (rum-0690), wo Pfeffer, Safran und Zucker zur Brühe kommen.<note type="rationale">Einzige ausgeschriebene gelbe Sauce „auf ungarisch“ im Geflügelteil; für die Rebhühner sagt Rumpolt das aber nicht.</note></item><item>Gelb durch Eidotter, wie Rumpolt es bei anderen gelben Saucen ausdrücklich beschreibt.<note type="rationale">Belegt ist das nur in anderen Speisen; hier steht kein Ei.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0747-orig" n="Limonien" resp="#fyndling" subtype="contextual">Zitronen, ohne Angabe, in welcher Form; die Zeile nennt nur „mit Limonien“.<list type="alternatives"><item>Frischer Zitronensaft in die Sauce.<note type="rationale">Naheliegende Praxis; dieselbe Seite nennt in Nummer 5 frischen sauren Limoniensaft, hier steht „Saft“ aber nicht.</note></item><item>Zitronen in breite Scheiben geschnitten in die Sauce gelegt.<note type="rationale">So bei den alten Hennen auf ungarische Art (rum-0690) und in Nummer 6 desselben Kapitels; für diese Nummer nicht gesagt.</note></item><item>Gesalzene Zitronen.<note type="rationale">Kennt Rumpolt als eigene Zutat, schreibt dann aber „gesaltzen Limonien“; das steht hier nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0747-orig" n="fein suͤß" resp="#fyndling" subtype="contextual">Die Sauce ist gesüßt; das Süßungsmittel nennt der Text nicht, die Übersetzung ergänzt keins.<list type="alternatives"><item>Mit Zucker gesüßt, wie bei den alten Hennen auf ungarische Art (rum-0690: „zuckers wol“).<note type="rationale">Nächstes ausgeführtes Muster, aber eine Übertragung.</note></item><item>Süße durch Rosinen oder andere süße Trockenfrüchte.<note type="rationale">In Nummer 1 des Kapitels (rum-0746) ausdrücklich mit kleinen schwarzen Rosinen; hier stehen keine.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0747-orig" n="auff Vngerisch" resp="#fyndling" subtype="contextual">Herkunftsangabe, die weder Gewürze noch Saucenbasis festlegt; übersetzt als „auf ungarische Art“, nicht ausgedeutet.<list type="alternatives"><item>Gemeint ist das Verfahren der alten Hennen (rum-0690): Äpfel, Zwiebeln und Zitronen gehackt in Rindfleischbrühe, dazu Wein, etwas Essig, Pfeffer, Safran und Zucker.<note type="rationale">Einzige ausgeschriebene gelbe Form „auf ungarisch“ im Geflügelteil; die Rebhuhnzeile verweist aber nicht darauf.</note></item></list></note>
       </div>
     </back>
   </text>

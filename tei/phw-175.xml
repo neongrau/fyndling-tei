@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,9 +138,9 @@ Praxis. Hecht entschuppen, ausnehmen, waschen und in Stücke teilen. In einer Pf
         <note type="gloss" target="#phw-175-orig" n="gerttlin" resp="#fyndling">Ein Diminutiv von ‚Gerte‘; die einschlägigen Wörterbücher belegen nur die wörtliche Bedeutung ‚kleine Rute, kleiner Zweig‘, keine Stelle als Mengenangabe. Im Buch ein Einzelbeleg - die Lesart als kleine Menge oder Schuss Essig ist plausibel, aber nicht gesichert.</note>
         <note type="gloss" target="#phw-175-orig" n="lemone" resp="#fyndling">Im 16. Jahrhundert waren Zitronen in Mitteleuropa noch eine exotische Frucht, die importiert werden musste und teuer war. Sie wurde sparsam als Gewürz und Säuerungsmittel verwendet.</note>
         <note type="gloss" target="#phw-175-orig" n="safern" resp="#fyndling">Safran war ein sehr kostbares Gewürz, das sowohl zum Färben als auch zum Würzen verwendet wurde und den hohen Status des Gerichts unterstrich.</note>
-        <note type="interpretive_choice" target="#phw-175-orig" n="lemone" resp="#fyndling">Zitrone</note>
-        <note type="interpretive_choice" target="#phw-175-orig" n="safern" resp="#fyndling">Safran</note>
-        <note type="interpretive_choice" target="#phw-175-orig" n="gerttlin" resp="#fyndling">Eine kleine Menge oder ein Schuss Essig</note>
+        <note type="interpretive_choice" target="#phw-175-orig" n="lemone" resp="#fyndling" subtype="lexical">Zitrone<list type="alternatives"><item>Limette<note type="rationale">Limetten waren in Mitteleuropa im 16. Jahrhundert noch seltener und weniger gebräuchlich als Zitronen, die bereits als Importware bekannt waren.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-175-orig" n="safern" resp="#fyndling" subtype="lexical">Safran<list type="alternatives"><item>Safflor (Färberdistel)<note type="rationale">Safflor war ein billigerer Ersatz für Safran, wurde aber selten direkt als ‚Safern‘ bezeichnet. Die Verwendung von Safran unterstreicht den Status des Gerichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-175-orig" n="gerttlin" resp="#fyndling" subtype="philological">Eine kleine Menge oder ein Schuss Essig<list type="alternatives"><item>Wörtlich 'kleine Gerte' (Rute, kleiner Zweig)<note type="rationale">So belegen es die einschlägigen Wörterbücher (FWB, Lexer) - als Mengenangabe für Essig ist 'Gerte' dort nicht nachgewiesen. Das Wort ist im ganzen Buch ein Einzelbeleg, die Menge-Lesart bleibt daher eine plausible, aber unbelegte Deutung aus dem Kontext.</note></item><item>„quertlin“ (Viertel-Hohlmaß), wenn am Faksimile „qertlin“ mit fehlendem u<note type="rationale">Ralf (Faksimile, 2026-10-08): „könnte auch qertlin esich sein, das u fehlt“; vgl. saw-181 „ain quertlin“.</note></item></list></note>
       </div>
     </back>
   </text>

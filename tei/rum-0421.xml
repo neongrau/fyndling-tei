@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,11 +118,11 @@ Praxis. Rumpolt nennt weder Mengen noch Garzeit; „geschwindt hinweg“ heißt 
         <note type="gloss" target="#rum-0421-orig" n="Roßt" resp="#fyndling">Bratrost, auf dem über der Glut gebraten wird; bei Rumpolt vom Spieß unterschieden.</note>
         <note type="gloss" target="#rum-0421-orig" n="geschwindt hinweg gebraten" resp="#fyndling">Rasch fertig gebraten.</note>
         <note type="gloss" target="#rum-0421-orig" n="bestraͤwt" resp="#fyndling">Bestreut.</note>
-        <note type="interpretive_choice" target="#rum-0421-orig" n="Gefuͤllte Miltz mit Speck vnnd gruͤnen Kraͤutern" resp="#fyndling">Die Milz wird mit Speck und grünen Kräutern gefüllt; „mit“ hängt am Wort „Gefuͤllte“. Wie gefüllt wird, sagt der Text nicht, das Organ hat keine Höhlung.</note>
-        <note type="interpretive_choice" target="#rum-0421-orig" n="Miltz" resp="#fyndling">Milz vom Wildschwein: Der Rezepttext nennt kein Tier, die Kapitelüberschrift „Vom Schweinen Wildpret“ legt es fest.</note>
-        <note type="interpretive_choice" target="#rum-0421-orig" n="mit Pfeffer vnd Saltz bestraͤwt" resp="#fyndling">Das Bestreuen steht am Satzende nach dem Auftragen; der Zeitpunkt ist damit nicht festgelegt, das Anrichten liegt am nächsten.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0421-orig" n="Speck" resp="#fyndling">Speck als Teil der Füllung; Form und Menge nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0421-orig" n="geschwindt hinweg gebraten" resp="#fyndling">Rasch auf dem Rost fertig braten, also durchbraten. Garzeit und Hitze nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0421-orig" n="Gefuͤllte Miltz mit Speck vnnd gruͤnen Kraͤutern" resp="#fyndling" subtype="contextual">Die Milz wird mit Speck und grünen Kräutern gefüllt; „mit“ hängt am Wort „Gefuͤllte“. Wie gefüllt wird, sagt der Text nicht, das Organ hat keine Höhlung.<list type="alternatives"><item>„Gefüllt“ meint die umgekehrte, mit Speck und Kräutern belegte Milz<note type="rationale">Bei der Damhirschmilz steht unter der Überschrift „Gefuͤllte Miltz“ nur Umkehren und Bestreuen. Hier fehlt ein „vmbkehren“, deshalb nur möglich.</note></item><item>Heute: der Länge nach eine Tasche einschneiden, Speckscheiben und gehackte Kräuter hineinlegen, mit Holzspießchen schließen<note type="rationale">Praxislösung für ein kompaktes Organ; nicht im Text, steht in der Zubereitungsnotiz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0421-orig" n="Miltz" resp="#fyndling" subtype="contextual">Milz vom Wildschwein: Der Rezepttext nennt kein Tier, die Kapitelüberschrift „Vom Schweinen Wildpret“ legt es fest.<list type="alternatives"><item>Milz vom Hausschwein<note type="rationale">„Schweinen Wildpret“ ist Wild, nicht Hausschwein; Hausschweinmilz taugt nur als Ersatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0421-orig" n="mit Pfeffer vnd Saltz bestraͤwt" resp="#fyndling" subtype="contextual">Das Bestreuen steht am Satzende nach dem Auftragen; der Zeitpunkt ist damit nicht festgelegt, das Anrichten liegt am nächsten.<list type="alternatives"><item>Vor dem Braten würzen<note type="rationale">Bei der Reh- und der Hirschmilz steht das Bestreuen vor dem Braten; heute übliche Praxis, steht in der Zubereitungsnotiz.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0421-orig" n="Speck" resp="#fyndling" subtype="lexical">Speck als Teil der Füllung; Form und Menge nennt der Text nicht.<list type="alternatives"><item>Heute: dünne Scheiben vom rohen Speck<note type="rationale">Praktisch für eine eingeschnittene Tasche; nicht im Text.</note></item><item>Heißes, ausgelassenes Speckfett zum Begießen<note type="rationale">So bei der Hirschmilz („mit heissem Speck begossen“); hier steht kein Begießen, deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0421-orig" n="geschwindt hinweg gebraten" resp="#fyndling" subtype="lexical">Rasch auf dem Rost fertig braten, also durchbraten. Garzeit und Hitze nennt der Text nicht.<list type="alternatives"><item>Heute: über kräftiger Glut drei bis fünf Minuten je Seite, bis die Milz innen nicht mehr roh ist<note type="rationale">Moderne Orientierung, nicht im Text; steht in der Zubereitungsnotiz.</note></item></list></note>
       </div>
     </back>
   </text>

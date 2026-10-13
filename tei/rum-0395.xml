@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,8 +103,8 @@ Kalt oder warm. Das ist die einzige Angabe der Nummer: Die Pastete ist als kalte
 
 Praxis. Wer die Nummer nachkochen will, kann sich an Rumpolts eigene kalte Hirschpastete halten (rum-0316): Fleisch gespickt und gewürzt in Roggenteig einschlagen, drei bis vier Stunden backen, nach dem Backen Essig durch das Luftloch gießen, das Loch mit Teig schließen und erkalten lassen. Das ist eine Übertragung aus dem Hirschkapitel, keine Anweisung dieser Nummer.</note>
         <note type="gloss" target="#rum-0395-orig" n="Pasteten" resp="#fyndling">Teigpastete: Fleisch in einer gebackenen Teighülle. Das Frühneuhochdeutsche Wörterbuch erklärt „pastete“ als in einer Teighülle gebackene Fleisch- oder Fischspeise; Rumpolt selbst schließt Pasteten „mit einem Deckel von Teig“ (rum-0009). Gemeint ist weder eine Terrine noch eine Streichpastete.</note>
-        <note type="interpretive_choice" target="#rum-0395-orig" n="Teig und Füllung der Hasenpastete" resp="#fyndling">Offen gelassen: Rumpolt nennt nur Gattung und Serviertemperatur. Die Lesart beschränkt sich auf Hasenfleisch in einer gebackenen Teighülle, wie das Wort Pastete es vorgibt.</note>
-        <note type="interpretive_choice" target="#rum-0395-orig" n="Kalt Hasen Pasteten" resp="#fyndling">Plural wie im Druck („Pasteten“, „seindt die“): Die Übersetzung lautet „Kalte Hasenpasteten … so sind sie“.</note>
+        <note type="interpretive_choice" target="#rum-0395-orig" n="Teig und Füllung der Hasenpastete" resp="#fyndling" subtype="contextual">Offen gelassen: Rumpolt nennt nur Gattung und Serviertemperatur. Die Lesart beschränkt sich auf Hasenfleisch in einer gebackenen Teighülle, wie das Wort Pastete es vorgibt.<list type="alternatives"><item>Verfahren der kalten Hirschpastete übertragen (rum-0316): Roggenteig, gespickt und gewürzt, drei bis vier Stunden backen, Essig durch das Luftloch<note type="rationale">Rumpolts eigenes Verfahren für eine kalte Wildpastete und darum die naheliegende Praxis; das Pastetenkapitel nennt für die Hasenpastete ebenfalls Roggenteig. Bei dieser Nummer steht es aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0395-orig" n="Kalt Hasen Pasteten" resp="#fyndling" subtype="philological">Plural wie im Druck („Pasteten“, „seindt die“): Die Übersetzung lautet „Kalte Hasenpasteten … so sind sie“.<list type="alternatives"><item>Singular „Kalte Hasenpastete“<note type="rationale">Im Titel als Gerichtsname üblich und so beibehalten; im Übersetzungstext würde der Singular den Druck glätten.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,9 +108,9 @@ Praxis. Sobald die Sauce fest geworden ist, siedendes Wasser darübergießen. Di
         <note type="gloss" target="#mha-136-orig" n="gesteet" resp="#fyndling">Von mhd. 'gestân' - hier im Sinn von 'erstarrt, setzt sich fest', wenn die fette Sauce beim Abkühlen eine feste Fettschicht bildet.</note>
         <note type="gloss" target="#mha-136-orig" n="naig" resp="#fyndling">Von 'neigen' - die Schüssel schräg stellen, kippen, um das Wasser zügig abzugießen, bevor es zu lange auf der Sauce steht.</note>
         <note type="gloss" target="#mha-136-orig" n="zergeet" resp="#fyndling">Zergeht, löst sich auf - gemeint ist, dass die Sauce selbst zerfällt oder verkocht, wenn das heiße Wasser zu lange darauf steht.</note>
-        <note type="interpretive_choice" target="#mha-136-orig" n="gabraid" resp="#fyndling">Sauce/Brühe, gemäß der CoReMA-Sachglosse, die das Wort explizit als Gerichtstyp 'sauce' verlinkt.</note>
-        <note type="interpretive_choice" target="#mha-136-orig" n="gesteet" resp="#fyndling">Erstarrt, setzt sich fest - die fette Sauce bildet beim Stehen eine feste Fettschicht (von mhd. 'gestân').</note>
-        <note type="interpretive_choice" target="#mha-136-orig" n="zergeet" resp="#fyndling">Zergeht, löst sich auf beziehungsweise verkocht, wenn das heiße Wasser zu lange auf der Sauce steht.</note>
+        <note type="interpretive_choice" target="#mha-136-orig" n="gabraid" resp="#fyndling">Sauce/Brühe, gemäß der CoReMA-Sachglosse, die das Wort explizit als Gerichtstyp 'sauce' verlinkt.<list type="alternatives"><item>Gebräde/Gekröse (Innereien des Wildbrets)<note type="rationale">In anderen mittelhochdeutschen Jagd- und Kochtexten bezeichnet ein ähnlich klingendes Wort die Innereien von Wild. Diese Lesart wird hier verworfen, da die Sachglosse der Quelle das Wort eindeutig als Sauce/Gericht taggt, nicht als Zutat oder Körperteil.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-136-orig" n="gesteet" resp="#fyndling">Erstarrt, setzt sich fest - die fette Sauce bildet beim Stehen eine feste Fettschicht (von mhd. 'gestân').<list type="alternatives"><item>Steht schlicht eine Weile (im Sinn von Lagerung, ohne Fest-Werden)<note type="rationale">Gestân kann allgemein 'stehen bleiben' heißen, ohne die spezifische Konnotation des Erstarrens. Die engere Lesart passt aber besser zum Kontext des Entfettens mit heißem Wasser.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-136-orig" n="zergeet" resp="#fyndling">Zergeht, löst sich auf beziehungsweise verkocht, wenn das heiße Wasser zu lange auf der Sauce steht.<list type="alternatives"><item>Verdirbt im Sinne von 'wird ungenießbar'<note type="rationale">Zergân kann auch allgemeiner 'zunichte werden' bedeuten. Da hier aber physikalisch das Verhalten der Sauce unter heißem Wasser beschrieben wird, ist 'zergehen/auflösen' die naheliegendere technische Lesart.</note></item></list></note>
       </div>
     </back>
   </text>

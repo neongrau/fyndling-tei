@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -90,10 +95,10 @@ Praxis. Wer das Gericht kochen will, folgt der Hausen-Vorlage mit Lachs. Erst Ä
         <note type="gloss" target="#rum-0906-orig" n="eyngemachten" resp="#fyndling">Bei Fisch heißt „einmachen“ hier: in einer Sauce garen, nicht haltbar machen. Die Vorlagen beim Hausen und beim Hecht sieden den Fisch in der gelben Brühe aus Wein, Essig, Äpfeln und Weißbrot.</note>
         <note type="gloss" target="#rum-0906-orig" n="auff Vngerisch" resp="#fyndling">„Auf ungarische Art“: Rumpolts Herkunftsangabe für eine gelbe oder schwarze Sauce mit Äpfeln und Zwiebeln. Die gelbe Fassung beim Fisch steht ausgeschrieben beim Hausen (rum-0863).</note>
         <note type="gloss" target="#rum-0906-orig" n="vorhin vermeldet" resp="#fyndling">„Vorher erwähnt“: Rumpolt verweist auf eine Zubereitung, die er früher im Buch beschrieben hat, statt sie zu wiederholen.</note>
-        <note type="interpretive_choice" target="#rum-0906-orig" n="eyngemachten / eynmacht" resp="#fyndling">In einer Sauce gegart: Die beiden ausgeschriebenen gelben ungarischen Fischrezepte (Hausen Nr. 11, Hecht Nr. 1) sieden den Fisch in einer Brühe aus Wein, Essig, Äpfeln und Weißbrot.</note>
-        <note type="interpretive_choice" target="#rum-0906-orig" n="wie vorhin vermeldet ist" resp="#fyndling">Verweis auf den gelb gekochten Hausen auf ungarische Art (Nr. 11, rum-0863), die einzige gelbe ungarische Fischzubereitung, die im Buch vor dieser Nummer ausgeschrieben steht.</note>
-        <note type="interpretive_choice" target="#rum-0906-orig" n="Gelb" resp="#fyndling">Nur die Farbe der Zubereitung; dieser Eintrag nennt kein Farbmittel.</note>
-        <note type="interpretive_choice" target="#rum-0906-orig" n="Salm" resp="#fyndling">Lachs: Das Kapitel heißt „Vom Salmen“, und die übrigen Rezepte des Kapitels führen das Tier im Titel als Lachs.</note>
+        <note type="interpretive_choice" target="#rum-0906-orig" n="eyngemachten / eynmacht" resp="#fyndling" subtype="lexical">In einer Sauce gegart: Die beiden ausgeschriebenen gelben ungarischen Fischrezepte (Hausen Nr. 11, Hecht Nr. 1) sieden den Fisch in einer Brühe aus Wein, Essig, Äpfeln und Weißbrot.<list type="alternatives"><item>Haltbar gemacht, eingelegt.<note type="rationale">Diese Bedeutung trägt das Wort bei Rumpolt im Zuckerwerk; für Fisch in gelber Sauce zeigen die Vorlagen ein Garen in der Brühe, keine Konservierung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0906-orig" n="wie vorhin vermeldet ist" resp="#fyndling" subtype="contextual">Verweis auf den gelb gekochten Hausen auf ungarische Art (Nr. 11, rum-0863), die einzige gelbe ungarische Fischzubereitung, die im Buch vor dieser Nummer ausgeschrieben steht.<list type="alternatives"><item>Verweis auf die gelbe ungarische Zubereitung allgemein, wie sie Rumpolt mehrfach bringt, ausführlich auch beim Hecht Nr. 1 (rum-0968).<note type="rationale">Möglich, da das Verfahren bei Fisch und Geflügel wiederkehrt; der Hecht steht aber erst nach dem Lachs und kann nicht das „vorhin“ sein.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0906-orig" n="Gelb" resp="#fyndling" subtype="contextual">Nur die Farbe der Zubereitung; dieser Eintrag nennt kein Farbmittel.<list type="alternatives"><item>Mit Safran gefärbt.<note type="rationale">So in den Vorlagen beim Hausen und beim Hecht; hier selbst nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0906-orig" n="Salm" resp="#fyndling" subtype="lexical">Lachs: Das Kapitel heißt „Vom Salmen“, und die übrigen Rezepte des Kapitels führen das Tier im Titel als Lachs.<list type="alternatives"><item>„Salm“ im Titel beibehalten.<note type="rationale">Rumpolts eigenes Wort und regional noch geläufig, wäre aber uneinheitlich mit den Nachbarrezepten.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,10 +110,10 @@ Praxis. Am Vortag braten, kühl lagern, erst beim Auftragen spicken.</note>
         <note type="gloss" target="#rum-0785-orig" n="Limonien" resp="#fyndling">Zitronen, nicht Limetten. „Sauer“ heißt bei Rumpolt frisch, im Unterschied zu gesalzenen Zitronen.</note>
         <note type="gloss" target="#rum-0785-orig" n="Pomerantzen" resp="#fyndling">Pomeranze, die Bitterorange. Sie steht hier gleichwertig neben der Zitrone, nicht als Zusatz.</note>
         <note type="gloss" target="#rum-0785-orig" n="zierlich" resp="#fyndling">Schön anzusehen, fein angerichtet.</note>
-        <note type="interpretive_choice" target="#rum-0785-orig" n="spickt man mit sauren Limonien/ oder sauren Pomerantzen" resp="#fyndling">Die kalten Tauben werden mit Stücken von Zitrone oder Pomeranze besteckt. Form und Menge sagt der Text nicht. Beim Kalbsschlegel schneidet Rumpolt die Pomeranze breit und fein dünn (rum-0130), bei den kalten Rebhühnern nennt er geschälte Zitronen (rum-0754); das sind Parallelen, keine Belege für die Tauben.</note>
-        <note type="interpretive_choice" target="#rum-0785-orig" n="die gebraten" resp="#fyndling">Der Text sagt nur, dass die Tauben gebraten sind. Ob ganz oder halbiert, am Spieß oder in der Pfanne, mit oder ohne Fett, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0785-orig" n="Salzen und Würzen" resp="#fyndling">Der Text nennt weder Salz noch Gewürz; den Geschmack trägt die Säure der Zitrusfrucht.</note>
-        <note type="interpretive_choice" target="#rum-0785-orig" n="sauren Limonien" resp="#fyndling">Frische Zitronen; so gebraucht Rumpolt das Wort durchgehend, im Unterschied zu gesalzenen Zitronen.</note>
+        <note type="interpretive_choice" target="#rum-0785-orig" n="spickt man mit sauren Limonien/ oder sauren Pomerantzen" resp="#fyndling" subtype="contextual">Die kalten Tauben werden mit Stücken von Zitrone oder Pomeranze besteckt. Form und Menge sagt der Text nicht. Beim Kalbsschlegel schneidet Rumpolt die Pomeranze breit und fein dünn (rum-0130), bei den kalten Rebhühnern nennt er geschälte Zitronen (rum-0754); das sind Parallelen, keine Belege für die Tauben.<list type="alternatives"><item>Geschälte Zitronen- oder Pomeranzenspalten oder dicke Scheiben in kleine Einschnitte der Haut oder zwischen Brust und Keule stecken<note type="rationale">Heutige Umsetzung für die Praxis; im Text so nicht beschrieben.</note></item><item>Schalenstreifen statt Fruchtstücken<note type="rationale">Möglich, aber dieser Text nennt keine Schalen.</note></item><item>Spicken mit Speckstreifen<note type="rationale">Nicht gemeint: Der Text nennt keinen Speck, und die Tauben sind schon gebraten und kalt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0785-orig" n="die gebraten" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass die Tauben gebraten sind. Ob ganz oder halbiert, am Spieß oder in der Pfanne, mit oder ohne Fett, bleibt offen.<list type="alternatives"><item>Ganze Tauben bei mittlerer Hitze durchbraten, etwas Fett nach Bedarf<note type="rationale">Heutige Umsetzung für die Praxis; Fett und Gerät nennt der Text nicht.</note></item><item>Am Spieß braten<note type="rationale">Bei gebratenem Geflügel naheliegend, hier aber nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0785-orig" n="Salzen und Würzen" resp="#fyndling" subtype="contextual">Der Text nennt weder Salz noch Gewürz; den Geschmack trägt die Säure der Zitrusfrucht.<list type="alternatives"><item>Beim Braten leicht salzen<note type="rationale">Heutige Zugabe, im Text nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0785-orig" n="sauren Limonien" resp="#fyndling" subtype="lexical">Frische Zitronen; so gebraucht Rumpolt das Wort durchgehend, im Unterschied zu gesalzenen Zitronen.<list type="alternatives"><item>Limetten<note type="rationale">Das Wort allein entscheidet es nicht, Rumpolts Sprachgebrauch spricht aber für die Zitrone.</note></item></list></note>
       </div>
     </back>
   </text>

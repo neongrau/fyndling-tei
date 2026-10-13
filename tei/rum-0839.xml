@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -88,9 +93,9 @@ Praxis. Ein nachkochbares Verfahren gibt dieser Eintrag nicht her. Ausgeführt h
         <note type="gloss" target="#rum-0839-orig" n="eyngemacht" resp="#fyndling">Bei Fleisch und Geflügel meint Rumpolt damit: in Brühe oder Sauce gegart, nicht konserviert.</note>
         <note type="gloss" target="#rum-0839-orig" n="Schwartz" resp="#fyndling">Farbangabe: in dunkler, schwarzer Sauce. Das Farbmittel nennt dieser Eintrag nicht.</note>
         <note type="gloss" target="#rum-0839-orig" n="Voͤgel" resp="#fyndling">Vögel. Gemeint sind nach dem Kapitelkopf kleine Vögel; eine Art nennt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0839-orig" n="Schwartz" resp="#fyndling">Farbangabe der Sauce. Wo Rumpolt die schwarze Sauce ausführt, bei alten Hennen (rum-0692) und beim Wildbret (rum-0435), färbt er sie mit Hühnerblut. Dieser Eintrag selbst nennt kein Farbmittel; die Blut-Lesart ist nur ein Serienhinweis.</note>
-        <note type="interpretive_choice" target="#rum-0839-orig" n="eyngemacht" resp="#fyndling">In Sauce gegart, wie bei Rumpolt durchweg für Fleisch und Geflügel; die Nachbarnummern 2, 5 und 6 gebrauchen das Wort ebenso.</note>
-        <note type="interpretive_choice" target="#rum-0839-orig" n="Voͤgel" resp="#fyndling">Kleine Vögel allgemein, nach dem Kapitelkopf „Von allerley kleinen Voͤgeln“; daher „Kleine“ im Titel.</note>
+        <note type="interpretive_choice" target="#rum-0839-orig" n="Schwartz" resp="#fyndling" subtype="contextual">Farbangabe der Sauce. Wo Rumpolt die schwarze Sauce ausführt, bei alten Hennen (rum-0692) und beim Wildbret (rum-0435), färbt er sie mit Hühnerblut. Dieser Eintrag selbst nennt kein Farbmittel; die Blut-Lesart ist nur ein Serienhinweis.<list type="alternatives"><item>Moderne Praxis: das Farbmittel nicht festlegen.<note type="rationale">Der Text nennt keine Zutat; jede Festlegung wäre eine eigene Rekonstruktion.</note></item><item>Schwarz durch viel Pfeffer und süßen Wein, wie bei Philippine Welser (phw-221).<note type="rationale">Anderes Buch und andere Hand; für Rumpolt nicht belegt.</note></item><item>Dunkel durch geröstetes Brot, Röstmehl oder dunkle Rosinen.<note type="rationale">Aus anderen Quellen denkbar, für dieses Rezept nicht belegt; deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0839-orig" n="eyngemacht" resp="#fyndling" subtype="lexical">In Sauce gegart, wie bei Rumpolt durchweg für Fleisch und Geflügel; die Nachbarnummern 2, 5 und 6 gebrauchen das Wort ebenso.<list type="alternatives"><item>Konserviert, eingelegt.<note type="rationale">Im Kapitelkontext unwahrscheinlich; das Wort steht deshalb nicht im Titel, weil es heute als Konserve gelesen würde.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0839-orig" n="Voͤgel" resp="#fyndling" subtype="contextual">Kleine Vögel allgemein, nach dem Kapitelkopf „Von allerley kleinen Voͤgeln“; daher „Kleine“ im Titel.<list type="alternatives"><item>Eine bestimmte Vogelart, etwa Lerchen.<note type="rationale">Der Eintrag nennt keine Art; Lerchen haben bei Rumpolt ein eigenes Kapitel.</note></item></list></note>
       </div>
     </back>
   </text>

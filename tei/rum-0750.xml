@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,9 +116,9 @@ Praxis. Ein Rebhuhn braten, etwa 45 bis 60 Minuten. Das Fleisch von den Knochen 
         <note type="gloss" target="#rum-0750-orig" n="Kappaunen" resp="#fyndling">Kapaun, ein kastrierter Masthahn.</note>
         <note type="gloss" target="#rum-0750-orig" n="gestossen Pfeffer" resp="#fyndling">Zerstoßener Pfeffer. Gewürze wurden meist frisch im Mörser zerstoßen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
         <note type="gloss" target="#rum-0750-orig" n="auffsieden lassen" resp="#fyndling">Aufkochen, aufwallen lassen.</note>
-        <note type="interpretive_choice" target="#rum-0750-orig" n="braune Bruͤh von einem Kappaunen" resp="#fyndling">Braune Brühe von einem gebratenen Kapaun, also Bratensaft oder dunkle Brühe vom Braten. Grund: Bei Rumpolts gleich gebauten Gehackten (Fasan, Hase, Kapaunenbrust) ist die braune Brühe ausdrücklich die von einem Braten abgegossene.</note>
-        <note type="interpretive_choice" target="#rum-0750-orig" n="frischen sauren Limoniensafft (Menge)" resp="#fyndling">Rumpolt nennt keine Menge, nur „frisch“ und „sauer“; die Säure soll deutlich schmecken.</note>
-        <note type="interpretive_choice" target="#rum-0750-orig" n="ein wenig gestossen Pfeffer (Menge)" resp="#fyndling">Keine Mengenangabe, nur „ein wenig“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0750-orig" n="braune Bruͤh von einem Kappaunen" resp="#fyndling" subtype="contextual">Braune Brühe von einem gebratenen Kapaun, also Bratensaft oder dunkle Brühe vom Braten. Grund: Bei Rumpolts gleich gebauten Gehackten (Fasan, Hase, Kapaunenbrust) ist die braune Brühe ausdrücklich die von einem Braten abgegossene.<list type="alternatives"><item>Gesottene Kapaunbrühe, auf anderem Weg gebräunt<note type="rationale">Der Text nennt die Methode nicht; die Serienparallele macht die Bratenbrühe wahrscheinlicher, belegt sie für dieses Rezept aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0750-orig" n="frischen sauren Limoniensafft (Menge)" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Menge, nur „frisch“ und „sauer“; die Säure soll deutlich schmecken.<list type="alternatives"><item>Saft einer halben Zitrone auf etwa 250 g Fleisch, nach Geschmack<note type="rationale">Moderne Praxis-Annahme zum Nachkochen, nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0750-orig" n="ein wenig gestossen Pfeffer (Menge)" resp="#fyndling" subtype="contextual">Keine Mengenangabe, nur „ein wenig“.<list type="alternatives"><item>Eine Prise bis ein halber Teelöffel, frisch gestoßen<note type="rationale">Moderne Praxis-Annahme zum Nachkochen, nicht im Text.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

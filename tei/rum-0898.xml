@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -87,9 +92,9 @@ Worauf sich „davon“ bezieht. Naheliegend ist der Schaiden selbst, das Thema 
 Praxis. Aus dieser Zeile allein lässt sich nichts kochen, und wir ergänzen kein Verfahren. Wie Rumpolt einen Fisch-Blancmanger ausführlich anlegt, zeigt das Rezept vom Hecht (rum-0979); das ist ein Vergleich, keine Anleitung für den Schaiden.</note>
         <note type="gloss" target="#rum-0898-orig" n="Manscho Blancko" resp="#fyndling">Rumpolts Schreibung für spanisch manjar blanco, „weiße Speise“, den Blancmanger. Rumpolt sagt selbst beim Kapaun: „man nennets auff Spanisch Manscho Blancko“ (rum-0682).</note>
         <note type="gloss" target="#rum-0898-orig" n="Schaiden" resp="#fyndling">Der Wels (Silurus glanis). Lexer führt scheide als „scheidfisch, wels, silurus“, das Grimmsche Wörterbuch scheiden, schaiden, schaden als „der wels, silurus“. Das Rezept selbst nennt den Fisch nicht, er ergibt sich aus der Kapitelüberschrift „Vom Schaiden seind vierzenerley Speiß vnd Trachten zu machen“.</note>
-        <note type="interpretive_choice" target="#rum-0898-orig" n="Manscho Blancko" resp="#fyndling">Blancmanger: Rumpolt nennt den Namen selbst als spanisch (rum-0682) und verwendet ihn im ganzen Buch für die weiße Speise aus Fleisch oder Fisch.</note>
-        <note type="interpretive_choice" target="#rum-0898-orig" n="darvon (Bezug)" resp="#fyndling">Vom Schaiden: Der Blancmanger aus diesem Fisch wird schön weiß. Gestützt durch das Kapitelthema und die gleichlautende Aussage beim Stockfisch (rum-1240).</note>
-        <note type="interpretive_choice" target="#rum-0898-orig" n="vom Schaiden (Titel)" resp="#fyndling">Der Fisch steht nicht im Satz, sondern im Kapitelkopf „Vom Schaiden“; der Titel übernimmt ihn von dort.</note>
+        <note type="interpretive_choice" target="#rum-0898-orig" n="Manscho Blancko" resp="#fyndling" subtype="lexical">Blancmanger: Rumpolt nennt den Namen selbst als spanisch (rum-0682) und verwendet ihn im ganzen Buch für die weiße Speise aus Fleisch oder Fisch.<list type="alternatives"><item>Unklares Einzelwort „Manscho“<note type="rationale">Verworfen: Die Form kommt bei Rumpolt vielfach vor, etwa beim Hecht (rum-0979) und beim Hausen (rum-0868).</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0898-orig" n="darvon (Bezug)" resp="#fyndling" subtype="contextual">Vom Schaiden: Der Blancmanger aus diesem Fisch wird schön weiß. Gestützt durch das Kapitelthema und die gleichlautende Aussage beim Stockfisch (rum-1240).<list type="alternatives"><item>Rest einer längeren Anleitung, „davon“ meint eine nicht genannte Zutat (etwa Mandelmilch)<note type="rationale">Möglich, aber ohne Beleg im Text; die Zeile ist als eigene Nummer gesetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0898-orig" n="vom Schaiden (Titel)" resp="#fyndling" subtype="contextual">Der Fisch steht nicht im Satz, sondern im Kapitelkopf „Vom Schaiden“; der Titel übernimmt ihn von dort.<list type="alternatives"><item>Titel ohne Tier („Blancmanger“)<note type="rationale">Würde die Nummer nicht von den Blancmanger-Zeilen anderer Kapitel unterscheiden.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,10 +124,10 @@ Praxis. Sechs oder sieben Stück füllen nach Rumpolt eine Schüssel; eine Perso
         <note type="gloss" target="#rum-0608-orig" n="Turtenpfannen" resp="#fyndling">Tortenpfanne, eine Pfanne zum Tortenbacken. Rheinische Belege von 1657 und 1683 nennen sie aus Kupfer, 1683 ausdrücklich „mit dem Deckel“. Rumpolt deckt sie in anderen Rezepten mit einem Topfdeckel zu und legt Glut darauf, damit die Hitze von unten und oben kommt, oder schiebt sie in den Ofen. Hier dient sie offen auf dem Feuer zum Braten in heißer Butter.</note>
         <note type="gloss" target="#rum-0608-orig" n="Schmaltz" resp="#fyndling">Hier das heiß gemachte Fett in der Pfanne, also wohl die zuvor genannte Butter. Schmalz bezeichnet allgemein ausgelassenes Fett.</note>
         <note type="gloss" target="#rum-0608-orig" n="Durtelet" resp="#fyndling">Rumpolts Schreibung für Turtelet, eine Verkleinerung zu Turte (Torte, damals allgemein Kuchen, Gebäck). Rumpolt nennt mehrere gleich gemachte Pfannengerichte so, etwa von Hennenbrust und von Lachs. Gemeint sind kleine, in Butter gebackene Küchlein ohne Teighülle.</note>
-        <note type="interpretive_choice" target="#rum-0608-orig" n="Turtenpfannen" resp="#fyndling">Die Tortenpfanne, hier offen auf dem Feuer zum Braten in heißer Butter benutzt: Der Text lässt die Butter heiß werden, gibt die Masse löffelweise hinein und wendet sie.</note>
-        <note type="interpretive_choice" target="#rum-0608-orig" n="Weck, der beschnitten ist" resp="#fyndling">Weißbrot ohne Rinde, damit die geriebene Krume hell und fein bleibt; gestützt durch Rumpolts gleichlautende Wendung im Gänsebrust-Rezept desselben Kapitels.</note>
-        <note type="interpretive_choice" target="#rum-0608-orig" n="versaltz es nicht" resp="#fyndling">Warnung vor zu viel Salz: mäßig salzen. „Versalzen“ heißt zu stark salzen, setzt also voraus, dass gesalzen wird.</note>
-        <note type="interpretive_choice" target="#rum-0608-orig" n="ein Weck, etliche Eyerdotter" resp="#fyndling">Rumpolt gibt keine Mengen: Brot und Eigelb nach dem Gefühl des Kochs, bis die Masse die gewünschte Festigkeit hat.</note>
+        <note type="interpretive_choice" target="#rum-0608-orig" n="Turtenpfannen" resp="#fyndling" subtype="contextual">Die Tortenpfanne, hier offen auf dem Feuer zum Braten in heißer Butter benutzt: Der Text lässt die Butter heiß werden, gibt die Masse löffelweise hinein und wendet sie.<list type="alternatives"><item>Geschlossene Backform mit Deckel und Glut oben, wie Rumpolt sie in anderen Rezepten verwendet<note type="rationale">Das Gerät ist dasselbe, aber das Wenden der Stücke setzt hier offenes Braten voraus; von Deckel oder Ofen ist in diesem Rezept keine Rede.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0608-orig" n="Weck, der beschnitten ist" resp="#fyndling" subtype="lexical">Weißbrot ohne Rinde, damit die geriebene Krume hell und fein bleibt; gestützt durch Rumpolts gleichlautende Wendung im Gänsebrust-Rezept desselben Kapitels.<list type="alternatives"><item>Zurechtgeschnittenes, in Stücke geschnittenes Brot<note type="rationale">Möglich, aber das Brot wird ohnehin gerieben; das Zuschneiden in Stücke wäre ein überflüssiger Hinweis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0608-orig" n="versaltz es nicht" resp="#fyndling" subtype="contextual">Warnung vor zu viel Salz: mäßig salzen. „Versalzen“ heißt zu stark salzen, setzt also voraus, dass gesalzen wird.<list type="alternatives"><item>Gar nicht salzen<note type="rationale">Vom Wortlaut nicht gefordert, praktisch aber unbedenklich, wenn die Masse ohnehin mild bleiben soll.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0608-orig" n="ein Weck, etliche Eyerdotter" resp="#fyndling" subtype="contextual">Rumpolt gibt keine Mengen: Brot und Eigelb nach dem Gefühl des Kochs, bis die Masse die gewünschte Festigkeit hat.<list type="alternatives"><item>Heute praktikabel: so viel Brot, dass ein Löffel Masse in der Pfanne in Form bleibt, und so viel Eigelb, dass sie bindet<note type="rationale">Eine Arbeitsregel für die Praxis, keine Angabe aus dem Text; feste Zahlen wären erfunden.</note></item></list></note>
       </div>
     </back>
   </text>

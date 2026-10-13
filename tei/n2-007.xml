@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,7 +104,7 @@ Funktioniert das? Nur eingeschränkt. Solange alles gefroren ist, bleiben die Sc
         <note type="gloss" target="#n2-007-orig" n="gevrisen" resp="#fyndling">Gefroren, Partizip zu vriesen (gefrieren). Belegt bei Lexer und im FWB als „frieren; durch Frost zusammengehen, gefrieren, festfrieren“; der Kontext (Winterzeit, wieder tauen) stützt diese Lesart eindeutig.</note>
         <note type="gloss" target="#n2-007-orig" n="tawen" resp="#fyndling">Tauen, intransitiv zu touwen. Belegt bei Lexer: „tauen, rorare“.</note>
         <note type="gloss" target="#n2-007-orig" n="las" resp="#fyndling">Lass, kausative Form zu lâzen (lassen). Belegt bei Lexer in der Flexionsreihe „dû lâst, læst“; hier „lass X gefrieren“.</note>
-        <note type="interpretive_choice" target="#n2-007-orig" n="et idem valet / Bezug zum Vorrezept" resp="#fyndling">Variante zu n2-006: Die Schichten entstehen durch Gefrieren statt durch vorsichtiges Eingießen; „et idem valet“ heißt „das bewirkt dasselbe“ und verweist auf den Effekt des Vorrezepts. Dafür sprechen das anknüpfende „Item“, „eyn trank noch dem andern“ (ein Getränk nach dem anderen, also Schicht auf Schicht) und die Stellung direkt hinter dem Schichtgetränk.</note>
+        <note type="interpretive_choice" target="#n2-007-orig" n="et idem valet / Bezug zum Vorrezept" resp="#fyndling" subtype="contextual">Variante zu n2-006: Die Schichten entstehen durch Gefrieren statt durch vorsichtiges Eingießen; „et idem valet“ heißt „das bewirkt dasselbe“ und verweist auf den Effekt des Vorrezepts. Dafür sprechen das anknüpfende „Item“, „eyn trank noch dem andern“ (ein Getränk nach dem anderen, also Schicht auf Schicht) und die Stellung direkt hinter dem Schichtgetränk.<list type="alternatives"><item>Eigenständiges Verfahren, ein Getränk durch Gefrieren und Tauen zu verbessern<note type="rationale">Der Text nennt keine Verbesserung, und gemeinsames Wiederauftauen ohne Abschöpfen des Eises verändert ein Getränk nicht.</note></item></list></note>
       </div>
     </back>
   </text>

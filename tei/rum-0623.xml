@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,8 +112,8 @@ Praxis. Rohes Geflügelbrät bis zum Füllen kalt halten und die Würste vollst�
         <note type="gloss" target="#rum-0623-orig" n="Gaͤnßdarm" resp="#fyndling">Darm der Gans, hier die Hülle der Würste.</note>
         <note type="gloss" target="#rum-0623-orig" n="eynmachen" resp="#fyndling">Bei Fleisch heißt „einmachen“ in Rumpolts Buch meist: in einer Brühe oder Sauce anrichten, etwa gelb, weiß oder sauer (vgl. die eingemachten Gänsefüße, Nr. 29 im selben Kapitel). Nicht im heutigen Sinn von Konservieren.</note>
         <note type="gloss" target="#rum-0623-orig" n="kansts" resp="#fyndling">„kannst es“: Das „es“ meint das zuvor Gemachte, also die Würste beziehungsweise die gehackte Masse.</note>
-        <note type="interpretive_choice" target="#rum-0623-orig" n="eynmachen" resp="#fyndling">In einer Brühe oder Sauce anrichten. So gebraucht Rumpolt das Wort bei Fleisch, im Gänsekapitel etwa bei den Gänsefüßen „gelb, weiß, sauer mit Limonen“ (Nr. 29); dazu stellt der Text das Braten als zweiten Weg.</note>
-        <note type="interpretive_choice" target="#rum-0623-orig" n="kansts" resp="#fyndling">„kannst es“, Bezug auf das Gemachte insgesamt: die fertigen Würste werden eingemacht oder gebraten.</note>
+        <note type="interpretive_choice" target="#rum-0623-orig" n="eynmachen" resp="#fyndling" subtype="contextual">In einer Brühe oder Sauce anrichten. So gebraucht Rumpolt das Wort bei Fleisch, im Gänsekapitel etwa bei den Gänsefüßen „gelb, weiß, sauer mit Limonen“ (Nr. 29); dazu stellt der Text das Braten als zweiten Weg.<list type="alternatives"><item>Haltbar machen, als Vorrat einlegen<note type="rationale">Heutige Wortbedeutung. Der Text nennt keine Haltbarmachung und keine Technik dafür; im Buch bei Fleisch nicht üblich. Bleibt als Lesart möglich, ist aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0623-orig" n="kansts" resp="#fyndling" subtype="philological">„kannst es“, Bezug auf das Gemachte insgesamt: die fertigen Würste werden eingemacht oder gebraten.<list type="alternatives"><item>Nur die gehackte Masse<note type="rationale">Grammatisch möglich, weil „es“ auch das gehackte Fleisch meinen kann; dann ginge die Masse ohne Darm in die Sauce. Der Satzzusammenhang (Würste machen) spricht eher für die Würste.</note></item></list></note>
       </div>
     </back>
   </text>

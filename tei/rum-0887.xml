@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,9 +106,9 @@ Praxis. Es gibt keine Anleitung, nach der sich kochen ließe. Wer das Gericht na
         <note type="gloss" target="#rum-0887-orig" n="eyngemacht" resp="#fyndling">Bei Rumpolts Fischgerichten heißt das „in einer Sauce gegart“, nicht eingekocht oder haltbar gemacht.</note>
         <note type="gloss" target="#rum-0887-orig" n="Weiß" resp="#fyndling">Eine helle, nicht gefärbte Zubereitung. Die Nummer davor im selben Kapitel macht den Fisch „gelb“ (Rezept 886); Rumpolt unterscheidet die Saucen oft nur nach der Farbe.</note>
         <note type="gloss" target="#rum-0887-orig" n="Limonien" resp="#fyndling">Zitronen. Gesalzene Zitronen nennt Rumpolt eigens „gesaltzen Limonien“; hier steht „sauren Limonien“.</note>
-        <note type="interpretive_choice" target="#rum-0887-orig" n="Schaiden" resp="#fyndling">Wels (Silurus glanis): Das Grimmsche Wörterbuch belegt scheiden, schaiden, schaden ausdrücklich als „der wels, silurus“. Gleiche Lösung wie bei der Nachbarnummer im selben Kapitel (Rezept 886).</note>
-        <note type="interpretive_choice" target="#rum-0887-orig" n="sauren Limonien" resp="#fyndling">Frische Zitronen, die das Gericht sauer machen. Die Zeile sagt „sauren Limonien“; gesalzene Zitronen bezeichnet Rumpolt ausdrücklich als „gesaltzen Limonien“. Gleiche Lösung wie beim Stör (Rezept 884) und beim Hausen (Rezept 872).</note>
-        <note type="interpretive_choice" target="#rum-0887-orig" n="Weiß (Grundlage der Sauce)" resp="#fyndling">Nichts ergänzen: Die Zeile sagt nur, dass der Fisch weiß, also ungefärbt, in einer Sauce gegart und mit Zitronen gesäuert wird. Flüssigkeit, Bindung und Garzeit bleiben offen.</note>
+        <note type="interpretive_choice" target="#rum-0887-orig" n="Schaiden" resp="#fyndling" subtype="lexical">Wels (Silurus glanis): Das Grimmsche Wörterbuch belegt scheiden, schaiden, schaden ausdrücklich als „der wels, silurus“. Gleiche Lösung wie bei der Nachbarnummer im selben Kapitel (Rezept 886).<list type="alternatives"><item>Schied oder Rapfen (Aspius aspius)<note type="rationale">Ein CoReMA-Sachglossar setzt schaiden mit dem Rapfen gleich. Für die Form schaiden steht im Grimmschen Wörterbuch aber der Wels; Schied ist dort ein eigenes Stichwort.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0887-orig" n="sauren Limonien" resp="#fyndling" subtype="lexical">Frische Zitronen, die das Gericht sauer machen. Die Zeile sagt „sauren Limonien“; gesalzene Zitronen bezeichnet Rumpolt ausdrücklich als „gesaltzen Limonien“. Gleiche Lösung wie beim Stör (Rezept 884) und beim Hausen (Rezept 872).<list type="alternatives"><item>Gesalzene Zitronen<note type="rationale">Rumpolt verwendet sie in ausgeführten weißen Fischsaucen oft, kennzeichnet sie aber jedes Mal mit „gesaltzen“. Hier steht „sauren“, deshalb nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0887-orig" n="Weiß (Grundlage der Sauce)" resp="#fyndling" subtype="contextual">Nichts ergänzen: Die Zeile sagt nur, dass der Fisch weiß, also ungefärbt, in einer Sauce gegart und mit Zitronen gesäuert wird. Flüssigkeit, Bindung und Garzeit bleiben offen.<list type="alternatives"><item>Erbsenbrühe mit eingebranntem Mehl und Butter, wie in Rumpolts ausgeführten weißen Fischsaucen (etwa Stör mit Verjus, Rezept 881)<note type="rationale">Die nächste ausgeführte Parallele im Buch; sie säuert aber mit Essig und Verjusbeeren, nicht mit Zitronen. Für diese Nummer nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

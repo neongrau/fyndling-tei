@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -137,10 +142,10 @@ Praxis. Krebse in Salzwasser kochen, bis sie gar sind, dann vollständig schäle
         <note type="gloss" target="#phw-055-orig" n="dreybs durch ain dauch oder syblin" resp="#fyndling">Die Masse durch ein Tuch oder Sieb passieren, um eine feine, glatte Konsistenz zu erhalten.</note>
         <note type="gloss" target="#phw-055-orig" n="bedalin" resp="#fyndling">Ein dünn ausgerollter Teigboden für eine Torte.</note>
         <note type="gloss" target="#phw-055-orig" n="fyerdel stundt" resp="#fyndling">Eine Viertelstunde, also 15 Minuten.</note>
-        <note type="interpretive_choice" target="#phw-055-orig" n="bedalin" resp="#fyndling">‚Bedalin‘ wird als ‚Tortenboden‘ übersetzt, ein dünn ausgerollter Teigboden für die Torte.</note>
-        <note type="interpretive_choice" target="#phw-055-orig" n="das vnsauber da hin dar von" resp="#fyndling">Für die Praxis als vollständiges Schälen der Krebse samt Entfernen des Darmtrakts verstanden, dem heutigen Hygienestandard entsprechend.</note>
-        <note type="interpretive_choice" target="#phw-055-orig" n="ain fyerdel stundt bachenn (Backgefäß/Hitzeführung)" resp="#fyndling">Für die Praxis als Backen im Ofen bei mittlerer Hitze (ca. 180°C) übersetzt.</note>
-        <note type="interpretive_choice" target="#phw-055-orig" n="gybs dar nach kaltt (Abkühlung vor dem Servieren)" resp="#fyndling">Für die Praxis als zügiges Auskühlenlassen und Kühlstellen vor dem Servieren übersetzt.</note>
+        <note type="interpretive_choice" target="#phw-055-orig" n="bedalin" resp="#fyndling" subtype="lexical">‚Bedalin‘ wird als ‚Tortenboden‘ übersetzt, ein dünn ausgerollter Teigboden für die Torte.<list type="alternatives"><item>Andere mögliche Lesarten wären ‚Backform‘ oder ‚Oblate‘.<note type="rationale">Die Lesart ‚Tortenboden‘ ist jedoch am plausibelsten, da das Buch eigene Begriffe für Oblaten hat und ‚bedalin‘ hier als Unterlage für die Füllung dient und buchweit (≥15 weitere Belege) konsistent so aufgelöst wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-055-orig" n="das vnsauber da hin dar von" resp="#fyndling" subtype="contextual">Für die Praxis als vollständiges Schälen der Krebse samt Entfernen des Darmtrakts verstanden, dem heutigen Hygienestandard entsprechend.<list type="alternatives"><item>Der Text könnte auch nur das Entfernen grober Teile wie Schale, Scheren und Kopf meinen, ohne die Darmreinigung eigens zu erwähnen.<note type="rationale">Nicht entscheidbar, da der Wortlaut nur ‚das Unsaubere‘ nennt, ohne es zu spezifizieren.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-055-orig" n="ain fyerdel stundt bachenn (Backgefäß/Hitzeführung)" resp="#fyndling" subtype="contextual">Für die Praxis als Backen im Ofen bei mittlerer Hitze (ca. 180°C) übersetzt.<list type="alternatives"><item>Vermutlich ist dieselbe Tortenpfanne mit Glut auf dem Deckel gemeint wie bei anderen bedalin-Rezepten des Buchs, hier aber nicht eigens genannt.<note type="rationale">Der Text nennt für dieses Rezept kein Backgefäß, anders als vergleichbare phw-Tortenrezepte mit ‚dorten pfanen‘.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-055-orig" n="gybs dar nach kaltt (Abkühlung vor dem Servieren)" resp="#fyndling" subtype="contextual">Für die Praxis als zügiges Auskühlenlassen und Kühlstellen vor dem Servieren übersetzt.<list type="alternatives"><item>Der Text meint möglicherweise nur schlichtes Auskühlen bei Raumtemperatur ohne aktive Kühlung.<note type="rationale">Eine Abkühlmethode wird im Rezept nicht spezifiziert.</note></item></list></note>
       </div>
     </back>
   </text>

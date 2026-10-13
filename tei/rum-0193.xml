@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,12 +126,12 @@ Praxis. Hammelfüße beim Metzger vorbestellen. Für das Garen ist mit zwei bis 
         <note type="gloss" target="#rum-0193-orig" n="gelb" resp="#fyndling">Wie „in einem Pfeffer“ der Name einer Zubereitung: in einer gelben Brühe oder Soße. Ein Färbemittel nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0193-orig" n="zum gebacken" resp="#fyndling">Wörtlich „zum Gebackenen“, also für eine ausgebackene oder gebackene Speise. Was genau gemeint ist, sagt Rumpolt hier nicht.</note>
         <note type="gloss" target="#rum-0193-orig" n="Kuchen" resp="#fyndling">Kein süßer Kuchen im heutigen Sinn, sondern ein Backwerk, in das die Füße eingebacken werden; ob Eierkuchen oder Teigkuchen, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0193-orig" n="an die statt sieden (Garzeit)" resp="#fyndling">Bis die Füße gar und weich sind; Rumpolt nennt keine Zeit, nur den Zustand „gesotten“.</note>
-        <note type="interpretive_choice" target="#rum-0193-orig" n="laß die Bein daran, sonderlich wenn die Fuͤß weiß seind" resp="#fyndling">Die Knochen in den Füßen belassen, vor allem wenn die Füße schön weiß geblieben sind; der Satz knüpft an das Ziel des Abbrühens an.</note>
-        <note type="interpretive_choice" target="#rum-0193-orig" n="gelb" resp="#fyndling">Eine gelbe Zubereitung in Brühe oder Soße, parallel zu „in einem Pfeffer“; der Text nennt kein Färbemittel, daher wird keins ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0193-orig" n="in einem Pfeffer eynmachen" resp="#fyndling">In einer gewürzten Pfefferbrühe oder -soße zubereiten und anrichten; Pfeffer als Gericht (FWB pfeffer).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0193-orig" n="zum gebacken" resp="#fyndling">„Zum Gebackenen“: die Füße für eine gebackene Speise verwenden; die Art des Backens bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0193-orig" n="backen in einem Kuchen" resp="#fyndling">In ein Backwerk einbacken; welche Art Kuchen gemeint ist, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0193-orig" n="an die statt sieden (Garzeit)" resp="#fyndling" subtype="contextual">Bis die Füße gar und weich sind; Rumpolt nennt keine Zeit, nur den Zustand „gesotten“.<list type="alternatives"><item>Praxis: zwei bis drei Stunden schwach sieden<note type="rationale">Heutige Erfahrung mit Hammel- und Kalbsfüßen; eine Schätzung, kein Textbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0193-orig" n="laß die Bein daran, sonderlich wenn die Fuͤß weiß seind" resp="#fyndling" subtype="contextual">Die Knochen in den Füßen belassen, vor allem wenn die Füße schön weiß geblieben sind; der Satz knüpft an das Ziel des Abbrühens an.<list type="alternatives"><item>Die Bedingung „wenn die Füß weiß seind“ bezieht sich auf die folgende kalte Essig-Zubereitung<note type="rationale">Syntaktisch ebenfalls möglich; der Text lässt die Beziehung offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0193-orig" n="gelb" resp="#fyndling" subtype="contextual">Eine gelbe Zubereitung in Brühe oder Soße, parallel zu „in einem Pfeffer“; der Text nennt kein Färbemittel, daher wird keins ergänzt.<list type="alternatives"><item>mit Safran gelb gefärbt<note type="rationale">In anderen Rumpolt-Rezepten färbt Safran gelb; für dieses Rezept ein Vorschlag, keine Angabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0193-orig" n="in einem Pfeffer eynmachen" resp="#fyndling" subtype="lexical">In einer gewürzten Pfefferbrühe oder -soße zubereiten und anrichten; Pfeffer als Gericht (FWB pfeffer).<list type="alternatives"><item>In einer mit Brot gebundenen Pfeffersoße<note type="rationale">Bei ausgeführten Pfeffer-Rezepten üblich; hier nennt Rumpolt keine Bindung.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0193-orig" n="zum gebacken" resp="#fyndling" subtype="contextual">„Zum Gebackenen“: die Füße für eine gebackene Speise verwenden; die Art des Backens bleibt offen.<list type="alternatives"><item>In Teig ausbacken, wie bei den Kalbsfüßen im Eierteig (rum-0142)<note type="rationale">Naheliegender Vergleich im selben Buch, aber hier nicht ausgeführt.</note></item><item>Zum Backen vorbereiten<note type="rationale">Frühere Übersetzung; „vorbereiten“ steht nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0193-orig" n="backen in einem Kuchen" resp="#fyndling" subtype="lexical">In ein Backwerk einbacken; welche Art Kuchen gemeint ist, sagt der Text nicht.<list type="alternatives"><item>Flacher Eierkuchen<note type="rationale">So gebraucht Rumpolt „Kuchen“ bei den Kalbsfüßen (rum-0143); hier nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

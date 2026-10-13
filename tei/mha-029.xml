@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,8 +114,8 @@ Praxis. Die Mischung schonend erwärmen, bis sie leicht bindet - wie bei den bei
         <note type="gloss" target="#mha-029-orig" n="achtail" resp="#fyndling">Ein Achtel eines alten Flüssigkeitsmaßes ('Mass'), regional unterschiedlich, hier auf etwa 125 ml geschätzt.</note>
         <note type="gloss" target="#mha-029-orig" n="waellsch wein" resp="#fyndling">Welscher Wein = italienischer Wein, ein damals importierter Statuswein (z. B. Vernaccia).</note>
         <note type="gloss" target="#mha-029-orig" n="milich ram" resp="#fyndling">Milchrahm, also Sahne.</note>
-        <note type="interpretive_choice" target="#mha-029-orig" n="ain suosse milich schmalcz das ist auch guot" resp="#fyndling">Als Alternative gelesen: süße Milch, oder ersatzweise Schmalz ('das ist auch gut'), gefolgt von Sahne als weiterer Zutat.</note>
-        <note type="interpretive_choice" target="#mha-029-orig" n="achtail" resp="#fyndling">Ein Achtel eines regionalen Flüssigkeitsmaßes ('Mass'), hier näherungsweise mit 125 ml angesetzt.</note>
+        <note type="interpretive_choice" target="#mha-029-orig" n="ain suosse milich schmalcz das ist auch guot" resp="#fyndling">Als Alternative gelesen: süße Milch, oder ersatzweise Schmalz ('das ist auch gut'), gefolgt von Sahne als weiterer Zutat.<list type="alternatives"><item>Milch und Schmalz als zwei getrennt zuzugebende Zutaten<note type="rationale">Ohne explizites 'oder' im Text wäre auch eine additive Lesart denkbar, doch die Formel 'das ist auch guot' signalisiert typischerweise eine gleichwertige Variante, keine Zusatzzutat.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-029-orig" n="achtail" resp="#fyndling">Ein Achtel eines regionalen Flüssigkeitsmaßes ('Mass'), hier näherungsweise mit 125 ml angesetzt.<list type="alternatives"><item>Ein Achtel eines anderen, größeren oder kleineren Lokalmaßes<note type="rationale">Süddeutsche Maß-Größen variierten stark von Ort zu Ort (ca. 1,0 bis 1,5 Liter), eine exakte Umrechnung ist ohne genauere Ortsangabe nicht möglich.</note></item></list></note>
       </div>
     </back>
   </text>

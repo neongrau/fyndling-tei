@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,8 +107,8 @@ Mák syrový stluc v moždíři. Rozpusť vlažnú vodú, zvař znenáhla na tic
         <note type="gloss" target="#sev-198-orig" n="strdí" resp="#fyndling">Alttschechische Bezeichnung für Honig, oft roher Honig oder Wabenhonig.</note>
         <note type="gloss" target="#sev-198-orig" n="topenky" resp="#fyndling">Wörtlich ‚Getoastetes' oder ‚Gebratenes', hier Brotscheiben.</note>
         <note type="gloss" target="#sev-198-orig" n="dřevěnného oleje" resp="#fyndling">Wörtlich ‚Holzöl', eine Bezeichnung für pflanzliches Öl, das aus Bäumen oder Pflanzen gewonnen wird, im Gegensatz zu tierischem Fett. Mögliche Interpretationen sind Leinöl, Walnussöl oder ein allgemeines, geschmacksneutrales Pflanzenöl.</note>
-        <note type="interpretive_choice" target="#sev-198-orig" n="Kaše maková, též bába" resp="#fyndling">Die Bezeichnung ‚Mohn-Bába' für ein süßes Gericht, das durch das Tunken und Braten von Brotscheiben in einem Mohnsud entsteht.</note>
-        <note type="interpretive_choice" target="#sev-198-orig" n="dřevěnného oleje" resp="#fyndling">Pflanzenöl (geschmacksneutral). Dies ist die praktischste Interpretation für ein süßes Gericht, da es sich um eine allgemeine Bezeichnung für pflanzliches Öl handeln könnte, das nicht den Geschmack des Gerichts dominiert.</note>
+        <note type="interpretive_choice" target="#sev-198-orig" n="Kaše maková, též bába" resp="#fyndling">Die Bezeichnung ‚Mohn-Bába' für ein süßes Gericht, das durch das Tunken und Braten von Brotscheiben in einem Mohnsud entsteht.<list type="alternatives"><item>Mohnbrei<note type="rationale">‚Kaše maková' bedeutet wörtlich Mohnbrei. Die weitere Zubereitung mit ‚topenky' (Brotscheiben) und Braten deutet jedoch auf ein komplexeres Gericht als einen einfachen Brei hin, eher eine Art Mohn-Fritter oder -Auflauf.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-198-orig" n="dřevěnného oleje" resp="#fyndling">Pflanzenöl (geschmacksneutral). Dies ist die praktischste Interpretation für ein süßes Gericht, da es sich um eine allgemeine Bezeichnung für pflanzliches Öl handeln könnte, das nicht den Geschmack des Gerichts dominiert.<list type="alternatives"><item>Leinöl<note type="rationale">Leinöl war im Mittelalter und der frühen Neuzeit ein weit verbreitetes und günstiges Pflanzenöl, das sowohl für Speisen als auch für technische Zwecke verwendet wurde. Es hat jedoch einen starken, oft herben Eigengeschmack, der nicht zu jedem süßen Gericht passt.</note></item><item>Nussöl (z.B. Walnuss- oder Haselnussöl)<note type="rationale">Diese Öle werden aus den Früchten von Bäumen gewonnen und könnten daher unter den Begriff ‚Holzöl' fallen. Sie wären geschmacklich passender für ein süßes Gericht als Leinöl und verleihen eine feine Nussnote.</note></item></list></note>
       </div>
     </back>
   </text>

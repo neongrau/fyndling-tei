@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Praxis. Rippen portionieren, kurz vor dem Braten salzen, zügig braten und direk
         <note type="gloss" target="#rum-0245-orig" n="Karwenada" resp="#fyndling">Gerichtsname, verwandt mit frz. carbonnade und der mundartlichen Karbonade („Rippenstück“, „Kotelett“). Rumpolt gebraucht ihn für eine ganze Reihe von Fleischgerichten; im Kalbskapitel schreibt er Karbenada. „Karwenada von den Riben“ meint hier das Rippenstück selbst, nicht eine Sauce.</note>
         <note type="gloss" target="#rum-0245-orig" n="flugs geschwindt" resp="#fyndling">flugs „rasch, sogleich“ und geschwindt „schnell“ stehen nebeneinander und betonen das kurze Braten. Die Übersetzung behält beide Wörter.</note>
         <note type="gloss" target="#rum-0245-orig" n="junges Fleisch" resp="#fyndling">Das Tier nennt der Eintrag nicht. Er steht im Kapitel „Von einer jungen Geiß“, gemeint ist also das Zicklein; deshalb ist das Fleisch „bald gebraten“.</note>
-        <note type="interpretive_choice" target="#rum-0245-orig" n="Karwenada" resp="#fyndling">Als Gerichtsname in Rumpolts Druckform beibehalten und als Rippenstück verstanden. „Karwenada von den Riben“ entspricht dem Hammelkapitel; das Wort gehört zu frz. carbonnade und zur mundartlichen Karbonade (Rippenstück, Kotelett).</note>
-        <note type="interpretive_choice" target="#rum-0245-orig" n="Du kanst auch" resp="#fyndling">Weitere Art, die junge Geiß zu verwenden, innerhalb der Kapitelreihe. Der Eintrag selbst nennt nur schnelles Braten und Auftragen; die Übersetzung fügt kein Verfahren hinzu.</note>
-        <note type="interpretive_choice" target="#rum-0245-orig" n="junges Fleisch" resp="#fyndling">Zicklein, weil der Eintrag im Kapitel über die junge Geiß steht und das kurze Braten mit dem jungen Fleisch begründet.</note>
+        <note type="interpretive_choice" target="#rum-0245-orig" n="Karwenada" resp="#fyndling" subtype="lexical">Als Gerichtsname in Rumpolts Druckform beibehalten und als Rippenstück verstanden. „Karwenada von den Riben“ entspricht dem Hammelkapitel; das Wort gehört zu frz. carbonnade und zur mundartlichen Karbonade (Rippenstück, Kotelett).<list type="alternatives"><item>Übersetzen als „Kotelett“ oder „Karbonade“<note type="rationale">Sachlich passend bei Rippen, aber Rumpolt nutzt den Namen buchweit auch für Keulenscheiben und Leber; deshalb bleibt der Eigenname.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0245-orig" n="Du kanst auch" resp="#fyndling" subtype="contextual">Weitere Art, die junge Geiß zu verwenden, innerhalb der Kapitelreihe. Der Eintrag selbst nennt nur schnelles Braten und Auftragen; die Übersetzung fügt kein Verfahren hinzu.<list type="alternatives"><item>Stillschweigender Verweis auf die Hammel-Karwenada: Rippen einzeln herauslösen, klopfen, salzen, auf dem Rost braten<note type="rationale">Rumpolt setzt das Gericht offenbar als bekannt voraus, und beim Hammel ist es so beschrieben. Für die Praxis ein guter Anhalt, im Wortlaut dieses Eintrags aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0245-orig" n="junges Fleisch" resp="#fyndling" subtype="contextual">Zicklein, weil der Eintrag im Kapitel über die junge Geiß steht und das kurze Braten mit dem jungen Fleisch begründet.<list type="alternatives"><item>Ziege allgemein<note type="rationale">Gattungsrichtig, verliert aber den Grund für die kurze Garzeit; ältere Ziegenrippen wären so nicht „bald gebraten“.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -143,10 +148,10 @@ Praxis. Die Blutsauce nur schwach sieden lassen, nicht sprudelnd, sonst bildet d
         <note type="gloss" target="#rum-0388-orig" n="an die statt sieden" resp="#fyndling">Gar kochen, fertig sieden.</note>
         <note type="gloss" target="#rum-0388-orig" n="Mandelgescharb" resp="#fyndling">Klein geschnittene Mandeln, ebenso „Epffel“-Gescharb aus klein geschnittenen Äpfeln (Grimm: Geschnitzeltes). Wie das Gescharb hier zubereitet wird, sagt das Rezept nicht.</note>
         <note type="gloss" target="#rum-0388-orig" n="Driet" resp="#fyndling">Rumpolt erklärt Driet an anderer Stelle selbst als Zucker und Zimt durcheinander, also Zimtzucker zum Bestreuen.</note>
-        <note type="interpretive_choice" target="#rum-0388-orig" n="Schweiß" resp="#fyndling">Hasenblut, durchgehend für das Hauptwort (Jägersprache). Rumpolts eigene Parallelen mit gleicher Formel lesen es als Blut (rum-0372, rum-0391, rum-0397); das Zeitwort „schweiß Zwibeln“ heißt dagegen anschwitzen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0388-orig" n="Epffel oder Mandelgescharb" resp="#fyndling">Klein geschnittene Äpfel oder Mandeln (Grimm: Geschnitzeltes), über oder zu dem Hasen gegeben. Die Zubereitung nennt dieses Rezept nicht.</note>
-        <note type="interpretive_choice" target="#rum-0388-orig" n="ein wenig Brot" resp="#fyndling">Brot ohne nähere Angabe, so viel, dass die Sauce nach dem Durchstreichen dicklich wird; der Text nennt weder Sorte noch Menge.</note>
-        <note type="interpretive_choice" target="#rum-0388-orig" n="sieden (Blutsauce)" resp="#fyndling">Der Text sagt nur „sieden“ bzw. „wider sieden“, ohne Angabe der Hitze.</note>
+        <note type="interpretive_choice" target="#rum-0388-orig" n="Schweiß" resp="#fyndling" subtype="lexical">Hasenblut, durchgehend für das Hauptwort (Jägersprache). Rumpolts eigene Parallelen mit gleicher Formel lesen es als Blut (rum-0372, rum-0391, rum-0397); das Zeitwort „schweiß Zwibeln“ heißt dagegen anschwitzen.<list type="alternatives"><item>Kochsud oder Brühe ohne Blut<note type="rationale">Für einen blutfreien „Schweiß“ gibt es bei Rumpolt keinen Beleg. Blut lässt sich mit Brot gebunden durchaus durchstreichen. Taugt nur als Notlösung, wenn kein Blut zu bekommen ist: dann eine dunkle Fleischbrühe, die Sauce wird heller und dünner.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
+        <note type="interpretive_choice" target="#rum-0388-orig" n="Epffel oder Mandelgescharb" resp="#fyndling" subtype="lexical">Klein geschnittene Äpfel oder Mandeln (Grimm: Geschnitzeltes), über oder zu dem Hasen gegeben. Die Zubereitung nennt dieses Rezept nicht.<list type="alternatives"><item>In Wein oder Brühe zu einer dicklichen Sauce eingekocht<note type="rationale">So beschreibt es Rumpolt an anderer Stelle; hier nicht ausgeführt.</note></item><item>Trocken eingesotten<note type="rationale">Ebenfalls an anderer Stelle bei Rumpolt belegt; hier nicht ausgeführt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0388-orig" n="ein wenig Brot" resp="#fyndling" subtype="contextual">Brot ohne nähere Angabe, so viel, dass die Sauce nach dem Durchstreichen dicklich wird; der Text nennt weder Sorte noch Menge.<list type="alternatives"><item>Roggenbrot<note type="rationale">In der verwandten Wild-Blutsauce beim Rehwild (rum-0372) nennt Rumpolt Roggenbrot ausdrücklich; hier steht nur „Brot“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0388-orig" n="sieden (Blutsauce)" resp="#fyndling" subtype="contextual">Der Text sagt nur „sieden“ bzw. „wider sieden“, ohne Angabe der Hitze.<list type="alternatives"><item>Schwach sieden lassen, nicht sprudelnd<note type="rationale">Moderner Praxishinweis, damit das Blut keine groben Gerinnsel bildet; steht nicht bei Rumpolt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -144,9 +149,9 @@ Praxis. Für die Sicherheit gilt der moderne Geflügelstandard: den Kapaun (oder
         <note type="gloss" target="#std-176-orig" n="gemuͤß" resp="#fyndling">Im mittelalterlichen Kochbuchkontext kann „Gemüse“ auch ein allgemeines Gericht oder eine Beilage bezeichnen, nicht zwingend eine Speise aus pflanzlichen Gemüsen im modernen Sinne.</note>
         <note type="gloss" target="#std-176-orig" n="dich zimpt" resp="#fyndling">„Zimpt“ ist die Verbform von „ziemen“ (dünken, scheinen, passen); „das dich zimpt es sey genug“ heißt „bis es dir genug erscheint“ - eine Aufforderung zur eigenen Einschätzung, keine zusätzliche Angabe zur Konsistenz. Dieselbe Wendung erscheint in std-253 und std-292 im selben Sinn.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dich"/></note>
         <note type="gloss" target="#std-176-orig" n="linds ſtüplin" resp="#fyndling">„Stüplin“ ist eine Nebenform von „Stäublein“ - eine feine Bestäubung mit Pulver (Zucker oder Gewürz), kein Stück Frucht oder Gebäck. Die Wendung erscheint im Korpus mehrfach in dieser Bedeutung.</note>
-        <note type="interpretive_choice" target="#std-176-orig" n="Bratdauer und -temperatur des Kapauns" resp="#fyndling">Durchgaren bis zur Kerntemperatur von etwa 74-82 °C bzw. bis der Fleischsaft klar austritt (moderner Geflügel-Sicherheitsstandard)</note>
-        <note type="interpretive_choice" target="#std-176-orig" n="Zielkonsistenz der zweiten Fassung (&quot;das dich zimpt es sey genug&quot;)" resp="#fyndling">sämig-dickflüssig, wie ein Mus<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dich"/></note>
-        <note type="interpretive_choice" target="#std-176-orig" n="Menge der Gewürzmischung (gwirtz)" resp="#fyndling">moderate Prise handelsüblicher Gewürzmischung nach Geschmack</note>
+        <note type="interpretive_choice" target="#std-176-orig" n="Bratdauer und -temperatur des Kapauns" resp="#fyndling">Durchgaren bis zur Kerntemperatur von etwa 74-82 °C bzw. bis der Fleischsaft klar austritt (moderner Geflügel-Sicherheitsstandard)<list type="alternatives"><item>Garprobe nach Augenschein und Erfahrung<note type="rationale">Der Druck nennt weder Zeit- noch Temperaturangabe für das Spießbraten des Kapauns; die historische Praxis verließ sich auf Erfahrung und Augenschein.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-176-orig" n="Zielkonsistenz der zweiten Fassung (&quot;das dich zimpt es sey genug&quot;)" resp="#fyndling">sämig-dickflüssig, wie ein Mus<list type="alternatives"><item>reines Ermessen des Kochs<note type="rationale">Der Text nennt keine feste Konsistenz, nur „bis es dir genug erscheint“ - die Zielkonsistenz bleibt im historischen Original bewusst offen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dich"/></note>
+        <note type="interpretive_choice" target="#std-176-orig" n="Menge der Gewürzmischung (gwirtz)" resp="#fyndling">moderate Prise handelsüblicher Gewürzmischung nach Geschmack<list type="alternatives"><item>keine feste Menge<note type="rationale">Der Druck nennt keine Mengenangabe für das Gewürz.</note></item></list></note>
       </div>
     </back>
   </text>

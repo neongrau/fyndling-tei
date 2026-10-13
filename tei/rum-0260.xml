@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,8 +110,8 @@ Praxis. Spanferkelköpfe beim Metzger vorbestellen, säubern und in Wasser weich
         <note type="gloss" target="#rum-0260-orig" n="Spensaw" resp="#fyndling">Spanferkel, ein junges Saugschwein. „Spen“ ist die Zitze, das Wort ist eine Nebenform von „Spanferkel“. Der Kapitelkopf „Von einer Spensaw“ nennt das Tier, von dem die Köpfe stammen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#spensaw"/></note>
         <note type="gloss" target="#rum-0260-orig" n="abgesotten" resp="#fyndling">Partizip zu „absieden“, abkochen, gar kochen. Rumpolt benutzt die Formel auch für kalt aufgetragenes Rindfleisch.</note>
         <note type="gloss" target="#rum-0260-orig" n="kalt gegeben" resp="#fyndling">„Geben“ heißt bei Rumpolt auftragen, auf den Tisch geben: Das Gericht wird kalt serviert.</note>
-        <note type="interpretive_choice" target="#rum-0260-orig" n="in Weinessig vnd Saltz" resp="#fyndling">Die gesottenen Köpfe werden mit Weinessig und Salz kalt gereicht; ob sie darin liegen, damit übergossen werden oder der Essig daneben steht, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0260-orig" n="Koͤpff" resp="#fyndling">Ganze Spanferkelköpfe, so wie das Kapitel den Kopf auch in Nr. 2 an der Haut und in Nr. 6 mitten in der Sülze im Ganzen zeigt.</note>
+        <note type="interpretive_choice" target="#rum-0260-orig" n="in Weinessig vnd Saltz" resp="#fyndling" subtype="contextual">Die gesottenen Köpfe werden mit Weinessig und Salz kalt gereicht; ob sie darin liegen, damit übergossen werden oder der Essig daneben steht, sagt der Text nicht.<list type="alternatives"><item>In Weinessig und Salz eingelegt, nach Art eines Sauerfleischs, und so kalt aufgetragen.<note type="rationale">„In Weinessig“ lässt das Einlegen zu; Dauer und Menge sind aber nicht belegt, deshalb nicht als Hauptlesart.</note></item><item>Moderne Praxis: kurz vor dem Servieren mit Weinessig beträufeln und salzen.<note type="rationale">Einfachste Ausführung, deckt den Wortlaut ohne zusätzliche Annahmen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#rum-0260-orig" n="Koͤpff" resp="#fyndling" subtype="contextual">Ganze Spanferkelköpfe, so wie das Kapitel den Kopf auch in Nr. 2 an der Haut und in Nr. 6 mitten in der Sülze im Ganzen zeigt.<list type="alternatives"><item>Moderne Praxis: nur das gekochte, ausgelöste Kopffleisch, in Scheiben geschnitten.<note type="rationale">Leichter zu essen und anzurichten; der Text schließt es nicht aus, nennt es aber auch nicht.</note></item></list></note>
       </div>
     </back>
   </text>

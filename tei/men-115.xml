@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -139,7 +144,7 @@ Praxis. Kalbfleisch (Schulter/Keule) erst halb über Glut oder am Spieß anröst
         <note type="gloss" target="#men-115-orig" n="saffran largement" resp="#fyndling">Reichlich Safran - hier das eigentliche Farbmittel für das leuchtende Gelb und zugleich Statusgewürz.</note>
         <note type="gloss" target="#men-115-orig" n="roussissent" resp="#fyndling">bräunen / rötlich werden. Begründet die Warnung, Zimt und Muskat im hellen Civet zu meiden.</note>
         <note type="gloss" target="#men-115-orig" n="estamine" resp="#fyndling">Feines Seihtuch zum Passieren des eingeweichten Brotes.</note>
-        <note type="interpretive_choice" target="#men-115-orig" n="canelle ... eschever a y mectre noiz muguectes ne canelle" resp="#fyndling">Zimt steht in der Gewürzformel, wird aber für die helle Farbe am Ende ausdrücklich zurückgenommen - im hellen Kalbs-Civet daher sparsam oder gar nicht verwenden.</note>
+        <note type="interpretive_choice" target="#men-115-orig" n="canelle ... eschever a y mectre noiz muguectes ne canelle" resp="#fyndling">Zimt steht in der Gewürzformel, wird aber für die helle Farbe am Ende ausdrücklich zurückgenommen - im hellen Kalbs-Civet daher sparsam oder gar nicht verwenden.<list type="alternatives"><item>Zimt komplett weglassen.<note type="rationale">Die Schlusswarnung gegen Zimt und Muskat wegen ihrer bräunenden Wirkung lässt sich als bindende Anweisung lesen, die die schematische Nennung in der Gewürzliste überstimmt.</note></item></list></note>
       </div>
     </back>
   </text>

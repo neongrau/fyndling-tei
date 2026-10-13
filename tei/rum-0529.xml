@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,11 +117,11 @@ Praxis. Mengen, Gerät und Zeiten nennt Rumpolt nicht. Das Gericht eignet sich f
         <note type="gloss" target="#rum-0529-orig" n="lautere" resp="#fyndling">Bedeutet „klar“ oder „rein“, also eine Brühe ohne Trübstoffe.</note>
         <note type="gloss" target="#rum-0529-orig" n="lindt gesaltzen" resp="#fyndling">Bedeutet „mild gesalzen“. Das Adjektiv „lind“ beschreibt eine sanfte, milde Qualität.</note>
         <note type="gloss" target="#rum-0529-orig" n="Pomerantzensafft" resp="#fyndling">Der Saft der Pomeranze (Bitterorange), sauer und leicht bitter.</note>
-        <note type="interpretive_choice" target="#rum-0529-orig" n="ist es weiß" resp="#fyndling">Weiß = gesottenes Fleisch. Rumpolt stellt „weiß“ gegen „gebraten“, und das Vorrezept zur Putenbrust spricht ausdrücklich von der Brust, „die gesotten ist“. Im Wortlaut bleibt „Ist es weiß“ stehen.</note>
-        <note type="interpretive_choice" target="#rum-0529-orig" n="darauß" resp="#fyndling">Das Fleisch der Pute, der das Kapitel gilt, ohne festes Teilstück; der Text nennt weder Tier noch Teil.</note>
-        <note type="interpretive_choice" target="#rum-0529-orig" n="Erhitzen in der Brühe" resp="#fyndling">Der Text nennt keinen Garschritt; das Fleisch ist laut Text schon gesotten oder gebraten. In Rumpolts Schwesterrezepten (Gehacktes von Fasan und Steinhuhn) steht „laß ein Sudt auffthun“.</note>
-        <note type="interpretive_choice" target="#rum-0529-orig" n="druckt man darein saur Pomerantzensafft" resp="#fyndling">Der Saft wird erst beim Anrichten ins fertige Gericht gedrückt („Wenn man es wil auff ein Tisch anrichten“).</note>
-        <note type="interpretive_choice" target="#rum-0529-orig" n="saur Pomerantzensafft" resp="#fyndling">Saft der Pomeranze (Bitterorange), wie buchweit aufgelöst.</note>
+        <note type="interpretive_choice" target="#rum-0529-orig" n="ist es weiß" resp="#fyndling" subtype="contextual">Weiß = gesottenes Fleisch. Rumpolt stellt „weiß“ gegen „gebraten“, und das Vorrezept zur Putenbrust spricht ausdrücklich von der Brust, „die gesotten ist“. Im Wortlaut bleibt „Ist es weiß“ stehen.<list type="alternatives"><item>Helles Fleisch (etwa Brust statt Keule)<note type="rationale">Der Gegensatz im Satz ist die Garart (gebraten), nicht das Teilstück; deshalb nur als Nebenlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0529-orig" n="darauß" resp="#fyndling" subtype="contextual">Das Fleisch der Pute, der das Kapitel gilt, ohne festes Teilstück; der Text nennt weder Tier noch Teil.<list type="alternatives"><item>Putenbrust aus den beiden vorangehenden Rezepten<note type="rationale">Naheliegend, weil Nr. 7 und 8 die Brust behandeln, aber im Text nicht gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0529-orig" n="Erhitzen in der Brühe" resp="#fyndling" subtype="contextual">Der Text nennt keinen Garschritt; das Fleisch ist laut Text schon gesotten oder gebraten. In Rumpolts Schwesterrezepten (Gehacktes von Fasan und Steinhuhn) steht „laß ein Sudt auffthun“.<list type="alternatives"><item>Das Gehackte in der Brühe heiß werden lassen und kurz aufkochen<note type="rationale">Moderne Praxis und durch die Schwesterrezepte gestützt, in diesem Rezept aber kein belegter Schritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0529-orig" n="druckt man darein saur Pomerantzensafft" resp="#fyndling" subtype="contextual">Der Saft wird erst beim Anrichten ins fertige Gericht gedrückt („Wenn man es wil auff ein Tisch anrichten“).<list type="alternatives"><item>Saft schon in der Brühe mitkochen<note type="rationale">Nicht belegt; der Text bindet den Saft ausdrücklich an das Anrichten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0529-orig" n="saur Pomerantzensafft" resp="#fyndling" subtype="lexical">Saft der Pomeranze (Bitterorange), wie buchweit aufgelöst.<list type="alternatives"><item>Zitronensaft<note type="rationale">Moderner Ersatz, weil Bitterorangensaft schwer erhältlich ist; geschmacklich weniger bitter.</note></item></list></note>
       </div>
     </back>
   </text>

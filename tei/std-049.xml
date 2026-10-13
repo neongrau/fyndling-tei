@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,8 +125,8 @@ Praxis. Quitten in dünne Scheiben schneiden, Kerngehäuse und Kerne entfernen. 
         <note type="gloss" target="#std-049-orig" n="Schmaltz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz. Für eine vegetarische Variante kann Pflanzenöl oder Butter verwendet werden.</note>
         <note type="gloss" target="#std-049-orig" n="Glütlin" resp="#fyndling">Diminutiv von Glut, bedeutet hier eine kleine, schwache Glut. Dies sorgt für eine sanfte, indirekte Hitze, die die Quitten weich gart, ohne sie zu braten.</note>
         <note type="gloss" target="#std-049-orig" n="Teig mit Wein und Zucker gemacht" resp="#fyndling">Ein einfacher Süßteig, der mit Wein statt Wasser oder Milch zubereitet wird. Der Wein verleiht dem Teig eine besondere Geschmacksnote.</note>
-        <note type="interpretive_choice" target="#std-049-orig" n="Teig mit Wein und Zucker gemacht (impliziertes Mehl)" resp="#fyndling">Der Teig enthält Weizenmehl als Basis.</note>
-        <note type="interpretive_choice" target="#std-049-orig" n="Temperatur beim Ausbacken im Teig" resp="#fyndling">Für das eigentliche Ausbacken wird die Schmalz-Temperatur gegenüber dem vorangehenden Weichgaren angehoben; die im Text genannte Teigfarbe (gelb bleibend) dient als Garkontrolle.</note>
+        <note type="interpretive_choice" target="#std-049-orig" n="Teig mit Wein und Zucker gemacht (impliziertes Mehl)" resp="#fyndling">Der Teig enthält Weizenmehl als Basis.<list type="alternatives"><item>Das Rezept nennt kein Mehl explizit.<note type="rationale">Obwohl das Rezept kein Mehl explizit erwähnt, ist es eine notwendige Zutat für einen 'Teig'. Historische Kochbücher ließen oft Grundzutaten weg, die als selbstverständlich galten.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-049-orig" n="Temperatur beim Ausbacken im Teig" resp="#fyndling">Für das eigentliche Ausbacken wird die Schmalz-Temperatur gegenüber dem vorangehenden Weichgaren angehoben; die im Text genannte Teigfarbe (gelb bleibend) dient als Garkontrolle.<list type="alternatives"><item>Gleiche milde Temperatur wie beim Weichgaren beibehalten und länger backen, bis der Teig durchgegart ist.<note type="rationale">Der Text nennt für die zweite Phase keine eigene Temperaturangabe - nur das vorangehende Weichgaren wird ausdrücklich als warm, nicht heiß, bezeichnet. Beide Lesarten sind mit dem Wortlaut vereinbar; die höhere Temperatur ist die praktisch naheliegendere, weil sie die im Text genannte Farbkontrolle sinnvoll macht.</note></item></list></note>
       </div>
     </back>
   </text>

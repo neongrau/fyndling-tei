@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,10 +126,10 @@ Praxis. Ein Spieß über Glut und ein Topf genügen. Mengen, Zeiten und das Flei
         <note type="gloss" target="#rum-0318-orig" n="mach es ab" resp="#fyndling">Abmachen heißt hier würzen, mit Essig, Gewürz und Wacholderbeeren vollenden. Das Probieren folgt erst danach („versuch es“).</note>
         <note type="gloss" target="#rum-0318-orig" n="Gewuͤrtz" resp="#fyndling">Allgemein „Gewürz“. Rumpolt legt hier keine Zusammensetzung fest; namentlich nennt er nur die Wacholderbeeren.</note>
         <note type="gloss" target="#rum-0318-orig" n="Denn man muß ein Speiß kochen/ kosten/ vnnd versuchen." resp="#fyndling">Rumpolts eindringlicher Rat an die Köche, ihre Speisen stets zu kosten und abzuschmecken.</note>
-        <note type="interpretive_choice" target="#rum-0318-orig" n="Eyngedaͤmpfft" resp="#fyndling">Gedünstet, in Flüssigkeit gar gemacht. So lesen es die Mundartwörterbücher („Eingedämpft Fleisch“ = dünsten, garen) und Rumpolts übrige Rezepte; hier gibt der Text das Verfahren selbst an: Brühe oder Wasser aufgießen und „wol sieden“.</note>
-        <note type="interpretive_choice" target="#rum-0318-orig" n="Fleisch im Stück oder geschnitten" resp="#fyndling">Der Text sagt nur „zeuchs ab in ein Hafenkessel“: Das Fleisch kann als ganzes Bratenstück vom Spieß in den Topf kommen und dort gar gesotten werden.</note>
-        <note type="interpretive_choice" target="#rum-0318-orig" n="Bruͤh/ oder kalt Wasser" resp="#fyndling">Rumpolt stellt beide gleich. Mit kaltem Wasser kommt der Geschmack allein aus Fleisch, Zwiebeln und Wacholder.</note>
-        <note type="interpretive_choice" target="#rum-0318-orig" n="Gewuͤrtz" resp="#fyndling">Unbestimmtes „Gewürz“: Rumpolt nennt keine Zusammensetzung, die Auswahl bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0318-orig" n="Eyngedaͤmpfft" resp="#fyndling" subtype="lexical">Gedünstet, in Flüssigkeit gar gemacht. So lesen es die Mundartwörterbücher („Eingedämpft Fleisch“ = dünsten, garen) und Rumpolts übrige Rezepte; hier gibt der Text das Verfahren selbst an: Brühe oder Wasser aufgießen und „wol sieden“.<list type="alternatives"><item>Dünsten mit wenig Flüssigkeit im zugedeckten Topf<note type="rationale">So meint es Rumpolt bei anderen eingedämpften Braten. Hier spricht dagegen, dass ausdrücklich Brühe oder Wasser aufgegossen und gut gesotten wird; einen Deckel nennt der Text nicht.</note></item><item>Einkochen im heutigen Sinn von Haltbarmachen<note type="rationale">Verworfen: Nichts im Rezept zielt auf Vorrat, das Gericht wird nach dem Abschmecken gegessen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0318-orig" n="Fleisch im Stück oder geschnitten" resp="#fyndling" subtype="contextual">Der Text sagt nur „zeuchs ab in ein Hafenkessel“: Das Fleisch kann als ganzes Bratenstück vom Spieß in den Topf kommen und dort gar gesotten werden.<list type="alternatives"><item>Nach dem Halb-Braten in Stücke schneiden und im Topf gar sieden<note type="rationale">Praktische Wahl für heute: Die Stücke garen gleichmäßiger und schneller. Der Text schließt das nicht aus, verlangt es aber auch nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0318-orig" n="Bruͤh/ oder kalt Wasser" resp="#fyndling" subtype="contextual">Rumpolt stellt beide gleich. Mit kaltem Wasser kommt der Geschmack allein aus Fleisch, Zwiebeln und Wacholder.<list type="alternatives"><item>Brühe bevorzugen<note type="rationale">Praktische Wahl für ein kräftigeres Ergebnis; nach dem Text keine Pflicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0318-orig" n="Gewuͤrtz" resp="#fyndling" subtype="lexical">Unbestimmtes „Gewürz“: Rumpolt nennt keine Zusammensetzung, die Auswahl bleibt offen.<list type="alternatives"><item>Eine bestimmte Gewürzmischung ergänzen<note type="rationale">Der Text gibt dafür nichts her. Wer würzt, trifft eine eigene Wahl; namentlich verlangt sind nur Essig und Wacholderbeeren.</note></item></list></note>
       </div>
     </back>
   </text>

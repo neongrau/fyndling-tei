@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,10 +110,10 @@ Praxis. Die Fleischstücke in der Sauce sanft köcheln lassen, bis sie die Sauce
         <note type="gloss" target="#rum-0068-orig" n="eingemachten" resp="#fyndling">In Sauce angerichtet, fertig angemacht, nicht konserviert.</note>
         <note type="gloss" target="#rum-0068-orig" n="fein saͤurlich" resp="#fyndling">Angenehm säuerlich; „fein“ bezeichnet die Art der Säure, nicht ihre Stärke.</note>
         <note type="gloss" target="#rum-0068-orig" n="Eschenfarb" resp="#fyndling">Aschfarben, aschgrau (Grimm: „eschenfarbe“). Womit die Farbe erzielt wird, sagt Rumpolt hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-0068-orig" n="an die statt" resp="#fyndling">„brat es gar an die statt“ = ganz gar braten. Die Lesart „gar, fertig“ stützt sich auf Rumpolts häufiges „an die statt sieden“ im selben Buch; ein Wörterbuchbeleg für die Wendung liegt nicht vor.</note>
-        <note type="interpretive_choice" target="#rum-0068-orig" n="Welche Pfeffersauce" resp="#fyndling">Eine der früher im Buch beschriebenen Pfeffersaucen; Rumpolt nennt drei Sorten (Pfeffer, gelb, aschfarben) und verlangt nur „wol zugerichtet“ und „fein säurlich“. Welche Stelle „wie zuvor vermeldt“ meint, sagt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0068-orig" n="Rindtfleisch (Stück)" resp="#fyndling">Der Text nennt nur „Rindtfleisch“ aus dem Ochsenkapitel; Schnitt und Größe bleiben offen.</note>
-        <note type="interpretive_choice" target="#rum-0068-orig" n="Laß damit sieden" resp="#fyndling">Das Fleisch in der Sauce sieden lassen; Dauer und Stärke nennt Rumpolt nicht.</note>
+        <note type="interpretive_choice" target="#rum-0068-orig" n="an die statt" resp="#fyndling" subtype="contextual">„brat es gar an die statt“ = ganz gar braten. Die Lesart „gar, fertig“ stützt sich auf Rumpolts häufiges „an die statt sieden“ im selben Buch; ein Wörterbuchbeleg für die Wendung liegt nicht vor.<list type="alternatives"><item>nur fast gar braten, das Garen erst in der Sauce beenden<note type="rationale">Rumpolt schreibt an anderen Stellen „schier an die statt“ für „fast gar“. Hier fehlt „schier“, und „gar“ steht dabei, daher weniger wahrscheinlich; wer das Fleisch saftiger will, kann es trotzdem so machen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0068-orig" n="Welche Pfeffersauce" resp="#fyndling" subtype="contextual">Eine der früher im Buch beschriebenen Pfeffersaucen; Rumpolt nennt drei Sorten (Pfeffer, gelb, aschfarben) und verlangt nur „wol zugerichtet“ und „fein säurlich“. Welche Stelle „wie zuvor vermeldt“ meint, sagt er nicht.<list type="alternatives"><item>beliebige säuerliche Pfeffersauce auf Essig- oder Verjus-Grundlage, ohne Farbe festzulegen<note type="rationale">Praktischer Ansatz für heute, weil der Rückverweis keine bestimmte Rezeptur nennt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0068-orig" n="Rindtfleisch (Stück)" resp="#fyndling" subtype="contextual">Der Text nennt nur „Rindtfleisch“ aus dem Ochsenkapitel; Schnitt und Größe bleiben offen.<list type="alternatives"><item>bratfähiges Stück wie Hüfte oder Oberschale<note type="rationale">Passt zum Braten am Spieß und zum anschließenden Zerteilen; eine Festlegung durch den Text ist es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0068-orig" n="Laß damit sieden" resp="#fyndling" subtype="contextual">Das Fleisch in der Sauce sieden lassen; Dauer und Stärke nennt Rumpolt nicht.<list type="alternatives"><item>sanft köcheln, bis das Fleisch die Sauce angenommen hat<note type="rationale">Das Fleisch ist vom Spieß schon gar; das Sieden dient vor allem dem Geschmack, daher genügt geringe Hitze.</note></item></list></note>
       </div>
     </back>
   </text>

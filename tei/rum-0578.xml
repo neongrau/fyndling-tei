@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,9 +106,9 @@ Praxis. Die Teighülle schützt das Fleisch beim Backen und hält es saftig; das
         <note type="gloss" target="#rum-0578-orig" n="in Pasteten eyngemacht" resp="#fyndling">„Einmachen“ heißt hier: in die Pastete einschließen, also in eine Teighülle setzen. Rumpolt gebraucht die Fügung „in Pasteten eyngemacht“ auch bei Knödeln vom Damhirsch und bei der kalten Pfauenpastete im Pastetenteil. Gemeint ist weder eine Konserve noch ein Anrichten in Brühe oder Soße.</note>
         <note type="gloss" target="#rum-0578-orig" n="kalt lassen werden" resp="#fyndling">Rumpolts feste Wendung für „kalt werden lassen“: Die Pastete wird kalt gegessen. Eine Haltbarmachung ist damit nicht gemeint.</note>
         <note type="gloss" target="#rum-0578-orig" n="Pasteten" resp="#fyndling">Eine Pastete ist ein Gericht in einer gebackenen Teighülle. Rumpolt gibt Pasteten je nach Rezept warm oder kalt.</note>
-        <note type="interpretive_choice" target="#rum-0578-orig" n="in Pasteten eyngemacht" resp="#fyndling">In eine Pastete eingeschlossen, also in eine Teighülle gesetzt. Rumpolt gebraucht dieselbe Fügung bei den Damhirschknödeln (rum-0354) und bei der kalten Pfauenpastete (rum-1768); die Übersetzung gleicht sich an rum-0354 an.</note>
-        <note type="interpretive_choice" target="#rum-0578-orig" n="Pfau ganz oder zerlegt" resp="#fyndling">Offen gelassen: Der Text sagt nur „Pfauwen“ und legt nicht fest, ob der ganze Vogel oder zerlegtes Fleisch in die Pastete kommt.</note>
-        <note type="interpretive_choice" target="#rum-0578-orig" n="Füllung der Pastete" resp="#fyndling">Nur Pfau: Der Text nennt keine weiteren Zutaten.</note>
+        <note type="interpretive_choice" target="#rum-0578-orig" n="in Pasteten eyngemacht" resp="#fyndling" subtype="lexical">In eine Pastete eingeschlossen, also in eine Teighülle gesetzt. Rumpolt gebraucht dieselbe Fügung bei den Damhirschknödeln (rum-0354) und bei der kalten Pfauenpastete (rum-1768); die Übersetzung gleicht sich an rum-0354 an.<list type="alternatives"><item>In Brühe oder Soße angerichtet<note type="rationale">So gebraucht Rumpolt „eyngemacht“ bei Fleischgerichten ohne Pastete. Zu einer Pastete passt diese Lesart nicht, denn der Text nennt weder Brühe noch Soße.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0578-orig" n="Pfau ganz oder zerlegt" resp="#fyndling" subtype="contextual">Offen gelassen: Der Text sagt nur „Pfauwen“ und legt nicht fest, ob der ganze Vogel oder zerlegtes Fleisch in die Pastete kommt.<list type="alternatives"><item>Ganzer Vogel in der Pastete<note type="rationale">Denkbar, weil Rumpolt den kalten Pfau in Nr. 3 mit den Federn anrichtet und im Pastetenteil eine Pfauenpastete mit aufgerichtetem Kopf, Flügeln und Schwanz führt. Für diese Nummer sagt der Text das nicht.</note></item><item>Zerlegtes Pfauenfleisch in der Pastete<note type="rationale">Ebenso mit dem Wortlaut vereinbar und für eine kalte, schnittfeste Pastete praktischer; ebenfalls nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0578-orig" n="Füllung der Pastete" resp="#fyndling" subtype="contextual">Nur Pfau: Der Text nennt keine weiteren Zutaten.<list type="alternatives"><item>Pfau mit Würzung oder Beigabe in der Pastete<note type="rationale">Bei anderen Pasteten nennt Rumpolt Beigaben, etwa Zitronen (rum-0734). Hier fehlt jede Angabe; eine Würzung wäre eigene Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

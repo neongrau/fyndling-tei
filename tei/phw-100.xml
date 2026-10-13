@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,9 +129,9 @@ Die dünnen Teigspindeln vertragen keine zu große Hitze, sonst verbrennen sie a
         <note type="gloss" target="#phw-100-orig" n="syttig" resp="#fyndling">Bedeutet ‚sachte' oder ‚langsam' backen, also bei milder, gleichmäßiger Hitze, um ein Verbrennen zu vermeiden.</note>
         <note type="gloss" target="#phw-100-orig" n="besenn" resp="#fyndling">Eine frühneuhochdeutsche Form des Verbs ‚besäen', hier im Sinne von ‚bestreuen', also mit Zucker bestreuen.</note>
         <note type="gloss" target="#phw-100-orig" n="hasen nerla" resp="#fyndling">Bezeichnet einen im Buch bereits als bekannt vorausgesetzten Süßteig (Hasenöhrlein), auf den hier nur verwiesen wird, ohne ihn erneut zu erklären. Derselbe Begriff erscheint auch im rund zehn Jahre jüngeren Kochbuch der Sabina Welserin als hassenerrlach, dort ebenfalls als bekannter Referenzteig für anderes Fettgebäck zitiert.</note>
-        <note type="interpretive_choice" target="#phw-100-orig" n="nerla" resp="#fyndling">‚Hasenohren-Teig' (Diminutiv von Ohr) - gestützt durch das fast wortgleiche Rezept aus dem Wolfenbütteler Kunst- und Arzneibuch, das die Kognatform als Hasenohr-Teig liest, und durch die konsistente Lesart an drei weiteren Stellen dieses Buchs, die auf denselben Grundteig verweisen.</note>
-        <note type="interpretive_choice" target="#phw-100-orig" n="syttig bachen" resp="#fyndling">Gelesen als ‚sachte backen', also bei milder, gleichmäßiger Hitze - so durchgängig an über einem Dutzend Stellen im Buch verwendet.</note>
-        <note type="interpretive_choice" target="#phw-100-orig" n="Backdauer und Gargrad" resp="#fyndling">Der Text nennt außer der milden Hitzeführung (‚fein syttig') keine Zeit- oder Temperaturangabe; für die Praxis wird dafür ein moderner Richtwert ergänzt (siehe Praxis-Absatz).</note>
+        <note type="interpretive_choice" target="#phw-100-orig" n="nerla" resp="#fyndling" subtype="lexical">‚Hasenohren-Teig' (Diminutiv von Ohr) - gestützt durch das fast wortgleiche Rezept aus dem Wolfenbütteler Kunst- und Arzneibuch, das die Kognatform als Hasenohr-Teig liest, und durch die konsistente Lesart an drei weiteren Stellen dieses Buchs, die auf denselben Grundteig verweisen.<list type="alternatives"><item>Eine eigenständige wörterbuchliche Bestätigung der Diminutivform selbst fehlt weiterhin.<note type="rationale">Die Lesart stützt sich auf den Sachzusammenhang und die Parallelstellen, nicht auf einen eigenen Lexikoneintrag zu ‚nerla'.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-100-orig" n="syttig bachen" resp="#fyndling" subtype="philological">Gelesen als ‚sachte backen', also bei milder, gleichmäßiger Hitze - so durchgängig an über einem Dutzend Stellen im Buch verwendet.<list type="alternatives"><item>Ein Wörterbuch-Homograph ‚süttig' bedeutet stattdessen ‚siedend heiß' und ist vereinzelt im frühen 16. Jahrhundert belegt.<note type="rationale">Bei einem in heißem Schmalz gebackenen Gebäck wie diesem wäre diese Lesart technisch nicht weniger plausibel als ‚sachte'; ob an dieser Stelle ‚i' oder ‚ü' steht, ist am Druck nicht zu klären und bleibt offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-100-orig" n="Backdauer und Gargrad" resp="#fyndling" subtype="contextual">Der Text nennt außer der milden Hitzeführung (‚fein syttig') keine Zeit- oder Temperaturangabe; für die Praxis wird dafür ein moderner Richtwert ergänzt (siehe Praxis-Absatz).<list type="alternatives"><item>Historisch wurde die Hitze allein über den Abstand zur Glut geregelt und der Garzustand an Farbe und Festigkeit geprüft, ganz ohne festen Zeit- oder Temperaturwert.<note type="rationale">Am offenen Feuer ohne Thermometer ist ‚fein syttig bachenn' die einzige im Text gegebene Anleitung; ein exakter moderner Wert lässt sich daraus nicht ableiten, sondern wird nur für die Nachkochbarkeit ergänzt.</note></item></list></note>
       </div>
     </back>
   </text>

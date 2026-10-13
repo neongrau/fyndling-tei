@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,7 +115,7 @@ Rührei oder Spiegelei? Das Rezept lässt es offen, aber die schlichte Anweisung
         <note type="gloss" target="#mha-016-orig" n="muosz" resp="#fyndling">Im Kochbuch des Meisters Hans ist ‚Muosz' ein Sammelbegriff für verschiedene Speisen, die oft breiartig sind, aber auch Aufläufe, Pfannkuchen oder, wie hier, gebratene Eierspeisen umfassen können.</note>
         <note type="gloss" target="#mha-016-orig" n="eyttel" resp="#fyndling">Bedeutet ‚rein', ‚nur' oder ‚ausschließlich'. Hier: nur aus Eiern bestehend.</note>
         <note type="gloss" target="#mha-016-orig" n="pratt es" resp="#fyndling">Eine Anweisung zum Braten oder Rösten in der Pfanne.</note>
-        <note type="interpretive_choice" target="#mha-016-orig" n="muosz" resp="#fyndling">Wir interpretieren ‚muosz' in diesem Kontext als eine gebratene Eierspeise, im Ergebnis ein Rührei, da das Rezept die Zubereitung in einer Pfanne mit Schmalz vorsieht.</note>
+        <note type="interpretive_choice" target="#mha-016-orig" n="muosz" resp="#fyndling">Wir interpretieren ‚muosz' in diesem Kontext als eine gebratene Eierspeise, im Ergebnis ein Rührei, da das Rezept die Zubereitung in einer Pfanne mit Schmalz vorsieht.<list type="alternatives"><item>Eine andere Lesart wäre ein Brei oder eine Art Auflauf.<note type="rationale">Obwohl ‚Muosz' oft Brei bedeutet, widerspricht die explizite Anweisung zum Braten in der Pfanne mit Schmalz dieser Interpretation für dieses spezifische Rezept. Ein Brei würde typischerweise gekocht und nicht gebraten.</note></item></list></note>
       </div>
     </back>
   </text>

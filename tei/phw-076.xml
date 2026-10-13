@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -147,8 +152,8 @@ Praxis. Aal häuten, ädern (Adern und Blutgefäße entfernen, nicht die Gräten
         <note type="gloss" target="#phw-076-orig" n="grenen kreyttlin" resp="#fyndling">Grüne Kräutlein sind frische Kräuter, die dem Gericht zusätzliche Würze und Farbe verleihen. Typisch wären Petersilie, Dill oder Kerbel.</note>
         <note type="gloss" target="#phw-076-orig" n="syesen wein" resp="#fyndling">Süßer Wein, oft ein Dessertwein oder ein gesüßter Wein, der in der mittelalterlichen Küche häufig zum Abrunden von Gerichten verwendet wurde, um eine süße Note zu geben.</note>
         <note type="gloss" target="#phw-076-orig" n="dayg hafen" resp="#fyndling">Ein ‚Hafen‘ ist hier kein Kochgefäß aus Ton oder Metall, sondern eine selbsttragende Hülle aus Teig, wie sie im Buch für die Pasteten eigens beschrieben wird - der Teig wird geformt, befüllt, verschlossen und mitgebacken.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
-        <note type="interpretive_choice" target="#phw-076-orig" n="vber brott jn dan ain wenig" resp="#fyndling">‚Brate ihn dann ein wenig an‘, wobei ‚brott‘ als Verbform von ‚braten‘ und ‚vber‘ als Präfix für leichtes Anbraten verstanden wird.</note>
-        <note type="interpretive_choice" target="#phw-076-orig" n="las gemach bachenn" resp="#fyndling">Der Text nennt nur die Qualität des Backens (gemächlich/mäßig), aber weder Backdauer noch Hitzequelle.</note>
+        <note type="interpretive_choice" target="#phw-076-orig" n="vber brott jn dan ain wenig" resp="#fyndling" subtype="lexical">‚Brate ihn dann ein wenig an‘, wobei ‚brott‘ als Verbform von ‚braten‘ und ‚vber‘ als Präfix für leichtes Anbraten verstanden wird.<list type="alternatives"><item>Eine andere Lesart könnte ‚überbrate ihn dann ein wenig‘ sein, was ein stärkeres Anbraten implizieren würde.<note type="rationale">Der Zusatz ‚ain wenig‘ (ein wenig) spricht eher für ein leichtes Anbraten (anbraten/vorbraten) als für ein intensives Überbraten.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-076-orig" n="las gemach bachenn" resp="#fyndling" subtype="contextual">Der Text nennt nur die Qualität des Backens (gemächlich/mäßig), aber weder Backdauer noch Hitzequelle.<list type="alternatives"><item>Historisch könnte, wie bei einem anderen Rezept dieses Buchs mit demselben Hafen-Typ, ein deutlich längeres Garen in der Herdglut gemeint sein.<note type="rationale">Das Nachbarrezept zur Quittenpastete im selben Hafen-Typ nennt für eine reine Obstfüllung ausdrücklich fast drei Stunden Backzeit in aufgelegter Glut - für dieses Rezept mit rohem Fisch ist das nicht ohne Weiteres übertragbar.</note></item></list></note>
       </div>
     </back>
   </text>

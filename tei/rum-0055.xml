@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,8 +104,8 @@
 Praxis. Wer das Gericht nachkochen will, ergänzt hier moderne Handgriffe, die nicht von Rumpolt stammen: ein Stück Rindfleisch in gesalzenem Wasser weich sieden, im Sud oder auf einem Brett abkühlen lassen und kalt auftragen. Stück, Zeit und Salzmenge bleiben freie Wahl.</note>
         <note type="gloss" target="#rum-0055-orig" n="abgesotten" resp="#fyndling">Partizip zu „absieden“: fertig sieden, gar kochen. Die Formel „kalt abgesotten“ verwendet Rumpolt öfter, etwa bei Ochsenfüßen, jungen Hühnern und Wildschweinsbrust.</note>
         <note type="gloss" target="#rum-0055-orig" n="im Saltz" resp="#fyndling">Wahrscheinlich „in gesalzenem Wasser“ gesotten. Das eingesalzene, also gepökelte Rindfleisch nennt Rumpolt eigens in der folgenden Nummer 56; eine Salzlake ist hier nicht genannt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0055-orig" n="im Saltz" resp="#fyndling">In gesalzenem Wasser gar gesotten (Salz als Würze), danach kalt gegessen. Rumpolt beschreibt dasselbe beim Wildschwein ausdrücklich („in lauterm Saltz abgesotten/ vnd kalt lassen werden“) und führt das eingesalzene Rindfleisch direkt danach als eigene Nummer 56; stünde hier schon Pökelfleisch, wäre die Unterscheidung überflüssig. Für Nr. 55 selbst bleibt das ein Schluss aus der Nachbarschaft.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0055-orig" n="Fleischstück und Garzeit" resp="#fyndling">Offen: Das Kapitel handelt vom Ochsen, ein bestimmtes Stück nennt Nr. 55 nicht, eine Garzeit auch nicht.</note>
+        <note type="interpretive_choice" target="#rum-0055-orig" n="im Saltz" resp="#fyndling" subtype="contextual">In gesalzenem Wasser gar gesotten (Salz als Würze), danach kalt gegessen. Rumpolt beschreibt dasselbe beim Wildschwein ausdrücklich („in lauterm Saltz abgesotten/ vnd kalt lassen werden“) und führt das eingesalzene Rindfleisch direkt danach als eigene Nummer 56; stünde hier schon Pökelfleisch, wäre die Unterscheidung überflüssig. Für Nr. 55 selbst bleibt das ein Schluss aus der Nachbarschaft.<list type="alternatives"><item>Als Pökelfleisch, über Tage in Salzlake eingesalzen<note type="rationale">Nicht gewählt: Weder „Lake“ noch Einsalzen steht im Text, und Nr. 56 benennt das Eingesalzene gesondert. Ausschließen lässt es sich aus der einen Zeile aber nicht.</note></item><item>Das kalte gesottene Fleisch wird mit Salz aufgetragen<note type="rationale">Möglich, aber schwächer: „im Saltz“ klingt eher nach einem Medium, in dem das Fleisch liegt oder gekocht wird, als nach einer Beigabe.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#rum-0055-orig" n="Fleischstück und Garzeit" resp="#fyndling" subtype="contextual">Offen: Das Kapitel handelt vom Ochsen, ein bestimmtes Stück nennt Nr. 55 nicht, eine Garzeit auch nicht.<list type="alternatives"><item>Beim Nachkochen ein beliebiges Siedstück weich garen<note type="rationale">Moderne Ergänzung für die Praxis, nicht Rumpolts Angabe.</note></item></list></note>
       </div>
     </back>
   </text>

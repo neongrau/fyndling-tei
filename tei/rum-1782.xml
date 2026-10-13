@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,10 +135,10 @@ Praxis. Die Zubereitungszeit von etwa zweieinhalb Stunden ist eine Schätzung, d
         <note type="gloss" target="#rum-1782-orig" n="vngeschmaͤltzt" resp="#fyndling">Von Butter gesagt: nicht ausgelassen, also ungeschmolzene Butter. In der Karpfenpastete rum-1780 heißt es entsprechend „frische Butter/ die vnzerlassen ist“. „Ungesalzen“ ist nicht gemeint: In rum-0041 stehen „vngeschmaͤltzt“ und „vngesaltzen“ als zwei Wörter nebeneinander.</note>
         <note type="gloss" target="#rum-1782-orig" n="angemacht" resp="#fyndling">Zubereitet oder abgeschmeckt. Die Quelle nennt hier keine Zutaten dafür.</note>
         <note type="gloss" target="#rum-1782-orig" n="laß auffsieden" resp="#fyndling">Aufkochen lassen. Hier geschieht das im Ofen, nachdem das Blut in die aufgeschnittene Pastete gegossen ist.</note>
-        <note type="interpretive_choice" target="#rum-1782-orig" n="gesotten vnd angemacht" resp="#fyndling">Das Blut wird gekocht und fertig zubereitet. Welche Zutaten beim Anmachen dazukommen, sagt der Text nicht, und sie werden nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-1782-orig" n="vngeschmaͤltzt" resp="#fyndling">Nicht ausgelassen: ungeschmolzene Butter, nicht zerlassen. Die Nachbarpastete rum-1780 sagt dasselbe mit „frische Butter/ die vnzerlassen ist“.</note>
-        <note type="interpretive_choice" target="#rum-1782-orig" n="schwartze Rosein" resp="#fyndling">Dunkle Rosinen (getrocknete Weinbeeren).</note>
-        <note type="interpretive_choice" target="#rum-1782-orig" n="laß backen" resp="#fyndling">Im Backofen backen, bis die Pastete gar ist. Hitze und Dauer nennt Rumpolt nicht; sie richten sich nach Ofen und Augenmaß.</note>
+        <note type="interpretive_choice" target="#rum-1782-orig" n="gesotten vnd angemacht" resp="#fyndling" subtype="contextual">Das Blut wird gekocht und fertig zubereitet. Welche Zutaten beim Anmachen dazukommen, sagt der Text nicht, und sie werden nicht ergänzt.<list type="alternatives"><item>Wie in der Karpfenpastete rum-1780: das Blut mit Wein und Roggenbrot durchgestrichen und mit Zimt, Zucker und Pfeffer angemacht.<note type="rationale">Parallelstelle im selben Kapitel mit demselben Nachguss-Verfahren. Rumpolt schreibt die Zutaten dort aber ausdrücklich hin und hier nicht; deshalb nur als Möglichkeit.</note></item><item>Mit Wein und Essig abgerührt, wie bei Staindl (std-091: „ein wenig mit wein vnd essig abgeruͤrt“).<note type="rationale">Belegt die Verwendung von Karpfenblut in einer Pastete in einer anderen Quelle. Staindl gießt das Blut vor dem Backen ein, Rumpolt erst danach; als Hypothese.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1782-orig" n="vngeschmaͤltzt" resp="#fyndling" subtype="lexical">Nicht ausgelassen: ungeschmolzene Butter, nicht zerlassen. Die Nachbarpastete rum-1780 sagt dasselbe mit „frische Butter/ die vnzerlassen ist“.<list type="alternatives"><item>Ungesalzene Butter.<note type="rationale">Im selben Satz wird mit Salz gewürzt, deshalb läge die Lesart nahe. In rum-0041 stehen „vngeschmaͤltzt“ und „vngesaltzen“ aber als zwei verschiedene Wörter nebeneinander; „vngeschmaͤltzt“ meint also nicht „ungesalzen“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1782-orig" n="schwartze Rosein" resp="#fyndling" subtype="lexical">Dunkle Rosinen (getrocknete Weinbeeren).<list type="alternatives"><item>Korinthen.<note type="rationale">Kleine dunkle Trockenbeeren wären ebenfalls möglich. Wo Rumpolt sie meinen dürfte, schreibt er „kleine schwartze Rosein“ (rum-1780); hier fehlt „kleine“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1782-orig" n="laß backen" resp="#fyndling" subtype="contextual">Im Backofen backen, bis die Pastete gar ist. Hitze und Dauer nennt Rumpolt nicht; sie richten sich nach Ofen und Augenmaß.<list type="alternatives"><item>Heutige Orientierung: etwa eine bis anderthalb Stunden im vorgeheizten Ofen; Staindl lässt seine Karpfenpastete „zwuͦ stund“ backen (std-091).<note type="rationale">Praktische Schätzung und Vergleich mit einer anderen Quelle, kein Wortlaut dieses Rezepts.</note></item></list></note>
       </div>
     </back>
   </text>

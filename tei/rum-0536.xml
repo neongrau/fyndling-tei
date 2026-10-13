@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,9 +98,9 @@ Woraus besteht die Torte? Sehr wahrscheinlich aus Blancmanger. Das „Oder“ sc
 
 Praxis. Wer sie nachbauen will, kocht den Blancmanger nach rum-0682 aus Putenbrust (Eigelb dazu, wie in rum-1823), lässt ihn abkühlen und füllt ihn in eine Torte aus vielen Teigblättern nach rum-1819, jedes Blatt mit Butter bestrichen. Im Ofen backen, warm geben und mit Zucker bestreuen.</note>
         <note type="gloss" target="#rum-0536-orig" n="Turten" resp="#fyndling">Rumpolts Wort für die Torte. Er führt Turten und Pasteten als getrennte Gerichte: Im selben Kapitel steht die Spanische Torte (Nr. 16) zwischen der Ungarischen Torte (Nr. 15) und den Spanischen Pasteten (Nr. 17), und später im Buch hat er ein eigenes Kapitel „Von allerley Turten“, in dem auch süße Torten mit Äpfeln, Mandeln oder Zucker stehen. Dort stehen die Ungarische Torte als Nr. 25 (rum-1819) und die Spanische als Nr. 26 (rum-1820). Ob diese hier herzhaft oder süß gedacht ist, sagt die Überschrift nicht.</note>
-        <note type="interpretive_choice" target="#rum-0536-orig" n="Pute (Tier)" resp="#fyndling">Pute: Die Überschrift nennt kein Tier, die Nummer steht aber als sechzehnte Speise im Kapitel „Von einer Jndianischen Henn seind zwantzigerley Speiß vnd Trachten zu machen“.</note>
-        <note type="interpretive_choice" target="#rum-0536-orig" n="Turten" resp="#fyndling">Torte: Rumpolt trennt Turten und Pasteten (Nr. 15/16 gegen Nr. 12/17) und hat ein eigenes Tortenkapitel; daher „Torte“ wie bei der Ungarischen Torte (rum-0535).</note>
-        <note type="interpretive_choice" target="#rum-0536-orig" n="Füllung der Spanischen Torte" resp="#fyndling">Wahrscheinlich eine Torte aus Blancmanger von der Putenbrust, mit vielen Teigblättern: Das „Oder“ schließt an Nr. 15 an, und Rumpolt nennt im Tortenkapitel (rum-1820) die Spanische Torte „von einem Manscho Blancko mit viel Blettern“. Ausdrücklich steht es bei dieser Nummer nicht.</note>
+        <note type="interpretive_choice" target="#rum-0536-orig" n="Pute (Tier)" resp="#fyndling" subtype="contextual">Pute: Die Überschrift nennt kein Tier, die Nummer steht aber als sechzehnte Speise im Kapitel „Von einer Jndianischen Henn seind zwantzigerley Speiß vnd Trachten zu machen“.</note>
+        <note type="interpretive_choice" target="#rum-0536-orig" n="Turten" resp="#fyndling" subtype="lexical">Torte: Rumpolt trennt Turten und Pasteten (Nr. 15/16 gegen Nr. 12/17) und hat ein eigenes Tortenkapitel; daher „Torte“ wie bei der Ungarischen Torte (rum-0535).<list type="alternatives"><item>Pastete oder herzhafter Fleischkuchen<note type="rationale">Nicht übernommen: Rumpolt stellt die Pasteten im selben Kapitel als eigenes Gericht daneben, und sein Tortenkapitel enthält auch süße Torten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0536-orig" n="Füllung der Spanischen Torte" resp="#fyndling" subtype="contextual">Wahrscheinlich eine Torte aus Blancmanger von der Putenbrust, mit vielen Teigblättern: Das „Oder“ schließt an Nr. 15 an, und Rumpolt nennt im Tortenkapitel (rum-1820) die Spanische Torte „von einem Manscho Blancko mit viel Blettern“. Ausdrücklich steht es bei dieser Nummer nicht.<list type="alternatives"><item>eigenständige Torte aus Putenfleisch<note type="rationale">Ebenso möglich, aber weniger wahrscheinlich: das „Oder“ kann sich auch allgemein auf die Putenspeisen beziehen. Gegen diese Lesart spricht rum-1820.</note></item><item>geblätterte Torte aus Blancmanger, mit Butter oder Speck bestrichen und mit Zucker bestreut<note type="rationale">So beschreibt Rumpolt eine Spanische Torte im späteren Tortenkapitel (rum-1820); für diese Nummer die wahrscheinliche Ausführung.</note></item></list></note>
       </div>
     </back>
   </text>

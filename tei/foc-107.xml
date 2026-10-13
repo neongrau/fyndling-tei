@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,7 +136,7 @@ Praxis. Aal-Brewet: Brotkrusten in Weißwein einweichen und zur Bindung zerdrüc
         <note type="gloss" target="#foc-107-orig" n="spices" resp="#fyndling">Gewürze, hier eine allgemeine Mischung, oft schärfer (powdour fort) als 'powdour', z.B. mit Pfeffer, Ingwer, Nelken.</note>
         <note type="gloss" target="#foc-107-orig" n="safroun" resp="#fyndling">Safran, ein teures Gewürz, das Speisen eine goldgelbe Farbe verleiht.</note>
         <note type="gloss" target="#foc-107-orig" n="stondyng" resp="#fyndling">Stehend, dickflüssig, geronnen. Hier im Sinne von 'nicht zu dick werden lassen'.</note>
-        <note type="interpretive_choice" target="#foc-107-orig" n="powdour" resp="#fyndling">milde Gewürzmischung (powdour douce: Zimt, Ingwer, Muskat, Zucker)</note>
+        <note type="interpretive_choice" target="#foc-107-orig" n="powdour" resp="#fyndling">milde Gewürzmischung (powdour douce: Zimt, Ingwer, Muskat, Zucker)<list type="alternatives"><item>scharfe Gewürzmischung (powdour fort)<note type="rationale">Das unspezifizierte 'powdour' kann je nach Rezept mild oder scharf gemeint sein; ohne Zusatz ist die Stufe nicht eindeutig festgelegt.</note></item></list></note>
         <note type="interpretive_choice" target="#foc-107-orig" n="loke þat it be not stondyng" resp="#fyndling">achte darauf, dass es nicht zu dick wird oder gerinnt (cremig-fließend bleiben)</note>
       </div>
     </back>

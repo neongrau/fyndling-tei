@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,9 +122,9 @@ Praxis. Mehl nur mit Eiern zu einem möglichst festen Teig kneten, wie einen Nud
         <note type="gloss" target="#b4-213-orig" n="eyttelnn ayren" resp="#fyndling">„Eitel“ heißt „nur, rein“: Der Teig wird nur mit Eiern angemacht, ohne Wasser oder Milch. Mehl ist mitgedacht, es steckt im Wort „Teig“; die Parallelfassung alb-014 nennt es ausdrücklich.</note>
         <note type="gloss" target="#b4-213-orig" n="verb" resp="#fyndling">‚Verb‘ bedeutet hier ‚färbe es‘. Es wird keine spezifische Farbe genannt.</note>
         <note type="gloss" target="#b4-213-orig" n="erwell" resp="#fyndling">‚Erwellen‘ bedeutet hier ‚aufwallen lassen‘ oder ‚erhitzen‘, bis die Flüssigkeit leicht kocht.</note>
-        <note type="interpretive_choice" target="#b4-213-orig" n="phanczelltten" resp="#fyndling">Pfannkuchen. Die CoReMA-Glosse verlinkt direkt auf ‚pancake‘ (Wikidata Q44541).</note>
-        <note type="interpretive_choice" target="#b4-213-orig" n="verb" resp="#fyndling">Färbe es - der Text nennt kein konkretes Färbemittel.</note>
-        <note type="interpretive_choice" target="#b4-213-orig" n="taig mit eyttelnn ayren (Mehl mitgedacht)" resp="#fyndling">Ein fester Teig aus Mehl, der nur mit Eiern angemacht wird, ohne Wasser oder Milch. „Eitel“ heißt „nur, rein“ und bezieht sich auf die Flüssigkeit; das Mehl steckt im Wort „Teig“ und in der Forderung, ihn so fest wie möglich zu machen und dünn auszurollen. Die Parallelfassung im Alemannischen Büchlein (alb-014) nennt es ausdrücklich: „teig von Itel ayer vnd mel“.</note>
+        <note type="interpretive_choice" target="#b4-213-orig" n="phanczelltten" resp="#fyndling" subtype="lexical">Pfannkuchen. Die CoReMA-Glosse verlinkt direkt auf ‚pancake‘ (Wikidata Q44541).<list type="alternatives"><item>Eine andere Lesart wäre ‚Pfannzelten‘, ein flacher Kuchen, der in der Pfanne gebacken wird.<note type="rationale">Die Endung ‚-zelten‘ (vgl. Lebzelten) deutet auf einen flachen Kuchen hin; die Korpus-Parallelen (u.a. std-061 ‚pfañ zelten‘) zeigen dieselbe Doppeldeutigkeit. ‚Pfannkuchen‘ ist die modernere und geläufigere Entsprechung.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-213-orig" n="verb" resp="#fyndling" subtype="contextual">Färbe es - der Text nennt kein konkretes Färbemittel.<list type="alternatives"><item>Naheliegende historische Hypothese: ein period-treues Färbemittel wie Safran.<note type="rationale">Der Text selbst bleibt offen; keine moderne Ersatzsubstanz (Lebensmittelfarbe) einführen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-213-orig" n="taig mit eyttelnn ayren (Mehl mitgedacht)" resp="#fyndling" subtype="contextual">Ein fester Teig aus Mehl, der nur mit Eiern angemacht wird, ohne Wasser oder Milch. „Eitel“ heißt „nur, rein“ und bezieht sich auf die Flüssigkeit; das Mehl steckt im Wort „Teig“ und in der Forderung, ihn so fest wie möglich zu machen und dünn auszurollen. Die Parallelfassung im Alemannischen Büchlein (alb-014) nennt es ausdrücklich: „teig von Itel ayer vnd mel“.<list type="alternatives"><item>Ein Teig nur aus Eiern, ganz ohne Mehl.<note type="rationale">Wörtlich möglich, aber küchentechnisch ausgeschlossen: Reines Ei ergibt eine flüssige Masse, die sich weder fest machen noch zu Blättern ausrollen lässt; gebacken wäre es ein Omelett.</note></item></list></note>
       </div>
     </back>
   </text>

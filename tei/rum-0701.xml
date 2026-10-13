@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,11 +120,11 @@ Praxis. Die Brust einer gesottenen Henne klein hacken. Ein oder zwei Scheiben We
         <note type="gloss" target="#rum-0701-orig" n="steck ein vbrigen Braten an" resp="#fyndling">anstecken heißt hier: auf den Spieß stecken. Rumpolt gebraucht das Wort auch sonst so („steck die Braten all an einen Spieß“). Gemeint ist ein eigens am Spieß gebratener, ungesalzener Braten für die Brühe, nicht „anbraten“.</note>
         <note type="gloss" target="#rum-0701-orig" n="ein Sudt mit auffthun" resp="#fyndling">einmal mit aufkochen, kurz aufwallen lassen.</note>
         <note type="gloss" target="#rum-0701-orig" n="Limonien" resp="#fyndling">Zitronen; saure Limonien sind frische Zitronen, deren Saft ausgedrückt wird.</note>
-        <note type="interpretive_choice" target="#rum-0701-orig" n="gebeht Schnitten" resp="#fyndling">Gebähte, leicht geröstete Weißbrotschnitten. Beleg: FWB bäen und abbähen („erwärmen, trocknen, rösten“), DWB bähen; im Buch an anderen Stellen ebenso aufgelöst.</note>
-        <note type="interpretive_choice" target="#rum-0701-orig" n="steck ein vbrigen Braten an" resp="#fyndling">Einen übrigen Braten an den Spieß stecken, ungesalzen braten und die braune Brühe davon abgießen. anstecken ist bei Rumpolt das Aufstecken auf den Spieß.</note>
-        <note type="interpretive_choice" target="#rum-0701-orig" n="laß ein Sudt mit auffthun" resp="#fyndling">Wörtlich: Der Zitronensaft wird auf das in der Schüssel angerichtete Gericht gedrückt, und das Ganze wird einmal mit aufgekocht.</note>
-        <note type="interpretive_choice" target="#rum-0701-orig" n="saure Limonien" resp="#fyndling">Der Text nennt keine Menge; der Saft soll das Gericht merklich säuern.</note>
-        <note type="interpretive_choice" target="#rum-0701-orig" n="lustig zu essen" resp="#fyndling">‚Lust machend zu essen‘, appetitanregend. Rumpolt stellt das Wort an anderer Stelle neben den Appetit: „macht einem ein appetitum/ vnd lustig zu essen“.</note>
+        <note type="interpretive_choice" target="#rum-0701-orig" n="gebeht Schnitten" resp="#fyndling" subtype="lexical">Gebähte, leicht geröstete Weißbrotschnitten. Beleg: FWB bäen und abbähen („erwärmen, trocknen, rösten“), DWB bähen; im Buch an anderen Stellen ebenso aufgelöst.<list type="alternatives"><item>Nur angewärmte und getrocknete, nicht gebräunte Schnitten<note type="rationale">bähen deckt auch bloßes Trocknen durch Wärme ab. Für die Funktion als Unterlage, die die Brühe aufnimmt, genügt beides; eine Bräunung schreibt der Text nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0701-orig" n="steck ein vbrigen Braten an" resp="#fyndling" subtype="contextual">Einen übrigen Braten an den Spieß stecken, ungesalzen braten und die braune Brühe davon abgießen. anstecken ist bei Rumpolt das Aufstecken auf den Spieß.<list type="alternatives"><item>Einen übrigen Braten in Pfanne oder Ofen ansetzen und den Bratensaft abgießen<note type="rationale">Heutige Praxis; für die Brühe gleichwertig, solange der Braten ungesalzen bleibt. Das Wort selbst meint den Spieß.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0701-orig" n="laß ein Sudt mit auffthun" resp="#fyndling" subtype="contextual">Wörtlich: Der Zitronensaft wird auf das in der Schüssel angerichtete Gericht gedrückt, und das Ganze wird einmal mit aufgekocht.<list type="alternatives"><item>Gehacktes, Brühe und Zitronensaft im Topf kurz aufkochen und dann über die Brotschnitten geben<note type="rationale">Praktisch einfacher, weil man eine Servierschüssel kaum aufs Feuer setzt; das Ergebnis ist dasselbe. So in der Zubereitung umgesetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0701-orig" n="saure Limonien" resp="#fyndling" subtype="contextual">Der Text nennt keine Menge; der Saft soll das Gericht merklich säuern.<list type="alternatives"><item>Saft einer Zitrone, nach Geschmack<note type="rationale">Praktischer Richtwert für eine Schüssel, im Text nicht festgelegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0701-orig" n="lustig zu essen" resp="#fyndling" subtype="lexical">‚Lust machend zu essen‘, appetitanregend. Rumpolt stellt das Wort an anderer Stelle neben den Appetit: „macht einem ein appetitum/ vnd lustig zu essen“.<list type="alternatives"><item>angenehm, wohlschmeckend zu essen<note type="rationale">Ebenfalls möglich; die Begründung mit dem Zitronensaft zielt aber auf die Anregung des Appetits.</note></item></list></note>
       </div>
     </back>
   </text>

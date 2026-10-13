@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -92,7 +97,7 @@
 Spieß, Rost oder Ofen? Offen. „Zum Braten“ legt nur fest, dass die Gans gebraten und nicht gesotten wird. Wir übernehmen bewusst kein Verfahren aus anderen Rezepten des Kapitels.
 
 Praxis. Eine Anleitung lässt sich aus diesem Eintrag nicht gewinnen. Wer die Wildgans nach Rumpolt zubereiten will, greift zu den ausgeschriebenen Rezepten weiter hinten im selben Kapitel.</note>
-        <note type="interpretive_choice" target="#rum-0580-orig" n="Wildgans (Tier)" resp="#fyndling">Wildgans: Die Zeile „ZVm Braten“ nennt kein Tier, sie steht aber als erste Nummer im Kapitel „Von einer wilden Ganß seind achzenerley Speiß vnd Trachten zu machen“.</note>
+        <note type="interpretive_choice" target="#rum-0580-orig" n="Wildgans (Tier)" resp="#fyndling" subtype="contextual">Wildgans: Die Zeile „ZVm Braten“ nennt kein Tier, sie steht aber als erste Nummer im Kapitel „Von einer wilden Ganß seind achzenerley Speiß vnd Trachten zu machen“.</note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,9 +116,9 @@ Die quellennahe Reihenfolge lautet: eine Nussmilch herstellen, sie aufsieden und
         <note type="gloss" target="#w1-069-orig" n="suppem" resp="#fyndling">Der Begriff ‚suppem‘ konnte im Mittelalter eine dickflüssige Speise, eine Sauce oder eine Suppe bezeichnen, oft mit Brot angedickt oder dazu gereicht.</note>
         <note type="gloss" target="#w1-069-orig" n="milch (von Nüssen/Mohn)" resp="#fyndling">Der Text nennt eine aus Nüssen beziehungsweise Mohn herzustellende ‚Milch‘. Wie sie gewonnen wird, welche Flüssigkeit dazugehört und ob etwas abgeseiht wird, bleibt in diesem Rezept offen.</note>
         <note type="gloss" target="#w1-069-orig" n="mahn" resp="#fyndling">‚Mahn‘ ist hier Mohn. Die Berliner Parallelhandschrift B4-066 schreibt an derselben Stelle ‚magen‘; W1 präzisiert die dort missverständlichere Form. Die Herstellung der daraus genannten Milch beschreibt keiner der beiden Texte.</note>
-        <note type="interpretive_choice" target="#w1-069-orig" n="suppem" resp="#fyndling">Suppe</note>
-        <note type="interpretive_choice" target="#w1-069-orig" n="nusz" resp="#fyndling">Nüsse</note>
-        <note type="interpretive_choice" target="#w1-069-orig" n="mahn" resp="#fyndling">Mohnsamen</note>
+        <note type="interpretive_choice" target="#w1-069-orig" n="suppem" resp="#fyndling">Suppe<list type="alternatives"><item>Sauce<note type="rationale">Der Begriff ‚suppem‘ konnte im Mittelalter auch eine dickflüssige Sauce bezeichnen, die zu anderen Speisen gereicht wurde. Die Zugabe von Brot macht jedoch eine suppenähnliche Konsistenz wahrscheinlicher.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-069-orig" n="nusz" resp="#fyndling">Nüsse<list type="alternatives"><item>Walnüsse<note type="rationale">Walnüsse waren im Mittelalter weit verbreitet und eignen sich gut für die Herstellung von Nussmilch. Das Rezept nennt jedoch keine spezifische Sorte.</note></item><item>Haselnüsse<note type="rationale">Auch Haselnüsse waren eine gängige Zutat und hätten für die Nussmilch verwendet werden können.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-069-orig" n="mahn" resp="#fyndling">Mohnsamen<list type="alternatives"><item>Mohnkapseln<note type="rationale">Weniger wahrscheinlich, da die Kapseln selbst nicht zur Milchherstellung dienen, sondern die Samen enthalten, aus denen die Milch gewonnen wird.</note></item></list></note>
       </div>
     </back>
   </text>

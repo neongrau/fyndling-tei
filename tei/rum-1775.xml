@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,11 +117,11 @@ Praxis. Das Kaltwerdenlassen gehört ausdrücklich zum Gericht: Die Pastete voll
         <note type="gloss" target="#rum-1775-orig" n="Ruckenteig" resp="#fyndling">Roggenteig. Das Mittelniederdeutsche Wörterbuch führt „ruckenbrôt“ als Roggenbrot, und Rumpolt beschreibt den Teig bei der Hechtpastete selbst: mit warmem Wasser und ein wenig Salz angemacht, „dz er fein steiff wirt“.</note>
         <note type="gloss" target="#rum-1775-orig" n="eyngeschlagen" resp="#fyndling">Eingeschlagen, also in den Teig eingewickelt.</note>
         <note type="gloss" target="#rum-1775-orig" n="Gewuͤrtz" resp="#fyndling">Sammelwort für Gewürze. Eine Auswahl nennt Rumpolt hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-1775-orig" n="Ruckenteig" resp="#fyndling">Roggenteig: „rucken-“ ist die Form für Roggen, das Mittelniederdeutsche Wörterbuch stellt „ruckenbrôt“ zu Roggenbrot. Rumpolt beschreibt den Teig bei der Hechtpastete als steifen Teig aus warmem Wasser und wenig Salz.</note>
-        <note type="interpretive_choice" target="#rum-1775-orig" n="Gewuͤrtz" resp="#fyndling">Unbestimmtes Gewürz, ohne Auswahl wiedergegeben, weil Rumpolt hier keine nennt.</note>
-        <note type="interpretive_choice" target="#rum-1775-orig" n="mit Gewürz, Salz und guter Butter" resp="#fyndling">Der Text hängt die Beigaben an das Einschlagen, ohne zu sagen, ob sie auf den Fisch, in den Teig oder als Füllung dazukommen; die Übersetzung lässt das offen.</note>
-        <note type="interpretive_choice" target="#rum-1775-orig" n="Ruckenteig (mitessen)" resp="#fyndling">Der Teig gehört zur Pastete und kann mitgegessen werden; das Rezept trennt Hülle und Inhalt nicht.</note>
-        <note type="interpretive_choice" target="#rum-1775-orig" n="laß backen" resp="#fyndling">Backen ohne Angabe von Ofen, Hitze oder Zeit; Rumpolt setzt das Maß des Kochs voraus. Den Ofen nennt er im Kapitel erst bei späteren Pasteten.</note>
+        <note type="interpretive_choice" target="#rum-1775-orig" n="Ruckenteig" resp="#fyndling" subtype="lexical">Roggenteig: „rucken-“ ist die Form für Roggen, das Mittelniederdeutsche Wörterbuch stellt „ruckenbrôt“ zu Roggenbrot. Rumpolt beschreibt den Teig bei der Hechtpastete als steifen Teig aus warmem Wasser und wenig Salz.<list type="alternatives"><item>„Rückenteig“ als Wiedergabe der Druckform<note type="rationale">Hält die Lautform des Drucks fest, verdeckt aber, dass Roggen gemeint ist; sachlich derselbe Teig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1775-orig" n="Gewuͤrtz" resp="#fyndling" subtype="contextual">Unbestimmtes Gewürz, ohne Auswahl wiedergegeben, weil Rumpolt hier keine nennt.<list type="alternatives"><item>Pfeffer und Ingwer<note type="rationale">So nennt Rumpolt es bei der kalten Saiblingspastete im selben Kapitel; für den Hausen steht es nicht da.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1775-orig" n="mit Gewürz, Salz und guter Butter" resp="#fyndling" subtype="contextual">Der Text hängt die Beigaben an das Einschlagen, ohne zu sagen, ob sie auf den Fisch, in den Teig oder als Füllung dazukommen; die Übersetzung lässt das offen.<list type="alternatives"><item>Fisch salzen und würzen, Butterflocken darauf, dann einschlagen<note type="rationale">Praktischer Standard und so im Zubereitungshinweis; bei der Hechtpastete kommen Salz und Gewürz ebenfalls an den Fisch, die Butter wird mit eingeschlagen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1775-orig" n="Ruckenteig (mitessen)" resp="#fyndling" subtype="contextual">Der Teig gehört zur Pastete und kann mitgegessen werden; das Rezept trennt Hülle und Inhalt nicht.<list type="alternatives"><item>Teig nur als Backhülle<note type="rationale">Heute naheliegend bei einem steifen Roggenteig; der Text sagt dazu nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1775-orig" n="laß backen" resp="#fyndling" subtype="contextual">Backen ohne Angabe von Ofen, Hitze oder Zeit; Rumpolt setzt das Maß des Kochs voraus. Den Ofen nennt er im Kapitel erst bei späteren Pasteten.<list type="alternatives"><item>Im Ofen bei mittlerer Hitze, Garprobe am Fisch<note type="rationale">Moderne Praxis und so im Zubereitungshinweis; im Text steht davon nichts.</note></item></list></note>
       </div>
     </back>
   </text>

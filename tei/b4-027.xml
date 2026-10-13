@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,9 +134,9 @@ Praxis. Birne braten, Holzäpfel roh lassen (grob geschnitten reicht), zusammen 
         <note type="gloss" target="#b4-027-orig" n="vnder wachsen fleisch" resp="#fyndling">Durchwachsenes, also fettdurchzogenes Schweinefleisch - vergleichbar mit magerem, aber marmoriertem Fleisch.</note>
         <note type="gloss" target="#b4-027-orig" n="ayrein taig" resp="#fyndling">Ein dünner, eierbasierter Ausbackteig, mit dem die gerollte Füllung vor dem Backen in Schmalz umhüllt wird.</note>
         <note type="gloss" target="#b4-027-orig" n="peslach" resp="#fyndling">Bestreichen bzw. Übergießen des am Spieß rösten Bratens mit Ei und Schmalz, ähnlich modernem Basting.</note>
-        <note type="interpretive_choice" target="#b4-027-orig" n="rach" resp="#fyndling">Adjektivische Lesart 'roh' - die Holzäpfel sind roh, im Gegensatz zur bereits gebratenen Birne, bevor beides zusammen weiterverarbeitet wird.</note>
-        <note type="interpretive_choice" target="#b4-027-orig" n="pach" resp="#fyndling">Gelesen als 'backe' - dasselbe Wort erscheint im Rezept später noch einmal ('pach es hertt in smalcz' = 'backe es fest in Schmalz'), die konsistente Lesart überträgt 'backen' auch auf die erste Stelle.</note>
-        <note type="interpretive_choice" target="#b4-027-orig" n="spikchen" resp="#fyndling">Gelesen als 'spicken' im Sinn von Fettstreifen einziehen, gestützt durch den direkten Vergleich mit einem Rehbraten, bei dem Spicken eine bekannte Technik gegen das Austrocknen mageren Wildbrets ist.</note>
+        <note type="interpretive_choice" target="#b4-027-orig" n="rach" resp="#fyndling">Adjektivische Lesart 'roh' - die Holzäpfel sind roh, im Gegensatz zur bereits gebratenen Birne, bevor beides zusammen weiterverarbeitet wird.<list type="alternatives"><item>Als Verb gelesen im Sinn von 'reibe/zerkleinere' - die Holzäpfel würden vor dem gemeinsamen Kochen geraspelt.<note type="rationale">lookup.rb liefert für 'rach' keinen lautlichen Beleg für 'reiben' (nur 'rîben/reib-'); die textgleichen Zwillinge w1-028 ('roh sawr holczoephel') und mha-074 ('rasz saur appffel') haben an derselben Stelle beide eindeutig eine roh-Variante ohne Reibe-Verb.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-027-orig" n="pach" resp="#fyndling">Gelesen als 'backe' - dasselbe Wort erscheint im Rezept später noch einmal ('pach es hertt in smalcz' = 'backe es fest in Schmalz'), die konsistente Lesart überträgt 'backen' auch auf die erste Stelle.<list type="alternatives"><item>Gelesen als 'koche' - technisch liest sich das gemeinsame Weichmachen von vorgekochtem Fleisch, gebratener Birne und rohen Äpfeln eher wie ein Köcheln als wie ein Backen.<note type="rationale">Der textgleiche Zwilling w1-028 dokumentiert exakt diese Ambiguität und entscheidet sich ebenfalls für 'backe' aus Konsistenzgründen; der cross-book-Zwilling mha-074 formuliert die Stelle abweichend, was für die Koch-Lesart spricht.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-027-orig" n="spikchen" resp="#fyndling">Gelesen als 'spicken' im Sinn von Fettstreifen einziehen, gestützt durch den direkten Vergleich mit einem Rehbraten, bei dem Spicken eine bekannte Technik gegen das Austrocknen mageren Wildbrets ist.<list type="alternatives"><item>Eine Lesart als 'spießen' (nochmals aufspießen) wäre lautlich ebenfalls denkbar.<note type="rationale">Das Spießen ist im Text aber bereits mit dem eigenständigen Wort 'spiss/stich...durch ein spiss' benannt, was für eine andere, zusätzliche Bedeutung von 'spikchen' spricht.</note></item></list></note>
       </div>
     </back>
   </text>

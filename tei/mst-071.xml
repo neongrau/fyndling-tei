@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,7 +139,7 @@ Hecht ausnehmen, Galle entfernen, mit Salz, Pfeffer, gemahlenen Nelken und Ingwe
         <note type="gloss" target="#mst-071-orig" n="ſwerch ſchnitzlen" resp="#fyndling">Quer eingeschnittene Schnitze oder Kerben. Diese dienen dazu, die Gewürze besser aufzunehmen und eine gleichmäßigere Garung zu ermöglichen.</note>
         <note type="gloss" target="#mst-071-orig" n="roſt" resp="#fyndling">Ein Rost, auf dem der Fisch über dem Feuer oder der Glut gebraten wird.</note>
         <note type="gloss" target="#mst-071-orig" n="treff" resp="#fyndling">Beträufeln oder begießen. Hier: den Fisch während des Bratens mit heißer Butter und Essig übergießen.</note>
-        <note type="interpretive_choice" target="#mst-071-orig" n="Garzustand" resp="#fyndling">Der Text nennt für den Fisch auf dem Rost keine Gardauer und kein Garkriterium - nur, dass er anschließend warm serviert werden soll.</note>
+        <note type="interpretive_choice" target="#mst-071-orig" n="Garzustand" resp="#fyndling">Der Text nennt für den Fisch auf dem Rost keine Gardauer und kein Garkriterium - nur, dass er anschließend warm serviert werden soll.<list type="alternatives"><item>Historisch wurde der Garzustand vermutlich allein nach Augenschein und Erfahrung des Kochs beurteilt.<note type="rationale">Das ist für Rezepte dieser Zeit die Regel, keine Besonderheit dieses Textes - als offene, unbenannte Stelle markiert, nicht als vom Text unausgesprochen mitgemeintes Kriterium ausgegeben.</note></item></list></note>
       </div>
     </back>
   </text>

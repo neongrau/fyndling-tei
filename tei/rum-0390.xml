@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -138,10 +143,10 @@ Praxis. Die Zubereitungszeit von etwa 90 Minuten ist eine Schätzung, der Text g
         <note type="gloss" target="#rum-0390-orig" n="Gurgel" resp="#fyndling">Die Kehle mit der Luftröhre, wie in rum-0102 und rum-0365. Das Frühneuhochdeutsche Wörterbuch trennt bei „Gurgel“ nicht in allen Belegen zwischen Luftröhre und Speiseröhre.</note>
         <note type="gloss" target="#rum-0390-orig" n="Fischkessel" resp="#fyndling">Kleiner Fischkessel; Rumpolt nutzt das Gefäß auch bei Gerichten ohne Fisch, hier einfach ein kleiner Kessel neben der kleinen Pfanne.</note>
         <note type="gloss" target="#rum-0390-orig" n="auffseudt" resp="#fyndling">Aufkocht, aufwallt; Rumpolt verwendet „auffsieden“ im ganzen Buch für kurzes Aufkochen.</note>
-        <note type="interpretive_choice" target="#rum-0390-orig" n="mancher jsset gern saur/ mancher suͤß" resp="#fyndling">Rumpolt stellt den Geschmack frei, nennt aber kein Süßungsmittel. Naheliegend ist, dass „süß“ hier einfach das Mus ohne oder mit wenig Essig meint: In den Lungenmusen von Kalb und Hammel (rum-0102, rum-0156) lautet die Wahl ebenfalls „sauer oder nicht“.</note>
-        <note type="interpretive_choice" target="#rum-0390-orig" n="biß auffseudt" resp="#fyndling">Wörtlich: die Eigelb-Essig-Mischung unter das Mus rühren, bis es aufkocht. Das Eigelb stockt dabei teilweise; bei einem gehackten Mus stört die leicht körnige Bindung kaum.</note>
-        <note type="interpretive_choice" target="#rum-0390-orig" n="etliche Eyerdotter / gruͤnen wolschmeckenden Kraͤutern" resp="#fyndling">Rumpolt nennt keine Mengen: nur „etliche“ Eigelb, „ein wenig“ Weinessig und Safran und Kräuter ohne Art und Maß.</note>
-        <note type="interpretive_choice" target="#rum-0390-orig" n="Gurgel" resp="#fyndling">Kehle mit der Luftröhre, wie im übrigen Buch (rum-0102, rum-0365): Sie hängt an der Lunge und wird mit ihr gesotten und gehackt.</note>
+        <note type="interpretive_choice" target="#rum-0390-orig" n="mancher jsset gern saur/ mancher suͤß" resp="#fyndling" subtype="contextual">Rumpolt stellt den Geschmack frei, nennt aber kein Süßungsmittel. Naheliegend ist, dass „süß“ hier einfach das Mus ohne oder mit wenig Essig meint: In den Lungenmusen von Kalb und Hammel (rum-0102, rum-0156) lautet die Wahl ebenfalls „sauer oder nicht“.<list type="alternatives"><item>Für die süße Fassung wird eigens gesüßt, etwa mit Zucker.<note type="rationale">Nicht belegt: Weder dieses Rezept noch die Parallelen der Lungenmus-Reihe nennen eine Süßzutat. Möglich bleibt es, aber nur als Vermutung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0390-orig" n="biß auffseudt" resp="#fyndling" subtype="contextual">Wörtlich: die Eigelb-Essig-Mischung unter das Mus rühren, bis es aufkocht. Das Eigelb stockt dabei teilweise; bei einem gehackten Mus stört die leicht körnige Bindung kaum.<list type="alternatives"><item>Bei kleiner Hitze unter Rühren nur so weit erwärmen, bis es eben aufwallt, ohne kräftig zu kochen.<note type="rationale">Moderne Praxis, damit das Eigelb cremig bindet statt zu gerinnen; der Text nennt keine Hitzestufe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0390-orig" n="etliche Eyerdotter / gruͤnen wolschmeckenden Kraͤutern" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Mengen: nur „etliche“ Eigelb, „ein wenig“ Weinessig und Safran und Kräuter ohne Art und Maß.<list type="alternatives"><item>Etwa zwei bis drei Eigelb für ein kleines Mus und eine Handvoll Kräuter.<note type="rationale">Moderne Orientierung zum Nachkochen, keine Angabe des Buchs.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0390-orig" n="Gurgel" resp="#fyndling" subtype="lexical">Kehle mit der Luftröhre, wie im übrigen Buch (rum-0102, rum-0365): Sie hängt an der Lunge und wird mit ihr gesotten und gehackt.<list type="alternatives"><item>Speiseröhre oder Schlund.<note type="rationale">Das Frühneuhochdeutsche Wörterbuch lässt diese Bedeutung zu, unterscheidet aber nicht in allen Belegen; als Anhängsel der Lunge liegt die Luftröhre näher.</note></item></list></note>
       </div>
     </back>
   </text>

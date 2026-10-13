@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,10 +116,10 @@ Garpunkt. Wie lange die Masse in der Pfanne bleibt, sagt der Text nicht. Für de
 
 Praxis. Hartkäse reiben, mit Ei, kleingehacktem Speck und wenig Mehl zu einer streichfähigen Masse verrühren. Die Masse in eine leicht gefettete, heiße Pfanne streichen und wie ein Omelett stocken lassen, bis kein Ei mehr flüssig ist. Danach mit Zucker bestreuen oder bestreichen.</note>
         <note type="gloss" target="#w1-220-orig" n="kraphen" resp="#fyndling">Sammelbezeichnung für in der Pfanne gebackenes oder frittiertes Gebäck, süß wie herzhaft - deckt sich nicht mit dem heutigen Krapfen-Begriff (Hefeteig, gefüllt, in Fett ausgebacken).</note>
-        <note type="interpretive_choice" target="#w1-220-orig" n="gepeacht" resp="#fyndling">gebacken (im Sinne von in der Pfanne ausgebacken/gebraten)</note>
-        <note type="interpretive_choice" target="#w1-220-orig" n="solg" resp="#fyndling">soll [es] gewendet werden</note>
-        <note type="interpretive_choice" target="#w1-220-orig" n="Garpunkt der Ei-Käse-Masse" resp="#fyndling">vollständig durchgegart, wie bei einem Pfannkuchen (aus heutiger Lebensmittelsicherheitssicht empfohlen)</note>
-        <note type="interpretive_choice" target="#w1-220-orig" n="Fett zum Braten" resp="#fyndling">Pfanne vor dem Einstreichen leicht fetten, wie beim Pfannkuchenbacken üblich</note>
+        <note type="interpretive_choice" target="#w1-220-orig" n="gepeacht" resp="#fyndling" subtype="lexical">gebacken (im Sinne von in der Pfanne ausgebacken/gebraten)<list type="alternatives"><item>gebraten<note type="rationale">Die Zubereitung in der Pfanne legt das Braten nahe. 'Backen' konnte im Mittelhochdeutschen auch das Braten oder Frittieren in der Pfanne umfassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-220-orig" n="solg" resp="#fyndling" subtype="philological">soll [es] gewendet werden<list type="alternatives"><item>bestreichen / salben / bestreuen<note type="rationale">Die Stelle trägt kein ausgeschriebenes Verb. Drei fast wortgleiche Fassungen desselben Gerichts in anderen Büchern formulieren denselben Schritt mit einem ausgeschriebenen Verb: 'so bestreich es mit zucker wol', 'so salbs mit czuckerr', 'so strae zucher darauff'. Das stützt, dass 'solg' eine verkürzte oder korrumpierte Form eines solchen Verbs sein könnte; welches der drei ursprünglich gemeint war, bleibt offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-220-orig" n="Garpunkt der Ei-Käse-Masse" resp="#fyndling" subtype="contextual">vollständig durchgegart, wie bei einem Pfannkuchen (aus heutiger Lebensmittelsicherheitssicht empfohlen)<list type="alternatives"><item>kürzerer, noch weicherer Garpunkt<note type="rationale">Der Text nennt keine Garprobe und keine Zeit; ein weicherer Garpunkt ist sprachlich nicht ausgeschlossen, wird hier aber nicht als gleichwertiger Standard empfohlen.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-220-orig" n="Fett zum Braten" resp="#fyndling" subtype="contextual">Pfanne vor dem Einstreichen leicht fetten, wie beim Pfannkuchenbacken üblich<list type="alternatives"><item>kein zusätzliches Fett, nur das aus dem Speck austretende<note type="rationale">Der Text erwähnt kein Bratfett; denkbar, dass ausschließlich das Fett aus dem mitgehackten Speck zum Anbraten diente.</note></item></list></note>
       </div>
     </back>
   </text>

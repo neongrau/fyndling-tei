@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,7 +114,7 @@ Praxis. 250 g Rundkornreis waschen, in reichlich Wasser halb garen (ca. 8 Min.),
         <note type="gloss" target="#men-311-orig" n="eaue de la gresse de char de beuf" resp="#fyndling">kräftige Rinderbrühe, mit dem Fett vom Rindfleisch ausgekocht - die herzhafte Basis für den Fleischtag.</note>
         <note type="gloss" target="#men-311-orig" n="sans couler" resp="#fyndling">‚ohne zu seihen‘ - die ganze gemahlene Mandelmasse bleibt im Reis (dickes Mus), nicht nur die abgeseihte Mandelmilch.</note>
         <note type="gloss" target="#men-311-orig" n="Autres menues choses qui ne sont de neccessité" resp="#fyndling">‚weitere Kleinigkeiten, die nicht nötig sind‘ - der typische Schluss-Hinweis, dass das Rezept vollständig ist und Verfeinerungen freistehen.</note>
-        <note type="interpretive_choice" target="#men-311-orig" n="eaue de la gresse de char de beuf" resp="#fyndling">Kräftige Rinderbrühe, beim Auskochen von fettem Rindfleisch gewonnen.</note>
+        <note type="interpretive_choice" target="#men-311-orig" n="eaue de la gresse de char de beuf" resp="#fyndling">Kräftige Rinderbrühe, beim Auskochen von fettem Rindfleisch gewonnen.<list type="alternatives"><item>Das ausgelassene, flüssige Rinderfett selbst.<note type="rationale">eaue (Wasser) spricht klar für eine Brühe, doch gresse (Fett) lässt eine besonders fettreiche, schmalzige Flüssigkeit zumindest denkbar erscheinen.</note></item></list></note>
       </div>
     </back>
   </text>

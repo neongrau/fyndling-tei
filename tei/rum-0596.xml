@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,8 +108,8 @@ Praxis. Wer es nachkochen will, siedet die Wildgans zuerst gar, siedet geschält
         <note type="gloss" target="#rum-0596-orig" n="eyngemacht" resp="#fyndling">Bei Rumpolt „in einer Brühe oder Sauce angerichtet“, nicht im heutigen Sinn von „eingelegt“ oder „konserviert“.</note>
         <note type="gloss" target="#rum-0596-orig" n="durchtriebenen Zwibeln" resp="#fyndling">„Durchtreiben“ heißt durch ein Tuch oder Sieb streichen. Rumpolt beschreibt es in seinen polnischen Rezepten selbst: Die weich gesottenen Zwiebeln werden „durch ein Härin Tuch“ gestrichen, also durch ein Haartuch.</note>
         <note type="gloss" target="#rum-0596-orig" n="auff Polisch" resp="#fyndling">Rumpolts Herkunftsangabe für eine eigene Zubereitungsart: Fleisch oder Fisch in einer Brühe aus gesottenen, durchgestrichenen Zwiebeln, abgemacht mit Pfeffer und Safran. Er begründet sie bei den Hammelzungen selbst: „die Polacken essen alles gern mit Zwibeln“.</note>
-        <note type="interpretive_choice" target="#rum-0596-orig" n="gelb" resp="#fyndling">Gelb durch Safran: In allen polnischen Zwiebelgerichten Rumpolts (Hammelzungen, Rehwildbret, Kapaun, Hecht) wird mit Pfeffer und Safran abgemacht. Im Satz dieses Rezepts steht der Safran aber nicht, deshalb erscheint er nicht in der Zutatenliste.</note>
-        <note type="interpretive_choice" target="#rum-0596-orig" n="Gaͤnß" resp="#fyndling">Wildgans: Das Rezept ist Nr. 17 im Kapitel „Von einer wilden Ganß“, und die Kapitelnachbarn handeln von der Wildgans.</note>
+        <note type="interpretive_choice" target="#rum-0596-orig" n="gelb" resp="#fyndling" subtype="contextual">Gelb durch Safran: In allen polnischen Zwiebelgerichten Rumpolts (Hammelzungen, Rehwildbret, Kapaun, Hecht) wird mit Pfeffer und Safran abgemacht. Im Satz dieses Rezepts steht der Safran aber nicht, deshalb erscheint er nicht in der Zutatenliste.<list type="alternatives"><item>Nur „gelb“ stehen lassen, ohne ein Färbemittel festzulegen<note type="rationale">Hält sich strikt an den Wortlaut; Rumpolt nennt hier kein Färbemittel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0596-orig" n="Gaͤnß" resp="#fyndling" subtype="contextual">Wildgans: Das Rezept ist Nr. 17 im Kapitel „Von einer wilden Ganß“, und die Kapitelnachbarn handeln von der Wildgans.<list type="alternatives"><item>Hausgans<note type="rationale">Der Satz selbst sagt nur „Gänse“; gegen den Kapitelkopf spricht aber nichts im Text.</note></item></list></note>
       </div>
     </back>
   </text>

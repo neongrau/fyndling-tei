@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,13 +130,13 @@ Praxis. Eine Pfanne genügt. Die Butter richtig heiß werden lassen, die geklopf
         <note type="gloss" target="#rum-0712-orig" n="Agrastbruͤh" resp="#fyndling">Verjus, der saure Saft unreifer Trauben; hier als Wahl neben dem Essig.</note>
         <note type="gloss" target="#rum-0712-orig" n="Agrastbeern" resp="#fyndling">Unreife Weintrauben; das Wort kann auch Stachelbeeren meinen. Rumpolt will sie ganz.</note>
         <note type="gloss" target="#rum-0712-orig" n="Sudt auffthun" resp="#fyndling">Einmal aufwallen lassen; Rumpolt schreibt ausdrücklich „nur ein Sudt“.</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="gefricusiert" resp="#fyndling">In heißem Fett rösten. Rumpolt definiert das Wort selbst („Also nennet man es gefricusiert“), und das Deutsche Wörterbuch belegt 1616 fricassiren als „braten, rösten“. Der Text bestätigt es: rösten in Butter, Butter abgießen, Brühe nur einmal aufkochen.</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="glid Fluͤgel vnd Fuͤß ab" resp="#fyndling">glid ... ab ist ein Verb (abgliedern): Flügel und Füße werden abgetrennt. So auch beim Kapaun: „glid darnach ab Diechel vnd Fluͤgel“.</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="Huͤnner" resp="#fyndling">Junge Hühner. Der Rezepttext sagt nur „Hühner“, das Kapitel heißt aber „Von jungen Hühnern“.</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="Agrastbruͤh" resp="#fyndling">Verjus, der Saft unreifer Trauben, als Alternative zum Essig („ein wenig Essig oder Agrastbrüh“).</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="Agrastbeern" resp="#fyndling">Unreife Weintrauben, ganz eingelegt; passt zur Verjus-Säure im selben Satz.</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="Zerlegen mit oder ohne Knochen" resp="#fyndling">Historisch: die Hühner in Stücken mit Knochen, nur Flügel und Füße abgetrennt und das Fleisch geklopft. Ob entbeint wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0712-orig" n="gelb machen" resp="#fyndling">Der Text lässt offen, womit das Gericht gelb gemacht wird; Rumpolt stellt gelb und weiß gleichberechtigt nebeneinander.</note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="gefricusiert" resp="#fyndling" subtype="lexical">In heißem Fett rösten. Rumpolt definiert das Wort selbst („Also nennet man es gefricusiert“), und das Deutsche Wörterbuch belegt 1616 fricassiren als „braten, rösten“. Der Text bestätigt es: rösten in Butter, Butter abgießen, Brühe nur einmal aufkochen.<list type="alternatives"><item>Frikassee im heutigen Sinn (Fleisch in heller, gebundener Sauce)<note type="rationale">Der Text nennt keine Bindung und kein Schmoren; die Brühe bleibt dünn.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="glid Fluͤgel vnd Fuͤß ab" resp="#fyndling" subtype="lexical">glid ... ab ist ein Verb (abgliedern): Flügel und Füße werden abgetrennt. So auch beim Kapaun: „glid darnach ab Diechel vnd Fluͤgel“.<list type="alternatives"><item>„Glieder, Flügel und Füße“ als drei Objekte<note type="rationale">Grammatisch nicht gedeckt: glid steht als Imperativ mit der Partikel ab am Satzende, ein eigenes Objekt „Glieder“ gibt es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Huͤnner" resp="#fyndling" subtype="contextual">Junge Hühner. Der Rezepttext sagt nur „Hühner“, das Kapitel heißt aber „Von jungen Hühnern“.<list type="alternatives"><item>Ausgewachsene Hühner<note type="rationale">Widerspricht dem Kapitelkopf; zudem reicht bei alten Tieren einmaliges Aufkochen nicht zum Garen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Agrastbruͤh" resp="#fyndling" subtype="lexical">Verjus, der Saft unreifer Trauben, als Alternative zum Essig („ein wenig Essig oder Agrastbrüh“).<list type="alternatives"><item>Eine Brühe, die mit Agrastbeeren gesäuert wurde<note type="rationale">Möglich, aber die Wendung „Essig oder Agrastbrüh“ stellt eine saure Flüssigkeit neben den Essig, keine zweite Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Agrastbeern" resp="#fyndling" subtype="lexical">Unreife Weintrauben, ganz eingelegt; passt zur Verjus-Säure im selben Satz.<list type="alternatives"><item>Stachelbeeren<note type="rationale">Das Frühneuhochdeutsche Wörterbuch kennt agrest auch für Stachelbeeren; der Text entscheidet hier nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="Zerlegen mit oder ohne Knochen" resp="#fyndling" subtype="contextual">Historisch: die Hühner in Stücken mit Knochen, nur Flügel und Füße abgetrennt und das Fleisch geklopft. Ob entbeint wird, sagt der Text nicht.<list type="alternatives"><item>Heute: Brust und ausgelöste Keulen in kleinen Stücken<note type="rationale">Lässt sich gut klopfen und gart beim einmaligen Aufkochen sicher durch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0712-orig" n="gelb machen" resp="#fyndling" subtype="contextual">Der Text lässt offen, womit das Gericht gelb gemacht wird; Rumpolt stellt gelb und weiß gleichberechtigt nebeneinander.<list type="alternatives"><item>Weiß lassen<note type="rationale">Die einfachste Ausführung heute; sie braucht keine Zutat, die der Text nicht nennt.</note></item></list></note>
       </div>
     </back>
   </text>

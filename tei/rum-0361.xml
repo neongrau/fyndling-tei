@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Einmachen. Statt zu braten kann man die Brust „eynmachen“. Bei Fleisch heiß
 
 Praxis. Rehbrust beim Wildhändler vorbestellen und bis zum Garen kühl halten. Mengen und Garzeit hängen von Größe der Brust und gewählter Füllung ab.</note>
         <note type="gloss" target="#rum-0361-orig" n="eynmachen" resp="#fyndling">Bei Fleisch: in einer Brühe oder Sauce garen und darin anrichten. Rumpolt gebraucht das Wort bei frischem Fleisch durchgehend so, etwa bei der Hirschbrust und den Ziegenhoden. Nicht im heutigen Sinn von Konservieren.</note>
-        <note type="interpretive_choice" target="#rum-0361-orig" n="eynmachen" resp="#fyndling">In einer Brühe oder Sauce garen und anrichten. Rumpolt gebraucht das Wort bei frischem Fleisch so, etwa bei der Hirschbrust („koche sie oder richte sie in einer Sauce an“) und den Ziegenhoden; hier ist keine Sauce genannt, die Wahl bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0361-orig" n="gefuͤllte Brust" resp="#fyndling">Eine gefüllte Brust, deren Füllung der Text nicht nennt; Rumpolt setzt sie als bekannt voraus. Die Übersetzung lässt „gefüllt“ wörtlich stehen und ergänzt nichts.</note>
-        <note type="interpretive_choice" target="#rum-0361-orig" n="braten" resp="#fyndling">Am Spieß über dem Feuer, wie Rumpolt Wildbraten sonst zubereitet; bei der Hirschbrust heißt es „steck sie an/ vnd brat sie“. Hier sagt der Text nur „braten“.</note>
+        <note type="interpretive_choice" target="#rum-0361-orig" n="eynmachen" resp="#fyndling" subtype="lexical">In einer Brühe oder Sauce garen und anrichten. Rumpolt gebraucht das Wort bei frischem Fleisch so, etwa bei der Hirschbrust („koche sie oder richte sie in einer Sauce an“) und den Ziegenhoden; hier ist keine Sauce genannt, die Wahl bleibt offen.<list type="alternatives"><item>Konservieren oder einlegen<note type="rationale">Die heutige Bedeutung; passt nicht zu einer frisch gefüllten Brust, die als Alternative zum Braten genannt wird.</note></item><item>In eine Pastete einschlagen<note type="rationale">Rumpolt gebraucht „eynmachen“ auch für Pasteten, sagt dann aber ausdrücklich „in ein Pasteten“. Hier fehlt der Zusatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0361-orig" n="gefuͤllte Brust" resp="#fyndling" subtype="contextual">Eine gefüllte Brust, deren Füllung der Text nicht nennt; Rumpolt setzt sie als bekannt voraus. Die Übersetzung lässt „gefüllt“ wörtlich stehen und ergänzt nichts.<list type="alternatives"><item>Füllung aus Speck, Zwiebeln, grünen Kräutern und Eiern<note type="rationale">So füllt Rumpolt die Hirschbrust und die Brust vom Türkischen Schaf. Für die Rehbrust nicht belegt, als Ausführung aber naheliegend.</note></item><item>Füllung nach eigener Wahl<note type="rationale">Praxis heute: Der Text legt nichts fest, der Koch entscheidet.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0361-orig" n="braten" resp="#fyndling" subtype="contextual">Am Spieß über dem Feuer, wie Rumpolt Wildbraten sonst zubereitet; bei der Hirschbrust heißt es „steck sie an/ vnd brat sie“. Hier sagt der Text nur „braten“.<list type="alternatives"><item>Im Ofen oder in der Bratpfanne<note type="rationale">Praxis heute; der Text nennt kein Gerät und keine Zeit.</note></item></list></note>
       </div>
     </back>
   </text>

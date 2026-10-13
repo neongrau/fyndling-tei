@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,9 +112,9 @@ Praxis. Zum Nachmachen eine frische Bratwurst aus Wildschweinfleisch nehmen und 
         <note type="gloss" target="#rum-0425-orig" n="Knobloch" resp="#fyndling">Frühneuhochdeutsch für Knoblauch.</note>
         <note type="gloss" target="#rum-0425-orig" n="Kuͤmel" resp="#fyndling">Frühneuhochdeutsch für Kümmel.</note>
         <note type="gloss" target="#rum-0425-orig" n="wol pfeffern" resp="#fyndling">„gut pfeffern“, also mit Pfeffer würzen. wol heißt hier „gut“; pfeffern ist das Verb, nicht das Pfeffergericht.</note>
-        <note type="interpretive_choice" target="#rum-0425-orig" n="Bratwuͤrst" resp="#fyndling">Bratwürste vom Wildschwein: Der Satz nennt kein Tier, er steht aber im Kapitel „Vom Schweinen Wildpret“, und die Nachbarrezepte Nr. 17 und 18 handeln von Blut- und Leberwürsten des Wildschweins.</note>
-        <note type="interpretive_choice" target="#rum-0425-orig" n="wol pfeffern" resp="#fyndling">„gut pfeffern“: wol ist hier das Gradadverb „gut“.</note>
-        <note type="interpretive_choice" target="#rum-0425-orig" n="Wurstmasse und Garart" resp="#fyndling">Rumpolt nennt weder Fleisch, Fett und Salz noch die Garart; angegeben ist nur die Würzung, das Braten steckt allein im Wort Bratwurst. Auch ob die Würze in die Masse oder an die fertige Wurst kommt, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0425-orig" n="Bratwuͤrst" resp="#fyndling" subtype="contextual">Bratwürste vom Wildschwein: Der Satz nennt kein Tier, er steht aber im Kapitel „Vom Schweinen Wildpret“, und die Nachbarrezepte Nr. 17 und 18 handeln von Blut- und Leberwürsten des Wildschweins.<list type="alternatives"><item>Bratwürste vom Hausschwein<note type="rationale">Nr. 18 verweist ausdrücklich darauf, die Leberwürste wie von einem „Eynheimischen Schwein“ zu machen. Nr. 19 hat keinen solchen Verweis, daher gilt das Tier des Kapitels.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0425-orig" n="wol pfeffern" resp="#fyndling" subtype="lexical">„gut pfeffern“: wol ist hier das Gradadverb „gut“.<list type="alternatives"><item>„kräftig pfeffern“<note type="rationale">Verstärkt über den Wortlaut hinaus; wol heißt „gut“, nicht „scharf“ oder „kräftig“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0425-orig" n="Wurstmasse und Garart" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Fleisch, Fett und Salz noch die Garart; angegeben ist nur die Würzung, das Braten steckt allein im Wort Bratwurst. Auch ob die Würze in die Masse oder an die fertige Wurst kommt, bleibt offen.<list type="alternatives"><item>Frische Bratwurst aus Wildschweinfleisch, in der Pfanne oder auf dem Rost gebraten<note type="rationale">Heutige Praxis zum Nachmachen; im Text nicht angegeben.</note></item></list></note>
       </div>
     </back>
   </text>

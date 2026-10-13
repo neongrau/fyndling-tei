@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -138,8 +143,8 @@ Praxis. Wer die Zunge vorab zu Hause weich kocht und gekühlt zum Markt mitbring
         <note type="gloss" target="#rum-0008-orig" n="eingebrennt Mehl" resp="#fyndling">Geröstetes Mehl, das als Bindemittel und zur Farbgebung der Sauce verwendet wird. Es verleiht der Sauce eine leicht nussige Note.</note>
         <note type="gloss" target="#rum-0008-orig" n="dick" resp="#fyndling">Hier im Sinne von „dickflüssig“ oder „zähflüssig“.</note>
         <note type="gloss" target="#rum-0008-orig" n="Rosein" resp="#fyndling">Alte Schreibweise für Rosinen, also getrocknete Weinbeeren.</note>
-        <note type="interpretive_choice" target="#rum-0008-orig" n="gescharb" resp="#fyndling">Klein geschnittene Mandeln, hier in Wein oder Rinderbrühe zur Sauce gekocht. Grund: scharben heißt klein schneiden (Deutsches Wörterbuch: „scharben, zotticht klein schneiden“; „geschärbe“ = Geschnitzel, mit dem Beleg „mandelgescherb“ aus dem Augsburg-Dillinger Kochbuch von 1547), und Rumpolt schreibt in diesem Rezept selbst „schneide Mandeln klein“. Die Sauce ist die Ausführung dieses Rezepts; das Wort benennt die geschnittenen Mandeln.</note>
-        <note type="interpretive_choice" target="#rum-0008-orig" n="Wein (Farbe)" resp="#fyndling">Der Text nennt nur „Wein“ ohne Farbangabe; die Zutatenliste setzt zur Konkretisierung Weißwein an, da er zur süß-sauren Mandelsauce gängiger passt.</note>
+        <note type="interpretive_choice" target="#rum-0008-orig" n="gescharb" resp="#fyndling" subtype="lexical">Klein geschnittene Mandeln, hier in Wein oder Rinderbrühe zur Sauce gekocht. Grund: scharben heißt klein schneiden (Deutsches Wörterbuch: „scharben, zotticht klein schneiden“; „geschärbe“ = Geschnitzel, mit dem Beleg „mandelgescherb“ aus dem Augsburg-Dillinger Kochbuch von 1547), und Rumpolt schreibt in diesem Rezept selbst „schneide Mandeln klein“. Die Sauce ist die Ausführung dieses Rezepts; das Wort benennt die geschnittenen Mandeln.<list type="alternatives"><item>Gescharb als fertige dicke Sauce oder Mus<note type="rationale">Hier wird daraus eine Sauce, aber Rumpolt kocht dieselben Mandeln in rum-0071 trocken ein und gibt sie in rum-0399 kalt und ohne Fett zum Hasenbraten. Das Wort benennt das Zerkleinerte, nicht die Konsistenz.</note></item><item>Geriebene oder gemahlene Mandeln<note type="rationale">Rumpolt sagt „schneide Mandeln klein“. Wo er gemahlene Mandeln meint, schreibt er „geriebene Mandeln“ (rum-1812) oder „klein geriebene Mandeln“ (rum-0702); das Reiben ist ihm also als eigenes Wort geläufig. Die frühere Wiedergabe „gemahlen“ in der Zutatenliste ist ersetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0008-orig" n="Wein (Farbe)" resp="#fyndling" subtype="contextual">Der Text nennt nur „Wein“ ohne Farbangabe; die Zutatenliste setzt zur Konkretisierung Weißwein an, da er zur süß-sauren Mandelsauce gängiger passt.<list type="alternatives"><item>Rotwein<note type="rationale">Textlich ebenso möglich, da Rumpolt die Farbe nicht spezifiziert - beide Weine ergeben dieselbe Zubereitung.</note></item></list></note>
       </div>
     </back>
   </text>

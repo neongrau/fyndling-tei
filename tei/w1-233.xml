@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,8 +125,8 @@ Praxis. Fisch und Äpfel im Verhältnis 1:1 (nach Gewicht) fein schneiden, mit M
         <note type="gloss" target="#w1-233-orig" n="Reismehl" resp="#fyndling">Reismehl wurde zum Binden und Andicken von Saucen und Füllungen verwendet, oft in Kombination mit Mandelmilch.</note>
         <note type="gloss" target="#w1-233-orig" n="Teigblätter" resp="#fyndling">Dünne Teigblätter dienten als Hülle für Füllungen, ähnlich modernen Ravioli oder Empanadas. Die genaue Zusammensetzung des Teigs ist nicht angegeben, aber eine einfache Mischung aus Mehl und Wasser ist wahrscheinlich.</note>
         <note type="gloss" target="#w1-233-orig" n="lass waichen" resp="#fyndling">Die Schlussformel „lass waichen“ bezeichnet hier das Garen im heißen Fett, nicht ein bloßes Ruhenlassen - das bestätigen sowohl der Zwilling in der Berliner Handschrift als auch ein unmittelbar vorausgehendes Rezept derselben Handschrift, das dieselbe Formel nach ausdrücklichem Garen in Schmalz verwendet.</note>
-        <note type="interpretive_choice" target="#w1-233-orig" n="waichen" resp="#fyndling">Als Garschritt gelesen (‚lass es ausbacken‘), gestützt durch den Zwilling b4-231 (dieselbe Schlussformel, dort mit Bezug auf das Garen in Schmalz im vorangehenden Kapitel-Rezept) sowie durch ein unmittelbar vorausgehendes Rezept derselben Handschrift (Wien, Cod. 2897), das für dieselbe Formel explizit das Garen in Schmalz beschreibt.</note>
-        <note type="interpretive_choice" target="#w1-233-orig" n="als vil ophel als der visch ist" resp="#fyndling">Dies wurde als ein 1:1-Verhältnis von Äpfeln zu Fisch interpretiert, wahrscheinlich nach Gewicht, um eine ausgewogene Füllung zu gewährleisten.</note>
+        <note type="interpretive_choice" target="#w1-233-orig" n="waichen" resp="#fyndling" subtype="philological">Als Garschritt gelesen (‚lass es ausbacken‘), gestützt durch den Zwilling b4-231 (dieselbe Schlussformel, dort mit Bezug auf das Garen in Schmalz im vorangehenden Kapitel-Rezept) sowie durch ein unmittelbar vorausgehendes Rezept derselben Handschrift (Wien, Cod. 2897), das für dieselbe Formel explizit das Garen in Schmalz beschreibt.<list type="alternatives"><item>Ruhen/quellen lassen (keine Garhandlung)<note type="rationale">Frühere Lesart dieser Datei. Widerspricht der eigenen Zutatenliste, die Frittieröl nennt, das sonst nie verwendet würde, und ist mit zwei unabhängigen Belegen (Zwilling b4-231, unmittelbar vorausgehendes Rezept in W1 selbst) nicht zu vereinbaren.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-233-orig" n="als vil ophel als der visch ist" resp="#fyndling" subtype="contextual">Dies wurde als ein 1:1-Verhältnis von Äpfeln zu Fisch interpretiert, wahrscheinlich nach Gewicht, um eine ausgewogene Füllung zu gewährleisten.</note>
       </div>
     </back>
   </text>

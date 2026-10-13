@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,10 +111,10 @@ Praxis. Die Würste braten, bis sie durch sind, und heiß anrichten. Die Dickmil
         <note type="gloss" target="#rum-0271-orig" n="Saurmilch" resp="#fyndling">Gestandene, sauer gewordene Milch, also Dickmilch. Wie stark eingedickt, sagt der Text nicht. An der einzigen anderen Stelle im Buch (Butter machen) meint Rumpolt mit „Molcken oder Saurmilch“ dagegen die Flüssigkeit, die in frischer Butter zurückbleibt; hier ist es eine eigene Beilage.</note>
         <note type="gloss" target="#rum-0271-orig" n="Reinstrom vnd Mayn" resp="#fyndling">Rheinstrom und Main. Rumpolt nennt die Gegend, in der man die Würste so gern isst.</note>
         <note type="gloss" target="#rum-0271-orig" n="Du kanst auch" resp="#fyndling">Das „auch“ knüpft an die vorhergehende Nummer 14 an, in der die Spanferkelwürste gemacht werden. Dieser Absatz gibt nur eine weitere Art, sie aufzutragen.</note>
-        <note type="interpretive_choice" target="#rum-0271-orig" n="mit Jngwer bestraͤwt" resp="#fyndling">Bezug offen gehalten: Die Übersetzung behält die Stellung des Drucks („eine Sauermilch dazu, mit Ingwer bestreut“). Grammatisch steht der Ingwer direkt hinter der Sauermilch, ebenso gut kann er die Würste meinen.</note>
-        <note type="interpretive_choice" target="#rum-0271-orig" n="Saurmilch" resp="#fyndling">Gestandene, gesäuerte Milch (Dickmilch) als eigene Beilage, weil sie eigenständig „darzu“ gegeben wird. Der Grad der Eindickung bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0271-orig" n="Bratwuͤrst ... zurichtẽ" resp="#fyndling">„zubereiten“: Die Würste werden wie in Nummer 14 gemacht und hier als Bratwürste aufgetragen; das „auch“ weist auf diese Vorstufe zurück.</note>
-        <note type="interpretive_choice" target="#rum-0271-orig" n="gibs warm" resp="#fyndling">„warm“ gilt nur für die Würste; über die Temperatur der Sauermilch sagt der Text nichts.</note>
+        <note type="interpretive_choice" target="#rum-0271-orig" n="mit Jngwer bestraͤwt" resp="#fyndling" subtype="contextual">Bezug offen gehalten: Die Übersetzung behält die Stellung des Drucks („eine Sauermilch dazu, mit Ingwer bestreut“). Grammatisch steht der Ingwer direkt hinter der Sauermilch, ebenso gut kann er die Würste meinen.<list type="alternatives"><item>Die Sauermilch wird mit Ingwer bestreut.<note type="rationale">Folgt der Wortstellung; so in der Praxis-Anleitung umgesetzt.</note></item><item>Die Bratwürste werden mit Ingwer bestreut, die Sauermilch bleibt ungewürzt.<note type="rationale">Rumpolt streut Ingwer im selben Kapitel über den trocken angerichteten Spanferkelmagen (Nr. 13: „daß man in trucken anricht/ vnd mit Jngwer bestraͤwt“).</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0271-orig" n="Saurmilch" resp="#fyndling" subtype="lexical">Gestandene, gesäuerte Milch (Dickmilch) als eigene Beilage, weil sie eigenständig „darzu“ gegeben wird. Der Grad der Eindickung bleibt offen.<list type="alternatives"><item>Molke bzw. Buttermilch, wie bei Rumpolt „Molcken oder Saurmilch“ im Butterrezept<note type="rationale">Dort ist es der Flüssigkeitsrest in der Butter, keine Speise; als Beilage zu Würsten unwahrscheinlicher.</note></item><item>Naturjoghurt<note type="rationale">Nur als moderner Ersatz; Joghurt wird mit einer anderen Kultur gesäuert und ist keine Gleichsetzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0271-orig" n="Bratwuͤrst ... zurichtẽ" resp="#fyndling" subtype="contextual">„zubereiten“: Die Würste werden wie in Nummer 14 gemacht und hier als Bratwürste aufgetragen; das „auch“ weist auf diese Vorstufe zurück.<list type="alternatives"><item>nur „anrichten“: fertige Würste werden gebraten und aufgetragen<note type="rationale">Der Satz beschreibt tatsächlich nur das Auftragen; Herstellung und Füllung stehen allein in Nummer 14.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0271-orig" n="gibs warm" resp="#fyndling" subtype="contextual">„warm“ gilt nur für die Würste; über die Temperatur der Sauermilch sagt der Text nichts.<list type="alternatives"><item>Sauermilch kühl dazu reichen<note type="rationale">Praktische Annahme für heute, im Text nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

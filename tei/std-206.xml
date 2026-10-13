@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,10 +123,10 @@ Praxis. Semmel reiben, mit wenig Mehl und so viel Wasser verrühren, dass ein fe
         <note type="gloss" target="#std-206-orig" n="weinbeerlen" resp="#fyndling">Verkleinerungsform von 'Weinbeere'. Gemeint sind kleine, getrocknete Weinbeeren, also Rosinen, nicht frische Trauben.</note>
         <note type="gloss" target="#std-206-orig" n="pfefftelin" resp="#fyndling">Verkleinerungsform von 'Pfeffer'. Gemeint ist eine kleine, würzige, dickliche Sauce (ein 'Pfeffer'-Gericht), nicht das Gewürz selbst.</note>
         <note type="gloss" target="#std-206-orig" n="stüps" resp="#fyndling">Bedeutet 'würze' beziehungsweise 'bestäube mit Gewürzpulver' - ein eigenständiges Würz-Kommando, unabhängig von der zuvor genannten Semmel-Mehl-Mischung. Dieselbe Wendung findet sich mehrfach im sechsten Buch: std-261 hält diese Lesart bereits ausdrücklich fest, und std-270 verwendet 'stüp' konkret mit Ingwer und Zimt. std-206 selbst nennt kein einzelnes Gewürz - gemeint ist vermutlich ein Würzen nach Belieben, etwa mit Salz oder Zucker für den süßen Teig.</note>
-        <note type="interpretive_choice" target="#std-206-orig" n="beerlen" resp="#fyndling">Diminutiv von 'Weinbeere', gelesen als kleine getrocknete Weinbeeren, also Rosinen.</note>
-        <note type="interpretive_choice" target="#std-206-orig" n="pfefftelin" resp="#fyndling">Diminutiv von 'Pfeffer' im Sinne einer kleinen, würzigen, dicklichen Sauce, die als pikante Anrichte-Alternative zum süßen Süppchen dient.</note>
-        <note type="interpretive_choice" target="#std-206-orig" n="haiß schmaltz (Frittiertemperatur)" resp="#fyndling">Mittelheißes Fett (etwa 170-180°C), damit die feste Semmel-Rosinen-Masse innen durchgart, bevor die Außenseite verbrennt.</note>
-        <note type="interpretive_choice" target="#std-206-orig" n="Teigkonsistenz (Semmel/Mehl/Wasser-Verhältnis)" resp="#fyndling">Ein fester, formbarer Teig, der beim Eingeben ins Fett nicht zerläuft - so viel Wasser wie nötig, um geriebene Semmel und Mehl zu einer knetbaren Masse zu binden.</note>
+        <note type="interpretive_choice" target="#std-206-orig" n="beerlen" resp="#fyndling">Diminutiv von 'Weinbeere', gelesen als kleine getrocknete Weinbeeren, also Rosinen.<list type="alternatives"><item>Frische kleine Weintrauben statt getrockneter Rosinen.<note type="rationale">Der Korpus verwendet 'Weinbeere/Weinper' überwiegend für die getrocknete Handelsware; ohne einen ausdrücklichen Frisch-Marker bleibt die getrocknete Form die plausiblere Standardlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-206-orig" n="pfefftelin" resp="#fyndling">Diminutiv von 'Pfeffer' im Sinne einer kleinen, würzigen, dicklichen Sauce, die als pikante Anrichte-Alternative zum süßen Süppchen dient.<list type="alternatives"><item>Wörtlich als kleine Menge Pfefferkörner (Gewürz) statt als Sauce gelesen.<note type="rationale">Die Parallelstellung mit 'ain süpplin' (ein Süppchen) legt eine vergleichbare flüssige Anrichte-Komponente nahe, kein bloßes Gewürzstreuen.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-206-orig" n="haiß schmaltz (Frittiertemperatur)" resp="#fyndling">Mittelheißes Fett (etwa 170-180°C), damit die feste Semmel-Rosinen-Masse innen durchgart, bevor die Außenseite verbrennt.<list type="alternatives"><item>Sehr heißes Fett für eine schnell krosse Kruste, wie 'haiß' wörtlich nahelegt.<note type="rationale">Bei der festen, kompakten Masse dieses Rezepts steigt damit das Risiko, dass die Küchlein außen verbrennen, bevor sie innen durch sind - der Text nennt keine Gradzahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-206-orig" n="Teigkonsistenz (Semmel/Mehl/Wasser-Verhältnis)" resp="#fyndling">Ein fester, formbarer Teig, der beim Eingeben ins Fett nicht zerläuft - so viel Wasser wie nötig, um geriebene Semmel und Mehl zu einer knetbaren Masse zu binden.<list type="alternatives"><item>Ein dünnerer, gießbarer Teig wie bei std-201s Eingerührtem.<note type="rationale">std-201 beschreibt seine Teigkonsistenz ausdrücklich als straubenteig-dick, std-206 nennt dagegen keine Vergleichsgröße - der Text lässt hier offen, wie fest die Masse werden soll.</note></item></list></note>
       </div>
     </back>
   </text>

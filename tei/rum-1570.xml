@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,10 +118,10 @@ Praxis. Nüsse und Mandeln schälen und mit einer halben Knoblauchzehe im Mörse
         <note type="gloss" target="#rum-1570-orig" n="Weck" resp="#fyndling">Weißbrot. Gebraucht wird hier nur die weiche Krume („Brosamen“), die in der Brühe eingeweicht wird, keine getrockneten Semmelbrösel.</note>
         <note type="gloss" target="#rum-1570-orig" n="Kappaunenbruͤh" resp="#fyndling">Brühe vom Kapaun, einem kastrierten Masthahn. Eine klare Hühnerbrühe ist der heutige Ersatz.</note>
         <note type="gloss" target="#rum-1570-orig" n="feißt" resp="#fyndling">Fett (Nebenform von „feist“). Die Brühe soll klar („lauter“) und nicht fett sein.</note>
-        <note type="interpretive_choice" target="#rum-1570-orig" n="neuwe Nuͤß" resp="#fyndling">Frische Nüsse. Bei der weißen Maniade zum Ochsenbraten (rum-0052) beschreibt Rumpolt „new Nüß“ als Nüsse, die man vom Baum bricht, solange sie noch in den grünen Schalen sind; dazu passen die hier ausdrücklich sauber geschälten Kerne.</note>
-        <note type="interpretive_choice" target="#rum-1570-orig" n="Nuͤß (Nussart)" resp="#fyndling">Nüsse ohne nähere Art. Der Text legt die Art nicht fest; die frischen Nüsse aus der grünen Schale der Parallelstelle rum-0052 passen am besten zur Walnuss.</note>
-        <note type="interpretive_choice" target="#rum-1570-orig" n="Temperatur der Sauce" resp="#fyndling">Heiß eingeweicht oder kurz aufgekocht (implizit, Entscheidung 2026-10-10): Der Text nennt keinen Garschritt; das Brot bindet durch Wärme, die Brühe soll beim Einweichen heiß sein (60 bis 70 °C genügen).</note>
-        <note type="interpretive_choice" target="#rum-1570-orig" n="fein dick" resp="#fyndling">Erst zu einer dicken Masse gestoßen, dann mit Brühe verdünnt, bis sie „nicht gar zu dick“ ist: eine dickliche Tunke zum Eintunken des Bratens.</note>
+        <note type="interpretive_choice" target="#rum-1570-orig" n="neuwe Nuͤß" resp="#fyndling" subtype="lexical">Frische Nüsse. Bei der weißen Maniade zum Ochsenbraten (rum-0052) beschreibt Rumpolt „new Nüß“ als Nüsse, die man vom Baum bricht, solange sie noch in den grünen Schalen sind; dazu passen die hier ausdrücklich sauber geschälten Kerne.<list type="alternatives"><item>Nüsse der neuen Ernte<note type="rationale">Sprachlich möglich, im Ergebnis kaum verschieden; Rumpolts eigene Parallelstelle spricht für frisch gebrochene Nüsse.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1570-orig" n="Nuͤß (Nussart)" resp="#fyndling" subtype="contextual">Nüsse ohne nähere Art. Der Text legt die Art nicht fest; die frischen Nüsse aus der grünen Schale der Parallelstelle rum-0052 passen am besten zur Walnuss.<list type="alternatives"><item>Walnüsse<note type="rationale">Praxisvorgabe: naheliegend und gut zu stoßen.</note></item><item>Haselnüsse<note type="rationale">Vom Wortlaut nicht ausgeschlossen, aber ohne Stütze im Rezept oder in der Parallelstelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1570-orig" n="Temperatur der Sauce" resp="#fyndling" subtype="contextual">Heiß eingeweicht oder kurz aufgekocht (implizit, Entscheidung 2026-10-10): Der Text nennt keinen Garschritt; das Brot bindet durch Wärme, die Brühe soll beim Einweichen heiß sein (60 bis 70 °C genügen).<list type="alternatives"><item>Nur heiß einweichen, nicht aufkochen<note type="rationale">Reicht in der Praxis, wenn die Brühe heiß genug war. Das „kalt“ der Maniade zum Ochsenbraten (rum-0052) meint das Servieren, nicht die Zubereitung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1570-orig" n="fein dick" resp="#fyndling" subtype="contextual">Erst zu einer dicken Masse gestoßen, dann mit Brühe verdünnt, bis sie „nicht gar zu dick“ ist: eine dickliche Tunke zum Eintunken des Bratens.<list type="alternatives"><item>Dicklich wie dicke Sahne<note type="rationale">Praxisvorgabe für die heutige Küche; Rumpolt gibt die Dicke nur nach Gefühl an.</note></item></list></note>
       </div>
     </back>
   </text>

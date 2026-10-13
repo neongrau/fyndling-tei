@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,9 +105,9 @@ Praxis. Wie die Minze konkret angewendet wurde, sagt der Text nicht. Naheliegend
         <note type="gloss" target="#n2-012-orig" n="vawlen" resp="#fyndling">Mittelhochdeutsch für ‚faulen‘. Der Tipp beschreibt, wie Käse vor dem Verderben geschützt werden kann.</note>
         <note type="gloss" target="#n2-012-orig" n="etc." resp="#fyndling">Die Abkürzung steht für ‚et cetera‘ und deutet an, dass auch andere ähnliche Kräuter oder Substanzen zur Käsekonservierung verwendet werden können.</note>
         <note type="gloss" target="#n2-012-orig" n="krawzenmincze" resp="#fyndling">Krause Minze (Mentha spicata/crispa) - Fischer/WBN belegt „minze“ als Pflanzenlemma, FWB belegt „kraus“ (gekräuselt, von Blättern); die Gesamtform selbst hat keinen Direktbeleg, ist aber morphologisch und semantisch eindeutig.</note>
-        <note type="interpretive_choice" target="#n2-012-orig" n="krawzenmincze" resp="#fyndling">Krause Minze. Die Lesart 'Krause Minze' (Mentha spicata) ist plausibel, da 'kraus' im Mittelhochdeutschen 'gekräuselt' oder 'runzelig' bedeuten kann und diese Minzart für ihre Blätter bekannt ist. Minze ist zudem ein bekanntes Konservierungsmittel.</note>
-        <note type="interpretive_choice" target="#n2-012-orig" n="vawlen" resp="#fyndling">faulen. Die Lesart 'faulen' (verderben, verrotten) ist im Kontext der Käsekonservierung die einzig sinnvolle und wird durch die Belege für 'vûlen' (Lexer/WBN) sowie MHDBDB gestützt. Der v/f-Anlautwechsel ist mittelhochdeutscher Standard.</note>
-        <note type="interpretive_choice" target="#n2-012-orig" n="Anwendung der Minze" resp="#fyndling">Der Text nennt nur das Hinzugeben der Minze zum Käse, kein konkretes Verfahren. Moderner Vorschlag: frische Minze zusammen mit dem Käse lagern.</note>
+        <note type="interpretive_choice" target="#n2-012-orig" n="krawzenmincze" resp="#fyndling" subtype="philological">Krause Minze. Die Lesart 'Krause Minze' (Mentha spicata) ist plausibel, da 'kraus' im Mittelhochdeutschen 'gekräuselt' oder 'runzelig' bedeuten kann und diese Minzart für ihre Blätter bekannt ist. Minze ist zudem ein bekanntes Konservierungsmittel.<list type="alternatives"><item>Eine allgemeine Bezeichnung für 'Krautminze' oder 'Kräuterminz'.<note type="rationale">Die Endung '-mincze' ist klar, aber 'krawzen' könnte auch eine Verballhornung von 'Kraut' sein, was eine allgemeinere 'Kräuterminz' bedeuten würde. Dies ist jedoch weniger spezifisch und 'Krause Minze' ist eine etablierte Pflanzenart.</note></item></list></note>
+        <note type="interpretive_choice" target="#n2-012-orig" n="vawlen" resp="#fyndling" subtype="philological">faulen. Die Lesart 'faulen' (verderben, verrotten) ist im Kontext der Käsekonservierung die einzig sinnvolle und wird durch die Belege für 'vûlen' (Lexer/WBN) sowie MHDBDB gestützt. Der v/f-Anlautwechsel ist mittelhochdeutscher Standard.</note>
+        <note type="interpretive_choice" target="#n2-012-orig" n="Anwendung der Minze" resp="#fyndling" subtype="contextual">Der Text nennt nur das Hinzugeben der Minze zum Käse, kein konkretes Verfahren. Moderner Vorschlag: frische Minze zusammen mit dem Käse lagern.<list type="alternatives"><item>Die Käserinde könnte auch mit der Minze eingerieben worden sein.<note type="rationale">Historisch ebenso plausibel wie reines Beilegen, aber im Text nicht spezifiziert - keine der beiden Varianten ist stärker belegt.</note></item></list></note>
       </div>
     </back>
   </text>

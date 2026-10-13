@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -155,8 +160,8 @@ Praxis. Wer nachbrennen möchte, braucht eine Destillierapparatur und die entspr
         <note type="gloss" target="#std-249-orig" n="btannt" resp="#fyndling">In der Vorlage schwer lesbar; gemeint ist „brannt“ (Branntwein) - der Satz nennt kurz zuvor den Destillierapparat.</note>
         <note type="gloss" target="#std-249-orig" n="lerſten" resp="#fyndling">In der Vorlage schwer lesbar; gemeint ist „letzten“ (letzter Schuss = Nachlauf), im Gegensatz zum zuvor genannten Vorschuss (Vorlauf).</note>
         <note type="gloss" target="#std-249-orig" n="walſer" resp="#fyndling">In der Vorlage schwer lesbar; gemeint ist „waſſer“ (Wasser) - der Rezepttitel „Güldin waſſer“ und der Rückbezug im Schlusssatz sichern die Lesung.</note>
-        <note type="interpretive_choice" target="#std-249-orig" n="Dosierung des fertigen Wassers" resp="#fyndling">Der Text nennt keine Trinkmenge; für die Praxis empfiehlt sich, das fertige Wasser wie ein konzentriertes Kräuterdestillat zu behandeln - ein kleines Glas, nicht literweise als gewöhnliches Getränk.</note>
-        <note type="interpretive_choice" target="#std-249-orig" n="Alkoholstärke des fertigen Destillats" resp="#fyndling">Der Text nennt weder Brenndurchgänge noch Schnitttechnik; für die Praxis empfiehlt es sich, das Ergebnis vorsichtshalber als potenziell hochprozentig zu behandeln.</note>
+        <note type="interpretive_choice" target="#std-249-orig" n="Dosierung des fertigen Wassers" resp="#fyndling">Der Text nennt keine Trinkmenge; für die Praxis empfiehlt sich, das fertige Wasser wie ein konzentriertes Kräuterdestillat zu behandeln - ein kleines Glas, nicht literweise als gewöhnliches Getränk.<list type="alternatives"><item>Die Mengenangabe „serves: 1 Glas ~500 ml“ im Datensatz beschreibt vermutlich die Ausbeute der Destillation, nicht eine empfohlene Einzeldosis.<note type="rationale">Der Text selbst nennt für das fertige Wasser keine Menge, nur das Vorgehen bei der Herstellung - Ausbeute und Trinkmenge sind zwei verschiedene Größen, die im Rezept nicht auseinandergehalten werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-249-orig" n="Alkoholstärke des fertigen Destillats" resp="#fyndling">Der Text nennt weder Brenndurchgänge noch Schnitttechnik; für die Praxis empfiehlt es sich, das Ergebnis vorsichtshalber als potenziell hochprozentig zu behandeln.<list type="alternatives"><item>Ausbeute und Stärke hingen historisch von Kessel, Feuerführung und Erfahrung des Brenners ab.<note type="rationale">Der Text benennt Stärke oder Alkoholgehalt an keiner Stelle - das war Erfahrungswissen des Brenners, kein im Rezept mitgeteilter Wert.</note></item></list></note>
       </div>
     </back>
   </text>

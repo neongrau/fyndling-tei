@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,9 +114,9 @@
         <note type="gloss" target="#wes-048-orig" n="ghetempert" resp="#fyndling">Gemischt, angerührt.</note>
         <note type="gloss" target="#wes-048-orig" n="een cruyme broots" resp="#fyndling">Eine Brotkrume, hier als Bindemittel für die Sauce.</note>
         <note type="gloss" target="#wes-048-orig" n="eenen nap wijns" resp="#fyndling">Ein Napf Wein, eine unpräzise Mengenangabe für Wein.</note>
-        <note type="interpretive_choice" target="#wes-048-orig" n="Tgheroone" resp="#fyndling">Aal - allgemeine Bezeichnung für Aal.</note>
-        <note type="interpretive_choice" target="#wes-048-orig" n="een cruyme broots" resp="#fyndling">eine Brotkrume - als Bindemittel für die Sauce.</note>
-        <note type="interpretive_choice" target="#wes-048-orig" n="eenen nap wijns" resp="#fyndling">einen Napf Wein - eine unpräzise Mengenangabe.</note>
+        <note type="interpretive_choice" target="#wes-048-orig" n="Tgheroone" resp="#fyndling">Aal - allgemeine Bezeichnung für Aal.<list type="alternatives"><item>Ein großer oder fetter Aal<note type="rationale">Das Präfix 't-' könnte auf eine spezifische Qualität oder Größe hinweisen, die in der mittelniederländischen Küche für besondere Gerichte verwendet wurde.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-048-orig" n="een cruyme broots" resp="#fyndling">eine Brotkrume - als Bindemittel für die Sauce.<list type="alternatives"><item>eine Scheibe Brot<note type="rationale">‚Krumme‘ kann auch eine Scheibe oder ein Stück Brot bedeuten, das dann zerrieben wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-048-orig" n="eenen nap wijns" resp="#fyndling">einen Napf Wein - eine unpräzise Mengenangabe.<list type="alternatives"><item>eine Tasse Wein<note type="rationale">Ein Napf war ein gängiges Trinkgefäß, dessen Volumen einer heutigen Tasse ähneln könnte.</note></item></list></note>
       </div>
     </back>
   </text>

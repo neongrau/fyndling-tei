@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Praxis. Die Eier-Milch langsam und unter Rühren nur bis zum sichtbaren Gerinnen
         <note type="gloss" target="#phw-145-orig" n="versechnen" resp="#fyndling">Bedeutet hier ‚versiegen‘ beziehungsweise ‚vertrocknen‘ - die Feuchtigkeit soll vollständig entweichen, nicht nur oberflächlich abrinnen.</note>
         <note type="gloss" target="#phw-145-orig" n="milich rom" resp="#fyndling">Bezeichnet den Rahm oder die Sahne, die sich auf unhomogenisierter Milch absetzt.</note>
         <note type="gloss" target="#phw-145-orig" n="se" resp="#fyndling">Ein Imperativ von ‚säen‘, hier im Sinne von ‚streuen‘ oder ‚bestreuen‘.</note>
-        <note type="interpretive_choice" target="#phw-145-orig" n="versechnen" resp="#fyndling">Versiegen/vertrocknen lassen - die Feuchtigkeit soll vollständig entweichen, nicht nur oberflächlich abrinnen.</note>
-        <note type="interpretive_choice" target="#phw-145-orig" n="seutz wie ain ayr milich" resp="#fyndling">Das Erhitzen der Eier-Milch-Mischung wird ohne Angabe von Hitze oder Dauer vorausgesetzt - der Text referenziert die bekannte Zubereitung einer Eier-Milch, ohne sie neu zu erklären.</note>
+        <note type="interpretive_choice" target="#phw-145-orig" n="versechnen" resp="#fyndling" subtype="lexical">Versiegen/vertrocknen lassen - die Feuchtigkeit soll vollständig entweichen, nicht nur oberflächlich abrinnen.<list type="alternatives"><item>Abtropfen lassen (nur oberflächliches Abrinnen) - diese Lesart wird an anderer Stelle im Buch bereits als unzureichend verworfen.</item></list></note>
+        <note type="interpretive_choice" target="#phw-145-orig" n="seutz wie ain ayr milich" resp="#fyndling" subtype="contextual">Das Erhitzen der Eier-Milch-Mischung wird ohne Angabe von Hitze oder Dauer vorausgesetzt - der Text referenziert die bekannte Zubereitung einer Eier-Milch, ohne sie neu zu erklären.<list type="alternatives"><item>‚Sieden‘ kann auch ein tatsächliches, kurzes Aufkochen meinen; der Text unterscheidet das nicht.</item></list></note>
       </div>
     </back>
   </text>

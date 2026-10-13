@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,7 +126,7 @@ Praxis. Quark oder Ricotta gut abtropfen lassen, mit etwas Mehl (ein bis zwei ge
         <note type="gloss" target="#boc-040-orig" n="lac nouum / caseum nouum" resp="#fyndling">Frische Milch (lac nouum) wird durch Erhitzen zum Gerinnen gebracht; das Gerinnsel ist der frische Käse (caseum nouum), also Quark beziehungsweise junger Frischkäse.</note>
         <note type="gloss" target="#boc-040-orig" n="modicis spetiebus" resp="#fyndling">"Wenig Gewürze", ohne nähere Angabe - bei einer süßen Torte am ehesten süße Würzen wie Zimt, Ingwer oder Muskat.</note>
         <note type="gloss" target="#boc-040-orig" n="patella" resp="#fyndling">Eigentlich eine flache Pfanne; da das Gericht als torta gebacken wird, hier eine flache Back- oder Bratform, in der mit Ober- und Unterhitze gegart wird.</note>
-        <note type="interpretive_choice" target="#boc-040-orig" n="patella" resp="#fyndling">Eine flache Back- oder Bratform, in der die Torte mit Hitze von oben und unten gebacken wird - so wie Maestro Martino seine Käsetorte zubereitet.</note>
+        <note type="interpretive_choice" target="#boc-040-orig" n="patella" resp="#fyndling">Eine flache Back- oder Bratform, in der die Torte mit Hitze von oben und unten gebacken wird - so wie Maestro Martino seine Käsetorte zubereitet.<list type="alternatives"><item>Eine bloße Bratpfanne, in der die Masse eher gebraten als gebacken wird.<note type="rationale">Patella ist primär die Pfanne; manche mittelalterlichen Torten wurden tatsächlich in der Pfanne gar gemacht, was hier zu einer dickeren, fladenartigen Form führen würde.</note></item></list></note>
       </div>
     </back>
   </text>

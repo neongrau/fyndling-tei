@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,7 +125,7 @@ Was sagt die Quelle zur Milch?
         <note type="interpretive_choice" target="#w1-070-orig" n="beleibem" resp="#fyndling">„bleiben sie“. Dies ist eine plausible scribale oder dialektale Variation von „bleiben“.</note>
         <note type="interpretive_choice" target="#w1-070-orig" n="wechlicherlay" resp="#fyndling">„welcher Art du sie haben kannst“. Dies ist eine direkte Übersetzung der Phrase und passt zum Kontext, dass eine süße Milch gewünscht wird, aber die genaue Art flexibel ist.</note>
         <note type="interpretive_choice" target="#w1-070-orig" n="scheffel" resp="#fyndling">Schaff. CoReMA verlinkt es mit Wikidata Q2230042 (Schaff), einem großen Holzgefäß.</note>
-        <note type="interpretive_choice" target="#w1-070-orig" n="milch" resp="#fyndling">Milch nach Verfügbarkeit, die süß sein soll.</note>
+        <note type="interpretive_choice" target="#w1-070-orig" n="milch" resp="#fyndling">Milch nach Verfügbarkeit, die süß sein soll.<list type="alternatives"><item>Kuhmilch oder eine pflanzliche Milch<note type="rationale">Die offene Verfügbarkeitsformel legt keine bestimmte Sorte fest; der Text selbst nennt weder Fastenzeit noch Mandelmilch.</note></item></list></note>
       </div>
     </back>
   </text>

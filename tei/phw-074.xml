@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -144,9 +149,9 @@ Birnen oder Äpfel schälen, das Kerngehäuse vorsichtig aushöhlen, ohne die Fr
         <note type="gloss" target="#phw-074-orig" n="se" resp="#fyndling">Vom Verb ‚säen‘, hier im Sinne von ‚streuen‘ oder ‚bestreuen‘.</note>
         <note type="gloss" target="#phw-074-orig" n="wein berlach" resp="#fyndling">Weinbeeren (Rosinen) - dieselbe feste Wendung lösen die benachbarten Quittenpasteten dieses Kapitels ebenso auf. ‚Berlach‘ für sich allein ist in den Wörterbüchern nicht als Lebensmittel belegt, steht im Buch aber auch nie ohne das vorangestellte ‚Wein‘.</note>
         <note type="gloss" target="#phw-074-orig" n="helders" resp="#fyndling">Von ‚aushöhlen‘ - entkernen, das Kerngehäuse entfernen.</note>
-        <note type="interpretive_choice" target="#phw-074-orig" n="helders aus" resp="#fyndling">Entkerne sie.</note>
-        <note type="interpretive_choice" target="#phw-074-orig" n="grabs nit gar durch" resp="#fyndling">grabe nicht ganz durch.</note>
-        <note type="interpretive_choice" target="#phw-074-orig" n="nit as fil zucker als zu denn epfla" resp="#fyndling">nicht so viel Zucker wie für die Äpfel (wenn du Birnen verwendest).</note>
+        <note type="interpretive_choice" target="#phw-074-orig" n="helders aus" resp="#fyndling" subtype="lexical">Entkerne sie.</note>
+        <note type="interpretive_choice" target="#phw-074-orig" n="grabs nit gar durch" resp="#fyndling" subtype="contextual">grabe nicht ganz durch.<list type="alternatives"><item>schneide nicht ganz durch.<note type="rationale">Das Verb ‚graben‘ (grabs) wird hier im Sinne des Entfernens des Kerngehäuses verwendet, aber mit der Anweisung, die Frucht nicht vollständig zu durchstechen, um sie intakt zu halten.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-074-orig" n="nit as fil zucker als zu denn epfla" resp="#fyndling" subtype="contextual">nicht so viel Zucker wie für die Äpfel (wenn du Birnen verwendest).<list type="alternatives"><item>nicht so viel Zucker wie (man sonst) zu den Äpfeln (geben würde).<note type="rationale">Die Formulierung ist mehrdeutig. Die primäre Lesart geht davon aus, dass Birnen weniger Zucker benötigen als Äpfel, was eine gängige kulinarische Praxis ist. Die alternative Lesart würde sich auf eine allgemeine Zuckerempfehlung für Äpfel beziehen, die hier als Vergleich dient.</note></item></list></note>
       </div>
     </back>
   </text>

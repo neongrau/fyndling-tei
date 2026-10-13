@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,9 +108,9 @@ Praxis. Weißkohl in Streifen schneiden, grünen Kohl von den groben Blattrippen
         <note type="gloss" target="#rum-0635-orig" n="Endten" resp="#fyndling">Enten. Der Satz selbst sagt nur „Endten“; das Rezept steht als Nummer 9 im Kapitel „Von wilden Endten“, gemeint ist also die Wildente.</note>
         <note type="gloss" target="#rum-0635-orig" n="Koͤl" resp="#fyndling">Kohl. Rumpolt unterscheidet weißen und grünen Kohl. Weißer Kohl ist Weißkohl; welche grüne Kohlart gemeint ist, sagt der Text nicht, Grünkohl im heutigen Sinn ist nicht gesichert.</note>
         <note type="gloss" target="#rum-0635-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, schmackhaft. Rumpolts Urteil über das Gericht, keine Anweisung.</note>
-        <note type="interpretive_choice" target="#rum-0635-orig" n="Endten" resp="#fyndling">Wildente: Das Rezept steht im Kapitel „Von wilden Endten seind fünffzenerley Speiß“, die Kapitelüberschrift gibt das Tier vor.</note>
-        <note type="interpretive_choice" target="#rum-0635-orig" n="gruͤnem Koͤl" resp="#fyndling">Grüner Kohl als grüner Blattkohl, Sorte offen. Rumpolt stellt ihn nur dem weißen Kohl gegenüber und benennt keine Sorte.</note>
-        <note type="interpretive_choice" target="#rum-0635-orig" n="gekocht mit … Koͤl" resp="#fyndling">Ente und Kohl werden zusammen gekocht, der Kohl gart in der Brühe der Ente mit. Ob er ganz, in Stücken oder vorgebrüht hineinkommt, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0635-orig" n="Endten" resp="#fyndling" subtype="contextual">Wildente: Das Rezept steht im Kapitel „Von wilden Endten seind fünffzenerley Speiß“, die Kapitelüberschrift gibt das Tier vor.<list type="alternatives"><item>Hausente<note type="rationale">Der Satz allein sagt nur „Endten“. Im Kapitelzusammenhang trägt diese Lesart nicht; sie wäre nur ohne die Überschrift möglich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0635-orig" n="gruͤnem Koͤl" resp="#fyndling" subtype="lexical">Grüner Kohl als grüner Blattkohl, Sorte offen. Rumpolt stellt ihn nur dem weißen Kohl gegenüber und benennt keine Sorte.<list type="alternatives"><item>Grünkohl im heutigen Sinn<note type="rationale">Naheliegend und heute die übliche Wahl, aber aus dem Text nicht zu sichern.</note></item><item>Wirsing oder ein anderer grüner Kopfkohl<note type="rationale">Ebenso möglich; der Gegensatz weiß/grün kann auch Kopfkohl mit grünen Blättern meinen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0635-orig" n="gekocht mit … Koͤl" resp="#fyndling" subtype="contextual">Ente und Kohl werden zusammen gekocht, der Kohl gart in der Brühe der Ente mit. Ob er ganz, in Stücken oder vorgebrüht hineinkommt, sagt der Text nicht.<list type="alternatives"><item>Moderne Ausführung: Weißkohl in Streifen, grüner Kohl von den Blattrippen befreit, erst gegen Ende zur fast garen Ente gegeben<note type="rationale">Praktisch, damit der Kohl nicht zerkocht; eine Reihenfolge ist bei Rumpolt nicht überliefert. Anbraten oder Vorkochen der Ente ist ebenfalls nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

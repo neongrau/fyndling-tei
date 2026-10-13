@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,13 +134,13 @@ Praxis. Mengen und Zeiten nennt Rumpolt nicht. Die Zeitangabe von etwa einer Stu
         <note type="gloss" target="#rum-1002-orig" n="blaw abgesottene" resp="#fyndling">Rumpolts stehende Wendung für gesottenen Fisch, dessen Haut sich dabei blau färbt. Was im Sud ist, sagt dieses Rezept nicht; Essig nennt es nicht.</note>
         <note type="gloss" target="#rum-1002-orig" n="schmaͤltzen" resp="#fyndling">Mit Fett übergießen, hier mit Baumöl. Im Nachbarrezept rum-1001 heißt es entsprechend „schmaͤltz es mit Butter“.</note>
         <note type="gloss" target="#rum-1002-orig" n="Baumoͤl" resp="#fyndling">Olivenöl, das Öl vom Ölbaum. Das Frühneuhochdeutsche Wörterbuch führt Olivenöl als erste Bedeutung von baumöl; so lösen es auch Rumpolts übrige Rezepte auf.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="gebacken vnnd blaw abgesottene Hecht" resp="#fyndling">Zwei Zubereitungen nebeneinander: gebackene und blau gesottene Hechtstücke kommen beide unter das Kraut. Dafür spricht die Mehrzahl „die Hecht“ im selben Satz.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="fein grob" resp="#fyndling">Recht grob: fein ist hier Gradadverb und verstärkt grob.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="Baumoͤl" resp="#fyndling">Olivenöl: erste Bedeutung von baumöl im Frühneuhochdeutschen Wörterbuch, auch im Deutschen Wörterbuch der Normalfall; Rumpolts übrige Rezepte lösen das Wort ebenso auf.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="Krautbruͤh" resp="#fyndling">Die Brühe vom Kraut selbst, also Sud oder Lake des Sauerkrauts.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="Hecht Rogen/ der gestossen ist" resp="#fyndling">Frischer Hechtrogen, im Mörser zerstoßen und im Kraut mitgesotten, wie im Nachbarrezept rum-1001.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="dz gantze Haͤupt hat" resp="#fyndling">Sauerkraut, das aus ganzen Köpfen eingesäuert ist und erst hier geschnitten wird.</note>
-        <note type="interpretive_choice" target="#rum-1002-orig" n="laß sieden" resp="#fyndling">Sieden, bis das Kraut weich ist; eine Zeit nennt Rumpolt nicht. Im Nachbarrezept rum-1001 siedet der Rogen „ein stundt oder mehr“ mit dem Kraut.</note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="gebacken vnnd blaw abgesottene Hecht" resp="#fyndling" subtype="contextual">Zwei Zubereitungen nebeneinander: gebackene und blau gesottene Hechtstücke kommen beide unter das Kraut. Dafür spricht die Mehrzahl „die Hecht“ im selben Satz.<list type="alternatives"><item>Derselbe Fisch wird erst blau gesotten und dann in Butter gebacken.<note type="rationale">Grammatisch möglich, küchentechnisch ungewöhnlich; die Reihenfolge im Text (gebacken, dann blau) passt nicht dazu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="fein grob" resp="#fyndling" subtype="lexical">Recht grob: fein ist hier Gradadverb und verstärkt grob.<list type="alternatives"><item>Fein geschnitten<note type="rationale">Widerspräche dem folgenden grob; das Kraut wäre dann gehobelt statt geschnitten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="Baumoͤl" resp="#fyndling" subtype="lexical">Olivenöl: erste Bedeutung von baumöl im Frühneuhochdeutschen Wörterbuch, auch im Deutschen Wörterbuch der Normalfall; Rumpolts übrige Rezepte lösen das Wort ebenso auf.<list type="alternatives"><item>Nuss- oder Bucheckernöl<note type="rationale">Das Rheinische und das Pfälzische Wörterbuch nennen für Baumöl zuerst diese Öle; das ist mundartlicher und älterer Gebrauch, für Rumpolts Hofküche spricht nichts dafür.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="Krautbruͤh" resp="#fyndling" subtype="contextual">Die Brühe vom Kraut selbst, also Sud oder Lake des Sauerkrauts.<list type="alternatives"><item>Eine eigens gekochte Fleisch- oder Fischbrühe<note type="rationale">Der Text lässt offen, woher die Brühe kommt; das Wort nennt nur das Kraut.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="Hecht Rogen/ der gestossen ist" resp="#fyndling" subtype="contextual">Frischer Hechtrogen, im Mörser zerstoßen und im Kraut mitgesotten, wie im Nachbarrezept rum-1001.<list type="alternatives"><item>Gesalzener oder geräucherter Rogen<note type="rationale">Der Text sagt nur „gestossen“; ein haltbar gemachter Rogen ist nicht ausgeschlossen, aber nirgends genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="dz gantze Haͤupt hat" resp="#fyndling" subtype="contextual">Sauerkraut, das aus ganzen Köpfen eingesäuert ist und erst hier geschnitten wird.<list type="alternatives"><item>Kraut in großen Stücken, nicht fein gehobelt<note type="rationale">Möglich, doch das Schneiden folgt erst im nächsten Satzteil; die Angabe beschreibt eher den Ausgangszustand.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1002-orig" n="laß sieden" resp="#fyndling" subtype="contextual">Sieden, bis das Kraut weich ist; eine Zeit nennt Rumpolt nicht. Im Nachbarrezept rum-1001 siedet der Rogen „ein stundt oder mehr“ mit dem Kraut.<list type="alternatives"><item>Etwa 30 bis 45 Minuten schwach sieden<note type="rationale">Praktischer Richtwert für heutiges Sauerkraut, nicht aus dem Text.</note></item></list></note>
       </div>
     </back>
   </text>

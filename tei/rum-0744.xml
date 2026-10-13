@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,11 +125,11 @@ Praxis. Pfanne, Mörser, Sieb oder Tuch und ein Topf genügen. Mengen nennt Rump
         <note type="gloss" target="#rum-0744-orig" n="streich es damit durch" resp="#fyndling">Durchstreichen heißt, die gestoßene Masse mit Flüssigkeit durch ein Tuch oder Sieb zu drücken, damit sie glatt wird. Ein Gerät nennt der Text hier nicht.</note>
         <note type="gloss" target="#rum-0744-orig" n="treib es mit einem warmen Wein durch" resp="#fyndling">Dasselbe wie durchstreichen: In der süßen Variante nimmt der warme Wein den Platz der Brühe ein.</note>
         <note type="gloss" target="#rum-0744-orig" n="du darffst kein Gewuͤrtz darzu" resp="#fyndling">„Dürfen“ heißt hier „brauchen“: Du brauchst kein Gewürz dazu. Ein Verbot ist das nicht.</note>
-        <note type="interpretive_choice" target="#rum-0744-orig" n="vngeschelte Mandeln" resp="#fyndling">Ungeschälte Mandeln, also mit der braunen Haut. So steht es im Text, und Rumpolt lässt sie danach ausdrücklich „wol braun“ rösten.</note>
-        <note type="interpretive_choice" target="#rum-0744-orig" n="streich es damit durch" resp="#fyndling">Womit durchgestrichen wird, sagt der Text nicht. Ein feines Sieb oder Tuch erfüllt den Zweck.</note>
-        <note type="interpretive_choice" target="#rum-0744-orig" n="Wiltu es aber suͤß machen" resp="#fyndling">Die süße Variante tauscht nur die Brühe gegen warmen Wein und spart am Salz. Zucker oder Honig nennt Rumpolt nicht; die Übersetzung ergänzt keinen.</note>
-        <note type="interpretive_choice" target="#rum-0744-orig" n="treib es mit einem warmen Wein durch" resp="#fyndling">„Es“ meint die gestoßenen Mandeln. Das Haselhuhn zieht danach wie in der ersten Fassung in dieser Weinsauce; ausdrücklich gesagt wird das nicht.</note>
-        <note type="interpretive_choice" target="#rum-0744-orig" n="Denn ein solche Speiß verderbt man bald mit dem Saltz" resp="#fyndling">Die Mahnung zu sparsamem Salz steht bei der süßen Variante und gilt jedenfalls für sie: so wenig, dass man es kaum schmeckt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#rum-0744-orig" n="vngeschelte Mandeln" resp="#fyndling" subtype="lexical">Ungeschälte Mandeln, also mit der braunen Haut. So steht es im Text, und Rumpolt lässt sie danach ausdrücklich „wol braun“ rösten.<list type="alternatives"><item>Geschälte Mandeln<note type="rationale">Heute üblicher und leichter zu bekommen, widerspricht aber dem Wortlaut. Nur als Behelf.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0744-orig" n="streich es damit durch" resp="#fyndling" subtype="contextual">Womit durchgestrichen wird, sagt der Text nicht. Ein feines Sieb oder Tuch erfüllt den Zweck.<list type="alternatives"><item>Haartuch<note type="rationale">Beim Hasen in Mandelgescharb (rum-0405) und bei der kalten Henne in Mandelsauce (rum-0702) nennt Rumpolt ausdrücklich ein „Haͤrin Tuch“, hier nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0744-orig" n="Wiltu es aber suͤß machen" resp="#fyndling" subtype="contextual">Die süße Variante tauscht nur die Brühe gegen warmen Wein und spart am Salz. Zucker oder Honig nennt Rumpolt nicht; die Übersetzung ergänzt keinen.<list type="alternatives"><item>Zucker stillschweigend vorausgesetzt<note type="rationale">Beim Hasen (rum-0405) gibt Rumpolt dem süßen Mandelgescharb ausdrücklich Zucker zu. Hier fehlt diese Angabe, deshalb nicht ergänzt.</note></item><item>Süße allein aus Wein und Mandeln<note type="rationale">Mit dem Wortlaut vereinbar; welcher Wein gemeint ist, sagt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0744-orig" n="treib es mit einem warmen Wein durch" resp="#fyndling" subtype="contextual">„Es“ meint die gestoßenen Mandeln. Das Haselhuhn zieht danach wie in der ersten Fassung in dieser Weinsauce; ausdrücklich gesagt wird das nicht.<list type="alternatives"><item>Wein zusätzlich zur Brühe<note type="rationale">Der Text stellt den Wein an die Stelle der Brühe; ein Mischen nennt er nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0744-orig" n="Denn ein solche Speiß verderbt man bald mit dem Saltz" resp="#fyndling" subtype="contextual">Die Mahnung zu sparsamem Salz steht bei der süßen Variante und gilt jedenfalls für sie: so wenig, dass man es kaum schmeckt.<list type="alternatives"><item>Gilt für beide Fassungen<note type="rationale">Der Schlusssatz ist allgemein formuliert; in der herzhaften Fassung nennt der Text gar kein Salz.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
       </div>
     </back>
   </text>

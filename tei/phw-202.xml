@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -128,9 +133,9 @@ Praxis. Zwiebeln fein und lang schneiden. In reichlich Schmalz (etwa eigroß) be
         <note type="gloss" target="#phw-202-orig" n="Mas" resp="#fyndling">Eine Augsburger Maß entsprach im 16. Jahrhundert etwa 1,05 Litern.</note>
         <note type="gloss" target="#phw-202-orig" n="gwyrtz" resp="#fyndling">Im Mittelalter umfassten ‚Gewürze‘ oft eine Mischung aus Pfeffer, Ingwer, Galgant, Muskat und Zimt. Hier wird explizit darauf hingewiesen, keine Nelken zu verwenden.</note>
         <note type="gloss" target="#phw-202-orig" n="negalin" resp="#fyndling">‚Negalin‘ sind Nelken. Der Hinweis, diese wegzulassen, ist bemerkenswert, da Nelken sonst häufig in mittelalterlichen Gewürzmischungen vorkamen.</note>
-        <note type="interpretive_choice" target="#phw-202-orig" n="ko rech" resp="#fyndling">Die Handschrift hat „rech“ ohne auslautendes -t. Damit ist ‚rech‘ als ‚Reh‘ zu lesen: ein Reh-Gericht „aus Karpfen“, also Fisch nach Art eines Rehgerichts angerichtet. Der Schreiber setzt bei „recht“ sonst durchgängig das -t. „ko“ bleibt ungeklärt. Der Titel bleibt beschreibend, weil das Rezept selbst nicht sagt, worin die Reh-Art besteht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rech"/></note>
-        <note type="interpretive_choice" target="#phw-202-orig" n="rest" resp="#fyndling">Das Verb ‚rest‘ wird als ‚rösten‘ oder ‚anbraten‘ verstanden, was im Kontext des Anbratens von Zwiebeln in Schmalz kulinarisch sinnvoll ist.</note>
-        <note type="interpretive_choice" target="#phw-202-orig" n="Garzustand des Rogens" resp="#fyndling">Der Text benennt keine Garzeit oder Textur, nur ‚las jn wol syeden‘ (gut durchsieden lassen).</note>
+        <note type="interpretive_choice" target="#phw-202-orig" n="ko rech" resp="#fyndling" subtype="philological">Die Handschrift hat „rech“ ohne auslautendes -t. Damit ist ‚rech‘ als ‚Reh‘ zu lesen: ein Reh-Gericht „aus Karpfen“, also Fisch nach Art eines Rehgerichts angerichtet. Der Schreiber setzt bei „recht“ sonst durchgängig das -t. „ko“ bleibt ungeklärt. Der Titel bleibt beschreibend, weil das Rezept selbst nicht sagt, worin die Reh-Art besteht.<list type="alternatives"><item>„Ein Koch recht [machen]“ - mhd. „koch“ (Brei/Suppe/Sud-Gericht) plus „recht“ als Adverb zu „machen“.<note type="rationale">Wörterbuchbeleg vorhanden (koch stn. = Brei/Suppe) und inhaltlich passend, da das Rezept ein Sud-Gericht ist. Dagegen spricht das fehlende -t: Der Schreiber schreibt „recht“ sonst immer mit -t.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rech"/></note>
+        <note type="interpretive_choice" target="#phw-202-orig" n="rest" resp="#fyndling" subtype="lexical">Das Verb ‚rest‘ wird als ‚rösten‘ oder ‚anbraten‘ verstanden, was im Kontext des Anbratens von Zwiebeln in Schmalz kulinarisch sinnvoll ist.<list type="alternatives"><item>Die im Pre-Flight-Glossar angegebene Bedeutung ‚Raste‘ (Substantiv) ist in diesem Kontext als Verb nicht plausibel.<note type="rationale">Der Satzbau ‚rest den zwifel wol dar in‘ erfordert ein Verb, keine Substantivform.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-202-orig" n="Garzustand des Rogens" resp="#fyndling" subtype="contextual">Der Text benennt keine Garzeit oder Textur, nur ‚las jn wol syeden‘ (gut durchsieden lassen).<list type="alternatives"><item>Für die Praxis wird vollständiges Durchgaren empfohlen (Lebensmittelsicherheit bei rohem Fischrogen), ohne dass der Text dafür einen eigenen Beleg liefert.<note type="rationale">‚wol syeden‘ beschreibt die Kochart, nicht das gewünschte Gar-Endergebnis - der moderne Sicherheitsstandard ist eine Praxisentscheidung, keine Textaussage.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -137,12 +142,12 @@ Praxis. Braten über Nacht in der Beize kühl halten, vor dem Spießen nachsalze
         <note type="gloss" target="#rum-0044-orig" n="anstecken" resp="#fyndling">Hier ‚auf den Spieß stecken‘; das Wort Spieß steht im Text nicht, folgt aber aus dem Zusammenhang mit dem Begießen des Bratens.</note>
         <note type="gloss" target="#rum-0044-orig" n="Fischkessel" resp="#fyndling">Kessel, in dem Fische gesotten wurden. Rumpolt nimmt ihn auch für Saucen; die Größe nennt der Text hier nicht.</note>
         <note type="gloss" target="#rum-0044-orig" n="vnzerlassen" resp="#fyndling">‚Unzerlassen‘ bedeutet nicht zerlassen, also frisch und ungeschmolzen.</note>
-        <note type="interpretive_choice" target="#rum-0044-orig" n="eingebeißt / Beißbruͤh" resp="#fyndling">Beizen im Sinn von ‚in gewürzte Essigbrühe einlegen‘, gesichert durch den Zusammenhang (Essig, Wasser, Gewürze, über Nacht) und das Parallelrezept 47 („beiß jn vber Nacht“).</note>
-        <note type="interpretive_choice" target="#rum-0044-orig" n="Fischkessel" resp="#fyndling">Fischkessel, ein länglicher Kessel zum Fischsieden, hier als Gefäß für die Saucenbrühe. Die Größe nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0044-orig" n="anstecken" resp="#fyndling">Auf den Spieß stecken, weil der Braten anschließend begossen wird und das Parallelrezept 47 ‚steck jn an, vnd laß jn braten‘ hat.</note>
-        <note type="interpretive_choice" target="#rum-0044-orig" n="das lautere thu herab" resp="#fyndling">Das Klare abnehmen und beiseitetun; sein Verbleib ist offen.</note>
-        <note type="interpretive_choice" target="#rum-0044-orig" n="Kümmel und Wacholder" resp="#fyndling">Wacholder leicht angedrückt, Kümmel ganz; nur der Knoblauch ist im Text ausdrücklich gestoßen.</note>
-        <note type="interpretive_choice" target="#rum-0044-orig" n="Salz von Braten und Brühe" resp="#fyndling">Braten salzen, die Brühe am Ende abschmecken, weil die Butter ausdrücklich ungesalzen ist und die Beize Restsalz mitbringt.</note>
+        <note type="interpretive_choice" target="#rum-0044-orig" n="eingebeißt / Beißbruͤh" resp="#fyndling" subtype="lexical">Beizen im Sinn von ‚in gewürzte Essigbrühe einlegen‘, gesichert durch den Zusammenhang (Essig, Wasser, Gewürze, über Nacht) und das Parallelrezept 47 („beiß jn vber Nacht“).</note>
+        <note type="interpretive_choice" target="#rum-0044-orig" n="Fischkessel" resp="#fyndling" subtype="contextual">Fischkessel, ein länglicher Kessel zum Fischsieden, hier als Gefäß für die Saucenbrühe. Die Größe nennt der Text nicht.<list type="alternatives"><item>Kleiner Kessel<note type="rationale">Rezept 47 sagt ausdrücklich „kleinen Fischkessel“; in Nr. 44 fehlt die Angabe.</note></item><item>Großer Kochtopf<note type="rationale">Nicht belegt, die Größe steht nur als Zusatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0044-orig" n="anstecken" resp="#fyndling" subtype="contextual">Auf den Spieß stecken, weil der Braten anschließend begossen wird und das Parallelrezept 47 ‚steck jn an, vnd laß jn braten‘ hat.<list type="alternatives"><item>Anderes Anstecken (etwa in einer Pfanne braten)<note type="rationale">Das Wort Spieß steht nicht im Druck; die Garart ist deshalb Kontextlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0044-orig" n="das lautere thu herab" resp="#fyndling" subtype="contextual">Das Klare abnehmen und beiseitetun; sein Verbleib ist offen.<list type="alternatives"><item>Das Klare als Verdünnung oder zum Begießen mitverwenden<note type="rationale">Der Text sagt nur ‚thu herab‘, nicht wohin; nicht auszuschließen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0044-orig" n="Kümmel und Wacholder" resp="#fyndling" subtype="contextual">Wacholder leicht angedrückt, Kümmel ganz; nur der Knoblauch ist im Text ausdrücklich gestoßen.<list type="alternatives"><item>Beides gestoßen<note type="rationale">Möglich, der Text legt es nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0044-orig" n="Salz von Braten und Brühe" resp="#fyndling" subtype="contextual">Braten salzen, die Brühe am Ende abschmecken, weil die Butter ausdrücklich ungesalzen ist und die Beize Restsalz mitbringt.<list type="alternatives"><item>Brühe ohne zusätzliches Salz<note type="rationale">Beize und nachgesalzener Braten liefern Salz; Übersalzen ist die Gefahr.</note></item></list></note>
       </div>
     </back>
   </text>

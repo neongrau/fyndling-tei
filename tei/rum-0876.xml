@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,9 +104,9 @@ Im Salz. Ob der Stör in Salzwasser gesotten und darin aufgetragen wird oder ob 
 Praxis. Ob ganz oder in Stücken, sagt der Text nicht. Den Stör in gesalzenem Wasser schwach sieden lassen, bis er gar ist, und warm anrichten. Brühe, Essig, Kräuter oder eine Sauce nennt Rumpolt hier nicht.</note>
         <note type="gloss" target="#rum-0876-orig" n="abgesotten" resp="#fyndling">Abgekocht, in siedender Flüssigkeit gar gesotten. Das Grimmsche Wörterbuch nennt beim Verb absieden ausdrücklich Fische als Beispiel; die Bedeutung „durch Sieden eindicken“ gilt für Flüssigkeiten, nicht für einen Fisch.</note>
         <note type="gloss" target="#rum-0876-orig" n="im Saltz" resp="#fyndling">Wörtlich „im Salz“. Ob damit Salzwasser gemeint ist, in dem der Fisch gesotten und aufgetragen wird, oder Salz beim Anrichten, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0876-orig" n="Stör" resp="#fyndling">Stör. Die Zeile selbst nennt kein Tier; sie ist die zweite Nummer im Kapitel „Von Stören groß und klein seind eilfferley Speiß“, und Rumpolt lässt das Kapiteltier in den Kurzrezepten regelmäßig weg.</note>
-        <note type="interpretive_choice" target="#rum-0876-orig" n="im Saltz" resp="#fyndling">Wörtlich „im Salz“, offen gelassen: Der Text nennt keine Flüssigkeit und sagt nicht, ob das Salz zum Garen oder zum Anrichten gehört. Text und Titel geben deshalb nur „im Salz“ wieder.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0876-orig" n="abgesotten" resp="#fyndling">Abgekocht, in siedender Flüssigkeit gar gesotten; das Grimmsche Wörterbuch nennt beim Verb absieden Fische als Beispiel.</note>
+        <note type="interpretive_choice" target="#rum-0876-orig" n="Stör" resp="#fyndling" subtype="contextual">Stör. Die Zeile selbst nennt kein Tier; sie ist die zweite Nummer im Kapitel „Von Stören groß und klein seind eilfferley Speiß“, und Rumpolt lässt das Kapiteltier in den Kurzrezepten regelmäßig weg.<list type="alternatives"><item>Fortsetzung des geräucherten Störs aus Nummer 1<note type="rationale">Denkbar, weil die Zeile direkt darauf folgt, aber der Text verbindet die beiden Nummern nicht; Nummer 1 ist geräuchert, hier wird frisch abgesotten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0876-orig" n="im Saltz" resp="#fyndling" subtype="contextual">Wörtlich „im Salz“, offen gelassen: Der Text nennt keine Flüssigkeit und sagt nicht, ob das Salz zum Garen oder zum Anrichten gehört. Text und Titel geben deshalb nur „im Salz“ wieder.<list type="alternatives"><item>In kräftig gesalzenem Wasser gesotten und darin warm aufgetragen<note type="rationale">Die naheliegende Lesart und die Grundlage der Zubereitungsnotiz; auch andere Fischrezepte sieden in gesalzenem Wasser, belegt ist es hier aber nicht.</note></item><item>Mit Salz bestreut oder zum Salz angerichtet, ohne Salzwasser als Garflüssigkeit<note type="rationale">Grammatisch möglich, weil „im Saltz“ hinter dem „vnd“ beim Auftragen steht und nicht beim Absieden.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#rum-0876-orig" n="abgesotten" resp="#fyndling" subtype="lexical">Abgekocht, in siedender Flüssigkeit gar gesotten; das Grimmsche Wörterbuch nennt beim Verb absieden Fische als Beispiel.<list type="alternatives"><item>Durch Sieden eindicken<note type="rationale">Diese Bedeutung führt das Frühneuhochdeutsche Wörterbuch, sie gilt aber für Flüssigkeiten, nicht für einen Fisch.</note></item></list></note>
       </div>
     </back>
   </text>

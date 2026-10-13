@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,11 +123,11 @@ Praxis. Die Würste auf dem Rost zügig braten, wie der Text es verlangt. Weil d
         <note type="gloss" target="#rum-0648-orig" n="Kaͤlbern Netz" resp="#fyndling">kälbern heißt „vom Kalb“. Gemeint ist das Kalbsnetz, das dünne, fettdurchzogene Bauchnetz, in das die Fleischmasse eingeschlagen wird.</note>
         <note type="gloss" target="#rum-0648-orig" n="walger" resp="#fyndling">walgern heißt walzen, rollen. Rumpolt nennt auch die Teigrolle „Walger“.</note>
         <note type="gloss" target="#rum-0648-orig" n="Roßt" resp="#fyndling">Ein Rost, auf dem die Würste gebraten werden.</note>
-        <note type="interpretive_choice" target="#rum-0648-orig" n="von den Beinen" resp="#fyndling">Bein = Knochen: Die Kapaunbrust wird genommen und ihr Fleisch von den Knochen geschnitten. So gebraucht Rumpolt die Wendung auch beim Gänse- und Hasenfleisch.</note>
-        <note type="interpretive_choice" target="#rum-0648-orig" n="sauber geklaubt" resp="#fyndling">Ausgelesen, geputzt: Das Rindfleisch wird von Häutchen und Sehnen befreit. klauben heißt einzeln auslesen; Rumpolt verwendet es so auch beim Rinderfett.</note>
-        <note type="interpretive_choice" target="#rum-0648-orig" n="geschwindt weg gebraten (Garpunkt)" resp="#fyndling">Der Text verlangt nur, die Würste auf dem Rost zügig fertig zu braten; Zeit und Garpunkt nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0648-orig" n="Mengen und Fettanteil" resp="#fyndling">Rumpolt nennt kein Verhältnis von Kapaun, Speck und Rindfleisch; die Mengen bleiben offen.</note>
-        <note type="interpretive_choice" target="#rum-0648-orig" n="auß einem Netz … drey oder vier Wuͤrst machen/ oder darumb schlagen" resp="#fyndling">Ein Netz reicht für drei oder vier Würste; jede wird einzeln eingeschlagen.</note>
+        <note type="interpretive_choice" target="#rum-0648-orig" n="von den Beinen" resp="#fyndling" subtype="contextual">Bein = Knochen: Die Kapaunbrust wird genommen und ihr Fleisch von den Knochen geschnitten. So gebraucht Rumpolt die Wendung auch beim Gänse- und Hasenfleisch.<list type="alternatives"><item>Bein = Schenkel: zusätzlich das Fleisch von den Keulen verwenden.<note type="rationale">Der Satz beginnt mit der Brust und nennt keine Keulen; die Schenkel-Lesart würde eine zweite Fleischsorte einführen, die der Text nicht verlangt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0648-orig" n="sauber geklaubt" resp="#fyndling" subtype="lexical">Ausgelesen, geputzt: Das Rindfleisch wird von Häutchen und Sehnen befreit. klauben heißt einzeln auslesen; Rumpolt verwendet es so auch beim Rinderfett.<list type="alternatives"><item>Ausgelöst, also vom Knochen getrennt.<note type="rationale">Auslösen ist eine andere Tätigkeit; für klauben in diesem Sinn gibt es im Buch keinen Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0648-orig" n="geschwindt weg gebraten (Garpunkt)" resp="#fyndling" subtype="contextual">Der Text verlangt nur, die Würste auf dem Rost zügig fertig zu braten; Zeit und Garpunkt nennt er nicht.<list type="alternatives"><item>Heutige Praxis: die Würste bis zum Kern durchgaren.<note type="rationale">Die Masse ist roh und enthält Geflügel; das ist eine moderne Küchenregel, keine Angabe Rumpolts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0648-orig" n="Mengen und Fettanteil" resp="#fyndling" subtype="contextual">Rumpolt nennt kein Verhältnis von Kapaun, Speck und Rindfleisch; die Mengen bleiben offen.<list type="alternatives"><item>Heutige Praxis: den Speck als merklichen Anteil nehmen, damit die Würste saftig bleiben.<note type="rationale">Kapaunbrust und Rindfleisch sind mager; das ist eine küchenpraktische Empfehlung, kein Textbefund.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0648-orig" n="auß einem Netz … drey oder vier Wuͤrst machen/ oder darumb schlagen" resp="#fyndling" subtype="contextual">Ein Netz reicht für drei oder vier Würste; jede wird einzeln eingeschlagen.<list type="alternatives"><item>Das Netz wird um mehrere Würste zugleich geschlagen.<note type="rationale">So lässt sich „oder darumb schlagen“ lesen; worauf sich darumb bezieht, bleibt offen.</note></item></list></note>
       </div>
     </back>
   </text>

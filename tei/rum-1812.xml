@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,10 +114,10 @@ Praxis. Mandeln, Zucker und Rosenwasser in einer Schüssel zusammenarbeiten, die
         <note type="gloss" target="#rum-1812-orig" n="Turten" resp="#fyndling">Torte. Im Kapitel „Von allerley Turten“ stehen Füllungen aus Beeren, Spinat, Käse, Mandeln und Äpfeln; hier ist es eine süße Mandelfüllung.</note>
         <note type="gloss" target="#rum-1812-orig" n="mach sie ab" resp="#fyndling">„Abmachen“ heißt eine Speise abschließend zubereiten, fertigstellen; hier also die Mandeln mit Rosenwasser und Zucker anrühren.</note>
         <note type="gloss" target="#rum-1812-orig" n="Rosenwasser" resp="#fyndling">Rosenwasser aromatisiert bei Rumpolt viele süße Füllungen und Mandelspeisen.</note>
-        <note type="interpretive_choice" target="#rum-1812-orig" n="mach sie ab" resp="#fyndling">Anrühren, fertigstellen: „abmachen“ = eine Speise abschließend zubereiten (FWB abmachen 1); buchintern bei Mandeln ebenso aufgelöst.</note>
-        <note type="interpretive_choice" target="#rum-1812-orig" n="magsts warm oder kalt auff ein Tisch geben" resp="#fyndling">Bezogen auf die fertige Torte mit dieser Füllung, die warm oder kalt aufgetragen werden kann.</note>
-        <note type="interpretive_choice" target="#rum-1812-orig" n="Mengen von Mandeln, Zucker und Rosenwasser" resp="#fyndling">Der Text nennt keine Mengen; ob eine trockene, krümelige Füllung oder eine streichfähige Paste gemeint ist, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-1812-orig" n="kleine schwartze Rosein" resp="#fyndling">Kleine dunkle Rosinen, so wie der Wortlaut sagt und wie das Buch die Formel sonst führt.</note>
+        <note type="interpretive_choice" target="#rum-1812-orig" n="mach sie ab" resp="#fyndling" subtype="lexical">Anrühren, fertigstellen: „abmachen“ = eine Speise abschließend zubereiten (FWB abmachen 1); buchintern bei Mandeln ebenso aufgelöst.<list type="alternatives"><item>abschmecken<note type="rationale">Bei Rumpolt sonst für Würzen mit Gewürzen üblich; legt hier aber ein Probieren nahe, das der Text nicht verlangt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1812-orig" n="magsts warm oder kalt auff ein Tisch geben" resp="#fyndling" subtype="contextual">Bezogen auf die fertige Torte mit dieser Füllung, die warm oder kalt aufgetragen werden kann.<list type="alternatives"><item>Bezogen auf die Füllung selbst<note type="rationale">„magsts“ (= magst es) ist grammatisch offen; die Füllung könnte auch für sich warm oder kalt gemeint sein.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1812-orig" n="Mengen von Mandeln, Zucker und Rosenwasser" resp="#fyndling" subtype="contextual">Der Text nennt keine Mengen; ob eine trockene, krümelige Füllung oder eine streichfähige Paste gemeint ist, bleibt offen.<list type="alternatives"><item>Mandeln und Zucker etwa 2:1 bis 1:1, Rosenwasser esslöffelweise bis zur formbaren Masse<note type="rationale">Moderner Praxisansatz für das Nachkochen, keine Angabe der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1812-orig" n="kleine schwartze Rosein" resp="#fyndling" subtype="lexical">Kleine dunkle Rosinen, so wie der Wortlaut sagt und wie das Buch die Formel sonst führt.<list type="alternatives"><item>Korinthen<note type="rationale">Naheliegend wegen „klein und schwarz“, aber als Bedeutung nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

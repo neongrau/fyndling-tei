@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,11 +124,11 @@ Praxis. Kirschen absieden und mehrfach durchseihen lässt sich am Feuer nachvoll
         <note type="gloss" target="#b4-266-orig" n="peyl" resp="#fyndling">Das Spundloch eines Fasses, durch das Flüssigkeiten eingefüllt oder entnommen werden.</note>
         <note type="gloss" target="#b4-266-orig" n="verpeyll es schon" resp="#fyndling">Verschließe das Fass gut und luftdicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
         <note type="gloss" target="#b4-266-orig" n="Insten" resp="#fyndling">Einstehen lassen, ziehen lassen.</note>
-        <note type="interpretive_choice" target="#b4-266-orig" n="Chanel vnd czymey" resp="#fyndling">Beide Begriffe bezeichnen Zimt. Wir haben sie in der Zutatenliste als eine Position zusammengefasst.</note>
-        <note type="interpretive_choice" target="#b4-266-orig" n="Galgant vnd den Ganndel" resp="#fyndling">Beide Begriffe bezeichnen Galgant. Wir haben sie in der Zutatenliste als eine Position zusammengefasst.</note>
-        <note type="interpretive_choice" target="#b4-266-orig" n="ain virdung den hengkch daran" resp="#fyndling">‚Ein Viertel‘ - wir interpretieren dies als ‚ein Viertel Pfund‘ (ca. 125 g) der gesamten Gewürzmischung, die in das Säckchen gegeben wird.</note>
-        <note type="interpretive_choice" target="#b4-266-orig" n="ver yessen lassen" resp="#fyndling">Vergären lassen. Der Begriff ‚yessen‘ ist hier im Sinne von Fermentation zu verstehen.</note>
-        <note type="interpretive_choice" target="#b4-266-orig" n="hengkchs oben zu dem peyl In" resp="#fyndling">Häng es oben zum Spundloch hinein. Das ‚peyl‘ ist das Spundloch des Fasses.</note>
+        <note type="interpretive_choice" target="#b4-266-orig" n="Chanel vnd czymey" resp="#fyndling" subtype="lexical">Beide Begriffe bezeichnen Zimt. Wir haben sie in der Zutatenliste als eine Position zusammengefasst.<list type="alternatives"><item>Die Begriffe könnten unterschiedliche Qualitäten oder Formen von Zimt (z.B. Cassia-Zimt und Ceylon-Zimt) bezeichnen.<note type="rationale">Historisch gab es verschiedene Zimtsorten und -qualitäten im Handel. Die CoReMA-Glosse verweist jedoch für beide auf dieselbe Wikidata-ID für Zimt (Q28165), was eine Unterscheidung erschwert.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-266-orig" n="Galgant vnd den Ganndel" resp="#fyndling" subtype="lexical">Beide Begriffe bezeichnen Galgant. Wir haben sie in der Zutatenliste als eine Position zusammengefasst.<list type="alternatives"><item>Die Begriffe könnten unterschiedliche Arten von Galgant (z.B. Großer und Kleiner Galgant) bezeichnen.<note type="rationale">Ähnlich wie bei Zimt gab es auch bei Galgant verschiedene Varianten. Die CoReMA-Glosse verweist jedoch für beide auf dieselbe Wikidata-ID für Kleinen Galgant (Q27653540), was eine Unterscheidung erschwert.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-266-orig" n="ain virdung den hengkch daran" resp="#fyndling" subtype="lexical">‚Ein Viertel‘ - wir interpretieren dies als ‚ein Viertel Pfund‘ (ca. 125 g) der gesamten Gewürzmischung, die in das Säckchen gegeben wird.<list type="alternatives"><item>‚Ein Viertel‘ könnte sich auf ein Viertel eines anderen, nicht genannten Hohlmaßes beziehen, das für die Gewürze verwendet wird.<note type="rationale">Die Einheit ‚Virdung‘ (Viertel) ist ohne spezifische Mengenangabe (z.B. Pfund, Lot) mehrdeutig. Im Kontext von Gewürzen für ein Fass ist ein Viertel Pfund jedoch eine plausible und übliche Menge - auch in b4-190 belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-266-orig" n="ver yessen lassen" resp="#fyndling" subtype="lexical">Vergären lassen. Der Begriff ‚yessen‘ ist hier im Sinne von Fermentation zu verstehen.<list type="alternatives"><item>Der Begriff könnte eine Form von ‚jessen‘ (sieden, aufwallen) sein, was im Kontext der Gärung weniger passend wäre.<note type="rationale">Obwohl ‚jessen‘ auch ‚sieden‘ bedeuten kann, legt der Kontext von ‚newer wein kumbt‘ und ‚most‘ eine alkoholische Gärung nahe, um ein Getränk herzustellen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-266-orig" n="hengkchs oben zu dem peyl In" resp="#fyndling" subtype="lexical">Häng es oben zum Spundloch hinein. Das ‚peyl‘ ist das Spundloch des Fasses.<list type="alternatives"><item>‚Peyl‘ könnte sich auf einen Zapfen oder Stöpsel beziehen, an dem das Säckchen befestigt wird.<note type="rationale">Obwohl ‚Peyl‘ auch einen Zapfen bedeuten kann, ist das Spundloch die logische Öffnung, um ein Gewürzsäckchen in ein Fass zu hängen.</note></item></list></note>
       </div>
     </back>
   </text>

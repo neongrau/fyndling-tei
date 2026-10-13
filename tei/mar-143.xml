@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,8 +135,8 @@ Fa' lessare il pesce con questi interiori, et habi una libra di peselli cotti al
         <note type="gloss" target="#mar-143-orig" n="trutta" resp="#fyndling">Forelle</note>
         <note type="gloss" target="#mar-143-orig" n="tenca" resp="#fyndling">Schleie</note>
         <note type="interpretive_choice" target="#mar-143-orig" n="fecatelli et lacte di pesce" resp="#fyndling">Fischlebern und Rogen/Milch - Dies ist die direkte Übersetzung der Begriffe im Kontext von Fischinnereien.</note>
-        <note type="interpretive_choice" target="#mar-143-orig" n="peselli" resp="#fyndling">Erbsen - Im Kontext von gekochten und zerstoßenen Zutaten ist dies die einzig sinnvolle Lesart.</note>
-        <note type="interpretive_choice" target="#mar-143-orig" n="ad ascio" resp="#fyndling">langsam und gründlich - Dies beschreibt die gewünschte Garweise für eine Pastete, die gut durchgebacken sein soll.</note>
+        <note type="interpretive_choice" target="#mar-143-orig" n="peselli" resp="#fyndling">Erbsen - Im Kontext von gekochten und zerstoßenen Zutaten ist dies die einzig sinnvolle Lesart.<list type="alternatives"><item>Kleine Gewichte<note type="rationale">Das Wort ‚pesello‘ kann auch ‚kleines Gewicht‘ bedeuten, ist aber im Kochkontext hier eindeutig als ‚Erbsen‘ zu verstehen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-143-orig" n="ad ascio" resp="#fyndling">langsam und gründlich - Dies beschreibt die gewünschte Garweise für eine Pastete, die gut durchgebacken sein soll.<list type="alternatives"><item>behutsam<note type="rationale">‚Ad ascio‘ bedeutet wörtlich ‚mit Muße‘ oder ‚behutsam‘, was im Kochkontext ‚langsam und sorgfältig‘ impliziert.</note></item></list></note>
         <note type="interpretive_choice" target="#mar-143-orig" n="questi interiori" resp="#fyndling">diese Innereien - Bezieht sich auf die später genannten Fischlebern und Rogen/Milch, die zusammen mit dem Fisch gekocht werden sollen.</note>
       </div>
     </back>

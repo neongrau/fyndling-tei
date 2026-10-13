@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,12 +125,12 @@ Anrichten. Die Fleischbrühe kommt beim Anrichten über den Braten, ungebunden; 
 Praxis. Beize am Vorabend ansetzen, kühl stellen, am nächsten Tag anstecken, braten, anrichten, Brühe darübergießen, Zimt darüberstreuen.</note>
         <note type="gloss" target="#rum-0050-orig" n="Feldkümmel" resp="#fyndling">Doppelte Lesart, keine ist festgelegt: Lexer und Idiotikon kennen Kümmel (Carum carvi); das Frühneuhochdeutsche Wörterbuch (unter quendel), Stieler im Grimmschen Wörterbuch und das Rheinische Wörterbuch kennen Quendel oder Feldthymian (Thymus serpyllum).</note>
         <note type="gloss" target="#rum-0050-orig" n="beiß" resp="#fyndling">Beizen, also in Essig einlegen; ein heutiger Leser liest leicht "beißen". Das Frühneuhochdeutsche Wörterbuch belegt für beißen die Bedeutung, mit Säure zu behandeln oder zu tränken.</note>
-        <note type="interpretive_choice" target="#rum-0050-orig" n="Feldtkuͤmmel" resp="#fyndling">Kümmel oder Quendel (wilder Thymian), keine Lesart festgelegt; in der Zutatenliste beides genannt, wie in rum-0026 und rum-0042.</note>
-        <note type="interpretive_choice" target="#rum-0050-orig" n="beiß den Braten darinnen" resp="#fyndling">In der Essig-Salz-Flüssigkeit beizen (einlegen), wie in rum-0044 und rum-0049.</note>
-        <note type="interpretive_choice" target="#rum-0050-orig" n="steck jn an" resp="#fyndling">An den Spieß stecken; das Wort Spieß steht nicht im Text, ergibt sich aber aus anstecken und braten und aus dem Nachbarrezept.</note>
-        <note type="interpretive_choice" target="#rum-0050-orig" n="Essig: pur oder verdünnt, Menge" resp="#fyndling">Wie im Text: Essig mit Salz, ohne Wasser und ohne Mengenangabe; nichts ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0050-orig" n="Fleischbruͤh: Art und Temperatur" resp="#fyndling">Fleischbrühe ohne nähere Angabe; nicht auf Rinderbrühe verengt.</note>
-        <note type="interpretive_choice" target="#rum-0050-orig" n="Braten: Stück und Garzeit" resp="#fyndling">Ochsenbraten laut Kapitel; Stück, Gewicht und Garzeit offen.</note>
+        <note type="interpretive_choice" target="#rum-0050-orig" n="Feldtkuͤmmel" resp="#fyndling" subtype="lexical">Kümmel oder Quendel (wilder Thymian), keine Lesart festgelegt; in der Zutatenliste beides genannt, wie in rum-0026 und rum-0042.<list type="alternatives"><item>Quendel (Thymus serpyllum)<note type="rationale">Frühneuhochdeutsches Wörterbuch (quendel), Stieler und Rheinisches Wörterbuch belegen Feldkümmel als Quendel; für den Rhein-Main-Raum gewichtig.</note></item><item>Kümmel (Carum carvi)<note type="rationale">Lexer und Idiotikon kennen Feldkümmel als Kümmel; rum-0044 verwendet in derselben Beize schlicht Kümmel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0050-orig" n="beiß den Braten darinnen" resp="#fyndling" subtype="lexical">In der Essig-Salz-Flüssigkeit beizen (einlegen), wie in rum-0044 und rum-0049.<list type="alternatives"><item>Nur kurz eintauchen<note type="rationale">Der Text lässt den Braten ausdrücklich über Nacht darin liegen, daher als Einlegen gelesen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0050-orig" n="steck jn an" resp="#fyndling" subtype="contextual">An den Spieß stecken; das Wort Spieß steht nicht im Text, ergibt sich aber aus anstecken und braten und aus dem Nachbarrezept.<list type="alternatives"><item>Anderes Bratgerät<note type="rationale">Für Braten im Kapitel ist der Spieß das übliche Gerät, ohne ausdrückliche Nennung bleibt es Kontextlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0050-orig" n="Essig: pur oder verdünnt, Menge" resp="#fyndling" subtype="contextual">Wie im Text: Essig mit Salz, ohne Wasser und ohne Mengenangabe; nichts ergänzt.<list type="alternatives"><item>Halb Wasser, halb Essig<note type="rationale">So steht es in rum-0047, aber nicht hier; als Praxis möglich, wenn die Oberfläche sonst zu sauer wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0050-orig" n="Fleischbruͤh: Art und Temperatur" resp="#fyndling" subtype="contextual">Fleischbrühe ohne nähere Angabe; nicht auf Rinderbrühe verengt.<list type="alternatives"><item>Heiße Rinderbrühe in kleiner Menge<note type="rationale">Naheliegende moderne Praxis; der Text nennt weder Tier noch Temperatur.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0050-orig" n="Braten: Stück und Garzeit" resp="#fyndling" subtype="contextual">Ochsenbraten laut Kapitel; Stück, Gewicht und Garzeit offen.<list type="alternatives"><item>Ziemer oder Keule, Kerntemperatur 55-60 °C<note type="rationale">Moderne Orientierung, nicht historisch; rum-0048 im selben Kapitel gart dagegen ein Hinterviertel lange am Spieß und ist kein Maßstab.</note></item></list></note>
       </div>
     </back>
   </text>

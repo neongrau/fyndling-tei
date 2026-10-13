@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,9 +120,9 @@ Praxis. Vogel waschen, Wacholderbeeren 30 bis 60 Minuten in Wein oder Essig einw
         <note type="gloss" target="#w1-020-orig" n="gwurcz" resp="#fyndling">Die genaue Zusammensetzung der Gewürze ist nicht spezifiziert. Typisch für die Zeit wären Pfeffer, Ingwer, Zimt und Nelken.</note>
         <note type="gloss" target="#w1-020-orig" n="spis" resp="#fyndling">Der Spieß ist ein klassisches Kochgerät für das Braten von Fleisch oder Geflügel über offenem Feuer oder Glut.</note>
         <note type="interpretive_choice" target="#w1-020-orig" n="krani witpoer" resp="#fyndling">Wacholderbeeren. Die CoReMA-Glosse verlinkt direkt auf Juniper Berry (Q3251025), was die Lesart stützt.</note>
-        <note type="interpretive_choice" target="#w1-020-orig" n="waikchent" resp="#fyndling">Wenn sie eingeweicht sind. Dies passt zum Kontext des Übergießens mit Wein oder Essig, um die Beeren weicher zu machen.</note>
+        <note type="interpretive_choice" target="#w1-020-orig" n="waikchent" resp="#fyndling">Wenn sie eingeweicht sind. Dies passt zum Kontext des Übergießens mit Wein oder Essig, um die Beeren weicher zu machen.<list type="alternatives"><item>Wenn sie gekocht sind<note type="rationale">Das Wort könnte eine Form von ‚weichen‘ (kochen) sein, aber ‚einweichen‘ ist im Kontext von Beeren in Flüssigkeit plausibler, bevor sie gestopft werden.</note></item></list></note>
         <note type="interpretive_choice" target="#w1-020-orig" n="sie dann an dem spis" resp="#fyndling">brate sie dann am Spieß. Das Verb fehlt in der Wiener Handschrift - erhalten ist nur das Pronomen ‚sie‘, vermutlich ein Schreiberausfall. Die Parallelhandschriften b4-019 („prats sy dann an dem spiss“), mon-070 („pratt sy dan an dem spiß“) und m5919-009 („prat sy dan ann ainem spis“) haben das Verb ‚prat(t)‘ (braten) an dieser Stelle vollständig erhalten.</note>
-        <note type="interpretive_choice" target="#w1-020-orig" n="Garzustand des Spießbratens" resp="#fyndling">Vollständiges Durchgaren des Ersatzgeflügels (kein rosafarbenes Fleisch am Knochen) - heutiger Hygienestandard, da der Text selbst keine Garzeit oder Garprobe nennt.</note>
+        <note type="interpretive_choice" target="#w1-020-orig" n="Garzustand des Spießbratens" resp="#fyndling">Vollständiges Durchgaren des Ersatzgeflügels (kein rosafarbenes Fleisch am Knochen) - heutiger Hygienestandard, da der Text selbst keine Garzeit oder Garprobe nennt.<list type="alternatives"><item>Mittelalterliches Wildgeflügel am Spieß wurde teils kürzer gebraten und blieb am Knochen leicht rosa<note type="rationale">Der Originaltext entscheidet den Garzustand nicht; die kürzere historische Garzeit ist im Text selbst nicht belegt, nur beim reviewten Zwilling b4-019 als eigener Lesarten-Eintrag dokumentiert.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,10 +102,10 @@ Praxis. Wer dem Hinweis folgen will, trägt geräuchertes Hirschfleisch warm auf
         <note type="gloss" target="#rum-0319-orig" n="Geselcht" resp="#fyndling">Oberdeutsch für geräuchert, oft nach vorherigem Einsalzen; in Bayern und Österreich heißt Räucherfleisch bis heute Geselchtes. Rumpolt meint hier die fertige Räucherware, keinen Arbeitsschritt.</note>
         <note type="gloss" target="#rum-0319-orig" n="sper" resp="#fyndling">Trocken, hart vor Trockenheit (Grimm). Nicht „zäh“ und nicht „säuerlich“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sper"/></note>
         <note type="gloss" target="#rum-0319-orig" n="herb" resp="#fyndling">Rumpolt erklärt das Wort nicht weiter. Gemeint ist ein rauer, wenig milder Eindruck des kalten Fleischs; ob Geschmack oder Mundgefühl, lässt der Text offen.</note>
-        <note type="interpretive_choice" target="#rum-0319-orig" n="auch nicht boͤß" resp="#fyndling">„Auch nicht schlecht“: eine Litotes, also ein verhaltenes Lob, das die Übersetzung beibehält.</note>
-        <note type="interpretive_choice" target="#rum-0319-orig" n="Geselcht" resp="#fyndling">Geräuchert: geselchtes ist oberdeutsch für geräuchertes Fleisch (DWB, BDO); Rumpolt meint die fertige Ware.</note>
-        <note type="interpretive_choice" target="#rum-0319-orig" n="herb" resp="#fyndling">Herb im Sinn von rau, wenig mild, ohne genauere Festlegung; der Text gibt nur das Wort.</note>
-        <note type="interpretive_choice" target="#rum-0319-orig" n="auff etliche manier" resp="#fyndling">Rumpolt verweist auf mehrere Arten, das Wildbret zu reichen, nennt sie aber nicht; gemeint sind wohl andere Zubereitungen, die Lesern seines Kapitels geläufig waren. Die Stelle bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0319-orig" n="auch nicht boͤß" resp="#fyndling" subtype="lexical">„Auch nicht schlecht“: eine Litotes, also ein verhaltenes Lob, das die Übersetzung beibehält.<list type="alternatives"><item>„Ist auch gut“<note type="rationale">Sinngemäß ähnlich, verstärkt das Lob aber über den Wortlaut hinaus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0319-orig" n="Geselcht" resp="#fyndling" subtype="lexical">Geräuchert: geselchtes ist oberdeutsch für geräuchertes Fleisch (DWB, BDO); Rumpolt meint die fertige Ware.<list type="alternatives"><item>Gepökelt und geräuchert<note type="rationale">Selchen schließt oft ein vorheriges Einsalzen ein; der Text sagt dazu nichts, deshalb steht im Titel nur „geräuchert“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0319-orig" n="herb" resp="#fyndling" subtype="contextual">Herb im Sinn von rau, wenig mild, ohne genauere Festlegung; der Text gibt nur das Wort.<list type="alternatives"><item>Zähe oder adstringierende Textur<note type="rationale">Mögliche Deutung des Mundgefühls, aber im Text und in den Wörterbüchern nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0319-orig" n="auff etliche manier" resp="#fyndling" subtype="contextual">Rumpolt verweist auf mehrere Arten, das Wildbret zu reichen, nennt sie aber nicht; gemeint sind wohl andere Zubereitungen, die Lesern seines Kapitels geläufig waren. Die Stelle bleibt offen.<list type="alternatives"><item>Praxis: warm anrichten, ohne weitere Angabe<note type="rationale">Das ist der einzige Rat, den der Text tatsächlich gibt.</note></item></list></note>
       </div>
     </back>
   </text>

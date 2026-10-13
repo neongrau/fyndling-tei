@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,8 +113,8 @@ Praxis. Nüsse im Mörser grob stoßen, Äpfel in gleicher Menge fein würfeln u
         <note type="gloss" target="#w1-234-orig" n="kraphen / chrephlein" resp="#fyndling">Krapfen waren im Mittelalter gefüllte oder ungefüllte Teigtaschen, die oft in Fett ausgebacken wurden. Hier dienen sie als Hülle für die Füllung.</note>
         <note type="gloss" target="#w1-234-orig" n="morser" resp="#fyndling">Im Mittelalter wurde ein großer Mörser zum Zerkleinern von Nüssen, Fleisch oder Gemüse verwendet, nicht nur für Gewürze.</note>
         <note type="gloss" target="#w1-234-orig" n="vasten" resp="#fyndling">Fastenrezepte waren für die Fastenzeit gedacht, in der der Verzehr von Fleisch, Eiern und Milchprodukten eingeschränkt war. Nüsse und Äpfel waren jedoch erlaubt.</note>
-        <note type="interpretive_choice" target="#w1-234-orig" n="als vil ophel" resp="#fyndling">Die Mengenangabe „als vil“ (ebenso viel) bezieht sich auf die zuvor genannten Nüsse. Da keine konkrete Menge für die Nüsse genannt wird, ist die genaue Menge der Äpfel ebenfalls unbestimmt und muss nach Gefühl gewählt werden.</note>
-        <note type="interpretive_choice" target="#w1-234-orig" n="Schnittgröße der Apfelstücke" resp="#fyndling">Praxisempfehlung: Äpfel fein würfeln, damit sie während der üblichen Backzeit des Krapfenteigs im heißen Fett durchgaren.</note>
+        <note type="interpretive_choice" target="#w1-234-orig" n="als vil ophel" resp="#fyndling" subtype="contextual">Die Mengenangabe „als vil“ (ebenso viel) bezieht sich auf die zuvor genannten Nüsse. Da keine konkrete Menge für die Nüsse genannt wird, ist die genaue Menge der Äpfel ebenfalls unbestimmt und muss nach Gefühl gewählt werden.</note>
+        <note type="interpretive_choice" target="#w1-234-orig" n="Schnittgröße der Apfelstücke" resp="#fyndling" subtype="contextual">Praxisempfehlung: Äpfel fein würfeln, damit sie während der üblichen Backzeit des Krapfenteigs im heißen Fett durchgaren.<list type="alternatives"><item>Der Text lässt auch gröbere Apfelstücke zu, deren Garzeit dann primär vom Teig statt von der Füllung bestimmt wird.<note type="rationale">Textlich ebenso gedeckt, im rohen Kern aber schwerer durchzugaren - offene historische Praxisfrage, kein Ersatzstandard.</note></item></list></note>
       </div>
     </back>
   </text>

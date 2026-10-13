@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,9 +116,9 @@ Praxis. Nachkochen lässt sich hier nichts Bestimmtes. Magen und Leber der Pute 
         <note type="gloss" target="#rum-0540-orig" n="lauter Brüh" resp="#fyndling">Klare Brühe: lauter = klar, rein, nicht getrübt.</note>
         <note type="gloss" target="#rum-0540-orig" n="Schweiß" resp="#fyndling">Blut, wie in der Jägersprache. Rumpolt nimmt Hühnerblut (Hennenschweiß) auch sonst für dunkle Pfeffersaucen. Nicht zu verwechseln mit dem Verb schweißen (in Fett anschwitzen).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
         <note type="gloss" target="#rum-0540-orig" n="darffst" resp="#fyndling">Frühneuhochdeutsch dürfen = brauchen, nötig haben. Du darffst nichts davon wegwerffen heißt also: du brauchst nichts wegzuwerfen - kein Verbot, sondern die Feststellung, dass nichts verloren geht.</note>
-        <note type="interpretive_choice" target="#rum-0540-orig" n="Schweiß" resp="#fyndling">Blut (Substantiv, Jägersprache): Es steht in einer Aufzählung von Teilen, die man "nemmen" kann, neben Magen, Leber und Därmen; Rumpolt gebraucht Hennenschweiß auch sonst als Hühnerblut.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0540-orig" n="du darffst nichts davon wegwerffen" resp="#fyndling">"Du brauchst nichts davon wegzuwerfen": frühneuhochdeutsch dürfen = brauchen, nötig haben (FWB dürfen 1). Der Folgesatz "kanst alles zu nutz machen" bestätigt die Feststellung.</note>
-        <note type="interpretive_choice" target="#rum-0540-orig" n="Jndianischen Han" resp="#fyndling">Pute: Das Kapitel heißt "Von einer Jndianischen Henn", Rumpolt unterscheidet im Kapitel nicht zwischen Henne und Hahn.</note>
+        <note type="interpretive_choice" target="#rum-0540-orig" n="Schweiß" resp="#fyndling" subtype="lexical">Blut (Substantiv, Jägersprache): Es steht in einer Aufzählung von Teilen, die man "nemmen" kann, neben Magen, Leber und Därmen; Rumpolt gebraucht Hennenschweiß auch sonst als Hühnerblut.<list type="alternatives"><item>Verb schweißen = in Fett anschwitzen<note type="rationale">Rumpolt kennt das Verb ("schweiß sie in Butter"), aber nur, wenn etwas in Fett gegart wird. In einer Zutatenaufzählung mit Artikel ("den Schweiß") ist es ausgeschlossen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
+        <note type="interpretive_choice" target="#rum-0540-orig" n="du darffst nichts davon wegwerffen" resp="#fyndling" subtype="lexical">"Du brauchst nichts davon wegzuwerfen": frühneuhochdeutsch dürfen = brauchen, nötig haben (FWB dürfen 1). Der Folgesatz "kanst alles zu nutz machen" bestätigt die Feststellung.<list type="alternatives"><item>"Du darfst nichts davon wegwerfen" (Verbot)<note type="rationale">Modernes Verständnis von dürfen; macht aus der Feststellung ein Gebot, das der Satzzusammenhang nicht trägt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0540-orig" n="Jndianischen Han" resp="#fyndling" subtype="contextual">Pute: Das Kapitel heißt "Von einer Jndianischen Henn", Rumpolt unterscheidet im Kapitel nicht zwischen Henne und Hahn.<list type="alternatives"><item>Puter (männliches Tier), wörtlich nach Han<note type="rationale">Sprachlich möglich, aber Rumpolt trennt im Kapitel die Geschlechter nicht; für die Brühe und die Innereien spielt es keine Rolle.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,8 +127,8 @@ Praxis. Den Fisch je nach Größe in Stücke schneiden oder ganz lassen, trocken
         <note type="gloss" target="#phw-195-orig" n="syesem wein" resp="#fyndling">Süßer Wein, etwa Muskateller, war eine häufige Zutat in der mittelalterlichen Küche.</note>
         <note type="gloss" target="#phw-195-orig" n="buder" resp="#fyndling">Butter (b/d-Lautwandel aus „puter/putter“, im Buch durchgängig so aufgelöst).</note>
         <note type="gloss" target="#phw-195-orig" n="allerlay gwirtz / allerlay gewyrtz" resp="#fyndling">Die Formulierung „allerlei Gewürz“ war typisch für mittelalterliche Rezepte, da genaue Mengenangaben selten waren. Meist waren damit die gängigen und teuren Importgewürze wie Pfeffer, Ingwer, Zimt, Nelken und Muskat gemeint.</note>
-        <note type="interpretive_choice" target="#phw-195-orig" n="aschenn oder forana" resp="#fyndling">Die Lesart „Äsche oder Forelle“ wurde gewählt. Beide sind Süßwasserfische, die in der mittelalterlichen Küche bekannt waren und deren Konsistenz zum Schneiden in Stücke oder zum Ganzlassen passt.</note>
-        <note type="interpretive_choice" target="#phw-195-orig" n="basteten (Backgefäß)" resp="#fyndling">Der Text nennt kein Backgefäß und kein Verschließen; wir setzen praktisch eine offene, feuerfeste Auflaufform oder Pfanne an.</note>
+        <note type="interpretive_choice" target="#phw-195-orig" n="aschenn oder forana" resp="#fyndling" subtype="lexical">Die Lesart „Äsche oder Forelle“ wurde gewählt. Beide sind Süßwasserfische, die in der mittelalterlichen Küche bekannt waren und deren Konsistenz zum Schneiden in Stücke oder zum Ganzlassen passt.<list type="alternatives"><item>Eine alternative Lesart wäre, dass „aschen“ eine Art dunkles Gebäck oder Käse und „forana“ ein anderes festes Lebensmittel bezeichnet.<note type="rationale">Die Wörterbücher geben für „aschen“ auch „Asche“ an, was aber im Kontext von „schneiden“ und „ganz lassen“ unplausibel ist. Die Fisch-Lesart ist kulinarisch am plausibelsten und wird durch das Nachbarrezept phw-182 („hecht oder aschenn“) sowie den v/f-Wechsel forana/forhen (belegt bei Fischer) gestützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-195-orig" n="basteten (Backgefäß)" resp="#fyndling" subtype="philological">Der Text nennt kein Backgefäß und kein Verschließen; wir setzen praktisch eine offene, feuerfeste Auflaufform oder Pfanne an.<list type="alternatives"><item>Möglich, dass der Buchtitel „basteten“ auf eine Teighülle als Gefäß referenziert, die im knappen Rezepttext nicht eigens genannt wird - anders als beim unmittelbar folgenden Rezept, das ausdrücklich „machs zu vnd bachs“ verlangt.<note type="rationale">Am Faksimile zu prüfen, ob die Handschrift an dieser Stelle weitere Hinweise gibt, die im Editionsdruck fehlen.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,8 +129,8 @@ Praxis.
         <note type="gloss" target="#phw-133-orig" n="bach epfel" resp="#fyndling">Backäpfel sind Apfelsorten, die beim Erhitzen ihre Form gut behalten und nicht zu schnell zerfallen.</note>
         <note type="gloss" target="#phw-133-orig" n="eydel wein" resp="#fyndling">„Eydel“ ist hier die Exklusivpartikel „eitel“ (nur, bloß, nichts als) und keine Qualitätsangabe - der Teig wird also ausschließlich mit Wein angerührt, ohne Wasserzusatz. Dieselbe Formel liest das Buch an mehreren weiteren Stellen so.</note>
         <note type="gloss" target="#phw-133-orig" n="schnitten dayg" resp="#fyndling">„Schnitten-Teig“ dient hier als Vergleichsmaß für die gewünschte Teigdicke; das Buch nennt an anderer Stelle einen eigenständigen Ausbackteig dieses Namens, vergleichbar mit dem mehrfach belegten Streybla-/Straubenteig.</note>
-        <note type="interpretive_choice" target="#phw-133-orig" n="schnitten dayg" resp="#fyndling">„Schnitten-Teig“ bezeichnet vermutlich den im Buch mehrfach belegten eigenständigen Ausbackteig für „Schnitten“-Gebäck (vgl. Streybla-/Straubenteig) und dient hier nur als Vergleichsmaß für die gewünschte Dünnheit des Apfelteigs.</note>
-        <note type="interpretive_choice" target="#phw-133-orig" n="Mehl im Teig" resp="#fyndling">Der Text nennt für den Teig nur Wein und Eier, kein Mehl. Vermutlich war Mehl als Grundbestandteil eines „dayg“ selbstverständlich und wurde deshalb nicht eigens aufgezählt.</note>
+        <note type="interpretive_choice" target="#phw-133-orig" n="schnitten dayg" resp="#fyndling" subtype="lexical">„Schnitten-Teig“ bezeichnet vermutlich den im Buch mehrfach belegten eigenständigen Ausbackteig für „Schnitten“-Gebäck (vgl. Streybla-/Straubenteig) und dient hier nur als Vergleichsmaß für die gewünschte Dünnheit des Apfelteigs.<list type="alternatives"><item>Der Buch-Zwilling phw-116 liest dieselbe Vergleichsformel als „geschnittener Teig“ (ein in Scheiben geschnittener Teig).<note type="rationale">Diese Lesart passt an beiden Stellen schlecht, weil „schnitten dayg“ grammatisch nur als Dickenvergleich auftritt und nie als Verarbeitungsschritt am Teig selbst beschrieben wird. Nachgezogen 2026-09-24: phw-116 und phw-132 lesen die Formel jetzt ebenso als Vergleichsmaß, das Buch ist an allen drei Stellen einheitlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-133-orig" n="Mehl im Teig" resp="#fyndling" subtype="contextual">Der Text nennt für den Teig nur Wein und Eier, kein Mehl. Vermutlich war Mehl als Grundbestandteil eines „dayg“ selbstverständlich und wurde deshalb nicht eigens aufgezählt.<list type="alternatives"><item>Der eng verwandte Zwilling saw-140 nennt für dieselbe Zubereitung ausdrücklich Mehl, Eier, Wasser und Salz.<note type="rationale">Das legt nahe, dass Mehl auch hier mitgedacht war, auch wenn das Wort im Transkript fehlt - für die Praxis wird es deshalb als moderne Ergänzung behandelt.</note></item></list></note>
       </div>
     </back>
   </text>

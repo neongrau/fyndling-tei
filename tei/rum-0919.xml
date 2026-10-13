@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,9 +121,9 @@ Praxis. Für die Erbsenbrühe getrocknete Erbsen in Wasser weich kochen und die 
         <note type="gloss" target="#rum-0919-orig" n="Limonien" resp="#fyndling">Zitronen, wie im ganzen Buch. Gesalzene Zitronen kennzeichnet Rumpolt eigens mit „gesaltzen“; hier sind frische gemeint.</note>
         <note type="gloss" target="#rum-0919-orig" n="Erbsbruͤh" resp="#fyndling">Erbsenbrühe, also die Brühe gekochter Erbsen. Das Deutsche Wörterbuch belegt das Wort schon im 15. Jahrhundert, das Rheinische Wörterbuch führt es als „Erbsensuppe“. Rumpolt nimmt sie in seinen Fischkapiteln oft als Garflüssigkeit, im Huchen-Kapitel auch beim folgenden Rezept mit Senf.</note>
         <note type="gloss" target="#rum-0919-orig" n="gestossen Jngwer" resp="#fyndling">„Gestoßen“ heißt im Mörser zerkleinert, also gemahlen.</note>
-        <note type="interpretive_choice" target="#rum-0919-orig" n="Roher oder vorgegarter Fisch" resp="#fyndling">Offen. Der Text sagt nur „laß es darmit sieden“. Denkbar ist dasselbe Vorgehen wie beim Kapitelnachbarn (Rezept 920): den Huchen erst trocken absieden und dann in der Brühe aufsieden lassen; in diesem Rezept steht das aber nicht.</note>
-        <note type="interpretive_choice" target="#rum-0919-orig" n="Mengenverhältnis von Erbsenbrühe, Essig, Zitronen und Butter" resp="#fyndling">Nicht angegeben. Der Text nennt nur die Zutaten und beim Ingwer „ein wenig“.</note>
-        <note type="interpretive_choice" target="#rum-0919-orig" n="Limonien: Saft oder Scheiben" resp="#fyndling">Offen. Der Text sagt nur „mit Limonien“; Scheiben und Saft sind beide möglich.</note>
+        <note type="interpretive_choice" target="#rum-0919-orig" n="Roher oder vorgegarter Fisch" resp="#fyndling" subtype="contextual">Offen. Der Text sagt nur „laß es darmit sieden“. Denkbar ist dasselbe Vorgehen wie beim Kapitelnachbarn (Rezept 920): den Huchen erst trocken absieden und dann in der Brühe aufsieden lassen; in diesem Rezept steht das aber nicht.<list type="alternatives"><item>Rohe Fischstücke direkt in der sauren Sauce schwach sieden lassen<note type="rationale">Die wörtlichste Lesart von „laß es darmit sieden“; so in der Praxis-Anleitung umgesetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0919-orig" n="Mengenverhältnis von Erbsenbrühe, Essig, Zitronen und Butter" resp="#fyndling" subtype="contextual">Nicht angegeben. Der Text nennt nur die Zutaten und beim Ingwer „ein wenig“.<list type="alternatives"><item>Fisch knapp mit Erbsenbrühe bedeckt, Essig und Zitronensaft nach Geschmack, ein gutes Stück Butter<note type="rationale">Praxis-Vorschlag ohne Textgrundlage; abschmecken statt abmessen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0919-orig" n="Limonien: Saft oder Scheiben" resp="#fyndling" subtype="contextual">Offen. Der Text sagt nur „mit Limonien“; Scheiben und Saft sind beide möglich.<list type="alternatives"><item>Zitronensaft<note type="rationale">Praxis-Vorschlag, weil er die Sauce gleichmäßig säuert; nicht aus dem Text abgeleitet.</note></item></list></note>
       </div>
     </back>
   </text>

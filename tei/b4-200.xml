@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,7 +136,7 @@ Praxis. Da die Hauptzutat rechtlich nicht erhältlich ist, eignet sich für die 
         <note type="gloss" target="#b4-200-orig" n="moser" resp="#fyndling">Ein Mörser, ein schweres Gefäß aus Stein oder Metall, in dem Zutaten zerstoßen oder zerrieben werden. Für dieses Rezept wird ein kleines Stück Fisch zu einer Paste verarbeitet.</note>
         <note type="gloss" target="#b4-200-orig" n="Muscatt plued" resp="#fyndling">Die Muskatblüte, auch Macis genannt, ist der Samenmantel der Muskatnuss. Sie hat ein feineres, milderes Aroma als die Muskatnuss selbst.</note>
         <note type="gloss" target="#b4-200-orig" n="negelein" resp="#fyndling">Gewürznelken, die getrockneten Blütenknospen des Nelkenbaums. Sie wurden im Mittelalter häufig in süßen und herzhaften Gerichten verwendet.</note>
-        <note type="interpretive_choice" target="#b4-200-orig" n="Lumb pratten" resp="#fyndling">Neunaugen-Zubereitung. Die Bezeichnung „pratten“ wird hier als allgemeine Zubereitungsart oder Gericht verstanden, da der Fisch gesotten und in einem Sud eingelegt wird, nicht gebraten.</note>
+        <note type="interpretive_choice" target="#b4-200-orig" n="Lumb pratten" resp="#fyndling" subtype="lexical">Neunaugen-Zubereitung. Die Bezeichnung „pratten“ wird hier als allgemeine Zubereitungsart oder Gericht verstanden, da der Fisch gesotten und in einem Sud eingelegt wird, nicht gebraten.<list type="alternatives"><item>Neunaugenbraten<note type="rationale">Das Wort „pratten“ kann auch ‚braten‘ bedeuten. Allerdings widerspricht die explizite Anweisung „sewd sy gar“ (siede sie gar) einer reinen Brat-Zubereitung. Ein Spieß könnte auch für das Salzen oder Sieden verwendet worden sein.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,10 +117,10 @@ Praxis. Zwiebeln klein schneiden, in kaltem Wasser aufsetzen und weich sieden. D
         <note type="gloss" target="#rum-0383-orig" n="auff Polisch" resp="#fyndling">„Auf polnische Art“. Was daran polnisch ist, sagt dieses Rezept nicht. Bei den Hammelzungen, die Rumpolt genauso mit Zwiebelbrühe zubereitet, begründet er es selbst: „die Polacken essen alles gern mit Zwibeln“.</note>
         <note type="gloss" target="#rum-0383-orig" n="durchtrieben" resp="#fyndling">„Durchgetrieben“, also durch das Tuch gestrichen. Gemeint ist die Brühe mit den passierten Zwiebeln aus dem Satz davor.</note>
         <note type="gloss" target="#rum-0383-orig" n="machs ab" resp="#fyndling">Rumpolts Wendung für das abschließende Würzen, hier mit Safran und Pfeffer.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#machs-ab"/></note>
-        <note type="interpretive_choice" target="#rum-0383-orig" n="verpfeffers nicht" resp="#fyndling">„überpfeffere es nicht“: Grimms Wörterbuch belegt „verpfeffern“ als Würzen mit Pfeffer, besonders in übermäßiger Weise, und der Folgesatz („das ist bald verwuͤrtzt“) warnt ausdrücklich vor dem Überwürzen.</note>
-        <note type="interpretive_choice" target="#rum-0383-orig" n="Haͤrin Tuch" resp="#fyndling">Ein Seihtuch aus Haar, ohne Festlegung des Materials: Grimm nennt „gewebe aus haaren oder feinem wollenstoff“, welches Haar gemeint ist, sagt keine Quelle.</note>
-        <note type="interpretive_choice" target="#rum-0383-orig" n="vorhin gesotten (Vorgaren des Wildbrets)" resp="#fyndling">Der Text setzt gesottenes Wildbret voraus, sagt aber weder wie noch wie lange es vorgesotten wird; das bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0383-orig" n="Menge und Garzeit der Zwiebeln" resp="#fyndling">Der Text nennt keine Menge und als Garzeit nur „biß sie weich werden“.</note>
+        <note type="interpretive_choice" target="#rum-0383-orig" n="verpfeffers nicht" resp="#fyndling" subtype="lexical">„überpfeffere es nicht“: Grimms Wörterbuch belegt „verpfeffern“ als Würzen mit Pfeffer, besonders in übermäßiger Weise, und der Folgesatz („das ist bald verwuͤrtzt“) warnt ausdrücklich vor dem Überwürzen.<list type="alternatives"><item>„pfeffere es nicht“, also gar keinen Pfeffer<note type="rationale">Widerspricht dem unmittelbar vorangehenden „machs ab mit Saffran vnd Pfeffer“; der Pfeffer gehört hinein, nur nicht zu viel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0383-orig" n="Haͤrin Tuch" resp="#fyndling" subtype="lexical">Ein Seihtuch aus Haar, ohne Festlegung des Materials: Grimm nennt „gewebe aus haaren oder feinem wollenstoff“, welches Haar gemeint ist, sagt keine Quelle.<list type="alternatives"><item>Ein feines Passier- oder Mulltuch<note type="rationale">Die heutige Entsprechung für die Praxis, kein Befund über das historische Material.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0383-orig" n="vorhin gesotten (Vorgaren des Wildbrets)" resp="#fyndling" subtype="contextual">Der Text setzt gesottenes Wildbret voraus, sagt aber weder wie noch wie lange es vorgesotten wird; das bleibt offen.<list type="alternatives"><item>Rehfleisch vorab in Wasser gar kochen und in der Zwiebelbrühe nur durchwärmen<note type="rationale">Moderne Praxis, die der Text zulässt, aber nicht beschreibt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0383-orig" n="Menge und Garzeit der Zwiebeln" resp="#fyndling" subtype="contextual">Der Text nennt keine Menge und als Garzeit nur „biß sie weich werden“.<list type="alternatives"><item>Zwiebelmenge nach der Fleischmenge bemessen, sieden, bis sie zerfallen<note type="rationale">Praktische Faustregel für heute, nicht im Text belegt.</note></item></list></note>
       </div>
     </back>
   </text>

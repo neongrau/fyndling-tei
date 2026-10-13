@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,8 +101,8 @@ Das Stück. Damhirschlunge bekommst du nur beim Jäger auf Bestellung. Praxis. W
         <note type="gloss" target="#rum-0338-orig" n="wie mans von einem Kalb" resp="#fyndling">Rückverweis auf das Kalbskapitel, wo Rumpolt fünf Lungengerichte ausschreibt (dort Nr. 10 bis 14: rum-0100 bis rum-0104). Für den Damhirsch gibt er hier keinen eigenen Text.</note>
         <note type="gloss" target="#rum-0338-orig" n="zugericht" resp="#fyndling">Zugerichtet, also zubereitet.</note>
         <note type="gloss" target="#rum-0338-orig" n="auff vielerley manier" resp="#fyndling">Auf vielerlei Art: Rumpolt legt sich auf keine der Kalbs-Zubereitungen fest.</note>
-        <note type="interpretive_choice" target="#rum-0338-orig" n="Lungen zugericht/ wie mans von einem Kalb" resp="#fyndling">Lunge vom Damhirsch, zubereitet nach den Kalbslungen-Rezepten: Der Satz steht als Nr. 13 im Kapitel „Vom Dendel Wildpret“, und Rumpolt baut dort Verweise gleich (Nr. 10 „Griff vom Dendel … wie võ Hirsch“, rum-0335; Nr. 15 „Liecht vnd Gurgel zugericht/ wie mans vom Hirsch macht“, rum-0340). Das Kalb ist das Vorbild, nicht das Tier.</note>
-        <note type="interpretive_choice" target="#rum-0338-orig" n="auff vielerley manier" resp="#fyndling">Alle fünf Kalbslungen-Zubereitungen sind gemeint, ohne dass eine bevorzugt wird (rum-0100 bis rum-0104).</note>
+        <note type="interpretive_choice" target="#rum-0338-orig" n="Lungen zugericht/ wie mans von einem Kalb" resp="#fyndling" subtype="contextual">Lunge vom Damhirsch, zubereitet nach den Kalbslungen-Rezepten: Der Satz steht als Nr. 13 im Kapitel „Vom Dendel Wildpret“, und Rumpolt baut dort Verweise gleich (Nr. 10 „Griff vom Dendel … wie võ Hirsch“, rum-0335; Nr. 15 „Liecht vnd Gurgel zugericht/ wie mans vom Hirsch macht“, rum-0340). Das Kalb ist das Vorbild, nicht das Tier.<list type="alternatives"><item>Kalbslunge selbst, als bloße Erinnerung im Damhirsch-Kapitel<note type="rationale">Möglich, weil der Satz das Tier der Lunge nicht nennt und der Nachbar Nr. 12 ausdrücklich von „einer Kaͤlbern Leber“ spricht (rum-0337). Gegen diese Lesart spricht die Kapitelordnung nach Körperteilen des Damhirschs.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0338-orig" n="auff vielerley manier" resp="#fyndling" subtype="contextual">Alle fünf Kalbslungen-Zubereitungen sind gemeint, ohne dass eine bevorzugt wird (rum-0100 bis rum-0104).<list type="alternatives"><item>Nur die einfachen Kochgerichte (Schmorn, Lungenmus, Zwiebel-Mehl-Brühe), nicht die Schlickkrapfen<note type="rationale">Naheliegend für Wildlunge aus der Jagd, aber der Wortlaut schränkt nicht ein.</note></item></list></note>
       </div>
     </back>
   </text>

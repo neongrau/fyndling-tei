@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -104,10 +109,10 @@ Praxis. Rumpolt nennt keine Würzung außer der Brühe; Gewürze kommen nicht da
         <note type="gloss" target="#rum-0700-orig" n="Feißt" resp="#fyndling">Das alte Wort feist, hier als Hauptwort: Fett. Rindtfeißt ist Rinderfett, Hennenfeißt Hühnerfett.</note>
         <note type="gloss" target="#rum-0700-orig" n="innen" resp="#fyndling">Hier „darin“: da … innen gesotten hat = worin gekocht hat.</note>
         <note type="gloss" target="#rum-0700-orig" n="schier" resp="#fyndling">Bald, gleich.</note>
-        <note type="interpretive_choice" target="#rum-0700-orig" n="da die Hennenbrust innen gesotten hat" resp="#fyndling">Wörtlich: das Fett, worin die Hühnerbrust gekocht hat (innen = darin). Gemeint ist nach dem Zusammenhang das Fett, das auf der Brühe schwimmt, in der die Brust gekocht hat, abgeschöpft und zuletzt darübergegossen. Rumpolt begießt auch das Gestoßene von der Henne mit Fett, das von gesottenem Rindfleisch abgeschöpft ist.</note>
-        <note type="interpretive_choice" target="#rum-0700-orig" n="Nim̃ ein Hennenbrust/ vnnd schneidt sie … fein klein" resp="#fyndling">Rohe Brust: Anders als in den Nachbarrezepten steht hier kein „gesotten“ vor dem Schneiden; das Aufkochen in der Brühe gart sie.</note>
-        <note type="interpretive_choice" target="#rum-0700-orig" n="laß darmit auffsieden (Dauer)" resp="#fyndling">Einmal aufkochen; eine Dauer nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0700-orig" n="Würzung" resp="#fyndling">Außer der Hühnerbrühe ist keine Würzung belegt; Gewürze werden nicht ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0700-orig" n="da die Hennenbrust innen gesotten hat" resp="#fyndling" subtype="contextual">Wörtlich: das Fett, worin die Hühnerbrust gekocht hat (innen = darin). Gemeint ist nach dem Zusammenhang das Fett, das auf der Brühe schwimmt, in der die Brust gekocht hat, abgeschöpft und zuletzt darübergegossen. Rumpolt begießt auch das Gestoßene von der Henne mit Fett, das von gesottenem Rindfleisch abgeschöpft ist.<list type="alternatives"><item>Fett, das beim Kochen aus der Hühnerbrust selbst austritt<note type="rationale">Steht so nicht da: Der Nebensatz nennt, worin gekocht wurde, nicht woher das Fett kommt. Eine magere Brust gibt zudem kaum Fett ab.</note></item><item>Der Nebensatz gilt nur für das Hühnerfett; das Rinderfett stammt aus einer eigenen Rindfleischbrühe<note type="rationale">Möglich, weil Rinderfett nicht aus einer reinen Hühnerbrühe kommen kann. Der Text lässt offen, worauf sich der Nebensatz bezieht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0700-orig" n="Nim̃ ein Hennenbrust/ vnnd schneidt sie … fein klein" resp="#fyndling" subtype="contextual">Rohe Brust: Anders als in den Nachbarrezepten steht hier kein „gesotten“ vor dem Schneiden; das Aufkochen in der Brühe gart sie.<list type="alternatives"><item>Bereits gesottene Brust, die in der Brühe nur aufgewärmt wird<note type="rationale">Die meisten Brust-Rezepte im Kapitel nehmen gesottene Brust, und „da die Hennenbrust innen gesotten hat“ steht in der Vergangenheit, könnte also ein vorheriges Sieden meinen. Der Text entscheidet nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0700-orig" n="laß darmit auffsieden (Dauer)" resp="#fyndling" subtype="contextual">Einmal aufkochen; eine Dauer nennt der Text nicht.<list type="alternatives"><item>Einige Minuten schwach sieden lassen, bis die Brust durchgegart ist<note type="rationale">Heutige Praxis bei roher, klein geschnittener Brust; so in der Zubereitung empfohlen, aber nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0700-orig" n="Würzung" resp="#fyndling" subtype="contextual">Außer der Hühnerbrühe ist keine Würzung belegt; Gewürze werden nicht ergänzt.<list type="alternatives"><item>Mit Salz abschmecken<note type="rationale">Moderne Ergänzung, falls die Brühe ungesalzen ist; der Text nennt nichts.</note></item></list></note>
       </div>
     </back>
   </text>

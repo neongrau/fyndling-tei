@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,8 +102,8 @@ Praxis. Nr. 19 lässt sich nicht für sich allein nachkochen. Wer es versuchen w
         <note type="gloss" target="#rum-0871-orig" n="eyngemacht" resp="#fyndling">Bei Fisch, Fleisch und Geflügel heißt „eyngemacht“ bei Rumpolt: in einer Brühe oder Sauce gegart. Mit heutigem Einmachen im Sinn von Konservieren hat das nichts zu tun.</note>
         <note type="gloss" target="#rum-0871-orig" n="Gewuͤrtz" resp="#fyndling">„In Gewürz“ ist bei Rumpolt eine eigene Art, etwas einzumachen, neben „in Pfeffer“: Beim Spanferkelkopf (rum-0261) heißt es „eynmachen in Gewuͤrtz/ es sey weiß oder gelb/ oder in schwartzem Pfeffer“. Welche Gewürze hineingehören, sagt Rumpolt an keiner der Stellen.</note>
         <note type="gloss" target="#rum-0871-orig" n="Gruͤn" resp="#fyndling">In den Geflügelkapiteln steht „grün eyngemacht“ mit Petersilie, etwa bei der Gans (rum-0601), den Wildenten (rum-0631) und den kleinen Vögeln (rum-0848). Hier nennt Rumpolt keine Zutat.</note>
-        <note type="interpretive_choice" target="#rum-0871-orig" n="Gruͤn" resp="#fyndling">Wörtlich „grün“ belassen: Rumpolt nennt die Farbe der Sauce, aber nicht, wodurch sie grün wird.</note>
-        <note type="interpretive_choice" target="#rum-0871-orig" n="in Gewuͤrtz" resp="#fyndling">In einer gewürzten Brühe oder Sauce angerichtet, wie „eynmachen in Gewuͤrtz“ beim Spanferkelkopf (rum-0261), wo es neben „in schwartzem Pfeffer“ steht. Welche Gewürze, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0871-orig" n="Gruͤn" resp="#fyndling" subtype="contextual">Wörtlich „grün“ belassen: Rumpolt nennt die Farbe der Sauce, aber nicht, wodurch sie grün wird.<list type="alternatives"><item>Eine grüne Petersiliensauce wie bei der Gans (rum-0601) und den Wildenten (rum-0631).<note type="rationale">In allen ausgeführten Stellen des Buchs steht „grün eyngemacht“ mit grüner Petersilie; für den Hausen ist das aber nicht gesagt. Taugt als Vorlage zum Nachkochen.</note></item><item>Grün durch andere Kräuter.<note type="rationale">Nicht ausgeschlossen, im Buch aber für „grün eyngemacht“ nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0871-orig" n="in Gewuͤrtz" resp="#fyndling" subtype="contextual">In einer gewürzten Brühe oder Sauce angerichtet, wie „eynmachen in Gewuͤrtz“ beim Spanferkelkopf (rum-0261), wo es neben „in schwartzem Pfeffer“ steht. Welche Gewürze, bleibt offen.<list type="alternatives"><item>„Gewürz“ im älteren Sinn von Würzkräutern, also grün in Kräutern gegart.<note type="rationale">Das Wort deckt Kräuter und Gewürze; die Parallele zum Spanferkelkopf spricht aber für eine eigene Sauce.</note></item><item>Nur im gewürzten Sud gegart, ohne eigene Sauce.<note type="rationale">Schlichteste Ausführung, doch „eyngemacht“ meint bei Rumpolt das Anrichten in Brühe oder Sauce.</note></item></list></note>
       </div>
     </back>
   </text>

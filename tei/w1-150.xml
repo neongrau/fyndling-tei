@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,8 +114,8 @@
         <note type="gloss" target="#w1-150-orig" n="semel mel" resp="#fyndling">Semmelmehl kann feines Weizenmehl oder geriebene Semmel bezeichnen; die genaue Beschaffenheit bleibt hier offen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
         <note type="gloss" target="#w1-150-orig" n="verglasts reindlein" resp="#fyndling">Ein kleines glasiertes Reindl. Material und Zweck der Glasur werden im Rezept nicht näher beschrieben.</note>
         <note type="gloss" target="#w1-150-orig" n="raum von dem podem" resp="#fyndling">Die Parallelhandschrift B4-145 liest an derselben Stelle „raem“: Gemeint ist daher der Rahm vom Boden, nicht ein Rand oder leerer Raum.</note>
-        <note type="interpretive_choice" target="#w1-150-orig" n="semel mel" resp="#fyndling">Als Semmelmehl wiedergegeben.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
-        <note type="interpretive_choice" target="#w1-150-orig" n="das fech rain" resp="#fyndling">Als „achte darauf, dass es rein ist“ verstanden.</note>
+        <note type="interpretive_choice" target="#w1-150-orig" n="semel mel" resp="#fyndling">Als Semmelmehl wiedergegeben.<list type="alternatives"><item>Feines Weizenmehl<note type="rationale">Der historische Ausdruck kann sowohl feines Mehl als auch geriebene Semmel bezeichnen; das Rezept entscheidet die Beschaffenheit nicht eindeutig.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+        <note type="interpretive_choice" target="#w1-150-orig" n="das fech rain" resp="#fyndling">Als „achte darauf, dass es rein ist“ verstanden.<list type="alternatives"><item>Die Stelle ist graphisch unsicher.<note type="rationale">W1 bewahrt mit „rain“ wahrscheinlich die Reinheitsanweisung; B4-145 ist an der Parallelstelle als „vecht raem“ verderbt.</note></item></list></note>
         <note type="interpretive_choice" target="#w1-150-orig" n="raum von dem podem" resp="#fyndling">Als „Rahm vom Boden“ übersetzt.</note>
       </div>
     </back>

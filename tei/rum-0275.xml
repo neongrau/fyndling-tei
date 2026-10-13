@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,11 +137,11 @@ Praxis. Mengen für Blut, Wein und Essig fehlen, genannt sind nur etwa 20 Eigelb
         <note type="gloss" target="#rum-0275-orig" n="faum" resp="#fyndling">Schaum; entsprechend ist der Faumloͤffel der Schaumlöffel.</note>
         <note type="gloss" target="#rum-0275-orig" n="auff Vngerisch zugericht" resp="#fyndling">Nach ungarischer Art zubereitet. Das ist Rumpolts eigene Herkunftsangabe; er gebraucht sie bei mehreren Gerichten, im selben Kapitel etwa bei den Spanferkelzungen in schwarzer Pfeffersauce.</note>
         <note type="gloss" target="#rum-0275-orig" n="gar an die statt sieden" resp="#fyndling">Gar kochen. Die Wendung steht bei Rumpolt sehr häufig.</note>
-        <note type="interpretive_choice" target="#rum-0275-orig" n="schlechtem schweiß" resp="#fyndling">Einfaches, ungewürztes Blut als Kochflüssigkeit. Gestützt durch den Gegensatz „den rechten schweiß“ im selben Satz und durch Rumpolts „schlecht in Wasser“ an anderer Stelle.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0275-orig" n="Koch es mit schweiß" resp="#fyndling">Wörtlich: Das Fleisch wird in Blut gekocht, ohne dass Wasser oder Brühe genannt werden. Wie das Blut dabei flüssig bleibt, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0275-orig" n="geuß auff vnd nider" resp="#fyndling">Die Sauce wird beim Rühren auf und nieder gegossen; ein Gefäß nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0275-orig" n="setz miteinander zu" resp="#fyndling">Fleisch und Blut werden zusammen aufgesetzt. Das stützt die Fortsetzung „wenn dz Fleisch darinnen gesotten ist“.</note>
-        <note type="interpretive_choice" target="#rum-0275-orig" n="Gewuͤrtz" resp="#fyndling">Verweis auf die zuvor genannten Gewürze Zimt, Pfeffer und Safran („wie es vorhin vermeldt ist worden“).</note>
+        <note type="interpretive_choice" target="#rum-0275-orig" n="schlechtem schweiß" resp="#fyndling" subtype="lexical">Einfaches, ungewürztes Blut als Kochflüssigkeit. Gestützt durch den Gegensatz „den rechten schweiß“ im selben Satz und durch Rumpolts „schlecht in Wasser“ an anderer Stelle.<list type="alternatives"><item>Schlechtes im heutigen Sinn, also minderwertiges oder verdorbenes Blut<note type="rationale">Diese Bedeutung liest ein heutiger Leser hinein; sie passt nicht zum Gegensatz „rechter schweiß“ und nicht zu Rumpolts sonstigem Gebrauch von „schlecht“ für schlicht, einfach.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
+        <note type="interpretive_choice" target="#rum-0275-orig" n="Koch es mit schweiß" resp="#fyndling" subtype="contextual">Wörtlich: Das Fleisch wird in Blut gekocht, ohne dass Wasser oder Brühe genannt werden. Wie das Blut dabei flüssig bleibt, sagt der Text nicht.<list type="alternatives"><item>Praxis: Blut mit etwas Essig verrühren und bei Bedarf mit Brühe verdünnen, dann schwach sieden<note type="rationale">Moderne Hilfe gegen das Gerinnen; im Text steht sie nicht.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
+        <note type="interpretive_choice" target="#rum-0275-orig" n="geuß auff vnd nider" resp="#fyndling" subtype="contextual">Die Sauce wird beim Rühren auf und nieder gegossen; ein Gefäß nennt der Text nicht.<list type="alternatives"><item>Hin- und Hergießen zwischen zwei Gefäßen<note type="rationale">Möglich, aber nicht genannt.</note></item><item>Praxis: mit einer Kelle schöpfen und zurückgießen, während man rührt<note type="rationale">Einfachste Ausführung am Herd.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0275-orig" n="setz miteinander zu" resp="#fyndling" subtype="contextual">Fleisch und Blut werden zusammen aufgesetzt. Das stützt die Fortsetzung „wenn dz Fleisch darinnen gesotten ist“.<list type="alternatives"><item>Nur die Blut-Eier-Mischung wird erneut aufgesetzt<note type="rationale">Grammatisch offen, weil „es“ beides meinen kann; die Fortsetzung spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0275-orig" n="Gewuͤrtz" resp="#fyndling" subtype="contextual">Verweis auf die zuvor genannten Gewürze Zimt, Pfeffer und Safran („wie es vorhin vermeldt ist worden“).<list type="alternatives"><item>Eine eigene, nicht genannte Gewürzmischung<note type="rationale">Der Rückverweis spricht dagegen; eine Liste zu ergänzen wäre Erfindung.</note></item></list></note>
       </div>
     </back>
   </text>

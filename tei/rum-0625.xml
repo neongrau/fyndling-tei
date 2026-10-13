@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,10 +111,10 @@ Praxis. Für Weinsuppe und Gans an Nr. 27 halten. Das Grün ist eine eigene Ents
         <note type="gloss" target="#rum-0625-orig" n="gruͤn machen mit Eyern" resp="#fyndling">Der Text nennt nur Eier. Ein Grünmittel steht nicht da; sonst nimmt Rumpolt dafür gesottene, durchgestrichene Petersilie (vgl. die Gans in grüner Petersiliensauce und die gestoßene Putenbrust).</note>
         <note type="gloss" target="#rum-0625-orig" n="Weinbruͤh" resp="#fyndling">Brühe, deren Hauptbestandteil Wein ist. Mit dem bestimmten Artikel „die“ verweist Rumpolt auf die Weinsuppe aus Nr. 27: dick mit Eidottern, süß, umgerührt, bis sie schäumt. Keine Fleischbrühe.</note>
         <note type="gloss" target="#rum-0625-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, von gutem Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0625-orig" n="gruͤn machen mit Eyern" resp="#fyndling">Wörtlich: mit Eiern grün machen. Der Text nennt kein Grünmittel; die Übersetzung ergänzt keins, das Grün bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0625-orig" n="Weinbruͤh" resp="#fyndling">Die Weinsuppe aus Nr. 27 (rum-0624): Wein, dick mit Eidottern, fein süß, schaumig gerührt. Der bestimmte Artikel „die“ verweist zurück; die Wörterbücher (Adelung, Campe, Grimm) erklären Weinbrühe als Brühe, deren Hauptbestandteil Wein ist.</note>
-        <note type="interpretive_choice" target="#rum-0625-orig" n="sie" resp="#fyndling">Die Gans der vorangehenden Rezepte (Kapitel von der einheimischen Gans, Nr. 25-27).</note>
-        <note type="interpretive_choice" target="#rum-0625-orig" n="Gans gebraten oder gekocht" resp="#fyndling">Beides zulässig: Nr. 27 gießt die Weinsuppe „vber ein gebratene Ganß“ und „auch vber ein gekochte Ganß“.</note>
+        <note type="interpretive_choice" target="#rum-0625-orig" n="gruͤn machen mit Eyern" resp="#fyndling" subtype="contextual">Wörtlich: mit Eiern grün machen. Der Text nennt kein Grünmittel; die Übersetzung ergänzt keins, das Grün bleibt offen.<list type="alternatives"><item>Grün durch gesottene, durchgestrichene Petersilie wie in rum-0601 und rum-0528; die Eier als Bindung oder Beigabe.<note type="rationale">Rumpolts übliches Grünmittel, steht hier aber nicht im Text. Kontextlesart, kein Beleg.</note></item><item>Verkürzte Formel wie in rum-0224 („mit Eyern vnd gruͤnen Salsen“, halb grün und halb gelb): Eier für das Gelb, eine grüne Salse für das Grün.<note type="rationale">Erklärt, warum Eier und Grün zusammen genannt werden, obwohl Eier allein nicht grün färben. Die Salse nennt dieser Satz nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0625-orig" n="Weinbruͤh" resp="#fyndling" subtype="lexical">Die Weinsuppe aus Nr. 27 (rum-0624): Wein, dick mit Eidottern, fein süß, schaumig gerührt. Der bestimmte Artikel „die“ verweist zurück; die Wörterbücher (Adelung, Campe, Grimm) erklären Weinbrühe als Brühe, deren Hauptbestandteil Wein ist.<list type="alternatives"><item>Fleisch- oder Geflügelbrühe mit einem Schuss Wein.<note type="rationale">Nicht belegt: widerspricht dem Wörterbuchsinn und der in Nr. 27 beschriebenen Weinsuppe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0625-orig" n="sie" resp="#fyndling" subtype="contextual">Die Gans der vorangehenden Rezepte (Kapitel von der einheimischen Gans, Nr. 25-27).<list type="alternatives"><item>Die Weinsuppe aus Nr. 27 wird selbst mit Eiern grün gemacht.<note type="rationale">Grammatisch möglich, aber die Weinbrühe steht im selben Satz als eigenes Objekt, das „darüber“ gegossen wird; also ist „sie“ die Gans.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0625-orig" n="Gans gebraten oder gekocht" resp="#fyndling" subtype="contextual">Beides zulässig: Nr. 27 gießt die Weinsuppe „vber ein gebratene Ganß“ und „auch vber ein gekochte Ganß“.<list type="alternatives"><item>Offen lassen und die Wahl dem Koch überlassen.<note type="rationale">Dieser Nachsatz selbst nennt kein Garverfahren.</note></item></list></note>
       </div>
     </back>
   </text>

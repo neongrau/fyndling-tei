@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Praxis. Mandeln fein reiben, am besten blanchiert. Eine kleine Menge Weinbeeren 
         <note type="gloss" target="#phw-011-orig" n="reyb sy klain" resp="#fyndling">Die Mandeln sollen fein gerieben oder gemahlen werden, wie es für Mandeltorten üblich ist.</note>
         <note type="gloss" target="#phw-011-orig" n="halb bachenn" resp="#fyndling">Die Torte wird zunächst nur zur Hälfte gebacken, um sie danach mit Zucker und Rosenwasser zu bestreuen und fertig zu backen.</note>
         <note type="gloss" target="#phw-011-orig" n="zwerenn fingers dick" resp="#fyndling">Eine historische Maßangabe, die etwa 2-3 Zentimeter Dicke entspricht.</note>
-        <note type="interpretive_choice" target="#phw-011-orig" n="gaffenn" resp="#fyndling">Gaufe, also die hohle Hand oder beide zusammengelegten Hände: eine gute doppelte Handvoll Mandeln.</note>
-        <note type="interpretive_choice" target="#phw-011-orig" n="reyb sy klain" resp="#fyndling">Geschälte (blanchierte) Mandeln fein reiben - das Rezept nennt keine Schäl-Anweisung, ergibt aber die für eine Mandeltorte übliche helle, glatte Füllung.</note>
+        <note type="interpretive_choice" target="#phw-011-orig" n="gaffenn" resp="#fyndling" subtype="philological">Gaufe, also die hohle Hand oder beide zusammengelegten Hände: eine gute doppelte Handvoll Mandeln.<list type="alternatives"><item>Hafen, also ein Topf: ein guter Topf voll Mandeln<note type="rationale">Frühere Lesart dieses Rezepts. Sie setzt voraus, dass „gaffenn“ für „haffen“ verschrieben ist. Mit g ist das Wort aber ein eigenes oberdeutsches Maß: Gaufe, Gaufen, die hohle Hand oder beide Hände, eine Handvoll (Etymologisches Wörterbuch des Deutschen; Grimm, Deutsches Wörterbuch; Schweizerisches Idiotikon „Gaufel“). Die Fügung „ain guttenn gaffenn fol“ entspricht genau „ain gutt hand fol“ im selben Buch.</note></item><item>ein Schöpfer voll<note type="rationale">Frühere Lesart dieses Rezepts. Sie hat kein Vorbild: Diese Handschrift schreibt das Gefäßwort 13 Mal „haffen“ und 8 Mal „hefalin“, und im selben Arbeitsgang steht in phw-012 „seutzs jn ainem haflenn“. „gaffenn“ kommt im ganzen Buch genau einmal vor, hier. Ein g für h ist der naheliegende Verleser, ein sonst unbelegtes Schöpfmaß nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-011-orig" n="reyb sy klain" resp="#fyndling" subtype="contextual">Geschälte (blanchierte) Mandeln fein reiben - das Rezept nennt keine Schäl-Anweisung, ergibt aber die für eine Mandeltorte übliche helle, glatte Füllung.<list type="alternatives"><item>Ungeschälte Mandeln mitvermahlen.<note type="rationale">Der Text schließt das nicht aus, ergäbe aber eine dunklere, leicht bittere Füllung; nirgends im Rezept benannt.</note></item></list></note>
       </div>
     </back>
   </text>

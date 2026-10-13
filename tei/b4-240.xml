@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,8 +118,8 @@ Praxis. Die Gans im geschlossenen Topf mit Wasser 2-3 Stunden bei kleinem Feuer 
         <note type="gloss" target="#b4-240-orig" n="pradem" resp="#fyndling">Der Dampf (Brodem), der beim Sieden entsteht. Der verschlossene Topf hält ihn zurück, damit die Brühe nicht zu schnell verdampft und das Aroma im Topf bleibt.</note>
         <note type="gloss" target="#b4-240-orig" n="tutter" resp="#fyndling">Eidotter, das Gelbe vom Ei.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#tutter"/></note>
         <note type="gloss" target="#b4-240-orig" n="nattrang" resp="#fyndling">Verschriebene Form von „vilnach trucken" (fast trocken), wie die älteste Fassung bgs-042 liest: Die Gans siedet, bis die Brühe fast eingekocht ist. W1 hat „vil natraug", Cgm 5919 „vil nahent nach trueg".</note>
-        <note type="interpretive_choice" target="#b4-240-orig" n="nattrang" resp="#fyndling">Fast trocken - die Gans siedet, bis die Brühe fast eingekocht ist. Verschriebene Form von „vilnach trucken" (bgs-042); die Zwischenstufen „vil natraug" (W1) und „vil nahent nach trueg" (Cgm 5919) zeigen den Weg der Verschreibung.</note>
-        <note type="interpretive_choice" target="#b4-240-orig" n="Chrozz" resp="#fyndling">Innereien / Gekröse (Gänseklein) - der wortgleiche Paralleltext liest an derselben Stelle 'kros', und das Frühneuhochdeutsche Wörterbuch belegt für 'krös' 'Fett um das Eingeweide, Gedärme; mehrfach metonymisch auch Eingeweide'.</note>
+        <note type="interpretive_choice" target="#b4-240-orig" n="nattrang" resp="#fyndling" subtype="lexical">Fast trocken - die Gans siedet, bis die Brühe fast eingekocht ist. Verschriebene Form von „vilnach trucken" (bgs-042); die Zwischenstufen „vil natraug" (W1) und „vil nahent nach trueg" (Cgm 5919) zeigen den Weg der Verschreibung.<list type="alternatives"><item>Zart, mürbe<note type="rationale">Aus dem Kochkontext geraten, ohne Wortbeleg. Die Parallelfassungen lesen übereinstimmend „fast trocken"; die Lesart „zart" ist damit widerlegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-240-orig" n="Chrozz" resp="#fyndling" subtype="lexical">Innereien / Gekröse (Gänseklein) - der wortgleiche Paralleltext liest an derselben Stelle 'kros', und das Frühneuhochdeutsche Wörterbuch belegt für 'krös' 'Fett um das Eingeweide, Gedärme; mehrfach metonymisch auch Eingeweide'.<list type="alternatives"><item>Kropf<note type="rationale">Naheliegende Lesart, weil 'Chrozz' lautlich an 'Kropf' erinnert; wird aber weder vom Paralleltext noch vom Wörterbuchbeleg gestützt.</note></item></list></note>
       </div>
     </back>
   </text>

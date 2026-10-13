@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,8 +126,8 @@ Die Hühnerteile (für gleichmäßiges Garen in zwölf Stücke gehackt - eine fe
         <note type="gloss" target="#w1-161-orig" n="gwurcz" resp="#fyndling">Eine allgemeine Bezeichnung für Gewürze. Im Mittelalter waren dies typischerweise Pfeffer, Ingwer, Zimt, Nelken oder Galgant, je nach Verfügbarkeit und gewünschtem Geschmacksprofil.</note>
         <note type="gloss" target="#w1-161-orig" n="haymischn" resp="#fyndling">Heimisch, hausgehalten - vermutlich zur Unterscheidung von Wildgeflügel im Rezepttitel gemeint.</note>
         <note type="interpretive_choice" target="#w1-161-orig" n="vaistz" resp="#fyndling">Die Lesart „Schmalz“ (Fett von einem Schlachtfleisch) wurde gewählt, gestützt durch die CoReMA-Glosse und den kulinarischen Kontext.</note>
-        <note type="interpretive_choice" target="#w1-161-orig" n="gehekch" resp="#fyndling">Die zuvor gehackte Zwiebel-Apfel-Mischung, textlogisch direkt aus dem vorangehenden Satz („hakchen duerich einander“) abgeleitet.</note>
-        <note type="interpretive_choice" target="#w1-161-orig" n="Garzeit der Hühnerstücke im Blut" resp="#fyndling">Die Hühnerstücke werden bis zum vollständigen Durchgaren im Blut gesiedet (heutiger Sicherheitsstandard für Geflügel) - der Text selbst nennt keine Garzeit oder ein Garkriterium jenseits des Siedens.</note>
+        <note type="interpretive_choice" target="#w1-161-orig" n="gehekch" resp="#fyndling">Die zuvor gehackte Zwiebel-Apfel-Mischung, textlogisch direkt aus dem vorangehenden Satz („hakchen duerich einander“) abgeleitet.<list type="alternatives"><item>Gehacktes Hühnerfleisch bzw. eine Art Wurstmasse.<note type="rationale">CoReMA verlinkt „gehekch“ mit der Wikidata-Entität „chicken sausage meat“ (Q107246470). Der Rezepttext selbst erwähnt an dieser Stelle aber kein separates Hacken von Hühnerfleisch, nur das unmittelbar zuvor beschriebene Hacken von Zwiebel und Apfel; der bereits durchreviewte Zwilling b4-158 liest dieselbe Stelle mit identischer Begründung ebenso.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-161-orig" n="Garzeit der Hühnerstücke im Blut" resp="#fyndling">Die Hühnerstücke werden bis zum vollständigen Durchgaren im Blut gesiedet (heutiger Sicherheitsstandard für Geflügel) - der Text selbst nennt keine Garzeit oder ein Garkriterium jenseits des Siedens.<list type="alternatives"><item>Eine kürzere, primär am Eindicken bzw. Gerinnen des Bluts orientierte Garzeit ist historisch nicht auszuschließen.<note type="rationale">Der Text macht das Sieden im Blut zum einzigen genannten Kriterium; nach heutigen Geflügel-Sicherheitsstandards reicht das Eindicken des Bluts allein aber nicht als Garprobe, weshalb vollständiges Durchgaren als moderne Praxisempfehlung gilt.</note></item></list></note>
       </div>
     </back>
   </text>

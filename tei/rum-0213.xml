@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,10 +102,10 @@ Praxis. Eine gebratene Lammkeule, gleich ob aus dem Ofen oder vom Spieß, klein 
         <note type="gloss" target="#rum-0213-orig" n="Gehackts" resp="#fyndling">Gehacktes: klein geschnittenes, bereits gebratenes Fleisch, kein rohes Hackfleisch. Im Hammelkapitel nimmt Rumpolt den Schlegelbraten vom Spieß und „schneidt jhn klein“.</note>
         <note type="gloss" target="#rum-0213-orig" n="Schlegel" resp="#fyndling">Die Keule als Schlachtstück. Das Rezept steht im Kapitel „Vom Lamb“, gemeint ist also eine Lammkeule.</note>
         <note type="gloss" target="#rum-0213-orig" n="Hammelskeul" resp="#fyndling">Hammelkeule. Der Verweis zielt ins vorhergehende Kapitel vom Castraun oder Hammel, auf die beiden Gerichte vom gehackten Schlegel (Nr. 41 und 42). Hammel ist der kastrierte Schafbock, nicht das Lamm; Rumpolt überträgt das Verfahren bewusst von einem Kapitel ins andere.</note>
-        <note type="interpretive_choice" target="#rum-0213-orig" n="Hammelskeul" resp="#fyndling">Verweis auf das Hammelkapitel, Nr. 41 „Ein gehackten Schlegel“ (rum-0190): das einzige Rezept davor, das wörtlich einen gehackten gebratenen Schlegel beschreibt.</note>
-        <note type="interpretive_choice" target="#rum-0213-orig" n="Schlegel" resp="#fyndling">Lammkeule: Das Tier ergibt sich aus dem Kapitel „Vom Lamb“, der Text nennt es nicht.</note>
-        <note type="interpretive_choice" target="#rum-0213-orig" n="Richt es fein warm zu" resp="#fyndling">„zurichten“ als zubereiten: In beiden Bezugsrezepten wird das Gehackte in Brühe gesotten.</note>
-        <note type="interpretive_choice" target="#rum-0213-orig" n="gebratenen Schlegel (Bratart)" resp="#fyndling">Am Spieß gebraten, wie Rumpolt es im Bezugsrezept Nr. 42 voraussetzt („thu jhn von dem Spieß“); in diesem Rezept nicht genannt.</note>
+        <note type="interpretive_choice" target="#rum-0213-orig" n="Hammelskeul" resp="#fyndling" subtype="contextual">Verweis auf das Hammelkapitel, Nr. 41 „Ein gehackten Schlegel“ (rum-0190): das einzige Rezept davor, das wörtlich einen gehackten gebratenen Schlegel beschreibt.<list type="alternatives"><item>Nr. 42, das Gehackte „auf eine andere Manier“ (rum-0191)<note type="rationale">Ebenfalls ein gehackter Schlegelbraten im Hammelkapitel; Rumpolt nennt keine Nummer, beide Lesarten bleiben möglich.</note></item><item>Ein anderes Hammelschlegel-Rezept, etwa Nr. 28 oder Nr. 31<note type="rationale">Dort bleibt der Schlegel als Stück oder wird aufgeschnitten, nicht zu Gehacktem verarbeitet; daher unwahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0213-orig" n="Schlegel" resp="#fyndling" subtype="contextual">Lammkeule: Das Tier ergibt sich aus dem Kapitel „Vom Lamb“, der Text nennt es nicht.<list type="alternatives"><item>Hammelkeule<note type="rationale">Nur der Verweis nennt den Hammel; er betrifft das Verfahren, nicht das Fleisch dieses Rezepts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0213-orig" n="Richt es fein warm zu" resp="#fyndling" subtype="lexical">„zurichten“ als zubereiten: In beiden Bezugsrezepten wird das Gehackte in Brühe gesotten.<list type="alternatives"><item>nur warm anrichten<note type="rationale">Wörtlich möglich, passt aber nicht zu den Bezugsrezepten, die ein Sieden verlangen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0213-orig" n="gebratenen Schlegel (Bratart)" resp="#fyndling" subtype="contextual">Am Spieß gebraten, wie Rumpolt es im Bezugsrezept Nr. 42 voraussetzt („thu jhn von dem Spieß“); in diesem Rezept nicht genannt.<list type="alternatives"><item>Bratenrest aus dem Ofen<note type="rationale">Heutige Praxis; der Text legt die Bratart nicht fest, das Gericht funktioniert mit jedem gebratenen Keulenfleisch.</note></item></list></note>
       </div>
     </back>
   </text>

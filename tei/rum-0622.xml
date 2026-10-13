@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,10 +128,10 @@ Praxis. Mengen nennt der Text keine. Die zerteilte Gans braucht etwa 1,5 bis 2 S
         <note type="gloss" target="#rum-0622-orig" n="pfeffers" resp="#fyndling">Verb mit angehängtem „s“ (= es): pfeffere es, würze es mit Pfeffer. Gebaut wie „machs“, „streichs“ und „setzs“ im selben Rezept.</note>
         <note type="gloss" target="#rum-0622-orig" n="Haͤrin Tuch" resp="#fyndling">Ein feines Seihtuch. Rumpolt schreibt „haͤrin Tuch“, ein Tuch aus Haar; Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Welches Haar, sagt keine Quelle. Heute tut es ein feines Passier- oder Mulltuch.</note>
         <note type="gloss" target="#rum-0622-orig" n="ein Sudt auffthun" resp="#fyndling">Einmal aufwallen lassen.</note>
-        <note type="interpretive_choice" target="#rum-0622-orig" n="pfeffers" resp="#fyndling">„Pfeffere es“, Verb: mit Pfeffer würzen. Die Form steht parallel zu „machs gelb“ und zu „streichs“, „setzs“ im selben Satzgefüge.</note>
-        <note type="interpretive_choice" target="#rum-0622-orig" n="machs gelb" resp="#fyndling">Die Sauce wird gelb gemacht, ein Färbemittel nennt der Text nicht. Die Farbe bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0622-orig" n="laß sie darmit auffsieden" resp="#fyndling">„Sie“ ist die Brühe mit dem eingeschnittenen Weißbrot. Die Gans ist schon vorher gar gesotten und kommt erst am Ende in die Schüssel.</note>
-        <note type="interpretive_choice" target="#rum-0622-orig" n="Essig" resp="#fyndling">Essig ohne Maß; der Text nennt nur die Zutat.</note>
+        <note type="interpretive_choice" target="#rum-0622-orig" n="pfeffers" resp="#fyndling" subtype="lexical">„Pfeffere es“, Verb: mit Pfeffer würzen. Die Form steht parallel zu „machs gelb“ und zu „streichs“, „setzs“ im selben Satzgefüge.<list type="alternatives"><item>„Pfeffer“ als Gericht, eine gepfefferte Brühe oder Soße (Frühneuhochdeutsches Wörterbuch).<note type="rationale">Die Bedeutung gibt es, hier steht aber eine Verbform in einer Reihe von Imperativen; die Sauce ist durch Weißbrot und Essig bestimmt, der Pfeffer ist Würze.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0622-orig" n="machs gelb" resp="#fyndling" subtype="contextual">Die Sauce wird gelb gemacht, ein Färbemittel nennt der Text nicht. Die Farbe bleibt offen.<list type="alternatives"><item>Safran, wie in Nr. 7 desselben Kapitels bei einer ähnlichen Weißbrot-Rindfleischbrühe.<note type="rationale">Dort steht Safran ausdrücklich im Text, hier nicht. Als Annahme für das Nachkochen brauchbar, als Lesart nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0622-orig" n="laß sie darmit auffsieden" resp="#fyndling" subtype="contextual">„Sie“ ist die Brühe mit dem eingeschnittenen Weißbrot. Die Gans ist schon vorher gar gesotten und kommt erst am Ende in die Schüssel.<list type="alternatives"><item>Die Gans wird in der Rindfleischbrühe mitgesotten und diese zur Sauce weiterverwendet.<note type="rationale">Der Text trennt die Schritte nicht scharf. Dann müsste die Gans vor dem Durchstreichen herausgenommen werden, was nicht dasteht; die neu genommene Rindfleischbrühe spricht für getrennte Töpfe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0622-orig" n="Essig" resp="#fyndling" subtype="contextual">Essig ohne Maß; der Text nennt nur die Zutat.<list type="alternatives"><item>Mäßig nehmen und abschmecken, die Sauce soll mild säuerlich bleiben.<note type="rationale">Praxisannahme fürs Nachkochen, keine Textangabe.</note></item></list></note>
       </div>
     </back>
   </text>

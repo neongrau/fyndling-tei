@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,7 +113,7 @@ Vezmi vajec dvadceti, neb třidceti, zbí je do hrnce a zklekci čistě, a daj n
         <note type="gloss" target="#sev-167-orig" n="zklekci" resp="#fyndling">Verquirlen, schlagen</note>
         <note type="gloss" target="#sev-167-orig" n="trou" resp="#fyndling">Reiben, zerkleinern; hier im Kontext von gekochten Eiern: durch Rühren und Zerdrücken fein machen</note>
         <note type="gloss" target="#sev-167-orig" n="řeckým vínem" resp="#fyndling">Griechischer Wein, oft süß und verstärkt, wie Malvasia oder Commandaria, der als Luxusgut importiert wurde</note>
-        <note type="interpretive_choice" target="#sev-167-orig" n="ať se dobře trou" resp="#fyndling">damit sie gut zerkleinert werden</note>
+        <note type="interpretive_choice" target="#sev-167-orig" n="ať se dobře trou" resp="#fyndling">damit sie gut zerkleinert werden<list type="alternatives"><item>damit sie gut gerieben werden<note type="rationale">Das Verb ‚třít' kann ‚reiben' bedeuten. Im Kontext von gekochten Eiern ist jedoch ein Zerdrücken oder Zerkleinern durch Rühren plausibler als ein tatsächliches Reiben, um eine breiige Konsistenz zu erzielen.</note></item></list></note>
       </div>
     </back>
   </text>

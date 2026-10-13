@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,10 +108,10 @@ Praxis. Im Handel gibt es vor allem Jungtauben aus der Zucht. Unbehandelte Zitro
         <note type="gloss" target="#rum-0788-orig" n="weiß" resp="#fyndling">Die Farbe der Sauce: hell, ohne Safran und mit nicht gebräunter Einbrenne. Bei der alten Henne schreibt Rumpolt, so werde es „fein weiß, säuerlich“ (rum-0693). Eine Milchsauce wie die heutige Béchamel ist nicht gemeint.</note>
         <note type="gloss" target="#rum-0788-orig" n="Limonien" resp="#fyndling">Zitronen, hier frische und saure. Gesalzene Zitronen verlangt Rumpolt ausdrücklich als „gesaltzen Limonien“; dieser Zusatz fehlt hier.</note>
         <note type="gloss" target="#rum-0788-orig" n="wie zuvor vermeldet ist Huͤnner vnd Kappaunen eynzumachen" resp="#fyndling">Rückverweis auf frühere Kapitel. Dieselbe weiße Sauce mit Zitronen steht bei den jungen Hühnern (rum-0726), den alten Hennen (rum-0693) und dem Kapaun (rum-0673).</note>
-        <note type="interpretive_choice" target="#rum-0788-orig" n="wie zuvor vermeldet ist Huͤnner vnd Kappaunen eynzumachen" resp="#fyndling">Verweis auf das Gericht „weiß eingemacht mit Limonien“, das Rumpolt bei den jungen Hühnern (rum-0726) wörtlich so überschreibt; die alten Hennen (rum-0693) und der Kapaun (rum-0673) tragen dasselbe Verfahren. Rum-0726 ist das nächste Vorbild, weil dort „weiß“ und „Limonien“ zusammen stehen.</note>
-        <note type="interpretive_choice" target="#rum-0788-orig" n="weiß" resp="#fyndling">Helle Sauce aus Brühe, Zwiebeln, Zitronen, wenig Einbrenne und frischer Butter, ohne färbende Gewürze, wie in den Vorbildern rum-0726 und rum-0693.</note>
-        <note type="interpretive_choice" target="#rum-0788-orig" n="Garen der Tauben" resp="#fyndling">Wie bei Henne und Kapaun: die Tiere erst abbrühen oder halb sieden, dann in der Sauce fertig garen (rum-0693, rum-0673).</note>
-        <note type="interpretive_choice" target="#rum-0788-orig" n="Limonien" resp="#fyndling">Frische, saure Zitronen, wie in rum-0726, rum-0693 und rum-0673 aufgelöst; „sauren“ steht ausdrücklich da.</note>
+        <note type="interpretive_choice" target="#rum-0788-orig" n="wie zuvor vermeldet ist Huͤnner vnd Kappaunen eynzumachen" resp="#fyndling" subtype="contextual">Verweis auf das Gericht „weiß eingemacht mit Limonien“, das Rumpolt bei den jungen Hühnern (rum-0726) wörtlich so überschreibt; die alten Hennen (rum-0693) und der Kapaun (rum-0673) tragen dasselbe Verfahren. Rum-0726 ist das nächste Vorbild, weil dort „weiß“ und „Limonien“ zusammen stehen.<list type="alternatives"><item>Nur das Kapaun-Rezept mit Zitronen (rum-0673)<note type="rationale">Der Verweis nennt auch die Kapaune, und rum-0673 erlaubt „weiß oder gelb“. Weil der Verweis aber Hühner und Kapaune gemeinsam nennt und die Verfahren übereinstimmen, wird keines allein gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0788-orig" n="weiß" resp="#fyndling" subtype="contextual">Helle Sauce aus Brühe, Zwiebeln, Zitronen, wenig Einbrenne und frischer Butter, ohne färbende Gewürze, wie in den Vorbildern rum-0726 und rum-0693.<list type="alternatives"><item>Weiß mit Eidottern gebunden<note type="rationale">Rumpolt kennt eine weiße Kapaun-Brühe mit Eidottern (rum-0669). Die Vorbilder für „weiß mit Limonien“ nennen aber Einbrenne und kein Ei.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0788-orig" n="Garen der Tauben" resp="#fyndling" subtype="contextual">Wie bei Henne und Kapaun: die Tiere erst abbrühen oder halb sieden, dann in der Sauce fertig garen (rum-0693, rum-0673).<list type="alternatives"><item>Tauben nach dem Abbrühen direkt in der Brühe bei kleiner Hitze gar sieden<note type="rationale">Tauben sind klein, ein getrenntes Vorgaren ist kaum nötig und die Garzeit deutlich kürzer als beim Huhn. Das ist eine moderne Praxisempfehlung, der Text nennt keine Garzeit.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0788-orig" n="Limonien" resp="#fyndling" subtype="lexical">Frische, saure Zitronen, wie in rum-0726, rum-0693 und rum-0673 aufgelöst; „sauren“ steht ausdrücklich da.<list type="alternatives"><item>Gesalzene Zitronen<note type="rationale">Rumpolt kennzeichnet sie eigens als „gesaltzen Limonien“; hier fehlt der Zusatz.</note></item></list></note>
       </div>
     </back>
   </text>

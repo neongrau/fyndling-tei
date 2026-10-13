@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,8 +124,8 @@ So wird es richtig gut. Pfeffer und Safran sind die Hauptwürzen. Sei beim Pfeff
         <note type="gloss" target="#ka1-084-orig" n="mit mintzen pletern" resp="#fyndling">‚mintzen pletern' = münzdünn flach ausgebackene Blätter (Eierblätter), in die die Farce eingewickelt wird - NICHT ‚Minze'. Ehlerts Parallelhandschrift erläutert die Stelle: ‚hab deine Blätter lang von gutem Teig und wohl bereitet'.</note>
         <note type="gloss" target="#ka1-084-orig" n="bewils dar in" resp="#fyndling">‚wickle es darin ein' (mhd. wëlen/wickeln) - die Farce wird in die dünnen Blätter eingerollt. Nicht ‚prüfen/bewahren'.</note>
         <note type="gloss" target="#ka1-084-orig" n="bestrichs ander fug" resp="#fyndling">an der fug = an der Fuge, der Nahtstelle: Der Eidotter klebt die gerollten Blätter zu, damit die Füllung beim Ausbacken nicht herausläuft. Die Münchner Parallelhandschrift (m384-001) schreibt an dieser Stelle bestrichs vnd fuls mit ayer tottern.</note>
-        <note type="interpretive_choice" target="#ka1-084-orig" n="mit mintzen pletern" resp="#fyndling">Münzdünn flach ausgebackene Blätter (Eierblätter), in die die Farce eingewickelt wird - so Ehlert und die Parallelüberlieferung (‚hab deine Blätter ... von gutem Teig und wohl bereitet').</note>
-        <note type="interpretive_choice" target="#ka1-084-orig" n="bewils dar in" resp="#fyndling">‚wickle es darin ein' - die Farce wird in die dünnen Blätter gerollt.</note>
+        <note type="interpretive_choice" target="#ka1-084-orig" n="mit mintzen pletern" resp="#fyndling" subtype="lexical">Münzdünn flach ausgebackene Blätter (Eierblätter), in die die Farce eingewickelt wird - so Ehlert und die Parallelüberlieferung (‚hab deine Blätter ... von gutem Teig und wohl bereitet').<list type="alternatives"><item>‚mit Minze' (Kraut).<note type="rationale">Lautlich naheliegend, aber falsch: Der Folgeschritt ‚wickle die Masse darin ein' und die Parallelhandschriften belegen dünne (münzflache) Teig-/Eierblätter, kein Kraut.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-084-orig" n="bewils dar in" resp="#fyndling" subtype="lexical">‚wickle es darin ein' - die Farce wird in die dünnen Blätter gerollt.<list type="alternatives"><item>‚prüfe/bewahre es'.<note type="rationale">Passt nicht zum Ablauf: bestreichen, mit Eidotter verschließen und ausbacken beschreiben eindeutig gerollte, gefüllte Blätter.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,8 +110,8 @@ Praxis. Saure Äpfel schälen, entkernen und dünn schneiden, dann in Honiggetr�
         <note type="gloss" target="#w1-262-orig" n="sand merteins tag" resp="#fyndling">Der Martinstag am 11. November markierte im Mittelalter oft den Beginn der vorweihnachtlichen Fastenzeit und war ein traditioneller Termin für die Schlachtung von Vieh und die Konservierung von Lebensmitteln für den Winter.</note>
         <note type="gloss" target="#w1-262-orig" n="kophel" resp="#fyndling">‚Kepfel‘ (auch ‚Kefel‘) bezeichnet kleine, frittierte Teigtaschen oder Klöße, die oft mit süßen oder herzhaften Füllungen serviert wurden. Hier werden sie als mögliche Verwendung für das Apfel-Condiment genannt.</note>
         <note type="gloss" target="#w1-262-orig" n="doberis" resp="#fyndling">Eigenname dieser Apfel-Honig-Latwerge - der Text sagt selbst „Das Condiment haist doberis". Derselbe Name steht im Regensburger Kochbuch (m5919-083), bei Meister Hans als „dewericz" (mha-083). In w1-224 wird „des Doberis" als fertige Zutat wieder aufgegriffen: mit siedendem Wasser verdünnt und als Aufstrich auf einen Eierfladen gestrichen. Die Herkunft des Namens ist ungeklärt.</note>
-        <note type="interpretive_choice" target="#w1-262-orig" n="getrankch" resp="#fyndling">Honiggetränk (eine Flüssigkeit aus Honig und Wasser)</note>
-        <note type="interpretive_choice" target="#w1-262-orig" n="doberis" resp="#fyndling">Doberis - Eigenname dieses Condiments, im Korpus mehrfach belegt: m5919-083 („doberis"), mha-083 („dewericz") und als Zutat in w1-224 und m5919-084.</note>
+        <note type="interpretive_choice" target="#w1-262-orig" n="getrankch" resp="#fyndling" subtype="lexical">Honiggetränk (eine Flüssigkeit aus Honig und Wasser)<list type="alternatives"><item>Honig-Wein-Sud (ein gewürzter Wein mit Honig)<note type="rationale">Die einfachere Lesart als Honig-Wasser-Mischung ist für ein Konservierungsrezept plausibler, da Wein nicht explizit genannt wird und die Zubereitung keine Gärung impliziert.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-262-orig" n="doberis" resp="#fyndling" subtype="lexical">Doberis - Eigenname dieses Condiments, im Korpus mehrfach belegt: m5919-083 („doberis"), mha-083 („dewericz") und als Zutat in w1-224 und m5919-084.<list type="alternatives"><item>Doberis (abgeleitet von einem Wort für 'gut' oder 'lecker')<note type="rationale">Der Text präsentiert es als Namen ('Das Condiment haist doberis'). Eine deskriptive Ableitung von einem Wort für 'gut' oder 'lecker' ist denkbar, aber nicht explizit belegt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,12 +127,12 @@ Praxis. Ein Kessel für die Brühe, ein Topf zum Schlagen des Rogens, Holzlöffe
         <note type="gloss" target="#rum-0858-orig" n="schoͤn blaw" resp="#fyndling">Rumpolt nennt das Blau als Ergebnis des Essigs; dieselbe Wendung steht bei einem späteren Rogenrezept des Kapitels. Wie die Färbung zustande kommt, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0858-orig" n="fehret ... wider zusammen" resp="#fyndling">Der zerschlagene Rogen zieht sich beim Aufkochen wieder zu einer Masse zusammen. Die Bedeutung ergibt sich aus dem Zusammenhang; ein Wörterbuchbeleg für diesen Küchengebrauch fehlt.</note>
         <note type="gloss" target="#rum-0858-orig" n="Faumloͤffel" resp="#fyndling">Schaumlöffel.</note>
-        <note type="interpretive_choice" target="#rum-0858-orig" n="fehret der Rogen wider zusammen" resp="#fyndling">„zieht sich wieder zusammen“: Der zerschlagene Rogen stockt beim Aufkochen und sammelt sich wieder zu einer Masse. Kontextlesart, wohl zu fahren/zusammenfahren; ein Wörterbuchbeleg für die Küchenbedeutung fehlt, der Druck liest eindeutig „fehret“.</note>
-        <note type="interpretive_choice" target="#rum-0858-orig" n="thu jn in das Wasser ... thu es in das Saltzwasser" resp="#fyndling">Ein Gefäß: Der mit Essig begossene Rogen kommt in die aufgesetzte Zwiebel-Salzbrühe; „das Wasser“ und „das Saltzwasser“ meinen dasselbe.</note>
-        <note type="interpretive_choice" target="#rum-0858-orig" n="Hausen" resp="#fyndling">Hausen = Beluga (Huso huso), eine bestimmte Störart; das Kapitel heißt „Von einem Hausen“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
-        <note type="interpretive_choice" target="#rum-0858-orig" n="Zwibeln ein Haͤupt oder zwey" resp="#fyndling">Ein oder zwei Zwiebelköpfe; „Haupt“ ist der Kopf, also die ganze Zwiebel. Die Größe bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0858-orig" n="Essig" resp="#fyndling">Der Text sagt nur „Essig“, ohne Sorte.</note>
-        <note type="interpretive_choice" target="#rum-0858-orig" n="Wenn er gesotten ist" resp="#fyndling">Keine Garzeit: so lange schwach sieden, bis der Rogen gesotten ist.</note>
+        <note type="interpretive_choice" target="#rum-0858-orig" n="fehret der Rogen wider zusammen" resp="#fyndling" subtype="lexical">„zieht sich wieder zusammen“: Der zerschlagene Rogen stockt beim Aufkochen und sammelt sich wieder zu einer Masse. Kontextlesart, wohl zu fahren/zusammenfahren; ein Wörterbuchbeleg für die Küchenbedeutung fehlt, der Druck liest eindeutig „fehret“.<list type="alternatives"><item>„fährt zusammen“ im Sinn von „gerinnt, flockt aus“<note type="rationale">Sachlich dasselbe Ergebnis, nur stärker auf das Gerinnen des Eiweißes bezogen; ebenfalls ohne lexikalischen Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0858-orig" n="thu jn in das Wasser ... thu es in das Saltzwasser" resp="#fyndling" subtype="contextual">Ein Gefäß: Der mit Essig begossene Rogen kommt in die aufgesetzte Zwiebel-Salzbrühe; „das Wasser“ und „das Saltzwasser“ meinen dasselbe.<list type="alternatives"><item>Zwei Schritte: erst in ein eigenes Essigwasser zum Blaufärben, dann in die Zwiebelbrühe<note type="rationale">Der Satzbau lässt das zu, weil zweimal vom Hineingeben die Rede ist; ein zweites Gefäß wird aber nirgends aufgesetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0858-orig" n="Hausen" resp="#fyndling" subtype="lexical">Hausen = Beluga (Huso huso), eine bestimmte Störart; das Kapitel heißt „Von einem Hausen“.<list type="alternatives"><item>Stör allgemein<note type="rationale">Zu weit: Rumpolt trennt Hausen und Stör in eigenen Kapiteln bzw. Rezepten.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="interpretive_choice" target="#rum-0858-orig" n="Zwibeln ein Haͤupt oder zwey" resp="#fyndling" subtype="contextual">Ein oder zwei Zwiebelköpfe; „Haupt“ ist der Kopf, also die ganze Zwiebel. Die Größe bleibt offen.<list type="alternatives"><item>1-2 mittelgroße Zwiebeln<note type="rationale">Heutige Praxis; die Größe ist nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0858-orig" n="Essig" resp="#fyndling" subtype="contextual">Der Text sagt nur „Essig“, ohne Sorte.<list type="alternatives"><item>Weinessig<note type="rationale">Naheliegende Praxiswahl; im Rezept selbst nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0858-orig" n="Wenn er gesotten ist" resp="#fyndling" subtype="contextual">Keine Garzeit: so lange schwach sieden, bis der Rogen gesotten ist.<list type="alternatives"><item>So lange schwach sieden, bis die Rogenmasse durchgehend fest ist<note type="rationale">Praxisregel für heute; der Text nennt weder Zeit noch Prüfzeichen.</note></item></list></note>
       </div>
     </back>
   </text>

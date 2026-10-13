@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,10 +104,10 @@ Petersilie. Im Text steht nur „Pettersilgen“, ohne „Wurtzel“; wo Rumpolt
 Praxis. Kaninchen gibt es beim Metzger oder Wildhändler; es muss bis zum Kochen gekühlt bleiben. Der folgende Ablauf ist eine moderne Ergänzung, nicht Rumpolts Angabe: das Kaninchen in Stücke teilen, in Wasser zusetzen und schwach sieden lassen, bis das Fleisch weich ist, nach Erfahrung etwa 1 bis 1½ Stunden. Mit der Brühe in einer tiefen Schüssel anrichten und die gehackte Petersilie darübergeben.</note>
         <note type="gloss" target="#rum-0494-orig" n="Eyngemacht" resp="#fyndling">Bei Rumpolt eine Zubereitungsart für Fleisch und Fisch: das Gericht wird in einer Brühe oder Soße gegart. Gemeint ist nicht das heutige „Eingemachte“, also nichts Eingekochtes oder Konserviertes.</note>
         <note type="gloss" target="#rum-0494-orig" n="in seiner eygenen Bruͤh" resp="#fyndling">In der Brühe, die beim Sieden des Fleisches entsteht, ohne zugegossene fremde Brühe.</note>
-        <note type="interpretive_choice" target="#rum-0494-orig" n="Tier (Küniglein)" resp="#fyndling">Kaninchen. Die Zeile steht als Nr. 3 im Kapitel „Von einem Kuͤniglein“, und die ausgeführte Nr. 5 desselben Kapitels brät das Küniglein und schneidet es ins Gescharb; das DWB belegt „küniglein“ für Kaninchen noch im 17. Jahrhundert.</note>
-        <note type="interpretive_choice" target="#rum-0494-orig" n="Pettersilgen" resp="#fyndling">Petersilienkraut. Wo Rumpolt die Wurzel meint, schreibt er „Petersilgen Wurtzel“ (rum-0238); hier fehlt der Zusatz.</note>
-        <note type="interpretive_choice" target="#rum-0494-orig" n="mit Pettersilgen (Zeitpunkt)" resp="#fyndling">Der Text sagt nicht, wann die Petersilie dazukommt; sie kann im Sud mitgaren.</note>
-        <note type="interpretive_choice" target="#rum-0494-orig" n="Eyngemacht in seiner eygenen Bruͤh (Garweise)" resp="#fyndling">Das Kaninchen wird in Wasser gesotten und in dieser Siedebrühe angerichtet, wie Rumpolt es beim Ziegenköpfchen ausdrücklich beschreibt (rum-0225).</note>
+        <note type="interpretive_choice" target="#rum-0494-orig" n="Tier (Küniglein)" resp="#fyndling" subtype="contextual">Kaninchen. Die Zeile steht als Nr. 3 im Kapitel „Von einem Kuͤniglein“, und die ausgeführte Nr. 5 desselben Kapitels brät das Küniglein und schneidet es ins Gescharb; das DWB belegt „küniglein“ für Kaninchen noch im 17. Jahrhundert.<list type="alternatives"><item>Ein kleiner Vogel (Zaunkönig oder Goldhähnchen, lat. regulus, in Glossaren „kuniglein“)<note type="rationale">Die Glossenbedeutung gibt es, das Kapitel schließt sie hier aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0494-orig" n="Pettersilgen" resp="#fyndling" subtype="lexical">Petersilienkraut. Wo Rumpolt die Wurzel meint, schreibt er „Petersilgen Wurtzel“ (rum-0238); hier fehlt der Zusatz.<list type="alternatives"><item>Petersilienwurzel, mitgesotten<note type="rationale">Rumpolt kocht Fleisch in Brühe oft mit Petersilienwurzel; ausgeschlossen ist sie nicht, nur hier nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0494-orig" n="mit Pettersilgen (Zeitpunkt)" resp="#fyndling" subtype="contextual">Der Text sagt nicht, wann die Petersilie dazukommt; sie kann im Sud mitgaren.<list type="alternatives"><item>Frisch gehackt kurz vor dem Anrichten<note type="rationale">Praxisfassung für das Kraut; so bleibt es grün und frisch. Vom Text weder belegt noch ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0494-orig" n="Eyngemacht in seiner eygenen Bruͤh (Garweise)" resp="#fyndling" subtype="contextual">Das Kaninchen wird in Wasser gesotten und in dieser Siedebrühe angerichtet, wie Rumpolt es beim Ziegenköpfchen ausdrücklich beschreibt (rum-0225).<list type="alternatives"><item>Vorher angebraten oder mit wenig Flüssigkeit eingedämpft<note type="rationale">Für andere Gerichte kennt Rumpolt diese Wege, hier nennt er keinen davon; deshalb nicht übernommen.</note></item></list></note>
       </div>
     </back>
   </text>

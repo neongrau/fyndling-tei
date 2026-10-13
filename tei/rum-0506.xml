@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -95,9 +100,9 @@ Praxis. Nachkochen lässt sich dieses Rezept nicht: Jede Ausführung wäre aus d
         <note type="gloss" target="#rum-0506-orig" n="eyngemacht" resp="#fyndling">Bei Fleisch und Fisch heißt „eingemacht“ bei Rumpolt: in einer Brühe oder Sauce gegart, nicht haltbar gemacht. So gebraucht er das Wort durchgehend.</note>
         <note type="gloss" target="#rum-0506-orig" n="Vngerisch" resp="#fyndling">„Auf ungarische Art“ ist Rumpolts eigene Herkunftsangabe. Was sie genau meint, erklärt er an dieser Stelle nicht.</note>
         <note type="gloss" target="#rum-0506-orig" n="schwartz" resp="#fyndling">„Schwarz eingemacht“ meint bei Rumpolt sonst eine dunkle Pfeffersauce, die mit Blut gebunden ist, etwa beim Wildbret (rum-0314, rum-0435) und beim Murmeltier (rum-0483). Hier steht nur die Überschrift, die Parallele ist also ein Vergleich, keine Angabe dieses Rezepts.</note>
-        <note type="interpretive_choice" target="#rum-0506-orig" n="Adler (Tier)" resp="#fyndling">Adler: Der Satz nennt kein Tier, die Nummer steht aber als vierte von neun Speisen im Kapitel „Vom Adler seind neunerley Speisen vnd Trachten zu machen“.</note>
-        <note type="interpretive_choice" target="#rum-0506-orig" n="Sauce im Titel" resp="#fyndling">„in schwarzer Sauce“: „eyngemacht“ heißt bei Rumpolt bei Fleisch durchgehend in Brühe oder Sauce gegart; so auch die übrigen Rezepte dieser Formel (rum-0314, rum-0460, rum-0467).</note>
-        <note type="interpretive_choice" target="#rum-0506-orig" n="Was macht die Sauce schwarz?" resp="#fyndling">Offen lassen: Die Überschrift sagt nicht, womit die Sauce gemacht wird.</note>
+        <note type="interpretive_choice" target="#rum-0506-orig" n="Adler (Tier)" resp="#fyndling" subtype="contextual">Adler: Der Satz nennt kein Tier, die Nummer steht aber als vierte von neun Speisen im Kapitel „Vom Adler seind neunerley Speisen vnd Trachten zu machen“.</note>
+        <note type="interpretive_choice" target="#rum-0506-orig" n="Sauce im Titel" resp="#fyndling" subtype="contextual">„in schwarzer Sauce“: „eyngemacht“ heißt bei Rumpolt bei Fleisch durchgehend in Brühe oder Sauce gegart; so auch die übrigen Rezepte dieser Formel (rum-0314, rum-0460, rum-0467).<list type="alternatives"><item>nur „schwarz auf ungarische Art“ ohne „Sauce“<note type="rationale">Hält sich enger an den Wortlaut der Überschrift, bricht aber mit den Titeln der gleichlautenden Wildbret-Rezepte und verliert den Hinweis, dass es ein Gericht in Sauce ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0506-orig" n="Was macht die Sauce schwarz?" resp="#fyndling" subtype="contextual">Offen lassen: Die Überschrift sagt nicht, womit die Sauce gemacht wird.<list type="alternatives"><item>mit Blut gebundene Pfeffersauce<note type="rationale">So beschreibt Rumpolt „schwarz eingemacht auf ungarische Art“ ausführlich beim Wildbret (rum-0314: Hühnerblut, Essig, Brot, Pfeffer) und verweist bei der Gams ausdrücklich darauf (rum-0460). Für den Adler ist das nicht ausgesprochen.</note></item><item>schwarzer Pfeffer als färbende Zutat<note type="rationale">Rumpolt nennt anderswo „schwartzen Pfeffer“ (rum-0297); für dieses Rezept nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

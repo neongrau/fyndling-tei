@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,11 +116,11 @@ Praxis. Eine frische Haselrute schälen und anspitzen; ein Metallspieß geht auc
         <note type="gloss" target="#rum-0282-orig" n="Schornstein" resp="#fyndling">Der Rauchfang über dem Herd. Das Fleisch hängt dort, wo der meiste Rauch hinzieht, aber keine große Hitze ist, ein bis zwei Stunden; gebraten wird erst danach.</note>
         <note type="gloss" target="#rum-0282-orig" n="brats flugs hinweg" resp="#fyndling">flugs heißt eilig, rasch: nach dem Rauch wird das Fleisch zügig fertig gebraten.</note>
         <note type="gloss" target="#rum-0282-orig" n="Rindtfeißt" resp="#fyndling">Rinderfett, hier nur zum Begießen beim Braten. Über das Tier des Bratens sagt es nichts.</note>
-        <note type="interpretive_choice" target="#rum-0282-orig" n="Tier des Bratens" resp="#fyndling">Spanferkel: Das Rezept steht im Kapitel „Von einer Spensaw“, die Nachbarrezepte nennen ausdrücklich die Hinterkeule „von der Spensaw“.</note>
-        <note type="interpretive_choice" target="#rum-0282-orig" n="sprengs mit Saltz eyn" resp="#fyndling">Mit trockenem Salz bestreuen, also einsalzen; die Parallelen beim Kalb sagen „bestraͤw jn mit Saltz“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0282-orig" n="die Braten, so hinder den Nieren seindt" resp="#fyndling">Fleisch aus der Nieren- und Lendengegend des Ferkels, als drittes Stück neben Hinterkeule und Rücken aufgezählt.</note>
-        <note type="interpretive_choice" target="#rum-0282-orig" n="ein stundt oder zwo darinnen hencken" resp="#fyndling">Im Rauchfang über dem Herdfeuer: das Fleisch nimmt Rauch und etwas Wärme an; ob es dabei schon angart, lässt „nicht grosse Hitze“ offen. Gar wird es erst beim Braten.</note>
-        <note type="interpretive_choice" target="#rum-0282-orig" n="brats flugs hinweg" resp="#fyndling">Am Spieß am offenen Herdfeuer zügig fertig braten; Gerät und Hitzequelle nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0282-orig" n="Tier des Bratens" resp="#fyndling" subtype="contextual">Spanferkel: Das Rezept steht im Kapitel „Von einer Spensaw“, die Nachbarrezepte nennen ausdrücklich die Hinterkeule „von der Spensaw“.<list type="alternatives"><item>Rind<note type="rationale">Einziger Anhalt wäre das Rinderfett, und das ist nur Begießfett, nicht das Fleisch. Dasselbe Verfahren steht bei Kalb und Hammel in deren eigenen Kapiteln.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0282-orig" n="sprengs mit Saltz eyn" resp="#fyndling" subtype="lexical">Mit trockenem Salz bestreuen, also einsalzen; die Parallelen beim Kalb sagen „bestraͤw jn mit Saltz“.<list type="alternatives"><item>Mit Salzwasser besprengen<note type="rationale">sprengen heißt auch benetzen, beträufeln; der Text nennt aber kein Wasser.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#rum-0282-orig" n="die Braten, so hinder den Nieren seindt" resp="#fyndling" subtype="contextual">Fleisch aus der Nieren- und Lendengegend des Ferkels, als drittes Stück neben Hinterkeule und Rücken aufgezählt.<list type="alternatives"><item>Genau das Filet<note type="rationale">Liegt in dieser Gegend, aber der Text grenzt das Stück nicht so eng ein.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0282-orig" n="ein stundt oder zwo darinnen hencken" resp="#fyndling" subtype="contextual">Im Rauchfang über dem Herdfeuer: das Fleisch nimmt Rauch und etwas Wärme an; ob es dabei schon angart, lässt „nicht grosse Hitze“ offen. Gar wird es erst beim Braten.<list type="alternatives"><item>Heute: ein bis zwei Stunden in kühlem bis lauwarmem Rauch, ohne zu garen, danach vollständig durchbraten<note type="rationale">Moderne Praxis für Schweinefleisch; keine Angabe des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0282-orig" n="brats flugs hinweg" resp="#fyndling" subtype="contextual">Am Spieß am offenen Herdfeuer zügig fertig braten; Gerät und Hitzequelle nennt der Text nicht.<list type="alternatives"><item>Heute: am Spieß über Glut oder auf dem Grill, bis das Schweinefleisch durch ist<note type="rationale">Praktische Umsetzung ohne offenes Herdfeuer.</note></item></list></note>
       </div>
     </back>
   </text>

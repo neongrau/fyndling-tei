@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,8 +107,8 @@ Praxis. Wer die Nummer nachkochen will, hält sich an diese Fassung: einen Rogge
         <note type="gloss" target="#rum-0320-orig" n="Rucken" resp="#fyndling">Roggen. Grimm führt unter „Roggen“ die älteren Formen „rocken, rucken“, Lexer und das Mittelniederdeutsche kennen „ruckenbrôt“ als Roggenbrot, und Rumpolt schreibt im ganzen Buch „Ruckenteig“ und „Ruckenbrot“. Das Gegenglied „Weitzenteig“ bestätigt die Lesart zusätzlich.</note>
         <note type="gloss" target="#rum-0320-orig" n="Knoͤdel Pasteten" resp="#fyndling">Pasteten mit „Knödeln“ vom Hirsch. Was die Knödel genau sind - geformte Klöße oder die gehackte Fleischmasse selbst -, sagt Rumpolt an dieser Stelle nicht. Knödelpasteten kennt er auch vom Kalb und vom Hammel.</note>
         <note type="gloss" target="#rum-0320-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend. Rumpolts stehendes Urteil am Ende vieler Nummern, keine Zutat und keine Würzangabe.</note>
-        <note type="interpretive_choice" target="#rum-0320-orig" n="Rucken" resp="#fyndling">Roggen(teig): Grimm s. v. Roggen mit den älteren Formen „rocken, rucken“, Lexer und Mittelniederdeutsch „ruckenbrôt“ = Roggenbrot, buchintern „Ruckenteig“ und „Ruckenbrot“; das Gegenglied „oder Weitzenteig“ verlangt ohnehin eine Teigsorte.</note>
-        <note type="interpretive_choice" target="#rum-0320-orig" n="Knoͤdel Pasteten" resp="#fyndling">Eine Teighülle, in der geformte Klöße aus Hirschfleisch liegen. So lässt sich der Gerichtsname am wörtlichsten lesen; wie die Klöße zusammengesetzt und ob sie vorgegart werden, beschreibt Rumpolt weder hier noch in seiner warmen Fassung im Pastetenkapitel.</note>
+        <note type="interpretive_choice" target="#rum-0320-orig" n="Rucken" resp="#fyndling" subtype="lexical">Roggen(teig): Grimm s. v. Roggen mit den älteren Formen „rocken, rucken“, Lexer und Mittelniederdeutsch „ruckenbrôt“ = Roggenbrot, buchintern „Ruckenteig“ und „Ruckenbrot“; das Gegenglied „oder Weitzenteig“ verlangt ohnehin eine Teigsorte.<list type="alternatives"><item>Rücken (Fleischstück vom Hirsch)<note type="rationale">Liegt für heutige Leser nahe, passt aber nicht: „Rucken oder Weitzenteig“ stellt zwei Teige nebeneinander, und Rumpolt schreibt den Roggenteig auch sonst „Ruckenteig“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0320-orig" n="Knoͤdel Pasteten" resp="#fyndling" subtype="contextual">Eine Teighülle, in der geformte Klöße aus Hirschfleisch liegen. So lässt sich der Gerichtsname am wörtlichsten lesen; wie die Klöße zusammengesetzt und ob sie vorgegart werden, beschreibt Rumpolt weder hier noch in seiner warmen Fassung im Pastetenkapitel.<list type="alternatives"><item>Pastete mit einer gehackten, geformten Hirschfleisch-Farce als Füllung<note type="rationale">Für das Nachkochen die naheliegende heutige Umsetzung; „Knödel“ kann auch die Fleischmasse selbst meinen. Der Text entscheidet das nicht.</note></item></list></note>
       </div>
     </back>
   </text>

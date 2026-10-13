@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,9 +117,9 @@ Praxis. Vögel zurichten, in der hellen Brühe garen, säuern, Eigelb und frisch
         <note type="gloss" target="#rum-0830-orig" n="vngeschmaͤltzter Butter" resp="#fyndling">Butter, die nicht zerlassen oder ausgelassen ist, also kein Butterschmalz. Rumpolt verwendet die Formel im ganzen Buch so, im Rezept davor als „frische vngeschmaͤltzte Butter“. Ganz sicher ist die Lesart nicht.</note>
         <note type="gloss" target="#rum-0830-orig" n="weisser sauren Bruͤh" resp="#fyndling">Der Text sagt weder, aus welcher Grundbrühe sie besteht, noch womit sie sauer gemacht wird. Im Rezept davor (Nr. 11) bleibt die Brühe durch frische Butter weiß und durch Limonien sauer; das ist eine Parallele, keine Angabe dieses Rezepts.</note>
         <note type="gloss" target="#rum-0830-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0830-orig" n="solche Voͤgel" resp="#fyndling">Krammetsvögel: Das Rezept steht als Nr. 12 im Kapitel „Von Kramatsvoͤgeln seind fuͤnffzenerley Speiß vnd Trachten zu machen“ und knüpft an Nr. 11 an.</note>
-        <note type="interpretive_choice" target="#rum-0830-orig" n="vngeschmaͤltzter Butter" resp="#fyndling">Nicht zerlassene, nicht ausgelassene Butter: schmälzen heißt mit Schmalz oder zerlassenem Fett zubereiten; Rumpolt schreibt an anderer Stelle „frische vnzerlassene Butter“, und die Nachbarrezepte des Kapitels verwenden die Formel gleich.</note>
-        <note type="interpretive_choice" target="#rum-0830-orig" n="weisser sauren Bruͤh" resp="#fyndling">Eine helle Brühe mit nicht genanntem Säuerungsmittel; historisch kommen Essig oder Verjus in Frage, im Nachbarrezept Nr. 11 säuern Limonien.</note>
+        <note type="interpretive_choice" target="#rum-0830-orig" n="solche Voͤgel" resp="#fyndling" subtype="contextual">Krammetsvögel: Das Rezept steht als Nr. 12 im Kapitel „Von Kramatsvoͤgeln seind fuͤnffzenerley Speiß vnd Trachten zu machen“ und knüpft an Nr. 11 an.<list type="alternatives"><item>Kleine Vögel allgemein<note type="rationale">Möglich, weil „solche Vögel“ das Tier nicht nennt; der Kapitelkopf legt aber die Krammetsvögel fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0830-orig" n="vngeschmaͤltzter Butter" resp="#fyndling" subtype="lexical">Nicht zerlassene, nicht ausgelassene Butter: schmälzen heißt mit Schmalz oder zerlassenem Fett zubereiten; Rumpolt schreibt an anderer Stelle „frische vnzerlassene Butter“, und die Nachbarrezepte des Kapitels verwenden die Formel gleich.</note>
+        <note type="interpretive_choice" target="#rum-0830-orig" n="weisser sauren Bruͤh" resp="#fyndling" subtype="contextual">Eine helle Brühe mit nicht genanntem Säuerungsmittel; historisch kommen Essig oder Verjus in Frage, im Nachbarrezept Nr. 11 säuern Limonien.<list type="alternatives"><item>Weißweinessig oder Zitronensaft, sparsam<note type="rationale">Praktische Wahl für heute; der Text nennt kein Säuerungsmittel, deshalb keine Festlegung.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -141,12 +146,12 @@ Praxis. Därme gründlich putzen und mit Salz ausreiben, füllen und abkochen, d
         <note type="gloss" target="#rum-0675-orig" n="Wuͤrsten" resp="#fyndling">Die zuvor gefüllten, zugebundenen und abgekochten Därme. Eine Wurst mit Fleischfüllung ist nicht gemeint.</note>
         <note type="gloss" target="#rum-0675-orig" n="seig" resp="#fyndling">Seigen heißt gießen oder seihen. Hier wird die Brühe über die Därme und das Geflügelklein gegossen.</note>
         <note type="gloss" target="#rum-0675-orig" n="Feißt" resp="#fyndling">Fett. Welches, sagt der Text nicht, nur dass es gesotten ist.</note>
-        <note type="interpretive_choice" target="#rum-0675-orig" n="Kragelmagel" resp="#fyndling">Rumpolts schwäbischer Name für das Geflügel-Geschneitel (so in seinem Hennen-Geschneitel); hier vermutlich die eben gesottenen Flügel, Hals und Füße des Kapauns. Die Bedeutung des Wortes selbst bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0675-orig" n="den Wuͤrsten" resp="#fyndling">Die zuvor gefüllten und abgekochten Därme; der Text bereitet keine anderen Würste vor.</note>
-        <note type="interpretive_choice" target="#rum-0675-orig" n="machs gelb / gelbs" resp="#fyndling">Gelb färben, an beiden Stellen; der Text nennt kein Färbemittel.</note>
-        <note type="interpretive_choice" target="#rum-0675-orig" n="quell sie" resp="#fyndling">In Wasser abkochen; der Text nennt weder Dauer noch Hitze.</note>
-        <note type="interpretive_choice" target="#rum-0675-orig" n="gesotten Feißt" resp="#fyndling">Gesottenes Fett; welches, sagt der Text nicht. Naheliegend ist Fett, das beim Sieden des Geflügels anfällt.</note>
-        <note type="interpretive_choice" target="#rum-0675-orig" n="saͤubers auß" resp="#fyndling">Säubern, hier vermutlich das Abschäumen der Brühe beim Sieden.</note>
+        <note type="interpretive_choice" target="#rum-0675-orig" n="Kragelmagel" resp="#fyndling" subtype="lexical" cert="unknown">Rumpolts schwäbischer Name für das Geflügel-Geschneitel (so in seinem Hennen-Geschneitel); hier vermutlich die eben gesottenen Flügel, Hals und Füße des Kapauns. Die Bedeutung des Wortes selbst bleibt offen.<list type="alternatives"><item>Weitere Kleinteile wie Magen und Leber, die zusätzlich dazukommen<note type="rationale">Im Hennen-Geschneitel gehören Magen und Leber dazu; dieses Rezept nennt sie aber nicht.</note></item><item>Zusammengesetzt aus Kragen (Hals) und Magen<note type="rationale">Der Anklang passt zu den Zutaten, ist aber nur eine Vermutung ohne Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0675-orig" n="den Wuͤrsten" resp="#fyndling" subtype="contextual">Die zuvor gefüllten und abgekochten Därme; der Text bereitet keine anderen Würste vor.<list type="alternatives"><item>Eigens bereitete Kapaunwürste, wie Rumpolt sie in anderen Kapaunrezepten macht<note type="rationale">Davon steht in diesem Rezept nichts; der Rückbezug auf die gefüllten Därme liegt näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0675-orig" n="machs gelb / gelbs" resp="#fyndling" subtype="contextual">Gelb färben, an beiden Stellen; der Text nennt kein Färbemittel.<list type="alternatives"><item>Safran, wenige Fäden<note type="rationale">Praxis-Wahl: Rumpolt nennt Safran im Hennen-Geschneitel ausdrücklich; hier steht er nicht.</note></item><item>Eigelb<note type="rationale">Möglich für die Füllung, die ohnehin Eier enthält; für das gehackte Fett weniger naheliegend.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0675-orig" n="quell sie" resp="#fyndling" subtype="contextual">In Wasser abkochen; der Text nennt weder Dauer noch Hitze.<list type="alternatives"><item>In schwach siedendem Wasser etwa 10 bis 15 Minuten, bis die Füllung gestockt ist<note type="rationale">Praxis-Wahl aus der Küchenlogik einer Eiermilch-Füllung, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0675-orig" n="gesotten Feißt" resp="#fyndling" subtype="contextual">Gesottenes Fett; welches, sagt der Text nicht. Naheliegend ist Fett, das beim Sieden des Geflügels anfällt.<list type="alternatives"><item>Rinderfett oder Schmalz, gesotten und klein gehackt<note type="rationale">Praxis-Wahl, passend zur Rindfleischbrühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0675-orig" n="saͤubers auß" resp="#fyndling" subtype="lexical">Säubern, hier vermutlich das Abschäumen der Brühe beim Sieden.<list type="alternatives"><item>Die gesottenen Teile nachputzen<note type="rationale">Das Wort lässt es zu; für Geflügelklein, das in derselben Brühe weitergart, ist Abschäumen naheliegender.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -142,8 +147,8 @@ Weintrauben entstielen und die Beeren mit etwas Mehl, zerlassener Butter, Zucker
         <note type="gloss" target="#phw-054-orig" n="se" resp="#fyndling">Eine alte Form von ‚säen‘, hier im Sinne von ‚bestreuen‘.</note>
         <note type="gloss" target="#phw-054-orig" n="wein drauben" resp="#fyndling">„Wein drauben" meint frische Weintrauben. Das Buch unterscheidet das sprachlich sauber von getrockneten Weinbeeren (Rosinen), die an anderen Stellen als „wein ber(lach)" erscheinen.</note>
         <note type="gloss" target="#phw-054-orig" n="dicklet" resp="#fyndling">„Dicklet" beschreibt einen mittleren Eindickungsgrad - dicklich, nicht vollständig fest. Ein anderes Rezept des Korpus verwendet dasselbe Wort im selben Sinn für eine Zuckersirup-Probe.</note>
-        <note type="interpretive_choice" target="#phw-054-orig" n="drucks als mit ain ander durch" resp="#fyndling">Zerdrücke die Weintrauben und vermenge sie mit den übrigen Zutaten zu einer breiigen Masse.</note>
-        <note type="interpretive_choice" target="#phw-054-orig" n="las ain fyerdel stundt bachen" resp="#fyndling">Der Text nennt keine Ofentemperatur, nur das Bräunungsergebnis als Garprobe - die Backhitze bleibt offen.</note>
+        <note type="interpretive_choice" target="#phw-054-orig" n="drucks als mit ain ander durch" resp="#fyndling" subtype="lexical">Zerdrücke die Weintrauben und vermenge sie mit den übrigen Zutaten zu einer breiigen Masse.<list type="alternatives"><item>Presse die Masse durch ein Sieb, um Traubenschalen und Kerne zu entfernen.<note type="rationale">Das Buch verwendet an anderer Stelle (bei passierten Torten) ein eigenes Verb für das Durchtreiben durch ein Sieb, verschieden von 'drucken'. Das spricht für die zerdrückende Lesart hier, schließt zusätzliches Sieben aber nicht aus - im Wortlaut bleibt offen, ob Schale und Kerne beim Zerdrücken entfernt werden oder in der Masse verbleiben.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-054-orig" n="las ain fyerdel stundt bachen" resp="#fyndling" subtype="contextual">Der Text nennt keine Ofentemperatur, nur das Bräunungsergebnis als Garprobe - die Backhitze bleibt offen.<list type="alternatives"><item>Ein bereits abgekühlter Brotbackofen (Nachhitze) oder eine Tortenpfanne mit Glut auf dem Deckel, jeweils ohne genaue Temperaturkontrolle.<note type="rationale">Beide Verfahren sind mit der kurzen, allein am Bräunungsgrad bemessenen Backzeit vereinbar und für einen Haushaltsofen ohne Thermometer plausibel.</note></item></list></note>
       </div>
     </back>
   </text>

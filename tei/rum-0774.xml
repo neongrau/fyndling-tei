@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,8 +104,8 @@ Die gesalzenen Zitronen. Gemeint sind in Salz eingelegte Zitronen. Naheliegend i
 Praxis. Nachkochen lässt sich aus dieser Zeile nichts. Wie Rumpolt eine Pastete mit gesalzenen Zitronen aufbaut, zeigt seine Ochsenzungen-Pastete.</note>
         <note type="gloss" target="#rum-0774-orig" n="gesaltzen Limonien" resp="#fyndling">Limonie ist eine Zitronenart (Mittelniederdeutsches Handwörterbuch). „Gesaltzene Limonien“ sind in Salz eingelegte Zitronen; Rumpolt nennt sie mehrfach, etwa bei der Ochsenzungen-Pastete, beschreibt aber nirgends ihre Herstellung.</note>
         <note type="gloss" target="#rum-0774-orig" n="eynmacht" resp="#fyndling">Rumpolt verwendet „in Pasteten eynmachen“ für Fleisch, das in eine Pastete kommt, also in eine Teighülle eingeschlagen wird. Bei Fleisch außerhalb einer Pastete heißt „eynmachen“ dagegen: in einer Sauce garen. Mit dem heutigen Einmachen als Konserve hat das Wort nichts zu tun.</note>
-        <note type="interpretive_choice" target="#rum-0774-orig" n="eynmacht" resp="#fyndling">Die Taubenpastete mit gesalzenen Zitronen zubereiten, die Zitronen also mit in die Pastete geben. Grund: Der Satz handelt von Pasteten, und Rumpolt gebraucht „in Pasteten eynmachen“ durchgehend für das Einschlagen in den Teig, so auch bei den Steinhühnern mit der fast gleichen Formel „es sey kalt oder warm“.</note>
-        <note type="interpretive_choice" target="#rum-0774-orig" n="gesaltzen Limonien: Verwendungsform" resp="#fyndling">Die eingelegten Zitronen selbst, in Stücken oder als Schale, als salzig-saure Würze. So verwendet Rumpolt sie bei der Ochsenzungen-Pastete, wo er sie mit in die Pastete gibt.</note>
+        <note type="interpretive_choice" target="#rum-0774-orig" n="eynmacht" resp="#fyndling" subtype="lexical">Die Taubenpastete mit gesalzenen Zitronen zubereiten, die Zitronen also mit in die Pastete geben. Grund: Der Satz handelt von Pasteten, und Rumpolt gebraucht „in Pasteten eynmachen“ durchgehend für das Einschlagen in den Teig, so auch bei den Steinhühnern mit der fast gleichen Formel „es sey kalt oder warm“.<list type="alternatives"><item>Die Tauben zuerst mit gesalzenen Zitronen in einer Sauce garen und dann in die Pastete geben.<note type="rationale">Bei Fleisch und Geflügel heißt „eynmachen“ bei Rumpolt sonst in einer Sauce garen, und beim gehackten Rinderbraten lässt er gesalzene Limonien in der Brühe mit einsieden. Der Satz nennt aber weder Brühe noch Garschritt, deshalb nicht als Hauptlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0774-orig" n="gesaltzen Limonien: Verwendungsform" resp="#fyndling" subtype="contextual">Die eingelegten Zitronen selbst, in Stücken oder als Schale, als salzig-saure Würze. So verwendet Rumpolt sie bei der Ochsenzungen-Pastete, wo er sie mit in die Pastete gibt.<list type="alternatives"><item>Nur die Salzlake oder der Saft als säuernde Würze.<note type="rationale">Der Satz sagt nicht, wie die Zitronen verwendet werden; denkbar, aber durch keinen Rumpolt-Beleg zu dieser Stelle gestützt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,10 +119,10 @@ Praxis. Für die Umsetzung braucht es einen sehr dünn ausgezogenen Wasser-Ei-Te
         <note type="gloss" target="#b4-235-orig" n="sweinein smalcz" resp="#fyndling">Schweineschmalz, ein tierisches Fett, das im Mittelalter häufig zum Backen und Braten verwendet wurde.</note>
         <note type="gloss" target="#b4-235-orig" n="zukcher" resp="#fyndling">Zucker war im Mittelalter ein teures Importgut und wurde oft in fester Form geliefert, die vor der Verwendung gestoßen oder gemahlen werden musste.</note>
         <note type="gloss" target="#b4-235-orig" n="offen" resp="#fyndling">Ein Backofen, der im Mittelalter meist ein gemauerter Ofen war, der mit Holz befeuert wurde. Die Temperaturkontrolle war schwieriger als heute.</note>
-        <note type="interpretive_choice" target="#b4-235-orig" n="kopph" resp="#fyndling">Im Kontext der Dicke ('als dikch sey als zwen kopph') als 'Töpfe' übersetzt, tool-verifiziert durch den CoReMA-Glossenkorpus, der für genau diese Rezeptstelle 'chopph = pie pot' bestätigt.</note>
-        <note type="interpretive_choice" target="#b4-235-orig" n="pint" resp="#fyndling">Als 'Gefäß' übersetzt, da die Teigplatten hineingelegt werden.</note>
-        <note type="interpretive_choice" target="#b4-235-orig" n="vj . eher zu einander" resp="#fyndling">Als 'sechs Blätter eher übereinander' übersetzt - eine Anweisung, sechs Teigblätter in einem Arbeitsgang zu stapeln.</note>
-        <note type="interpretive_choice" target="#b4-235-orig" n="chopph" resp="#fyndling">Als 'Topf' übersetzt, im Sinne eines Backtopfes oder einer Form, die als Vorlage für die Formgebung des Randes dient.</note>
+        <note type="interpretive_choice" target="#b4-235-orig" n="kopph" resp="#fyndling" subtype="lexical">Im Kontext der Dicke ('als dikch sey als zwen kopph') als 'Töpfe' übersetzt, tool-verifiziert durch den CoReMA-Glossenkorpus, der für genau diese Rezeptstelle 'chopph = pie pot' bestätigt.<list type="alternatives"><item>Als 'Köpfe' übersetzt, was die wörtliche Bedeutung wäre.<note type="rationale">Kulinarisch für eine Dickenangabe unüblich und durch die Glossenbestätigung für diese Stelle widerlegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-235-orig" n="pint" resp="#fyndling" subtype="lexical">Als 'Gefäß' übersetzt, da die Teigplatten hineingelegt werden.<list type="alternatives"><item>Als Lautvariante zu 'binde' (Band, Reifen) - also ein Back- oder Kuchenring statt eines geschlossenen Gefäßes.<note type="rationale">Das Buch B4 zeigt regelmäßig denselben p/b-Wechsel (pletternn=blättern, pespreng=besprengen, pestreich=bestreichen); ein Ring passt zudem zum eigens gewundenen, fingerhohen Rand. Keine der beiden Lesarten ist abschließend belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-235-orig" n="vj . eher zu einander" resp="#fyndling" subtype="philological">Als 'sechs Blätter eher übereinander' übersetzt - eine Anweisung, sechs Teigblätter in einem Arbeitsgang zu stapeln.<list type="alternatives"><item>Die Parallelhandschrift W1 (w1-237) liest denselben Wortlaut an derselben Stelle als 'sechs Ecken zueinander' - eine räumliche statt einer Stapel-Anordnung.<note type="rationale">Weder 'eher' als Stapel-Adverb noch als 'Ecken' ist lexikographisch eindeutig belegt; b4 und w1 lösen denselben Text unterschiedlich auf, ohne dass sich eine der beiden Lesarten als falsch erweist.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-235-orig" n="chopph" resp="#fyndling" subtype="lexical">Als 'Topf' übersetzt, im Sinne eines Backtopfes oder einer Form, die als Vorlage für die Formgebung des Randes dient.</note>
       </div>
     </back>
   </text>

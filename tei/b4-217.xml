@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,8 +119,8 @@ Mengen für Käse und Eier nennt der Text nicht - nur Speck und Mehl sind mit �
         <note type="gloss" target="#b4-217-orig" n="kraphen" resp="#fyndling">Krapfen sind im Mittelalter eine Sammelbezeichnung für verschiedene Arten von frittiertem oder in der Pfanne gebackenem Gebäck, oft süß oder süß-herzhaft.</note>
         <note type="gloss" target="#b4-217-orig" n="hertten cheas" resp="#fyndling">Hartkäse, vermutlich ein gereifter, fester Käse wie Parmesan oder ein alter Bergkäse.</note>
         <note type="gloss" target="#b4-217-orig" n="zukcher" resp="#fyndling">Unraffinierter Rohrzucker, der im Mittelalter ein teures Importgut und Statussymbol war. Er wurde oft sparsam als Gewürz oder zum Bestreuen verwendet.</note>
-        <note type="interpretive_choice" target="#b4-217-orig" n="so solig es in einem zukcher" resp="#fyndling">Nach dem Backen soll die Masse in Zucker gewendet werden - so überträgt es auch die fast wortgleiche Parallelstelle im Zwilling w1-220 („so solg es in einem zuker"), die dieselbe verblose Konstruktion trägt. Die Präposition „in" spricht eher für ein Hineinlegen/Wenden als für ein bloßes Bestreuen, wofür man eher „mit" erwarten würde.</note>
-        <note type="interpretive_choice" target="#b4-217-orig" n="wenn es gepechts (Garpunkt)" resp="#fyndling">Für die Praxis wird vollständiges Durchgaren empfohlen, bis kein flüssiges Ei mehr sichtbar ist - wie bei einem fertigen Omelett (siehe Zubereitungshinweis).</note>
+        <note type="interpretive_choice" target="#b4-217-orig" n="so solig es in einem zukcher" resp="#fyndling" subtype="contextual">Nach dem Backen soll die Masse in Zucker gewendet werden - so überträgt es auch die fast wortgleiche Parallelstelle im Zwilling w1-220 („so solg es in einem zuker"), die dieselbe verblose Konstruktion trägt. Die Präposition „in" spricht eher für ein Hineinlegen/Wenden als für ein bloßes Bestreuen, wofür man eher „mit" erwarten würde.<list type="alternatives"><item>Mit Zucker bestreichen, salben oder bestreuen.<note type="rationale">Drei weitere Zwillinge derselben Gerichtsfamilie formulieren denselben Schritt mit einem ausgeschriebenen Verb: mha-147 „so bestreich es mit zucker wol", mon-093 „so salbs mit czuckerr", m5919-038 „so strae zucher darauff" - durchweg als Bestreichen, Salben oder Bestreuen, nicht als Wenden. B4 und w1 selbst enthalten an dieser Stelle kein eigenes Verb; welche der beiden Techniken ursprünglich gemeint war, bleibt offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-217-orig" n="wenn es gepechts (Garpunkt)" resp="#fyndling" subtype="contextual">Für die Praxis wird vollständiges Durchgaren empfohlen, bis kein flüssiges Ei mehr sichtbar ist - wie bei einem fertigen Omelett (siehe Zubereitungshinweis).<list type="alternatives"><item>Der Text nennt weder Farbe noch Zeit noch eine Garprobe - ein kürzerer, noch weicher-cremiger Garpunkt ist sprachlich nicht ausgeschlossen.<note type="rationale">Aus heutiger Lebensmittelsicherheitssicht (rohes bzw. halbgares Ei) wird diese Variante hier nicht als gleichwertige Standardempfehlung dargestellt, sondern nur als historisch denkbare Alternative dokumentiert.</note></item></list></note>
       </div>
     </back>
   </text>

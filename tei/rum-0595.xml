@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,11 +115,11 @@ Praxis. Für sich allein lässt sich Nr. 16 nicht nachkochen. Wer es versuchen w
         <note type="gloss" target="#rum-0595-orig" n="eyngemacht" resp="#fyndling">Bei Fleisch heißt „eingemacht“ hier: in einer Brühe oder Sauce zubereitet, nicht haltbar gemacht wie die heutige Konserve. Die Bedeutung ergibt sich aus Rumpolts Gebrauch, etwa „Lambfleisch eynzumachen“ in Rindfleischbrühe mit Petersilienwurzel und Muskatblüte (rum-0208).</note>
         <note type="gloss" target="#rum-0595-orig" n="Limonien" resp="#fyndling">Zitronen. Wo Rumpolt Salzzitronen meint, schreibt er „gesaltzen Limonien“; hier steht das Wort ohne diesen Zusatz.</note>
         <note type="gloss" target="#rum-0595-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte (Macis), der Samenmantel um die Muskatnuss; im Handel als Macis oder Muskatblüte erhältlich.</note>
-        <note type="interpretive_choice" target="#rum-0595-orig" n="eyngemacht" resp="#fyndling">In Brühe oder Sauce zubereitet: Rumpolt nennt mit dem Wort eine Zubereitungsart, wie in rum-0208 (Lammfleisch mit Petersilienwurzel und Muskatblüte in Rindfleischbrühe gesotten).</note>
-        <note type="interpretive_choice" target="#rum-0595-orig" n="Gaͤnß" resp="#fyndling">Wildgans: Die Nummer gehört zum Kapitel „Von einer wilden Ganß seind achzenerley Speiß“ (Nr. 16 von 18).</note>
-        <note type="interpretive_choice" target="#rum-0595-orig" n="saur mit Limonien oder Zwibeln" resp="#fyndling">Sauer zubereitet, entweder mit Zitronen oder mit Zwiebeln. Womit die Säure genau entsteht, sagt der Text nicht; wir ergänzen weder Essig noch Wein.</note>
-        <note type="interpretive_choice" target="#rum-0595-orig" n="Zwibeln" resp="#fyndling">Zwiebeln, deren Zubereitung offen bleibt: roh, gesotten oder durchgestrichen. In der folgenden Nummer (rum-0596) nennt Rumpolt ausdrücklich „durchtriebene Zwibeln, die gesotten seyn“, hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-0595-orig" n="Pettersilgen Wurtzel" resp="#fyndling">Petersilienwurzel: Der Text sagt ausdrücklich „Wurtzel“.</note>
+        <note type="interpretive_choice" target="#rum-0595-orig" n="eyngemacht" resp="#fyndling" subtype="contextual">In Brühe oder Sauce zubereitet: Rumpolt nennt mit dem Wort eine Zubereitungsart, wie in rum-0208 (Lammfleisch mit Petersilienwurzel und Muskatblüte in Rindfleischbrühe gesotten).<list type="alternatives"><item>Angerichtet, also nur die Art des Auftragens.<note type="rationale">So wird das Wort in einigen Nachbarrezepten wiedergegeben. Die Parallelen mit ausgeschriebenem Verfahren zeigen aber ein Sieden in Brühe, nicht bloß ein Anrichten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0595-orig" n="Gaͤnß" resp="#fyndling" subtype="contextual">Wildgans: Die Nummer gehört zum Kapitel „Von einer wilden Ganß seind achzenerley Speiß“ (Nr. 16 von 18).<list type="alternatives"><item>Hausgans.<note type="rationale">Die Zeile sagt nur „Gänß“. Rumpolt behandelt die zahme Gans aber in einem eigenen Kapitel, das erst danach beginnt; die Stellung im Buch spricht für die Wildgans.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0595-orig" n="saur mit Limonien oder Zwibeln" resp="#fyndling" subtype="contextual">Sauer zubereitet, entweder mit Zitronen oder mit Zwiebeln. Womit die Säure genau entsteht, sagt der Text nicht; wir ergänzen weder Essig noch Wein.<list type="alternatives"><item>Zitronen- oder Zwiebelscheiben als Einlage in einer sauren Brühe.<note type="rationale">Bei den Fasanen-Hattele (rum-0563) schneidet Rumpolt frische saure Limonien rund und lässt sie mit Butter aufsieden; ähnlich könnten die Zitronen hier gemeint sein. Für die Zwiebeln trägt diese Deutung nicht weiter als die erste.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0595-orig" n="Zwibeln" resp="#fyndling" subtype="contextual">Zwiebeln, deren Zubereitung offen bleibt: roh, gesotten oder durchgestrichen. In der folgenden Nummer (rum-0596) nennt Rumpolt ausdrücklich „durchtriebene Zwibeln, die gesotten seyn“, hier nicht.<list type="alternatives"><item>In der Sauce mitgegarte Zwiebeln.<note type="rationale">Die naheliegende heutige Ausführung; der Text legt sie nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0595-orig" n="Pettersilgen Wurtzel" resp="#fyndling" subtype="lexical">Petersilienwurzel: Der Text sagt ausdrücklich „Wurtzel“.<list type="alternatives"><item>Petersilienkraut.<note type="rationale">Die grüne Petersilie hat im Kapitel eine eigene Nummer (rum-0585, grün eingemacht). Hier ist die Wurzel genannt, das Kraut nicht.</note></item></list></note>
       </div>
     </back>
   </text>

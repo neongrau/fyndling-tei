@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,8 +116,8 @@ Praxis. Schlage die Eier kräftig auf, damit eine homogene, luftige Masse entste
         <note type="gloss" target="#ka1-081-orig" n="salb jn an" resp="#fyndling">Salbei. Die Schwesterhandschrift Cgm 384 hat an derselben Stelle in der Zutatenkette (nach Petersilie, vor dem Röstschritt) das Wort ‚salbin‘.</note>
         <note type="gloss" target="#ka1-081-orig" n="kuochen" resp="#fyndling">Im mittelalterlichen Kontext kann ‚Kuchen‘ auch einen flachen Fladen oder Eierkuchen bezeichnen, der in einer Pfanne oder auf einem Backblech zubereitet wird.</note>
         <note type="gloss" target="#ka1-081-orig" n="rost" resp="#fyndling">Ein Grillrost, auf dem das Gericht über Glut fertig gebraten wird.</note>
-        <note type="interpretive_choice" target="#ka1-081-orig" n="salb jn an" resp="#fyndling">Wir lesen ‚salb jn an‘ als die Zutat Salbei.</note>
-        <note type="interpretive_choice" target="#ka1-081-orig" n="grossen spitz" resp="#fyndling">Wir lesen ‚grossen spitz‘ als das breite, stumpfe Ende des Eies, gestützt durch die wortgleiche Stelle in der Schwesterhandschrift Cgm 384 und im Rheinfränkischen Kochbuch.</note>
+        <note type="interpretive_choice" target="#ka1-081-orig" n="salb jn an" resp="#fyndling" subtype="philological">Wir lesen ‚salb jn an‘ als die Zutat Salbei.<list type="alternatives"><item>Das Verb ‚salzen‘ bzw. ‚würzen‘.<note type="rationale">Wörtlich naheliegende Lesart innerhalb der Aufzählung von Würzschritten, aber ohne eigenständigen Textbeleg für Salz und ohne Stütze in den Parallelhandschriften.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-081-orig" n="grossen spitz" resp="#fyndling" subtype="philological">Wir lesen ‚grossen spitz‘ als das breite, stumpfe Ende des Eies, gestützt durch die wortgleiche Stelle in der Schwesterhandschrift Cgm 384 und im Rheinfränkischen Kochbuch.<list type="alternatives"><item>Das spitze Ende des Eies.<note type="rationale">Naheliegende wörtliche Lesart von ‚spitz‘, wird aber von beiden unabhängigen Parallelzeugen widersprochen, die dieselbe Wendung eigens als stumpfes Ende erklären.</note></item></list></note>
       </div>
     </back>
   </text>

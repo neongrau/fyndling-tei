@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,7 +120,7 @@ Für die Eiermilch nach der Buchkonvention 2-3 Eier auf die angegebene Menge Rah
         <note type="gloss" target="#phw-153-orig" n="dauch" resp="#fyndling">Ein feines Tuch, das zum Passieren von Flüssigkeiten oder Pürees verwendet wird, um eine glatte Konsistenz zu erzielen.</note>
         <note type="gloss" target="#phw-153-orig" n="keler" resp="#fyndling">Der Keller diente zur kühlen Lagerung von Lebensmitteln, ähnlich einem modernen Kühlschrank.</note>
         <note type="gloss" target="#phw-153-orig" n="dreybs" resp="#fyndling">Buchweit als "treibe ... durch (ein Tuch)" aufgelöst, so auch in phw-012, phw-021 und phw-051 - hier durch dieselbe Buchkonvention bestätigt.</note>
-        <note type="interpretive_choice" target="#phw-153-orig" n="genachtt" resp="#fyndling">Gelesen als 'über Nacht' (Ruhe- und Kühlzeit im Keller), anschließend an 'setz in keler'.</note>
+        <note type="interpretive_choice" target="#phw-153-orig" n="genachtt" resp="#fyndling" subtype="philological">Gelesen als 'über Nacht' (Ruhe- und Kühlzeit im Keller), anschließend an 'setz in keler'.<list type="alternatives"><item>'gen Nacht' als Angabe des Serviertermins (abends), nicht als Ruhedauer.<note type="rationale">Der engste Buchzwilling mst-038 endet mit der fast wortgleichen Formel 'setz Inn keller, vnnd gibs genn nacht', dort eindeutig als Servierzeitpunkt gelesen. Ob phw-153 dieselbe Lesart trägt, ist am Faksimile beziehungsweise über weitere Wörterbuchbelege noch zu prüfen. Am Faksimile (Ralf, 2026-10-08): „genachtt“ steht eindeutig als ein Wort; die Unterscheidung „über Nacht“ gegen „gen Nacht“ bleibt Kontextfrage.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,11 +130,11 @@ Praxis. In der Pfanne oder auf dem Rost bei mäßiger Hitze braten, bis die Wür
         <note type="gloss" target="#rum-0394-orig" n="trucken werden" resp="#fyndling">Die Würste nach dem kalten Wasser aufhängen und abtrocknen lassen, bevor sie gebraten oder gekocht werden. Wo und wie lange, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0394-orig" n="wenn du bist in Vngern oder Polen" resp="#fyndling">Rumpolts Bemerkung über die Landesweise: Dort kocht man das meiste mit Zwiebeln und Knoblauch. Das ist kein Name des Gerichts.</note>
         <note type="gloss" target="#rum-0394-orig" n="das meiste theil" resp="#fyndling">Zum größten Teil, meistens.</note>
-        <note type="interpretive_choice" target="#rum-0394-orig" n="Knobloch darvnter hacken" resp="#fyndling">Den Knoblauch unter die Füllung hacken. „Darunter“ bezieht sich am ehesten auf das eben klein gehackte Fleisch mit Speck, und hacken passt nur zu etwas Festem. Rumpolt macht an anderer Stelle eine Knoblauchwurst, bei der Speck und Knoblauch zusammen in die Füllung kommen.</note>
-        <note type="interpretive_choice" target="#rum-0394-orig" n="das meiste theil kochen" resp="#fyndling">Adverbial: zum größten Teil, meistens. In Ungarn oder Polen kocht man das meiste mit Zwiebeln und Knoblauch; eine Bemerkung über die Landesküche.</note>
-        <note type="interpretive_choice" target="#rum-0394-orig" n="trucken werden" resp="#fyndling">Die Würste aufhängen und abtrocknen lassen, wie bei Rumpolts Lamm- und Spanferkelwürsten vor dem Braten. Eine Dauer nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0394-orig" n="Salz" resp="#fyndling">Der Text nennt nur gestoßenen Pfeffer als Würze, kein Salz.</note>
-        <note type="interpretive_choice" target="#rum-0394-orig" n="brats oder kochs" resp="#fyndling">Braten oder kochen, ohne Garzeit oder Hitzeangabe.</note>
+        <note type="interpretive_choice" target="#rum-0394-orig" n="Knobloch darvnter hacken" resp="#fyndling" subtype="contextual">Den Knoblauch unter die Füllung hacken. „Darunter“ bezieht sich am ehesten auf das eben klein gehackte Fleisch mit Speck, und hacken passt nur zu etwas Festem. Rumpolt macht an anderer Stelle eine Knoblauchwurst, bei der Speck und Knoblauch zusammen in die Füllung kommen.<list type="alternatives"><item>Den Knoblauch erst beim Braten oder Kochen zugeben.<note type="rationale">Der Satz steht direkt nach „brats oder kochs“, der Bezug ist grammatisch nicht eindeutig. Eine Sauce oder Kochflüssigkeit nennt der Text aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0394-orig" n="das meiste theil kochen" resp="#fyndling" subtype="lexical">Adverbial: zum größten Teil, meistens. In Ungarn oder Polen kocht man das meiste mit Zwiebeln und Knoblauch; eine Bemerkung über die Landesküche.<list type="alternatives"><item>Auf die Würste bezogen: sie dort überwiegend kochen statt braten.<note type="rationale">Ein Objekt wie „sie“ steht nicht im Text; diese Lesart engt den Satz auf das Rezept ein.</note></item><item>Auf die Zutaten bezogen: überwiegend mit Zwiebeln und Knoblauch würzen.<note type="rationale">Möglich, aber „das meiste theil“ steht beim Kochen, nicht bei den Zutaten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0394-orig" n="trucken werden" resp="#fyndling" subtype="contextual">Die Würste aufhängen und abtrocknen lassen, wie bei Rumpolts Lamm- und Spanferkelwürsten vor dem Braten. Eine Dauer nennt der Text nicht.<list type="alternatives"><item>Heute nur kurz abtrocknen lassen und dann sofort garen.<note type="rationale">Moderne Praxis: rohe Hackfleischwurst nicht lange an der Luft hängen lassen. Das ist keine Aussage des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0394-orig" n="Salz" resp="#fyndling" subtype="contextual">Der Text nennt nur gestoßenen Pfeffer als Würze, kein Salz.<list type="alternatives"><item>Die Füllung heute salzen.<note type="rationale">Übliche Praxis bei frischer Bratwurst, aber nicht im Text; Rumpolt mahnt bei seinen Lammwürsten nur, nicht zu versalzen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0394-orig" n="brats oder kochs" resp="#fyndling" subtype="contextual">Braten oder kochen, ohne Garzeit oder Hitzeangabe.<list type="alternatives"><item>Heute vollständig durchgaren, etwa bis 70 °C Kerntemperatur.<note type="rationale">Moderner Sicherheitshinweis für rohes Hackfleisch; dem Rezept nicht zuzuschreiben.</note></item></list></note>
       </div>
     </back>
   </text>

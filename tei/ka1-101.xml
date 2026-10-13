@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,7 +119,7 @@ Praxis: Lauchringe und Kohlstreifen in Schmalz/Butter anschwitzen, kurz mit Wass
         <note type="gloss" target="#ka1-101-orig" n="rost sy in ainem schmaltz ... gusß wasser dar an ... jn ain sib" resp="#fyndling">Anrösten, mit Wasser aufkochen, dann abgießen - nimmt dem Kohl/Lauch Schärfe und macht ihn bekömmlicher, bevor er gebunden wird.</note>
         <note type="gloss" target="#ka1-101-orig" n="milch ... mit wissen brot durch ain tuoch gezogen" resp="#fyndling">Brotmilch: Milch wird mit eingeweichtem Weißbrot durch ein Tuch passiert - das Brot bindet die Milch zur sämigen Sauce. Brotbindung ist DAS mittelalterliche Bindemittel (vor der Mehlschwitze).</note>
         <note type="gloss" target="#ka1-101-orig" n="sud schwinin schmaltz dar zuo" resp="#fyndling">Die Münchner Parallelhandschrift (Cgm 384) endet hier schlicht mit „und tue Schmalz daran“ - ohne den zusätzlichen Schritt, ausdrücklich Schweineschmalz nochmals darin aufzusieden.</note>
-        <note type="interpretive_choice" target="#ka1-101-orig" n="wiß loch vnd koln" resp="#fyndling">Zwei Gemüse - weißer Lauch und Kohl (nim wiß loch vnd koln), so der eigene Wortlaut des Reichenauer Kochbuchs.</note>
+        <note type="interpretive_choice" target="#ka1-101-orig" n="wiß loch vnd koln" resp="#fyndling" subtype="philological">Zwei Gemüse - weißer Lauch und Kohl (nim wiß loch vnd koln), so der eigene Wortlaut des Reichenauer Kochbuchs.<list type="alternatives"><item>Die Münchner Parallelhandschrift Cgm 384 formuliert offener (louch krutt vnd koll) und wird dort von Ehlert mit Komma zu drei Posten gelesen (Lauch, Kraut und Kohl).<note type="rationale">Da ka1 mit der Beifügung wiß (weißer Lauch) eindeutig zwei Zutaten nennt, folgen wir hier der eigenen Zwei-Posten-Lesart des Reichenauer Kochbuchs statt Ehlerts Dreiposten-Übersetzung der Münchner Parallelstelle.</note></item></list></note>
       </div>
     </back>
   </text>

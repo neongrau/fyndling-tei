@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,10 +123,10 @@ Praxis. Schmalz, so groß wie ein Ei, in einer Pfanne bei sehr niedriger Hitze s
         <note type="gloss" target="#phw-018-orig" n="syblin" resp="#fyndling">Ein kleines Sieb, zum Passieren der Eier-Milch-Mischung.</note>
         <note type="gloss" target="#phw-018-orig" n="bedalin" resp="#fyndling">Ein dünn ausgerollter Teigboden, der als Basis für die Eier-Mandel-Mischung dient.</note>
         <note type="gloss" target="#phw-018-orig" n="an ain annder syeden" resp="#fyndling">"Aneinander" im Sinn von "zusammen, zusammenhängend" - nicht "auf kleiner Flamme". Die geschlagene Eier-Milch-Mischung wird zusammen mit dem zuvor sanft geschmolzenen Schmalz in derselben Pfanne gestockt. Dieselbe Wendung erscheint wortgleich im unmittelbaren Nachbarrezept dieser Serie.</note>
-        <note type="interpretive_choice" target="#phw-018-orig" n="farbachenn" resp="#fyndling">‚Vorbacken‘ - der Tortenboden wird zunächst nur teilweise gebacken, bevor die Füllung hinzugefügt wird.</note>
-        <note type="interpretive_choice" target="#phw-018-orig" n="stytts Es du auff" resp="#fyndling">‚Schüttest du es auf‘ - die Eier-Mandel-Mischung wird auf den Tortenboden gegossen.</note>
-        <note type="interpretive_choice" target="#phw-018-orig" n="Garendpunkt des zweiten Backens (bachs styttlich)" resp="#fyndling">Der Text nennt für das zweite, sachte Backen nur die Qualität ‚styttlich‘ (sachte, schonend), aber keinen Zeit-, Temperatur- oder Farbhinweis.</note>
-        <note type="interpretive_choice" target="#phw-018-orig" n="anfering gestosenn Manndel" resp="#fyndling">„an fering“ = ein Vierling, also ein Viertelpfund gestoßene Mandeln. „an“ steht in diesem Rezept auch sonst für „ain“ („an seydlin guotte Milch“), und der Zwilling wo10-089 nennt an derselben Stelle eine Mandelmenge („ein halb pfund gestossen Mandel“).</note>
+        <note type="interpretive_choice" target="#phw-018-orig" n="farbachenn" resp="#fyndling" subtype="lexical">‚Vorbacken‘ - der Tortenboden wird zunächst nur teilweise gebacken, bevor die Füllung hinzugefügt wird.<list type="alternatives"><item>‚Gar backen‘ - der Tortenboden wird vollständig gebacken.<note type="rationale">Die nachfolgende Anweisung ‚bachs styttlich‘ (backe es sachte) deutet darauf hin, dass der Backvorgang in zwei Schritten erfolgt, was die Lesart ‚vorbacken‘ für den ersten Schritt plausibler macht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-018-orig" n="stytts Es du auff" resp="#fyndling" subtype="lexical">‚Schüttest du es auf‘ - die Eier-Mandel-Mischung wird auf den Tortenboden gegossen.<list type="alternatives"><item>‚Stützt du es auf‘ - die Mischung wird gestützt oder arrangiert.<note type="rationale">Für eine flüssige Mischung wenig passend; ein Rezept aus demselben Zeitraum verwendet an vergleichbarer Stelle unzweideutig ‚schütten‘ (Mandeln unterrühren, auf den Tortenboden schütten, backen), was die Lesart ‚schüttest‘ zusätzlich stützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-018-orig" n="Garendpunkt des zweiten Backens (bachs styttlich)" resp="#fyndling" subtype="contextual">Der Text nennt für das zweite, sachte Backen nur die Qualität ‚styttlich‘ (sachte, schonend), aber keinen Zeit-, Temperatur- oder Farbhinweis.<list type="alternatives"><item>Historisch urteilte man vermutlich nach Augenschein und Konsistenz der Füllung statt nach Uhr oder Thermometer.<note type="rationale">Am offenen Feuer war eine gleichbleibende, messbare Hitze schwer herzustellen; die Textstelle selbst gibt keinen quantifizierbaren Endpunkt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-018-orig" n="anfering gestosenn Manndel" resp="#fyndling" subtype="philological">„an fering“ = ein Vierling, also ein Viertelpfund gestoßene Mandeln. „an“ steht in diesem Rezept auch sonst für „ain“ („an seydlin guotte Milch“), und der Zwilling wo10-089 nennt an derselben Stelle eine Mandelmenge („ein halb pfund gestossen Mandel“).<list type="alternatives"><item>„anfänglich gestoßene Mandeln“<note type="rationale">Frühere Lesart dieses Rezepts. „Anfänglich“ ergibt im Arbeitsablauf keinen Sinn, an dieser Stelle steht in der Parallelüberlieferung eine Menge.</note></item></list></note>
       </div>
     </back>
   </text>

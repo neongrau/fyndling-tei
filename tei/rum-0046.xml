@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,10 +111,10 @@ Bratensatz. Ob der Satz aus der Pfanne oder Tropfschale mitverwendet wird, steht
 
 Praxis. Brühe, Essig und Pfeffer in einem kleinen Topf einmal aufkochen und beim Anrichten über den fertigen Braten gießen. Das Braun kommt aus dem Braten selbst; Rumpolt sagt es vom Braten, nicht von der Brühe.</note>
         <note type="gloss" target="#rum-0046-orig" n="gestossen Pfeffer" resp="#fyndling">Der Druck sagt nur ‚gestoßen‘, also zerstoßen; die Form ist unflektiert gesetzt. Heute nimmst du grob gemahlenen Pfeffer.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0046-orig" n="auffsieden" resp="#fyndling">aufkochen: einmal zum Sieden bringen; so auch in den übrigen Rumpolt-Rezepten übersetzt, ohne Reduktion.</note>
-        <note type="interpretive_choice" target="#rum-0046-orig" n="Mengenverhältnis Brühe : Essig : Pfeffer" resp="#fyndling">Nur 'ein wenig' vor der Brühe; der Text legt kein Verhältnis fest, moderne Startmenge steht in der Zubereitung.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0046-orig" n="Bratensatz" resp="#fyndling">Brühe getrennt angesetzt, kein Bratensatz ergänzt, weil der Text keinen nennt.</note>
-        <note type="interpretive_choice" target="#rum-0046-orig" n="Essig" resp="#fyndling">Essig ohne nähere Angabe; Weinessig ist die moderne Wahl.</note>
+        <note type="interpretive_choice" target="#rum-0046-orig" n="auffsieden" resp="#fyndling" subtype="lexical">aufkochen: einmal zum Sieden bringen; so auch in den übrigen Rumpolt-Rezepten übersetzt, ohne Reduktion.<list type="alternatives"><item>einkochen lassen<note type="rationale">Im Text nicht genannt; 'auffsieden' meint das Aufwallen, nicht das Einengen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0046-orig" n="Mengenverhältnis Brühe : Essig : Pfeffer" resp="#fyndling" subtype="contextual">Nur 'ein wenig' vor der Brühe; der Text legt kein Verhältnis fest, moderne Startmenge steht in der Zubereitung.<list type="alternatives"><item>Essig überwiegt (scharf-saure Tafelsauce wie bei den benachbarten Beizen)<note type="rationale">Möglich, da der Text sich nicht festlegt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0046-orig" n="Bratensatz" resp="#fyndling" subtype="contextual">Brühe getrennt angesetzt, kein Bratensatz ergänzt, weil der Text keinen nennt.<list type="alternatives"><item>Brühe im Bratensatz aufsieden lassen<note type="rationale">Im Text nicht genannt, aber als Lesart nicht ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0046-orig" n="Essig" resp="#fyndling" subtype="contextual">Essig ohne nähere Angabe; Weinessig ist die moderne Wahl.<list type="alternatives"><item>anderer Essig<note type="rationale">Der Druck legt die Sorte nicht fest.</note></item></list></note>
       </div>
     </back>
   </text>

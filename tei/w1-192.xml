@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,7 +117,7 @@ Praxis. Feigen mit den Stielen kurz aufkochen und mit den Stielen nach oben in e
         <note type="gloss" target="#w1-192-orig" n="hausen ploter" resp="#fyndling">Hausenblase ist ein traditionelles Geliermittel, das aus der getrockneten Schwimmblase des Hausens (einer Störart) gewonnen wird. Sie wurde im Mittelalter häufig zum Klären von Wein und zum Gelieren von Speisen verwendet.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
         <note type="gloss" target="#w1-192-orig" n="wechlisch wein" resp="#fyndling">Welscher Wein bezeichnete im Mittelalter Weine aus romanischsprachigen Ländern, insbesondere aus dem Süden (Italien, Frankreich), die oft kräftiger und süßer waren als heimische Weine.</note>
         <note type="gloss" target="#w1-192-orig" n="gwurcz" resp="#fyndling">Im Mittelalter war ‚Gewürz‘ oft eine Mischung aus teuren Importgewürzen wie Pfeffer, Ingwer, Zimt, Nelken und Galgant. Die genaue Zusammensetzung variierte je nach Verfügbarkeit und Geschmack des Haushalts.</note>
-        <note type="interpretive_choice" target="#w1-192-orig" n="talentum" resp="#fyndling">Ein Pfund Feigen (ca. 500 g)</note>
+        <note type="interpretive_choice" target="#w1-192-orig" n="talentum" resp="#fyndling" subtype="philological">Ein Pfund Feigen (ca. 500 g)<list type="alternatives"><item>Eine unbestimmte, größere Menge Feigen<note type="rationale">Talentum kann sprachlich auch eine vage Mengenangabe sein; hier lesen aber zwei textnahe Parallelhandschriften (B4, Meister Hans) an derselben Stelle ausdrücklich ein Pfund, weshalb die konkrete Gewichtsangabe die besser gestützte Lesart ist.</note></item></list></note>
       </div>
     </back>
   </text>

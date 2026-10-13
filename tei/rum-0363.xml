@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -137,11 +142,11 @@ Praxis. Rehleber bekommt man frisch beim Wildhändler oder Jäger, je nach Jagdz
         <note type="gloss" target="#rum-0363-orig" n="vberzinten Fischkessel" resp="#fyndling">Ein innen verzinnter Kessel. Der Name kommt vom Fischkochen, bei Rumpolt ist der Fischkessel aber ein gewöhnliches Kochgefäß, auch für Muse. Kupfer- und Messinggeschirr wurde verzinnt, damit die Speisen nicht mit dem blanken Metall in Berührung kommen. Heute genügt ein Topf.</note>
         <note type="gloss" target="#rum-0363-orig" n="Neglein" resp="#fyndling">Gewürznelken; Nägelein ist der alte Name der Nelke.</note>
         <note type="gloss" target="#rum-0363-orig" n="Lebermuß" resp="#fyndling">Rumpolts eigener Name für das Gericht: ein mit Brot gebundenes, durchgestrichenes und aufgekochtes Mus aus Leber. Wie es aufgetragen wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0363-orig" n="gebehte Schnitten" resp="#fyndling">Gebähte, also über der Hitze getrocknete und leicht geröstete Weißbrotscheiben (bähen); buchintern gestützt durch das Lamm-Lebermus rum-0205 („abgebeht, daß wol braun wirdt“) und die Birkhahnleber rum-0544.</note>
-        <note type="interpretive_choice" target="#rum-0363-orig" n="warmen Wein oder Rindtfleischbruͤh" resp="#fyndling">Der Text lässt warmen Wein oder fettarme Rinderbrühe gleichrangig zu; Sorte und Farbe des Weins nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0363-orig" n="Haͤrin Tuch" resp="#fyndling">Feines Seihtuch aus Haar oder feinem Wollstoff (Grimm); welches Material Rumpolt meint, ist nicht belegt.</note>
-        <note type="interpretive_choice" target="#rum-0363-orig" n="schwartze klein Rosein" resp="#fyndling">Kleine dunkle Rosinen; der Text nennt nur Farbe und Größe, keine Sorte.</note>
-        <note type="interpretive_choice" target="#rum-0363-orig" n="ab gar an die statt" resp="#fyndling">Gar, also fertig gebraten; „an die statt“ ist Rumpolts Wendung für „gar“ (sonst „gar an die statt sieden“, etwa beim Rehkopf rum-0359). Hier auf dem Rost gebraten, nicht gekocht.</note>
+        <note type="interpretive_choice" target="#rum-0363-orig" n="gebehte Schnitten" resp="#fyndling" subtype="lexical">Gebähte, also über der Hitze getrocknete und leicht geröstete Weißbrotscheiben (bähen); buchintern gestützt durch das Lamm-Lebermus rum-0205 („abgebeht, daß wol braun wirdt“) und die Birkhahnleber rum-0544.<list type="alternatives"><item>Weißbrotscheiben in der trockenen Pfanne oder im Ofen rösten<note type="rationale">Heutige Praxis mit demselben Ergebnis; die Wärmequelle schreibt der Text nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0363-orig" n="warmen Wein oder Rindtfleischbruͤh" resp="#fyndling" subtype="contextual">Der Text lässt warmen Wein oder fettarme Rinderbrühe gleichrangig zu; Sorte und Farbe des Weins nennt er nicht.<list type="alternatives"><item>Warmer Rotwein oder fettarme Brühe nach Wahl<note type="rationale">Praktische Festlegung für heute; der Text verlangt keine Weinfarbe, daher nur als Vorschlag.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0363-orig" n="Haͤrin Tuch" resp="#fyndling" subtype="lexical">Feines Seihtuch aus Haar oder feinem Wollstoff (Grimm); welches Material Rumpolt meint, ist nicht belegt.<list type="alternatives"><item>Feines Passiertuch oder Haarsieb<note type="rationale">Heutiger Ersatz mit derselben Funktion: Fasern und Rosinenhäute zurückhalten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0363-orig" n="schwartze klein Rosein" resp="#fyndling" subtype="contextual">Kleine dunkle Rosinen; der Text nennt nur Farbe und Größe, keine Sorte.<list type="alternatives"><item>Korinthen (kleine dunkle Trockenbeeren)<note type="rationale">Möglich, für diese Stelle aber nicht belegt; daher nur als Option.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0363-orig" n="ab gar an die statt" resp="#fyndling" subtype="contextual">Gar, also fertig gebraten; „an die statt“ ist Rumpolts Wendung für „gar“ (sonst „gar an die statt sieden“, etwa beim Rehkopf rum-0359). Hier auf dem Rost gebraten, nicht gekocht.<list type="alternatives"><item>Leber vollständig durchbraten<note type="rationale">Heutige Praxis; eine bestimmte Garstufe nennt der Text nicht.</note></item></list></note>
       </div>
     </back>
   </text>

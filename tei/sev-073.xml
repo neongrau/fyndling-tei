@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -143,8 +148,8 @@ Praxis. Karpfen schuppen und filetieren. Filet grätenfrei fein hacken, mit Salz
         <note type="gloss" target="#sev-073-orig" n="moždíři" resp="#fyndling">Mörser, hier ein großer Fleischmörser.</note>
         <note type="gloss" target="#sev-073-orig" n="hartuch" resp="#fyndling">Passiertuch.</note>
         <note type="gloss" target="#sev-073-orig" n="ryby sekané i nesekané" resp="#fyndling">Gehackte und unzerhackte Fische. Die gehackten Fische sind die Klößchen, die unzerhackten Fische sind die für die Sauce zerstoßenen Fischstücke.</note>
-        <note type="interpretive_choice" target="#sev-073-orig" n="ostrúhaj" resp="#fyndling">‚schuppen und säubern' - die übliche erste Vorbereitung beim Karpfen, bevor das Fleisch ausgelöst wird.</note>
-        <note type="interpretive_choice" target="#sev-073-orig" n="mléka rybího" resp="#fyndling">‚Fischmilch' - historischer Begriff für einen Fischfond, hier Saucenbasis.</note>
+        <note type="interpretive_choice" target="#sev-073-orig" n="ostrúhaj" resp="#fyndling">‚schuppen und säubern' - die übliche erste Vorbereitung beim Karpfen, bevor das Fleisch ausgelöst wird.<list type="alternatives"><item>‚enthäuten / abschaben'<note type="rationale">Das Verb strúhati trägt beide Bedeutungen; da das Fleisch anschließend filetiert und die Reste zur Brühe genutzt werden, wäre auch ein Abschaben der Haut denkbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-073-orig" n="mléka rybího" resp="#fyndling">‚Fischmilch' - historischer Begriff für einen Fischfond, hier Saucenbasis.<list type="alternatives"><item>‚Fischmilch (Milchner/Hoden)'<note type="rationale">Wörtlich kann mléko rybí auch die Milch (Samenflüssigkeit) männlicher Fische meinen, die mitgekocht und passiert die Sauce binden würde - eine sachlich andere Zutat als ein bloßer Fond.</note></item></list></note>
       </div>
     </back>
   </text>

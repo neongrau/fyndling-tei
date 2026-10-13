@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@ Cluster: Schwester der aufwändigen Lamprete sev-061; gehört zur Fisch-Sülze/A
         <note type="gloss" target="#sev-062-orig" n="mihule" resp="#fyndling">Ein weiteres tschechisches Wort für Neunauge, hier als Referenz für die passende Salzigkeit der Sülze genannt.</note>
         <note type="gloss" target="#sev-062-orig" n="mřeně" resp="#fyndling">Barbe, ein Süßwasserfisch, der hier ebenfalls als Referenz für die Salzigkeit der Sülze dient.</note>
         <note type="gloss" target="#sev-062-orig" n="nakladu" resp="#fyndling">Aufwand oder Kosten.</note>
-        <note type="interpretive_choice" target="#sev-062-orig" n="rosol" resp="#fyndling">Salziges Gelee/Brühe, warm serviert.</note>
+        <note type="interpretive_choice" target="#sev-062-orig" n="rosol" resp="#fyndling">Salziges Gelee/Brühe, warm serviert.<list type="alternatives"><item>Eine klassische, kalt gelierte Sülze.<note type="rationale">Das Wort „rosol“ kann auch kalt gelierte Sülze bedeuten. Die Anweisung „musí teple jedena býti“ (muss warm gegessen werden) spricht jedoch stark für eine warme, sämige Brühe oder ein leicht geliertes Gericht, das warm serviert wird, und nicht für ein festes, kaltes Aspik.</note></item></list></note>
         <note type="interpretive_choice" target="#sev-062-orig" n="lampredu / mihule" resp="#fyndling">Neunauge</note>
-        <note type="interpretive_choice" target="#sev-062-orig" n="na místo uvaříš" resp="#fyndling">richtig gekocht hast</note>
+        <note type="interpretive_choice" target="#sev-062-orig" n="na místo uvaříš" resp="#fyndling">richtig gekocht hast<list type="alternatives"><item>an Ort und Stelle gekocht hast<note type="rationale">„Na místo“ bedeutet wörtlich „an Ort und Stelle“, wird hier aber idiomatisch im Sinne von „richtig“ oder „passend“ verwendet, um den richtigen Garpunkt zu betonen, da Neunaugen länger kochen müssen.</note></item></list></note>
       </div>
     </back>
   </text>

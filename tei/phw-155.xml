@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,9 +123,9 @@ Praxis. Die Ei-Wein-Mischung gart am besten bei sanfter Hitze unter stetigem Rü
         <note type="gloss" target="#phw-155-orig" n="safern" resp="#fyndling">Safran war ein kostbares Gewürz, das Speisen eine goldgelbe Farbe und ein feines Aroma verlieh.</note>
         <note type="gloss" target="#phw-155-orig" n="gwirtz" resp="#fyndling">Die genaue Mischung der 'anderen guten Gewürze' ist nicht spezifiziert. Typisch für die Zeit wären Zimt, Ingwer, Nelken oder Muskat.</note>
         <note type="gloss" target="#phw-155-orig" n="wein muß" resp="#fyndling">Bezeichnet einen im Bestand verbreiteten Rezepttyp: eine mit Ei gebundene, gesüßte Wein-Speise, hier über geröstetem Brot. Vergleichbare Fassungen finden sich unter anderem im Kochbuch der Sabina Welserin.</note>
-        <note type="interpretive_choice" target="#phw-155-orig" n="brott brodt" resp="#fyndling">Die Wiederholung 'brott brodt' wird als scribale Dittographie (Schreiberwiederholung) interpretiert und in der Übersetzung nur einmal als 'Brot' wiedergegeben. Am Faksimile (Ralf, 2026-10-08): keine Tilgungsmarke.</note>
-        <note type="interpretive_choice" target="#phw-155-orig" n="las syeden (Hitzeführung)" resp="#fyndling">Für die Praxis wird sanfte Hitze mit stetigem Rühren angenommen, wie bei einer Eierspeise.</note>
-        <note type="interpretive_choice" target="#phw-155-orig" n="rests (Bräunungsgrad)" resp="#fyndling">Für die Praxis wird ein helles Anrösten des Brots angenommen, um ein Anbrennen zu vermeiden.</note>
+        <note type="interpretive_choice" target="#phw-155-orig" n="brott brodt" resp="#fyndling" subtype="philological">Die Wiederholung 'brott brodt' wird als scribale Dittographie (Schreiberwiederholung) interpretiert und in der Übersetzung nur einmal als 'Brot' wiedergegeben. Am Faksimile (Ralf, 2026-10-08): keine Tilgungsmarke.</note>
+        <note type="interpretive_choice" target="#phw-155-orig" n="las syeden (Hitzeführung)" resp="#fyndling" subtype="contextual">Für die Praxis wird sanfte Hitze mit stetigem Rühren angenommen, wie bei einer Eierspeise.<list type="alternatives"><item>Der Text nennt weder Hitzegrad noch Rührhinweis; ein kräftigeres Sieden mit gröberer, teils stockiger Konsistenz ist ebenso möglich.</item></list></note>
+        <note type="interpretive_choice" target="#phw-155-orig" n="rests (Bräunungsgrad)" resp="#fyndling" subtype="contextual">Für die Praxis wird ein helles Anrösten des Brots angenommen, um ein Anbrennen zu vermeiden.<list type="alternatives"><item>Eine stärkere Röstung, wie sie andere phw-Rezepte mit dem Wort 'resch' ausdrücklich fordern, ist im Text nicht ausgeschlossen - hier fehlt dieses Wort allerdings.</item></list></note>
       </div>
     </back>
   </text>

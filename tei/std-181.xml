@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -140,8 +145,8 @@ Praxis. Für die Gelbfärbung nennt der Text kein Mittel; Safran lässt sich sic
         <note type="gloss" target="#std-181-orig" n="&amp;(ach" resp="#fyndling">Der Druck ist an dieser Stelle beschädigt, sodass die ersten Buchstaben nur schwer lesbar sind; er liest 'Mach alſo' (Mach es so) - die im Buch mehrfach verwendete Eröffnungsformel für ein Rezept.</note>
         <note type="gloss" target="#std-181-orig" n="clvvpih." resp="#fyndling">Die gedruckte Rezeptziffer ist an dieser Stelle beschädigt und mit dem folgenden Buchstaben verschmolzen; der Druck liest 'clxxvij.' (177) - die Abweichung von der laufenden Zählung dieser Ausgabe ist im Buch an mehreren Stellen zu beobachten.</note>
         <note type="gloss" target="#std-181-orig" n="08" resp="#fyndling">An dieser schwer lesbaren Stelle liest der Druck die Abkürzung 'od' (oder).</note>
-        <note type="interpretive_choice" target="#std-181-orig" n="gilbs" resp="#fyndling">Praxis-Empfehlung: mit Safran gelb färben - sicher dosierbar und ohne rohes Ei in einer Sauce mit Innereien.</note>
-        <note type="interpretive_choice" target="#std-181-orig" n="ſeüd die" resp="#fyndling">Praxis-Empfehlung: Lunge (und Leber) vollständig durchgaren, wie es der heutige Hygienestandard bei Innereien verlangt.</note>
+        <note type="interpretive_choice" target="#std-181-orig" n="gilbs" resp="#fyndling">Praxis-Empfehlung: mit Safran gelb färben - sicher dosierbar und ohne rohes Ei in einer Sauce mit Innereien.<list type="alternatives"><item>Historisch käme auch Eigelb infrage.<note type="rationale">Beide Mittel sind period-treu und im Buch an anderer Stelle belegt; der Text nennt das Färbemittel hier nicht ausdrücklich.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-181-orig" n="ſeüd die" resp="#fyndling">Praxis-Empfehlung: Lunge (und Leber) vollständig durchgaren, wie es der heutige Hygienestandard bei Innereien verlangt.<list type="alternatives"><item>Historisch wäre auch ein nur kurzes Vorsieden bis zur Schneidbarkeit denkbar, wie es period-typisch knapp gegart üblich war.<note type="rationale">Der Text nennt keinen Garpunkt und keine Gardauer, sondern beschränkt sich auf die Anweisung 'sieden'.</note></item></list></note>
       </div>
     </back>
   </text>

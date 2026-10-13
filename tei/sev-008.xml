@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -146,8 +151,8 @@ Cluster-Verwandtschaft: Die Luxusversion von sev-007 und der technische Zwilling
         <note type="gloss" target="#sev-008-orig" n="vře znenáhla" resp="#fyndling">Langsam köcheln, sanft sieden lassen.</note>
         <note type="gloss" target="#sev-008-orig" n="koření" resp="#fyndling">Allgemeiner Begriff für Gewürze, hier gefolgt von einer spezifischen Aufzählung.</note>
         <note type="gloss" target="#sev-008-orig" n="svrchu na zajíc na misu" resp="#fyndling">Oben auf den Hasen auf die Servierschüssel.</note>
-        <note type="interpretive_choice" target="#sev-008-orig" n="přepeř v pivě" resp="#fyndling">Den Hasen in Bier spülen oder marinieren. Dies dient der Reinigung, Zartheit und Geschmacksgebung des Fleisches.</note>
-        <note type="interpretive_choice" target="#sev-008-orig" n="spretuj jablka" resp="#fyndling">Äpfel in Stücke schneiden und in Schmalz braten. Dies ist eine gängige Zubereitungsart für Äpfel als Beilage zu Wild.</note>
+        <note type="interpretive_choice" target="#sev-008-orig" n="přepeř v pivě" resp="#fyndling">Den Hasen in Bier spülen oder marinieren. Dies dient der Reinigung, Zartheit und Geschmacksgebung des Fleisches.<list type="alternatives"><item>Den Hasen kräftig mit Pfeffer würzen und in Bier kochen.<note type="rationale">Das Wort 'přepeř' enthält den Stamm 'pepř' (Pfeffer), was eine Würzung nahelegen könnte. Jedoch deutet 'v pivě' (in Bier) auf eine Flüssigkeitsbehandlung hin, und eine separate Gewürzanweisung folgt später im Rezept, was die Lesart als 'spülen/marinieren' plausibler macht.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-008-orig" n="spretuj jablka" resp="#fyndling">Äpfel in Stücke schneiden und in Schmalz braten. Dies ist eine gängige Zubereitungsart für Äpfel als Beilage zu Wild.<list type="alternatives"><item>Äpfel spalten und in Schmalz dünsten.<note type="rationale">Das Verb 'spretovat' könnte eine Ableitung von 'spalten' sein. Das Dünsten in Schmalz wäre ebenfalls eine plausible Zubereitung für Äpfel zu Wild.</note></item></list></note>
       </div>
     </back>
   </text>

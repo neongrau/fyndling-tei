@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,7 +114,7 @@ Praxis. Eine Äsche (ersatzweise Forelle oder Saibling) ausnehmen und den Bauch 
         <note type="gloss" target="#mon-040-orig" n="forchen" resp="#fyndling">Die Forelle, ein beliebter Süßwasserfisch, der in vielen mittelalterlichen Rezepten vorkommt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#forchen"/></note>
         <note type="gloss" target="#mon-040-orig" n="allen" resp="#fyndling">Der Aal, ein fettreicher und geschätzter Speisefisch, der im Mittelalter auch als Fastenspeise galt. Die Lesart allen = Aal ergibt sich hier aus dem Kontext der Fischaufzählung (Forelle, Aal, Brachsen).</note>
         <note type="gloss" target="#mon-040-orig" n="braxsenn" resp="#fyndling">Der Brachsen (Abramis brama), auch Blei genannt, ist ein Karpfenfisch und ein häufiger Süßwasserfisch in der mittelalterlichen Küche.</note>
-        <note type="interpretive_choice" target="#mon-040-orig" n="aschen" resp="#fyndling">'Äsche' - ein Süßwasserfisch (Thymallus thymallus). Der Kontext des Rezepts (Fisch, Darm, Braten) macht diese Lesart eindeutig.</note>
+        <note type="interpretive_choice" target="#mon-040-orig" n="aschen" resp="#fyndling">'Äsche' - ein Süßwasserfisch (Thymallus thymallus). Der Kontext des Rezepts (Fisch, Darm, Braten) macht diese Lesart eindeutig.<list type="alternatives"><item>'Asche' - als Substantiv oder Verb (mit Asche behandeln).<note type="rationale">Im selben Buch meint 'aschen' beim Aal (mon-042) tatsächlich die Asche zum Abreiben des Schleims. Hier aber ist der Kontext (Darm ausnehmen, füllen, braten) eindeutig der Fisch.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,10 +120,10 @@ Praxis. Mengen, Zeiten und Hitze nennt der Text nicht. Frische Hammelleber beim 
         <note type="gloss" target="#rum-0157-orig" n="mach sie mit Gewuͤrtz ab" resp="#fyndling">abmachen heißt eine Speise abschließend zubereiten, fertigstellen (FWB „abmachen“ 1); hier also würzen. Welches Gewürz, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0157-orig" n="laß es kurtz einsieden" resp="#fyndling">einsieden heißt einkochen, durch Kochen dicker werden lassen (DWB). Kurtz: nur kurz, nicht bis zur Trockne; dieselbe Wendung steht bei der Preseindel vom Ochsen.</note>
         <note type="gloss" target="#rum-0157-orig" n="Rindtfleischbruͤh" resp="#fyndling">Rinderbrühe. Rumpolt nimmt sie auch bei Hammel- und Kalbsgerichten als gewöhnliche Kochbrühe, so in der folgenden Nummer mit der Hammelsleber.</note>
-        <note type="interpretive_choice" target="#rum-0157-orig" n="die Leber" resp="#fyndling">Hammelleber: Der Text nennt kein Tier, aber die Nummer steht im Kapitel vom Castraun oder Hammel, und die folgende Nummer spricht ausdrücklich von der „Hammelsleber“.</note>
-        <note type="interpretive_choice" target="#rum-0157-orig" n="mach sie mit Gewuͤrtz ab" resp="#fyndling">„schmecke sie mit Gewürz ab“: würzen in der Pfanne, bevor Brühe und Essig dazukommen; so auch buchintern bei „mach es mit gestossenem Pfeffer ab“.</note>
-        <note type="interpretive_choice" target="#rum-0157-orig" n="Gewuͤrtz" resp="#fyndling">Historisch: ein Sammelwort im Singular; Rumpolt nennt hier kein bestimmtes Gewürz, und nichts wird ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0157-orig" n="grüne Kräuter" resp="#fyndling">Historisch: nur „grüne Kräuter“, ohne Sorte; die Auswahl bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0157-orig" n="die Leber" resp="#fyndling" subtype="contextual">Hammelleber: Der Text nennt kein Tier, aber die Nummer steht im Kapitel vom Castraun oder Hammel, und die folgende Nummer spricht ausdrücklich von der „Hammelsleber“.<list type="alternatives"><item>Lammleber<note type="rationale">Lamm hat bei Rumpolt ein eigenes, späteres Kapitel. Zum Nachkochen ist Lammleber ein milderer Ersatz, aber nicht die Lesart des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0157-orig" n="mach sie mit Gewuͤrtz ab" resp="#fyndling" subtype="lexical">„schmecke sie mit Gewürz ab“: würzen in der Pfanne, bevor Brühe und Essig dazukommen; so auch buchintern bei „mach es mit gestossenem Pfeffer ab“.<list type="alternatives"><item>„mache sie mit Gewürz fertig“<note type="rationale">Genauer nach FWB „abmachen“ 1 (Speisen abschließend zubereiten); für die Küche ohne Unterschied, weil nur Gewürz folgt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0157-orig" n="Gewuͤrtz" resp="#fyndling" subtype="contextual">Historisch: ein Sammelwort im Singular; Rumpolt nennt hier kein bestimmtes Gewürz, und nichts wird ergänzt.<list type="alternatives"><item>Praxis: gestoßener Pfeffer<note type="rationale">Mit gestoßenem Pfeffer würzt Rumpolt Leber in der folgenden Nummer und im Kalbskapitel; hier ist das ein Vorschlag, kein Wortlaut.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0157-orig" n="grüne Kräuter" resp="#fyndling" subtype="contextual">Historisch: nur „grüne Kräuter“, ohne Sorte; die Auswahl bleibt offen.<list type="alternatives"><item>Praxis: gehackte Petersilie<note type="rationale">Moderne Auswahl als Ausgangspunkt, im Text nicht genannt.</note></item></list></note>
       </div>
     </back>
   </text>

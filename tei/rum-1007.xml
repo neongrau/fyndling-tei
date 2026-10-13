@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,10 +136,10 @@ Praxis. Rumpolt nennt keine Mengen und außer der Liegezeit keine Zeiten; die Ge
         <note type="gloss" target="#rum-1007-orig" n="Meybutter" resp="#fyndling">Maibutter: nach dem Deutschen Wörterbuch der Grimms „im Mai bereitete, besonders schmackhafte Butter“; das Rheinische Wörterbuch nennt sie nach Beginn der Grünfütterung gewonnen und „schön gelb“.</note>
         <note type="gloss" target="#rum-1007-orig" n="Koͤlhecht" resp="#fyndling">Bei Rumpolt keine Hechtart, sondern eine Zubereitung: Im selben Kapitel beschreibt er, wie „man die Koͤlhecht“ macht - aufreißen, salzen, auf dem Rost über glühenden Kohlen trocknen und in Butter ausrösten (rum-0970). Grimms Wörterbuch kennt kohlhechtlein als „Hecht auf Kohlfeuer gebacken“ (Nürnberger Kochbuch 1734). Hier wird der Hecht nur auf dem Rost gebraten; ob die volle Zubereitung gemeint ist, bleibt offen.</note>
         <note type="gloss" target="#rum-1007-orig" n="schuͤt die Milch darvnter" resp="#fyndling">Gemeint ist die fertige grüne Milchsauce; sie kommt zum gebratenen Fisch.</note>
-        <note type="interpretive_choice" target="#rum-1007-orig" n="Koͤlhecht" resp="#fyndling">„Kohlhecht“ als Rumpolts Name für den auf dem Rost über Kohlen gebratenen Hecht; so verwendet er das Wort in rum-0970, rum-0951 und rum-0959, und Grimm belegt kohlhechtlein als „Hecht auf Kohlfeuer gebacken“.</note>
-        <note type="interpretive_choice" target="#rum-1007-orig" n="das gruͤne vom Knobloch" resp="#fyndling">Blattgrün des Knoblauchs (junges Laub); die Zehen liegen nur in der Beize.</note>
-        <note type="interpretive_choice" target="#rum-1007-orig" n="streichs darmit durch" resp="#fyndling">durch ein Tuch passieren, wie man eine gestoßene Masse mit Flüssigkeit durchstreicht; das Gerät nennt Rumpolt hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-1007-orig" n="Wasser vnd Essig" resp="#fyndling">Rumpolt nennt kein Verhältnis und keine Fischgröße.</note>
+        <note type="interpretive_choice" target="#rum-1007-orig" n="Koͤlhecht" resp="#fyndling" subtype="lexical">„Kohlhecht“ als Rumpolts Name für den auf dem Rost über Kohlen gebratenen Hecht; so verwendet er das Wort in rum-0970, rum-0951 und rum-0959, und Grimm belegt kohlhechtlein als „Hecht auf Kohlfeuer gebacken“.<list type="alternatives"><item>allgemein „der gebratene Hecht“<note type="rationale">Dieses Rezept beschreibt nur Rost und Braten, nicht das Ausrösten in Butter aus rum-0970; vielleicht meint Rumpolt einfach den gebratenen Fisch. Der Name des Gerichts bleibt trotzdem im Text stehen, weil Rumpolt ihn selbst setzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1007-orig" n="das gruͤne vom Knobloch" resp="#fyndling" subtype="contextual">Blattgrün des Knoblauchs (junges Laub); die Zehen liegen nur in der Beize.<list type="alternatives"><item>Frühlingszwiebelgrün<note type="rationale">Keine Deutung des Texts, nur ein heutiger Ersatz, wenn kein Knoblauchgrün zu bekommen ist; schmeckt milder.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1007-orig" n="streichs darmit durch" resp="#fyndling" subtype="contextual">durch ein Tuch passieren, wie man eine gestoßene Masse mit Flüssigkeit durchstreicht; das Gerät nennt Rumpolt hier nicht.<list type="alternatives"><item>durch ein feines Sieb streichen<note type="rationale">Heute das naheliegende Werkzeug, Ergebnis gleich; der Text legt sich nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1007-orig" n="Wasser vnd Essig" resp="#fyndling" subtype="contextual">Rumpolt nennt kein Verhältnis und keine Fischgröße.<list type="alternatives"><item>etwa 1 Teil Essig auf 4-5 Teile Wasser, Fisch bedeckt<note type="rationale">Heutige Annahme für die Praxis, nicht aus dem Text.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -145,9 +150,9 @@ Den Kohlkopf blanchieren, bis die äußeren Blätter biegsam sind, dann von inne
         <note type="gloss" target="#phw-230-orig" n="nieren faysten" resp="#fyndling">‚Nierenfett‘ ist das feste Fett, das die Nieren von Schlachttieren umgibt. Es ist geschmacksintensiv und wurde in der historischen Küche häufig verwendet.</note>
         <note type="gloss" target="#phw-230-orig" n="musgatt blye" resp="#fyndling">Die ‚Muskatblüte‘, auch Macis genannt, ist der Samenmantel der Muskatnuss. Sie hat ein feineres, leicht blumigeres Aroma als die Muskatnuss selbst und wurde oft in hellen Speisen verwendet, um keine dunklen Punkte zu hinterlassen.</note>
         <note type="gloss" target="#phw-230-orig" n="gefiltz kraut" resp="#fyndling">Ganzer Kohlkopf wird ausgehöhlt und gefüllt - eine im Buch wiederkehrende Zubereitungsart, keine Einzelerfindung dieses Rezepts.</note>
-        <note type="interpretive_choice" target="#phw-230-orig" n="helteres aus" resp="#fyndling">‚Höhle es aus‘ - das Kraut wird von innen entfernt, um Platz für die Füllung zu schaffen.</note>
-        <note type="interpretive_choice" target="#phw-230-orig" n="fil hack" resp="#fyndling">‚Füllung aus gehacktem‘ - ‚fil‘ wird hier als verkürzte Form von ‚Füllung‘ oder ‚Fülle‘ verstanden, die dann gehacktes Kalbfleisch enthält.</note>
-        <note type="interpretive_choice" target="#phw-230-orig" n="safern" resp="#fyndling">‚Safran‘ - ein teures und prestigeträchtiges Gewürz, das oft zum Färben und Würzen verwendet wurde.</note>
+        <note type="interpretive_choice" target="#phw-230-orig" n="helteres aus" resp="#fyndling" subtype="contextual">‚Höhle es aus‘ - das Kraut wird von innen entfernt, um Platz für die Füllung zu schaffen.<list type="alternatives"><item>‚Schneide es heraus‘ - weniger wahrscheinlich, da der Kontext ‚hohl werden‘ impliziert, dass Material entfernt wird, nicht nur geschnitten.<note type="rationale">Die Formulierung ‚gar hol wert‘ (ganz hohl wird) legt nahe, dass das Kraut von innen ausgehöhlt wird, nicht nur geschnitten.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-230-orig" n="fil hack" resp="#fyndling" subtype="lexical">‚Füllung aus gehacktem‘ - ‚fil‘ wird hier als verkürzte Form von ‚Füllung‘ oder ‚Fülle‘ verstanden, die dann gehacktes Kalbfleisch enthält.<list type="alternatives"><item>‚Fein gehacktes‘ - ‚fil‘ als Adjektiv für ‚fein‘ oder ‚viel‘. Dies ist weniger wahrscheinlich, da ‚hack‘ bereits das Zerkleinern beschreibt und ‚fil‘ eher auf die Art der Zubereitung (Füllung) hinweist.<note type="rationale">Der Kontext ‚mach ain fil hack kalbflesch‘ deutet auf die Herstellung einer Füllung hin, nicht nur auf die Feinheit des Hackfleischs.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-230-orig" n="safern" resp="#fyndling" subtype="lexical">‚Safran‘ - ein teures und prestigeträchtiges Gewürz, das oft zum Färben und Würzen verwendet wurde.<list type="alternatives"><item>‚Safflor‘ - eine günstigere Alternative zu Safran, die ebenfalls gelb färbt, aber weniger Aroma hat.<note type="rationale">Safran war in der gehobenen Küche der Zeit üblich und die primäre Wahl für gelbe Färbung und feines Aroma. Safflor wäre eine mögliche, aber weniger wahrscheinliche Alternative in einem solchen Kontext.</note></item></list></note>
       </div>
     </back>
   </text>

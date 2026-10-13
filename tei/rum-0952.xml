@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -92,7 +97,7 @@
 Was heißt „gebacken“? Heute denkt man bei „gebackener Forelle“ meist an Fisch aus dem Ofen. Im Frühneuhochdeutschen heißt backen aber ebenso „in Fett ausbacken“ oder „in der Pfanne braten“. Welche Art hier gemeint ist, sagt der Text nicht.
 
 Praxis. Eine überlieferte Zubereitung gibt es nicht. Wer die Zeile nachkochen will, entscheidet selbst zwischen Ofen und Pfanne; der Druck stützt keine der beiden Varianten.</note>
-        <note type="interpretive_choice" target="#rum-0952-orig" n="Gebackene" resp="#fyndling">„gebacken“ im zeitgenössischen Sinn offen gelassen: frühneuhochdeutsch backen deckt das Ausbacken in Fett und das Braten ebenso ab wie das Backen im Ofen; der Text entscheidet nicht.</note>
+        <note type="interpretive_choice" target="#rum-0952-orig" n="Gebackene" resp="#fyndling" subtype="lexical">„gebacken“ im zeitgenössischen Sinn offen gelassen: frühneuhochdeutsch backen deckt das Ausbacken in Fett und das Braten ebenso ab wie das Backen im Ofen; der Text entscheidet nicht.<list type="alternatives"><item>im Ofen gebacken<note type="rationale">Heutige Standardlesart von „gebackener Fisch“; für diese Stelle nicht belegt.</note></item><item>in Fett ausgebacken, ggf. mit Mehl- oder Teighülle<note type="rationale">Belegte Bedeutung von fnhd. backen; im Forellenkapitel backt Nr. 3 die Fische in Öl, doch das lässt sich nicht auf diese Zeile übertragen.</note></item></list></note>
       </div>
     </back>
   </text>

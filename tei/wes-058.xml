@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,8 +118,8 @@
         <note type="gloss" target="#wes-058-orig" n="gaetken" resp="#fyndling">Kleine Löcher oder Vertiefungen.</note>
         <note type="gloss" target="#wes-058-orig" n="scotelen" resp="#fyndling">Schüsseln, hier im Sinne von einzelnen Portionen oder Servierschalen.</note>
         <note type="gloss" target="#wes-058-orig" n="dragie" resp="#fyndling">Gezuckerte Gewürzkonfekte, kein gemahlenes Gewürzpulver.</note>
-        <note type="interpretive_choice" target="#wes-058-orig" n="Moelgen" resp="#fyndling">Pudding / gestockte Creme</note>
-        <note type="interpretive_choice" target="#wes-058-orig" n="tempert daer mede" resp="#fyndling">Andicken / Binden</note>
+        <note type="interpretive_choice" target="#wes-058-orig" n="Moelgen" resp="#fyndling">Pudding / gestockte Creme<list type="alternatives"><item>Eine Art Käse oder Quark<note type="rationale">Obwohl Milch verwendet wird, fehlt ein Gerinnungsmittel wie Lab oder Essig, was gegen eine Käseherstellung spricht. Die Konsistenz durch Eigelb deutet eher auf eine gestockte Süßspeise hin.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-058-orig" n="tempert daer mede" resp="#fyndling">Andicken / Binden<list type="alternatives"><item>Mischen / Verrühren<note type="rationale">Obwohl es auch ein Mischen ist, impliziert ‚temperieren' hier eine spezifische Technik zur Texturgebung, die über einfaches Verrühren hinausgeht.</note></item></list></note>
         <note type="interpretive_choice" target="#wes-058-orig" n="maect omtrent den pot twee gaetken of drie recht met eenen lepele" resp="#fyndling">Vertiefungen in der Oberfläche des Puddings an zwei oder drei Stellen mit einem Löffel machen</note>
         <note type="interpretive_choice" target="#wes-058-orig" n="bouen den scotelen" resp="#fyndling">Auf den einzelnen Portionen / Schälchen</note>
       </div>

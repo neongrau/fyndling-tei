@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,7 +123,7 @@ Schmalz in einer feuerfesten Schüssel auf dem Rost über der Glut schmelzen las
         <note type="gloss" target="#phw-149-orig" n="glautt" resp="#fyndling">‚Glautt‘ ist die frühneuhochdeutsche Form von Glut, also glühende Kohlen oder Holzscheite, die hier als Hitzequelle dienen.</note>
         <note type="gloss" target="#phw-149-orig" n="syedenn" resp="#fyndling">‚Sieden‘ bedeutet hier, das Gericht langsam und sanft zu kochen oder zu garen, bis es die gewünschte Konsistenz und Bräunung erreicht.</note>
         <note type="gloss" target="#phw-149-orig" n="schisel muß" resp="#fyndling">Titelgebende Technik: das Mus wird direkt in der Schüssel gegart, nicht in einem separaten Topf vorgekocht - das unterscheidet dieses Rezept von den Nachbarrezepten mit anderen Techniken (Mayenmus, Stockmus).</note>
-        <note type="interpretive_choice" target="#phw-149-orig" n="Gefäß für die obere Glut" resp="#fyndling">Der Text nennt an dieser Stelle kein Wort für ein Gefäß oder einen Deckel, der die obere Glut trägt - nur "ain gloutt vndenn vnd obenn". In der Praxis empfiehlt sich eine feuerfeste Schüssel mit passendem Deckel oder eine zweite, umgekehrte Schüssel, wie es die Zwillingsrezepte (Sabina Welserin, Balthasar Staindl) zeigen.</note>
+        <note type="interpretive_choice" target="#phw-149-orig" n="Gefäß für die obere Glut" resp="#fyndling" subtype="philological">Der Text nennt an dieser Stelle kein Wort für ein Gefäß oder einen Deckel, der die obere Glut trägt - nur "ain gloutt vndenn vnd obenn". In der Praxis empfiehlt sich eine feuerfeste Schüssel mit passendem Deckel oder eine zweite, umgekehrte Schüssel, wie es die Zwillingsrezepte (Sabina Welserin, Balthasar Staindl) zeigen.<list type="alternatives"><item>Ob der Schreiber überhaupt ein festes Bauteil meinte oder eine improvisierte Lösung, die er nicht für erwähnenswert hielt, bleibt offen.<note type="rationale">Der Wortlaut belegt nur zwei Glutstellen, kein Gefäß und keinen Deckel.</note></item></list></note>
       </div>
     </back>
   </text>

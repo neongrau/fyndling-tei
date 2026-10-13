@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -136,7 +141,7 @@ Praxis. Kalbsbrust vom Metzger vorbereiten lassen oder die Tasche selbst öffnen
         <note type="gloss" target="#phw-223-orig" n="dortten pfanen" resp="#fyndling">Eine „Tortenpfanne“ war eine runde, flache Backform, die hier zum Sieden der gefüllten Brust verwendet wird.</note>
         <note type="gloss" target="#phw-223-orig" n="jrdana pfanen" resp="#fyndling">Eine „irdene Pfanne“ ist ein Kochgefäß aus Ton oder Keramik, das für langsames Garen geeignet ist.</note>
         <note type="gloss" target="#phw-223-orig" n="mit ainer decken send beser" resp="#fyndling">Diese Anweisung betont, dass das Garen mit einem Deckel vorteilhafter ist, um die Feuchtigkeit zu bewahren und ein gleichmäßiges Sieden zu gewährleisten.</note>
-        <note type="interpretive_choice" target="#phw-223-orig" n="vnder greyfs" resp="#fyndling">„Vnder greyfs“ wird wörtlich als „untergreifen“ übersetzt - eine tastende Grifftechnik, mit der man von Hand unter das Gewebe fasst, um eine Tasche zu öffnen, ohne zu schneiden (corpus-bestätigt durch std-172: „vnder greiff“ = mit der Hand unter die Haut fassen).</note>
+        <note type="interpretive_choice" target="#phw-223-orig" n="vnder greyfs" resp="#fyndling" subtype="contextual">„Vnder greyfs“ wird wörtlich als „untergreifen“ übersetzt - eine tastende Grifftechnik, mit der man von Hand unter das Gewebe fasst, um eine Tasche zu öffnen, ohne zu schneiden (corpus-bestätigt durch std-172: „vnder greiff“ = mit der Hand unter die Haut fassen).<list type="alternatives"><item>Eine Lesart als „die Tasche aufschneiden“ würde eine schneidende Technik unterstellen, die der Text nicht nennt.<note type="rationale">Der Corpus-Beleg stützt eine tastende Grifftechnik, keine Schnitttechnik; „untergreifen“ bleibt daher als wörtliche Handbewegung übersetzt, nicht als Schneide-Anweisung.</note></item></list></note>
       </div>
     </back>
   </text>

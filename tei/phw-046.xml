@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,12 +137,12 @@ Kräuter so fein hacken wie für eine Krapfenfüllung, mit Eiern zu einer Masse 
         <note type="gloss" target="#phw-046-orig" n="yber se" resp="#fyndling">Bestreuen, hier mit Zucker.</note>
         <note type="gloss" target="#phw-046-orig" n="fol bachenn" resp="#fyndling">Vollends backen, bis die Torte gar und fertig ist.</note>
         <note type="gloss" target="#phw-046-orig" n="als" resp="#fyndling">Verstärkerpartikel ('ganz, recht um-'), auch in phw-049 und phw-050 als Kollokation 'als wol' belegt.</note>
-        <note type="interpretive_choice" target="#phw-046-orig" n="dycken" resp="#fyndling">Dicke (Konsistenz der Masse). 'Mach jn an der dycken' bedeutet, die Masse soll die gleiche Dicke wie eine übliche Tortenfüllung haben.</note>
-        <note type="interpretive_choice" target="#phw-046-orig" n="bedalin" resp="#fyndling">Tortenboden. Dies ist eine Diminutivform von 'Boden' und bezeichnet einen dünn ausgerollten Teigboden oder hier einen Eierboden.</note>
-        <note type="interpretive_choice" target="#phw-046-orig" n="schitzs" resp="#fyndling">Schütte es. 'Schitzs dar auf' bedeutet, die flüssige Eimasse auf den Tortenboden zu gießen.</note>
-        <note type="interpretive_choice" target="#phw-046-orig" n="schmaltzs" resp="#fyndling">Schmalz (tierisches Fett).</note>
-        <note type="interpretive_choice" target="#phw-046-orig" n="yber se" resp="#fyndling">Bestreue. 'Yber se jn wol mit zucker yberal' bedeutet, die Torte überall gut mit Zucker zu bestreuen.</note>
-        <note type="interpretive_choice" target="#phw-046-orig" n="fol bachenn" resp="#fyndling">Vollends backen, bis die Torte vollständig gar ist.</note>
+        <note type="interpretive_choice" target="#phw-046-orig" n="dycken" resp="#fyndling" subtype="lexical">Dicke (Konsistenz der Masse). 'Mach jn an der dycken' bedeutet, die Masse soll die gleiche Dicke wie eine übliche Tortenfüllung haben.<list type="alternatives"><item>Dicken (als Verdickungsmittel)<note type="rationale">Die Präposition 'an der' spricht gegen ein Verdickungsmittel als Zutat und für eine Beschreibung der Konsistenz.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-046-orig" n="bedalin" resp="#fyndling" subtype="lexical">Tortenboden. Dies ist eine Diminutivform von 'Boden' und bezeichnet einen dünn ausgerollten Teigboden oder hier einen Eierboden.<list type="alternatives"><item>Backform oder Oblate<note type="rationale">Das Glossar von Hayer und andere Korpus-Belege (phw-006 bis phw-010) klären 'bedelin/bedalin' als Tortenboden, nicht als Form oder Oblate (für die es eigene Begriffe gibt).</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-046-orig" n="schitzs" resp="#fyndling" subtype="lexical">Schütte es. 'Schitzs dar auf' bedeutet, die flüssige Eimasse auf den Tortenboden zu gießen.<list type="alternatives"><item>Schneide es<note type="rationale">Das Verb 'schneiden' passt nicht zum Umgang mit einer flüssigen Eimasse.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-046-orig" n="schmaltzs" resp="#fyndling" subtype="lexical">Schmalz (tierisches Fett).<list type="alternatives"><item>Schmelze (geschmolzenes Fett allgemein)<note type="rationale">Obwohl 'Schmelze' eine mögliche Lesart ist, ist 'Schmalz' als spezifisches tierisches Fett in diesem Kontext wahrscheinlicher und gebräuchlicher.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-046-orig" n="yber se" resp="#fyndling" subtype="lexical">Bestreue. 'Yber se jn wol mit zucker yberal' bedeutet, die Torte überall gut mit Zucker zu bestreuen.<list type="alternatives"><item>Übersieh (übersehen)<note type="rationale">Nahliegende Verwechslung derselben Buchstabenfolge, die im Sonderwörter-Glossar des Buchs als bekannte Falle dokumentiert ist - im Kochkontext hier aber unplausibel.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-046-orig" n="fol bachenn" resp="#fyndling" subtype="lexical">Vollends backen, bis die Torte vollständig gar ist.<list type="alternatives"><item>Voll backen (im Sinne von 'vollständig füllen')<note type="rationale">Die Formulierung 'vollends backen' ist eine gängige Redewendung für das Fertigbacken eines Gerichts.</note></item></list></note>
       </div>
     </back>
   </text>

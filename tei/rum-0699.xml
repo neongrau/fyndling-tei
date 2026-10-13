@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,10 +136,10 @@ Praxis. Mengen nennt Rumpolt nicht. Die Zubereitungszeit von etwa 90 Minuten ist
         <note type="gloss" target="#rum-0699-orig" n="Ochsenmarck" resp="#fyndling">Rindermark aus den Markknochen.</note>
         <note type="gloss" target="#rum-0699-orig" n="doͤrffen nicht lange backen" resp="#fyndling">„dürfen“ heißt hier „brauchen“: Die Pasteten müssen nicht lange backen.</note>
         <note type="gloss" target="#rum-0699-orig" n="schlegt fuͤr dem Zucker vor" resp="#fyndling">Wörtlich: schlägt vor dem Zucker vor. Am ehesten: Der Essig tritt im Geschmack vor dem Zucker hervor; so gebraucht Rumpolt die Wendung auch für Pfeffer vor Salz (rum-0311). Die genaue Bedeutung ist nicht gesichert.</note>
-        <note type="interpretive_choice" target="#rum-0699-orig" n="schlegt fuͤr dem Zucker vor" resp="#fyndling">Wörtlich übersetzt („schlägt vor dem Zucker vor“), gedeutet als: Der Essig tritt im Geschmack vor dem Zucker hervor. Grund: Rumpolts eigener Gebrauch in rum-0311 („schlegt der Pfeffer fein fuͤr dem Saltz“) und rum-0347 („daß der Essig fein fuͤrschlegt“). Das Grimmsche Wörterbuch führt vorschlagen unter fürschlagen; einen Geschmacksbeleg liefern die Wörterbücher nicht.</note>
-        <note type="interpretive_choice" target="#rum-0699-orig" n="gelb machen" resp="#fyndling">Gelb färben, ohne ein Farbmittel festzulegen, denn der Text nennt keins.</note>
-        <note type="interpretive_choice" target="#rum-0699-orig" n="kleine Rosein" resp="#fyndling">Kleine Rosinen, wie im übrigen Buch.</note>
-        <note type="interpretive_choice" target="#rum-0699-orig" n="Treib die Pasteten fein klein vnd rundt auff" resp="#fyndling">Den Teig klein und rund auftreiben, also ausrollen und zu mundgerechten Hüllen formen, in die das Gehackte eingeschlagen wird. Kontextlesart; ein Wörterbuchbeleg ist nicht geprüft.</note>
+        <note type="interpretive_choice" target="#rum-0699-orig" n="schlegt fuͤr dem Zucker vor" resp="#fyndling" subtype="contextual">Wörtlich übersetzt („schlägt vor dem Zucker vor“), gedeutet als: Der Essig tritt im Geschmack vor dem Zucker hervor. Grund: Rumpolts eigener Gebrauch in rum-0311 („schlegt der Pfeffer fein fuͤr dem Saltz“) und rum-0347 („daß der Essig fein fuͤrschlegt“). Das Grimmsche Wörterbuch führt vorschlagen unter fürschlagen; einen Geschmacksbeleg liefern die Wörterbücher nicht.<list type="alternatives"><item>Der Essig hebt den Zucker hervor oder gleicht ihn aus<note type="rationale">Unbelegt und gegen die Satzrichtung: Subjekt ist der Essig, der vor dem Zucker vorschlägt, nicht der Zucker, der hervorgehoben wird.</note></item><item>Der Essig überwiegt den Zucker<note type="rationale">Nahe an der gewählten Lesart und von den Wörterbuchtreffern zu vor- und überwiegen gestützt, aber stärker; ob der Essig deutlich vorherrschen oder nur vorschmecken soll, lässt der Text offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0699-orig" n="gelb machen" resp="#fyndling" subtype="contextual">Gelb färben, ohne ein Farbmittel festzulegen, denn der Text nennt keins.<list type="alternatives"><item>Mit Safran gelb färben<note type="rationale">Naheliegende Annahme für die Zeit, aber im Rezept nicht genannt; deshalb nicht in Übersetzung oder Zutaten übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0699-orig" n="kleine Rosein" resp="#fyndling" subtype="lexical">Kleine Rosinen, wie im übrigen Buch.<list type="alternatives"><item>Korinthen<note type="rationale">Möglich, weil Korinthen kleine Rosinen sind, aber der Text sagt es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0699-orig" n="Treib die Pasteten fein klein vnd rundt auff" resp="#fyndling" subtype="lexical">Den Teig klein und rund auftreiben, also ausrollen und zu mundgerechten Hüllen formen, in die das Gehackte eingeschlagen wird. Kontextlesart; ein Wörterbuchbeleg ist nicht geprüft.<list type="alternatives"><item>Freigeformte, hochgezogene Teighüllen, offen oder mit Deckel gebacken<note type="rationale">Teigart, Form und Deckel nennt der Text nicht; beides bleibt offen.</note></item></list></note>
       </div>
     </back>
   </text>

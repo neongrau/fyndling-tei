@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,12 +132,12 @@ Praxis. Mengen nennt Rumpolt nicht: so viel Brühe, dass die Lunge in einer säm
         <note type="gloss" target="#rum-0420-orig" n="seig ein Rindtfleischbruͤh darauff" resp="#fyndling">Seigen ist dasselbe Wort wie seihen. Bei Rumpolt heißt es mal durchseihen, mal aufgießen; hier wird die Brühe auf die Lunge gegossen.</note>
         <note type="gloss" target="#rum-0420-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Einbrennen: ein wenig Mehl in das Gericht bringen, um die Brühe zu binden. Ein Fett nennt der Text hier nicht, eine Farbe auch nicht.</note>
         <note type="gloss" target="#rum-0420-orig" n="gelb oder weiß machen" resp="#fyndling">Rumpolt lässt die Farbe offen und nennt hier kein Farbmittel. Dieselbe Wahl „gelb oder weiß“ stellt er auch bei seinen Lungengerichten von Hammel, Lamm und Spanferkel.</note>
-        <note type="interpretive_choice" target="#rum-0420-orig" n="von einem Schwein" resp="#fyndling">Lunge vom Wildschwein: das Rezept steht im Kapitel „Vom Schweinen Wildpret“, und das Kapitel gibt das Tier vor.</note>
-        <note type="interpretive_choice" target="#rum-0420-orig" n="kuͤl sie auß einem Wasser" resp="#fyndling">Die Lunge aus dem Kochwasser nehmen und abkühlen lassen; von frischem Wasser steht hier nichts.</note>
-        <note type="interpretive_choice" target="#rum-0420-orig" n="seig ein Rindtfleischbruͤh darauff" resp="#fyndling">Rinderbrühe auf die Lunge gießen: seigen = seihen, bei „darauff“ im Sinn von aufgießen.</note>
-        <note type="interpretive_choice" target="#rum-0420-orig" n="mach es ein wenig saur" resp="#fyndling">Der Text verlangt die Säuerung, nennt aber kein Mittel. Essig, wie in Rumpolts verwandten Lungengerichten (Spanferkel-, Lamm- und Schafslunge).</note>
-        <note type="interpretive_choice" target="#rum-0420-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Mehl zum Binden einbrennen; Fett und Farbe nennt der Text nicht. Rumpolt setzt an anderer Stelle Mehl in Butter mit Zwiebeln angeschwitzt dem Einbrennen gleich, eine helle Mehlschwitze trifft es also.</note>
-        <note type="interpretive_choice" target="#rum-0420-orig" n="gelb oder weiß" resp="#fyndling">Die Farbe bleibt dem Koch überlassen; ein Farbmittel nennt dieses Rezept nicht.</note>
+        <note type="interpretive_choice" target="#rum-0420-orig" n="von einem Schwein" resp="#fyndling" subtype="contextual">Lunge vom Wildschwein: das Rezept steht im Kapitel „Vom Schweinen Wildpret“, und das Kapitel gibt das Tier vor.<list type="alternatives"><item>Lunge vom Hausschwein<note type="rationale">Der Satz allein ließe das zu, die Stellung im Wildschwein-Kapitel spricht dagegen. Wer keine Wildschweinlunge bekommt, kann das Gericht mit Schweinelunge nachkochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0420-orig" n="kuͤl sie auß einem Wasser" resp="#fyndling" subtype="lexical">Die Lunge aus dem Kochwasser nehmen und abkühlen lassen; von frischem Wasser steht hier nichts.<list type="alternatives"><item>In kaltem Wasser abkühlen<note type="rationale">Im Lammlungen-Rezept steht ausdrücklich „auß einem kalten Wasser“; hier fehlt das „kalt“, deshalb nur als mögliche Ausführung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0420-orig" n="seig ein Rindtfleischbruͤh darauff" resp="#fyndling" subtype="lexical">Rinderbrühe auf die Lunge gießen: seigen = seihen, bei „darauff“ im Sinn von aufgießen.<list type="alternatives"><item>Die Brühe durch ein Tuch seihen und dann aufgießen<note type="rationale">Seihen heißt bei Rumpolt oft auch durchseihen; hier gibt es aber nichts zu klären, die Brühe soll nur auf die Lunge.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0420-orig" n="mach es ein wenig saur" resp="#fyndling" subtype="contextual">Der Text verlangt die Säuerung, nennt aber kein Mittel. Essig, wie in Rumpolts verwandten Lungengerichten (Spanferkel-, Lamm- und Schafslunge).<list type="alternatives"><item>Verjus (Saft unreifer Trauben)<note type="rationale">Ebenso möglich, im Text aber nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0420-orig" n="brenn ein wenig Mehl darein" resp="#fyndling" subtype="contextual">Mehl zum Binden einbrennen; Fett und Farbe nennt der Text nicht. Rumpolt setzt an anderer Stelle Mehl in Butter mit Zwiebeln angeschwitzt dem Einbrennen gleich, eine helle Mehlschwitze trifft es also.<list type="alternatives"><item>Mehl trocken im heißen Topf anrösten und dann einrühren<note type="rationale">Ohne Fettangabe nicht ausgeschlossen; die Mehlschwitze in Butter oder Schmalz bindet aber gleichmäßiger und ist die praktische Wahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0420-orig" n="gelb oder weiß" resp="#fyndling" subtype="contextual">Die Farbe bleibt dem Koch überlassen; ein Farbmittel nennt dieses Rezept nicht.<list type="alternatives"><item>Gelb mit Safran<note type="rationale">In zwei verwandten Lungengerichten würzt Rumpolt mit Pfeffer und Safran; hier steht das nicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -128,13 +133,13 @@ Praxis. Heute nimmt man Wachteln als kleine Vögel. Die Vögel ganz durchgaren, 
         <note type="gloss" target="#rum-0258-orig" n="seudt ab" resp="#fyndling">Abkochen, in Wasser gar sieden. Rumpolt teilt die Vögel: ein Teil wird gebraten, ein Teil abgekocht.</note>
         <note type="gloss" target="#rum-0258-orig" n="geschwindt hinweg" resp="#fyndling">Rasch, ohne Verzug.</note>
         <note type="gloss" target="#rum-0258-orig" n="vorhin zugericht" resp="#fyndling">Vorher zubereitet: Alles, was in die Haut kommt, ist schon gar.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="schaw" resp="#fyndling">„Achte darauf“: schauen im Sinn von aufpassen, wie in Rumpolts wiederkehrender Formel „schaw/ daß …“ und wie das Frühneuhochdeutsche Wörterbuch es für schauen verzeichnet.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="Ziweben" resp="#fyndling">Zibeben, große getrocknete Weinbeeren: Lexer „zibebe, die große Kochrosine“, Goetze „Kochrosine“. Rumpolt stellt sie ausdrücklich neben die kleinen Rosinen („kleine Rosein vnd Ziweben“), meint also zwei Sorten.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="Hirn" resp="#fyndling">Das Hirn wird aus dem Kopf genommen und gehört nicht in die Füllung. Wozu es dient, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="Loch auf der Seite" resp="#fyndling">Die Haut soll nur eine Öffnung an der Seite haben, durch die gefüllt wird. Wie sie danach geschlossen wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="kleinen Voͤgeln" resp="#fyndling">Kleine Vögel ohne Artangabe; Rumpolt legt sich nicht fest.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="braten geschwindt hinweg" resp="#fyndling">Rasch braten, weil die Füllung schon gar ist; Hitze und Dauer nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0258-orig" n="Würzung der Füllung" resp="#fyndling">Der Text nennt keine Gewürze; die Füllung lebt von Obst, Zwiebeln, Speck und Rosinen.</note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="schaw" resp="#fyndling" subtype="lexical">„Achte darauf“: schauen im Sinn von aufpassen, wie in Rumpolts wiederkehrender Formel „schaw/ daß …“ und wie das Frühneuhochdeutsche Wörterbuch es für schauen verzeichnet.<list type="alternatives"><item>„Schaue nach, betrachte“<note type="rationale">Wörtlicher, trifft aber den Sinn nicht: Der Nebensatz „daß du nicht mehr als auff der seiten ein Loch habst“ verlangt eine Vorsicht beim Abziehen, keine bloße Betrachtung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="Ziweben" resp="#fyndling" subtype="lexical">Zibeben, große getrocknete Weinbeeren: Lexer „zibebe, die große Kochrosine“, Goetze „Kochrosine“. Rumpolt stellt sie ausdrücklich neben die kleinen Rosinen („kleine Rosein vnd Ziweben“), meint also zwei Sorten.<list type="alternatives"><item>Rosinen allgemein<note type="rationale">Moderne Sammelbezeichnung, verwischt aber die Sorte, die Rumpolt angibt. Nur als Ersatz in der Praxis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="Hirn" resp="#fyndling" subtype="contextual">Das Hirn wird aus dem Kopf genommen und gehört nicht in die Füllung. Wozu es dient, sagt der Text nicht.<list type="alternatives"><item>Hirn anderweitig verwerten oder verwerfen<note type="rationale">Heutige Praxis; Rumpolt schweigt dazu, eine Verwendung lässt sich aus dieser Stelle nicht ableiten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="Loch auf der Seite" resp="#fyndling" subtype="contextual">Die Haut soll nur eine Öffnung an der Seite haben, durch die gefüllt wird. Wie sie danach geschlossen wird, sagt der Text nicht.<list type="alternatives"><item>Öffnung zunähen oder mit Küchengarn verschließen<note type="rationale">Heutige Praxis, damit die Füllung am Spieß nicht herausfällt; steht nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="kleinen Voͤgeln" resp="#fyndling" subtype="lexical">Kleine Vögel ohne Artangabe; Rumpolt legt sich nicht fest.<list type="alternatives"><item>Wachteln<note type="rationale">Heutiger, erhältlicher Ersatz. Eine bestimmte historische Vogelart lässt sich aus der Stelle nicht belegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="braten geschwindt hinweg" resp="#fyndling" subtype="contextual">Rasch braten, weil die Füllung schon gar ist; Hitze und Dauer nennt der Text nicht.<list type="alternatives"><item>Bei mittlerer Hitze braten, bis die Haut gebräunt und die Füllung durch und durch heiß ist<note type="rationale">Heutige Praxis zur Absicherung; die Quelle gibt keine Hitze- oder Zeitangabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0258-orig" n="Würzung der Füllung" resp="#fyndling" subtype="contextual">Der Text nennt keine Gewürze; die Füllung lebt von Obst, Zwiebeln, Speck und Rosinen.<list type="alternatives"><item>Salz ergänzen<note type="rationale">Wer heute nachkocht, wird salzen; weitere Gewürze stehen nicht in der Quelle und werden hier nicht ergänzt.</note></item></list></note>
       </div>
     </back>
   </text>

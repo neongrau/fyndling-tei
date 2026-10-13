@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -140,8 +145,8 @@ Praxis. Für die Ofenhitze nennt die Vorlage nur die Backzeit, keine Temperatur 
         <note type="gloss" target="#std-142-orig" n="deck" resp="#fyndling">Der Teigdeckel der Pastete.</note>
         <note type="gloss" target="#std-142-orig" n="ayern" resp="#fyndling">Eier, hier zum Bestreichen des Teiges für eine schöne Bräunung.</note>
         <note type="gloss" target="#std-142-orig" n="zwi ſtund" resp="#fyndling">Zwei Stunden.</note>
-        <note type="interpretive_choice" target="#std-142-orig" n="Backtemperatur (nicht genannt)" resp="#fyndling">Der Text nennt nur die Backzeit (zwei Stunden), keine Ofentemperatur. Für die moderne Umsetzung empfiehlt sich mäßige Hitze (etwa 180 Grad Celsius) mit Garprobe, statt sich allein auf die Zeitangabe zu verlassen.</note>
-        <note type="interpretive_choice" target="#std-142-orig" n="Garzustand des Geflügels" resp="#fyndling">Der Text nennt nur die Backzeit, keine Prüfung des Garzustands. Praktisch empfiehlt sich, vor dem Servieren die Kerntemperatur des Geflügels zu prüfen (mindestens 74 Grad Celsius), da rohes Huhn in geschlossener Teighülle ohne Sichtkontrolle gart.</note>
+        <note type="interpretive_choice" target="#std-142-orig" n="Backtemperatur (nicht genannt)" resp="#fyndling">Der Text nennt nur die Backzeit (zwei Stunden), keine Ofentemperatur. Für die moderne Umsetzung empfiehlt sich mäßige Hitze (etwa 180 Grad Celsius) mit Garprobe, statt sich allein auf die Zeitangabe zu verlassen.<list type="alternatives"><item>Historisch dürfte mit der absteigenden Hitze eines Holzofens gebacken worden sein - zu Beginn heißer, zum Ende hin abfallend, wie beim Brotbacken üblich.<note type="rationale">Die Vorlage gibt dazu keine Anweisung. Das Nachbarrezept der Kapaunenpastete im selben Buch zeigt aktive Ofensteuerung (Papier gegen zu starke Oberhitze, Weinguss gegen Ende), die hier fehlt.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-142-orig" n="Garzustand des Geflügels" resp="#fyndling">Der Text nennt nur die Backzeit, keine Prüfung des Garzustands. Praktisch empfiehlt sich, vor dem Servieren die Kerntemperatur des Geflügels zu prüfen (mindestens 74 Grad Celsius), da rohes Huhn in geschlossener Teighülle ohne Sichtkontrolle gart.<list type="alternatives"><item>Verlass allein auf die erprobte Zeitangabe des Kochs, ohne Temperaturmessung.<note type="rationale">Im 16. Jahrhundert Standardpraxis - aus heutiger Sicht aber kein Sicherheitsnachweis, und die Vorlage selbst nennt keine Kontrolle des Garzustands.</note></item></list></note>
       </div>
     </back>
   </text>

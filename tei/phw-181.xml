@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,8 +136,8 @@ Praxis. Den Hecht am Rücken aufschneiden, die Innereien bis auf die Leber entfe
         <note type="gloss" target="#phw-181-orig" n="steytlin / steytlinn" resp="#fyndling">Diminutiv von Stängel, also kleine Stängel oder Zweige der Kräuter.</note>
         <note type="gloss" target="#phw-181-orig" n="bryelin / brielin" resp="#fyndling">Diminutiv von Brühe: die kleine, gewürzte Sauce aus Schmalz, Essig und Kräutern, mit der der Fisch beim Braten begossen und beim Anrichten übergossen wird.</note>
         <note type="gloss" target="#phw-181-orig" n="gewirtz" resp="#fyndling">Die genaue Zusammensetzung der Gewürze ist nicht angegeben. Typisch für die Zeit wären Pfeffer, Ingwer, Muskat oder Nelken.</note>
-        <note type="interpretive_choice" target="#phw-181-orig" n="erbraytt" resp="#fyndling">Die Lesart 'aufschneiden/aufbreiten' (im Sinne des Butterfly-Schnitts am Rücken des Fisches) wurde gewählt, da dies eine gängige Vorbereitung für das Braten oder Grillen von ganzen Fischen ist.</note>
-        <note type="interpretive_choice" target="#phw-181-orig" n="dref" resp="#fyndling">„dref“ (Bl. 96r) wird als Befehlsform „träufle“ gelesen, zu träufen/treufen („tropfenweise gießen“, Lexer, FWB). Die Handschrift schreibt das Wort zweimal: Beim ersten Mal ist es samt vorangestelltem „so“ getilgt (⟨so dref⟩), dann folgt es unverändert („so dref jn mit disem bryelin“). Es handelt sich also um denselben Ansatz, nicht um ein zweites Wort.</note>
+        <note type="interpretive_choice" target="#phw-181-orig" n="erbraytt" resp="#fyndling" subtype="lexical">Die Lesart 'aufschneiden/aufbreiten' (im Sinne des Butterfly-Schnitts am Rücken des Fisches) wurde gewählt, da dies eine gängige Vorbereitung für das Braten oder Grillen von ganzen Fischen ist.<list type="alternatives"><item>Eine allgemeinere Lesart wäre 'ausbreiten', was aber weniger präzise die Schnitttechnik beschreibt.<note type="rationale">Der Kontext 'am rugen auff' deutet auf eine spezifische Öffnung des Fisches hin.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-181-orig" n="dref" resp="#fyndling" subtype="lexical">„dref“ (Bl. 96r) wird als Befehlsform „träufle“ gelesen, zu träufen/treufen („tropfenweise gießen“, Lexer, FWB). Die Handschrift schreibt das Wort zweimal: Beim ersten Mal ist es samt vorangestelltem „so“ getilgt (⟨so dref⟩), dann folgt es unverändert („so dref jn mit disem bryelin“). Es handelt sich also um denselben Ansatz, nicht um ein zweites Wort.<list type="alternatives"><item>Eine alternative Lesart wäre 'bestreichen', was ebenfalls plausibel ist, aber lexikalisch nicht bestätigt ist - auch nicht im Hayer-Glossar.<note type="rationale">Die Schreibung „dref“ (ohne u/ü vor f) weicht von den belegten Formen treuf-/träuf- ab, ein direkter Beleg für „dref“ fehlt. Der Zwilling std-113 hat an vergleichbarer Stelle „begeuss“ (begießen); das stützt die Deutung als Aufgießen/Begießen, beweist sie aber nicht.</note></item></list></note>
       </div>
     </back>
   </text>

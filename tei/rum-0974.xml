@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,9 +124,9 @@ Praxis. Die Zubereitungszeit von etwa 45 Minuten ist eine Schätzung, der Text g
         <note type="gloss" target="#rum-0974-orig" n="eyngesaltzen" resp="#fyndling">Vorher eingesalzen. Wie, sagt dieses Rezept nicht. Das Hechtrezept unmittelbar davor beschreibt den Schritt: den ausgenommenen Hecht auf ein Brett legen und einsalzen, dann wieder auswaschen und in Stücken in die Zwiebelbrühe legen.</note>
         <note type="gloss" target="#rum-0974-orig" n="auff Polisch" resp="#fyndling">Herkunftsangabe Rumpolts für Gerichte in durchgestrichener Zwiebelbrühe mit Safran. Beim Kapaun schreibt er „diese Speiß nennet man auff Polisch gekocht“, bei den Hammelzungen begründet er es: „die Polacken essen alles gern mit Zwibeln“.</note>
         <note type="gloss" target="#rum-0974-orig" n="nicht gar eynsieden" resp="#fyndling">Nicht ganz einkochen lassen. Der Nebensatz sagt den Grund: „daß du Bruͤh hast/ wenn du anrichtest“.</note>
-        <note type="interpretive_choice" target="#rum-0974-orig" n="den du hast eyngesaltzen" resp="#fyndling">Ein frischer Hecht, der kurz vor dem Kochen eingesalzen wurde. Das Hechtrezept unmittelbar davor im selben Kapitel salzt den ausgenommenen Fisch auf einem Brett ein, während die Zwiebeln sieden, und wäscht ihn dann aus. Wie lange das Salz einwirkt, sagt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0974-orig" n="setz sie mit Wasser zu" resp="#fyndling">Reichlich Wasser, sodass eine eher dünne Zwiebelbrühe entsteht, die den Fisch bedeckt. Dafür spricht der Schluss: Es soll beim Anrichten noch Brühe da sein.</note>
-        <note type="interpretive_choice" target="#rum-0974-orig" n="Wein" resp="#fyndling">Der Text sagt nur „Wein“, ohne Farbe oder Sorte.</note>
+        <note type="interpretive_choice" target="#rum-0974-orig" n="den du hast eyngesaltzen" resp="#fyndling" subtype="contextual">Ein frischer Hecht, der kurz vor dem Kochen eingesalzen wurde. Das Hechtrezept unmittelbar davor im selben Kapitel salzt den ausgenommenen Fisch auf einem Brett ein, während die Zwiebeln sieden, und wäscht ihn dann aus. Wie lange das Salz einwirkt, sagt Rumpolt nicht.<list type="alternatives"><item>Ein länger eingesalzener Hecht aus dem Vorrat, der vor dem Kochen nur ausgewässert wird.<note type="rationale">Der Wortlaut schließt das nicht aus, das Nachbarrezept im selben Kapitel spricht aber für das kurze Vorsalzen.</note></item><item>Moderne Praxis: Hechtstücke einige Stunden gekühlt leicht salzen und vor dem Kochen gründlich abspülen.<note type="rationale">Praktische Umsetzung; Dauer und Salzmenge sind geschätzt, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0974-orig" n="setz sie mit Wasser zu" resp="#fyndling" subtype="contextual">Reichlich Wasser, sodass eine eher dünne Zwiebelbrühe entsteht, die den Fisch bedeckt. Dafür spricht der Schluss: Es soll beim Anrichten noch Brühe da sein.<list type="alternatives"><item>Moderne Praxis: Zwiebeln nur knapp bedeckt weich kochen und passieren, sodass eine sämige Brühe entsteht.<note type="rationale">Ergibt eine dichtere Sauce; reicht sie nicht, um den Fisch zu bedecken, wird mit Wasser verlängert. Die Menge nennt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0974-orig" n="Wein" resp="#fyndling" subtype="lexical">Der Text sagt nur „Wein“, ohne Farbe oder Sorte.<list type="alternatives"><item>Weißwein (moderne Praxis).<note type="rationale">Passt zur gelben Farbe des Gerichts; Rotwein ist damit unwahrscheinlicher, aber vom Text nicht ausgeschlossen.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,10 +130,10 @@ Praxis. Statt eines Fässchens tut es ein Steinguttopf oder ein großes Glas mit
         <note type="gloss" target="#rum-0885-orig" n="gruͤn Fenchel" resp="#fyndling">Das frische Fenchelkraut, nicht die Knolle.</note>
         <note type="gloss" target="#rum-0885-orig" n="lauter" resp="#fyndling">Klar, rein.</note>
         <note type="gloss" target="#rum-0885-orig" n="viertel Jar" resp="#fyndling">Ein Vierteljahr, also drei Monate.</note>
-        <note type="interpretive_choice" target="#rum-0885-orig" n="Saltzwasser" resp="#fyndling">Der gesalzene Sud aus Wein, Essig und Salz, in dem der Stör gesotten wurde: Der Text nennt kein eigenes Wasser, „im Saltzwasser ligen“ schließt unmittelbar an das Sieden an.</note>
-        <note type="interpretive_choice" target="#rum-0885-orig" n="Verhältnis von Wein, Essig und Salz im Sud" resp="#fyndling">Keine Angabe: Rumpolt nennt nur die drei Bestandteile, keine Mengen und kein Mischungsverhältnis.</note>
-        <note type="interpretive_choice" target="#rum-0885-orig" n="Stör ganz oder in Stücken" resp="#fyndling">Offen: Der Text nennt weder Zerteilen noch Entgräten; das Kapitel spricht von Stören „groß vnd klein“.</note>
-        <note type="interpretive_choice" target="#rum-0885-orig" n="gruͤn Fenchel" resp="#fyndling">Frisches Fenchelkraut: „gruͤn“ heißt frisch, und es steht neben Dill als Kraut zwischen den Fischlagen; im Hausen-Rezept (rum-0859) nennt Rumpolt Fenchel „gruͤn oder duͤrr“.</note>
+        <note type="interpretive_choice" target="#rum-0885-orig" n="Saltzwasser" resp="#fyndling" subtype="contextual">Der gesalzene Sud aus Wein, Essig und Salz, in dem der Stör gesotten wurde: Der Text nennt kein eigenes Wasser, „im Saltzwasser ligen“ schließt unmittelbar an das Sieden an.<list type="alternatives"><item>Ein eigens angesetztes Salzwasser oder ein mit Wasser verlängerter Sud<note type="rationale">Möglich, aber nicht belegt; Rumpolt nennt nur Wein, Essig und Salz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0885-orig" n="Verhältnis von Wein, Essig und Salz im Sud" resp="#fyndling" subtype="contextual">Keine Angabe: Rumpolt nennt nur die drei Bestandteile, keine Mengen und kein Mischungsverhältnis.<list type="alternatives"><item>Wein oder Essig mit Wasser zu gleichen Teilen<note type="rationale">So in Martinos Stör-Rezept (mar-197); ein anderes Buch und keine Rumpolt-Aussage, daher nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0885-orig" n="Stör ganz oder in Stücken" resp="#fyndling" subtype="contextual">Offen: Der Text nennt weder Zerteilen noch Entgräten; das Kapitel spricht von Stören „groß vnd klein“.<list type="alternatives"><item>In Stücke geschnitten<note type="rationale">Praxisannahme, damit der Fisch in ein Fässchen oder einen Topf passt; so in der Zubereitung empfohlen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0885-orig" n="gruͤn Fenchel" resp="#fyndling" subtype="lexical">Frisches Fenchelkraut: „gruͤn“ heißt frisch, und es steht neben Dill als Kraut zwischen den Fischlagen; im Hausen-Rezept (rum-0859) nennt Rumpolt Fenchel „gruͤn oder duͤrr“.<list type="alternatives"><item>Knollenfenchel<note type="rationale">Moderne Verengung; die Knolle passt nicht zum Einschichten als Kraut.</note></item></list></note>
       </div>
     </back>
   </text>

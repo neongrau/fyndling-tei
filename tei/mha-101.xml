@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,7 +131,7 @@ Praxis. Für die Erbsen eignen sich getrocknete, geschälte gelbe Spalterbsen, d
         <note type="gloss" target="#mha-101-orig" n="pawtel" resp="#fyndling">Tuch</note>
         <note type="interpretive_choice" target="#mha-101-orig" n="gesotten arbes von arbaissen" resp="#fyndling">Die Formulierung ‚gesottene Erbsen von Erbsen‘ ist eine typische mittelalterliche Redundanz, die lediglich die Hauptzutat und Zubereitungsart bekräftigt.</note>
         <note type="interpretive_choice" target="#mha-101-orig" n="als lanng als Rindflaisch" resp="#fyndling">Diese Angabe wurde als Hinweis auf eine lange Kochzeit interpretiert, bis die Erbsen-Ei-Masse vollständig gestockt und schnittfest ist, ähnlich der Zeit, die man für das Garen von Rindfleisch benötigen würde.</note>
-        <note type="interpretive_choice" target="#mha-101-orig" n="milich" resp="#fyndling">Da das Rezept Eier enthält und somit kein Fastengericht ist, wird ‚Milch‘ als Kuhmilch interpretiert.</note>
+        <note type="interpretive_choice" target="#mha-101-orig" n="milich" resp="#fyndling">Da das Rezept Eier enthält und somit kein Fastengericht ist, wird ‚Milch‘ als Kuhmilch interpretiert.<list type="alternatives"><item>Mandelmilch<note type="rationale">In anderen Kontexten oder für Fastengerichte könnte ‚Milch‘ auch Mandelmilch bedeuten. Hier ist dies jedoch aufgrund der Eier unwahrscheinlich.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,9 +113,9 @@ Rosinen. Dunkle Rosinen oder Korinthen, die Menge nach Geschmack.
 Praxis. Säuerliche, feste Äpfel schälen und klein hacken, in Butter weich anschwitzen, gestoßenen Zimt, Zucker und Rosinen untermischen und gut durchrühren. Ob die Füllung vor dem Einfüllen abkühlen soll, sagt der Text nicht; etwas abgekühlt lässt sie sich leichter verteilen. Dann in den Teig aus rum-1795 geben und backen. Die Zubereitungszeit von etwa 15 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
         <note type="gloss" target="#rum-1800-orig" n="schweiß sie in Butter" resp="#fyndling">„Schweißen“ heißt in der Küchensprache in Fett anschwitzen, ohne zu bräunen. Rumpolt gebraucht das Wort durchweg so. Gemeint ist das Verb, nicht das Hauptwort „Schweiß“, mit dem Rumpolt an anderer Stelle das Blut des Wildes bezeichnet.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
         <note type="gloss" target="#rum-1800-orig" n="schwartze Rosein" resp="#fyndling">Dunkle Rosinen. Rumpolt nennt sie in vielen Rezepten, oft als „kleine schwarze Rosinen“.</note>
-        <note type="interpretive_choice" target="#rum-1800-orig" n="schwartze Rosein" resp="#fyndling">Dunkle Rosinen, wie Rumpolt sie in vielen Rezepten verwendet; der Text sagt hier nur „schwarz“, ohne „klein“.</note>
-        <note type="interpretive_choice" target="#rum-1800-orig" n="Mengen und Garzeit" resp="#fyndling">Der Text nennt weder Mengen noch eine Zeit: Zucker, Zimt und Rosinen nach Geschmack, die Äpfel so lange in Butter, bis sie weich sind.</note>
-        <note type="interpretive_choice" target="#rum-1800-orig" n="Fuͤll" resp="#fyndling">Rumpolt gibt nur die Füllung; Teig und Backen stehen im ersten Rezept des Tortenkapitels.</note>
+        <note type="interpretive_choice" target="#rum-1800-orig" n="schwartze Rosein" resp="#fyndling" subtype="lexical">Dunkle Rosinen, wie Rumpolt sie in vielen Rezepten verwendet; der Text sagt hier nur „schwarz“, ohne „klein“.<list type="alternatives"><item>Korinthen (kleine dunkle Rosinen)<note type="rationale">Wo Rumpolt „kleine schwarze Rosinen“ schreibt, liegen Korinthen nahe. Hier fehlt „klein“, eine Gleichsetzung ist nicht belegt; Korinthen sind in der Praxis aber eine gute Wahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1800-orig" n="Mengen und Garzeit" resp="#fyndling" subtype="contextual">Der Text nennt weder Mengen noch eine Zeit: Zucker, Zimt und Rosinen nach Geschmack, die Äpfel so lange in Butter, bis sie weich sind.<list type="alternatives"><item>Feste Mengen und etwa 15 Minuten Zubereitung<note type="rationale">Nur als Praxishilfe in der Zubereitungsnotiz; die Zeit ist eine Schätzung, kein Textbefund.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1800-orig" n="Fuͤll" resp="#fyndling" subtype="contextual">Rumpolt gibt nur die Füllung; Teig und Backen stehen im ersten Rezept des Tortenkapitels.<list type="alternatives"><item>Die Füllung in den ausgerollten Teig aus rum-1795 geben und als Torte backen, im Ofen oder in der Tortenpfanne<note type="rationale">So setzt das Kapitel die Füllungen ein; rum-1819 nennt ausdrücklich „die Epffelfuͤll“ für seine Teigblätter-Torte.</note></item></list></note>
       </div>
     </back>
   </text>

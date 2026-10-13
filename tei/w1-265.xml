@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,7 +115,7 @@ Praxis. Für 2-4 Personen als Beigabe: saure Weinbeeren (ersatzweise Verjus) mit
         <note type="gloss" target="#w1-265-orig" n="spekch" resp="#fyndling">Speck, hier vermutlich geräucherter oder gesalzener Schweinebauch.</note>
         <note type="gloss" target="#w1-265-orig" n="stosz zusamen" resp="#fyndling">Stoße die Zutaten in einem Mörser zu einer Paste.</note>
         <note type="gloss" target="#w1-265-orig" n="trukch es aus" resp="#fyndling">Drücke die gestampfte Masse durch ein Tuch oder Sieb, um den Saft oder die flüssige Würze zu gewinnen.</note>
-        <note type="interpretive_choice" target="#w1-265-orig" n="spekch" resp="#fyndling">Gepökelter oder geräucherter Speck - küchenüblich und roh verzehrbar. Der Text nennt nur 'spekch', ohne die Art zu spezifizieren; 'Speck' bezeichnete im Spätmittelalter aber ganz überwiegend das gepökelte/geräucherte Fett.</note>
+        <note type="interpretive_choice" target="#w1-265-orig" n="spekch" resp="#fyndling" subtype="lexical">Gepökelter oder geräucherter Speck - küchenüblich und roh verzehrbar. Der Text nennt nur 'spekch', ohne die Art zu spezifizieren; 'Speck' bezeichnete im Spätmittelalter aber ganz überwiegend das gepökelte/geräucherte Fett.<list type="alternatives"><item>Frischer, ungeräucherter Schweinespeck.<note type="rationale">Vom Text weder ausgeschlossen noch belegt. Roher Verzehr von frischem Schweinefleisch ist ein reales Sicherheitsrisiko (Trichinen); diese Lesart wird deshalb nicht als Praxisempfehlung übernommen, sondern nur als historisch mögliche Alternative dokumentiert.</note></item></list></note>
       </div>
     </back>
   </text>

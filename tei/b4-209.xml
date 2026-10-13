@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,8 +127,8 @@ Praxis. Altbackenes Weißbrot in dünne, gleich große Scheiben quer zum Laib sc
         <note type="gloss" target="#b4-209-orig" n="snitten" resp="#fyndling">Die geschnittenen Scheiben des Brotes.</note>
         <note type="gloss" target="#b4-209-orig" n="taig" resp="#fyndling">Ein dünnflüssiger Teig oder eine Panade, in die die Brotscheiben getaucht werden.</note>
         <note type="gloss" target="#b4-209-orig" n="zukcher" resp="#fyndling">Zucker, der nach dem Backen über das Gebäck gestreut wird.</note>
-        <note type="interpretive_choice" target="#b4-209-orig" n="twirich" resp="#fyndling">„Quer zur Laibform“ - die Brotscheiben sollen quer zum Brotlaib geschnitten werden.</note>
-        <note type="interpretive_choice" target="#b4-209-orig" n="ain stunden" resp="#fyndling">Unklar - vermutlich keine Zeitangabe. Eine feste Stunde als Ruhezeit passt schlecht in den Ablauf (Füllung bestreichen, sofort durch den Teig ziehen, backen) und widerspricht der eigenen Zubereitungszeit-Angabe des Rezepts (50 Minuten insgesamt für den ganzen Vorgang).</note>
+        <note type="interpretive_choice" target="#b4-209-orig" n="twirich" resp="#fyndling" subtype="lexical">„Quer zur Laibform“ - die Brotscheiben sollen quer zum Brotlaib geschnitten werden.</note>
+        <note type="interpretive_choice" target="#b4-209-orig" n="ain stunden" resp="#fyndling" subtype="philological" cert="unknown">Unklar - vermutlich keine Zeitangabe. Eine feste Stunde als Ruhezeit passt schlecht in den Ablauf (Füllung bestreichen, sofort durch den Teig ziehen, backen) und widerspricht der eigenen Zubereitungszeit-Angabe des Rezepts (50 Minuten insgesamt für den ganzen Vorgang).<list type="alternatives"><item>„Eine Stunde lang“ - wörtliche Lesung als Zeitangabe.<note type="rationale">Naheliegende Lesung von „stunden“, aber küchenpraktisch unplausibel und durch die Zwillingshandschrift nicht gestützt.</note></item><item>Die Zwillingshandschrift W1 (w1-212) liest an genau dieser Stelle „ain seidem“ statt „ain stunden“ - ein echter Wortlaut-Unterschied zwischen den Handschriften.<note type="rationale">Direkter Textvergleich durch den Korpus-Kurator; w1-212 lässt die Stelle in der eigenen Übersetzung ohne Zeitangabe. Der Zwilling bestätigt die B4-Lesart „eine Stunde“ damit nicht, klärt die Stelle aber auch nicht abschließend.</note></item></list></note>
       </div>
     </back>
   </text>

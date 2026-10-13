@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Die geviertelte Oblate messerrückendick (etwa 2-3 mm) mit der Mandelmasse bestr
         <note type="gloss" target="#phw-096-orig" n="musgat nuß" resp="#fyndling">Die Muskatnuss war ein beliebtes und kostbares Gewürz in der mittelalterlichen und frühneuzeitlichen Küche.</note>
         <note type="gloss" target="#phw-096-orig" n="dortten pfanen" resp="#fyndling">Eine flache, runde Backform, die für Torten und flache Kuchen verwendet wurde.</note>
         <note type="gloss" target="#phw-096-orig" n="man datten" resp="#fyndling">In diesem Kochbuch das eigene Wort für Oblate, nicht für die Fruchtdattel - dieselbe Auflösung gilt in den benachbarten Rezepten dieser Reihe. Die Fruchtdattel trägt an anderer Stelle im Buch ein eigenes Wort (‚datlin‘).</note>
-        <note type="interpretive_choice" target="#phw-096-orig" n="wer er klain ist" resp="#fyndling">‚wenn es (die Masse) fein/glatt ist‘ - ‚klain‘ bezieht sich hier auf die Konsistenz der geriebenen Mandelmasse, die glatt und homogen sein soll.</note>
-        <note type="interpretive_choice" target="#phw-096-orig" n="das wol bachen wert" resp="#fyndling">Der Text nennt für den Backvorgang nur den Garzustand (‚wol bachen‘), keine Zeit- oder Temperaturangabe. Die Minutenzahl in der Praxis-Empfehlung ist eine moderne Übertragung zur Orientierung, kein Wert aus dem Text.</note>
+        <note type="interpretive_choice" target="#phw-096-orig" n="wer er klain ist" resp="#fyndling" subtype="lexical">‚wenn es (die Masse) fein/glatt ist‘ - ‚klain‘ bezieht sich hier auf die Konsistenz der geriebenen Mandelmasse, die glatt und homogen sein soll.<list type="alternatives"><item>‚wenn es klein ist‘ - im Sinne von geringer Menge.<note type="rationale">Diese Lesart ist weniger passend, da die Menge der Mandeln bereits mit ‚ein halbes Pfund‘ angegeben ist und sich die Anweisung auf die Qualität der Zubereitung bezieht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-096-orig" n="das wol bachen wert" resp="#fyndling" subtype="contextual">Der Text nennt für den Backvorgang nur den Garzustand (‚wol bachen‘), keine Zeit- oder Temperaturangabe. Die Minutenzahl in der Praxis-Empfehlung ist eine moderne Übertragung zur Orientierung, kein Wert aus dem Text.<list type="alternatives"><item>Historische Garführung: aktive Hitzeführung in der Tortenpfanne mit Glut auf dem Deckel, Backdauer nach Augenschein statt nach Uhr.<note type="rationale">So beschreibt der Text das Garen tatsächlich - eine feste Zeitangabe lässt sich daraus nicht ableiten.</note></item></list></note>
       </div>
     </back>
   </text>

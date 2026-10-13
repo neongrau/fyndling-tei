@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -148,7 +153,7 @@ Hinweis: "Fladen und Tartes" am Textende ist bereits die Kapitelüberschrift des
         <note type="gloss" target="#via-157-orig" n="chaudume" resp="#fyndling">Eine heiße, würzige Begusssauce; oft für Gerichte mit Innereien, hier allgemeiner für die Sauce über das Gebratene.</note>
         <note type="gloss" target="#via-157-orig" n="grain" resp="#fyndling">Hier die Hauptzutat/das gebratene Fleisch, über das die Sauce gegossen wird - nicht Getreide.</note>
         <note type="gloss" target="#via-157-orig" n="Flans &amp; tartres" resp="#fyndling">"Fladen und Tartes" - bereits die Kapitelüberschrift des folgenden Abschnitts, nicht Teil dieses Rezepts.</note>
-        <note type="interpretive_choice" target="#via-157-orig" n="chaudume" resp="#fyndling">Heiße, würzige Begusssauce für das gebratene Fleisch.</note>
+        <note type="interpretive_choice" target="#via-157-orig" n="chaudume" resp="#fyndling">Heiße, würzige Begusssauce für das gebratene Fleisch.<list type="alternatives"><item>Gericht/Sauce mit Innereien oder Blut.<note type="rationale">Chaudume bezeichnete oft Innereiengerichte; hier wird die Zubereitung jedoch über gebratenes Fleisch gegossen, was für die allgemeinere Lesart spricht.</note></item></list></note>
         <note type="interpretive_choice" target="#via-157-orig" n="Flans &amp; tartres" resp="#fyndling">Kapitelüberschrift des folgenden Abschnitts ("Fladen und Tartes"), die im Viandier ohne klare Trennung an den vorigen Eintrag anschließt.</note>
       </div>
     </back>

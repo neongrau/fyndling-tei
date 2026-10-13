@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,11 +111,11 @@ Vorbereitung. Der Text setzt gerupfte und ausgenommene Vögel voraus. Sie kommen
 Praxis. Vögel, Petersilienwurzel in Stücken und ein wenig Muskatblüte mit Hühnerbrühe in einen Topf geben, zudecken und sanft sieden lassen, bis die Vögel weich sind; zu starke Hitze macht kleine Vögel trocken. Eine Garzeit nennt der Text nicht, als Schätzung genügt bei kleinen Vögeln eine knappe Stunde. Mit Salz abschmecken und in der Brühe anrichten.</note>
         <note type="gloss" target="#rum-0846-orig" n="eyngemachte" resp="#fyndling">Bei Geflügel meint Rumpolt damit: in einer Brühe oder Sauce gegart. Mit dem heutigen Einmachen, also dem Haltbarmachen im Glas, hat das nichts zu tun.</note>
         <note type="gloss" target="#rum-0846-orig" n="Muscatenbluͤt" resp="#fyndling">Die Muskatblüte (Macis) ist die getrocknete Samenhülle der Muskatnuss und hat ein feineres, blumigeres Aroma als die Nuss selbst.</note>
-        <note type="interpretive_choice" target="#rum-0846-orig" n="eyngemachte" resp="#fyndling">In einer Sauce gegart. Rumpolt verwendet das Wort im ganzen Kapitel für in Brühe oder Sauce gegarte Vögel, und der Satz selbst nennt die Brühe.</note>
-        <note type="interpretive_choice" target="#rum-0846-orig" n="in jhrer eygenen Bruͤh" resp="#fyndling">Die Brühe, die beim Garen der Vögel selbst entsteht; die Hühnerbrühe kommt dazu und verstärkt sie, ersetzt sie aber nicht („nim̃ darzu“).</note>
-        <note type="interpretive_choice" target="#rum-0846-orig" n="Voͤgel" resp="#fyndling">Kleine Vögel im Sinn der Kapitelüberschrift „allerley kleinen Voͤgeln“; eine Art nennt der Satz nicht.</note>
-        <note type="interpretive_choice" target="#rum-0846-orig" n="Vorbereitung der Vögel" resp="#fyndling">Die Vögel kommen gerupft und ausgenommen direkt in die Brühe; ein Anbraten nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0846-orig" n="Würzung" resp="#fyndling">Nur Muskatblüte, wie im Text; eine weitere Würzung nennt Rumpolt nicht.</note>
+        <note type="interpretive_choice" target="#rum-0846-orig" n="eyngemachte" resp="#fyndling" subtype="lexical">In einer Sauce gegart. Rumpolt verwendet das Wort im ganzen Kapitel für in Brühe oder Sauce gegarte Vögel, und der Satz selbst nennt die Brühe.<list type="alternatives"><item>Konserviert, haltbar eingelegt<note type="rationale">So kennt das Frühneuhochdeutsche das Wort auch; hier passt es nicht, weil nichts eingelegt oder aufbewahrt wird, sondern die Vögel in Brühe mit Gewürz gegart werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0846-orig" n="in jhrer eygenen Bruͤh" resp="#fyndling" subtype="contextual">Die Brühe, die beim Garen der Vögel selbst entsteht; die Hühnerbrühe kommt dazu und verstärkt sie, ersetzt sie aber nicht („nim̃ darzu“).<list type="alternatives"><item>Die zugesetzte Hühnerbrühe ist selbst die Garflüssigkeit<note type="rationale">Möglich, weil der Satz beides nebeneinander stellt; das „darzu“ spricht aber für eine Zugabe zu einer schon vorhandenen Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0846-orig" n="Voͤgel" resp="#fyndling" subtype="contextual">Kleine Vögel im Sinn der Kapitelüberschrift „allerley kleinen Voͤgeln“; eine Art nennt der Satz nicht.<list type="alternatives"><item>Eine bestimmte Vogelart<note type="rationale">Der Text legt sich nicht fest; ausgeschlossen sind nur Spatzen und Sperlinge, die Rumpolt in Nr. 17 desselben Kapitels als ungesund verwirft.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0846-orig" n="Vorbereitung der Vögel" resp="#fyndling" subtype="contextual">Die Vögel kommen gerupft und ausgenommen direkt in die Brühe; ein Anbraten nennt der Text nicht.<list type="alternatives"><item>Vorher in klarem Wasser abbrühen und säubern<note type="rationale">So verfahren die ausgeführten Nachbarrezepte (Lerchen in klarer Brühe, Nr. 1 dieses Kapitels: „gequellt vnnd außgesaͤubert“); hier steht es nicht, ist aber eine naheliegende Ergänzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0846-orig" n="Würzung" resp="#fyndling" subtype="contextual">Nur Muskatblüte, wie im Text; eine weitere Würzung nennt Rumpolt nicht.<list type="alternatives"><item>Mit Salz abschmecken<note type="rationale">Steht nicht im Text, ist aber für eine Brühe in der Praxis nötig; deshalb nur in der Zubereitung, nicht in der Übersetzung.</note></item></list></note>
       </div>
     </back>
   </text>

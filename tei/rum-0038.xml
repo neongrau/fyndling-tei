@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,10 +115,10 @@ Praxis. Vorgegarte Kutteln in etwa zwei Finger breite Stücke schneiden, auf Hol
         <note type="gloss" target="#rum-0038-orig" n="Suͤltzen" resp="#fyndling">Sülzfleisch: Kutteln und andere Innereien, die man üblicherweise zu Sülze verarbeitete; der Name ist vom Gericht auf den Rohstoff übergegangen (Grimm, Deutsches Wörterbuch, s. v. Sülze 3d, mit einem Frankfurter Beleg von 1595: „die sülttz, als da seindt der wand, hertz, miltz, lungen, leber, klein und grosz därm“). Hier sind es Ochsenkutteln; eine Sülze im Sinn von Aspik wird nicht gemacht.</note>
         <note type="gloss" target="#rum-0038-orig" n="gar an die statt sieden" resp="#fyndling">‚gar an die statt sieden‘ heißt ‚gar kochen‘, bevor die Kutteln an den Spieß kommen.</note>
         <note type="gloss" target="#rum-0038-orig" n="vngeschmaͤltzter Butter" resp="#fyndling">Ungeschmolzene, frische Butter; in rum-0037 steht für dasselbe vnzerlassene Butter.</note>
-        <note type="interpretive_choice" target="#rum-0038-orig" n="Suͤltzen" resp="#fyndling">Sülzfleisch, hier Ochsenkutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d).</note>
-        <note type="interpretive_choice" target="#rum-0038-orig" n="vngeschmaͤltzter" resp="#fyndling">‚ungeschmolzen, nicht zerlassen‘. Gestützt durch rum-0037, wo im Parallelfall frische vnzerlassene Butter steht.</note>
-        <note type="interpretive_choice" target="#rum-0038-orig" n="Garzeit der Kutteln vor dem Spießen" resp="#fyndling">Der Text sagt nur ‚gar an die statt sieden‘, ohne Zeitangabe: kochen, bis sie gar sind.</note>
-        <note type="interpretive_choice" target="#rum-0038-orig" n="frische Butter: gesalzen oder ungesalzen" resp="#fyndling">Der Text nennt nur ‚frische‘ Butter; der Salzgehalt bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0038-orig" n="Suͤltzen" resp="#fyndling" subtype="lexical">Sülzfleisch, hier Ochsenkutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d).<list type="alternatives"><item>Sülze im heutigen Sinn (Aspik, Gallert).<note type="rationale">Verworfen: Die Sültzen werden gekocht, geschnitten und gebraten; Gallert führt das Buch getrennt als Galrat.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0038-orig" n="vngeschmaͤltzter" resp="#fyndling" subtype="contextual">‚ungeschmolzen, nicht zerlassen‘. Gestützt durch rum-0037, wo im Parallelfall frische vnzerlassene Butter steht.<list type="alternatives"><item>Butter ohne Schmalz-Zusatz oder ungeklärt.<note type="rationale">Nicht durch den Text gedeckt; nur die Lesart ‚nicht zerlassen‘ hat einen Beleg im Buch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0038-orig" n="Garzeit der Kutteln vor dem Spießen" resp="#fyndling" subtype="contextual">Der Text sagt nur ‚gar an die statt sieden‘, ohne Zeitangabe: kochen, bis sie gar sind.<list type="alternatives"><item>Modern: vorgegarte Kutteln nur kurz nachkochen, rohe nach Angabe des Metzgers weich garen.<note type="rationale">Praxis-Vorschlag, nicht Textaussage.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0038-orig" n="frische Butter: gesalzen oder ungesalzen" resp="#fyndling" subtype="contextual">Der Text nennt nur ‚frische‘ Butter; der Salzgehalt bleibt offen.<list type="alternatives"><item>Modern: ungesalzene Butter, Salz erst beim Anrichten wie im Text.<note type="rationale">Praxis-Vorschlag, passt zur Anweisung, erst zum Anrichten zu salzen.</note></item></list></note>
       </div>
     </back>
   </text>

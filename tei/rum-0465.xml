@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,9 +104,9 @@ Praxis. Gamsfüße sind kaum zu bekommen. Geputzt in Salzwasser weich sieden und
         <note type="gloss" target="#rum-0465-orig" n="Fuͤß" resp="#fyndling">Füße. Das Tier nennt der Satz nicht; er ist der sechzehnte und letzte Eintrag in Rumpolts Kapitel über die Gams, daher Gamsfüße. Im selben Kapitel spricht Rumpolt auch von den „Läufen“ der Gams.</note>
         <note type="gloss" target="#rum-0465-orig" n="zurichten" resp="#fyndling">Zubereiten, herrichten. Rumpolt gebraucht das Wort durchweg so, etwa beim Gamskopf oder bei den Hirschfüßen („so kanstu es zurichten/ wie du wilt“). „Warm oder kalt“ bezieht sich auf das fertige Gericht.</note>
         <note type="gloss" target="#rum-0465-orig" n="backen" resp="#fyndling">Wie gebacken wird, sagt der Satz nicht. Bei den Rehfüßen beschreibt Rumpolt das Backen in Butter in einem Eierteig.</note>
-        <note type="interpretive_choice" target="#rum-0465-orig" n="Fuͤß" resp="#fyndling">Gamsfüße: Der Satz steht als Nr. 16 im Kapitel „Von einem Gemß seind sechtzenerley Speiß vnd Trachten zu machen“, das Tier ergibt sich aus dem Kapitelkopf.</note>
-        <note type="interpretive_choice" target="#rum-0465-orig" n="backen" resp="#fyndling">Ausbacken in Fett, wie Rumpolt es bei den Rehfüßen ausführt (in Butter, mit einem Eierteig); der Satz selbst legt das Verfahren nicht fest.</note>
-        <note type="interpretive_choice" target="#rum-0465-orig" n="warm oder kalt zurichten" resp="#fyndling">Die gebackenen oder gekochten Füße warm oder kalt zubereiten und auftragen; „zurichten“ heißt bei Rumpolt zubereiten, herrichten.</note>
+        <note type="interpretive_choice" target="#rum-0465-orig" n="Fuͤß" resp="#fyndling" subtype="contextual">Gamsfüße: Der Satz steht als Nr. 16 im Kapitel „Von einem Gemß seind sechtzenerley Speiß vnd Trachten zu machen“, das Tier ergibt sich aus dem Kapitelkopf.<list type="alternatives"><item>Füße eines anderen Tiers, etwa vom Rind oder Wildschwein<note type="rationale">Nicht gemeint: Rumpolt zählt die sechzehn Gams-Speisen durch, und dieser Eintrag ist die sechzehnte. Füße anderer Tiere stehen in deren eigenen Kapiteln.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0465-orig" n="backen" resp="#fyndling" subtype="contextual">Ausbacken in Fett, wie Rumpolt es bei den Rehfüßen ausführt (in Butter, mit einem Eierteig); der Satz selbst legt das Verfahren nicht fest.<list type="alternatives"><item>Im Ofen backen<note type="rationale">Das heutige Verständnis von „backen“; möglich, aber der Text nennt weder Ofen noch Fett.</note></item><item>In einer Pastete backen<note type="rationale">Rumpolt macht Füße an anderer Stelle auch in Pasteten ein; hier steht davon nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0465-orig" n="warm oder kalt zurichten" resp="#fyndling" subtype="lexical">Die gebackenen oder gekochten Füße warm oder kalt zubereiten und auftragen; „zurichten“ heißt bei Rumpolt zubereiten, herrichten.<list type="alternatives"><item>Nur anrichten, also warm oder kalt zur Tafel geben<note type="rationale">Im Wort enthalten, aber enger als Rumpolts Gebrauch, der auch das Zubereiten selbst meint (Hirschfüße: „so kanstu es zurichten/ wie du wilt“).</note></item></list></note>
       </div>
     </back>
   </text>

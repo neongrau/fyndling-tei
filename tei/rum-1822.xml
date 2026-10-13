@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,10 +119,10 @@ Praxis. Teig und Backen gehören nicht zu diesem Rezept. Wer es nachkocht, füll
         <note type="gloss" target="#rum-1822-orig" n="Turten" resp="#fyndling">Torte. Rumpolt trennt Torten von Pasteten und führt beide in eigenen Kapiteln. Hier gibt er nur die Füllung an; Teig und Backen nennt der Text nicht.</note>
         <note type="gloss" target="#rum-1822-orig" n="Weck" resp="#fyndling">Weißbrot; hier gerieben als Bindung der Hirnmasse. Rumpolt gebraucht das Wort häufig, etwa für Weißbrotschnitten.</note>
         <note type="gloss" target="#rum-1822-orig" n="gestossen Jngwer" resp="#fyndling">Gestoßener, also im Mörser zerkleinerter Ingwer. Heute entspricht dem Ingwerpulver.</note>
-        <note type="interpretive_choice" target="#rum-1822-orig" n="Turten" resp="#fyndling">Torte: Rumpolt löst Turten im ganzen Kapitel "Von allerley Turten" als Torte auf und hat für Pasteten ein eigenes Wort und Kapitel.</note>
-        <note type="interpretive_choice" target="#rum-1822-orig" n="etliche Eyer" resp="#fyndling">Der Text nennt keine Zahl; "etliche" heißt einige. Wenige Eier als Bindung sind möglich, dann bleibt die Füllung weich.</note>
-        <note type="interpretive_choice" target="#rum-1822-orig" n="gruͤne wolschmeckende Kraͤuter" resp="#fyndling">Rumpolt nennt keine Kräuterart; jede wohlschmeckende grüne Küchenkräuter-Auswahl erfüllt den Text.</note>
-        <note type="interpretive_choice" target="#rum-1822-orig" n="Teig und Backen der Torte" resp="#fyndling">Der Text gibt nur die Füllung an; Teig, Backzeit und Hitze stehen bei diesem Rezept nicht.</note>
+        <note type="interpretive_choice" target="#rum-1822-orig" n="Turten" resp="#fyndling" subtype="lexical">Torte: Rumpolt löst Turten im ganzen Kapitel "Von allerley Turten" als Torte auf und hat für Pasteten ein eigenes Wort und Kapitel.<list type="alternatives"><item>Pastete<note type="rationale">Verworfen: Pastete ist bei Rumpolt ein anderes Gericht mit eigenem Kapitel; der Text sagt ausdrücklich Turten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1822-orig" n="etliche Eyer" resp="#fyndling" subtype="contextual">Der Text nennt keine Zahl; "etliche" heißt einige. Wenige Eier als Bindung sind möglich, dann bleibt die Füllung weich.<list type="alternatives"><item>So viele Eier, dass die Masse zusammenhält und beim Backen stockt<note type="rationale">Moderne Praxis für eine schnittfeste Füllung; vom Text weder gefordert noch ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1822-orig" n="gruͤne wolschmeckende Kraͤuter" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Kräuterart; jede wohlschmeckende grüne Küchenkräuter-Auswahl erfüllt den Text.<list type="alternatives"><item>Petersilie als neutrale Wahl<note type="rationale">Praktischer Ausgangspunkt für heute, aber keine Vorgabe des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1822-orig" n="Teig und Backen der Torte" resp="#fyndling" subtype="contextual">Der Text gibt nur die Füllung an; Teig, Backzeit und Hitze stehen bei diesem Rezept nicht.<list type="alternatives"><item>Teigboden wie bei Rumpolts übrigen Torten des Kapitels, bei mittlerer Hitze durchgebacken<note type="rationale">Naheliegende Ergänzung aus dem Kapitel für das Nachkochen, aber nicht Teil dieses Rezepts.</note></item></list></note>
       </div>
     </back>
   </text>

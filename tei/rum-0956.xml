@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,11 +118,11 @@ Mengen. Für Erbsenbrühe, Butter, Pfeffer und Essig steht nur "ein wenig". Das 
 Praxis. Die Forelle in der Pfanne oder auf dem Rost braten (das Rezept sagt nicht, womit) und warm halten. Erbsenbrühe mit Butter, Pfeffer, Essig und den ganzen Kapern kurz aufsieden lassen und heiß über den Fisch gießen, damit er warm auf den Tisch kommt.</note>
         <note type="gloss" target="#rum-0956-orig" n="Kapernbruͤh" resp="#fyndling">Brühe oder Sauce mit Kapern (Campe: „Kaperntunke“; Grimm: „brühe, sauce mit kapern“). Hier aus Erbsenbrühe, Butter, Pfeffer und Essig mit den Kapern aufgesotten; ein Bindemittel nennt der Text nicht. Dieselbe Auflösung wie in rum-0889.</note>
         <note type="gloss" target="#rum-0956-orig" n="Erbsbruͤh" resp="#fyndling">Brühe vom Kochen von Erbsen. Bei Rumpolt eine gängige Flüssigkeit für Fischbrühen, im Forellenkapitel mehrfach (etwa rum-0948, rum-0954).</note>
-        <note type="interpretive_choice" target="#rum-0956-orig" n="Kapernbruͤh" resp="#fyndling">Brühe oder Sauce mit Kapern auf Erbsenbrühe-Basis, flüssig über den Fisch gegossen (Campe, Grimm; buchintern rum-0889, rum-0969).</note>
-        <note type="interpretive_choice" target="#rum-0956-orig" n="frische Butter" resp="#fyndling">Frische Butter, Salzgehalt offen: Rumpolt sagt hier nicht wie beim gebratenen Hecht (rum-0969) "die nicht gesaltzen ist"; gesalzene Butter ist nicht ausgeschlossen.</note>
-        <note type="interpretive_choice" target="#rum-0956-orig" n="gebratene Foren" resp="#fyndling">Die Forelle ist schon gebraten und warm; Gerät nennt der Text nicht. In Rumpolts Küche wird auf dem Rost gebraten wie beim Schaiden-Schwanz (rum-0889).</note>
-        <note type="interpretive_choice" target="#rum-0956-orig" n="Kapern" resp="#fyndling">Kapern ganz, Menge offen; der Text sagt nichts über Zerkleinern.</note>
-        <note type="interpretive_choice" target="#rum-0956-orig" n="ein wenig" resp="#fyndling">Keine Mengen: Erbsenbrühe, Butter, Pfeffer und Essig jeweils "ein wenig". Kein Ingwer, obwohl die Parallelen rum-0889 und rum-0969 ihn nennen.</note>
+        <note type="interpretive_choice" target="#rum-0956-orig" n="Kapernbruͤh" resp="#fyndling" subtype="lexical">Brühe oder Sauce mit Kapern auf Erbsenbrühe-Basis, flüssig über den Fisch gegossen (Campe, Grimm; buchintern rum-0889, rum-0969).<list type="alternatives"><item>Gebundene, sämige Sauce<note type="rationale">Der Text nennt kein Bindemittel; Butter und Erbsenbrühe allein machen keine gebundene Sauce. Nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0956-orig" n="frische Butter" resp="#fyndling" subtype="contextual">Frische Butter, Salzgehalt offen: Rumpolt sagt hier nicht wie beim gebratenen Hecht (rum-0969) "die nicht gesaltzen ist"; gesalzene Butter ist nicht ausgeschlossen.<list type="alternatives"><item>Ungesalzene Butter, nicht nachsalzen<note type="rationale">Praxis-Empfehlung, weil die Kapern Salz mitbringen und die Parallelstelle rum-0969 ungesalzene Butter verlangt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0956-orig" n="gebratene Foren" resp="#fyndling" subtype="contextual">Die Forelle ist schon gebraten und warm; Gerät nennt der Text nicht. In Rumpolts Küche wird auf dem Rost gebraten wie beim Schaiden-Schwanz (rum-0889).<list type="alternatives"><item>In der Pfanne oder auf dem Rost braten<note type="rationale">Moderner Standard; das Rezept legt sich nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0956-orig" n="Kapern" resp="#fyndling" subtype="contextual">Kapern ganz, Menge offen; der Text sagt nichts über Zerkleinern.<list type="alternatives"><item>Kapern gehackt<note type="rationale">Nicht belegt; nur nach Geschmack.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0956-orig" n="ein wenig" resp="#fyndling" subtype="contextual">Keine Mengen: Erbsenbrühe, Butter, Pfeffer und Essig jeweils "ein wenig". Kein Ingwer, obwohl die Parallelen rum-0889 und rum-0969 ihn nennen.<list type="alternatives"><item>Verhältnis nach Geschmack, mit Essig abschmecken<note type="rationale">Praxis-Empfehlung ohne Mengenangabe; keine Portionszahl.</note></item></list></note>
       </div>
     </back>
   </text>

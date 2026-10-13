@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,9 +126,9 @@ Praxis. Kopf und Füße liefern über ihr Kollagen die Gelierkraft, die die Sül
         <note type="gloss" target="#rum-0003-orig" n="feißt" resp="#fyndling">Alte Schreibweise für 'Fett'. Hier ist das Abschöpfen des Fettes von der Brühe gemeint, um eine klare Sülze zu erhalten.</note>
         <note type="gloss" target="#rum-0003-orig" n="Wuͤllen Tuch" resp="#fyndling">Ein Tuch aus Wolle, das zum Klären von Brühen und Säften verwendet wurde, um eine klare Flüssigkeit zu erhalten.</note>
         <note type="gloss" target="#rum-0003-orig" n="Schissel" resp="#fyndling">Eine Schüssel oder ein Gefäß, in das die Brühe zum Erkalten und Gelieren gegossen wird.</note>
-        <note type="interpretive_choice" target="#rum-0003-orig" n="pfeffer" resp="#fyndling">Hier ist eindeutig das Gewürz Pfeffer gemeint, da es mit 'gestossenem' (gemahlenem) beschrieben wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0003-orig" n="Kochzeit und Wassermenge (unbeziffert)" resp="#fyndling">Rumpolt gibt statt einer Zeit- oder Mengenangabe ein Konsistenz-Kriterium ('wie ein Muß'); modern lässt sich das mit mehreren Stunden Köcheln und knapp bedeckendem Wasser umsetzen.</note>
-        <note type="interpretive_choice" target="#rum-0003-orig" n="Menge an Essig, Pfeffer und Safran (unbeziffert)" resp="#fyndling">Ohne Mengenangabe sparsam dosieren und nachschmecken, da Safran teuer ist und Essig schnell übersäuert.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0003-orig" n="pfeffer" resp="#fyndling" subtype="philological">Hier ist eindeutig das Gewürz Pfeffer gemeint, da es mit 'gestossenem' (gemahlenem) beschrieben wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0003-orig" n="Kochzeit und Wassermenge (unbeziffert)" resp="#fyndling" subtype="contextual">Rumpolt gibt statt einer Zeit- oder Mengenangabe ein Konsistenz-Kriterium ('wie ein Muß'); modern lässt sich das mit mehreren Stunden Köcheln und knapp bedeckendem Wasser umsetzen.<list type="alternatives"><item>Historisch gelesen ist das keine Lücke im Text, sondern zeittypisch: der Endpunkt wird über die Konsistenz definiert, nicht über die Uhr.</item></list></note>
+        <note type="interpretive_choice" target="#rum-0003-orig" n="Menge an Essig, Pfeffer und Safran (unbeziffert)" resp="#fyndling" subtype="contextual">Ohne Mengenangabe sparsam dosieren und nachschmecken, da Safran teuer ist und Essig schnell übersäuert.<list type="alternatives"><item>Rumpolt selbst gibt hier keine Menge an, konsistent mit seinem sonstigen Stil bei Würzangaben in diesem Buchteil - keine zu ergänzende Lücke.</item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

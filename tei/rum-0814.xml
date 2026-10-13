@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,9 +105,9 @@ Praxis. Küchenfertige Wachteln nehmen, das Rupfen und Ausnehmen setzt der Text 
         <note type="gloss" target="#rum-0814-orig" n="Limonien Safft" resp="#fyndling">Zitronensaft. Limonien sind bei Rumpolt durchgängig Zitronen; das Goethe-Wörterbuch erklärt Limonie als dünnschalige Speisezitrone, das Mittelniederdeutsche Wörterbuch als kleinere Zitronenart.</note>
         <note type="gloss" target="#rum-0814-orig" n="gedruckt" resp="#fyndling">Hier im Sinne von „ausgedrückt“ oder „gepresst“: der Saft wird über die Wachteln gedrückt.</note>
         <note type="gloss" target="#rum-0814-orig" n="Kanst auch" resp="#fyndling">„Du kannst auch“: Die Nummer schließt an die vorangehenden Wachtelgerichte an und ist als weitere Möglichkeit in der Reihe gedacht.</note>
-        <note type="interpretive_choice" target="#rum-0814-orig" n="Limonien Safft" resp="#fyndling">Zitronensaft. Rumpolt gebraucht Limonien im ganzen Buch für Zitronen, und die Wörterbücher stützen diese Lesart (Goethe-Wörterbuch: dünnschalige Speisezitrone).</note>
-        <note type="interpretive_choice" target="#rum-0814-orig" n="braten (Garart)" resp="#fyndling">Am Spieß über offenem Feuer oder auf dem Rost, wie es zu Rumpolts Zeit für kleines Geflügel üblich war. Der Text sagt nur „braten“.</note>
-        <note type="interpretive_choice" target="#rum-0814-orig" n="daruͤber gedruckt (Zeitpunkt)" resp="#fyndling">Offen: Der Text sagt nur, dass der Saft darüber gedrückt wird, nicht wann. Ein Beträufeln schon während des Bratens ist nicht ausgeschlossen.</note>
+        <note type="interpretive_choice" target="#rum-0814-orig" n="Limonien Safft" resp="#fyndling" subtype="lexical">Zitronensaft. Rumpolt gebraucht Limonien im ganzen Buch für Zitronen, und die Wörterbücher stützen diese Lesart (Goethe-Wörterbuch: dünnschalige Speisezitrone).<list type="alternatives"><item>Saft einer kleineren, dünnschaligen Zitronenart (Limone)<note type="rationale">So das Mittelniederdeutsche Wörterbuch; für die Küche ändert das nichts, es bleibt saurer Zitrussaft, und heute ist die gewöhnliche Zitrone die naheliegende Wahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0814-orig" n="braten (Garart)" resp="#fyndling" subtype="contextual">Am Spieß über offenem Feuer oder auf dem Rost, wie es zu Rumpolts Zeit für kleines Geflügel üblich war. Der Text sagt nur „braten“.<list type="alternatives"><item>Im Ofen oder in der Pfanne braten<note type="rationale">Moderne Praxis in der heutigen Küche; der Text schließt sie nicht aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0814-orig" n="daruͤber gedruckt (Zeitpunkt)" resp="#fyndling" subtype="contextual">Offen: Der Text sagt nur, dass der Saft darüber gedrückt wird, nicht wann. Ein Beträufeln schon während des Bratens ist nicht ausgeschlossen.<list type="alternatives"><item>Nach dem Braten über die fertigen Wachteln drücken<note type="rationale">Naheliegende moderne Praxis; die Säure bleibt frisch und dient als Würze zum Bratfett.</note></item></list></note>
       </div>
     </back>
   </text>

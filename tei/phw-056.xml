@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,8 +138,8 @@ Für den Pastetenteig Wasser mit Schmalz aufkochen, handwarm abkühlen lassen, u
         <note type="gloss" target="#phw-056-orig" n="krentzlin" resp="#fyndling">Ein kleiner Teigkranz, der als erhöhter Rand um den Tortenboden gelegt wird, um die Füllung zu halten.</note>
         <note type="gloss" target="#phw-056-orig" n="hefen" resp="#fyndling">Gemeint ist nicht Hefe, sondern ein Gefäß im übertragenen Sinn: der aus dem Teig selbst geformte, freistehende Pastetenmantel ohne eigene Backform. Spätere Rezepte dieses Buchs setzen diese Handhabung bereits als bekannt voraus.</note>
         <note type="gloss" target="#phw-056-orig" n="zopf ich jn" resp="#fyndling">Zupfen oder reißen - eine ziehende Handbewegung, kein Kneten. Ein eigener Arbeitsschritt, der auf das Abarbeiten des Teigs folgt.</note>
-        <note type="interpretive_choice" target="#phw-056-orig" n="bedalin" resp="#fyndling">Tortenboden. Diese Lesart wird durch die buchweite Verwendung des Begriffs gestützt (durchgängig als Tortenboden belegt) und passt zum Kontext, wo ein dünner Boden mit einem Kranz geformt wird.</note>
-        <note type="interpretive_choice" target="#phw-056-orig" n="auser halb der wil bret basteten nim ich eydel schen mel" resp="#fyndling">Außer bei Wildbret-Pasteten nimmt die Schreiberin reines feines Mehl statt der Halb-Halb-Mischung. Die Wildbretpasteten des Buchs verlangen ausdrücklich Nachmehl (phw-062 „auß nach mel“, phw-064 „mit eydel noch mel“), ebenso das Wolfenbütteler Kunst- und Arzneibuch (wo10-045 „ein wenig nachmel“).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
+        <note type="interpretive_choice" target="#phw-056-orig" n="bedalin" resp="#fyndling" subtype="lexical">Tortenboden. Diese Lesart wird durch die buchweite Verwendung des Begriffs gestützt (durchgängig als Tortenboden belegt) und passt zum Kontext, wo ein dünner Boden mit einem Kranz geformt wird.<list type="alternatives"><item>Eine Backunterlage oder ein Backblech.<note type="rationale">Obwohl 'bedelin' in anderen Kontexten auch eine Backunterlage meinen könnte, ist die Formung eines Kranzes darum ein starkes Indiz für einen geformten Teigboden.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-056-orig" n="auser halb der wil bret basteten nim ich eydel schen mel" resp="#fyndling" subtype="philological">Außer bei Wildbret-Pasteten nimmt die Schreiberin reines feines Mehl statt der Halb-Halb-Mischung. Die Wildbretpasteten des Buchs verlangen ausdrücklich Nachmehl (phw-062 „auß nach mel“, phw-064 „mit eydel noch mel“), ebenso das Wolfenbütteler Kunst- und Arzneibuch (wo10-045 „ein wenig nachmel“).<list type="alternatives"><item>Für Wildbret-Pasteten wird reines feines Mehl statt der Halb-Halb-Mischung verwendet.<note type="rationale">Frühere Lesart dieses Rezepts. Sie widerspricht den Wildbretpasteten desselben Buchs, die ausdrücklich Nachmehl nehmen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
       </div>
     </back>
   </text>

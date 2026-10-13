@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -145,9 +150,9 @@ Hecht schuppen, in Stücke teilen und salzen, dann mit den ganzen Äpfeln und Zw
         <note type="gloss" target="#phw-183-orig" n="syeden" resp="#fyndling">‚Sieden‘ bedeutet, etwas knapp unter dem Siedepunkt gar zu ziehen oder zu kochen, ohne dass es sprudelnd kocht.</note>
         <note type="gloss" target="#phw-183-orig" n="res" resp="#fyndling">Das Wort ‚res‘ (resch) ist im Frühneuhochdeutschen mehrdeutig: im Backkontext des Buches bedeutet es ‚knusprig‘, im Kontext von Geschmackseigenschaften - wie hier parallel zu ‚sauer‘ - bedeutet es ‚scharf‘ oder ‚herb‘.</note>
         <note type="gloss" target="#phw-183-orig" n="be se es" resp="#fyndling">‚Be se es‘ ist eine frühneuhochdeutsche Form von ‚bestreue es‘, abgeleitet von ‚säen‘.</note>
-        <note type="interpretive_choice" target="#phw-183-orig" n="res" resp="#fyndling">Im Kontext der Würzbalance („nit so res vnd nit so saur sey“) als Geschmacksadjektiv ‚scharf‘ oder ‚herb‘ gelesen, parallel zu ‚saur‘.</note>
-        <note type="interpretive_choice" target="#phw-183-orig" n="Abkühl- und Gelierzeit der Sülze" resp="#fyndling">Für die Praxis mehrere Stunden bis über Nacht kalt stellen, ausdrücklich als moderne Ergänzung ausgewiesen - der Text nennt keine Stand- oder Kühlzeit.</note>
-        <note type="interpretive_choice" target="#phw-183-orig" n="Äpfel und Zwiebeln beim Anrichten" resp="#fyndling">Für die Praxis werden die mitgegarten Äpfel und Zwiebeln vor dem Anrichten als Aromaten aus dem Sud entfernt.</note>
+        <note type="interpretive_choice" target="#phw-183-orig" n="res" resp="#fyndling" subtype="lexical">Im Kontext der Würzbalance („nit so res vnd nit so saur sey“) als Geschmacksadjektiv ‚scharf‘ oder ‚herb‘ gelesen, parallel zu ‚saur‘.<list type="alternatives"><item>Im Buch sonst überwiegend als ‚knusprig/durchgebacken‘ aufgelöst (Backkontexte).<note type="rationale">Diese Lesart passt hier nicht, da das Gericht gesotten und nicht gebacken wird. Die Geschmackskontext-Lesart ‚scharf/herb‘ ist durch eine fast wortgleiche Konstruktion in einem anderen Rezept des Buches gestützt sowie durch mehrere im Glossar der Edition belegte Wortsinne.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-183-orig" n="Abkühl- und Gelierzeit der Sülze" resp="#fyndling" subtype="contextual">Für die Praxis mehrere Stunden bis über Nacht kalt stellen, ausdrücklich als moderne Ergänzung ausgewiesen - der Text nennt keine Stand- oder Kühlzeit.<list type="alternatives"><item>Historisch vermutlich ein kühler Keller oder kalter Raum über Nacht.<note type="rationale">Der Text bricht nach dem Übergießen der Brühe ohne Angabe einer Stand- oder Kühlzeit ab; eine konkrete historische Zeit- oder Temperaturangabe ist nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-183-orig" n="Äpfel und Zwiebeln beim Anrichten" resp="#fyndling" subtype="contextual">Für die Praxis werden die mitgegarten Äpfel und Zwiebeln vor dem Anrichten als Aromaten aus dem Sud entfernt.<list type="alternatives"><item>Die ganzen, mitgegarten Äpfel und Zwiebeln könnten auch mit angerichtet worden sein.<note type="rationale">Der Text erwähnt beim Anrichten nur die Fischstücke; ob Äpfel und Zwiebeln entfernt oder mitserviert wurden, bleibt offen.</note></item></list></note>
       </div>
     </back>
   </text>

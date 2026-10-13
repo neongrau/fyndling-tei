@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,9 +119,9 @@ Praxis. Die Flügel nach der vorigen Nummer füllen und gar sieden; Geflügel mu
         <note type="gloss" target="#rum-0524-orig" n="eynmachen" resp="#fyndling">Einmachen heißt bei Rumpolt, Fleisch in einer Brühe oder Soße anzurichten, nicht es haltbar zu machen. Dieselben gefüllten Flügel werden in der nächsten Nummer „in einem Pfeffer“ eingemacht.</note>
         <note type="gloss" target="#rum-0524-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte oder Macis, der getrocknete Samenmantel der Muskatnuss, nicht die Nuss selbst.</note>
         <note type="gloss" target="#rum-0524-orig" n="gelb machen / weiß lassen" resp="#fyndling">Nur die Farbwahl. Ein Färbemittel nennt der Text nicht; „weiß lassen“ heißt, nichts zu färben. Die Wendung kehrt bei Rumpolt oft wieder, meist ebenfalls ohne Angabe, womit gefärbt wird.</note>
-        <note type="interpretive_choice" target="#rum-0524-orig" n="gelb machen" resp="#fyndling">Farbmittel offen: Der Text stellt nur Gelb oder Weiß zur Wahl und nennt nichts, womit gefärbt wird.</note>
-        <note type="interpretive_choice" target="#rum-0524-orig" n="Pettersilgen Wurtzel" resp="#fyndling">Der Text sagt nur „eynmachen mit Pettersilgen Wurtzel“; die Wurzel kann ebenso gut zerstoßen oder gerieben in die Brühe gegangen sein wie in Stücken.</note>
-        <note type="interpretive_choice" target="#rum-0524-orig" n="auch mit gruͤnen wolschmeckenden Kraͤutern" resp="#fyndling">Eine eigene grüne Spielart neben der Brühe mit Petersilienwurzel und Muskatblüte; das „auch mit“ erlaubt diese Lesart.</note>
+        <note type="interpretive_choice" target="#rum-0524-orig" n="gelb machen" resp="#fyndling" subtype="contextual">Farbmittel offen: Der Text stellt nur Gelb oder Weiß zur Wahl und nennt nichts, womit gefärbt wird.<list type="alternatives"><item>Mit Safran gelb färben<note type="rationale">Naheliegend, weil Rumpolt Safran in anderen Nummern ausdrücklich zum Färben und Würzen nennt; hier steht er aber nicht.</note></item><item>Mit Eigelb gelb machen<note type="rationale">Bei Rumpolt kommt Gelb auch über Eigelb zustande; in dieser Nummer ebenfalls nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0524-orig" n="Pettersilgen Wurtzel" resp="#fyndling" subtype="contextual">Der Text sagt nur „eynmachen mit Pettersilgen Wurtzel“; die Wurzel kann ebenso gut zerstoßen oder gerieben in die Brühe gegangen sein wie in Stücken.<list type="alternatives"><item>Geputzt, in Scheiben oder Stifte geschnitten und in der Rindfleischbrühe mitgegart<note type="rationale">Praktische Ausführung der Zubereitungsnotiz; der Text entscheidet die Form nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0524-orig" n="auch mit gruͤnen wolschmeckenden Kraͤutern" resp="#fyndling" subtype="contextual">Eine eigene grüne Spielart neben der Brühe mit Petersilienwurzel und Muskatblüte; das „auch mit“ erlaubt diese Lesart.<list type="alternatives"><item>Zusatz zur Wurzelbrühe: Kräuter fein gehackt kurz vor dem Anrichten in dieselbe Brühe<note type="rationale">Grammatisch ebenso möglich und in der Zubereitungsnotiz als Praxis gewählt; der Text entscheidet nicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,11 +126,11 @@ Praxis. Mengen nennt Rumpolt nicht; Petersilienwurzel und Muskatblüte sparsam d
         <note type="gloss" target="#rum-0835-orig" n="feißt" resp="#fyndling">Fett, fettreich. Die Brühe soll ein wenig Fett haben.</note>
         <note type="gloss" target="#rum-0835-orig" n="gebeht Schnitten Brot" resp="#fyndling">gebeht = gebäht, von bähen: Brot in Scheiben leicht rösten. Mit Backen hat das Wort nichts zu tun. Dieselbe Wendung steht bei Rumpolt mehrfach, etwa beim Ochsenknie-Knorren in Brühe.</note>
         <note type="gloss" target="#rum-0835-orig" n="Weck" resp="#fyndling">Weißbrot, Semmel. Mit dem Einmachglas hat das Wort nichts zu tun.</note>
-        <note type="interpretive_choice" target="#rum-0835-orig" n="quell sie" resp="#fyndling">Kurz in heißem Wasser abbrühen. Gestützt auf Rumpolts eigenen Gebrauch (Forellen: „quell sie ein wenig/ vnnd thu sie geschwindt wider herauß“) und auf das gleiche Vorverfahren bei den kleinen Vögeln im Nachbarkapitel („gequellt vnnd außgesaͤubert“). Ein Wörterbuchbeleg für diese Küchenbedeutung fehlt.</note>
-        <note type="interpretive_choice" target="#rum-0835-orig" n="gebeht" resp="#fyndling">Gebäht, von bähen: in Scheiben geschnittenes Brot leicht rösten (Mittelhochdeutsches Wörterbuch bæhen). Rumpolt gebraucht die Wendung „gebeht Schnitten Brot“ mehrfach.</note>
-        <note type="interpretive_choice" target="#rum-0835-orig" n="säuber sie auß" resp="#fyndling">Nach dem Abbrühen reinigen. Ob dabei auch ausgenommen wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0835-orig" n="seig ein gute Hennenbruͤh daruͤber" resp="#fyndling">Die Brühe über die Vögel gießen; Rumpolt gebraucht seigen bei Brühen auch als feste Wendung für darübergießen.</note>
-        <note type="interpretive_choice" target="#rum-0835-orig" n="laß es damit sieden" resp="#fyndling">Der Text nennt keine Garzeit und keine Hitzestufe.</note>
+        <note type="interpretive_choice" target="#rum-0835-orig" n="quell sie" resp="#fyndling" subtype="contextual">Kurz in heißem Wasser abbrühen. Gestützt auf Rumpolts eigenen Gebrauch (Forellen: „quell sie ein wenig/ vnnd thu sie geschwindt wider herauß“) und auf das gleiche Vorverfahren bei den kleinen Vögeln im Nachbarkapitel („gequellt vnnd außgesaͤubert“). Ein Wörterbuchbeleg für diese Küchenbedeutung fehlt.<list type="alternatives"><item>In Wasser aufkochen und abgießen, länger als ein bloßes Überbrühen<note type="rationale">So gebraucht Rumpolt quellen beim Reis. Für die kleinen Vögel, die anschließend in der Brühe sieden, reicht das kurze Abbrühen; ganz ausschließen lässt sich das längere Abkochen nicht.</note></item><item>In Wasser einweichen<note type="rationale">Widerspricht Rumpolts eigener Erklärung bei den Forellen, wo heißes Wasser und ein kurzes Eintauchen gemeint sind.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0835-orig" n="gebeht" resp="#fyndling" subtype="lexical">Gebäht, von bähen: in Scheiben geschnittenes Brot leicht rösten (Mittelhochdeutsches Wörterbuch bæhen). Rumpolt gebraucht die Wendung „gebeht Schnitten Brot“ mehrfach.<list type="alternatives"><item>Im Ofen angewärmt und getrocknet statt geröstet<note type="rationale">bähen heißt auch wärmen und dörren (DWB). Das Ergebnis ist ebenfalls eine trockene, feste Brotunterlage; der Text unterscheidet das nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0835-orig" n="säuber sie auß" resp="#fyndling" subtype="contextual">Nach dem Abbrühen reinigen. Ob dabei auch ausgenommen wird, sagt der Text nicht.<list type="alternatives"><item>Ausnehmen und auswaschen<note type="rationale">auß kann das Ausnehmen mitmeinen; der Text sagt es nicht ausdrücklich.</note></item><item>Nur äußerlich säubern, Innereien im Vogel lassen<note type="rationale">Praxis-Annahme; der Text nennt kein Ausnehmen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0835-orig" n="seig ein gute Hennenbruͤh daruͤber" resp="#fyndling" subtype="lexical">Die Brühe über die Vögel gießen; Rumpolt gebraucht seigen bei Brühen auch als feste Wendung für darübergießen.<list type="alternatives"><item>Die Brühe vorher durch ein Tuch oder Sieb seihen<note type="rationale">Würde zur „lautern Brüh“ der Überschrift passen; der Satz verlangt es aber nicht ausdrücklich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0835-orig" n="laß es damit sieden" resp="#fyndling" subtype="contextual">Der Text nennt keine Garzeit und keine Hitzestufe.<list type="alternatives"><item>Etwa 10 bis 15 Minuten bei schwachem Sieden<note type="rationale">Moderne Schätzung für so kleine Vögel; nicht aus dem Text.</note></item></list></note>
       </div>
     </back>
   </text>

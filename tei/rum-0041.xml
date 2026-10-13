@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -138,12 +143,12 @@ Praxis. Brät nicht zu fest in den Darm drücken und den Darm nach dem Zubinden 
         <note type="gloss" target="#rum-0041-orig" n="Schleim darnach ein Ochsendarm auß" resp="#fyndling">Den Darm von Schleim befreien und sauber waschen.</note>
         <note type="gloss" target="#rum-0041-orig" n="Roßt" resp="#fyndling">Ein Rost zum Bräunen; Material und Hitzequelle nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0041-orig" n="breun es ab" resp="#fyndling">Auf dem Rost bräunen, nicht abbrennen.</note>
-        <note type="interpretive_choice" target="#rum-0041-orig" n="vngeschmaͤltzt" resp="#fyndling">Bezieht sich auf den Speck; beide Fette werden roh und unausgelassen verwendet.</note>
-        <note type="interpretive_choice" target="#rum-0041-orig" n="Salz" resp="#fyndling">Der Text nennt kein Salz; historisch würde nur mit Pfeffer, Safran und Zwiebel gewürzt und am Tisch gesalzen.</note>
-        <note type="interpretive_choice" target="#rum-0041-orig" n="oder mach es in einer Bruͤh" resp="#fyndling">Gleich in Brühe statt in Wasser gar ziehen und das Bräunen auf dem Rost weglassen.</note>
-        <note type="interpretive_choice" target="#rum-0041-orig" n="Ochsendarm" resp="#fyndling">Welcher Darmabschnitt gemeint ist, bleibt offen; der Text sagt nur „Ochsendarm“.</note>
-        <note type="interpretive_choice" target="#rum-0041-orig" n="machs mit Eyern ab" resp="#fyndling">Mit Eiern abmachen, hier im Sinn von binden.</note>
-        <note type="interpretive_choice" target="#rum-0041-orig" n="Schleim ... auß" resp="#fyndling">Den Darm von Schleim befreien; als Kontextlesart, ein direkter Wörterbuchbeleg für Darmreinigung fehlt.</note>
+        <note type="interpretive_choice" target="#rum-0041-orig" n="vngeschmaͤltzt" resp="#fyndling" subtype="contextual">Bezieht sich auf den Speck; beide Fette werden roh und unausgelassen verwendet.<list type="alternatives"><item>Nur der Speck ist gemeint<note type="rationale">Der Relativsatz steht direkt hinter dem Speck; Ochsenfett wäre dann auch ausgelassen möglich, der Text lässt beides zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0041-orig" n="Salz" resp="#fyndling" subtype="contextual">Der Text nennt kein Salz; historisch würde nur mit Pfeffer, Safran und Zwiebel gewürzt und am Tisch gesalzen.<list type="alternatives"><item>Salz nach Geschmack ins Brät<note type="rationale">Moderner Standard für die Praxis, keine Textangabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0041-orig" n="oder mach es in einer Bruͤh" resp="#fyndling" subtype="contextual">Gleich in Brühe statt in Wasser gar ziehen und das Bräunen auf dem Rost weglassen.<list type="alternatives"><item>Nach dem Sieden in Brühe anrichten<note type="rationale">Moderner Standard in der Praxis; der Satz lässt beide Lesarten zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0041-orig" n="Ochsendarm" resp="#fyndling" subtype="contextual">Welcher Darmabschnitt gemeint ist, bleibt offen; der Text sagt nur „Ochsendarm“.<list type="alternatives"><item>Rinderkranzdarm oder Fettende<note type="rationale">Heutige Wursthülle vom Metzger; moderne Näherung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0041-orig" n="machs mit Eyern ab" resp="#fyndling" subtype="contextual">Mit Eiern abmachen, hier im Sinn von binden.<list type="alternatives"><item>Mit Eiern fertigstellen oder abschmecken<note type="rationale">Belegte Grundbedeutung von abmachen; hier ist Binden wegen des Eis aber die plausibelste Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0041-orig" n="Schleim ... auß" resp="#fyndling" subtype="lexical">Den Darm von Schleim befreien; als Kontextlesart, ein direkter Wörterbuchbeleg für Darmreinigung fehlt.</note>
       </div>
     </back>
   </text>

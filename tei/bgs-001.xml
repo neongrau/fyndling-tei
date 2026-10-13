@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,8 +127,8 @@ Praxis. Für etwa vier Portionen: aus 250 g Mandeln und ca. 0,5 l Weißwein eine
         <note type="gloss" target="#bgs-001-orig" n="milich vz stozzen" resp="#fyndling">Die Mandelmilch herausstoßen (vz stozzen = herausstoßen/auspressen): aus den mit Wein vermengten Mandeln wird die Milch gewonnen. Kein Gerinnen-Lassen.</note>
         <note type="gloss" target="#bgs-001-orig" n="vierdung" resp="#fyndling">Ein Viertelpfund, hier Reis (ca. 125 g), zu Reismehl gestoßen.</note>
         <note type="gloss" target="#bgs-001-orig" n="halbe mark" resp="#fyndling">Eine halbe Mark Zucker, ca. 115-125 g (die Mark war eine Gewichtseinheit von etwa 230-250 g).</note>
-        <note type="interpretive_choice" target="#bgs-001-orig" n="Hitze der Mandelmilch-Kirsch-Reismehl-Masse" resp="#fyndling">Die Masse wird unter Rühren bei milder Hitze angedickt, bis das Reismehl bindet - sonst bleibt sie roh und körnig, da Reisstärke ohne Erhitzen nicht aufschließt.</note>
-        <note type="interpretive_choice" target="#bgs-001-orig" n="Kirschen roh oder gekocht durchs Sieb" resp="#fyndling">Die Kirschen werden vor dem Passieren kurz weich geköchelt, wie es die ausführlichere Parallelfassung bgs-083 ausdrücklich beschreibt (dort in Wein gekocht).</note>
+        <note type="interpretive_choice" target="#bgs-001-orig" n="Hitze der Mandelmilch-Kirsch-Reismehl-Masse" resp="#fyndling">Die Masse wird unter Rühren bei milder Hitze angedickt, bis das Reismehl bindet - sonst bleibt sie roh und körnig, da Reisstärke ohne Erhitzen nicht aufschließt.<list type="alternatives"><item>Rein wörtlich ließe sich die Masse kalt vermengen und nur Schmalz und Zucker separat erwärmt zugeben.<note type="rationale">Der Text nennt Hitze nur für das Schmelzen von Schmalz oder Speck in der Pfanne, nicht für die Hauptmasse. Ein rein kaltes Vermengen ergäbe aber eine mehlig-rohe Konsistenz, da die Reisstärke ohne Hitze nicht bindet.</note></item></list></note>
+        <note type="interpretive_choice" target="#bgs-001-orig" n="Kirschen roh oder gekocht durchs Sieb" resp="#fyndling">Die Kirschen werden vor dem Passieren kurz weich geköchelt, wie es die ausführlichere Parallelfassung bgs-083 ausdrücklich beschreibt (dort in Wein gekocht).<list type="alternatives"><item>Rohe, reife Kirschen ließen sich auch direkt durchs Sieb schlagen.<note type="rationale">bgs-001 selbst nennt nur „slahe die durch ein sip“ ohne Kochangabe. Das Ergebnis wäre dünnflüssiger und säuerlicher, aber unbedenklich - ein Textur-, kein Sicherheitsthema.</note></item></list></note>
       </div>
     </back>
   </text>

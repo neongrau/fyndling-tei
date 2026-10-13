@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,9 +103,9 @@ Das Eindämpfen. Garflüssigkeit, Garzeit und Hitze nennt der Text nicht. In and
 
 Praxis. Nachkochen lässt sich aus diesem Eintrag allein nichts. Er hält nur fest, dass es eingedämpfte gefüllte junge Hühner gab und dass Zwiebeln dabei freigestellt waren.</note>
         <note type="gloss" target="#rum-0733-orig" n="Eyngedaͤmpffte" resp="#fyndling">Eindämpfen heißt dünsten, garen; das Bairische Wörterbuch belegt es so („Eingedämpft Fleisch“). Nicht das heutige Dämpfen über Wasserdampf. In seinen ausgeführten Rezepten für eingedämpftes Wildbret gart Rumpolt das Fleisch im Kessel mit Brühe oder Wasser und Zwiebeln.</note>
-        <note type="interpretive_choice" target="#rum-0733-orig" n="gefuͤllt" resp="#fyndling">Füllung offen lassen: Der Text sagt nur, dass die Hühner gefüllt sind, und nennt keinen Inhalt.</note>
-        <note type="interpretive_choice" target="#rum-0733-orig" n="Eyngedaͤmpffte" resp="#fyndling">Garflüssigkeit offen: Der Eintrag nennt weder Brühe noch Wasser noch Garzeit.</note>
-        <note type="interpretive_choice" target="#rum-0733-orig" n="es sey mit Zwibeln/ oder ohne Zwibeln" resp="#fyndling">Die Zwiebeln gehören zum Gericht insgesamt; ob sie in die Füllung oder in den Topf kommen, lässt der Satz offen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
+        <note type="interpretive_choice" target="#rum-0733-orig" n="gefuͤllt" resp="#fyndling" subtype="contextual">Füllung offen lassen: Der Text sagt nur, dass die Hühner gefüllt sind, und nennt keinen Inhalt.<list type="alternatives"><item>Füllung nach dem Muster der gefüllten Hühner in Brühe aus demselben Kapitel<note type="rationale">Naheliegend für eine Rekonstruktion, aber nicht durch diesen Eintrag gedeckt; deshalb nur als Vergleich genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0733-orig" n="Eyngedaͤmpffte" resp="#fyndling" subtype="contextual">Garflüssigkeit offen: Der Eintrag nennt weder Brühe noch Wasser noch Garzeit.<list type="alternatives"><item>Im Kessel mit Brühe oder Wasser und Zwiebeln sieden, wie in Rumpolts ausgeführten Rezepten für eingedämpftes Wildbret<note type="rationale">Zeigt Rumpolts Wortgebrauch, ist aber für Hühner nicht ausgeführt; nur als Wortbedeutung übernommen, nicht als Verfahren dieses Rezepts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0733-orig" n="es sey mit Zwibeln/ oder ohne Zwibeln" resp="#fyndling" subtype="contextual">Die Zwiebeln gehören zum Gericht insgesamt; ob sie in die Füllung oder in den Topf kommen, lässt der Satz offen.<list type="alternatives"><item>Zwiebeln als Teil der Füllung<note type="rationale">Der Nebensatz steht direkt hinter „die gefüllt seyn“ und lässt sich so lesen, eindeutig ist der Bezug aber nicht.</note></item><item>Zwiebeln in der Garflüssigkeit<note type="rationale">Passt zu Rumpolts Eindämpfen mit Zwiebeln bei Wildbret, steht hier aber nicht.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
       </div>
     </back>
   </text>

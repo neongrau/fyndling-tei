@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,10 +112,10 @@ Praxis. Rosinen im Mörser stoßen, Eigelb und Zucker darunterrühren, die Masse
         <note type="gloss" target="#rum-1799-orig" n="Weinbeer" resp="#fyndling">Getrocknete Weintrauben, also Rosinen. Rumpolt nennt dieselbe Zutat im selben Kapitel auch „schwartze Rosein“ (rum-1795, rum-1800), und dass die Beeren zerstoßen werden, passt zu Rosinen, nicht zu frischen Trauben.</note>
         <note type="gloss" target="#rum-1799-orig" n="Turten" resp="#fyndling">Torte: eine gefüllte Teighülle, die gebacken wird, im Ofen oder in der Turtenpfanne, vergleichbar mit einer Tarte. Den Teig aus Eigelb, Butter und Mehl beschreibt Rumpolt am Anfang des Kapitels (rum-1795). Pasteten behandelt er gesondert.</note>
         <note type="gloss" target="#rum-1799-orig" n="ruͤr es damit ab" resp="#fyndling">Abrühren: verrühren und die Masse damit fertigstellen; „damit“ meint Eigelb und Zucker. Ein Garschritt ist das nicht (vgl. „mach sie ab“ in rum-1812).</note>
-        <note type="interpretive_choice" target="#rum-1799-orig" n="schwartze Weinbeer" resp="#fyndling">Schwarze Rosinen. Rumpolt schreibt im selben Kapitel für dieselbe Zutat „schwartze Rosein“ (rum-1795, rum-1800), und die Beeren werden zerstoßen; beides spricht für getrocknete Trauben.</note>
-        <note type="interpretive_choice" target="#rum-1799-orig" n="etliche Eyerdotter / ein wenig Zucker" resp="#fyndling">Der Text nennt keine Mengen: „etliche“ heißt mehrere, die Zahl richtet sich nach der gewünschten Festigkeit der Masse.</note>
-        <note type="interpretive_choice" target="#rum-1799-orig" n="zerstoß sie" resp="#fyndling">Der Text sagt nur „zerstoßen“; wie fein, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-1799-orig" n="Füll zu einer Turten" resp="#fyndling">Der Text sagt nur „abrühren“ und „Füllung für eine Torte“; ob die Masse roh eingefüllt wird, steht hier nicht. Das Backen ist aus dem Kapitelanfang abgeleitet (rum-1795: im Ofen oder in der Turtenpfanne).</note>
+        <note type="interpretive_choice" target="#rum-1799-orig" n="schwartze Weinbeer" resp="#fyndling" subtype="lexical">Schwarze Rosinen. Rumpolt schreibt im selben Kapitel für dieselbe Zutat „schwartze Rosein“ (rum-1795, rum-1800), und die Beeren werden zerstoßen; beides spricht für getrocknete Trauben.<list type="alternatives"><item>Kleine schwarze Rosinen (Korinthen)<note type="rationale">Rumpolt nennt am Kapitelanfang ausdrücklich „kleine schwartze Rosein“ (rum-1795). Ob „schwartze Weinbeer“ hier dieselbe kleine Sorte meint, ist nicht belegt; beides funktioniert in der Füllung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1799-orig" n="etliche Eyerdotter / ein wenig Zucker" resp="#fyndling" subtype="contextual">Der Text nennt keine Mengen: „etliche“ heißt mehrere, die Zahl richtet sich nach der gewünschten Festigkeit der Masse.<list type="alternatives"><item>Etwa 3 bis 4 Eigelb auf 200 g Rosinen und 1 bis 2 EL Zucker, bis eine streichfähige Paste entsteht<note type="rationale">Moderner Ausgangspunkt für die Praxis; eine Annahme, keine Angabe der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1799-orig" n="zerstoß sie" resp="#fyndling" subtype="contextual">Der Text sagt nur „zerstoßen“; wie fein, bleibt offen.<list type="alternatives"><item>Im Mörser zu einer groben Paste stoßen<note type="rationale">Moderner Praxisweg: reicht, damit sich die Rosinen mit dem Eigelb verrühren lassen.</note></item><item>Fein stoßen und durchstreichen<note type="rationale">Ergibt eine glatte Füllung; im Text nicht gesagt, aber mit „zerstoßen“ vereinbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1799-orig" n="Füll zu einer Turten" resp="#fyndling" subtype="contextual">Der Text sagt nur „abrühren“ und „Füllung für eine Torte“; ob die Masse roh eingefüllt wird, steht hier nicht. Das Backen ist aus dem Kapitelanfang abgeleitet (rum-1795: im Ofen oder in der Turtenpfanne).<list type="alternatives"><item>Roh einfüllen und mit der Torte durchbacken<note type="rationale">Praktischer Normalfall: Das Eigelb stockt im Ofen und bindet die Füllung. Folgerung aus der Gattung, nicht aus dem Rezept selbst.</note></item></list></note>
       </div>
     </back>
   </text>

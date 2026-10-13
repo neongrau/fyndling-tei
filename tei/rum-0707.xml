@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,11 +138,11 @@ Praxis. Mengen nennt Rumpolt nicht. Rechne mit etwa eineinhalb Stunden, den grö
         <note type="gloss" target="#rum-0707-orig" n="Meybutter" resp="#fyndling">Maibutter: nach Grimms Wörterbuch „im mai bereitete, besonders schmackhafte butter“. Campes Wörterbuch (um 1800) begründet den guten Ruf mit dem jungen Gras und den jungen Kräutern, die die Kühe im Mai fressen.</note>
         <note type="gloss" target="#rum-0707-orig" n="vnzerlassen" resp="#fyndling">„Unzerlassen“, also nicht geschmolzen: Die Butter kommt frisch und fest dazu, nicht als flüssige oder ausgelassene Butter.</note>
         <note type="gloss" target="#rum-0707-orig" n="gelb oder weiß" resp="#fyndling">Rumpolt stellt zwei Fassungen nebeneinander. Für die gelbe nennt er kein eigenes Färbemittel; für die weiße kommen grüne Kräuter, Muskatblüte, ganzer Pfeffer und frische Maibutter darunter. Was die weiße Fassung genau weiß macht, erklärt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0707-orig" n="Solche Eyerdotter" resp="#fyndling">Die Dotter der unreifen Eier aus der geschlachteten Henne, die im vorigen Rezept (Nr. 18) hart gesotten werden: „Solche“ verweist zurück, und das Kapitel handelt von der Henne.</note>
-        <note type="interpretive_choice" target="#rum-0707-orig" n="Garzeit von Magen und Leber" resp="#fyndling">Der Text nennt weder Zeit noch Reihenfolge; das Folgerezept (Nr. 20) lässt Magen und Leber „gar an die statt sieden“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
-        <note type="interpretive_choice" target="#rum-0707-orig" n="eyngebrennt Mehl (Fett)" resp="#fyndling">Der Text nennt kein Fett für die Einbrenne; die Frage bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0707-orig" n="gantzen Pfeffer" resp="#fyndling">Ganze Pfefferkörner, ohne Farbangabe - mehr sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0707-orig" n="gruͤ ne Kraͤuter" resp="#fyndling">Grüne Kräuter, nicht näher benannt.</note>
+        <note type="interpretive_choice" target="#rum-0707-orig" n="Solche Eyerdotter" resp="#fyndling" subtype="contextual">Die Dotter der unreifen Eier aus der geschlachteten Henne, die im vorigen Rezept (Nr. 18) hart gesotten werden: „Solche“ verweist zurück, und das Kapitel handelt von der Henne.<list type="alternatives"><item>Gewöhnliches Eigelb von Hühnereiern, in der Brühe gar gezogen<note type="rationale">Praktische Lösung, wenn keine unreifen Eier zur Hand sind; der Wortlaut „Eyerdotter“ allein schließt sie nicht aus.</note></item><item>Hart gesottene Eierdotter wie in Nr. 20<note type="rationale">Das Folgerezept verlangt ausdrücklich hart gesottene Dotter; für Nr. 19 sagt der Text nichts dazu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0707-orig" n="Garzeit von Magen und Leber" resp="#fyndling" subtype="contextual">Der Text nennt weder Zeit noch Reihenfolge; das Folgerezept (Nr. 20) lässt Magen und Leber „gar an die statt sieden“.<list type="alternatives"><item>Magen früh in die Brühe oder vorgaren, Leber erst gegen Ende<note type="rationale">Moderne Praxis: Hühnermagen braucht lange, Leber wird bei langem Kochen trocken.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="interpretive_choice" target="#rum-0707-orig" n="eyngebrennt Mehl (Fett)" resp="#fyndling" subtype="contextual">Der Text nennt kein Fett für die Einbrenne; die Frage bleibt offen.<list type="alternatives"><item>Butter, hell angeschwitzt<note type="rationale">Naheliegende moderne Wahl, passt zur Maibutter der weißen Fassung; nicht im Text.</note></item><item>Schmalz<note type="rationale">Ebenso möglich; der Text entscheidet nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0707-orig" n="gantzen Pfeffer" resp="#fyndling" subtype="lexical">Ganze Pfefferkörner, ohne Farbangabe - mehr sagt der Text nicht.<list type="alternatives"><item>Ganzer schwarzer Pfeffer, mitgekocht und vor dem Anrichten herausgenommen<note type="rationale">Praktische Umsetzung; dass für die weiße Fassung weißer Pfeffer gemeint sei, ist nicht belegt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0707-orig" n="gruͤ ne Kraͤuter" resp="#fyndling" subtype="contextual">Grüne Kräuter, nicht näher benannt.<list type="alternatives"><item>Petersilie und Kerbel<note type="rationale">Eigene Wahl für die Praxis; Rumpolt nennt hier keine bestimmten Kräuter.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,7 +136,7 @@ Praxis. Ein Huhn etwa 60-75 Minuten weich sieden, die Brühe auffangen. Parallel
         <note type="gloss" target="#w1-177-orig" n="dikch" resp="#fyndling">Eine Schreibvariante von ‚dick‘. Die Sauce soll eine feste, sämige Konsistenz haben.</note>
         <note type="gloss" target="#w1-177-orig" n="cleb" resp="#fyndling">Bedeutet ‚klebt‘. Die Sauce soll so dick sein, dass sie gut am Fleisch haftet.</note>
         <note type="gloss" target="#w1-177-orig" n="mues" resp="#fyndling">‚Mus‘ bezeichnet im Mittelalter einen Brei oder ein Püree, oft aus Fleisch, Fisch oder Gemüse, das fein zerstoßen wurde. Hier nennt der Text nur die Lammfleisch-Variante am Ende ein ‚Mus‘ - das Grundgericht mit dem ganzen Huhn ist eine Sauce um ein Stück Fleisch, keine breiig durchgemuste Masse.</note>
-        <note type="interpretive_choice" target="#w1-177-orig" n="vaist" resp="#fyndling">Ich habe ‚mach es vaist‘ als ‚mache es reichhaltig/fett‘ übersetzt.</note>
+        <note type="interpretive_choice" target="#w1-177-orig" n="vaist" resp="#fyndling" subtype="lexical">Ich habe ‚mach es vaist‘ als ‚mache es reichhaltig/fett‘ übersetzt.<list type="alternatives"><item>Eine alternative Lesart wäre ‚füge Schmalz hinzu‘, da CoReMA ‚vaist‘ mit ‚lard‘ (Schmalz) glossiert. Die Berliner Schwesterhandschrift B4 (b4-174, wortgleiche Stelle) wählt diese konkrete Lesart als primär.<note type="rationale">Der Originaltext nennt kein explizites Fett zum Hinzufügen, sondern verwendet ‚vaist‘ als Adjektiv im Kontext der gewünschten Konsistenz. Beide Lesarten laufen praktisch auf dasselbe Ergebnis hinaus.</note></item></list></note>
       </div>
     </back>
   </text>

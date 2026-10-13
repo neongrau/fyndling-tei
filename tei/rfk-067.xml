@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,11 +114,11 @@ Praxis. Weiche Früchte wie Kirschen roh durch ein Sieb streichen, Steine und H�
         <note type="gloss" target="#rfk-067-orig" n="slehen" resp="#fyndling">Schlehen, die Früchte des Schwarzdorns; frisch sehr herb.</note>
         <note type="gloss" target="#rfk-067-orig" n="du isz czu dem fure" resp="#fyndling">„Tu es zum Feuer“: du ist hier die Befehlsform von tuon (tun), keine Anrede.</note>
         <note type="gloss" target="#rfk-067-orig" n="von yderley ein besunder gut eszen" resp="#fyndling">yderley = jederlei, von jeder Art; eszen = Speise, Gericht. Gemeint ist: aus jeder Sorte wird ein gutes Gericht.</note>
-        <note type="interpretive_choice" target="#rfk-067-orig" n="slag isz durch - roh oder vorgegart" resp="#fyndling">Der Text nennt kein Vorkochen. Für die Praxis: weiche Früchte wie Kirschen roh durchstreichen, harte wie Schlehen und Mispeln vorher in wenig Wasser weich dünsten und dann passieren.</note>
-        <note type="interpretive_choice" target="#rfk-067-orig" n="slag isz durch - Werkzeug" resp="#fyndling">Durch ein Sieb streichen.</note>
-        <note type="interpretive_choice" target="#rfk-067-orig" n="ein wenig honiges" resp="#fyndling">Honig nach Geschmack, je nach Frucht: bei Süßkirschen wenig, bei Schlehen und Mispeln deutlich mehr.</note>
-        <note type="interpretive_choice" target="#rfk-067-orig" n="besunder" resp="#fyndling">„besonders“: aus jeder Sorte wird ein besonders gutes Gericht.</note>
-        <note type="interpretive_choice" target="#rfk-067-orig" n="Aufbewahrung" resp="#fyndling">Der Text sagt nichts zur Haltbarkeit. Für die Praxis: frisch essen oder kühl aufbewahren.</note>
+        <note type="interpretive_choice" target="#rfk-067-orig" n="slag isz durch - roh oder vorgegart" resp="#fyndling" subtype="contextual">Der Text nennt kein Vorkochen. Für die Praxis: weiche Früchte wie Kirschen roh durchstreichen, harte wie Schlehen und Mispeln vorher in wenig Wasser weich dünsten und dann passieren.<list type="alternatives"><item>Alle Früchte roh durchschlagen, wie der Text wörtlich liest.<note type="rationale">Wortgetreu, bei harten Schlehen und frischen Mispeln aber praktisch kaum machbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-067-orig" n="slag isz durch - Werkzeug" resp="#fyndling" subtype="contextual">Durch ein Sieb streichen.<list type="alternatives"><item>Durch ein Tuch streichen.<note type="rationale">Der Text nennt kein Gerät; Sieb und Tuch sind beide üblich, das Ergebnis ist eine glatte Masse ohne Steine und Häute.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-067-orig" n="ein wenig honiges" resp="#fyndling" subtype="contextual">Honig nach Geschmack, je nach Frucht: bei Süßkirschen wenig, bei Schlehen und Mispeln deutlich mehr.<list type="alternatives"><item>„Ein wenig“ wörtlich als kleine Menge für jede Frucht.<note type="rationale">Wortgetreu; ergibt bei sauren Früchten wie Schlehen ein sehr herbes Mus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-067-orig" n="besunder" resp="#fyndling" subtype="lexical">„besonders“: aus jeder Sorte wird ein besonders gutes Gericht.<list type="alternatives"><item>„eigens, jeweils für sich“: jede Fruchtsorte ergibt ein eigenes Gericht, kein Mischmus.<note type="rationale">Die Parallelfassung mha-270 sagt von ainem yeglichen ain muosz (von jedem eines) und stützt diese Lesart; beide Bedeutungen sind für besunder möglich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-067-orig" n="Aufbewahrung" resp="#fyndling" subtype="contextual">Der Text sagt nichts zur Haltbarkeit. Für die Praxis: frisch essen oder kühl aufbewahren.<list type="alternatives"><item>Das dicke Mus als Vorrat aufbewahren.<note type="rationale">Nicht belegt: Der Text nennt weder Aufbewahrung noch ein Verfahren zum Haltbarmachen, und mit wenig Honig ist das Mus nicht lagerstabil.</note></item></list></note>
       </div>
     </back>
   </text>

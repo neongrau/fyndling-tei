@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,12 +137,12 @@ Praxis. Kalbsfüße beim Metzger vorbestellen, am besten schon gespalten. Für d
         <note type="gloss" target="#rum-0142-orig" n="backen" resp="#fyndling">„Back es fein auß“ heißt hier: in heißer Butter ausbacken, nicht im Ofen. Wie viel Butter in der Pfanne steht, sagt der Text nicht; er verlangt nur, dass die Füße weder braun noch schwarz werden.</note>
         <note type="gloss" target="#rum-0142-orig" n="schlechten Teig" resp="#fyndling">„Schlecht“ bedeutet im Frühneuhochdeutschen meist „schlicht, einfach“. Rumpolt meint: Mancher hält sich für einen guten Koch und kann nicht einmal einen einfachen Teig anmachen.</note>
         <note type="gloss" target="#rum-0142-orig" n="Pettersilgen" resp="#fyndling">Petersilie.</note>
-        <note type="interpretive_choice" target="#rum-0142-orig" n="seubers auß / außgeseubert" resp="#fyndling">Die gesottenen Füße säubern: Haare, Hautreste und Unreines entfernen, die Füße bleiben ganz. Der Text sagt nur „auß seubern“, und danach nimmt man die Füße „eins nach dem andern“ aus dem Teig.</note>
-        <note type="interpretive_choice" target="#rum-0142-orig" n="so viel als du kanst mit zweyen Fingern auffheben" resp="#fyndling">Eine Prise Mehl auf drei oder vier Eier: ein sehr dünner, eierreicher Teig, der die Füße nur überzieht.</note>
-        <note type="interpretive_choice" target="#rum-0142-orig" n="in heisse Butter/ back es fein auß" resp="#fyndling">In heißer Butter ausbacken; die Menge der Butter lässt der Text offen, reichlich Butter, in der die Füße halb oder ganz schwimmen, ist möglich.</note>
-        <note type="interpretive_choice" target="#rum-0142-orig" n="wenn sie es gnug haben" resp="#fyndling">Ob die Füße genug ausgebacken sind: Die Hülle ist gestockt und hell.</note>
-        <note type="interpretive_choice" target="#rum-0142-orig" n="fein grob geklaubt" resp="#fyndling">Die Petersilie grob gezupft, also Blättchen von den Stielen gelesen und nicht gehackt; „fein“ verstärkt hier nur: schön grob.</note>
-        <note type="interpretive_choice" target="#rum-0142-orig" n="Silber Blat" resp="#fyndling">Eine flache silberne Anrichteplatte.</note>
+        <note type="interpretive_choice" target="#rum-0142-orig" n="seubers auß / außgeseubert" resp="#fyndling" subtype="contextual">Die gesottenen Füße säubern: Haare, Hautreste und Unreines entfernen, die Füße bleiben ganz. Der Text sagt nur „auß seubern“, und danach nimmt man die Füße „eins nach dem andern“ aus dem Teig.<list type="alternatives"><item>Die Knochen auslösen und nur Fleisch und Haut im Teig ausbacken.<note type="rationale">Steht nicht im Text; möglich, wenn man die Füße leichter essen will, aber Rumpolt verlangt es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0142-orig" n="so viel als du kanst mit zweyen Fingern auffheben" resp="#fyndling" subtype="contextual">Eine Prise Mehl auf drei oder vier Eier: ein sehr dünner, eierreicher Teig, der die Füße nur überzieht.<list type="alternatives"><item>Die Füße zweimal durch den Teig ziehen, damit mehr Hülle haftet.<note type="rationale">Heutige Praxis bei so dünnem Teig; der Text nennt nur ein Eintauchen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0142-orig" n="in heisse Butter/ back es fein auß" resp="#fyndling" subtype="contextual">In heißer Butter ausbacken; die Menge der Butter lässt der Text offen, reichlich Butter, in der die Füße halb oder ganz schwimmen, ist möglich.<list type="alternatives"><item>Pfanne mit etwa 1 cm heißer Butter oder Butterschmalz, mittlere Hitze, einmal wenden.<note type="rationale">Heutige Umsetzung; spart Butter und hält die Hitze niedrig genug, dass nichts braun wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0142-orig" n="wenn sie es gnug haben" resp="#fyndling" subtype="contextual">Ob die Füße genug ausgebacken sind: Die Hülle ist gestockt und hell.<list type="alternatives"><item>Ob die Füße gar sind.<note type="rationale">Unwahrscheinlich, denn sie sind schon vorher gar gesotten; es geht nur um den Ausbackgrad.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0142-orig" n="fein grob geklaubt" resp="#fyndling" subtype="lexical">Die Petersilie grob gezupft, also Blättchen von den Stielen gelesen und nicht gehackt; „fein“ verstärkt hier nur: schön grob.<list type="alternatives"><item>Nur verlesen: schlechte Blätter aussortieren, Zweigspitzen ganz lassen und als Garnitur darüberlegen.<note type="rationale">„Klauben“ heißt auch „auslesen“; das Ergebnis auf dem Teller ist fast dasselbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0142-orig" n="Silber Blat" resp="#fyndling" subtype="lexical">Eine flache silberne Anrichteplatte.<list type="alternatives"><item>Ein flacher silberner Teller.<note type="rationale">„Blat“ als flaches Anrichtegeschirr lässt beides zu; für das Gericht gleichgültig.</note></item></list></note>
       </div>
     </back>
   </text>

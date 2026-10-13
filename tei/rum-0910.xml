@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,9 +106,9 @@ Praxis. Beim Fischhändler ein Mittelstück vom Lachs mit Rückgrat verlangen. G
         <note type="gloss" target="#rum-0910-orig" n="Salm" resp="#fyndling">Der Lachs. Rumpolt widmet ihm ein eigenes Kapitel mit siebzehn Speisen; dies ist die elfte.</note>
         <note type="gloss" target="#rum-0910-orig" n="kalt abgebraten/ vnnd kalt lassen werden" resp="#fyndling">Fertig gebraten und danach kalt werden lassen, um das Stück kalt aufzutragen. „Kalt lassen werden“ ist Rumpolts feste Wendung für „kalt werden lassen“.</note>
         <note type="gloss" target="#rum-0910-orig" n="kleinen Capern" resp="#fyndling">Kapern, die eingelegten Blütenknospen des Kapernstrauchs. Rumpolt verlangt ausdrücklich kleine; eine Sorte nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0910-orig" n="Gradt" resp="#fyndling">Rückgrat des Lachses samt dem daran sitzenden Fleisch, also ein Mittelstück. Das Frühneuhochdeutsche Wörterbuch belegt grat als „Rückgrat, Wirbelsäule von Tieren“; Rumpolt löst im Fischteil „das Fleisch von dem Gradt“ ab, und hier wird der Gradt als eigenes Gericht gebraten und kalt oder warm aufgetragen.</note>
-        <note type="interpretive_choice" target="#rum-0910-orig" n="oder warm geben mit kleinen Capern" resp="#fyndling">Die Kapern gehören nach dem Satzbau nur zur warmen Fassung; die kalte wird pur aufgetragen.</note>
-        <note type="interpretive_choice" target="#rum-0910-orig" n="kalt abgebraten … oder warm" resp="#fyndling">Zwei Arten, dasselbe gebratene Stück aufzutragen: abgekühlt oder warm. Sie stehen nebeneinander, nicht als Abfolge.</note>
+        <note type="interpretive_choice" target="#rum-0910-orig" n="Gradt" resp="#fyndling" subtype="lexical">Rückgrat des Lachses samt dem daran sitzenden Fleisch, also ein Mittelstück. Das Frühneuhochdeutsche Wörterbuch belegt grat als „Rückgrat, Wirbelsäule von Tieren“; Rumpolt löst im Fischteil „das Fleisch von dem Gradt“ ab, und hier wird der Gradt als eigenes Gericht gebraten und kalt oder warm aufgetragen.<list type="alternatives"><item>Nur das Rückgrat, also die Gräte mit wenig anhaftendem Fleisch<note type="rationale">Wörtlich nicht auszuschließen, weil der Eintrag nicht sagt, wie viel Fleisch daran ist. Dagegen spricht, dass Rumpolt das Stück als eigene Speise anrichtet.</note></item><item>Fischgräte im heutigen Sinn<note type="rationale">Für eine einzelne Gräte als Gericht gibt es keinen Anhalt; im Buch steht Gradt beim Fisch für das ganze Rückgrat.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0910-orig" n="oder warm geben mit kleinen Capern" resp="#fyndling" subtype="contextual">Die Kapern gehören nach dem Satzbau nur zur warmen Fassung; die kalte wird pur aufgetragen.<list type="alternatives"><item>Kapern zu beiden Fassungen<note type="rationale">Beim Nachkochen naheliegend, weil Kapern auch zu kaltem Fisch passen; der Text bindet sie aber nur an „warm geben“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0910-orig" n="kalt abgebraten … oder warm" resp="#fyndling" subtype="contextual">Zwei Arten, dasselbe gebratene Stück aufzutragen: abgekühlt oder warm. Sie stehen nebeneinander, nicht als Abfolge.<list type="alternatives"><item>Erst kalt werden lassen, dann wieder erwärmen<note type="rationale">Das „oder“ trennt die beiden Fassungen; ein Wiedererwärmen nennt der Text nicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,10 +125,10 @@ Praxis. Pfeffer nach Geschmack, Brühe so, dass sie die Scheiben knapp bedeckt. 
         <note type="gloss" target="#rum-0292-orig" n="Hirsch Geil" resp="#fyndling">Hirschhoden. Lexer führt geile als „hode“, das Frühneuhochdeutsche Wörterbuch geile als „Hoden, Geschlechtsteil (von Tieren)“. Rumpolt gebraucht das Wort durchgehend so, im Hirschkapitel auch bei den Hirschhoden auf dem Rost.</note>
         <note type="gloss" target="#rum-0292-orig" n="an die statt sieden" resp="#fyndling">Gar sieden.</note>
         <note type="gloss" target="#rum-0292-orig" n="im Silber auffsieden" resp="#fyndling">In Silbergeschirr aufkochen; welche Gefäßform, sagt der Text nicht. Rumpolt gebraucht Silber auch sonst für Geschirr, etwa bei den Lammköpfen „in einem Silber backen“ oder im Hammelkapitel „auff der Schüssel oder Silber“.</note>
-        <note type="interpretive_choice" target="#rum-0292-orig" n="im Silber auffsieden" resp="#fyndling">Die Scheiben werden mit der Brühe in einem Silbergefäß aufgekocht und darin warm aufgetragen. Grund: Der Text bindet „im Silber“ an „auffsieden“, und Rumpolt kocht auch anderswo direkt im Silber, damit nicht mehr umgefüllt werden muss (Lammköpfe „in einem Silber backen“).</note>
-        <note type="interpretive_choice" target="#rum-0292-orig" n="an die statt sieden (Garzeit)" resp="#fyndling">Nach Gargrad, nicht nach Uhr: Geweih und Hoden sieden, bis sie gar sind. Eine Zeit nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0292-orig" n="die sauber gemacht" resp="#fyndling">Die Hoden werden vor dem Sieden gesäubert; ob sie dabei gehäutet werden, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0292-orig" n="gute Hennenbruͤh / gestossenem Pfeffer (Mengen)" resp="#fyndling">Keine Mengenangabe; „gute Hennenbrüh“ heißt kräftige Hühnerbrühe.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0292-orig" n="im Silber auffsieden" resp="#fyndling" subtype="contextual">Die Scheiben werden mit der Brühe in einem Silbergefäß aufgekocht und darin warm aufgetragen. Grund: Der Text bindet „im Silber“ an „auffsieden“, und Rumpolt kocht auch anderswo direkt im Silber, damit nicht mehr umgefüllt werden muss (Lammköpfe „in einem Silber backen“).<list type="alternatives"><item>Aufkochen in einem gewöhnlichen Topf, Silbergeschirr nur zum Anrichten.<note type="rationale">Möglich, wenn „im Silber“ lose auf das Auftragen bezogen ist; der Wortlaut stützt das weniger.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0292-orig" n="an die statt sieden (Garzeit)" resp="#fyndling" subtype="contextual">Nach Gargrad, nicht nach Uhr: Geweih und Hoden sieden, bis sie gar sind. Eine Zeit nennt der Text nicht.<list type="alternatives"><item>Heutige Praxis: sieden, bis das Stück beim Einstechen weich ist, ohne feste Dauer.<note type="rationale">Moderner Richtwert, keine Angabe Rumpolts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0292-orig" n="die sauber gemacht" resp="#fyndling" subtype="contextual">Die Hoden werden vor dem Sieden gesäubert; ob sie dabei gehäutet werden, sagt der Text nicht.<list type="alternatives"><item>Heutige Praxis: die äußere Hülle vor dem Garen entfernen.<note type="rationale">Üblich, aber kein Textschritt bei Rumpolt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0292-orig" n="gute Hennenbruͤh / gestossenem Pfeffer (Mengen)" resp="#fyndling" subtype="contextual">Keine Mengenangabe; „gute Hennenbrüh“ heißt kräftige Hühnerbrühe.<list type="alternatives"><item>Heutige Praxis: Pfeffer nach Geschmack, Brühe so, dass sie die Scheiben knapp bedeckt.<note type="rationale">Moderner Vorschlag, nicht aus dem Text.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

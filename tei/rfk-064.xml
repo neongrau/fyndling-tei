@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,8 +127,8 @@ Praxis. Für die Schälchen einen festen Teig aus Mehl und Eiern kneten, dünn �
         <note type="gloss" target="#rfk-064-orig" n="uff gen" resp="#fyndling">„Aufgehen“, sich heben. Der Text sagt nicht, wie stark, und nennt kein eigenes Treibmittel.</note>
         <note type="gloss" target="#rfk-064-orig" n="wurcze" resp="#fyndling">Gewürze. Welche gemeint sind, lässt das Rezept offen.</note>
         <note type="gloss" target="#rfk-064-orig" n="hoffelich essen" resp="#fyndling">Ein höfisches, feines Gericht, der Hoftafel gemäß. Nicht „höflich“ im heutigen Sinn.</note>
-        <note type="interpretive_choice" target="#rfk-064-orig" n="dey ge von eyeren" resp="#fyndling">Ein fester Teig aus Mehl und Eiern. Nur ein solcher Teig wird beim Backen hart und hält über dem model seine Form; dieselbe Formel im Schaugebäck rfk-073 meint ebenfalls eine hart gebackene Schale.</note>
-        <note type="interpretive_choice" target="#rfk-064-orig" n="slag das alles dorch" resp="#fyndling">Alles gründlich durchmischen und durcharbeiten, bis Huhn, Eier, Gewürze und Honig eine gleichmäßige Masse bilden.</note>
+        <note type="interpretive_choice" target="#rfk-064-orig" n="dey ge von eyeren" resp="#fyndling" subtype="contextual">Ein fester Teig aus Mehl und Eiern. Nur ein solcher Teig wird beim Backen hart und hält über dem model seine Form; dieselbe Formel im Schaugebäck rfk-073 meint ebenfalls eine hart gebackene Schale.<list type="alternatives"><item>Ein Teig nur aus gequirlten Eiern, ohne Mehl.<note type="rationale">Der Text nennt kein Mehl, und „Teig mit Eiern“ schließt diese Lesart sprachlich nicht aus. Eine formstabile, harte Schale ergäbe ein reiner Eierteig allerdings kaum.</note></item></list></note>
+        <note type="interpretive_choice" target="#rfk-064-orig" n="slag das alles dorch" resp="#fyndling" subtype="lexical">Alles gründlich durchmischen und durcharbeiten, bis Huhn, Eier, Gewürze und Honig eine gleichmäßige Masse bilden.<list type="alternatives"><item>Die Masse durch ein Tuch oder Sieb streichen (passieren).<note type="rationale">durchslahen kann im Mittelhochdeutschen auch „durchschlagen, durchstreichen“ bedeuten. Ein Sieb oder Tuch nennt das Rezept hier aber nicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -138,10 +143,10 @@ Praxis. Petersilienwurzel in Scheiben in der Erbsenbrühe weich sieden, dann Ing
         <note type="gloss" target="#rum-0949-orig" n="vngeschmaͤltzt" resp="#fyndling">„Ungeschmälzte“ Butter ist frische, nicht zerlassene Butter, also nicht zu Schmalz ausgelassen. Rumpolt sagt es im Hausen-Rezept selbst so: „frische Butter, die unzerlassen ist“.</note>
         <note type="gloss" target="#rum-0949-orig" n="eyngebrennt Mehl" resp="#fyndling">Eine Einbrenne: in Fett angeschwitztes Mehl, das die Brühe bindet. Welches Fett und wie dunkel, sagt der Text nicht; die Butter nennt er gesondert.</note>
         <note type="gloss" target="#rum-0949-orig" n="gequellt" resp="#fyndling">Überbrüht, also kurz mit heißem Wasser abgebrüht. Im Hausen-Rezept heißt derselbe Spinat „vberquellt“.</note>
-        <note type="interpretive_choice" target="#rum-0949-orig" n="duͤrre Foren" resp="#fyndling">Getrocknete Forelle; ein Wässern vor dem Gebrauch nennt der Text nicht. Getrockneter Fisch wird üblicherweise eingeweicht, das bleibt hier offen und wird nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0949-orig" n="Bruͤh … vber die Foren" resp="#fyndling">Die Brühe kommt über die Forellen; ob der Fisch darin kurz mitzieht, lässt der Text offen. Historisch denkbar ist, den Fisch kurz in der Brühe ziehen zu lassen.</note>
-        <note type="interpretive_choice" target="#rum-0949-orig" n="eyngebrennt Mehl" resp="#fyndling">Einbrenne als Bindemittel; die Farbe nennt der Text nicht, eine braune Einbrenne ist ebenso möglich.</note>
-        <note type="interpretive_choice" target="#rum-0949-orig" n="saͤurlich machen oder nicht" resp="#fyndling">Säuern ist freigestellt, ein Mittel nennt der Text nicht. Historisch kämen Essig oder Verjus in Frage; bei den frischen Forellen im selben Kapitel nennt Rumpolt Weinessig.</note>
+        <note type="interpretive_choice" target="#rum-0949-orig" n="duͤrre Foren" resp="#fyndling" subtype="contextual">Getrocknete Forelle; ein Wässern vor dem Gebrauch nennt der Text nicht. Getrockneter Fisch wird üblicherweise eingeweicht, das bleibt hier offen und wird nicht ergänzt.<list type="alternatives"><item>Geräucherte Forelle direkt verwenden und nur in der Brühe erwärmen<note type="rationale">Praxis heute: geräucherte Ware braucht keine Vorbereitung, und der Text lässt beide Fischformen zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0949-orig" n="Bruͤh … vber die Foren" resp="#fyndling" subtype="contextual">Die Brühe kommt über die Forellen; ob der Fisch darin kurz mitzieht, lässt der Text offen. Historisch denkbar ist, den Fisch kurz in der Brühe ziehen zu lassen.<list type="alternatives"><item>Fertige Brühe über die Forellen gießen, Fisch nur durchwärmen<note type="rationale">Praxisvorschlag der Zubereitung: der Fisch ist schon haltbar gemacht und muss nicht garen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0949-orig" n="eyngebrennt Mehl" resp="#fyndling" subtype="contextual">Einbrenne als Bindemittel; die Farbe nennt der Text nicht, eine braune Einbrenne ist ebenso möglich.<list type="alternatives"><item>Hell anschwitzen<note type="rationale">Zweck ist das Binden; ohne Farbangabe die zurückhaltende Wahl.</note></item><item>Bei sämiger Erbsenbrühe wenig oder kein Mehl<note type="rationale">Im Rezept für geräucherte Saiblinge brennt Rumpolt nur bei dünner Erbsenbrühe Mehl ein.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0949-orig" n="saͤurlich machen oder nicht" resp="#fyndling" subtype="contextual">Säuern ist freigestellt, ein Mittel nennt der Text nicht. Historisch kämen Essig oder Verjus in Frage; bei den frischen Forellen im selben Kapitel nennt Rumpolt Weinessig.<list type="alternatives"><item>Ohne Säure oder nach Geschmack<note type="rationale">Der Text stellt es frei; kein bestimmtes Mittel ergänzen.</note></item></list></note>
       </div>
     </back>
   </text>

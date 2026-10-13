@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,10 +106,10 @@ Gerät und Fett. Offen. Spieß oder Rost über Glut ist die naheliegende Wahl, e
 Praxis. Küchenfertige Wachteln nehmen, das Rupfen und Ausnehmen setzt der Text voraus. Am Spieß oder auf dem Rost über mittlerer Glut braten, sobald die Haut warm wird mit Grieß bestreuen und das alle paar Minuten wiederholen. Zügig fertig braten, die Wachteln müssen aber durchgegart sein. Die Zubereitungszeit von etwa 20 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
         <note type="gloss" target="#rum-0808-orig" n="Grieß / Grießmehl" resp="#fyndling">Getreidegrieß. Rumpolt nennt ihn hier „sauber“ (gereinigt) und gleich darauf Grießmehl zum Bestreuen; beides meint dasselbe Produkt. Sonst kennt er Grieß als Speise, etwa im Grießbrei und im Grießmus. Die Wörterbücher führen daneben die Bedeutung „Sand, Kies“, die hier nicht gemeint ist. Die Getreideart nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0808-orig" n="brats geschwindt hinweg" resp="#fyndling">„Brate sie zügig fertig“: geschwind heißt rasch, hinweg so viel wie durch, zu Ende.</note>
-        <note type="interpretive_choice" target="#rum-0808-orig" n="saubern Grieß" resp="#fyndling">Gereinigter, verlesener Getreidegrieß. Rumpolt gebraucht Grieß und Grießmehl sonst durchweg als Getreideprodukt, beim gebratenen Butterweck ebenfalls zum Bestreuen am Feuer.</note>
-        <note type="interpretive_choice" target="#rum-0808-orig" n="Getreideart des Grießes" resp="#fyndling">Gereinigter, gesiebter Grieß ohne genannte Getreideart; Rumpolt legt sich nicht fest.</note>
-        <note type="interpretive_choice" target="#rum-0808-orig" n="wenn die Wachteln anfahen warm zu werden" resp="#fyndling">Bestreut wird schon beim ersten Erwärmen am Feuer, bevor die Wachteln Farbe nehmen, und dann immer wieder.</note>
-        <note type="interpretive_choice" target="#rum-0808-orig" n="Bratgerät und Fett" resp="#fyndling">Offen: Rumpolt kennt Spieß und Pfanne, nennt hier aber keins und auch kein Fett.</note>
+        <note type="interpretive_choice" target="#rum-0808-orig" n="saubern Grieß" resp="#fyndling" subtype="lexical">Gereinigter, verlesener Getreidegrieß. Rumpolt gebraucht Grieß und Grießmehl sonst durchweg als Getreideprodukt, beim gebratenen Butterweck ebenfalls zum Bestreuen am Feuer.<list type="alternatives"><item>Grieß im Sinne von grobem Sand oder Kies<note type="rationale">Die ältere Grundbedeutung des Wortes, die Wörterbücher zuerst nennen. Zum Bestreuen eines Bratens passt sie nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0808-orig" n="Getreideart des Grießes" resp="#fyndling" subtype="contextual">Gereinigter, gesiebter Grieß ohne genannte Getreideart; Rumpolt legt sich nicht fest.<list type="alternatives"><item>Weizengrieß, fein bis mittel<note type="rationale">Die naheliegende und heute leicht erhältliche Wahl, aber nicht aus dem Text belegt. Maisgrieß scheidet aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0808-orig" n="wenn die Wachteln anfahen warm zu werden" resp="#fyndling" subtype="contextual">Bestreut wird schon beim ersten Erwärmen am Feuer, bevor die Wachteln Farbe nehmen, und dann immer wieder.<list type="alternatives"><item>Wachteln anbraten, bis die Haut warm und leicht feucht ist, dann mehrmals mit Grieß bestreuen<note type="rationale">Moderne Praxis mit demselben Ergebnis; der Text legt nur fest, dass nicht vorab paniert wird, sondern ab dem Warmwerden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0808-orig" n="Bratgerät und Fett" resp="#fyndling" subtype="contextual">Offen: Rumpolt kennt Spieß und Pfanne, nennt hier aber keins und auch kein Fett.<list type="alternatives"><item>Spieß oder Rost über Glut, bei Bedarf wenig Fett<note type="rationale">Naheliegende moderne Wahl, besonders am Lagerfeuer; eine Textaussage ist es nicht.</note></item><item>Pfanne mit wenig Fett<note type="rationale">Ebenso möglich; der Text schließt es nicht aus.</note></item></list></note>
       </div>
     </back>
   </text>

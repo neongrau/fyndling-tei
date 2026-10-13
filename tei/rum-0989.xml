@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,11 +137,11 @@ Praxis. Ein großer Topf oder Fischkessel und eine Pfanne reichen. Der Hecht hat
         <note type="gloss" target="#rum-0989-orig" n="Weck" resp="#fyndling">Weißbrot.</note>
         <note type="gloss" target="#rum-0989-orig" n="Muscatenbluͤt" resp="#fyndling">Muskatblüte (Macis), der getrocknete Samenmantel der Muskatnuss.</note>
         <note type="gloss" target="#rum-0989-orig" n="im Speck gekocht" resp="#fyndling">Rumpolts zweiter Name für dieses Gericht; sein Register führt es als „Hecht im Speck blaw abgesotten mit geroͤstem Brot“. In Nr. 8 und 9 des Hechtkapitels (rum-0975, rum-0976) wird klein geschnittener, heißer Speck über den gesottenen Hecht gegossen. In diesem Rezept steht kein Speck; warum es trotzdem so heißt, sagt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0989-orig" n="im Speck gekocht" resp="#fyndling">Name des Gerichtstyps, kein Arbeitsschritt: Rumpolt ordnet das Gericht der Familie „Hecht im Speck“ zu (rum-0975/0976, Register „Hecht im Speck blaw abgesotten mit geroͤstem Brot“). Im Text steht kein Speck, also wird keiner ergänzt. Warum der Name passt, ist offen.</note>
-        <note type="interpretive_choice" target="#rum-0989-orig" n="blaw sieden" resp="#fyndling">„Blaw“ beschreibt, wie der gesottene Fisch aussieht. Der Text nennt im Sud weder Salz noch Essig; der Essig steht erst in der Sauce.</note>
-        <note type="interpretive_choice" target="#rum-0989-orig" n="Erbsbruͤh" resp="#fyndling">Das Kochwasser gekochter Erbsen als dünne Brühe; der Text sagt nur „Erbsbrüh“.</note>
-        <note type="interpretive_choice" target="#rum-0989-orig" n="Meybutter" resp="#fyndling">Im Mai gewonnene Butter (FWB meienbutter), frisch und nicht zerlassen in die Sauce gegeben.</note>
-        <note type="interpretive_choice" target="#rum-0989-orig" n="laß miteinander eynsieden" resp="#fyndling">Alles zusammen sieden lassen. Wie lange und wie dick, sagt der Text nicht; gebunden wird die Sauce durch das eingebrannte Mehl.</note>
+        <note type="interpretive_choice" target="#rum-0989-orig" n="im Speck gekocht" resp="#fyndling" subtype="contextual">Name des Gerichtstyps, kein Arbeitsschritt: Rumpolt ordnet das Gericht der Familie „Hecht im Speck“ zu (rum-0975/0976, Register „Hecht im Speck blaw abgesotten mit geroͤstem Brot“). Im Text steht kein Speck, also wird keiner ergänzt. Warum der Name passt, ist offen.<list type="alternatives"><item>Die in Schmalz gerösteten Brocken übernehmen die Rolle des heißen Speckgusses aus rum-0975<note type="rationale">Naheliegend, weil in beiden Fällen heißes Fett obenauf über den gesottenen Hecht kommt; belegt ist diese Gleichsetzung aber nirgends.</note></item><item>„Speck“ im weiteren Sinn von Fett (Grimms Wörterbuch: lardum, adeps)<note type="rationale">Lexikalisch möglich; im Rezept selbst gibt es dafür keinen Hinweis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0989-orig" n="blaw sieden" resp="#fyndling" subtype="contextual">„Blaw“ beschreibt, wie der gesottene Fisch aussieht. Der Text nennt im Sud weder Salz noch Essig; der Essig steht erst in der Sauce.<list type="alternatives"><item>Den ganzen Hecht in gesalzenem Wasser blau sieden wie heute Forelle blau<note type="rationale">Praxis für heute; so machen es auch die Nachbarnummern rum-0975 und rum-0977, die gesalzenes Wasser nennen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0989-orig" n="Erbsbruͤh" resp="#fyndling" subtype="contextual">Das Kochwasser gekochter Erbsen als dünne Brühe; der Text sagt nur „Erbsbrüh“.<list type="alternatives"><item>Passierte Erbsenbrühe als sämige Saucenbasis<note type="rationale">Praxis für heute, gibt der Sauce mehr Körper; ob Rumpolt die Erbsen durchgestrichen hat, sagt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0989-orig" n="Meybutter" resp="#fyndling" subtype="lexical">Im Mai gewonnene Butter (FWB meienbutter), frisch und nicht zerlassen in die Sauce gegeben.<list type="alternatives"><item>Gute frische Butter, in Stücken in die Sauce gegeben<note type="rationale">Praxis für heute; der Text verlangt nur frische, nicht zerlassene Butter.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0989-orig" n="laß miteinander eynsieden" resp="#fyndling" subtype="lexical">Alles zusammen sieden lassen. Wie lange und wie dick, sagt der Text nicht; gebunden wird die Sauce durch das eingebrannte Mehl.<list type="alternatives"><item>Einkochen, bis die Sauce dicker wird<note type="rationale">Das Deutsche Wörterbuch (Neubearbeitung) kennt „einsieden“ als konzentrierter, dickflüssiger werden; ob Rumpolt hier reduziert, bleibt offen.</note></item></list></note>
       </div>
     </back>
   </text>

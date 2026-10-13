@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,8 +103,8 @@
         <note type="gloss" target="#men-038-orig" n="pois" resp="#fyndling">Erbsen</note>
         <note type="gloss" target="#men-038-orig" n="desgastee" resp="#fyndling">verkocht, verdampft</note>
         <note type="gloss" target="#men-038-orig" n="parcuire" resp="#fyndling">fertigkochen, durchgaren</note>
-        <note type="interpretive_choice" target="#men-038-orig" n="avant que les pois" resp="#fyndling">Die Phrase wird als Referenz für die Kochdauer oder die gewünschte Weichheit der Zwiebeln interpretiert: 'etwa so lange, wie man Erbsen kocht'.</note>
-        <note type="interpretive_choice" target="#men-038-orig" n="puree" resp="#fyndling">Der Begriff 'Püree' wird generisch als 'Püree' übersetzt, das eine beliebige Art von pürierter Zutat oder eingedickter Flüssigkeit sein kann.</note>
+        <note type="interpretive_choice" target="#men-038-orig" n="avant que les pois" resp="#fyndling">Die Phrase wird als Referenz für die Kochdauer oder die gewünschte Weichheit der Zwiebeln interpretiert: 'etwa so lange, wie man Erbsen kocht'.<list type="alternatives"><item>Die Phrase könnte bedeuten 'bevor man die Erbsen hinzufügt'.<note type="rationale">Dies würde darauf hindeuten, dass die Zwiebeln eine Komponente für ein Erbsengericht sind, aber das Rezept erwähnt keine weiteren Schritte mit Erbsen.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-038-orig" n="puree" resp="#fyndling">Der Begriff 'Püree' wird generisch als 'Püree' übersetzt, das eine beliebige Art von pürierter Zutat oder eingedickter Flüssigkeit sein kann.<list type="alternatives"><item>Es könnte sich um ein spezifisches Gemüse- oder Kräuterpüree handeln, oder um eine eingedickte Brühe.<note type="rationale">Im mittelalterlichen Kontext wurden oft pürierte Gemüse oder stark reduzierte Brühen verwendet, um Gerichten Geschmack und Bindung zu verleihen und wässrige Noten zu überdecken.</note></item></list></note>
       </div>
     </back>
   </text>

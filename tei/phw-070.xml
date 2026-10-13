@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -140,10 +145,10 @@ Praxis. Kalbswürstchen kurz scharf anbraten, ohne sie durchzugaren. In eine run
         <note type="gloss" target="#phw-070-orig" n="drachterlin" resp="#fyndling">Ein kleiner Trichter.</note>
         <note type="gloss" target="#phw-070-orig" n="agerest" resp="#fyndling">Verjus, der Saft unreifer Trauben, der als Säuerungsmittel verwendet wird.</note>
         <note type="gloss" target="#phw-070-orig" n="suben brye" resp="#fyndling">Eine klare Brühe, hier als Alternative zu Süßwein.</note>
-        <note type="interpretive_choice" target="#phw-070-orig" n="gerenn" resp="#fyndling">Die Lesart ‚gerinnen‘ oder ‚fest werden‘ wurde gewählt, da sie sich auf die gewünschte Konsistenz der Pastetenfüllung bezieht.</note>
-        <note type="interpretive_choice" target="#phw-070-orig" n="letzlin" resp="#fyndling">Die Lesart ‚Rand‘ wurde gewählt, da sie im Kontext von ‚dar vm‘ (darum) am sinnvollsten ist, um eine Formgebung der Pastete zu beschreiben.</note>
-        <note type="interpretive_choice" target="#phw-070-orig" n="nu" resp="#fyndling">Im Ausdruck ‚brats nit vor nu wan dus hin neyn hast gelegtt‘ wird ‚nu‘ als ‚nun/dann‘ gelesen, als Satzanfang: ‚Brate sie nicht vorher an. Wenn du sie hineingelegt hast, dann gib …‘.</note>
-        <note type="interpretive_choice" target="#phw-070-orig" n="Garzustand/Backdauer" resp="#fyndling">Der Text nennt kein Zeit- oder Temperaturkriterium für die aus nur angebratenen, nicht durchgegarten Kalbswürstchen bestehende Füllung (‚so lange du magst‘, ‚fast gebacken‘) - der Garpunkt wurde vermutlich am offenen Ofen nach Augenschein und Erfahrung beurteilt.</note>
+        <note type="interpretive_choice" target="#phw-070-orig" n="gerenn" resp="#fyndling" subtype="lexical">Die Lesart ‚gerinnen‘ oder ‚fest werden‘ wurde gewählt, da sie sich auf die gewünschte Konsistenz der Pastetenfüllung bezieht.<list type="alternatives"><item>Eine alternative Lesart wäre ‚schnell machen‘ (von mhd. gerennen = eilen, laufen).<note type="rationale">Diese Lesart ist weniger plausibel, da der Kontext eher auf die Beschaffenheit des Gerichts als auf die Geschwindigkeit der Zubereitung abzielt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-070-orig" n="letzlin" resp="#fyndling" subtype="lexical">Die Lesart ‚Rand‘ wurde gewählt, da sie im Kontext von ‚dar vm‘ (darum) am sinnvollsten ist, um eine Formgebung der Pastete zu beschreiben.<list type="alternatives"><item>Eine alternative Lesart könnte ‚Boden‘ oder ‚Gitter‘ sein.<note type="rationale">Obwohl ‚Boden‘ oder ‚Gitter‘ auch plausible Formen für eine Pastete sind, passt ‚Rand‘ besser zur Formulierung ‚dar vm‘.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-070-orig" n="nu" resp="#fyndling" subtype="lexical">Im Ausdruck ‚brats nit vor nu wan dus hin neyn hast gelegtt‘ wird ‚nu‘ als ‚nun/dann‘ gelesen, als Satzanfang: ‚Brate sie nicht vorher an. Wenn du sie hineingelegt hast, dann gib …‘.<list type="alternatives"><item>‚nu‘ als Variante von ‚zu‘ (im Sinne von ‚zu viel‘), mit der Lesart ‚brate sie nicht zu viel vorher an‘.<note type="rationale">Diese Lesart verlangt einen im Korpus unbelegten Lautwandel n→z und findet weder in Hayers Glossar noch bei Lexer/DWB eine Stütze; ‚nu‘ ist im Korpus durchgängig als ‚nun/dann‘ belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-070-orig" n="Garzustand/Backdauer" resp="#fyndling" subtype="contextual">Der Text nennt kein Zeit- oder Temperaturkriterium für die aus nur angebratenen, nicht durchgegarten Kalbswürstchen bestehende Füllung (‚so lange du magst‘, ‚fast gebacken‘) - der Garpunkt wurde vermutlich am offenen Ofen nach Augenschein und Erfahrung beurteilt.</note>
       </div>
     </back>
   </text>

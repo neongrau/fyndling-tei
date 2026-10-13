@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,8 +132,8 @@ Praxis. Vögel oder kleine Hähnchenteile kurz blanchieren, abgießen, dann im s
         <note type="gloss" target="#phw-221-orig" n="schwartzenn brye" resp="#fyndling">Mittelalterliche Schwarzsaucen wurden meist mit Blut, verbranntem Brot oder dunklen Früchten wie Pflaumen gefärbt. Hier nennt der Text selbst süßen Wein, Zucker und Pfeffer als Färbemittel - eine ungewöhnliche Methode, die eher eine sehr dunkle Braunfärbung als echtes Schwarz ergibt.</note>
         <note type="gloss" target="#phw-221-orig" n="hafen" resp="#fyndling">Ein "Hafen" ist im Frühneuhochdeutschen ein Topf oder Kochgefäß, nicht der moderne Seehafen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
         <note type="gloss" target="#phw-221-orig" n="guott dayl" resp="#fyndling">Bedeutet "ein guter Teil" oder "eine gute Portion".</note>
-        <note type="interpretive_choice" target="#phw-221-orig" n="fegel" resp="#fyndling">Wir lesen "fegel" als Vögel oder Geflügel, gestützt durch sieben konsistente Korpusbelege (u.a. das unmittelbar vorangehende Rezept und einen fast wortgleichen Zwilling bei Sabina Welserin), und weil das Rezept eine herzhafte "schwarze Brühe" mit Fleischbrühe beschreibt.</note>
-        <note type="interpretive_choice" target="#phw-221-orig" n="schwartzenn brye" resp="#fyndling">Die schwarze Farbe der Brühe soll laut Rezept durch die Kombination von süßem Wein, Zucker und Pfeffer entstehen.</note>
+        <note type="interpretive_choice" target="#phw-221-orig" n="fegel" resp="#fyndling" subtype="lexical">Wir lesen "fegel" als Vögel oder Geflügel, gestützt durch sieben konsistente Korpusbelege (u.a. das unmittelbar vorangehende Rezept und einen fast wortgleichen Zwilling bei Sabina Welserin), und weil das Rezept eine herzhafte "schwarze Brühe" mit Fleischbrühe beschreibt.<list type="alternatives"><item>Eine alternative Lesart, gestützt durch Wörterbucheinträge, wäre "Viola" (Veilchen).<note type="rationale">Diese Lesart passt weder zum Kontext eines Fleischbrühe-Gerichts noch zur durchgängigen Korpusverwendung von "fegel" als Vogel/Geflügel und wird deshalb verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-221-orig" n="schwartzenn brye" resp="#fyndling" subtype="contextual">Die schwarze Farbe der Brühe soll laut Rezept durch die Kombination von süßem Wein, Zucker und Pfeffer entstehen.<list type="alternatives"><item>In vielen anderen mittelalterlichen Rezepten wurde eine schwarze Farbe durch die Zugabe von Blut, verbranntem Brot oder dunklen Früchten wie Pflaumen erreicht.<note type="rationale">Da diese Zutaten hier nicht genannt werden, ist die explizite Anweisung, dass die Brühe durch die genannten Zutaten schwarz wird, bemerkenswert und weicht von gängigen Methoden ab.</note></item></list></note>
       </div>
     </back>
   </text>

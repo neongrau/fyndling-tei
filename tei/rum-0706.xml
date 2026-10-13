@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,11 +115,11 @@ Praxis. Die eigentliche Hürde ist die Beschaffung: Die unreifen Eier gibt es nu
         <note type="gloss" target="#rum-0706-orig" n="hoͤltzern Spieß" resp="#fyndling">hölzerner Spieß. Eine Holzart nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0706-orig" n="Roßt" resp="#fyndling">Bratrost über der Glut. Ein Material nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0706-orig" n="Hennenbruͤh" resp="#fyndling">Hühnerbrühe, wörtlich „Hennenbrühe“.</note>
-        <note type="interpretive_choice" target="#rum-0706-orig" n="vnzeitigen Eyer" resp="#fyndling">Noch ungelegte, unreife Eier aus dem Inneren der geschlachteten Henne, am ehesten die kleinen Dotteranlagen des Eierstocks. Getragen allein vom Zusatz „die man in der Hennen findt“; die Wörterbücher belegen unzeitig = unreif nur allgemein und bei Früchten, im Buch steht es sonst bei unreifen Trauben.</note>
-        <note type="interpretive_choice" target="#rum-0706-orig" n="setz sie auff / laß sie sieden (Siedemedium)" resp="#fyndling">Der Text nennt kein Siedemedium. Möglich ist Wasser, möglich ist auch die Hennenbrühe, auf der später angerichtet wird; beide Lesarten bleiben offen.</note>
-        <note type="interpretive_choice" target="#rum-0706-orig" n="Roßt (Material)" resp="#fyndling">Bratrost über der Glut; ein Material nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0706-orig" n="leg es auff ein gute Hennenbruͤh (Temperatur der Brühe)" resp="#fyndling">Der Text sagt nur, dass die Spieße auf eine gute Hühnerbrühe gelegt werden. Ob die Brühe heiß ist und ob sie eigens bereitet wird, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0706-orig" n="Würzung" resp="#fyndling">Keine. Der Text nennt außer Speck und Brühe nichts; wir ergänzen keine Gewürze.</note>
+        <note type="interpretive_choice" target="#rum-0706-orig" n="vnzeitigen Eyer" resp="#fyndling" subtype="contextual">Noch ungelegte, unreife Eier aus dem Inneren der geschlachteten Henne, am ehesten die kleinen Dotteranlagen des Eierstocks. Getragen allein vom Zusatz „die man in der Hennen findt“; die Wörterbücher belegen unzeitig = unreif nur allgemein und bei Früchten, im Buch steht es sonst bei unreifen Trauben.<list type="alternatives"><item>Weiter entwickelte Eier aus dem Legedarm, bei denen die Schale schon in Bildung ist<note type="rationale">Auch sie findet man „in der Hennen“. Dass nur Häutchen abgezogen werden und manche Dotter weiß bleiben, spricht eher für kleine Dotteranlagen ohne Schale; ausgeschlossen ist diese Lesart aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0706-orig" n="setz sie auff / laß sie sieden (Siedemedium)" resp="#fyndling" subtype="contextual">Der Text nennt kein Siedemedium. Möglich ist Wasser, möglich ist auch die Hennenbrühe, auf der später angerichtet wird; beide Lesarten bleiben offen.<list type="alternatives"><item>Leicht gesalzenes Wasser<note type="rationale">Naheliegende Praxislösung, die die Zubereitungsnotiz verwendet; im Text nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0706-orig" n="Roßt (Material)" resp="#fyndling" subtype="contextual">Bratrost über der Glut; ein Material nennt der Text nicht.<list type="alternatives"><item>Metallbratrost über Glut<note type="rationale">Praxislösung für heute; der Text legt das Material nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0706-orig" n="leg es auff ein gute Hennenbruͤh (Temperatur der Brühe)" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass die Spieße auf eine gute Hühnerbrühe gelegt werden. Ob die Brühe heiß ist und ob sie eigens bereitet wird, bleibt offen.<list type="alternatives"><item>Heiße Brühe in der Schüssel, die Spieße darauf<note type="rationale">Praxislösung zum Anrichten; ein eigener Kochschritt für die Brühe steht nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0706-orig" n="Würzung" resp="#fyndling" subtype="contextual">Keine. Der Text nennt außer Speck und Brühe nichts; wir ergänzen keine Gewürze.</note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,8 +118,8 @@ Was ist die eigene Erbsenbrühe? Nichts Zusätzliches, das man besorgen müsste:
 
 Praxis. Geschälte, halbierte Speiseerbsen ohne Einweichen in knapp bemessenem Wasser weich kochen. Dieses Kochwasser ist die Erbsenbrühe - es wird nicht abgegossen, sondern bleibt die ganze Flüssigkeit der Suppe. Einen Teil durch ein feines Sieb streichen, bis die Suppe leicht gebunden, aber nicht zu dick ist. Erst beim Anrichten sparsam süßen Rahm einrühren, ohne ihn lange mitzukochen, damit er nicht ausflockt oder sich trennt.</note>
         <note type="gloss" target="#std-259-orig" n="raum" resp="#fyndling">Rahm bezeichnet süße Sahne beziehungsweise einen fetten Milchrahm.</note>
-        <note type="interpretive_choice" target="#std-259-orig" n="treibs ein wenig durch dz" resp="#fyndling">Ein feines Sieb, durch das ein Teil der weich gesottenen Erbsen gestrichen wird.</note>
-        <note type="interpretive_choice" target="#std-259-orig" n="Erbaiſſen waich ſeüt" resp="#fyndling">Geschälte, halbierte Speiseerbsen, ohne vorheriges Einweichen in etwa 45 bis 60 Minuten weich gekocht.</note>
+        <note type="interpretive_choice" target="#std-259-orig" n="treibs ein wenig durch dz" resp="#fyndling">Ein feines Sieb, durch das ein Teil der weich gesottenen Erbsen gestrichen wird.<list type="alternatives"><item>Ein Passiertuch statt eines Siebs<note type="rationale">Der Text (in beiden geprüften Ausgaben) nennt an dieser Stelle das Werkzeug nicht, anders als im übrigen Korpus, wo 'durch ein Sieb' oder 'durch ein Tuch' fast immer ausdrücklich benannt ist. Beide Varianten sind für diese Konstruktion historisch gleich gut belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-259-orig" n="Erbaiſſen waich ſeüt" resp="#fyndling">Geschälte, halbierte Speiseerbsen, ohne vorheriges Einweichen in etwa 45 bis 60 Minuten weich gekocht.<list type="alternatives"><item>Ganze getrocknete Erbsen mit vorherigem Einweichen über Nacht und entsprechend längerer Kochzeit<note type="rationale">Die Quelle nennt weder Erbsensorte noch Kochdauer, nur 'weich sieden' - beide Vorbereitungsarten sind für getrocknete Erbsen historisch plausibel.</note></item></list></note>
       </div>
     </back>
   </text>

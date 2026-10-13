@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,11 +131,11 @@ Praxis. Backe einen dünnen, gesalzenen Fladen (wie eine herzhafte Palatschinke)
         <note type="gloss" target="#ka1-078-orig" n="grunß" resp="#fyndling">Allgemeiner Begriff für Grünzeug, hier wahrscheinlich frische Kräuter oder feines Blattgemüse.</note>
         <note type="gloss" target="#ka1-078-orig" n="strutzel" resp="#fyndling">Ein ‚Strudel‘, ein Gebäck aus gerolltem Teig mit Füllung, das hier als Formvorlage dient.</note>
         <note type="gloss" target="#ka1-078-orig" n="beschwar vnder zwai taellern" resp="#fyndling">Eine Technik, bei der das geformte Backwerk unter dem Gewicht von zwei Tellern gepresst wird, um es zu verdichten und in Form zu halten, bevor es gebacken wird.</note>
-        <note type="interpretive_choice" target="#ka1-078-orig" n="baches in aim jussel Ain gewundes bachen yn ainem jussel bach" resp="#fyndling">Der erste Teil ‚baches in aim jussel‘ wird als beschreibender Titel ‚Gebackenes in Brühe‘ verstanden, der zweite Teil ‚Ain gewundes bachen yn ainem jussel bach‘ als die erste Handlungsanweisung ‚Ein gewundenes Backwerk in einer Brühe backen‘.</note>
-        <note type="interpretive_choice" target="#ka1-078-orig" n="stro griben simlan" resp="#fyndling">‚stro‘ wird als Imperativ des Verbs ‚streuen‘ gelesen, ‚griben simlan‘ als ‚geriebene Semmeln‘. Die Phrase bedeutet somit ‚streue geriebene Semmeln darauf‘.</note>
-        <note type="interpretive_choice" target="#ka1-078-orig" n="pletter" resp="#fyndling">‚Blätter‘ werden hier als dünne, gebackene Fladen verstanden - so wird das Wort auch anderswo im Korpus durchgehend verwendet, nie als Blattgemüse.</note>
-        <note type="interpretive_choice" target="#ka1-078-orig" n="ghackt flaisch dinges" resp="#fyndling">‚ghackt flaisch dinges‘ wird als ‚gehacktes Fleisch‘ übersetzt; was ‚dinges‘ hier genau bezeichnet, ist unklar.</note>
-        <note type="interpretive_choice" target="#ka1-078-orig" n="bachs" resp="#fyndling">‚bachs‘ wird als ‚backe es‘ übersetzt, was die Zubereitung im Ofen oder in einem geschlossenen Gefäß wie einem Dutch Oven impliziert.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="baches in aim jussel Ain gewundes bachen yn ainem jussel bach" resp="#fyndling" subtype="contextual">Der erste Teil ‚baches in aim jussel‘ wird als beschreibender Titel ‚Gebackenes in Brühe‘ verstanden, der zweite Teil ‚Ain gewundes bachen yn ainem jussel bach‘ als die erste Handlungsanweisung ‚Ein gewundenes Backwerk in einer Brühe backen‘.</note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="stro griben simlan" resp="#fyndling" subtype="lexical">‚stro‘ wird als Imperativ des Verbs ‚streuen‘ gelesen, ‚griben simlan‘ als ‚geriebene Semmeln‘. Die Phrase bedeutet somit ‚streue geriebene Semmeln darauf‘.<list type="alternatives"><item>‚stro‘ als Imperativ ‚streue‘ und ‚griben‘ als Imperativ ‚reibe‘, gefolgt vom Objekt ‚Semmeln‘. Die Phrase würde dann ‚streue, reibe Semmeln darauf‘ bedeuten.<note type="rationale">Obwohl eine Abfolge von Verben im Frühneuhochdeutschen möglich ist, ist die Lesart ‚streue geriebene Semmeln‘ im Kontext der Füllungsalternativen flüssiger und wahrscheinlicher.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="pletter" resp="#fyndling" subtype="lexical">‚Blätter‘ werden hier als dünne, gebackene Fladen verstanden - so wird das Wort auch anderswo im Korpus durchgehend verwendet, nie als Blattgemüse.<list type="alternatives"><item>‚Blätter‘ könnten auch Gemüseblätter wie Kohl oder Mangold meinen.<note type="rationale">Naheliegend nach dem Wortlaut allein, widerspricht aber der Belegung von ‚pletter‘ andernorts im Korpus als Fladen/Teigblatt und passt schlechter zur Abfolge Backen-Rollen-Pressen-Nachbacken.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="ghackt flaisch dinges" resp="#fyndling" subtype="lexical">‚ghackt flaisch dinges‘ wird als ‚gehacktes Fleisch‘ übersetzt; was ‚dinges‘ hier genau bezeichnet, ist unklar.<list type="alternatives"><item>‚dinges‘ könnte die kleinen, gehackten Stücke des Fleisches betonen.<note type="rationale">Naheliegende Deutung, aber ohne Wörterbuchbeleg für diese Nuance - bleibt Vermutung.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-078-orig" n="bachs" resp="#fyndling" subtype="lexical">‚bachs‘ wird als ‚backe es‘ übersetzt, was die Zubereitung im Ofen oder in einem geschlossenen Gefäß wie einem Dutch Oven impliziert.<list type="alternatives"><item>‚bachs‘ könnte auch ‚brate es‘ bedeuten.<note type="rationale">Im Kontext eines ‚Strudels‘ und des Pressens ist ‚backen‘ die wahrscheinlichere Zubereitungsart.</note></item></list></note>
       </div>
     </back>
   </text>

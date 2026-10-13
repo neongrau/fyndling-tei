@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,8 +105,8 @@ Praxis. Sicher belegt ist nur der letzte Schritt: gute Brühe dazugeben und auft
         <note type="gloss" target="#mha-070-orig" n="thue auch also" resp="#fyndling">Standardformel in mittelalterlichen Kochbüchern: verweist auf eine vorher beschriebene Zubereitungsart, die hier nicht wiederholt wird. Das Rezept setzt voraus, dass der Leser den vorangegangenen Eintrag kennt.</note>
         <note type="gloss" target="#mha-070-orig" n="prue" resp="#fyndling">Brühe, Fond (mhd. brüeje). CoReMA verlinkt die Stelle mit dem Sachbegriff 'stock' (Wikidata Q3075310).</note>
         <note type="gloss" target="#mha-070-orig" n="Item ... (Wiederholung im Transkript)" resp="#fyndling">Die Verweisformel wird im Transkript zweimal hintereinander notiert: 'Des wilden Sweins leber thue auch also Item des wilden Sweins leber thue auch also...'. Das ist keine Verschreibung, sondern die reguläre Rubrik-und-Incipit-Konvention dieser Handschrift - Titelzeile am Ende einer Seite, Wiederaufnahme als Rezepteinstieg auf der Folgeseite (bestätigt durch die CoReMA-Glossen-Quelle, die an derselben Stelle einen Foliowechsel-Marker notiert).</note>
-        <note type="interpretive_choice" target="#mha-070-orig" n="thue auch also" resp="#fyndling">Verweis-Formel: 'mach es ebenso [wie zuvor beschrieben]' - die eigentliche Zubereitungsart wird nicht wiederholt, sondern als bekannt vorausgesetzt.</note>
-        <note type="interpretive_choice" target="#mha-070-orig" n="thue auch also (Referenz-Ziel)" resp="#fyndling">Unklar/nicht identifizierbar - weder die CoReMA-Glosse noch ein Editionskommentar nennen das konkrete Zielrezept, auf das verwiesen wird.</note>
+        <note type="interpretive_choice" target="#mha-070-orig" n="thue auch also" resp="#fyndling">Verweis-Formel: 'mach es ebenso [wie zuvor beschrieben]' - die eigentliche Zubereitungsart wird nicht wiederholt, sondern als bekannt vorausgesetzt.<list type="alternatives"><item>Man könnte 'also' auch als eigenständige Anweisung lesen ('so mach es'), die auf eine im Rezept selbst noch folgende, aber verlorene Beschreibung verweist.<note type="rationale">Grammatisch möglich, aber unüblich in diesem Kochbuch-Korpus, wo 'thue auch also' durchgängig als Kurzverweis auf vorherige Einträge dient.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-070-orig" n="thue auch also (Referenz-Ziel)" resp="#fyndling">Unklar/nicht identifizierbar - weder die CoReMA-Glosse noch ein Editionskommentar nennen das konkrete Zielrezept, auf das verwiesen wird.<list type="alternatives"><item>Das unmittelbar vorangehende Rezept zur Rinderleber (am Spieß gebraten, mehrfach gewaschen, in einer Essig-Gewürz-Sauce serviert) als wahrscheinlichster Referent, da direkt benachbart und thematisch identisch (Leber).<note type="rationale">Reine Korpus-Nähe-Inferenz (gleiches Folio, gleiches Thema) - nicht durch Edition oder Glosse bestätigt, daher keine Gewissheit.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,8 +102,8 @@ Praxis. Den Lachs in gesalzenem Wasser gar sieden und erkalten lassen, dann anri
         <note type="gloss" target="#rum-0901-orig" n="Salm" resp="#fyndling">Älterer Name für den Lachs. Rumpolt gebraucht ihn im ganzen Kapitel „Vom Salmen“, in dem er siebzehn Speisen vom Lachs aufzählt; dies ist die zweite.</note>
         <note type="gloss" target="#rum-0901-orig" n="Abgesotten" resp="#fyndling">Gar gesotten, in Wasser gekocht. Rumpolt gebraucht das Wort im ganzen Buch, bei Fischen ebenso wie bei Hühnern und Füßen.</note>
         <note type="gloss" target="#rum-0901-orig" n="Cassenadt" resp="#fyndling">Rumpolt erklärt das Wort selbst, allerdings an anderer Stelle, im Kapitel von den Kressen: Die Fische werden abgesotten, man lässt sie kalt werden, richtet sie an und gießt Essig und grüne Petersilie darüber, „so nennet man es ein Cassenadt“. Er gebraucht das Wort oft, bei Fischen, bei Hühnern und bei Füßen von Lamm, Ziege und Reh, mal „Cassenadt“, mal „Cassenat“ geschrieben. Ein Wörterbuchbeleg fehlt, die Herkunft ist offen.</note>
-        <note type="interpretive_choice" target="#rum-0901-orig" n="Cassenadt" resp="#fyndling">Name einer Anrichtung: gesotten, kalt werden lassen, beim Anrichten mit Essig und grüner Petersilie übergossen. So erklärt Rumpolt das Wort selbst im Kapitel von den Kressen. Essig und Petersilie stehen in dieser Zeile nicht, sie kommen nur aus seiner Erklärung.</note>
-        <note type="interpretive_choice" target="#rum-0901-orig" n="kalt oder warm angerichtet" resp="#fyndling">Kalt, mit Essig und grüner Petersilie, wie in Rumpolts Erklärung des Cassenadt im Kapitel von den Kressen. Die Zeile selbst sagt weder kalt noch warm.</note>
+        <note type="interpretive_choice" target="#rum-0901-orig" n="Cassenadt" resp="#fyndling" subtype="lexical">Name einer Anrichtung: gesotten, kalt werden lassen, beim Anrichten mit Essig und grüner Petersilie übergossen. So erklärt Rumpolt das Wort selbst im Kapitel von den Kressen. Essig und Petersilie stehen in dieser Zeile nicht, sie kommen nur aus seiner Erklärung.<list type="alternatives"><item>Eine eigene gewürzte oder gesäuerte Brühe, in der gesotten wird<note type="rationale">„In Cassenadt abgesotten“ ließe sich auf eine Kochflüssigkeit beziehen. Rumpolts eigene Erklärung meint aber den ganzen Vorgang bis zum Anrichten; ein Wörterbuchbeleg für eine Brühe fehlt.</note></item><item>Nur Absieden in gesalzenem Wasser und kalt Auftragen, ohne Essig und Petersilie<note type="rationale">Das ist der engste Wortlaut dieser Zeile. Da Rumpolt den Namen aber ausdrücklich mit dem Essig-Petersilien-Guss verbindet, ist die volle Anrichtung wahrscheinlicher.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0901-orig" n="kalt oder warm angerichtet" resp="#fyndling" subtype="contextual">Kalt, mit Essig und grüner Petersilie, wie in Rumpolts Erklärung des Cassenadt im Kapitel von den Kressen. Die Zeile selbst sagt weder kalt noch warm.<list type="alternatives"><item>Warm, mit Erbsbrühe und frischer Butter aufgesotten<note type="rationale">Rumpolt kennt den Cassenadt auch warm: beim Sälmling (in Cassenadt abgesotten, „kalt oder warm“, dann mit Erbsbrühe, frischer Butter und Muskatblüte) und bei einem weiteren Fisch („es sey kalt/ oder machs warm mit Erbsbrüh/ vnnd frischer Butter“). Für den Lachs ist das nicht belegt, aber auch nicht ausgeschlossen.</note></item></list></note>
       </div>
     </back>
   </text>

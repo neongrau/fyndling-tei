@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Praxis. Damwild ist magerer als Hammel. Das Begießen mit Fett, das die Vorlage 
         <note type="gloss" target="#rum-0342-orig" n="Karwenada" resp="#fyndling">Rumpolts Gerichtsname für ein geklopftes, rasch auf dem Rost gebratenes Fleischstück (vgl. die Karwenada vom Hammel, von der Ziege und vom Rehschlegel). Nahe liegen frz. carbonnade und mundartliches „Karbonade“, das im Rheinischen ein Rippenstück, im Pfälzischen ein Kotelett bezeichnet; die Herleitung ist Deutung, kein Beleg.</note>
         <note type="gloss" target="#rum-0342-orig" n="Dendel" resp="#fyndling">Dendel ist der Damhirsch (Grimm: dandel, Nebenformen dendel, dendl). Das Wort steht im Kapitelkopf „Vom Dendel Wildpret“, nicht in diesem Eintrag selbst.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dendel"/></note>
         <note type="gloss" target="#rum-0342-orig" n="Ham̃el" resp="#fyndling">Hammel, das kastrierte männliche Schaf. Die Tilde steht für das doppelte m. Hier Maßstab für die Zubereitung: Gemeint ist das Verfahren aus Rumpolts Hammelkapitel.</note>
-        <note type="interpretive_choice" target="#rum-0342-orig" n="Karwenada" resp="#fyndling">Gerichtsname für ein geklopftes, rasch auf dem Rost gebratenes Fleischstück; so beschreibt Rumpolt das Wort bei Rind, Hammel und Ziege, und der Verweis auf den Hammel stützt es hier.</note>
-        <note type="interpretive_choice" target="#rum-0342-orig" n="wie man es von einem Hammel macht" resp="#fyndling">Verweis auf die Hammel-Karwenada Nr. 22: Rippen einzeln samt Fleisch herauslösen, mit dem Messerrücken klopfen, salzen, auf dem Rost rasch braten, mit heißem Speck oder Butter begießen, braune saure gepfefferte Brühe darüber. Es ist die einzige Hammel-Karwenada mit Rippen.</note>
-        <note type="interpretive_choice" target="#rum-0342-orig" n="von den Riben" resp="#fyndling">Jede Rippe mit ihrem Fleisch einzeln herausgeschnitten, wie in der Hammel-Vorlage.</note>
+        <note type="interpretive_choice" target="#rum-0342-orig" n="Karwenada" resp="#fyndling" subtype="lexical">Gerichtsname für ein geklopftes, rasch auf dem Rost gebratenes Fleischstück; so beschreibt Rumpolt das Wort bei Rind, Hammel und Ziege, und der Verweis auf den Hammel stützt es hier.<list type="alternatives"><item>Bezeichnung des Fleischstücks selbst (Rippenstück, Kotelett), wie mundartliches „Karbonade“<note type="rationale">Im Rheinischen und Pfälzischen meint das Wort den Zuschnitt, nicht die Garart. Bei Rumpolt steht dafür eigens „von den Riben“, das Wort selbst bezeichnet also eher die Speise.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0342-orig" n="wie man es von einem Hammel macht" resp="#fyndling" subtype="contextual">Verweis auf die Hammel-Karwenada Nr. 22: Rippen einzeln samt Fleisch herauslösen, mit dem Messerrücken klopfen, salzen, auf dem Rost rasch braten, mit heißem Speck oder Butter begießen, braune saure gepfefferte Brühe darüber. Es ist die einzige Hammel-Karwenada mit Rippen.<list type="alternatives"><item>Allgemein nach Hammel-Art, ohne Bezug auf eine bestimmte Nummer<note type="rationale">Das Hammelkapitel kennt weitere Karwenada-Fassungen (vom Rücken, vom Schlegel). Die Rippen in der Überschrift sprechen aber für Nr. 22.</note></item><item>Für die Praxis nichts über die Überschrift hinaus ergänzen<note type="rationale">Der Wortlaut dieses Rezepts gibt kein Verfahren; wer streng nur dem Text folgt, kennt nur Rippen und den Hammel als Maßstab.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0342-orig" n="von den Riben" resp="#fyndling" subtype="contextual">Jede Rippe mit ihrem Fleisch einzeln herausgeschnitten, wie in der Hammel-Vorlage.<list type="alternatives"><item>Offen lassen: Rippenstück im Ganzen oder abgelöste Rippenscheibe<note type="rationale">Die Überschrift selbst sagt nur „von den Rippen“; der Zuschnitt folgt erst aus der Vorlage.</note></item></list></note>
       </div>
     </back>
   </text>

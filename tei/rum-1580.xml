@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,11 +119,11 @@ Praxis. Für Zitronensaft keinen Topf aus Aluminium oder blankem Kupfer nehmen; 
         <note type="gloss" target="#rum-1580-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, schmackhaft. „Gut vnnd wolgeschmack“ ist Rumpolts stehende Schlussformel.</note>
         <note type="gloss" target="#rum-1580-orig" n="der lauter ist" resp="#fyndling">Der klar ist, ohne Trub. Wie der Saft klar wird, sagt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-1580-orig" n="gelaͤutertem Zucker" resp="#fyndling">Geklärter, gereinigter Zucker. Rumpolt setzt ihn als fertig voraus; wie er geläutert wird, beschreibt er hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-1580-orig" n="walg sie" resp="#fyndling">Wälzen, rollen, bis die Zitronen weich sind. Dafür sprechen das Frühneuhochdeutsche Wörterbuch („auswalgen: etw. kneten, wälzen, rollen“) und Rumpolts eigener Gebrauch des Worts für das Wälzen und Rollen.</note>
-        <note type="interpretive_choice" target="#rum-1580-orig" n="Zimmet vnd Zucker (Menge)" resp="#fyndling">Der Text nennt keine Mengen. Maßstab ist allein das Ergebnis: Der Saft soll „gut vnnd wolgeschmack“ sein.</note>
-        <note type="interpretive_choice" target="#rum-1580-orig" n="Safft/ der lauter ist" resp="#fyndling">Klarer Saft ohne Fruchtfleisch. Der Text nennt weder Seihen noch Absetzen und lässt offen, ob der Saft schon nach dem Pressen so klar ist.</note>
-        <note type="interpretive_choice" target="#rum-1580-orig" n="gelaͤutertem Zucker" resp="#fyndling">Rumpolt setzt den Zucker als schon geläutert voraus, wie ihn eine Hofküche vorrätig hatte. Wie geläutert wird, sagt er hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-1580-orig" n="fein dick gesotten" resp="#fyndling">Der Saft wird eingekocht, bis er „fein dick“ ist. Ein Maß gibt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-1580-orig" n="walg sie" resp="#fyndling" subtype="lexical">Wälzen, rollen, bis die Zitronen weich sind. Dafür sprechen das Frühneuhochdeutsche Wörterbuch („auswalgen: etw. kneten, wälzen, rollen“) und Rumpolts eigener Gebrauch des Worts für das Wälzen und Rollen.<list type="alternatives"><item>Mit der flachen Hand auf dem Tisch hin und her rollen<note type="rationale">Heutige Ausführung für das Nachkochen; der Text nennt weder Unterlage noch Handgriff.</note></item><item>Die Zitronen kurz anwärmen, damit sie weich werden<note type="rationale">Führt ebenfalls zu weichen Früchten, aber der Text sagt „walgen“, nicht anwärmen oder quellen lassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1580-orig" n="Zimmet vnd Zucker (Menge)" resp="#fyndling" subtype="contextual">Der Text nennt keine Mengen. Maßstab ist allein das Ergebnis: Der Saft soll „gut vnnd wolgeschmack“ sein.<list type="alternatives"><item>Nach Geschmack süßen, bis die Säure rund wirkt, dazu wenig gestoßener Zimt<note type="rationale">Heutige Praxis für das Nachkochen; ein festes Verhältnis lässt sich aus dem Text nicht ableiten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1580-orig" n="Safft/ der lauter ist" resp="#fyndling" subtype="contextual">Klarer Saft ohne Fruchtfleisch. Der Text nennt weder Seihen noch Absetzen und lässt offen, ob der Saft schon nach dem Pressen so klar ist.<list type="alternatives"><item>Den Saft durch ein feines Sieb oder Tuch gießen und kurz absetzen lassen<note type="rationale">Heutige Ausführung, um sicher einen klaren Saft zu bekommen; der Text schreibt das Verfahren nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1580-orig" n="gelaͤutertem Zucker" resp="#fyndling" subtype="contextual">Rumpolt setzt den Zucker als schon geläutert voraus, wie ihn eine Hofküche vorrätig hatte. Wie geläutert wird, sagt er hier nicht.<list type="alternatives"><item>Haushaltszucker in wenig Wasser lösen, kurz aufkochen und abschäumen, bis die Lösung klar ist<note type="rationale">Praktische Umsetzung für die heutige Küche; eine Wassermenge nennt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1580-orig" n="fein dick gesotten" resp="#fyndling" subtype="contextual">Der Saft wird eingekocht, bis er „fein dick“ ist. Ein Maß gibt der Text nicht.<list type="alternatives"><item>Einkochen, bis der Saft leicht sirupartig vom Löffel läuft<note type="rationale">Heutige Praxis; kalt wird der Saft ohnehin noch dicker.</note></item><item>Bis zu einer dichten, zähen Masse einkochen, die kalt fast steif wird<note type="rationale">Mit „fein dick“ ebenfalls vereinbar; als Tunke zum Eintauchen ist sie dann aber schwerer zu gebrauchen.</note></item></list></note>
       </div>
     </back>
   </text>

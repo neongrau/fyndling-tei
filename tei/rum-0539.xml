@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,10 +118,10 @@ Praxis. Je 250 g Blancmanger 2 bis 3 Eier und etwa 100 ml Milch glatt rühren, i
         <note type="gloss" target="#rum-0539-orig" n="Indianische Henn" resp="#fyndling">Die Pute, die im 16. Jahrhundert aus Amerika nach Europa kam. Das Rezept nennt das Tier nicht; es ergibt sich aus der Kapitelüberschrift.</note>
         <note type="gloss" target="#rum-0539-orig" n="theils … ab" resp="#fyndling">Wörtlich „teile es ab“. Im fast gleichlautenden Rezept beim Kapaun heißt es „treib es mit Eyern ab“, also glatt rühren. Rumpolt gebraucht „ab“ auch beim Teig: „mach das Mehl damit ab“ (anrühren).</note>
         <note type="gloss" target="#rum-0539-orig" n="aufflauffen" resp="#fyndling">Aufgehen, in die Höhe gehen beim Backen. Heute würde man an einen Auflauf denken; das ist ein Vergleich, kein Wortsinn.</note>
-        <note type="interpretive_choice" target="#rum-0539-orig" n="theils mit Eyern ab" resp="#fyndling">„Rühre ihn mit Eiern und süßer Milch ab“: den festen Blancmanger mit Eiern und Milch glatt rühren. Das Parallelrezept beim Kapaun sagt an derselben Stelle „treib es mit Eyern ab“, und Rumpolt gebraucht „ab“ auch in „mach das Mehl damit ab“ für das Anrühren.</note>
-        <note type="interpretive_choice" target="#rum-0539-orig" n="Manscho Blancko" resp="#fyndling">Fertiger Blancmanger aus der Putenbrust, wie ihn das Kapitel in Nr. 14 nennt. Das Verfahren dafür schreibt Rumpolt beim Kapaun aus (Reismehl, Milch oder Rahm, gezupfte Brust, Zucker, Rosenwasser).</note>
-        <note type="interpretive_choice" target="#rum-0539-orig" n="Mengen, Backhitze und Backzeit" resp="#fyndling">Rumpolt nennt weder Mengen noch Hitze noch Zeit. Das Parallelrezept beim Kapaun nennt nur ein bis drei Löffel Blancmanger, mit Eiern abgetrieben; der Garpunkt zeigt sich am Aufgehen und Stocken.</note>
-        <note type="interpretive_choice" target="#rum-0539-orig" n="Schüssel" resp="#fyndling">Eine Schüssel, die in den Ofen geschoben wird; das Parallelrezept beim Kapaun lässt „ein Schuͤssel/ oder Silber“ zu, also auch Silbergeschirr.</note>
+        <note type="interpretive_choice" target="#rum-0539-orig" n="theils mit Eyern ab" resp="#fyndling" subtype="lexical">„Rühre ihn mit Eiern und süßer Milch ab“: den festen Blancmanger mit Eiern und Milch glatt rühren. Das Parallelrezept beim Kapaun sagt an derselben Stelle „treib es mit Eyern ab“, und Rumpolt gebraucht „ab“ auch in „mach das Mehl damit ab“ für das Anrühren.<list type="alternatives"><item>„abteilen“ im Sinn von absondern, trennen<note type="rationale">So ist das Wort sonst belegt, und die Wortform liegt nahe. Ein Küchensinn ist dafür nicht belegt, und „mit Eyern vnd mit süsser Milch“ passt nicht zu einem Trennen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0539-orig" n="Manscho Blancko" resp="#fyndling" subtype="contextual">Fertiger Blancmanger aus der Putenbrust, wie ihn das Kapitel in Nr. 14 nennt. Das Verfahren dafür schreibt Rumpolt beim Kapaun aus (Reismehl, Milch oder Rahm, gezupfte Brust, Zucker, Rosenwasser).<list type="alternatives"><item>Blancmanger aus Kapaunenbrust nach dem Grundrezept<note type="rationale">Rumpolt backt dasselbe Mus auch aus dem Kapaunen-Blancmanger. Wer keine Pute nimmt, folgt diesem Weg; das Verfahren bleibt gleich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0539-orig" n="Mengen, Backhitze und Backzeit" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Mengen noch Hitze noch Zeit. Das Parallelrezept beim Kapaun nennt nur ein bis drei Löffel Blancmanger, mit Eiern abgetrieben; der Garpunkt zeigt sich am Aufgehen und Stocken.<list type="alternatives"><item>Je 250 g Blancmanger 2 bis 3 Eier und etwa 100 ml Milch, bei etwa 180 °C 20 bis 30 Minuten backen<note type="rationale">Heutiger Vorschlag zum Nachkochen, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0539-orig" n="Schüssel" resp="#fyndling" subtype="contextual">Eine Schüssel, die in den Ofen geschoben wird; das Parallelrezept beim Kapaun lässt „ein Schuͤssel/ oder Silber“ zu, also auch Silbergeschirr.<list type="alternatives"><item>Feuerfeste Auflaufform<note type="rationale">Heutiger Ersatz; erfüllt denselben Zweck.</note></item></list></note>
       </div>
     </back>
   </text>

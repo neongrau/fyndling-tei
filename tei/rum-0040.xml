@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,10 +108,10 @@ Praxis. Wer das Gericht heute nachkocht, legt gegartes Rinderfilet in heiße Rin
         <note type="gloss" target="#rum-0040-orig" n="Lungenbraten" resp="#fyndling">Kein Lungenfleisch, sondern das Filet (die innere Lende) vom Rind. Der Name hat mit der Lunge nichts zu tun, er kommt von lateinisch lumbus „Lende“: daraus wurde althochdeutsch lumbal, mittelhochdeutsch lumbel, später lummel (Grimms Wörterbuch s. v. lummel; das Frühneuhochdeutsche Wörterbuch verweist „lungenbrate“ direkt auf „lumbel“). Die Küchenmeisterei von 1485 kennt „hirschen lumelproten“, und in der Schweiz hieß der Lummel das Stück am Ochsen, „worin die Nieren liegen“. Genau dort sitzt das Filet: innen an der Lendenwirbelsäule, bei den Nieren, weit weg von der Lunge im Brustkorb. Als niemand mehr „Lummel“ verstand, wurde daraus vermutlich das vertraute „Lungen-“. In Österreich heißt das Rinderfilet bis heute Lungenbraten.</note>
         <note type="gloss" target="#rum-0040-orig" n="Suppen" resp="#fyndling">Frühneuhochdeutsch meist Brühe, oft mit eingelegtem Brot. Der Text sagt nicht, ob Brot dabei ist.</note>
         <note type="gloss" target="#rum-0040-orig" n="Parmesankeß" resp="#fyndling">Parmesankäse; keß ist die verkürzte Schreibung von Käse.</note>
-        <note type="interpretive_choice" target="#rum-0040-orig" n="Lungenbraten" resp="#fyndling">Lendenstück des Rinds (Filet), gestützt durch Meyers, das Wörterbuch (Verweis auf lumbel) und die Nachbarrezepte 41 bis 43.</note>
-        <note type="interpretive_choice" target="#rum-0040-orig" n="Suppen" resp="#fyndling">Brühe, wie buchweit bei Rumpolt üblich.</note>
-        <note type="interpretive_choice" target="#rum-0040-orig" n="Garzustand des Lungenbratens" resp="#fyndling">Offen; der Titel nennt keine Zubereitung. Gebraten wie in den Nachbarrezepten ist naheliegend.</note>
-        <note type="interpretive_choice" target="#rum-0040-orig" n="Fehlende Anleitung" resp="#fyndling">Nr. 40 besteht im Druck nur aus der Titelzeile; Mengen und Schritte werden nicht genannt.</note>
+        <note type="interpretive_choice" target="#rum-0040-orig" n="Lungenbraten" resp="#fyndling" subtype="lexical">Lendenstück des Rinds (Filet), gestützt durch Meyers, das Wörterbuch (Verweis auf lumbel) und die Nachbarrezepte 41 bis 43.<list type="alternatives"><item>gebratene Lunge<note type="rationale">Das Kapitel steht bei Ochsenlunge und Kutteln; dagegen sprechen die Nachbarrezepte mit Adernschnitt und Rolle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0040-orig" n="Suppen" resp="#fyndling" subtype="contextual">Brühe, wie buchweit bei Rumpolt üblich.<list type="alternatives"><item>Brühe über Brotscheiben (Brotsuppe)<note type="rationale">Im Wörterbuch belegt; im Titel kein Hinweis auf Brot.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0040-orig" n="Garzustand des Lungenbratens" resp="#fyndling" subtype="contextual">Offen; der Titel nennt keine Zubereitung. Gebraten wie in den Nachbarrezepten ist naheliegend.<list type="alternatives"><item>in der Brühe gegart<note type="rationale">Der Titel lässt beides zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0040-orig" n="Fehlende Anleitung" resp="#fyndling" subtype="philological">Nr. 40 besteht im Druck nur aus der Titelzeile; Mengen und Schritte werden nicht genannt.</note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -128,8 +133,8 @@ Praxis. Heute frei verkäufliche Vögel nehmen - Gans, Ente, Fasan, Perlhuhn, Wa
         <note type="gloss" target="#wes-012-orig" n="laerderen" resp="#fyndling">Lardieren/Spicken: Speckstreifen mit der Spicknadel durch das magere Fleisch ziehen, damit es beim Braten saftig bleibt.</note>
         <note type="gloss" target="#wes-012-orig" n="eenen pepere" resp="#fyndling">Eine eigenständige Pfeffersauce, mit Wein und Gewürzen abgeschmeckt, meist mit geröstetem Brot gebunden.</note>
         <note type="gloss" target="#wes-012-orig" n="smoute" resp="#fyndling">Schmalz bzw. Bratfett - hier die eigenen heißen Säfte der gebratenen Vögel.</note>
-        <note type="interpretive_choice" target="#wes-012-orig" n="lemmoegen" resp="#fyndling">Der Begriff wird unübersetzt belassen: es handelt sich offenkundig um einen weiteren Brat-Vogel in der Aufzählung, seine genaue Art ist aber nicht sicher zu bestimmen.</note>
-        <note type="interpretive_choice" target="#wes-012-orig" n="eenen pepere wel ghewijnt ende wel ghecruut" resp="#fyndling">Eine eigenständige, mit Wein und Gewürzen abgeschmeckte Pfeffersauce („eten met" = dazu essen), nicht bloß ein Würzen mit gemahlenem Pfeffer.</note>
+        <note type="interpretive_choice" target="#wes-012-orig" n="lemmoegen" resp="#fyndling" cert="unknown">Der Begriff wird unübersetzt belassen: es handelt sich offenkundig um einen weiteren Brat-Vogel in der Aufzählung, seine genaue Art ist aber nicht sicher zu bestimmen.<list type="alternatives"><item>Eine kleine Wildvogel-/Singvogelart (z.B. Lerche, Kiebitz).<note type="rationale">Die übrigen Listenglieder sind durchweg Wildvögel; ein weiterer, regional benannter Wildvogel passt in die Reihe, ohne dass eine bestimmte Art belegbar wäre.</note></item><item>Verschreibung eines bekannteren Vogelnamens.<note type="rationale">Die mittelniederländische Schreibung ist eigenwillig und „lemmoegen" sonst nicht greifbar; eine verlesene/verschriebene Form ist möglich, ohne dass sich ein eindeutiges Original rekonstruieren lässt.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-012-orig" n="eenen pepere wel ghewijnt ende wel ghecruut" resp="#fyndling">Eine eigenständige, mit Wein und Gewürzen abgeschmeckte Pfeffersauce („eten met" = dazu essen), nicht bloß ein Würzen mit gemahlenem Pfeffer.<list type="alternatives"><item>Bloßes Abschmecken der Vögel mit Pfeffer, Wein und Gewürzen.<note type="rationale">Grammatisch nicht ausgeschlossen; das „met eenen pepere" / „eten met" legt im Korpus jedoch durchgehend eine separate Sauce als Beilage nahe.</note></item></list></note>
       </div>
     </back>
   </text>

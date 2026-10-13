@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -135,11 +140,11 @@ Praxis. Mengen, Backzeit und Hitze nennt der Text nicht, nur „warmen Ofen“, 
         <note type="gloss" target="#rum-0059-orig" n="Neglein" resp="#fyndling">Alte Bezeichnung für Gewürznelken.</note>
         <note type="gloss" target="#rum-0059-orig" n="Ruͤckenteig" resp="#fyndling">Roggenteig. Rumpolt schreibt auch „Rückenbrot“ für Roggenbrot; die Wörterbücher belegen „ruckenbrôt“ als Roggenbrot. Für das Wort „Rückenteig“ selbst gibt es keinen Wörterbuchbeleg, die Deutung folgt dem Brot.</note>
         <note type="gloss" target="#rum-0059-orig" n="schwartzen Pfeffer" resp="#fyndling">„Pfeffer“ ist bei Rumpolt oft ein Gericht: eine gebundene, gewürzte Sauce. „Schwartz“ meint ihre dunkle Farbe. Hier wird sie flüssig nachgegossen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0059-orig" n="Ruͤckenteig" resp="#fyndling">Roggenteig: Rumpolt schreibt „Rückenbrot“ für Roggenbrot (Lexer „ruckenbrôt“ = Roggenbrot) und stellt Rückenteig dem Weizenteig gegenüber; so auch rum-0039.</note>
-        <note type="interpretive_choice" target="#rum-0059-orig" n="quell es auff einẽ Roßt" resp="#fyndling">Kurz auf dem Rost über der Glut ansetzen; Rumpolt schreibt bei einer anderen Pastete „legs auff den Roßt/ vnd quells auff den Kolen“.</note>
-        <note type="interpretive_choice" target="#rum-0059-orig" n="gar wol (Grad des Ansetzens)" resp="#fyndling">Der Text lässt offen, wie weit das Fleisch vorgegart wird; „gar wol“ kann auch ein gründliches Vorgaren meinen.</note>
-        <note type="interpretive_choice" target="#rum-0059-orig" n="schwartzen Pfeffer" resp="#fyndling">Eine gebundene, dunkle Pfeffersauce: „Pfeffer“ ist bei Rumpolt oft ein Gericht (vgl. rum-0080), und sie wird durch einen Trichter gegossen, ist also flüssig.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0059-orig" n="halb backen / gar backen" resp="#fyndling">Der Text nennt nur zwei Backabschnitte, ohne Zeit und ohne Hitze, außer „warmen Ofen“.</note>
+        <note type="interpretive_choice" target="#rum-0059-orig" n="Ruͤckenteig" resp="#fyndling" subtype="lexical">Roggenteig: Rumpolt schreibt „Rückenbrot“ für Roggenbrot (Lexer „ruckenbrôt“ = Roggenbrot) und stellt Rückenteig dem Weizenteig gegenüber; so auch rum-0039.<list type="alternatives"><item>Teig unbestimmter Art, nur als Teighülle gesichert<note type="rationale">Für „Rückenteig“ selbst gibt es keinen Wörterbuchbeleg; die Roggen-Deutung stützt sich auf das Brot und den Gegensatz zum Weizenteig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0059-orig" n="quell es auff einẽ Roßt" resp="#fyndling" subtype="lexical">Kurz auf dem Rost über der Glut ansetzen; Rumpolt schreibt bei einer anderen Pastete „legs auff den Roßt/ vnd quells auff den Kolen“.<list type="alternatives"><item>In Wasser abbrühen<note type="rationale">„Quellen“ heißt sonst auch in Wasser aufsetzen oder abkochen (rum-0041, rum-0043), und rum-0115 überbrüht in kochendem Wasser. Hier nennt der Text aber kein Wasser, nur den Rost.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0059-orig" n="gar wol (Grad des Ansetzens)" resp="#fyndling" subtype="contextual">Der Text lässt offen, wie weit das Fleisch vorgegart wird; „gar wol“ kann auch ein gründliches Vorgaren meinen.<list type="alternatives"><item>Nur kurz ansetzen, innen roh lassen<note type="rationale">Moderne Praxis, weil das Fleisch danach noch in Essig liegt und gebacken wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0059-orig" n="schwartzen Pfeffer" resp="#fyndling" subtype="contextual">Eine gebundene, dunkle Pfeffersauce: „Pfeffer“ ist bei Rumpolt oft ein Gericht (vgl. rum-0080), und sie wird durch einen Trichter gegossen, ist also flüssig.<list type="alternatives"><item>In Essig angerührter schwarzer Pfeffer<note type="rationale">Der Text nennt weder Bindung noch Zutaten der Sauce; eine Pfeffer-Essig-Mischung ist ebenfalls möglich.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0059-orig" n="halb backen / gar backen" resp="#fyndling" subtype="contextual">Der Text nennt nur zwei Backabschnitte, ohne Zeit und ohne Hitze, außer „warmen Ofen“.<list type="alternatives"><item>Gar nach Kerntemperatur<note type="rationale">Moderne Praxis: mit dem Fleischthermometer durch das Loch im Deckel prüfen.</note></item></list></note>
       </div>
     </back>
   </text>

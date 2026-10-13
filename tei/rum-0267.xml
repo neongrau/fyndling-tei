@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,12 +127,12 @@ Praxis. Lunge und Leber vom Spanferkel bekommt man nur auf Vorbestellung beim Me
         <note type="gloss" target="#rum-0267-orig" n="saur machen" resp="#fyndling">Sauer machen. Womit, sagt der Text nicht. Im Kalbslungenmus, auf das der Satz verweist, nimmt Rumpolt Essig.</note>
         <note type="gloss" target="#rum-0267-orig" n="gelb machen oder weiß lassen" resp="#fyndling">Ein Farbmittel nennt der Text nicht. In diesem Kapitel färbt Rumpolt Lunge und Leber mit Safran (Nr. 10), beim Gekröse stehen Eierdotter dabei (Nr. 9).</note>
         <note type="gloss" target="#rum-0267-orig" n="zurichten" resp="#fyndling">Zubereiten, abschmecken. Nicht „anrichten“ im Sinn von auf die Platte geben.</note>
-        <note type="interpretive_choice" target="#rum-0267-orig" n="darauß (Tier)" resp="#fyndling">Aus der Lunge des Spanferkels: Das Kapitel „Von einer Spensaw“ gibt das Tier vor, und die Nummer davor behandelt Lunge und Leber desselben Ferkels. „Wie man pflegt von Kälberlungen“ ist der Vergleich für das Verfahren.</note>
-        <note type="interpretive_choice" target="#rum-0267-orig" n="die Leber vnd alles" resp="#fyndling">Lunge und Leber zusammen hacken; „alles“ bleibt wörtlich offen und wird nicht zu einer bestimmten Liste aufgelöst.</note>
-        <note type="interpretive_choice" target="#rum-0267-orig" n="saur machen" resp="#fyndling">Sauer machen, das Mittel bleibt offen: Rumpolt nennt hier keine Säure.</note>
-        <note type="interpretive_choice" target="#rum-0267-orig" n="mit Eyern" resp="#fyndling">Eier als Zugabe ohne Verfahren: Ob sie roh untergerührt oder vorher gekocht werden, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0267-orig" n="gelb machen" resp="#fyndling">Farbmittel offen: Der Text sagt nur „gelb machen oder weiß lassen“.</note>
-        <note type="interpretive_choice" target="#rum-0267-orig" n="Gewuͤrtz" resp="#fyndling">Sammelbegriff ohne Sorten: Rumpolt stellt „Saltz oder Gewürtz“ frei. Wir ergänzen keine Liste.</note>
+        <note type="interpretive_choice" target="#rum-0267-orig" n="darauß (Tier)" resp="#fyndling" subtype="contextual">Aus der Lunge des Spanferkels: Das Kapitel „Von einer Spensaw“ gibt das Tier vor, und die Nummer davor behandelt Lunge und Leber desselben Ferkels. „Wie man pflegt von Kälberlungen“ ist der Vergleich für das Verfahren.<list type="alternatives"><item>Lunge vom ausgewachsenen Schwein oder vom Kalb<note type="rationale">Nicht gemeint, aber beim Nachkochen der naheliegende Ersatz, weil Spanferkellunge einzeln kaum zu haben ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0267-orig" n="die Leber vnd alles" resp="#fyndling" subtype="contextual">Lunge und Leber zusammen hacken; „alles“ bleibt wörtlich offen und wird nicht zu einer bestimmten Liste aufgelöst.<list type="alternatives"><item>Auch Herz und weitere Innereien des Ferkels<note type="rationale">Möglich, weil beim Zerlegen mehr als Lunge und Leber anfällt; der Text nennt es aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0267-orig" n="saur machen" resp="#fyndling" subtype="contextual">Sauer machen, das Mittel bleibt offen: Rumpolt nennt hier keine Säure.<list type="alternatives"><item>Mit Essig<note type="rationale">So im Kalbslungenmus (Kalbskapitel Nr. 12), auf das der Satz verweist. Für dieses Rezept eine Übertragung, keine Textaussage.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0267-orig" n="mit Eyern" resp="#fyndling" subtype="contextual">Eier als Zugabe ohne Verfahren: Ob sie roh untergerührt oder vorher gekocht werden, sagt der Text nicht.<list type="alternatives"><item>Roh unterrühren und mit der Lunge erhitzen, bis sie stocken<note type="rationale">So im Lungenschmorn vom Kalb (Kalbskapitel Nr. 10), wo Lunge und Eier in heißer Butter dick gerührt werden. Hier nicht gesagt.</note></item><item>Hart gekochte Eier mithacken<note type="rationale">Denkbar, weil im selben Satz gehackt wird; ohne Beleg im Kapitel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0267-orig" n="gelb machen" resp="#fyndling" subtype="contextual">Farbmittel offen: Der Text sagt nur „gelb machen oder weiß lassen“.<list type="alternatives"><item>Mit Safran<note type="rationale">So bei Lunge und Leber in Nr. 10 dieses Kapitels und im Lungenschmorn vom Kalb. Für dieses Rezept nicht gesagt.</note></item><item>Mit Eierdottern<note type="rationale">Beim gelben oder weißen Gekröse in Nr. 9 stehen Eierdotter dabei. Ebenfalls eine Übertragung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0267-orig" n="Gewuͤrtz" resp="#fyndling" subtype="lexical">Sammelbegriff ohne Sorten: Rumpolt stellt „Saltz oder Gewürtz“ frei. Wir ergänzen keine Liste.<list type="alternatives"><item>Pfeffer (und Safran)<note type="rationale">In den verwandten Lungengerichten nennt Rumpolt Pfeffer und Safran (Kalbskapitel Nr. 10, Spanferkelkapitel Nr. 10). Für dieses Rezept nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -95,7 +100,7 @@ Praxis. Wer das nachkochen will, wählt eines dieser Rezepte und setzt das Damhi
         <note type="gloss" target="#rum-0343-orig" n="Dendel" resp="#fyndling">Das Kapitel heißt „Vom Dendel Wildpret“; Dendel ist der Damhirsch (DWB unter dandel, mit den Nebenformen dendel, dendl). Das Euter stammt also vom weiblichen Damwild.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dendel"/></note>
         <note type="gloss" target="#rum-0343-orig" n="Euterlein" resp="#fyndling">Verkleinerungsform von Euter, ohne Bedeutungsunterschied. Rumpolt verwendet sie auch beim Kalb und beim Schaf.</note>
         <note type="gloss" target="#rum-0343-orig" n="wie zuvor ist angezeigt" resp="#fyndling">Verweis auf frühere Rezepte des Buchs: das Euter vom Hirsch („von einem stück Wildt“, rum-0304) und die Kuheuter-Rezepte im Rindkapitel (ab rum-0084). Eigene Schritte nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0343-orig" n="wie zuvor ist angezeigt/ von einem stuͤck Wildt oder Kuh" resp="#fyndling">Der Verweis zielt auf die Euter-Rezepte des Buchs: das Euter vom Wild im Hirschkapitel (rum-0304, gekocht und dann in Pfeffer, gelb, gebraten oder im Gescharb) und die Kuheuter-Rezepte (rum-0084 bis rum-0090). „Wildt oder Kuh“ nennt die Vorlage der Zubereitung, nicht ein zweites Tier.</note>
+        <note type="interpretive_choice" target="#rum-0343-orig" n="wie zuvor ist angezeigt/ von einem stuͤck Wildt oder Kuh" resp="#fyndling" subtype="contextual">Der Verweis zielt auf die Euter-Rezepte des Buchs: das Euter vom Wild im Hirschkapitel (rum-0304, gekocht und dann in Pfeffer, gelb, gebraten oder im Gescharb) und die Kuheuter-Rezepte (rum-0084 bis rum-0090). „Wildt oder Kuh“ nennt die Vorlage der Zubereitung, nicht ein zweites Tier.<list type="alternatives"><item>Allgemeiner Verweis auf die Euter-Zubereitungen im Rind- und Hirschkapitel ohne bestimmtes Einzelrezept.<note type="rationale">Der Druck nennt keine Nummer; welche Stelle Rumpolt genau meint, ist nicht zu entscheiden. Für die Praxis ändert das wenig, weil rum-0304 selbst auf das Kuheuter verweist.</note></item><item>„oder Kuh“ als Rohstoff-Alternative: statt Damhirsch-Euter ein Kuheuter nehmen.<note type="rationale">Grammatisch hängt „von einem stück Wildt oder Kuh“ an „wie zuvor ist angezeigt“; es bezeichnet die Vorlage. Als heutiger Ersatz liegt Kuheuter trotzdem nahe.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,9 +127,9 @@ Die Quelle erlaubt, die genannten Schritte nachzuvollziehen, lässt jedoch die e
         <note type="gloss" target="#w1-101-orig" n="tuter" resp="#fyndling">Eidotter (Dotter). Sie werden mit dem gehackten Salbei vermengt.</note>
         <note type="gloss" target="#w1-101-orig" n="wierffs in ain hais wasser" resp="#fyndling">Die gefüllten Eier kommen in heißes Wasser. Temperatur, Dauer und der dabei beabsichtigte Garzustand bleiben ungenannt.</note>
         <note type="gloss" target="#w1-101-orig" n="beslach sy mit ayren" resp="#fyndling">„Beschlage sie mit Eiern, Kräutern und Safran.“ Welche Zubereitung oder Auftragsweise damit gemeint ist, erklärt der Text nicht.</note>
-        <note type="interpretive_choice" target="#w1-101-orig" n="slach sew an peden ortern auf … vvll sy wider in" resp="#fyndling">Die Eier werden an beiden Enden geöffnet und später wieder befüllt.</note>
-        <note type="interpretive_choice" target="#w1-101-orig" n="wierffs in ain hais wasser" resp="#fyndling">Die gefüllten Eier kommen in heißes Wasser.</note>
-        <note type="interpretive_choice" target="#w1-101-orig" n="beslach sy mit ayren vnd mit krewtern vnd mit saffran" resp="#fyndling">Nach dem Braten folgt ein Beschlag mit Ei, Kräutern und Safran.</note>
+        <note type="interpretive_choice" target="#w1-101-orig" n="slach sew an peden ortern auf … vvll sy wider in" resp="#fyndling">Die Eier werden an beiden Enden geöffnet und später wieder befüllt.<list type="alternatives"><item>Der Inhalt wurde wie im verwandten Meister-Hans-Rezept ausgeblasen.<note type="rationale">mha-087 beschreibt das Ausblasen ausdrücklich; W1 selbst nennt nur Öffnen und Wiederbefüllen. Die Parallele macht es plausibel, ersetzt aber keinen fehlenden W1-Arbeitsschritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-101-orig" n="wierffs in ain hais wasser" resp="#fyndling">Die gefüllten Eier kommen in heißes Wasser.<list type="alternatives"><item>Garart, Temperatur, Dauer und gewünschter Festigkeitsgrad bleiben offen.<note type="rationale">W1 nennt weder Sieden noch Pochieren, Kochen oder eine Garprobe.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-101-orig" n="beslach sy mit ayren vnd mit krewtern vnd mit saffran" resp="#fyndling">Nach dem Braten folgt ein Beschlag mit Ei, Kräutern und Safran.<list type="alternatives"><item>Die genaue Form dieses Beschlags bleibt offen.<note type="rationale">Der Text liefert keine Angabe zu Mischung, Auftragen, Erhitzen oder Funktion; Panade, Guss und Garnitur wären unbelegte Festlegungen.</note></item></list></note>
       </div>
     </back>
   </text>

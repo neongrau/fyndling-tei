@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,8 +105,8 @@ Praxis. Eine Anleitung ist nicht überliefert. Wer sich an das Gericht wagt, kan
         <note type="gloss" target="#rum-0869-orig" n="Hausen" resp="#fyndling">Der Hausen (Huso huso) ist eine große Störart. Rumpolt widmet ihm ein eigenes Kapitel mit zweiundzwanzig Speisen; dies ist die siebzehnte.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
         <note type="gloss" target="#rum-0869-orig" n="Gefricusierte" resp="#fyndling">Rumpolts eigener Name für ein Verfahren, ein Lehnwort aus dem Französischen (fricasser). Bei den Kalbfleischscheiben erklärt er es selbst: in heiße Butter werfen und rösten, „Also neñet man es gefricusiert“. Gemeint ist also nicht das heutige Frikassee in heller, gebundener Sauce. Wie der Hausen in dieser Nummer zubereitet wird, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0869-orig" n="Agrastbeer" resp="#fyndling">Unreife Weintrauben; Rumpolt erklärt das Wort an anderer Stelle selbst als Beeren „von den vnzeitigen Trauben“. Im Frühneuhochdeutschen kann das Wort auch Stachelbeeren meinen, und an mehreren Stellen lässt Rumpolt zwischen Groselbeer und Agrastbeer wählen.</note>
-        <note type="interpretive_choice" target="#rum-0869-orig" n="Agrastbeer" resp="#fyndling">Unreife Weintrauben. Rumpolt erklärt das Wort selbst als Frucht „von den vnzeitigen Trauben“, und so lesen es auch die übrigen Rezepte des Buchs mit Agrastbeeren.</note>
-        <note type="interpretive_choice" target="#rum-0869-orig" n="Gefricusierte" resp="#fyndling">Rösten in heißer Butter, wie Rumpolt das Wort bei den Kalbfleischscheiben selbst erklärt und bei Gans und Hühnern gebraucht. Für den Hausen ist das Verfahren nicht ausgeführt.</note>
+        <note type="interpretive_choice" target="#rum-0869-orig" n="Agrastbeer" resp="#fyndling" subtype="lexical">Unreife Weintrauben. Rumpolt erklärt das Wort selbst als Frucht „von den vnzeitigen Trauben“, und so lesen es auch die übrigen Rezepte des Buchs mit Agrastbeeren.<list type="alternatives"><item>Stachelbeeren<note type="rationale">Das Frühneuhochdeutsche Wörterbuch kennt für agrest auch die Stachelbeere, und Rumpolt nennt anderswo „Groselbeer oder Agrastbeer“ als gleichwertige Wahl. Hier steht aber kein „oder Groselbeer“. Für die heutige Küche sind grüne Stachelbeeren der leichter greifbare Ersatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0869-orig" n="Gefricusierte" resp="#fyndling" subtype="contextual">Rösten in heißer Butter, wie Rumpolt das Wort bei den Kalbfleischscheiben selbst erklärt und bei Gans und Hühnern gebraucht. Für den Hausen ist das Verfahren nicht ausgeführt.<list type="alternatives"><item>Heutiges Frikassee: helles Ragout in gebundener weißer Sauce<note type="rationale">Diese Bedeutung ist jünger; Rumpolts eigene Erklärung des Wortes spricht dagegen.</note></item></list></note>
       </div>
     </back>
   </text>

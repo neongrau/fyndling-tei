@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,8 +105,8 @@ Praxis. Ein Rebhuhn braten, das Fleisch auslösen und nach rum-0659 verarbeiten,
         <note type="gloss" target="#rum-0757-orig" n="Feldhun" resp="#fyndling">Rebhuhn (Perdix perdix). Das Kapitel heißt „Von einem Rephun“; Rumpolt wechselt zwischen beiden Namen für denselben Vogel.</note>
         <note type="gloss" target="#rum-0757-orig" n="Gestossens" resp="#fyndling">Rumpolts Name für ein Gericht aus gegartem Fleisch, das im Mörser mit Mandeln oder Nusskernen und Brot gestoßen und mit Brühe durchgestrichen wird. Dieselbe Form kehrt bei Henne, Kapaun, Gans und Wildente wieder.</note>
         <note type="gloss" target="#rum-0757-orig" n="Zirbelnuͤßkern" resp="#fyndling">Kerne der Zirbelnuss, also Samen der Zirbelkiefer (Arve). Der Name wurde früher zuweilen auch für Pinienkerne gebraucht.</note>
-        <note type="interpretive_choice" target="#rum-0757-orig" n="Feldhun" resp="#fyndling">Rebhuhn: Das Kapitel „Von einem Rephun“ gibt das Tier vor, und „Feldhuhn“ ist ein gängiger älterer Name des Rebhuhns.</note>
-        <note type="interpretive_choice" target="#rum-0757-orig" n="Gestossens (Verfahren und Menge)" resp="#fyndling">Rumpolt nennt nur den Tausch der Nussart; Verfahren und Mengen bleiben an dieser Stelle offen. Er setzt sein Gestoßenes als bekannt voraus (Kapitelnummer 3, rum-0748).</note>
+        <note type="interpretive_choice" target="#rum-0757-orig" n="Feldhun" resp="#fyndling" subtype="lexical">Rebhuhn: Das Kapitel „Von einem Rephun“ gibt das Tier vor, und „Feldhuhn“ ist ein gängiger älterer Name des Rebhuhns.<list type="alternatives"><item>ein anderer Feldvogel (etwa Wachtel oder Haselhuhn)<note type="rationale">„Feldhuhn“ kann allgemeiner gebraucht werden, das Kapitel deckt eine solche Lesart aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0757-orig" n="Gestossens (Verfahren und Menge)" resp="#fyndling" subtype="contextual">Rumpolt nennt nur den Tausch der Nussart; Verfahren und Mengen bleiben an dieser Stelle offen. Er setzt sein Gestoßenes als bekannt voraus (Kapitelnummer 3, rum-0748).<list type="alternatives"><item>Verfahren wie beim Gestoßenen vom Kapaun (rum-0659) und von der Henne (rum-0696): gebratenes Fleisch hacken, im Mörser mit den Kernen und geröstetem Weißbrot stoßen, mit Brühe durchstreichen, einmal aufkochen<note type="rationale">Gleicher Gerichtsname im selben Buch, und rum-0659 nennt Zirbelnusskerne ausdrücklich als Ersatz für Mandeln. Als Praxisvorschlag tragfähig, aber eine Übertragung, kein Text dieser Nummer.</note></item></list></note>
       </div>
     </back>
   </text>

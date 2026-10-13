@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,8 +99,8 @@ Woher kommt ein Vergleich? Eine ausgeführte Fischfassung steht beim Hecht (rum-
 Praxis. Ein eigenes Verfahren für den Hausen lässt sich aus dieser Zeile nicht ableiten, und wir ergänzen keins. Wer das Gericht ausprobieren will, kann sich an der Hechtfassung orientieren; ob das Verfahren beim fetteren Hausen gleich gut trägt, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0868-orig" n="Manscho Blancko" resp="#fyndling">Rumpolts Schreibung für spanisch manjar blanco, „weiße Speise“, den Blancmanger. Rumpolt sagt selbst beim Kapaun: „man nennets auff Spanisch Manscho Blancko“ (rum-0682).</note>
         <note type="gloss" target="#rum-0868-orig" n="Hausen" resp="#fyndling">Der Hausen (Huso huso) ist die größte Störart. Das Tier ergibt sich aus Rumpolts Kapitel „Von einem Hausen“, das zweiundzwanzig Gerichte aufzählt. Gemeint ist der Fisch selbst, nicht die Hausenblase, die als Geliermittel verwendete Schwimmblase.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
-        <note type="interpretive_choice" target="#rum-0868-orig" n="Manscho Blancko" resp="#fyndling">Spanisch manjar blanco, der Blancmanger. Rumpolt nennt den Namen beim Kapaun (rum-0682) ausdrücklich „auff Spanisch“ und beschreibt dort ein weißes Mus aus Geflügelbrust, Reismehl und Milch.</note>
-        <note type="interpretive_choice" target="#rum-0868-orig" n="Verfahren beim Hausen" resp="#fyndling">Offen: Die Zeile nennt nur das Gericht, keine Zutat außer dem Fisch und keinen Arbeitsschritt. Wir ergänzen kein Verfahren.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="interpretive_choice" target="#rum-0868-orig" n="Manscho Blancko" resp="#fyndling" subtype="lexical">Spanisch manjar blanco, der Blancmanger. Rumpolt nennt den Namen beim Kapaun (rum-0682) ausdrücklich „auff Spanisch“ und beschreibt dort ein weißes Mus aus Geflügelbrust, Reismehl und Milch.<list type="alternatives"><item>Eine eigenständige deutsche oder regionale Schreibform<note type="rationale">Nicht belegt: Ein Nachschlagen von „manscho“ liefert keinen einschlägigen Eintrag, und Rumpolt ordnet das Wort selbst dem Spanischen zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0868-orig" n="Verfahren beim Hausen" resp="#fyndling" subtype="contextual">Offen: Die Zeile nennt nur das Gericht, keine Zutat außer dem Fisch und keinen Arbeitsschritt. Wir ergänzen kein Verfahren.<list type="alternatives"><item>Wie beim Hecht (rum-0979): den Fisch in Wasser gar sieden, abkühlen lassen, das weiße Fleisch entgräten und fein hacken, mit Reismehl und Mandelmilch zu einem Mus kochen, mit Zucker, Butter, Rosenwasser und etwas Salz vollenden<note type="rationale">Die nächstliegende ausgeführte Fischfassung unter demselben Namen. Ob Rumpolt den Hausen genauso verarbeitet hat, sagt der Text nicht; der Hausen ist zudem fetter als der Hecht.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
       </div>
     </back>
   </text>

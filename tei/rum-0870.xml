@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,10 +107,10 @@ Essig und Petersilie. Der Essig kommt erst auf den fertigen Fisch, nicht in den 
 Praxis. Ob ganz oder in Stücken, sagt der Text nicht; Stücke oder Scheiben lassen sich in einem heutigen Topf am leichtesten gleichmäßig garen. Heiß aus dem Wasser heben, anrichten, Essig darüber, Petersilie darauf.</note>
         <note type="gloss" target="#rum-0870-orig" n="Hausen" resp="#fyndling">Der Hausen (Huso huso), die größte Störart; gemeint ist der Fisch, nicht das Verb hausen. Rumpolt widmet ihm ein eigenes Kapitel mit zweiundzwanzig Speisen, getrennt vom Stör; dies ist die achtzehnte.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
         <note type="gloss" target="#rum-0870-orig" n="abgesotten" resp="#fyndling">Abgekocht, in siedendem Wasser gar gesotten. Das Grimmsche Wörterbuch nennt beim Verb absieden ausdrücklich Fische als Beispiel.</note>
-        <note type="interpretive_choice" target="#rum-0870-orig" n="Hausen" resp="#fyndling">Der Fisch Hausen (Huso huso), ein großer Stör. Das Etymologische Wörterbuch führt Hausen als „großer Stör“ (mhd. hūse), und das Kapitel, in dem die Nummer steht, gilt ausdrücklich dem Hausen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
-        <note type="interpretive_choice" target="#rum-0870-orig" n="Heiß abgesotten" resp="#fyndling">In siedendem Wasser gar gekocht und heiß angerichtet. Absieden heißt abkochen, und das Grimmsche Wörterbuch nennt Fische als Beispiel; dass der Essig erst beim Anrichten kommt, passt zu einem warm aufgetragenen Fisch.</note>
-        <note type="interpretive_choice" target="#rum-0870-orig" n="Sud" resp="#fyndling">Der Text nennt keinen Sud, weder Salz noch Wein noch Gewürze; wir ergänzen nichts.</note>
-        <note type="interpretive_choice" target="#rum-0870-orig" n="Teilstück" resp="#fyndling">Welches Stück vom Hausen gemeint ist und ob er ganz oder zerteilt gesotten wird, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0870-orig" n="Hausen" resp="#fyndling" subtype="lexical">Der Fisch Hausen (Huso huso), ein großer Stör. Das Etymologische Wörterbuch führt Hausen als „großer Stör“ (mhd. hūse), und das Kapitel, in dem die Nummer steht, gilt ausdrücklich dem Hausen.<list type="alternatives"><item>Stör allgemein<note type="rationale">Sachlich verwandt, aber Rumpolt trennt Hausen und Stör in zwei Kapitel; deshalb bleibt im Titel und Text „Hausen“.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="interpretive_choice" target="#rum-0870-orig" n="Heiß abgesotten" resp="#fyndling" subtype="contextual">In siedendem Wasser gar gekocht und heiß angerichtet. Absieden heißt abkochen, und das Grimmsche Wörterbuch nennt Fische als Beispiel; dass der Essig erst beim Anrichten kommt, passt zu einem warm aufgetragenen Fisch.<list type="alternatives"><item>Durch Sieden eindicken<note type="rationale">Diese Bedeutung von absieden führt das Frühneuhochdeutsche Wörterbuch auch, sie gilt aber für Flüssigkeiten, nicht für einen Fisch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0870-orig" n="Sud" resp="#fyndling" subtype="contextual">Der Text nennt keinen Sud, weder Salz noch Wein noch Gewürze; wir ergänzen nichts.<list type="alternatives"><item>Gesalzenes Wasser, schwach siedend<note type="rationale">Die heutige Grundform beim Fischsieden und der Vorschlag in der Zubereitungsnotiz; durch den Text nicht belegt. Ein Wein- oder Essigsud wäre ebenso denkbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0870-orig" n="Teilstück" resp="#fyndling" subtype="contextual">Welches Stück vom Hausen gemeint ist und ob er ganz oder zerteilt gesotten wird, sagt der Text nicht.<list type="alternatives"><item>Stücke oder Scheiben<note type="rationale">Praktisch für heutige Töpfe und Garzeiten; eine Annahme, keine Angabe des Texts.</note></item></list></note>
       </div>
     </back>
   </text>

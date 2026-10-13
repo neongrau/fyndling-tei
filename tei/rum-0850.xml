@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,11 +118,11 @@ Praxis. Zwiebeln klein schneiden, in siedender Rinderbrühe einmal aufwallen las
         <note type="gloss" target="#rum-0850-orig" n="fein feißt" resp="#fyndling">„Feißt“ heißt fett; „fein“ verstärkt nur. Gemeint ist eine schön fette Rinderbrühe.</note>
         <note type="gloss" target="#rum-0850-orig" n="das herbe von Zwibeln" resp="#fyndling">Das Herbe der rohen Zwiebeln. Rumpolt begründet damit selbst, warum die Zwiebeln vorher überbrüht und abgetropft werden.</note>
         <note type="gloss" target="#rum-0850-orig" n="nicht ein lange Bruͤh gewinnt" resp="#fyndling">Eine „lange Brühe“ ist eine reichliche, dünne Brühe. Gemeint ist, dass nicht viel Flüssigkeit entstehen soll; über eine Bindung sagt der Text nichts.</note>
-        <note type="interpretive_choice" target="#rum-0850-orig" n="pfeffers" resp="#fyndling">Als Verb „pfeffere sie“ übersetzt, also mit Pfeffer würzen. Der Zusatz „mit gestossenem Pfeffer“ im selben Satz stützt die Verb-Lesart.</note>
-        <note type="interpretive_choice" target="#rum-0850-orig" n="kleinen Fischkessel" resp="#fyndling">Wörtlich als „kleiner Fischkessel“ übersetzt, wie im ganzen Buch. Belegt ist ein leichter, meist messingener Kessel zum Fischsieden (Grimm: ahenum piscarium).</note>
-        <note type="interpretive_choice" target="#rum-0850-orig" n="Voͤgel (Art)" resp="#fyndling">Kleine Vögel ohne Artangabe. Der Rezepttext sagt nur „Voͤgel“; die Größe ergibt sich aus der Kapitelüberschrift „Von allerley kleinen Voͤgeln“.</note>
-        <note type="interpretive_choice" target="#rum-0850-orig" n="gebraten (Bratzeit am Spieß)" resp="#fyndling">Die Vögel werden am Spieß fertig gebraten; eine Zeit nennt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0850-orig" n="ein ander Rindtfleischbruͤh (Menge)" resp="#fyndling">Keine Mengenangabe. Das Ziel nennt der Schluss: Es soll keine „lange Brühe“ werden, also nur wenig Flüssigkeit.</note>
+        <note type="interpretive_choice" target="#rum-0850-orig" n="pfeffers" resp="#fyndling" subtype="lexical">Als Verb „pfeffere sie“ übersetzt, also mit Pfeffer würzen. Der Zusatz „mit gestossenem Pfeffer“ im selben Satz stützt die Verb-Lesart.<list type="alternatives"><item>Substantiv „Pfeffer“ im Sinne einer gebundenen Pfeffersauce.<note type="rationale">Bei Rumpolt kann „Pfeffer“ auch ein Saucengericht bezeichnen. Hier fehlt jede Bindung, und das Gewürz wird ausdrücklich genannt; deshalb nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0850-orig" n="kleinen Fischkessel" resp="#fyndling" subtype="lexical">Wörtlich als „kleiner Fischkessel“ übersetzt, wie im ganzen Buch. Belegt ist ein leichter, meist messingener Kessel zum Fischsieden (Grimm: ahenum piscarium).<list type="alternatives"><item>Kleiner Topf oder Kasserolle<note type="rationale">Für die Praxis gleichwertig, in der Übersetzung aber eine Vereinfachung, die Rumpolts Gefäßnamen verwischt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0850-orig" n="Voͤgel (Art)" resp="#fyndling" subtype="contextual">Kleine Vögel ohne Artangabe. Der Rezepttext sagt nur „Voͤgel“; die Größe ergibt sich aus der Kapitelüberschrift „Von allerley kleinen Voͤgeln“.<list type="alternatives"><item>Eine bestimmte Vogelart<note type="rationale">Der Text nennt keine. Im selben Kapitel schließt nur rum-0852 für sein Gericht Spatzen und Sperlinge aus; für dieses Rezept gibt es keinen Hinweis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0850-orig" n="gebraten (Bratzeit am Spieß)" resp="#fyndling" subtype="contextual">Die Vögel werden am Spieß fertig gebraten; eine Zeit nennt Rumpolt nicht.<list type="alternatives"><item>Über Glut braten, bis der Saft klar austritt<note type="rationale">Praxisregel für das Nachkochen; die Dauer hängt von der Größe der Vögel ab und ist aus dem Text nicht festlegbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0850-orig" n="ein ander Rindtfleischbruͤh (Menge)" resp="#fyndling" subtype="contextual">Keine Mengenangabe. Das Ziel nennt der Schluss: Es soll keine „lange Brühe“ werden, also nur wenig Flüssigkeit.<list type="alternatives"><item>So viel Brühe, dass die Zwiebeln knapp bedeckt sind<note type="rationale">Praxiswert für das Nachkochen, der zur Vorgabe „nicht ein lange Bruͤh“ passt; im Text nicht beziffert.</note></item></list></note>
       </div>
     </back>
   </text>

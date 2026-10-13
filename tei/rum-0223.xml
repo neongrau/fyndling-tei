@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,11 +130,11 @@ Praxis. Junge Ziege beim Metzger vorbestellen. Braten, bis Fleisch, Vögel und F
         <note type="gloss" target="#rum-0223-orig" n="Ziwebẽ" resp="#fyndling">Zibeben, große getrocknete Weinbeeren. Die Tilde steht für ein ausgelassenes n: Ziweben.</note>
         <note type="gloss" target="#rum-0223-orig" n="Kesten" resp="#fyndling">Kastanien, gemeint sind Edelkastanien (Maronen).</note>
         <note type="gloss" target="#rum-0223-orig" n="ein gantzen tag mit der einigen Speiß zu thun" resp="#fyndling">Einig heißt hier „einzig“: Der Koch hat mit dieser einen Speise einen ganzen Tag zu tun. Die Angabe betrifft die Arbeit des Kochs, nicht die Garzeit.</note>
-        <note type="interpretive_choice" target="#rum-0223-orig" n="Geiß" resp="#fyndling">Junge Ziege: Der Kapitelkopf lautet „Von einer jungen Geiß“, und geiß ist die gewöhnliche Bezeichnung der Ziege. So auch beim Kapitelnachbarn, der einfach gebratenen jungen Ziege.</note>
-        <note type="interpretive_choice" target="#rum-0223-orig" n="gespickt mit kleinen Vögeln" resp="#fyndling">Die ganzen kleinen Vögel werden in Einschnitte oder unter die Haut der Ziege gesteckt, die Vögel sind also das Spickmaterial anstelle von Speck. Dafür spricht, dass Rumpolt die Füllung mit den Früchten eigens als „gefüllt“ nennt.</note>
-        <note type="interpretive_choice" target="#rum-0223-orig" n="kleine Vögel" resp="#fyndling">Kleine Vögel der damaligen Küche, etwa Krammetsvögel oder Lerchen; Rumpolt nennt hier keine Art, die Beispiele sind nicht belegt.</note>
-        <note type="interpretive_choice" target="#rum-0223-orig" n="Zustand von Kastanien, Äpfeln und Birnen in der Füllung" resp="#fyndling">Roh in Stücken eingefüllt und im Braten mitgegart; der Text schweigt dazu.</note>
-        <note type="interpretive_choice" target="#rum-0223-orig" n="Bratgerät" resp="#fyndling">Braten am Spieß über offenem Feuer liegt für ein ganzes Tier nahe, ist hier aber nicht genannt.</note>
+        <note type="interpretive_choice" target="#rum-0223-orig" n="Geiß" resp="#fyndling" subtype="lexical">Junge Ziege: Der Kapitelkopf lautet „Von einer jungen Geiß“, und geiß ist die gewöhnliche Bezeichnung der Ziege. So auch beim Kapitelnachbarn, der einfach gebratenen jungen Ziege.<list type="alternatives"><item>Zicklein im Sinn eines Milchkitzes<note type="rationale">Mit „junge Geiß“ vereinbar, aber das Alter legt der Text nicht fest; deshalb einheitlich „junge Ziege“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0223-orig" n="gespickt mit kleinen Vögeln" resp="#fyndling" subtype="contextual">Die ganzen kleinen Vögel werden in Einschnitte oder unter die Haut der Ziege gesteckt, die Vögel sind also das Spickmaterial anstelle von Speck. Dafür spricht, dass Rumpolt die Füllung mit den Früchten eigens als „gefüllt“ nennt.<list type="alternatives"><item>Die Vögel liegen im Bauchraum, zusammen mit der Füllung<note type="rationale">Dann wäre „gefüllt“ gemeint, das der Satz aber getrennt für die Früchte verwendet; nicht ausgeschlossen, weil der Text das Verfahren nicht beschreibt.</note></item><item>Nur wörtlich „mit kleinen Vögeln gespickt“, ohne Festlegung<note type="rationale">So steht es in der Übersetzung; die Ausführung bleibt dem Koch überlassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0223-orig" n="kleine Vögel" resp="#fyndling" subtype="contextual">Kleine Vögel der damaligen Küche, etwa Krammetsvögel oder Lerchen; Rumpolt nennt hier keine Art, die Beispiele sind nicht belegt.<list type="alternatives"><item>Wachteln<note type="rationale">Ausdrücklich moderner Ersatz zum Nachkochen, keine Gleichsetzung mit dem, was Rumpolt meinte.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0223-orig" n="Zustand von Kastanien, Äpfeln und Birnen in der Füllung" resp="#fyndling" subtype="contextual">Roh in Stücken eingefüllt und im Braten mitgegart; der Text schweigt dazu.<list type="alternatives"><item>Kastanien vorgegart und geschält<note type="rationale">Praktische Lösung zum Nachkochen, weil rohe Kastanien in der Füllung hart bleiben können; im Text nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0223-orig" n="Bratgerät" resp="#fyndling" subtype="contextual">Braten am Spieß über offenem Feuer liegt für ein ganzes Tier nahe, ist hier aber nicht genannt.<list type="alternatives"><item>Backofen<note type="rationale">Ebenfalls möglich; der Text sagt nur „gebraten“.</note></item><item>Ohne Festlegung<note type="rationale">So steht es in der Übersetzung: „gebraten“, ohne Gerät.</note></item></list></note>
       </div>
     </back>
   </text>

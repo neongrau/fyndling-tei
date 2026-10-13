@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,8 +99,8 @@
         <note type="gloss" target="#men-201-orig" n="Aigrefin" resp="#fyndling">Schellfisch</note>
         <note type="gloss" target="#men-201-orig" n="Rouget" resp="#fyndling">Rotbarbe</note>
         <note type="gloss" target="#men-201-orig" n="Jance" resp="#fyndling">Eine bekannte gelbe mittelalterliche Sauce, oft mit Ingwer, Safran, Verjus, Semmelbröseln und Eigelb zubereitet.</note>
-        <note type="interpretive_choice" target="#men-201-orig" n="appareillié comme le rouget" resp="#fyndling">Die Zubereitung des Fisches (Schuppen, Waschen, Kochen) folgt der Methode für Rotbarbe.</note>
-        <note type="interpretive_choice" target="#men-201-orig" n="a la jance" resp="#fyndling">Der Fisch wird mit der spezifischen, bekannten mittelalterlichen Jance-Sauce serviert.</note>
+        <note type="interpretive_choice" target="#men-201-orig" n="appareillié comme le rouget" resp="#fyndling">Die Zubereitung des Fisches (Schuppen, Waschen, Kochen) folgt der Methode für Rotbarbe.<list type="alternatives"><item>Es könnte auch bedeuten, dass der Fisch mit den gleichen Gewürzen wie die Rotbarbe (Verjus, Ingwer, Safran, Salz) gewürzt wird.<note type="rationale">Die Rotbarben-Rezepte im Ménagier erwähnen diese Gewürze. Jedoch wird hier explizit 'a la jance' als Sauce genannt, was eine komplexere Zubereitung ist und die einfache Würzung der Rotbarbe überlagern würde.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-201-orig" n="a la jance" resp="#fyndling">Der Fisch wird mit der spezifischen, bekannten mittelalterlichen Jance-Sauce serviert.<list type="alternatives"><item>Es könnte sich um eine allgemeine 'gelbe Sauce' handeln, die der Jance ähnelt.<note type="rationale">Im Mittelalter gab es viele gelbe Saucen. 'Jance' war jedoch ein etablierter Name für eine Sauce mit spezifischen Hauptzutaten (Ingwer, Safran, Verjus, Semmelbrösel, Eigelb), was die spezifische Lesart wahrscheinlicher macht.</note></item></list></note>
       </div>
     </back>
   </text>

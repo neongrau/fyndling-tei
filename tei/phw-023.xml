@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,9 +139,9 @@ Und der Tortenboden? Der Text nennt keinen, und aus der Masse allein würde beim
         <note type="gloss" target="#phw-023-orig" n="mayrser" resp="#fyndling">Ein großer Mörser, wie er im Mittelalter zum Zerkleinern von Fleisch, Gemüse und Nüssen verwendet wurde. Nicht zu verwechseln mit einem kleinen Gewürzmörser.</note>
         <note type="gloss" target="#phw-023-orig" n="semel" resp="#fyndling">Geriebene Semmel oder Weißbrotkrume, die als Bindemittel und zum Andicken verwendet wurde.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
         <note type="gloss" target="#phw-023-orig" n="fyerdel stundt" resp="#fyndling">Eine Viertelstunde.</note>
-        <note type="interpretive_choice" target="#phw-023-orig" n="se" resp="#fyndling">Streue (vom Verb ‚säen').</note>
-        <note type="interpretive_choice" target="#phw-023-orig" n="ayr 6 detter" resp="#fyndling">Dotter/Eigelb - gemeint sind 6 Eigelb, nicht 6 ganze Eier.</note>
-        <note type="interpretive_choice" target="#phw-023-orig" n="bachenn" resp="#fyndling">Der Text schreibt nur ‚bachenn' (backen), ohne ein Gefäß zu nennen.</note>
+        <note type="interpretive_choice" target="#phw-023-orig" n="se" resp="#fyndling" subtype="lexical">Streue (vom Verb ‚säen').</note>
+        <note type="interpretive_choice" target="#phw-023-orig" n="ayr 6 detter" resp="#fyndling" subtype="lexical">Dotter/Eigelb - gemeint sind 6 Eigelb, nicht 6 ganze Eier.</note>
+        <note type="interpretive_choice" target="#phw-023-orig" n="bachenn" resp="#fyndling" subtype="contextual">Der Text schreibt nur ‚bachenn' (backen), ohne ein Gefäß zu nennen.<list type="alternatives"><item>Offene Feuerstelle mit flacher Tortenpfanne und Glut auf dem Deckel, wie bei den Mandeltorten phw-006 bis phw-010 belegt.<note type="rationale">Buchinterne Nachbarrezepte nutzen dieses Verfahren, aber für phw-023 selbst nennt der Text kein Gefäß - die Übertragung ist nicht belegt und bleibt offen.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,9 +111,9 @@ Praxis. Drei Knoblauchköpfe grob zerdrücken, mit reichlich Pfeffer und etwas w
         <note type="gloss" target="#b4-258-orig" n="prawnn werden" resp="#fyndling">Braun werden, bezieht sich auf das Anbraten der Gewürze oder das Einkochen der Sauce bis zur Bräunung.</note>
         <note type="gloss" target="#b4-258-orig" n="kalten wetter" resp="#fyndling">Ein Hinweis auf die Jahreszeit oder die Art der Speise, die in der kalten Jahreszeit wärmt.</note>
         <note type="gloss" target="#b4-258-orig" n="gepratten hunernn" resp="#fyndling">Gebratenes Huhn. Eine typische Beilage für diese Art von Sauce.</note>
-        <note type="interpretive_choice" target="#b4-258-orig" n="pheffer mer den Ingwer" resp="#fyndling">Mehr Pfeffer als Ingwer - eine Mengenangabe: Der Pfeffer soll gegenüber dem Ingwer überwiegen.</note>
-        <note type="interpretive_choice" target="#b4-258-orig" n="NYm Saluay" resp="#fyndling">Gehört nicht zu diesem Rezept: „NYm Saluay" ist der Anfang des folgenden Rezepts b4-259, den der Schreiber vor dessen Überschrift gesetzt hat. W1 (w1-261), das Regensburger Kochbuch (m5919-104) und Meister Hans (mha-082) beginnen dieselbe trockene Kräutersauce jeweils mit Salbei; die Regensburger Fassung dieser Pfeffersauce (m5919-081) hat keinen.</note>
-        <note type="interpretive_choice" target="#b4-258-orig" n="lass es sieden" resp="#fyndling">Lass die Gewürzmischung sieden und braun werden. Welche Flüssigkeit dabei verwendet wird, nennt der Text nicht. Für die Praxis wird Wasser oder helle Brühe empfohlen.</note>
+        <note type="interpretive_choice" target="#b4-258-orig" n="pheffer mer den Ingwer" resp="#fyndling" subtype="lexical">Mehr Pfeffer als Ingwer - eine Mengenangabe: Der Pfeffer soll gegenüber dem Ingwer überwiegen.</note>
+        <note type="interpretive_choice" target="#b4-258-orig" n="NYm Saluay" resp="#fyndling" subtype="contextual">Gehört nicht zu diesem Rezept: „NYm Saluay" ist der Anfang des folgenden Rezepts b4-259, den der Schreiber vor dessen Überschrift gesetzt hat. W1 (w1-261), das Regensburger Kochbuch (m5919-104) und Meister Hans (mha-082) beginnen dieselbe trockene Kräutersauce jeweils mit Salbei; die Regensburger Fassung dieser Pfeffersauce (m5919-081) hat keinen.<list type="alternatives"><item>Salbei als Zutat oder Garnitur dieser Pfeffersauce<note type="rationale">So war es bisher gelesen. Widerlegt durch die drei Parallelfassungen der folgenden Kräutersauce, die alle mit Salbei beginnen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-258-orig" n="lass es sieden" resp="#fyndling" subtype="contextual">Lass die Gewürzmischung sieden und braun werden. Welche Flüssigkeit dabei verwendet wird, nennt der Text nicht. Für die Praxis wird Wasser oder helle Brühe empfohlen.<list type="alternatives"><item>Essig oder Wein wären zeittypische Alternativen für eine würzige Salsse, sind hier aber nicht belegt - auch das fast wortgleiche Rezept im Regensburger Kochbuch (m5919-081) nennt keine Flüssigkeit.</item></list></note>
       </div>
     </back>
   </text>

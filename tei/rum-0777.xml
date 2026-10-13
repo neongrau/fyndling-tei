@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,11 +105,11 @@ Gelb oder weiß. Das Hühnerrezept lässt beides zu, nennt aber kein Färbemitte
 Praxis. Eine Pfanne genügt. Die Butter richtig heiß werden lassen, die Taubenstücke rundum anrösten, das Fett abgießen, Brühe und Säure angießen, mit Ingwer, Pfeffer und Kräutern würzen, die Agrastbeeren zugeben und sanft sieden lassen, bis das Fleisch gar ist. Agrastbeeren sind unreife Weintrauben; am nächsten kommen heute kleine, grüne, saure Trauben. Eine Zeitangabe macht der Text nicht.</note>
         <note type="gloss" target="#rum-0777-orig" n="Gefricusierte" resp="#fyndling">Lehnwort aus dem französischen fricassée. Rumpolt meint bei Geflügel das Rösten in heißer Butter mit anschließendem kurzem Aufkochen in Brühe (rum-0712), nicht das heutige Frikassee in heller, gebundener Sauce.</note>
         <note type="gloss" target="#rum-0777-orig" n="wie vorhin vermeldt ist" resp="#fyndling">wie weiter oben beschrieben. Gemeint ist die Nummer 2 im Kapitel von den jungen Hühnern, die frikassierten Hühner (rum-0712).</note>
-        <note type="interpretive_choice" target="#rum-0777-orig" n="wie vorhin vermeldt ist" resp="#fyndling">Verweis auf die frikassierten jungen Hühner (rum-0712). Der Text nennt die jungen Hühner ausdrücklich, und es ist die einzige Frikassee-Anleitung für junge Hühner im Buch.</note>
-        <note type="interpretive_choice" target="#rum-0777-orig" n="Gefricusierte" resp="#fyndling">In heißer Butter rösten, die Butter abgießen und kurz in Brühe mit Säure, Gewürz und Kräutern aufkochen, wie im verwiesenen Hühnerrezept.</note>
-        <note type="interpretive_choice" target="#rum-0777-orig" n="Zubereitungsform der Tauben" resp="#fyndling">Offen: Rumpolt sagt nur, die Tauben seien zu frikassieren wie die jungen Hühner. Ob ganze Tauben gemeint sind, geht aus dem Text nicht hervor.</note>
-        <note type="interpretive_choice" target="#rum-0777-orig" n="Garzeit in der Brühe" resp="#fyndling">Wie im Hühnerrezept: „laß darmit nur ein Sudt auffthun“, also nur einmal aufkochen.</note>
-        <note type="interpretive_choice" target="#rum-0777-orig" n="gelb oder weiß" resp="#fyndling">Wie im Hühnerrezept: „Du magsts gelb machen/ oder weiß lassen.“ Ein Färbemittel nennt Rumpolt nicht.</note>
+        <note type="interpretive_choice" target="#rum-0777-orig" n="wie vorhin vermeldt ist" resp="#fyndling" subtype="contextual">Verweis auf die frikassierten jungen Hühner (rum-0712). Der Text nennt die jungen Hühner ausdrücklich, und es ist die einzige Frikassee-Anleitung für junge Hühner im Buch.<list type="alternatives"><item>Verweis auf eine der früheren frikassierten Lebern (etwa rum-0097, rum-0157)<note type="rationale">Dort wird Leber in kleinen Stücken rasch angeröstet; der Text verweist aber ausdrücklich auf die Hühner, nicht auf Leber.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0777-orig" n="Gefricusierte" resp="#fyndling" subtype="lexical">In heißer Butter rösten, die Butter abgießen und kurz in Brühe mit Säure, Gewürz und Kräutern aufkochen, wie im verwiesenen Hühnerrezept.<list type="alternatives"><item>Frikassee im heutigen Sinn (Fleisch in heller, gebundener Sauce)<note type="rationale">Das verwiesene Hühnerrezept nennt keine Bindung durch Mehl, Eigelb oder Sahne; die Brühe bleibt dünn.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0777-orig" n="Zubereitungsform der Tauben" resp="#fyndling" subtype="contextual">Offen: Rumpolt sagt nur, die Tauben seien zu frikassieren wie die jungen Hühner. Ob ganze Tauben gemeint sind, geht aus dem Text nicht hervor.<list type="alternatives"><item>Junge Tauben halbiert oder geviertelt, Flügelspitzen und Füße ab, Haut abgezogen und mit dem Messerrücken flach gedrückt<note type="rationale">Praxis beim Nachkochen: überträgt das Hühnerverfahren und lässt die Stücke schnell garen; im Text für Tauben nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0777-orig" n="Garzeit in der Brühe" resp="#fyndling" subtype="contextual">Wie im Hühnerrezept: „laß darmit nur ein Sudt auffthun“, also nur einmal aufkochen.<list type="alternatives"><item>In der Brühe schwach sieden, bis das Taubenfleisch gar ist<note type="rationale">Praxis beim Nachkochen: Ein einziges Aufkochen reicht bei Stücken mit Knochen kaum zum Durchgaren.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0777-orig" n="gelb oder weiß" resp="#fyndling" subtype="contextual">Wie im Hühnerrezept: „Du magsts gelb machen/ oder weiß lassen.“ Ein Färbemittel nennt Rumpolt nicht.<list type="alternatives"><item>Weiß lassen<note type="rationale">Praxis beim Nachkochen: braucht keine Annahme über ein Färbemittel.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,9 +103,9 @@ Wie wird gebraten? Ob am Spieß, auf dem Rost oder in der Pfanne, sagt die Über
 
 Praxis. Hühnermägen sind von Natur aus zäh: Man kocht sie vorher gar oder schmort sie lange und brät sie dann zusammen mit der Leber kurz in der Pfanne. Die Leber nur kurz braten, damit sie innen zart bleibt, beides aber durchgaren. Fett und Würze nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0719-orig" n="Magen" resp="#fyndling">Hier der Hühnermagen (Muskelmagen) als Innerei neben der Leber. Frühneuhochdeutsch magen kann auch Schlafmohn bedeuten, doch Mohn wird nicht gebraten und stünde nicht als Paar neben der Leber. Rumpolt gebraucht das Wort im Hühnerkapitel und beim Kapaun durchweg für das Organ.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
-        <note type="interpretive_choice" target="#rum-0719-orig" n="Magen" resp="#fyndling">Hühnermagen (Muskelmagen): Das Wort steht als Paar neben der Leber, wird gebraten und gehört ins Kapitel „Von jungen Hünnern“; Rumpolt brät Leber und Magen auch beim Kapaun gemeinsam.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
-        <note type="interpretive_choice" target="#rum-0719-orig" n="Tier" resp="#fyndling">Junges Huhn: Die Überschrift nennt kein Tier, das Kapitel „Von jungen Hünnern“ legt es fest.</note>
-        <note type="interpretive_choice" target="#rum-0719-orig" n="zum Braten" resp="#fyndling">Am Spieß oder auf dem Rost gebraten, wie Rumpolt Leber und Magen beim Kapaun auf einem hölzernen Spieß über dem Rost brät; die Überschrift selbst sagt nur „zum Braten“, ein Vorgaren des Magens erwähnt sie nicht.</note>
+        <note type="interpretive_choice" target="#rum-0719-orig" n="Magen" resp="#fyndling" subtype="lexical">Hühnermagen (Muskelmagen): Das Wort steht als Paar neben der Leber, wird gebraten und gehört ins Kapitel „Von jungen Hünnern“; Rumpolt brät Leber und Magen auch beim Kapaun gemeinsam.<list type="alternatives"><item>Mohn (frühneuhochdeutsch magen = Schlafmohn)<note type="rationale">Die Nebenbedeutung ist belegt, passt hier aber nicht: Mohn wird nicht gebraten und stünde nicht neben der Leber.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="interpretive_choice" target="#rum-0719-orig" n="Tier" resp="#fyndling" subtype="contextual">Junges Huhn: Die Überschrift nennt kein Tier, das Kapitel „Von jungen Hünnern“ legt es fest.<list type="alternatives"><item>Leber und Magen eines anderen Geflügels<note type="rationale">Nicht gemeint: Rumpolt behandelt die Innereien anderer Tiere in deren eigenen Kapiteln.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0719-orig" n="zum Braten" resp="#fyndling" subtype="contextual">Am Spieß oder auf dem Rost gebraten, wie Rumpolt Leber und Magen beim Kapaun auf einem hölzernen Spieß über dem Rost brät; die Überschrift selbst sagt nur „zum Braten“, ein Vorgaren des Magens erwähnt sie nicht.<list type="alternatives"><item>Magen vorher gar kochen oder lange schmoren, dann mit der Leber kurz in der Pfanne braten<note type="rationale">Heutige Praxis, damit der zähe Muskelmagen weich wird; im Text nicht angegeben.</note></item></list></note>
       </div>
     </back>
   </text>

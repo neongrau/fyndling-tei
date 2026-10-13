@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,7 +139,7 @@ Praxis: Jungen Mangold kurz in Salzwasser garen, abtropfen. Gleiche Teile Honig 
         <note type="gloss" target="#ka1-094-orig" n="baiderlay winber" resp="#fyndling">Die Münchner Parallelhandschrift Cgm 384 kennt hier zusätzlich die Alternative ‚oder einerlei' - im Reichenauer Kochbuch wird schlicht beiderlei Weinbeeren verlangt, ohne Ausweichmöglichkeit auf nur eine Sorte.</note>
         <note type="gloss" target="#ka1-094-orig" n="winber" resp="#fyndling">Weinbeeren = Rosinen (getrocknete Trauben).</note>
         <note type="gloss" target="#ka1-094-orig" n="nespla" resp="#fyndling">Mispeln - altes Kernobst, erst nach erstem Frost/Lagerung weich und genießbar.</note>
-        <note type="interpretive_choice" target="#ka1-094-orig" n="enis" resp="#fyndling">Anis - das Reichenauer Kochbuch schreibt hier direkt ‚enis' aus, ein gesicherter Manuskriptbefund. Anders als die Münchner Parallelhandschrift Cgm 384 (dort nur ‚es', von Ehlert zu Anis konjiziert) braucht es hier keine Konjektur.</note>
+        <note type="interpretive_choice" target="#ka1-094-orig" n="enis" resp="#fyndling" subtype="orthographic">Anis - das Reichenauer Kochbuch schreibt hier direkt ‚enis' aus, ein gesicherter Manuskriptbefund. Anders als die Münchner Parallelhandschrift Cgm 384 (dort nur ‚es', von Ehlert zu Anis konjiziert) braucht es hier keine Konjektur.</note>
       </div>
     </back>
   </text>

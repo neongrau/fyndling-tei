@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,11 +115,11 @@ Praxis. Die Schnepfen im Ofen oder am Spieß bei mittlerer Hitze braten, nicht �
         <note type="gloss" target="#rum-0764-orig" n="Zimmetwasser/ dz distillieret ist" resp="#fyndling">Ein durch Destillation gewonnenes Zimtwasser. Rumpolt sagt ausdrücklich, dass es destilliert sein soll; ein bloß gekochter Zimtsud ist etwas anderes.</note>
         <note type="gloss" target="#rum-0764-orig" n="Margeranten Kern" resp="#fyndling">Granatapfelkerne: „Margeranten“ ist eine Nebenform von margrant (Granatapfel). Rumpolt schreibt an anderer Stelle von „Margaranten Epffel“, die man aufschneidet und aus denen man die Kerne herausklopft. Siehe die Lesarten.</note>
         <note type="gloss" target="#rum-0764-orig" n="mach es ab mit weissem Zucker" resp="#fyndling">abmachen heißt hier anmachen, anrühren: die gehackte Zitrone wird mit Zucker vermengt. Dieselbe Wendung steht bei Rumpolt für das Anrühren von Mandeln mit Brühe.</note>
-        <note type="interpretive_choice" target="#rum-0764-orig" n="Margeranten Kern" resp="#fyndling">Granatapfelkerne. „Margeranten“ ist eine Nebenform von margrant/margranapfel (Schmeller; FWB s. v. granat: ›Granatapfel‹). Rumpolt schreibt an anderer Stelle „Margaranten Epffel … klopff die Kern herauß“ und streut dieselben Kerne beim Anrichten auch über die kalte Henne in Mandelsauce. Im Text bleibt die Druckform stehen.</note>
-        <note type="interpretive_choice" target="#rum-0764-orig" n="mach es ab mit weissem Zucker" resp="#fyndling">Anrühren, vermengen: die gehackte Zitrone wird mit Zucker angemacht. So gebraucht Rumpolt abmachen auch beim Anrühren von Mandeln mit kalter Hühnerbrühe.</note>
-        <note type="interpretive_choice" target="#rum-0764-orig" n="ein Zitron/ hacks klein" resp="#fyndling">Die ganze Zitrone samt Schale klein hacken, wie es dasteht; die Bitterkeit der Schale fängt der Zucker ab.</note>
-        <note type="interpretive_choice" target="#rum-0764-orig" n="Zucker und Zimtwasser, Mengen" resp="#fyndling">Der Text nennt keine Mengen; sie bleiben offen.</note>
-        <note type="interpretive_choice" target="#rum-0764-orig" n="Gebraten vnnd kalt lassen werden" resp="#fyndling">Rumpolt setzt die gebratenen Schnepfen voraus und nennt keine Bratart.</note>
+        <note type="interpretive_choice" target="#rum-0764-orig" n="Margeranten Kern" resp="#fyndling" subtype="lexical">Granatapfelkerne. „Margeranten“ ist eine Nebenform von margrant/margranapfel (Schmeller; FWB s. v. granat: ›Granatapfel‹). Rumpolt schreibt an anderer Stelle „Margaranten Epffel … klopff die Kern herauß“ und streut dieselben Kerne beim Anrichten auch über die kalte Henne in Mandelsauce. Im Text bleibt die Druckform stehen.<list type="alternatives"><item>Majoransamen<note type="rationale">Mundartlich heißt der Majoran Margeran. Für Majoransamen als Streuschmuck gibt es aber keinen Beleg, und die Parallelstellen mit „Epffel“ sprechen für den Granatapfel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0764-orig" n="mach es ab mit weissem Zucker" resp="#fyndling" subtype="lexical">Anrühren, vermengen: die gehackte Zitrone wird mit Zucker angemacht. So gebraucht Rumpolt abmachen auch beim Anrühren von Mandeln mit kalter Hühnerbrühe.<list type="alternatives"><item>Abschmecken<note type="rationale">Würde ein Probieren unterstellen, das der Text nicht nennt; der Zucker wird hier als Bestandteil zugegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0764-orig" n="ein Zitron/ hacks klein" resp="#fyndling" subtype="contextual">Die ganze Zitrone samt Schale klein hacken, wie es dasteht; die Bitterkeit der Schale fängt der Zucker ab.<list type="alternatives"><item>Nur Fruchtfleisch und etwas Schale, ohne Kerne und weiße Haut<note type="rationale">Moderne Praxis: eine ganz gehackte Zitrone wird leicht bitter. Der Text sagt dazu nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0764-orig" n="Zucker und Zimtwasser, Mengen" resp="#fyndling" subtype="contextual">Der Text nennt keine Mengen; sie bleiben offen.<list type="alternatives"><item>Leicht süß, Zimtaroma deutlich, nach Geschmack<note type="rationale">Moderner Ausgangspunkt für die Praxis, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0764-orig" n="Gebraten vnnd kalt lassen werden" resp="#fyndling" subtype="contextual">Rumpolt setzt die gebratenen Schnepfen voraus und nennt keine Bratart.<list type="alternatives"><item>Im Ofen oder am Spieß bei mittlerer Hitze, nicht übergaren<note type="rationale">Moderne Praxis für kleines Wildgeflügel; der Text legt sich nicht fest.</note></item></list></note>
       </div>
     </back>
   </text>

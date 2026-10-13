@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,12 +119,12 @@ Praxis. Hirse mit Fett oder etwas Brühe auf kleiner Hitze garen und oft rühren
         <note type="gloss" target="#rum-0802-orig" n="kleine Kelen" resp="#fyndling">Das Wort steht nur an dieser Stelle. Gemeint ist sehr wahrscheinlich „Kolen“ (Kohlen): Rumpolt setzt Töpfe sonst durchweg „auff Kolen“. Kleine Kohlen bedeutet schwache Glut.</note>
         <note type="gloss" target="#rum-0802-orig" n="anfehet zu quellen" resp="#fyndling">anfängt zu quellen, also aufzuwallen und dick zu werden. Ab da wird gerührt.</note>
         <note type="gloss" target="#rum-0802-orig" n="Wachtelbrey" resp="#fyndling">Rumpolts eigener Name für das Gericht: Wachteln im Hirsebrei, kein Mus aus Wachtelfleisch.</note>
-        <note type="interpretive_choice" target="#rum-0802-orig" n="kleine Kelen" resp="#fyndling">„kleine Kolen“, also kleine Kohlen bzw. schwache Glut. Rumpolt gebraucht „auff Kolen“ als feste Formel für das Garen am Feuer; „Kelen“ kommt nur hier vor.</note>
-        <note type="interpretive_choice" target="#rum-0802-orig" n="Hitze beim Garen der Hirse" resp="#fyndling">Topf auf ein Häufchen Glut oder ein Kohlenbecken gesetzt, wie es Rumpolts Formel „auff Kolen setzen“ beschreibt.</note>
-        <note type="interpretive_choice" target="#rum-0802-orig" n="Art der Hirse" resp="#fyndling">Hirse wie zu Rumpolts Zeit ungeschält oder grob geschält, daher das gründliche Waschen, Abbrühen und Verlesen.</note>
-        <note type="interpretive_choice" target="#rum-0802-orig" n="Rindtfeißt" resp="#fyndling">ausgelassenes Rinderfett, wenig, oder statt dessen ein wenig Rindfleischbrühe, wie der Text es freistellt.</note>
-        <note type="interpretive_choice" target="#rum-0802-orig" n="quellen" resp="#fyndling">An der ersten Stelle „quells wol ab“ = in Wasser abbrühen (wie bei der Gans in Hirsebrei), an der zweiten „anfehet zu quellen“ = beginnt aufzuwallen und dick zu werden.</note>
-        <note type="interpretive_choice" target="#rum-0802-orig" n="seig" resp="#fyndling">darübergießen: Fett oder Brühe werden über die Hirse gegeben.</note>
+        <note type="interpretive_choice" target="#rum-0802-orig" n="kleine Kelen" resp="#fyndling" subtype="philological">„kleine Kolen“, also kleine Kohlen bzw. schwache Glut. Rumpolt gebraucht „auff Kolen“ als feste Formel für das Garen am Feuer; „Kelen“ kommt nur hier vor.<list type="alternatives"><item>kleine Gefäße (Töpfchen oder Schalen)<note type="rationale">Für „Kele“ ist keine Gefäßbedeutung belegt, und das Gefäß nennt der Satz davor schon („thu sie in ein Geschirr“). Nur haltbar, wenn sich „Kele“ doch als Gefäßwort findet.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0802-orig" n="Hitze beim Garen der Hirse" resp="#fyndling" subtype="contextual">Topf auf ein Häufchen Glut oder ein Kohlenbecken gesetzt, wie es Rumpolts Formel „auff Kolen setzen“ beschreibt.<list type="alternatives"><item>Topf auf kleiner Flamme bzw. schwacher Herdhitze<note type="rationale">Moderne Entsprechung, gleicher Zweck: langsam garen, ohne dass die Hirse anbrennt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0802-orig" n="Art der Hirse" resp="#fyndling" subtype="contextual">Hirse wie zu Rumpolts Zeit ungeschält oder grob geschält, daher das gründliche Waschen, Abbrühen und Verlesen.<list type="alternatives"><item>geschälte Hirsekörner aus dem Handel<note type="rationale">Heute üblich; einmal aufkochen und abgießen genügt, Verlesen ist kaum noch nötig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0802-orig" n="Rindtfeißt" resp="#fyndling" subtype="contextual">ausgelassenes Rinderfett, wenig, oder statt dessen ein wenig Rindfleischbrühe, wie der Text es freistellt.<list type="alternatives"><item>Butterschmalz<note type="rationale">Moderner Ersatz, wenn kein Rinderfett zur Hand ist; Geschmack milder.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0802-orig" n="quellen" resp="#fyndling" subtype="lexical">An der ersten Stelle „quells wol ab“ = in Wasser abbrühen (wie bei der Gans in Hirsebrei), an der zweiten „anfehet zu quellen“ = beginnt aufzuwallen und dick zu werden.<list type="alternatives"><item>nur einweichen und quellen lassen, ohne Hitze<note type="rationale">Der Text setzt die Hirse dafür ausdrücklich aufs Feuer; ein reines Einweichen passt nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0802-orig" n="seig" resp="#fyndling" subtype="lexical">darübergießen: Fett oder Brühe werden über die Hirse gegeben.<list type="alternatives"><item>durch ein Tuch oder Sieb seihen<note type="rationale">Es gibt nichts abzutrennen; Rumpolt gebraucht „seig es auff den Brey“ bei der Gans im selben Sinn.</note></item></list></note>
       </div>
     </back>
   </text>

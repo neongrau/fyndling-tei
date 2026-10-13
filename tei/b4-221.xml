@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -143,12 +148,12 @@ Das Rezept nennt den „ayr taig“ nur beim Namen und setzt ihn als bekannt vor
         <note type="gloss" target="#b4-221-orig" n="chumb" resp="#fyndling">Kümmel (Carum carvi) war ein beliebtes Gewürz in der mittelalterlichen Küche, oft in herzhaften Gerichten und Brot verwendet.</note>
         <note type="gloss" target="#b4-221-orig" n="Condiment" resp="#fyndling">Ein ‚Condiment‘ bezeichnete im Mittelalter eine Würzmischung oder Sauce, die oft aus mehreren Gewürzen, Kräutern und Bindemitteln bestand. Hier ist es die Füllung für den Lammkopf.</note>
         <note type="gloss" target="#b4-221-orig" n="smalcz" resp="#fyndling">Schmalz (tierisches Fett, meist Schweineschmalz) war das primäre Bratfett im Mittelalter, insbesondere außerhalb der Fastenzeit.</note>
-        <note type="interpretive_choice" target="#b4-221-orig" n="lambpshawbt" resp="#fyndling">Lammkopf. Die CoReMA-Glosse bestätigt diese Lesart.</note>
-        <note type="interpretive_choice" target="#b4-221-orig" n="roche ayr" resp="#fyndling">Rohe Eier. Das BMZ bestätigt für 'roch' die Bedeutung 'roh/ungekocht', die exakt zur gewählten Lesart passt und im Kontext einer Füllung mit bereits genannten hart gekochten Eiern ('hertte ayr') sinnvoll ist, da rohe Eier als Bindemittel dienen.</note>
-        <note type="interpretive_choice" target="#b4-221-orig" n="hyernn schall" resp="#fyndling">Schädelhöhle. Die CoReMA-Glosse 'skull' und der Kontext 'full In In die hyernn schall' (fülle es in die Schädelhöhle) bestätigen, dass der Schädel als Behälter für die Füllung dient.</note>
-        <note type="interpretive_choice" target="#b4-221-orig" n="spenvaerleins" resp="#fyndling">Spanferkel. Die CoReMA-Glosse 'suckling pig's head' bestätigt diese Lesart für die Variante.</note>
-        <note type="interpretive_choice" target="#b4-221-orig" n="wurch" resp="#fyndling">wirke/arbeite (Verb, von 'wirken' = arbeiten, hineindrücken). Bairische Schreibvariante von 'wirken', belegt über das MHDBDB-Lemma 'wirken'. Der W1-Zwilling gibt dieselbe Stelle mit einem eigenen Verb wieder ('wirke es an die Stelle'), was die Lesart als Handlungsverb stützt.</note>
-        <note type="interpretive_choice" target="#b4-221-orig" n="pach es in smalcz aus (Backdauer der Füllung)" resp="#fyndling">Der Text nennt weder eine Backdauer noch ein Garkriterium für die mit rohem Ei gebundene Füllung. Die Praxisempfehlung im Zubereitungshinweis (länger ausbacken, bis Füllung im Kern fest ist) ist eine moderne Sicherheits-Ergänzung, keine Textaussage.</note>
+        <note type="interpretive_choice" target="#b4-221-orig" n="lambpshawbt" resp="#fyndling" subtype="lexical">Lammkopf. Die CoReMA-Glosse bestätigt diese Lesart.</note>
+        <note type="interpretive_choice" target="#b4-221-orig" n="roche ayr" resp="#fyndling" subtype="lexical">Rohe Eier. Das BMZ bestätigt für 'roch' die Bedeutung 'roh/ungekocht', die exakt zur gewählten Lesart passt und im Kontext einer Füllung mit bereits genannten hart gekochten Eiern ('hertte ayr') sinnvoll ist, da rohe Eier als Bindemittel dienen.</note>
+        <note type="interpretive_choice" target="#b4-221-orig" n="hyernn schall" resp="#fyndling" subtype="lexical">Schädelhöhle. Die CoReMA-Glosse 'skull' und der Kontext 'full In In die hyernn schall' (fülle es in die Schädelhöhle) bestätigen, dass der Schädel als Behälter für die Füllung dient.</note>
+        <note type="interpretive_choice" target="#b4-221-orig" n="spenvaerleins" resp="#fyndling" subtype="lexical">Spanferkel. Die CoReMA-Glosse 'suckling pig's head' bestätigt diese Lesart für die Variante.</note>
+        <note type="interpretive_choice" target="#b4-221-orig" n="wurch" resp="#fyndling" subtype="lexical">wirke/arbeite (Verb, von 'wirken' = arbeiten, hineindrücken). Bairische Schreibvariante von 'wirken', belegt über das MHDBDB-Lemma 'wirken'. Der W1-Zwilling gibt dieselbe Stelle mit einem eigenen Verb wieder ('wirke es an die Stelle'), was die Lesart als Handlungsverb stützt.</note>
+        <note type="interpretive_choice" target="#b4-221-orig" n="pach es in smalcz aus (Backdauer der Füllung)" resp="#fyndling" subtype="contextual">Der Text nennt weder eine Backdauer noch ein Garkriterium für die mit rohem Ei gebundene Füllung. Die Praxisempfehlung im Zubereitungshinweis (länger ausbacken, bis Füllung im Kern fest ist) ist eine moderne Sicherheits-Ergänzung, keine Textaussage.<list type="alternatives"><item>Kürzeres Ausbacken nur bis zur Krustenfärbung, in der Annahme, die bereits vorgekochten Bestandteile und die dünne Ei-Bindung würden auch bei kürzerer Hitzeeinwirkung durchgaren.<note type="rationale">Historisch nicht auszuschließen, nach heutigem Maßstab aber unsicher für den rohen Ei-Anteil im Kern - wird deshalb nicht als Standard empfohlen.</note></item></list></note>
       </div>
     </back>
   </text>

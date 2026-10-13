@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -136,10 +141,10 @@ Praxis. Mengen stehen nicht im Text. Die Masse braucht genug Fett, damit sie saf
         <note type="gloss" target="#rum-0244-orig" n="einem Netz vmbwunden" resp="#fyndling">Mit einem Netz umwickelt, damit die Masse die Form hält. Vermutlich das Fettnetz des Tieres; der Text sagt nur „Netz“.</note>
         <note type="gloss" target="#rum-0244-orig" n="eynmachen" resp="#fyndling">Hier: in eine Pastete hineingeben.</note>
         <note type="gloss" target="#rum-0244-orig" n="lieblichen Bruͤh von Eyerdottern angemacht" resp="#fyndling">Eine milde, wohlschmeckende Brühe, mit Eigelb angemacht.</note>
-        <note type="interpretive_choice" target="#rum-0244-orig" n="Knoͤdel mit Pettersilgen Wurtzel eingedaͤmpfft" resp="#fyndling">Die fertigen Knödel werden zusammen mit Petersilienwurzel eingedämpft; die Wurzel ist Garbeigabe. Die Aufzählung der Füllung nennt nur Fleisch, Fett und grüne Kräuter.</note>
-        <note type="interpretive_choice" target="#rum-0244-orig" n="ababgebreunt" resp="#fyndling">Gelesen als „abgebreunt“ = abgebräunt. Die doppelte Silbe „abab-“ wird nicht als eigenes Wort gewertet.</note>
-        <note type="interpretive_choice" target="#rum-0244-orig" n="zugehoͤrung" resp="#fyndling">Alles, was dazugehört: die üblichen Beigaben der Knödelmasse, wie sie Rumpolt bei den Rindfleischklößen („mit seiner zugehoͤrung“) und den Hammelknödeln meint.</note>
-        <note type="interpretive_choice" target="#rum-0244-orig" n="gelb" resp="#fyndling">Eine Hälfte der Masse wird gelb gefärbt, die andere bleibt weiß. Womit, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0244-orig" n="Knoͤdel mit Pettersilgen Wurtzel eingedaͤmpfft" resp="#fyndling" subtype="contextual">Die fertigen Knödel werden zusammen mit Petersilienwurzel eingedämpft; die Wurzel ist Garbeigabe. Die Aufzählung der Füllung nennt nur Fleisch, Fett und grüne Kräuter.<list type="alternatives"><item>Die Petersilienwurzel gehört gehackt in die Füllung.<note type="rationale">Syntaktisch nicht ausgeschlossen, weil die Überschrift elliptisch ist; die eigentliche Füllungsbeschreibung nennt die Wurzel aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0244-orig" n="ababgebreunt" resp="#fyndling" subtype="philological">Gelesen als „abgebreunt“ = abgebräunt. Die doppelte Silbe „abab-“ wird nicht als eigenes Wort gewertet.<list type="alternatives"><item>Eigenständige Bildung „ababbrennen“.<note type="rationale">Für eine solche Form gibt es bei Rumpolt und in den Wörterbüchern keinen Beleg; die Parallelstelle bei den Ochsenfüßen hat das einfache „breun sie ab“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0244-orig" n="zugehoͤrung" resp="#fyndling" subtype="lexical">Alles, was dazugehört: die üblichen Beigaben der Knödelmasse, wie sie Rumpolt bei den Rindfleischklößen („mit seiner zugehoͤrung“) und den Hammelknödeln meint.<list type="alternatives"><item>Die zugehörigen Tierteile, etwa Innereien oder Abschnitte.<note type="rationale">Nicht belegt; die Parallelstellen bei Rumpolt meinen Zutaten, keine Tierteile.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0244-orig" n="gelb" resp="#fyndling" subtype="contextual">Eine Hälfte der Masse wird gelb gefärbt, die andere bleibt weiß. Womit, sagt der Text nicht.<list type="alternatives"><item>Mit Safran gefärbt.<note type="rationale">Rumpolt nennt Safran an anderen Stellen ausdrücklich, hier nicht; möglich, aber nicht vorgegeben.</note></item><item>Mit Eigelb gefärbt.<note type="rationale">Ebenfalls möglich; der Text legt sich nicht fest.</note></item></list></note>
       </div>
     </back>
   </text>

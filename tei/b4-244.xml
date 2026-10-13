@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,9 +138,9 @@ Praxis. Fleisch vorkochen und fein hacken, dann mit Eiern, geschnittenem Speck, 
         <note type="gloss" target="#b4-244-orig" n="Scheffein oder Sweinein vnd Rindrein" resp="#fyndling">Das Rezept erlaubt die Verwendung von Hammel-, Schweine- oder Rindfleisch, je nach Verfügbarkeit oder Vorliebe.</note>
         <note type="gloss" target="#b4-244-orig" n="chumb" resp="#fyndling">Kümmel, ein in der mittelalterlichen Küche häufig verwendetes Gewürz.</note>
         <note type="gloss" target="#b4-244-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das zum Braten oder Ausbacken verwendet wurde.</note>
-        <note type="interpretive_choice" target="#b4-244-orig" n="gestukchten" resp="#fyndling">Die Lesart 'gestückelt' oder 'in Stücke geschnitten' wurde gewählt, um die Form des Gerichts zu beschreiben, das aus einzelnen, gefüllten Stücken besteht.</note>
-        <note type="interpretive_choice" target="#b4-244-orig" n="speach" resp="#fyndling">Als 'Speck' übersetzt, basierend auf der CoReMA-Glosse und der kulinarischen Plausibilität als Zutat in einer Fleischfüllung. Der Parallelzeuge W1 ('spekch') sowie eine buchübergreifende Parallelfassung bei Meister Hans (dort unabgekürzt 'speck' geschrieben, während 'Spieß' im selben Satz eigens als 'spiss' erscheint) bestätigen diese Lesart unabhängig voneinander.</note>
-        <note type="interpretive_choice" target="#b4-244-orig" n="entwirchs" resp="#fyndling">Als 'quer' oder 'quer zur Faser' übersetzt, um die Schnittrichtung der fertigen Röllchen zu beschreiben.</note>
+        <note type="interpretive_choice" target="#b4-244-orig" n="gestukchten" resp="#fyndling" subtype="lexical">Die Lesart 'gestückelt' oder 'in Stücke geschnitten' wurde gewählt, um die Form des Gerichts zu beschreiben, das aus einzelnen, gefüllten Stücken besteht.<list type="alternatives"><item>Eine alternative Lesart könnte 'gestockt' sein, was sich auf die Konsistenz der Füllung oder des Eierkuchens beziehen würde.<note type="rationale">Die gewählte Lesart 'gestückelt' passt besser zur späteren Anweisung, das Gericht 'entwirchs zu stukchen' zu schneiden, was auf eine bereits stückige oder in Stücke geschnittene Form hindeutet, die dann weiter zerteilt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-244-orig" n="speach" resp="#fyndling" subtype="lexical">Als 'Speck' übersetzt, basierend auf der CoReMA-Glosse und der kulinarischen Plausibilität als Zutat in einer Fleischfüllung. Der Parallelzeuge W1 ('spekch') sowie eine buchübergreifende Parallelfassung bei Meister Hans (dort unabgekürzt 'speck' geschrieben, während 'Spieß' im selben Satz eigens als 'spiss' erscheint) bestätigen diese Lesart unabhängig voneinander.<list type="alternatives"><item>Eine alternative Lesart könnte 'Spieß' sein, da 'spis' im selben Rezept vorkommt.<note type="rationale">Der Kontext 'gesnytten speach' (geschnittener Speck) in einer Zutatenliste für eine Füllung macht 'Speck' zur eindeutig plausibleren Lesart, während 'Spieß' ein Werkzeug ist und im Text an anderer Stelle explizit als 'spis' genannt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-244-orig" n="entwirchs" resp="#fyndling" subtype="contextual">Als 'quer' oder 'quer zur Faser' übersetzt, um die Schnittrichtung der fertigen Röllchen zu beschreiben.<list type="alternatives"><item>Eine alternative Lesart könnte 'entlang' oder 'der Länge nach' sein.<note type="rationale">Die Formulierung 'entwirchs zu stukchen' deutet auf ein Zerteilen quer zur ursprünglichen Form des gewickelten Fladens hin, was bei Röllchen üblich ist, um mundgerechte Stücke zu erhalten und die Füllung sichtbar zu machen.</note></item></list></note>
       </div>
     </back>
   </text>

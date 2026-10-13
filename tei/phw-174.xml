@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,11 +139,11 @@ Garkennzeichen ist allein der einmalige Wallschlag am Ende, keine Zeitangabe - d
         <note type="gloss" target="#phw-174-orig" n="rerlach" resp="#fyndling">Frühneuhochdeutsche Bezeichnung für Zimt, oft in Form von Zimtstangen, die dann gestoßen oder gerieben werden.</note>
         <note type="gloss" target="#phw-174-orig" n="senen" resp="#fyndling">Das Verb ‚senen‘ bedeutet hier, die Brühe vom Fisch zu trennen oder zu seihen, um eine klare Sauce zu erhalten.</note>
         <note type="gloss" target="#phw-174-orig" n="sutt" resp="#fyndling">Ein ‚Sutt‘ bezeichnet einen kurzen Aufkochvorgang oder das einmalige Sieden.</note>
-        <note type="interpretive_choice" target="#phw-174-orig" n="safern" resp="#fyndling">Safran. Die Lesart ist durch den Kontext als Gewürz und Färbemittel in einer Sauce plausibel.</note>
-        <note type="interpretive_choice" target="#phw-174-orig" n="geschniten lemone" resp="#fyndling">Geschnittene Zitrone. Die Kombination mit Zucker und anderen Gewürzen ist typisch für süß-saure Saucen der Zeit.</note>
-        <note type="interpretive_choice" target="#phw-174-orig" n="senen" resp="#fyndling">Seihen oder trennen. Im Kontext von ‚dem brye sauber vom fisch‘ ist das Trennen der Brühe vom Fischfleisch die plausibelste Lesart, um eine klare Sauce zu erhalten. Keine der geprüften Wörterbuchstellen belegt ‚seihen‘ direkt für ‚senen‘ - die Lesart bleibt eine plausible Kontextdeutung, kein gesicherter Beleg.</note>
-        <note type="interpretive_choice" target="#phw-174-orig" n="Gardauer des ersten Suds" resp="#fyndling">Der Text nennt weder Zeit noch Garkennzeichen für das Sieden des Hechts in Wein und Essig, nur den Verweis ‚wie sunst‘ auf ein im Buch bereits etabliertes Standardvorgehen.</note>
-        <note type="interpretive_choice" target="#phw-174-orig" n="Salzen" resp="#fyndling">Anders als in den beiden Nachbarrezepten mit vergleichbarer Sauce nennt der Text kein Salzen. Der Verweis ‚wie sunst‘ könnte das Salzen der Standardmethode stillschweigend einschließen, es bleibt aber unbelegt.</note>
+        <note type="interpretive_choice" target="#phw-174-orig" n="safern" resp="#fyndling" subtype="lexical">Safran. Die Lesart ist durch den Kontext als Gewürz und Färbemittel in einer Sauce plausibel.</note>
+        <note type="interpretive_choice" target="#phw-174-orig" n="geschniten lemone" resp="#fyndling" subtype="lexical">Geschnittene Zitrone. Die Kombination mit Zucker und anderen Gewürzen ist typisch für süß-saure Saucen der Zeit.</note>
+        <note type="interpretive_choice" target="#phw-174-orig" n="senen" resp="#fyndling" subtype="philological">Seihen oder trennen. Im Kontext von ‚dem brye sauber vom fisch‘ ist das Trennen der Brühe vom Fischfleisch die plausibelste Lesart, um eine klare Sauce zu erhalten. Keine der geprüften Wörterbuchstellen belegt ‚seihen‘ direkt für ‚senen‘ - die Lesart bleibt eine plausible Kontextdeutung, kein gesicherter Beleg.<list type="alternatives"><item>Säubern oder reinigen. Das Wort könnte auch eine allgemeinere Reinigung des Fisches oder der Brühe meinen.<note type="rationale">Die Bedeutung ‚säubern‘ ist ebenfalls im Mittelhochdeutschen belegt, aber ‚seihen‘ passt besser zur Trennung von Flüssigkeit und Feststoffen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-174-orig" n="Gardauer des ersten Suds" resp="#fyndling" subtype="contextual">Der Text nennt weder Zeit noch Garkennzeichen für das Sieden des Hechts in Wein und Essig, nur den Verweis ‚wie sunst‘ auf ein im Buch bereits etabliertes Standardvorgehen.<list type="alternatives"><item>Praxis-Richtwert: sieden, bis der Fisch gerade durchgegart ist und sich vom Knochen löst, je nach Stückgröße etwa 8 bis 12 Minuten.<note type="rationale">Moderner Anhaltspunkt zur Nachkochbarkeit, nicht durch den Text selbst belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-174-orig" n="Salzen" resp="#fyndling" subtype="contextual">Anders als in den beiden Nachbarrezepten mit vergleichbarer Sauce nennt der Text kein Salzen. Der Verweis ‚wie sunst‘ könnte das Salzen der Standardmethode stillschweigend einschließen, es bleibt aber unbelegt.<list type="alternatives"><item>Nach Geschmack salzen, wie in den Nachbarrezepten mit derselben Sauce.<note type="rationale">Praxis-Empfehlung ohne eigenen Textbeleg in diesem Rezept.</note></item></list></note>
       </div>
     </back>
   </text>

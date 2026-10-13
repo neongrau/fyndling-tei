@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,9 +127,9 @@ Piglia petrosillo et sarpillo, et un pocha de bieda, con qualche altra bona herb
         <note type="gloss" target="#mar-105-orig" n="stamegnia" resp="#fyndling">Seihtuch oder feines Sieb</note>
         <note type="gloss" target="#mar-105-orig" n="aglietti" resp="#fyndling">Junge Knoblauchpflanzen oder Bärlauch/Schnittknoblauch</note>
         <note type="interpretive_choice" target="#mar-105-orig" n="sarpillo" resp="#fyndling">Quendel (Wilder Thymian).</note>
-        <note type="interpretive_choice" target="#mar-105-orig" n="bieda" resp="#fyndling">Mangold.</note>
-        <note type="interpretive_choice" target="#mar-105-orig" n="herbicina" resp="#fyndling">Kräutlein.</note>
-        <note type="interpretive_choice" target="#mar-105-orig" n="aglietti" resp="#fyndling">Blätter von jungen Knoblauchpflanzen.</note>
+        <note type="interpretive_choice" target="#mar-105-orig" n="bieda" resp="#fyndling">Mangold.<list type="alternatives"><item>Rote Bete Blätter.<note type="rationale">Beide sind plausibel, da 'bietola' (Mangold) und 'barbabietola' (Rote Bete) verwandt sind und die Blätter beider Pflanzen essbar sind. Mangold ist jedoch häufiger in Kochbüchern dieser Zeit zu finden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-105-orig" n="herbicina" resp="#fyndling">Kräutlein.<list type="alternatives"><item>Gutes Kraut.<note type="rationale">Die Diminutivform '-ina' deutet auf 'kleines Kraut' oder 'Kräutlein' hin, was die allgemeine Natur der Zutat unterstreicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-105-orig" n="aglietti" resp="#fyndling">Blätter von jungen Knoblauchpflanzen.<list type="alternatives"><item>Bärlauch oder Schnittknoblauch.<note type="rationale">Der Begriff 'aglietti' (Diminutiv von 'aglio' = Knoblauch) kann junge Knoblauchsprossen oder auch andere knoblauchähnliche Wildkräuter bezeichnen. Bärlauch (Allium ursinum) ist eine plausible Alternative, die in Europa weit verbreitet ist und einen ähnlichen Geschmack hat.</note></item></list></note>
       </div>
     </back>
   </text>

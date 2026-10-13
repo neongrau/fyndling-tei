@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -87,8 +92,8 @@ Woraus die Knödel bestehen. Offen bleibt, ob roher oder schon gesottener und en
 Praxis. Wie Rumpolt Fischknödel sonst zubereitet, zeigen seine ausgeführten Rezepte für Knödel vom Lachs und vom Hecht; ob er den Huchen genauso verarbeitet hat, sagt der Text nicht. Knödel und Klöße meinen hier geformte Bällchen aus Fischmasse, keine Semmel- oder Kartoffelknödel.</note>
         <note type="gloss" target="#rum-0925-orig" n="Huchen" resp="#fyndling">Der Donaulachs (Hucho hucho), ein großer Raubfisch aus der Familie der Lachsfische. Die Zeile selbst nennt den Fisch nicht, er ergibt sich aus der Kapitelüberschrift.</note>
         <note type="gloss" target="#rum-0925-orig" n="Knödel oder Klöße" resp="#fyndling">Rumpolt nennt beide Wörter nebeneinander für dasselbe: geformte Bällchen aus einer Masse, hier aus Fisch.</note>
-        <note type="interpretive_choice" target="#rum-0925-orig" n="darauß" resp="#fyndling">Aus dem Huchen: Die Zeile steht als neunte Nummer im Huchen-Kapitel, alle Nachbarnummern handeln vom Huchen, und Rumpolt verwendet dieselbe Kurzformel beim Schaiden („Man macht auch Knödel darauß“) für den Fisch des Kapitels.</note>
-        <note type="interpretive_choice" target="#rum-0925-orig" n="Bindung und Garart der Knödel" resp="#fyndling">Nicht belegt: Rumpolt nennt nur das Ergebnis („fein weiß“). Bindung, Brühe und Garzeit bleiben offen; wir ergänzen nichts.</note>
+        <note type="interpretive_choice" target="#rum-0925-orig" n="darauß" resp="#fyndling" subtype="contextual">Aus dem Huchen: Die Zeile steht als neunte Nummer im Huchen-Kapitel, alle Nachbarnummern handeln vom Huchen, und Rumpolt verwendet dieselbe Kurzformel beim Schaiden („Man macht auch Knödel darauß“) für den Fisch des Kapitels.<list type="alternatives"><item>Aus dem gesottenen, entgräteten Huchen der vierten Nummer<note type="rationale">Möglich, weil dort der Fisch gesotten und von den Gräten befreit wird; der Text stellt diesen Bezug aber nicht ausdrücklich her.</note></item><item>Aus rohem, gehacktem Huchenfleisch<note type="rationale">So verfährt Rumpolt bei den ausgeführten Knödeln vom Lachs und vom Hecht; für den Huchen ist es nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0925-orig" n="Bindung und Garart der Knödel" resp="#fyndling" subtype="contextual">Nicht belegt: Rumpolt nennt nur das Ergebnis („fein weiß“). Bindung, Brühe und Garzeit bleiben offen; wir ergänzen nichts.<list type="alternatives"><item>Offen lassen und keine Bindung nennen<note type="rationale">Moderne Praxis für diese Seite: ohne Angabe der Vorlage wird kein Verfahren unterstellt.</note></item><item>Masse wie bei Rumpolts Knödeln vom Lachs (Weißbrot, Eidotter, in Erbsenbrühe gesotten)<note type="rationale">Ausgeführtes Fischknödel-Rezept desselben Buchs; ob es für den Huchen gilt, sagt die Zeile nicht.</note></item></list></note>
       </div>
     </back>
   </text>

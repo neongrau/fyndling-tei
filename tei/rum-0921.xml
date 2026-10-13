@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,9 +124,9 @@ Praxis. Den Huchen vorher garen, Gräten und Schuppen ablesen. Frische Vollmilch
         <note type="gloss" target="#rum-0921-orig" n="vngeschmaͤltzte Butter" resp="#fyndling">Frische Butter, nicht zu Schmalz ausgelassen.</note>
         <note type="gloss" target="#rum-0921-orig" n="resch eynsieden" resp="#fyndling">resch = rasch, schnell; gemeint ist zügiges Einkochen. Die Nebenbedeutung "knusprig", die das Wort bei Gebratenem und Gebackenem hat, passt zu einer Sauce nicht.</note>
         <note type="gloss" target="#rum-0921-orig" n="saltz es ab" resp="#fyndling">absalzen heißt salzen. Gemeint ist: beim Anrichten salzen, nicht "abschmecken".<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
-        <note type="interpretive_choice" target="#rum-0921-orig" n="resch eynsieden" resp="#fyndling">"rasch einkochen": resch als Adverb zu eynsieden heißt schnell, flink (so die Wörterbücher für das Adverb). Für eine Sauce ist die Tempolesart die naheliegende.</note>
-        <note type="interpretive_choice" target="#rum-0921-orig" n="suͤsse Milch" resp="#fyndling">Süßmilch im Gegensatz zu Sauermilch oder Molke; der Fettgehalt bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0921-orig" n="saltz es ab" resp="#fyndling">"so salze es": absalzen heißt Speisen salzen. Der Text legt den Zeitpunkt fest (beim Anrichten), nicht ein Abschmecken.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+        <note type="interpretive_choice" target="#rum-0921-orig" n="resch eynsieden" resp="#fyndling" subtype="lexical">"rasch einkochen": resch als Adverb zu eynsieden heißt schnell, flink (so die Wörterbücher für das Adverb). Für eine Sauce ist die Tempolesart die naheliegende.<list type="alternatives"><item>"kräftig einkochen" (stark reduzieren)<note type="rationale">Eine Bedeutung "kräftig" ist für resch nicht belegt; sie verstärkt den Text über das hinaus, was er sagt.</note></item><item>"knusprig"<note type="rationale">Belegt bei Gebratenem und Gebackenem, für eine Milchsauce sinnlos.</note></item><item>Praxis: zügig bei mittlerer bis guter Hitze zur sämigen Sauce einkochen<note type="rationale">Moderne Umsetzung; Dauer und Einkochgrad nennt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0921-orig" n="suͤsse Milch" resp="#fyndling" subtype="contextual">Süßmilch im Gegensatz zu Sauermilch oder Molke; der Fettgehalt bleibt offen.<list type="alternatives"><item>Praxis: frische Vollmilch, aufgekocht<note type="rationale">Heute die naheliegende Entsprechung; ob die Milch entrahmt war, sagt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0921-orig" n="saltz es ab" resp="#fyndling" subtype="lexical">"so salze es": absalzen heißt Speisen salzen. Der Text legt den Zeitpunkt fest (beim Anrichten), nicht ein Abschmecken.<list type="alternatives"><item>"mit Salz abschmecken"<note type="rationale">Moderne Kochsprache; unterstellt ein Probieren, das der Text nicht nennt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
       </div>
     </back>
   </text>

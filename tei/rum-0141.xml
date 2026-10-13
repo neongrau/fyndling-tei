@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,12 +126,12 @@ Praxis. Das geriebene Roggenbrot bindet erst beim Sieden, ein eigenes Aufkochen 
         <note type="gloss" target="#rum-0141-orig" n="geklopffte Wacholderbeer" resp="#fyndling">Geklopfte Wacholderbeeren sind zerstoßene, grob gemörserte Wacholderbeeren.</note>
         <note type="gloss" target="#rum-0141-orig" n="mach es ab" resp="#fyndling">Abmachen heißt hier abschmecken, mit Gewürz vollenden.</note>
         <note type="gloss" target="#rum-0141-orig" n="Limonien" resp="#fyndling">Limonien sind Zitronen. Rumpolt nimmt sie nur, wenn das Gericht sauer werden soll.</note>
-        <note type="interpretive_choice" target="#rum-0141-orig" n="einzudaͤmpffen" resp="#fyndling">Dünsten, garen: den angebräunten Braten im Kessel fertig garen. So belegt es das Bayerische Wörterbuch (eindämpfen = dünsten, garen), und so steht es buchintern bei rum-0064; der Rezepttext selbst sagt „sieden“.</note>
-        <note type="interpretive_choice" target="#rum-0141-orig" n="laß darmit sieden (Flüssigkeit)" resp="#fyndling">Eine Flüssigkeit wird stillschweigend vorausgesetzt, Rumpolt nennt sie hier nicht. Offen bleibt, ob Wasser, Brühe oder etwas anderes.</note>
-        <note type="interpretive_choice" target="#rum-0141-orig" n="nim̃ ein Limonien oder zwo darzu" resp="#fyndling">Der Text lässt offen, ob Saft oder ganze Frucht; ganze Zitronen in Scheiben mitzusieden ist mit dem Wortlaut vereinbar.</note>
-        <note type="interpretive_choice" target="#rum-0141-orig" n="mach es ab mit Gewuͤrtz" resp="#fyndling">Rumpolt nennt hier nur „Gewürz“, ohne Sorte. Nichts wird ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0141-orig" n="breun jn ab auff einem Roßt" resp="#fyndling">Auf dem Rost über Glut abbräunen, ohne Fettangabe.</note>
-        <note type="interpretive_choice" target="#rum-0141-orig" n="ein Braten" resp="#fyndling">Kalbsbraten: die Überschrift sagt „Von einem Kalb ein Braten“, und das Rezept steht im Kalbskapitel. Welches Stück, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0141-orig" n="einzudaͤmpffen" resp="#fyndling" subtype="lexical">Dünsten, garen: den angebräunten Braten im Kessel fertig garen. So belegt es das Bayerische Wörterbuch (eindämpfen = dünsten, garen), und so steht es buchintern bei rum-0064; der Rezepttext selbst sagt „sieden“.<list type="alternatives"><item>Schmoren im heutigen Sinn<note type="rationale">Nur in der Wirkung ähnlich. Der Text nennt weder Deckel noch wenig Flüssigkeit, sondern sieden; „geschmort“ wäre eine moderne Zuspitzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0141-orig" n="laß darmit sieden (Flüssigkeit)" resp="#fyndling" subtype="contextual">Eine Flüssigkeit wird stillschweigend vorausgesetzt, Rumpolt nennt sie hier nicht. Offen bleibt, ob Wasser, Brühe oder etwas anderes.<list type="alternatives"><item>Wasser oder Brühe bis zur halben Höhe des Bratens, Kessel zugedeckt<note type="rationale">Moderne Praxisannahme, damit „sieden“ überhaupt möglich ist; nicht im Text.</note></item><item>Nur Bratensaft und die Feuchte von Zwiebel und Brot<note type="rationale">Unwahrscheinlich: das reicht zum Sieden nicht, und der Text sagt zweimal „sieden“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0141-orig" n="nim̃ ein Limonien oder zwo darzu" resp="#fyndling" subtype="contextual">Der Text lässt offen, ob Saft oder ganze Frucht; ganze Zitronen in Scheiben mitzusieden ist mit dem Wortlaut vereinbar.<list type="alternatives"><item>Saft von ein bis zwei Zitronen<note type="rationale">Moderne Praxis, gleichmäßiger dosierbar; der Text legt sich darauf nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0141-orig" n="mach es ab mit Gewuͤrtz" resp="#fyndling" subtype="contextual">Rumpolt nennt hier nur „Gewürz“, ohne Sorte. Nichts wird ergänzt.<list type="alternatives"><item>Nach eigenem Geschmack würzen<note type="rationale">Praxis für heute; eine bestimmte Mischung lässt sich aus diesem Rezept nicht ableiten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0141-orig" n="breun jn ab auff einem Roßt" resp="#fyndling" subtype="contextual">Auf dem Rost über Glut abbräunen, ohne Fettangabe.<list type="alternatives"><item>Rundum in der Pfanne anbraten<note type="rationale">Heutiger Ersatz am Herd; der Text nennt ausdrücklich den Rost, keine Pfanne.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0141-orig" n="ein Braten" resp="#fyndling" subtype="contextual">Kalbsbraten: die Überschrift sagt „Von einem Kalb ein Braten“, und das Rezept steht im Kalbskapitel. Welches Stück, bleibt offen.<list type="alternatives"><item>Ein bestimmtes Stück wie Keule oder Nierenbraten<note type="rationale">Die Nachbarrezepte nennen solche Stücke, dieses nicht; also nicht festlegen.</note></item></list></note>
       </div>
     </back>
   </text>

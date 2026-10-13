@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,10 +123,10 @@ Praxis. Hirschfleisch grob zerkleinern, mit kurz vorgequollener Grütze und sieb
         <note type="gloss" target="#mha-093-orig" n="beschlahe" resp="#fyndling">'Beschlagen' im Sinn von 'bestreichen/überziehen' - die Fleischmasse wird mit verquirltem Ei bestrichen, ähnlich einer modernen Ei-Glasur (ob einmalig oder wiederholt, spezifiziert der Text nicht).</note>
         <note type="gloss" target="#mha-093-orig" n="spis" resp="#fyndling">Der Bratspieß, auf den die geformte Fleisch-Grütze-Ei-Masse gesteckt wird.</note>
         <note type="gloss" target="#mha-093-orig" n="Condiment" resp="#fyndling">Allgemeiner Begriff für eine Würzsauce oder Beigabe zum Fleisch, hier als Alternative zu bloßem Salz genannt.</note>
-        <note type="interpretive_choice" target="#mha-093-orig" n="Schneid In aus" resp="#fyndling">Die gebundene Masse wird ausgeformt/zurechtgeschnitten, bevor sie auf den Spieß gesteckt wird.</note>
-        <note type="interpretive_choice" target="#mha-093-orig" n="beschlahe In mit ayren" resp="#fyndling">Die Masse wird mit verquirltem/aufgeschlagenem Ei bestrichen, ähnlich einer Glasur (Zeitpunkt und Häufigkeit sind im Text nicht spezifiziert).</note>
-        <note type="interpretive_choice" target="#mha-093-orig" n="greusz" resp="#fyndling">Grobe Getreidegrütze (Hafer oder Gerste) als Bindemittel für die Fleischmasse.</note>
-        <note type="interpretive_choice" target="#mha-093-orig" n="greusz (Garzustand beim Einmengen)" resp="#fyndling">Die Grütze wird vor dem Einmengen kurz vorgequollen oder leicht vorgekocht, damit sie in der Spießbratzeit durchgart.</note>
+        <note type="interpretive_choice" target="#mha-093-orig" n="Schneid In aus" resp="#fyndling">Die gebundene Masse wird ausgeformt/zurechtgeschnitten, bevor sie auf den Spieß gesteckt wird.<list type="alternatives"><item>Das Fleisch wird zunächst in Stücke geschnitten, bevor es mit Grütze und Ei vermengt wird.<note type="rationale">Die Reihenfolge im Satz könnte auch bedeuten, dass erst das rohe Fleisch zerteilt wird und die Bindung erst danach als separater Schritt erfolgt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-093-orig" n="beschlahe In mit ayren" resp="#fyndling">Die Masse wird mit verquirltem/aufgeschlagenem Ei bestrichen, ähnlich einer Glasur (Zeitpunkt und Häufigkeit sind im Text nicht spezifiziert).<list type="alternatives"><item>Die Masse wird einmalig - etwa als abschließender Überzug vor dem Servieren statt als wiederholtes Bestreichen während eines Röstvorgangs - mit Ei ummantelt.<note type="rationale">Die Vergleichsstelle mha-087 (ein völlig anderes Gericht - gefüllte, gebratene Eier mit Salbei, kein Zwilling) verwendet dasselbe Verb 'beschlahen' für einen einmaligen Überzug nach dem Garen, nicht für ein kontinuierliches Bestreichen während des Bratens; 'praten' kommt im vorliegenden Rezepttext selbst nirgends vor, nur im Titel.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-093-orig" n="greusz" resp="#fyndling">Grobe Getreidegrütze (Hafer oder Gerste) als Bindemittel für die Fleischmasse.<list type="alternatives"><item>Feinere Grütze aus Hirse oder Dinkel.<note type="rationale">Der Begriff spezifiziert die Getreideart nicht, regional waren verschiedene Grützesorten gebräuchlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-093-orig" n="greusz (Garzustand beim Einmengen)" resp="#fyndling">Die Grütze wird vor dem Einmengen kurz vorgequollen oder leicht vorgekocht, damit sie in der Spießbratzeit durchgart.<list type="alternatives"><item>Rohe, trockene Grütze wird direkt untergemengt und gart im knapp einstündigen Bratvorgang mit.<note type="rationale">Der Text spezifiziert den Garzustand der Grütze beim Einmengen nicht; texturlich ist die rohe Variante riskanter (körnig/untergar), aber vom Wortlaut nicht ausgeschlossen.</note></item></list></note>
       </div>
     </back>
   </text>

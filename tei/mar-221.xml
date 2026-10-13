@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,9 +101,9 @@ Voleno essere allessi como li gamari d'acqua dolce, et il suo sapore vole vole e
         <note type="gloss" target="#mar-221-orig" n="allessi" resp="#fyndling">gesotten, gekocht (von allessare)</note>
         <note type="gloss" target="#mar-221-orig" n="gamari d'acqua dolce" resp="#fyndling">Süßwasserkrebse</note>
         <note type="gloss" target="#mar-221-orig" n="aceto" resp="#fyndling">Essig</note>
-        <note type="interpretive_choice" target="#mar-221-orig" n="Voleno essere allessi como li gamari d'acqua dolce" resp="#fyndling">Siede die Nüsse wie Süßwasserkrebse.</note>
-        <note type="interpretive_choice" target="#mar-221-orig" n="et il suo sapore vole vole essere l'aceto" resp="#fyndling">Ihr Geschmack soll Essig sein.</note>
-        <note type="interpretive_choice" target="#mar-221-orig" n="Nocce" resp="#fyndling">Nüsse (allgemein)</note>
+        <note type="interpretive_choice" target="#mar-221-orig" n="Voleno essere allessi como li gamari d'acqua dolce" resp="#fyndling">Siede die Nüsse wie Süßwasserkrebse.<list type="alternatives"><item>Die Nüsse sollen gesotten werden wie Süßwasserkrebse.<note type="rationale">Dies ist eine direktere Übersetzung der passiven Konstruktion ‚voleno essere allessi‘, die eine Anweisung oder Empfehlung ausdrückt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-221-orig" n="et il suo sapore vole vole essere l'aceto" resp="#fyndling">Ihr Geschmack soll Essig sein.<list type="alternatives"><item>Reiche sie mit Essig.<note type="rationale">Dies ist eine pragmatischere Interpretation der Formulierung, die den Zweck des Essigs als Begleiter klarstellt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-221-orig" n="Nocce" resp="#fyndling">Nüsse (allgemein)<list type="alternatives"><item>Walnüsse<note type="rationale">Walnüsse waren im mittelalterlichen Italien weit verbreitet und sind eine häufige Zutat in Martinos Rezepten.</note></item><item>Haselnüsse<note type="rationale">Haselnüsse waren ebenfalls populär und könnten hier gemeint sein.</note></item></list></note>
       </div>
     </back>
   </text>

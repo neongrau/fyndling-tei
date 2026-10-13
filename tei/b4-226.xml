@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -136,7 +141,7 @@ Praxis. Aal häuten, die Haut kurz gar sieden und beiseitelegen. Das Fleisch ent
         <note type="gloss" target="#b4-226-orig" n="plat von aieren" resp="#fyndling">Eine dünne Schicht oder ein Fladen aus Eiern, ähnlich einem Omelett oder Crêpe, der zum Ummanteln des Aals verwendet wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
         <note type="gloss" target="#b4-226-orig" n="mach in auff gibs hin" resp="#fyndling">Die Eierplatte wird obenauf gelegt, dann wird angerichtet und serviert.</note>
         <note type="gloss" target="#b4-226-orig" n="fueg das haupt zu dem all" resp="#fyndling">Der Kopf wird wieder an den Aal angefügt - im nahezu wortgleichen Paralleltext der Wiener Handschrift W1 wird eigens erwähnt, dass der Kopf zuvor abgetrennt wird, bevor die Haut gegart wird.</note>
-        <note type="interpretive_choice" target="#b4-226-orig" n="Garzustand nach dem Ummanteln" resp="#fyndling">Der Text nennt keinen eigenen Back-/Garschritt nach dem Ummanteln in Teig und Eierplatte. Für die Praxis wird das ummantelte Gericht vollständig durchgegart, bevor es serviert wird.</note>
+        <note type="interpretive_choice" target="#b4-226-orig" n="Garzustand nach dem Ummanteln" resp="#fyndling" subtype="contextual">Der Text nennt keinen eigenen Back-/Garschritt nach dem Ummanteln in Teig und Eierplatte. Für die Praxis wird das ummantelte Gericht vollständig durchgegart, bevor es serviert wird.<list type="alternatives"><item>Denkbar, dass das Garen im damaligen Küchenjargon in 'mach in auff' bereits mitgemeint war und deshalb nicht eigens genannt wurde - dafür gibt es aber keinen Beleg in B4-226 oder im Zwilling w1-228, der an derselben Stelle dieselbe Lücke hat.</item></list></note>
       </div>
     </back>
   </text>

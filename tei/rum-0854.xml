@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,9 +128,9 @@ Praxis. Fisch in Portionsstücken, ein Topf, kleine Hitze. Die Zubereitungszeit 
         <note type="gloss" target="#rum-0854-orig" n="zerlaß" resp="#fyndling">Zerlassen heißt hier zergehen lassen: den gestoßenen Meerrettich in der Brühe auflösen.</note>
         <note type="gloss" target="#rum-0854-orig" n="gebeht Brot" resp="#fyndling">Gebähtes Brot, von „bähen“: leicht geröstet. Rumpolt richtet auch gesottenes Ochsenfleisch auf „gebehte Schnitten“ an.</note>
         <note type="gloss" target="#rum-0854-orig" n="Eyngemachten" resp="#fyndling">Bei Rumpolt heißt „eingemacht“ bei Fisch: in einer Sauce oder Brühe gegart, hier in klarer Brühe. Gemeint ist keine Konserve.</note>
-        <note type="interpretive_choice" target="#rum-0854-orig" n="gebeht Brot" resp="#fyndling">Leicht geröstetes Brot. „gebeht“ ist das Partizip von „bähen“ (rösten, durch Wärme trocknen; FWB bäen, MWB bæhen: Brotscheiben leicht rösten). Rumpolt selbst schreibt beim gesottenen Ochsenknorren „gebehte Schnitten oder zwo von einem Weck“ in derselben Brühe-Formel.</note>
-        <note type="interpretive_choice" target="#rum-0854-orig" n="zerlaß mit der Bruͤh" resp="#fyndling">Den gestoßenen Meerrettich in der heißen Brühe zergehen lassen bzw. verrühren und die Brühe dann über den Fisch gießen. So verwendet Rumpolt das Wort auch beim gebeizten Hausen („zerlaß jhn mit einem Essig vnd Wasser“).</note>
-        <note type="interpretive_choice" target="#rum-0854-orig" n="Stückelung des Fischs" resp="#fyndling">Der Text nennt keine Zerteilung. Bei der Größe eines Hausen ist ein ganzes Tier im Topf kaum denkbar, er wurde also in Stücken gesotten.</note>
+        <note type="interpretive_choice" target="#rum-0854-orig" n="gebeht Brot" resp="#fyndling" subtype="lexical">Leicht geröstetes Brot. „gebeht“ ist das Partizip von „bähen“ (rösten, durch Wärme trocknen; FWB bäen, MWB bæhen: Brotscheiben leicht rösten). Rumpolt selbst schreibt beim gesottenen Ochsenknorren „gebehte Schnitten oder zwo von einem Weck“ in derselben Brühe-Formel.<list type="alternatives"><item>Weißbrot, ungeröstet<note type="rationale">Die Brotsorte steht nicht im Text; „gebeht“ bezeichnet die Behandlung, nicht die Sorte. Ein heller Weck wie beim Ochsenknorren ist möglich, aber hier nicht genannt, und das Rösten wegzulassen widerspräche dem Wort.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0854-orig" n="zerlaß mit der Bruͤh" resp="#fyndling" subtype="contextual">Den gestoßenen Meerrettich in der heißen Brühe zergehen lassen bzw. verrühren und die Brühe dann über den Fisch gießen. So verwendet Rumpolt das Wort auch beim gebeizten Hausen („zerlaß jhn mit einem Essig vnd Wasser“).<list type="alternatives"><item>Den Meerrettich zuerst mit wenig Brühe anrühren und diese Mischung über den Fisch gießen<note type="rationale">Mit dem Wortlaut ebenso vereinbar; das Ergebnis ist eine dickere Meerrettichbrühe statt einer durchgehend gewürzten Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0854-orig" n="Stückelung des Fischs" resp="#fyndling" subtype="contextual">Der Text nennt keine Zerteilung. Bei der Größe eines Hausen ist ein ganzes Tier im Topf kaum denkbar, er wurde also in Stücken gesotten.<list type="alternatives"><item>Fisch in Portionsstücken<note type="rationale">Praktische Umsetzung heute; der Text legt die Stückgröße nicht fest.</note></item></list></note>
       </div>
     </back>
   </text>

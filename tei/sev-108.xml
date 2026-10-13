@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,11 +110,11 @@ Vezmi dvě neb tři žemle, jsou-li tvrdé, struž je na struhadle a prosej čis
         <note type="gloss" target="#sev-108-orig" n="řeckého vína vypera" resp="#fyndling">Ein süßer, oft starker griechischer Wein, wie Malvasia, der im Mittelalter und der frühen Neuzeit in Mitteleuropa verbreitet war.</note>
         <note type="gloss" target="#sev-108-orig" n="koblihy" resp="#fyndling">Krapfen oder Berliner Pfannkuchen, ein in Fett ausgebackenes Gebäck.</note>
         <note type="gloss" target="#sev-108-orig" n="ošafraně" resp="#fyndling">Mit Safran gefärbt oder gewürzt.</note>
-        <note type="interpretive_choice" target="#sev-108-orig" n="žemle" resp="#fyndling">Weiße Brötchen</note>
-        <note type="interpretive_choice" target="#sev-108-orig" n="duršlák" resp="#fyndling">Sieb</note>
-        <note type="interpretive_choice" target="#sev-108-orig" n="řeckého vína vypera" resp="#fyndling">Süßer griechischer Wein (z.B. Malvasia)</note>
-        <note type="interpretive_choice" target="#sev-108-orig" n="koblihy péci" resp="#fyndling">Krapfen frittieren</note>
-        <note type="interpretive_choice" target="#sev-108-orig" n="ošafraně" resp="#fyndling">mit Safran gefärbt</note>
+        <note type="interpretive_choice" target="#sev-108-orig" n="žemle" resp="#fyndling">Weiße Brötchen<list type="alternatives"><item>Semmeln<note type="rationale">Semmeln ist ein regionaler Begriff für Brötchen, der in Süddeutschland und Österreich gebräuchlich ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-108-orig" n="duršlák" resp="#fyndling">Sieb<list type="alternatives"><item>Durchschlag<note type="rationale">Ein Durchschlag ist ein Küchengerät mit Löchern, das zum Abgießen oder Passieren verwendet wird, oft synonym mit Sieb.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-108-orig" n="řeckého vína vypera" resp="#fyndling">Süßer griechischer Wein (z.B. Malvasia)<list type="alternatives"><item>Griechischer Wein<note type="rationale">Die direkte Übersetzung ist 'Griechischer Wein'. Die Ergänzung 'süß' und 'Malvasia' präzisiert den historischen Kontext und die Art des Weins, der damals verbreitet war.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-108-orig" n="koblihy péci" resp="#fyndling">Krapfen frittieren<list type="alternatives"><item>Krapfen backen<note type="rationale">Das Verb 'péci' kann sowohl 'backen' als auch 'braten/frittieren' bedeuten. Im Kontext von 'koblihy' (Krapfen) und 'horké' (heißes Fett) ist 'frittieren' die passendere Interpretation.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-108-orig" n="ošafraně" resp="#fyndling">mit Safran gefärbt<list type="alternatives"><item>mit Safran gewürzt<note type="rationale">Safran wurde sowohl zum Färben als auch zum Würzen verwendet. Die Formulierung 'zdáliť se' (wenn es dir gefällt) deutet darauf hin, dass die optische Komponente (Farbe) hier im Vordergrund stehen könnte, aber der Geschmack ist ebenso wichtig.</note></item></list></note>
       </div>
     </back>
   </text>

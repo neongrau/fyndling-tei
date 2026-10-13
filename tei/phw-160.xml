@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,8 +126,8 @@ Praxis. Weinbeeren waschen und im Mörser stoßen. Brotbrösel dazugeben und wei
         <note type="gloss" target="#phw-160-orig" n="brosen brott" resp="#fyndling">Geriebenes Brot oder Brotbrösel, die als Bindemittel und zur Texturgebung dienen.</note>
         <note type="gloss" target="#phw-160-orig" n="syblin" resp="#fyndling">Ein kleines Sieb, durch das die Masse getrieben wird, um eine feine, glatte Konsistenz zu erhalten.</note>
         <note type="gloss" target="#phw-160-orig" n="henen brie" resp="#fyndling">Hühnerbrühe. Die Angabe „aufs megerst ist“ (am magersten ist) betont die diätetische Eignung für Kranke.</note>
-        <note type="interpretive_choice" target="#phw-160-orig" n="dreybs" resp="#fyndling">„treibe es“ - dies bezieht sich auf das Passieren der Masse durch ein Sieb, um eine feine Konsistenz zu erzielen.</note>
-        <note type="interpretive_choice" target="#phw-160-orig" n="seutz" resp="#fyndling">„siede es“ - hier im Sinne von „aufkochen“ oder „simmern lassen“, um die Masse zu erhitzen und die hinzugefügten Gewürze zu lösen.</note>
+        <note type="interpretive_choice" target="#phw-160-orig" n="dreybs" resp="#fyndling" subtype="lexical">„treibe es“ - dies bezieht sich auf das Passieren der Masse durch ein Sieb, um eine feine Konsistenz zu erzielen.<list type="alternatives"><item>„reibe es“ - eine alternative Lesart, die ebenfalls das Zerkleinern und Passieren implizieren könnte, aber „treiben“ ist im Kontext des Siebens dicker Massen gebräuchlicher.<note type="rationale">Das Verb „treiben“ (mhd. trîben) kann im Kontext von Speisen auch das Passieren durch ein Sieb bedeuten, während „reiben“ (mhd. rîben) eher das Zerkleinern auf einer Reibe oder im Mörser beschreibt. Der Zwilling std-032 verwendet dieselbe Formulierung („treibs mit wein“) eindeutig im Sinn von Durchtreiben durch ein Sieb, was die primäre Lesart stützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-160-orig" n="seutz" resp="#fyndling" subtype="lexical">„siede es“ - hier im Sinne von „aufkochen“ oder „simmern lassen“, um die Masse zu erhitzen und die hinzugefügten Gewürze zu lösen.<list type="alternatives"><item>„setze es“ - könnte das Eindicken oder Absetzen der Masse bedeuten, aber im Kontext der Zugabe von Zucker und Zimt ist das Aufkochen plausibler.<note type="rationale">Das Wort „seutz“ kann eine Form von „sieden“ (kochen) oder „setzen“ (sich absetzen lassen, eindicken) sein. Da direkt danach Zucker und Zimt hinzugefügt werden, ist ein kurzes Aufkochen oder Simmern, um die Süße und Würze zu integrieren, die wahrscheinlichere Zubereitungsweise für ein Mus.</note></item></list></note>
       </div>
     </back>
   </text>

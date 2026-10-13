@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,8 +114,8 @@ Praxis. Die Vögel am Spieß oder in der Pfanne braten; die Bratart nennt der Te
         <note type="gloss" target="#rum-0819-orig" n="streich mit derselbigen Bruͤh die Wacholderbeer durch" resp="#fyndling">Durchstreichen heißt bei Rumpolt passieren: Die gestoßenen Beeren werden zusammen mit der Brühe durch ein Tuch oder Sieb gedrückt, Schalen und Kerne bleiben zurück.</note>
         <note type="gloss" target="#rum-0819-orig" n="laß auffsieden" resp="#fyndling">Aufkochen lassen.</note>
         <note type="gloss" target="#rum-0819-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0819-orig" n="Hennenbruͤh/ die vber ein Braten gegossen ist worden" resp="#fyndling">Eine Hühnerbrühe, mit der zuvor ein Braten übergossen wurde und die dabei dessen Saft aufgenommen hat; so steht es wörtlich da, und die Übersetzung bleibt bei diesem Wortlaut.</note>
-        <note type="interpretive_choice" target="#rum-0819-orig" n="laß auffsieden mit gestossenem Pfeffer" resp="#fyndling">Die Brühe wird samt den durchgestrichenen Wacholderbeeren mit dem gestoßenen Pfeffer zusammen aufgekocht; der Satz hat kein Subjekt, sachlich ist die Beerenbrühe gemeint. Die Übersetzung sagt daher neutral „lasse es aufkochen“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0819-orig" n="Hennenbruͤh/ die vber ein Braten gegossen ist worden" resp="#fyndling" subtype="contextual">Eine Hühnerbrühe, mit der zuvor ein Braten übergossen wurde und die dabei dessen Saft aufgenommen hat; so steht es wörtlich da, und die Übersetzung bleibt bei diesem Wortlaut.<list type="alternatives"><item>Frische Hühnerbrühe von der Art, mit der man einen Braten übergießt<note type="rationale">Das Perfekt „gegossen ist worden“ spricht für eine Brühe, die schon über dem Braten war; die Lesart als bloße Gattungsangabe glättet den Wortlaut.</note></item><item>Brühe von einem Huhn, das selbst als Braten diente<note type="rationale">Der Text nennt „ein Braten“ ohne Tier; eine Gleichsetzung mit dem Huhn der Brühe ist nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0819-orig" n="laß auffsieden mit gestossenem Pfeffer" resp="#fyndling" subtype="contextual">Die Brühe wird samt den durchgestrichenen Wacholderbeeren mit dem gestoßenen Pfeffer zusammen aufgekocht; der Satz hat kein Subjekt, sachlich ist die Beerenbrühe gemeint. Die Übersetzung sagt daher neutral „lasse es aufkochen“.<list type="alternatives"><item>Nur die Beeren in der Brühe aufkochen, den Pfeffer erst danach zugeben<note type="rationale">Grammatisch nicht ausgeschlossen, aber „mit gestossenem Pfeffer“ steht unmittelbar beim Aufsieden; im Ergebnis kaum ein Unterschied.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

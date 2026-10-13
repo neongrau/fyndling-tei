@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,11 +135,11 @@ Praxis. Der Text nennt weder Mengen noch Zeiten. Als eigene Schätzung: etwa 20 
         <note type="gloss" target="#rum-0064-orig" n="vberzinten Fischkessel" resp="#fyndling">Überzinnt = verzinnt, also ein innen mit Zinn überzogener Kessel. Rumpolt nimmt den Fischkessel auch für die weißen Knödel des nächsten Rezepts; Fisch ist dafür nicht nötig.</note>
         <note type="gloss" target="#rum-0064-orig" n="daͤmpff es miteinander ein" resp="#fyndling">Eindämpfen heißt dünsten, garen. Hier: alles zusammen in der Flüssigkeit fertig garen lassen. Wie lange und ob die Brühe dabei einkocht, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0064-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0064-orig" n="daͤmpff es miteinander ein" resp="#fyndling">Die Knödel garen zugedeckt in der Flüssigkeit fertig; eindämpfen heißt im Wörterbuch dünsten, garen.</note>
-        <note type="interpretive_choice" target="#rum-0064-orig" n="Fleisch" resp="#fyndling">Rindfleisch, weil das Rezept im Kapitel vom Ochsen steht; der Text sagt nur „Fleisch“ und „hack es durcheinander“, wie fein, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0064-orig" n="ein wenig Zwibel" resp="#fyndling">Roh mitgehackt, denn alles wird zusammen durcheinandergehackt; ein Andünsten nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0064-orig" n="Salz" resp="#fyndling">Der Text nennt kein Salz; es wird nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0064-orig" n="vberzinten Fischkessel" resp="#fyndling">Ein verzinnter Kessel, der im Buch auch für andere Knödel dient; Form und Größe nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0064-orig" n="daͤmpff es miteinander ein" resp="#fyndling" subtype="contextual">Die Knödel garen zugedeckt in der Flüssigkeit fertig; eindämpfen heißt im Wörterbuch dünsten, garen.<list type="alternatives"><item>Zusammen einkochen, bis die Brühe nur noch eine kurze Sauce ist<note type="rationale">Der Wortlaut lässt ein Einreduzieren zu; Zeit und Endzustand nennt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0064-orig" n="Fleisch" resp="#fyndling" subtype="contextual">Rindfleisch, weil das Rezept im Kapitel vom Ochsen steht; der Text sagt nur „Fleisch“ und „hack es durcheinander“, wie fein, bleibt offen.<list type="alternatives"><item>Mageres Rindfleisch aus Schulter oder Wade, fein gewolft<note type="rationale">Moderner Standard für die Praxis; das Fett kommt über das zugegebene Rinderfett.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0064-orig" n="ein wenig Zwibel" resp="#fyndling" subtype="contextual">Roh mitgehackt, denn alles wird zusammen durcheinandergehackt; ein Andünsten nennt der Text nicht.<list type="alternatives"><item>Fein gehackt, roh in die Masse<note type="rationale">Entspricht dem Text und ist zugleich die heutige Praxis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0064-orig" n="Salz" resp="#fyndling" subtype="contextual">Der Text nennt kein Salz; es wird nicht ergänzt.<list type="alternatives"><item>Nach Geschmack salzen<note type="rationale">Heutige Praxis; Salzen war damals wohl selbstverständlich, steht aber nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0064-orig" n="vberzinten Fischkessel" resp="#fyndling" subtype="contextual">Ein verzinnter Kessel, der im Buch auch für andere Knödel dient; Form und Größe nennt der Text nicht.<list type="alternatives"><item>Weiter, flacher Bräter oder Kessel mit Deckel, länglich wie ein Fischkessel<note type="rationale">Praxisersatz; die längliche Form ist nicht am Text belegt, Verzinnung ist heute nicht nötig.</note></item></list></note>
       </div>
     </back>
   </text>

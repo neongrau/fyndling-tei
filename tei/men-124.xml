@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,8 +111,8 @@
         <note type="gloss" target="#men-124-orig" n="Vergay" resp="#fyndling">Bedeutet 'grünlich' oder 'gesprenkelt'. Hier bezieht es sich auf die gewünschte grüne Farbe des Gerichts, möglicherweise mit den Eiern als Sprenkel.</note>
         <note type="gloss" target="#men-124-orig" n="Lart" resp="#fyndling">Speck oder Lard. Eine alternative Zutat zum Brot, die das Gericht reichhaltiger macht.</note>
         <note type="interpretive_choice" target="#men-124-orig" n="ung pou de frommage / bien pou de saffran" resp="#fyndling">Die Mengenangaben 'ein wenig' und 'sehr wenig' wurden als Richtwerte für eine moderate Menge Käse und eine Prise Safran interpretiert, um den Geschmack zu ergänzen, ohne die grüne Farbe zu dominieren.</note>
-        <note type="interpretive_choice" target="#men-124-orig" n="puree de poix ou d'eaue boulye" resp="#fyndling">Es wurde Erbsenpüree als primäre Wahl für die Flüssigkeit und Bindung angenommen, da es dem Gericht mehr Substanz und Geschmack verleiht als reines Wasser. Wasser ist eine einfachere Alternative.</note>
-        <note type="interpretive_choice" target="#men-124-orig" n="et soit vergay" resp="#fyndling">Die Anweisung 'und es sei grünlich' wurde als die primäre Farbvorgabe interpretiert, die durch Petersilie und Salbei erreicht wird. Die pochierten Eier können eine 'gesprenkelte' Optik erzeugen.</note>
+        <note type="interpretive_choice" target="#men-124-orig" n="puree de poix ou d'eaue boulye" resp="#fyndling">Es wurde Erbsenpüree als primäre Wahl für die Flüssigkeit und Bindung angenommen, da es dem Gericht mehr Substanz und Geschmack verleiht als reines Wasser. Wasser ist eine einfachere Alternative.<list type="alternatives"><item>Die Verwendung von kochendem Wasser anstelle von Erbsenpüree.<note type="rationale">Wasser ist die einfachere und schnellere Option, die das Gericht leichter macht, aber weniger Geschmack und Bindung bietet.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-124-orig" n="et soit vergay" resp="#fyndling">Die Anweisung 'und es sei grünlich' wurde als die primäre Farbvorgabe interpretiert, die durch Petersilie und Salbei erreicht wird. Die pochierten Eier können eine 'gesprenkelte' Optik erzeugen.<list type="alternatives"><item>Die Anweisung 'und es sei gesprenkelt' könnte sich auf die Textur und das Aussehen der hinzugefügten Eier beziehen, die sich vom grünen Brouet abheben.<note type="rationale">Das Wort 'vergay' kann auch 'gesprenkelt' bedeuten, was gut zu den sichtbaren, pochierten Eiern im grünen Eintopf passen würde.</note></item></list></note>
       </div>
     </back>
   </text>

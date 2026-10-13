@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,8 +108,8 @@ Praxis. Mengen, Zeiten, Fleischstück und Schnittform nennt der Text nicht; wie 
         <note type="gloss" target="#rum-0241-orig" n="Geselcht oder geraͤuchert" resp="#fyndling">Geselcht ist das oberdeutsche Wort für geräuchert (DWB: geselchtes = geräuchertes Fleisch). Rumpolt setzt beide Wörter als Doppelformel nebeneinander. Das Fleisch liegt schon geräuchert vor; ein Räuchern gehört nicht zum Rezept.</note>
         <note type="gloss" target="#rum-0241-orig" n="Geißfleisch" resp="#fyndling">Ziegenfleisch (FWB geis: Ziege; DWB geiszfleisch = Ziegenfleisch). Das Rezept steht im Kapitel „Von einer jungen Geiß“, gemeint ist also Fleisch der jungen Ziege; der Satz selbst sagt nur Geißfleisch.</note>
         <note type="gloss" target="#rum-0241-orig" n="Kraut" resp="#fyndling">Ein Krautgericht, am ehesten Kohl. An vergleichbarer Stelle schreibt Rumpolt ausdrücklich „vnter ein Koͤlkraut“ (rum-0154). Hier nennt er weder die Sorte noch, ob das Kraut frisch oder sauer ist.</note>
-        <note type="interpretive_choice" target="#rum-0241-orig" n="Geißfleisch (Alter des Tiers)" resp="#fyndling">Fleisch der jungen Ziege: Das Rezept ist Nr. 19 im Kapitel „Von einer jungen Geiß“, und alle Nachbarrezepte meinen die junge Ziege.</note>
-        <note type="interpretive_choice" target="#rum-0241-orig" n="vnter ein Kraut" resp="#fyndling">Ein Krautgericht, am ehesten Kohl; Rumpolt schreibt in der gleichen Formel bei den Hammelzungen „Koͤlkraut“ (rum-0154). Die Sorte legt der Text nicht fest.</note>
+        <note type="interpretive_choice" target="#rum-0241-orig" n="Geißfleisch (Alter des Tiers)" resp="#fyndling" subtype="contextual">Fleisch der jungen Ziege: Das Rezept ist Nr. 19 im Kapitel „Von einer jungen Geiß“, und alle Nachbarrezepte meinen die junge Ziege.<list type="alternatives"><item>Ziegenfleisch allgemein, auch von älteren Tieren<note type="rationale">Geiß heißt zunächst nur Ziege, und der Satz selbst sagt nicht „jung“; das Alter kommt allein aus dem Kapitelkopf.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0241-orig" n="vnter ein Kraut" resp="#fyndling" subtype="contextual">Ein Krautgericht, am ehesten Kohl; Rumpolt schreibt in der gleichen Formel bei den Hammelzungen „Koͤlkraut“ (rum-0154). Die Sorte legt der Text nicht fest.<list type="alternatives"><item>Praxis: Weißkraut oder Sauerkraut<note type="rationale">Naheliegende heutige Umsetzung; ob frisch oder gesäuert, sagt der Text nicht.</note></item><item>Anderes Blatt- oder Krautgemüse<note type="rationale">Kraut kann weiter gefasst sein; beim geräucherten Spanferkel nennt Rumpolt neben Kohl und Sauerkraut auch Spinat. Hier steht aber nur „ein Kraut“.</note></item></list></note>
       </div>
     </back>
   </text>

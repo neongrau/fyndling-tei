@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -135,8 +140,8 @@ Cluster: Birnen-Geflügel-Familie - Zwilling für alte Vögel sev-029, leber-geb
         <note type="gloss" target="#sev-028-orig" n="barvu žlutú" resp="#fyndling">‚Gelbe Farbe‘. In der mittelalterlichen Küche war Safran das primäre Mittel, um Speisen gelb zu färben, oft auch als Statussymbol.</note>
         <note type="gloss" target="#sev-028-orig" n="pretuj je v sádle" resp="#fyndling">‚Brate sie in Schmalz‘. Schmalz war ein gängiges Bratfett.</note>
         <note type="interpretive_choice" target="#sev-028-orig" n="ptáci noví" resp="#fyndling">Die Übersetzung als 'Geflügel' ist eine moderne Präzisierung des allgemeinen Begriffs 'Vögel', da es sich hier um eine Speise handelt.</note>
-        <note type="interpretive_choice" target="#sev-028-orig" n="jíchu hovězí" resp="#fyndling">Die 'Rindfleischsauce' wird als eine kräftige, eingedickte Brühe interpretiert, die als Basis für das Gericht dient.</note>
-        <note type="interpretive_choice" target="#sev-028-orig" n="barvu žlutú" resp="#fyndling">Die 'gelbe Farbe' wird als Safran interpretiert, da dies das gängigste und wertvollste Färbemittel für Speisen in der mittelalterlichen Küche war.</note>
+        <note type="interpretive_choice" target="#sev-028-orig" n="jíchu hovězí" resp="#fyndling">Die 'Rindfleischsauce' wird als eine kräftige, eingedickte Brühe interpretiert, die als Basis für das Gericht dient.<list type="alternatives"><item>Eine dünne Rinderbrühe.<note type="rationale">Ohne weitere Angaben zur Konsistenz könnte es auch eine einfachere Brühe sein, die nicht stark reduziert wurde.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-028-orig" n="barvu žlutú" resp="#fyndling">Die 'gelbe Farbe' wird als Safran interpretiert, da dies das gängigste und wertvollste Färbemittel für Speisen in der mittelalterlichen Küche war.<list type="alternatives"><item>Andere zeittypische gelbe Farbstoffe wie Ringelblumenblüten oder Eigelb.<note type="rationale">Ringelblume und Eigelb liefern ebenfalls einen gelben Ton, doch die Formulierung 'Farbe geben' deutet eher auf das hochgeschätzte Safran-Gewürz hin.</note></item></list></note>
       </div>
     </back>
   </text>

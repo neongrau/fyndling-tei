@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,9 +127,9 @@ Der Teig. Das Rezept spricht nur von „des taigs“ und setzt ihn als bekannt v
         <note type="gloss" target="#b4-223-orig" n="kraphen / kraphel" resp="#fyndling">Im Mittelalter waren „Krapfen" eine weit verbreitete Bezeichnung für frittierte Teiggebäcke, die sowohl süß als auch herzhaft gefüllt sein konnten. Vergleichbar sind sie mit den heutigen gefüllten Krapfen oder pikanten, Panzerotti-artigen Gebäcken.</note>
         <note type="gloss" target="#b4-223-orig" n="plat des taigs" resp="#fyndling">Bezeichnet einen dünnen Teigfladen, der als Hülle für die Füllung dient. Vergleichbar mit einem heutigen Nudel- oder Blätterteigblatt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
         <note type="gloss" target="#b4-223-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das zum Frittieren verwendet wurde. Es verleiht den Krapfen einen kräftigen Geschmack.</note>
-        <note type="interpretive_choice" target="#b4-223-orig" n="chlen" resp="#fyndling">Gelesen als Form von mhd./fnhd. „kleiben" (kleben, ankleben, festmachen): Die Füllung wird auf den ersten Teigfladen geklebt bzw. gestrichen.</note>
-        <note type="interpretive_choice" target="#b4-223-orig" n="wintt (wint) also fladen" resp="#fyndling">Übersetzt als „forme die Fladen" - die gefüllten Teigfladen werden in ihre endgültige Form gebracht.</note>
-        <note type="interpretive_choice" target="#b4-223-orig" n="Größe/Dicke der Teigfladen" resp="#fyndling">Der Text nennt keine Maße für die beiden Teigfladen.</note>
+        <note type="interpretive_choice" target="#b4-223-orig" n="chlen" resp="#fyndling" subtype="philological">Gelesen als Form von mhd./fnhd. „kleiben" (kleben, ankleben, festmachen): Die Füllung wird auf den ersten Teigfladen geklebt bzw. gestrichen.<list type="alternatives"><item>Frühere Lesart „verteilen".<note type="rationale">Drei unabhängige Parallelstellen an exakt derselben Satzposition (w1-225 „claib", mha-084 „kleb", m5919-085 „cleb") zeigen übereinstimmend eine Form von „kleiben". „chlen" im b4-Text ist damit vermutlich eine abweichende Schreibung desselben Verbs, nicht ein eigenständiges Wort für „verteilen".</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-223-orig" n="wintt (wint) also fladen" resp="#fyndling" subtype="lexical">Übersetzt als „forme die Fladen" - die gefüllten Teigfladen werden in ihre endgültige Form gebracht.<list type="alternatives"><item>„winden/drehen" könnte spezifischer ein Eindrehen bzw. Verschließen des Randes meinen.<note type="rationale">Für einen kulinarisch eindeutigen Beleg dieser engeren Bedeutung liegt hier keine gesicherte Quelle vor; auch der Zwilling w1-225 hat an derselben Stelle nur dieselbe knappe Form ohne Zweitlesart. Die Übersetzung bleibt daher beim allgemeineren „formen".</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-223-orig" n="Größe/Dicke der Teigfladen" resp="#fyndling" subtype="contextual">Der Text nennt keine Maße für die beiden Teigfladen.<list type="alternatives"><item>Große, dicke Fladen, wie es das Wort „Fladen" nahelegt.<note type="rationale">Bei großen, dicken Fladen ist unsicher, ob roher, gehackter Speck und Ei im Kern in der Frittierzeit vollständig durchgaren, bevor die Außenseite bräunt. Für die Praxis wird deshalb eine dünnere, handtellergroße Variante empfohlen (siehe Zubereitungshinweis), die diese Unsicherheit vermeidet, ohne dass der Text selbst dafür einen Beleg liefert.</note></item></list></note>
       </div>
     </back>
   </text>

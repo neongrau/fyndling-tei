@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,9 +130,9 @@ Eier zuerst verquirlen, dann die Milch unterschlagen, damit keine Klümpchen ent
         <note type="gloss" target="#phw-150-orig" n="eysen lefel" resp="#fyndling">Ein Löffel aus Eisen, ein gebräuchliches Küchenutensil der Zeit.</note>
         <note type="gloss" target="#phw-150-orig" n="schisel" resp="#fyndling">Eine Schüssel, hier zum Servieren des fertigen Mus.</note>
         <note type="gloss" target="#phw-150-orig" n="dobett" resp="#fyndling">Ein im Buch nur an dieser Stelle belegtes Wort. Die Übersetzung als „fest werden“ folgt dem Zusammenhang: Der Buchtitel nennt das Gericht selbst „stock muß“ - ein Mus, das stockt.</note>
-        <note type="interpretive_choice" target="#phw-150-orig" n="halbstundt" resp="#fyndling">Die Lesart ‚halbe Stunde‘ wurde gewählt. Obwohl die spezifische Schreibweise im Pre-Flight als ‚UNSICHER (nirgends belegt)‘ markiert ist, ist die Bedeutung aus dem Kontext der Kochzeit eindeutig.</note>
-        <note type="interpretive_choice" target="#phw-150-orig" n="dobett" resp="#fyndling">Die Handschrift hat „dobett“ (Hayer liest richtig). Das Wort ist ein Partizip von ‚toben‘ (Hayers Glossar: „part. präs. von toben (?), stark kochend (?)“). Übersetzt wird es nach dem Zusammenhang als Endpunkt des Garens, „bis es fest wird“: Das Gericht heißt selbst „stock muß“, also ein Mus, das stockt, und eine Parallelstelle im Korpus beschreibt denselben Vorgang mit „wenn sy dick wil werden“.</note>
-        <note type="interpretive_choice" target="#phw-150-orig" n="eyrtt" resp="#fyndling">Die Lesart „glasiert“ wurde gewählt. Nach dem Faksimile (Ralf, 2026-10-07) steht „glafßeyrtt“ als ein Wort über der Zeilengrenze („der jnen glafß-eyrtt sey“, also ein Topf, der innen glasiert sei). Hayers Glossar führt dazu „glaseyrttz hefalin - glasierter Topf“. Eine zusätzliche Deutung als „irden“ (aus Ton) ist dadurch nicht gedeckt.</note>
+        <note type="interpretive_choice" target="#phw-150-orig" n="halbstundt" resp="#fyndling" subtype="orthographic">Die Lesart ‚halbe Stunde‘ wurde gewählt. Obwohl die spezifische Schreibweise im Pre-Flight als ‚UNSICHER (nirgends belegt)‘ markiert ist, ist die Bedeutung aus dem Kontext der Kochzeit eindeutig.</note>
+        <note type="interpretive_choice" target="#phw-150-orig" n="dobett" resp="#fyndling" subtype="lexical">Die Handschrift hat „dobett“ (Hayer liest richtig). Das Wort ist ein Partizip von ‚toben‘ (Hayers Glossar: „part. präs. von toben (?), stark kochend (?)“). Übersetzt wird es nach dem Zusammenhang als Endpunkt des Garens, „bis es fest wird“: Das Gericht heißt selbst „stock muß“, also ein Mus, das stockt, und eine Parallelstelle im Korpus beschreibt denselben Vorgang mit „wenn sy dick wil werden“.<list type="alternatives"><item>„bis es tobt“ im Sinn von Aufwallen: die dick werdende Masse wirft Blasen und platzt an der Oberfläche auf.<note type="rationale">Trifft das Bild von ‚toben‘ wörtlicher und beschreibt, woran man das Eindicken sieht. Im Wasserbad stockt die Eiermilch aber eher still; ein kräftiges Kochen der Masse selbst wäre ein Zeichen von zu viel Hitze. Beide Lesarten laufen auf denselben Garpunkt hinaus.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-150-orig" n="eyrtt" resp="#fyndling" subtype="philological">Die Lesart „glasiert“ wurde gewählt. Nach dem Faksimile (Ralf, 2026-10-07) steht „glafßeyrtt“ als ein Wort über der Zeilengrenze („der jnen glafß-eyrtt sey“, also ein Topf, der innen glasiert sei). Hayers Glossar führt dazu „glaseyrttz hefalin - glasierter Topf“. Eine zusätzliche Deutung als „irden“ (aus Ton) ist dadurch nicht gedeckt.</note>
       </div>
     </back>
   </text>

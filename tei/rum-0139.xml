@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,10 +123,10 @@ Praxis. Euter gibt es nur auf Vorbestellung beim Metzger, der Innereien führt; 
         <note type="gloss" target="#rum-0139-orig" n="Agrastwasser" resp="#fyndling">Verjus, die saure Brühe aus unreifen Weinbeeren, als Säuerungsmittel.</note>
         <note type="gloss" target="#rum-0139-orig" n="vnzerlassen" resp="#fyndling">Ungeschmolzen, also nicht zerlassen. Dieselbe Fügung „frische Butter, die vnzerlassen ist“ kehrt bei Rumpolt oft wieder.</note>
         <note type="gloss" target="#rum-0139-orig" n="Trauben auß dem Agrastwasser" resp="#fyndling">Rumpolt nennt Trauben, die im Verjus liegen. Ob es eingelegte unreife Trauben sind oder die Beeren, aus denen der Verjus gemacht wurde, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0139-orig" n="Agrastwasser" resp="#fyndling">Verjus, der saure Saft unreifer Weintrauben. Die „Trauben auß dem Agrastwasser“ im selben Satz stützen diese Lesart, ebenso Rumpolts „Agrastbeer“ für unreife Weintrauben an anderer Stelle.</note>
-        <note type="interpretive_choice" target="#rum-0139-orig" n="Vorkochen des Euters („am ersten wol gesotten“)" resp="#fyndling">Das Euter wird vorab gut gar gekocht; eine Dauer nennt Rumpolt nicht, ‚wol‘ heißt nur ‚gut‘.</note>
-        <note type="interpretive_choice" target="#rum-0139-orig" n="Trauben auß dem Agrastwasser" resp="#fyndling">Unreife Trauben, die im Verjus liegen oder aus denen der Verjus gemacht wurde; der Text unterscheidet das nicht.</note>
-        <note type="interpretive_choice" target="#rum-0139-orig" n="laß es darmit auffsieden" resp="#fyndling">Die Euterstücke sieden kurz mit in der Sauce auf; ‚es‘ kann sich auf das Euter beziehen.</note>
+        <note type="interpretive_choice" target="#rum-0139-orig" n="Agrastwasser" resp="#fyndling" subtype="lexical">Verjus, der saure Saft unreifer Weintrauben. Die „Trauben auß dem Agrastwasser“ im selben Satz stützen diese Lesart, ebenso Rumpolts „Agrastbeer“ für unreife Weintrauben an anderer Stelle.<list type="alternatives"><item>Saft von Stachelbeeren.<note type="rationale">‚Agrast‘ kann auch die Stachelbeere bezeichnen. Die Trauben im Agrastwasser machen das hier aber unwahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0139-orig" n="Vorkochen des Euters („am ersten wol gesotten“)" resp="#fyndling" subtype="contextual">Das Euter wird vorab gut gar gekocht; eine Dauer nennt Rumpolt nicht, ‚wol‘ heißt nur ‚gut‘.<list type="alternatives"><item>Heute: weich garen, etwa 1,5 bis 2 Stunden, mit dem Spießlein auf Garprobe prüfen.<note type="rationale">Praxiswert zum Nachkochen, geschätzt, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0139-orig" n="Trauben auß dem Agrastwasser" resp="#fyndling" subtype="contextual">Unreife Trauben, die im Verjus liegen oder aus denen der Verjus gemacht wurde; der Text unterscheidet das nicht.<list type="alternatives"><item>Heute: in Verjus eingelegte oder frische säuerliche Trauben, im Verjus mitgewärmt.<note type="rationale">Praktikabler Ersatz, wenn keine eingelegten unreifen Trauben zur Hand sind.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0139-orig" n="laß es darmit auffsieden" resp="#fyndling" subtype="contextual">Die Euterstücke sieden kurz mit in der Sauce auf; ‚es‘ kann sich auf das Euter beziehen.<list type="alternatives"><item>Nur die Sauce aufkochen und erst beim Anrichten über die Euterlein gießen.<note type="rationale">Naheliegender, weil danach „gieß es vber die Euterlein“ folgt; so bleibt die gebräunte Oberfläche erhalten. Das ist die Praxisempfehlung.</note></item></list></note>
       </div>
     </back>
   </text>

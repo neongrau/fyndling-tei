@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,10 +117,10 @@ Praxis. Die gekochte Zunge fein hacken, mit Rosinen, Zimt, Zucker und Eigelb zu 
         <note type="gloss" target="#rum-1814-orig" n="klein schwartzen Rosein" resp="#fyndling">Kleine schwarze Rosinen, also kleine dunkle Trockenbeeren. Dieselbe Wendung steht im ersten Rezept des Kapitels (rum-1795); in Nr. 5 und Nr. 21 heißen sie „schwartze Weinbeer“. Heutige Korinthen kommen dem nahe, die Sorte legt der Text aber nicht fest.</note>
         <note type="gloss" target="#rum-1814-orig" n="Eyerdottern" resp="#fyndling">Eidotter, Eigelb. Es bindet die gehackte Masse.</note>
         <note type="gloss" target="#rum-1814-orig" n="Fuͤll" resp="#fyndling">Füllung. Im Kapitel „Von allerley Turten“ ist damit die Masse gemeint, die in den Tortenteig kommt; Rumpolt schließt mehrere Nummern dieses Kapitels mit derselben Formel „so ist es ein gute Fuͤll“.</note>
-        <note type="interpretive_choice" target="#rum-1814-orig" n="gebehte Ochsenzungen" resp="#fyndling">Gebähte Ochsenzunge: eine über Hitze erwärmte oder leicht angeröstete Zunge. gebeht ist bei Rumpolt durchgehend die Form von bähen (FWB bäen „erwärmen, trocknen, rösten“) und steht sonst bei Brotschnitten und Weck.</note>
-        <note type="interpretive_choice" target="#rum-1814-orig" n="Garzustand der Zunge" resp="#fyndling">Offen: Der Text sagt über die Zunge nur „gebehte“, also dass sie Hitze gesehen hat. Wie sie vorher gegart wurde, nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-1814-orig" n="klein schwartzen Rosein" resp="#fyndling">Kleine schwarze Rosinen, Sorte offen; dieselbe Wendung wie in rum-1795, gleichbedeutend mit „schwartze Weinbeer“ in rum-1799 und rum-1815.</note>
-        <note type="interpretive_choice" target="#rum-1814-orig" n="Fuͤll" resp="#fyndling">Füllung für eine Torte: Das Rezept steht im Kapitel „Von allerley Turten“, wo dieselbe Formel die Tortenfüllungen abschließt. Dass die Masse in den Teig kommt und mitgebacken wird, ergibt sich aus dem Kapitel, nicht aus dem Rezepttext.</note>
+        <note type="interpretive_choice" target="#rum-1814-orig" n="gebehte Ochsenzungen" resp="#fyndling" subtype="lexical">Gebähte Ochsenzunge: eine über Hitze erwärmte oder leicht angeröstete Zunge. gebeht ist bei Rumpolt durchgehend die Form von bähen (FWB bäen „erwärmen, trocknen, rösten“) und steht sonst bei Brotschnitten und Weck.<list type="alternatives"><item>gebeizte (eingelegte, gepökelte) Ochsenzunge<note type="rationale">Verworfen: Rumpolt schreibt Beizen nie so, und gebeht ist im ganzen Buch bähen. Ein Einlegen der Zunge steht nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1814-orig" n="Garzustand der Zunge" resp="#fyndling" subtype="contextual">Offen: Der Text sagt über die Zunge nur „gebehte“, also dass sie Hitze gesehen hat. Wie sie vorher gegart wurde, nennt er nicht.<list type="alternatives"><item>Fertig gesottene, gehäutete Zunge, vor dem Hacken nochmals am Feuer erwärmt oder angeröstet<note type="rationale">Praxis-Annahme: Rumpolt beschreibt die Zunge an anderer Stelle als „gesotten“ und „auß geseubert“ (rum-0017), und roh lässt sie sich nicht sinnvoll hacken. Im Rezept selbst steht das nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1814-orig" n="klein schwartzen Rosein" resp="#fyndling" subtype="lexical">Kleine schwarze Rosinen, Sorte offen; dieselbe Wendung wie in rum-1795, gleichbedeutend mit „schwartze Weinbeer“ in rum-1799 und rum-1815.<list type="alternatives"><item>Korinthen<note type="rationale">Naheliegend, weil klein und dunkel, aber der Text legt die Sorte nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1814-orig" n="Fuͤll" resp="#fyndling" subtype="contextual">Füllung für eine Torte: Das Rezept steht im Kapitel „Von allerley Turten“, wo dieselbe Formel die Tortenfüllungen abschließt. Dass die Masse in den Teig kommt und mitgebacken wird, ergibt sich aus dem Kapitel, nicht aus dem Rezepttext.<list type="alternatives"><item>Ungebackene Masse oder Füllung für ein anderes Gericht<note type="rationale">Der Rezepttext selbst nennt weder Torte noch Backen; der Kapitelzusammenhang spricht aber klar für die Torte.</note></item></list></note>
       </div>
     </back>
   </text>

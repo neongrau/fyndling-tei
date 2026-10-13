@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,8 +123,8 @@ Praxis. Hecht schuppen, in Stücke teilen, waschen und salzen. In Wasser mit fri
         <note type="gloss" target="#phw-177-orig" n="schiept" resp="#fyndling">Eine frühneuhochdeutsche Form des Verbs ‚schuppen‘, also die Schuppen vom Fisch entfernen.</note>
         <note type="gloss" target="#phw-177-orig" n="seutt" resp="#fyndling">Eine frühneuhochdeutsche Form des Verbs ‚sieden‘, also kochen oder garziehen.</note>
         <note type="gloss" target="#phw-177-orig" n="mustag blie" resp="#fyndling">‚Mustag blie‘ ist eine frühneuhochdeutsche Bezeichnung für Muskatblüte (Macis), die äußere Hülle der Muskatnuss, die als Gewürz verwendet wird.</note>
-        <note type="interpretive_choice" target="#phw-177-orig" n="gwirtz" resp="#fyndling">würze (Imperativ)</note>
-        <note type="interpretive_choice" target="#phw-177-orig" n="sye [syeden wanns]" resp="#fyndling">aufkochen lassen. Wenn es genug ist</note>
+        <note type="interpretive_choice" target="#phw-177-orig" n="gwirtz" resp="#fyndling" subtype="contextual">würze (Imperativ)<list type="alternatives"><item>Gewürz (Substantiv)<note type="rationale">Die Satzstellung ‚gwirtz mit pfefer mustag blie‘ folgt der Struktur eines Imperativs ‚würze mit...‘, nicht einer Aufzählung von Zutaten.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-177-orig" n="sye [syeden wanns]" resp="#fyndling" subtype="philological">aufkochen lassen. Wenn es genug ist<list type="alternatives"><item>Die Originalhandschrift hat ‚sye gnoug ist‘, was unvollständig ist. Die Edition ergänzt ‚syeden wanns‘, um den Satz zu vervollständigen und die Bedeutung ‚aufkochen lassen, bis es gar ist‘ zu vermitteln.<note type="rationale">Die Ergänzung des Editors ist hier notwendig, um einen grammatikalisch und kulinarisch sinnvollen Satz zu erhalten.</note></item></list></note>
       </div>
     </back>
   </text>

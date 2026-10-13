@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,11 +115,11 @@ Praxis. Schafs- oder Hammelkeule beim Metzger bestellen; Lammkeule geht auch, is
         <note type="gloss" target="#rum-0479-orig" n="geschwindt hinweg" resp="#fyndling">Zügig braten, „daß fein im Safft bleibt“, also so, dass das Fleisch saftig bleibt. Hitze und Zeit nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0479-orig" n="Knobloch" resp="#fyndling">Knoblauch. Er steht nur im Schlusssatz über die Türken, nicht in der Arbeitsanweisung.</note>
         <note type="gloss" target="#rum-0479-orig" n="Kriegsmann zu Felde ligt" resp="#fyndling">Wenn ein Soldat im Feld liegt, also auf einem Feldzug ist. Rumpolt sagt, das Gericht sei dann „auch gut zu essen“.</note>
-        <note type="interpretive_choice" target="#rum-0479-orig" n="Knobloch" resp="#fyndling">Knoblauch gehört nicht zum Arbeitsgang: Die Anweisung nennt nur Zwiebeln und Salz, Knoblauch erscheint erst im Schlusssatz als Beschreibung, wie die Türken ihre Braten zubereiten.</note>
-        <note type="interpretive_choice" target="#rum-0479-orig" n="reib das Fleisch (Zwiebelmasse beim Braten)" resp="#fyndling">Das Fleisch kommt mit der Zwiebel-Salz-Mischung auf den Spieß; von Abstreifen sagt der Text nichts.</note>
-        <note type="interpretive_choice" target="#rum-0479-orig" n="steck es an ein Spieß (Liegezeit)" resp="#fyndling">Keine Liegezeit: Nach dem Einreiben wird das Fleisch gleich aufgesteckt und gebraten. Anders als beim Hammel-Spießbraten und beim gebeizten Hammelschlegel nennt Rumpolt hier kein Ruhenlassen.</note>
-        <note type="interpretive_choice" target="#rum-0479-orig" n="brats geschwindt hinweg (Garpunkt)" resp="#fyndling">Zügig braten, bis das Fleisch gar ist und noch im Saft steht; der Text nennt weder Hitze noch Dauer noch einen Garpunkt.</note>
-        <note type="interpretive_choice" target="#rum-0479-orig" n="Schaffleisch" resp="#fyndling">Fleisch vom Schaf: Der Text sagt „Schaffleisch“, das Kapitel heißt „Vom Türckischen Schaf“.</note>
+        <note type="interpretive_choice" target="#rum-0479-orig" n="Knobloch" resp="#fyndling" subtype="contextual">Knoblauch gehört nicht zum Arbeitsgang: Die Anweisung nennt nur Zwiebeln und Salz, Knoblauch erscheint erst im Schlusssatz als Beschreibung, wie die Türken ihre Braten zubereiten.<list type="alternatives"><item>Knoblauch fein hacken und zu den Zwiebeln geben.<note type="rationale">Möglich, wenn man den Schlusssatz als Hinweis auf die vollständige Würzung liest. Der Text gibt dafür weder Schritt noch Menge.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0479-orig" n="reib das Fleisch (Zwiebelmasse beim Braten)" resp="#fyndling" subtype="contextual">Das Fleisch kommt mit der Zwiebel-Salz-Mischung auf den Spieß; von Abstreifen sagt der Text nichts.<list type="alternatives"><item>Dick anhaftende Zwiebelmasse vor dem Braten abstreifen oder nur dünn am Fleisch lassen.<note type="rationale">Heutige Praxis, weil fein gehackte Zwiebel auf lebhafter Glut schnell verbrennt. Nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0479-orig" n="steck es an ein Spieß (Liegezeit)" resp="#fyndling" subtype="contextual">Keine Liegezeit: Nach dem Einreiben wird das Fleisch gleich aufgesteckt und gebraten. Anders als beim Hammel-Spießbraten und beim gebeizten Hammelschlegel nennt Rumpolt hier kein Ruhenlassen.<list type="alternatives"><item>Das eingeriebene Fleisch 30 bis 60 Minuten ziehen lassen, damit das Salz wirkt.<note type="rationale">Heutige Gewohnheit; aus den Schwesterrezepten nicht übertragbar, weil der Text hier keine Ruhezeit kennt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0479-orig" n="brats geschwindt hinweg (Garpunkt)" resp="#fyndling" subtype="contextual">Zügig braten, bis das Fleisch gar ist und noch im Saft steht; der Text nennt weder Hitze noch Dauer noch einen Garpunkt.<list type="alternatives"><item>Eiergroße Stücke über starker Glut etwa 20 bis 30 Minuten braten, Fingerprobe oder Anschnitt; innen leicht rosa bis durchgegart nach Geschmack.<note type="rationale">Heutige Küchenpraxis als Richtwert, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0479-orig" n="Schaffleisch" resp="#fyndling" subtype="lexical">Fleisch vom Schaf: Der Text sagt „Schaffleisch“, das Kapitel heißt „Vom Türckischen Schaf“.<list type="alternatives"><item>Lammfleisch aus der Keule.<note type="rationale">Nur als heutige Ersatzlösung; Rumpolt führt Lamm in einem eigenen Kapitel. Lamm ist milder, zarter und gart schneller.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,11 +123,11 @@ Praxis. Essig vorsichtig dosieren, Pfeffer nach Geschmack; Mengen nennt der Text
         <note type="gloss" target="#rum-0014-orig" n="Suppen" resp="#fyndling">Hier eine dünne braune Brühe aus Rinderbrühe, Bratensaft, Pfeffer und Essig, ohne Bindemittel, die unter das Fleisch gegossen wird.</note>
         <note type="gloss" target="#rum-0014-orig" n="darvnter" resp="#fyndling">Die Sauce kommt unter die angerichtete Zunge in die Schüssel, nicht darüber.</note>
         <note type="gloss" target="#rum-0014-orig" n="gestossenem Pfeffer" resp="#fyndling">Im Mörser gestoßener Pfeffer.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0014-orig" n="begeuß ... damit ab / fah sie wider auff" resp="#fyndling">Den Rinder- oder Hammelbraten am Spieß mit der Brühe begießen und diese in der Bratpfanne darunter wieder auffangen; buchintern gestützt durch die Bratpfanne unter dem Braten in rum-0047.</note>
-        <note type="interpretive_choice" target="#rum-0014-orig" n="Suppen" resp="#fyndling">Dünne, ungebundene Sauce/Brühe, die unter das Fleisch gegossen wird; der Text nennt nur Brühe, Bratensaft, Pfeffer und Essig. Übersetzt als „Sauce“.</note>
-        <note type="interpretive_choice" target="#rum-0014-orig" n="Wie läuft die Brühe über den Braten?" resp="#fyndling">Brühe über den Braten am Spieß gießen und in der Bratpfanne darunter auffangen, gegebenenfalls mehrfach, bis sie braun ist.</note>
-        <note type="interpretive_choice" target="#rum-0014-orig" n="spick sie mit kleinem geschnittenen Speck" resp="#fyndling">Kleine Speckstücke in die Zunge bringen; der Text sagt nicht, wie.</note>
-        <note type="interpretive_choice" target="#rum-0014-orig" n="Menge Essig und Pfeffer" resp="#fyndling">Keine Angabe im Text.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0014-orig" n="begeuß ... damit ab / fah sie wider auff" resp="#fyndling" subtype="contextual">Den Rinder- oder Hammelbraten am Spieß mit der Brühe begießen und diese in der Bratpfanne darunter wieder auffangen; buchintern gestützt durch die Bratpfanne unter dem Braten in rum-0047.<list type="alternatives"><item>Einen Bratensatz in der Pfanne mit Brühe ablöschen<note type="rationale">Moderne Pfannentechnik; passt nicht zu „wider auffahen“ (wieder auffangen) und zum Spießbraten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0014-orig" n="Suppen" resp="#fyndling" subtype="contextual">Dünne, ungebundene Sauce/Brühe, die unter das Fleisch gegossen wird; der Text nennt nur Brühe, Bratensaft, Pfeffer und Essig. Übersetzt als „Sauce“.<list type="alternatives"><item>Wörtlich „Suppe“<note type="rationale">Einzelne Rumpolt-Rezepte behalten das Wort (rum-0025); hier ist es eine Beigabe unter dem Fleisch, keine eigene Speise.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0014-orig" n="Wie läuft die Brühe über den Braten?" resp="#fyndling" subtype="contextual">Brühe über den Braten am Spieß gießen und in der Bratpfanne darunter auffangen, gegebenenfalls mehrfach, bis sie braun ist.<list type="alternatives"><item>Bratensaft aus Pfanne oder Bräter eines gleichzeitig gebratenen Rinder- oder Hammelbratens mit Rinderbrühe verlängern<note type="rationale">Heutige Praxis ohne Spieß; der Text setzt einen laufenden Spießbraten voraus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0014-orig" n="spick sie mit kleinem geschnittenen Speck" resp="#fyndling" subtype="contextual">Kleine Speckstücke in die Zunge bringen; der Text sagt nicht, wie.<list type="alternatives"><item>Feine Streifen fetter Rückenspeck, mit der Spicknadel eingezogen<note type="rationale">Heute übliche Ausführung, als Werkzeug nicht im Text genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0014-orig" n="Menge Essig und Pfeffer" resp="#fyndling" subtype="contextual">Keine Angabe im Text.<list type="alternatives"><item>Nach Geschmack, Essig vorsichtig dosieren<note type="rationale">Praxisempfehlung, nicht textgedeckt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

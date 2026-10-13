@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,9 +115,9 @@ Praxis. Die belegten Schritte lassen sich als Topfgericht am Feuer ausführen: d
         <note type="gloss" target="#w1-099-orig" n="worffelat" resp="#fyndling">Würfelig geschnitten.</note>
         <note type="gloss" target="#w1-099-orig" n="seich die suppem durich ein tuch" resp="#fyndling">Die Brühe wird durch ein Tuch geseiht, damit keine Haare darin zurückbleiben.</note>
         <note type="gloss" target="#w1-099-orig" n="ebem dikch" resp="#fyndling">Die Masse soll ‚eben‘, also gleichmäßig, dick bleiben; eine genaue Konsistenz oder Bindemethode nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#w1-099-orig" n="sewd es mar" resp="#fyndling">Wir lesen 'sewd es' als 'koche es' und übersetzen das nachfolgende, unklare 'mar' sinngemäß als Verstärkung ('gut durch') - die genaue Wortbedeutung von 'mar' ist an dieser Stelle nicht sicher zu bestimmen.</note>
+        <note type="interpretive_choice" target="#w1-099-orig" n="sewd es mar" resp="#fyndling" cert="unknown">Wir lesen 'sewd es' als 'koche es' und übersetzen das nachfolgende, unklare 'mar' sinngemäß als Verstärkung ('gut durch') - die genaue Wortbedeutung von 'mar' ist an dieser Stelle nicht sicher zu bestimmen.<list type="alternatives"><item>'mar' könnte eine verschriebene Form von 'gar' sein (ähnliche Schriftzüge in der Kurrentschrift leicht zu verwechseln), was 'koche es gar/durch' bedeuten würde.<note type="rationale">Inhaltlich nahezu identisch mit unserer Lesart. Gegen eine w1-spezifische Verschreibung spricht aber, dass dieselbe Formulierung 'sewd es mar' bzw. 'seud es mare' identisch in drei weiteren, unabhängigen Handschriften auftaucht (b4-095, m5919-077, mha-078) - das spricht eher für ein tatsächlich in der gemeinsamen Vorlage vorhandenes, heute unklares Wort als für einen Lesefehler dieser einen Abschrift.</note></item></list></note>
         <note type="interpretive_choice" target="#w1-099-orig" n="worffelat" resp="#fyndling">gewürfelt</note>
-        <note type="interpretive_choice" target="#w1-099-orig" n="ebem dikch beleibem" resp="#fyndling">gleichmäßig dick bleiben</note>
+        <note type="interpretive_choice" target="#w1-099-orig" n="ebem dikch beleibem" resp="#fyndling">gleichmäßig dick bleiben<list type="alternatives"><item>Die genaue Textur und die Ursache des Eindickens bleiben offen.<note type="rationale">Die Formel bezeichnet die gewünschte Konsistenz, nennt aber weder Dauer noch ein Bindemittel oder dessen Wirkung.</note></item></list></note>
       </div>
     </back>
   </text>

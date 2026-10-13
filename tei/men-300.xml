@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,8 +98,8 @@
         <note type="gloss" target="#men-300-orig" n="Beuvrage d'eaue rousse" resp="#fyndling">Getränk aus rötlichem Wasser</note>
         <note type="gloss" target="#men-300-orig" n="chappon" resp="#fyndling">Kapaun (kastrierter Hahn)</note>
         <note type="gloss" target="#men-300-orig" n="plommé" resp="#fyndling">versiegelt, mit Blei abgedichtet (im Sinne von luftdicht verschlossen)</note>
-        <note type="interpretive_choice" target="#men-300-orig" n="plommé" resp="#fyndling">Die Anweisung 'plommé' wurde als 'versiegelt' oder 'luftdicht verschlossen' interpretiert, um die Essenz des Geflügels zu konzentrieren und Verunreinigungen zu vermeiden.</note>
-        <note type="interpretive_choice" target="#men-300-orig" n="eaue rousse" resp="#fyndling">Die Phrase 'eaue rousse' wurde als 'rötliches Wasser' übersetzt, was einen konzentrierten, dunklen Hühnerfond beschreibt.</note>
+        <note type="interpretive_choice" target="#men-300-orig" n="plommé" resp="#fyndling">Die Anweisung 'plommé' wurde als 'versiegelt' oder 'luftdicht verschlossen' interpretiert, um die Essenz des Geflügels zu konzentrieren und Verunreinigungen zu vermeiden.<list type="alternatives"><item>Eine andere Lesart wäre 'mit Blei abgedichtet'.<note type="rationale">Das französische Wort 'plomb' bedeutet Blei. Historisch wurden Töpfe manchmal mit Blei gelötet oder versiegelt. Dies wäre jedoch aus heutiger Sicht toxisch und unwahrscheinlich für ein Getränk für Kranke. Die primäre Lesart konzentriert sich auf die Funktion (luftdicht), nicht auf das Material.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-300-orig" n="eaue rousse" resp="#fyndling">Die Phrase 'eaue rousse' wurde als 'rötliches Wasser' übersetzt, was einen konzentrierten, dunklen Hühnerfond beschreibt.<list type="alternatives"><item>Eine alternative Interpretation wäre 'rostiges Wasser'.<note type="rationale">Dies ist weniger wahrscheinlich, da der Topf 'tout neuf' (brandneu) sein sollte, was Rostbildung unwahrscheinlich macht. Die Farbe bezieht sich eher auf die Konzentration des Fonds.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,7 +99,7 @@ Warum entkernen? Die Kerne sind hart und bitter und würden in der Füllung stö
 Praxis. Wer heute nachbackt, greift meist zu großen, schon entkernten Rosinen oder Sultaninen; dann ist dieser Schritt erledigt. Hat man Zibeben mit Kern, schneidet man jede Beere auf und löst die Kerne heraus. Den Teig gibt Rumpolt am Anfang des Kapitels.</note>
         <note type="gloss" target="#rum-1796-orig" n="Ziweben" resp="#fyndling">Zibeben, große getrocknete Weinbeeren (Lexer „die große Kochrosine“, Goetze „Kochrosine“). Rumpolt unterscheidet sie von den „kleinen schwartzen Rosein“. Die Beeren hatten Kerne, deshalb dieser Hinweis.</note>
         <note type="gloss" target="#rum-1796-orig" n="Turten" resp="#fyndling">Torte im Sinne der Zeit: ein gefüllter, gebackener Teigboden, nicht die moderne Cremetorte. Den Teig beschreibt Rumpolt am Anfang des Kapitels.</note>
-        <note type="interpretive_choice" target="#rum-1796-orig" n="Ziweben" resp="#fyndling">Zibeben mit Kern, wie sie damals gehandelt wurden; der Text sagt nur „Ziweben“ ohne Zusatz, und der Hinweis zum Entkernen setzt Kerne voraus.</note>
+        <note type="interpretive_choice" target="#rum-1796-orig" n="Ziweben" resp="#fyndling" subtype="contextual">Zibeben mit Kern, wie sie damals gehandelt wurden; der Text sagt nur „Ziweben“ ohne Zusatz, und der Hinweis zum Entkernen setzt Kerne voraus.<list type="alternatives"><item>Große kernlose Rosinen oder Sultaninen<note type="rationale">Heute die übliche Ware und für die Praxis brauchbar; dann entfällt der Schritt, den diese Nummer beschreibt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,12 +124,12 @@ Praxis. Ein Topf, offenes Feuer oder Herd, etwa 20 Minuten nach dem Vorkochen de
         <note type="gloss" target="#rum-0037-orig" n="Suͤltzen" resp="#fyndling">Sülzfleisch: Kutteln und andere Innereien, die man üblicherweise zu Sülze verarbeitete; der Name ist vom Gericht auf den Rohstoff übergegangen (Grimm, Deutsches Wörterbuch, s. v. Sülze 3d, mit einem Frankfurter Beleg von 1595: „die sülttz, als da seindt der wand, hertz, miltz, lungen, leber, klein und grosz därm“). Hier sind es Ochsenkutteln; eine Sülze im Sinn von Aspik wird nicht gemacht.</note>
         <note type="gloss" target="#rum-0037-orig" n="vnzerlassene Butter" resp="#fyndling">Frische, nicht ausgelassene Butter, die erst in der heißen Brühe schmilzt. Dieselbe Wendung steht in rum-0038 als „vngeschmaͤltzte Butter“.</note>
         <note type="gloss" target="#rum-0037-orig" n="ein Sodt darmit auffthun" resp="#fyndling">Kurzes Aufwallen der Kräuter in der Brühe; Rumpolt nennt selbst den Zweck, dass sie die Farbe nicht verlieren.</note>
-        <note type="interpretive_choice" target="#rum-0037-orig" n="Suͤltzen" resp="#fyndling">Sülzfleisch, hier Ochsenkutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d).</note>
-        <note type="interpretive_choice" target="#rum-0037-orig" n="seurlich" resp="#fyndling">Säuerlich: Die Brühe wird mit Speck und Butter gemacht, eine leichte Säure passt dazu; ein Säuerungsmittel nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0037-orig" n="Rindtfleischbruͤh" resp="#fyndling">Rinderbrühe: Rindtfleisch ist Rindfleisch, -bruͤh ist Brühe. Eine Rezeptur der Brühe wird vorausgesetzt.</note>
-        <note type="interpretive_choice" target="#rum-0037-orig" n="Säuerungsmittel bei „ein wenig seurlich“" resp="#fyndling">Offen gelassen, wie der Text es tut; modern ein Schuss Weinessig.</note>
-        <note type="interpretive_choice" target="#rum-0037-orig" n="grüne Kräuter" resp="#fyndling">Ohne Festlegung der Sorte; modern Petersilie und Schnittlauch.</note>
-        <note type="interpretive_choice" target="#rum-0037-orig" n="koch (Dauer der Kutteln)" resp="#fyndling">Kutteln vorkochen bis zum Zerschneiden; modern etwa 1-2 Stunden bei vorgebrühter Ware.</note>
+        <note type="interpretive_choice" target="#rum-0037-orig" n="Suͤltzen" resp="#fyndling" subtype="lexical">Sülzfleisch, hier Ochsenkutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d).<list type="alternatives"><item>Sülze im heutigen Sinn (Aspik, Gallert).<note type="rationale">Verworfen: Das Rezept kocht und schneidet die Sültzen und übergießt sie mit Brühe; Gallert heißt bei Rumpolt Galrat.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0037-orig" n="seurlich" resp="#fyndling" subtype="orthographic">Säuerlich: Die Brühe wird mit Speck und Butter gemacht, eine leichte Säure passt dazu; ein Säuerungsmittel nennt der Text nicht.<list type="alternatives"><item>Feurig (scharf).<note type="rationale">Nicht gewählt: Im Text steht s, nicht f, und das Rezept enthält keine scharfen Gewürze.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0037-orig" n="Rindtfleischbruͤh" resp="#fyndling" subtype="lexical">Rinderbrühe: Rindtfleisch ist Rindfleisch, -bruͤh ist Brühe. Eine Rezeptur der Brühe wird vorausgesetzt.</note>
+        <note type="interpretive_choice" target="#rum-0037-orig" n="Säuerungsmittel bei „ein wenig seurlich“" resp="#fyndling" subtype="contextual">Offen gelassen, wie der Text es tut; modern ein Schuss Weinessig.<list type="alternatives"><item>Verjus (Agrestwasser).<note type="rationale">Bei Rumpolt sonst als Säure belegt, hier aber nicht genannt; als historische Möglichkeit zulässig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0037-orig" n="grüne Kräuter" resp="#fyndling" subtype="contextual">Ohne Festlegung der Sorte; modern Petersilie und Schnittlauch.<list type="alternatives"><item>Andere grüne Kräuter nach Geschmack.<note type="rationale">Rumpolt legt sich auch in rum-0023 („allerley wolschmeckenden gruͤnen Kraͤutern“) nicht fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0037-orig" n="koch (Dauer der Kutteln)" resp="#fyndling" subtype="contextual">Kutteln vorkochen bis zum Zerschneiden; modern etwa 1-2 Stunden bei vorgebrühter Ware.<list type="alternatives"><item>Nur kurzes Garziehen.<note type="rationale">Verworfen: Kutteln müssen vor dem Schneiden weich sein; Rumpolt sagt in rum-0038 „gar an die statt sieden“.</note></item></list></note>
       </div>
     </back>
   </text>

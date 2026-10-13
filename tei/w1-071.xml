@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,7 +116,7 @@ Quellennah ist die Reihenfolge: Bohnen mit Erbsenbrühe und Öl verbinden, zu ei
         <note type="gloss" target="#w1-071-orig" n="vbring geribem pon" resp="#fyndling">Die Wortgruppe bezeichnet Bohnen, die als „geriben“ beschrieben werden. Ob damit Zerdrücken, Durchstreichen oder Mahlen gemeint ist, entscheidet der knappe Text nicht; eine Aufbewahrung vom Vortag folgt daraus nicht.</note>
         <note type="gloss" target="#w1-071-orig" n="arbaiss prue" resp="#fyndling">Erbsenbrühe. Der Text nennt sie als Flüssigkeit, erklärt aber weder ihre Herstellung noch ihre genaue Beschaffenheit.</note>
         <note type="interpretive_choice" target="#w1-071-orig" n="pan / pon" resp="#fyndling">Beide Begriffe beziehen sich auf Saubohnen (Ackerbohnen, Vicia faba).</note>
-        <note type="interpretive_choice" target="#w1-071-orig" n="vbring geribem pon" resp="#fyndling">Die Wortgruppe wird vorsichtig als geriebene Saubohnen wiedergegeben. Sie beschreibt eine Form der Bohnen, erklärt aber nicht, wie diese erreicht wurde.</note>
+        <note type="interpretive_choice" target="#w1-071-orig" n="vbring geribem pon" resp="#fyndling">Die Wortgruppe wird vorsichtig als geriebene Saubohnen wiedergegeben. Sie beschreibt eine Form der Bohnen, erklärt aber nicht, wie diese erreicht wurde.<list type="alternatives"><item>„Geriben“ kann Zerdrücken, Durchstreichen oder Mahlen bezeichnen.<note type="rationale">Der Rezepttext nennt weder ein Gerät noch einen vorausgehenden Koch- oder Mahlvorgang und entscheidet die technische Bedeutung daher nicht.</note></item></list></note>
       </div>
     </back>
   </text>

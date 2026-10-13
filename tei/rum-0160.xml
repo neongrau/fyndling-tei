@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,10 +113,10 @@ Praxis. „Geschwindt hinweg“ heißt rasch fertig braten: bei kräftiger Hitze
         <note type="gloss" target="#rum-0160-orig" n="Vmbgekehrte Miltz" resp="#fyndling">Rumpolts Gerichtsname: Die Milz wird umgekehrt, gewürzt und wieder zurückgekehrt. Hier nennt er nur den Namen; das Verfahren beschreibt er bei der Ochsen- und der Kalbsmilz. Wie das am Organ geschieht, sagt er nirgends.</note>
         <note type="gloss" target="#rum-0160-orig" n="gruͤnen Kraͤutern" resp="#fyndling">Frische Kräuter ohne nähere Angabe; bei der Ochsenmilz nennt Rumpolt dagegen ausdrücklich Feldkümmel.</note>
         <note type="gloss" target="#rum-0160-orig" n="geschwindt hinweg" resp="#fyndling">Rasch fertig (braten).</note>
-        <note type="interpretive_choice" target="#rum-0160-orig" n="Vmbgekehrte Miltz" resp="#fyndling">Umgestülpte Milz, deren Würze nach dem Zurückkehren innen liegt. Gestützt nur buchintern: Bei Ochsen- und Kalbsmilz steht „Kehr die Miltz vmb ... wend sie wider vmb“, beim Ochsendarm der Zweck („daß es innwendig kompt“). Die Handgriffe am Organ nennt der Text nicht; die Lesart ist Deutung, nicht Wortlaut.</note>
-        <note type="interpretive_choice" target="#rum-0160-orig" n="gruͤnen Kraͤutern" resp="#fyndling">Frische Kräuter ohne nähere Angabe; Rumpolt nennt keine Sorte.</note>
-        <note type="interpretive_choice" target="#rum-0160-orig" n="brat es" resp="#fyndling">Braten ohne Angabe von Gerät oder Fett; der Text legt beides nicht fest. Bei der Ochsenmilz nennt Rumpolt Spieß oder Rost und Butter, bei der Kalbsmilz Rost und Rinderfett.</note>
-        <note type="interpretive_choice" target="#rum-0160-orig" n="geschwindt hinweg" resp="#fyndling">Rasch fertig braten, also durchbraten, nicht nur anbraten. Garzeit und Garpunkt nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0160-orig" n="Vmbgekehrte Miltz" resp="#fyndling" subtype="contextual">Umgestülpte Milz, deren Würze nach dem Zurückkehren innen liegt. Gestützt nur buchintern: Bei Ochsen- und Kalbsmilz steht „Kehr die Miltz vmb ... wend sie wider vmb“, beim Ochsendarm der Zweck („daß es innwendig kompt“). Die Handgriffe am Organ nennt der Text nicht; die Lesart ist Deutung, nicht Wortlaut.<list type="alternatives"><item>Nur wenden oder am Rand aufschlitzen und von beiden Seiten würzen<note type="rationale">Möglich, weil „vmbkehren“ auch schlicht „wenden“ heißen kann. In den Parallelstellen bliebe das zweite „wider vmb“ dann ohne erkennbaren Zweck.</note></item><item>Heute: der Länge nach eine Tasche einschneiden, innen würzen, zuklappen<note type="rationale">Praxislösung für ein kompaktes Organ; erreicht dasselbe Ergebnis, Würze innen. Steht in der Zubereitungsnotiz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0160-orig" n="gruͤnen Kraͤutern" resp="#fyndling" subtype="contextual">Frische Kräuter ohne nähere Angabe; Rumpolt nennt keine Sorte.<list type="alternatives"><item>Heute: frische Gartenkräuter der Saison<note type="rationale">Naheliegende Praxis; eine bestimmte Kräuterliste wäre erfunden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0160-orig" n="brat es" resp="#fyndling" subtype="contextual">Braten ohne Angabe von Gerät oder Fett; der Text legt beides nicht fest. Bei der Ochsenmilz nennt Rumpolt Spieß oder Rost und Butter, bei der Kalbsmilz Rost und Rinderfett.<list type="alternatives"><item>Heute: Rost oder Pfanne mit etwas Fett<note type="rationale">Moderne Praxis, nicht im Text; steht in der Zubereitungsnotiz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0160-orig" n="geschwindt hinweg" resp="#fyndling" subtype="lexical">Rasch fertig braten, also durchbraten, nicht nur anbraten. Garzeit und Garpunkt nennt der Text nicht.<list type="alternatives"><item>Nur scharf anbraten<note type="rationale">„hinweg braten“ heißt fertig braten; ein bloßes Anbraten gibt der Wortlaut nicht her.</note></item></list></note>
       </div>
     </back>
   </text>

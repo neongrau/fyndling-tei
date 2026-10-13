@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,9 +134,9 @@ Milch mit einem Stück Schmalz aufkochen, Mehl einrühren und unter Rühren koch
         <note type="gloss" target="#phw-089-orig" n="ryttla" resp="#fyndling">Das Verb ‚rütteln‘ bedeutet hier, die Pfanne zu schütteln, um die Küchlein gleichmäßig zu braten und ein Anbrennen zu verhindern.</note>
         <note type="gloss" target="#phw-089-orig" n="gmach" resp="#fyndling">Bedeutet ‚gemächlich‘ oder ‚langsam‘, also bei milder Hitze backen, damit die Küchlein durchgaren und nicht zu schnell verbrennen.</note>
         <note type="gloss" target="#phw-089-orig" n="bryette" resp="#fyndling">Hayers eigenes Wörterverzeichnis zu dieser Handschrift löst „bryette kiechla“ als eine Art Windbeutel (Brandteig) auf - ein fester Gerichtsname, kein Adjektiv für „breit“. Dieselbe Wendung steht in phw-099, phw-105 und phw-116.</note>
-        <note type="interpretive_choice" target="#phw-089-orig" n="kiechla" resp="#fyndling">‚Kiechla‘ ist ein Diminutiv von ‚Kuchen‘ und wird als ‚Küchlein‘ übersetzt, was kleine, oft in Fett gebackene Teigstücke bezeichnet.</note>
-        <note type="interpretive_choice" target="#phw-089-orig" n="ryttla" resp="#fyndling">‚Ryttla‘ wird als ‚rütteln‘ übersetzt, eine Anweisung, die Pfanne zu schütteln, um ein gleichmäßiges Garen und Bräunen der Küchlein zu gewährleisten.</note>
-        <note type="interpretive_choice" target="#phw-089-orig" n="las gmach bachenn" resp="#fyndling">Der Text nennt als Garindikator für das fertige Gebäck nur das gemächliche Backen und das Rütteln der Pfanne, ohne Zeit- oder Farbmarke.</note>
+        <note type="interpretive_choice" target="#phw-089-orig" n="kiechla" resp="#fyndling" subtype="lexical">‚Kiechla‘ ist ein Diminutiv von ‚Kuchen‘ und wird als ‚Küchlein‘ übersetzt, was kleine, oft in Fett gebackene Teigstücke bezeichnet.</note>
+        <note type="interpretive_choice" target="#phw-089-orig" n="ryttla" resp="#fyndling" subtype="lexical">‚Ryttla‘ wird als ‚rütteln‘ übersetzt, eine Anweisung, die Pfanne zu schütteln, um ein gleichmäßiges Garen und Bräunen der Küchlein zu gewährleisten.</note>
+        <note type="interpretive_choice" target="#phw-089-orig" n="las gmach bachenn" resp="#fyndling" subtype="contextual">Der Text nennt als Garindikator für das fertige Gebäck nur das gemächliche Backen und das Rütteln der Pfanne, ohne Zeit- oder Farbmarke.</note>
       </div>
     </back>
   </text>

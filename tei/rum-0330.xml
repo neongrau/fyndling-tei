@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,10 +136,10 @@ Praxis. Die Zungen am Vortag gar kochen, das dauert gut anderthalb bis zwei Stun
         <note type="gloss" target="#rum-0330-orig" n="Krapffen" resp="#fyndling">Hier eine Teigtasche: ausgerollter Teig, in den die Füllung eingeschlagen und der dann in Butter ausgebacken wird. Nicht das heutige Hefe- oder Schmalzgebäck.</note>
         <note type="gloss" target="#rum-0330-orig" n="kuͤl" resp="#fyndling">Bei mäßiger Hitze, nicht zu heiß. Im Kalbszungenkrapfen verlangt Rumpolt beim selben „kuͤl auß“ Butter, die „nicht gar zu heiß“ ist.</note>
         <note type="gloss" target="#rum-0330-orig" n="gestossenem Zucker" resp="#fyndling">Zerstoßener Zucker; Rumpolt sagt nur „gestossen“, nicht „fein“. Heute passt gestoßener oder feinkörniger Kristallzucker. Puderzucker gibt statt Körnung eine glatte Schicht, enthält aber oft Trennmittel.</note>
-        <note type="interpretive_choice" target="#rum-0330-orig" n="hack es durcheinander" resp="#fyndling">Zunge, Rosinen, Zimt und Zucker werden zusammen zur Füllung gehackt, das Mehl wird zum Teig angemacht. So trennt Rumpolt es im ausführlichen Kalbszungenkrapfen, und der folgende Satz spricht ausdrücklich vom Teig.</note>
-        <note type="interpretive_choice" target="#rum-0330-orig" n="schlag die Zungen darein" resp="#fyndling">Die gehackte Zungenmasse wird in den ausgerollten Teig eingeschlagen, wie beim Kalbszungenkrapfen, wo die gehackte Zunge in nussgroßen Häufchen aufgelegt wird.</note>
-        <note type="interpretive_choice" target="#rum-0330-orig" n="auß Butter backen" resp="#fyndling">Im Tiegel oder in der Pfanne in schwimmender Butter ausbacken. Rumpolt sagt nur „auß Butter backen“, die Buttermenge bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0330-orig" n="warmen Wasser vnnd Butter/ oder lauter Rindtfleischbruͤh" resp="#fyndling">Rumpolt stellt beides zur Wahl; die klare Rindfleischbrühe gibt dem Teig Fleischgeschmack.</note>
+        <note type="interpretive_choice" target="#rum-0330-orig" n="hack es durcheinander" resp="#fyndling" subtype="contextual">Zunge, Rosinen, Zimt und Zucker werden zusammen zur Füllung gehackt, das Mehl wird zum Teig angemacht. So trennt Rumpolt es im ausführlichen Kalbszungenkrapfen, und der folgende Satz spricht ausdrücklich vom Teig.<list type="alternatives"><item>Auch das Mehl kommt mit in die Hackmasse.<note type="rationale">Der Satz nennt das Mehl in derselben Reihe vor „hack es durcheinander“. Dagegen spricht, dass das Mehl gleich danach mit Wasser und Butter zum Teig angemacht wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0330-orig" n="schlag die Zungen darein" resp="#fyndling" subtype="contextual">Die gehackte Zungenmasse wird in den ausgerollten Teig eingeschlagen, wie beim Kalbszungenkrapfen, wo die gehackte Zunge in nussgroßen Häufchen aufgelegt wird.<list type="alternatives"><item>Ganze kleine Zungen werden einzeln in Teig eingeschlagen.<note type="rationale">Wildzungen sind klein, und der Satz sagt nur „die Zungen“. Das vorangehende „hack es durcheinander“ spricht aber für die gehackte Masse.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0330-orig" n="auß Butter backen" resp="#fyndling" subtype="contextual">Im Tiegel oder in der Pfanne in schwimmender Butter ausbacken. Rumpolt sagt nur „auß Butter backen“, die Buttermenge bleibt offen.<list type="alternatives"><item>Flach in reichlich Butter in der Pfanne bei mäßiger Hitze ausbacken.<note type="rationale">Heutige Praxis und mit dem Text vereinbar; Butterschmalz verträgt mehr Hitze, steht aber nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0330-orig" n="warmen Wasser vnnd Butter/ oder lauter Rindtfleischbruͤh" resp="#fyndling" subtype="contextual">Rumpolt stellt beides zur Wahl; die klare Rindfleischbrühe gibt dem Teig Fleischgeschmack.<list type="alternatives"><item>Warmes Wasser mit weicher Butter.<note type="rationale">Die einfachere Fassung, ebenfalls vom Text gedeckt.</note></item></list></note>
       </div>
     </back>
   </text>

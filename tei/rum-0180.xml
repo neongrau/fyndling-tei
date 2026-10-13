@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,11 +113,11 @@ Praxis. Eine feuerfeste Form oder Pfanne nehmen, in der auch aufgetragen werden 
         <note type="gloss" target="#rum-0180-orig" n="braune Bruͤh" resp="#fyndling">Brühe, die man von einem anderen Braten abgegossen hat. Rumpolt hält sie „saur oder nicht“ vorrätig.</note>
         <note type="gloss" target="#rum-0180-orig" n="schier" resp="#fyndling">Bald, beinahe: „als wenn du schier wirst anrichten“ heißt, erst kurz bevor aufgetragen wird.</note>
         <note type="gloss" target="#rum-0180-orig" n="verdriessen" resp="#fyndling">Sich verdrießen lassen bedeutet, sich ärgern oder sich von etwas abhalten lassen.</note>
-        <note type="interpretive_choice" target="#rum-0180-orig" n="Schlegel" resp="#fyndling">Hammelkeule: Schlegel ist die Keule (Lexer: schlegel = kevle), und das Rezept steht im Kapitel vom Castraun oder Hammel.</note>
-        <note type="interpretive_choice" target="#rum-0180-orig" n="Silber" resp="#fyndling">Silbergeschirr, in dem angerichtet wird: „auff der Schuͤssel oder Silber“ steht neben der Schüssel, und „Setz es mit dem Silber auff Kolen“ setzt ein Gefäß voraus. Form und Art des Stücks legt der Text nicht fest.</note>
-        <note type="interpretive_choice" target="#rum-0180-orig" n="seig es darnach durch ein Sib" resp="#fyndling">Die Brühe, in der der Knoblauch gezogen hat, wird vom Fleisch abgegossen, durchgeseiht und wieder über den Schlegel gegossen; der Knoblauch bleibt im Sieb.</note>
-        <note type="interpretive_choice" target="#rum-0180-orig" n="braune Bruͤh" resp="#fyndling">Brühe, die „von einem andern Braten abgegossen“ wurde, sauer oder nicht; mehr zur Zusammensetzung sagt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0180-orig" n="laß es auffsieden" resp="#fyndling">Nur bis zum Aufkochen erhitzen und sofort auftragen; ein Zeitmaß nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0180-orig" n="Schlegel" resp="#fyndling" subtype="lexical">Hammelkeule: Schlegel ist die Keule (Lexer: schlegel = kevle), und das Rezept steht im Kapitel vom Castraun oder Hammel.<list type="alternatives"><item>Lammkeule<note type="rationale">Der Rezepttext nennt kein Tier; Lamm behandelt Rumpolt aber in einem eigenen, späteren Kapitel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0180-orig" n="Silber" resp="#fyndling" subtype="contextual">Silbergeschirr, in dem angerichtet wird: „auff der Schuͤssel oder Silber“ steht neben der Schüssel, und „Setz es mit dem Silber auff Kolen“ setzt ein Gefäß voraus. Form und Art des Stücks legt der Text nicht fest.<list type="alternatives"><item>Blattsilber als Zier<note type="rationale">An anderen Stellen meint Rumpolt mit Silber Blattsilber; hier wird das Silber aber auf die Kohlen gesetzt, das passt nur zu einem Gefäß.</note></item><item>Beliebiges hitzefestes Gefäß auf der Glut<note type="rationale">Moderne Umsetzung: eine feuerfeste Form oder Pfanne, in der auch aufgetragen wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0180-orig" n="seig es darnach durch ein Sib" resp="#fyndling" subtype="contextual">Die Brühe, in der der Knoblauch gezogen hat, wird vom Fleisch abgegossen, durchgeseiht und wieder über den Schlegel gegossen; der Knoblauch bleibt im Sieb.<list type="alternatives"><item>Brühe mit Knoblauch getrennt vom Fleisch ziehen lassen<note type="rationale">Der Text gießt die Brühe aber zuerst über den Schlegel und schneidet den Knoblauch „darein“; ob das Fleisch dabei herausgenommen wird, sagt er nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0180-orig" n="braune Bruͤh" resp="#fyndling" subtype="contextual">Brühe, die „von einem andern Braten abgegossen“ wurde, sauer oder nicht; mehr zur Zusammensetzung sagt Rumpolt nicht.<list type="alternatives"><item>Bratenfond oder Bratensaft vom selben Bratvorgang<note type="rationale">Moderne Umsetzung; der Text verlangt ausdrücklich Brühe von einem anderen Braten, das Ergebnis ist aber gleichartig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0180-orig" n="laß es auffsieden" resp="#fyndling" subtype="contextual">Nur bis zum Aufkochen erhitzen und sofort auftragen; ein Zeitmaß nennt der Text nicht.<list type="alternatives"><item>Kurz aufkochen lassen, bis das Fleisch durch und durch heiß ist<note type="rationale">Moderne Praxis bei kaltem Braten; über das Aufsieden hinaus gibt Rumpolt nichts vor.</note></item></list></note>
       </div>
     </back>
   </text>

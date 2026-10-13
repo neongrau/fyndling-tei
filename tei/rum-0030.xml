@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -128,10 +133,10 @@ Was daraus wird. Das Fettstück gibt beim Sieden und Rösten viel Fett ab; zu er
         <note type="gloss" target="#rum-0030-orig" n="lauter Butter" resp="#fyndling">Geklärte Butter, also reines Butterfett ohne Wasser und Milcheiweiß. Sie verträgt starkes Erhitzen und Bräunen.</note>
         <note type="gloss" target="#rum-0030-orig" n="vnzeitige Trauben" resp="#fyndling">Unreife, noch harte Weintrauben als Säuerungsmittel; ihr Saft ist der Verjus. Beim Griff vom Hirsch nennt Rumpolt an derselben Stelle Agrastbeer.</note>
         <note type="gloss" target="#rum-0030-orig" n="nicht versaltzen" resp="#fyndling">Nicht zu stark gesalzen - nicht etwa ungesalzen.</note>
-        <note type="interpretive_choice" target="#rum-0030-orig" n="Die Griff vom Ochsen" resp="#fyndling">Nierenfettstück vom Ochsen. Das Frühneuhochdeutsche Wörterbuch (s. v. grif, Bed. 8) belegt „Griff“ beim Rind als das Fett der Nierengegend, in vier Partien („die vier griffe“) abgelöst; Grimm (nach Schmeller) und Fischer (1553: „die faistin oder griff“) stimmen damit überein.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#griff"/></note>
-        <note type="interpretive_choice" target="#rum-0030-orig" n="Rindtfleischbruͤh die nicht versaltzen ist" resp="#fyndling">Rinderbrühe, die nicht versalzen, also nicht zu salzig ist. So wird die Formel auch sonst im Buch aufgelöst; das Stück ist ja schon in Salzwasser vorgegart.</note>
-        <note type="interpretive_choice" target="#rum-0030-orig" n="vnnd thu sie darein" resp="#fyndling">In die Pfanne zum abgeseihten, gerösteten Fleisch. Beim Griff vom Hirsch heißt es an derselben Stelle „so seig die Butter auß der Pfannen/ vnnd thu darein“.</note>
-        <note type="interpretive_choice" target="#rum-0030-orig" n="laß wol an die statt sieden (Garzeit)" resp="#fyndling">Der Text nennt keine Zeit, nur „wol an die statt sieden“: so lange, bis das Stück ganz gar ist.</note>
+        <note type="interpretive_choice" target="#rum-0030-orig" n="Die Griff vom Ochsen" resp="#fyndling" subtype="lexical">Nierenfettstück vom Ochsen. Das Frühneuhochdeutsche Wörterbuch (s. v. grif, Bed. 8) belegt „Griff“ beim Rind als das Fett der Nierengegend, in vier Partien („die vier griffe“) abgelöst; Grimm (nach Schmeller) und Fischer (1553: „die faistin oder griff“) stimmen damit überein.<list type="alternatives"><item>Ochsenziemer (männliches Glied)<note type="rationale">Verworfen: Das Frühneuhochdeutsche Wörterbuch belegt „Griff“ beim Rind ausdrücklich als Nierenfett; die Nähe zur Geil im Hirschkapitel ist nur die Reihenfolge der Schlachtteile.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#griff"/></note>
+        <note type="interpretive_choice" target="#rum-0030-orig" n="Rindtfleischbruͤh die nicht versaltzen ist" resp="#fyndling" subtype="lexical">Rinderbrühe, die nicht versalzen, also nicht zu salzig ist. So wird die Formel auch sonst im Buch aufgelöst; das Stück ist ja schon in Salzwasser vorgegart.<list type="alternatives"><item>Ungesalzene Rinderbrühe<note type="rationale">„versalzen“ heißt zu stark gesalzen; der Text verlangt nicht, auf Salz ganz zu verzichten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0030-orig" n="vnnd thu sie darein" resp="#fyndling" subtype="contextual">In die Pfanne zum abgeseihten, gerösteten Fleisch. Beim Griff vom Hirsch heißt es an derselben Stelle „so seig die Butter auß der Pfannen/ vnnd thu darein“.<list type="alternatives"><item>In einen eigenen Topf<note type="rationale">Der Text nennt kein zweites Gefäß; die Parallelstelle spricht für die Pfanne.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0030-orig" n="laß wol an die statt sieden (Garzeit)" resp="#fyndling" subtype="contextual">Der Text nennt keine Zeit, nur „wol an die statt sieden“: so lange, bis das Stück ganz gar ist.<list type="alternatives"><item>Heute: 2 bis 4 Stunden, mit der Gabel prüfen<note type="rationale">Praxiswert für ein bindegewebsreiches Stück; hängt davon ab, welches Teil man verwendet.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -141,8 +146,8 @@ Praxis. Hecht schuppen, ausnehmen und waschen, salzen und 30 Minuten ziehen lass
         <note type="gloss" target="#phw-171-orig" n="schyepen" resp="#fyndling">Die frühneuhochdeutsche Form von ‚schuppen‘, also den Fisch von seinen Schuppen befreien.</note>
         <note type="gloss" target="#phw-171-orig" n="brye" resp="#fyndling">Brühe, hier die aus Wein, Apfel und Essig gesottene Flüssigkeit.</note>
         <note type="gloss" target="#phw-171-orig" n="versauch / versaucht" resp="#fyndling">Frühneuhochdeutsch für ‚versuchen‘ oder ‚abschmecken‘. Die persönliche Anmerkung des Kochs ‚ich habs versaucht‘ bedeutet ‚ich habe es versucht/abgeschmeckt‘.</note>
-        <note type="interpretive_choice" target="#phw-171-orig" n="vnad" resp="#fyndling">‚Und‘. Dies ist ein häufiger Schreibfehler in historischen Texten, bei dem ‚n‘ und ‚u‘ oft verwechselt werden. Der Kontext erfordert eindeutig eine Konjunktion.</note>
-        <note type="interpretive_choice" target="#phw-171-orig" n="Ausnehmen des Hechts" resp="#fyndling">Der Text erwähnt das Ausnehmen des Fischs an keiner Stelle, nur das Schuppen und Waschen. Für die heutige Zubereitung wird es dennoch vorausgesetzt.</note>
+        <note type="interpretive_choice" target="#phw-171-orig" n="vnad" resp="#fyndling" subtype="orthographic">‚Und‘. Dies ist ein häufiger Schreibfehler in historischen Texten, bei dem ‚n‘ und ‚u‘ oft verwechselt werden. Der Kontext erfordert eindeutig eine Konjunktion.</note>
+        <note type="interpretive_choice" target="#phw-171-orig" n="Ausnehmen des Hechts" resp="#fyndling" subtype="contextual">Der Text erwähnt das Ausnehmen des Fischs an keiner Stelle, nur das Schuppen und Waschen. Für die heutige Zubereitung wird es dennoch vorausgesetzt.<list type="alternatives"><item>Der Hecht kam möglicherweise bereits ausgenommen vom Fischer oder Händler, weshalb der Text diesen Schritt nicht eigens nennt.<note type="rationale">Der Wortlaut bleibt dazu stumm; beide Lesarten sind mit dem Text vereinbar.</note></item></list></note>
       </div>
     </back>
   </text>

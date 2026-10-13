@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,12 +110,12 @@ Die Haut. Beim Abkühlen bildet sich an der Oberfläche ein Film aus Milcheiwei�
 Praxis. Sahne und Vollmilch in einem Topf einmal aufkochen, vom Feuer nehmen und unbewegt erkalten lassen, grob eine Stunde. Die Haut mit dem Schaumlöffel abheben, in eine Schüssel legen und mit Zucker nach Geschmack bestreuen. Mengen nennt Rumpolt nicht. Die Zubereitungszeit von etwa 75 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
         <note type="gloss" target="#rum-1582-orig" n="Faumloͤffel" resp="#fyndling">Schaumlöffel. Faum ist eine alte Form von „Schaum“; das Grimmsche Wörterbuch, Campe und Lexer verzeichnen das Wort. Rumpolt gebraucht es auch sonst für das Abschäumen.</note>
         <note type="gloss" target="#rum-1582-orig" n="Gaudelat" resp="#fyndling">Nach Rumpolt der italienische Name des Gerichts, den er mit dem guten Geschmack begründet. In den historischen deutschen Wörterbüchern und im Vocabolario Treccani fehlt das Wort; seine Herkunft ist nicht geklärt.</note>
-        <note type="interpretive_choice" target="#rum-1582-orig" n="Gaudelat" resp="#fyndling">Druckform „Gaudelat“ beibehalten, ohne Herleitung. Rumpolt nennt es selbst den italienischen Namen und begründet ihn mit dem Wohlgeschmack; ein Wörterbuchbeleg für das Wort ist nicht gefunden.</note>
-        <note type="interpretive_choice" target="#rum-1582-orig" n="suͤssen Rahm" resp="#fyndling">„Süß“ als frisch und ungesäuert, im Gegensatz zu saurem Rahm. Der Zucker kommt erst am Schluss auf die Haut.</note>
-        <note type="interpretive_choice" target="#rum-1582-orig" n="Rahm mit der Milch" resp="#fyndling">Rahm und Milch zusammen, Verhältnis offen; der Text legt keine Anteile fest.</note>
-        <note type="interpretive_choice" target="#rum-1582-orig" n="auff Kolen … auffsieden" resp="#fyndling">Auf der Kohlenglut einmal aufsieden lassen; einen Hitzegrad nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-1582-orig" n="ein fein dicke Haut" resp="#fyndling">Eine einzige Haut, die sich beim Erkalten bildet und abgehoben wird; eine Abkühlzeit nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-1582-orig" n="Zugehoͤrung zum Braten (Gang)" resp="#fyndling">Als Nachspeise eingeordnet, weil die Haut mit Zucker bestreut wird.</note>
+        <note type="interpretive_choice" target="#rum-1582-orig" n="Gaudelat" resp="#fyndling" subtype="philological">Druckform „Gaudelat“ beibehalten, ohne Herleitung. Rumpolt nennt es selbst den italienischen Namen und begründet ihn mit dem Wohlgeschmack; ein Wörterbuchbeleg für das Wort ist nicht gefunden.<list type="alternatives"><item>Herleitung aus lat. gaudium („Freude, Genuss“)<note type="rationale">Liegt wegen Rumpolts „Darumb“ nahe, ist aber nirgends belegt. Deshalb nicht als Wortbedeutung angegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1582-orig" n="suͤssen Rahm" resp="#fyndling" subtype="lexical">„Süß“ als frisch und ungesäuert, im Gegensatz zu saurem Rahm. Der Zucker kommt erst am Schluss auf die Haut.<list type="alternatives"><item>Gezuckerter Rahm<note type="rationale">Nicht gemeint: Rumpolt streut den Zucker ausdrücklich erst auf die abgehobene Haut.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1582-orig" n="Rahm mit der Milch" resp="#fyndling" subtype="contextual">Rahm und Milch zusammen, Verhältnis offen; der Text legt keine Anteile fest.<list type="alternatives"><item>Etwa gleiche Teile frische Sahne und Vollmilch<note type="rationale">Moderne Praxis zum Nachkochen. Ebenso möglich ist ein Ansatz mit überwiegend Milch oder überwiegend Rahm.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1582-orig" n="auff Kolen … auffsieden" resp="#fyndling" subtype="contextual">Auf der Kohlenglut einmal aufsieden lassen; einen Hitzegrad nennt der Text nicht.<list type="alternatives"><item>Mittlere bis schwache Hitze bis zum ersten Aufwallen, dann sofort vom Feuer<note type="rationale">Moderne Umsetzung auf dem Herd, die Anbrennen und Überkochen vermeidet.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1582-orig" n="ein fein dicke Haut" resp="#fyndling" subtype="contextual">Eine einzige Haut, die sich beim Erkalten bildet und abgehoben wird; eine Abkühlzeit nennt der Text nicht.<list type="alternatives"><item>Grob eine Stunde ungestört abkühlen lassen<note type="rationale">Geschätzte Praxis zum Nachkochen. Ein mehrfaches Abheben mehrerer Häute ist nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1582-orig" n="Zugehoͤrung zum Braten (Gang)" resp="#fyndling" subtype="contextual">Als Nachspeise eingeordnet, weil die Haut mit Zucker bestreut wird.<list type="alternatives"><item>Beigabe zum Braten<note type="rationale">So steht es im Kapitel: Rumpolt führt das Rezept unter den Beigaben zum Braten, direkt nach einem kalten Weichselmus „zum Braten“. Einen Gang nennt er nicht.</note></item></list></note>
       </div>
     </back>
   </text>

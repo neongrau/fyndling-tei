@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,7 +98,7 @@ Selbst geräuchert oder gekauft? Ob Rumpolt einen Schinken aus der eigenen Räuc
 
 Praxis. Es gibt nichts zu kochen, was der Text belegt. Wer die Nummer auf den Tisch bringen will, schneidet geräucherten Wildschweinschinken auf; eine Räucher- oder Pökelanleitung gibt Rumpolt hier nicht.</note>
         <note type="gloss" target="#rum-0438-orig" n="Schuͤncken / Hammen" resp="#fyndling">Beide Wörter meinen den Schinken, also die Hinterkeule; „Hamme“ ist für den Schinken oder Hinterschenkel von Schlachttieren belegt. Rumpolt stellt die beiden Namen gleichbedeutend nebeneinander, es sind keine zwei Varianten.</note>
-        <note type="interpretive_choice" target="#rum-0438-orig" n="Geraͤuchert Schuͤncken" resp="#fyndling">Offen gelassen: Die Überschrift sagt nicht, ob Rumpolt einen in der eigenen Küche gepökelten und geräucherten Schinken meint oder fertige Räucherware. Der Text stützt keine der beiden Lesarten, deshalb übersetzen wir wörtlich „Geräucherter Schinken“ und legen uns nicht fest.</note>
+        <note type="interpretive_choice" target="#rum-0438-orig" n="Geraͤuchert Schuͤncken" resp="#fyndling" subtype="contextual">Offen gelassen: Die Überschrift sagt nicht, ob Rumpolt einen in der eigenen Küche gepökelten und geräucherten Schinken meint oder fertige Räucherware. Der Text stützt keine der beiden Lesarten, deshalb übersetzen wir wörtlich „Geräucherter Schinken“ und legen uns nicht fest.<list type="alternatives"><item>Hinterkeule selbst pökeln und in der Räucherkammer räuchern<note type="rationale">Liest „geräuchert“ als Arbeitsschritt. Im selben Kapitel beschreibt Nummer 33 (Wurst) einen eigenen Räucherschritt; für den Schinken gibt Rumpolt aber keine Anleitung.</note></item><item>Fertig geräucherte Wildschweinkeule als Wildschinken aufschneiden<note type="rationale">Liest „geräuchert“ als Beschaffenheit der Ware. Das ist die einfachste Umsetzung heute, weil der Text keinen Räuchervorgang nennt.</note></item></list></note>
       </div>
     </back>
   </text>

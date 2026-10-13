@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Hirn waschen und mit Eiern zu einer dünnflüssigen Masse verquirlen. Schmalz in
         <note type="gloss" target="#phw-156-orig" n="musgatt nus" resp="#fyndling">Muskatnuss. Ein beliebtes Gewürz der Zeit.</note>
         <note type="gloss" target="#phw-156-orig" n="safern" resp="#fyndling">Safran. Ein teures Gewürz, das Speisen gelb färbt und einen feinen Geschmack verleiht.</note>
         <note type="gloss" target="#phw-156-orig" n="geryette ayr" resp="#fyndling">Gerührte Eier. Die Konsistenz des Hirnmuses soll der von Rührei ähneln - so auch bei phw-016 und phw-135 im Buch aufgelöst.</note>
-        <note type="interpretive_choice" target="#phw-156-orig" n="daus" resp="#fyndling">‚Gib es hinein‘ - deckt sich mit der Deutung von ‚daus‘/‚dau‘ als Imperativ von ‚tuon‘ mit angehängtem ‚es‘ (‚tu es‘), belegt im selben Buch bei phw-012 (‚dau fil zucker dar ein‘ -&gt; ‚Gib viel Zucker hinzu‘; ‚so daus auff ain bladt‘ -&gt; ‚gieße es auf eine Platte‘).</note>
-        <note type="interpretive_choice" target="#phw-156-orig" n="geryette ayr" resp="#fyndling">‚Gerührte Eier‘ - die Lesart orientiert sich an der kulinarisch plausiblen Zubereitungsart von Hirn, das oft wie Rührei zubereitet wird, und ist buchintern durch phw-016 und phw-135 gestützt.</note>
+        <note type="interpretive_choice" target="#phw-156-orig" n="daus" resp="#fyndling" subtype="lexical">‚Gib es hinein‘ - deckt sich mit der Deutung von ‚daus‘/‚dau‘ als Imperativ von ‚tuon‘ mit angehängtem ‚es‘ (‚tu es‘), belegt im selben Buch bei phw-012 (‚dau fil zucker dar ein‘ -&gt; ‚Gib viel Zucker hinzu‘; ‚so daus auff ain bladt‘ -&gt; ‚gieße es auf eine Platte‘).</note>
+        <note type="interpretive_choice" target="#phw-156-orig" n="geryette ayr" resp="#fyndling" subtype="lexical">‚Gerührte Eier‘ - die Lesart orientiert sich an der kulinarisch plausiblen Zubereitungsart von Hirn, das oft wie Rührei zubereitet wird, und ist buchintern durch phw-016 und phw-135 gestützt.<list type="alternatives"><item>Das MHDBDB-Lemma ‚rîten‘ (reiten) ist hier nicht passend.<note type="rationale">Alle MHDBDB-Belege zu ‚rîten‘/‚geriten‘ stehen in Reit-/Pferdekontext, keiner in einem kulinarischen. Die Lesart ‚gerührte Eier‘ ist durch den Zubereitungskontext und zwei weitere Buchstellen gestützt.</note></item></list></note>
       </div>
     </back>
   </text>

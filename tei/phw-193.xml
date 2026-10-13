@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,12 +131,12 @@ Praxis. Karpfen schuppen, ausnehmen und am Rücken aufschneiden, damit er beim G
         <note type="gloss" target="#phw-193-orig" n="semerfisch" resp="#fyndling">Ein sonst im Buch nicht belegtes Wort. Gerold Hayer löst die Stelle in seiner Edition mit der Randkonjektur ‚seiner fisch‘ auf - gemeint ist demnach die eigene Brühe des Fisches. Ob die Handschrift diese Lesung stützt, lässt sich ohne Einsicht in das Original nicht klären.</note>
         <note type="gloss" target="#phw-193-orig" n="edech" resp="#fyndling">Hier im Sinn von ‚eine große Menge‘, nicht ‚einige‘ - so auch in Gerold Hayers eigenem Wörterverzeichnis zu dieser Handschrift verzeichnet.</note>
         <note type="gloss" target="#phw-193-orig" n="blye" resp="#fyndling">In diesem Kontext eine dialektale Form von ‚Blüte‘, hier speziell die Muskatblüte.</note>
-        <note type="interpretive_choice" target="#phw-193-orig" n="lemane" resp="#fyndling">Zitrone/Limone (als Zubereitungsart)</note>
-        <note type="interpretive_choice" target="#phw-193-orig" n="schyept" resp="#fyndling">Schuppen/Reinigen</note>
-        <note type="interpretive_choice" target="#phw-193-orig" n="stat" resp="#fyndling">Herd/Stelle</note>
-        <note type="interpretive_choice" target="#phw-193-orig" n="semerfisch" resp="#fyndling">seiner fisch (Hayers Editionskonjektur) - die eigene Brühe des Fisches</note>
-        <note type="interpretive_choice" target="#phw-193-orig" n="edech" resp="#fyndling">eine große Menge (nach Gerold Hayers Wörterverzeichnis zu dieser Handschrift: ‚edech/etterich‘ = große Menge)</note>
-        <note type="interpretive_choice" target="#phw-193-orig" n="lemone" resp="#fyndling">Zitrone/Limone</note>
+        <note type="interpretive_choice" target="#phw-193-orig" n="lemane" resp="#fyndling" subtype="lexical">Zitrone/Limone (als Zubereitungsart)<list type="alternatives"><item>Ein Ortsname oder eine spezifische Fischart<note type="rationale">Weniger plausibel, da später im Rezept ‚lemone‘ als Zutat genannt wird, was stark auf Zitrone hindeutet.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-193-orig" n="schyept" resp="#fyndling" subtype="lexical">Schuppen/Reinigen<list type="alternatives"><item>Schieben<note type="rationale">Weniger passend für die Vorbereitung eines ganzen Fisches, der ganz bleiben soll.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-193-orig" n="stat" resp="#fyndling" subtype="contextual">Herd/Stelle<list type="alternatives"><item>Ständer/Gestell<note type="rationale">Könnte ein Kochgestell meinen, aber ‚an Ort und Stelle‘ ist eine gängige Redewendung für die Zubereitung am Kochplatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-193-orig" n="semerfisch" resp="#fyndling" subtype="philological">seiner fisch (Hayers Editionskonjektur) - die eigene Brühe des Fisches<list type="alternatives"><item>Semmel-Fisch-Brühe (mit Brotkrume gebundene Fischbrühe)<note type="rationale">Bisherige Lesart dieses Reviews, aber weder durch die verderbte Handschriftform ‚semerfisch‘ noch durch Hayers eigene Konjektur gedeckt. Am Faksimile (Bl. 100v) steht kein i-Punkt und keine erkennbare Wortlücke; paläographisch liest sich die Stelle tatsächlich als „semerfisch“. „seiner fisch“ bleibt deshalb eine sinnvolle Konjektur (die eigene Brühe des Fisches), keine Lesung der Handschrift.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-193-orig" n="edech" resp="#fyndling" subtype="lexical">eine große Menge (nach Gerold Hayers Wörterverzeichnis zu dieser Handschrift: ‚edech/etterich‘ = große Menge)<list type="alternatives"><item>etliche/einige<note type="rationale">Bisherige Lesart dieses Reviews; widerspricht aber Hayers eigenem manuskriptspezifischem Glossareintrag, ohne dass diese Abweichung begründet wurde. Ein zusätzlicher Online-Abgleich lieferte wegen wiederholter Serverfehler keinen sauberen zweiten Beleg und sollte bei Gelegenheit nachgeholt werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-193-orig" n="lemone" resp="#fyndling" subtype="lexical">Zitrone/Limone</note>
       </div>
     </back>
   </text>

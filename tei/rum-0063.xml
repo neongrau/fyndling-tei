@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,8 +105,8 @@ Praxis. Wer die Nummer nachkochen will, hält sich als Standard an Nummer 45: Ri
         <note type="gloss" target="#rum-0063-orig" n="zugericht" resp="#fyndling">zubereitet.</note>
         <note type="gloss" target="#rum-0063-orig" n="vorhin vermeldt" resp="#fyndling">weiter oben erwähnt. Rumpolt nennt die gemeinte Stelle nicht; im Ochsenkapitel kommen dafür die Nummern 17 und 45 in Frage, die einzigen früheren Stellen mit Meerrettich.</note>
         <note type="gloss" target="#rum-0063-orig" n="Merrettich" resp="#fyndling">Meerrettich. Rumpolt nennt ihn in den Nummern 17 und 45 auch „Krehn“, das heutige Kren.</note>
-        <note type="interpretive_choice" target="#rum-0063-orig" n="wie vorhin vermeldt ist" resp="#fyndling">Verweis ohne genanntes Ziel: Rumpolt setzt eine früher beschriebene Meerrettich-Zubereitung voraus, nennt aber weder die Stelle noch die Garart des Rindfleischs. Die Lesart bleibt deshalb offen.</note>
-        <note type="interpretive_choice" target="#rum-0063-orig" n="zugericht" resp="#fyndling">„zubereitet“, die allgemeine Bedeutung von zurichten.</note>
+        <note type="interpretive_choice" target="#rum-0063-orig" n="wie vorhin vermeldt ist" resp="#fyndling" subtype="contextual">Verweis ohne genanntes Ziel: Rumpolt setzt eine früher beschriebene Meerrettich-Zubereitung voraus, nennt aber weder die Stelle noch die Garart des Rindfleischs. Die Lesart bleibt deshalb offen.<list type="alternatives"><item>Nummer 45: gebratenes Rindfleisch, Meerrettich zerstoßen oder zerrieben und in Rinderbrühe zerlassen<note type="rationale">Einzige frühere Stelle mit einem Stück Rindfleisch statt Zunge; deshalb Praxis-Standard, aber nicht belegt.</note></item><item>Nummer 17: Meerrettich mit Mandeln zerrieben, in Hühner- oder Rinderbrühe aufgekocht, mit Rinderfett, hier zu Rindfleisch statt Zunge<note type="rationale">Ausführlichste Meerrettich-Zubereitung im Kapitel; spricht dagegen, dass Nummer 17 ausdrücklich die Zunge nennt.</note></item><item>Gesottenes Rindfleisch mit einer Meerrettichbrühe nach Nummer 17 oder 45<note type="rationale">Passt zur Reihe knapper Siedfleisch-Einträge (Nummern 54 und 55), ist aber eine Vermutung; der Text nennt keine Garart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0063-orig" n="zugericht" resp="#fyndling" subtype="lexical">„zubereitet“, die allgemeine Bedeutung von zurichten.<list type="alternatives"><item>„angerichtet“, also auf die Schüssel gebracht<note type="rationale">Das Wort deckt auch das Anrichten; bei einer Verweiszeile ohne eigene Schritte nicht zu entscheiden.</note></item></list></note>
       </div>
     </back>
   </text>

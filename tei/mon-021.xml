@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,8 +116,8 @@ Praxis. Eine Semmel entrinden, in etwa einem Viertelliter kräftigem Rotwein ein
         <note type="gloss" target="#mon-021-orig" n="gburcz" resp="#fyndling">Eine bairisch-österreichische Schreibweise für ‚Gewürz'.</note>
         <note type="gloss" target="#mon-021-orig" n="wal thue" resp="#fyndling">bairisch zu ‚wallen' = aufwallen/aufkochen: ‚damit es einmal gut aufkocht'. Dieselbe Wendung findet sich in ri15632 und weiteren Korpus-Belegen.</note>
         <note type="gloss" target="#mon-021-orig" n="gnugtur" resp="#fyndling">Bedeutet ‚Genüge' oder ‚ausreichend'. Hier im Sinne von: Es ist fertig oder hat die gewünschte Konsistenz erreicht.</note>
-        <note type="interpretive_choice" target="#mon-021-orig" n="gmuss" resp="#fyndling">‚Mus' im Sinne eines Breis oder einer passierten Speise.</note>
-        <note type="interpretive_choice" target="#mon-021-orig" n="pfeffer thuech" resp="#fyndling">‚Pfeffertuch' als ein feines Tuch zum Passieren von gewürzten Flüssigkeiten oder Breien.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#mon-021-orig" n="gmuss" resp="#fyndling">‚Mus' im Sinne eines Breis oder einer passierten Speise.<list type="alternatives"><item>‚Gemüse' im Sinne einer pflanzlichen Beilage.<note type="rationale">Obwohl ‚Gemüse' eine mögliche Lesart von ‚Mus' sein kann, ist der Kontext mit Wein, Honig und Gewürzen für eine süße Breispeise plausibler. Der Zwilling ri15632-050 betitelt dieselbe Wein-Semmel-Honig-Speise explizit als ‚Weinmus' und stützt damit die primäre Lesart ‚Mus' extern.</note></item></list></note>
+        <note type="interpretive_choice" target="#mon-021-orig" n="pfeffer thuech" resp="#fyndling">‚Pfeffertuch' als ein feines Tuch zum Passieren von gewürzten Flüssigkeiten oder Breien.<list type="alternatives"><item>Ein Tuch, das mit Pfeffer gewürzt oder imprägniert ist.<note type="rationale">Obwohl denkbar, ist die Funktion eines Passiertuchs im Kontext der Zubereitung eines feinen Mus plausibler. Die Gewürze werden separat hinzugefügt ('mit gueten gburcz ab gemacht'), was gegen ein bereits gewürztes Tuch spricht.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

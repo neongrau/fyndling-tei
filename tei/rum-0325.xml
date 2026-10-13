@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,12 +117,12 @@ Praxis. Nicht nachkochbar, weil die Hauptzutat heute nicht zu bekommen ist. Der 
         <note type="gloss" target="#rum-0325-orig" n="freß den Todt daran" resp="#fyndling">Wörtlich: er fräße sich den Tod daran, er würde davon sterben. Einen Grund für diese Furcht nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0325-orig" n="Beinen" resp="#fyndling">Knochen (wie in „Gebein“).</note>
         <note type="gloss" target="#rum-0325-orig" n="muͤrb" resp="#fyndling">Mürbe: zart und weich gegart.</note>
-        <note type="interpretive_choice" target="#rum-0325-orig" n="nicht recht zeitig" resp="#fyndling">Noch nicht ausgetragen. „zeitig“ bedeutet im Frühneuhochdeutschen reif; Rumpolt spricht auch von „vnzeitigen“ (unreifen) Trauben.</note>
-        <note type="interpretive_choice" target="#rum-0325-orig" n="stuͤck Wildt" resp="#fyndling">Ein Wildtier aus dem Kapitel vom Hirsch, in dem das Rezept als Nr. 37 steht. Da es ein Kalb in sich trug, ist es ein weibliches Tier. Der Satz selbst nennt die Tierart nicht.</note>
-        <note type="interpretive_choice" target="#rum-0325-orig" n="gefangen" resp="#fyndling">Erbeutet, ohne Angabe, ob das Tier erlegt oder lebend gefangen wurde. Die Übersetzung behält das offene „gefangen“.</note>
-        <note type="interpretive_choice" target="#rum-0325-orig" n="angesteckt" resp="#fyndling">An den Spieß gesteckt; das folgt aus dem anschließenden „gebraten“ und aus Rumpolts Gebrauch des Worts in benachbarten Bratrezepten.</note>
-        <note type="interpretive_choice" target="#rum-0325-orig" n="Garzeit und Hitze beim Braten" resp="#fyndling">Rumpolt nennt weder Zeit noch Hitze. Als Garpunkt gibt er nur das Ergebnis an: so mürbe, dass man das Kalb fast mit den Knochen essen kann.</note>
-        <note type="interpretive_choice" target="#rum-0325-orig" n="eyngesaltzen" resp="#fyndling">Einsalzen ohne Zeitangabe; im Text folgt unmittelbar das Anstecken, also vermutlich nur kurz.</note>
+        <note type="interpretive_choice" target="#rum-0325-orig" n="nicht recht zeitig" resp="#fyndling" subtype="lexical">Noch nicht ausgetragen. „zeitig“ bedeutet im Frühneuhochdeutschen reif; Rumpolt spricht auch von „vnzeitigen“ (unreifen) Trauben.<list type="alternatives"><item>noch nicht rechtzeitig, pünktlich<note type="rationale">Heutiger Wortsinn; ergibt im Satz keinen Sinn, denn es geht um den Entwicklungsstand des Kalbs.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0325-orig" n="stuͤck Wildt" resp="#fyndling" subtype="contextual">Ein Wildtier aus dem Kapitel vom Hirsch, in dem das Rezept als Nr. 37 steht. Da es ein Kalb in sich trug, ist es ein weibliches Tier. Der Satz selbst nennt die Tierart nicht.<list type="alternatives"><item>„Stück“ als jägersprachlicher Ausdruck für ein weibliches Tier des Rotwilds<note type="rationale">Würde zum Kapitel passen, ist für Rumpolts Sprachgebrauch aber nicht belegt; deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0325-orig" n="gefangen" resp="#fyndling" subtype="lexical">Erbeutet, ohne Angabe, ob das Tier erlegt oder lebend gefangen wurde. Die Übersetzung behält das offene „gefangen“.<list type="alternatives"><item>lebend gefangen (etwa im Netz oder in der Grube)<note type="rationale">Möglich, vom Text aber nicht gesagt.</note></item><item>geschossen, erlegt<note type="rationale">So steht es im ähnlichen Dendel-Rezept (rum-0357); hier aber nicht, deshalb nicht eingesetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0325-orig" n="angesteckt" resp="#fyndling" subtype="contextual">An den Spieß gesteckt; das folgt aus dem anschließenden „gebraten“ und aus Rumpolts Gebrauch des Worts in benachbarten Bratrezepten.<list type="alternatives"><item>auf ein anderes Bratgerät aufgesteckt<note type="rationale">Nicht auszuschließen; welches Feuer und welches Gerät, sagt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0325-orig" n="Garzeit und Hitze beim Braten" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Zeit noch Hitze. Als Garpunkt gibt er nur das Ergebnis an: so mürbe, dass man das Kalb fast mit den Knochen essen kann.<list type="alternatives"><item>Praxis: keine Angabe ergänzen<note type="rationale">Das Gericht ist nicht nachkochbar; eine erfundene Garzeit würde eine Anleitung vortäuschen, die der Text nicht gibt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0325-orig" n="eyngesaltzen" resp="#fyndling" subtype="contextual">Einsalzen ohne Zeitangabe; im Text folgt unmittelbar das Anstecken, also vermutlich nur kurz.<list type="alternatives"><item>längeres Liegenlassen im Salz vor dem Braten<note type="rationale">Vom Text nicht gestützt; die mehrfache Betonung der Eile („flugs“) spricht dagegen.</note></item></list></note>
       </div>
     </back>
   </text>

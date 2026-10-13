@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -98,8 +103,8 @@ Praxis. Heute: Ofen stark vorheizen, den ausgenommenen ganzen Fisch auf den Rost
         <note type="gloss" target="#rum-0922-orig" n="Roßt" resp="#fyndling">Ein Bratrost. Woraus er ist, sagt der Text nicht; hier wird er mitsamt dem Fisch in den Ofen geschoben.</note>
         <note type="gloss" target="#rum-0922-orig" n="heissen Ofen" resp="#fyndling">Der Text sagt nur „heißer Ofen“. Gemeint ist ein Backofen, in den man den Rost hineinschiebt; wie er gebaut und beheizt ist, nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0922-orig" n="darffst jn nicht vmbwenden" resp="#fyndling">„Dürfen“ heißt hier „brauchen, nötig haben“, nicht „erlaubt sein“: Du musst ihn nicht wenden.</note>
-        <note type="interpretive_choice" target="#rum-0922-orig" n="heissen Ofen" resp="#fyndling">Ein gemauerter Back- oder Brotofen, in den der Rost auf einem Schieber hineingeschoben wird. Das „unten und oben“ des Textes erklärt sich aus der Hitze von Ofenboden und Gewölbe; mehr sagt Rumpolt über den Ofen nicht.</note>
-        <note type="interpretive_choice" target="#rum-0922-orig" n="Garzeit und Zustand des Fisches" resp="#fyndling">Der Text lässt beides offen: Rumpolt sagt weder, wie der Fisch vorbereitet wird (ausnehmen, schuppen, salzen), noch wie groß er ist oder wie lange er im Ofen bleibt. „Ein Huechen“ legt einen ganzen Fisch nahe.</note>
+        <note type="interpretive_choice" target="#rum-0922-orig" n="heissen Ofen" resp="#fyndling" subtype="contextual">Ein gemauerter Back- oder Brotofen, in den der Rost auf einem Schieber hineingeschoben wird. Das „unten und oben“ des Textes erklärt sich aus der Hitze von Ofenboden und Gewölbe; mehr sagt Rumpolt über den Ofen nicht.<list type="alternatives"><item>Moderner Backofen mit Ober- und Unterhitze, stark vorgeheizt, Rost über einem Auffangblech<note type="rationale">Praxis für heute; im Text steht keine Ober- und Unterhitze, nur „heißer Ofen“ und „unten und oben“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0922-orig" n="Garzeit und Zustand des Fisches" resp="#fyndling" subtype="contextual">Der Text lässt beides offen: Rumpolt sagt weder, wie der Fisch vorbereitet wird (ausnehmen, schuppen, salzen), noch wie groß er ist oder wie lange er im Ofen bleibt. „Ein Huechen“ legt einen ganzen Fisch nahe.<list type="alternatives"><item>Ganzer, ausgenommener Fisch, Garzeit nach Gewicht<note type="rationale">Moderne Ausführung; die Zeitangabe in der Zubereitungsnotiz ist eine Schätzung, nicht aus dem Text.</note></item></list></note>
       </div>
     </back>
   </text>

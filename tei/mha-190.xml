@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,8 +116,8 @@ Praxis. Zwei bis drei junge Hühner roh in je zwölf Stücke hacken und im Blut 
         <note type="gloss" target="#mha-190-orig" n="vaistne" resp="#fyndling">Fett bzw. Schmalz vom Fleisch, dient hier als Bindemittel und Geschmacksträger der Sauce.</note>
         <note type="gloss" target="#mha-190-orig" n="zwifail" resp="#fyndling">Zwiebel.</note>
         <note type="gloss" target="#mha-190-orig" n="aber item" resp="#fyndling">Übergangsformel ('weiterhin, ein weiterer Eintrag'), die anzeigt, dass dieses Rezept als Variante direkt an ein vorheriges Gericht anschließt.</note>
-        <note type="interpretive_choice" target="#mha-190-orig" n="vaistne von ainem flaisch" resp="#fyndling">Fett bzw. Schmalz vom Fleisch (Lard), gemäß der CoReMA-Wikidata-Sachglosse zu dieser Stelle.</note>
-        <note type="interpretive_choice" target="#mha-190-orig" n="zwifail" resp="#fyndling">Zwiebel, gemäß der CoReMA-Wikidata-Sachglosse (onion) zu dieser Stelle.</note>
+        <note type="interpretive_choice" target="#mha-190-orig" n="vaistne von ainem flaisch" resp="#fyndling">Fett bzw. Schmalz vom Fleisch (Lard), gemäß der CoReMA-Wikidata-Sachglosse zu dieser Stelle.<list type="alternatives"><item>Unklares Substantiv ohne gesicherte Etymologie<note type="rationale">Das Wort 'vaistne' findet sich in Lexer, Benecke oder Grimm nicht als eigener Eintrag. Die Lesart stützt sich hier allein auf die inhaltliche CoReMA-Zuordnung, nicht auf einen unabhängigen Wörterbuchbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-190-orig" n="zwifail" resp="#fyndling">Zwiebel, gemäß der CoReMA-Wikidata-Sachglosse (onion) zu dieser Stelle.<list type="alternatives"><item>Unklare Lautform ohne direkten Wörterbucheintrag<note type="rationale">Die Standardform wäre 'zwibel' oder 'zwifel'. 'zwifail' selbst ist in Lexer und Benecke nicht direkt belegt, aber die CoReMA-Sachglosse stützt die Zwiebel-Lesart eindeutig.</note></item></list></note>
       </div>
     </back>
   </text>

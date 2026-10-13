@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@ Praxis. Fisch und Krebse gemeinsam in kaltem Wasser aufsetzen und langsam erhitz
         <note type="gloss" target="#w1-199-orig" n="grundel" resp="#fyndling">Der Gründling (Gobio gobio) ist ein kleiner Süßwasserfisch, der in Flüssen und Bächen Europas vorkommt.</note>
         <note type="gloss" target="#w1-199-orig" n="chreussen" resp="#fyndling">Krebse waren im Mittelalter eine beliebte Fastenspeise und wurden oft zusammen mit Fisch zubereitet.</note>
         <note type="gloss" target="#w1-199-orig" n="guetn wall" resp="#fyndling">Ein „gutes Aufwallen“ bedeutet, dass die Flüssigkeit einmal aufwallt, bevor das Gericht vom Feuer genommen wird - eine schonende Garmethode für empfindliche Zutaten wie Fisch und Krebse.</note>
-        <note type="interpretive_choice" target="#w1-199-orig" n="RVten / ruten" resp="#fyndling">Quappen (Lota lota)</note>
-        <note type="interpretive_choice" target="#w1-199-orig" n="grundel vnd ruten (zweiter Satz)" resp="#fyndling">W1 folgt an dieser Stelle der eigenen Handschrift: Gründlinge und Quappen (ruten) werden im zweiten Satz zeitlich begrenzt.</note>
-        <note type="interpretive_choice" target="#w1-199-orig" n="Garzeit der Krebse" resp="#fyndling">Der Text bestimmt die Garzeit ausdrücklich nur für Gründlinge und Quappen; zu den Krebsen schweigt er.</note>
+        <note type="interpretive_choice" target="#w1-199-orig" n="RVten / ruten" resp="#fyndling" subtype="lexical">Quappen (Lota lota)<list type="alternatives"><item>Weinraute (Ruta graveolens)<note type="rationale">CoReMA-GAMS listet für „ruten“ auch „common rue“ (Weinraute). Im Kontext dieses Fischrezepts, wo „RVten“ im Titel und „ruten“ im Text zusammen mit anderen Fischen und Krebsen genannt und gekocht werden sollen, ist die Fischart „Quappe“ (Lota lota) die einzig plausible Lesart. Die Anweisung, „ruten“ nicht länger als ein gutes Aufwallen zu sieden, passt zu empfindlichem Fisch, nicht zu einem Kraut. Die Zwillingshandschriften B4 (b4-195, bereits reviewt) und Mondsee (mon-264) führen an derselben Stelle unabhängig voneinander Fisch/Rutte in derselben Aufzählung neben Gründling und Krebs - das stützt die Lesart als Fischart zusätzlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-199-orig" n="grundel vnd ruten (zweiter Satz)" resp="#fyndling" subtype="philological">W1 folgt an dieser Stelle der eigenen Handschrift: Gründlinge und Quappen (ruten) werden im zweiten Satz zeitlich begrenzt.<list type="alternatives"><item>Textvariante der Zwillinge: Gründlinge und Krebse<note type="rationale">Die Zwillingshandschriften B4 (b4-195) und Mondsee (mon-264) nennen an derselben Stelle im zweiten Satz „Grundel“ und „Krebse“ statt „Grundel“ und „ruten“. W1 weicht damit echt von beiden anderen Zeugen ab - ob es sich um eine bewusste Textänderung oder eine Verschreibung handelt, ist offen; CoReMA vermerkt dazu nichts. W1-199 folgt hier korrekt dem eigenen Wortlaut und wird nicht an die Mehrheitslesart der Zwillinge angeglichen.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-199-orig" n="Garzeit der Krebse" resp="#fyndling" subtype="contextual">Der Text bestimmt die Garzeit ausdrücklich nur für Gründlinge und Quappen; zu den Krebsen schweigt er.<list type="alternatives"><item>Wörtliche Lesart: alle Zutaten sind nach einem einzigen Aufwallen gemeinsam fertig<note type="rationale">Diese Lesart ist textlich möglich, würde die Krebse (mit Panzer, längere Garzeit nötig) aber wahrscheinlich untergaren. Praxisempfehlung: Krebse länger im selben Sud weiterkochen lassen, bis der Panzer vollständig rot ist - das ist keine Ersatztechnik, sondern dieselbe Siedetechnik, nur länger fortgesetzt.</note></item></list></note>
       </div>
     </back>
   </text>

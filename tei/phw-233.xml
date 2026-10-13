@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -197,8 +202,8 @@ Getrockneten, im Mörser gestoßenen und gesiebten Reis ersetzt fertiges Reismeh
         <note type="gloss" target="#phw-233-orig" n="lanng" resp="#fyndling">Frühneuhochdeutsche Form von ‚lang‘.</note>
         <note type="gloss" target="#phw-233-orig" n="khombt" resp="#fyndling">Frühneuhochdeutsche Form von ‚kommt‘.</note>
         <note type="gloss" target="#phw-233-orig" n="schwartz" resp="#fyndling">Frühneuhochdeutsche Form von ‚schwarz‘. Der Hinweis, dass das Mus schwarz wird, wenn der Zucker zu lange kocht, deutet auf die Karamellisierung des Zuckers hin.</note>
-        <note type="interpretive_choice" target="#phw-233-orig" n="gefaimbt" resp="#fyndling">Als ‚feimen‘ übersetzt: das Reismehl wird durch ein Sieb oder Tuch passiert/gesiebt.</note>
-        <note type="interpretive_choice" target="#phw-233-orig" n="topffen wie ain Seiden" resp="#fyndling">Als ‚fein zupfen wie Seide‘ übersetzt: die gegarte Brust wird von Hand in feine, fadenartige Streifen gezupft.</note>
+        <note type="interpretive_choice" target="#phw-233-orig" n="gefaimbt" resp="#fyndling" subtype="philological" cert="unknown">Durch ein Sieb oder Tuch passiert. Wahrscheinlich ist ‚geſaimbt‘ mit langem ſ zu lesen (Ralf am Faksimile, Bl. 126v: f und ſ sind hier kaum zu unterscheiden), also ‚geseimt‘: seimen = läutern, beim Honig das Unreine abscheiden (DWB s. v. seimen). Der Buchzwilling phw-242 hat an derselben Stelle „durch ain duech oder syb fehen“, wohl ebenso ‚ſehen‘ = seihen. Beide Lesungen meinen dieselbe Handlung.<list type="alternatives"><item>‚gefaimbt‘ mit f, zu ‚feimen‘ (schäumen, abschäumen)<note type="rationale">So die Wörterbücher für den Wortstamm mit f; für trockenes Reismehl ergibt Schäumen keinen Sinn.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-233-orig" n="topffen wie ain Seiden" resp="#fyndling" subtype="lexical">Als ‚fein zupfen wie Seide‘ übersetzt: die gegarte Brust wird von Hand in feine, fadenartige Streifen gezupft.<list type="alternatives"><item>‚Fein hacken wie Seide‘ - die Brust würde mit dem Messer zerkleinert statt gezupft.<note type="rationale">Der Buchzwilling phw-242 verwendet an derselben Stelle ‚zerzopfs wie ain seyden‘ (zerzupfen) für dasselbe Geflügelfleisch, benutzt aber im selben Rezept für seine Fischvariante ausdrücklich ‚hackhen‘ - das Buch unterscheidet die beiden Techniken bewusst und stützt für Geflügel die Zupf-Lesart.</note></item></list></note>
       </div>
     </back>
   </text>

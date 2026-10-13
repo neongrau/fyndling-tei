@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,9 +101,9 @@ Was fehlt. Welches Stück, wie lange, ob gesalzen, mit welcher Brühe oder Beila
 Praxis. Wer es nachkochen will, siedet ein Stück Rindfleisch in Wasser gar und trägt es warm auf. Alles Weitere ist eigene Entscheidung, nicht Rumpolts Vorgabe.</note>
         <note type="gloss" target="#rum-0054-orig" n="nicht boͤß" resp="#fyndling">Verneinung des Gegenteils: „nicht schlecht“, also brauchbar, ordentlich. Böse heißt im älteren Deutsch auch schlicht schlecht oder minderwertig. Die Wendung ist bewusst zurückhaltend und nicht als Lob wie „köstlich“ zu lesen.</note>
         <note type="gloss" target="#rum-0054-orig" n="gesotten" resp="#fyndling">Partizip zu sieden: in Wasser oder Brühe gekocht. Das Wort sagt nichts über ein vorheriges Kochen oder späteres Aufwärmen.</note>
-        <note type="interpretive_choice" target="#rum-0054-orig" n="nicht boͤß" resp="#fyndling">„auch nicht schlecht“: Litotes, die Verneinung des Gegenteils. Böse trägt im Mittel- und Frühneuhochdeutschen die Bedeutung schlecht, minderwertig; Rumpolt benutzt dieselbe Formel auch bei Nummer 10 und 65.</note>
-        <note type="interpretive_choice" target="#rum-0054-orig" n="Warm gesotten" resp="#fyndling">Gekochtes Rindfleisch, warm aufgetragen; „warm“ bezeichnet die Serviertemperatur, als Gegenstück zu Nummer 55 „Kalt abgesotten Rindtfleisch im Saltz“.</note>
-        <note type="interpretive_choice" target="#rum-0054-orig" n="Stück, Garzeit, Salz, Brühe, Beilage" resp="#fyndling">Nicht genannt und nicht ergänzt. Die Nachbarnummern zeigen Sieden in Brühe (Nummer 53) bzw. Fleisch im Salz (Nummer 55), sagen aber nichts über diesen Satz.</note>
+        <note type="interpretive_choice" target="#rum-0054-orig" n="nicht boͤß" resp="#fyndling" subtype="lexical">„auch nicht schlecht“: Litotes, die Verneinung des Gegenteils. Böse trägt im Mittel- und Frühneuhochdeutschen die Bedeutung schlecht, minderwertig; Rumpolt benutzt dieselbe Formel auch bei Nummer 10 und 65.<list type="alternatives"><item>„schmackhaft“ oder „gut“<note type="rationale">Steigert die bewusst zurückhaltende Wertung zu einem Lob und führt eine Geschmacksaussage ein, die der Satz nicht macht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0054-orig" n="Warm gesotten" resp="#fyndling" subtype="contextual">Gekochtes Rindfleisch, warm aufgetragen; „warm“ bezeichnet die Serviertemperatur, als Gegenstück zu Nummer 55 „Kalt abgesotten Rindtfleisch im Saltz“.<list type="alternatives"><item>Bereits vorgekochtes Fleisch, das wieder erwärmt wird<note type="rationale">Steht nicht im Text; das Partizip „gesotten“ belegt nur das Kochen, kein Vorkochen und kein Aufwärmen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0054-orig" n="Stück, Garzeit, Salz, Brühe, Beilage" resp="#fyndling" subtype="contextual">Nicht genannt und nicht ergänzt. Die Nachbarnummern zeigen Sieden in Brühe (Nummer 53) bzw. Fleisch im Salz (Nummer 55), sagen aber nichts über diesen Satz.<list type="alternatives"><item>Wie Nummer 55 gesalzen oder im Salz liegend<note type="rationale">Nummer 55 sagt ausdrücklich „im Saltz“, Nummer 54 nicht; eine Übertragung wäre Vermutung.</note></item><item>Heutige Ausführung als Siedfleisch, etwa Tafelspitz aus der Brühe<note type="rationale">Naheliegender moderner Vergleich, aber keine Vorgabe des Textes.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -139,11 +144,11 @@ Praxis. Geräucherte Hammelfüße gibt es heute kaum; beim Metzger vorbestellen 
         <note type="gloss" target="#rum-0194-orig" n="Knobloch" resp="#fyndling">Knoblauch. Rumpolt erlaubt „ein wenig“ und warnt im selben Satz vor dem Übermaß.</note>
         <note type="gloss" target="#rum-0194-orig" n="einschuͤtten" resp="#fyndling">Hineinschütten, hier vom Knoblauch, den der Bauer wie Zwiebeln haufenweise hineingibt.</note>
         <note type="gloss" target="#rum-0194-orig" n="schaw" resp="#fyndling">Schau, achte darauf.</note>
-        <note type="interpretive_choice" target="#rum-0194-orig" n="gruͤnen Koͤl" resp="#fyndling">Ein grüner Blattkohl ohne festen Kopf. Rumpolt nennt keine Sorte; Grünkohl ist die naheliegende heutige Wahl.</note>
-        <note type="interpretive_choice" target="#rum-0194-orig" n="Geraͤucherte Fuͤß (gesalzen?)" resp="#fyndling">Die Füße sind fertige Räucherware und werden im Rezept nur gar gekocht; das Räuchern ist kein Arbeitsschritt.</note>
-        <note type="interpretive_choice" target="#rum-0194-orig" n="stuͤcklein Fleisch vom Hammel/ die gar gesotten seyn" resp="#fyndling">Die Fleischstücke kommen schon gar gekocht dazu; woher, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0194-orig" n="laß den Koͤl nicht versieden (Garpunkt)" resp="#fyndling">Rumpolt nennt keine Zeit. Der Kohl ist schon abgebrüht und darf im Sud nur nicht zerkochen; der Garpunkt bleibt dem Koch überlassen.</note>
-        <note type="interpretive_choice" target="#rum-0194-orig" n="versaltzest (Salzmenge)" resp="#fyndling">Der Text nennt keine Salzmenge, er warnt nur vor dem Versalzen.</note>
+        <note type="interpretive_choice" target="#rum-0194-orig" n="gruͤnen Koͤl" resp="#fyndling" subtype="lexical">Ein grüner Blattkohl ohne festen Kopf. Rumpolt nennt keine Sorte; Grünkohl ist die naheliegende heutige Wahl.<list type="alternatives"><item>Wirsing oder ein anderer grüner Blattkohl<note type="rationale">Ebenso möglich; der Text legt die Sorte nicht fest.</note></item><item>Weißkohl (Kopfkraut)<note type="rationale">Unwahrscheinlich, weil Rumpolt ausdrücklich „grün“ schreibt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0194-orig" n="Geraͤucherte Fuͤß (gesalzen?)" resp="#fyndling" subtype="contextual">Die Füße sind fertige Räucherware und werden im Rezept nur gar gekocht; das Räuchern ist kein Arbeitsschritt.<list type="alternatives"><item>Vor dem Räuchern gesalzen oder gepökelt, dann vor dem Kochen wässern<note type="rationale">Der Text sagt nicht, ob die Füße gesalzen waren. Sind sie sehr salzig, wässert man sie heute vorher; das passt zu Rumpolts Warnung vor dem Versalzen, steht aber nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0194-orig" n="stuͤcklein Fleisch vom Hammel/ die gar gesotten seyn" resp="#fyndling" subtype="contextual">Die Fleischstücke kommen schon gar gekocht dazu; woher, sagt der Text nicht.<list type="alternatives"><item>Eigens für dieses Gericht vorgekocht<note type="rationale">Möglich; der Text verlangt nur, dass sie gar sind.</note></item><item>Vom Sieden anderer Hammelstücke übrig<note type="rationale">Ebenso möglich, aber nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0194-orig" n="laß den Koͤl nicht versieden (Garpunkt)" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Zeit. Der Kohl ist schon abgebrüht und darf im Sud nur nicht zerkochen; der Garpunkt bleibt dem Koch überlassen.<list type="alternatives"><item>Heute: im Sud nur wenige Minuten ziehen lassen, bis er weich ist<note type="rationale">Moderne Praxis, nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0194-orig" n="versaltzest (Salzmenge)" resp="#fyndling" subtype="contextual">Der Text nennt keine Salzmenge, er warnt nur vor dem Versalzen.<list type="alternatives"><item>Heute: erst am Ende abschmecken, wenn überhaupt nur wenig salzen<note type="rationale">Moderne Praxis; geräuchertes Fleisch und Brühe bringen meist schon Salz mit.</note></item></list></note>
       </div>
     </back>
   </text>

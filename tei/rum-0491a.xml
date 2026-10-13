@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -104,10 +109,10 @@ Praxis. Nachkochen lässt sich das nicht im Sinne der Quelle. Der Text beschreib
         <note type="gloss" target="#rum-0491a-orig" n="schwartz oder gelb" resp="#fyndling">Die Farbe der Sauce. Welche Zutat sie färbt, sagt Rumpolt hier nicht.</note>
         <note type="gloss" target="#rum-0491a-orig" n="was vom Meer ist" resp="#fyndling">Fleisch von Tieren, die als Meerestiere galten, durfte an Fasttagen gegessen werden. Rumpolt stützt die Fastentauglichkeit nur auf diesen Satz; ob das Tier in der Praxis so gegessen wurde, sagt er nicht.</note>
         <note type="gloss" target="#rum-0491a-orig" n="Faßt Tagen" resp="#fyndling">Fasttage, an denen kein Fleisch von Landtieren gegessen werden durfte.</note>
-        <note type="interpretive_choice" target="#rum-0491a-orig" n="Meer Jgel" resp="#fyndling">Stachelschwein (Hystrix). So deuten es Bartosiewicz, Gyetvai und Küchelmann („evidently a porcupine“), und der Holzschnitt über dem Kapitel zeigt ein Stachelschwein. Dazu passen Braten und Pastete, also Zubereitungen für Fleisch.</note>
-        <note type="interpretive_choice" target="#rum-0491a-orig" n="schwartz oder gelb" resp="#fyndling">Farbe der Sauce, ohne Angabe der Farbmittel; die Übersetzung ergänzt nichts.</note>
-        <note type="interpretive_choice" target="#rum-0491a-orig" n="warm mit Senff" resp="#fyndling">Bezieht sich auf die Pastete, die warm mit Senf gegessen wird; die Wendung steht direkt hinter „in Pasteten eyngemacht“.</note>
-        <note type="interpretive_choice" target="#rum-0491a-orig" n="was vom Meer ist" resp="#fyndling">Rumpolt begründet die Eignung für Fasttage mit dem Namen des Tiers: Es heißt „Meer“-Igel, also gilt es als Meerestier.</note>
+        <note type="interpretive_choice" target="#rum-0491a-orig" n="Meer Jgel" resp="#fyndling" subtype="lexical">Stachelschwein (Hystrix). So deuten es Bartosiewicz, Gyetvai und Küchelmann („evidently a porcupine“), und der Holzschnitt über dem Kapitel zeigt ein Stachelschwein. Dazu passen Braten und Pastete, also Zubereitungen für Fleisch.<list type="alternatives"><item>Seeigel<note type="rationale">Das Grimmsche Wörterbuch führt „Meerigel“ als Seeigel, „ein fisch in einer runden schale, der viel stacheln am leib hat“; auch Rumpolts Satz „was vom Meer ist“ würde dazu passen. Gegen diese Lesart sprechen Holzschnitt, Braten und Pastete.</note></item><item>Einheimischer Igel<note type="rationale">Nein: Den behandelt Rumpolt im folgenden Kapitel eigens als „eynheimischen Jgel“ (rum-0491b).</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0491a-orig" n="schwartz oder gelb" resp="#fyndling" subtype="contextual">Farbe der Sauce, ohne Angabe der Farbmittel; die Übersetzung ergänzt nichts.<list type="alternatives"><item>Schwarz mit Blut, gelb mit Safran, wie Rumpolt es bei anderen Tieren beschreibt (Indianisches Schwein rum-0490 und rum-0491, Hase rum-0388)<note type="rationale">Naheliegend als Muster, steht aber in diesem Eintrag nicht und wird deshalb nicht in die Übersetzung getragen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0491a-orig" n="warm mit Senff" resp="#fyndling" subtype="contextual">Bezieht sich auf die Pastete, die warm mit Senf gegessen wird; die Wendung steht direkt hinter „in Pasteten eyngemacht“.<list type="alternatives"><item>Bezieht sich auf alle genannten Zubereitungen<note type="rationale">Der Satzbau lässt das zu, die Wortstellung spricht aber für die Pastete.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0491a-orig" n="was vom Meer ist" resp="#fyndling" subtype="contextual">Rumpolt begründet die Eignung für Fasttage mit dem Namen des Tiers: Es heißt „Meer“-Igel, also gilt es als Meerestier.<list type="alternatives"><item>Allgemeine Fastenregel, die Rumpolt hier nur anfügt<note type="rationale">Möglich; der Satz „solch Fleisch, was vom Meer ist“ klingt nach einer allgemeinen Regel. Für das Rezept ändert das nichts.</note></item></list></note>
       </div>
     </back>
   </text>

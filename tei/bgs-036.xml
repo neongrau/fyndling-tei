@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,7 +128,7 @@ Praxis. Die Haut so ganz wie möglich ablösen. Den Fisch dann gar kochen (siede
         <note type="gloss" target="#bgs-036-orig" n="fuelle die hut des hechdes" resp="#fyndling">Fülle die Haut des Hechtes</note>
         <note type="gloss" target="#bgs-036-orig" n="roeste in eine wenic" resp="#fyndling">Röste ihn ein wenig</note>
         <note type="gloss" target="#bgs-036-orig" n="gibin hin" resp="#fyndling">Gib ihn hin / Serviere ihn</note>
-        <note type="interpretive_choice" target="#bgs-036-orig" n="roeste in eine wenic" resp="#fyndling">Wir empfehlen, das abschließende Anbraten so lange fortzusetzen, bis das rohe Ei in der Füllung sichtbar durchgegart ist - auch wenn der Text selbst nur ein kurzes 'ein wenig' Rösten nennt.</note>
+        <note type="interpretive_choice" target="#bgs-036-orig" n="roeste in eine wenic" resp="#fyndling">Wir empfehlen, das abschließende Anbraten so lange fortzusetzen, bis das rohe Ei in der Füllung sichtbar durchgegart ist - auch wenn der Text selbst nur ein kurzes 'ein wenig' Rösten nennt.<list type="alternatives"><item>Wörtlich genommen beschreibt der Text nur eine kurze Hitzeeinwirkung, die im Kern der Füllung ein noch weiches, nicht vollständig durchgegartes Ei zurücklassen kann.<note type="rationale">Diese wörtliche Lesart wird aus heutiger Lebensmittelsicherheitssicht nicht als Standard empfohlen; die Praxis-Anleitung weist deshalb ausdrücklich auf ausreichendes Durchgaren hin.</note></item></list></note>
       </div>
     </back>
   </text>

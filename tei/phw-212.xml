@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -141,12 +146,12 @@ Praxis. Karpfen und Hecht in den drei Weinen köcheln, bis sich das Fleisch vom 
         <note type="gloss" target="#phw-212-orig" n="welsch wein" resp="#fyndling">Welscher Wein bezeichnete im Mittelalter und der frühen Neuzeit Weine aus romanischsprachigen Ländern, insbesondere aus Italien oder Frankreich.</note>
         <note type="gloss" target="#phw-212-orig" n="lefel fol" resp="#fyndling">Ein Löffel voll, eine ungenaue Mengenangabe, die etwa einem Esslöffel entspricht.</note>
         <note type="gloss" target="#phw-212-orig" n="syedenn" resp="#fyndling">Sieden, das langsame Kochen oder Köcheln einer Flüssigkeit knapp unter dem Siedepunkt.</note>
-        <note type="interpretive_choice" target="#phw-212-orig" n="schisla" resp="#fyndling">Die Lesart 'Schüssel' (Gefäß) wurde gewählt, da sie im Kontext einer Mengenangabe für das fertige Gericht am plausibelsten ist.</note>
-        <note type="interpretive_choice" target="#phw-212-orig" n="laydt / laidt / layt" resp="#fyndling">Die Lesart 'Lot' (historische Gewichtseinheit von ca. 15 g) wurde gewählt. Obwohl die Wörterbücher 'laydt' und 'laidt' als Adjektive ('leid') oder Verben ('legen') führen, ist im Kontext von Mengenangaben für Gewürze und Geliermittel 'Lot' die historisch und kulinarisch korrekte Interpretation.</note>
-        <note type="interpretive_choice" target="#phw-212-orig" n="safern" resp="#fyndling">Die Lesart 'Safran' wurde gewählt. Die Schreibweise 'safern' ist eine plausible frühneuhochdeutsche Variante des Gewürzes.</note>
-        <note type="interpretive_choice" target="#phw-212-orig" n="ron fal" resp="#fyndling">Die Lesart 'Rainfal' (ein historischer Süßwein) wurde gewählt. 'Ron fal' ist eine plausible Schreibvariante von 'Rainfal', das in anderen Quellen des Korpus als 'rayffall' oder 'reinfal' belegt ist.</note>
-        <note type="interpretive_choice" target="#phw-212-orig" n="jmber zimett" resp="#fyndling">Die Lesart 'Ingwer, Zimt' wurde gewählt, wobei die Mengenangabe 'ein Löffel voll' im Transkript nur einmal vor 'safern' steht und nicht für jmber/zimett wiederholt wird. Ingwer und Zimt sind daher als zusätzliche, unquantifizierte Gewürze für das Sieden zu verstehen.</note>
-        <note type="interpretive_choice" target="#phw-212-orig" n="Menge der Hausenblase (1 Lot)" resp="#fyndling">Der Text nennt nur 1 Lot (ca. 15 g) Hausenblase auf die gesamte Flüssigkeitsmenge (5,25 l Wein) plus Fisch und daneben kein weiteres Bindemittel. Ob das historisch als alleiniges Geliermittel gedacht war oder zusätzlich auf das natürliche Kollagen aus Karpfen- und Hechthaut/-gräten gesetzt wurde, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#phw-212-orig" n="schisla" resp="#fyndling" subtype="lexical">Die Lesart 'Schüssel' (Gefäß) wurde gewählt, da sie im Kontext einer Mengenangabe für das fertige Gericht am plausibelsten ist.</note>
+        <note type="interpretive_choice" target="#phw-212-orig" n="laydt / laidt / layt" resp="#fyndling" subtype="lexical">Die Lesart 'Lot' (historische Gewichtseinheit von ca. 15 g) wurde gewählt. Obwohl die Wörterbücher 'laydt' und 'laidt' als Adjektive ('leid') oder Verben ('legen') führen, ist im Kontext von Mengenangaben für Gewürze und Geliermittel 'Lot' die historisch und kulinarisch korrekte Interpretation.</note>
+        <note type="interpretive_choice" target="#phw-212-orig" n="safern" resp="#fyndling" subtype="orthographic">Die Lesart 'Safran' wurde gewählt. Die Schreibweise 'safern' ist eine plausible frühneuhochdeutsche Variante des Gewürzes.</note>
+        <note type="interpretive_choice" target="#phw-212-orig" n="ron fal" resp="#fyndling" subtype="orthographic">Die Lesart 'Rainfal' (ein historischer Süßwein) wurde gewählt. 'Ron fal' ist eine plausible Schreibvariante von 'Rainfal', das in anderen Quellen des Korpus als 'rayffall' oder 'reinfal' belegt ist.</note>
+        <note type="interpretive_choice" target="#phw-212-orig" n="jmber zimett" resp="#fyndling" subtype="contextual">Die Lesart 'Ingwer, Zimt' wurde gewählt, wobei die Mengenangabe 'ein Löffel voll' im Transkript nur einmal vor 'safern' steht und nicht für jmber/zimett wiederholt wird. Ingwer und Zimt sind daher als zusätzliche, unquantifizierte Gewürze für das Sieden zu verstehen.<list type="alternatives"><item>'Ein Löffel voll Safran, ein Löffel voll Ingwer, ein Löffel voll Zimt'<note type="rationale">Diese Lesart ist weniger wahrscheinlich, da 'lefel fol' im Transkript nur einmal vor 'safern' steht und nicht für die nachfolgenden Gewürze wiederholt wird, was bei präzisen Mengenangaben üblich wäre.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-212-orig" n="Menge der Hausenblase (1 Lot)" resp="#fyndling" subtype="contextual">Der Text nennt nur 1 Lot (ca. 15 g) Hausenblase auf die gesamte Flüssigkeitsmenge (5,25 l Wein) plus Fisch und daneben kein weiteres Bindemittel. Ob das historisch als alleiniges Geliermittel gedacht war oder zusätzlich auf das natürliche Kollagen aus Karpfen- und Hechthaut/-gräten gesetzt wurde, sagt der Text nicht.</note>
       </div>
     </back>
   </text>

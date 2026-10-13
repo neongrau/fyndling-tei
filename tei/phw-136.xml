@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,10 +132,10 @@ Praxis. Eier am oberen Ende vorsichtig öffnen, Dotter und Eiweiß entnehmen und
         <note type="gloss" target="#phw-136-orig" n="better ling" resp="#fyndling">Petersilie. Dasselbe Wort löst das Buch an mehreren anderen Stellen konsistent als Petersilie auf; ein zeitgenössisches Küchenwörterverzeichnis zu genau dieser Handschrift verzeichnet ‚bederling, betterling krautt, betterling wurtzen‘ als grüne bzw. wurzelige Petersilie.</note>
         <note type="gloss" target="#phw-136-orig" n="gugen" resp="#fyndling">‚Gugen‘ meint hier die leeren Eierschalen, die als Kochgefäß dienen. Das Wort geht auf ‚Gugel‘ (Kappe, Kaputze) zurück.</note>
         <note type="gloss" target="#phw-136-orig" n="an brin" resp="#fyndling">‚Anbrennen‘ - die Eier sollen durch Wenden vor dem Anbrennen geschützt werden, da sie direkt in der Schale über Hitze garen.</note>
-        <note type="interpretive_choice" target="#phw-136-orig" n="gwirtz" resp="#fyndling">‚Gwirtz‘ wird als ‚Gewürz‘ übersetzt. Dies ist eine gängige frühneuhochdeutsche Schreibweise für Gewürze.</note>
-        <note type="interpretive_choice" target="#phw-136-orig" n="dayglin" resp="#fyndling">‚Dayglin‘ wird als ‚Teiglein‘ (Diminutiv von Teig) übersetzt. Ein kleines Stück Teig ist funktional, um die Eierschale zu verschließen.</note>
-        <note type="interpretive_choice" target="#phw-136-orig" n="riers hin vnd wider" resp="#fyndling">Wir beziehen das Wenden auf die verschlossenen Eier selbst, die in der Glut gedreht werden, damit sie nicht einseitig anbrennen.</note>
-        <note type="interpretive_choice" target="#phw-136-orig" n="Dauer des Backens" resp="#fyndling">Der Text nennt keine Zeitangabe, nur ‚langsam‘. Die im Rezept angegebene Zeitspanne ist eine praktische Schätzung für das Garen in der Glut, kein Wert aus dem Text.</note>
+        <note type="interpretive_choice" target="#phw-136-orig" n="gwirtz" resp="#fyndling" subtype="orthographic">‚Gwirtz‘ wird als ‚Gewürz‘ übersetzt. Dies ist eine gängige frühneuhochdeutsche Schreibweise für Gewürze.</note>
+        <note type="interpretive_choice" target="#phw-136-orig" n="dayglin" resp="#fyndling" subtype="lexical">‚Dayglin‘ wird als ‚Teiglein‘ (Diminutiv von Teig) übersetzt. Ein kleines Stück Teig ist funktional, um die Eierschale zu verschließen.</note>
+        <note type="interpretive_choice" target="#phw-136-orig" n="riers hin vnd wider" resp="#fyndling" subtype="contextual">Wir beziehen das Wenden auf die verschlossenen Eier selbst, die in der Glut gedreht werden, damit sie nicht einseitig anbrennen.<list type="alternatives"><item>Wörtliches Rühren der Füllung.<note type="rationale">Der Text nennt kein Objekt des Rührens. Da das Löchlein bereits mit dem Teigpfropf verschlossen ist, wäre ein Rühren der Füllung selbst nur möglich, wenn der Verschluss zwischenzeitlich geöffnet würde - dafür gibt es im Text keinen Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-136-orig" n="Dauer des Backens" resp="#fyndling" subtype="contextual">Der Text nennt keine Zeitangabe, nur ‚langsam‘. Die im Rezept angegebene Zeitspanne ist eine praktische Schätzung für das Garen in der Glut, kein Wert aus dem Text.</note>
       </div>
     </back>
   </text>

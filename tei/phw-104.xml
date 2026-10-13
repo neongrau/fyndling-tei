@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,8 +107,8 @@ kliebenn so ker sy vmauf die klufft vnd ritla die
 pfane setzs</p>
         </div>
         <div type="translation" xml:id="phw-104-trans" xml:lang="de" corresp="#phw-104-orig">
-          <p>Wenn du Mörserküchlein backen willst, nimm Eier und gieße kaltes Wasser darüber. Lege sie danach in heißes Wasser und halte sie warm. Gieße dann Wasser darüber, salze es und gib Schmalz hinzu. Lass es wie eine Brühe sieden.</p>
-          <p>Nimm gutes Mehl, siebe es hinein und rühre es mit dem Kochlöffelstiel um. Nimm die Pfanne vom Feuer und zerteile die Klumpen gut. Setze sie danach wieder auf das Feuer und trockne es gut über dem Feuer ab. Kehre es gut um.</p>
+          <p>Wenn du Mörserküchlein backen willst, nimm Eier und gieße kaltes Wasser darüber. Lege sie danach in heißes Wasser und halte sie warm. Setze dann Wasser aufs Feuer, salze es und gib Schmalz hinzu. Lass es wie eine Brühe sieden.</p>
+          <p>Nimm gutes Mehl, streue es hinein und rühre es mit dem Kochlöffelstiel um. Nimm die Pfanne vom Feuer und zerteile die Klumpen gut. Setze sie danach wieder auf das Feuer und trockne es gut über dem Feuer ab. Kehre es gut um.</p>
           <p>Wenn du es gut abgetrocknet hast, gib es in eine andere Pfanne und schlage die oben genannten Eier nacheinander hinein. Rühre es um, bis der Teig glatt wird. Mit der Hand ist es besser als sonst. Wenn du die Eier hineinschlagen willst, trockne sie vorher gut ab, damit kein Wasser von den Eiern hineintropft. Mache den Teig sehr glatt und geschmeidig mit der Hand, wie Wachs, und mache ihn nicht zu dünn.</p>
           <p>Wenn du ihn einlegen willst, neige die Pfanne. Wenn der Teig ein wenig rinnt, ist er richtig. Nimm dann Teig, so groß wie ein Hühnerei, in einen eisernen Löffel und lege ihn in heißes Schmalz, doch nicht zu heiß. Lass sie langsam backen. Wenn sie aufplatzen, kehre sie auf die Kluft um und rüttel die Pfanne, setze sie ab.</p>
         </div>
@@ -155,8 +160,9 @@ Eine konkrete Größenangabe liefert der Text nur für die Portion: Teigstücke 
         <note type="gloss" target="#phw-104-orig" n="zech" resp="#fyndling">Bedeutet hier ‚zäh' oder ‚geschmeidig', also eine elastische und gut formbare Teigkonsistenz, ähnlich wie Wachs.</note>
         <note type="gloss" target="#phw-104-orig" n="auf kliebenn" resp="#fyndling">Wenn die Küchlein beim Braten aufplatzen oder sich öffnen, was typisch für Brandteig ist und eine luftige Textur erzeugt.</note>
         <note type="gloss" target="#phw-104-orig" n="klufft" resp="#fyndling">Bezeichnet die durch das Aufplatzen entstandene Öffnung oder Spalte im Küchlein. Das Umdrehen auf diese Stelle kann helfen, sie gleichmäßig zu garen oder zu bräunen.</note>
-        <note type="interpretive_choice" target="#phw-104-orig" n="wider hin nibertt auf das feur" resp="#fyndling">‚nibertt' ist unglossiert und ungeklärt - kein Wörterbucheintrag deckt die Stelle, und ob der ungewöhnliche Wortlaut auf die Handschrift selbst oder auf die gedruckte Edition zurückgeht, ist nicht geprüft. Die übersetzte Bedeutung ‚wieder auf das Feuer' bleibt vom Ergebnis unabhängig sinngemäß richtig.</note>
-        <note type="interpretive_choice" target="#phw-104-orig" n="haltzs waram (Dauer des Warmhaltens der Eier)" resp="#fyndling">Die Satzfolge im Text legt nahe, dass die Eier während der gesamten Zubereitung der Panade im warmen Wasser liegen bleiben, bis sie eingeschlagen werden.</note>
+        <note type="interpretive_choice" target="#phw-104-orig" n="wider hin nibertt auf das feur" resp="#fyndling" subtype="philological" cert="unknown">‚nibertt' ist unglossiert und ungeklärt - kein Wörterbucheintrag deckt die Stelle, und ob der ungewöhnliche Wortlaut auf die Handschrift selbst oder auf die gedruckte Edition zurückgeht, ist nicht geprüft. Die übersetzte Bedeutung ‚wieder auf das Feuer' bleibt vom Ergebnis unabhängig sinngemäß richtig.<list type="alternatives"><item>‚hinüber' als vermutete Bedeutung.<note type="rationale">Ein strukturell fast wortgleiches Parallelrezept in einer anderen Handschrift hat an derselben Stelle schlicht ‚wider über das Feuer' - das stützt die Vermutung, klärt aber nicht, ob es sich um eine spätere Fehllesart der Edition oder eine Eigenheit der Handschrift handelt. Am Faksimile ungeprüft.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-104-orig" n="haltzs waram (Dauer des Warmhaltens der Eier)" resp="#fyndling" subtype="contextual">Die Satzfolge im Text legt nahe, dass die Eier während der gesamten Zubereitung der Panade im warmen Wasser liegen bleiben, bis sie eingeschlagen werden.<list type="alternatives"><item>Für die heutige Praxis empfiehlt sich, die Eier erst kurz vor dem Einrühren warm zu legen statt über die ganze Panade-Zubereitung.<note type="rationale">Reine Lebensmittelsicherheits-Erwägung für die Nachkoch-Praxis, keine andere Lesart des Originaltexts.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-104-orig" n="dau ain ⟨zosen⟩ waser yber" resp="#fyndling" subtype="contextual">Setze Wasser (aufs Feuer): „jber tun“ heißt aufsetzen.<list type="alternatives"><item>„Gieße Wasser darüber“<note type="rationale">Frühere Lesart dieses Rezepts. Der fast wortgleiche Zwilling wo10-100 hat „thue ein wasser vber vnd saltz vnd schmaltz vnd lass sieden“.</note></item></list></note>
       </div>
     </back>
   </text>

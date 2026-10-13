@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,11 +126,11 @@ Praxis. Wenig Fleisch auf einmal braten, den Sud kurz halten und sofort serviere
         <note type="gloss" target="#rum-0049-orig" n="wolschmeckende Kraͤuter" resp="#fyndling">Allgemeine Bezeichnung für frische, aromatische Kräuter; der Text nennt keine bestimmte Sorte. Petersilie, Schnittlauch oder Kerbel sind ein moderner Vorschlag.</note>
         <note type="gloss" target="#rum-0049-orig" n="Preseindel" resp="#fyndling">Gerichtsname, den Rumpolt am Ende des Rezepts mit "man nennt es" einführt. Ein Wörterbuchbeleg wurde nicht gefunden, die Herkunft ist ungeklärt; die Bedeutung lässt sich nur aus der Beschreibung ableiten (dünne, geklopfte, gebeizte und in Butter geröstete Rindfleischscheiben).</note>
         <note type="gloss" target="#rum-0049-orig" n="beiß ein" resp="#fyndling">einbeizen: das Fleisch in eine saure Flüssigkeit legen, hier Weinessig, damit es mürbe wird. Belegt ist das Einbeizen in Essig etwa im Deutschen Wörterbuch ("einbeizen"); der Text nennt den Zweck selbst ("so wirt es fein muͤrb").</note>
-        <note type="interpretive_choice" target="#rum-0049-orig" n="Preseindel" resp="#fyndling">Druckform stehen gelassen; die Bedeutung ist ungeklärt und wird nur aus der Rezeptbeschreibung abgeleitet (dünne, geklopfte, gebeizte, in Butter geröstete Rindfleischscheiben).</note>
-        <note type="interpretive_choice" target="#rum-0049-orig" n="beiß es mit Weinessig ein" resp="#fyndling">beize es in Weinessig ein: das Fleisch in Säure legen, damit es mürbe wird. Einheitlich mit den Nachbarrezepten (rum-0044, rum-0047).</note>
-        <note type="interpretive_choice" target="#rum-0049-orig" n="Fleischstück und Mengen" resp="#fyndling">Der Text nennt nur Rindfleisch und keine Mengen; der Sud ist knapp zu halten.</note>
-        <note type="interpretive_choice" target="#rum-0049-orig" n="geuß die Butter wider herab" resp="#fyndling">Die Butter wird nur abgegossen, keine neue zugegeben; Grund und Ersatz nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0049-orig" n="laß damit kurtz einsieden" resp="#fyndling">kurz mitsieden lassen; die Dauer bleibt offen, als Richtwert ein bis drei Minuten.</note>
+        <note type="interpretive_choice" target="#rum-0049-orig" n="Preseindel" resp="#fyndling" subtype="contextual">Druckform stehen gelassen; die Bedeutung ist ungeklärt und wird nur aus der Rezeptbeschreibung abgeleitet (dünne, geklopfte, gebeizte, in Butter geröstete Rindfleischscheiben).<list type="alternatives"><item>Schnitzel oder flache Form<note type="rationale">Nicht belegt; ein Schnitzel wäre paniert gebraten, hier wird gebeizt und kurz im Sud gesotten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0049-orig" n="beiß es mit Weinessig ein" resp="#fyndling" subtype="lexical">beize es in Weinessig ein: das Fleisch in Säure legen, damit es mürbe wird. Einheitlich mit den Nachbarrezepten (rum-0044, rum-0047).<list type="alternatives"><item>lege es in Weinessig ein<note type="rationale">Ebenfalls sinngemäß, aber weniger genau; "beizen" nennt den Zweck (mürbe machen).</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0049-orig" n="Fleischstück und Mengen" resp="#fyndling" subtype="contextual">Der Text nennt nur Rindfleisch und keine Mengen; der Sud ist knapp zu halten.<list type="alternatives"><item>Rinderlende oder Keule, Essig und Brühe nur bis die Pfanne knapp bedeckt ist<note type="rationale">Moderne Praxis für dünne, schnell gegarte Scheiben; kein Textbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0049-orig" n="geuß die Butter wider herab" resp="#fyndling" subtype="contextual">Die Butter wird nur abgegossen, keine neue zugegeben; Grund und Ersatz nennt der Text nicht.<list type="alternatives"><item>etwas frische Butter zugeben<note type="rationale">Nicht im Text; nur wenn die Pfanne sonst ansetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0049-orig" n="laß damit kurtz einsieden" resp="#fyndling" subtype="contextual">kurz mitsieden lassen; die Dauer bleibt offen, als Richtwert ein bis drei Minuten.<list type="alternatives"><item>länger einkochen bis der Sud reduziert ist<note type="rationale">"Kurz" spricht dagegen; die Zeit ist eine Praxisschätzung, kein Textbeleg.</note></item></list></note>
       </div>
     </back>
   </text>

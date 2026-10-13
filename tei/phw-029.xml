@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,9 +131,9 @@ Praxis. Schneide jede Birne in zehn bis zwölf dünne Schnitze, wende sie in Meh
         <note type="gloss" target="#phw-029-orig" n="syttig" resp="#fyndling">‚Syttig‘ ist eine frühneuhochdeutsche Form von ‚sachte‘ und bedeutet hier ‚langsam‘ oder ‚schonend‘, also bei milder, gleichmäßiger Hitze backen.</note>
         <note type="gloss" target="#phw-029-orig" n="yber schlagenn" resp="#fyndling">‚Überschlagen‘ bedeutet hier: kurz abkühlen und lau werden lassen, bevor der letzte Zucker darübergestreut wird - nicht nochmals erhitzen oder glasieren.</note>
         <note type="gloss" target="#phw-029-orig" n="rerlach" resp="#fyndling">Zimt. Das Wort meint die Röhrchen der Zimtrinde, die für die Verwendung zerstoßen werden.</note>
-        <note type="interpretive_choice" target="#phw-029-orig" n="glett" resp="#fyndling">Als ‚Lagen/Schichten‘ übersetzt ('zway glett' = zwei Lagen der Birnenschnitze auf dem Tortenboden). Das Wort ist bei Hayer nicht eigens verzeichnet, aber das nahezu wortgleiche Rezept wo10-081 verwendet an derselben Stelle ‚gelegg/glegg‘ im selben Sinn ('allweg ein gelegg Birn ... ain glegg zway oder drey darauf thon').</note>
-        <note type="interpretive_choice" target="#phw-029-orig" n="yber schlagenn" resp="#fyndling">Als ‚kurz abkühlen, lau werden lassen‘ übersetzt - vor dem Anrichten soll die Torte lau werden, nicht nochmals erhitzt oder glasiert werden.</note>
-        <note type="interpretive_choice" target="#phw-029-orig" n="la daraus" resp="#fyndling">Bezieht sich auf das Herausschneiden der Schnitze aus der Birne ('schneyt ... 10 oder 12 schnitz la daraus' = schneide daraus zehn oder zwölf Schnitze); ein eigenes Wort für Kern oder Entkernen steht im Text nicht.</note>
+        <note type="interpretive_choice" target="#phw-029-orig" n="glett" resp="#fyndling" subtype="lexical">Als ‚Lagen/Schichten‘ übersetzt ('zway glett' = zwei Lagen der Birnenschnitze auf dem Tortenboden). Das Wort ist bei Hayer nicht eigens verzeichnet, aber das nahezu wortgleiche Rezept wo10-081 verwendet an derselben Stelle ‚gelegg/glegg‘ im selben Sinn ('allweg ein gelegg Birn ... ain glegg zway oder drey darauf thon').</note>
+        <note type="interpretive_choice" target="#phw-029-orig" n="yber schlagenn" resp="#fyndling" subtype="lexical">Als ‚kurz abkühlen, lau werden lassen‘ übersetzt - vor dem Anrichten soll die Torte lau werden, nicht nochmals erhitzt oder glasiert werden.<list type="alternatives"><item>Ein kurzes erneutes Erhitzen oder Glasieren vor dem Servieren.<note type="rationale">Frühere Lesart, verworfen: das nahezu wortgleiche Rezept wo10-081 übersetzt dieselbe Wendung an derselben Stelle ausdrücklich als sanftes Abkühlen, und ‚überschlagen‘ bedeutet bei Speisen und Flüssigkeiten im Dialektraum sonst durchgehend Abkühlen, nicht Erhitzen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-029-orig" n="la daraus" resp="#fyndling" subtype="contextual">Bezieht sich auf das Herausschneiden der Schnitze aus der Birne ('schneyt ... 10 oder 12 schnitz la daraus' = schneide daraus zehn oder zwölf Schnitze); ein eigenes Wort für Kern oder Entkernen steht im Text nicht.<list type="alternatives"><item>Die Birnen werden vor dem Schneiden entkernt.<note type="rationale">Praktisch naheliegend, aber im Transkript nicht benannt - die Parallelstellen im Buch (phw-024, phw-031) verwenden an vergleichbarer Stelle kein eigenes Entkernungs-Verb.</note></item></list></note>
       </div>
     </back>
   </text>

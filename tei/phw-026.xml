@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -151,9 +156,9 @@ Für Boskoop oder vergleichbar säuerliche, feste Äpfel: dämpfen, durch ein Tu
         <note type="gloss" target="#phw-026-orig" n="dauch" resp="#fyndling">Ein feines Tuch, durch das die gekochten Äpfel passiert werden.</note>
         <note type="gloss" target="#phw-026-orig" n="syttlich" resp="#fyndling">„Sachte“ oder „langsam“, bezieht sich auf eine milde, gleichmäßige Backtemperatur.</note>
         <note type="gloss" target="#phw-026-orig" n="gemach" resp="#fyndling">„Gemächlich“ oder „langsam“, ebenfalls eine Anweisung für eine moderate Backtemperatur.</note>
-        <note type="interpretive_choice" target="#phw-026-orig" n="schytzs" resp="#fyndling">„schütte es“. Das Verb ‚schytzs‘ ist eine dialektale Form von ‚schütten‘.</note>
-        <note type="interpretive_choice" target="#phw-026-orig" n="kyttena" resp="#fyndling">Quitten. Die phonetische Ähnlichkeit und der Kontext von Obst (Äpfel, Birnen) machen dies zur plausibelsten Lesart.</note>
-        <note type="interpretive_choice" target="#phw-026-orig" n="gerybes brott" resp="#fyndling">Wird ins Apfelmus eingerührt, um überschüssige Feuchtigkeit zu binden.</note>
+        <note type="interpretive_choice" target="#phw-026-orig" n="schytzs" resp="#fyndling" subtype="lexical">„schütte es“. Das Verb ‚schytzs‘ ist eine dialektale Form von ‚schütten‘.</note>
+        <note type="interpretive_choice" target="#phw-026-orig" n="kyttena" resp="#fyndling" subtype="lexical">Quitten. Die phonetische Ähnlichkeit und der Kontext von Obst (Äpfel, Birnen) machen dies zur plausibelsten Lesart.</note>
+        <note type="interpretive_choice" target="#phw-026-orig" n="gerybes brott" resp="#fyndling" subtype="contextual">Wird ins Apfelmus eingerührt, um überschüssige Feuchtigkeit zu binden.<list type="alternatives"><item>Als dünne Schicht auf den Tortenboden gestreut, um ihn vor dem Durchweichen zu schützen.<note type="rationale">Der Text legt weder Menge noch Zeitpunkt noch Zweck fest; beide Verwendungen sind mit dem Wortlaut vereinbar.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,9 +107,9 @@ Essig und Petersilie. Das „mit“ sagt nicht, wann die beiden dazukommen: scho
 Praxis. Rinderfüße beim Metzger vorbestellen. Für die Garzeit ist nach heutiger Erfahrung mit sechs bis acht Stunden zu rechnen; das ist eine Schätzung, der Text nennt keine. Salz und Wassermenge bleiben dem Koch überlassen. Weil frisch gekochtes Fleisch kalt gegessen wird, bleibt das Gericht bis zum Anrichten gekühlt.</note>
         <note type="gloss" target="#rum-0076-orig" n="abgesotten" resp="#fyndling">Von absieden, abkochen. Mit „kalt“ zusammen: gekocht und kalt gegessen, wie in der Nummer 75. Eine Garzeit nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0076-orig" n="gruͤner Pettersilgen" resp="#fyndling">Petersilie. Das „grün“ meint das Kraut; ohne diesen Zusatz steht Pettersilgen bei Rumpolt teils auch für die Wurzel.</note>
-        <note type="interpretive_choice" target="#rum-0076-orig" n="kalt abgesotten" resp="#fyndling">Die Füße werden abgekocht und kalt gegessen, wie in der Nummer 75 mit derselben Formel. Absieden heißt in den Wörterbüchern abkochen.</note>
-        <note type="interpretive_choice" target="#rum-0076-orig" n="mit Essig vnd gruͤner Pettersilgen" resp="#fyndling">Offen, wann Essig und Petersilie dazukommen. Das „mit“ lässt zu, dass sie schon im Sud mitkochen, die Füße also in Essigwasser abgesotten und danach kalt gegessen werden.</note>
-        <note type="interpretive_choice" target="#rum-0076-orig" n="Essig" resp="#fyndling">Der Text nennt weder die Art des Essigs noch eine Menge, auch nicht, ob die Petersilie gehackt wird.</note>
+        <note type="interpretive_choice" target="#rum-0076-orig" n="kalt abgesotten" resp="#fyndling" subtype="contextual">Die Füße werden abgekocht und kalt gegessen, wie in der Nummer 75 mit derselben Formel. Absieden heißt in den Wörterbüchern abkochen.<list type="alternatives"><item>Kaltansatz: die Füße im kalten Wasser aufsetzen und dann absieden<note type="rationale">Sprachlich möglich; bei Ochsenfüßen führt es zum selben Gericht, denn gegessen werden sie auch so kalt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0076-orig" n="mit Essig vnd gruͤner Pettersilgen" resp="#fyndling" subtype="contextual">Offen, wann Essig und Petersilie dazukommen. Das „mit“ lässt zu, dass sie schon im Sud mitkochen, die Füße also in Essigwasser abgesotten und danach kalt gegessen werden.<list type="alternatives"><item>Essig und frische Petersilie erst zum Anrichten über die kalten Füße geben<note type="rationale">Heutige Umsetzung, der die Zubereitungsnotiz folgt; vom Text ebenso gedeckt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0076-orig" n="Essig" resp="#fyndling" subtype="contextual">Der Text nennt weder die Art des Essigs noch eine Menge, auch nicht, ob die Petersilie gehackt wird.<list type="alternatives"><item>Weinessig, gehackte Petersilie zum Bestreuen, Mengen nach Geschmack<note type="rationale">Praktische heutige Setzung, keine Textaussage.</note></item></list></note>
       </div>
     </back>
   </text>

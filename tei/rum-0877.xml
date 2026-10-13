@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,7 +104,7 @@ Teig und Füllung. Beides nennt der Text nicht. Ausgeschrieben hat Rumpolt die k
 Praxis. Stör beim Fischhändler vorbestellen und bis zum Einschlagen kühl halten. Backtemperatur und Backdauer nennt Rumpolt nicht; am Fisch die Garprobe machen. Für die kalte Fassung die Pastete vollständig auskühlen lassen und gekühlt aufbewahren.</note>
         <note type="gloss" target="#rum-0877-orig" n="Stoͤr" resp="#fyndling">Rumpolt widmet den Stören, „groß vnd klein“, ein eigenes Kapitel mit elf Speisen; dies ist die dritte. Dem Hausen, ebenfalls einem Störfisch, gibt er ein eigenes Kapitel.</note>
         <note type="gloss" target="#rum-0877-orig" n="es sey warm oder kalt" resp="#fyndling">Rumpolt kennt kalt gegessene und warm aufgetragene Pasteten. Hier lässt er beides zu und hält beide Arten für gut.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
-        <note type="interpretive_choice" target="#rum-0877-orig" n="Pasteten" resp="#fyndling">Fisch in einer gebackenen Teighülle: So beschreibt Rumpolt die kalte Störpastete im Kapitel über Fischpasteten („schlags in ein Rucken Teig“). Übersetzung und Titel behalten das Wort „Pasteten“.</note>
+        <note type="interpretive_choice" target="#rum-0877-orig" n="Pasteten" resp="#fyndling" subtype="contextual">Fisch in einer gebackenen Teighülle: So beschreibt Rumpolt die kalte Störpastete im Kapitel über Fischpasteten („schlags in ein Rucken Teig“). Übersetzung und Titel behalten das Wort „Pasteten“.<list type="alternatives"><item>Pastete als Füllung oder Farce ohne Teighülle<note type="rationale">Der heutige Sprachgebrauch kennt Pastete auch als streichfähige Masse; Rumpolts Fischpasteten sind aber Teighüllen, und die Überschrift gibt keinen Anlass, davon abzuweichen.</note></item></list></note>
       </div>
     </back>
   </text>

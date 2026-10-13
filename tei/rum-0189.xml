@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,10 +111,10 @@ Praxis. Zwiebeln schneiden, die Keule rundum damit und mit Salz einreiben und ab
         <note type="gloss" target="#rum-0189-orig" n="steck jn an" resp="#fyndling">An den Spieß stecken, wie im Nachbarrezept Nr. 19 desselben Kapitels („steck die Braten daran“, rum-0168).</note>
         <note type="gloss" target="#rum-0189-orig" n="fein im Safft" resp="#fyndling">„fein“ heißt hier gut, ordentlich: Der Braten soll im eigenen Saft bleiben, also nicht austrocknen.</note>
         <note type="gloss" target="#rum-0189-orig" n="Tuͤrcken vnd Polacken" resp="#fyndling">Rumpolts eigene Herkunftsangabe. Vgl. Nr. 19 im selben Kapitel, einen Zwiebel-Salz-Spießbraten, den „die Tuͤrken gern“ essen (rum-0168), und die Hammelzungen auf polnische Art, bei denen er anmerkt, die Polacken äßen alles gern mit Zwiebeln (rum-0152).</note>
-        <note type="interpretive_choice" target="#rum-0189-orig" n="ein zu beissen" resp="#fyndling">Einbeizen: Rumpolt verwendet „einbeissen“ durchgehend für das Beizen von Fleisch (rum-0044 „eingebeißt“ mit „Beißbruͤh“, rum-0129 „eynzubeissen“, rum-0182 „beiß es eyn“); die Wörterbücher stützen „beißen“ im Sinn von „beizen“. Hier ist die Beize trocken, nur aus Zwiebeln und Salz.</note>
-        <note type="interpretive_choice" target="#rum-0189-orig" n="Castraun oder Hammel (Kapitel)" resp="#fyndling">Hammel, weil das Rezept im Kapitel „Von einem Castraun oder Hammel“ steht; der Rezepttext selbst sagt nur „Schlegel“.</note>
-        <note type="interpretive_choice" target="#rum-0189-orig" n="Zwiebeln beim Braten am Fleisch" resp="#fyndling">Der Text sagt nichts vom Abstreifen; Zwiebeln und Salz können am Fleisch bleiben und mitbraten.</note>
-        <note type="interpretive_choice" target="#rum-0189-orig" n="daß er fein im Safft bleibt" resp="#fyndling">Nur ein Ziel, keine Zeit- oder Hitzeangabe: Der Braten soll saftig bleiben. Wie das zu erreichen ist, sagt Rumpolt nicht.</note>
+        <note type="interpretive_choice" target="#rum-0189-orig" n="ein zu beissen" resp="#fyndling" subtype="lexical">Einbeizen: Rumpolt verwendet „einbeissen“ durchgehend für das Beizen von Fleisch (rum-0044 „eingebeißt“ mit „Beißbruͤh“, rum-0129 „eynzubeissen“, rum-0182 „beiß es eyn“); die Wörterbücher stützen „beißen“ im Sinn von „beizen“. Hier ist die Beize trocken, nur aus Zwiebeln und Salz.<list type="alternatives"><item>Einlegen oder marinieren in einer Flüssigkeit<note type="rationale">Trifft das Verfahren nur halb: Der Text nennt weder Essig noch Wasser noch Wein, das Fleisch wird nur eingerieben.</note></item><item>Allgemein einsalzen oder einreiben<note type="rationale">Beschreibt den Handgriff, verfehlt aber Rumpolts eigenes Verb, das er sonst für Beizen über Nacht gebraucht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0189-orig" n="Castraun oder Hammel (Kapitel)" resp="#fyndling" subtype="contextual">Hammel, weil das Rezept im Kapitel „Von einem Castraun oder Hammel“ steht; der Rezepttext selbst sagt nur „Schlegel“.<list type="alternatives"><item>Lamm<note type="rationale">Das Kapitel gibt Hammel vor; Lammkeule taugt nur als heutiger Ersatz, wenn kein Hammel zu bekommen ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0189-orig" n="Zwiebeln beim Braten am Fleisch" resp="#fyndling" subtype="contextual">Der Text sagt nichts vom Abstreifen; Zwiebeln und Salz können am Fleisch bleiben und mitbraten.<list type="alternatives"><item>Zwiebelreste vor dem Aufstecken abstreifen<note type="rationale">Heutige Praxis, damit sie über der Glut nicht verbrennen; bei Rumpolt nicht verlangt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0189-orig" n="daß er fein im Safft bleibt" resp="#fyndling" subtype="contextual">Nur ein Ziel, keine Zeit- oder Hitzeangabe: Der Braten soll saftig bleiben. Wie das zu erreichen ist, sagt Rumpolt nicht.<list type="alternatives"><item>Durchgegart, aber nicht trocken; eine ganze Hammelkeule braucht am Spieß etwa 2,5 bis 3 Stunden<note type="rationale">Heutiger Richtwert zum Nachkochen, am sichersten mit einem Bratenthermometer geprüft; nicht aus dem Text ableitbar.</note></item></list></note>
       </div>
     </back>
   </text>

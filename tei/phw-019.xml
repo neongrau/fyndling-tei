@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,9 +128,9 @@ Der Text nennt weder Backgefäß noch Backdauer, nur die Garprobe an der Oberfl�
         <note type="gloss" target="#phw-019-orig" n="bedalin" resp="#fyndling">Tortenboden - ein dünn ausgerollter Teigboden, der als Basis für die Torte dient.</note>
         <note type="gloss" target="#phw-019-orig" n="aufs aller dinest" resp="#fyndling">‚aufs Allerdünnste‘ - beschreibt die gewünschte Dicke des Tortenbodens.</note>
         <note type="gloss" target="#phw-019-orig" n="alerkielest" resp="#fyndling">‚aufs Allerkühlste‘ - bezieht sich auf eine sehr niedrige, schonende Backtemperatur, bei der die Torte eher trocknet und fest wird, als stark zu bräunen.</note>
-        <note type="interpretive_choice" target="#phw-019-orig" n="zimettrinde" resp="#fyndling">Zimtrinde, gestoßen. Der Text nennt explizit „Rinda“ (Rinde), was auf die Verwendung der ganzen Rinde hinweist, die dann zerkleinert wird, nicht auf fertiges Zimtpulver.</note>
-        <note type="interpretive_choice" target="#phw-019-orig" n="sa" resp="#fyndling">Im Schlusssatz „so hatt er sa gnuog“ bleibt das Wort „sa“ in der Übersetzung ohne eigene Entsprechung. Es könnte eine abgeschwächte Konsequenzpartikel sein (etwa „dann/so“), diese Lesart ist aber nicht verifiziert.</note>
-        <note type="interpretive_choice" target="#phw-019-orig" n="Backdauer und Backgefäß" resp="#fyndling">Der Text nennt weder ein Backgefäß noch eine Backdauer, sondern ausschließlich die Garprobe an der Oberfläche - wie bei den übrigen Torten dieses Buchs die einzige genannte Probe.</note>
+        <note type="interpretive_choice" target="#phw-019-orig" n="zimettrinde" resp="#fyndling" subtype="lexical">Zimtrinde, gestoßen. Der Text nennt explizit „Rinda“ (Rinde), was auf die Verwendung der ganzen Rinde hinweist, die dann zerkleinert wird, nicht auf fertiges Zimtpulver.</note>
+        <note type="interpretive_choice" target="#phw-019-orig" n="sa" resp="#fyndling" subtype="lexical">Im Schlusssatz „so hatt er sa gnuog“ bleibt das Wort „sa“ in der Übersetzung ohne eigene Entsprechung. Es könnte eine abgeschwächte Konsequenzpartikel sein (etwa „dann/so“), diese Lesart ist aber nicht verifiziert.<list type="alternatives"><item>mhd. „sa“ im Sinn von „sogleich, alsbald“<note type="rationale">Belegte Grundbedeutung des Wortes in älteren Quellen; passt an dieser Stelle aber schlecht, da der Satz keinen Zeitbezug trägt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-019-orig" n="Backdauer und Backgefäß" resp="#fyndling" subtype="contextual">Der Text nennt weder ein Backgefäß noch eine Backdauer, sondern ausschließlich die Garprobe an der Oberfläche - wie bei den übrigen Torten dieses Buchs die einzige genannte Probe.<list type="alternatives"><item>Zusätzlich zur Oberflächenprobe die Konsistenz der Füllung prüfen, bevor die Torte als fertig gilt<note type="rationale">Moderne Sicherheitsergänzung: Bei sehr niedriger Hitze und einer rahmigen, eierlosen Füllung kann die Oberfläche fest wirken, während das Innere noch zu flüssig ist. Der historische Text selbst verlangt das nicht.</note></item></list></note>
       </div>
     </back>
   </text>

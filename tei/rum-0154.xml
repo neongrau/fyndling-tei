@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,11 +112,11 @@ Praxis. Geräucherte Hammelzungen sind heute kaum zu bekommen. Die Zunge gar koc
         <note type="gloss" target="#rum-0154-orig" n="duͤrr" resp="#fyndling">Trocken, hart. Gemeint sind vermutlich hart durchgeräucherte Zungen; ein eigener Trocknungsschritt steht nicht im Text.</note>
         <note type="gloss" target="#rum-0154-orig" n="Koͤlkraut" resp="#fyndling">Kohl, Kohlkraut (FWB kol: Kohl, Kohlkopf). Welche Kohlsorte gemeint ist, bleibt offen.</note>
         <note type="gloss" target="#rum-0154-orig" n="gruͤn" resp="#fyndling">Beim Kraut: frisch, nicht eingemacht. Das ist ein Schluss aus dem Gegensatz zum gesäuerten Kraut, kein Wörterbuchbeleg.</note>
-        <note type="interpretive_choice" target="#rum-0154-orig" n="Zungen (Tier)" resp="#fyndling">Hammelzungen. Der Satz nennt kein Tier; das Rezept ist Nr. 5 im Kapitel Von einem Castraun oder Hammel, zwischen Hammelzunge (Nr. 4) und Hammelslunge (Nr. 6).</note>
-        <note type="interpretive_choice" target="#rum-0154-orig" n="in Pfeffer kochen" resp="#fyndling">In einer gewürzten, gebundenen Pfeffersoße garen: Pfeffer als Gericht (FWB pfeffer), wie in rum-0018 für Ochsenzunge.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0154-orig" n="wenn sie duͤrr seyn" resp="#fyndling">Wenn die Zungen trocken bzw. hart durchgeräuchert sind; dürr ist bei Rumpolt Zustandswort, Gegenpol zu grün/frisch (rum-0012: Kräuter „grün oder dürr“).</note>
-        <note type="interpretive_choice" target="#rum-0154-orig" n="Koͤlkraut … wenn das Kraut gruͤn ist" resp="#fyndling">Frisches Kohlkraut, nicht eingemachtes; grün = frisch wie bei den „grünen Kräutern“ im Korpus.</note>
-        <note type="interpretive_choice" target="#rum-0154-orig" n="geben vnter ein Koͤlkraut" resp="#fyndling">Die Zunge unter das Kraut geben; ob sie darin mitgart oder nur damit angerichtet wird, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0154-orig" n="Zungen (Tier)" resp="#fyndling" subtype="contextual">Hammelzungen. Der Satz nennt kein Tier; das Rezept ist Nr. 5 im Kapitel Von einem Castraun oder Hammel, zwischen Hammelzunge (Nr. 4) und Hammelslunge (Nr. 6).<list type="alternatives"><item>Geräucherte Zungen allgemein, gleich welches Tier<note type="rationale">Die Formel kehrt bei Rumpolt in mehreren Tierkapiteln wieder (Ochse: rum-0010); der Kapitelkontext bestimmt hier aber den Hammel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0154-orig" n="in Pfeffer kochen" resp="#fyndling" subtype="lexical">In einer gewürzten, gebundenen Pfeffersoße garen: Pfeffer als Gericht (FWB pfeffer), wie in rum-0018 für Ochsenzunge.<list type="alternatives"><item>Nur in einem mit Pfeffer gewürzten Sud ohne Bindung kochen<note type="rationale">Der Satz nennt kein Bindemittel; möglich, aber Rumpolts ausgeführter Zungen-Pfeffer ist gebunden.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0154-orig" n="wenn sie duͤrr seyn" resp="#fyndling" subtype="contextual">Wenn die Zungen trocken bzw. hart durchgeräuchert sind; dürr ist bei Rumpolt Zustandswort, Gegenpol zu grün/frisch (rum-0012: Kräuter „grün oder dürr“).<list type="alternatives"><item>Eigens luftgetrocknete Zungen<note type="rationale">Ein eigener Trocknungsschritt ist nicht belegt; der Text beschreibt einen Zustand.</note></item><item>Praxis: hartgeräucherte Zunge, die im Pfeffer noch gar werden muss<note type="rationale">Moderne Umsetzung der Bedingung; erklärt, warum gerade die trockenen Zungen im Pfeffer gekocht werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0154-orig" n="Koͤlkraut … wenn das Kraut gruͤn ist" resp="#fyndling" subtype="contextual">Frisches Kohlkraut, nicht eingemachtes; grün = frisch wie bei den „grünen Kräutern“ im Korpus.<list type="alternatives"><item>Weißkohl im Besonderen<note type="rationale">Der Druck sagt nur Kölkraut; eine Sorte ist nicht festgelegt.</note></item><item>Junges, früh geerntetes Kraut<note type="rationale">Jung steht nicht im Text; grün trägt nur die Bedeutung frisch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0154-orig" n="geben vnter ein Koͤlkraut" resp="#fyndling" subtype="contextual">Die Zunge unter das Kraut geben; ob sie darin mitgart oder nur damit angerichtet wird, sagt der Text nicht.<list type="alternatives"><item>Praxis: die gekochte Zunge in Scheiben mit dem Kraut anrichten oder darin kurz mitziehen lassen<note type="rationale">Moderne Umsetzung; beide Wege sind mit dem Wortlaut vereinbar.</note></item></list></note>
       </div>
     </back>
   </text>

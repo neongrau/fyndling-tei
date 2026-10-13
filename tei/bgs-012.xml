@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,7 +132,7 @@ Praxis. Birnen sauber zurechtschneiden - der Text verlangt kein Schälen, nur ei
         <note type="gloss" target="#bgs-012-orig" n="glueende koln" resp="#fyndling">Glühende Holzkohlen oder Holzscheite.</note>
         <note type="gloss" target="#bgs-012-orig" n="kueten" resp="#fyndling">Quitten, eine Kernobstfrucht, die gekocht oder gebacken wird.</note>
         <note type="gloss" target="#bgs-012-orig" n="Conf." resp="#fyndling">Vermutlich eine editorische oder handschriftliche Randmarke (Verweis/Kapitelmarkierung), keine Zutat oder Anweisung - daher in der Übersetzung nicht mitgeführt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#conf"/></note>
-        <note type="interpretive_choice" target="#bgs-012-orig" n="fuelle" resp="#fyndling">Die Lesart 'reiche, dicke Speise' wurde gewählt, da das Rezept ein eigenständiges Gericht beschreibt, das durch Einkochen verdickt wird, und nicht als Füllung für ein anderes Gericht dient.</note>
+        <note type="interpretive_choice" target="#bgs-012-orig" n="fuelle" resp="#fyndling">Die Lesart 'reiche, dicke Speise' wurde gewählt, da das Rezept ein eigenständiges Gericht beschreibt, das durch Einkochen verdickt wird, und nicht als Füllung für ein anderes Gericht dient.<list type="alternatives"><item>Eine Füllung für eine Pastete oder ein anderes Gebäck.<note type="rationale">Das Wort 'fuelle' kann auch 'Füllung' bedeuten, aber der Kontext des Rezepts, das keine weitere Hülle erwähnt, macht dies weniger wahrscheinlich als eine eigenständige Speise.</note></item></list></note>
       </div>
     </back>
   </text>

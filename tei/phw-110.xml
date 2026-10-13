@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,10 +134,10 @@ Koche Wasser mit Schmalz auf, rühre gutes Mehl ein und röste es unter Rühren,
         <note type="gloss" target="#phw-110-orig" n="dich gnog dunck" resp="#fyndling">„Dunck“ ist eine Form von „dünken“ (für richtig oder genug halten), „dich“ das Pronomen. „Bys dich gnog dunck“ heißt „bis dich genug dünkt“ - eine Ermessensfrage, keine feste Maßangabe. Dieselbe Wendung mit „dünken“ verwendet das Buch auch in anderen Rezepten für den Abschluss des Eierschlagens.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#dich"/></note>
         <note type="gloss" target="#phw-110-orig" n="bachs kalt aus" resp="#fyndling">„Bachs kalt aus“ heißt: das Gebäck erst backen, nachdem der Teig abgekühlt ist - und zwar in der Pfanne mit dem Schmalz, das schon zu Beginn verwendet wurde. Ein Ofen wird im ganzen Rezept nicht erwähnt.</note>
         <note type="gloss" target="#phw-110-orig" n="se" resp="#fyndling">„Se“ ist eine verkürzte Form von „säen“, hier im Sinne von „streuen“.</note>
-        <note type="interpretive_choice" target="#phw-110-orig" n="brentz baches" resp="#fyndling">Brandteig-Gebäck: „brentz“ bezieht sich auf das getrocknete, gebrannte beziehungsweise geröstete Mehl, „baches“ auf das Gebäck selbst.</note>
-        <note type="interpretive_choice" target="#phw-110-orig" n="mayrser" resp="#fyndling">Mörser: ein großes Gefäß, in dem der Teig mit den Eiern verschlagen wird.</note>
-        <note type="interpretive_choice" target="#phw-110-orig" n="bachs kalt aus" resp="#fyndling">Das Gebäck wird ausgebacken, nachdem der Teig abgekühlt ist - in derselben Pfanne mit Schmalz, mit der das Rezept beginnt.</note>
-        <note type="interpretive_choice" target="#phw-110-orig" n="Portionierung und Hitze beim Ausbacken" resp="#fyndling">Der Text nennt weder eine Portionsgröße noch eine Fetttemperatur für das Ausbacken.</note>
+        <note type="interpretive_choice" target="#phw-110-orig" n="brentz baches" resp="#fyndling" subtype="lexical">Brandteig-Gebäck: „brentz“ bezieht sich auf das getrocknete, gebrannte beziehungsweise geröstete Mehl, „baches“ auf das Gebäck selbst.<list type="alternatives"><item>Ein gebratenes Gebäck, bei dem sich „brenz“ auf die Bräunung in der Pfanne bezieht.<note type="rationale">Liegt inhaltlich nah an der Hauptlesart, da beide auf denselben Röstvorgang zielen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-110-orig" n="mayrser" resp="#fyndling" subtype="lexical">Mörser: ein großes Gefäß, in dem der Teig mit den Eiern verschlagen wird.<list type="alternatives"><item>Eine Backmulde oder ein Trog (mögliche Verballhornung von „Multer“).<note type="rationale">Die Wendung „schläg ayr dar ein“ passt besser zu einem Mörser als zu einer Backmulde.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-110-orig" n="bachs kalt aus" resp="#fyndling" subtype="contextual">Das Gebäck wird ausgebacken, nachdem der Teig abgekühlt ist - in derselben Pfanne mit Schmalz, mit der das Rezept beginnt.<list type="alternatives"><item>Der Teig wird aus einem kalten Ofen heraus gebacken.<note type="rationale">Ein Ofen kommt im gesamten Rezept nicht vor; Pfanne und Schmalz sind dagegen von der ersten Zeile an gesetzt.</note></item><item>In kühlem Schmalz ausbacken, so geht es auf.<note type="rationale">Das Wolfenbütteler Mörserküchlein legt den Teig „In ain kiels schmaltz“ (wo10-100), phw-106 „schlag sy fast kyel ein“; Staindl lässt die Küchlein auf schwacher Glut aufgehen („ſetz die pfañ nur auff ein gluͦt / ſo gehen ſie hüpſch auff“, std-200).</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-110-orig" n="Portionierung und Hitze beim Ausbacken" resp="#fyndling" subtype="contextual">Der Text nennt weder eine Portionsgröße noch eine Fetttemperatur für das Ausbacken.<list type="alternatives"><item>Der ganze abgekühlte Teig wird als ein einziges Stück gebacken, bei unbestimmter Hitze.<note type="rationale">Im Text nicht ausgeschlossen, aber ohne Stütze und praktisch schwerer durchzugaren als portionsweises Ausbacken.</note></item></list></note>
       </div>
     </back>
   </text>

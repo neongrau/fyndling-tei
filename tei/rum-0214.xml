@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -104,10 +109,10 @@ Praxis. Lammschulter oder Lammkeule in Stücke schneiden. Blut beim Metzger oder
         <note type="gloss" target="#rum-0214-orig" n="zusetzen" resp="#fyndling">„Setz es zu“ heißt: aufs Feuer setzen, ansetzen. Gemeint ist nicht, etwas zu etwas anderem hinzuzugeben.</note>
         <note type="gloss" target="#rum-0214-orig" n="kennt man es desto weniger" resp="#fyndling">kennen steht hier für „erkennen“: Man erkennt es umso weniger. Was genau weniger erkennbar wird, sagt der Satz nicht.</note>
         <note type="gloss" target="#rum-0214-orig" n="wolgeschmacker" resp="#fyndling">Komparativ: wohlschmeckender.</note>
-        <note type="interpretive_choice" target="#rum-0214-orig" n="kennt man es desto weniger" resp="#fyndling">Das Fleisch wird unkenntlicher: Man sieht ihm die Fleischart weniger an, weil das Blut es dunkel färbt. Das passt zum unmittelbar folgenden „wird desto schwärzer“.</note>
-        <note type="interpretive_choice" target="#rum-0214-orig" n="Schweiß (welches Blut)" resp="#fyndling">Lammblut: Das Rezept steht im Lammkapitel, und wo Rumpolt sonst Schweiß zum Fleisch setzt, ist es das Blut desselben Tiers (Spanferkel, Hase). Der Satz selbst nennt keine Tierart.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0214-orig" n="Garflüssigkeit" resp="#fyndling">Rumpolt nennt außer dem Blut keine Flüssigkeit. Möglich ist, dass das Fleisch nur im Blut, in kleiner Menge und eher geschmort als gekocht, gart.</note>
-        <note type="interpretive_choice" target="#rum-0214-orig" n="Fleischstück und Garzeit" resp="#fyndling">Der Text nennt weder das Stück noch den Zuschnitt noch die Dauer; „sieden“ heißt hier nur: garen, bis es fertig ist.</note>
+        <note type="interpretive_choice" target="#rum-0214-orig" n="kennt man es desto weniger" resp="#fyndling" subtype="contextual">Das Fleisch wird unkenntlicher: Man sieht ihm die Fleischart weniger an, weil das Blut es dunkel färbt. Das passt zum unmittelbar folgenden „wird desto schwärzer“.<list type="alternatives"><item>Der Eigengeschmack des Lamms tritt zurück<note type="rationale">Möglich, weil Rumpolt im selben Satz auch den Geschmack nennt („wolgeschmacker“). Der Text sagt aber nur den Komparativ und begründet ihn nicht; eine bewusste Überdeckung von Lammgeschmack ist eine Vermutung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0214-orig" n="Schweiß (welches Blut)" resp="#fyndling" subtype="contextual">Lammblut: Das Rezept steht im Lammkapitel, und wo Rumpolt sonst Schweiß zum Fleisch setzt, ist es das Blut desselben Tiers (Spanferkel, Hase). Der Satz selbst nennt keine Tierart.<list type="alternatives"><item>Blut eines anderen Schlachttiers, etwa vom Schwein<note type="rationale">Heute leichter zu bekommen als Lammblut und in der Praxis der naheliegende Ersatz; im Text nicht belegt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
+        <note type="interpretive_choice" target="#rum-0214-orig" n="Garflüssigkeit" resp="#fyndling" subtype="contextual">Rumpolt nennt außer dem Blut keine Flüssigkeit. Möglich ist, dass das Fleisch nur im Blut, in kleiner Menge und eher geschmort als gekocht, gart.<list type="alternatives"><item>Wasser oder Brühe dazu, mit dem Blut darin<note type="rationale">Praktisch leichter zu führen, weil reines Blut schnell stockt und ansetzt. Das ist eine moderne Ergänzung, keine Angabe des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0214-orig" n="Fleischstück und Garzeit" resp="#fyndling" subtype="contextual">Der Text nennt weder das Stück noch den Zuschnitt noch die Dauer; „sieden“ heißt hier nur: garen, bis es fertig ist.<list type="alternatives"><item>Lammschulter oder Lammkeule in Stücken, gesotten, bis das Fleisch weich ist<note type="rationale">Praktischer heutiger Weg; eine Minutenzahl lässt sich aus dem Text nicht ableiten.</note></item></list></note>
       </div>
     </back>
   </text>

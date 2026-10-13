@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,8 +102,8 @@ Vezmi bílky od vajec a bílú mouku, udělajž těsto, jako k tenátkuom sluš�
       <div type="annotations">
         <note type="gloss" target="#sev-120-orig" n="tenátka" resp="#fyndling">Wörtlich ‚Fäden‘ oder ‚Filamente‘. Bezeichnet hier eine Art dünner, frittierter Teigwaren oder Nudeln.</note>
         <note type="gloss" target="#sev-120-orig" n="šufan" resp="#fyndling">Eine Schöpfkelle oder ein Löffel, möglicherweise auch eine spezielle Lochkelle zum Formen der Fäden.</note>
-        <note type="interpretive_choice" target="#sev-120-orig" n="tenátka" resp="#fyndling">Als ‚Fäden‘ oder ‚Filamente‘ übersetzt, was auf die Form der frittierten Teigwaren hinweist.</note>
-        <note type="interpretive_choice" target="#sev-120-orig" n="šufan" resp="#fyndling">Als ‚Schöpfkelle‘ übersetzt, da dies ein gängiges Küchengerät ist, um flüssigen Teig zu portionieren.</note>
+        <note type="interpretive_choice" target="#sev-120-orig" n="tenátka" resp="#fyndling">Als ‚Fäden‘ oder ‚Filamente‘ übersetzt, was auf die Form der frittierten Teigwaren hinweist.<list type="alternatives"><item>Kleine Nudeln oder Spätzle<note type="rationale">Die Bezeichnung könnte auch auf eine Art von Nudeln hindeuten, die in heißem Fett statt Wasser gegart werden, oder auf eine frühe Form von Spätzle.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-120-orig" n="šufan" resp="#fyndling">Als ‚Schöpfkelle‘ übersetzt, da dies ein gängiges Küchengerät ist, um flüssigen Teig zu portionieren.<list type="alternatives"><item>Lochkelle oder Sieb<note type="rationale">Es könnte sich auch um eine spezielle Kelle mit Löchern handeln, durch die der Teig gedrückt wird, um die ‚Fäden‘ zu erzeugen, ähnlich einer Spätzlehobel.</note></item></list></note>
       </div>
     </back>
   </text>

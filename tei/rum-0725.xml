@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,8 +107,8 @@ Praxis. Wer dem Kapaun-Rezept rum-0673 folgt, gart die Hühner in Wasser oder Br
         <note type="gloss" target="#rum-0725-orig" n="gelb" resp="#fyndling">Ein Farbmittel nennt der Text hier nicht. Beim Kapaun nimmt Rumpolt einmal Eidotter in einer Weinbrühe (rum-0668), bei den alten Hennen auf ungarische Art steht Safran (rum-0690), beim Kapaun mit Zitronen lässt er nur „weiß oder gelb“ wählen (rum-0673).</note>
         <note type="gloss" target="#rum-0725-orig" n="Limonien" resp="#fyndling">Zitronen.</note>
         <note type="gloss" target="#rum-0725-orig" n="wie vorhin vermeldt ist von einem Kappaunen zu machen" resp="#fyndling">Rückverweis ins Kapitel vom Kapaun. Dort trägt keine Nummer alle drei Merkmale zugleich: Zitronen und die Wahl „weiß oder gelb“ stehen beim Kapaun in saurer Zitronensauce (rum-0673), „ungarisch“ beim schwarzen Kapaun (rum-0651), „gelb“ bei rum-0649 und rum-0668.</note>
-        <note type="interpretive_choice" target="#rum-0725-orig" n="wie vorhin vermeldt ist von einem Kappaunen zu machen" resp="#fyndling">Der Verweis bündelt mehrere Kapaun-Rezepte; am nächsten liegt der Kapaun in saurer Zwiebel-Zitronen-Sauce (rum-0673), weil er Zitronen und die Wahl „weiß oder gelb“ verbindet. „Ungarisch“ steht dort allerdings nicht.</note>
-        <note type="interpretive_choice" target="#rum-0725-orig" n="gelb" resp="#fyndling">Der Text nennt kein Farbmittel. Rumpolts eigener Kapaun-Weg ist eine Weinbrühe mit Eidottern (rum-0668); beim Kapaun mit Zitronen (rum-0673) und beim gelben Kapaun mit Pflaumen (rum-0649) steht nur „gelb“ ohne Mittel.</note>
+        <note type="interpretive_choice" target="#rum-0725-orig" n="wie vorhin vermeldt ist von einem Kappaunen zu machen" resp="#fyndling" subtype="contextual">Der Verweis bündelt mehrere Kapaun-Rezepte; am nächsten liegt der Kapaun in saurer Zwiebel-Zitronen-Sauce (rum-0673), weil er Zitronen und die Wahl „weiß oder gelb“ verbindet. „Ungarisch“ steht dort allerdings nicht.<list type="alternatives"><item>Gemeint ist der gelbe Kapaun mit ungarischen Pflaumen, Zibeben, Essig und Zucker (rum-0649).<note type="rationale">Einziges Kapaun-Rezept, das „ungarisch“ (im Pflaumennamen) und „machs gelb“ trägt; Zitronen kommen dort aber nicht vor.</note></item><item>Rumpolt meint das Muster, das er bei den alten Hennen ausschreibt (rum-0690: auf ungarisch gelb mit Äpfeln, Zwiebeln, Zitronen), und „Kapaun“ ist lockere Rede.<note type="rationale">Nur dort stehen alle drei Merkmale zusammen; der Text sagt aber ausdrücklich „von einem Kappaunen“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0725-orig" n="gelb" resp="#fyndling" subtype="contextual">Der Text nennt kein Farbmittel. Rumpolts eigener Kapaun-Weg ist eine Weinbrühe mit Eidottern (rum-0668); beim Kapaun mit Zitronen (rum-0673) und beim gelben Kapaun mit Pflaumen (rum-0649) steht nur „gelb“ ohne Mittel.<list type="alternatives"><item>Eine Prise Safran in der Sauce, das Mehl nur hell angeschwitzt.<note type="rationale">Praxisnah und bei den alten Hennen auf ungarische Art belegt (rum-0690); für diese Nummer ist Safran aber ergänzt, nicht Text.</note></item></list></note>
       </div>
     </back>
   </text>

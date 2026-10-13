@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,9 +136,9 @@ Sechs Eier unter Rühren langsam erwärmen, bis sie stocken, kurz abtropfen lass
         <note type="gloss" target="#phw-130-orig" n="wein berla" resp="#fyndling">‚Weinbeeren‘ sind hier Rosinen, also getrocknete Weintrauben.</note>
         <note type="gloss" target="#phw-130-orig" n="bledla" resp="#fyndling">Diminutiv von ‚Blatt‘; hier bezeichnet es die geformten Stücke der Masse. Ob damit flache Küchlein oder dünne, eingeschlagene Teigblättchen gemeint sind, lässt sich am Text allein nicht sicher entscheiden.</note>
         <note type="gloss" target="#phw-130-orig" n="bachs sy" resp="#fyndling">Das frühneuhochdeutsche Wort ‚bachen‘ konnte sowohl das Backen im Ofen als auch das Ausbacken in Fett bedeuten.</note>
-        <note type="interpretive_choice" target="#phw-130-orig" n="ayr milich" resp="#fyndling">Eine gekochte, abgetropfte Ei-Masse, wie sie an anderer Stelle im selben Kochbuch ausführlich beschrieben wird: Eier (mit Rahm) werden erhitzt, bis sie stocken, und die Flüssigkeit wird abgetropft.</note>
-        <note type="interpretive_choice" target="#phw-130-orig" n="bledla" resp="#fyndling">Kleine, direkt aus der Masse geformte Stücke oder Fladen, ohne eigene Teighülle.</note>
-        <note type="interpretive_choice" target="#phw-130-orig" n="bachs sy" resp="#fyndling">‚backe sie‘ im Sinne von Ausbacken in Fett/Schmalz.</note>
+        <note type="interpretive_choice" target="#phw-130-orig" n="ayr milich" resp="#fyndling" subtype="contextual">Eine gekochte, abgetropfte Ei-Masse, wie sie an anderer Stelle im selben Kochbuch ausführlich beschrieben wird: Eier (mit Rahm) werden erhitzt, bis sie stocken, und die Flüssigkeit wird abgetropft.<list type="alternatives"><item>Eine einfache, rohe Ei-Flüssigkeit ohne vorheriges Kochen.<note type="rationale">Der Text dieses Rezepts beschreibt den Kochvorgang selbst nicht, sondern setzt ihn nur mit ‚mach ain rechte ayr milich‘ voraus - denkbar, dass er dem damaligen Publikum als bekanntes Standardverfahren galt und keine Erklärung brauchte. Wie genau die fertige Eier-Milch anschließend mit Brot und Gewürzen zur Masse verarbeitet wird, sagt der Text nicht ausdrücklich.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-130-orig" n="bledla" resp="#fyndling" subtype="philological">Kleine, direkt aus der Masse geformte Stücke oder Fladen, ohne eigene Teighülle.<list type="alternatives"><item>Dünne, ausgerollte Teigblättchen, in die die Masse eingeschlagen wird.<note type="rationale">Das Kochbuch löst ‚bledla‘ an anderer Stelle ausdrücklich als dünnes Teigblatt auf, in das eine Füllung eingeschlagen wird. Gegen diese Lesart spricht hier, dass dieses Rezept - anders als jenes andere - keinerlei Teig- oder Mehlzutat nennt; ein Teigblatt müsste also aus einer nicht beschriebenen Zutat entstehen. Am Faksimile nicht weiter zu klären.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-130-orig" n="bachs sy" resp="#fyndling" subtype="lexical">‚backe sie‘ im Sinne von Ausbacken in Fett/Schmalz.<list type="alternatives"><item>‚backe sie‘ im Sinne von Backen im Ofen.<note type="rationale">Das frühneuhochdeutsche ‚bachen‘ deckt in diesem Kochbuch nachweislich beide Bedeutungen ab, je nach Kontext (Tortenpfanne/Ofen einerseits, Schmalz andererseits); die Formulierung ‚nit zu hays‘ entscheidet nicht zwischen den Medien, da sie in diesem Buch bei beiden vorkommt.</note></item></list></note>
       </div>
     </back>
   </text>

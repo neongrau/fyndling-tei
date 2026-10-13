@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@ Praxis. Einen küchenfertigen Kapaun im Ganzen oder in Stücken in Wasser bei sc
         <note type="gloss" target="#rum-0664-orig" n="machs ab" resp="#fyndling">„Würze es ab“; Rumpolt nennt hier nur Pfeffer und Safran.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#machs-ab"/></note>
         <note type="gloss" target="#rum-0664-orig" n="verpfeffers nicht" resp="#fyndling">„Überpfeffere es nicht“. Grimms Wörterbuch erklärt „verpfeffern“ als „durch pfeffer schmackhaft machen (besonders in übermäsziger weise)“, das Pfälzische und das Rheinische Wörterbuch kennen es als „übermäßig pfeffern“. Pfeffer gehört also hinein, nur nicht zu viel.</note>
         <note type="gloss" target="#rum-0664-orig" n="auff Polisch gekocht" resp="#fyndling">Rumpolts eigene Herkunftsangabe. Er gebraucht sie mehrfach für Gerichte in durchgestrichener Zwiebelbrühe; bei den Hammelzungen begründet er sie mit „denn die Polacken essen alles gern mit Zwibeln“.</note>
-        <note type="interpretive_choice" target="#rum-0664-orig" n="Du magst es suͤß machen" resp="#fyndling">Das Süßen ist freigestellt, ein Süßungsmittel nennt der Text nicht; deshalb steht keins in der Zutatenliste.</note>
-        <note type="interpretive_choice" target="#rum-0664-orig" n="geuß die Zwibeln vber den Kappaunen" resp="#fyndling">Das Zwiebelmus kommt zum Kapaun mitsamt der Brühe, in der er gesotten ist, und dickt durch erneutes Sieden ein; der Text sagt nur „Laß widerumb sieden/ biß daß dick wirt“.</note>
-        <note type="interpretive_choice" target="#rum-0664-orig" n="setz jhn zu" resp="#fyndling">Der Kapaun wird im Ganzen gesotten und angerichtet; der Text erwähnt kein Zerteilen.</note>
+        <note type="interpretive_choice" target="#rum-0664-orig" n="Du magst es suͤß machen" resp="#fyndling" subtype="contextual">Das Süßen ist freigestellt, ein Süßungsmittel nennt der Text nicht; deshalb steht keins in der Zutatenliste.<list type="alternatives"><item>Mit ein wenig Zucker süßen<note type="rationale">Beim Hecht auf polnische Art setzt Rumpolt derselben Zwiebelbrühe „ein wenig Zucker“ zu. Das ist eine naheliegende Parallele, für dieses Rezept aber nicht gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0664-orig" n="geuß die Zwibeln vber den Kappaunen" resp="#fyndling" subtype="contextual">Das Zwiebelmus kommt zum Kapaun mitsamt der Brühe, in der er gesotten ist, und dickt durch erneutes Sieden ein; der Text sagt nur „Laß widerumb sieden/ biß daß dick wirt“.<list type="alternatives"><item>Kapaun herausnehmen, das Zwiebelmus mit etwas Brühe erhitzen und eindicken, den Kapaun wieder hineinlegen<note type="rationale">Praktischer zu steuern, weil die Sauce nicht in viel Brühe verdünnt wird. Der Text schreibt keine der beiden Reihenfolgen vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0664-orig" n="setz jhn zu" resp="#fyndling" subtype="contextual">Der Kapaun wird im Ganzen gesotten und angerichtet; der Text erwähnt kein Zerteilen.<list type="alternatives"><item>Küchenfertigen Kapaun in Stücke teilen und so sieden<note type="rationale">Kürzere Garzeit und leichter in der Sauce zu verteilen. Andere Kapaunrezepte Rumpolts lassen den Vogel ausdrücklich zerlegen, dieses nicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,9 +125,9 @@
         <note type="gloss" target="#men-109-orig" n="brouet" resp="#fyndling">Ein dicker, oft gebundener und stark gewürzter Eintopf oder eine Sauce, nicht eine klare Suppe.</note>
         <note type="gloss" target="#men-109-orig" n="estamine" resp="#fyndling">Ein feines Tuch zum Seihen oder Passieren.</note>
         <note type="gloss" target="#men-109-orig" n="graine" resp="#fyndling">Kurzform für 'graine de paradis' (Paradieskörner), ein pfeffrig-kardamomartiges Gewürz.</note>
-        <note type="interpretive_choice" target="#men-109-orig" n="brouet" resp="#fyndling">Als 'Brouet' wird ein dicker, gebundener und stark gewürzter Eintopf oder eine Sauce verstanden, nicht eine klare Brühe.</note>
-        <note type="interpretive_choice" target="#men-109-orig" n="graine" resp="#fyndling">Der Begriff 'graine' wird hier als 'Paradieskörner' (graine de paradis) interpretiert, ein häufiges Gewürz der Zeit.</note>
-        <note type="interpretive_choice" target="#men-109-orig" n="broyez" resp="#fyndling">Das Zerstoßen ('broyez') von Leber, Kastanien und Eigelb impliziert die Verwendung eines großen Fleischmörsers, um eine feine Paste zu erzielen.</note>
+        <note type="interpretive_choice" target="#men-109-orig" n="brouet" resp="#fyndling">Als 'Brouet' wird ein dicker, gebundener und stark gewürzter Eintopf oder eine Sauce verstanden, nicht eine klare Brühe.<list type="alternatives"><item>Eine alternative Lesart wäre eine klare Brühe oder Suppe.<note type="rationale">Der moderne Begriff 'Bouillon' könnte fälschlicherweise eine klare Suppe suggerieren, was jedoch nicht der mittelalterlichen Bedeutung von 'Brouet' entspricht.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-109-orig" n="graine" resp="#fyndling">Der Begriff 'graine' wird hier als 'Paradieskörner' (graine de paradis) interpretiert, ein häufiges Gewürz der Zeit.<list type="alternatives"><item>Eine andere Lesart wäre eine generische 'Saat' oder 'Samen'.<note type="rationale">Ohne weitere Spezifikation könnte 'graine' auch andere Samen meinen, doch im Kontext der Gewürzliste ist 'Paradieskörner' die historisch plausibelste Interpretation für die französische Küche des 14. Jahrhunderts.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-109-orig" n="broyez" resp="#fyndling">Das Zerstoßen ('broyez') von Leber, Kastanien und Eigelb impliziert die Verwendung eines großen Fleischmörsers, um eine feine Paste zu erzielen.<list type="alternatives"><item>Es könnte auch das Zerstoßen in einem kleineren Gewürzmörser gemeint sein.<note type="rationale">Ein kleinerer Mörser wäre für die Menge und Konsistenz der genannten Zutaten jedoch unpraktisch und würde nicht die gewünschte feine Textur ergeben.</note></item></list></note>
       </div>
     </back>
   </text>

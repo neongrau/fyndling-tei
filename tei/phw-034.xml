@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -131,9 +136,9 @@ Praxis. Sechs bis sieben Quitten ungeschält im Ganzen sieden, bis sie sich mit 
         <note type="gloss" target="#phw-034-orig" n="neuge legtten air" resp="#fyndling">Frisch gelegte Eier, die als Bindemittel und zur Verfeinerung der Masse dienen.</note>
         <note type="gloss" target="#phw-034-orig" n="gewirtzs" resp="#fyndling">Allgemeine Bezeichnung für Gewürze. Typische Gewürze der Zeit für süße Speisen waren Zimt, Ingwer und Muskatblüte.</note>
         <note type="gloss" target="#phw-034-orig" n="bedalin" resp="#fyndling">Ein dünn ausgerollter Teigboden, der als Basis für die Torte dient.</note>
-        <note type="interpretive_choice" target="#phw-034-orig" n="seut sy vor" resp="#fyndling">Der Text nennt keine Dauer oder Garprobe für das Vorsieden der ganzen Quitten. Sinnvoll ist, so lange zu sieden, bis sich die Frucht mit einem spitzen Messer leicht durchstechen lässt (praktisch meist 30 bis 40 Minuten, je nach Größe).</note>
-        <note type="interpretive_choice" target="#phw-034-orig" n="las lanng sam bachenn" resp="#fyndling">Der Text nennt außer 'langsam' keine Temperatur oder Backzeit. In der Praxis passt eine moderate Ofenhitze von etwa 160 bis 180 °C für rund 45 bis 60 Minuten, bis die Füllung gestockt und der Boden durchgebacken ist.</note>
-        <note type="interpretive_choice" target="#phw-034-orig" n="vor es duß schelst jn aim waser" resp="#fyndling">Unklar bleibt, ob sich 'jn aim waser' (in einem Wasser) auf das vorangehende Sieden oder auf das nachfolgende Schälen bezieht - beide Lesarten sind mit dem Satzbau vereinbar.</note>
+        <note type="interpretive_choice" target="#phw-034-orig" n="seut sy vor" resp="#fyndling" subtype="contextual">Der Text nennt keine Dauer oder Garprobe für das Vorsieden der ganzen Quitten. Sinnvoll ist, so lange zu sieden, bis sich die Frucht mit einem spitzen Messer leicht durchstechen lässt (praktisch meist 30 bis 40 Minuten, je nach Größe).<list type="alternatives"><item>Eine feste Minutenzahl vorzugeben wäre unbelegt.<note type="rationale">Der Text lässt die genaue Dauer offen und überlässt sie der eigenen Küchenpraxis.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-034-orig" n="las lanng sam bachenn" resp="#fyndling" subtype="contextual">Der Text nennt außer 'langsam' keine Temperatur oder Backzeit. In der Praxis passt eine moderate Ofenhitze von etwa 160 bis 180 °C für rund 45 bis 60 Minuten, bis die Füllung gestockt und der Boden durchgebacken ist.<list type="alternatives"><item>Ebenso denkbar ist eine Tortenpfanne mit Glut auf dem Deckel statt eines Ofens.<note type="rationale">Die Anweisung nennt nur die Hitzeführung ('langsam'), nicht das Gerät - beide Umsetzungen sind mit dem Text vereinbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-034-orig" n="vor es duß schelst jn aim waser" resp="#fyndling" subtype="contextual">Unklar bleibt, ob sich 'jn aim waser' (in einem Wasser) auf das vorangehende Sieden oder auf das nachfolgende Schälen bezieht - beide Lesarten sind mit dem Satzbau vereinbar.<list type="alternatives"><item>Bezug aufs Schälen: Die Quitten werden nach dem Sieden in Wasser geschält.<note type="rationale">Passt zur gängigen Praxis, heiße Frucht unter Wasser leichter zu schälen; dies ist die im Rezept gewählte Lesart.</note></item></list></note>
       </div>
     </back>
   </text>

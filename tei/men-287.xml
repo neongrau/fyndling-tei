@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,8 +110,8 @@
         <note type="gloss" target="#men-287-orig" n="vertjus" resp="#fyndling">Verjus, der Saft unreifer Weintrauben, der als Säuerungsmittel dient.</note>
         <note type="gloss" target="#men-287-orig" n="boulez" resp="#fyndling">Aufkochen.</note>
         <note type="gloss" target="#men-287-orig" n="le tiers" resp="#fyndling">Ein Drittel.</note>
-        <note type="interpretive_choice" target="#men-287-orig" n="Broyez" resp="#fyndling">Zerstoßen im Mörser.</note>
-        <note type="interpretive_choice" target="#men-287-orig" n="deffaictes de" resp="#fyndling">Auflösen oder vermischen.</note>
+        <note type="interpretive_choice" target="#men-287-orig" n="Broyez" resp="#fyndling">Zerstoßen im Mörser.<list type="alternatives"><item>Mahlen oder Pürieren in einer modernen Küchenmaschine.<note type="rationale">Der Mörser war das Standardwerkzeug der Zeit für solche Aufgaben, aber moderne Geräte erzielen ähnliche Ergebnisse effizienter und sind für die meisten Nachkocher praktikabler.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-287-orig" n="deffaictes de" resp="#fyndling">Auflösen oder vermischen.<list type="alternatives"><item>Verdünnen.<note type="rationale">Die Mandeln, Ingwer und Knoblauch bilden eine Paste, die mit dem Verjus aufgelöst oder vermischt wird, um eine flüssigere Sauce zu erhalten. 'Verdünnen' ist auch möglich, aber 'auflösen/vermischen' beschreibt den Prozess des Einarbeitens der Paste in die Flüssigkeit genauer.</note></item></list></note>
       </div>
     </back>
   </text>

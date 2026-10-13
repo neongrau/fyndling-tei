@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,8 +112,8 @@
         <note type="gloss" target="#wes-002-orig" n="soveyen" resp="#fyndling">Ein mittelniederländischer Begriff, der sowohl eine dickflüssige Suppe als auch eine Sauce bezeichnen kann.</note>
         <note type="gloss" target="#wes-002-orig" n="ghesoden" resp="#fyndling">Gekocht oder gesotten.</note>
         <note type="gloss" target="#wes-002-orig" n="ghefrijt" resp="#fyndling">Gebraten oder frittiert.</note>
-        <note type="interpretive_choice" target="#wes-002-orig" n="soveyen" resp="#fyndling">Als ‚Sauce' übersetzt, da dies besser zu gebratenen Kapaunn als Hauptgericht passt und eine dickflüssige Beilage impliziert.</note>
-        <note type="interpretive_choice" target="#wes-002-orig" n="ghefrijt" resp="#fyndling">Als ‚gebraten' übersetzt, da dies eine gängige Methode ist, um hartgekochte Eigelbe zuzubereiten und eine ansprechende Garnitur ergibt.</note>
+        <note type="interpretive_choice" target="#wes-002-orig" n="soveyen" resp="#fyndling">Als ‚Sauce' übersetzt, da dies besser zu gebratenen Kapaunn als Hauptgericht passt und eine dickflüssige Beilage impliziert.<list type="alternatives"><item>Eine dickflüssige Suppe.<note type="rationale">Der Begriff ‚soveye' kann auch eine Suppe bedeuten. In diesem Fall wäre es eine sehr reichhaltige, gebundene Suppe, in der die Kapaun serviert werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#wes-002-orig" n="ghefrijt" resp="#fyndling">Als ‚gebraten' übersetzt, da dies eine gängige Methode ist, um hartgekochte Eigelbe zuzubereiten und eine ansprechende Garnitur ergibt.<list type="alternatives"><item>Frittiert.<note type="rationale">Der Begriff kann auch ‚frittiert' bedeuten. Dies wäre eine aufwendigere Zubereitung, aber ebenfalls denkbar für eine festliche Speise.</note></item></list></note>
       </div>
     </back>
   </text>

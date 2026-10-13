@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -89,8 +94,8 @@ Praxis. Eine Anleitung lässt sich aus diesem Eintrag nicht gewinnen; Hitze, Ger
         <note type="gloss" target="#rum-0781-orig" n="schwartz" resp="#fyndling">„Schwarz“ nennt Rumpolt beim Geflügel Saucen, die mit dem Blut des Tieres („Schweiß“) gemacht werden, so beim Kapaun (rum-0651) und beim Haselhuhn (rum-0741). Für diese Nummer nennt der Druck kein Verfahren; die Parallelen sind ein Vergleich, keine Angabe dieses Rezepts.</note>
         <note type="gloss" target="#rum-0781-orig" n="auff Vngerisch" resp="#fyndling">„Auf ungarische Art“ ist Rumpolts eigene Herkunftsangabe; was sie genau meint, erklärt er hier nicht. Beim gekochten Kapaun in schwarzer Sauce schreibt er: „Also macht mans fuͤr die Vngerischen Herrn“ (rum-0671).</note>
         <note type="gloss" target="#rum-0781-orig" n="zugericht" resp="#fyndling">„Zubereitet“. Anders als bei der Nachbarnummer 9 („eyngemacht“) sagt die Überschrift nicht, dass die Tauben in einer Sauce gegart werden.</note>
-        <note type="interpretive_choice" target="#rum-0781-orig" n="schwartz" resp="#fyndling">Historisch am nächsten liegt eine schwarze Sauce wie bei Rumpolts übrigem Geflügel „schwartz auff Vngerisch“, mit dem Blut des Vogels (rum-0651, rum-0741). Für diese Nummer steht das nicht da; deshalb bleibt es im Text beim bloßen „schwarz“, ohne Blut, Gewürz oder Brot zu ergänzen.</note>
-        <note type="interpretive_choice" target="#rum-0781-orig" n="auff Vngerisch" resp="#fyndling">Wörtlich als Rumpolts Herkunftsangabe „auf ungarische Art“ wiedergeben, ohne Deutung.</note>
+        <note type="interpretive_choice" target="#rum-0781-orig" n="schwartz" resp="#fyndling" subtype="contextual">Historisch am nächsten liegt eine schwarze Sauce wie bei Rumpolts übrigem Geflügel „schwartz auff Vngerisch“, mit dem Blut des Vogels (rum-0651, rum-0741). Für diese Nummer steht das nicht da; deshalb bleibt es im Text beim bloßen „schwarz“, ohne Blut, Gewürz oder Brot zu ergänzen.<list type="alternatives"><item>Nichts ergänzen, „schwarz“ wörtlich stehen lassen<note type="rationale">So im Text und in der Praxis gehandhabt: Die Überschrift nennt weder Farbmittel noch Technik.</note></item><item>Dunkle Färbung durch kleine schwarze Rosinen und Pfeffer<note type="rationale">Im selben Kapitel nennt Nr. 2 (rum-0773) für eingemachte Tauben kleine schwarze Rosinen, Pfeffer oder ein wenig Blut. Ein Zusammenhang mit Nr. 10 ist nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0781-orig" n="auff Vngerisch" resp="#fyndling" subtype="contextual">Wörtlich als Rumpolts Herkunftsangabe „auf ungarische Art“ wiedergeben, ohne Deutung.<list type="alternatives"><item>Deutung als Paprikagericht nach Art der heutigen ungarischen Küche<note type="rationale">Der Text nennt keinen Paprika und kein Gewürz; eine solche Deutung wäre aus der heutigen Küche zurückgelesen.</note></item></list></note>
       </div>
     </back>
   </text>

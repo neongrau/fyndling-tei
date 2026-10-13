@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,12 +127,12 @@ Praxis. Zwei Töpfe (oder einer nacheinander), eine Pfanne oder ein Löffel für
         <note type="gloss" target="#rum-0028-orig" n="brenn ein wenig Mehl ein" resp="#fyndling">Einbrennen: Mehl in Fett anschwitzen und in die Brühe rühren, wie in rum-0016 und rum-0022. Ein Fett dafür nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0028-orig" n="vnzulassene Butter" resp="#fyndling">Unzerlassen, also nicht geschmolzen: frische Butter, kein Butterschmalz. Im Buch einheitlich so gebraucht (rum-0015, rum-0016).</note>
         <note type="gloss" target="#rum-0028-orig" n="laß darmit ein starcken Sudt auffthun" resp="#fyndling">Lass es damit kräftig aufwallen, also einmal richtig aufkochen.</note>
-        <note type="interpretive_choice" target="#rum-0028-orig" n="Licht" resp="#fyndling">Offen, am ehesten der Schlund (Speiseröhre) - erschlossen, nicht wörterbuchbelegt: Die Überschrift setzt „Licht oder Schlundt“ gleich, und „kehr es vmb“ passt zu einem Schlauch. Das englische lights spricht für die Lunge, ist aber ein anderes Wort.</note>
-        <note type="interpretive_choice" target="#rum-0028-orig" n="kehr es vmb" resp="#fyndling">Umstülpen, Innenseite nach außen, wie beim Ochsendarm (rum-0034) - sinnvoll beim Schlund.</note>
-        <note type="interpretive_choice" target="#rum-0028-orig" n="Licht oder Schlundt: ein Stück oder zwei" resp="#fyndling">Offen: „oder“ kann zwei Innereien mit gleicher Zubereitung verbinden oder zwei Namen für dasselbe Stück; der Rezepttext selbst spricht nur vom „Licht“.</note>
-        <note type="interpretive_choice" target="#rum-0028-orig" n="Fett für die Einbrenne" resp="#fyndling">Historisch: ein ungenanntes Fett; der Text nennt keins, die Butter kommt erst danach in die Brühe.</note>
-        <note type="interpretive_choice" target="#rum-0028-orig" n="wol sieden daß weich wirt" resp="#fyndling">Sieden, bis es weich ist - eine Zeit nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0028-orig" n="laß darmit ein starcken Sudt auffthun" resp="#fyndling">Die Stücke kochen mit der gebundenen Brühe zusammen auf; „darmit“ verbindet beides, ausdrücklich gesagt wird es nicht.</note>
+        <note type="interpretive_choice" target="#rum-0028-orig" n="Licht" resp="#fyndling" subtype="lexical" cert="unknown">Offen, am ehesten der Schlund (Speiseröhre) - erschlossen, nicht wörterbuchbelegt: Die Überschrift setzt „Licht oder Schlundt“ gleich, und „kehr es vmb“ passt zu einem Schlauch. Das englische lights spricht für die Lunge, ist aber ein anderes Wort.<list type="alternatives"><item>Lunge vom Ochsen<note type="rationale">Analogie zu englisch lights und zu „licht“ = leicht; ein Beleg für das deutsche Wort fehlt. Rumpolt nennt die Lunge sonst „Lungen“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0028-orig" n="kehr es vmb" resp="#fyndling" subtype="contextual">Umstülpen, Innenseite nach außen, wie beim Ochsendarm (rum-0034) - sinnvoll beim Schlund.<list type="alternatives"><item>Das Stück nur wenden.<note type="rationale">Einzige Möglichkeit, falls „Licht“ die Lunge meint, denn eine Lunge lässt sich nicht umstülpen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0028-orig" n="Licht oder Schlundt: ein Stück oder zwei" resp="#fyndling" subtype="contextual">Offen: „oder“ kann zwei Innereien mit gleicher Zubereitung verbinden oder zwei Namen für dasselbe Stück; der Rezepttext selbst spricht nur vom „Licht“.<list type="alternatives"><item>Zwei verschiedene Innereien, Lunge oder Schlund, gleich zubereitet.<note type="rationale">Vertretbar, aber nicht belegt; die Übersetzung hält es deshalb beim „Licht“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0028-orig" n="Fett für die Einbrenne" resp="#fyndling" subtype="contextual">Historisch: ein ungenanntes Fett; der Text nennt keins, die Butter kommt erst danach in die Brühe.<list type="alternatives"><item>Praxis: etwas Butter oder abgeschöpftes Brühfett erhitzen und das Mehl darin hell anschwitzen.<note type="rationale">Moderne Standardlösung; hell, weil das Gericht „weiß“ bleiben soll.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0028-orig" n="wol sieden daß weich wirt" resp="#fyndling" subtype="contextual">Sieden, bis es weich ist - eine Zeit nennt der Text nicht.<list type="alternatives"><item>Praxis: mehrere Stunden leise kochen, bis ein Messer leicht eindringt.<note type="rationale">Erfahrungswert für zähe Innereien, keine Angabe der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0028-orig" n="laß darmit ein starcken Sudt auffthun" resp="#fyndling" subtype="contextual">Die Stücke kochen mit der gebundenen Brühe zusammen auf; „darmit“ verbindet beides, ausdrücklich gesagt wird es nicht.<list type="alternatives"><item>Praxis: die Stücke in die gebundene Brühe geben und kräftig aufkochen lassen.<note type="rationale">Ergibt sich aus der Reihenfolge klein schneiden - Brühe - „so bleibt es weiß“.</note></item></list></note>
       </div>
     </back>
   </text>

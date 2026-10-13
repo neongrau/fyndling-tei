@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@
         <note type="gloss" target="#men-137-orig" n="potage" resp="#fyndling">Dicker Eintopf/Brei, hier mit Eigelb angereichert.</note>
         <note type="gloss" target="#men-137-orig" n="germes" resp="#fyndling">Hagelschnüre (Chalaza) im Ei.</note>
         <note type="gloss" target="#men-137-orig" n="cloche" resp="#fyndling">Eine kleine Menge, eine Prise.</note>
-        <note type="interpretive_choice" target="#men-137-orig" n="moyeuilx de demy iiiion d'oeufz" resp="#fyndling">Eigelbe von zwei Eiern.</note>
-        <note type="interpretive_choice" target="#men-137-orig" n="cloche de gingembre" resp="#fyndling">Eine Prise Ingwer oder eine kleine Menge Ingwer.</note>
-        <note type="interpretive_choice" target="#men-137-orig" n="Rost de char" resp="#fyndling">Dies ist der Titel des nächsten Rezepts im Originaltext und nicht Teil des aktuellen Milch-Rezepts.</note>
+        <note type="interpretive_choice" target="#men-137-orig" n="moyeuilx de demy iiiion d'oeufz" resp="#fyndling">Eigelbe von zwei Eiern.<list type="alternatives"><item>Eigelbe von drei bis vier Eiern.<note type="rationale">„demi iiiion“ könnte auch eine ungenaue Mengenangabe für „einige“ sein, oder eine Verwechslung mit „demi douzaine“ (halbes Dutzend = 6) ist denkbar, um den Potage reichhaltiger zu machen.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-137-orig" n="cloche de gingembre" resp="#fyndling">Eine Prise Ingwer oder eine kleine Menge Ingwer.<list type="alternatives"><item>Ein Stück Ingwer.<note type="rationale">„Cloche“ könnte auch ein kleines, glockenförmiges Stück Ingwerwurzel meinen, das man mitkochen und dann entfernen würde.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-137-orig" n="Rost de char" resp="#fyndling">Dies ist der Titel des nächsten Rezepts im Originaltext und nicht Teil des aktuellen Milch-Rezepts.<list type="alternatives"><item>Eine Anweisung, das Gericht mit gebratenem Fleisch zu servieren.<note type="rationale">Weniger wahrscheinlich, da es keine Verknüpfung im Satzbau gibt und es wie eine eigenständige Überschrift formatiert ist.</note></item></list></note>
       </div>
     </back>
   </text>

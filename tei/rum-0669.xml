@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,9 +122,9 @@ Praxis. Die Sauce über den angerichteten Kapaun gießen. Mengen nennt der Text 
         <note type="gloss" target="#rum-0669-orig" n="vngeschmaͤltzt" resp="#fyndling">Heißt hier „nicht zerlassen“: Die Butter kommt frisch in die Sauce, nicht als ausgelassenes Butterschmalz. „Ungesalzen“ und „ungeschmälzt“ sind zwei getrennte Merkmale. An anderer Stelle schreibt Rumpolt dafür „frische Butter, die vnzerlassen ist“ (rum-0736) und „frische vnzerlassene Butter“ (rum-0037).</note>
         <note type="gloss" target="#rum-0669-orig" n="Kappaunen" resp="#fyndling">Ein kastrierter Masthahn. Rumpolt widmet ihm ein eigenes Kapitel „Von einem Kappaunen“ mit vierundvierzig Speisen; dieses Rezept ist das vierundzwanzigste davon.</note>
         <note type="gloss" target="#rum-0669-orig" n="zierlich" resp="#fyndling">Bedeutet hier „fein, ansehnlich“, ein Lob für das angerichtete Gericht, keine Schauspeise.</note>
-        <note type="interpretive_choice" target="#rum-0669-orig" n="vngeschmaͤltzt" resp="#fyndling">Nicht zerlassen: Die Butter geht frisch und fest in die Sauce. Buchintern gestützt durch „frische Butter, die vnzerlassen ist“ (rum-0736) und „frische vnzerlassene Butter“ (rum-0037); „vngesaltzen“ steht eigens daneben.</note>
-        <note type="interpretive_choice" target="#rum-0669-orig" n="auffsieden (mit Eigelb)" resp="#fyndling">Wörtlich aufkochen lassen, wie Rumpolt es schreibt: „laß damit auffsieden“, erst „weñs auffgesotten hat“ kommen die Kräuter dazu. Das Eigelb kann dabei flockig werden; davon sagt der Text nichts.</note>
-        <note type="interpretive_choice" target="#rum-0669-orig" n="weiß gekocht (Garen des Kapauns)" resp="#fyndling">Der Text beschreibt nur die Sauce. Dass der Kapaun vorher gekocht wird, steht allein in der Überschrift „Ein Kappaunen weiß gekocht“; Verfahren und Zeit bleiben offen.</note>
+        <note type="interpretive_choice" target="#rum-0669-orig" n="vngeschmaͤltzt" resp="#fyndling" subtype="lexical">Nicht zerlassen: Die Butter geht frisch und fest in die Sauce. Buchintern gestützt durch „frische Butter, die vnzerlassen ist“ (rum-0736) und „frische vnzerlassene Butter“ (rum-0037); „vngesaltzen“ steht eigens daneben.<list type="alternatives"><item>Nicht geklärt, also kein Butterschmalz.<note type="rationale">Eng verwandt und praktisch gleichbedeutend; an einigen Stellen des Buchs wird das Wort so wiedergegeben. Für die Küche ändert sich nichts: Es wird frische Butter verwendet.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0669-orig" n="auffsieden (mit Eigelb)" resp="#fyndling" subtype="contextual">Wörtlich aufkochen lassen, wie Rumpolt es schreibt: „laß damit auffsieden“, erst „weñs auffgesotten hat“ kommen die Kräuter dazu. Das Eigelb kann dabei flockig werden; davon sagt der Text nichts.<list type="alternatives"><item>Bei mäßiger Hitze unter ständigem Rühren nur bis kurz vor dem Kochen erhitzen, bis die Sauce bindet.<note type="rationale">Moderne Praxis, damit das Eigelb nicht gerinnt und die Sauce glatt bleibt. Küchenüberlegung, nicht Rumpolts Anweisung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0669-orig" n="weiß gekocht (Garen des Kapauns)" resp="#fyndling" subtype="contextual">Der Text beschreibt nur die Sauce. Dass der Kapaun vorher gekocht wird, steht allein in der Überschrift „Ein Kappaunen weiß gekocht“; Verfahren und Zeit bleiben offen.<list type="alternatives"><item>Den Kapaun vorab in Wasser oder Brühe gar sieden, etwa 1,5 bis 2 Stunden.<note type="rationale">Moderne Ergänzung, angelehnt an die Kapaunrezepte desselben Kapitels, in denen der Kapaun in Brühe gesotten wird. Im Text dieses Rezepts steht dazu nichts.</note></item></list></note>
       </div>
     </back>
   </text>

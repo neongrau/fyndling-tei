@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -156,12 +161,12 @@ Praxis. Hirschdärme bekommt man fast nur über einen Jäger. Hirschfleisch nur 
         <note type="gloss" target="#rum-0301-orig" n="mach es ab" resp="#fyndling">Kochbuch-Formel für abschmecken, fertig würzen.</note>
         <note type="gloss" target="#rum-0301-orig" n="Spagat" resp="#fyndling">Bindfaden, hier zum Zubinden der Würste.</note>
         <note type="gloss" target="#rum-0301-orig" n="Vngerisch" resp="#fyndling">Rumpolts Herkunftsangabe für die Art, die Würste mit Eiern und Reis zu füllen, wie er es von den Ochsendärmen kennt.</note>
-        <note type="interpretive_choice" target="#rum-0301-orig" n="Weidewundt" resp="#fyndling">Weidwund, Jägersprache für einen Schuss in die Eingeweide. Rumpolt behält das Darmfett nur bei einem Tier, dessen Darm unversehrt ist. Adelung und Campe erklären das Wort als in den Eingeweiden wund, das DWB als an den Eingeweiden verwundet.</note>
-        <note type="interpretive_choice" target="#rum-0301-orig" n="innwendigen Braten" resp="#fyndling">Das innen liegende Bratenstück, wahrscheinlich die Lende beim Nierenfett. „Braten“ ist bei Rumpolt ein Stück Muskelfleisch; ein Wörterbuchbeleg für genau diese Stelle fehlt.</note>
-        <note type="interpretive_choice" target="#rum-0301-orig" n="Suͤltzen" resp="#fyndling">Kutteln und andere essbare Innereien, wie überall bei Rumpolt. Dazu passt, dass hier auch die Därme zerschnitten werden.</note>
-        <note type="interpretive_choice" target="#rum-0301-orig" n="hack es durcheinander" resp="#fyndling">„es“ meint die ganze Füllung: Hirschfleisch, Nierenfett, Rinderfett und Speck werden zusammen gehackt.</note>
-        <note type="interpretive_choice" target="#rum-0301-orig" n="Pfeffer" resp="#fyndling">Eine gebundene Pfeffersauce als Anrichteart, wie im ganzen Hirschkapitel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0301-orig" n="gelb oder weiß" resp="#fyndling">Zwei Anrichtefarben ohne genanntes Farbmittel; der Text bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0301-orig" n="Weidewundt" resp="#fyndling" subtype="lexical">Weidwund, Jägersprache für einen Schuss in die Eingeweide. Rumpolt behält das Darmfett nur bei einem Tier, dessen Darm unversehrt ist. Adelung und Campe erklären das Wort als in den Eingeweiden wund, das DWB als an den Eingeweiden verwundet.<list type="alternatives"><item>allgemein verletzt oder beschädigt<note type="rationale">Zu blass: das Wort meint gezielt die Bauchverletzung, und gerade die verdirbt den Darm.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0301-orig" n="innwendigen Braten" resp="#fyndling" subtype="contextual">Das innen liegende Bratenstück, wahrscheinlich die Lende beim Nierenfett. „Braten“ ist bei Rumpolt ein Stück Muskelfleisch; ein Wörterbuchbeleg für genau diese Stelle fehlt.<list type="alternatives"><item>allgemein innere Fleischstücke vom Hirsch<note type="rationale">Praktisch gleichwertig, falls Rumpolt kein bestimmtes Stück meint.</note></item><item>Innereien<note type="rationale">Unwahrscheinlich: „Braten“ bezeichnet Muskelfleisch, und die Innereien nennt Rumpolt sonst beim Namen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0301-orig" n="Suͤltzen" resp="#fyndling" subtype="contextual">Kutteln und andere essbare Innereien, wie überall bei Rumpolt. Dazu passt, dass hier auch die Därme zerschnitten werden.<list type="alternatives"><item>Sülze im heutigen Sinn, also Aspik<note type="rationale">Widerspricht dem Sprachgebrauch des Buchs; Rumpolt setzt das Wort mit Kaldaunen gleich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0301-orig" n="hack es durcheinander" resp="#fyndling" subtype="contextual">„es“ meint die ganze Füllung: Hirschfleisch, Nierenfett, Rinderfett und Speck werden zusammen gehackt.<list type="alternatives"><item>nur der Speck wird mit dem Hirschfleisch gehackt<note type="rationale">Möglich, wenn das Fett grob dazukommt; der Satz zählt aber alle Fette als Teil der Masse auf.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0301-orig" n="Pfeffer" resp="#fyndling" subtype="lexical">Eine gebundene Pfeffersauce als Anrichteart, wie im ganzen Hirschkapitel.<list type="alternatives"><item>nur das Gewürz, kräftig gepfeffert angerichtet<note type="rationale">Das Gewürz ist schon in der Füllung genannt; „in einem Pfeffer zurichten“ beschreibt eine Sauce.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0301-orig" n="gelb oder weiß" resp="#fyndling" subtype="contextual">Zwei Anrichtefarben ohne genanntes Farbmittel; der Text bleibt offen.<list type="alternatives"><item>gelb mit Safran<note type="rationale">Naheliegend für die Zeit, steht hier aber nicht im Text.</note></item></list></note>
       </div>
     </back>
   </text>

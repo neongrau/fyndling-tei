@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,8 +121,8 @@ Praxis. Lachs kurz wässern beziehungsweise abspülen, in dünne Schnitzel schne
         <note type="gloss" target="#phw-196-orig" n="wesern" resp="#fyndling">Das Wässern von Fisch war im Mittelalter üblich, um ihn zu reinigen oder überschüssiges Salz zu entfernen, besonders bei gesalzenem Fisch.</note>
         <note type="gloss" target="#phw-196-orig" n="allerlay gewirtz" resp="#fyndling">Eine allgemeine Bezeichnung für eine Gewürzmischung, die im Buch an vergleichbarer Stelle (Krebs-Pastete mit süßem Wein) mit Pfeffer, Ingwer und Zimt aufgelöst wird.</note>
         <note type="gloss" target="#phw-196-orig" n="wein berla" resp="#fyndling">Im Buch durchgängig als Weinbeeren gelesen, alternativ Rosinen. An anderer Stelle unterscheidet der Text 'wein berla' von 'resinla' (Rosinen) im selben Satz - ob beide Wörter hier dasselbe meinen, bleibt offen.</note>
-        <note type="interpretive_choice" target="#phw-196-orig" n="gwirtz / gewirtz" resp="#fyndling">Das erste 'gwirtz' wurde als Verb 'würze' (Imperativ) und das zweite 'gewirtz' als Substantiv 'Gewürz' übersetzt. Dies ist eine gängige Konstruktion in frühneuhochdeutschen Kochtexten.</note>
-        <note type="interpretive_choice" target="#phw-196-orig" n="wein berla" resp="#fyndling">'Wein berla' wurde als 'Weinbeeren' (kleine, getrocknete Weintrauben) übersetzt - so auch durchgängig an den übrigen Buchstellen.</note>
+        <note type="interpretive_choice" target="#phw-196-orig" n="gwirtz / gewirtz" resp="#fyndling" subtype="contextual">Das erste 'gwirtz' wurde als Verb 'würze' (Imperativ) und das zweite 'gewirtz' als Substantiv 'Gewürz' übersetzt. Dies ist eine gängige Konstruktion in frühneuhochdeutschen Kochtexten.</note>
+        <note type="interpretive_choice" target="#phw-196-orig" n="wein berla" resp="#fyndling" subtype="lexical">'Wein berla' wurde als 'Weinbeeren' (kleine, getrocknete Weintrauben) übersetzt - so auch durchgängig an den übrigen Buchstellen.<list type="alternatives"><item>Rosinen (getrocknete Weinbeeren) als moderne Ersatzbezeichnung - siehe Zutatenliste.</item><item>An anderer Stelle im Buch (phw-071) stehen 'resinla' (Rosinen) und 'wein berla' im selben Satz nebeneinander als zwei unterschiedene Dinge. Das relativiert die Annahme, beide Wörter seien hier einfach Synonyme; für dieses Rezept ändert es die gewählte Lesart nicht, bleibt aber als offene Frage vermerkt.</item></list></note>
       </div>
     </back>
   </text>

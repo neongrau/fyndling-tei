@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,10 +121,10 @@ Praxis. Butter in der Pfanne erhitzen, die Kuttelstücke darin rösten, bis sie 
         <note type="gloss" target="#rum-0032-orig" n="Kaldaunen" resp="#fyndling">Kutteln, der gereinigte Magen von Wiederkäuern, hier vom Ochsen.</note>
         <note type="gloss" target="#rum-0032-orig" n="gruͤne Kraͤuter" resp="#fyndling">Frische Kräuter, ohne feste Auswahl.</note>
         <note type="gloss" target="#rum-0032-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0032-orig" n="Suͤltzen oder Kaldaunen" resp="#fyndling">Sülzfleisch, hier Ochsenkutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d).</note>
-        <note type="interpretive_choice" target="#rum-0032-orig" n="Vorgaren der Kutteln" resp="#fyndling">Historisch setzt der Text voraus, dass die Kutteln vorher gebrüht, geputzt und weichgekocht wurden; ein einmaliges Aufsieden macht rohe Kutteln nicht weich.</note>
-        <note type="interpretive_choice" target="#rum-0032-orig" n="versaltz es nicht" resp="#fyndling">Salz wird stillschweigend zugegeben oder kommt über eine gesalzene Rindfleischbrühe; sparsam nachsalzen.</note>
-        <note type="interpretive_choice" target="#rum-0032-orig" n="Pfeffer" resp="#fyndling">Das Gewürz, weil es ohne Artikel in einer Aufzählung von Würzmitteln steht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0032-orig" n="Suͤltzen oder Kaldaunen" resp="#fyndling" subtype="lexical">Sülzfleisch, hier Ochsenkutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d).<list type="alternatives"><item>Sülze im heutigen Sinn, ein geliertes Aspik.<note type="rationale">Verworfen: Ein Aspik würde beim Rösten in Butter schmelzen, und das Buch kocht die Sültzen als Rohteil.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0032-orig" n="Vorgaren der Kutteln" resp="#fyndling" subtype="contextual">Historisch setzt der Text voraus, dass die Kutteln vorher gebrüht, geputzt und weichgekocht wurden; ein einmaliges Aufsieden macht rohe Kutteln nicht weich.<list type="alternatives"><item>Küchenfertige, vorgegarte Kutteln vom Metzger verwenden.<note type="rationale">Moderne Praxis, in der Zubereitungsnotiz umgesetzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0032-orig" n="versaltz es nicht" resp="#fyndling" subtype="contextual">Salz wird stillschweigend zugegeben oder kommt über eine gesalzene Rindfleischbrühe; sparsam nachsalzen.<list type="alternatives"><item>Erst am Ende abschmecken.<note type="rationale">Moderne Praxis, weil die Brühe schon salzig sein kann.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0032-orig" n="Pfeffer" resp="#fyndling" subtype="contextual">Das Gewürz, weil es ohne Artikel in einer Aufzählung von Würzmitteln steht.<list type="alternatives"><item>Eine Pfeffersauce bzw. ein Gericht „in einem Pfeffer“.<note type="rationale">Bei Rumpolt sonst mit Artikel als Gerichtsname; hier weniger wahrscheinlich.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,9 +131,9 @@ Praxis. Reh (gebraten) und Hirsch (gesotten) bekommen die Gewürzmischung eigens
         <note type="gloss" target="#w1-174-orig" n="ein gemacht" resp="#fyndling">‚Ein gemacht‘ bezieht sich hier auf eine zubereitete Würzsauce oder Beilage, die separat zum Gericht gereicht wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#ein-gemacht"/></note>
         <note type="gloss" target="#w1-174-orig" n="besunder" resp="#fyndling">‚Besunder‘ bedeutet hier ‚besonders‘ oder ‚separat‘ zubereitet und angerichtet.</note>
         <note type="gloss" target="#w1-174-orig" n="vor gesalczen" resp="#fyndling">Die Anweisung, Gewürze nicht zu salzen, wenn das Wildbret bereits gesalzen ist, ist ein wichtiger Hinweis zur Geschmacksbalance und Vermeidung von Übersalzung.</note>
-        <note type="interpretive_choice" target="#w1-174-orig" n="hirsen" resp="#fyndling">Die Lesart ‚Hirschfleisch‘ wurde gewählt.</note>
-        <note type="interpretive_choice" target="#w1-174-orig" n="aycharnn" resp="#fyndling">Die Lesart ‚Eichhörnchen‘ wurde gewählt.</note>
-        <note type="interpretive_choice" target="#w1-174-orig" n="ZV" resp="#fyndling">Die Lesart ‚Zu‘ wurde gewählt.</note>
+        <note type="interpretive_choice" target="#w1-174-orig" n="hirsen" resp="#fyndling" subtype="lexical">Die Lesart ‚Hirschfleisch‘ wurde gewählt.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Hirse‘ (Getreide).<note type="rationale">Obwohl ‚Hirsen‘ auch Hirse bedeuten kann, ist im Kontext von ‚Wildbret‘ und ‚Reh‘ die Lesart ‚Hirschfleisch‘ (venison) kulinarisch und thematisch plausibler. CoReMA glossiert es ebenfalls als ‚venison‘.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-174-orig" n="aycharnn" resp="#fyndling" subtype="lexical">Die Lesart ‚Eichhörnchen‘ wurde gewählt.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Eichel‘.<note type="rationale">CoReMA glossiert ‚aycharnn‘ explizit als ‚red squirrel‘ (rotes Eichhörnchen). Obwohl ‚Eichel‘ phonetisch ähnlich ist, passt Eichhörnchen besser in die Aufzählung von Wildtieren (Hasen, Geflügel).</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-174-orig" n="ZV" resp="#fyndling" subtype="philological">Die Lesart ‚Zu‘ wurde gewählt.<list type="alternatives"><item>Die Buchstabenfolge ‚ZV‘ könnte als uninterpretierbares Fragment belassen werden.<note type="rationale">Die CoReMA-Edition vermerkt an dieser Stelle, dass ‚z‘ ein Platzhalter für eine fehlende Initiale ist. Im Kontext des Satzes ist ‚Zu‘ die einzig sinnvolle Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

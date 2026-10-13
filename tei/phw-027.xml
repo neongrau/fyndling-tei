@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,10 +135,10 @@ Praxis. Äpfel schälen, klein hacken, mit Weinbeeren und gestoßenem Zimt verme
         <note type="gloss" target="#phw-027-orig" n="wein ber" resp="#fyndling">Weinbeeren sind hier getrocknete Trauben, also Rosinen.</note>
         <note type="gloss" target="#phw-027-orig" n="zimer rerlach" resp="#fyndling">Zimtstangen, gestoßen. Im Mittelalter wurde Zimt in Stangenform gehandelt und vor Gebrauch zerstoßen.</note>
         <note type="gloss" target="#phw-027-orig" n="marckt Ausem bay" resp="#fyndling">Knochenmark aus dem Bein. Das nahezu wortgleiche Rezept wo10-078 aus dem gleichzeitigen Wolfenbütteler Kunst- und Arzneibuch belegt an derselben Stelle im Ablauf „ain marckt aus ainem Ochsenbain“ - dieselbe Technik, das Mark erst nach dem Halb-Backen aufzulegen.</note>
-        <note type="interpretive_choice" target="#phw-027-orig" n="kuellin schmaltzs" resp="#fyndling">‚Klümpchen Schmalz‘ - eine kleine, ungenaue Menge Schmalz, ähnlich wie in anderen Rezepten dieses Kochbuchs, wo ‚kluelin‘ für ein Klümpchen Schmalz steht.</note>
-        <note type="interpretive_choice" target="#phw-027-orig" n="Ryes" resp="#fyndling">‚rühre‘ - im Kontext des Vermischens von Zutaten und des Umrührens in der Pfanne ist ‚rühren‘ die passende Tätigkeit.</note>
-        <note type="interpretive_choice" target="#phw-027-orig" n="marckt Ausem bay" resp="#fyndling">‚Knochenmark aus dem Bein‘ - eine präzise Bezeichnung für Knochenmark, das aus den Knochen entnommen wird.</note>
-        <note type="interpretive_choice" target="#phw-027-orig" n="las bachenn / halb bachenn / las fol bachenn" resp="#fyndling">Der Text nennt für das Backen nur Ablaufmarken (backen lassen, halb gebacken, fertig backen), keine Temperatur oder Dauer.</note>
+        <note type="interpretive_choice" target="#phw-027-orig" n="kuellin schmaltzs" resp="#fyndling" subtype="lexical">‚Klümpchen Schmalz‘ - eine kleine, ungenaue Menge Schmalz, ähnlich wie in anderen Rezepten dieses Kochbuchs, wo ‚kluelin‘ für ein Klümpchen Schmalz steht.</note>
+        <note type="interpretive_choice" target="#phw-027-orig" n="Ryes" resp="#fyndling" subtype="lexical">‚rühre‘ - im Kontext des Vermischens von Zutaten und des Umrührens in der Pfanne ist ‚rühren‘ die passende Tätigkeit.<list type="alternatives"><item>Es könnte auch ‚reibe‘ bedeuten, was aber für die hier beschriebenen Aktionen weniger passend ist.<note type="rationale">Das Verb ‚rühren‘ passt besser zu den Handlungsanweisungen ‚durch ain annder‘ (durcheinander) und ‚vm dau her auß‘ (herausrühren).</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-027-orig" n="marckt Ausem bay" resp="#fyndling" subtype="lexical">‚Knochenmark aus dem Bein‘ - eine präzise Bezeichnung für Knochenmark, das aus den Knochen entnommen wird.<list type="alternatives"><item>Eine Verwechslung mit ‚merck‘ (Merke!) ist aufgrund des Kontexts ausgeschlossen.<note type="rationale">Die Formulierung ‚aus dem Bein‘ macht die Bedeutung als Knochenmark eindeutig. Die alternative Zutat ‚Butter‘ bestätigt dies als fetthaltige Zutat.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-027-orig" n="las bachenn / halb bachenn / las fol bachenn" resp="#fyndling" subtype="contextual">Der Text nennt für das Backen nur Ablaufmarken (backen lassen, halb gebacken, fertig backen), keine Temperatur oder Dauer.<list type="alternatives"><item>Historisch naheliegend wäre eine Tortenpfanne mit Glut auf dem Deckel - eine im Buch bei den Mandeltorten belegte Backtechnik -, mit einer Garzeit nach Erfahrung ohne feste Zeit- oder Temperaturangabe.<note type="rationale">Der Primärtext belegt keine Temperatur- oder Zeitangabe; die in der Praxis-Empfehlung genannte Ofentemperatur ist ein moderner Näherungswert, keine historisch belegte Angabe.</note></item></list></note>
       </div>
     </back>
   </text>

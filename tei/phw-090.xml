@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -90,7 +95,7 @@ syttig bachenn</p>
         </div>
         <div type="translation" xml:id="phw-090-trans" xml:lang="de" corresp="#phw-090-orig">
           <p>Rühre den Teig mit kaltem Wasser an. Er soll ein wenig dicker sein als ein gewöhnlicher dünnflüssiger Teig.</p>
-          <p>Gib ein wenig Schmalz in eine Pfanne und gib den Teig hinein. Wenn er gut durchgebacken ist, gib ihn in eine Schüssel und schlage ihn gut geschmeidig.</p>
+          <p>Gib ein wenig Schmalz in eine Pfanne und gib den Teig hinein. Wenn er gut abgetrocknet ist, gib ihn in eine Schüssel und schlage ihn gut.</p>
           <p>Lege 6 oder 8 Eier in warmes Wasser. Danach, je nachdem wie viel Teig ist, schlage die Eier einzeln in den Teig, bis er so wird, dass man ihn durch eine Spritztülle drücken kann.</p>
           <p>Danach soll man den Teig ringweise in die Pfanne ringsherum legen, sodass ein dreifacher Ring entsteht, und lass ihn sachte backen.</p>
         </div>
@@ -128,9 +133,9 @@ Aus kaltem Wasser und wenig Schmalz wird in der Pfanne ein Teig verkocht, bis er
         <note type="gloss" target="#phw-090-orig" n="vrind" resp="#fyndling">Die genaue Bedeutung ist unklar, aber im Kontext des Einarbeitens von Eiern in den Teig bedeutet es wahrscheinlich, den Teig glatt und geschmeidig zu schlagen.</note>
         <note type="gloss" target="#phw-090-orig" n="byx" resp="#fyndling">Kurzform für ‘Büchse’, hier im Sinne einer Spritztülle oder eines Spritzbeutels, um den Teig ringförmig in die Pfanne zu drücken.</note>
         <note type="gloss" target="#phw-090-orig" n="syttig bachenn" resp="#fyndling">Bedeutet ‘sachte backen’, also bei milder, gleichmäßiger Hitze, damit das Gebäck durchgart und nicht verbrennt.</note>
-        <note type="interpretive_choice" target="#phw-090-orig" n="drycknet" resp="#fyndling">abgetrocknet / durchgebacken</note>
-        <note type="interpretive_choice" target="#phw-090-orig" n="vrind" resp="#fyndling">gut schlagen / geschmeidig rühren</note>
-        <note type="interpretive_choice" target="#phw-090-orig" n="byx" resp="#fyndling">Spritztülle / Spritzbeutel</note>
+        <note type="interpretive_choice" target="#phw-090-orig" n="drycknet" resp="#fyndling" subtype="lexical">abgetrocknet: Der Teig wird in der Pfanne trocken gerührt wie ein Brandteig; gebacken wird erst am Schluss.<list type="alternatives"><item>durchgebacken<note type="rationale">Frühere Lesart dieses Rezepts. Der Zwilling wo10-097 hat „truckne In wol ab vnd wan er wol abgetrucknet ist“; erst danach kommen die Eier.</note></item><item>trocken<note type="rationale">Das Wort könnte auch einfach 'trocken' bedeuten, aber im Kontext des Backens ist 'abgetrocknet' oder 'durchgebacken' passender.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-090-orig" n="vrind" resp="#fyndling" subtype="philological" cert="unknown">Unklar. Der Zwilling wo10-097 hat an dieser Stelle „schlag In wol oder stoss In In aim Morser“; „vrind“ ist vermutlich der Rest einer verkürzten Anweisung. Übersetzt wird nur „schlage ihn gut“.<list type="alternatives"><item>gut schlagen / geschmeidig rühren<note type="rationale">Frühere Lesart dieses Rezepts; „geschmeidig“ ist aus dem Zusammenhang erschlossen, ohne Wortbeleg.</note></item><item>fein<note type="rationale">Das Wort könnte eine Verlesung von 'fein' sein, aber 'schlagen' im Kontext der Teigzubereitung mit Eiern deutet eher auf eine Intensivierung des Rührens hin.</note></item><item>möglicherweise Teil einer längeren, hier verkürzten Anweisung<note type="rationale">Der textnahe Zwilling wo10-097 hat an der entsprechenden Stelle einen längeren Passus ('schlag In wol oder stoss In In aim Morser') statt eines Einzelworts - kein Wortbeleg für 'vrind' selbst, aber ein Hinweis, dass hier ursprünglich mehr gestanden haben könnte. Bleibt am Faksimile zu prüfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-090-orig" n="byx" resp="#fyndling" subtype="lexical">Spritztülle / Spritzbeutel<list type="alternatives"><item>Büchse (als Behälter)<note type="rationale">Obwohl 'Büchse' ein Behälter ist, macht die Anweisung 'durch die Büchse drücken' im Kontext eines ringförmigen Gebäcks nur Sinn, wenn es sich um ein Werkzeug zum Spritzen handelt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,9 +134,9 @@ Praxis. Der Text leitet zur Fehlererkennung und -behebung im Weinkeller an, nich
         <note type="gloss" target="#wbd-021-orig" n="nebeger" resp="#fyndling">Ein Bohrer, mit dem die Löcher im Rührstab gebohrt wurden.</note>
         <note type="gloss" target="#wbd-021-orig" n="gespalten holtze" resp="#fyndling">Ein gespaltener, mit vielen Löchern durchbohrter Holzstab diente als Rührwerkzeug, um die Klärmischung im Fass zu verteilen.</note>
         <note type="gloss" target="#wbd-021-orig" n="habern letten" resp="#fyndling">Unklarer Ausdruck: 'habern' ist im Korpus 22-mal als 'Hafer' belegt, ein Kompositum 'Habern-Letten' selbst ist aber weder im Korpus noch bei Grimm belegt. Ob damit eine Ton-/Lehmsorte mit Hafer-Bezug gemeint ist oder schlicht feiner Ton, bleibt offen.</note>
-        <note type="interpretive_choice" target="#wbd-021-orig" n="habern letten" resp="#fyndling">Als unklarer Ausdruck belassen: 'letten' ist gut als Ton beziehungsweise Lehm belegt, das Bestimmungswort 'habern' bleibt aber ungeklärt.</note>
-        <note type="interpretive_choice" target="#wbd-021-orig" n="verstoßen" resp="#fyndling">Im Kapiteltitel ('der sich verstoßen hat') auf den Wein bezogen als 'verdorben' beziehungsweise 'trüb geworden' gelesen.</note>
-        <note type="interpretive_choice" target="#wbd-021-orig" n="firtel / kopff vol" resp="#fyndling">Als unbestimmte historische Hohlmaße belassen, ohne feste Umrechnung in moderne Liter oder Gramm, da die Maßgröße regional stark schwankte.</note>
+        <note type="interpretive_choice" target="#wbd-021-orig" n="habern letten" resp="#fyndling" cert="unknown">Als unklarer Ausdruck belassen: 'letten' ist gut als Ton beziehungsweise Lehm belegt, das Bestimmungswort 'habern' bleibt aber ungeklärt.<list type="alternatives"><item>'Habern' als 'Hafer' (Hafer-Lehm, etwa haferfarbener oder mit Häcksel versetzter Ton)<note type="rationale">'habern' ist im ReF-Korpus 22-mal als Lemma 'haber' (Hafer) belegt, davon 10-mal vor 1500, und im Wörterbuch Grimm eindeutig als Hafer glossiert - für das Kompositum 'Habern-Letten' selbst findet sich aber weder im Korpus noch bei Grimm ein eigener Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#wbd-021-orig" n="verstoßen" resp="#fyndling">Im Kapiteltitel ('der sich verstoßen hat') auf den Wein bezogen als 'verdorben' beziehungsweise 'trüb geworden' gelesen.<list type="alternatives"><item>Allgemeiner: 'ausgemustert, verworfen, von sich getan'<note type="rationale">Die Wörterbuch-Belege (u. a. Mittelniederdeutsch) nennen für 'verstoßen' nicht explizit 'trüb werden/verderben' - die hier gewählte Lesart stützt sich nur indirekt über den Folgesatz ('wann der wine trübe wirt') und ist damit plausibel, aber nicht direkt belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#wbd-021-orig" n="firtel / kopff vol" resp="#fyndling">Als unbestimmte historische Hohlmaße belassen, ohne feste Umrechnung in moderne Liter oder Gramm, da die Maßgröße regional stark schwankte.<list type="alternatives"><item>Feste moderne Umrechnung, etwa Viertel als ein Viertel-Eimer<note type="rationale">Manche Editionen setzen 'Viertel' mit einem bestimmten Kellermaß gleich, die genaue Größe war aber je nach Ort und Zeit verschieden, weshalb wir hier bewusst unscharf bleiben.</note></item></list></note>
       </div>
     </back>
   </text>

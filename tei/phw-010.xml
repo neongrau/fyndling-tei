@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,10 +129,10 @@ Der Teig. Das Rezept nennt nur den fertigen Teig und setzt ihn als bekannt vorau
         <note type="gloss" target="#phw-010-orig" n="jnn ain schmaltzs bachenn" resp="#fyndling">Das ‚Backen in Schmalz‘ bedeutet hier das Ausbacken oder Frittieren in heißem tierischem Fett.</note>
         <note type="gloss" target="#phw-010-orig" n="bedelin / bedalin" resp="#fyndling">Ein dünn ausgerollter Tortenboden aus Teig, auf den die Mandelmasse gestrichen wird. Hayer löst „bedelin“ in seinem Wörterverzeichnis als Diminutiv von Boden auf, ausdrücklich in der Zusammensetzung Tortenboden. Nicht gemeint sind eine Backform, ein Blech oder eine Unterlage aus Papier, und auch keine Oblate: Für Oblaten hat dieses Buch eigene Wörter (albotte, mandatte), die Hayer getrennt verzeichnet. Das Wort kommt in allen fünf Mandeltorten dieser Gruppe vor und meint überall dasselbe.</note>
         <note type="gloss" target="#phw-010-orig" n="rerlach" resp="#fyndling">Zimt. Hayer verzeichnet „rerlach, rela“ knapp als Zimt; das Wort meint die Röhrchen der Zimtrinde. Unser Korpus löst dieselbe Vokabel in mst-056, mst-060 und mst-076 ebenso auf.</note>
-        <note type="interpretive_choice" target="#phw-010-orig" n="lieb" resp="#fyndling">Als „sanft“ oder „vorsichtig“ übersetzt, im Sinne einer schonenden Backweise bei moderater Hitze.</note>
-        <note type="interpretive_choice" target="#phw-010-orig" n="Backgefäß und Hitzequelle des Tortenbodens" resp="#fyndling">Im Text nicht genannt; für die Praxis eignet sich ein Ofen bei moderater Hitze.</note>
-        <note type="interpretive_choice" target="#phw-010-orig" n="Formgebung der Krapfen" resp="#fyndling">Im Text nicht beschrieben; für die Praxis eignet sich, die Masse löffelweise als kleine Nocken ins heiße Schmalz zu geben.</note>
-        <note type="interpretive_choice" target="#phw-010-orig" n="Gar-/Bratdauer und -temperatur der Krapfen" resp="#fyndling">Im Text nicht genannt; für die Praxis eignet sich mittlere Frittiertemperatur (etwa 170 Grad) bis goldbraun.</note>
+        <note type="interpretive_choice" target="#phw-010-orig" n="lieb" resp="#fyndling" subtype="lexical">Als „sanft“ oder „vorsichtig“ übersetzt, im Sinne einer schonenden Backweise bei moderater Hitze.<list type="alternatives"><item>Als „schön“ oder „gut“ übersetzt, im Sinne eines ansprechenden Backergebnisses.<note type="rationale">„Lieb“ kann im Frühneuhochdeutschen auch eine allgemeine positive Eigenschaft beschreiben.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-010-orig" n="Backgefäß und Hitzequelle des Tortenbodens" resp="#fyndling" subtype="contextual">Im Text nicht genannt; für die Praxis eignet sich ein Ofen bei moderater Hitze.<list type="alternatives"><item>Tortenpfanne mit Glut auf dem Deckel, wie in den Nachbarrezepten dieser Gruppe (phw-007, phw-013).<note type="rationale">Für die Gruppe insgesamt belegt, im Text von phw-010 selbst aber nicht genannt - daher nicht als historische Praxis dieses Rezepts zu behaupten, sondern nur als plausible Übertragung aus dem Buchkontext.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-010-orig" n="Formgebung der Krapfen" resp="#fyndling" subtype="contextual">Im Text nicht beschrieben; für die Praxis eignet sich, die Masse löffelweise als kleine Nocken ins heiße Schmalz zu geben.<list type="alternatives"><item>Von Hand zu Klößchen geformt, gegebenenfalls mit zusätzlichem Mehl fester gemacht.<note type="rationale">Im Text nicht erwähnt, daher nicht als belegte historische Praxis zu behaupten.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-010-orig" n="Gar-/Bratdauer und -temperatur der Krapfen" resp="#fyndling" subtype="contextual">Im Text nicht genannt; für die Praxis eignet sich mittlere Frittiertemperatur (etwa 170 Grad) bis goldbraun.<list type="alternatives"><item>Garprobe nach Augenmaß, wie sonst in der Rezeptgruppe formuliert (etwa „fein lieb“ oder „resch“).<note type="rationale">Für dieses Segment fehlt die entsprechende textliche Formulierung.</note></item></list></note>
       </div>
     </back>
   </text>

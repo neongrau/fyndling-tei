@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -92,7 +97,7 @@
 Geräuchert. Die Überschrift lässt offen, ob die Gans für dieses Gericht erst geräuchert wird oder ob eine bereits geräucherte Gans zubereitet und aufgetragen wird. Am nächsten liegt heute die zweite Lesart: geräucherte Wildgans als fertige Ware. Der Text entscheidet die Frage nicht.
 
 Praxis. Zum Nachkochen gibt der Text nichts her. Pökeldauer, Rauchart und Garweise sind nicht überliefert und werden hier nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0582-orig" n="geraͤuchert" resp="#fyndling">Rumpolt benennt ein Gericht aus geräucherter Wildgans; ob das Räuchern dazugehört oder die Gans schon geräuchert in die Küche kommt, bleibt offen, weil die Anleitung fehlt.</note>
+        <note type="interpretive_choice" target="#rum-0582-orig" n="geraͤuchert" resp="#fyndling" subtype="contextual">Rumpolt benennt ein Gericht aus geräucherter Wildgans; ob das Räuchern dazugehört oder die Gans schon geräuchert in die Küche kommt, bleibt offen, weil die Anleitung fehlt.<list type="alternatives"><item>Geräucherte Wildgans als Zustand der Zutat (fertige Räucherware)<note type="rationale">Nächstliegende heutige Lesart und Grundlage von Titel und Zutat; der Text bestätigt sie aber nicht.</note></item><item>Das Räuchern der Gans ist selbst der Arbeitsgang des Rezepts<note type="rationale">Mit der Überschrift vereinbar; ohne Anleitungstext nicht belegbar.</note></item></list></note>
       </div>
     </back>
   </text>

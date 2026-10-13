@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,8 +102,8 @@ Was heißt „in einen Senff eynmachen“? Bei Rumpolt bedeutet eynmachen für F
 Praxis. Heute liegt am nächsten, den Fisch in einer Senfsauce zu garen. Eine Schrittfolge gibt der Text nicht her; ein ausgeführtes Senf-Rezept für den Huchen steht in Nr. 4 (rum-0920). Dessen Schritte übertragen wir bewusst nicht auf diese Zeile.</note>
         <note type="gloss" target="#rum-0923-orig" n="Huchen" resp="#fyndling">Der Huchen (Hucho hucho), auch Donaulachs genannt, ist ein großer Lachsfisch aus dem Einzugsgebiet der Donau. Im Druck steht er als „Huechen“.</note>
         <note type="gloss" target="#rum-0923-orig" n="eynmachen" resp="#fyndling">Bei Fisch: in einer Brühe oder Sauce garen. Nicht im heutigen Sinn von „einmachen“ (haltbar machen).</note>
-        <note type="interpretive_choice" target="#rum-0923-orig" n="in einen Senff eynmachen" resp="#fyndling">In einer Senfsauce garen: eynmachen heißt bei Rumpolt für Fisch, in Brühe oder Sauce garen (vgl. Nr. 3, rum-0919, und Nr. 5, rum-0921).</note>
-        <note type="interpretive_choice" target="#rum-0923-orig" n="Art des Senfs" resp="#fyndling">Ein saurer, mit Essig angemachter Senf wie in Nr. 4 (rum-0920); die Zeile selbst beschreibt den Senf nicht.</note>
+        <note type="interpretive_choice" target="#rum-0923-orig" n="in einen Senff eynmachen" resp="#fyndling" subtype="lexical">In einer Senfsauce garen: eynmachen heißt bei Rumpolt für Fisch, in Brühe oder Sauce garen (vgl. Nr. 3, rum-0919, und Nr. 5, rum-0921).<list type="alternatives"><item>In Senf einlegen, haltbar machen<note type="rationale">Heutige Bedeutung von „einmachen“; die Nachbarnummern des Kapitels zeigen eynmachen als Garen in Sauce, deshalb verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0923-orig" n="Art des Senfs" resp="#fyndling" subtype="contextual">Ein saurer, mit Essig angemachter Senf wie in Nr. 4 (rum-0920); die Zeile selbst beschreibt den Senf nicht.<list type="alternatives"><item>Eine warme Senfsauce, in der der Fisch gart (heutige Ausführung)<note type="rationale">Passt zu eynmachen; ob der Senf mitgart oder wie in Nr. 4 erst über den gegarten Fisch kommt, sagt der Text nicht.</note></item></list></note>
       </div>
     </back>
   </text>

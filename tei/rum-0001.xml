@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,8 +124,8 @@ Den Kopf mit Horn und Haut in heißem Wasser abbrühen wie bei Schweinefüßen, 
         <note type="gloss" target="#rum-0001-orig" n="an die statt sieden" resp="#fyndling">Eine spezifische Formulierung Rumpolts, die 'gar kochen' oder 'bis es gar ist' bedeutet.</note>
         <note type="gloss" target="#rum-0001-orig" n="Schauessen" resp="#fyndling">Ein 'Schauessen' oder 'Schaugericht' war eine aufwendig zubereitete und oft dekorierte Speise, die primär der Präsentation und dem Status diente, weniger dem eigentlichen Verzehr. Sie war ein Highlight bei festlichen Banketten.</note>
         <note type="gloss" target="#rum-0001-orig" n="Golt oder Silber" resp="#fyndling">Hier ist essbares Blattgold oder Blattsilber gemeint, das hauchdünn geschlagen als luxuriöse Dekoration auf Speisen aufgebracht wurde, um den Reichtum des Gastgebers zu demonstrieren.</note>
-        <note type="interpretive_choice" target="#rum-0001-orig" n="seuber jn auß" resp="#fyndling">Die Phrase 'säubere ihn aus' bezieht sich auf die Reinigung des gekochten Kopfes, um ihn für die Präsentation vorzubereiten. Dies kann das Entfernen von Gehirn, Zunge, Augen oder anderen unerwünschten Teilen umfassen, um eine saubere und ansprechende Darbietung zu gewährleisten.</note>
-        <note type="interpretive_choice" target="#rum-0001-orig" n="setz jn in Wasser zu" resp="#fyndling">'Ins Wasser setzen' wird hier als frisches Wasser für den Garsud gelesen, getrennt vom Abbrühwasser des Enthaarens.</note>
+        <note type="interpretive_choice" target="#rum-0001-orig" n="seuber jn auß" resp="#fyndling" subtype="contextual">Die Phrase 'säubere ihn aus' bezieht sich auf die Reinigung des gekochten Kopfes, um ihn für die Präsentation vorzubereiten. Dies kann das Entfernen von Gehirn, Zunge, Augen oder anderen unerwünschten Teilen umfassen, um eine saubere und ansprechende Darbietung zu gewährleisten.<list type="alternatives"><item>Die Phrase könnte sich auf das Entfernen von Knochen oder Knorpeln beziehen.<note type="rationale">Obwohl das Entfernen von Knochen und Knorpeln bei anderen Fleischstücken üblich ist, würde dies die Form des Kopfes für ein Schaugericht zerstören. Die primäre Lesart der Reinigung für die Präsentation ist hier plausibler.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0001-orig" n="setz jn in Wasser zu" resp="#fyndling" subtype="contextual">'Ins Wasser setzen' wird hier als frisches Wasser für den Garsud gelesen, getrennt vom Abbrühwasser des Enthaarens.<list type="alternatives"><item>Derselbe Kessel bzw. dasselbe Wasser wie beim Abbrühen wird weiterverwendet.<note type="rationale">Der Wortlaut belegt nur 'in Wasser setzen', kein 'frisch'. Da das Abbrühwasser aber Haare und Schmutz enthält, ist neues Wasser die naheliegendere Lesart, aber nicht durch den Text selbst gedeckt.</note></item></list></note>
       </div>
     </back>
   </text>

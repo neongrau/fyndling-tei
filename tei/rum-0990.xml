@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,8 +98,8 @@ Was heißt Hattele? Das Wort ist in den geprüften Wörterbüchern nicht belegt,
 
 Praxis. Eine Anleitung gibt es nicht. Wer das Gericht nachkochen will, hat nur Rumpolts Fleischfassung als Vergleich (rum-0121, rum-0178) und entscheidet Zuschnitt, Fett, Würze und Garzeit selbst, weil der Text hier nichts vorgibt. Hecht bekommt man beim Fischhändler.</note>
         <note type="gloss" target="#rum-0990-orig" n="Hattele" resp="#fyndling">Rumpolts Name für die Speise, in der Druckform belassen. In den geprüften Wörterbüchern ist das Wort nicht belegt, die Bedeutung ist offen. Beim Kalb (Nr. 31, rum-0121) beschreibt Rumpolt sie selbst: dünn geschnittene, mit dem Messerrücken geklopfte Scheiben, mit gehacktem Rinderfett und Kräutern bestreut, aufgewickelt und am Spieß gebraten. Er gebraucht das Wort bei vielen Tieren, im Fischteil auch bei Hausen, Salm und Karpfen; ob beim Hecht dieselbe Machart gemeint ist, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0990-orig" n="Hattele" resp="#fyndling">Druckform beibehalten, Bedeutung offen. Das Wort ist in den geprüften Wörterbüchern nicht belegt; das Schweizerische Idiotikon kennt nur ein gleichlautendes „hattle“ im Sinn von kichern, das nicht einschlägig ist. Rumpolt beschreibt die Speise beim Kalb (rum-0121) und beim Hammelschlegel (rum-0178) und gebraucht das Wort bei Fleisch, Wild und Fisch, also eher für eine Zubereitungsart als für ein Stück vom Tier.</note>
-        <note type="interpretive_choice" target="#rum-0990-orig" n="Machart der Hattele vom Hecht" resp="#fyndling">Keine Aussage: Der Druck nennt nur die Überschrift, Zutaten, Würze und Garweg fehlen. Wir lassen die Zeile so stehen und ergänzen keine Schritte.</note>
+        <note type="interpretive_choice" target="#rum-0990-orig" n="Hattele" resp="#fyndling" subtype="lexical">Druckform beibehalten, Bedeutung offen. Das Wort ist in den geprüften Wörterbüchern nicht belegt; das Schweizerische Idiotikon kennt nur ein gleichlautendes „hattle“ im Sinn von kichern, das nicht einschlägig ist. Rumpolt beschreibt die Speise beim Kalb (rum-0121) und beim Hammelschlegel (rum-0178) und gebraucht das Wort bei Fleisch, Wild und Fisch, also eher für eine Zubereitungsart als für ein Stück vom Tier.<list type="alternatives"><item>Dünne Scheiben vom Hecht, mit Fett und Kräutern aufgewickelt und am Spieß gebraten, wie beim Kalb (rum-0121)<note type="rationale">Naheliegend, weil Rumpolt die Machart nur bei Fleisch ausführt und sonst voraussetzt. Für Fisch ist sie nirgends beschrieben; die Übertragung auf Hecht bleibt eine Vermutung.</note></item><item>Bezeichnung eines bestimmten Stücks oder Zuschnitts vom Hecht<note type="rationale">Unbelegt: Rumpolt gebraucht das Wort bei Kalb, Hammel, Wild, Hausen, Salm und Karpfen, also für eine Speise, nicht für einen Zuschnitt eines bestimmten Fischs.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0990-orig" n="Machart der Hattele vom Hecht" resp="#fyndling" subtype="contextual">Keine Aussage: Der Druck nennt nur die Überschrift, Zutaten, Würze und Garweg fehlen. Wir lassen die Zeile so stehen und ergänzen keine Schritte.<list type="alternatives"><item>Machart wie bei Kalb und Hammel (rum-0121, rum-0178): dünne Scheiben, mit Fett bestreut, aufgewickelt, am Spieß gebraten<note type="rationale">Rumpolts einzige ausgeführte Beschreibung von Hattele; für Hecht nicht belegt und deshalb nur als Vergleich nennbar.</note></item></list></note>
       </div>
     </back>
   </text>

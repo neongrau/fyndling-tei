@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -135,8 +140,8 @@ Praxis. Zuchtaal-, Wels- oder Makrelenstücke (je 4-5 cm) auf Metallspieße zieh
         <note type="gloss" target="#mar-251-orig" n="ad ascio" resp="#fyndling">Mehrdeutig - im Garkontext am ehesten 'langsam, gemächlich' (das langsame Drehen des Spießes), wörtlich auch 'mit Leichtigkeit'.</note>
         <note type="gloss" target="#mar-251-orig" n="salimora" resp="#fyndling">Salzlake/Würzbrühe zum Befeuchten des Bratguts; Martino verweist auf eine andernorts beschriebene Rezeptur.</note>
         <note type="gloss" target="#mar-251-orig" n="pane grattato" resp="#fyndling">Geriebenes (alt-)Brot - hier zusammen mit Mehl als äußere Krusten-Panade, nicht als Saucenbindung.</note>
-        <note type="interpretive_choice" target="#mar-251-orig" n="ad ascio" resp="#fyndling">'So langsam wie möglich' - der Spieß soll gemächlich gedreht werden, damit der fette Fisch gleichmäßig durchzieht.</note>
-        <note type="interpretive_choice" target="#mar-251-orig" n="farina overo pane grattato" resp="#fyndling">'Mehl oder geriebenes Brot' als äußere Krusten-Panade - beides vom Text gleichwertig genannt.</note>
+        <note type="interpretive_choice" target="#mar-251-orig" n="ad ascio" resp="#fyndling">'So langsam wie möglich' - der Spieß soll gemächlich gedreht werden, damit der fette Fisch gleichmäßig durchzieht.<list type="alternatives"><item>'Mit Leichtigkeit / mühelos'.<note type="rationale">Der Ausdruck kann auch eine bequeme Ausführung meinen; im Kontext des langsamen Spießgarens ist 'langsam' jedoch die plausiblere Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-251-orig" n="farina overo pane grattato" resp="#fyndling">'Mehl oder geriebenes Brot' als äußere Krusten-Panade - beides vom Text gleichwertig genannt.<list type="alternatives"><item>Nur geriebenes Brot (Semmelbrösel), 'farina' als Lesefehler.<note type="rationale">Im Andick-Kontext wäre 'Mehl' anachronistisch; hier nennt der Text Mehl aber ausdrücklich als gleichwertige Alternative für eine bloße Panade, daher kein Eingriff nötig.</note></item></list></note>
       </div>
     </back>
   </text>

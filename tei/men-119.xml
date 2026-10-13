@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@
         <note type="gloss" target="#men-119-orig" n="tourneroit" resp="#fyndling">Würde gerinnen oder sauer werden.</note>
         <note type="gloss" target="#men-119-orig" n="escuelle" resp="#fyndling">Eine Schale oder ein Napf.</note>
         <note type="gloss" target="#men-119-orig" n="brouet" resp="#fyndling">Eine dicke, brühebasierte Sauce oder ein Eintopf.</note>
-        <note type="interpretive_choice" target="#men-119-orig" n="tant comme a ennuy" resp="#fyndling">bis es glatt und homogen ist</note>
-        <note type="interpretive_choice" target="#men-119-orig" n="eaue de la char" resp="#fyndling">Fleischbrühe</note>
-        <note type="interpretive_choice" target="#men-119-orig" n="Houssébarré" resp="#fyndling">Houssébarré</note>
+        <note type="interpretive_choice" target="#men-119-orig" n="tant comme a ennuy" resp="#fyndling">bis es glatt und homogen ist<list type="alternatives"><item>mit viel Mühe<note type="rationale">Die wörtliche Übersetzung 'bis zur Langeweile' impliziert einen langwierigen Prozess, der zu einer feinen Konsistenz führt.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-119-orig" n="eaue de la char" resp="#fyndling">Fleischbrühe<list type="alternatives"><item>Kochwasser vom Fleisch<note type="rationale">Wörtlich 'Wasser des Fleisches', könnte auch einfaches Kochwasser von zuvor gekochtem Fleisch bedeuten, das weniger intensiv im Geschmack ist als eine konzentrierte Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-119-orig" n="Houssébarré" resp="#fyndling">Houssébarré<list type="alternatives"><item>Umhülltes Fleisch<note type="rationale">Der Name könnte von 'housser' (bedecken, umhüllen) abgeleitet sein und sich auf die Sauce beziehen, die das Fleisch umhüllt.</note></item></list></note>
       </div>
     </back>
   </text>

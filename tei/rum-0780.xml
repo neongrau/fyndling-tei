@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,9 +107,9 @@ Praxis. Ohne eigene Annahmen lässt sich die Nummer nicht nachkochen. Für die S
         <note type="gloss" target="#rum-0780-orig" n="gelb" resp="#fyndling">Die Farbe der Sauce, im Gegensatz zu „schwarz“ und „grün“ in den beiden folgenden Nummern des Kapitels. Ein Farbmittel nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0780-orig" n="Limonien" resp="#fyndling">Zitronen. Ob Saft, Scheiben oder Schale gemeint sind, sagt die Zeile nicht. Gesalzene Zitronen schreibt Rumpolt eigens als „gesaltzen Limonien“; das steht hier nicht.</note>
         <note type="gloss" target="#rum-0780-orig" n="wol suͤß" resp="#fyndling">Gut gesüßt; womit, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0780-orig" n="Limonien" resp="#fyndling">Zitronen, ohne Angabe, in welcher Form; die Zeile nennt nur „mit Limonien“. In der Übersetzung deshalb schlicht „Zitronen“, wie bei den gleich gebauten Zeilen für Rebhühner (rum-0747) und junge Hühner (rum-0725).</note>
-        <note type="interpretive_choice" target="#rum-0780-orig" n="gelb" resp="#fyndling">Nur die Saucenfarbe ist überliefert; wodurch sie gelb wird, lässt die Zeile offen. Die Übersetzung schreibt deshalb nur „gelb“ und ergänzt kein Farbmittel.</note>
-        <note type="interpretive_choice" target="#rum-0780-orig" n="wol suͤß" resp="#fyndling">Die Sauce ist gut gesüßt; das Süßungsmittel nennt der Text nicht, die Übersetzung ergänzt keins und verstärkt „wol“ nicht zu „sehr“.</note>
+        <note type="interpretive_choice" target="#rum-0780-orig" n="Limonien" resp="#fyndling" subtype="lexical">Zitronen, ohne Angabe, in welcher Form; die Zeile nennt nur „mit Limonien“. In der Übersetzung deshalb schlicht „Zitronen“, wie bei den gleich gebauten Zeilen für Rebhühner (rum-0747) und junge Hühner (rum-0725).<list type="alternatives"><item>Gesalzene Zitronen.<note type="rationale">Kennt Rumpolt im selben Kapitel bei der Taubenpastete (rum-0774: „gesaltzen Limonien“), schreibt das dann aber ausdrücklich; hier steht es nicht.</note></item><item>Frischer Zitronensaft oder geriebene Schale in die Sauce.<note type="rationale">Naheliegende heutige Umsetzung; „Saft“ steht in dieser Zeile aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0780-orig" n="gelb" resp="#fyndling" subtype="contextual">Nur die Saucenfarbe ist überliefert; wodurch sie gelb wird, lässt die Zeile offen. Die Übersetzung schreibt deshalb nur „gelb“ und ergänzt kein Farbmittel.<list type="alternatives"><item>Gelb durch Eidotter in einer Weinbrühe.<note type="rationale">So in der zwölften Nummer desselben Kapitels (rum-0783: „gelb mit einer Weinbruͤh gemacht/ vnd wol suͤß mit Eyerdottern“); für diese Nummer nicht gesagt.</note></item><item>Gelb durch Safran.<note type="rationale">Bei den alten Hennen auf ungarische Art (rum-0690) mit Pfeffer, Safran und Zucker ausgeschrieben; hier steht kein Safran.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0780-orig" n="wol suͤß" resp="#fyndling" subtype="contextual">Die Sauce ist gut gesüßt; das Süßungsmittel nennt der Text nicht, die Übersetzung ergänzt keins und verstärkt „wol“ nicht zu „sehr“.<list type="alternatives"><item>Mit Zucker gesüßt.<note type="rationale">So bei den alten Hennen auf ungarische Art (rum-0690: „zuckers wol“) und beim gelben Kapaun (rum-0649: „wol suͤß mit Zucker“); eine Übertragung.</note></item><item>Süße durch Weinbeeren, Rosinen oder Zibeben.<note type="rationale">So bei der zweiten Nummer des Taubenkapitels (rum-0773), die „suͤß oder gelb“ zur Wahl stellt; Trockenfrüchte nennt diese Zeile aber nicht.</note></item></list></note>
       </div>
     </back>
   </text>

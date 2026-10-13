@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,7 +118,7 @@ Praxis. Karpfenfilet (oder anderen festen Süßwasserfisch) mit gemahlenen Mande
         <note type="gloss" target="#sev-072-orig" n="květem" resp="#fyndling">Muskatblüte (Macis), das getrocknete Samenmantel der Muskatnuss.</note>
         <note type="gloss" target="#sev-072-orig" n="řeckého vína" resp="#fyndling">Griechischer Wein. Im Mittelalter oft süße, gehaltvolle Weine, die importiert wurden.</note>
         <note type="gloss" target="#sev-072-orig" n="klobás" resp="#fyndling">Wurst. Hier im Sinne der wurstförmigen Gestalt, die die Karpfenmasse um die Spieße annimmt.</note>
-        <note type="interpretive_choice" target="#sev-072-orig" n="z čehož se zdá, aby byla pozčernalá" resp="#fyndling">Eine Sauce, die nach Belieben geschwärzt (dunkel gefärbt) wird - der Koch wählt das Mittel selbst, periodentypisch dunkel geröstetes Brot oder Pflaumenmus.</note>
+        <note type="interpretive_choice" target="#sev-072-orig" n="z čehož se zdá, aby byla pozčernalá" resp="#fyndling">Eine Sauce, die nach Belieben geschwärzt (dunkel gefärbt) wird - der Koch wählt das Mittel selbst, periodentypisch dunkel geröstetes Brot oder Pflaumenmus.<list type="alternatives"><item>Eine Sauce aus einer von Natur aus dunklen Zutat<note type="rationale">z čehož se zdá („aus was es scheint") lässt offen, ob aktiv geschwärzt oder schlicht eine bereits dunkle Grundlage genommen wird - in der Praxis läuft beides auf eine dunkle, brotgebundene Gewürzsauce hinaus.</note></item></list></note>
       </div>
     </back>
   </text>

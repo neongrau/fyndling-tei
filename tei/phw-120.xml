@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -156,8 +161,8 @@ Praxis. Leber und Speck grob hacken, mit Salbei, Zwiebel und Petersilie mischen,
         <note type="gloss" target="#phw-120-orig" n="resch" resp="#fyndling">Steht hier nicht für Textur, sondern für eine kräftige, scharfe Würzung: Die Stelle beschreibt das Würzen der rohen Masse mit Pfeffer und Ingwer vor dem Einschlagen ins Netz, nicht das Ergebnis des Backens.</note>
         <note type="gloss" target="#phw-120-orig" n="wein ber" resp="#fyndling">Weinbeeren sind getrocknete Weintrauben, also Rosinen. Sie wurden oft zum Würzen und Süßen von herzhaften Gerichten verwendet.</note>
         <note type="gloss" target="#phw-120-orig" n="rost" resp="#fyndling">Ein Rost, auf dem die Pfanne über der Glut platziert wird. Dies ermöglicht eine indirekte Hitze von unten.</note>
-        <note type="interpretive_choice" target="#phw-120-orig" n="resch" resp="#fyndling">‚Resch‘ meint hier ‚scharf/würzig‘ (Geschmacksintensität der Würzung mit Pfeffer und Ingwer), nicht die Backtextur der fertigen Leber - die Stelle steht im selben Satz wie die Gewürze, vor dem Einschlagen ins Netz.</note>
-        <note type="interpretive_choice" target="#phw-120-orig" n="so ker es vm gemach das er brech" resp="#fyndling">‚Gemach‘ (vorsichtig) umwenden, damit die Masse nicht auseinanderbricht. Eine Verneinung vor ‚brech‘ steht im Transkript nicht ausdrücklich, ergibt sich aber aus dem Sinnzusammenhang mit ‚gemach‘.</note>
+        <note type="interpretive_choice" target="#phw-120-orig" n="resch" resp="#fyndling" subtype="lexical">‚Resch‘ meint hier ‚scharf/würzig‘ (Geschmacksintensität der Würzung mit Pfeffer und Ingwer), nicht die Backtextur der fertigen Leber - die Stelle steht im selben Satz wie die Gewürze, vor dem Einschlagen ins Netz.<list type="alternatives"><item>‚Resch‘ als ‚knusprig/kross‘, bezogen auf die Textur nach dem Backen.<note type="rationale">Das Buch verwendet ‚resch‘ an vielen anderen Stellen im Sinn von ‚knusprig/durchgebacken‘; hier steht die Stelle jedoch vor dem Backen im Würz-Satz, was für die Geschmacks-Lesart spricht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-120-orig" n="so ker es vm gemach das er brech" resp="#fyndling" subtype="philological">‚Gemach‘ (vorsichtig) umwenden, damit die Masse nicht auseinanderbricht. Eine Verneinung vor ‚brech‘ steht im Transkript nicht ausdrücklich, ergibt sich aber aus dem Sinnzusammenhang mit ‚gemach‘.<list type="alternatives"><item>Wörtlich ohne ergänzte Verneinung gelesen, ergäbe der Satz keinen schlüssigen Sinn.<note type="rationale">Vorsichtiges Wenden einer noch nicht durchgegarten, nur vom Netz gehaltenen Masse soll das Aufreißen verhindern, nicht herbeiführen.</note></item></list></note>
       </div>
     </back>
   </text>

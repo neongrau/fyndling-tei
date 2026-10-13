@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Praxis. Wer den Eintrag umsetzen will, füllt die Keule nach eigener Wahl, brät
         <note type="gloss" target="#rum-0254-orig" n="Schlegel" resp="#fyndling">Die Keule. Das Tier nennt der Satz selbst nicht; es ergibt sich aus dem Kapitel „Von einer jungen Geiß“, also Ziegenschlegel.</note>
         <note type="gloss" target="#rum-0254-orig" n="eynzumachen" resp="#fyndling">Bei Fleisch meint Rumpolt mit „einmachen“ das Anrichten in einer Brühe oder Soße, nicht das Konservieren. So im selben Kapitel beim gefüllten Ziegenmagen (rum-0231) und in der Aufzählung zu den Ziegenfüßen (rum-0255). Mit dem heutigen Einkochen hat es nichts zu tun.</note>
         <note type="gloss" target="#rum-0254-orig" n="abgebraten" resp="#fyndling">Fertig gebraten. „Kalt abgebraten“ heißt wie im vorigen Rezept (rum-0253): gebraten und dann erkalten lassen, auf Deutsch „kalt Gebratenes“.</note>
-        <note type="interpretive_choice" target="#rum-0254-orig" n="eynzumachen" resp="#fyndling">In Brühe oder Soße anrichten. Das ist Rumpolts durchgehender Gebrauch bei Fleisch: im Geiß-Kapitel beim gefüllten Magen (rum-0231, „eynzumachen gantz“) und bei den Ziegenfüßen (rum-0255), beim Hammel als Alternative zu Braten und Kochen (rum-0183).</note>
-        <note type="interpretive_choice" target="#rum-0254-orig" n="Füllung des Schlegels" resp="#fyndling">Rumpolt nennt hier keine Füllung. Sie bleibt offen und wird nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0254-orig" n="es sey warm oder kalt abgebraten" resp="#fyndling">Nach dem Braten entweder warm gegessen oder erkalten lassen und kalt gegessen, wie im vorigen Rezept (rum-0253) beschrieben.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
+        <note type="interpretive_choice" target="#rum-0254-orig" n="eynzumachen" resp="#fyndling" subtype="contextual">In Brühe oder Soße anrichten. Das ist Rumpolts durchgehender Gebrauch bei Fleisch: im Geiß-Kapitel beim gefüllten Magen (rum-0231, „eynzumachen gantz“) und bei den Ziegenfüßen (rum-0255), beim Hammel als Alternative zu Braten und Kochen (rum-0183).<list type="alternatives"><item>Einlegen oder einsalzen, um das Fleisch haltbar zu machen<note type="rationale">Die Wörterbücher führen „einmachen“ auch im Sinn von „einlegen“. Im Buch selbst gibt es dafür beim Fleisch keinen Beleg, und der Satz stellt „einmachen“ gleichrangig neben „braten“, nicht neben eine Vorratsmethode.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0254-orig" n="Füllung des Schlegels" resp="#fyndling" subtype="contextual">Rumpolt nennt hier keine Füllung. Sie bleibt offen und wird nicht ergänzt.<list type="alternatives"><item>Füllung wie beim Hammelschlegel (rum-0183): das Fleisch unter der Haut herausschneiden, mit gesalzenem Speck und etwas Zwiebel hacken, mit Pfeffer würzen, nach Belieben Safran und grüne Kräuter<note type="rationale">Die einzige Schlegelfüllung, die Rumpolt ausführt, steht im Hammelkapitel. Sie taugt zum Vergleich und als Praxisvorschlag, ist aber nicht die Füllung dieses Rezepts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0254-orig" n="es sey warm oder kalt abgebraten" resp="#fyndling" subtype="lexical">Nach dem Braten entweder warm gegessen oder erkalten lassen und kalt gegessen, wie im vorigen Rezept (rum-0253) beschrieben.<list type="alternatives"><item>Bloße Angabe der Serviertemperatur<note type="rationale">Im Ergebnis gleich, aber „abgebraten“ bezieht sich ausdrücklich auf das fertige Braten; deshalb steht in der Übersetzung „abgebraten“ und nicht „serviert“.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
       </div>
     </back>
   </text>

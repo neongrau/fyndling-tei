@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -119,7 +124,7 @@ Praxis. Äpfel schälen und klein schneiden, mit den entsteinten Weichseln oder 
         <note type="gloss" target="#std-051-orig" n="mollen von ainer Semel" resp="#fyndling">Hier sind die Krümel oder das Innere einer Semmel (Weißbrötchen) gemeint, also Semmelbrösel oder Brotkrume, die als Bindemittel dienen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
         <note type="gloss" target="#std-051-orig" n="abſieden" resp="#fyndling">Das Einkochen oder Reduzieren einer Flüssigkeit, um sie einzudicken und den Geschmack zu konzentrieren.</note>
         <note type="gloss" target="#std-051-orig" n="linds gewirtz" resp="#fyndling">Milde Gewürze, die den Fruchtgeschmack nicht überdecken. Typisch wären Zimt, Muskatblüte oder Ingwer.</note>
-        <note type="interpretive_choice" target="#std-051-orig" n="Weichseln (ganz oder entkernt?)" resp="#fyndling">Für die eigene Küche: Weichseln vor dem Kochen entsteinen</note>
+        <note type="interpretive_choice" target="#std-051-orig" n="Weichseln (ganz oder entkernt?)" resp="#fyndling">Für die eigene Küche: Weichseln vor dem Kochen entsteinen<list type="alternatives"><item>Ganze Früchte mit Kern mitkochen, Kerne bleiben beim Passieren durchs Tuch zurück<note type="rationale">Weder Transkript noch Zweitquelle erwähnen das Entkernen ausdrücklich; das Mitkochen ganzer Früchte und Zurückhalten der Kerne beim Passieren wäre period-typisch und spart einen Arbeitsschritt.</note></item></list></note>
       </div>
     </back>
   </text>

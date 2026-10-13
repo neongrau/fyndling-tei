@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -149,12 +154,12 @@ Praxis. Vor dem Einfüllen einen Löffel Brühe auf einem kalten Teller probiere
         <note type="gloss" target="#rum-0999-orig" n="Feßlein" resp="#fyndling">Ein kleines Fass. Rumpolt schichtet die Hechtstücke darin ein, verschließt es und schreibt, man könne es so verschicken.</note>
         <note type="gloss" target="#rum-0999-orig" n="eyngemacht" resp="#fyndling">Hier schlicht: in das Fässchen eingefüllt. Nicht im heutigen Sinn von „eingemacht“ als Konserve.</note>
         <note type="gloss" target="#rum-0999-orig" n="Gallraten" resp="#fyndling">Gallerten: Speisen in einer Brühe, die beim Erkalten fest wird. Rumpolt sagt, solche Gallerten bringe man gewöhnlich aus Italien.</note>
-        <note type="interpretive_choice" target="#rum-0999-orig" n="vberentzigen Hecht" resp="#fyndling">Der übrige, überzählige Hecht: „überenzig/übereinzig“ heißt in den Wörterbüchern übrig, überschüssig (FWB, DWB „superfluus“). Gemeint ist derselbe „vbrige Hecht“ vom Anfang, der für die Brühe gesotten wurde.</note>
-        <note type="interpretive_choice" target="#rum-0999-orig" n="Rumbel" resp="#fyndling">Name des Gerichts und eines Meeresfischs, dessen Art offen bleibt. Rumpolt sagt nur, es gebe ihn allein auf dem Meer; als Fischname ist das Wort sonst nicht nachgewiesen.</note>
-        <note type="interpretive_choice" target="#rum-0999-orig" n="lauter Wein" resp="#fyndling">Reiner, unverdünnter Wein, wie im Nachbarrezept rum-0998 („lautern Wein“). Die Farbe des Weins nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0999-orig" n="gelbs" resp="#fyndling">Gelb gefärbt; das Färbemittel nennt der Text nicht und wird deshalb nicht festgelegt.</note>
-        <note type="interpretive_choice" target="#rum-0999-orig" n="mach sie fein weiß" resp="#fyndling">Die Hechte schön weiß machen; welcher Arbeitsgang gemeint ist, sagt der Text nicht. In der Praxis: sauber schuppen und waschen.</note>
-        <note type="interpretive_choice" target="#rum-0999-orig" n="Garzeit und Mengen" resp="#fyndling">Rumpolt nennt weder Garzeit noch Mengen für Fisch, Wein, Hausenblase oder Zucker.</note>
+        <note type="interpretive_choice" target="#rum-0999-orig" n="vberentzigen Hecht" resp="#fyndling" subtype="lexical">Der übrige, überzählige Hecht: „überenzig/übereinzig“ heißt in den Wörterbüchern übrig, überschüssig (FWB, DWB „superfluus“). Gemeint ist derselbe „vbrige Hecht“ vom Anfang, der für die Brühe gesotten wurde.<list type="alternatives"><item>ausgekochter, ausgelaugter Hecht<note type="rationale">Der Zustand trifft zu, weil der Fisch für die Brühe ausgekocht wurde, aber das Wort selbst bedeutet „übrig“; deshalb nicht als Übersetzung gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0999-orig" n="Rumbel" resp="#fyndling" subtype="lexical">Name des Gerichts und eines Meeresfischs, dessen Art offen bleibt. Rumpolt sagt nur, es gebe ihn allein auf dem Meer; als Fischname ist das Wort sonst nicht nachgewiesen.<list type="alternatives"><item>Steinbutt (vgl. italienisch „rombo“, lateinisch „rhombus“)<note type="rationale">Nur Klangähnlichkeit, gestützt allenfalls dadurch, dass Rumpolt solche Gallerten aus Italien kommen lässt; kein Wörterbuch- oder Korpusbeleg, daher nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0999-orig" n="lauter Wein" resp="#fyndling" subtype="lexical">Reiner, unverdünnter Wein, wie im Nachbarrezept rum-0998 („lautern Wein“). Die Farbe des Weins nennt der Text nicht.<list type="alternatives"><item>klarer Wein<note type="rationale">„lauter“ kann auch klar heißen, so am Ende des Rezepts bei der geklärten Brühe („so wirt sie lauter vnd schoͤn“); beim Ansetzen liegt „rein“ näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0999-orig" n="gelbs" resp="#fyndling" subtype="contextual">Gelb gefärbt; das Färbemittel nennt der Text nicht und wird deshalb nicht festgelegt.<list type="alternatives"><item>Safran<note type="rationale">Das übliche Gelbmittel der Zeit und wahrscheinlich gemeint, aber im Text nicht genannt; daher nur als Alternative zur Zutat geführt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0999-orig" n="mach sie fein weiß" resp="#fyndling" subtype="contextual">Die Hechte schön weiß machen; welcher Arbeitsgang gemeint ist, sagt der Text nicht. In der Praxis: sauber schuppen und waschen.<list type="alternatives"><item>schuppen, ausnehmen und vorbrühen<note type="rationale">Möglich, aber nicht genannt; das Schuppen ergibt sich aus der Verwendung der Schuppen, ein Vorbrühen ist nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0999-orig" n="Garzeit und Mengen" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Garzeit noch Mengen für Fisch, Wein, Hausenblase oder Zucker.<list type="alternatives"><item>Praxis: Hechtstücke bei schwacher Hitze gar ziehen lassen, bis sie zart sind; Zucker und Gewürze nach Geschmack<note type="rationale">Moderne Ausführung, keine Angabe des Textes.</note></item></list></note>
       </div>
     </back>
   </text>

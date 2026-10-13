@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,7 +105,7 @@ Serà bona allessata con un poco di petrosillo. Et anco è bona fritta, mettendo
         <note type="gloss" target="#mar-217-orig" n="petrosillo" resp="#fyndling">Petersilie</note>
         <note type="gloss" target="#mar-217-orig" n="fritta" resp="#fyndling">gebraten</note>
         <note type="gloss" target="#mar-217-orig" n="suco d'aranci" resp="#fyndling">Orangensaft</note>
-        <note type="interpretive_choice" target="#mar-217-orig" n="La passera" resp="#fyndling">‚Der Spatz‘ - Die direkte Übersetzung von ‚passera‘ ist Spatz. Im Kontext kleiner Vögel ist dies die naheliegendste Interpretation.</note>
+        <note type="interpretive_choice" target="#mar-217-orig" n="La passera" resp="#fyndling">‚Der Spatz‘ - Die direkte Übersetzung von ‚passera‘ ist Spatz. Im Kontext kleiner Vögel ist dies die naheliegendste Interpretation.<list type="alternatives"><item>‚Der Sperling‘ oder ‚kleiner Singvogel‘<note type="rationale">‚Passera‘ kann auch allgemeiner für Sperlinge oder kleine Singvögel stehen. Da Spatzen heute geschützt sind, ist die Verwendung von Wachteln oder ähnlichem Geflügel eine moderne Anpassung, die dem Geist des Rezepts entspricht.</note></item></list></note>
       </div>
     </back>
   </text>

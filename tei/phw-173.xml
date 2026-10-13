@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,9 +138,9 @@ Der Garzustand des Hechts wird im Text nur mit ‚wie er sein soll' benannt, ohn
         <note type="gloss" target="#phw-173-orig" n="schiep" resp="#fyndling">‚Schiep' ist eine frühneuhochdeutsche Form von ‚schuppen', also die Schuppen vom Fisch entfernen.</note>
         <note type="gloss" target="#phw-173-orig" n="resch" resp="#fyndling">‚Resch' wird hier als ‚scharf'/‚kräftig gewürzt' gelesen, nicht im modernen Sinne von ‚knusprig' - so auch im unmittelbar benachbarten Hecht-Rezept im selben Würzkontext.</note>
         <note type="gloss" target="#phw-173-orig" n="bryelin" resp="#fyndling">‚Brühelein' ist die Verkleinerungsform von Brühe und bezeichnet hier die fertige, gewürzte Sauce.</note>
-        <note type="interpretive_choice" target="#phw-173-orig" n="z ein mach jn ain zwifel" resp="#fyndling">Die Phrase wird als ‚in Zwiebel einmachen' im Sinne von ‚in Zwiebelsauce zubereiten' übersetzt.</note>
-        <note type="interpretive_choice" target="#phw-173-orig" n="resch" resp="#fyndling">‚Resch' wird hier als ‚scharf'/‚kräftig gewürzt' gelesen - das legt sowohl das unmittelbar benachbarte Hecht-Rezept im selben Würzkontext als auch die nächstliegende belegte Wörterbuchbedeutung nahe.</note>
-        <note type="interpretive_choice" target="#phw-173-orig" n="lemane" resp="#fyndling">Das Fragment ‚ain hecht jn lemane' entspricht wörtlich dem Titelanfang eines separat überlieferten Rezepts im selben Buch (‚Hecht in Zitronensauce'); ‚lemane' liest sich in diesem Zusammenhang als Variante von ‚lemone' (Zitrone).</note>
+        <note type="interpretive_choice" target="#phw-173-orig" n="z ein mach jn ain zwifel" resp="#fyndling" subtype="lexical">Die Phrase wird als ‚in Zwiebel einmachen' im Sinne von ‚in Zwiebelsauce zubereiten' übersetzt.<list type="alternatives"><item>Eine alternative Lesart wäre ‚zu einem Zwiebeleinmach', was eine Art Konserve bedeuten würde.<note type="rationale">Der Kontext des Rezepts, das eine warme Fischzubereitung beschreibt, spricht gegen eine reine Konservierung.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-173-orig" n="resch" resp="#fyndling" subtype="philological">‚Resch' wird hier als ‚scharf'/‚kräftig gewürzt' gelesen - das legt sowohl das unmittelbar benachbarte Hecht-Rezept im selben Würzkontext als auch die nächstliegende belegte Wörterbuchbedeutung nahe.<list type="alternatives"><item>Eine Lesart als ‚würzig'/‚pikant' ist ebenfalls denkbar.<note type="rationale">Weder Wörterbücher noch der sonstige Buch-Befund stützen ‚würzig' eigenständig; für Würzkontexte belegen sie vor allem ‚scharf'/‚rasch'.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-173-orig" n="lemane" resp="#fyndling" subtype="philological">Das Fragment ‚ain hecht jn lemane' entspricht wörtlich dem Titelanfang eines separat überlieferten Rezepts im selben Buch (‚Hecht in Zitronensauce'); ‚lemane' liest sich in diesem Zusammenhang als Variante von ‚lemone' (Zitrone).<list type="alternatives"><item>Wörterbuchbelege stützen daneben eine Lesart als Genfer See (Lac Léman).<note type="rationale">Ohne die Handschrift selbst ist zwischen einer Ortsbezeichnung und der Zitrusfrucht-Lesart nicht abschließend zu entscheiden; der Buch-interne Befund macht die Zitrone-Lesart aber wahrscheinlicher.</note></item></list></note>
       </div>
     </back>
   </text>

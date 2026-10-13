@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,10 +112,10 @@ Praxis. Teig nach rum-1795. Für die ganze Variante die Marillen halbieren, ents
         <note type="gloss" target="#rum-1802-orig" n="Kern herauß" resp="#fyndling">Den Stein der Frucht herausnehmen. Rumpolt sagt bei Steinobst „Kern“, wie bei den Zibeben und Pflaumen desselben Kapitels.</note>
         <note type="gloss" target="#rum-1802-orig" n="magst sie durchstreichen" resp="#fyndling">„Sie“ sind die Marillen, nicht die Kerne. Durchstreichen heißt passieren: Die Früchte werden durch ein Tuch oder Sieb gestrichen, so entsteht ein glattes Mus. Das Gerät nennt Rumpolt hier nicht.</note>
         <note type="gloss" target="#rum-1802-orig" n="gantz eynmachen" resp="#fyndling">„Eynmachen“ heißt in Rumpolts Tortenkapitel „in die Torte einlegen“ (vgl. „machs in ein Turten eyn“ in der ersten Nummer), „gantz“ steht im Gegensatz zu „durchstreichen“: Die Früchte bleiben ganz. Gemeint ist kein Einkochen und keine Konserve.</note>
-        <note type="interpretive_choice" target="#rum-1802-orig" n="gantz eynmachen" resp="#fyndling">Die entsteinten Marillen ganz, also nicht durchgestrichen, mit Zimt und Zucker in die Torte legen. Grund: Im Tortenkapitel steht „eynmachen“ für das Einlegen der Füllung („machs in ein Turten eyn“, Nr. 1), und die Erdbeertorte (rum-1806) setzt „gantz eyn“ und „streich sie durch“ ebenso als Gegensätze.</note>
-        <note type="interpretive_choice" target="#rum-1802-orig" n="gantz" resp="#fyndling">Ganze, entsteinte Früchte, im Gegensatz zum durchgestrichenen Mus.</note>
-        <note type="interpretive_choice" target="#rum-1802-orig" n="sie (magst sie durchstreichen)" resp="#fyndling">„Sie“ meint die Marillen: Die Früchte werden durchgestrichen.</note>
-        <note type="interpretive_choice" target="#rum-1802-orig" n="Marillen" resp="#fyndling">Aprikosen. Rumpolt führt die Marillen auch als Konfekt; die heutige österreichische Bezeichnung ist dieselbe.</note>
+        <note type="interpretive_choice" target="#rum-1802-orig" n="gantz eynmachen" resp="#fyndling" subtype="contextual">Die entsteinten Marillen ganz, also nicht durchgestrichen, mit Zimt und Zucker in die Torte legen. Grund: Im Tortenkapitel steht „eynmachen“ für das Einlegen der Füllung („machs in ein Turten eyn“, Nr. 1), und die Erdbeertorte (rum-1806) setzt „gantz eyn“ und „streich sie durch“ ebenso als Gegensätze.<list type="alternatives"><item>Die Marillen mit Zucker einkochen, wie im Kapitel der eingemachten Früchte.<note type="rationale">Unwahrscheinlich: Der Eintrag steht unter den Tortenfüllungen, und die Parallelen rum-1803 und rum-1806 meinen das Einlegen in die Torte. Das Wort ist hier nur aus dem Zusammenhang geklärt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1802-orig" n="gantz" resp="#fyndling" subtype="contextual">Ganze, entsteinte Früchte, im Gegensatz zum durchgestrichenen Mus.<list type="alternatives"><item>Entsteinte Hälften.<note type="rationale">Praktisch naheliegend, weil sich der Stein meist nur durch Aufbrechen der Frucht lösen lässt; dem Text widerspricht das nicht, er unterscheidet nur ganz und durchgestrichen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1802-orig" n="sie (magst sie durchstreichen)" resp="#fyndling" subtype="contextual">„Sie“ meint die Marillen: Die Früchte werden durchgestrichen.<list type="alternatives"><item>„Sie“ meint die zuvor genannten Kerne.<note type="rationale">Grammatisch der nähere Bezug, sachlich sinnlos: Die Kerne werden herausgenommen, durchgestrichen wird die Frucht, wie bei der Pfirsichtorte (rum-1803).</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1802-orig" n="Marillen" resp="#fyndling" subtype="lexical">Aprikosen. Rumpolt führt die Marillen auch als Konfekt; die heutige österreichische Bezeichnung ist dieselbe.<list type="alternatives"><item>Amarellen (Sauerkirschen).<note type="rationale">Nicht gemeint: Rumpolt gibt den Amarellen im selben Kapitel eine eigene Torte (Nr. 11, rum-1805).</note></item></list></note>
       </div>
     </back>
   </text>

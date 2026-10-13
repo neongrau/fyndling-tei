@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,8 +128,8 @@ Praxis. Rosinen und Äpfel klein schneiden, mit Zucker und Gewürzen vermischen 
         <note type="gloss" target="#w1-238-orig" n="vast" resp="#fyndling">Bedeutet hier ‚fest‘ oder ‚dicht‘.</note>
         <note type="gloss" target="#w1-238-orig" n="vasten" resp="#fyndling">Die christliche Fastenzeit, in der auf Fleisch, Eier und Milchprodukte verzichtet wurde.</note>
         <note type="gloss" target="#w1-238-orig" n="ortern" resp="#fyndling">Die Ränder oder Ecken der Oblaten.</note>
-        <note type="interpretive_choice" target="#w1-238-orig" n="duannen" resp="#fyndling">dünnen (Adjektiv).</note>
-        <note type="interpretive_choice" target="#w1-238-orig" n="Gargerät für das abschließende Backen" resp="#fyndling">Nicht genannt - der Text sagt nur, dass es schnell geht (‚es ist pald gepachen‘).</note>
+        <note type="interpretive_choice" target="#w1-238-orig" n="duannen" resp="#fyndling" subtype="lexical">dünnen (Adjektiv).<list type="alternatives"><item>flüssigen (Adjektiv).<note type="rationale">Die CoReMA-Glosse für ‚duannen taig‘ als ‚batter‘ (flüssiger Teig) legt nahe, dass ‚duannen‘ hier ‚flüssig‘ oder ‚dünnflüssig‘ bedeuten könnte, was ebenfalls gut zum Ausbacken passen würde. Der textidentische Zwilling b4-236 übersetzt die Stelle glatt als ‚dünn‘, ohne die Frage als klärungsbedürftig zu markieren.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-238-orig" n="Gargerät für das abschließende Backen" resp="#fyndling" subtype="contextual">Nicht genannt - der Text sagt nur, dass es schnell geht (‚es ist pald gepachen‘).<list type="alternatives"><item>Backen auf einer heißen Eisenplatte oder direkt am offenen Feuer.<note type="rationale">Textlich ebenso wenig gestützt wie ein Ausbacken in der Pfanne; beide Verfahren sind reine Praxis-Hypothesen ohne Beleg in der Vorlage.</note></item></list></note>
       </div>
     </back>
   </text>

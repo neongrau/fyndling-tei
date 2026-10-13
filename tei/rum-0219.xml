@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -120,11 +125,11 @@ Praxis. Zügig bei mittlerer bis kräftiger Hitze braten, in der Pfanne oder auf
         <note type="gloss" target="#rum-0219-orig" n="Daͤrm" resp="#fyndling">Die Därme des Lamms dienen als Naturdarm für die Wurstfüllung.</note>
         <note type="gloss" target="#rum-0219-orig" n="außschleumen" resp="#fyndling">Ausschleimen: die Därme von innen vom Schleim befreien. Das Wort ist in diesem Sinn für die Gedärme geschlachteter Tiere belegt.</note>
         <note type="gloss" target="#rum-0219-orig" n="vierlerley manier" resp="#fyndling">‚Auf viererlei Weise‘. Welche vier Zubereitungsarten gemeint sind, sagt Rumpolt hier nicht; ‚kochen‘ steht bei ihm allgemein für zubereiten.</note>
-        <note type="interpretive_choice" target="#rum-0219-orig" n="schaw vnd versaltz es nicht" resp="#fyndling">„Achte darauf, dass du es nicht versalzt“: schauen im Sinn von aufpassen, wie in Rumpolts wiederkehrender Formel „schaw/ daß du es nicht versaltzest“ und wie das Frühneuhochdeutsche Wörterbuch es für schauen verzeichnet.</note>
-        <note type="interpretive_choice" target="#rum-0219-orig" n="Salz" resp="#fyndling">Eine Salzzugabe nennt der Text nicht eigens; die Mahnung, nicht zu versalzen, setzt aber voraus, dass gesalzen wird. Eine Menge fehlt.</note>
-        <note type="interpretive_choice" target="#rum-0219-orig" n="frischen Speck" resp="#fyndling">Frischer, also ungeräucherter Speck. Das Tier nennt der Text nicht; Schwein ist die naheliegende Lesart, weil Rumpolts Speck sonst Schweinespeck ist.</note>
-        <note type="interpretive_choice" target="#rum-0219-orig" n="gruͤne Kraͤuter" resp="#fyndling">Frische grüne Kräuter ohne Artangabe; Rumpolt nennt keine Sorte.</note>
-        <note type="interpretive_choice" target="#rum-0219-orig" n="hengs auff/ vnd laß sie trucken werden" resp="#fyndling">Aufhängen, bis die Würste trocken sind. Eine Dauer nennt der Text nicht, von Rauch ist keine Rede.</note>
+        <note type="interpretive_choice" target="#rum-0219-orig" n="schaw vnd versaltz es nicht" resp="#fyndling" subtype="lexical">„Achte darauf, dass du es nicht versalzt“: schauen im Sinn von aufpassen, wie in Rumpolts wiederkehrender Formel „schaw/ daß du es nicht versaltzest“ und wie das Frühneuhochdeutsche Wörterbuch es für schauen verzeichnet.<list type="alternatives"><item>„Schmecke ab und versalze es nicht“<note type="rationale">Nicht belegt: schauen heißt bei Rumpolt sonst nie kosten, und die Masse ist rohes Hackfleisch. Wer heute den Salzgehalt prüfen will, brät ein kleines Probestück.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0219-orig" n="Salz" resp="#fyndling" subtype="contextual">Eine Salzzugabe nennt der Text nicht eigens; die Mahnung, nicht zu versalzen, setzt aber voraus, dass gesalzen wird. Eine Menge fehlt.<list type="alternatives"><item>Sparsam salzen<note type="rationale">Moderne Praxis: ohne Salz schmeckt die Wurst flach und bindet schlechter, zu viel verbietet der Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0219-orig" n="frischen Speck" resp="#fyndling" subtype="contextual">Frischer, also ungeräucherter Speck. Das Tier nennt der Text nicht; Schwein ist die naheliegende Lesart, weil Rumpolts Speck sonst Schweinespeck ist.<list type="alternatives"><item>Ungeräucherter, ungepökelter Rücken- oder Bauchspeck vom Schwein<note type="rationale">Moderne Umsetzung der Kontextlesart.</note></item><item>Lammfett<note type="rationale">Nicht belegt; das Lamm liefert wenig Fett, deshalb kommt der Speck hinzu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0219-orig" n="gruͤne Kraͤuter" resp="#fyndling" subtype="contextual">Frische grüne Kräuter ohne Artangabe; Rumpolt nennt keine Sorte.<list type="alternatives"><item>Gemischte frische Gartenkräuter<note type="rationale">Moderne Wahl ohne Vorgabe des Textes; Petersilie, Salbei oder Majoran wären eine Vermutung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0219-orig" n="hengs auff/ vnd laß sie trucken werden" resp="#fyndling" subtype="contextual">Aufhängen, bis die Würste trocken sind. Eine Dauer nennt der Text nicht, von Rauch ist keine Rede.<list type="alternatives"><item>Kurz luftig aufhängen, bis die Oberfläche trocken ist<note type="rationale">Moderne Praxis vor dem Braten: die trockene Hülle spritzt weniger und bräunt besser.</note></item><item>Länger hängen lassen, bis die Würste halb getrocknet sind<note type="rationale">Mit dem Wortlaut vereinbar, aber ohne Anhaltspunkt im Text; ohne Kühlung heute nicht ratsam.</note></item></list></note>
       </div>
     </back>
   </text>

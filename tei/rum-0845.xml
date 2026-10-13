@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,11 +115,11 @@ Praxis. Die Vögel gerupft und ausgenommen mit dem gehackten Speck und den Kräu
         <note type="gloss" target="#rum-0845-orig" n="Voͤgel" resp="#fyndling">Vögel. Gemeint sind nach dem Kapitelkopf kleine Vögel; eine Art nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0845-orig" n="gesotten / sieden" resp="#fyndling">Gekocht, in Wasser oder Brühe. Der Speck wird vorab gar gekocht, dann gehackt und mit den Vögeln in der Brühe gesotten.</note>
         <note type="gloss" target="#rum-0845-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0845-orig" n="Eyngemacht" resp="#fyndling">In einer Sauce gegart. So gebraucht Rumpolt das Wort für Fleisch und Geflügel durchgehend, auch in den Nachbarnummern des Kapitels (rum-0841, rum-0844). Die Sauce ist hier die Rinderbrühe mit Speck und Kräutern.</note>
-        <note type="interpretive_choice" target="#rum-0845-orig" n="laß mit den Voͤgeln sieden / vnnd mit guter Rindtfleischbruͤh" resp="#fyndling">Das Gehackte, Speck mit Kräutern, siedet zusammen mit den Vögeln in der Rinderbrühe; die Brühe ist die Garflüssigkeit.</note>
-        <note type="interpretive_choice" target="#rum-0845-orig" n="Voͤgel" resp="#fyndling">Kleine Vögel ohne Artangabe: Der Kapitelkopf nennt nur „allerley kleinen Vögeln“, die Zeile selbst nur „Vögel“.</note>
-        <note type="interpretive_choice" target="#rum-0845-orig" n="gruͤnen Kraͤutern" resp="#fyndling">Grüne Kräuter ohne Liste; Rumpolt nennt keine Art, es wird keine ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0845-orig" n="Garzeit" resp="#fyndling">Der Text nennt keine Zeit: Die Vögel sieden, bis sie gar sind.</note>
+        <note type="interpretive_choice" target="#rum-0845-orig" n="Eyngemacht" resp="#fyndling" subtype="lexical">In einer Sauce gegart. So gebraucht Rumpolt das Wort für Fleisch und Geflügel durchgehend, auch in den Nachbarnummern des Kapitels (rum-0841, rum-0844). Die Sauce ist hier die Rinderbrühe mit Speck und Kräutern.<list type="alternatives"><item>Konserviert, eingelegt.<note type="rationale">Heutige Wortbedeutung; im Kapitel über zubereitete kleine Vögel ergibt sie keinen Sinn. Deshalb steht das Wort nicht im Titel.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0845-orig" n="laß mit den Voͤgeln sieden / vnnd mit guter Rindtfleischbruͤh" resp="#fyndling" subtype="philological">Das Gehackte, Speck mit Kräutern, siedet zusammen mit den Vögeln in der Rinderbrühe; die Brühe ist die Garflüssigkeit.<list type="alternatives"><item>Nur der Speck siedet mit den Vögeln, die Brühe kommt als drittes Glied dazu.<note type="rationale">Der Satz hängt Speck und Kräuter durch das gemeinsame Hacken zusammen; dass die Kräuter beim Sieden fehlen, gibt der Wortlaut nicht her.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0845-orig" n="Voͤgel" resp="#fyndling" subtype="contextual">Kleine Vögel ohne Artangabe: Der Kapitelkopf nennt nur „allerley kleinen Vögeln“, die Zeile selbst nur „Vögel“.<list type="alternatives"><item>Eine bestimmte Vogelart festlegen.<note type="rationale">Weder Zeile noch Kapitelkopf legen eine Art fest; jede Festlegung wäre eine Ergänzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0845-orig" n="gruͤnen Kraͤutern" resp="#fyndling" subtype="contextual">Grüne Kräuter ohne Liste; Rumpolt nennt keine Art, es wird keine ergänzt.<list type="alternatives"><item>Petersilie als heutige Wahl.<note type="rationale">In der Nachbarnummer für grün eingemachte Vögel nennt Rumpolt Petersilie (rum-0848); für diese Nummer ist sie nicht belegt, sondern eine eigene Entscheidung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0845-orig" n="Garzeit" resp="#fyndling" subtype="contextual">Der Text nennt keine Zeit: Die Vögel sieden, bis sie gar sind.<list type="alternatives"><item>Etwa 20 bis 30 Minuten schwach köcheln.<note type="rationale">Heutige Schätzung für kleine Vögel; hängt von Größe und Art ab und steht nicht im Text.</note></item></list></note>
       </div>
     </back>
   </text>

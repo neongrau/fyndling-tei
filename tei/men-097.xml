@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -177,9 +182,9 @@
         <note type="gloss" target="#men-097-orig" n="freschumee" resp="#fyndling">Frischer Geruch, hier im Sinne von unangenehmem Geruch der Innereien</note>
         <note type="gloss" target="#men-097-orig" n="foye" resp="#fyndling">Leber</note>
         <note type="gloss" target="#men-097-orig" n="mol" resp="#fyndling">Lunge</note>
-        <note type="interpretive_choice" target="#men-097-orig" n="vertjus de grain" resp="#fyndling">Verjus (aus unreifen Trauben)</note>
-        <note type="interpretive_choice" target="#men-097-orig" n="pain brulé" resp="#fyndling">Verbranntes Brot</note>
-        <note type="interpretive_choice" target="#men-097-orig" n="freschumee" resp="#fyndling">frischer Geruch</note>
+        <note type="interpretive_choice" target="#men-097-orig" n="vertjus de grain" resp="#fyndling">Verjus (aus unreifen Trauben)<list type="alternatives"><item>Verjus mit Gewürzkörnern (z.B. Paradieskörnern)<note type="rationale">Manche Interpretationen sehen 'grain' als Hinweis auf Gewürzkörner, die dem Verjus zugesetzt werden. Der Kontext 'vertjus de grain cuit en eaue dedens ung drappel, ou des groseilles' legt jedoch eher die Traubenbeeren oder ähnliche saure Früchte nahe.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-097-orig" n="pain brulé" resp="#fyndling">Verbranntes Brot<list type="alternatives"><item>Sehr stark geröstetes Brot<note type="rationale">Es könnte auch einfach sehr stark geröstetes Brot gemeint sein, das nicht komplett verkohlt ist, um Bitterkeit zu vermeiden, aber eine dunkle Farbe und Röstaromen liefert.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-097-orig" n="freschumee" resp="#fyndling">frischer Geruch<list type="alternatives"><item>Frische (im Sinne von Verderblichkeit)<note type="rationale">Obwohl 'frische' auch Verderblichkeit bedeuten kann, ist im Kontext der Reinigung von Därmen der unangenehme Eigengeruch die primäre Sorge, die durch Salz und Essig gemindert wird.</note></item></list></note>
         <note type="interpretive_choice" target="#men-097-orig" n="espices et lait" resp="#fyndling">Gewürzmischung und Milch</note>
       </div>
     </back>

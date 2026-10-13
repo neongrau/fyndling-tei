@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,10 +117,10 @@ Praxis. Kalbslunge und Gurgel gibt es heute fast nur auf Bestellung beim Metzger
         <note type="gloss" target="#rum-0102-orig" n="haͤrin Tuch" resp="#fyndling">Ein feines Seihtuch. Rumpolt schreibt „haͤrin Tuch“, ein Tuch aus Haar; Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Welches Haar, sagt keine Quelle. Heute tut es ein feines Passier- oder Mulltuch.</note>
         <note type="gloss" target="#rum-0102-orig" n="Machs gelb" resp="#fyndling">Wahlweise gelb färben. Womit, sagt der Text hier nicht; im Rezept Nr. 10 desselben Kapitels nennt Rumpolt beim Lungenmus Safran.</note>
         <note type="gloss" target="#rum-0102-orig" n="Lungenmuß" resp="#fyndling">So nennt Rumpolt schon die gesottene, klein gehackte Kalbslunge (Nr. 10). Hier ist es die durch das Tuch gestrichene Masse, unter die Farbe und Essig gerührt werden.</note>
-        <note type="interpretive_choice" target="#rum-0102-orig" n="an die statt sieden" resp="#fyndling">gar kochen: der Nachsatz „wann es gesottẽ ist“ setzt den Garpunkt voraus, und die Masse muss danach hackbar und passierbar sein.</note>
-        <note type="interpretive_choice" target="#rum-0102-orig" n="ruͤr es durcheinander vnter das Lungenmuß" resp="#fyndling">Das Lungenmus ist die eben passierte Masse selbst: Rumpolt nennt schon in Nr. 10 die gehackte Lunge „Lungenmuß“. Farbe und Essig werden daruntergerührt, dann kocht alles zusammen auf.</note>
-        <note type="interpretive_choice" target="#rum-0102-orig" n="Machs gelb" resp="#fyndling">Gelb färben ohne festgelegtes Mittel; der Text nennt keins, und „gelb oder nicht“ ist Rumpolts offene Wahl (vgl. Nr. 11 „gelb oder weiß“, Nr. 13 „gelb oder nicht“).</note>
-        <note type="interpretive_choice" target="#rum-0102-orig" n="durch ein haͤrin Tuch durchlauffen" resp="#fyndling">Die gehackte Masse durch das Tuch streichen (passieren), damit ein glattes Mus entsteht.</note>
+        <note type="interpretive_choice" target="#rum-0102-orig" n="an die statt sieden" resp="#fyndling" subtype="contextual">gar kochen: der Nachsatz „wann es gesottẽ ist“ setzt den Garpunkt voraus, und die Masse muss danach hackbar und passierbar sein.<list type="alternatives"><item>an Ort und Stelle, ohne Umsetzen sieden<note type="rationale">wörtlich möglich, ändert am Ergebnis nichts; der Garpunkt bleibt in jedem Fall gemeint.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0102-orig" n="ruͤr es durcheinander vnter das Lungenmuß" resp="#fyndling" subtype="contextual">Das Lungenmus ist die eben passierte Masse selbst: Rumpolt nennt schon in Nr. 10 die gehackte Lunge „Lungenmuß“. Farbe und Essig werden daruntergerührt, dann kocht alles zusammen auf.<list type="alternatives"><item>ein bereits vorhandenes Grundmus, unter das die Lungen-Gurgel-Masse gerührt wird<note type="rationale">grammatisch möglich, aber das Rezept nennt kein zweites Mus und keine weitere Zutat dafür; deshalb nur Nebenlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0102-orig" n="Machs gelb" resp="#fyndling" subtype="contextual">Gelb färben ohne festgelegtes Mittel; der Text nennt keins, und „gelb oder nicht“ ist Rumpolts offene Wahl (vgl. Nr. 11 „gelb oder weiß“, Nr. 13 „gelb oder nicht“).<list type="alternatives"><item>mit Safran<note type="rationale">naheliegend, weil Rumpolt im Lungenmus-Schmorn Nr. 10 ausdrücklich Safran nimmt; für Nr. 12 aber nicht genannt, daher keine Zutat.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0102-orig" n="durch ein haͤrin Tuch durchlauffen" resp="#fyndling" subtype="contextual">Die gehackte Masse durch das Tuch streichen (passieren), damit ein glattes Mus entsteht.<list type="alternatives"><item>nur Flüssigkeit abseihen<note type="rationale">passt nicht: die gehackte Lunge bliebe dann im Tuch zurück, und es entstünde kein Mus.</note></item></list></note>
       </div>
     </back>
   </text>

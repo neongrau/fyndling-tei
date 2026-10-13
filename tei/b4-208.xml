@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,10 +130,10 @@ Praxis. Das Konfekt steht und fällt mit den Farbmassen aus den beiden vorangehe
         <note type="gloss" target="#b4-208-orig" n="zukcher" resp="#fyndling">Zucker. Im Mittelalter ein teures Importgut und Statussymbol.</note>
         <note type="gloss" target="#b4-208-orig" n="ziegel" resp="#fyndling">Ziegelsteine. Werden hier als Gewichte zum Pressen des Konfekts verwendet.</note>
         <note type="gloss" target="#b4-208-orig" n="Suben" resp="#fyndling">Sieben. Bezieht sich auf die Anzahl der Farben, die vorrätig sein sollen.</note>
-        <note type="interpretive_choice" target="#b4-208-orig" n="scheyblat" resp="#fyndling">Oblaten (Scheiben).</note>
-        <note type="interpretive_choice" target="#b4-208-orig" n="pestreich" resp="#fyndling">bestreichen.</note>
-        <note type="interpretive_choice" target="#b4-208-orig" n="Suben" resp="#fyndling">sieben.</note>
-        <note type="interpretive_choice" target="#b4-208-orig" n="Bindeflüssigkeit der Füllung (im Text nicht genannt)" resp="#fyndling">nicht angegeben - für die Praxis mit wenig Wasser oder Rosenwasser zu einer streichfähigen Paste anrühren.</note>
+        <note type="interpretive_choice" target="#b4-208-orig" n="scheyblat" resp="#fyndling" subtype="lexical">Oblaten (Scheiben).<list type="alternatives"><item>Scheibenblätter (als eigenständige Zutat, die von Oblaten zu unterscheiden ist).<note type="rationale">Obwohl ‚scheyblat‘ wörtlich ‚Scheiben-Blatt‘ bedeutet, wird es hier im Kontext von ‚Oblatt‘ und ‚plat‘ verwendet, die beide ‚Oblaten‘ oder ‚Waffeln‘ meinen. CoReMA glossiert alle drei Begriffe als ‚wafer‘. Daher ist es am plausibelsten, ‚scheyblat‘ als deskriptive Variante für die dünnen Oblaten zu lesen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-208-orig" n="pestreich" resp="#fyndling" subtype="lexical">bestreichen.<list type="alternatives"><item>bestreuen (mit Pulver).<note type="rationale">Obwohl ‚bestreuen‘ eine mögliche Lesart für das Auftragen von Substanzen ist, legt der Kontext ‚mit einer varb‘ (mit einer Farbe) und die flüssige Natur von Lebensmittelfarben nahe, dass die Oblaten ‚bestrichen‘ werden, um eine gleichmäßige Schicht zu erzielen.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-208-orig" n="Suben" resp="#fyndling" subtype="philological">sieben.<list type="alternatives"><item>Substanzen (als allgemeine Bezeichnung für die Farben).<note type="rationale">‚Suben‘ ist eine plausible bairische Lautvariante von ‚sieben‘. Im Kontext der Anweisung, alle Farben vorrätig zu haben, ist die Angabe einer konkreten Anzahl von Farben wahrscheinlicher als eine allgemeine, unbestimmte Bezeichnung wie ‚Substanzen‘. Der textgleiche Zwilling w1-211 schreibt an derselben Stelle ‚sibem‘ - stützt die Lesart ‚sieben‘, ohne den Fall endgültig zu entscheiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-208-orig" n="Bindeflüssigkeit der Füllung (im Text nicht genannt)" resp="#fyndling" subtype="contextual">nicht angegeben - für die Praxis mit wenig Wasser oder Rosenwasser zu einer streichfähigen Paste anrühren.<list type="alternatives"><item>mit Wein oder Eiweiß angerührt.<note type="rationale">Der Text nennt für die Füllung nur Farbe, Gewürz und - bei der weißen Füllung - Zucker, aber keine Flüssigkeit. Wein oder Eiweiß sind historisch plausible Bindemittel für vergleichbare Konfekt-Füllungen, im Rezepttext selbst aber nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

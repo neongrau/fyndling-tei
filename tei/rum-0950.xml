@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,9 +112,9 @@ Praxis. Vorgehen wie bei den ausgeführten Fischpasteten: Forelle schuppen und a
         <note type="gloss" target="#rum-0950-orig" n="eyngemacht (in Pasteten)" resp="#fyndling">In Pastetenteig eingeschlagen, also in die Teighülle eingeschlossen. Rumpolt gebraucht das Wort bei Pasteten gleichbedeutend mit „eyngeschlagen“, etwa beim Stockfisch „eyngemacht in Pasteten/ in Ruckenteig eyngeschlagen“ (rum-1791). Eine Sauce ist hier nicht gemeint, der Text nennt keine.</note>
         <note type="gloss" target="#rum-0950-orig" n="auffgetrieben" resp="#fyndling">Die Pastetenhülle ist hoch aufgezogen, also als hohe Teigwand aufgesetzt. Rumpolt schreibt in seinen Fischpasteten „treib ein Pasteten darzu auff von weissem Teig“ (rum-1782).</note>
         <note type="gloss" target="#rum-0950-orig" n="sauren Limonien" resp="#fyndling">Frische Zitronen. Das Beiwort „sauer“ grenzt sie von den gesalzenen Zitronen ab, die Rumpolt in den Nachbarrezepten verwendet. In welcher Form und Menge sie in die Pastete kommen, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0950-orig" n="eyngemacht in Pasteten" resp="#fyndling">In Pastetenteig eingeschlagen: Rumpolt setzt „eyngemacht in Pasteten“ und „in Ruckenteig eyngeschlagen“ gleich (rum-1791, rum-1786); die Teighülle ist das Gefäß.</note>
-        <note type="interpretive_choice" target="#rum-0950-orig" n="Form der sauren Zitronen in der warmen Variante" resp="#fyndling">Nicht überliefert: Der Text nennt nur „sauren Limonien“. Rumpolt schneidet Zitronen in seinen Fischpasteten sonst „fein breit“ (rum-1782).</note>
-        <note type="interpretive_choice" target="#rum-0950-orig" n="Füllung und Würzung" resp="#fyndling">Nicht überliefert: Der Eintrag nennt weder Würze noch Fett noch weitere Zutaten; nichts davon wird ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0950-orig" n="eyngemacht in Pasteten" resp="#fyndling" subtype="contextual">In Pastetenteig eingeschlagen: Rumpolt setzt „eyngemacht in Pasteten“ und „in Ruckenteig eyngeschlagen“ gleich (rum-1791, rum-1786); die Teighülle ist das Gefäß.<list type="alternatives"><item>in einer Sauce gegart (mit Zitronen) und dann in die Pastete gefüllt<note type="rationale">Bei Fleisch und Fisch ohne Pastete ist das Rumpolts übliche Bedeutung; hier nennt der Text aber keine Sauce, nur die Pastete.</note></item><item>allgemein „zubereitet“<note type="rationale">Zu blass: verwischt, dass die Forellen in der Teighülle stecken.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0950-orig" n="Form der sauren Zitronen in der warmen Variante" resp="#fyndling" subtype="contextual">Nicht überliefert: Der Text nennt nur „sauren Limonien“. Rumpolt schneidet Zitronen in seinen Fischpasteten sonst „fein breit“ (rum-1782).<list type="alternatives"><item>Zitronenscheiben oder -saft in der Pastete<note type="rationale">Heutige Praxis, als Vorschlag in der Zubereitungsnotiz; durch den Text nicht gedeckt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0950-orig" n="Füllung und Würzung" resp="#fyndling" subtype="contextual">Nicht überliefert: Der Eintrag nennt weder Würze noch Fett noch weitere Zutaten; nichts davon wird ergänzt.<list type="alternatives"><item>Forelle mit Salz, Pfeffer, Ingwer und frischer Butter wie in Rumpolts ausgeführten Fischpasteten (rum-1782, rum-1791)<note type="rationale">Naheliegende Orientierung für das Nachkochen, aber aus anderen Rezepten übernommen, nicht aus diesem.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Praxis. Die Teighülle formen und im Ofen vorbacken, bis sie für sich steht. Ei
         <note type="gloss" target="#phw-082-orig" n="syesen buder" resp="#fyndling">Süße Butter, also ungesalzene Butter.</note>
         <note type="gloss" target="#phw-082-orig" n="gewirtz" resp="#fyndling">Eine allgemeine Bezeichnung für Gewürze, oft eine Mischung aus Pfeffer, Ingwer, Zimt und Nelken.</note>
         <note type="gloss" target="#phw-082-orig" n="hipß" resp="#fyndling">Hübsch, ordentlich - im Buch mehrfach für eine sorgfältige Zubereitung belegt, nicht im Sinn von Tempo.</note>
-        <note type="interpretive_choice" target="#phw-082-orig" n="deckalin" resp="#fyndling">Ein Teigdeckelchen, das der Satzstellung nach erst beim Anrichten - nach dem Backen der Ei-Rahm-Masse - aufgelegt wird, nicht mitgebacken.</note>
-        <note type="interpretive_choice" target="#phw-082-orig" n="las bachen (Backdauer)" resp="#fyndling">Der Text nennt keine Zeit- oder Temperaturangabe für das Backen der Ei-Rahm-Masse.</note>
+        <note type="interpretive_choice" target="#phw-082-orig" n="deckalin" resp="#fyndling" subtype="contextual">Ein Teigdeckelchen, das der Satzstellung nach erst beim Anrichten - nach dem Backen der Ei-Rahm-Masse - aufgelegt wird, nicht mitgebacken.<list type="alternatives"><item>Ein Teigdeckelchen, das vor dem Backen aufgelegt und mitgebacken wird, wie bei den Tortenrezepten des Buchs üblich.<note type="rationale">In mehreren Tortenrezepten des Buchs wird ein Deckelchen vor dem Backen aufgelegt. Der Wortlaut dieses Rezepts (‚las bachen vnd wan dus geben wilt so mach ain deckalin dar yber‘) stellt das Anlegen des Deckelchens aber ausdrücklich nach das Backen und vor das Servieren.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-082-orig" n="las bachen (Backdauer)" resp="#fyndling" subtype="contextual">Der Text nennt keine Zeit- oder Temperaturangabe für das Backen der Ei-Rahm-Masse.<list type="alternatives"><item>Der Garpunkt wurde vermutlich nach Augenschein und Konsistenz an der Glut geprüft, ohne festen Zeit- oder Temperaturwert.<note type="rationale">Rezepte dieser Art benennen Gardauern meist nicht; die Empfehlung, bis zum sicheren Durcherhitzen zu backen, ist eine heutige Sicherheits-Praxisregel, kein Textbefund.</note></item></list></note>
       </div>
     </back>
   </text>

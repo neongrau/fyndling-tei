@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -142,8 +147,8 @@ Cluster: Das Zwei-Saucen-Prinzip teilt sich sev-019 (Wildente). Leber-Sauce-Verw
         <note type="gloss" target="#sev-013-orig" n="hartuch" resp="#fyndling">Ein feines Leinentuch, das zum Passieren und Klären von Flüssigkeiten diente.</note>
         <note type="gloss" target="#sev-013-orig" n="hřebičky" resp="#fyndling">Alttschechisch für Nelken (Gewürz).</note>
         <note type="gloss" target="#sev-013-orig" n="šafranem" resp="#fyndling">Alttschechisch für Safran.</note>
-        <note type="interpretive_choice" target="#sev-013-orig" n="jatřičky" resp="#fyndling">Leber des Eichhörnchens. Dies ist die plausibelste Lesart, da die Leber oft als Zutat im selben Gericht verwendet wurde, um den Geschmack zu intensivieren.</note>
-        <note type="interpretive_choice" target="#sev-013-orig" n="topenku neb dvě z chleba / topenku z režného chleba neb směs dvě" resp="#fyndling">Eine oder zwei Scheiben getrocknetes Brot. Die Formulierung „neb dvě“ (oder zwei) bezieht sich auf die Anzahl der Scheiben.</note>
+        <note type="interpretive_choice" target="#sev-013-orig" n="jatřičky" resp="#fyndling">Leber des Eichhörnchens. Dies ist die plausibelste Lesart, da die Leber oft als Zutat im selben Gericht verwendet wurde, um den Geschmack zu intensivieren.<list type="alternatives"><item>Rinderleber.<note type="rationale">Da die Eichhörnchen in Rinderbrühe gekocht werden, könnte auch Rinderleber gemeint sein, um die Sauce anzudicken und zu würzen. Dies wäre eine Option, wenn die Eichhörnchenleber zu klein oder nicht verfügbar wäre.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-013-orig" n="topenku neb dvě z chleba / topenku z režného chleba neb směs dvě" resp="#fyndling">Eine oder zwei Scheiben getrocknetes Brot. Die Formulierung „neb dvě“ (oder zwei) bezieht sich auf die Anzahl der Scheiben.<list type="alternatives"><item>Eine Scheibe Brot oder zwei Mischungen.<note type="rationale">Die Formulierung 'neb směs dvě' könnte auch als 'oder zwei Mischungen' interpretiert werden, was jedoch im Kontext des Andickens von Saucen mit Brot weniger sinnvoll erscheint als die Mengenangabe für Brotscheiben.</note></item></list></note>
       </div>
     </back>
   </text>

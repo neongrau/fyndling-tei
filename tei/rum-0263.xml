@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,9 +115,9 @@ Praxis. Ohren, Füße und Gekröse brauchen langes Garen, die Leber nur kurz. Da
         <note type="gloss" target="#rum-0263-orig" n="Kroͤsen" resp="#fyndling">Gekröse: die Eingeweide des Schlachttiers, also Magen, Därme und Netz, hier vom Spanferkel. Lexer führt „krœse“ als „die kleineren gedärme“. Rumpolt gebraucht das Wort im Kalbs- und im Lammkapitel genauso.</note>
         <note type="gloss" target="#rum-0263-orig" n="gelben sauren Bruͤh" resp="#fyndling">Womit die Brühe gelb und sauer wird, sagt der Satz nicht. Im selben Kapitel macht Rumpolt ein gelbes Gekröse mit Eierdottern und Essig (Nr. 9) und Lunge und Leber gelb mit Essig, Pfeffer und Safran (Nr. 10). Das sind Parallelen, keine Angabe für dieses Gericht.</note>
         <note type="gloss" target="#rum-0263-orig" n="Krameitsch" resp="#fyndling">Das Wort kommt in Rumpolts Kochbuch nur an dieser Stelle vor und ist in den historischen Wörterbüchern nicht als Gericht belegt. Was genau ein „Krameitsch“ ist, bleibt offen. Sicher ist nur, was der Satz selbst sagt: Innereien in gelber saurer Brühe, und das sei gut.</note>
-        <note type="interpretive_choice" target="#rum-0263-orig" n="Krameitsch" resp="#fyndling">Druckform stehen lassen, Bedeutung offen. Das Wort ist nur hier belegt, kein Wörterbuch führt es als Gericht; der Satz beschreibt es nur als Innereien in gelber saurer Brühe.</note>
-        <note type="interpretive_choice" target="#rum-0263-orig" n="Ohren, Füße, Lebern (Tier)" resp="#fyndling">Vom Spanferkel: Das Kapitel „Von einer Spensaw“ gibt das Tier vor, der Satz selbst nennt keins.</note>
-        <note type="interpretive_choice" target="#rum-0263-orig" n="gelben sauren Bruͤh" resp="#fyndling">Nur als Eigenschaft wiedergeben: Die Brühe ist gelb und sauer, Farbmittel und Säure nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0263-orig" n="Krameitsch" resp="#fyndling" subtype="philological">Druckform stehen lassen, Bedeutung offen. Das Wort ist nur hier belegt, kein Wörterbuch führt es als Gericht; der Satz beschreibt es nur als Innereien in gelber saurer Brühe.<list type="alternatives"><item>Ein Ragout oder Eintopf aus Innereien<note type="rationale">Aus den Zutaten geraten, nicht belegt. Passt zum Inhalt, gibt aber keine Wortbedeutung.</note></item><item>Bezug zu Krammetsvogel (Wacholderdrossel)<note type="rationale">Nur Lautähnlichkeit. Idiotikon, Fischer, Schmeller und Grimm belegen unter „kramet-“ nur den Vogel, kein Gericht; mit Vögeln hat dieses Rezept nichts zu tun.</note></item><item>Verwandt mit „Kramerei“ (Kramladen, Handel)<note type="rationale">Die Wörterbücher führen „kramei“ nur in dieser Handelsbedeutung, die zu einer Speise nicht passt. Eine Verwechslung ist nicht ausgeschlossen, aber ohne Anhalt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0263-orig" n="Ohren, Füße, Lebern (Tier)" resp="#fyndling" subtype="contextual">Vom Spanferkel: Das Kapitel „Von einer Spensaw“ gibt das Tier vor, der Satz selbst nennt keins.<list type="alternatives"><item>Vom ausgewachsenen Schwein<note type="rationale">Möglich, wenn der Eintrag nur locker ins Kapitel gestellt ist; die Nachbarrezepte sprechen teils von „Schwein“. Beim Nachkochen der gängige Ersatz, weil Spanferkelteile einzeln selten zu haben sind.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0263-orig" n="gelben sauren Bruͤh" resp="#fyndling" subtype="contextual">Nur als Eigenschaft wiedergeben: Die Brühe ist gelb und sauer, Farbmittel und Säure nennt der Text nicht.<list type="alternatives"><item>Gelb von Safran, sauer von Essig<note type="rationale">So macht Rumpolt im selben Kapitel Lunge und Leber gelb (Nr. 10: Essig, Pfeffer, Safran). Für diesen Eintrag eine Annahme.</note></item><item>Gelb von Eierdottern, sauer von Essig<note type="rationale">So macht er das gelbe Gekröse unmittelbar danach (Nr. 9). Ebenfalls eine Annahme.</note></item></list></note>
       </div>
     </back>
   </text>

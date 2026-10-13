@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -91,8 +96,8 @@ Praxis. Es gibt keinen überlieferten Arbeitsschritt, den man prüfen oder nachk
         <note type="gloss" target="#rum-1761-orig" n="Weitzentig" resp="#fyndling">Weizenteig, die Alternative zum Roggenteig. Wie der Teig angesetzt wird, sagt Rumpolt hier nicht.</note>
         <note type="gloss" target="#rum-1761-orig" n="Alte Hennen" resp="#fyndling">Ältere Hennen, wie man sie heute als Suppenhuhn bekommt; ihr Fleisch ist fester als das junger Hühner. Rumpolt trennt beide: Alte Hennen haben ein eigenes Kapitel (rum-0689), junge Hühner in der Pastete folgen gleich in der nächsten Nummer (rum-1762).</note>
         <note type="gloss" target="#rum-1761-orig" n="kalt" resp="#fyndling">Rumpolts Kategorie: Er unterscheidet in diesem Kapitel kalte und warme Pasteten. Ob die Pastete kalt gegessen oder nur kalt angerichtet wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-1761-orig" n="Rucken (Ruckenteig)" resp="#fyndling">Roggenteig: Ruckenbrot ist bei Rumpolt Roggenbrot, Grimm nennt unter roggen die Formen rocken, rucken, und die Gegenüberstellung „Rucken oder Weitzenteig“ (rum-0320) zeigt zwei Getreidearten. So lösen auch rum-1746 und rum-1753 das Wort auf.</note>
-        <note type="interpretive_choice" target="#rum-1761-orig" n="kalt" resp="#fyndling">Rumpolts Kategorie der kalten Pasteten im Unterschied zu den warmen desselben Kapitels; sie bezeichnet die Art des Anrichtens, kein eigenes Verfahren.</note>
+        <note type="interpretive_choice" target="#rum-1761-orig" n="Rucken (Ruckenteig)" resp="#fyndling" subtype="lexical">Roggenteig: Ruckenbrot ist bei Rumpolt Roggenbrot, Grimm nennt unter roggen die Formen rocken, rucken, und die Gegenüberstellung „Rucken oder Weitzenteig“ (rum-0320) zeigt zwei Getreidearten. So lösen auch rum-1746 und rum-1753 das Wort auf.<list type="alternatives"><item>„Rückenteig“ wörtlich stehen lassen<note type="rationale">Ein Wort Rückenteig gibt es nicht; unübersetzt legt es ein Rückenstück nahe, das nicht gemeint ist. Das Gegenstück Weizenteig zeigt, dass es um das Mehl geht.</note></item><item>Teig nur als Deckel oder Rückseite der Pastete<note type="rationale">Kein Beleg; Rumpolt stellt Rucken und Weizen als gleichrangige Teigarten nebeneinander.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1761-orig" n="kalt" resp="#fyndling" subtype="contextual">Rumpolts Kategorie der kalten Pasteten im Unterschied zu den warmen desselben Kapitels; sie bezeichnet die Art des Anrichtens, kein eigenes Verfahren.<list type="alternatives"><item>Gebacken, ausgekühlt und kalt gegessen<note type="rationale">Naheliegende heutige Lesart; im Text selbst nicht ausdrücklich belegt.</note></item></list></note>
       </div>
     </back>
   </text>

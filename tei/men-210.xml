@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,10 +122,10 @@
         <note type="gloss" target="#men-210-orig" n="notree" resp="#fyndling">Als minderwertig oder markiert angesehen.</note>
         <note type="gloss" target="#men-210-orig" n="feurre" resp="#fyndling">Stroh, hier zum Abtropfen und Trocknen des Fisches verwendet.</note>
         <note type="gloss" target="#men-210-orig" n="fremier" resp="#fyndling">Kochend, sprudelnd.</note>
-        <note type="interpretive_choice" target="#men-210-orig" n="cuire comme plaiz" resp="#fyndling">nach Belieben gar kochen</note>
-        <note type="interpretive_choice" target="#men-210-orig" n="celle qui n'a que une queue est notree" resp="#fyndling">Der Rochen, der nur eine Schwanzflosse hat, ist als minderwertig vermerkt</note>
-        <note type="interpretive_choice" target="#men-210-orig" n="beau feurre" resp="#fyndling">schönes Stroh</note>
-        <note type="interpretive_choice" target="#men-210-orig" n="sel fremier" resp="#fyndling">kochendes Salz</note>
+        <note type="interpretive_choice" target="#men-210-orig" n="cuire comme plaiz" resp="#fyndling">nach Belieben gar kochen<list type="alternatives"><item>kochen, wie es gefällt<note type="rationale">Dies ist eine wörtlichere Übersetzung, die jedoch im Kochkontext weniger präzise ist als 'gar kochen'.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-210-orig" n="celle qui n'a que une queue est notree" resp="#fyndling">Der Rochen, der nur eine Schwanzflosse hat, ist als minderwertig vermerkt<list type="alternatives"><item>Der Rochen, der nur eine Schwanzflosse hat, ist bekannt<note type="rationale">Eine wörtliche Übersetzung von 'notree' als 'bekannt' ist möglich, aber im Kontext der Unterscheidung von Fischarten und der Implikation einer Bewertung ('und die anderen... nicht') ist 'als minderwertig vermerkt' oder 'gekennzeichnet' plausibler.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-210-orig" n="beau feurre" resp="#fyndling">schönes Stroh<list type="alternatives"><item>frisches Stroh<note type="rationale">Das Adjektiv 'beau' kann auch 'gut' oder 'frisch' bedeuten, was im Kontext von Lebensmitteln sinnvoll wäre, um die Hygiene zu betonen.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-210-orig" n="sel fremier" resp="#fyndling">kochendes Salz<list type="alternatives"><item>sprudelndes Salz<note type="rationale">Das Verb 'frémir' bedeutet 'sieden' oder 'sprudeln', was sich auf das kochende Salzwasser bezieht.</note></item></list></note>
       </div>
     </back>
   </text>

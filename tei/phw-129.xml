@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -146,10 +151,10 @@ Leber von Häuten und Adern befreien, im Mixer oder Blender fein pürieren. Geri
         <note type="gloss" target="#phw-129-orig" n="gilbs" resp="#fyndling">Kurzform aus „gilb" (Imperativ zu „gilben" - gelb machen, färben) und dem angehängten Pronomen „-s" für „es": färbe die Mischung mit den bereits genannten Eiern gelb. Solche verkürzten Verb-Pronomen-Formen kommen im Buch mehrfach vor.</note>
         <note type="gloss" target="#phw-129-orig" n="gwirtz noch dem besten" resp="#fyndling">Eine allgemeine Anweisung, die typischerweise Pfeffer, Ingwer, Zimt oder Nelken umfassen konnte, je nach Geschmack und Verfügbarkeit.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#besten"/></note>
         <note type="gloss" target="#phw-129-orig" n="wein berla" resp="#fyndling">Kleine Weinbeeren, also Rosinen.</note>
-        <note type="interpretive_choice" target="#phw-129-orig" n="hays schmaltz dar yber ab" resp="#fyndling">Gieße heißes Schmalz darüber.</note>
-        <note type="interpretive_choice" target="#phw-129-orig" n="die kalbss leber nim halb" resp="#fyndling">Verwende die volle angegebene Menge Kalbsleber (500 g); worauf sich „halb" genau bezieht, bleibt im Satz offen.</note>
-        <note type="interpretive_choice" target="#phw-129-orig" n="bach sy dan oder seutz" resp="#fyndling">Vollständig durchgaren, bis die Füllung fest ist und nichts Rohes mehr sichtbar ist.</note>
-        <note type="interpretive_choice" target="#phw-129-orig" n="stayß.sy" resp="#fyndling">stoß sie (Imperativ zu stoßen, bezogen auf die Leber im Mörser)</note>
+        <note type="interpretive_choice" target="#phw-129-orig" n="hays schmaltz dar yber ab" resp="#fyndling" subtype="contextual">Gieße heißes Schmalz darüber.<list type="alternatives"><item>Gieße heißes Schmalz ab.<note type="rationale">Die Formulierung „dar yber ab" könnte auch das Abgießen von überschüssigem Fett bedeuten. Kulinarisch ist es jedoch plausibler, heißes Fett zur Lebermasse hinzuzufügen, um sie zu garen und anzureichern, als Fett zu diesem Zeitpunkt abzuschöpfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-129-orig" n="die kalbss leber nim halb" resp="#fyndling" subtype="contextual">Verwende die volle angegebene Menge Kalbsleber (500 g); worauf sich „halb" genau bezieht, bleibt im Satz offen.<list type="alternatives"><item>Nur die Hälfte der sonst üblichen Menge Kalbsleber verwenden, oder Kalbs- und Hühnerleber je zur Hälfte mischen.<note type="rationale">„Halb" könnte sich auf eine hier nicht genannte Vergleichsmenge oder auf ein Mischverhältnis mit der eingangs erwähnten Hühnerleber beziehen - der Satzbau lässt beides zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-129-orig" n="bach sy dan oder seutz" resp="#fyndling" subtype="contextual">Vollständig durchgaren, bis die Füllung fest ist und nichts Rohes mehr sichtbar ist.<list type="alternatives"><item>Garzeit nach Erfahrung und Augenmaß, ohne feste Zeit- oder Temperaturangabe.<note type="rationale">Das Rezept nennt keinen Garzeitpunkt. Da die Masse rohe Leber und rohes Ei enthält, wird hier aus Gründen der Lebensmittelsicherheit durchgehendes Garen empfohlen, auch wenn im historischen Küchenalltag allein nach Erfahrung gegart wurde.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-129-orig" n="stayß.sy" resp="#fyndling" subtype="philological">stoß sie (Imperativ zu stoßen, bezogen auf die Leber im Mörser)<list type="alternatives"><item>Der Punkt zwischen den beiden Wortteilen hat keine eigene Bedeutung.<note type="rationale">Der Punkt mitten im Wort lässt sich anhand des vorliegenden Materials nicht sicher einordnen und bleibt am Faksimile zu prüfen. Er ändert die Bedeutung der Stelle nicht.</note></item></list></note>
       </div>
     </back>
   </text>

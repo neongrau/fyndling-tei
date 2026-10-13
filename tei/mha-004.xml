@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,8 +122,8 @@ So wird es richtig gut. Die Balance ist hier die Süße der Mandeln. Der Zucker 
         <note type="gloss" target="#mha-004-orig" n="ain vierdung" resp="#fyndling">Ein Vierdung (oder Vierting) war eine historische Gewichtseinheit, die einem Viertel eines Pfundes entsprach. Bei einem Pfund von etwa 500 g wären dies 125 g.</note>
         <note type="gloss" target="#mha-004-orig" n="dicke milich" resp="#fyndling">Im Mittelhochdeutschen bezeichnete ‚dicke milich‘ oft fermentierte Tiermilch (wie Dickmilch oder Quark). Im Kontext dieses Rezepts, das sich ausschließlich um Mandeln dreht, ist es jedoch als eine dickflüssige Mandelmilch oder Mandelcreme zu interpretieren, die als Beilage dient.</note>
         <note type="gloss" target="#mha-004-orig" n="kleub" resp="#fyndling">Von ‚klauben‘ = verlesen, auslesen, säubern. Die geschälten Mandelkerne für die Garnitur sollen vor dem Aufstecken sortiert und von unsauberen Stücken befreit werden - ein im Kochbuch des Meisters Hans mehrfach belegter Arbeitsschritt.</note>
-        <note type="interpretive_choice" target="#mha-004-orig" n="dicke milich" resp="#fyndling">Dickflüssige Mandelmilch oder Mandelcreme.</note>
-        <note type="interpretive_choice" target="#mha-004-orig" n="ain vierdung" resp="#fyndling">125 g (ein Viertel eines Pfundes).</note>
+        <note type="interpretive_choice" target="#mha-004-orig" n="dicke milich" resp="#fyndling">Dickflüssige Mandelmilch oder Mandelcreme.<list type="alternatives"><item>Fermentierte Kuhmilch (Dickmilch/Quark).<note type="rationale">‚Dicke milich‘ bezeichnet im Mittelhochdeutschen oft fermentierte Tiermilch. Dies würde jedoch einen starken Bruch im Rezept darstellen und eine nicht-vegane Komponente einführen, die nicht zum ‚Mandelkaesz‘ passt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-004-orig" n="ain vierdung" resp="#fyndling">125 g (ein Viertel eines Pfundes).<list type="alternatives"><item>Eine andere, kleinere Gewichtseinheit.<note type="rationale">Historische Maßeinheiten variierten stark. Die Interpretation als Viertelpfund ist jedoch im Kontext der Menge der anderen Zutaten (1 kg Mandeln) plausibel und ergibt eine angemessene Süße.</note></item></list></note>
       </div>
     </back>
   </text>

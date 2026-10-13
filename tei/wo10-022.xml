@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,9 +120,9 @@ Praxis. Für die Lebkuchen: Zucker bzw. Honig mit Wasser im Verhältnis 2:1 (Zuc
         <note type="gloss" target="#wo10-022-orig" n="krepfflen Eiselin" resp="#fyndling">Ein kleines Eisenwerkzeug, vermutlich eine Form oder ein Ausstecher, um die Krapfen in die gewünschte Form zu bringen.</note>
         <note type="gloss" target="#wo10-022-orig" n="Tortten pfannen" resp="#fyndling">Eine flache Pfanne, die zum Backen von Torten oder kleinen Gebäckstücken über dem Feuer oder im Ofen verwendet wurde.</note>
         <note type="gloss" target="#wo10-022-orig" n="flederwisch" resp="#fyndling">Ein historisches Küchengerät aus Gänseflügel oder Federbüschel, das zum Bestreichen und Abwischen diente - am ehesten mit einer Bürste vergleichbar, nicht mit einem Schneebesen.</note>
-        <note type="interpretive_choice" target="#wo10-022-orig" n="Rorlen" resp="#fyndling">Zimtröhrchen<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rorlen"/></note>
-        <note type="interpretive_choice" target="#wo10-022-orig" n="reib sie mit ainem flederwisch vmb" resp="#fyndling">bestreiche/wische sie ringsum mit einem Flederwisch</note>
-        <note type="interpretive_choice" target="#wo10-022-orig" n="Gardauer der Krapfen in der Tortenpfanne" resp="#fyndling">Keine Zeit- oder Temperaturangabe im Text - moderne Praxis: goldbraun garen, Garprobe per Sichtkontrolle.</note>
+        <note type="interpretive_choice" target="#wo10-022-orig" n="Rorlen" resp="#fyndling">Zimtröhrchen<list type="alternatives"><item>Gewürz (unbestimmt)<note type="rationale">Ohne den Buch- und Zwillingsbefund wäre 'Rorlen' isoliert nicht sicher zu deuten; die vorsichtigere Lesart bleibt als Fallback dokumentiert, auch wenn vier unabhängige Korpusbelege (wo10-006, wo10-018, wo10-021, saw-164, saw-151) konsistent auf Zimt(röhrchen) weisen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rorlen"/></note>
+        <note type="interpretive_choice" target="#wo10-022-orig" n="reib sie mit ainem flederwisch vmb" resp="#fyndling">bestreiche/wische sie ringsum mit einem Flederwisch<list type="alternatives"><item>wende sie mit einem Flederwisch<note type="rationale">'Reiben' kann mit Richtungsangabe im Schweizerdeutschen auch 'wenden, umdrehen' bedeuten (DWB, 'umreiben'). Da der Text nicht eindeutig aus diesem Sprachraum stammt und die Grundbedeutung von 'reiben' das Wischen/Bestreichen ist, führen wir diese Lesart nur als Alternative.</note></item></list></note>
+        <note type="interpretive_choice" target="#wo10-022-orig" n="Gardauer der Krapfen in der Tortenpfanne" resp="#fyndling">Keine Zeit- oder Temperaturangabe im Text - moderne Praxis: goldbraun garen, Garprobe per Sichtkontrolle.<list type="alternatives"><item>Unbestimmt lange bei offener Glut, bis Färbung und Konsistenz passen<note type="rationale">Historisch übliche Praxis vor standardisierten Herdtemperaturen - ein Erfahrungswert der Köchin bzw. des Kochs statt einer festen Angabe.</note></item></list></note>
       </div>
     </back>
   </text>

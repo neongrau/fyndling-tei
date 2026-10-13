@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,8 +98,8 @@ Würzung. Rumpolt nennt keine. Wer salzen möchte, tut das nach eigenem Ermessen
 
 Praxis. Das Spanferkel beim Metzger oder Hofladen vorbestellen und bis zum Braten kühl halten. Ofen oder Feuerstelle müssen das ganze Tier aufnehmen können. Schweinefleisch wird nach heutiger Praxis durchgegart. Warm auftragen, wie Rumpolt es verlangt.</note>
         <note type="gloss" target="#rum-0257-orig" n="Spensaw" resp="#fyndling">Spanferkel: ein junges Ferkel, das noch gesäugt wird. Das Bestimmungswort gehört zu frühneuhochdeutsch spen (Zitze, Muttermilch). Rumpolt überschreibt das ganze Kapitel mit „Von einer Spensaw“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#spensaw"/></note>
-        <note type="interpretive_choice" target="#rum-0257-orig" n="gebraten (Gerät und Hitze)" resp="#fyndling">Offen gelassen: Rumpolt schreibt nur „gantz gebraten“. In seinen Bratenkapiteln ist der Spieß am offenen Feuer das übliche Muster, an dieser Stelle nennt er ihn aber nicht.</note>
-        <note type="interpretive_choice" target="#rum-0257-orig" n="Würzung und Füllung" resp="#fyndling">Keine: Der Eintrag nennt weder Gewürz noch Füllung. Die Ausführung bleibt dem Koch überlassen, ohne dass sich daraus eine bestimmte Liste ableiten lässt.</note>
+        <note type="interpretive_choice" target="#rum-0257-orig" n="gebraten (Gerät und Hitze)" resp="#fyndling" subtype="contextual">Offen gelassen: Rumpolt schreibt nur „gantz gebraten“. In seinen Bratenkapiteln ist der Spieß am offenen Feuer das übliche Muster, an dieser Stelle nennt er ihn aber nicht.<list type="alternatives"><item>Am Spieß über Glut<note type="rationale">Naheliegend nach Rumpolts sonstiger Bratpraxis, aber hier nicht ausgesprochen; deshalb nicht in die Übersetzung gesetzt.</note></item><item>Auf dem Rost<note type="rationale">Ebenfalls mit „braten“ vereinbar; kein Hinweis im Text, der es ausschließt oder stützt.</note></item><item>Im Backofen (heutige Praxis)<note type="rationale">Für das Nachkochen die einfachste Lösung, Haut nach oben, Garzeit nach Größe; das ist heutige Ausführung, kein Quellenschritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0257-orig" n="Würzung und Füllung" resp="#fyndling" subtype="contextual">Keine: Der Eintrag nennt weder Gewürz noch Füllung. Die Ausführung bleibt dem Koch überlassen, ohne dass sich daraus eine bestimmte Liste ableiten lässt.<list type="alternatives"><item>Füllung aus dem Folgegericht übernehmen<note type="rationale">Das zweite Gericht des Kapitels füllt die abgezogene Haut mit Vögeln, Obst, Zwiebeln, Speck, Rosinen und Zibeben; das ist ein eigenes Gericht und gehört nicht in dieses Rezept.</note></item><item>Nur salzen (heutige Praxis)<note type="rationale">Wer nachkocht, salzt nach Belieben; das ist eine eigene Entscheidung, keine Angabe Rumpolts.</note></item></list></note>
       </div>
     </back>
   </text>

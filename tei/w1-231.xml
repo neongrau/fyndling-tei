@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,9 +128,9 @@ Lunge weich sieden, fein hacken, mit reichlich Käse, Eiern und der Würzmischun
         <note type="gloss" target="#w1-231-orig" n="lungel" resp="#fyndling">Lunge war im Mittelalter eine häufig verwendete Innerei, die aufgrund ihres kräftigen Geschmacks und ihrer Nährwerte geschätzt wurde.</note>
         <note type="gloss" target="#w1-231-orig" n="plat von taig" resp="#fyndling">Ein dünner Teigfladen, der als Basis oder Hülle für Füllungen diente. Er konnte aus einfachem Mehl und Wasser bestehen, oft aber auch mit Eiern oder Fett angereichert werden.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
         <note type="gloss" target="#w1-231-orig" n="schilt" resp="#fyndling">Die schildförmige Anordnung der Füllung war ein dekoratives Element, das die Präsentation des Gerichts hervorhob.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schilt"/></note>
-        <note type="interpretive_choice" target="#w1-231-orig" n="loeasz" resp="#fyndling">Käse</note>
-        <note type="interpretive_choice" target="#w1-231-orig" n="vnd mit huner gefult" resp="#fyndling">Die schildförmige Lungenmasse wird mit Huhn gefüllt oder vermischt.</note>
-        <note type="interpretive_choice" target="#w1-231-orig" n="Garprozess des belegten Fladens" resp="#fyndling">Der Text nennt für das Huhn und den fertig belegten Fladen keinen eigenen Gar- oder Backschritt; nur die Lunge wird eigens gesotten.</note>
+        <note type="interpretive_choice" target="#w1-231-orig" n="loeasz" resp="#fyndling" subtype="philological">Käse<list type="alternatives"><item>lösen lassen (etwas darin schmelzen oder sich auflösen lassen)<note type="rationale">Das Wort ‚loeasz‘ könnte eine Form von ‚lösen‘ oder ‚lassen‘ sein. Die Mengenangabe ‚gnueg‘ (genug) deutet jedoch eher auf eine feste Zutat hin. Die Lesart als ‚Käse‘ folgt zum einen der textkritischen Anmerkung von Aichholzer (Verschreibung für ‚keaß‘), zum anderen bestätigt die Parallelhandschrift B4 an genau dieser Stelle mit dem unabgekürzten ‚keas‘, dass Käse gemeint ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-231-orig" n="vnd mit huner gefult" resp="#fyndling" subtype="contextual">Die schildförmige Lungenmasse wird mit Huhn gefüllt oder vermischt.<list type="alternatives"><item>Der gesamte Fladen wird zusätzlich zur Lungenmasse mit Huhn gefüllt.<note type="rationale">Es wäre auch denkbar, dass der Fladen selbst, zusätzlich zur Lungen-Füllung, noch eine separate Hühnerfüllung erhält. Die direkte syntaktische Verbindung zum ‚schilt‘ macht die erste Lesart jedoch wahrscheinlicher. Die Parallelhandschrift B4 lässt an derselben Stelle dieselbe Ambiguität offen, löst sie also nicht auf.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-231-orig" n="Garprozess des belegten Fladens" resp="#fyndling" subtype="contextual">Der Text nennt für das Huhn und den fertig belegten Fladen keinen eigenen Gar- oder Backschritt; nur die Lunge wird eigens gesotten.<list type="alternatives"><item>Mit ‚huner‘ ist bereits gegartes bzw. gebratenes Fleisch gemeint, das kalt in die fertige Masse eingearbeitet wird.<note type="rationale">Der Text belegt weder, ob das Huhn vor dem Einfüllen gegart war, noch einen abschließenden Back- oder Erhitzungsschritt für den belegten Fladen. Beide Möglichkeiten bleiben offen; die Parallelhandschrift B4 klärt dies an derselben Stelle ebenfalls nicht.</note></item></list></note>
       </div>
     </back>
   </text>

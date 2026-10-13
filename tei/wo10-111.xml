@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,8 +119,8 @@ Milch mit einem Stück Schmalz in einer Pfanne aufkochen, das Mehl auf einmal ei
         <note type="gloss" target="#wo10-111-orig" n="bachas" resp="#fyndling">Sammelbegriff für „Gebäck/Backwerk“ (zu „bachen“ = backen), belegt im Frühneuhochdeutschen Wörterbuch (fwb-online.de) und im selben Buch dreifach: wo10-090 (Kapiteleröffnung „wie man allerlay Baches ... backen soll“), wo10-097 („Baches“), wo10-108 („Bachas“). Kein Name eines einzelnen, heute unbekannten Gebäcks.</note>
         <note type="gloss" target="#wo10-111-orig" n="brietten kuechlen taig" resp="#fyndling">Wörtlich „gebratener/frittierter Küchlein-Teig“ (mhd. „brieten“ als Schreibvariante von „brâten“, nicht „backen“). Die Beschreibung der Zubereitung - Mehl in heißer Flüssigkeit ausrühren, dann Eier zugeben - deutet trotzdem auf einen Brandteig (Choux-Teig) hin, wie er für Spritzgebäck typisch ist; bestätigt durch das Schwesterrezept wo10-103, das denselben Vorgang ausdrücklich als Brandteig beschreibt.</note>
         <note type="gloss" target="#wo10-111-orig" n="trucks In ein schmaltz das nit haiss sey" resp="#fyndling">Die Anweisung, den Teig in nicht zu heißes Schmalz zu drücken, ist wichtig, damit das Gebäck langsam garen und aufgehen kann, ohne außen zu verbrennen und innen roh zu bleiben.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
-        <note type="interpretive_choice" target="#wo10-111-orig" n="zubachen" resp="#fyndling">Frittieren in heißem Schmalz.</note>
-        <note type="interpretive_choice" target="#wo10-111-orig" n="brietten kuechlen taig" resp="#fyndling">Brandteig (Choux-Teig).</note>
+        <note type="interpretive_choice" target="#wo10-111-orig" n="zubachen" resp="#fyndling">Frittieren in heißem Schmalz.<list type="alternatives"><item>Backen im Ofen.<note type="rationale">Das Verb „bachen“ konnte im Frühneuhochdeutschen sowohl das Backen im Ofen als auch das Braten oder Frittieren in Fett bedeuten. Der Kontext „In ein schmaltz“ macht hier das Frittieren zur eindeutigen Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#wo10-111-orig" n="brietten kuechlen taig" resp="#fyndling">Brandteig (Choux-Teig).<list type="alternatives"><item>Eine Art gebackener Kuchenteig.<note type="rationale">Die Beschreibung der Zubereitung, bei der Mehl in heißer Flüssigkeit/Fett abgeröstet und dann mit Eiern gebunden wird, ist die klassische Methode zur Herstellung von Brandteig. Dies passt besser zum Spritzgebäck als ein gewöhnlicher Kuchenteig.</note></item></list></note>
       </div>
     </back>
   </text>

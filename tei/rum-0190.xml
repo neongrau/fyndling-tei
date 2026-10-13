@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -123,11 +128,11 @@ Praxis. Fleisch, Zibeben, Rosinen, Zimt und Safran in die Brühe geben und siede
         <note type="gloss" target="#rum-0190-orig" n="Ochsenmarck" resp="#fyndling">Rindermark. „Wie es vom Bein kompt“ heißt: so, wie es aus dem Knochen kommt.</note>
         <note type="gloss" target="#rum-0190-orig" n="einsieden" resp="#fyndling">Einkochen. Der Text sagt selbst, es solle „nicht gar zu dünn“ werden; gemeint ist also ein Einkochen, bis die Brühe sämig ist.</note>
         <note type="gloss" target="#rum-0190-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0190-orig" n="Ziweben" resp="#fyndling">Zibeben, große getrocknete Weinbeeren: Lexer „zibebe, die große Kochrosine“, Goetze „Kochrosine“; die Schreibung mit -w- ist auch sonst belegt (Sabina Welserin: „ziwiben“). Rumpolt stellt sie ausdrücklich neben die kleinen Rosinen.</note>
-        <note type="interpretive_choice" target="#rum-0190-orig" n="Ein gehackten Schlegel (Tier)" resp="#fyndling">Hammelkeule. Der Text nennt das Tier nicht, das Rezept steht aber im Kapitel vom Castraun oder Hammel; die Nachbarrezepte sprechen vom Hammelschlegel.</note>
-        <note type="interpretive_choice" target="#rum-0190-orig" n="gehackt" resp="#fyndling">Fein mit dem Messer gehacktes Bratenfleisch: Im folgenden Rezept wird der Schlegelbraten „klein geschnitten“, und es heißt „wenn das Fleisch klein gehackt wirt“.</note>
-        <note type="interpretive_choice" target="#rum-0190-orig" n="braune Bruͤh … die saur ist" resp="#fyndling">Das Säuerungsmittel bleibt offen, der Text sagt nur „sauer“. Historisch naheliegend sind Verjus oder Wein; beim gehackten Rindfleisch mit Rosinen im Ochsenkapitel nennt Rumpolt ausdrücklich Essig.</note>
-        <note type="interpretive_choice" target="#rum-0190-orig" n="Ochsenmarck … wie es vom Bein kompt" resp="#fyndling">Das Mark frisch aus dem Knochen, ungegart in die Brühe gegeben. Im folgenden Rezept bleibt das Mark in den gesäuberten Knochen und gart in der Brühe mit.</note>
+        <note type="interpretive_choice" target="#rum-0190-orig" n="Ziweben" resp="#fyndling" subtype="lexical">Zibeben, große getrocknete Weinbeeren: Lexer „zibebe, die große Kochrosine“, Goetze „Kochrosine“; die Schreibung mit -w- ist auch sonst belegt (Sabina Welserin: „ziwiben“). Rumpolt stellt sie ausdrücklich neben die kleinen Rosinen.<list type="alternatives"><item>Rosinen allgemein<note type="rationale">Moderne Sammelbezeichnung, verwischt aber die Sorte, die Rumpolt angibt. Nur als Ersatz in der Praxis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0190-orig" n="Ein gehackten Schlegel (Tier)" resp="#fyndling" subtype="contextual">Hammelkeule. Der Text nennt das Tier nicht, das Rezept steht aber im Kapitel vom Castraun oder Hammel; die Nachbarrezepte sprechen vom Hammelschlegel.<list type="alternatives"><item>Lammkeule<note type="rationale">Lamm behandelt Rumpolt in einem eigenen, späteren Kapitel. Nur als milderer Ersatz beim Nachkochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0190-orig" n="gehackt" resp="#fyndling" subtype="contextual">Fein mit dem Messer gehacktes Bratenfleisch: Im folgenden Rezept wird der Schlegelbraten „klein geschnitten“, und es heißt „wenn das Fleisch klein gehackt wirt“.<list type="alternatives"><item>Gebratenes Fleisch klein gewürfelt oder grob zerzupft<note type="rationale">Praktischer Weg zum Nachkochen, gröber als die Vorlage.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0190-orig" n="braune Bruͤh … die saur ist" resp="#fyndling" subtype="contextual">Das Säuerungsmittel bleibt offen, der Text sagt nur „sauer“. Historisch naheliegend sind Verjus oder Wein; beim gehackten Rindfleisch mit Rosinen im Ochsenkapitel nennt Rumpolt ausdrücklich Essig.<list type="alternatives"><item>Bratenfond oder Rinderbrühe mit etwas Weinessig abgeschmeckt<note type="rationale">Einfachster Weg zum Nachkochen; in diesem Rezept steht der Essig aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0190-orig" n="Ochsenmarck … wie es vom Bein kompt" resp="#fyndling" subtype="contextual">Das Mark frisch aus dem Knochen, ungegart in die Brühe gegeben. Im folgenden Rezept bleibt das Mark in den gesäuberten Knochen und gart in der Brühe mit.<list type="alternatives"><item>Mark aus einem mitgegarten Knochen<note type="rationale">Die Wendung lässt offen, ob der Knochen vorher gekocht wurde; am Ergebnis ändert es wenig, weil das Mark ohnehin in der Brühe zergeht.</note></item></list></note>
       </div>
     </back>
   </text>

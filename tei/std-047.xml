@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,8 +126,8 @@ Praxis. Die Apfelscheiben zuerst im heißen Schmalz rösten, bis sie ordentlich 
         <note type="gloss" target="#std-047-orig" n="gilbs" resp="#fyndling">‚Gilben‘ bedeutet, etwas gelb zu färben, meist mit Safran.</note>
         <note type="gloss" target="#std-047-orig" n="ſtüps" resp="#fyndling">‚Stüpf‘ oder ‚stüpp‘ bedeutet, etwas mit Gewürzen zu versehen oder zu würzen.</note>
         <note type="gloss" target="#std-047-orig" n="Weinberlen" resp="#fyndling">Weinbeeren sind getrocknete Weintrauben, also Rosinen.</note>
-        <note type="interpretive_choice" target="#std-047-orig" n="gilbs" resp="#fyndling">Färbe es gelb (mit Safran).</note>
-        <note type="interpretive_choice" target="#std-047-orig" n="Verhältnis von Süpplein und Apfelscheiben" resp="#fyndling">Das gewürzte Süpplein wird als Sauce über die gerösteten Apfelscheiben gegossen.</note>
+        <note type="interpretive_choice" target="#std-047-orig" n="gilbs" resp="#fyndling">Färbe es gelb (mit Safran).<list type="alternatives"><item>Färbe es gelb (mit Eigelb oder anderen gelben Zutaten).<note type="rationale">Safran war das gängigste und prestigeträchtigste Gelbfärbemittel in der mittelalterlichen Küche und wird oft impliziert, wenn die Anweisung zu „gilben“ gegeben wird. Eigelb wäre eine günstigere, aber ebenfalls mögliche Alternative.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-047-orig" n="Verhältnis von Süpplein und Apfelscheiben" resp="#fyndling">Das gewürzte Süpplein wird als Sauce über die gerösteten Apfelscheiben gegossen.<list type="alternatives"><item>Süpplein und Apfelscheiben werden getrennt aufgetragen - das Brühchen als eigene Beilage neben den Äpfeln zum Wildbret.<note type="rationale">Der Text nennt beide Zubereitungsschritte nacheinander, ohne ausdrücklich zu sagen, ob sie am Ende vereint oder getrennt aufgetragen werden.</note></item></list></note>
       </div>
     </back>
   </text>

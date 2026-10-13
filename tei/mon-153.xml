@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,8 +110,8 @@ So wird es richtig gut. Gewürz (eine Mischung wie Pfeffer, Ingwer, Nelken, Zimt
         <note type="gloss" target="#mon-153-orig" n="reindel" resp="#fyndling">Ein flaches Pfännchen oder eine kleine Bratschüssel, typisch für die bayerisch-österreichische Küche.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#reindel"/></note>
         <note type="gloss" target="#mon-153-orig" n="chrossen czagellen" resp="#fyndling">Wörtlich ‚gekräuselte Schwänze‘. Bezieht sich auf die typisch gekrümmte Form der Krebsschwänze nach dem Kochen.</note>
         <note type="gloss" target="#mon-153-orig" n="gburcz" resp="#fyndling">Allgemeiner Begriff für Gewürze. Im 15. Jahrhundert waren dies oft Mischungen aus Pfeffer, Ingwer, Nelken, Zimt und Galgant.</note>
-        <note type="interpretive_choice" target="#mon-153-orig" n="chrossen czagellen" resp="#fyndling">gekräuselte Schwänze</note>
-        <note type="interpretive_choice" target="#mon-153-orig" n="g krewssen" resp="#fyndling">genügend Krebse<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#krewssen"/></note>
+        <note type="interpretive_choice" target="#mon-153-orig" n="chrossen czagellen" resp="#fyndling">gekräuselte Schwänze<list type="alternatives"><item>knusprige Schwänze<note type="rationale">Das Wort 'krosz' kann auch 'knusprig' bedeuten, aber die typisch gekrümmte Form der Krebsschwänze nach dem Kochen ist die primäre Eigenschaft, auf die sich 'gekräuselt' bezieht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mon-153-orig" n="g krewssen" resp="#fyndling">genügend Krebse<list type="alternatives"><item>neun Krebse<note type="rationale">Das 'g' könnte eine römische Ziffer für 9 sein (IX), aber ohne weiteren Kontext ist 'genügend' oder 'gute' (als Abkürzung) plausibler für eine Mengenangabe in einem Kochrezept.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#krewssen"/></note>
       </div>
     </back>
   </text>

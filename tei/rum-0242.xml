@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,10 +110,10 @@ Praxis. Wer nachkochen will, folgt Schritt für Schritt den beiden Kalbsrezepten
         <note type="gloss" target="#rum-0242-orig" n="feißt" resp="#fyndling">Fett (feist, veiʒ). Hier das Fett der Kalbsnieren als Füllung der Schlickkrapfen, wie in rum-0114.</note>
         <note type="gloss" target="#rum-0242-orig" n="wie man pflegt von eim Kalb zu machen" resp="#fyndling">Verweis auf die Pouesen im Kalbskapitel, Kalb Nr. 23 (rum-0113).</note>
         <note type="gloss" target="#rum-0242-orig" n="wie vorhin vermeldt ist" resp="#fyndling">Verweis auf die Schlickkrapfen aus Kalbsnieren im Kalbskapitel, Kalb Nr. 24 (rum-0114).</note>
-        <note type="interpretive_choice" target="#rum-0242-orig" n="Pouesen" resp="#fyndling">Als Gerichtsname stehen gelassen: Rumpolts Bezeichnung für in Butter gebackene Weckschnitten mit einer Masse, wie in Kalb Nr. 23 (rum-0113). Eine Wörterbuchstelle für die Form Pouesen fehlt, die Herkunft bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0242-orig" n="von Kalbsnieren feißt zu machen" resp="#fyndling">Füllungsangabe der Schlickkrapfen: aus dem Fett von Kalbsnieren, wie in Kalb Nr. 24 (rum-0114), dessen Füllung genau aus diesem Fett besteht.</note>
-        <note type="interpretive_choice" target="#rum-0242-orig" n="Welches Fleisch in der Geiß-Fassung" resp="#fyndling">Ziege statt Kalb bei den Pouesen, wie es „wie man pflegt von eim Kalb zu machen“ nahelegt; für die Schlickkrapfen ausdrücklich Kalbsnierenfett.</note>
-        <note type="interpretive_choice" target="#rum-0242-orig" n="Bestreuen der Pouesen" resp="#fyndling">Wie in rum-0113 wahlweise süß mit Zucker oder herzhaft mit Ingwer bestreut; das Vorbild lässt beides zu.</note>
+        <note type="interpretive_choice" target="#rum-0242-orig" n="Pouesen" resp="#fyndling" subtype="philological" cert="unknown">Als Gerichtsname stehen gelassen: Rumpolts Bezeichnung für in Butter gebackene Weckschnitten mit einer Masse, wie in Kalb Nr. 23 (rum-0113). Eine Wörterbuchstelle für die Form Pouesen fehlt, die Herkunft bleibt offen.<list type="alternatives"><item>Verwandt mit der österreichischen Pofese (Weißbrotschnitte)<note type="rationale">Wortform und Sache liegen nahe, die Identität ist aber nicht belegt; bei Rumpolt wird das Brot bestrichen und unter dem Deckel gebacken, nicht in Ei getaucht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0242-orig" n="von Kalbsnieren feißt zu machen" resp="#fyndling" subtype="contextual">Füllungsangabe der Schlickkrapfen: aus dem Fett von Kalbsnieren, wie in Kalb Nr. 24 (rum-0114), dessen Füllung genau aus diesem Fett besteht.<list type="alternatives"><item>Ein eigenes drittes Gericht aus Kalbsnierenfett<note type="rationale">Der Satz ist nur durch Schrägstriche gegliedert, grammatisch ist das möglich. Im Kalbskapitel gibt es aber kein solches Gericht, wohl aber Schlickkrapfen aus Kalbsnierenfett.</note></item><item>Nierenfett als Grundlage beider Gerichte, der Pouesen und der Schlickkrapfen<note type="rationale">Auch die Pouesen in rum-0113 nehmen die Nieren mit ihrem Fett. Die Wortstellung bindet die Angabe aber an den Schlickkrapfen-Satz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0242-orig" n="Welches Fleisch in der Geiß-Fassung" resp="#fyndling" subtype="contextual">Ziege statt Kalb bei den Pouesen, wie es „wie man pflegt von eim Kalb zu machen“ nahelegt; für die Schlickkrapfen ausdrücklich Kalbsnierenfett.<list type="alternatives"><item>Alles vom Kalb, die Geiß nur als Kapitelstichwort<note type="rationale">Der Vergleich mit dem Kalb ergibt nur Sinn, wenn hier ein anderes Tier gemeint ist; deshalb nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0242-orig" n="Bestreuen der Pouesen" resp="#fyndling" subtype="contextual">Wie in rum-0113 wahlweise süß mit Zucker oder herzhaft mit Ingwer bestreut; das Vorbild lässt beides zu.<list type="alternatives"><item>Nicht festlegen<note type="rationale">Dieser Eintrag selbst sagt nichts zur Würzung; die Praxis-Empfehlung lässt die Wahl deshalb offen.</note></item></list></note>
       </div>
     </back>
   </text>

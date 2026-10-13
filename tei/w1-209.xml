@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,9 +116,9 @@ Praxis. Getrocknete blaue Blüten im Mörser zu feinem Pulver zerstoßen, dieses
         <note type="gloss" target="#w1-209-orig" n="gemues" resp="#fyndling">Ein Mus oder Püree, hier aus Schlehen.</note>
         <note type="gloss" target="#w1-209-orig" n="mach ez wol ab" resp="#fyndling">Mittelalterliche Kochsprache für ‚die Zubereitung fertigstellen, abschließen‘ - nicht für ‚abschmecken‘, wie man beim Lesen zunächst vermuten könnte.</note>
         <note type="gloss" target="#w1-209-orig" n="varb" resp="#fyndling">Lebensmittelfarbe, hier aus natürlichen Blüten gewonnen.</note>
-        <note type="interpretive_choice" target="#w1-209-orig" n="ZV" resp="#fyndling">Die Buchstabenfolge ‚ZV‘ ist ein Platzhalter für eine fehlende Initiale im Originalmanuskript. Im Kontext der Phrase ‚ZV dem gepachen‘ wurde sie als ‚Zu‘ gelesen.</note>
-        <note type="interpretive_choice" target="#w1-209-orig" n="trachten" resp="#fyndling">Suchen. Die Phrase ‚durich das Iar nach trachten‘ (das ganze Jahr über danach trachten) impliziert ein aktives Suchen oder Aufspüren der Zutaten.</note>
-        <note type="interpretive_choice" target="#w1-209-orig" n="mach ez wol ab" resp="#fyndling">Richte es/vollende es gut - bereite die Zubereitung fertig. Belegt im FWB (Art. ‚abmachen‘, Sinn 1: eine Speise abschließend zubereiten/fertigstellen) und im DWB zur alten Kochsprache.</note>
+        <note type="interpretive_choice" target="#w1-209-orig" n="ZV" resp="#fyndling" subtype="philological">Die Buchstabenfolge ‚ZV‘ ist ein Platzhalter für eine fehlende Initiale im Originalmanuskript. Im Kontext der Phrase ‚ZV dem gepachen‘ wurde sie als ‚Zu‘ gelesen.</note>
+        <note type="interpretive_choice" target="#w1-209-orig" n="trachten" resp="#fyndling" subtype="lexical">Suchen. Die Phrase ‚durich das Iar nach trachten‘ (das ganze Jahr über danach trachten) impliziert ein aktives Suchen oder Aufspüren der Zutaten.<list type="alternatives"><item>Streben nach<note type="rationale">Die moderne Bedeutung von ‚trachten‘ als ‚streben nach‘ ist zwar etymologisch verwandt, würde hier aber den aktiven Beschaffungsprozess der Zutaten weniger präzise wiedergeben als ‚suchen‘.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-209-orig" n="mach ez wol ab" resp="#fyndling" subtype="lexical">Richte es/vollende es gut - bereite die Zubereitung fertig. Belegt im FWB (Art. ‚abmachen‘, Sinn 1: eine Speise abschließend zubereiten/fertigstellen) und im DWB zur alten Kochsprache.<list type="alternatives"><item>Schmecke es gut ab<note type="rationale">Naheliegende moderne Lesart, aber schwächer belegt als die Kochsprach-Bedeutung ‚fertigstellen‘; der B4-Zwilling (b4-206) übersetzt dieselbe Stelle ebenfalls mit ‚abschmecken‘, was den Fehler unabhängig wiederholt statt zu stützen.</note></item></list></note>
       </div>
     </back>
   </text>

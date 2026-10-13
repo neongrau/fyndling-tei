@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,8 +123,8 @@ Praxis. Die Hälfte der gehackten Mandeln mit etwas Safran gelb färben, die and
         <note type="gloss" target="#mha-114-orig" n="parben rogen" resp="#fyndling">Rogen der Barbe (Barbus barbus). Der Rogen dieses Flussfisches ist tatsächlich giftig (verursacht Übelkeit und Durchfall); das Rezept schließt ihn deshalb ausdrücklich aus. Dieselbe Ausschlussformel steht wortgleich in weiteren Handschriften des Korpus.</note>
         <note type="gloss" target="#mha-114-orig" n="straublein taig" resp="#fyndling">Gemeint ist die Konsistenz von Strauben-Teig, einem dünnflüssigen Ausback-Teig, ähnlich modernem Crêpe- oder Pfannkuchenteig - hier nur als Vergleich für die Fischrogen-Mehl-Masse.</note>
         <note type="gloss" target="#mha-114-orig" n="erwell" resp="#fyndling">Kurzes Aufkochen der Rosinen, damit sie weich und prall werden; in der Mondseer Fassung geschieht das in Wein.</note>
-        <note type="interpretive_choice" target="#mha-114-orig" n="weinper" resp="#fyndling">Rosinen (getrocknete Weinbeeren), die durch kurzes Aufkochen wieder aufgeplumpt werden.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
-        <note type="interpretive_choice" target="#mha-114-orig" n="parben rogen" resp="#fyndling">Rogen der Barbe (Fischart Barbus barbus), ausdrücklich ausgeschlossen wegen Giftigkeit.</note>
+        <note type="interpretive_choice" target="#mha-114-orig" n="weinper" resp="#fyndling">Rosinen (getrocknete Weinbeeren), die durch kurzes Aufkochen wieder aufgeplumpt werden.<list type="alternatives"><item>Frische Weintrauben<note type="rationale">Wörtlich heißt weinper Weinbeere; laut Korpus-Konvention ist jedoch meist die getrocknete Form (Rosine) gemeint, zumal das kurze Aufkochen typisch zum Plumpen von Trockenfrüchten passt. In verwandten Fassungen werden die weinper eigens in Wein aufgekocht, bis sie prall sind.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#mha-114-orig" n="parben rogen" resp="#fyndling">Rogen der Barbe (Fischart Barbus barbus), ausdrücklich ausgeschlossen wegen Giftigkeit.<list type="alternatives"><item>„gefärbter Rogen" (von färben)<note type="rationale">Lautlich könnte parben an färben anklingen, doch die CoReMA-Sachglosse verlinkt eindeutig auf die Barbe als Fischart, und dieselbe Ausschlussformel steht wortgleich in weiteren Handschriften. Inhaltlich ist der Ausschluss wegen Giftigkeit sinnvoller als wegen Farbe.</note></item></list></note>
       </div>
     </back>
   </text>

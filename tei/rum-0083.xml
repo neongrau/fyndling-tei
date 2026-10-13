@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,12 +126,12 @@ Praxis. Ochsenfüße beim Metzger vorbestellen. Die Sülze braucht bis zum Essen
         <note type="gloss" target="#rum-0083-orig" n="Galrat" resp="#fyndling">Sülze, Gallerte: eine Brühe, die beim Erkalten fest wird. Hier geliert sie aus den Ochsenfüßen selbst. Nicht zu verwechseln mit Rumpolts „Suͤltzen“, mit dem er in Nr. 36-38 Kutteln meint.</note>
         <note type="gloss" target="#rum-0083-orig" n="Haͤfen" resp="#fyndling">Töpfe (Einzahl Hafen).</note>
         <note type="gloss" target="#rum-0083-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-0083-orig" n="wenn sie kalt werden/ so werden sie wider fest" resp="#fyndling">Grammatisch sind die Füße gemeint; der Satz beschreibt, dass das Gesottene beim Erkalten fest wird, und gibt damit den Maßstab für das Sieden. Übersetzt bleibt er wörtlich mit „sie“.</note>
-        <note type="interpretive_choice" target="#rum-0083-orig" n="wol sieden" resp="#fyndling">Der Text nennt keine Zeit: sieden, bis die Brühe beim Erkalten fest wird.</note>
-        <note type="interpretive_choice" target="#rum-0083-orig" n="ein wenig Essig" resp="#fyndling">Essig ohne Sorte und Menge, nach Geschmack; Rumpolt verlangt nur, dass er kalt in die warme Brühe kommt.</note>
-        <note type="interpretive_choice" target="#rum-0083-orig" n="geuß mit einem eysern Loͤffel auff vnd nider … Oder nim̃ zween newe Haͤfen" resp="#fyndling">Zwei gleichwertige Wege, die Brühe weiß zu machen: mit dem Löffel auf und nieder gießen oder zwischen zwei neuen Töpfen umgießen. Das „Oder“ macht daraus eine Wahl, keine Abfolge.</note>
-        <note type="interpretive_choice" target="#rum-0083-orig" n="Fischkessel" resp="#fyndling">Ein ohnehin für Fisch genutzter, länglicher Kessel, der hier nur sauber sein muss; Fisch kommt im Rezept nicht vor.</note>
-        <note type="interpretive_choice" target="#rum-0083-orig" n="so schneidt ein wenig darein" resp="#fyndling">Nur „ein wenig“ Knoblauch, ohne Menge und ohne Zeitpunkt.</note>
+        <note type="interpretive_choice" target="#rum-0083-orig" n="wenn sie kalt werden/ so werden sie wider fest" resp="#fyndling" subtype="contextual">Grammatisch sind die Füße gemeint; der Satz beschreibt, dass das Gesottene beim Erkalten fest wird, und gibt damit den Maßstab für das Sieden. Übersetzt bleibt er wörtlich mit „sie“.<list type="alternatives"><item>Gemeint ist die Brühe, die beim Erkalten geliert<note type="rationale">Küchentechnisch das Entscheidende, denn nur die Brühe wird zur Sülze; der Text sagt es aber nicht ausdrücklich, deshalb nicht in die Übersetzung gezogen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0083-orig" n="wol sieden" resp="#fyndling" subtype="contextual">Der Text nennt keine Zeit: sieden, bis die Brühe beim Erkalten fest wird.<list type="alternatives"><item>Sechs bis acht Stunden schwach sieden, bis sich das Fleisch von den Knochen löst<note type="rationale">Praxiswert für heutige Ochsenfüße, im Buch analog zu Nr. 74-79; keine Angabe Rumpolts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0083-orig" n="ein wenig Essig" resp="#fyndling" subtype="contextual">Essig ohne Sorte und Menge, nach Geschmack; Rumpolt verlangt nur, dass er kalt in die warme Brühe kommt.<list type="alternatives"><item>Milder Weinessig, sparsam, bis die Brühe leicht säuerlich schmeckt<note type="rationale">Heutiger Praxisvorschlag, im Text nicht genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0083-orig" n="geuß mit einem eysern Loͤffel auff vnd nider … Oder nim̃ zween newe Haͤfen" resp="#fyndling" subtype="contextual">Zwei gleichwertige Wege, die Brühe weiß zu machen: mit dem Löffel auf und nieder gießen oder zwischen zwei neuen Töpfen umgießen. Das „Oder“ macht daraus eine Wahl, keine Abfolge.<list type="alternatives"><item>Nur das Umgießen zwischen zwei Töpfen<note type="rationale">Heutiger Vorschlag, weil Rumpolt diesen Weg ausführlicher beschreibt; ausschließen lässt sich der Löffel-Weg damit nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0083-orig" n="Fischkessel" resp="#fyndling" subtype="lexical">Ein ohnehin für Fisch genutzter, länglicher Kessel, der hier nur sauber sein muss; Fisch kommt im Rezept nicht vor.<list type="alternatives"><item>Ein beliebiger sauberer großer Topf<note type="rationale">Für die heutige Küche ausreichend; der Name sagt nur, welches Gefäß Rumpolt zur Hand hatte.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0083-orig" n="so schneidt ein wenig darein" resp="#fyndling" subtype="contextual">Nur „ein wenig“ Knoblauch, ohne Menge und ohne Zeitpunkt.<list type="alternatives"><item>Ein bis zwei Zehen fein geschnitten in die Sülze<note type="rationale">Heutiger Praxisvorschlag, im Text nicht beziffert.</note></item></list></note>
       </div>
     </back>
   </text>

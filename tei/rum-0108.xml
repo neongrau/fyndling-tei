@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,12 +126,12 @@ Praxis. Ein Topf und ein Hackmesser genügen. Mit vorgegarten Kutteln etwa eine 
         <note type="gloss" target="#rum-0108-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Einbrennen, um das dünne Brühlein zu binden, entsprechend der Einbrenne. Der Text sagt nur „darein“ und nennt weder Fett noch eine Röstfarbe.</note>
         <note type="gloss" target="#rum-0108-orig" n="saur" resp="#fyndling">Sauer. Ein Säuerungsmittel nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0108-orig" n="lenglicht" resp="#fyndling">Länglich, also in längliche Stücke geschnitten.</note>
-        <note type="interpretive_choice" target="#rum-0108-orig" n="Suͤltzen" resp="#fyndling">Sülzfleisch, hier Kalbskutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d). Das Kapitel „Vom Kalb“ bestimmt das Tier.</note>
-        <note type="interpretive_choice" target="#rum-0108-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Mehl zum Binden in das Brühlein einbrennen, wie der Text es sagt; ein Fett und eine Röstfarbe nennt Rumpolt nicht.</note>
-        <note type="interpretive_choice" target="#rum-0108-orig" n="saur" resp="#fyndling">Sauer, ohne genanntes Säuerungsmittel. Verjus, Essig oder Zitronensaft sind historisch alle denkbar; der Text legt sich nicht fest.</note>
-        <note type="interpretive_choice" target="#rum-0108-orig" n="schneidt die Suͤltzen gar klein" resp="#fyndling">Rumpolt nennt das Schneiden am Schluss als Anrichtehinweis („so stehet es schön“); wann geschnitten wird, lässt er offen.</note>
-        <note type="interpretive_choice" target="#rum-0108-orig" n="laß auch darmit sieden" resp="#fyndling">Die Kutteln sieden in der Brühe mit; ein Vorgaren nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0108-orig" n="Gelb" resp="#fyndling">Rumpolts Bezeichnung der ersten Fassung, übernommen ohne Farbmittel, weil der Text keins nennt.</note>
+        <note type="interpretive_choice" target="#rum-0108-orig" n="Suͤltzen" resp="#fyndling" subtype="lexical">Sülzfleisch, hier Kalbskutteln. Rumpolt paart das Wort mit Kutteln („Suͤltzen oder Kaldaunen“, „Kuttelfleck oder Suͤltzen“); der Name kommt von der Sülze, für die man solches Fleisch nahm (DWB s. v. Sülze 3d). Das Kapitel „Vom Kalb“ bestimmt das Tier.</note>
+        <note type="interpretive_choice" target="#rum-0108-orig" n="brenn ein wenig Mehl darein" resp="#fyndling" subtype="contextual">Mehl zum Binden in das Brühlein einbrennen, wie der Text es sagt; ein Fett und eine Röstfarbe nennt Rumpolt nicht.<list type="alternatives"><item>Modern: Mehl in etwas Speckfett hell anschwitzen, in die Brühe rühren und kurz aufkochen.<note type="rationale">Praktische Umsetzung, die Klümpchen vermeidet; das Fett ist ergänzt, nicht im Text. Bei der weißen Fassung nicht bräunen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0108-orig" n="saur" resp="#fyndling" subtype="contextual">Sauer, ohne genanntes Säuerungsmittel. Verjus, Essig oder Zitronensaft sind historisch alle denkbar; der Text legt sich nicht fest.<list type="alternatives"><item>Modern: Essig oder Zitronensaft, sparsam, am Ende abgeschmeckt.<note type="rationale">Naheliegender heutiger Standard, aber eine Ergänzung; deshalb nicht als Zutat geführt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0108-orig" n="schneidt die Suͤltzen gar klein" resp="#fyndling" subtype="contextual">Rumpolt nennt das Schneiden am Schluss als Anrichtehinweis („so stehet es schön“); wann geschnitten wird, lässt er offen.<list type="alternatives"><item>Modern: die vorgegarten Kutteln zuerst klein und fein länglich schneiden, dann in die Speck-Kräuter-Brühe geben.<note type="rationale">Kleine Stücke nehmen die Brühe besser auf; der Text schreibt diese Reihenfolge nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0108-orig" n="laß auch darmit sieden" resp="#fyndling" subtype="contextual">Die Kutteln sieden in der Brühe mit; ein Vorgaren nennt der Text nicht.<list type="alternatives"><item>Modern: vorgegarte Kutteln vom Metzger verwenden.<note type="rationale">Rohe Kutteln brauchen Stunden; die Zeitangabe dieses Rezepts setzt vorgegarte Ware voraus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0108-orig" n="Gelb" resp="#fyndling" subtype="contextual">Rumpolts Bezeichnung der ersten Fassung, übernommen ohne Farbmittel, weil der Text keins nennt.<list type="alternatives"><item>Mit Safran gelb färben.<note type="rationale">Nicht übernommen: Safran steht nicht im Text und wird nicht ergänzt.</note></item></list></note>
       </div>
     </back>
   </text>

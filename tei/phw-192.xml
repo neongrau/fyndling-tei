@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,8 +137,8 @@ Praxis. Karpfen schuppen, schlachten und das Blut mit einem guten Wein auffangen
         <note type="gloss" target="#phw-192-orig" n="seltz" resp="#fyndling">In diesem Kontext ist ‚seltz‘ keine Sülze als eigenständiges Gericht, sondern eine dunkle, dickflüssige Zutat, die zum Schwärzen und Andicken der Brühe dient. Historisch wurden dafür oft Fruchtmuse oder eingedickte Säfte verwendet, wie zum Beispiel Kirschsülze.</note>
         <note type="gloss" target="#phw-192-orig" n="rerla" resp="#fyndling">‚Rerla‘ ist eine frühneuhochdeutsche Bezeichnung für Zimtstangen. Diese wurden meist gestoßen oder gemahlen, um ihr Aroma freizusetzen.</note>
         <note type="gloss" target="#phw-192-orig" n="negala" resp="#fyndling">‚Negala‘ sind Gewürznelken, die hier in kleiner Menge zur Würzung der Brühe hinzugefügt werden.</note>
-        <note type="interpretive_choice" target="#phw-192-orig" n="schwaysch" resp="#fyndling">Die Lesart ‚Blut des Fisches‘ wurde gewählt, da der Kontext ‚fach den schwaysch von jm‘ (fange das Blut von ihm auf) und die Verwendung zur Färbung der Brühe dies nahelegen.</note>
-        <note type="interpretive_choice" target="#phw-192-orig" n="seltz" resp="#fyndling">Die Lesart ‚Dunkle Fruchtsülze (zum Schwärzen)‘ wurde gewählt, da der Kontext ‚das schwartz werdt‘ (dass es schwarz werde) auf eine färbende und andickende Zutat hindeutet, nicht auf eine Sülze als eigenständiges Gericht. Die historische Verwendung von Fruchtmusen zur Färbung ist gut belegt.</note>
+        <note type="interpretive_choice" target="#phw-192-orig" n="schwaysch" resp="#fyndling" subtype="lexical">Die Lesart ‚Blut des Fisches‘ wurde gewählt, da der Kontext ‚fach den schwaysch von jm‘ (fange das Blut von ihm auf) und die Verwendung zur Färbung der Brühe dies nahelegen.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Schweiß‘ im Sinne von Flüssigkeit oder Saft.<note type="rationale">Obwohl ‚Schweiß‘ auch eine allgemeine Flüssigkeit bezeichnen kann, ist im Kontext der Fischzubereitung und der Färbung ‚Blut‘ die kulinarisch plausibelste Interpretation.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-192-orig" n="seltz" resp="#fyndling" subtype="lexical">Die Lesart ‚Dunkle Fruchtsülze (zum Schwärzen)‘ wurde gewählt, da der Kontext ‚das schwartz werdt‘ (dass es schwarz werde) auf eine färbende und andickende Zutat hindeutet, nicht auf eine Sülze als eigenständiges Gericht. Die historische Verwendung von Fruchtmusen zur Färbung ist gut belegt.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Sülze/Aspik‘ als fertiges Gericht.<note type="rationale">Diese Interpretation würde jedoch den Zweck der Zutat im Rezept (Färbung und Andickung der Brühe) verfehlen.</note></item></list></note>
       </div>
     </back>
   </text>

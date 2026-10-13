@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -137,8 +142,8 @@ Praxis. Fisch schuppen, in Stücke hacken und mit Haut und Gräten im Wein-Essig
         <note type="gloss" target="#w1-201-orig" n="erwallen" resp="#fyndling">‚Erwallen‘ bedeutet ‚aufwallen lassen‘ oder ‚zum Kochen bringen‘, also kurz erhitzen, bis die Flüssigkeit Blasen wirft.</note>
         <note type="gloss" target="#w1-201-orig" n="zemassen" resp="#fyndling">Diese Formulierung bedeutet ‚nach Maß‘ oder ‚in angemessener Menge‘, also nach eigenem Ermessen und Geschmack.</note>
         <note type="gloss" target="#w1-201-orig" n="czimey" resp="#fyndling">Eine frühneuhochdeutsche Schreibweise für Zimt.</note>
-        <note type="interpretive_choice" target="#w1-201-orig" n="schuepp sy" resp="#fyndling">Die Phrase ‚schuepp sy‘ wurde als Verb ‚schuppe sie‘ (die Fische) übersetzt. Dies ist eine Anweisung zur Vorbereitung des Fisches.</note>
-        <note type="interpretive_choice" target="#w1-201-orig" n="zemassen" resp="#fyndling">Die Formulierung ‚zemassen‘ wurde als ‚in angemessener Menge‘ übersetzt, was ‚nach Maß‘ oder ‚nach Belieben‘ bedeutet.</note>
+        <note type="interpretive_choice" target="#w1-201-orig" n="schuepp sy" resp="#fyndling" subtype="contextual">Die Phrase ‚schuepp sy‘ wurde als Verb ‚schuppe sie‘ (die Fische) übersetzt. Dies ist eine Anweisung zur Vorbereitung des Fisches.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Fischschuppen‘ als Zutat.<note type="rationale">Obwohl ‚Fischschuppen‘ (visch schueppen) in anderen Rezepten als Geliermittel vorkommen können, ist die grammatische Konstruktion hier (Verb + Pronomen + weitere Verben wie ‚hacke sie‘) ein starker Indikator für eine Verbanweisung. CoReMA selbst schließt die Lesart als Zutat für diese Stelle aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-201-orig" n="zemassen" resp="#fyndling" subtype="lexical">Die Formulierung ‚zemassen‘ wurde als ‚in angemessener Menge‘ übersetzt, was ‚nach Maß‘ oder ‚nach Belieben‘ bedeutet.<list type="alternatives"><item>Eine alternative Lesart wäre ‚zusammen‘, also Wein und Essig zusammenzugeben.<note type="rationale">Obwohl ‚zusammen‘ eine mögliche Bedeutung sein könnte, ist ‚nach Maß‘ im Kontext von Mengenangaben in historischen Rezepten häufiger und plausibler, da genaue Mengen oft dem Koch überlassen wurden.</note></item></list></note>
       </div>
     </back>
   </text>

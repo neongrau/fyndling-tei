@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,9 +122,9 @@
         <note type="gloss" target="#men-127-orig" n="Estamine" resp="#fyndling">Ein feines Tuch oder Sieb zum Seihen.</note>
         <note type="gloss" target="#men-127-orig" n="Assavourez" resp="#fyndling">Abschmecken, würzen.</note>
         <note type="gloss" target="#men-127-orig" n="Claret" resp="#fyndling">Rötlich, klarrot (wie Rotwein).</note>
-        <note type="interpretive_choice" target="#men-127-orig" n="graine" resp="#fyndling">Paradieskörner (Graine de paradis)</note>
-        <note type="interpretive_choice" target="#men-127-orig" n="puree" resp="#fyndling">Flüssigkeit oder Brühe</note>
-        <note type="interpretive_choice" target="#men-127-orig" n="Soringue" resp="#fyndling">Würzige Sauce oder Eintopf</note>
+        <note type="interpretive_choice" target="#men-127-orig" n="graine" resp="#fyndling">Paradieskörner (Graine de paradis)<list type="alternatives"><item>Andere Körner oder Samen<note type="rationale">Obwohl 'graine' allgemein 'Korn' oder 'Samen' bedeutet, ist im Kontext mittelalterlicher französischer Rezepte des Ménagier de Paris 'graine' ohne weitere Spezifikation fast immer eine Abkürzung für 'graine de paradis', ein beliebtes und teures Gewürz der Zeit.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-127-orig" n="puree" resp="#fyndling">Flüssigkeit oder Brühe<list type="alternatives"><item>Ein dickes Gemüsepüree<note type="rationale">Obwohl 'purée' heute ein dickes Püree bezeichnet, wird es hier im Kontext von 'deffait de puree' (in Flüssigkeit aufgelöst) und 'coulez par l'estamine' (durch ein Tuch seihen) verwendet, was auf eine flüssige Basis hindeutet, in der das Brot aufgelöst wird, um die Sauce zu binden und zu färben.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-127-orig" n="Soringue" resp="#fyndling">Würzige Sauce oder Eintopf<list type="alternatives"><item>Eine Art Sülze oder Aspik<note type="rationale">Obwohl 'soringue' eine gewisse Ähnlichkeit mit 'sülze' haben könnte, deutet die Zubereitung mit Anbraten, Kochen und Abschmecken mit Wein und Essig eher auf eine warme, flüssige Speise als auf eine gelierte Sülze hin. Der Begriff ist jedoch nicht eindeutig überliefert.</note></item></list></note>
       </div>
     </back>
   </text>

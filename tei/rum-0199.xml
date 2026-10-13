@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,10 +115,10 @@ Praxis. Nimm eine Pfanne, in der die Köpfe nebeneinander Platz haben. Den ferti
         <note type="gloss" target="#rum-0199-orig" n="Haͤrin Tuch" resp="#fyndling">Ein feines Seihtuch. Rumpolt schreibt „haͤrin Tuch“, ein Tuch aus Haar; Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Welches Haar, sagt keine Quelle. Heute tut es ein feines Passier- oder Mulltuch.</note>
         <note type="gloss" target="#rum-0199-orig" n="walger" resp="#fyndling">Von walgern, wälzen oder rollen. Die Köpfe werden in den verquirlten Eiern gewendet, bis sie rundum überzogen sind.</note>
         <note type="gloss" target="#rum-0199-orig" n="Kuchen" resp="#fyndling">Hier kein Gebäck, sondern eine in der Pfanne ausgebackene Eimasse; Rumpolt vergleicht sie selbst mit einem Pfannkuchen.</note>
-        <note type="interpretive_choice" target="#rum-0199-orig" n="aufflauffen" resp="#fyndling">„auflaufen“: Das Ei zieht auf den heißen Kohlen an den Köpfen an und stockt. Dasselbe Verb steht in anderen Backrezepten Rumpolts und wird dort ebenso wiedergegeben.</note>
-        <note type="interpretive_choice" target="#rum-0199-orig" n="Haͤrin Tuch (Material)" resp="#fyndling">Ein Gewebe aus Haar oder feinem Wollstoff zum Durchseihen (Grimm); welches Haar, nennt keine Quelle.</note>
-        <note type="interpretive_choice" target="#rum-0199-orig" n="Köpfe: ganz oder gespalten, mit oder ohne Hirn" resp="#fyndling">Offen. Das Rezept verlangt nur gesottene und sauber ausgeputzte Köpfe und spricht vom Anrichten „also gantz“. Im Rezept davor werden die Köpfe erst nach dem Sieden gespalten und das Hirn herausgenommen; beim Sieden bleibt es dort also im Kopf.</note>
-        <note type="interpretive_choice" target="#rum-0199-orig" n="Kuchen" resp="#fyndling">Eierkuchen: eine in Butter ausgebackene Eimasse, „wie ein Pfannkuchen“, die die Köpfe zusammenhält.</note>
+        <note type="interpretive_choice" target="#rum-0199-orig" n="aufflauffen" resp="#fyndling" subtype="lexical">„auflaufen“: Das Ei zieht auf den heißen Kohlen an den Köpfen an und stockt. Dasselbe Verb steht in anderen Backrezepten Rumpolts und wird dort ebenso wiedergegeben.<list type="alternatives"><item>„aufgehen“<note type="rationale">Klingt nach Teig oder Hefe; hier gibt es keinen Teig, nur Ei, das an den Köpfen stockt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0199-orig" n="Haͤrin Tuch (Material)" resp="#fyndling" subtype="lexical">Ein Gewebe aus Haar oder feinem Wollstoff zum Durchseihen (Grimm); welches Haar, nennt keine Quelle.<list type="alternatives"><item>Feines Passiertuch oder Mulltuch<note type="rationale">Moderne Praxis mit derselben Funktion, die Eimasse glatt zu streichen; kein Anspruch auf das historische Material.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0199-orig" n="Köpfe: ganz oder gespalten, mit oder ohne Hirn" resp="#fyndling" subtype="contextual">Offen. Das Rezept verlangt nur gesottene und sauber ausgeputzte Köpfe und spricht vom Anrichten „also gantz“. Im Rezept davor werden die Köpfe erst nach dem Sieden gespalten und das Hirn herausgenommen; beim Sieden bleibt es dort also im Kopf.<list type="alternatives"><item>Köpfe wie vom Metzger, Hirn und Zunge vorher entnommen<note type="rationale">Moderne Praxis und leichter zu beschaffen; der Text schließt es nicht aus, belegt es aber auch nicht.</note></item><item>Gespaltene Köpfe wie im Rezept davor<note type="rationale">Möglich, aber das ganze Anrichten und das Herausschneiden einzelner „Koͤpfflein“ sprechen eher für ganze Köpfe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0199-orig" n="Kuchen" resp="#fyndling" subtype="lexical">Eierkuchen: eine in Butter ausgebackene Eimasse, „wie ein Pfannkuchen“, die die Köpfe zusammenhält.<list type="alternatives"><item>Gebäck oder Teigmantel<note type="rationale">Der Text nennt weder Mehl noch Teig, nur Eier und Butter.</note></item></list></note>
       </div>
     </back>
   </text>

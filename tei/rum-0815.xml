@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,9 +105,9 @@ Praxis. Küchenfertige Wachteln nehmen, das Rupfen und Ausnehmen setzt der Text 
         <note type="gloss" target="#rum-0815-orig" n="resch" resp="#fyndling">Knusprig. Das Etymologische Wörterbuch des Deutschen erklärt rösch als „knusprig, scharf gebacken oder gebraten, spröde“; im Mittelhochdeutschen heißt das Wort auch „schnell, behende“ oder „munter, frisch“. Hier passt nur die Küchenbedeutung.</note>
         <note type="gloss" target="#rum-0815-orig" n="Weck" resp="#fyndling">Weißbrot, Semmel. Geriebener Weck sind also Semmelbrösel.</note>
         <note type="gloss" target="#rum-0815-orig" n="schier gebraten" resp="#fyndling">Fast gar gebraten. Schier heißt hier „beinahe“: Der Weck kommt kurz vor Ende des Bratens auf die Wachteln.</note>
-        <note type="interpretive_choice" target="#rum-0815-orig" n="resch" resp="#fyndling">Knusprig. Das Etymologische Wörterbuch des Deutschen belegt rösch als „knusprig, scharf gebacken oder gebraten“, und der Zusammenhang stützt es: trocken aufgestreute Brösel auf fast fertigem Bratgut.</note>
-        <note type="interpretive_choice" target="#rum-0815-orig" n="schier gebraten" resp="#fyndling">Fast gar gebraten: Die Brösel kommen kurz vor Ende der Garzeit auf die Wachteln.</note>
-        <note type="interpretive_choice" target="#rum-0815-orig" n="Bratart und Fett" resp="#fyndling">Am Spieß oder auf dem Rost über dem Feuer, wie es zu Rumpolts Zeit für kleines Geflügel üblich war. Der Text sagt nur „gebraten“; ein Fett nennt er nicht.</note>
+        <note type="interpretive_choice" target="#rum-0815-orig" n="resch" resp="#fyndling" subtype="lexical">Knusprig. Das Etymologische Wörterbuch des Deutschen belegt rösch als „knusprig, scharf gebacken oder gebraten“, und der Zusammenhang stützt es: trocken aufgestreute Brösel auf fast fertigem Bratgut.<list type="alternatives"><item>schnell, behende (mittelhochdeutsche Grundbedeutung)<note type="rationale">So führen die mittelhochdeutschen Wörterbücher das Wort meist; für eine Speise ergibt das keinen Sinn.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0815-orig" n="schier gebraten" resp="#fyndling" subtype="lexical">Fast gar gebraten: Die Brösel kommen kurz vor Ende der Garzeit auf die Wachteln.<list type="alternatives"><item>bald gebraten, also „wenn sie bald fertig sind“<note type="rationale">Die Grundbedeutung von schier ist „bald, in kurzer Zeit“; für die Küche läuft das auf denselben Zeitpunkt hinaus. Wie lange danach noch gebraten wird, sagt der Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0815-orig" n="Bratart und Fett" resp="#fyndling" subtype="contextual">Am Spieß oder auf dem Rost über dem Feuer, wie es zu Rumpolts Zeit für kleines Geflügel üblich war. Der Text sagt nur „gebraten“; ein Fett nennt er nicht.<list type="alternatives"><item>Im Ofen oder in der Pfanne mit etwas Fett braten und die Brösel in den letzten Minuten aufstreuen<note type="rationale">Moderne Praxis in der heutigen Küche; der Text schließt sie nicht aus.</note></item></list></note>
       </div>
     </back>
   </text>

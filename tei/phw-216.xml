@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,10 +132,10 @@ Praxis. Am besten gelingt die Bindung in einem Topf über mittlerer, gleichmäß
         <note type="gloss" target="#phw-216-orig" n="richst" resp="#fyndling">Von ‚richten‘, hier im Sinne von anrichten oder servieren.</note>
         <note type="gloss" target="#phw-216-orig" n="gilbs" resp="#fyndling">Eine Form des Verbs ‚gelben‘, also etwas gelb färben. Im Kontext mittelalterlicher Küche oft ein Hinweis auf die Verwendung von Safran.</note>
         <note type="gloss" target="#phw-216-orig" n="zuckers" resp="#fyndling">Eine Form des Verbs ‚zuckern‘, also mit Zucker süßen oder bestreuen.</note>
-        <note type="interpretive_choice" target="#phw-216-orig" n="suben" resp="#fyndling">Die Lesart ‚Süppchen‘ (eine kleine Suppe oder ein flüssiges Gericht) wurde gewählt.</note>
-        <note type="interpretive_choice" target="#phw-216-orig" n="ron fal" resp="#fyndling">‚Ron fal‘ wurde als dialektale Schreibweise von ‚Rainfal‘, einem historischen Süßwein, interpretiert.</note>
-        <note type="interpretive_choice" target="#phw-216-orig" n="gewirflet" resp="#fyndling">‚Gewirflet‘ wurde als ‚gewürfelt‘ übersetzt, was eine gängige Schnittform für Brot in der mittelalterlichen Küche ist.</note>
-        <note type="interpretive_choice" target="#phw-216-orig" n="das brott gewirflet (Brotart)" resp="#fyndling">Der Text nennt keine Brotart; für die Praxisempfehlung wird geröstetes oder altbackenes Brot angenommen, damit die Würfel in der heißen Flüssigkeit nicht sofort zerfallen.</note>
+        <note type="interpretive_choice" target="#phw-216-orig" n="suben" resp="#fyndling" subtype="contextual">Die Lesart ‚Süppchen‘ (eine kleine Suppe oder ein flüssiges Gericht) wurde gewählt.<list type="alternatives"><item>Das MHDBDB schlägt ‚siben‘ (sieben, als Kardinalzahl) vor.<note type="rationale">Diese Lesart ist im kulinarischen Kontext des Rezepts, insbesondere im Zusammenhang mit ‚wein suben‘, nicht sinnvoll. Die Zubereitung beschreibt eindeutig ein flüssiges Gericht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-216-orig" n="ron fal" resp="#fyndling" subtype="lexical">‚Ron fal‘ wurde als dialektale Schreibweise von ‚Rainfal‘, einem historischen Süßwein, interpretiert.<list type="alternatives"><item>Eine alternative Lesart könnte ‚roher Fall‘ oder ‚runder Fall‘ sein.<note type="rationale">Diese Lesarten ergeben im Kontext der Zutatenliste und der Zubereitung eines Süppchens keinen kulinarischen Sinn. Die Erwähnung von ‚wein suben‘ am Ende des Rezepts stützt die Wein-Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-216-orig" n="gewirflet" resp="#fyndling" subtype="lexical">‚Gewirflet‘ wurde als ‚gewürfelt‘ übersetzt, was eine gängige Schnittform für Brot in der mittelalterlichen Küche ist.<list type="alternatives"><item>Das Wort könnte eine seltene oder dialektale Form sein, die nicht direkt in modernen Wörterbüchern belegt ist.<note type="rationale">‚Gewürfelt‘ ist eine plausible und kontextuell passende Lesart für die Zubereitung von Brot in einem Süppchen; das Wort ist buchintern mehrfach belegt (Speck und Semmel gewürfelt).</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-216-orig" n="das brott gewirflet (Brotart)" resp="#fyndling" subtype="contextual">Der Text nennt keine Brotart; für die Praxisempfehlung wird geröstetes oder altbackenes Brot angenommen, damit die Würfel in der heißen Flüssigkeit nicht sofort zerfallen.<list type="alternatives"><item>Frisches Brot ist mit dem Wortlaut ebenso vereinbar.<note type="rationale">Der Text macht keine weitere Angabe zur Brotart; beide Lesarten sind gleichermaßen durch den Quellentext gedeckt.</note></item></list></note>
       </div>
     </back>
   </text>

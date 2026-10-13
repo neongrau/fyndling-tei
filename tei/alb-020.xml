@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,10 +134,10 @@ Praxis. Rohes Fischfilet in die Teigschale legen, mit gehackter Petersilie sowie
         <note type="gloss" target="#alb-020-orig" n="nach der mas" resp="#fyndling">Wörtlich ‚nach dem Maß‘, bedeutet in Kochrezepten oft ‚nach Geschmack‘ oder ‚nach Belieben‘, da genaue Mengenangaben selten waren.</note>
         <note type="gloss" target="#alb-020-orig" n="hafen (gestrichen) → offen" resp="#fyndling">Autorkorrektur im Manuskript (TEI, Rezept „ain pastet mit vischen“, fol. 022r/v): Der Schreiber ersetzt die ursprüngliche Angabe „in ainem hafen“ (im Topf) durch „in ainem offen“ (im Ofen). Die Übersetzung folgt der korrigierten Endfassung.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
         <note type="gloss" target="#alb-020-orig" n="vnd (Schaft-Anmerkung)" resp="#fyndling">Die CoReMA-Edition vermerkt an zwei Stellen ein fehlendes Schaft/Minim beim „n“ von „vnd“ - interpretativ folgenlos (die Lesung „und“ ist im Kontext beider Stellen eindeutig), aber dokumentationspflichtig.</note>
-        <note type="interpretive_choice" target="#alb-020-orig" n="kechelin" resp="#fyndling">Die aus dem Teig selbst geformte Schale, die die Füllung umschließt - kein separates Backgefäß.</note>
-        <note type="interpretive_choice" target="#alb-020-orig" n="win vnd esich darIn nach der maß" resp="#fyndling">Wein und Essig werden nach dem Backen in die fertige Pastete gegeben, um Füllung und Kruste zu befeuchten und zu würzen.</note>
-        <note type="interpretive_choice" target="#alb-020-orig" n="In ainem offen (Manuskriptrevision)" resp="#fyndling">Im Ofen backen - die vom Schreiber selbst korrigierte Endfassung.</note>
-        <note type="interpretive_choice" target="#alb-020-orig" n="vnd (nach ‚legest‘ und nach ‚kumi‘)" resp="#fyndling">und (vnd) - im Kontext beider Stellen die einzig sinnvolle Lesung.</note>
+        <note type="interpretive_choice" target="#alb-020-orig" n="kechelin" resp="#fyndling">Die aus dem Teig selbst geformte Schale, die die Füllung umschließt - kein separates Backgefäß.<list type="alternatives"><item>Ein kleines separates Backgefäß/Töpfchen (wörtliche Diminutiv-Bedeutung von ‚Kachel‘).<note type="rationale">Der Zwilling alb-010 verwendet dasselbe Wort ausdrücklich für eine aus dem Teig geformte Schale (‚mach ainen scherben als ain kechelin darvß‘), was die Selbstformungs-Lesart stützt; alb-020 selbst nennt kein separates Gefäß.</note></item></list></note>
+        <note type="interpretive_choice" target="#alb-020-orig" n="win vnd esich darIn nach der maß" resp="#fyndling">Wein und Essig werden nach dem Backen in die fertige Pastete gegeben, um Füllung und Kruste zu befeuchten und zu würzen.<list type="alternatives"><item>Wein und Essig werden während des Backens zugegeben, etwa für ein feuchteres Backklima.<note type="rationale">Der Text nennt den genauen Zeitpunkt nicht ausdrücklich; beide Lesarten sind mit ‚darin ... nach der maß‘ vereinbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#alb-020-orig" n="In ainem offen (Manuskriptrevision)" resp="#fyndling">Im Ofen backen - die vom Schreiber selbst korrigierte Endfassung.<list type="alternatives"><item>Ursprünglich ‚in ainem hafen‘ (im Topf) - vom Schreiber selbst gestrichen und durch ‚offen‘ (Ofen) ersetzt.<note type="rationale">TEI-Beleg: Streichung (&lt;del&gt;) im Manuskript, Rezept ‚ain pastet mit vischen‘, fol. 022r/v. Die vorliegende Übersetzung folgt korrekt der finalen, korrigierten Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#alb-020-orig" n="vnd (nach ‚legest‘ und nach ‚kumi‘)" resp="#fyndling">und (vnd) - im Kontext beider Stellen die einzig sinnvolle Lesung.<list type="alternatives"><item>CoReMA-Edition vermerkt an beiden Stellen ein paläographisch fehlendes Schaft/Minim beim ‚n‘ von ‚vnd‘ (u/n/m-Verwechslung).<note type="rationale">Interpretativ folgenlos, da im Kontext (‚die visch legest vnd du...‘, ‚Ingber pfefer kumi vnd saffran‘) keine andere Lesung sinnvoll ist - aber laut Editionslage dokumentationspflichtig.</note></item></list></note>
       </div>
     </back>
   </text>

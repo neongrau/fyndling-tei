@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,7 +123,7 @@ Der Teig. Das Rezept nennt nur den fertigen Teig und setzt ihn als bekannt vorau
         <note type="gloss" target="#b4-233-orig" n="tu darczu" resp="#fyndling">„Füge hinzu” - der Text selbst sagt nicht, was. Zwei eng verwandte Fassungen (w1-235, bgs-060) haben an derselben Stelle „Gewürze”.</note>
         <note type="gloss" target="#b4-233-orig" n="waikchen" resp="#fyndling">„Weichen lassen” - der Text nennt keinen Zweck dafür, gemeint ist vermutlich eine kurze Ruhezeit der gefüllten Teiglinge vor dem Backen.</note>
         <note type="gloss" target="#b4-233-orig" n="versalcz nicht" resp="#fyndling">Eine häufige Anweisung in mittelalterlichen Rezepten, die davor warnt, zu viel Salz zu verwenden.</note>
-        <note type="interpretive_choice" target="#b4-233-orig" n="tu darczu" resp="#fyndling">Gewürze (gestützt durch zwei unabhängige Zwillingszeugen: w1-235 „tu gwuercz”, bgs-060 „tuo wuertze dor zvo”, jeweils an derselben Stelle im Ablauf)</note>
+        <note type="interpretive_choice" target="#b4-233-orig" n="tu darczu" resp="#fyndling" subtype="contextual">Gewürze (gestützt durch zwei unabhängige Zwillingszeugen: w1-235 „tu gwuercz”, bgs-060 „tuo wuertze dor zvo”, jeweils an derselben Stelle im Ablauf)</note>
       </div>
     </back>
   </text>

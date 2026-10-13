@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,7 +129,7 @@ Wildbret in Wein und Essig (etwa zu gleichen Teilen) halbgar köcheln, herausneh
         <note type="gloss" target="#phw-063-orig" n="bastette" resp="#fyndling">Eine Pastete wird im Buch in einer Teighülle gebacken. Dieses knapp beschriebene Rezept nennt den Teig nicht eigens, setzt ihn aber voraus.</note>
         <note type="gloss" target="#phw-063-orig" n="spicks" resp="#fyndling">Das Spicken ist eine alte Küchentechnik, bei der mageres Fleisch mit Streifen von Speck oder anderem Fett durchzogen wird, um es saftiger zu machen und mit Aroma anzureichern.</note>
         <note type="gloss" target="#phw-063-orig" n="gwirtz" resp="#fyndling">Die genaue Gewürzmischung ist nicht angegeben. Typisch für die Zeit wären Pfeffer, Ingwer, Nelken und Muskat.</note>
-        <note type="interpretive_choice" target="#phw-063-orig" n="boden (vnden an boden)" resp="#fyndling">Eine Pastete in Teighülle: Der Titel nennt sie „bastette“, und der Text setzt den Teig stillschweigend voraus. Der Zwilling wo10-045 legt das in Essig und Wein vorgesottene, gespickte Fleisch ausdrücklich in das „heusslin“ aus Teig, mit gehacktem Speck dazu. Der Speck kommt hier unten auf den Teigboden.</note>
+        <note type="interpretive_choice" target="#phw-063-orig" n="boden (vnden an boden)" resp="#fyndling" subtype="contextual">Eine Pastete in Teighülle: Der Titel nennt sie „bastette“, und der Text setzt den Teig stillschweigend voraus. Der Zwilling wo10-045 legt das in Essig und Wein vorgesottene, gespickte Fleisch ausdrücklich in das „heusslin“ aus Teig, mit gehacktem Speck dazu. Der Speck kommt hier unten auf den Teigboden.<list type="alternatives"><item>Eine blanke, feuerfeste Form, am Boden mit Speck ausgelegt.<note type="rationale">Frühere Lesart dieses Rezepts. Der Text nennt hier keinen Teig; der Titel spricht aber von einer Pastete, und die Nachbarrezepte backen Wildbret durchweg im Teig.</note></item></list></note>
       </div>
     </back>
   </text>

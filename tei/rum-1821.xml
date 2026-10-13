@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,11 +115,11 @@ Praxis. Weißkohl etwa 2-3 Minuten in kochendem Wasser überbrühen, abtropfen l
         <note type="gloss" target="#rum-1821-orig" n="quells" resp="#fyndling">Befehlsform quell mit angehängtem es („quell es“), gebaut wie drucks und hacks im selben Satz. Quellen heißt bei Rumpolt in der Küche: in Wasser abbrühen, nicht aufquellen lassen. Wie lange, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-1821-orig" n="mach ab" resp="#fyndling">„Mit etwas abmachen“ heißt bei Rumpolt: damit anmachen, vermengen. Saurer Rahm, Eigelb und Butter sind hier die Bindung der Füllung, kein Abschmecken; eine Würze nennt der Text nicht.</note>
         <note type="gloss" target="#rum-1821-orig" n="Turten" resp="#fyndling">Rumpolts Wort für die Torte im alten Sinn: ein gefüllter Kuchen, herzhaft oder süß, nicht die heutige Sahnetorte. Er führt Turten und Pasteten als getrennte Gerichte und widmet den Turten ein eigenes Kapitel. Dieses Stück liefert nur die Füllung.</note>
-        <note type="interpretive_choice" target="#rum-1821-orig" n="quells (wie lange?)" resp="#fyndling">In Wasser abbrühen, Dauer offen: Der Text sagt nur „quells“; buchintern meint quellen das Abbrühen (vgl. die Meldenfüllung im selben Kapitel: quellen, auskühlen, ausdrücken, hacken).</note>
-        <note type="interpretive_choice" target="#rum-1821-orig" n="Teig und Backen der Torte" resp="#fyndling">Offen: Rumpolt nennt für diese Füllung weder Teig noch Backverfahren, nur den Namen „Kraut Turten“. Die Nachbarrezepte rum-1819 und rum-1820 beschreiben Teigarten, aber nicht für dieses Stück.</note>
-        <note type="interpretive_choice" target="#rum-1821-orig" n="Salz und Würzung" resp="#fyndling">Der Text nennt keine Würze, auch kein Salz; die Füllung schmeckt nach Kohl, Säure des Rahms und Butter.</note>
-        <note type="interpretive_choice" target="#rum-1821-orig" n="Kapskraut" resp="#fyndling">Weißkohl (Kopfkohl): gestützt durch den Schlusssatz „von weissem Kraut“ und rheinisch Kappes.</note>
-        <note type="interpretive_choice" target="#rum-1821-orig" n="mach ... ab" resp="#fyndling">Anmachen, vermengen: Rahm, Eigelb und Butter binden die Füllung (so auch rum-1399 „macht mans ab mit saurem Rahm vnd Butter“).</note>
+        <note type="interpretive_choice" target="#rum-1821-orig" n="quells (wie lange?)" resp="#fyndling" subtype="contextual">In Wasser abbrühen, Dauer offen: Der Text sagt nur „quells“; buchintern meint quellen das Abbrühen (vgl. die Meldenfüllung im selben Kapitel: quellen, auskühlen, ausdrücken, hacken).<list type="alternatives"><item>Kurz überbrühen, etwa 2-3 Minuten in kochendem Wasser<note type="rationale">Moderne Praxis für eine Füllung, die anschließend noch gebacken wird; nicht im Text.</note></item><item>Länger weich abkochen<note type="rationale">Quellen kann auch längeres Abkochen meinen; der Text schließt es nicht aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1821-orig" n="Teig und Backen der Torte" resp="#fyndling" subtype="contextual">Offen: Rumpolt nennt für diese Füllung weder Teig noch Backverfahren, nur den Namen „Kraut Turten“. Die Nachbarrezepte rum-1819 und rum-1820 beschreiben Teigarten, aber nicht für dieses Stück.<list type="alternatives"><item>Mürbe- oder Blätterteig mit Boden und Deckel, bei etwa 180 °C backen<note type="rationale">Moderne Ausführung zum Nachkochen; nicht aus dem Text abgeleitet.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1821-orig" n="Salz und Würzung" resp="#fyndling" subtype="contextual">Der Text nennt keine Würze, auch kein Salz; die Füllung schmeckt nach Kohl, Säure des Rahms und Butter.<list type="alternatives"><item>Salz nach Geschmack<note type="rationale">Moderne Nachkoch-Ergänzung; im Text nicht belegt, daher nicht in die Übersetzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1821-orig" n="Kapskraut" resp="#fyndling" subtype="lexical">Weißkohl (Kopfkohl): gestützt durch den Schlusssatz „von weissem Kraut“ und rheinisch Kappes.<list type="alternatives"><item>Kopfkohl allgemein, auch Rotkohl<note type="rationale">Das Wort deckt Kopfkohl insgesamt ab, aber Rumpolt sagt hier ausdrücklich „weiss“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1821-orig" n="mach ... ab" resp="#fyndling" subtype="lexical">Anmachen, vermengen: Rahm, Eigelb und Butter binden die Füllung (so auch rum-1399 „macht mans ab mit saurem Rahm vnd Butter“).<list type="alternatives"><item>Abschmecken, fertig würzen<note type="rationale">Gegenwärtige Wortbedeutung; passt nicht, weil kein Gewürz genannt ist und die drei Zutaten die Masse bilden.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,11 +122,11 @@ Funktioniert das? Teilweise. Die Reihenfolge folgt fallender Dichte, und Holzsch
         <note type="gloss" target="#n2-006-orig" n="leynoel" resp="#fyndling">Leinöl bildet als einzige nicht wassermischbare und leichteste Flüssigkeit die oberste Schicht.</note>
         <note type="gloss" target="#n2-006-orig" n="czu oeberst" resp="#fyndling">„Zuoberst“ - Superlativ zu ober, bezeichnet die Position des Leinöls ganz oben im Glas.</note>
         <note type="gloss" target="#n2-006-orig" n="zo weicht als dy scheibe mit itzlichem tranke of" resp="#fyndling">Die Holzscheibe weicht - im Sinne von: bewegt sich, steigt aus - mit jeder neuen Flüssigkeitsschicht sanft nach oben, nicht im Sinne von „weich werden“.</note>
-        <note type="interpretive_choice" target="#n2-006-orig" n="secherley" resp="#fyndling">Als „sechserlei“ übersetzt, da der Text anschließend genau sechs verschiedene Flüssigkeiten auflistet.</note>
-        <note type="interpretive_choice" target="#n2-006-orig" n="hoelczlyn" resp="#fyndling">Als „Hölzchen“ übersetzt, Diminutiv von Holz, passend für ein kleines Stück Holz als Gießhilfe.</note>
-        <note type="interpretive_choice" target="#n2-006-orig" n="oeberst" resp="#fyndling">Als „zuoberst“ (ganz oben) übersetzt, was die Position des Leinöls als leichteste Flüssigkeit beschreibt.</note>
-        <note type="interpretive_choice" target="#n2-006-orig" n="leynoel" resp="#fyndling">Als „Leinöl“ übersetzt. Leinöl ist ein leichtes Pflanzenöl, das aufgrund seiner geringen Dichte die oberste Schicht bildet.</note>
-        <note type="interpretive_choice" target="#n2-006-orig" n="zo weicht als dy scheibe mit itzlichem tranke of" resp="#fyndling">Als „sodass die Scheibe mit jedem Trank sanft aufsteigt“ interpretiert. Die Holzscheibe schwimmt auf und steigt mit dem Flüssigkeitsspiegel mit.</note>
+        <note type="interpretive_choice" target="#n2-006-orig" n="secherley" resp="#fyndling" subtype="lexical">Als „sechserlei“ übersetzt, da der Text anschließend genau sechs verschiedene Flüssigkeiten auflistet.</note>
+        <note type="interpretive_choice" target="#n2-006-orig" n="hoelczlyn" resp="#fyndling" subtype="lexical">Als „Hölzchen“ übersetzt, Diminutiv von Holz, passend für ein kleines Stück Holz als Gießhilfe.</note>
+        <note type="interpretive_choice" target="#n2-006-orig" n="oeberst" resp="#fyndling" subtype="lexical">Als „zuoberst“ (ganz oben) übersetzt, was die Position des Leinöls als leichteste Flüssigkeit beschreibt.</note>
+        <note type="interpretive_choice" target="#n2-006-orig" n="leynoel" resp="#fyndling" subtype="lexical">Als „Leinöl“ übersetzt. Leinöl ist ein leichtes Pflanzenöl, das aufgrund seiner geringen Dichte die oberste Schicht bildet.</note>
+        <note type="interpretive_choice" target="#n2-006-orig" n="zo weicht als dy scheibe mit itzlichem tranke of" resp="#fyndling" subtype="contextual">Als „sodass die Scheibe mit jedem Trank sanft aufsteigt“ interpretiert. Die Holzscheibe schwimmt auf und steigt mit dem Flüssigkeitsspiegel mit.<list type="alternatives"><item>Eine Lesart von „weicht“ als „weich werden/aufweichen“ ist unplausibel, da die Scheibe aus Holz ihre Form behält und nur als schwimmende Gießhilfe dient.<note type="rationale">Mhd. wîchen heißt allgemein „eine Richtung nehmen, sich bewegen“, nicht nur „zurückweichen“; zusammen mit „of“ (=auf) ergibt sich „steigt auf“.</note></item></list></note>
       </div>
     </back>
   </text>

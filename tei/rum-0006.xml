@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,9 +132,9 @@ Praxis. Plane den Ochsenkopf als separaten Vorbereitungsschritt am Vortag ein. D
         <note type="gloss" target="#rum-0006-orig" n="Weck" resp="#fyndling">Ein 'Weck' bezeichnet im Frühneuhochdeutschen ein Weißbrot oder Brötchen. 'Geriebener Weck' sind Semmelbrösel.</note>
         <note type="gloss" target="#rum-0006-orig" n="gesotten" resp="#fyndling">Das Verb 'sieden' bedeutet hier 'kochen' oder 'gekocht'.</note>
         <note type="gloss" target="#rum-0006-orig" n="feist von Augen sampt dem Fleisch von Augen" resp="#fyndling">Dies bezieht sich auf das Fett und das Fleisch, das sich um die Augenhöhlen des Ochsenkopfes befindet.</note>
-        <note type="interpretive_choice" target="#rum-0006-orig" n="Pouesen" resp="#fyndling">Gefüllte, in Ei getunkte und in Butter ausgebackene Brotschnitten. Die Zubereitung beschreibt eine Füllung zwischen Weißbrotscheiben, die an den Rändern in Ei getaucht und in Butter ausgebacken werden.</note>
-        <note type="interpretive_choice" target="#rum-0006-orig" n="mit den oͤrtern" resp="#fyndling">Die Schnitten werden gezielt an den Rändern/Ecken in Ei getaucht, nicht vollflächig - das versiegelt die Schnittkanten, damit das Sandwich beim Ausbacken zusammenhält, wie der Text selbst begründet.</note>
-        <note type="interpretive_choice" target="#rum-0006-orig" n="heisse Butter" resp="#fyndling">Reine Butter wie im Text angegeben, ohne Mengen- oder Hitzeangabe.</note>
+        <note type="interpretive_choice" target="#rum-0006-orig" n="Pouesen" resp="#fyndling" subtype="philological">Gefüllte, in Ei getunkte und in Butter ausgebackene Brotschnitten. Die Zubereitung beschreibt eine Füllung zwischen Weißbrotscheiben, die an den Rändern in Ei getaucht und in Butter ausgebacken werden.<list type="alternatives"><item>Eine Art Pastetchen oder kleine Pastete.<note type="rationale">Der Begriff 'Pouesen' ist nicht eindeutig belegt. 'Pastetchen' könnte eine Assoziation zur Form sein, aber die Zubereitung verwendet Brotscheiben statt Teig.</note></item><item>Eine Variante von 'Paupiettes'.<note type="rationale">Paupiettes sind gefüllte Rouladen, oft aus Fleisch oder Fisch. Die Form der Brotschnitten ist jedoch nicht gerollt, sondern geschichtet.</note></item><item>Verwandt mit der im Korpus mehrfach belegten 'Pofese' (in Ei getunkte, gebratene Weißbrotschnitte).<note type="rationale">Die beschriebene Technik deckt sich mit der Pofese-Familie; eine eigene Wörterbuch-Beleglage für 'Pouesen' selbst fehlt aber, die Wortidentität bleibt daher offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0006-orig" n="mit den oͤrtern" resp="#fyndling" subtype="philological">Die Schnitten werden gezielt an den Rändern/Ecken in Ei getaucht, nicht vollflächig - das versiegelt die Schnittkanten, damit das Sandwich beim Ausbacken zusammenhält, wie der Text selbst begründet.<list type="alternatives"><item>Vollflächiges Eintunken beider Deckflächen wie beim modernen Armen Ritter.<note type="rationale">Moderne Nachkoch-Anleitungen tunken ein solches Sandwich meist beidseitig vollflächig; der Text sagt aber ausdrücklich 'mit den oͤrtern' (Ort = Ecke/Rand/Spitze), was für eine gezielte Randversiegelung spricht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0006-orig" n="heisse Butter" resp="#fyndling" subtype="contextual">Reine Butter wie im Text angegeben, ohne Mengen- oder Hitzeangabe.<list type="alternatives"><item>Butterschmalz oder mittlere statt hoher Hitze.<note type="rationale">Butter hat einen niedrigen Rauchpunkt und verbrennt bei hoher Hitze leicht; für die Nachkoch-Praxis empfiehlt sich Butterschmalz oder mittlere Hitze, auch wenn der Text ausdrücklich reine Butter nennt.</note></item></list></note>
       </div>
     </back>
   </text>

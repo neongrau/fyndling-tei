@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,11 +129,11 @@ Praxis. Rinderfüße beim Metzger vorbestellen. Man braucht einen großen Topf, 
         <note type="gloss" target="#rum-0081-orig" n="rundt" resp="#fyndling">Hier: in runde Scheiben geschnitten, wie in Nr. 16 („rundt oder schlim“, rund oder schräg).</note>
         <note type="gloss" target="#rum-0081-orig" n="zu Nacht" resp="#fyndling">Abends, zum Abendessen - nicht „spät in der Nacht“.</note>
         <note type="gloss" target="#rum-0081-orig" n="Salat" resp="#fyndling">Rumpolts eigene Bezeichnung für eine kalt mit Essig angemachte Speise, nicht der heutige Blattsalat.</note>
-        <note type="interpretive_choice" target="#rum-0081-orig" n="gar wol an die statt (Garzeit)" resp="#fyndling">Die Füße werden bis zur Gare gekocht; der Text nennt keine Dauer, und gar wol heißt nur „ganz gut“, nicht „besonders lange“.</note>
-        <note type="interpretive_choice" target="#rum-0081-orig" n="schneidt es klein oder rundt, daß es duͤnn ist" resp="#fyndling">Der Text sagt nur, dass klein oder in runden Scheiben dünn geschnitten wird; vom Auslösen der Knochen ist nicht die Rede.</note>
-        <note type="interpretive_choice" target="#rum-0081-orig" n="rundt" resp="#fyndling">In runde Scheiben geschnitten, wie in Nr. 16 („rund oder schräg in Scheiben“); „daß es duͤnn ist“ spricht für Scheiben.</note>
-        <note type="interpretive_choice" target="#rum-0081-orig" n="geuß widerumb guten frischen Essig darauff" resp="#fyndling">Ein zweiter Essigguss beim Anrichten; was mit der ersten Essig-Salz-Beize geschieht, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0081-orig" n="straͤw ein wenig Jngwer" resp="#fyndling">Gemahlener Ingwer, dünn übergestreut; „streuen“ verlangt ein Pulver.</note>
+        <note type="interpretive_choice" target="#rum-0081-orig" n="gar wol an die statt (Garzeit)" resp="#fyndling" subtype="contextual">Die Füße werden bis zur Gare gekocht; der Text nennt keine Dauer, und gar wol heißt nur „ganz gut“, nicht „besonders lange“.<list type="alternatives"><item>Sechs bis acht Stunden sieden, bis Haut und Sehnen weich sind<note type="rationale">Heutige Praxisschätzung für Rinderfüße, nicht im Text; nötig, weil erst langes Sieden die Füße essbar macht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0081-orig" n="schneidt es klein oder rundt, daß es duͤnn ist" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass klein oder in runden Scheiben dünn geschnitten wird; vom Auslösen der Knochen ist nicht die Rede.<list type="alternatives"><item>Fleisch, Haut und Sehnen vom Knochen lösen und in dünne Scheiben oder Streifen schneiden<note type="rationale">Heutige Praxis; dünne, runde Scheiben lassen sich praktisch nur vom ausgelösten Fleisch schneiden. Das „es“ im Text (statt „sie“) passt dazu, dass nun vom Fleisch die Rede ist, beweist es aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0081-orig" n="rundt" resp="#fyndling" subtype="lexical">In runde Scheiben geschnitten, wie in Nr. 16 („rund oder schräg in Scheiben“); „daß es duͤnn ist“ spricht für Scheiben.<list type="alternatives"><item>Rund zurechtschneiden, also die Stücke sauber beschneiden<note type="rationale">So in Nr. 30 („beschneidt es sauber vnd rundt“); dort geht es aber um ein ganzes Stück, hier um dünnes Schneiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0081-orig" n="geuß widerumb guten frischen Essig darauff" resp="#fyndling" subtype="contextual">Ein zweiter Essigguss beim Anrichten; was mit der ersten Essig-Salz-Beize geschieht, sagt der Text nicht.<list type="alternatives"><item>Die erste Beize abgießen und nur frischen Essig zum Anrichten verwenden<note type="rationale">Naheliegend, weil „frisch“ den zweiten Essig vom ersten absetzt und das Fleisch vorher „herausgenommen“ wird; ausdrücklich steht es nicht da.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0081-orig" n="straͤw ein wenig Jngwer" resp="#fyndling" subtype="lexical">Gemahlener Ingwer, dünn übergestreut; „streuen“ verlangt ein Pulver.<list type="alternatives"><item>Frisch geriebene Ingwerwurzel<note type="rationale">Nicht ausgeschlossen, im Text aber nicht angelegt; Rumpolt nennt keine Form.</note></item></list></note>
       </div>
     </back>
   </text>

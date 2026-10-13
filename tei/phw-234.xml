@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,7 +127,7 @@ Hecht (oder alternativ Stockfisch, vorher mehrere Tage gewässert) in reichlich 
         <note type="gloss" target="#phw-234-orig" n="hennen Prust geschribn stet" resp="#fyndling">Verweist auf das vorangehende Rezept ‚Weißes Mus oder Blancmanger‘ aus Kapaun oder Henne: dort wird die Brust gesotten, kalt in feine Fasern gezupft (nicht zerstoßen) und mit geröstetem Reismehl und Milchrahm gebunden, mit Zucker und Rosenwasser gesüßt.</note>
         <note type="gloss" target="#phw-234-orig" n="Mueß" resp="#fyndling">Ein Mus ist eine feine Paste oder Farce, oft aus Fleisch, Fisch oder Gemüse, die durch Pürieren oder Zerstoßen im Mörser hergestellt wird.</note>
         <note type="gloss" target="#phw-234-orig" n="ein gemacht" resp="#fyndling">Eine Zubereitung oder angemachte Würzsauce. Hier im Sinne von ‚zubereitet‘ oder ‚fertiggestellt‘.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#ein-gemacht"/></note>
-        <note type="interpretive_choice" target="#phw-234-orig" n="oder" resp="#fyndling">oder (disjunktiv): eine echte Alternative folgt</note>
+        <note type="interpretive_choice" target="#phw-234-orig" n="oder" resp="#fyndling" subtype="contextual">oder (disjunktiv): eine echte Alternative folgt<list type="alternatives"><item>wie sonst, nur/außer dass kein Essig dazu soll (ausnehmender Anschluss)<note type="rationale">Nach ‚oder‘ folgt keine zweite Siede-Anweisung, sondern nur die Essig-Ausnahme - das spricht für eine ausnehmende statt eine echte disjunktive Lesart. Die Wörterbücher belegen nur die Standardbedeutung ‚oder‘ als Disjunktion, keine ausnehmende Nebenbedeutung für diese Konstruktion.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,7 +126,7 @@ Praxis. Die Brühe-Essig-Mischung erst abkühlen lassen, bevor die rohen Eier hi
         <note type="gloss" target="#phw-218-orig" n="lefel" resp="#fyndling">Ein ‚Löffel‘ war im Mittelalter eine Maßeinheit, deren Volumen regional variierte. Hier ist ein Esslöffel eine gute moderne Annäherung.</note>
         <note type="gloss" target="#phw-218-orig" n="dauch" resp="#fyndling">Ein feines Tuch, das zum Passieren von Flüssigkeiten oder Pürees verwendet wurde, um eine glatte Konsistenz zu erzielen.</note>
         <note type="gloss" target="#phw-218-orig" n="kollen" resp="#fyndling">Glühende Kohlen dienten als Wärmequelle zum Kochen und Schmoren, oft unter oder auf einem Topf.</note>
-        <note type="interpretive_choice" target="#phw-218-orig" n="gwirtz" resp="#fyndling">Als Verb 'würze' (Imperativ) übersetzt, da die Konstruktion 'gwirtz ab mit' eine Handlungsanweisung darstellt.</note>
+        <note type="interpretive_choice" target="#phw-218-orig" n="gwirtz" resp="#fyndling" subtype="contextual">Als Verb 'würze' (Imperativ) übersetzt, da die Konstruktion 'gwirtz ab mit' eine Handlungsanweisung darstellt.<list type="alternatives"><item>Könnte auch das Substantiv 'Gewürz' meinen.<note type="rationale">Grammatisch und im Satzzusammenhang legitime Ambiguität - beide Lesarten sind möglich, die Verbform bleibt aber die naheliegendere.</note></item></list></note>
       </div>
     </back>
   </text>

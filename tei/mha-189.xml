@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -152,11 +157,11 @@ Für die Bindesauce Hühnerhälse und -köpfe im Mörser oder ersatzweise in der
         <note type="gloss" target="#mha-189-orig" n="haselnuos" resp="#fyndling">Vergleichsgröße für die Fleischkügelchen, keine eigene Zutat des Rezepts.</note>
         <note type="gloss" target="#mha-189-orig" n="lebern vnd die maegen" resp="#fyndling">Werden erst im Anrichte-Schritt genannt, ohne vorherige eigene Zubereitungsangabe im Text - offen, ob sie unausgesprochen mit der Henne mitgesotten wurden oder ob hier ein Arbeitsschritt fehlt.</note>
         <note type="interpretive_choice" target="#mha-189-orig" n="praetig" resp="#fyndling">gebraten - 'praetig kalb fleisch' als gebratenes Kalbfleisch, von mhd. braten abgeleitet. Unglossiertes Hapax-Wort ohne externen Beleg, aber ohne plausible Gegenlesart.</note>
-        <note type="interpretive_choice" target="#mha-189-orig" n="entschleust" resp="#fyndling">sich löst/löst sich - die Masse in der Pfanne haftet nicht mehr an und ist gar.</note>
-        <note type="interpretive_choice" target="#mha-189-orig" n="ennczickt" resp="#fyndling">angesäuert/pikant gemacht - der Essig gibt der Brühe eine feine Säure.</note>
-        <note type="interpretive_choice" target="#mha-189-orig" n="beleibens" resp="#fyndling">sie bleiben (ganz) - die Füße bleiben beim getrennten Sieden intakt.</note>
-        <note type="interpretive_choice" target="#mha-189-orig" n="vncz an die stat" resp="#fyndling">bis sie durch sind - 'stat' hier im Sinn von Garpunkt/Zustand, gestützt durch MHDBDB (stat/staen = Ort/Stelle, übertragen: der Punkt, an dem etwas fertig ist).</note>
-        <note type="interpretive_choice" target="#mha-189-orig" n="lebern vnd die maegen (Garung)" resp="#fyndling">Der Text beschreibt für Lebern und Mägen keinen eigenen Garschritt, nur das abschließende 'warm machen' vor dem Anrichten - offen bleibt, ob sie unausgesprochen mit der Henne mitgesotten wurden oder ob hier ein Arbeitsschritt fehlt.</note>
+        <note type="interpretive_choice" target="#mha-189-orig" n="entschleust" resp="#fyndling">sich löst/löst sich - die Masse in der Pfanne haftet nicht mehr an und ist gar.<list type="alternatives"><item>Bis sich das Fett absetzt und heraustritt<note type="rationale">Reflexives 'entschliessen' könnte im Kochkontext auch das Austreten von Fett meinen, ähnlich der Confit-Technik bei langem Garen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-189-orig" n="ennczickt" resp="#fyndling">angesäuert/pikant gemacht - der Essig gibt der Brühe eine feine Säure.<list type="alternatives"><item>Angezogen/verdickt im Sinn von Konsistenz<note type="rationale">Eine Nebenform zu 'anziehen' ist denkbar, wird aber durch den unmittelbaren Essig-Kontext weniger gestützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-189-orig" n="beleibens" resp="#fyndling">sie bleiben (ganz) - die Füße bleiben beim getrennten Sieden intakt.<list type="alternatives"><item>Sie verbleiben (liegen bleiben) in der Pfanne<note type="rationale">Eine Ortsverb-Lesart wäre denkbar, aber der Satz betont ausdrücklich 'gancz' (ganz), was für die Unversehrtheits-Lesart spricht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-189-orig" n="vncz an die stat" resp="#fyndling">bis sie durch sind - 'stat' hier im Sinn von Garpunkt/Zustand, gestützt durch MHDBDB (stat/staen = Ort/Stelle, übertragen: der Punkt, an dem etwas fertig ist).<list type="alternatives"><item>bis zu diesem Punkt/dieser Stelle (wörtlich 'bis an die Stelle')<note type="rationale">Die wörtliche Ortsbedeutung von 'stat' ist im MHDBDB-Beleg breiter gefasst als nur 'Garzustand'; beide Lesarten führen praktisch zum selben Kochschritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-189-orig" n="lebern vnd die maegen (Garung)" resp="#fyndling">Der Text beschreibt für Lebern und Mägen keinen eigenen Garschritt, nur das abschließende 'warm machen' vor dem Anrichten - offen bleibt, ob sie unausgesprochen mit der Henne mitgesotten wurden oder ob hier ein Arbeitsschritt fehlt.<list type="alternatives"><item>Für die moderne Nachkoch-Praxis werden Lebern und Mägen sicherheitshalber separat vorgegart (siehe Praxis-Hinweis) - das ist eine heutige Ergänzung, kein historischer Textbefund.<note type="rationale">Rohes oder nur erwärmtes Geflügelinnere birgt ein Hygienerisiko; die historische Textlücke wird dadurch praktisch überbrückt, aber nicht aufgelöst.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,10 +119,10 @@ Praxis. Ein Gartenversuch, kein Essen. Tau mit einem Leintuch auffangen und die 
         <note type="gloss" target="#rfk-075-orig" n="beysz yn dar in" resp="#fyndling">‚beysz‘ = beize ihn darin, also den Samen darin einweichen. Nicht von ‚beißen‘.</note>
         <note type="gloss" target="#rfk-075-orig" n="peterseligen samen" resp="#fyndling">Petersiliensamen; im selben Rezept auch peterlyn samen.</note>
         <note type="gloss" target="#rfk-075-orig" n="so wyst er" resp="#fyndling">‚So wächst er‘ - wyst ist eine zusammengezogene Form von wahsen. Vergleiche die Überschrift von rfk-076, ‚Das petirlin wasz von stunt‘ (‚wasz‘ = wachse).</note>
-        <note type="interpretive_choice" target="#rfk-075-orig" n="Mntphach" resp="#fyndling">Entphach = fange auf, Imperativ von entphâhen. So vermerkt es die CoReMA-Edition zu dieser Stelle; der Zwilling mha-284 stützt die Lesung mit fach mayen taw (fange Maientau).</note>
-        <note type="interpretive_choice" target="#rfk-075-orig" n="mit eime lilachen" resp="#fyndling">Leilachen = Lein- oder Betttuch. Wie man damit den Tau fängt, sagt rfk nicht. Übernommen wird die Angabe des Zwillings mha-284: Tuch im Garten ausbreiten, Tau darauf fangen, in ein Gefäß ausdrücken.</note>
-        <note type="interpretive_choice" target="#rfk-075-orig" n="bonen ... stoisz sie czu puluer" resp="#fyndling">Getrocknete Bohnen, im Mörser zu Pulver gestoßen; „Pulver“ spricht für trockene Ware. Die Sorte bleibt offen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#bonen"/></note>
-        <note type="interpretive_choice" target="#rfk-075-orig" n="lege daz puluer war du wilt" resp="#fyndling">Das Pulver dort auslegen, wo die Petersilie wachsen soll, und die Samen hineinwerfen - wörtlich nach dem Text, ohne Erdmischung.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#puluer"/></note>
+        <note type="interpretive_choice" target="#rfk-075-orig" n="Mntphach" resp="#fyndling" subtype="philological">Entphach = fange auf, Imperativ von entphâhen. So vermerkt es die CoReMA-Edition zu dieser Stelle; der Zwilling mha-284 stützt die Lesung mit fach mayen taw (fange Maientau).</note>
+        <note type="interpretive_choice" target="#rfk-075-orig" n="mit eime lilachen" resp="#fyndling" subtype="contextual">Leilachen = Lein- oder Betttuch. Wie man damit den Tau fängt, sagt rfk nicht. Übernommen wird die Angabe des Zwillings mha-284: Tuch im Garten ausbreiten, Tau darauf fangen, in ein Gefäß ausdrücken.</note>
+        <note type="interpretive_choice" target="#rfk-075-orig" n="bonen ... stoisz sie czu puluer" resp="#fyndling" subtype="contextual">Getrocknete Bohnen, im Mörser zu Pulver gestoßen; „Pulver“ spricht für trockene Ware. Die Sorte bleibt offen.<list type="alternatives"><item>Frische Bohnen, zerstoßen.<note type="rationale">Der Text unterscheidet nicht zwischen frisch und getrocknet; mha-284 sagt nur zer stoesz die.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#bonen"/></note>
+        <note type="interpretive_choice" target="#rfk-075-orig" n="lege daz puluer war du wilt" resp="#fyndling" subtype="contextual">Das Pulver dort auslegen, wo die Petersilie wachsen soll, und die Samen hineinwerfen - wörtlich nach dem Text, ohne Erdmischung.<list type="alternatives"><item>Das Pulver als Einstreu in eine Saatfurche.<note type="rationale">Der Text sagt nur „wohin du willst“; mha-284 lässt die Samen darauf werfen, rfk dar in.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#puluer"/></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,9 +114,9 @@ Praxis. Tortenteig nach rum-1795 vorbereiten, die Mischung aus Pinienkernen, Ros
         <note type="gloss" target="#rum-1835-orig" n="Turten" resp="#fyndling">Torte: eine Teighülle mit Füllung. Den Teig dafür beschreibt Rumpolt am Anfang des Tortenkapitels (rum-1795).</note>
         <note type="gloss" target="#rum-1835-orig" n="klein schwartze Rosein" resp="#fyndling">Kleine schwarze Rosinen. Welche Sorte genau gemeint ist, legt der Text nicht fest.</note>
         <note type="gloss" target="#rum-1835-orig" n="fein suͤß gemacht" resp="#fyndling">Schön süß gemacht. Womit gesüßt wird, sagt Rumpolt hier nicht.</note>
-        <note type="interpretive_choice" target="#rum-1835-orig" n="Piuni" resp="#fyndling">Pinienkerne. Rumpolt nennt dieselbe Zutat in rum-0406 „Piuni Kern“ und verweist dort auf die Apotheke; hier fehlt das Glied „Kern“, die Zutat ist dieselbe (vgl. ital. pignoli). Gestützt ist das durch Rumpolts eigenen Sprachgebrauch, nicht durch einen Wörterbucheintrag für die Kurzform.</note>
-        <note type="interpretive_choice" target="#rum-1835-orig" n="Verarbeitung der Pinienkerne" resp="#fyndling">Offen: Der Text sagt nicht, ob die Pinienkerne ganz bleiben oder gestoßen werden. Für ein Pinienmus lässt Rumpolt sie an anderer Stelle schälen, im Mörser stoßen und durchstreichen; das ist ein anderes Gericht und nicht auf diese Torte übertragbar.</note>
-        <note type="interpretive_choice" target="#rum-1835-orig" n="fein suͤß gemacht" resp="#fyndling">Offen, womit gesüßt wird: Zucker oder Honig sind beide denkbar, der Text nennt nichts.</note>
+        <note type="interpretive_choice" target="#rum-1835-orig" n="Piuni" resp="#fyndling" subtype="lexical">Pinienkerne. Rumpolt nennt dieselbe Zutat in rum-0406 „Piuni Kern“ und verweist dort auf die Apotheke; hier fehlt das Glied „Kern“, die Zutat ist dieselbe (vgl. ital. pignoli). Gestützt ist das durch Rumpolts eigenen Sprachgebrauch, nicht durch einen Wörterbucheintrag für die Kurzform.<list type="alternatives"><item>Zirbelnüsse (Samen der Zirbelkiefer)<note type="rationale">Ältere Wörterbücher setzen Zirbelnuss und Pinienkern gleich, und Rumpolt kennt „Zirbelnüssen Kern“ (rum-0659). Er schreibt hier aber „Piuni“, nicht „Zirbel“; das weist auf die Pinie und die Apothekenware.</note></item><item>Eine Apfelsorte „Piuni“ (birnenförmiger Apfel)<note type="rationale">Das Schweizerische Idiotikon verzeichnet ein „piuni“ als birnenförmigen Apfel (OCR-Beleg, nicht gegengelesen). Gegen diese Lesart spricht „Piuni Kern, die findt man in der Apotecken“ in rum-0406: Äpfel kauft man nicht in der Apotheke, und ein Kern ist hier das Gewürz oder die Kernware.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1835-orig" n="Verarbeitung der Pinienkerne" resp="#fyndling" subtype="contextual">Offen: Der Text sagt nicht, ob die Pinienkerne ganz bleiben oder gestoßen werden. Für ein Pinienmus lässt Rumpolt sie an anderer Stelle schälen, im Mörser stoßen und durchstreichen; das ist ein anderes Gericht und nicht auf diese Torte übertragbar.<list type="alternatives"><item>Pinienkerne ganz oder grob gehackt, mit den Rosinen vermengt<note type="rationale">Naheliegende Praxislösung, weil „darunter gemengt“ eher an eine stückige Mischung denken lässt; vom Text aber nicht festgelegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1835-orig" n="fein suͤß gemacht" resp="#fyndling" subtype="contextual">Offen, womit gesüßt wird: Zucker oder Honig sind beide denkbar, der Text nennt nichts.<list type="alternatives"><item>Zucker<note type="rationale">In den Nachbarrezepten des Tortenkapitels süßt Rumpolt mit Zucker (etwa rum-1831 „mit weissem Zucker“); deshalb die Praxiswahl, aber für diese Nummer nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

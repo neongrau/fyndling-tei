@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,8 +138,8 @@ Praxis. Kopf und Füße gründlich waschen und in reichlich Wasser weich auskoch
         <note type="gloss" target="#b4-238-orig" n="krass" resp="#fyndling">‚Krass‘ bezieht sich auf das Gekröse oder die Eingeweide des Kalbes, also verschiedene Innereien.</note>
         <note type="gloss" target="#b4-238-orig" n="wamppen" resp="#fyndling">‚Wamppen‘ sind die Wampen oder das Bauchfleisch des Kalbes.</note>
         <note type="gloss" target="#b4-238-orig" n="magen" resp="#fyndling">Im Kontext der Innereien-Aufzählung bezieht sich ‚Magen‘ auf den Magen des Kalbes.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
-        <note type="interpretive_choice" target="#b4-238-orig" n="reyzz" resp="#fyndling">Die Lesart ‚Reis‘ wird beibehalten, da die CoReMA-Sachglosse dieses Wort für b4-238 explizit und wiederholt mit Wikidata Q5090 (Reis) verknüpft - eine rezeptspezifische Editionsautorität.</note>
-        <note type="interpretive_choice" target="#b4-238-orig" n="pressen / Sulczen" resp="#fyndling">Beide Begriffe werden als ‚Sülze‘ oder ‚Aspik‘ übersetzt, da dies die gängige Bedeutung im mittelalterlichen Kochbuchkontext für Gerichte ist, die durch Kochen kollagenreicher Teile und anschließendes Erkalten fest werden.</note>
+        <note type="interpretive_choice" target="#b4-238-orig" n="reyzz" resp="#fyndling" subtype="philological">Die Lesart ‚Reis‘ wird beibehalten, da die CoReMA-Sachglosse dieses Wort für b4-238 explizit und wiederholt mit Wikidata Q5090 (Reis) verknüpft - eine rezeptspezifische Editionsautorität.<list type="alternatives"><item>Der Zwilling w1-240 liest an der syntaktisch identischen Stelle ‚das kres das reib‘ statt ‚das krass das reyzz‘ - eine Form von ‚reiben‘ (reinigen/zerreiben), nicht ‚Reis‘.<note type="rationale">w1-240 ist textlich sonst nahezu wortgleich mit b4-238 (Konkordanz verified, Versatz 2). An dieser Stelle ist ‚reib‘ in w1-240 nicht als Zutat glossiert. Das ist begründete Gegenevidenz zur Reis-Lesart, löst die Crux aber nicht zweifelsfrei auf - beide Handschriften könnten unabhängig voneinander divergieren.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-238-orig" n="pressen / Sulczen" resp="#fyndling" subtype="lexical">Beide Begriffe werden als ‚Sülze‘ oder ‚Aspik‘ übersetzt, da dies die gängige Bedeutung im mittelalterlichen Kochbuchkontext für Gerichte ist, die durch Kochen kollagenreicher Teile und anschließendes Erkalten fest werden.<list type="alternatives"><item>Eine alternative Lesart könnte ‚Pressfleisch‘ sein, also Fleisch, das ohne Gelatine gepresst wird.<note type="rationale">Obwohl Pressfleisch existierte, ist die Verwendung von ‚pressen‘ und ‚Sulczen‘ in diesem Kontext meist mit der Gelierung durch Kollagen verbunden, was eher einer Sülze entspricht.</note></item></list></note>
       </div>
     </back>
   </text>

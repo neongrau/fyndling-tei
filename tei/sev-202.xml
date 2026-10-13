@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,8 +111,8 @@ Vezmi pakačuov (viz rejstřík), čistých z režné mouky, ztluc dobře v mož
         <note type="gloss" target="#sev-202-orig" n="moždíři" resp="#fyndling">Mörser</note>
         <note type="gloss" target="#sev-202-orig" n="břečku medovú" resp="#fyndling">Honigbrei oder Honigschleim</note>
         <note type="gloss" target="#sev-202-orig" n="jícha" resp="#fyndling">Brei, Mus oder dicke Grütze</note>
-        <note type="interpretive_choice" target="#sev-202-orig" n="pakačuov" resp="#fyndling">Gereinigte Roggenkörner oder -grütze, die zu Mehl gemahlen werden müssen.</note>
-        <note type="interpretive_choice" target="#sev-202-orig" n="ztluc dobře v moždíři na mouku" resp="#fyndling">Die Roggenkörner/Grütze in einem großen Mörser zu feinem Mehl zerstoßen.</note>
+        <note type="interpretive_choice" target="#sev-202-orig" n="pakačuov" resp="#fyndling">Gereinigte Roggenkörner oder -grütze, die zu Mehl gemahlen werden müssen.<list type="alternatives"><item>Eine spezielle Art von Roggenmehl oder -schrot.<note type="rationale">Der Begriff ist nicht eindeutig überliefert, könnte aber auch eine bereits verarbeitete Form von Roggen bezeichnen, die nur noch feiner gemahlen werden muss.</note></item></list></note>
+        <note type="interpretive_choice" target="#sev-202-orig" n="ztluc dobře v moždíři na mouku" resp="#fyndling">Die Roggenkörner/Grütze in einem großen Mörser zu feinem Mehl zerstoßen.<list type="alternatives"><item>Die Roggenkörner/Grütze in einer modernen Küchenmaschine oder einem Blender mahlen.<note type="rationale">Dies ist eine praktische moderne Alternative, um das gleiche Ergebnis zu erzielen, ohne einen großen historischen Mörser zu benötigen.</note></item></list></note>
       </div>
     </back>
   </text>

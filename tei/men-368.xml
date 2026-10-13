@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,8 +105,8 @@
         <note type="gloss" target="#men-368-orig" n="char" resp="#fyndling">Fleisch, hier Rindfleisch</note>
         <note type="gloss" target="#men-368-orig" n="moustarde" resp="#fyndling">Senf</note>
         <note type="gloss" target="#men-368-orig" n="greil" resp="#fyndling">Rost, Grillrost</note>
-        <note type="interpretive_choice" target="#men-368-orig" n="cuictes avec la char" resp="#fyndling">Zusammen mit anderem Rindfleisch kochen.</note>
-        <note type="interpretive_choice" target="#men-368-orig" n="salee a la moustarde" resp="#fyndling">Mit Senf würzen/salzen.</note>
+        <note type="interpretive_choice" target="#men-368-orig" n="cuictes avec la char" resp="#fyndling">Zusammen mit anderem Rindfleisch kochen.<list type="alternatives"><item>Als Beilage zu Fleisch servieren.<note type="rationale">'avec' kann auch 'mit' im Sinne von 'dazu' bedeuten, was eine separate Zubereitung und anschließende Kombination implizieren würde.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-368-orig" n="salee a la moustarde" resp="#fyndling">Mit Senf würzen/salzen.<list type="alternatives"><item>Mit Salz und Senf als Beilage servieren.<note type="rationale">'salee' ist passiv ('gesalzen'), und 'a la moustarde' könnte eine separate Beigabe von Senf am Tisch bedeuten.</note></item><item>In einer Senfmarinade einlegen.<note type="rationale">'salee' kann auch 'pökeln' oder 'einlegen' bedeuten, und Senf war oft Bestandteil von mittelalterlichen Marinaden.</note></item></list></note>
         <note type="interpretive_choice" target="#men-368-orig" n="trenchee par lesches" resp="#fyndling">In Scheiben schneiden.</note>
         <note type="interpretive_choice" target="#men-368-orig" n="rosties sur le greil" resp="#fyndling">Auf dem Rost braten/rösten.</note>
       </div>

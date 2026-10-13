@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,11 +123,11 @@ Praxis. Die Kalbskeule beim Metzger bestellen und bis zum Braten kühl halten. W
         <note type="gloss" target="#rum-0131-orig" n="widerumb" resp="#fyndling">„Wiederum“: Die Überschrift knüpft an die vorige Nummer an, die ebenfalls eine Kalbskeule brät. Gemeint ist eine weitere Zubereitung, nicht dasselbe Rezept noch einmal.</note>
         <note type="gloss" target="#rum-0131-orig" n="von einem andern Braten" resp="#fyndling">Die braune Brühe stammt ausdrücklich von einem anderen Braten, nicht von der Keule selbst, die ja erst noch gebraten wird.</note>
         <note type="gloss" target="#rum-0131-orig" n="gestossenen Pfeffer" resp="#fyndling">Zerstoßener Pfeffer, also zerkleinerte Körner statt ganzer.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0131-orig" n="von einem andern Braten ein wenig braune Bruͤh" resp="#fyndling">Braune Brühe bzw. Bratensaft von einem anderen Braten; der Wortlaut sagt ausdrücklich „andern“, die Keule selbst liefert sie nicht.</note>
-        <note type="interpretive_choice" target="#rum-0131-orig" n="brat in fein im Safft" resp="#fyndling">Die Keule schön im Saft braten; Gerät und Dauer nennt Rumpolt hier nicht, anders als in den Nachbarrezepten mit Spieß oder Rost.</note>
-        <note type="interpretive_choice" target="#rum-0131-orig" n="ein wenig von einer Knoblochszehe" resp="#fyndling">Nur ein Teil einer Zehe, sehr klein geschnitten; der Knoblauch soll die Brühe würzen, nicht beherrschen.</note>
-        <note type="interpretive_choice" target="#rum-0131-orig" n="laß es mit der Bruͤh sieden" resp="#fyndling">Essig, Pfeffer und Knoblauch werden in der Brühe mitgekocht; eine Dauer nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0131-orig" n="versaltz jn nicht" resp="#fyndling">Nicht zu stark salzen; „versalzen“ bedeutet wie heute ein Zuviel an Salz.</note>
+        <note type="interpretive_choice" target="#rum-0131-orig" n="von einem andern Braten ein wenig braune Bruͤh" resp="#fyndling" subtype="contextual">Braune Brühe bzw. Bratensaft von einem anderen Braten; der Wortlaut sagt ausdrücklich „andern“, die Keule selbst liefert sie nicht.<list type="alternatives"><item>Bratensaft der Keule selbst<note type="rationale">Widerspricht dem Wortlaut „von einem andern Braten“.</note></item><item>Kräftige Fleischbrühe oder Kalbsfond<note type="rationale">Nur als moderner Ersatz, wenn kein zweiter Braten gemacht wird; nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0131-orig" n="brat in fein im Safft" resp="#fyndling" subtype="contextual">Die Keule schön im Saft braten; Gerät und Dauer nennt Rumpolt hier nicht, anders als in den Nachbarrezepten mit Spieß oder Rost.<list type="alternatives"><item>Am Spieß vor dem Feuer, den abtropfenden Saft auffangen und darübergießen<note type="rationale">Die übliche Bratweise der Zeit, im Text aber nicht genannt.</note></item><item>Im Bräter im Ofen, regelmäßig mit dem Bratensaft übergossen<note type="rationale">Heutige Umsetzung; führt zum selben saftigen Braten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0131-orig" n="ein wenig von einer Knoblochszehe" resp="#fyndling" subtype="contextual">Nur ein Teil einer Zehe, sehr klein geschnitten; der Knoblauch soll die Brühe würzen, nicht beherrschen.<list type="alternatives"><item>Eine ganze kleine Zehe, fein gehackt<note type="rationale">Heutige Praxis bei kleiner Menge; etwas mehr als der Wortlaut.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0131-orig" n="laß es mit der Bruͤh sieden" resp="#fyndling" subtype="contextual">Essig, Pfeffer und Knoblauch werden in der Brühe mitgekocht; eine Dauer nennt der Text nicht.<list type="alternatives"><item>Nur einmal aufwallen lassen<note type="rationale">Möglich, weil keine Zeit genannt ist; der Knoblauch bleibt dann schärfer.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0131-orig" n="versaltz jn nicht" resp="#fyndling" subtype="lexical">Nicht zu stark salzen; „versalzen“ bedeutet wie heute ein Zuviel an Salz.<list type="alternatives"><item>Gar nicht salzen<note type="rationale">Das Wort sagt „versalzen“, nicht „salzen“; ein völliger Salzverzicht steht nicht da.</note></item></list></note>
       </div>
     </back>
   </text>

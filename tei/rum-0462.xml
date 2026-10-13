@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,9 +105,9 @@ Praxis. Gamsfleisch bekommt man heute beim Wildhändler oder Jäger auf Bestellu
         <note type="gloss" target="#rum-0462-orig" n="Kaͤlbern Hacksen" resp="#fyndling">Rumpolt erklärt das Wort selbst (Kalb Nr. 27): „man nennet aber die Hacksen/ was hinder dem Nierenbraten ist“. Gemeint ist also das Fleisch der Hinterkeule hinter dem Lendenstück, nicht die heutige Haxe (Unterschenkel).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hacksen"/></note>
         <note type="gloss" target="#rum-0462-orig" n="eynmachen" resp="#fyndling">Bei Fleisch heißt ‚eynmachen‘ bei Rumpolt das Anrichten in einer Brühe oder Sauce, nicht das Einkochen in Zucker oder das Konservieren im heutigen Sinn.</note>
         <note type="gloss" target="#rum-0462-orig" n="eyndaͤmpffen" resp="#fyndling">Zugedeckt mit wenig Flüssigkeit gar machen. Beim Kalb nennt Rumpolt dazu Wacholderbeeren oder Kümmel (rum-0121); für den Gams gibt der Text keine Würze an.</note>
-        <note type="interpretive_choice" target="#rum-0462-orig" n="Hattele" resp="#fyndling">Druckform beibehalten, Bedeutung des Wortes offen. Das Wort ist in den geprüften Wörterbüchern nicht belegt; Rumpolt beschreibt die Speise aber beim Kalb (rum-0121), und der Verweis „wie von Kaͤlbern Hacksen“ zielt genau dorthin.</note>
-        <note type="interpretive_choice" target="#rum-0462-orig" n="eyndaͤmpffen" resp="#fyndling">Zugedeckt mit wenig Flüssigkeit gar machen. Für den Gams nennt der Text weder Flüssigkeit noch Würze; die Lesart stützt sich auf Rumpolts Gebrauch beim Kalb (rum-0121).</note>
-        <note type="interpretive_choice" target="#rum-0462-orig" n="wie von Kaͤlbern Hacksen (Gams statt Kalb)" resp="#fyndling">Rumpolt verlangt keine Anpassung an das Wildfleisch, er sagt nur, man solle es machen wie bei den Kalbs-Hattele.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hacksen"/></note>
+        <note type="interpretive_choice" target="#rum-0462-orig" n="Hattele" resp="#fyndling" subtype="lexical">Druckform beibehalten, Bedeutung des Wortes offen. Das Wort ist in den geprüften Wörterbüchern nicht belegt; Rumpolt beschreibt die Speise aber beim Kalb (rum-0121), und der Verweis „wie von Kaͤlbern Hacksen“ zielt genau dorthin.<list type="alternatives"><item>Dünn geschnittenes, geklopftes, mit Rinderfett und Kräutern bestrichenes und aufgewickeltes Gamsfleisch am Spieß, wie in rum-0121<note type="rationale">Die naheliegende Ausführung, weil der Text ausdrücklich auf die Kalbs-Hattele verweist; die Einzelschritte stehen aber dort, nicht hier.</note></item><item>Bezeichnung eines bestimmten Fleischstücks<note type="rationale">Trägt nicht: Rumpolt gebraucht das Wort bei Kalb, Hirsch, Reh, Hase, Wildschwein und Fisch, also für eine Speise, nicht für einen Zuschnitt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0462-orig" n="eyndaͤmpffen" resp="#fyndling" subtype="contextual">Zugedeckt mit wenig Flüssigkeit gar machen. Für den Gams nennt der Text weder Flüssigkeit noch Würze; die Lesart stützt sich auf Rumpolts Gebrauch beim Kalb (rum-0121).<list type="alternatives"><item>Mit Wacholderbeeren oder Kümmel eindämpfen<note type="rationale">So beim Kalb (rum-0121) und für Wild naheliegend; hier aber nicht genannt, daher nur als Anleihe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0462-orig" n="wie von Kaͤlbern Hacksen (Gams statt Kalb)" resp="#fyndling" subtype="contextual">Rumpolt verlangt keine Anpassung an das Wildfleisch, er sagt nur, man solle es machen wie bei den Kalbs-Hattele.<list type="alternatives"><item>Rinderfett großzügig im Wickel lassen, dünn schneiden, kräftig klopfen, kurz und heiß braten<note type="rationale">Moderne Praxisempfehlung, weil Gams magerer und fester ist als Kalbskeule; im Text nicht verlangt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hacksen"/></note>
       </div>
     </back>
   </text>

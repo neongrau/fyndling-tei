@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -75,7 +80,7 @@
 
 Erstlich muß man nemen ain Seutel
 vol (wie die Seutln Inn diesem Lannd
-gepreuchig sein,) das weisse von Ayın
+gepreuchig sein,) das weisse von Ayrn
 ain Seutel mit Zugkher, ain halb Libertzen gue-
 te mandlIn, die selben aufs vleissegist vnnd
 klainist gestossen, Der gleichen ain Seutel
@@ -110,7 +115,7 @@ guet als ain Marcipan.</p>
         <div type="ingredients">
           <list type="ingredients">
             <item>
-              <ingredient en="egg white" orig="das weisse von Ayın / das weisse vonn Ay Zerschlagen" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+              <ingredient en="egg white" orig="das weisse von Ayrn / das weisse vonn Ay Zerschlagen" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
             </item>
             <item>
               <ingredient en="unrefined cane sugar" orig="Zugkher / ain Zugkher" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
@@ -145,14 +150,14 @@ Praxis. Mandeln so fein wie möglich stoßen oder mahlen und mit rohem Eiweiß, 
         <note type="gloss" target="#phw-236-orig" n="Libertzen" resp="#fyndling">Eine ‚Libert‘ ist eine alte Gewichtseinheit, die dem Pfund (lateinisch ‚libra‘) entspricht. Ein halbes Libertzen sind somit etwa 250 Gramm.</note>
         <note type="gloss" target="#phw-236-orig" n="Federlein" resp="#fyndling">Ein kleines Federlein wurde zum Bestreichen oder Besprengen von Speisen verwendet, ähnlich einem modernen Backpinsel.</note>
         <note type="gloss" target="#phw-236-orig" n="Glut nach Notdurft" resp="#fyndling">Die Anweisung bedeutet, ausreichend Glut auf den Deckel der Pfanne zu legen, um Oberhitze zu erzeugen und die Torte von oben zu backen.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="Seutel / Seutln" resp="#fyndling">‚Seutel‘ wird als ein Beutel oder eine Tasse als ungenaue Mengenangabe interpretiert, da der Text es als ‚in diesem Land gebräuchlich‘ beschreibt und für verschiedene Zutaten verwendet.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="Zugkher" resp="#fyndling">Als ‚Zucker‘ übersetzt, eine gängige Schreibweise für Zucker in frühneuhochdeutschen Texten.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="vleissegist vnnd klainist" resp="#fyndling">Als ‚aufs fleißigste und kleinste‘ übersetzt, was ‚sehr fein und sorgfältig‘ bedeutet, bezogen auf das Zerstoßen der Mandeln.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="vorberueten Stuckh" resp="#fyndling">Als ‚vorbereiteten Zutaten‘ übersetzt, da ‚vorberueten‘ eine Variante von ‚vorbereiteten‘ ist und sich auf die bereits gemischten Eiweiß-, Zucker- und Mandelbestandteile bezieht.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="rosenwas" resp="#fyndling">Als ‚Rosenwasser‘ übersetzt, eine übliche Zutat in der historischen Küche.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="uerhuetung des anprennens" resp="#fyndling">Als ‚Verhütung des Anbrennens‘ übersetzt, eine klare Anweisung zur Vorbeugung des Anbrennens in der Pfanne.</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="deckht" resp="#fyndling">Als ‚bedeckt‘ übersetzt, im Sinne des Abdeckens der Pfanne mit dem ‚überleg‘ (Deckel).</note>
-        <note type="interpretive_choice" target="#phw-236-orig" n="Ayın" resp="#fyndling">Als ‚Eiweiß‘ übersetzt (im Kontext von ‚das weisse von Ayın‘, Genitiv/Dativ Plural zu ‚Ay‘ = Ei). Die genaue Schreibung bleibt am Faksimile zu prüfen.</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="Seutel / Seutln" resp="#fyndling" subtype="lexical">‚Seutel‘ wird als ein Beutel oder eine Tasse als ungenaue Mengenangabe interpretiert, da der Text es als ‚in diesem Land gebräuchlich‘ beschreibt und für verschiedene Zutaten verwendet.<list type="alternatives"><item>Eine spezifische, aber unbekannte Volumeneinheit.<note type="rationale">Ohne weitere Kontextualisierung oder Umrechnung in der Quelle ist eine präzise Bestimmung nicht möglich, daher wird eine generische Lesart bevorzugt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="Zugkher" resp="#fyndling" subtype="orthographic">Als ‚Zucker‘ übersetzt, eine gängige Schreibweise für Zucker in frühneuhochdeutschen Texten.</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="vleissegist vnnd klainist" resp="#fyndling" subtype="lexical">Als ‚aufs fleißigste und kleinste‘ übersetzt, was ‚sehr fein und sorgfältig‘ bedeutet, bezogen auf das Zerstoßen der Mandeln.</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="vorberueten Stuckh" resp="#fyndling" subtype="lexical">Als ‚vorbereiteten Zutaten‘ übersetzt, da ‚vorberueten‘ eine Variante von ‚vorbereiteten‘ ist und sich auf die bereits gemischten Eiweiß-, Zucker- und Mandelbestandteile bezieht.</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="rosenwas" resp="#fyndling" subtype="orthographic">Als ‚Rosenwasser‘ übersetzt, eine übliche Zutat in der historischen Küche.</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="uerhuetung des anprennens" resp="#fyndling" subtype="lexical">Als ‚Verhütung des Anbrennens‘ übersetzt, eine klare Anweisung zur Vorbeugung des Anbrennens in der Pfanne.</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="deckht" resp="#fyndling" subtype="orthographic">Als ‚bedeckt‘ übersetzt, im Sinne des Abdeckens der Pfanne mit dem ‚überleg‘ (Deckel).</note>
+        <note type="interpretive_choice" target="#phw-236-orig" n="Ayrn" resp="#fyndling" subtype="orthographic">‚Ayrn‘ = Eiern (Dativ Plural zu ‚Ay‘ = Ei); ‚das weisse von Ayrn‘ ist das Eiweiß. Am Faksimile so gelesen.</note>
       </div>
     </back>
   </text>

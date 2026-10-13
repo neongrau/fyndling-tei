@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,10 +107,10 @@ Praxis. Ein Gerät nennt der Text nicht; heute eignen sich Pfanne oder Ofen. Wil
         <note type="gloss" target="#rum-0827-orig" n="fein im Safft" resp="#fyndling">Fein heißt bei Rumpolt schön, gut. Gemeint ist wohl, dass die Vögel beim Braten saftig bleiben, im eigenen Saft. Eine Brühe oder eine zugegebene Flüssigkeit nennt der Satz nicht.</note>
         <note type="gloss" target="#rum-0827-orig" n="saure Limonien" resp="#fyndling">Saure Zitronen. Limonien ist Rumpolts Wort für eine kleinere, dünnschalige Zitronenart; gemeint sind frische Früchte, nicht eingesalzene.</note>
         <note type="gloss" target="#rum-0827-orig" n="geschnitten fein breit" resp="#fyndling">Fein und breit geschnitten, also in dünne, breite Stücke. Dieselbe Wendung gebraucht Rumpolt beim Fasan (rum-0556), wo „saur Limonien breit“ geschnitten über das Fleisch gelegt werden.</note>
-        <note type="interpretive_choice" target="#rum-0827-orig" n="Trucken" resp="#fyndling">Ohne Brühe oder Sauce abgebraten. So ergibt sich der Gegensatz zu den in Brühe oder Sauce gegarten Nummern davor und zur nächsten Nummer (rum-0828), wo die Vögel kalt mit einer Weichselsalse begossen werden. Das ist eine Lesart aus der Reihe, kein Wörterbuchbeleg.</note>
-        <note type="interpretive_choice" target="#rum-0827-orig" n="fein im Safft" resp="#fyndling">Schön saftig, im eigenen Bratensaft: Die Vögel sollen beim Abbraten nicht austrocknen. Nur so verträgt sich die Stelle mit „Trucken“, und der Satz nennt keine andere Flüssigkeit.</note>
-        <note type="interpretive_choice" target="#rum-0827-orig" n="Zeitpunkt des Auflegens („vber die Voͤgel gelegt“)" resp="#fyndling">Der Text sagt nur, dass die Zitronen über die Vögel gelegt werden, nicht wann. Gemeint ist das Anrichten zum Auftragen.</note>
-        <note type="interpretive_choice" target="#rum-0827-orig" n="Gerät beim Abbraten" resp="#fyndling">Der Text nennt kein Gerät; Spieß, Rost und Pfanne bleiben gleichermaßen offen.</note>
+        <note type="interpretive_choice" target="#rum-0827-orig" n="Trucken" resp="#fyndling" subtype="contextual">Ohne Brühe oder Sauce abgebraten. So ergibt sich der Gegensatz zu den in Brühe oder Sauce gegarten Nummern davor und zur nächsten Nummer (rum-0828), wo die Vögel kalt mit einer Weichselsalse begossen werden. Das ist eine Lesart aus der Reihe, kein Wörterbuchbeleg.<list type="alternatives"><item>Durchgebraten, bis das Fleisch trocken ist<note type="rationale">Widerspricht dem unmittelbar folgenden „fein im Safft“; daher nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0827-orig" n="fein im Safft" resp="#fyndling" subtype="contextual">Schön saftig, im eigenen Bratensaft: Die Vögel sollen beim Abbraten nicht austrocknen. Nur so verträgt sich die Stelle mit „Trucken“, und der Satz nennt keine andere Flüssigkeit.<list type="alternatives"><item>Ein eigener Saft oder Bratensaft, der zu den Vögeln gegeben wird<note type="rationale">Möglich, weil Rumpolt „Safft“ auch als Sauce kennt; der Satz nennt aber keine Zutat dafür, und eine Sauce passte schlecht zu „Trucken“.</note></item><item>Zitronensaft<note type="rationale">Der Satzbau spricht dagegen: Die Zitronen kommen erst danach, mit „vnnd“ angeschlossen, und werden aufgelegt, nicht ausgedrückt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0827-orig" n="Zeitpunkt des Auflegens („vber die Voͤgel gelegt“)" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass die Zitronen über die Vögel gelegt werden, nicht wann. Gemeint ist das Anrichten zum Auftragen.<list type="alternatives"><item>Die Scheiben beim Anrichten auf die fertig gebratenen, noch heißen Vögel legen<note type="rationale">Die heutige Umsetzung, im Kochteil so beschrieben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0827-orig" n="Gerät beim Abbraten" resp="#fyndling" subtype="contextual">Der Text nennt kein Gerät; Spieß, Rost und Pfanne bleiben gleichermaßen offen.<list type="alternatives"><item>In der Pfanne oder im Ofen gar durchbraten<note type="rationale">Die heutige Umsetzung, im Kochteil so beschrieben; aus dem Text nicht abzuleiten.</note></item></list></note>
       </div>
     </back>
   </text>

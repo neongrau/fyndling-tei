@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -151,10 +156,10 @@
         <note type="gloss" target="#men-277-orig" n="chaudumé" resp="#fyndling">Eine heiße Sauce oder ein dicker Eintopf, hier eine warme Würzsauce für kalten Fisch.</note>
         <note type="gloss" target="#men-277-orig" n="vertjus" resp="#fyndling">Saft unreifer Weintrauben, der als Säuerungsmittel ähnlich wie Essig, aber mit fruchtigerem Aroma verwendet wird.</note>
         <note type="gloss" target="#men-277-orig" n="greil" resp="#fyndling">Ein Rost oder Grill, auf dem der Fisch gebraten wird. Im Mittelalter oft ein hölzerner Rost über Glut.</note>
-        <note type="interpretive_choice" target="#men-277-orig" n="coq" resp="#fyndling">Quitte (Cydonia oblonga)</note>
-        <note type="interpretive_choice" target="#men-277-orig" n="salemonde" resp="#fyndling">Bohnenkraut (Satureja hortensis)</note>
-        <note type="interpretive_choice" target="#men-277-orig" n="graine" resp="#fyndling">Paradieskörner (Aframomum melegueta)</note>
-        <note type="interpretive_choice" target="#men-277-orig" n="fleur de canelle" resp="#fyndling">Zimtblüte</note>
+        <note type="interpretive_choice" target="#men-277-orig" n="coq" resp="#fyndling">Quitte (Cydonia oblonga)<list type="alternatives"><item>Hahn (Gallus gallus domesticus)<note type="rationale">Dies ist die wörtliche Übersetzung, aber im Kontext einer Kräuter- und Gewürzmischung zur Fischkonservierung ist die Verwendung eines Hahns als Zutat höchst unwahrscheinlich und würde zu einem unpassenden Geschmacksprofil führen.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-277-orig" n="salemonde" resp="#fyndling">Bohnenkraut (Satureja hortensis)<list type="alternatives"><item>Salzkraut (Salsola kali)<note type="rationale">'Salzkraut' ist eine weitere mögliche Übersetzung für 'salemonde', die sich auf salzige oder salzliebende Pflanzen bezieht. Dies wäre im Kontext der Fischkonservierung ebenfalls plausibel, aber Bohnenkraut ist als aromatisches Kraut in solchen Rezepten häufiger belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-277-orig" n="graine" resp="#fyndling">Paradieskörner (Aframomum melegueta)<list type="alternatives"><item>Allgemeine Samen/Körner<note type="rationale">'Graine' bedeutet wörtlich 'Samen'. Im Kontext einer Gewürzmischung ist 'Paradieskörner' jedoch eine sehr häufige und spezifische mittelalterliche Zutat, die oft einfach als 'graine' bezeichnet wurde, wenn andere Gewürze wie Ingwer und Pfeffer genannt werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#men-277-orig" n="fleur de canelle" resp="#fyndling">Zimtblüte<list type="alternatives"><item>Zimt (Rinde)<note type="rationale">Zimtblüten sind die getrockneten Blütenknospen des Zimtbaums und haben ein feineres, blumigeres Aroma als die Rinde. Wenn Zimtblüten nicht verfügbar sind, kann Zimtrinde als Ersatz dienen, auch wenn das Aroma nicht identisch ist.</note></item></list></note>
       </div>
     </back>
   </text>

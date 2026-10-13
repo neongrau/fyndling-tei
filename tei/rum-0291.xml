@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -117,9 +122,9 @@ Praxis. Hirschohren und Gurgel gibt es nur auf Anfrage beim Jäger oder Wildhän
         <note type="gloss" target="#rum-0291-orig" n="saͤurlich weiß mit Limonien" resp="#fyndling">Hell und säuerlich angerichtet, mit Zitronen statt der Pfeffersauce.</note>
         <note type="gloss" target="#rum-0291-orig" n="Limonien" resp="#fyndling">Zitronen.</note>
         <note type="gloss" target="#rum-0291-orig" n="Hirschen Gurgel" resp="#fyndling">Die Kehle mit der Luftröhre. Den Schlund nennt Rumpolt anderswo eigens neben der Gurgel, die Speiseröhre ist also nicht gemeint.</note>
-        <note type="interpretive_choice" target="#rum-0291-orig" n="Hirschen Gurgel" resp="#fyndling">Kehle mit der Luftröhre. So liest das Buch die Gurgel auch bei Kalb und Ziege, und den Schlund führt Rumpolt als eigenes Teil neben der Gurgel.</note>
-        <note type="interpretive_choice" target="#rum-0291-orig" n="Nim̃ die Hirschen Gurgel auch darzu" resp="#fyndling">Die Gurgel kommt zu den Ohren und wird mit ihnen gesotten und angerichtet. Der Text sagt nur „auch darzu“, nichts über einen eigenen Garschritt.</note>
-        <note type="interpretive_choice" target="#rum-0291-orig" n="in einem schwartzen oder gelben Pfeffer" resp="#fyndling">Rumpolt nennt nur die Art der Sauce und ihre Farbe. Zutaten, Bindung und Färbemittel bleiben offen; es wird nichts ergänzt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0291-orig" n="Hirschen Gurgel" resp="#fyndling" subtype="lexical">Kehle mit der Luftröhre. So liest das Buch die Gurgel auch bei Kalb und Ziege, und den Schlund führt Rumpolt als eigenes Teil neben der Gurgel.<list type="alternatives"><item>Speiseröhre oder Schlund<note type="rationale">Die Wörterbücher trennen bei „Gurgel“ Kehle, Speiseröhre und Luftröhre nicht sicher. Weil Rumpolt den Schlund gesondert nennt, ist diese Lesart hier weniger wahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0291-orig" n="Nim̃ die Hirschen Gurgel auch darzu" resp="#fyndling" subtype="contextual">Die Gurgel kommt zu den Ohren und wird mit ihnen gesotten und angerichtet. Der Text sagt nur „auch darzu“, nichts über einen eigenen Garschritt.<list type="alternatives"><item>Ohren zuerst ansetzen, die Gurgel später zugeben und eigens auf Garheit prüfen<note type="rationale">Heutige Praxis, weil beide Teile nicht gleich lange brauchen müssen. Der Text belegt das nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0291-orig" n="in einem schwartzen oder gelben Pfeffer" resp="#fyndling" subtype="contextual">Rumpolt nennt nur die Art der Sauce und ihre Farbe. Zutaten, Bindung und Färbemittel bleiben offen; es wird nichts ergänzt.<list type="alternatives"><item>Die Sauce nach einer der Pfeffer-Anweisungen in den Grundlagen zubereiten<note type="rationale">Für das Nachkochen nötig, aber eine Übertragung aus anderen Rezepten, keine Angabe dieses Textes.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
       </div>
     </back>
   </text>

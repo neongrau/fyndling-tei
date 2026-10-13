@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,8 +134,8 @@ Mehl mit kaltem Wasser zu einem dicken Brei verrühren und glattschlagen, dann n
         <note type="gloss" target="#phw-131-orig" n="resch" resp="#fyndling">‚Knusprig' oder ‚kross', beschreibt die gewünschte Textur der gebackenen Apfelscheiben.</note>
         <note type="gloss" target="#phw-131-orig" n="auff gon" resp="#fyndling">‚Aufgehen', hier im Sinne von aufquellen im heißen Fett, was zu einer luftigen Textur führt.</note>
         <note type="gloss" target="#phw-131-orig" n="⟨?wirtt⟩" resp="#fyndling">Unsicher gestrichenes Wort an dieser Stelle; es bleibt in der Übersetzung folgerichtig unberücksichtigt.</note>
-        <note type="interpretive_choice" target="#phw-131-orig" n="Verbindung von Teig und Apfelscheiben" resp="#fyndling">Der Text nennt Teigzubereitung und Apfelverarbeitung als zwei getrennte Abschnitte, ohne das Tunken der Apfelscheiben in den Teig ausdrücklich zu benennen. Dass dieser Schritt gemeint ist, ergibt sich aus dem Zusammenhang: Der Teig hätte sonst keine erkennbare Funktion, und das beschriebene Aufgehen im übergossenen Schmalz setzt eine Teighülle voraus.</note>
-        <note type="interpretive_choice" target="#phw-131-orig" n="rundenn myese" resp="#fyndling">Praktisch gesichert als ‚runde, dünne Scheiben' - so legt es der Zusammenhang nahe (‚auf das aller dinnest geschnitzen'), gestützt durch eng verwandte Rezepte anderer Kochbücher, die an vergleichbarer Stelle ‚rund geschnitten' schreiben. Die Wortform ‚myese' selbst ist weder in Hayers Glossar noch in den einschlägigen Wörterbüchern belegt und bleibt ungeklärt.</note>
+        <note type="interpretive_choice" target="#phw-131-orig" n="Verbindung von Teig und Apfelscheiben" resp="#fyndling" subtype="contextual">Der Text nennt Teigzubereitung und Apfelverarbeitung als zwei getrennte Abschnitte, ohne das Tunken der Apfelscheiben in den Teig ausdrücklich zu benennen. Dass dieser Schritt gemeint ist, ergibt sich aus dem Zusammenhang: Der Teig hätte sonst keine erkennbare Funktion, und das beschriebene Aufgehen im übergossenen Schmalz setzt eine Teighülle voraus.</note>
+        <note type="interpretive_choice" target="#phw-131-orig" n="rundenn myese" resp="#fyndling" subtype="philological">Praktisch gesichert als ‚runde, dünne Scheiben' - so legt es der Zusammenhang nahe (‚auf das aller dinnest geschnitzen'), gestützt durch eng verwandte Rezepte anderer Kochbücher, die an vergleichbarer Stelle ‚rund geschnitten' schreiben. Die Wortform ‚myese' selbst ist weder in Hayers Glossar noch in den einschlägigen Wörterbüchern belegt und bleibt ungeklärt.</note>
       </div>
     </back>
   </text>

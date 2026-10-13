@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -169,8 +174,8 @@ Die Flügel vor dem Vorgaren zerschlagen, das macht den Vogel kompakter für die
         <note type="gloss" target="#phw-059-orig" n="suben brye" resp="#fyndling">Eine Suppenbrühe, also Fleischbrühe: „suben“ ist die Suppe, wie in „waser suben“ (Wassersuppe) bei der Lebertorte dieses Buchs. Sie wird zusammen mit dem Verjus durch ein Loch in die Pastete gegossen.</note>
         <note type="gloss" target="#phw-059-orig" n="lechlin" resp="#fyndling">Ein ‚lechlin‘ ist ein kleines Loch, das hier in die Pastete gestochen wird, um Flüssigkeit einzufüllen.</note>
         <note type="gloss" target="#phw-059-orig" n="dortte pfanen" resp="#fyndling">Eine ‚dortte pfanen‘ ist eine Tortenpfanne, eine flache, runde Backform, die für Pasteten und Kuchen verwendet wurde.</note>
-        <note type="interpretive_choice" target="#phw-059-orig" n="suben brye" resp="#fyndling">Suppenbrühe (Fleischbrühe), die zusammen mit Verjus durch das Loch in die Pastete gegossen wird; „suben“ ist die Suppe, wie in „waser suben“ (phw-039).</note>
-        <note type="interpretive_choice" target="#phw-059-orig" n="Garzustand des Geflügels (&quot;las fol bachen&quot;)" resp="#fyndling">Der Text beurteilt die Fertigstellung ausschließlich über das Durchbacken und die Bräunung der Kruste, ohne Kerntemperatur oder eine andere Prüfmethode zu nennen.</note>
+        <note type="interpretive_choice" target="#phw-059-orig" n="suben brye" resp="#fyndling" subtype="lexical">Suppenbrühe (Fleischbrühe), die zusammen mit Verjus durch das Loch in die Pastete gegossen wird; „suben“ ist die Suppe, wie in „waser suben“ (phw-039).<list type="alternatives"><item>Der Wortbestandteil ‚suben‘ selbst ist nicht sicher gedeutet - er könnte mit ‚Sud‘ oder ‚Suppe‘ verwandt sein.<note type="rationale">Im eigenen Korpus taucht die verwandte Form ‚waser suben‘ an anderer Stelle im Sinne von Sud oder Suppe auf; eine genauere Festlegung auf eine bestimmte Konsistenz ist ohne weiteren Beleg nicht möglich.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-059-orig" n="Garzustand des Geflügels (&quot;las fol bachen&quot;)" resp="#fyndling" subtype="contextual">Der Text beurteilt die Fertigstellung ausschließlich über das Durchbacken und die Bräunung der Kruste, ohne Kerntemperatur oder eine andere Prüfmethode zu nennen.<list type="alternatives"><item>Für die eigene Nachkoch-Praxis empfiehlt sich zusätzlich, die Kerntemperatur des Geflügels zu prüfen (mindestens 74 °C), auch wenn der historische Text das nicht verlangt.<note type="rationale">Lebensmittelsicherheit bei Geflügel ist ein heutiger Standard, der über den historischen Anspruch des Textes hinausgeht.</note></item></list></note>
       </div>
     </back>
   </text>

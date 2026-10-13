@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,9 +132,9 @@ Den weißen Teil von zwei bis drei Lauchstangen klein schneiden und über Nacht 
         <note type="gloss" target="#w1-092-orig" n="magen milch" resp="#fyndling">Laut CoReMA-Glosse ist hier Mohnmilch gemeint, nicht Milch aus dem Magen eines Tieres.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
         <note type="gloss" target="#w1-092-orig" n="hausen" resp="#fyndling">Hausen bezeichnet eine Störart. Der Text nennt ausdrücklich dessen Fett und daneben Speck.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
         <note type="gloss" target="#w1-092-orig" n="vaist" resp="#fyndling">Hier ist das Fett des Hausens gemeint, nicht generisches Schmalz. Es dient als Geschmacksträger und zur Anreicherung des Gerichts.</note>
-        <note type="interpretive_choice" target="#w1-092-orig" n="pall in aus" resp="#fyndling">Die Phrase bezeichnet eine Handlung am eingeweichten Lauch vor dem Sieden; ihre genaue Ausführung bleibt offen.</note>
-        <note type="interpretive_choice" target="#w1-092-orig" n="kalen" resp="#fyndling">Die 'weißen Kalen' wurden als 'weiße Lauchstangen' interpretiert, da dies die essbaren Teile des Lauchs sind.</note>
-        <note type="interpretive_choice" target="#w1-092-orig" n="hausen daz vaist" resp="#fyndling">Dies wurde als 'Störfett' übersetzt, da 'vaist' explizit 'Fett' bedeutet und 'hausen' den Stör bezeichnet.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
+        <note type="interpretive_choice" target="#w1-092-orig" n="pall in aus" resp="#fyndling" cert="unknown">Die Phrase bezeichnet eine Handlung am eingeweichten Lauch vor dem Sieden; ihre genaue Ausführung bleibt offen.<list type="alternatives"><item>Ausdrücken bzw. Auswringen des Lauchs.<note type="rationale">Die Wortfamilie um 'ballen' lässt an Zusammenpressen denken. Ein Wörterbuchbeleg für diese genaue Küchenanweisung fehlt jedoch; die Lesung darf daher nicht als gesichert ausgegeben werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-092-orig" n="kalen" resp="#fyndling">Die 'weißen Kalen' wurden als 'weiße Lauchstangen' interpretiert, da dies die essbaren Teile des Lauchs sind.<list type="alternatives"><item>Eine andere Lesart könnte 'äußere Schalen' sein, was jedoch für Lauch weniger gebräuchlich ist als für andere Gemüsearten.<note type="rationale">Obwohl 'Kalen' auch 'Schalen' bedeuten kann, ist im Kontext von Lauch die Bezeichnung der weißen, fleischigen Stangen als 'Kalen' kulinarisch sinnvoller.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-092-orig" n="hausen daz vaist" resp="#fyndling">Dies wurde als 'Störfett' übersetzt, da 'vaist' explizit 'Fett' bedeutet und 'hausen' den Stör bezeichnet.<list type="alternatives"><item>Eine alternative Lesart wäre 'fetter Hausen (Stör)', was den ganzen Fisch meinen würde, aber die Spezifikation 'daz vaist' legt den Fokus auf das Fett.<note type="rationale">Die Formulierung 'daz vaist' (das Fette) nach 'hausen' (Stör) deutet klar auf das Fett des Fisches hin, nicht auf den gesamten Fisch.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hausen"/></note>
       </div>
     </back>
   </text>

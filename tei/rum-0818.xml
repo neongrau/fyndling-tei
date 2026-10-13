@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,8 +106,8 @@ Praxis. Mengen, Garzeiten und Würzung nennt Rumpolt nicht.</note>
         <note type="gloss" target="#rum-0818-orig" n="nicht böß" resp="#fyndling">Zurückhaltendes Lob, wörtlich „nicht schlecht“, „nicht übel“. Dieselbe Wendung gebraucht Rumpolt bei der geräucherten Ochsenzunge.</note>
         <note type="gloss" target="#rum-0818-orig" n="gruͤnen Koͤl" resp="#fyndling">Grüner Kohl, also ein Blattkohl. Welche Sorte gemeint ist, sagt der Text nicht; Grünkohl liegt nahe, ist aber nicht gesichert. Das „grün“ spricht gegen Weißkohl: Im Rezept davor stellt Rumpolt „weißes oder saures Kraut“ gegen „grünen Kohl“.</note>
         <note type="gloss" target="#rum-0818-orig" n="fleiß darzu ankehren" resp="#fyndling">Mühe darauf verwenden; ankehren heißt hier aufwenden, hinwenden.</note>
-        <note type="interpretive_choice" target="#rum-0818-orig" n="vnter ein gruͤnen Koͤl" resp="#fyndling">Offen gelassen: Der Text nennt keinen Garschritt, keine Hitze und keine Zeit, und „oder wie man es haben will“ überlässt die Art dem Geschmack. Ob die Wachteln im Kohl mitgaren oder nur zu fertigem Kohl gelegt werden, warm oder kalt, entscheidet der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0818-orig" n="gruͤnen Koͤl (Sorte)" resp="#fyndling">Grüner Kohl, Sorte offen; Grünkohl liegt nahe, ist aber nicht gesichert.</note>
+        <note type="interpretive_choice" target="#rum-0818-orig" n="vnter ein gruͤnen Koͤl" resp="#fyndling" subtype="contextual">Offen gelassen: Der Text nennt keinen Garschritt, keine Hitze und keine Zeit, und „oder wie man es haben will“ überlässt die Art dem Geschmack. Ob die Wachteln im Kohl mitgaren oder nur zu fertigem Kohl gelegt werden, warm oder kalt, entscheidet der Text nicht.<list type="alternatives"><item>Die geräucherten Wachteln werden im Kohl miterhitzt<note type="rationale">Beim geräucherten Spanferkel schreibt Rumpolt ausdrücklich „kochs vnter gruͤnem Koͤl“, und im Rezept davor werden Wachteln mit grünem Kohl gekocht; hier fehlt das Verb, deshalb nur Möglichkeit. Für die heutige Küche der naheliegende Weg.</note></item><item>Die Wachteln werden ohne gemeinsames Garen zu oder auf fertigem Kohl angerichtet<note type="rationale">Mit dem Wortlaut ebenso vereinbar; „unter“ legt allein nicht fest, dass Kohl und Wachteln zusammen garen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0818-orig" n="gruͤnen Koͤl (Sorte)" resp="#fyndling" subtype="lexical">Grüner Kohl, Sorte offen; Grünkohl liegt nahe, ist aber nicht gesichert.<list type="alternatives"><item>Weißkohl<note type="rationale">Rumpolt stellt im Rezept davor „weissem oder saurem Kraut“ gegen „gruͤnem Koͤl“ und führt grünen und weißen Kohl auch an anderer Stelle als zwei Sorten; deshalb nicht.</note></item><item>Wirsing oder ein anderer grüner Blattkohl<note type="rationale">Möglich, wenn „grün“ allgemeiner gemeint ist; der Text entscheidet das nicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -130,9 +135,9 @@ Praxis. Die Zunge in die fertige Sauce geben und darin heiß werden lassen; wie 
         <note type="gloss" target="#rum-0153-orig" n="Rosein" resp="#fyndling">Rosinen, also getrocknete Weinbeeren. Rumpolt unterscheidet kleine und große.</note>
         <note type="gloss" target="#rum-0153-orig" n="außgeseubert" resp="#fyndling">„Ausgesäubert“, also gereinigt. Bei der Ochsenzunge sagt Rumpolt genauer „seuber sie auß / vñ zeuch die Haut ab“.</note>
         <note type="gloss" target="#rum-0153-orig" n="eyngemacht" resp="#fyndling">„In Pasteten eingemacht“ heißt: in Pastetenteig eingeschlossen, zur Pastete gemacht. Mit Einmachen im heutigen Sinn von Konservieren hat es nichts zu tun.</note>
-        <note type="interpretive_choice" target="#rum-0153-orig" n="außgeseubert" resp="#fyndling">Die gesottene Zunge wird gereinigt; wie genau, sagt der Text hier nicht. Bei der Ochsenzunge (rum-0019) schreibt Rumpolt „seuber sie auß / vñ zeuch die Haut ab“, das Säubern schließt dort also das Hautabziehen ein. Deshalb: Haut abziehen und Zungengrund putzen.</note>
-        <note type="interpretive_choice" target="#rum-0153-orig" n="Darnach thu die Zungen darein" resp="#fyndling">Die Zunge wird ganz in die Sauce gegeben; der Text nennt kein Schneiden, und „thu die Zungen darein“ spricht wörtlich für das ganze Stück.</note>
-        <note type="interpretive_choice" target="#rum-0153-orig" n="kleine Rosein" resp="#fyndling">Kleine Rosinen, wörtlich. Welche Sorte gemeint ist, sagt der Text nicht; Rumpolt unterscheidet kleine und große Rosinen (rum-0019) und nennt bei der Kalbszunge „kleine schwartze Rosein“ (rum-0095). Kleine dunkle Beeren entsprechen heute Korinthen.</note>
+        <note type="interpretive_choice" target="#rum-0153-orig" n="außgeseubert" resp="#fyndling" subtype="contextual">Die gesottene Zunge wird gereinigt; wie genau, sagt der Text hier nicht. Bei der Ochsenzunge (rum-0019) schreibt Rumpolt „seuber sie auß / vñ zeuch die Haut ab“, das Säubern schließt dort also das Hautabziehen ein. Deshalb: Haut abziehen und Zungengrund putzen.<list type="alternatives"><item>Nur abspülen oder abschaben, ohne die Haut abzuziehen<note type="rationale">Wörtlich nicht ausgeschlossen, da der Text hier nur „gesäubert“ sagt. Die zähe Haut bliebe dann aber am Fleisch, und die Parallelstelle zur Ochsenzunge spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0153-orig" n="Darnach thu die Zungen darein" resp="#fyndling" subtype="contextual">Die Zunge wird ganz in die Sauce gegeben; der Text nennt kein Schneiden, und „thu die Zungen darein“ spricht wörtlich für das ganze Stück.<list type="alternatives"><item>In Scheiben geschnitten in der Sauce erwärmen<note type="rationale">Praktischer, weil die Zunge so schneller heiß wird und sich verteilen lässt; bei der Kalbszunge (rum-0095) schneidet Rumpolt sie ausdrücklich in die Sauce. Hier steht es nicht, deshalb nur als Praxisweg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0153-orig" n="kleine Rosein" resp="#fyndling" subtype="lexical">Kleine Rosinen, wörtlich. Welche Sorte gemeint ist, sagt der Text nicht; Rumpolt unterscheidet kleine und große Rosinen (rum-0019) und nennt bei der Kalbszunge „kleine schwartze Rosein“ (rum-0095). Kleine dunkle Beeren entsprechen heute Korinthen.<list type="alternatives"><item>Sultaninen<note type="rationale">Heute die gängigen kleinen Rosinen und in der Küche gleichwertig einsetzbar; ob Rumpolt helle oder dunkle meint, lässt diese Stelle offen.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,10 +126,10 @@ Der Teig. Das Rezept nennt nur den fertigen Teig und setzt ihn als bekannt vorau
         <note type="gloss" target="#b4-219-orig" n="vaisten fleisch" resp="#fyndling">Fettes Fleisch, das als Geschmacksträger und Bindemittel dient. Oft wurde hierfür Speck oder fetter Schweinebauch verwendet.</note>
         <note type="gloss" target="#b4-219-orig" n="gewurcz" resp="#fyndling">Im Mittelalter eine Mischung aus kostbaren Gewürzen wie Pfeffer, Ingwer, Zimt und Nelken.</note>
         <note type="gloss" target="#b4-219-orig" n="gemachten taig" resp="#fyndling">Ein vorbereiteter Teig, dessen genaue Zusammensetzung nicht genannt wird, aber typischerweise aus Mehl, Eiern und Flüssigkeit bestand.</note>
-        <note type="interpretive_choice" target="#b4-219-orig" n="Chappfleisch" resp="#fyndling">Kalbfleisch (Veal)</note>
-        <note type="interpretive_choice" target="#b4-219-orig" n="krapphen" resp="#fyndling">Gefüllte Teigtaschen oder Krapfen</note>
-        <note type="interpretive_choice" target="#b4-219-orig" n="gemachten taig" resp="#fyndling">Vorbereiteter Teig</note>
-        <note type="interpretive_choice" target="#b4-219-orig" n="Garverfahren nach dem Füllen" resp="#fyndling">Im Text nicht genannt - offen</note>
+        <note type="interpretive_choice" target="#b4-219-orig" n="Chappfleisch" resp="#fyndling" subtype="philological">Kalbfleisch (Veal)<list type="alternatives"><item>Kapaun-Fleisch<note type="rationale">„Chapp-“ erinnert an Kapaun, doch CoReMA glossiert den Begriff als „veal“ (Kalbfleisch), und zwei unabhängige Parallelrezepte (W1-Zwilling w1-222: „kalbvleisch“; mha-142: „kalbfleisch“) schreiben an derselben Stelle eindeutig Kalbfleisch. Keiner der beiden Zeugen zeigt eine Kapaun-Spur.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-219-orig" n="krapphen" resp="#fyndling" subtype="lexical">Gefüllte Teigtaschen oder Krapfen<list type="alternatives"><item>Süßes Gebäck (moderne Krapfen)<note type="rationale">Die moderne Bedeutung von Krapfen ist oft ein süßes Gebäck. Im Mittelalter bezeichnete der Begriff jedoch auch herzhafte, gefüllte Teigtaschen, die frittiert oder gebacken wurden, wie hier mit Fleischfüllung.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-219-orig" n="gemachten taig" resp="#fyndling" subtype="lexical">Vorbereiteter Teig<list type="alternatives"><item>Geformter Teig<note type="rationale">„Gemacht“ kann auch „geformt“ bedeuten. Hier ist jedoch die allgemeine Bedeutung „vorbereitet“ oder „zubereitet“ gemeint, da der Teig erst nach der Füllung seine endgültige Form erhält.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-219-orig" n="Garverfahren nach dem Füllen" resp="#fyndling" subtype="contextual">Im Text nicht genannt - offen<list type="alternatives"><item>Frittieren in heißem Fett<note type="rationale">CoReMA glossiert „krapfen“ im gesamten Korpus generisch als „fried dumpling“ - spricht für Frittieren als häufigste Lesart der Gattung, ist aber keine Aussage über dieses konkrete Rezept.</note></item><item>Backen im Ofen<note type="rationale">Für andere Krapfen-Varianten im historischen Wortschatz ist auch Backen belegt; der Text von b4-219 selbst nennt kein Garverfahren, die Zwillingshandschrift W1 hat dieselbe Lücke.</note></item></list></note>
       </div>
     </back>
   </text>

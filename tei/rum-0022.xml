@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,11 +120,11 @@ Praxis. Leber am Spieß außen braun braten, in mundgerechte Stücke schneiden. 
         <note type="gloss" target="#rum-0022-orig" n="zum einmachen" resp="#fyndling">Rumpolts Kopfformel: Das gebratene Stück wird in einer Brühe oder Soße fertig angerichtet. Mit Haltbarmachen hat das nichts zu tun.</note>
         <note type="gloss" target="#rum-0022-orig" n="brenn ein wenig Mehl darein" resp="#fyndling">Einbrennen: Mehl in Fett bräunen und in die Brühe rühren (Einbrenne; Pfälzisches Wörterbuch „ein-brennen“: „Mehl mit Fett zur Einbrenne bräunen“). Welches Fett, sagt der Text nicht. Die Einbrenne bindet die Brühe und gibt ihr die graue Farbe.</note>
         <note type="gloss" target="#rum-0022-orig" n="grauwe Bruͤh gewinnen" resp="#fyndling">„gewinnen“ = bekommen; „grauwe“ = grau.</note>
-        <note type="interpretive_choice" target="#rum-0022-orig" n="Fett für die Einbrenne" resp="#fyndling">Historisch: ein ungenanntes Fett, naheliegend Rinderfett oder Schmalz; Rumpolt nennt an anderer Stelle Butter („in guter lauter Butter“), hier keins.</note>
-        <note type="interpretive_choice" target="#rum-0022-orig" n="mach es mit gestossenem Pfeffer ab" resp="#fyndling">„schmecke es mit gestoßenem Pfeffer ab“, wie buchintern in rum-0003.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
-        <note type="interpretive_choice" target="#rum-0022-orig" n="Garzeit der gebratenen Leber in der Brühe" resp="#fyndling">Historisch: Der Text sagt nur „setz es … zu“, also aufs Feuer setzen; wie lange es mitsiedet, bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0022-orig" n="Aufkochen nach dem Einbrennen" resp="#fyndling">Der Text nennt keinen Schritt danach; buchinterne Parallelen setzen „laß es miteinander sieden“ hinter die Einbrenne.</note>
-        <note type="interpretive_choice" target="#rum-0022-orig" n="Salz" resp="#fyndling">Historisch: kein eigenes Salz; die Rinderbrühe bringt es mit, der Text nennt keins.</note>
+        <note type="interpretive_choice" target="#rum-0022-orig" n="Fett für die Einbrenne" resp="#fyndling" subtype="contextual">Historisch: ein ungenanntes Fett, naheliegend Rinderfett oder Schmalz; Rumpolt nennt an anderer Stelle Butter („in guter lauter Butter“), hier keins.<list type="alternatives"><item>Praxis: etwas Butter oder Rinderfett erhitzen und das Mehl darin hell- bis mittelbraun rösten.<note type="rationale">Moderne Standardlösung für eine Einbrenne.</note></item><item>Mehl trocken in der Pfanne bräunen und einstreuen.<note type="rationale">Der Wortlaut nennt kein Fett; möglich, aber gegen den üblichen Sinn von „einbrennen“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0022-orig" n="mach es mit gestossenem Pfeffer ab" resp="#fyndling" subtype="lexical">„schmecke es mit gestoßenem Pfeffer ab“, wie buchintern in rum-0003.<list type="alternatives"><item>„mache es mit gestoßenem Pfeffer fertig“<note type="rationale">Genauer nach FWB „abmachen“ 1 (Speisen abschließend zubereiten); für die Küche ohne Unterschied, weil nur Pfeffer folgt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#rum-0022-orig" n="Garzeit der gebratenen Leber in der Brühe" resp="#fyndling" subtype="contextual">Historisch: Der Text sagt nur „setz es … zu“, also aufs Feuer setzen; wie lange es mitsiedet, bleibt offen.<list type="alternatives"><item>Praxis: nur köcheln, bis die Zwiebeln weich sind, etwa 10 bis 15 Minuten, nicht sprudelnd.<note type="rationale">Die schon gebratene Leber wird bei langem Kochen hart und krümelig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0022-orig" n="Aufkochen nach dem Einbrennen" resp="#fyndling" subtype="contextual">Der Text nennt keinen Schritt danach; buchinterne Parallelen setzen „laß es miteinander sieden“ hinter die Einbrenne.<list type="alternatives"><item>Praxis: nach dem Einrühren kurz aufkochen lassen.<note type="rationale">Ohne Aufkochen bindet das Mehl nicht und schmeckt roh.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0022-orig" n="Salz" resp="#fyndling" subtype="contextual">Historisch: kein eigenes Salz; die Rinderbrühe bringt es mit, der Text nennt keins.<list type="alternatives"><item>Praxis: nach Geschmack salzen, falls die Brühe ungesalzen ist.<note type="rationale">Salzgehalt heutiger Brühen schwankt.</note></item></list></note>
       </div>
     </back>
   </text>

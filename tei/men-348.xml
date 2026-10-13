@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,7 +117,7 @@
         <note type="gloss" target="#men-348-orig" n="espurge" resp="#fyndling">Ein feines, faseriges Material, ähnlich Werg oder einem Schwamm, das leicht entzündlich ist.</note>
         <note type="gloss" target="#men-348-orig" n="mesches ensouffrees" resp="#fyndling">Mit Schwefel getränkte Dochte, die leicht entzündlich sind und als frühe Form von Zündhölzern dienten.</note>
         <note type="interpretive_choice" target="#men-348-orig" n="escume de noyer" resp="#fyndling">Walnussschalen oder Rinde</note>
-        <note type="interpretive_choice" target="#men-348-orig" n="espurge" resp="#fyndling">feine Fasern</note>
+        <note type="interpretive_choice" target="#men-348-orig" n="espurge" resp="#fyndling">feine Fasern<list type="alternatives"><item>Schwamm<note type="rationale">Ein Schwamm hat eine ähnliche poröse Struktur, aber 'espurge' könnte auch eine allgemeine Bezeichnung für feines, leicht entflammbares Material sein.</note></item><item>Werg<note type="rationale">Werg ist eine plausible Alternative, da es sich um feine Pflanzenfasern handelt, die als Zunder verwendet werden können.</note></item></list></note>
       </div>
     </back>
   </text>

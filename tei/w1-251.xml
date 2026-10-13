@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -127,7 +132,7 @@ Praxis. Die beschriebenen Schritte sind gärtnerisch nachvollziehbar: Samen vor 
         <note type="gloss" target="#w1-251-orig" n="als vil" resp="#fyndling">Als viel, hier im Sinne von ‚zweimal so viel‘.</note>
         <note type="gloss" target="#w1-251-orig" n="hafen dekch" resp="#fyndling">Ein Topfdeckel, der hier als flache Schale oder Anzuchtgefäß verwendet wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
         <note type="gloss" target="#w1-251-orig" n="bedek" resp="#fyndling">Bedeckt, der Samen soll vollständig mit Erde bedeckt sein.</note>
-        <note type="interpretive_choice" target="#w1-251-orig" n="halber virdig" resp="#fyndling">‚Halb vorjährig‘ - der Samen soll zur Hälfte aus der diesjährigen (heurig) und zur Hälfte aus der vorjährigen Ernte (virdig) stammen. Belegt im DWB als direktes Kontrastwort zu ‚heurig‘ (diesjährig), etwa ‚ain vas vierdigs Frannckenweyns vnd ain vas Frannckenweyns‘ (ein Fass vorjährigen und ein Fass diesjährigen Frankenweins) - genau das Wortpaar heurig/virdig wie hier im Rezept.</note>
+        <note type="interpretive_choice" target="#w1-251-orig" n="halber virdig" resp="#fyndling" subtype="lexical">‚Halb vorjährig‘ - der Samen soll zur Hälfte aus der diesjährigen (heurig) und zur Hälfte aus der vorjährigen Ernte (virdig) stammen. Belegt im DWB als direktes Kontrastwort zu ‚heurig‘ (diesjährig), etwa ‚ain vas vierdigs Frannckenweyns vnd ain vas Frannckenweyns‘ (ein Fass vorjährigen und ein Fass diesjährigen Frankenweins) - genau das Wortpaar heurig/virdig wie hier im Rezept.<list type="alternatives"><item>‚Halb vierzig [Stück]‘ - eine Mengenangabe für die Samen.<note type="rationale">Eine Idiotikon-Stelle belegt ‚virdig‘ auch im Sinn einer Portion (‚ein vierdig opfelstuckli‘); die Jahrgangs-Lesart ist aber die im DWB direkt zu ‚heurig‘ kontrastierte Bedeutung und passt exakt zum Wortpaar heurig/virdig hier im Text. Kein direkter Samen-spezifischer Beleg, daher als offene Alternative dokumentiert.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,11 +107,11 @@ Praxis. Die große Forelle ausnehmen, filetieren und die Gräten ziehen, dann in
         <note type="gloss" target="#rum-0964-orig" n="Foren" resp="#fyndling">Forellen. Die Kapitelüberschrift spricht von „weissen Foren“, die aus dem großen See im Schweizerland kommen; welche Art damit gemeint ist, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0964-orig" n="Graͤdt" resp="#fyndling">Die Gräten des Fisches.</note>
         <note type="gloss" target="#rum-0964-orig" n="saure Bruͤh" resp="#fyndling">Eine gesäuerte Brühe; was sie säuert und würzt, sagt dieses Rezept nicht. In anderen Rezepten des Buchs säuert Rumpolt mit Essig oder Agrastwasser, also Verjus aus unreifen Trauben (rum-0137).</note>
-        <note type="interpretive_choice" target="#rum-0964-orig" n="Foren" resp="#fyndling">Forelle. Die Kapitelüberschrift „Von weissen Foren/ die da kommen auß dem grossen See im Schweitzerlandt“ nennt den Fisch, die Wörterbücher führen „forhe/forelle“ als Forelle.</note>
-        <note type="interpretive_choice" target="#rum-0964-orig" n="schneidt die Graͤdt herauß" resp="#fyndling">Mit dem Messer die Gräten aus dem großen Fisch herausschneiden, vor dem Braten. Wie weit entgrätet wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0964-orig" n="brat sie" resp="#fyndling">Braten, ohne Angabe von Fett, Gerät, Hitze oder Zeit; Rost oder Pfanne über dem Feuer sind beide mit dem Text vereinbar.</note>
-        <note type="interpretive_choice" target="#rum-0964-orig" n="saure Bruͤh" resp="#fyndling">Eine gesäuerte Brühe, deren Säuerung und Würze das Rezept offenlässt.</note>
-        <note type="interpretive_choice" target="#rum-0964-orig" n="darvnter" resp="#fyndling">Die Brühe kommt unter den Fisch: erst die Brühe in die Schüssel, die Forelle darauf. So steht „darvnter“ bei Rumpolt auch sonst beim Anrichten mit Saucen (rum-0015).</note>
+        <note type="interpretive_choice" target="#rum-0964-orig" n="Foren" resp="#fyndling" subtype="lexical">Forelle. Die Kapitelüberschrift „Von weissen Foren/ die da kommen auß dem grossen See im Schweitzerlandt“ nennt den Fisch, die Wörterbücher führen „forhe/forelle“ als Forelle.<list type="alternatives"><item>Eine bestimmte Art, etwa Seeforelle oder Felchen<note type="rationale">Nicht belegt; der Text sagt nur „weisse Foren“, jede Artbestimmung wäre Zusatz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0964-orig" n="schneidt die Graͤdt herauß" resp="#fyndling" subtype="contextual">Mit dem Messer die Gräten aus dem großen Fisch herausschneiden, vor dem Braten. Wie weit entgrätet wird, sagt der Text nicht.<list type="alternatives"><item>Den Fisch filetieren und die Gräten ziehen<note type="rationale">Heutige Küchenpraxis und für Nachkochende der einfachste Weg; Rumpolt beschreibt kein Filetieren.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0964-orig" n="brat sie" resp="#fyndling" subtype="contextual">Braten, ohne Angabe von Fett, Gerät, Hitze oder Zeit; Rost oder Pfanne über dem Feuer sind beide mit dem Text vereinbar.<list type="alternatives"><item>In der Pfanne mit Butter oder Öl bei mittlerer Hitze<note type="rationale">Moderner Standard für Nachkochende, nicht Rumpolts Angabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0964-orig" n="saure Bruͤh" resp="#fyndling" subtype="contextual">Eine gesäuerte Brühe, deren Säuerung und Würze das Rezept offenlässt.<list type="alternatives"><item>Mit etwas Essig gesäuerte Brühe<note type="rationale">Einfachster Weg für Nachkochende; Essig nennt Rumpolt in anderen Rezepten für saure Brühen, hier nicht.</note></item><item>Mit Agrastwasser (Verjus) gesäuert<note type="rationale">Buchinterne Parallele (rum-0137, Agrastwasser „an statt deß Essigs“), nicht für dieses Rezept belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0964-orig" n="darvnter" resp="#fyndling" subtype="contextual">Die Brühe kommt unter den Fisch: erst die Brühe in die Schüssel, die Forelle darauf. So steht „darvnter“ bei Rumpolt auch sonst beim Anrichten mit Saucen (rum-0015).<list type="alternatives"><item>Die Brühe wird dazu gereicht<note type="rationale">Neutralste moderne Lösung, sprachlich aber weniger genau.</note></item><item>Die Brühe wird über den Fisch gegossen<note type="rationale">Sprachlich möglich, widerspricht aber dem sonstigen Gebrauch im Buch.</note></item></list></note>
       </div>
     </back>
   </text>

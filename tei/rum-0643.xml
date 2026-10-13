@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -106,10 +111,10 @@ Praxis. Ganze geräucherte Wildenten sind kaum im Handel; beim Wildhändler nach
         <note type="gloss" target="#rum-0643-orig" n="Spenat" resp="#fyndling">Ältere Schreibung für Spinat.</note>
         <note type="gloss" target="#rum-0643-orig" n="eynmachen" resp="#fyndling">Bei Rumpolt heißt das bei Fleisch und Geflügel: in einer Sauce gegart. Mit dem heutigen Einmachen als Konservieren hat es nichts zu tun.</note>
         <note type="gloss" target="#rum-0643-orig" n="gelb oder weiß" resp="#fyndling">Rumpolt nennt nur die Farbe der Sauce, keine Zutaten dafür.</note>
-        <note type="interpretive_choice" target="#rum-0643-orig" n="Mittel Endten" resp="#fyndling">Mittelente als eigene Entensorte, eine Wildente mittlerer Größe: Campe (1807-1811) nennt sie „eine Art wilder Enten von mittler Größe“, Grimm setzt sie mit Spieß- oder Pfeifente gleich. Dafür spricht die Stellung des Kapitels direkt nach den wilden Enten.</note>
-        <note type="interpretive_choice" target="#rum-0643-orig" n="Geraͤuchert oder geselcht/ vnd darnach gekocht" resp="#fyndling">Die Ente kommt bereits geräuchert in die Küche; gekocht, gefüllt und in Sauce gegart sind drei Verwendungen dieser fertigen Ware. Rumpolt beschreibt keinen Räuchervorgang.</note>
-        <note type="interpretive_choice" target="#rum-0643-orig" n="auff beyde manier" resp="#fyndling">„Beide“ bezieht sich auf die gelbe und die weiße Sauce, die unmittelbar davor stehen.</note>
-        <note type="interpretive_choice" target="#rum-0643-orig" n="gelb oder weiß" resp="#fyndling">Rumpolt nennt nur die Farbe der Sauce; das Rezept legt keine Färbe- oder Bindezutat fest.</note>
+        <note type="interpretive_choice" target="#rum-0643-orig" n="Mittel Endten" resp="#fyndling" subtype="lexical">Mittelente als eigene Entensorte, eine Wildente mittlerer Größe: Campe (1807-1811) nennt sie „eine Art wilder Enten von mittler Größe“, Grimm setzt sie mit Spieß- oder Pfeifente gleich. Dafür spricht die Stellung des Kapitels direkt nach den wilden Enten.<list type="alternatives"><item>Allgemein eine Ente mittlerer Größe<note type="rationale">Campe führt auch diese weitere Bedeutung. Dann wäre keine bestimmte Art gemeint; Rumpolt stellt das Kapitel aber als eigene Tierart neben Hausgans und wilde Ente.</note></item><item>Eine bestimmte Art (Spießente oder Pfeifente)<note type="rationale">Grimm nennt beide, Rumpolt selbst legt sich nicht fest; deshalb keine Artbestimmung im Rezept.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0643-orig" n="Geraͤuchert oder geselcht/ vnd darnach gekocht" resp="#fyndling" subtype="contextual">Die Ente kommt bereits geräuchert in die Küche; gekocht, gefüllt und in Sauce gegart sind drei Verwendungen dieser fertigen Ware. Rumpolt beschreibt keinen Räuchervorgang.<list type="alternatives"><item>Räuchern als erster Rezeptschritt, danach kochen<note type="rationale">„vnd darnach“ lässt sich auch als Abfolge lesen. Dann gehörte das Selchen zum Rezept; Rumpolt gibt dafür aber weder Dauer noch Verfahren an.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0643-orig" n="auff beyde manier" resp="#fyndling" subtype="contextual">„Beide“ bezieht sich auf die gelbe und die weiße Sauce, die unmittelbar davor stehen.<list type="alternatives"><item>Bezug auf alle genannten Zubereitungen<note type="rationale">Es sind aber drei Verwendungen genannt, „beyde“ passt nur auf das letzte Paar.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0643-orig" n="gelb oder weiß" resp="#fyndling" subtype="contextual">Rumpolt nennt nur die Farbe der Sauce; das Rezept legt keine Färbe- oder Bindezutat fest.<list type="alternatives"><item>Gelb mit Safran oder Eidotter, weiß mit Brühe und Brot oder Mandeln<note type="rationale">Denkbare Lesart, im Text aber nicht belegt; deshalb nicht in die Übersetzung oder die Zutaten übernommen.</note></item></list></note>
       </div>
     </back>
   </text>

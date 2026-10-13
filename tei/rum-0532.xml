@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,8 +101,8 @@ Was kommt hinein? Die Zeile nennt keine Füllung. Ob nur die Brust gemeint ist w
 Praxis. Wer die Pastete nachbauen will, folgt dem Verfahren der Spanischen Kalbfleischpasteten mit dem geschichteten Schmalzteig und setzt vorgegartes Putenfleisch statt Kalbfleisch ein. Mengen, Würzung und Backzeit gibt Rumpolt an dieser Stelle nicht an.</note>
         <note type="gloss" target="#rum-0532-orig" n="Spanische Pasteten" resp="#fyndling">Rumpolts Name für eine Pastete aus vielen dünnen, mit Schmalz bestrichenen Teiglagen. Beschrieben ist sie nur bei den Kalbfleischpasteten, nicht in dieser Nummer. Ein Beleg für spanische Küche ist der Name nicht.</note>
         <note type="gloss" target="#rum-0532-orig" n="Indianische Henne" resp="#fyndling">Rumpolts Name für die Pute, gebildet aus „indianisch“ im Sinn von „aus einem für Indien gehaltenen Land stammend“. Mit Indien oder mit Indianern hat das Tier nichts zu tun. In dieser Zeile steht es nicht selbst, sondern im Kapitelkopf.</note>
-        <note type="interpretive_choice" target="#rum-0532-orig" n="Spanische Pasteten" resp="#fyndling">Typangabe ohne eigene Anleitung. Rumpolt beschreibt die Spanische Pastete nur bei den Kalbfleischpasteten (Kalb Nr. 48); ob für die Pute dasselbe Verfahren gilt, sagt er nicht ausdrücklich.</note>
-        <note type="interpretive_choice" target="#rum-0532-orig" n="Oder auch" resp="#fyndling">Fortsetzung der Pastetenreihe des Kapitels (Nr. 10 Knödel in Pasteten, Nr. 11 kleine Pasteten aus der Brust); die Füllung bleibt unbestimmt.</note>
+        <note type="interpretive_choice" target="#rum-0532-orig" n="Spanische Pasteten" resp="#fyndling" subtype="contextual">Typangabe ohne eigene Anleitung. Rumpolt beschreibt die Spanische Pastete nur bei den Kalbfleischpasteten (Kalb Nr. 48); ob für die Pute dasselbe Verfahren gilt, sagt er nicht ausdrücklich.<list type="alternatives"><item>Geschichteter Schmalzteig nach den Spanischen Kalbfleischpasteten<note type="rationale">Für das Nachkochen gewählt, weil der Name derselbe ist und Rumpolt keine zweite Spanische Pastete beschreibt; durch diese Zeile selbst nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0532-orig" n="Oder auch" resp="#fyndling" subtype="contextual">Fortsetzung der Pastetenreihe des Kapitels (Nr. 10 Knödel in Pasteten, Nr. 11 kleine Pasteten aus der Brust); die Füllung bleibt unbestimmt.<list type="alternatives"><item>Füllung nur aus der Brust wie in Nr. 11<note type="rationale">Das „Oder auch“ ließe sich als Alternative zur Nummer davor mit demselben Fleisch lesen; der Text nennt die Brust hier aber nicht.</note></item><item>Anderes oder ganzes Putenfleisch<note type="rationale">Ebenso möglich, weil die Zeile keinen Teil des Tiers nennt.</note></item></list></note>
       </div>
     </back>
   </text>

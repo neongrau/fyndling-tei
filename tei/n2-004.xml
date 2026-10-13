@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,12 +114,12 @@ Praxis. Für 2-4 Portionen etwa 500 ml bis 1 l Vollmilch (modern) mit 1-2 Eiern 
         <note type="gloss" target="#n2-004-orig" n="coaguluem" resp="#fyndling">Lateinisch für ‚gerinnen‘ oder ‚stocken‘. Die Milch wird durch die Hitze und die Eier fest.</note>
         <note type="gloss" target="#n2-004-orig" n="rost" resp="#fyndling">Ein Grillrost oder eine Bratplatte über dem Feuer.</note>
         <note type="gloss" target="#n2-004-orig" n="sprenge" resp="#fyndling">Von mhd. sprengen, „beträufeln, begießen, benetzen“ - kein trockenes Bestreuen. Die gewürzten Eier werden als flüssige Masse aufgeträufelt.</note>
-        <note type="interpretive_choice" target="#n2-004-orig" n="czu sla das toeppelyn von der milch" resp="#fyndling">Die Formulierung ‚czu sla das toeppelyn von der milch‘ wurde als ‚löse die Milch aus dem Töpfchen‘ übersetzt. Dies ist die plausibelste Lesart, da die gestockte Milchmasse für die weitere Verarbeitung (auf den Spieß stecken) aus dem Gefäß gelöst werden muss. Gestützt durch den textnahen Zwilling mon-261 (identischer Ablauf: Wasserbad, dann Schneiden/Stecken auf den Spieß).</note>
-        <note type="interpretive_choice" target="#n2-004-orig" n="Milchmenge" resp="#fyndling">Keine Mengenangabe im Text - richtete sich nach der Größe des verfügbaren Töpfchens. Moderner Richtwert: ca. 500 ml bis 1 l Vollmilch für 2-4 Portionen.</note>
-        <note type="interpretive_choice" target="#n2-004-orig" n="eyn ader czwey (Eizahl)" resp="#fyndling">Der Text lässt die Eizahl explizit offen (‚eyn ader czwey‘ = ein oder zwei). Ein Ei reicht laut Text ebenso wie zwei; zwei Eier binden im modernen Nachkochen sicherer.</note>
-        <note type="interpretive_choice" target="#n2-004-orig" n="eyn wennig mel (Mehlmenge)" resp="#fyndling">Unbestimmt, nach Augenmaß - der Text nennt bewusst keine Menge. Moderner Richtwert: ein bis zwei Esslöffel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
-        <note type="interpretive_choice" target="#n2-004-orig" n="Dauer im Wasserbad" resp="#fyndling">Kein Zeitmaß im Text, der Endpunkt ist visuell/haptisch beschrieben (‚laz sichs alzo coaguluem‘ = lass es so gerinnen). Moderner Richtwert: ca. 20-30 Minuten bei leichtem Sieden.</note>
-        <note type="interpretive_choice" target="#n2-004-orig" n="Dauer des zweiten Hitzeschritts (Spieß/Rost)" resp="#fyndling">Kein Zeitmaß und kein Bräunungsgrad im Text genannt. Moderner Richtwert: wenige Minuten, bis die Oberfläche Farbe nimmt.</note>
+        <note type="interpretive_choice" target="#n2-004-orig" n="czu sla das toeppelyn von der milch" resp="#fyndling" subtype="philological">Die Formulierung ‚czu sla das toeppelyn von der milch‘ wurde als ‚löse die Milch aus dem Töpfchen‘ übersetzt. Dies ist die plausibelste Lesart, da die gestockte Milchmasse für die weitere Verarbeitung (auf den Spieß stecken) aus dem Gefäß gelöst werden muss. Gestützt durch den textnahen Zwilling mon-261 (identischer Ablauf: Wasserbad, dann Schneiden/Stecken auf den Spieß).<list type="alternatives"><item>Eine alternative Lesart wäre ‚schlage das Töpfchen von der Milch (weg)‘, was das Entfernen des Töpfchens aus dem Wasserbad bedeuten könnte.<note type="rationale">Diese Lesart ist weniger wahrscheinlich, da das Töpfchen bereits aus dem Wasserbad genommen sein müsste, um die Milchmasse zu entnehmen. Die Formulierung ‚von der milch‘ bezieht sich hier eher auf die Milchmasse selbst als auf das Wasserbad.</note></item></list></note>
+        <note type="interpretive_choice" target="#n2-004-orig" n="Milchmenge" resp="#fyndling" subtype="contextual">Keine Mengenangabe im Text - richtete sich nach der Größe des verfügbaren Töpfchens. Moderner Richtwert: ca. 500 ml bis 1 l Vollmilch für 2-4 Portionen.</note>
+        <note type="interpretive_choice" target="#n2-004-orig" n="eyn ader czwey (Eizahl)" resp="#fyndling" subtype="contextual">Der Text lässt die Eizahl explizit offen (‚eyn ader czwey‘ = ein oder zwei). Ein Ei reicht laut Text ebenso wie zwei; zwei Eier binden im modernen Nachkochen sicherer.</note>
+        <note type="interpretive_choice" target="#n2-004-orig" n="eyn wennig mel (Mehlmenge)" resp="#fyndling" subtype="contextual">Unbestimmt, nach Augenmaß - der Text nennt bewusst keine Menge. Moderner Richtwert: ein bis zwei Esslöffel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
+        <note type="interpretive_choice" target="#n2-004-orig" n="Dauer im Wasserbad" resp="#fyndling" subtype="contextual">Kein Zeitmaß im Text, der Endpunkt ist visuell/haptisch beschrieben (‚laz sichs alzo coaguluem‘ = lass es so gerinnen). Moderner Richtwert: ca. 20-30 Minuten bei leichtem Sieden.</note>
+        <note type="interpretive_choice" target="#n2-004-orig" n="Dauer des zweiten Hitzeschritts (Spieß/Rost)" resp="#fyndling" subtype="contextual">Kein Zeitmaß und kein Bräunungsgrad im Text genannt. Moderner Richtwert: wenige Minuten, bis die Oberfläche Farbe nimmt.</note>
       </div>
     </back>
   </text>

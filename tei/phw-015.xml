@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,10 +139,10 @@ Praxis. Die Masse auf milder Hitze unter stetigem Rühren dicklegen, damit sie n
         <note type="gloss" target="#phw-015-orig" n="dorttenn pfanenn" resp="#fyndling">Eine Tortenpfanne war eine flache, runde Backform, oft aus Metall oder Ton.</note>
         <note type="gloss" target="#phw-015-orig" n="se" resp="#fyndling">Eine alte Form des Verbs ‚säen‘, hier im Sinne von ‚bestreuen‘.</note>
         <note type="gloss" target="#phw-015-orig" n="qwerttlin" resp="#fyndling">Ein Quertlin war ein Viertel einer Flüssigmaßangabe (Lexer: ‚quartlin das ist der vierde tail ainer masz'; das Schweizerische Idiotikon belegt eigens ein ‚augspurger quartlin weins') - hier ein Viertel Augsburger Maß, also etwa 0,26 Liter.</note>
-        <note type="interpretive_choice" target="#phw-015-orig" n="bodenn" resp="#fyndling">der Tortenboden aus Teig</note>
-        <note type="interpretive_choice" target="#phw-015-orig" n="kluelin schmaltzs" resp="#fyndling">ein Klümpchen Schmalz</note>
-        <note type="interpretive_choice" target="#phw-015-orig" n="las syedenn" resp="#fyndling">Der Text nennt für das Sieden der Ei-Mandel-Masse kein Rühren, nur die Hitze bis zur gewünschten Dicke.</note>
-        <note type="interpretive_choice" target="#phw-015-orig" n="las fol bachenn" resp="#fyndling">Der Text nennt für das Fertigbacken keine Zeit-, Temperatur- oder Farbangabe.</note>
+        <note type="interpretive_choice" target="#phw-015-orig" n="bodenn" resp="#fyndling" subtype="philological">der Tortenboden aus Teig<list type="alternatives"><item>der Boden der Tortenpfanne<note type="rationale">Frühere Lesart dieses Rezepts. Sie fällt aus der Reihe: Dieselbe Rezeptgruppe streicht ihre Masse durchgehend auf einen dünn ausgerollten Teigboden, geschrieben bedelin, bedalin oder eben bodenn (phw-006 bis phw-014). Der Halbsatz „vnd las wol er warma jn der dorttenn pfanenn“ nennt die Pfanne unmittelbar danach eigens; wäre der Pfannenboden gemeint, stünde es zweimal.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-015-orig" n="kluelin schmaltzs" resp="#fyndling" subtype="philological">ein Klümpchen Schmalz<list type="alternatives"><item>ein Klülein Schmalz<note type="rationale">Frühere Lesart dieses Rezepts, die das Wort unübersetzt stehen ließ. „Klülein“ ist kein modernes Deutsch. Für diese Portionsgröße ist „Klümpchen“ das geläufige Wort und im Korpus die vereinbarte Form.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-015-orig" n="las syedenn" resp="#fyndling" subtype="contextual">Der Text nennt für das Sieden der Ei-Mandel-Masse kein Rühren, nur die Hitze bis zur gewünschten Dicke.<list type="alternatives"><item>Direktes Sieden mit nur gelegentlichem Rühren, wie der knappe Text nahelegt.<note type="rationale">Bei unbeaufsichtigtem Sieden auf direkter Hitze stockt eine so eilastige Masse leicht ungleichmäßig; leicht gestockte Stellen wären ein periodetypisches, hinnehmbares Ergebnis.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-015-orig" n="las fol bachenn" resp="#fyndling" subtype="contextual">Der Text nennt für das Fertigbacken keine Zeit-, Temperatur- oder Farbangabe.<list type="alternatives"><item>Rein nach Augenmaß/Erfahrung an der offenen Glut fertigbacken, ohne festen Zeit- oder Temperaturwert.<note type="rationale">So beschreibt der knappe Text den Schritt; die Füllung ist durch das Vorsieden bereits durchgegart, sodass es beim Fertigbacken vor allem um Bräunung und Festigkeit der Oberfläche geht.</note></item></list></note>
       </div>
     </back>
   </text>

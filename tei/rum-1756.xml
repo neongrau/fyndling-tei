@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,10 +123,10 @@ Praxis. Backzeit und Hitze gibt Rumpolt nicht an; die verwandten Hirsch- und Dam
         <note type="gloss" target="#rum-1756-orig" n="versaltz es nit" resp="#fyndling">Versalze es nicht, also zurückhaltend salzen.</note>
         <note type="gloss" target="#rum-1756-orig" n="wenns schier gebacken" resp="#fyndling">Wenn es fast fertig gebacken ist.</note>
         <note type="gloss" target="#rum-1756-orig" n="Lufftloch" resp="#fyndling">Die Öffnung im Teigdeckel der Pastete; hier wird durch sie der Essig eingegossen.</note>
-        <note type="interpretive_choice" target="#rum-1756-orig" n="Ruckenteig" resp="#fyndling">Roggenteig: „rucken“ ist eine ältere Form von Roggen. Rumpolt löst das Wort im ganzen Buch so auf, und Staindl verlangt für die kalte Wildbretpastete einen Teig „von aim rugken mehl“.</note>
-        <note type="interpretive_choice" target="#rum-1756-orig" n="Hinterlauff" resp="#fyndling">Der ganze Hinterlauf, also die Keule, so wie sie ist: Der Text sagt nichts vom Auslösen oder Herausschneiden, die Läufe („sie“) werden als Ganzes gespickt.</note>
-        <note type="interpretive_choice" target="#rum-1756-orig" n="versaltz es nit" resp="#fyndling">Nicht versalzen, also zurückhaltend salzen: „versalzen“ heißt zu stark salzen.</note>
-        <note type="interpretive_choice" target="#rum-1756-orig" n="Backzeit" resp="#fyndling">Der Text nennt keine Backzeit und keine Hitze; „wenns schier gebacken“ bemisst den Essig am Garzustand, nicht an der Uhr.</note>
+        <note type="interpretive_choice" target="#rum-1756-orig" n="Ruckenteig" resp="#fyndling" subtype="lexical">Roggenteig: „rucken“ ist eine ältere Form von Roggen. Rumpolt löst das Wort im ganzen Buch so auf, und Staindl verlangt für die kalte Wildbretpastete einen Teig „von aim rugken mehl“.<list type="alternatives"><item>Rückenteig, nach dem heutigen Wortbild<note type="rationale">Ein Teig „vom Rücken“ ergibt keinen Sinn; der Anklang an ältere Wörter wie „ruckenteil“ (Rückenstück eines Gewands oder Harnischs) ist ein falscher Freund.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1756-orig" n="Hinterlauff" resp="#fyndling" subtype="contextual">Der ganze Hinterlauf, also die Keule, so wie sie ist: Der Text sagt nichts vom Auslösen oder Herausschneiden, die Läufe („sie“) werden als Ganzes gespickt.<list type="alternatives"><item>Ausgelöstes Keulenfleisch<note type="rationale">Bei der Damhirschpastete wird das Fleisch erst aus der Keule geschnitten; hier steht das nicht. Für den Nachbau ist ausgelöstes Fleisch handlicher und gleichmäßiger zu spicken.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1756-orig" n="versaltz es nit" resp="#fyndling" subtype="contextual">Nicht versalzen, also zurückhaltend salzen: „versalzen“ heißt zu stark salzen.<list type="alternatives"><item>Gar nicht salzen, weil der Speck Salz mitbringt<note type="rationale">Denkbar, aber dann stünde eher „saltz es nit“; das Verb „versalzen“ spricht für ein Zuviel, nicht für ein Verbot.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1756-orig" n="Backzeit" resp="#fyndling" subtype="contextual">Der Text nennt keine Backzeit und keine Hitze; „wenns schier gebacken“ bemisst den Essig am Garzustand, nicht an der Uhr.<list type="alternatives"><item>Drei bis vier Stunden wie bei den verwandten Pasteten<note type="rationale">Die Hirsch- und die Damhirschpastete mit Essig bzw. Pfeffer durchs Luftloch nennen drei bis vier Stunden; als Orientierung brauchbar, für dieses Rezept aber nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

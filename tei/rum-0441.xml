@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,9 +108,9 @@ Praxis. Eine Anleitung zu diesem Eintrag gibt es nicht. Rumpolt führt dieselbe 
         <note type="gloss" target="#rum-0441-orig" n="Wildpret" resp="#fyndling">Wildbret, das Fleisch von Wildtieren. Im Kapitel „Vom Schweinen Wildpret“ ist Wildschwein gemeint.</note>
         <note type="gloss" target="#rum-0441-orig" n="Limonien" resp="#fyndling">Zitronen. Ob frisch oder gesalzen, sagt dieser Eintrag nicht; gesalzene Zitronen nennt Rumpolt andernorts ausdrücklich.</note>
         <note type="gloss" target="#rum-0441-orig" n="weiß oder gelb" resp="#fyndling">Rumpolt lässt die Farbe der Sauce offen und nennt hier kein Färbemittel. In seinen ausgeführten Fassungen derselben Formel beim Spanferkel (rum-0276) und beim Lamm (rum-0207) färbt Safran gelb; beim Lamm rät er, den Safran erst zuletzt zuzugeben, damit die Farbe hält.</note>
-        <note type="interpretive_choice" target="#rum-0441-orig" n="Wildpret" resp="#fyndling">Wildschwein - der Eintrag steht im Kapitel „Vom Schweinen Wildpret“, das Kapiteltier gilt auch für Einträge, die das Tier nicht nennen.</note>
-        <note type="interpretive_choice" target="#rum-0441-orig" n="Limonien" resp="#fyndling">Frische Zitronen bzw. Zitronensaft - der Eintrag sagt nur „Limonien“, ohne „gesaltzen“.</note>
-        <note type="interpretive_choice" target="#rum-0441-orig" n="gelb" resp="#fyndling">Färbemittel offen gelassen - der Eintrag nennt keines, daher wird keine Zutat ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0441-orig" n="Wildpret" resp="#fyndling" subtype="contextual">Wildschwein - der Eintrag steht im Kapitel „Vom Schweinen Wildpret“, das Kapiteltier gilt auch für Einträge, die das Tier nicht nennen.<list type="alternatives"><item>Wildbret allgemein (Reh, Hirsch o. a.)<note type="rationale">Das Wort allein ließe es zu, der Kapitelkopf legt aber das Schwein fest.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0441-orig" n="Limonien" resp="#fyndling" subtype="lexical">Frische Zitronen bzw. Zitronensaft - der Eintrag sagt nur „Limonien“, ohne „gesaltzen“.<list type="alternatives"><item>Gesalzene Zitronen (Salzzitronen)<note type="rationale">Rumpolt kennt sie und nennt sie in anderen Kapiteln ausdrücklich als „gesaltzen Limonien“; hier fehlt der Zusatz, daher nur als Möglichkeit.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0441-orig" n="gelb" resp="#fyndling" subtype="contextual">Färbemittel offen gelassen - der Eintrag nennt keines, daher wird keine Zutat ergänzt.<list type="alternatives"><item>Safran<note type="rationale">In Rumpolts ausgeführten Rezepten „gelb eyngemacht“ färbt Safran (Spanferkel rum-0276, Lamm rum-0207, Reh rum-0376); das ist eine Parallele, kein Beleg für diesen Eintrag.</note></item></list></note>
       </div>
     </back>
   </text>

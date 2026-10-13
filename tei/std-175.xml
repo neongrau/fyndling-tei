@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,7 +129,7 @@ Praxis. Das Fleisch vorkochen, entbeinen und fein hacken. Mit Ei, geriebenem Sem
         <note type="gloss" target="#std-175-orig" n="gilbs" resp="#fyndling">Eine Anweisung, das Gericht gelb zu färben. Dies geschah im Mittelalter typischerweise mit Safran, einem kostbaren Gewürz, das Speisen eine leuchtend goldene Farbe verlieh.</note>
         <note type="gloss" target="#std-175-orig" n="Hennen" resp="#fyndling">Die Aufzählung nennt Hennen neben Kaponen: Kaponen sind kastrierte, gemästete Hähne, Hennen die weibliche Entsprechung - beide galten als das feine Suppengeflügel, aus dem eine kräftige helle Brühe gezogen wurde.</note>
         <note type="gloss" target="#std-175-orig" n="ſche lage" resp="#fyndling">An dieser Stelle bricht das Wort über einen Zeilenumbruch, ohne dass die Vorlage ein Trennzeichen setzt - anders als beim Umbruch "Hen⸗nen" wenige Zeilen zuvor, der im Druck korrekt markiert ist. Derselbe Wortstamm erscheint wenige Zeilen vorher im selben Rezept ("ſchlag ayr darunder"). Wir lesen die beiden Silben deshalb als zusammenhängendes "ſchlage" (im Sinne von einschlagen/formen).</note>
-        <note type="interpretive_choice" target="#std-175-orig" n="gilbs" resp="#fyndling">färbe es gelb (mit Safran)</note>
+        <note type="interpretive_choice" target="#std-175-orig" n="gilbs" resp="#fyndling">färbe es gelb (mit Safran)<list type="alternatives"><item>färbe es gelb (mit Eigelb)<note type="rationale">Obwohl Eigelb ebenfalls färben kann, ist Safran das typische und prestigeträchtigere Färbemittel für Gelb in der mittelalterlichen Küche, insbesondere wenn Eier bereits als Bindemittel im Rezept genannt sind und eine separate Färbeanweisung erfolgt.</note></item></list></note>
       </div>
     </back>
   </text>

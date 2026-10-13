@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,9 +117,9 @@ Praxis. Die Zubereitungszeit von etwa 2,5 Stunden ist eine Schätzung, der Text 
         <note type="gloss" target="#rum-0523-orig" n="Roßt" resp="#fyndling">Bratrost.</note>
         <note type="gloss" target="#rum-0523-orig" n="breuns ab" resp="#fyndling">Abbräunen.</note>
         <note type="gloss" target="#rum-0523-orig" n="Bruͤh darzu/ es sey saur oder suͤß" resp="#fyndling">Eine Brühe im Sinn einer Sauce als Beigabe, nach Wahl sauer oder süß. Womit gesäuert oder gesüßt wird, sagt Rumpolt hier nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
-        <note type="interpretive_choice" target="#rum-0523-orig" n="fuͤll ein jeglichs besonder (Füllung)" resp="#fyndling">Der Text nennt keine Füllung und sagt auch nicht, ob das Fleisch dafür vom Knochen gelöst wird. Die Übersetzung lässt das offen: „Fülle jedes Stück einzeln.“</note>
-        <note type="interpretive_choice" target="#rum-0523-orig" n="Bruͤh … saur oder suͤß" resp="#fyndling">Rumpolt nennt nur die beiden Geschmacksrichtungen; Säuerungs- oder Süßungsmittel und Bindung bleiben offen. Agrest (Verjus) wäre für „sauer“ zeitgenössisch denkbar, ist hier aber nicht genannt.</note>
-        <note type="interpretive_choice" target="#rum-0523-orig" n="setz es zu … Legs auff ein Roßt (Siedeflüssigkeit und Hitze)" resp="#fyndling">Der Text sagt nur „an die statt sieden“ und „auff ein Roßt“; Rost über der Glut ist die naheliegende historische Annahme, Flüssigkeit und Hitzequelle nennt er nicht.</note>
+        <note type="interpretive_choice" target="#rum-0523-orig" n="fuͤll ein jeglichs besonder (Füllung)" resp="#fyndling" subtype="contextual">Der Text nennt keine Füllung und sagt auch nicht, ob das Fleisch dafür vom Knochen gelöst wird. Die Übersetzung lässt das offen: „Fülle jedes Stück einzeln.“<list type="alternatives"><item>Brot- oder Semmelfüllung unter der Haut oder im ausgelösten Schenkel<note type="rationale">Naheliegende moderne Ausführung zum Nachkochen, im Text aber nicht belegt; die eingemachten Flügel im folgenden Rezept betreffen die Brühe, nicht die Füllung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0523-orig" n="Bruͤh … saur oder suͤß" resp="#fyndling" subtype="contextual">Rumpolt nennt nur die beiden Geschmacksrichtungen; Säuerungs- oder Süßungsmittel und Bindung bleiben offen. Agrest (Verjus) wäre für „sauer“ zeitgenössisch denkbar, ist hier aber nicht genannt.<list type="alternatives"><item>Sauer mit Essig, süß mit Zucker oder Honig<note type="rationale">Moderne Praxis zum Nachkochen; nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0523-orig" n="setz es zu … Legs auff ein Roßt (Siedeflüssigkeit und Hitze)" resp="#fyndling" subtype="contextual">Der Text sagt nur „an die statt sieden“ und „auff ein Roßt“; Rost über der Glut ist die naheliegende historische Annahme, Flüssigkeit und Hitzequelle nennt er nicht.<list type="alternatives"><item>In Brühe oder Salzwasser sieden, unter dem Grill oder im heißen Ofen bräunen<note type="rationale">Moderne Umsetzung; im Text nicht festgelegt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,11 +127,11 @@ Praxis. Ein Topf, ein Sieb zum Durchstreichen, Feuer. Ohne frische unreife Traub
         <note type="gloss" target="#rum-0836-orig" n="vnzerlassene Butter" resp="#fyndling">Ungeschmolzene Butter, also nicht zerlassen oder ausgelassen.</note>
         <note type="gloss" target="#rum-0836-orig" n="Kern von den Trauben" resp="#fyndling">Wörtlich Kerne. Ob die Samen gemeint sind oder die von der Rispe gezupften ganzen Beeren, lässt der Text offen; dieselbe Frage stellt sich bei den jungen Hühnern in rum-0722. Rumpolt sagt nur, dass sie ganz bleiben und nicht verkochen sollen.</note>
         <note type="gloss" target="#rum-0836-orig" n="gelb oder weiß" resp="#fyndling">Rumpolt lässt beide Fassungen zu, nennt hier aber kein Färbemittel.</note>
-        <note type="interpretive_choice" target="#rum-0836-orig" n="Agrastbeer" resp="#fyndling">Die unreifen Trauben selbst. Rumpolt erläutert das Wort mit vnzeitige Weinbeer/ die hart seyn, und die Beeren werden mit Brühe und Brot aufgekocht und durchgestrichen.</note>
-        <note type="interpretive_choice" target="#rum-0836-orig" n="Kern von den Trauben" resp="#fyndling">Wörtlich die Kerne, also die Samen der Trauben. So steht es im Text, und die Übersetzung lässt das Wort stehen, wie bei rum-0722.</note>
-        <note type="interpretive_choice" target="#rum-0836-orig" n="Herkunft der Kerne" resp="#fyndling">Der Text sagt nur von den Trauben. Da die ersten Trauben schon mit dem Brot durchgestrichen sind, kommen die Kerne wohl von weiteren Trauben, die erst am Ende dazugegeben werden.</note>
-        <note type="interpretive_choice" target="#rum-0836-orig" n="Garzeit der Vögel" resp="#fyndling">Rumpolt nennt keine Garzeit: Die Vögel kommen abgebrüht in die Sauce, werden mit der Butter aufgekocht und nach den Kernen nur noch einmal aufgewallt.</note>
-        <note type="interpretive_choice" target="#rum-0836-orig" n="gelb oder weiß" resp="#fyndling">Eine Wahlmöglichkeit ohne genanntes Färbemittel. Womit die gelbe Fassung erreicht wurde, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0836-orig" n="Agrastbeer" resp="#fyndling" subtype="lexical">Die unreifen Trauben selbst. Rumpolt erläutert das Wort mit vnzeitige Weinbeer/ die hart seyn, und die Beeren werden mit Brühe und Brot aufgekocht und durchgestrichen.<list type="alternatives"><item>Agrast als fertige saure Brühe aus unreifen Trauben (Verjus), wie Fischer das Wort erklärt<note type="rationale">Das Wort kann den Saft meinen; hier stehen aber ausdrücklich harte Beeren im Text, und die Kerne kommen später von den Trauben dazu.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0836-orig" n="Kern von den Trauben" resp="#fyndling" subtype="lexical">Wörtlich die Kerne, also die Samen der Trauben. So steht es im Text, und die Übersetzung lässt das Wort stehen, wie bei rum-0722.<list type="alternatives"><item>Die von der Rispe gezupften ganzen Beeren<note type="rationale">Dass die Kerne gantz vnd nicht versotten bleiben sollen und es so wirt es gut vnd saur heißt, passt eher zu ganzen Beeren als zu Samen. Ein Wörterbuchbeleg für Kern im Sinn von Beere fehlt, deshalb nicht die Hauptlesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0836-orig" n="Herkunft der Kerne" resp="#fyndling" subtype="contextual">Der Text sagt nur von den Trauben. Da die ersten Trauben schon mit dem Brot durchgestrichen sind, kommen die Kerne wohl von weiteren Trauben, die erst am Ende dazugegeben werden.<list type="alternatives"><item>Kerne aus denselben Trauben, die vor dem Durchstreichen beiseitegelegt werden<note type="rationale">Praktisch naheliegend und mit dem Text vereinbar; der Text sagt dazu nichts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0836-orig" n="Garzeit der Vögel" resp="#fyndling" subtype="contextual">Rumpolt nennt keine Garzeit: Die Vögel kommen abgebrüht in die Sauce, werden mit der Butter aufgekocht und nach den Kernen nur noch einmal aufgewallt.<list type="alternatives"><item>Die Vögel nach ihrer Größe in der Sauce gar ziehen lassen, bevor die Kerne dazukommen<note type="rationale">Moderne Praxis; die Dauer hängt von den Vögeln ab und steht nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0836-orig" n="gelb oder weiß" resp="#fyndling" subtype="contextual">Eine Wahlmöglichkeit ohne genanntes Färbemittel. Womit die gelbe Fassung erreicht wurde, bleibt offen.<list type="alternatives"><item>Safran für die gelbe Fassung<note type="rationale">Bei Rumpolt nur dort belegt, wo er ihn ausdrücklich nennt (etwa rum-0128); hier steht er nicht im Text und wird deshalb nicht ergänzt.</note></item></list></note>
       </div>
     </back>
   </text>

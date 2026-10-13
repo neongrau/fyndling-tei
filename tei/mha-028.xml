@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -102,7 +107,7 @@ Praxis. Der Text selbst nennt nur den letzten Schritt: Öl zugeben und mit gutem
         <note type="gloss" target="#mha-028-orig" n="ponnen" resp="#fyndling">Bohnen, konkret die Saubohne/Ackerbohne (Vicia faba, laut CoReMA-Sachglosse 'broad bean'). Gartenbohnen aus Amerika gab es 1460 in Europa noch nicht.</note>
         <note type="gloss" target="#mha-028-orig" n="Item" resp="#fyndling">Lateinisch für 'ebenso, desgleichen' - verbindet hier die formelhafte Kopfzeile ('Ain guot gemuoss', wörtlich 'ein gutes Mus') mit dem eigentlichen Rezeptkörper innerhalb desselben, eigenständigen Eintrags. Kein Verweis auf ein separates, vorangehendes Rezept: dieselbe Kopfzeile+Item-Struktur findet sich auch in mha-025 (Milchmus) und mha-026 (Hanfmus) mit ganz anderen Zutaten.</note>
         <note type="gloss" target="#mha-028-orig" n="machs ab" resp="#fyndling">'Mach es fertig/ab' - Standardformel für den letzten Würz- und Abschmeckschritt vor dem Servieren.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#machs-ab"/></note>
-        <note type="interpretive_choice" target="#mha-028-orig" n="ponnen" resp="#fyndling">Saubohne/Ackerbohne (Vicia faba), gestützt durch die CoReMA-Sachglosse ('broad bean', Wikidata Q61672189).</note>
+        <note type="interpretive_choice" target="#mha-028-orig" n="ponnen" resp="#fyndling">Saubohne/Ackerbohne (Vicia faba), gestützt durch die CoReMA-Sachglosse ('broad bean', Wikidata Q61672189).<list type="alternatives"><item>Generische 'Bohnen' ohne botanische Festlegung<note type="rationale">Der Text selbst spezifiziert die Bohnenart nicht weiter; moderne Leser könnten an grüne Bohnen denken, die 1460 in Europa aber noch unbekannt waren.</note></item></list></note>
       </div>
     </back>
   </text>

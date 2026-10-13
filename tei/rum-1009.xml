@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,7 +98,7 @@ Was heißt „frisch“? Am naheliegendsten frische Renken, nicht getrocknete od
 
 Praxis. Die Renken braten (der Text nennt kein Verfahren), dann kalt werden lassen und kalt auftragen. Mehr überliefert die Zeile nicht, und wir ergänzen nichts.</note>
         <note type="gloss" target="#rum-1009-orig" n="Rencken" resp="#fyndling">Renken, auch Felchen genannt: lachsartige Fische der Gattung Coregonus aus den Seen des Alpen- und Voralpenraums. Rumpolt nennt nur den Namen, keine bestimmte Art.</note>
-        <note type="interpretive_choice" target="#rum-1009-orig" n="wenn sie frisch seyn" resp="#fyndling">Frische Renken im Gegensatz zu getrockneten oder geräucherten. Rumpolt behandelt getrocknete und geräucherte Renken im selben Kapitel eigens, das „frisch“ grenzt diese Nummer davon ab.</note>
+        <note type="interpretive_choice" target="#rum-1009-orig" n="wenn sie frisch seyn" resp="#fyndling" subtype="contextual">Frische Renken im Gegensatz zu getrockneten oder geräucherten. Rumpolt behandelt getrocknete und geräucherte Renken im selben Kapitel eigens, das „frisch“ grenzt diese Nummer davon ab.<list type="alternatives"><item>Frisch gebraten, also gerade vom Feuer: „wenn sie frisch vom Rost kommen, lässt man sie kalt werden“.<note type="rationale">Sprachlich möglich, der Satz entscheidet es nicht. Für die Ausführung ändert es nichts: In beiden Lesarten werden die Renken gebraten und kalt gegessen.</note></item></list></note>
       </div>
     </back>
   </text>

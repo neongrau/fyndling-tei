@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,8 +106,8 @@ Praxis. Für die Mus-Variante entgrätetes Fischfilet, etwa Zander oder Hecht, i
         <note type="gloss" target="#b4-127-orig" n="grat" resp="#fyndling">Grät, also die Fischgräte. 'Die nicht grat haben' meint Fischstücke, aus denen die Gräten bereits entfernt wurden.</note>
         <note type="gloss" target="#b4-127-orig" n="gemueess" resp="#fyndling">Hier nicht 'Gemüse' im modernen Sinn, sondern eine allgemeine Bezeichnung für eine zubereitete Speise, hier ein Mus-artiges Fischgericht.</note>
         <note type="gloss" target="#b4-127-orig" n="gepachens" resp="#fyndling">Ein Gebackenes. Im selben Buch bezeichnet das Wort sowohl in Fett ausgebackene Stücke (b4-148, b4-149) als auch ausdrücklich im Ofen gebackenes Gebäck (b4-208 bis b4-210) - welche Zubereitungsart hier gemeint ist, lässt sich aus dem Text allein nicht entscheiden.</note>
-        <note type="interpretive_choice" target="#b4-127-orig" n="gepachens (Zubereitungsart)" resp="#fyndling">Die konkrete Backtechnik bleibt offen. Für die Lagerküche praktikabel ist die Fett-Variante, also das Ausbacken in Pfanne oder Kessel, wie sie b4-148 und b4-149 im selben Buch für 'gepachens' verwenden.</note>
-        <note type="interpretive_choice" target="#b4-127-orig" n="Garvorgang vor dem Mus" resp="#fyndling">Das Fischfleisch wird vor dem Zerstampfen gegart, gesotten oder gedämpft, wie es bei Mus-Gerichten in diesem Buch durchgängig der Fall ist.</note>
+        <note type="interpretive_choice" target="#b4-127-orig" n="gepachens (Zubereitungsart)" resp="#fyndling">Die konkrete Backtechnik bleibt offen. Für die Lagerküche praktikabel ist die Fett-Variante, also das Ausbacken in Pfanne oder Kessel, wie sie b4-148 und b4-149 im selben Buch für 'gepachens' verwenden.<list type="alternatives"><item>Ofengebackenes Gebäck, wie es b4-208 bis b4-210 im selben Buch für denselben Begriff beschreiben.<note type="rationale">Der textlich fast identische Zwilling w1-132 setzt für dieses Rezept lagerküche_level=eingeschränkt an, was auf eine Ofen-Lesart hindeutet. b4-127 selbst entscheidet die Frage nicht, beide Lesarten sind im Buch belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-127-orig" n="Garvorgang vor dem Mus" resp="#fyndling">Das Fischfleisch wird vor dem Zerstampfen gegart, gesotten oder gedämpft, wie es bei Mus-Gerichten in diesem Buch durchgängig der Fall ist.<list type="alternatives"><item>Rohes, zerstampftes Fischfleisch als Mus.<note type="rationale">Textlich nicht ausgeschlossen, im Korpus aber ohne Parallele und aus heutiger Sicht die unsicherere Lesart.</note></item></list></note>
       </div>
     </back>
   </text>

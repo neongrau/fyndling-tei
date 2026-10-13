@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,10 +105,10 @@ Praxis. Schaf- oder Hammelkeule beim Metzger vorbestellen, sonst eine Lammkeule 
         <note type="gloss" target="#rum-0476-orig" n="Schlegel" resp="#fyndling">Die Keule. Die Überschrift nennt das Tier nicht; sie steht als Nr. 9 im Kapitel „Vom Türckischen Schaf“, gemeint ist also die Keule dieses Schafs. Bei Nr. 12 im selben Kapitel spricht Rumpolt eigens vom Hinterschlegel, hier steht nur „Schlegel“.</note>
         <note type="gloss" target="#rum-0476-orig" n="Pasteten" resp="#fyndling">Fleisch, in eine Teighülle eingeschlossen und gebacken. Rumpolt schreibt die Mehrzahl. Teig und Füllung nennt die Überschrift nicht.</note>
         <note type="gloss" target="#rum-0476-orig" n="warm oder kalt" resp="#fyndling">Rumpolt unterscheidet warm aufgetragene und kalte Pasteten. Hier lässt er beides zu; mehr sagt der Druck nicht.</note>
-        <note type="interpretive_choice" target="#rum-0476-orig" n="Schlegel (Tier)" resp="#fyndling">Keule vom Türkischen Schaf: Die Überschrift nennt kein Tier, sie steht als Nr. 9 im Kapitel „Vom Türckischen Schaf“, und die Nachbarn Nr. 8 und Nr. 12 behandeln Schlegel und Schaffleisch dieses Tiers.</note>
-        <note type="interpretive_choice" target="#rum-0476-orig" n="Pasteten (Mehrzahl)" resp="#fyndling">Mehrzahl beibehalten: Der Druck schreibt „Pasteten“, und mit „warm oder kalt“ sind zwei Arten genannt. Die Übersetzung sagt deshalb „Schlegelpasteten“.</note>
-        <note type="interpretive_choice" target="#rum-0476-orig" n="warm oder kalt" resp="#fyndling">Zwei Arten des Auftragens derselben Pastete: Rumpolt unterscheidet warme und kalte Pasteten als eigene Gattungen und lässt hier beides zu.</note>
-        <note type="interpretive_choice" target="#rum-0476-orig" n="Füllung und Zubereitung" resp="#fyndling">Nicht überliefert: Rumpolt gibt nur die Überschrift. Andere Pasteten des Buches, etwa der Hammelschlegel in warmer Pastete im Hammelkapitel, zeigen die Gattung, sind aber keine Anleitung für diese Nummer.</note>
+        <note type="interpretive_choice" target="#rum-0476-orig" n="Schlegel (Tier)" resp="#fyndling" subtype="contextual">Keule vom Türkischen Schaf: Die Überschrift nennt kein Tier, sie steht als Nr. 9 im Kapitel „Vom Türckischen Schaf“, und die Nachbarn Nr. 8 und Nr. 12 behandeln Schlegel und Schaffleisch dieses Tiers.<list type="alternatives"><item>Lammkeule<note type="rationale">Rumpolt führt das Lamm in einem eigenen Kapitel; als heutiger Ersatz in der Praxis brauchbar, als Lesart nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0476-orig" n="Pasteten (Mehrzahl)" resp="#fyndling" subtype="philological">Mehrzahl beibehalten: Der Druck schreibt „Pasteten“, und mit „warm oder kalt“ sind zwei Arten genannt. Die Übersetzung sagt deshalb „Schlegelpasteten“.<list type="alternatives"><item>Eine einzelne Schlegelpastete<note type="rationale">Möglich, wenn „Pasteten“ hier nur die Gattung meint; die Form im Druck spricht für die Mehrzahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0476-orig" n="warm oder kalt" resp="#fyndling" subtype="contextual">Zwei Arten des Auftragens derselben Pastete: Rumpolt unterscheidet warme und kalte Pasteten als eigene Gattungen und lässt hier beides zu.<list type="alternatives"><item>Zwei verschiedene Pasteten mit unterschiedlichem Teig oder unterschiedlicher Füllung<note type="rationale">Die Überschrift unterscheidet nichts außer der Temperatur beim Auftragen; ein Unterschied in Teig oder Füllung ist nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0476-orig" n="Füllung und Zubereitung" resp="#fyndling" subtype="contextual">Nicht überliefert: Rumpolt gibt nur die Überschrift. Andere Pasteten des Buches, etwa der Hammelschlegel in warmer Pastete im Hammelkapitel, zeigen die Gattung, sind aber keine Anleitung für diese Nummer.<list type="alternatives"><item>Praxis: Keule in einen festen Pastetenteig einschlagen und backen, ohne weitere Zutaten zu ergänzen<note type="rationale">So hält es die Zubereitungsnotiz; Teig, Würzung und Backzeit sind dabei eigene Entscheidungen, nicht Rumpolts Angaben.</note></item></list></note>
       </div>
     </back>
   </text>

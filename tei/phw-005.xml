@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -151,11 +156,11 @@ Quitten schälen, entkernen und in wenig Wasser (Wasserstand etwa zwei Finger un
         <note type="gloss" target="#phw-005-orig" n="heyttl" resp="#fyndling">Ein kleines Häutlein oder eine dünne Haut, die sich auf dem abgekühlten Sirup bildet und anzeigt, dass er die richtige Konsistenz erreicht hat.</note>
         <note type="gloss" target="#phw-005-orig" n="senig" resp="#fyndling">Sämig, dickflüssig. So liest Hayer die Stelle, mit eigenem Fragezeichen. Solange die Masse nur sämig ist, ist sie noch nicht weit genug; fertig ist sie erst, wenn sie auf dem kalten Löffel ein Häutchen bildet.</note>
         <note type="gloss" target="#phw-005-orig" n="jber" resp="#fyndling">„Fain“ ist nach Hayers Wörterverzeichnis der Schaum, nicht eine Haut. Beim Eingießen in die Form wirft die Masse obenauf einen Schaum, und die Schlussanweisung „den nym ab“ heißt, diesen Schaum abzunehmen.</note>
-        <note type="interpretive_choice" target="#phw-005-orig" n="glydnten feur" resp="#fyndling">glühendes Feuer</note>
-        <note type="interpretive_choice" target="#phw-005-orig" n="achterlin" resp="#fyndling">ein Achterl, also ein Hohlmaß von etwa einem Achtel Maß (rund 0,13 Liter)</note>
-        <note type="interpretive_choice" target="#phw-005-orig" n="senig" resp="#fyndling">sämig, dickflüssig</note>
-        <note type="interpretive_choice" target="#phw-005-orig" n="fain" resp="#fyndling">Schaum</note>
-        <note type="interpretive_choice" target="#phw-005-orig" n="las flux sieden" resp="#fyndling">der Text nennt für das rasche Einkochen kein Rühren, nur den Löffeltest zur Kontrolle des Garpunkts</note>
+        <note type="interpretive_choice" target="#phw-005-orig" n="glydnten feur" resp="#fyndling" subtype="philological">glühendes Feuer<list type="alternatives"><item>gelindes Feuer, also milde, gleichmäßige Hitze<note type="rationale">Frühere Lesart dieses Rezepts, jetzt verworfen: Ralf (2026-10-08) kann „gelinde“ inhaltlich nicht nachvollziehen und liest „glühend“. Für „gelinde“ sprach die Buchstabenfolge (glydnten, so am Faksimile, das „d“ ist verkrakelt; Hayer hat glynetten) und die stehende Wendung „bei gelindem Feuer“; dagegen spricht, dass Hayer das Wort nicht glossiert und die Form in keinem Wörterbuch belegt ist. Beide Lesarten bleiben Konjektur.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-005-orig" n="achterlin" resp="#fyndling" subtype="lexical">ein Achterl, also ein Hohlmaß von etwa einem Achtel Maß (rund 0,13 Liter)<list type="alternatives"><item>ein Achtel des gewonnenen Safts<note type="rationale">Frühere Lesart im laufenden Text dieses Rezepts, die das Wort als Bruchteil der Charge las. Das ergibt kein brauchbares Verhältnis, weil die Saftmenge nirgends festgelegt ist. Gemeint ist ein Hohlmaß: auf ein Achterl Saft ein Pfund Zucker. Die Annotation des Rezepts hatte das bereits richtig, nur der Fließtext nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-005-orig" n="senig" resp="#fyndling" subtype="lexical">sämig, dickflüssig<list type="alternatives"><item>fadenziehend<note type="rationale">Frühere Lesart dieses Rezepts. Hayer liest „senig“ als sämig, dickflüssig, schleimig, und setzt selbst ein Fragezeichen dahinter. „Fadenziehend“ benennt dagegen eine bestimmte Zuckerkochstufe und behauptet mehr, als der Text und sein Herausgeber hergeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-005-orig" n="fain" resp="#fyndling" subtype="lexical">Schaum<list type="alternatives"><item>feine Haut<note type="rationale">Frühere Lesart dieses Rezepts, die „fain“ und das folgende „jber“ zu einem einzigen Wort verrechnete. Hayer glossiert „fain, foim“ eindeutig als Schaum. Damit klärt sich auch der Schlusssatz: Beim Eingießen wirft die Masse einen Schaum obenauf, und „den nym ab“ heißt, diesen Schaum abzunehmen - nicht, den Topf vom Feuer zu nehmen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-005-orig" n="las flux sieden" resp="#fyndling" subtype="contextual">der Text nennt für das rasche Einkochen kein Rühren, nur den Löffeltest zur Kontrolle des Garpunkts<list type="alternatives"><item>ständiges Rühren ist notwendig<note type="rationale">Naheliegende moderne Sicherheits- und Praxisempfehlung angesichts der hohen Zuckerkonzentration - Anbrennen am Topfboden ist ohne Rühren ein reales Risiko. Der Text selbst verlangt das aber nicht; möglich, dass ständige Beobachtung über starkem Feuer für kurze Zeit als ausreichend galt.</note></item></list></note>
       </div>
     </back>
   </text>

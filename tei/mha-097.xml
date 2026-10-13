@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,9 +113,9 @@ Praxis. Eierteig mit dem Wellholz fingerdick auswellen und würfelig oder rauten
         <note type="gloss" target="#mha-097-orig" n="wurfflat" resp="#fyndling">Würfelig oder rautenförmig einschneiden, eine gängige Schnitttechnik für Teig. In diesem Rezept werden die Stücke dabei vollständig voneinander getrennt, denn es entstehen einzelne bohnenförmige Teigstücke, die einzeln in Schmalz geworfen und später einzeln in die Sauce gegeben werden.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#wurfflat"/></note>
         <note type="gloss" target="#mha-097-orig" n="condiment" resp="#fyndling">Würzsud oder Würzsauce, hier als Alternative zum Safran genannt, in die die Teig-'Bohnen' am Ende eingelegt werden.</note>
         <note type="gloss" target="#mha-097-orig" n="item" resp="#fyndling">Lateinischer Aufzählungs-Marker ('ebenso, weiterhin'), typischer Rezept-Kopf in mittelalterlichen Kochbüchern, hier Teil der (fragmentierten) Überschrift.</note>
-        <note type="interpretive_choice" target="#mha-097-orig" n="Ain Item ponnen gemacht von taig" resp="#fyndling">Als fragmentierte Kopfzeile gelesen und zur vollständigen Rubrik 'Bohnen aus Teig gemacht' rekonstruiert, wie es die CoReMA-Transkription für am Zeilenende abgebrochene Überschriften nahelegt.</note>
-        <note type="interpretive_choice" target="#mha-097-orig" n="vf saffran oder auf condiment" resp="#fyndling">Als echte Alternative gelesen: entweder Safran-Sud oder Würzsud, nicht beides gleichzeitig, im ingredients-Array daher als eine Zutat mit alternative-Feld geführt.</note>
-        <note type="interpretive_choice" target="#mha-097-orig" n="lass es schnell pachen" resp="#fyndling">Als Praxis-Empfehlung umgesetzt: bei fingerdicken Teigstücken lieber so lange frittieren, bis auch der Kern durchgebacken ist, auch wenn das länger dauert als der Text mit 'schnell' suggeriert.</note>
+        <note type="interpretive_choice" target="#mha-097-orig" n="Ain Item ponnen gemacht von taig" resp="#fyndling">Als fragmentierte Kopfzeile gelesen und zur vollständigen Rubrik 'Bohnen aus Teig gemacht' rekonstruiert, wie es die CoReMA-Transkription für am Zeilenende abgebrochene Überschriften nahelegt.<list type="alternatives"><item>Die Zeile könnte auch als eigenständiger, unvollständiger Satz gelesen werden, dem ein Verb fehlt.<note type="rationale">Die Handschrift bricht Rubriken gelegentlich unvermittelt ab, ohne dass der volle Titel im Fließtext wiederholt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-097-orig" n="vf saffran oder auf condiment" resp="#fyndling">Als echte Alternative gelesen: entweder Safran-Sud oder Würzsud, nicht beides gleichzeitig, im ingredients-Array daher als eine Zutat mit alternative-Feld geführt.<list type="alternatives"><item>Man könnte 'condiment' auch als Sammelbegriff für eine mit Safran gefärbte Würzsauce lesen, sodass beide Wörter dasselbe meinen.<note type="rationale">In anderen Rezepten des Korpus wird Safran oft Teil einer condiment-Mischung, sodass die Trennung nicht immer scharf ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-097-orig" n="lass es schnell pachen" resp="#fyndling">Als Praxis-Empfehlung umgesetzt: bei fingerdicken Teigstücken lieber so lange frittieren, bis auch der Kern durchgebacken ist, auch wenn das länger dauert als der Text mit 'schnell' suggeriert.<list type="alternatives"><item>Wörtlich genommen könnte bei zügigem Frittieren fingerdicker Stücke ein weicherer, nicht vollständig durchgegarter Kern entstehen.<note type="rationale">Der Text belegt weder Frittierdauer noch -temperatur und lässt die Gardauer offen; er nennt einen weichen Kern aber auch nicht ausdrücklich als Absicht.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,7 +127,7 @@ Eine feste Eier-Milch (Eier mit Milch verquirlt und unter Rühren gesotten, bis 
         <note type="gloss" target="#phw-119-orig" n="kers jn aim melb vm" resp="#fyndling">Das Wenden in Mehl dient dazu, die Schnitze vor dem Backen zu panieren und eine knusprige Oberfläche zu erzeugen.</note>
         <note type="gloss" target="#phw-119-orig" n="schmaltz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz. Für eine vegetarische Variante kann Pflanzenöl oder Butter verwendet werden.</note>
         <note type="gloss" target="#phw-119-orig" n="drucken" resp="#fyndling">„Drucken“ ist hier eine Schreibvariante von „trocken“ - nicht das Verb „drücken“.</note>
-        <note type="interpretive_choice" target="#phw-119-orig" n="drucken" resp="#fyndling">„Drucken“ ist eine Schreibvariante von „trocken“ (d/t-Wechsel); gemeint ist, dass die Eier-Milch beim Pressen trocken und fest wird.</note>
+        <note type="interpretive_choice" target="#phw-119-orig" n="drucken" resp="#fyndling" subtype="orthographic">„Drucken“ ist eine Schreibvariante von „trocken“ (d/t-Wechsel); gemeint ist, dass die Eier-Milch beim Pressen trocken und fest wird.<list type="alternatives"><item>Das Verb „drücken“ (pressen) liegt lautlich nahe.<note type="rationale">Die Satzkonstruktion („werden“ mit Adjektiv, nicht mit Infinitiv) und der Buchbestand an vergleichbaren Stellen stützen einheitlich die Trocken-Bedeutung, nicht das Verb „drücken“.</note></item></list></note>
       </div>
     </back>
   </text>

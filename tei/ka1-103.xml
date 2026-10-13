@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,9 +116,9 @@ Praxis. Unreife, grüne Kürbisse schälen und kurz blanchieren, dann klein hack
         <note type="gloss" target="#ka1-103-orig" n="grien kurpsa" resp="#fyndling">Grüne, unreife Kürbisse oder Kürbisgewächse. Die Verwendung unreifer Früchte war in der mittelalterlichen Küche üblich, um eine säuerlichere Note zu erzielen.</note>
         <note type="gloss" target="#ka1-103-orig" n="ruban" resp="#fyndling">Bezieht sich auf Rüben. Der Vergleich betrifft hier das (zweite) Blanchieren der Kürbisse, nicht eine bestimmte Schnittform - geschnitten bzw. klein gehackt wird erst im nächsten Arbeitsschritt.</note>
         <note type="gloss" target="#ka1-103-orig" n="schafine supun" resp="#fyndling">Schafsbrühe. schafin ist das Stoffadjektiv zu Schaf, wie in der parallelen Fügung „schafiner milch“ (Schafsmilch); supun ist die Suppe oder Brühe.</note>
-        <note type="interpretive_choice" target="#ka1-103-orig" n="bilch krut / bilch bry" resp="#fyndling">Wir haben ‚bilch‘ als ‚Milch‘ interpretiert, was zu den Titeln ‚Milch-Kraut‘ oder ‚Milch-Brei‘ führt.</note>
-        <note type="interpretive_choice" target="#ka1-103-orig" n="schafine supun" resp="#fyndling">‚Schafsbrühe‘: schafin als Adjektiv zu Schaf ist mehrfach belegt, unter anderem in der genau parallelen Fügung ‚schafiner milch‘ (Schafsmilch). Die Kürbisse garen also in einer Fleischbrühe vom Schaf.</note>
-        <note type="interpretive_choice" target="#ka1-103-orig" n="vnd bruey sy den vnder bruey als ruban" resp="#fyndling">Wir lesen dies als zweifaches Blanchieren: erst wird die Schale abgezogen und blanchiert, danach folgt ein weiteres Blanchieren wie bei Rüben, bevor klein gehackt wird.</note>
+        <note type="interpretive_choice" target="#ka1-103-orig" n="bilch krut / bilch bry" resp="#fyndling" subtype="lexical">Wir haben ‚bilch‘ als ‚Milch‘ interpretiert, was zu den Titeln ‚Milch-Kraut‘ oder ‚Milch-Brei‘ führt.<list type="alternatives"><item>Eine alternative Lesart wäre ‚Haselmaus-Kraut‘ oder ‚Haselmaus-Brei‘.<note type="rationale">Lexer und MHDBDB listen ‚bilch‘ als Haselmaus. Dies ist jedoch kulinarisch für ein Kürbisgericht in ‚Haselmaus-Suppe‘ sehr unwahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-103-orig" n="schafine supun" resp="#fyndling" subtype="lexical">‚Schafsbrühe‘: schafin als Adjektiv zu Schaf ist mehrfach belegt, unter anderem in der genau parallelen Fügung ‚schafiner milch‘ (Schafsmilch). Die Kürbisse garen also in einer Fleischbrühe vom Schaf.<list type="alternatives"><item>‚Schalen mit Suppe‘, also einzelne Gefäße mit Kochflüssigkeit.<note type="rationale">Setzt ein sonst nicht belegtes schafin = Schale voraus; die Adjektiv-Lesart zu Schaf ist besser gestützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#ka1-103-orig" n="vnd bruey sy den vnder bruey als ruban" resp="#fyndling" subtype="contextual">Wir lesen dies als zweifaches Blanchieren: erst wird die Schale abgezogen und blanchiert, danach folgt ein weiteres Blanchieren wie bei Rüben, bevor klein gehackt wird.<list type="alternatives"><item>Die doppelte Nennung von ‚bruey‘ könnte auch eine schreiberische Wiederholung sein, ähnlich der Doppelung ‚bilch krut bilch krut‘ im Titel - dann wäre nur ein einziges Blanchieren gemeint.<note type="rationale">Der Text bietet keine eindeutige Unterscheidung zwischen zwei getrennten Arbeitsschritten und einer bloßen Wiederholung; beide Lesarten sind mit dem übrigen Rezeptverlauf vereinbar.</note></item></list></note>
       </div>
     </back>
   </text>

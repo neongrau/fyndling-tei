@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -142,8 +147,8 @@ Der Text nimmt den Sirup vom Feuer, gibt ihn an das Einzumachende und lässt all
         <note type="gloss" target="#phw-001-orig" n="auff pent" resp="#fyndling">Sich bindet, gerinnt. Bezieht sich auf das Eiweiß, das die Verunreinigungen im Zuckersirup bindet und an die Oberfläche treibt.</note>
         <note type="gloss" target="#phw-001-orig" n="lab wirt" resp="#fyndling">Lauwarm wird. Der Sirup soll auf eine angenehm warme, aber nicht mehr kochend heiße Temperatur abkühlen.</note>
         <note type="gloss" target="#phw-001-orig" n="paredeyss epfoll" resp="#fyndling">Der Herausgeber Gerold Hayer glossiert „paredeiß epfell“ in seinem Wörterverzeichnis als Granatapfel. Nicht gemeint ist die Tomate: Sie heißt erst seit dem 19. Jahrhundert „Paradeiser“ und war 1543/44 in Augsburg kein Lebensmittel. Zusammen mit Ingwer steht hier also eine importierte Südfrucht, die in Läuterzucker eingelegt wird.</note>
-        <note type="interpretive_choice" target="#phw-001-orig" n="paredeyss epfoll" resp="#fyndling">Granatapfel</note>
-        <note type="interpretive_choice" target="#phw-001-orig" n="praun / prun (Fertigstellungskriterium)" resp="#fyndling">Die Farbangabe „praun“/„prun“ ist im Text das alleinige Kriterium für den fertigen Sirup.</note>
+        <note type="interpretive_choice" target="#phw-001-orig" n="paredeyss epfoll" resp="#fyndling" subtype="lexical">Granatapfel<list type="alternatives"><item>eine kleine, säuerliche Apfelsorte („Paradeisapfel“)<note type="rationale">Frühere Lesart dieses Rezepts. Sie erklärt „epfoll“ als Apfel im heutigen Sinn. Der Herausgeber Gerold Hayer glossiert die Stelle jedoch eindeutig als Granatapfel, und die Welser hatten über ihren Handel nach Venedig und Spanien Zugang zu dieser Ware. Kandierte Granatapfelkerne und Granatapfelschale sind für die Zeit belegt.</note></item><item>Tomaten<note type="rationale">Ausgeschlossen. „Paradeiser“ heißt die Tomate erst seit dem 19. Jahrhundert. Als das Buch entstand (Augsburg 1543/44), war die Tomate in Italien eine eben erst eingeführte Zierpflanze und in Süddeutschland nicht als Lebensmittel bekannt, geschweige denn kandiert. Die Lesart ist hier nur deshalb erwähnt, weil die Wortform sie einem heutigen Leser nahelegt.</note></item><item>Paradieskörner<note type="rationale">Ein Gewürz, das als „ander ding“ in Frage käme. Das mitstehende „epfoll“ spricht dagegen: Es benennt eine Frucht, kein Körnergewürz.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-001-orig" n="praun / prun (Fertigstellungskriterium)" resp="#fyndling" subtype="contextual">Die Farbangabe „praun“/„prun“ ist im Text das alleinige Kriterium für den fertigen Sirup.<list type="alternatives"><item>Ergänzend ließe sich unverbindlich die Tropfprobe des Zwillingsrezepts Zucker läutern im Kochbuch des Balthasar Staindl heranziehen (dort: ein Tropfen auf einen Teller, wird er dicklich, ist der Sirup fertig).<note type="rationale">Steht nicht in diesem Rezept selbst und darf nur als Hinweis auf die verwandte Zwillingstechnik verstanden werden, nicht als Teil dieses Rezepts.</note></item></list></note>
       </div>
     </back>
   </text>

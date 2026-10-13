@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,9 +114,9 @@ Als moderne sichere Praxis den geputzten Hühnermagen sehr dünn schneiden und v
         <note type="gloss" target="#w1-135-orig" n="chum" resp="#fyndling">Kümmel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#chum"/></note>
         <note type="gloss" target="#w1-135-orig" n="gestuffelt ayr waich" resp="#fyndling">Unsichere Wendung zur Konsistenz. Der Parallelzeuge mha-075 liest „gefullte ayr waich“, b4-130 dagegen „getuselt ayr waich“. Eine weiche Füll- oder Eiermasse ist besser belegt als modernes Rührei.</note>
         <note type="gloss" target="#w1-135-orig" n="siedunds smalcz" resp="#fyndling">Die CoReMA-Editorennotiz dokumentiert an dieser Stelle die mit roter Tinte gestrichene Lesung „siedunds wasser“. Gültig ist die korrigierte Lesung „siedendes Schmalz“.</note>
-        <note type="interpretive_choice" target="#w1-135-orig" n="magen" resp="#fyndling">Hühnermagen (Muskelmagen).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
-        <note type="interpretive_choice" target="#w1-135-orig" n="gestuffelt ayr" resp="#fyndling">Eine weiche Eier- beziehungsweise Füllmasse, die anschließend als zusammenhängender Fladen ausgebacken wird.</note>
-        <note type="interpretive_choice" target="#w1-135-orig" n="siedunds smalcz" resp="#fyndling">Siedendes Schmalz.</note>
+        <note type="interpretive_choice" target="#w1-135-orig" n="magen" resp="#fyndling">Hühnermagen (Muskelmagen).<list type="alternatives"><item>Mohn.<note type="rationale">„Magen“ kann auch Mohn bezeichnen. Die Verbindung mit Hühnerleber und der nahezu wortgleiche Paralleltext b4-130 stützen hier jedoch den anatomischen Hühnermagen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#magen"/></note>
+        <note type="interpretive_choice" target="#w1-135-orig" n="gestuffelt ayr" resp="#fyndling">Eine weiche Eier- beziehungsweise Füllmasse, die anschließend als zusammenhängender Fladen ausgebacken wird.<list type="alternatives"><item>Rühreiartige, gekrümelte Masse.<note type="rationale">Diese ältere Deutung ist lexikalisch nicht abgesichert. Gegen sie sprechen mha-075 „gefullte ayr waich“ und bgs-040, wo die weiche Masse ausdrücklich als ein Stück fertig gebacken wird.</note></item><item>Die Parallelform „getuselt ayr“.<note type="rationale">b4-130 überliefert „getuselt“, löst die Bedeutung aber ebenfalls nicht sicher. Die Abweichung zeigt, dass die Stelle schon in der Parallelüberlieferung instabil war.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-135-orig" n="siedunds smalcz" resp="#fyndling">Siedendes Schmalz.<list type="alternatives"><item>Siedendes Wasser.<note type="rationale">Die CoReMA-Editorennotiz verzeichnet „siedunds wasser“ als mit roter Tinte gestrichene Lesung. Sie ist ein verworfener Manuskriptbefund, keine gleichberechtigte Zubereitungsalternative; b4-130 bestätigt „sieduncz smalcz“.</note></item></list></note>
       </div>
     </back>
   </text>

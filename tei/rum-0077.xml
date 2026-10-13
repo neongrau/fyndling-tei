@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -97,9 +102,9 @@ Kalt oder warm. Beides ist erlaubt. Warm kommen die Füße direkt aus dem Topf; 
 
 Praxis. Geräucherte Rinderfüße beim Metzger vorbestellen. Die Füße ganz oder gespalten anrichten.</note>
         <note type="gloss" target="#rum-0077-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack. Ein Urteil über das fertige Gericht, keine Angabe zur Würzung.</note>
-        <note type="interpretive_choice" target="#rum-0077-orig" n="Gereuchert (gesalzen?)" resp="#fyndling">Der Text sagt nur „geräuchert“. Ob die Füße vorher gepökelt oder gesalzen wurden und ob man sie vor dem Kochen wässern muss, bleibt offen; beides gilt deshalb nicht als Teil des Rezepts.</note>
-        <note type="interpretive_choice" target="#rum-0077-orig" n="wolgeschmack" resp="#fyndling">„Wohlschmeckend“ als Urteil über das Gericht, wie in der Nachbarformel für geräuchertes Rindfleisch.</note>
-        <note type="interpretive_choice" target="#rum-0077-orig" n="kalt oder warm geben" resp="#fyndling">Die gekochten Füße werden ohne Sauce aufgetragen, nach Belieben kalt oder warm; der Text nennt keine Beigabe.</note>
+        <note type="interpretive_choice" target="#rum-0077-orig" n="Gereuchert (gesalzen?)" resp="#fyndling" subtype="contextual">Der Text sagt nur „geräuchert“. Ob die Füße vorher gepökelt oder gesalzen wurden und ob man sie vor dem Kochen wässern muss, bleibt offen; beides gilt deshalb nicht als Teil des Rezepts.<list type="alternatives"><item>Wie gepökeltes Räucherfleisch behandeln: vor dem Kochen wässern oder das erste Kochwasser abgießen<note type="rationale">Heutige Vorsicht bei salziger Räucherware und in der Zubereitung empfohlen; bei Rumpolt nicht erwähnt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0077-orig" n="wolgeschmack" resp="#fyndling" subtype="lexical">„Wohlschmeckend“ als Urteil über das Gericht, wie in der Nachbarformel für geräuchertes Rindfleisch.<list type="alternatives"><item>„Gut gewürzt“<note type="rationale">Vom Wort her denkbar, der Text nennt aber keine Gewürze; deshalb wird nichts ergänzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0077-orig" n="kalt oder warm geben" resp="#fyndling" subtype="contextual">Die gekochten Füße werden ohne Sauce aufgetragen, nach Belieben kalt oder warm; der Text nennt keine Beigabe.<list type="alternatives"><item>Mit Senf oder mit Essig und Petersilie wie bei den kalten Ochsenfüßen direkt davor<note type="rationale">Diese Beigaben stehen in den Nachbarrezepten, nicht in diesem; sie werden hier nicht übernommen.</note></item></list></note>
       </div>
     </back>
   </text>

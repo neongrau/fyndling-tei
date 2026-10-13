@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,7 +105,7 @@ Wie wird das Fleisch zubereitet? Das sagt Rumpolt nicht. Für die moderne Umsetz
 Praxis. Wild und Kohl oder Spinat sind ein bewährtes Paar. Geräuchertes Rehfleisch bekommt man beim Wildhändler; der Kohl soll nach dem Text grün sein, die Sorte ist frei.</note>
         <note type="gloss" target="#rum-0378-orig" n="Geselcht" resp="#fyndling">Geselcht ist das oberdeutsche Wort für geräuchert (DWB: geselchtes = geräuchertes Fleisch). Gemeint ist der Zustand der Zutat, kein Arbeitsschritt des Rezepts; über ein Pökeln sagt der Text nichts.</note>
         <note type="gloss" target="#rum-0378-orig" n="Koͤl" resp="#fyndling">Kohl (FWB kol: Kohl, Kohlkopf). Welche Sorte Rumpolt meint, bleibt offen. Das „grün“ spricht gegen Weißkohl: An anderer Stelle (rum-0497) nennt Rumpolt grünen und weißen Kohl nebeneinander als zwei Sorten.</note>
-        <note type="interpretive_choice" target="#rum-0378-orig" n="Zubereitung des geräucherten Rehfleischs" resp="#fyndling">Der Text nennt keine Zubereitung: weder Kochen noch Aufwärmen noch kalt Aufschneiden. Rumpolt setzt das Fleisch fertig geräuchert voraus und gibt nur an, womit es gut zu essen ist. Ob der Eintrag als Beilagenhinweis zu einem anderen Gericht gemeint ist, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0378-orig" n="Zubereitung des geräucherten Rehfleischs" resp="#fyndling" subtype="contextual">Der Text nennt keine Zubereitung: weder Kochen noch Aufwärmen noch kalt Aufschneiden. Rumpolt setzt das Fleisch fertig geräuchert voraus und gibt nur an, womit es gut zu essen ist. Ob der Eintrag als Beilagenhinweis zu einem anderen Gericht gemeint ist, bleibt offen.<list type="alternatives"><item>Geräuchertes Fleisch je nach Stück kurz in Wasser erhitzen, dazu gegarten Spinat oder Kohl geben<note type="rationale">Moderne Umsetzung für die Praxis; vom Text nicht gedeckt, aber naheliegend, weil Rumpolt geräuchertes Fleisch in verwandten Einträgen warm und unter grünem Gemüse gibt (rum-0352).</note></item></list></note>
       </div>
     </back>
   </text>

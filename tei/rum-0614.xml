@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,9 +101,9 @@ Wodurch wird es sauer? Das nennt die Zeile nicht. Bei der gebratenen Gans stellt
 Praxis. Die Zeile gibt nichts Nachkochbares her. Wer das Gericht kochen will, hält sich an das Gescharb der gebratenen Gans im selben Kapitel und macht es sauer; womit und wie die Gans gegart wird, bleibt offen.</note>
         <note type="gloss" target="#rum-0614-orig" n="Gescharb" resp="#fyndling">Zu scharben, „klein schneiden“: nach dem Deutschen Wörterbuch Geschnitzeltes von Obst oder Gemüse. Bei Rumpolt meist die daraus eingekochte, dicke Sauce, in die das Fleisch gelegt wird; im Gänsekapitel aus Zwiebeln oder Äpfeln, anderswo im Buch auch aus Mandeln. Welche Zutat hier gemeint ist, sagt die Zeile nicht.</note>
         <note type="gloss" target="#rum-0614-orig" n="eyngemacht" resp="#fyndling">Bei Rumpolt bedeutet ‚eingemacht‘ im Kontext von Fleisch und Fisch ‚in einer Brühe oder Sauce gegart‘, nicht ‚konserviert‘ im modernen Sinne.</note>
-        <note type="interpretive_choice" target="#rum-0614-orig" n="Gescharb" resp="#fyndling">Eingekochte Sauce aus klein Geschnittenem, im Gänsekapitel aus Zwiebeln oder Äpfeln. Grund: Das Deutsche Wörterbuch führt geschärbe als Geschnitzeltes von Obst oder Gemüse, und die Gänse-Nachbarn (gebratene Gans mit Zwiebelgescharb, Gänseklein in Apfel- oder Zwiebelgescharb) zeigen genau diese Sauce. Die Zeile selbst nennt keine Zutat.</note>
-        <note type="interpretive_choice" target="#rum-0614-orig" n="sauer" resp="#fyndling">Der Text nennt kein Säuerungsmittel; es wird keines ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0614-orig" n="Garweise der Gans" resp="#fyndling">Nach den Kapitelnachbarn wird die Gans vorher gebraten oder gesotten und dann im Gescharb angerichtet; die Zeile selbst sagt das nicht.</note>
+        <note type="interpretive_choice" target="#rum-0614-orig" n="Gescharb" resp="#fyndling" subtype="lexical">Eingekochte Sauce aus klein Geschnittenem, im Gänsekapitel aus Zwiebeln oder Äpfeln. Grund: Das Deutsche Wörterbuch führt geschärbe als Geschnitzeltes von Obst oder Gemüse, und die Gänse-Nachbarn (gebratene Gans mit Zwiebelgescharb, Gänseklein in Apfel- oder Zwiebelgescharb) zeigen genau diese Sauce. Die Zeile selbst nennt keine Zutat.<list type="alternatives"><item>Mandelgescharb<note type="rationale">Bei Rumpolt belegt (dicke Mandelsauce zur Ochsenzunge), im Gänsekapitel aber nicht; deshalb nur nachrangig.</note></item><item>Geschnitzel als lose Beilage<note type="rationale">Die Grundbedeutung im Wörterbuch; dagegen spricht „eyngemacht“, das bei Rumpolt das Anrichten in einer Sauce meint.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0614-orig" n="sauer" resp="#fyndling" subtype="contextual">Der Text nennt kein Säuerungsmittel; es wird keines ergänzt.<list type="alternatives"><item>Essig<note type="rationale">Beim Apfel-Zwiebel-Gescharb zu Ochsenfüßen und Kalbszunge säuert Rumpolt mit Essig; für diese Zeile nicht belegt.</note></item><item>Limonien (Zitronen)<note type="rationale">Im Gänsekapitel nennt Rumpolt „saur mit Limonien“ als eigene Einmachart neben dem Gescharb; für diese Zeile nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0614-orig" n="Garweise der Gans" resp="#fyndling" subtype="contextual">Nach den Kapitelnachbarn wird die Gans vorher gebraten oder gesotten und dann im Gescharb angerichtet; die Zeile selbst sagt das nicht.<list type="alternatives"><item>Keine Festlegung<note type="rationale">Moderne Grundeinstellung: Der Text nennt weder Braten noch Sieden, also wird nichts als Schritt ergänzt.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,8 +119,8 @@ Praxis. Schweinefleisch (Schulter oder Bauch) gut waschen, dann in Wasser sanft 
         <note type="gloss" target="#boc-006-orig" n="Pro Mulieribus" resp="#fyndling">"Für Frauen" - eine von mehreren sozialen/ständischen Zielgruppen-Zuschreibungen im Titel des Registrum Coquine (vgl. „für Deutsche“, „für Bauern“, „für Edelleute“); der Text selbst macht dazu keinen expliziten Gesundheits-Claim.</note>
         <note type="gloss" target="#boc-006-orig" n="ad ignem" resp="#fyndling">Wörtlich "ans Feuer"; im Vergleich mit strukturell verwandten Rezepten desselben Buchs (boc-004, boc-005) ist Sieden im Topf gemeint, nicht Braten am Spieß - eine korpusgestützte, nicht wörtlich im Text von boc-006 selbst stehende Lesart.</note>
         <note type="gloss" target="#boc-006-orig" n="oua cruda" resp="#fyndling">Rohe Eier, die auf das noch heiße gesottene Fleisch gegeben werden und an dessen Restwärme zu einer cremigen Sauce stocken.</note>
-        <note type="interpretive_choice" target="#boc-006-orig" n="Garzustand der Eier (&quot;mitte superius oua cruda&quot;)" resp="#fyndling">In der Praxis-Empfehlung lassen wir die Ei-Mischung sicherheitshalber kurz nacherhitzen, damit die rohen Eier zuverlässig durchgaren - eine moderne Anpassung an heutige Lebensmittelsicherheit.</note>
-        <note type="interpretive_choice" target="#boc-006-orig" n="Salz im Kochwasser" resp="#fyndling">Wir empfehlen in der Praxis, das Sud nach moderner Gewohnheit leicht zu salzen.</note>
+        <note type="interpretive_choice" target="#boc-006-orig" n="Garzustand der Eier (&quot;mitte superius oua cruda&quot;)" resp="#fyndling">In der Praxis-Empfehlung lassen wir die Ei-Mischung sicherheitshalber kurz nacherhitzen, damit die rohen Eier zuverlässig durchgaren - eine moderne Anpassung an heutige Lebensmittelsicherheit.<list type="alternatives"><item>Der Text kennt kein erneutes Erhitzen: Die rohen Eier werden allein durch die Restwärme des vom Feuer genommenen Fleischs angestockt, was je nach Fleischtemperatur weicher und möglicherweise nicht vollständig durchgegart bleibt.<note type="rationale">Textnah, aber aus heutiger Sicht bei rohem Ei nicht unbedenklich - deshalb nur als historische Lesart dokumentiert, nicht als Praxis-Empfehlung übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#boc-006-orig" n="Salz im Kochwasser" resp="#fyndling">Wir empfehlen in der Praxis, das Sud nach moderner Gewohnheit leicht zu salzen.<list type="alternatives"><item>Weder Transkript noch Zutatenliste erwähnen Salz - anders als der Zwilling boc-005, wo Salz explizit in der Auflage steht. Ungesalzenes Kochwasser wäre die textnähere Lesart.<note type="rationale">Die Zutat kommt im lateinischen Text an keiner Stelle vor; Salzen ist eine unbelegte, aber geschmacklich unauffällige moderne Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

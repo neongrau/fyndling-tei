@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -113,9 +118,9 @@ Praxis. Der Text sagt Schüssel und dann auffsieden, er lässt offen, ob in der 
         <note type="gloss" target="#rum-0988-orig" n="vngeschmaͤltzte Butter" resp="#fyndling">Schlicht Butter. „Ungeschmälzt“ grenzt nur vom Schmalz ab: die Butter ist nicht zu Schmalz ausgelassen.</note>
         <note type="gloss" target="#rum-0988-orig" n="Limoniensafft" resp="#fyndling">Limonien sind Zitronen; gemeint ist der saure Saft, anders als die „gesaltzen Limonien“ (Salzzitronen) an anderer Stelle im Kapitel.</note>
         <note type="gloss" target="#rum-0988-orig" n="von stundan" resp="#fyndling">Sogleich, unverzüglich.</note>
-        <note type="interpretive_choice" target="#rum-0988-orig" n="hack jn klein" resp="#fyndling">Der rohe Hecht wird klein gehackt und gart beim Aufsieden in der Brühe. Der Text nennt kein Vorgaren; wo Rumpolt das will, schreibt er es aus (Hecht im Senf: „seudt jn gar trucken ab“).</note>
-        <note type="interpretive_choice" target="#rum-0988-orig" n="in eine Schuͤssel ... auffsieden" resp="#fyndling">Aufgesotten wird in der Schüssel selbst, einem Metallgefäß auf der Glut; der Text nennt nur die Schüssel und kein zweites Gefäß.</note>
-        <note type="interpretive_choice" target="#rum-0988-orig" n="ein stuͤck Hecht" resp="#fyndling">Ein Stück vom Hecht, so wie es ist, klein gehackt; ob entgrätet wird, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0988-orig" n="hack jn klein" resp="#fyndling" subtype="contextual">Der rohe Hecht wird klein gehackt und gart beim Aufsieden in der Brühe. Der Text nennt kein Vorgaren; wo Rumpolt das will, schreibt er es aus (Hecht im Senf: „seudt jn gar trucken ab“).<list type="alternatives"><item>Vorgegarter, entgräteter Hecht, der nur noch klein gehackt und in der Brühe erhitzt wird.<note type="rationale">Möglich nach dem Muster des Nachbarrezepts, aber im Text nicht genannt; die Lesart würde einen Schritt ergänzen, den Rumpolt hier nicht schreibt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0988-orig" n="in eine Schuͤssel ... auffsieden" resp="#fyndling" subtype="contextual">Aufgesotten wird in der Schüssel selbst, einem Metallgefäß auf der Glut; der Text nennt nur die Schüssel und kein zweites Gefäß.<list type="alternatives"><item>Alles in einen kleinen Topf geben und kurz aufkochen.<note type="rationale">Heutige Praxis; das Ergebnis ist gleich, der Text lässt das Gefäß zum Sieden aber offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0988-orig" n="ein stuͤck Hecht" resp="#fyndling" subtype="contextual">Ein Stück vom Hecht, so wie es ist, klein gehackt; ob entgrätet wird, sagt der Text nicht.<list type="alternatives"><item>Entgrätetes Hechtfilet, dann gehackt.<note type="rationale">Heutige Praxis wegen der vielen feinen Gräten des Hechts; der Text schreibt das Entgräten hier nicht vor.</note></item></list></note>
       </div>
     </back>
   </text>

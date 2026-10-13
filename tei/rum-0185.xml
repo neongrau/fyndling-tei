@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -114,9 +119,9 @@ Praxis. Hammel ist heute im Handel selten und muss meist beim Metzger vorbestell
         <note type="gloss" target="#rum-0185-orig" n="Limonien" resp="#fyndling">Zitronen, nicht Limetten.</note>
         <note type="gloss" target="#rum-0185-orig" n="Spick jn" resp="#fyndling">Spicken heißt hier: etwas in das Fleisch stecken. Rumpolt nennt dafür Zitrusfrucht, Rettich, Salbei oder rote Rüben, keinen Speck. In welcher Form die Stücke ins Fleisch kommen, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-0185-orig" n="roten Ruͤben" resp="#fyndling">Rote Rüben = Rote Bete.</note>
-        <note type="interpretive_choice" target="#rum-0185-orig" n="Pomerantzen" resp="#fyndling">Bitterorange (Citrus aurantium), wie in Rumpolts kalter Kalbskeule (rum-0130) und rum-0174 gelesen; dazu passt die Parallele „oder mit sauren frischen Limonien“, die eine saure Frucht erwarten lässt.</note>
-        <note type="interpretive_choice" target="#rum-0185-orig" n="spick jn mit einer Pomerantzen (Form des Spickmaterials)" resp="#fyndling">Der Text sagt nur „spicken mit“ und legt keine Form fest; die Übersetzung lässt das offen. Eine ganze Frucht lässt sich nicht spicken, gemeint sind also Stücke. In der kalten Kalbskeule (rum-0130) schneidet Rumpolt die Pomeranze „breit vnd fein duͤnn“ - eine buchinterne Parallele, kein Beleg für dieses Rezept.</note>
-        <note type="interpretive_choice" target="#rum-0185-orig" n="Ein kalten Hammelschlegel (Garung und Zeitpunkt des Spickens)" resp="#fyndling">„Kalt“ steht nur in der Überschrift und meint das Auftragen. Wie der Schlegel gegart wird und ob er roh oder gegart gespickt wird, sagt der Text nicht; die Übersetzung ergänzt nichts.</note>
+        <note type="interpretive_choice" target="#rum-0185-orig" n="Pomerantzen" resp="#fyndling" subtype="lexical">Bitterorange (Citrus aurantium), wie in Rumpolts kalter Kalbskeule (rum-0130) und rum-0174 gelesen; dazu passt die Parallele „oder mit sauren frischen Limonien“, die eine saure Frucht erwarten lässt.<list type="alternatives"><item>Orange allgemein, auch die süße Orange<note type="rationale">Die Wörterbücher entscheiden für das 16. Jahrhundert nicht sicher zwischen Bitter- und Süßorange; die Lesart bleibt offen, ist aber durch die Säure-Parallele weniger wahrscheinlich.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0185-orig" n="spick jn mit einer Pomerantzen (Form des Spickmaterials)" resp="#fyndling" subtype="contextual">Der Text sagt nur „spicken mit“ und legt keine Form fest; die Übersetzung lässt das offen. Eine ganze Frucht lässt sich nicht spicken, gemeint sind also Stücke. In der kalten Kalbskeule (rum-0130) schneidet Rumpolt die Pomeranze „breit vnd fein duͤnn“ - eine buchinterne Parallele, kein Beleg für dieses Rezept.<list type="alternatives"><item>Schalenstreifen der Zitrusfrucht bzw. Stifte von Rettich und roten Rüben in Einschnitte stecken<note type="rationale">Heutige Praxis und so in der Zubereitungsnotiz umgesetzt; der Text nennt weder Schale noch Fruchtfleisch noch Stifte.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0185-orig" n="Ein kalten Hammelschlegel (Garung und Zeitpunkt des Spickens)" resp="#fyndling" subtype="contextual">„Kalt“ steht nur in der Überschrift und meint das Auftragen. Wie der Schlegel gegart wird und ob er roh oder gegart gespickt wird, sagt der Text nicht; die Übersetzung ergänzt nichts.<list type="alternatives"><item>Gebraten, ganz erkaltet und dann gespickt<note type="rationale">So verfährt Rumpolt bei der kalten Kalbskeule (rum-0130: nicht vor dem Braten spicken, erst wenn sie kalt ist). Moderne Voreinstellung der Zubereitungsnotiz.</note></item><item>Während des Bratens gespickt, danach erkalten lassen<note type="rationale">Beim Nachbarrezept Nr. 35 (rum-0184) kommt der Knoblauch in den halb gebratenen Schlegel. Möglich, aber hier nicht gesagt.</note></item></list></note>
       </div>
     </back>
   </text>

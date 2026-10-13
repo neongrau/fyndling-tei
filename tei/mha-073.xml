@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,9 +139,9 @@ Fleisch fein hacken und mit Ei, Speck, Pfeffer, Kümmel und Salz vermengen. Aus 
         <note type="gloss" target="#mha-073-orig" n="taig" resp="#fyndling">Ein Ausbackteig (Batter), durch den die gefüllte Rolle vor dem Backen oder Braten gezogen wird, nicht ‚Teil' im modernen Sinn.</note>
         <note type="gloss" target="#mha-073-orig" n="kumich" resp="#fyndling">Kümmel, ein Standardgewürz der Zeit, oft zusammen mit Pfeffer genannt.</note>
         <note type="gloss" target="#mha-073-orig" n="gesotten (im Schlusssatz)" resp="#fyndling">Wörtlich ‚gesiedet', hier aber nach dem vorausgehenden Backen in Schmalz oder Braten am Spieß offensichtlich nur allgemein für ‚gar' gebraucht, kein tatsächlicher Siede-Vorgang.</note>
-        <note type="interpretive_choice" target="#mha-073-orig" n="Rechthaupt / Rechhaubt" resp="#fyndling">Name des Gerichts, wörtlich ‚Rehkopf', hier als traditioneller Schaugericht-Name ohne echtes Wildbret verstanden, denn das Fleisch ist laut Text Schaf, Rind oder Schwein.</note>
-        <note type="interpretive_choice" target="#mha-073-orig" n="also also / also mach" resp="#fyndling">Schreiber-Wiederholung (Dittographie) am Rezeptanfang, kein zweiter Titel oder zweites Rezept.</note>
-        <note type="interpretive_choice" target="#mha-073-orig" n="So er gar sey (Gardauer)" resp="#fyndling">Keine Zeit- oder Temperaturangabe im Text; moderne Praxis backt/brät bis zum vollständigen Durchgaren, da die Füllung rohes Ei enthält.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
+        <note type="interpretive_choice" target="#mha-073-orig" n="Rechthaupt / Rechhaubt" resp="#fyndling">Name des Gerichts, wörtlich ‚Rehkopf', hier als traditioneller Schaugericht-Name ohne echtes Wildbret verstanden, denn das Fleisch ist laut Text Schaf, Rind oder Schwein.<list type="alternatives"><item>Ein tatsächliches Gericht aus echtem Rehkopf (Wildbret)<note type="rationale">CoReMA verlinkt das Wort direkt mit dem Wikidata-Eintrag ‚roe-deer head', was auf ein reales Tier hindeuten könnte, widerspricht aber der expliziten Zutatenliste im Text (Schaf, Rind, Schwein).</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-073-orig" n="also also / also mach" resp="#fyndling">Schreiber-Wiederholung (Dittographie) am Rezeptanfang, kein zweiter Titel oder zweites Rezept.<list type="alternatives"><item>Zwei getrennte Überschriften für zwei Varianten<note type="rationale">Die doppelte Einleitungsformel könnte theoretisch zwei Rezepte andeuten, ist aber im weiteren Text eine einzige durchgehende Anweisung, wie es die bekannte Wiederholungsfigur in diesem Korpus vorsieht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-073-orig" n="So er gar sey (Gardauer)" resp="#fyndling">Keine Zeit- oder Temperaturangabe im Text; moderne Praxis backt/brät bis zum vollständigen Durchgaren, da die Füllung rohes Ei enthält.<list type="alternatives"><item>Historisch könnte ‚gar' allein an Aussehen oder Geruch beurteilt worden sein, ohne festen Sicherheitsstandard<note type="rationale">Der Text nennt kein Kriterium außer der bloßen Feststellung ‚wenn es gar ist' - eine genaue Gardauer ist nicht überliefert.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#sey"/></note>
       </div>
     </back>
   </text>

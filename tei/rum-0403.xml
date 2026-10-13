@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -100,11 +105,11 @@ Praxis. Frisches Hasenfleisch kommt vom Wildhändler und bleibt bis zum Räucher
         <note type="gloss" target="#rum-0403-orig" n="von stundan" resp="#fyndling">Bedeutet ‚sogleich‘ oder ‚sofort‘ (von Stund an).</note>
         <note type="gloss" target="#rum-0403-orig" n="länglicht" resp="#fyndling">Länglich; „fein länglicht“ = in feine, längliche Stücke.</note>
         <note type="gloss" target="#rum-0403-orig" n="Schornstein" resp="#fyndling">Der Rauchfang über dem Herd, durch den der Rauch abzieht. Der Text sagt nur, das Fleisch solle dort hängen, „daß der Rauch wol durchgehet“; eine Dauer nennt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0403-orig" n="so ist es ein gut essen (Verzehrform)" resp="#fyndling">Offen: Rumpolt nennt das geräucherte Hinterteil ein gutes Essen, sagt aber nicht, ob es so gegessen oder danach gekocht oder gebraten wird. Ein Garschritt wird nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0403-orig" n="Salzmenge und Dauer im Rauch" resp="#fyndling">Offen: Der Text nennt weder Salzmenge noch Räucherdauer noch die Wärme des Rauchs.</note>
-        <note type="interpretive_choice" target="#rum-0403-orig" n="fein laͤnglicht" resp="#fyndling">In feine, längliche Stücke oder Streifen; „laͤnglicht“ = länglich, wie in Rumpolts übrigen Schneideanweisungen.</note>
-        <note type="interpretive_choice" target="#rum-0403-orig" n="Hintertheil" resp="#fyndling">Das Hinterteil des Hasen, also Rücken und Keulen zusammen, wie in den Nachbarrezepten des Hasenkapitels.</note>
-        <note type="interpretive_choice" target="#rum-0403-orig" n="Schornstein" resp="#fyndling">Der Rauchfang über dem Herd, in dem der Rauch abzieht; Dauer und Wärme bleiben offen.</note>
+        <note type="interpretive_choice" target="#rum-0403-orig" n="so ist es ein gut essen (Verzehrform)" resp="#fyndling" subtype="contextual">Offen: Rumpolt nennt das geräucherte Hinterteil ein gutes Essen, sagt aber nicht, ob es so gegessen oder danach gekocht oder gebraten wird. Ein Garschritt wird nicht ergänzt.<list type="alternatives"><item>Nach dem Räuchern kochen oder braten<note type="rationale">Praxis zum Nachkochen, weil rohes Wild heute nicht gegessen wird; bei Rumpolts Hirsch-Rückenbraten folgt dem Schornstein ausdrücklich das Braten, hier aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0403-orig" n="Salzmenge und Dauer im Rauch" resp="#fyndling" subtype="contextual">Offen: Der Text nennt weder Salzmenge noch Räucherdauer noch die Wärme des Rauchs.<list type="alternatives"><item>Kurzer Rauch von wenigen Stunden<note type="rationale">Denkbar nach dem Muster der Schornstein-Braten im selben Buch, für dieses Rezept aber nicht belegt.</note></item><item>Lange Räucherung als Vorratsstück<note type="rationale">Möglich, aber der Text spricht nicht von Haltbarkeit; für lange kalte Räucherung verlangt Rumpolt bei Zungen gerade den Rauch ohne Hitze statt des Schornsteins.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0403-orig" n="fein laͤnglicht" resp="#fyndling" subtype="lexical">In feine, längliche Stücke oder Streifen; „laͤnglicht“ = länglich, wie in Rumpolts übrigen Schneideanweisungen.<list type="alternatives"><item>„fein“ als ‚schön, ordentlich‘<note type="rationale">„fein“ ist bei Rumpolt oft bloß verstärkend; dann sagt es nichts über die Dicke, nur dass ordentlich länglich geschnitten wird. Ein Maß lässt sich daraus nicht ableiten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0403-orig" n="Hintertheil" resp="#fyndling" subtype="lexical">Das Hinterteil des Hasen, also Rücken und Keulen zusammen, wie in den Nachbarrezepten des Hasenkapitels.<list type="alternatives"><item>Nur die Hinterkeulen<note type="rationale">Möglich, aber Rumpolt schreibt „Hintertheil“, nicht „Schlegel“; die engere Lesart wird nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0403-orig" n="Schornstein" resp="#fyndling" subtype="contextual">Der Rauchfang über dem Herd, in dem der Rauch abzieht; Dauer und Wärme bleiben offen.<list type="alternatives"><item>Eigene Räucherkammer mit kaltem Rauch<note type="rationale">Nicht gedeckt: Rumpolt nennt nur den Schornstein und trennt ihn an anderer Stelle ausdrücklich vom kalten Rauch.</note></item></list></note>
       </div>
     </back>
   </text>

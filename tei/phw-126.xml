@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,8 +134,8 @@ Als moderner Ersatz für die Lopalatte-Milch eignet sich Buttermilch oder Dickmi
         <note type="gloss" target="#phw-126-orig" n="schritzala / stritzala" resp="#fyndling">Diminutiv zu Strützel/Stritzel, wörtlich "(Oster-)Gebäck"; hier eine Formbezeichnung für kleine, fingerlange Teigstränge, die in Schmalz ausgebacken werden. Dieselbe Wortfamilie bezeichnet in der vorangehenden Aufzeichnung des Buches eine mit Marzipan gefüllte Variante - der Begriff benennt die Form, nicht eine feste Füllung.</note>
         <note type="gloss" target="#phw-126-orig" n="lopalatte milch" resp="#fyndling">Ein Hapax. Hayers Glossar zu dieser Handschrift deutet den Begriff vorsichtig als gestockte, geronnene Milch, abgeleitet von "lopperig" = wackelnd, locker - eine dialektale Ableitung, die sich auch in anderen oberdeutschen Wörterbüchern wiederfindet. Die Deutung bleibt unsicher, auch Hayer selbst setzt ein Fragezeichen.</note>
         <note type="gloss" target="#phw-126-orig" n="walgless" resp="#fyndling">Von "walgen", bedeutet hier, den Teig unter der Hand zu rollen und zu formen.</note>
-        <note type="interpretive_choice" target="#phw-126-orig" n="lopalatte milch" resp="#fyndling">Gestockte (geronnene, dickliche) Milch - so deutet Hayers Glossar zu dieser Handschrift den Begriff, als Ableitung von "lopperig" = wackelnd/locker (dialektal auch im Elsässischen und im Schweizerischen Idiotikon belegt).</note>
-        <note type="interpretive_choice" target="#phw-126-orig" n="Garzustand / Bräunungsgrad beim Ausbacken" resp="#fyndling">Der Text schreibt nur "langsam" vor, ohne Farbe oder Garprobe zu nennen; für den heutigen Nachkoch bietet sich goldbraun und durchgegart bei moderater Fetttemperatur an.</note>
+        <note type="interpretive_choice" target="#phw-126-orig" n="lopalatte milch" resp="#fyndling" subtype="philological">Gestockte (geronnene, dickliche) Milch - so deutet Hayers Glossar zu dieser Handschrift den Begriff, als Ableitung von "lopperig" = wackelnd/locker (dialektal auch im Elsässischen und im Schweizerischen Idiotikon belegt).<list type="alternatives"><item>Eine andere, heute nicht mehr identifizierbare Milchzubereitung.<note type="rationale">Der Begriff ist ein Hapax; Hayer selbst setzt bei seiner Deutung ein Fragezeichen. Ob Hayers gedruckte Lesart die Handschrift korrekt wiedergibt, ist ohne Einsicht in die Faksimile-Fotos nicht zu prüfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-126-orig" n="Garzustand / Bräunungsgrad beim Ausbacken" resp="#fyndling" subtype="contextual">Der Text schreibt nur "langsam" vor, ohne Farbe oder Garprobe zu nennen; für den heutigen Nachkoch bietet sich goldbraun und durchgegart bei moderater Fetttemperatur an.<list type="alternatives"><item>Hell/blass halten, wie es das textnahe Nachbarrezept für die verwandte Streibla-Technik ausdrücklich vorschreibt.<note type="rationale">Ob dieselbe Konvention (möglichst weiß bleiben) auch für dieses andersartige, aus festerem Teig gerollte Gebäck galt, spricht der Text nicht aus - offen.</note></item></list></note>
       </div>
     </back>
   </text>

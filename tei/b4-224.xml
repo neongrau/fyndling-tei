@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -125,8 +130,8 @@ Der Teig. Für die Apfelkrapfen macht das Rezept seinen Teig selbst: aus den wei
         <note type="gloss" target="#b4-224-orig" n="plat" resp="#fyndling">Hier ein dünnes Eierblatt aus reiner Eiermasse ohne Mehl, ähnlich einem Omelett, das als Hülle dient.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#plat"/></note>
         <note type="gloss" target="#b4-224-orig" n="gakelpip" resp="#fyndling">Der Eigenname des Gerichts, kein Gattungswort - das Rezept sagt es selbst: „das haist ein gakelpip“. In den durchsuchten Wörterbüchern (Grimm, Fischer, Idiotikon, Schmeller, FWB) steht das Wort nicht, im Korpus kommt es nur in der B4/Cgm-5919-Familie vor. Was gemeint ist, klärt die Parallelüberlieferung: Cgm 5919 schreibt gukkelpip (m5919-087), Meister Hans nennt dasselbe Gericht gabel suppen (mha-086) - ein Name, der eine feste, mit der Gabel essbare Speise nahelegt, im Gegensatz zur flüssigen Löffel-Suppe. Die Lautgestalt von gakel-/gukkel- und -pip gehört ins Umfeld der Hühner-Lautwörter (gackeln, gackern; fränkisch Pip) und passt zu einem Gericht, dessen Hülle aus nichts als Ei besteht - das ist allerdings eine Deutung aus der Wortform, kein Wörterbuchbeleg.</note>
         <note type="gloss" target="#b4-224-orig" n="Kraepphlein" resp="#fyndling">Diminutiv von Krapfen, also kleine Krapfen oder Fritters, die hier mit dem Apfelmus gefüllt werden können.</note>
-        <note type="interpretive_choice" target="#b4-224-orig" n="gechraewtt / chrawt" resp="#fyndling">Kräuter. CoReMA glossiert beide Begriffe als ‚herb‘, was eine allgemeine Pflanzenzutat meint.</note>
-        <note type="interpretive_choice" target="#b4-224-orig" n="pestreich" resp="#fyndling">bedeckt es. Verstanden als: die gefaltete Innenseite gart unter der abdeckenden Schüssel durch die Resthitze fertig, ohne dass gewendet werden muss.</note>
+        <note type="interpretive_choice" target="#b4-224-orig" n="gechraewtt / chrawt" resp="#fyndling" subtype="lexical">Kräuter. CoReMA glossiert beide Begriffe als ‚herb‘, was eine allgemeine Pflanzenzutat meint.<list type="alternatives"><item>Gewürze. Im Kontext von süß-sauren Äpfeln und Ingwer könnten auch süße Gewürze wie Zimt oder Nelken gemeint sein.<note type="rationale">Die mittelalterliche Küche verwendete oft eine Mischung aus Kräutern und Gewürzen, und die Unterscheidung war nicht immer so scharf wie heute.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-224-orig" n="pestreich" resp="#fyndling" subtype="lexical">bedeckt es. Verstanden als: die gefaltete Innenseite gart unter der abdeckenden Schüssel durch die Resthitze fertig, ohne dass gewendet werden muss.<list type="alternatives"><item>presst/bestreicht es. Die Grundbedeutung von ‚bestreichen‘ ist zunächst das Einreiben/Beschmieren einer Fläche mit einer Substanz (Fett, Wachs, Farbe); eine Schüssel als Werkzeug dafür passt semantisch schlechter.<note type="rationale">Wörterbücher kennen daneben die erweiterte Bedeutung ‚eine Fläche/einen Bereich bestreichen‘ im Sinn von abdecken, die die primäre Lesart stützt - die wörtlichere Grundbedeutung des Verbs bleibt aber die philologisch nähere Alternative und wird deshalb dokumentiert.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -118,9 +123,9 @@ Praxis. Reismehl und Milch in einer Pfanne bei mittlerer Hitze glattrühren, bis
         <note type="gloss" target="#phw-152-orig" n="mus" resp="#fyndling">Ein Brei oder Püree, oft aus Fleisch, Fisch oder Gemüse, mit Bindemitteln und Gewürzen zubereitet.</note>
         <note type="gloss" target="#phw-152-orig" n="Kapaunbrät" resp="#fyndling">Fein zerkleinertes oder gestoßenes Fleisch eines Kapauns (kastrierten Hahns).</note>
         <note type="gloss" target="#phw-152-orig" n="Rosenwasser" resp="#fyndling">Ein aromatisches Wasser, das durch Destillation von Rosenblüten gewonnen und zum Aromatisieren von Speisen und Getränken verwendet wird.</note>
-        <note type="interpretive_choice" target="#phw-152-orig" n="stays" resp="#fyndling">Die Lesart „stoße/arbeite es ein“ wurde gewählt.</note>
-        <note type="interpretive_choice" target="#phw-152-orig" n="mesige pfanenn" resp="#fyndling">Ein mittleres Maß, offen zwischen Größe und Hitze der Pfanne.</note>
-        <note type="interpretive_choice" target="#phw-152-orig" n="magsts" resp="#fyndling">Die Lesart 'du kannst es' (im Sinne von 'du darfst es' oder 'es ist möglich') wurde gewählt.</note>
+        <note type="interpretive_choice" target="#phw-152-orig" n="stays" resp="#fyndling" subtype="lexical">Die Lesart „stoße/arbeite es ein“ wurde gewählt.<list type="alternatives"><item>„gib es dazu“ (hinzufügen), gestützt auf einen Grimm-Beleg („zur menge stais fugen“).<note type="rationale">Diese Lesart widerspricht der eigenen Buchpraxis: „stays“ steht im übrigen Bestand mehrfach im Kontext eines Mörsers oder als Nachbarwort zu „reyb“ (reiben) und wird dort durchgängig als „stoßen/zerstoßen“ gelesen. Für dieses Rezept, in dem Kapaunbrät in einen Reismehlbrei eingearbeitet wird, passt „stoßen“ besser zum Ablauf als ein bloßes Hinzufügen.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-152-orig" n="mesige pfanenn" resp="#fyndling" subtype="philological">Ein mittleres Maß, offen zwischen Größe und Hitze der Pfanne.<list type="alternatives"><item>„mäßig heiße Pfanne“ (Hitze).<note type="rationale">Das Wort deckt laut Wörterbuch ein mittleres Maß zwischen zwei Extremen ab und kann ebenso gut die Größe der Pfanne meinen wie ihre Hitze. Der Text selbst entscheidet sich nicht - eine der beiden Lesarten als alleinigen Fakt zu setzen wäre nicht gedeckt. Das Wort ist im übrigen Bestand bislang ein Einzelbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-152-orig" n="magsts" resp="#fyndling" subtype="lexical">Die Lesart 'du kannst es' (im Sinne von 'du darfst es' oder 'es ist möglich') wurde gewählt.<list type="alternatives"><item>Eine alternative Lesart wäre 'du magst es' (im Sinne von 'du hast es gern').<note type="rationale">Das Wort 'magsts' ist ein Hapax Legomenon in diesem Korpus. Es ist eine Kontraktion von 'magst es'. Im Kontext einer Kochanleitung ist 'du kannst es' (als Erlaubnis oder Möglichkeit) die passendere Formulierung als 'du magst es' (als Ausdruck einer Präferenz).</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -96,8 +101,8 @@ Kalt oder warm. Das ist die einzige Angabe der Nummer: Die Pastete darf kalt ode
 Praxis. Wer die Nummer nachkochen will, hält sich an Rumpolts eigene Wildpasteten aus dem Hirschkapitel: Roggenteig auftreiben, das gewürzte Fleisch einschlagen und backen. Bei der kalten Hirschpastete (rum-0316) gibt er Essig durch das Luftloch, bei der Hirschziemer-Pastete (rum-0312) Pfeffer. Das ist eine Übertragung, keine Anweisung dieser Nummer; ob man den Teig mitaß, bleibt offen.</note>
         <note type="gloss" target="#rum-0442-orig" n="Wildpret" resp="#fyndling">Wildbret, Wildfleisch. „Schweinen Wildpret“ ist Rumpolts Kapitelbezeichnung für das Wildschwein.</note>
         <note type="gloss" target="#rum-0442-orig" n="Pasteten" resp="#fyndling">Teigpastete: Fleisch in einer gebackenen Teighülle, weder Terrine noch Streichpastete.</note>
-        <note type="interpretive_choice" target="#rum-0442-orig" n="Schweinen Wildpret" resp="#fyndling">Wildschwein: Das Kapitel „Vom Schweinen Wildpret“ gibt das Tier vor, alle Nachbarnummern handeln vom Wildschwein.</note>
-        <note type="interpretive_choice" target="#rum-0442-orig" n="Teig und Füllung der Wildschweinpastete" resp="#fyndling">Offen gelassen: Rumpolt nennt nur Gattung und Serviertemperatur. Die Lesart beschränkt sich auf Wildschweinfleisch in einer gebackenen Teighülle, wie das Wort Pastete es vorgibt.</note>
+        <note type="interpretive_choice" target="#rum-0442-orig" n="Schweinen Wildpret" resp="#fyndling" subtype="contextual">Wildschwein: Das Kapitel „Vom Schweinen Wildpret“ gibt das Tier vor, alle Nachbarnummern handeln vom Wildschwein.<list type="alternatives"><item>Wildbret allgemein<note type="rationale">Wildpret allein könnte jedes Wild meinen; das Attribut „Schweinen“ und der Kapitelkopf schließen das hier aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0442-orig" n="Teig und Füllung der Wildschweinpastete" resp="#fyndling" subtype="contextual">Offen gelassen: Rumpolt nennt nur Gattung und Serviertemperatur. Die Lesart beschränkt sich auf Wildschweinfleisch in einer gebackenen Teighülle, wie das Wort Pastete es vorgibt.<list type="alternatives"><item>Verfahren der kalten Hirschpastete übertragen (rum-0316): Fleisch in Roggenteig einschlagen und backen<note type="rationale">Rumpolts eigenes Verfahren für eine Wildpastete, und die Parallelnummer im Pastetenkapitel (rum-1754) nennt für die kalte Wildschweinpastete ebenfalls den Roggenteig. Bei dieser Nummer selbst steht es nicht.</note></item></list></note>
       </div>
     </back>
   </text>

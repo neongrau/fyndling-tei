@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,9 +106,9 @@ Warm oder kalt. Kalt gibt Rumpolt den Pfau ohne Gescharb an; im selben Kapitel i
 Praxis. Den gerupften Vogel ganz im Ofen oder am Spieß braten, wie heute bei großem Geflügel üblich. Als Gescharb klein geschnittene Mandeln oder Äpfel kurz einkochen, nach einer der beiden ausgeführten Fassungen. Zeiten, Mengen und Würzung nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0577-orig" n="Gescharb" resp="#fyndling">Von scharben, klein schneiden: klein Geschnittenes. Grimms Wörterbuch belegt „geschärb“ als Geschnitzeltes von Obst oder Gemüse und kennt ein „mandelgescherb“; ein Münchner Kochbuch des 15. Jahrhunderts nennt „ain gescharb von piern und öpfl“. Rumpolt macht es meist aus Mandeln, auch aus Äpfeln mit Zwiebeln, mal dicklich in Wein oder Brühe, mal trocken eingesotten. Hier nennt er weder Bestandteile noch Zubereitung.</note>
         <note type="gloss" target="#rum-0577-orig" n="abgebraten" resp="#fyndling">Gebraten. Rumpolt gebraucht das Wort bei ganzem Geflügel für den fertigen Braten, so auch in den beiden folgenden Pfauen-Rezepten („kalt abgebraten“).</note>
-        <note type="interpretive_choice" target="#rum-0577-orig" n="Gescharb" resp="#fyndling">Eine Beilage aus klein Geschnittenem, deren Sorte und Zubereitung offen bleiben. Das Wort ist durch Grimms Wörterbuch und Rumpolts eigenen Gebrauch geklärt, dieser Text sagt aber nicht, welches Gescharb zum Pfau gehört.</note>
-        <note type="interpretive_choice" target="#rum-0577-orig" n="Garmethode (Spieß oder Ofen, mit oder ohne Federn)" resp="#fyndling">Offen gelassen: Rumpolt sagt nur „abgebraten“ und nennt weder Gerät noch Hitze noch Dauer, deshalb legt die Übersetzung keine Technik fest. Federn erwähnt er im Pfauenkapitel nur beim kalten Gericht in Gallerte, nicht hier.</note>
-        <note type="interpretive_choice" target="#rum-0577-orig" n="abgebraten" resp="#fyndling">Gar gebraten: Es folgt kein weiterer Garschritt, und der Braten wird warm oder kalt gegessen.</note>
+        <note type="interpretive_choice" target="#rum-0577-orig" n="Gescharb" resp="#fyndling" subtype="lexical">Eine Beilage aus klein Geschnittenem, deren Sorte und Zubereitung offen bleiben. Das Wort ist durch Grimms Wörterbuch und Rumpolts eigenen Gebrauch geklärt, dieser Text sagt aber nicht, welches Gescharb zum Pfau gehört.<list type="alternatives"><item>Mandelgescharb, dicklich in Wein oder Brühe angesetzt<note type="rationale">Bei Rumpolt die häufigste Fassung, ausgeführt bei der Ochsenzunge (rum-0008). Für den Pfau nicht belegt.</note></item><item>Apfel-Zwiebel-Gescharb<note type="rationale">Rumpolt beschreibt es bei den Kalbsfüßen (rum-0145). Ebenfalls möglich, hier nicht genannt.</note></item><item>Trocken eingesottenes Mandelgescharb<note type="rationale">So beim eingesalzenen Rindfleisch (rum-0071). Ob dick oder trocken gemeint ist, entscheidet dieser Text nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0577-orig" n="Garmethode (Spieß oder Ofen, mit oder ohne Federn)" resp="#fyndling" subtype="contextual">Offen gelassen: Rumpolt sagt nur „abgebraten“ und nennt weder Gerät noch Hitze noch Dauer, deshalb legt die Übersetzung keine Technik fest. Federn erwähnt er im Pfauenkapitel nur beim kalten Gericht in Gallerte, nicht hier.<list type="alternatives"><item>Moderne Praxis: den gerupften Vogel ganz im Ofen oder am Spieß braten<note type="rationale">Heutiges Standardverfahren für ganzes Großgeflügel; keine Angabe Rumpolts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0577-orig" n="abgebraten" resp="#fyndling" subtype="lexical">Gar gebraten: Es folgt kein weiterer Garschritt, und der Braten wird warm oder kalt gegessen.<list type="alternatives"><item>Nur abgebräunt<note type="rationale">Rumpolt kennt „abbreunen“ für das Farbe-Nehmen auf dem Rost vor dem Eindämpfen. Hier fehlt jedes Eindämpfen, deshalb unwahrscheinlich.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -162,14 +167,14 @@ Praxis. Der Text nennt keine Zeit. Rechne bei einem Stück Lende mit ein bis zwe
         <note type="gloss" target="#rum-0039-orig" n="Zwibel Haͤupt" resp="#fyndling">Ein Zwiebelkopf, also eine ganze Zwiebel.</note>
         <note type="gloss" target="#rum-0039-orig" n="Saltz, daß man zwey Eyer kan mit saltzen" resp="#fyndling">Eine Vergleichsmenge aus dem Küchenalltag: so viel Salz, wie man für zwei Eier braucht. Eine genaue Menge nennt der Text nicht.</note>
         <note type="gloss" target="#rum-0039-orig" n="Lufftloch" resp="#fyndling">Ein Loch im Deckel.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Lungenbratẽ" resp="#fyndling">Ochsenlende (Lendenbraten). FWB verweist „lungenbrate“ auf „lumbel“ (Lende); Meyers nennt die Muskeln unter der Lendenwirbelsäule, wie Filet. Im Buch löst rum-0041 ebenso auf, Lunge heißt bei Rumpolt „Lungenmuß“. Das Kapitel bestätigt Rind.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Fleisch im Anweisungstext" resp="#fyndling">Das Fleisch wird im Anweisungstext nicht genannt, nur im Titel. Gelesen wird: Die Lende kommt in den Topf, ob als Stück oder gehackt, sagt der Text nicht. „hack es durcheinander“ betrifft zuerst Zitrone, Zwiebel und Wacholder.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="eingedempffet" resp="#fyndling">Im geschlossenen Gefäß gegart; kein Dampfgaren im modernen Sinn. Belegt durch Deckel, Teigverschluss, Glut oder Asche.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Ruckenbrot" resp="#fyndling">Roggenbrot (Lexer „rucken-brôt“ = Roggenbrot; ebenso rum-0018).</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Ruckemteig" resp="#fyndling">Roggenteig, abgeleitet von „rucken“ = aus Roggen; dient zum Versiegeln.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Erdtendeckel" resp="#fyndling">Deckel aus Ton (irden); der Topf selbst ist „Hafen“.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Saltz, daß man zwey Eyer kan mit saltzen" resp="#fyndling">Salz für zwei Eier: eine qualitative Vergleichsmenge ohne Zahlenwert. Vorsicht wegen Salzzitronen und Brühe: sparsam anfangen.</note>
-        <note type="interpretive_choice" target="#rum-0039-orig" n="Zeit, Menge, Zuschnitt" resp="#fyndling">Der Text nennt keine Fleischmenge, Garzeit oder Temperatur. Praxis: ein Stück Lende im geschlossenen Topf, Garzeit nach Größe; „nicht versieden lassen“ heißt, nicht trocken oder zu weich werden zu lassen.</note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Lungenbratẽ" resp="#fyndling" subtype="lexical">Ochsenlende (Lendenbraten). FWB verweist „lungenbrate“ auf „lumbel“ (Lende); Meyers nennt die Muskeln unter der Lendenwirbelsäule, wie Filet. Im Buch löst rum-0041 ebenso auf, Lunge heißt bei Rumpolt „Lungenmuß“. Das Kapitel bestätigt Rind.<list type="alternatives"><item>Ochsenlunge<note type="rationale">Von Wörterbuch und Buchgebrauch nicht gestützt; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Fleisch im Anweisungstext" resp="#fyndling" subtype="contextual">Das Fleisch wird im Anweisungstext nicht genannt, nur im Titel. Gelesen wird: Die Lende kommt in den Topf, ob als Stück oder gehackt, sagt der Text nicht. „hack es durcheinander“ betrifft zuerst Zitrone, Zwiebel und Wacholder.<list type="alternatives"><item>Lende mit den anderen Zutaten mitgehackt<note type="rationale">Möglich (vgl. rum-0041), aber im Text nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="eingedempffet" resp="#fyndling" subtype="lexical">Im geschlossenen Gefäß gegart; kein Dampfgaren im modernen Sinn. Belegt durch Deckel, Teigverschluss, Glut oder Asche.</note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Ruckenbrot" resp="#fyndling" subtype="orthographic">Roggenbrot (Lexer „rucken-brôt“ = Roggenbrot; ebenso rum-0018).</note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Ruckemteig" resp="#fyndling" subtype="orthographic">Roggenteig, abgeleitet von „rucken“ = aus Roggen; dient zum Versiegeln.</note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Erdtendeckel" resp="#fyndling" subtype="lexical">Deckel aus Ton (irden); der Topf selbst ist „Hafen“.</note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Saltz, daß man zwey Eyer kan mit saltzen" resp="#fyndling" subtype="contextual">Salz für zwei Eier: eine qualitative Vergleichsmenge ohne Zahlenwert. Vorsicht wegen Salzzitronen und Brühe: sparsam anfangen.</note>
+        <note type="interpretive_choice" target="#rum-0039-orig" n="Zeit, Menge, Zuschnitt" resp="#fyndling" subtype="contextual">Der Text nennt keine Fleischmenge, Garzeit oder Temperatur. Praxis: ein Stück Lende im geschlossenen Topf, Garzeit nach Größe; „nicht versieden lassen“ heißt, nicht trocken oder zu weich werden zu lassen.<list type="alternatives"><item>lange Schmorzeit wie bei Rinderschmorbraten<note type="rationale">Bei der Lende würde sie das Fleisch zu trocken machen.</note></item></list></note>
       </div>
     </back>
   </text>

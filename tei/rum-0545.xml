@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -93,8 +98,8 @@ Eingedämpft. In Rumpolts Küchensprache heißt das gedünstet, in wenig Flüssi
 
 Praxis. Nachkochen lässt sich diese Nummer nicht, sie ist nur eine Überschrift. Wer einen Birkhahn heute zugedeckt in wenig Flüssigkeit gart, kocht eine eigene Fassung, keine Vorgabe Rumpolts. Aus Küchenerfahrung, nicht aus dem Druck: Birkhahn ist mager und trocknet leicht aus.</note>
         <note type="gloss" target="#rum-0545-orig" n="Eyngedaͤmpfften" resp="#fyndling">Eingedämpft heißt bei Rumpolt gedünstet, in wenig Flüssigkeit gar gemacht; das Bayerische Wörterbuch führt eindämpfen als „dünsten, garen“. Kein Dampfgaren im heutigen Sinn und kein Einkochen. Womit und wie lange, sagt diese Zeile nicht.</note>
-        <note type="interpretive_choice" target="#rum-0545-orig" n="Rezepttext fehlt" resp="#fyndling">Im Druck steht zu dieser Nummer nur die Überschrift; eine Anleitung gibt es nicht.</note>
-        <note type="interpretive_choice" target="#rum-0545-orig" n="Eyngedaͤmpfften" resp="#fyndling">Gedünstet, in wenig Flüssigkeit gar gemacht - so im Bayerischen Wörterbuch (eindämpfen = dünsten, garen) und in Rumpolts übrigen Rezepten mit diesem Wort.</note>
+        <note type="interpretive_choice" target="#rum-0545-orig" n="Rezepttext fehlt" resp="#fyndling" subtype="philological">Im Druck steht zu dieser Nummer nur die Überschrift; eine Anleitung gibt es nicht.<list type="alternatives"><item>Das Verfahren der folgenden Nummer (mit Zitronen oder Wacholderbeeren eingedämpft) gilt auch hier.<note type="rationale">Die Zeile verweist nicht darauf, und die folgende Nummer ist ein eigenes Gericht mit eigenen Zutaten; deshalb nichts daraus übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0545-orig" n="Eyngedaͤmpfften" resp="#fyndling" subtype="lexical">Gedünstet, in wenig Flüssigkeit gar gemacht - so im Bayerischen Wörterbuch (eindämpfen = dünsten, garen) und in Rumpolts übrigen Rezepten mit diesem Wort.<list type="alternatives"><item>Gedämpft im heutigen Sinn (über Wasserdampf)<note type="rationale">Passt nicht zu Rumpolts ausgeführten Rezepten, in denen das Fleisch in Brühe oder Wasser gart.</note></item><item>Eingekocht im Sinn von Haltbarmachen<note type="rationale">Nichts deutet auf Vorrat; das Wort steht hier als Garverfahren.</note></item></list></note>
       </div>
     </back>
   </text>

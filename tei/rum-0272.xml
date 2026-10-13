@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -121,13 +126,13 @@ Praxis. Bestelle die Spanferkel-Vorderkeule beim Metzger vor. Frisches Schweinef
         <note type="gloss" target="#rum-0272-orig" n="auffgetriebene Pasteten" resp="#fyndling">„Auffgetrieben“ heißt hochgezogen: eine Pastete, deren Teigwand von Hand hochgezogen wird und frei steht. Von einem Aufgehen des Teigs ist nicht die Rede.</note>
         <note type="gloss" target="#rum-0272-orig" n="eyngemacht" resp="#fyndling">Hier „im Teig eingeschlossen“, nicht konserviert. Das Fleisch liegt in der Teighülle der Pastete.</note>
         <note type="gloss" target="#rum-0272-orig" n="gelb oder weiß" resp="#fyndling">Rumpolt nennt kein Mittel, mit dem die Farbe erreicht wird, und sagt nicht, worauf sich „gelb oder weiß“ bezieht. Beides bleibt offen.</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="Ruckenteig" resp="#fyndling">Roggenteig: Rückenbrot ist Roggenbrot (Lexer „rucken-brôt“, MNWB „ruckenbrôt s. roggenbrôt“), und Rumpolt löst Rückenteig im selben Buch so auf (rum-0115, rum-0175).</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="Klosterbeer" resp="#fyndling">Stachelbeere: Das Grimmsche Wörterbuch führt „klosterbeere“ als rauhe Stachelbeere (grossularia, „grosselbeer, klosterbeer“), das Rheinische Wörterbuch kennt „Klosterbeeren“ ebenso als Stachelbeeren.</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="Agrastbeern" resp="#fyndling">Unreife Weintrauben, die saure Frucht, aus der man Verjus presst.</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="auffgetriebene Pasteten" resp="#fyndling">Eine von Hand hochgezogene, frei stehende Pastetenhülle mit Füllung und Deckel, wie in rum-0121 und rum-0201.</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="eyngemacht" resp="#fyndling">In der Teighülle eingeschlossen, weil unmittelbar vorher von der Pastete und ihrem Teig die Rede ist.</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="sonderlich von den Riben" resp="#fyndling">Klein geschnitten wird das Fleisch des Spanferkels, besonders das von den Rippen.</note>
-        <note type="interpretive_choice" target="#rum-0272-orig" n="gelb oder weiß" resp="#fyndling">Die Farbe der Pastetenfüllung; ein Farbmittel nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="Ruckenteig" resp="#fyndling" subtype="lexical">Roggenteig: Rückenbrot ist Roggenbrot (Lexer „rucken-brôt“, MNWB „ruckenbrôt s. roggenbrôt“), und Rumpolt löst Rückenteig im selben Buch so auf (rum-0115, rum-0175).<list type="alternatives"><item>fester Brotteig unbestimmter Art<note type="rationale">Für das Wort Rückenteig selbst fehlt ein direkter Wörterbuchbeleg; die Deutung hängt am Rückenbrot. Hefe- oder Blätterteig ist dagegen nirgends belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="Klosterbeer" resp="#fyndling" subtype="lexical">Stachelbeere: Das Grimmsche Wörterbuch führt „klosterbeere“ als rauhe Stachelbeere (grossularia, „grosselbeer, klosterbeer“), das Rheinische Wörterbuch kennt „Klosterbeeren“ ebenso als Stachelbeeren.<list type="alternatives"><item>Johannisbeere<note type="rationale">Für diese Gleichung findet sich kein Beleg; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="Agrastbeern" resp="#fyndling" subtype="lexical">Unreife Weintrauben, die saure Frucht, aus der man Verjus presst.<list type="alternatives"><item>Stachelbeeren<note type="rationale">Das Frühneuhochdeutsche Wörterbuch kennt „agrest“ auch für die Stachelbeere. Weil Rumpolt hier die Klosterbeer als eigene Möglichkeit daneben nennt, liegt die Trauben-Lesart näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="auffgetriebene Pasteten" resp="#fyndling" subtype="contextual">Eine von Hand hochgezogene, frei stehende Pastetenhülle mit Füllung und Deckel, wie in rum-0121 und rum-0201.<list type="alternatives"><item>eine hochgezogene Pastete in einer Form<note type="rationale">Eine Form nennt Rumpolt nicht; für den Nachbau ist sie aber eine brauchbare Stütze.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="eyngemacht" resp="#fyndling" subtype="contextual">In der Teighülle eingeschlossen, weil unmittelbar vorher von der Pastete und ihrem Teig die Rede ist.<list type="alternatives"><item>in Sauce oder Brühe angerichtet<note type="rationale">Das ist die übliche Bedeutung bei Fleisch; hier spricht die Verbindung mit „Teig“ dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="sonderlich von den Riben" resp="#fyndling" subtype="contextual">Klein geschnitten wird das Fleisch des Spanferkels, besonders das von den Rippen.<list type="alternatives"><item>nur Rippenfleisch<note type="rationale">„Sonderlich“ heißt besonders, nicht ausschließlich; ob auch die Vorderkeule klein geschnitten wird, lässt der Satz offen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0272-orig" n="gelb oder weiß" resp="#fyndling" subtype="contextual">Die Farbe der Pastetenfüllung; ein Farbmittel nennt der Text nicht.<list type="alternatives"><item>die Farbe der Beeren<note type="rationale">Grammatisch ist auch der Bezug auf die zuvor genannten Früchte möglich.</note></item></list></note>
       </div>
     </back>
   </text>

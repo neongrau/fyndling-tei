@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,8 +99,8 @@ Was „gefricusiert“ bei Rumpolt heißt. Das Wort erklärt er bei der Gans sel
 Praxis. Ein eigenes Entenverfahren gibt es nicht, deshalb nennen wir weder Schritte noch Mengen noch eine Garzeit. Wer das Gericht kochen möchte, kann sich nur an den ausgeführten Frikassees bei Gans, Wildgans und Hühnern orientieren und sollte das als eigene Übertragung verstehen. Frische Wildente braucht bis zum Kochen eine Kühlkette.</note>
         <note type="gloss" target="#rum-0633-orig" n="Gefricusierte" resp="#fyndling">Lehnwort aus dem Französischen (fricasser). Rumpolt erklärt es bei der Gans selbst („Also heißt man es gefricusierte Gänß“): Die gar gesottenen Teile werden in heißer Butter geröstet und danach in Brühe mit etwas Säure eingekocht. Für die Ente nennt er nur den Namen.</note>
         <note type="gloss" target="#rum-0633-orig" n="Endten" resp="#fyndling">Enten. Welche gemeint sind, sagt die Kapitelüberschrift „Von wilden Endten“.</note>
-        <note type="interpretive_choice" target="#rum-0633-orig" n="Gefricusierte" resp="#fyndling">In heißem Fett geröstet und danach in kurzer Brühe eingekocht. So erklärt Rumpolt das Wort bei der Gans („Also heißt man es gefricusierte Gänß“), und so verfährt er auch bei Wildgans und Hühnern. Für die Ente ist nur der Name überliefert, das Verfahren wird ihr nicht zugeschrieben.</note>
-        <note type="interpretive_choice" target="#rum-0633-orig" n="Endten" resp="#fyndling">Wildenten. Die Überschrift sagt nur „Endten“, sie steht aber im Kapitel „Von wilden Endten“.</note>
+        <note type="interpretive_choice" target="#rum-0633-orig" n="Gefricusierte" resp="#fyndling" subtype="lexical">In heißem Fett geröstet und danach in kurzer Brühe eingekocht. So erklärt Rumpolt das Wort bei der Gans („Also heißt man es gefricusierte Gänß“), und so verfährt er auch bei Wildgans und Hühnern. Für die Ente ist nur der Name überliefert, das Verfahren wird ihr nicht zugeschrieben.<list type="alternatives"><item>Frikassee im heutigen Sinn (Fleisch in heller, gebundener Sauce)<note type="rationale">In den ausgeführten Rezepten bei Gans, Wildgans und Hühnern gibt es weder Mehl noch Sahne noch Eigelb; die Brühe wird nur eingekocht oder aufgekocht, nicht gebunden.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0633-orig" n="Endten" resp="#fyndling" subtype="contextual">Wildenten. Die Überschrift sagt nur „Endten“, sie steht aber im Kapitel „Von wilden Endten“.<list type="alternatives"><item>Hausenten<note type="rationale">Das Wort allein ließe es zu; der Kapitelkopf spricht dagegen.</note></item></list></note>
       </div>
     </back>
   </text>

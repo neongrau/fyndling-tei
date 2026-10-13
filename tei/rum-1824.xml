@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -108,10 +113,10 @@ Praxis. Mengen nennt Rumpolt keine. Die fertige Füllung in einen Tortenboden ge
         <note type="gloss" target="#rum-1824-orig" n="Turten" resp="#fyndling">Torte (Turte): bei Rumpolt ein gefülltes Teiggebäck, sein Tortenkapitel enthält süße wie herzhafte Füllungen; diese hier ist herzhaft. Teig und Backzeit nennt das Rezept nicht.</note>
         <note type="gloss" target="#rum-1824-orig" n="mach sie mit Butter an" resp="#fyndling">„Anmachen“ heißt hier mit Butter vermengen, anrühren. Ob die Butter warm oder kalt untergemengt wird, sagt der Text nicht.</note>
         <note type="gloss" target="#rum-1824-orig" n="versaltz es nicht" resp="#fyndling">„Versalzen“ meint zu stark salzen. Das ist eine Warnung vor zu viel Salz, kein Verbot, überhaupt zu salzen.</note>
-        <note type="interpretive_choice" target="#rum-1824-orig" n="Ruben" resp="#fyndling">Speiserüben (Weiße Rüben, Mairüben): Rumpolt setzt bei Möhren „gelbe“ und bei Roter Bete „rote“ vor das Wort; hier fehlt jeder Zusatz.</note>
-        <note type="interpretive_choice" target="#rum-1824-orig" n="die gebraten seyn" resp="#fyndling">Die Rüben sind schon gegart, das Braten ist Voraussetzung, kein Rezeptschritt. Wie gebraten wird, bleibt offen: am Spieß, in der Glut oder im Backofen. Rumpolts Nr. 191 („Brat Ruben/ vnnd schel sie“) zeigt Braten in der Schale mit anschließendem Schälen.</note>
-        <note type="interpretive_choice" target="#rum-1824-orig" n="mach sie mit Butter an" resp="#fyndling">Mit Butter vermengen; der Text legt nicht fest, ob kalt mit weicher Butter oder warm.</note>
-        <note type="interpretive_choice" target="#rum-1824-orig" n="versaltz es nicht" resp="#fyndling">Nicht zu stark salzen; leichtes Salzen ist erlaubt.</note>
+        <note type="interpretive_choice" target="#rum-1824-orig" n="Ruben" resp="#fyndling" subtype="lexical">Speiserüben (Weiße Rüben, Mairüben): Rumpolt setzt bei Möhren „gelbe“ und bei Roter Bete „rote“ vor das Wort; hier fehlt jeder Zusatz.<list type="alternatives"><item>Möhren (gelbe Rüben)<note type="rationale">Würde zur Süße gebratener Wurzeln passen, aber Rumpolt schreibt Möhren sonst ausdrücklich als „gelbe Ruben“.</note></item><item>Rote Bete<note type="rationale">Bei Rumpolt immer als „rote Ruben“ benannt; ohne Zusatz nicht gemeint.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1824-orig" n="die gebraten seyn" resp="#fyndling" subtype="contextual">Die Rüben sind schon gegart, das Braten ist Voraussetzung, kein Rezeptschritt. Wie gebraten wird, bleibt offen: am Spieß, in der Glut oder im Backofen. Rumpolts Nr. 191 („Brat Ruben/ vnnd schel sie“) zeigt Braten in der Schale mit anschließendem Schälen.<list type="alternatives"><item>Moderne Praxis: ganze Rüben mit Schale bei etwa 200 Grad im Ofen weich garen (rund 45 bis 60 Minuten), dann schälen<note type="rationale">Entspricht dem Braten in der Schale nach Nr. 191 und lässt die Rüben trockener als Kochen, was einer Tortenfüllung zugutekommt; Zeit und Temperatur stehen nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1824-orig" n="mach sie mit Butter an" resp="#fyndling" subtype="contextual">Mit Butter vermengen; der Text legt nicht fest, ob kalt mit weicher Butter oder warm.<list type="alternatives"><item>Gehackte Rüben in zerlassener Butter kurz in der Pfanne durchschwenken<note type="rationale">Moderner Vorschlag, weil warme Butter sich gleichmäßiger verteilt; der Text sagt nichts von Hitze.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1824-orig" n="versaltz es nicht" resp="#fyndling" subtype="lexical">Nicht zu stark salzen; leichtes Salzen ist erlaubt.<list type="alternatives"><item>Gar nicht salzen<note type="rationale">„Versalzen“ meint ein Zuviel an Salz, nicht Salz überhaupt; ein Salzverbot gibt der Wortlaut nicht her.</note></item></list></note>
       </div>
     </back>
   </text>

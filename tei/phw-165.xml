@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -133,7 +138,7 @@ Praxis. Krebse in Wasser abkochen, dann Darm und Kiemen entfernen. Statt im Mör
         <note type="gloss" target="#phw-165-orig" n="mayrser" resp="#fyndling">Ein großer Fleischmörser, wie er im Mittelalter zum Zerkleinern von Fleisch und Fisch verwendet wurde.</note>
         <note type="gloss" target="#phw-165-orig" n="durchschlag oder syblin" resp="#fyndling">Ein Sieb oder Seihtuch, um die feine Konsistenz des Mus zu gewährleisten.</note>
         <note type="gloss" target="#phw-165-orig" n="rerla" resp="#fyndling">Frühneuhochdeutsche Bezeichnung für Zimtstangen, die vor Gebrauch gestoßen wurden.</note>
-        <note type="interpretive_choice" target="#phw-165-orig" n="dreybs" resp="#fyndling">treibe es (drücke es)</note>
+        <note type="interpretive_choice" target="#phw-165-orig" n="dreybs" resp="#fyndling" subtype="lexical">treibe es (drücke es)</note>
       </div>
     </back>
   </text>

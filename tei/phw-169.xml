@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -126,8 +131,8 @@ Praxis. Petersilienwurzeln und Zwiebeln zwei Stunden in reichlich Wasser weich k
         <note type="gloss" target="#phw-169-orig" n="zwyfel" resp="#fyndling">Frühneuhochdeutsche Schreibweise für Zwiebeln.</note>
         <note type="gloss" target="#phw-169-orig" n="betterling wurtzen" resp="#fyndling">Petersilienwurzeln - so löst Hayers eigenes Wörterverzeichnis zu dieser Handschrift den Begriff auf, ebenso das wortgleiche Rezept im Kochbuch der Maria Stenglerin (mst-053).</note>
         <note type="gloss" target="#phw-169-orig" n="brie" resp="#fyndling">Brühe beziehungsweise fertige Würzsauce - im Buch mehrfach belegt.</note>
-        <note type="interpretive_choice" target="#phw-169-orig" n="seycherlin" resp="#fyndling">‚Seycherlin‘ ist das Diminutiv von ‚Seich‘, was ‚Sieb‘ oder ‚Seihtuch‘ bedeutet. Wir übersetzen es als ‚kleines Sieb‘.</note>
-        <note type="interpretive_choice" target="#phw-169-orig" n="ein ein" resp="#fyndling">Im Transkript steht "ain hecht ein ein machenn" mit einer Wortdopplung ‚ein ein‘. Wir lesen dies als einfaches ‚ein‘ (zubereiten) und werten die Dopplung als Verschreiber des Schreibers.</note>
+        <note type="interpretive_choice" target="#phw-169-orig" n="seycherlin" resp="#fyndling" subtype="lexical">‚Seycherlin‘ ist das Diminutiv von ‚Seich‘, was ‚Sieb‘ oder ‚Seihtuch‘ bedeutet. Wir übersetzen es als ‚kleines Sieb‘.<list type="alternatives"><item>Es könnte sich um ein spezielles Seihtuch oder einen Filterbeutel handeln.<note type="rationale">Die Funktion ist dieselbe, aber ‚Sieb‘ ist die allgemeinere und direktere Übersetzung des Diminutivs.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-169-orig" n="ein ein" resp="#fyndling" subtype="philological">Im Transkript steht "ain hecht ein ein machenn" mit einer Wortdopplung ‚ein ein‘. Wir lesen dies als einfaches ‚ein‘ (zubereiten) und werten die Dopplung als Verschreiber des Schreibers.<list type="alternatives"><item>Die Dopplung könnte im Original tatsächlich so stehen und eine noch nicht identifizierte Bedeutung tragen.<note type="rationale">Ohne Einsicht in die Handschrift selbst lässt sich ein bewusster Doppelgebrauch nicht endgültig ausschließen; die Lesart als Verschreiber ist aber die naheliegendere. Am Faksimile (Ralf, 2026-10-08): zwei „ein“ hintereinander mit Zeilenwechsel dazwischen; das „°“ am Zeilenende gibt es nicht und ist entfernt.</note></item></list></note>
       </div>
     </back>
   </text>

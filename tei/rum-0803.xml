@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -107,10 +112,10 @@ Praxis. Nachkochen im eigentlichen Sinn lässt sich aus dieser Zeile nichts. Wer
         <note type="gloss" target="#rum-0803-orig" n="Limonien" resp="#fyndling">Zitronen. Gesalzene Zitronen, die Rumpolt an anderen Stellen ausdrücklich so nennt, sind hier nicht gemeint.</note>
         <note type="gloss" target="#rum-0803-orig" n="Agrastbeer" resp="#fyndling">Unreife Weintrauben, in älterem Deutsch zum Teil auch Stachelbeeren. Den sauren Saft unreifer Trauben kennt man heute als Verjus.</note>
         <note type="gloss" target="#rum-0803-orig" n="Pasteten" resp="#fyndling">Eine Teighülle mit Füllung, im Ofen gebacken. Teig, Füllung und Backzeit beschreibt Rumpolt unter dieser Nummer nicht.</note>
-        <note type="interpretive_choice" target="#rum-0803-orig" n="eyngemacht" resp="#fyndling">In einer Sauce gegart. Grund: Das ist Rumpolts übliche Bedeutung bei Geflügel, und „fein säuerlich“ sowie „oder sonsten eyngemacht“ beschreiben eher eine gesäuerte Sauce als einen eigenen Zubereitungsweg neben der Pastete.</note>
-        <note type="interpretive_choice" target="#rum-0803-orig" n="Agrastbeer" resp="#fyndling">Unreife, saure Weintrauben; Rumpolt verbindet Agrast an anderer Stelle selbst mit unreifen Trauben.</note>
-        <note type="interpretive_choice" target="#rum-0803-orig" n="Limonien: Verwendungsform" resp="#fyndling">Frische Zitronen; ob Saft, Scheiben oder Schale, lässt der Satz offen.</note>
-        <note type="interpretive_choice" target="#rum-0803-orig" n="Teig der Pastete" resp="#fyndling">Eine Pastetenhülle, deren Teig Rumpolt hier nicht nennt. Ob die Wachteln roh oder vorgegart hineinkommen, bleibt offen.</note>
+        <note type="interpretive_choice" target="#rum-0803-orig" n="eyngemacht" resp="#fyndling" subtype="lexical">In einer Sauce gegart. Grund: Das ist Rumpolts übliche Bedeutung bei Geflügel, und „fein säuerlich“ sowie „oder sonsten eyngemacht“ beschreiben eher eine gesäuerte Sauce als einen eigenen Zubereitungsweg neben der Pastete.<list type="alternatives"><item>Die Wachteln kommen mit den Zitronen in die Pastete und werden darin gebacken.<note type="rationale">So liest sich dieselbe Kurzformel „in Pasteten … mit Limonien eyngemacht“ beim Haselhuhn, wo keine Sauce genannt ist. Hier spricht „oder sonsten eyngemacht“ dagegen, weil es das Wort als allgemeines Verfahren gebraucht.</note></item><item>Die Wachteln in einer Brühe mit Zitronen oder Agrast angerichtet, ohne Pastete.<note type="rationale">Möglich, wenn man den Satz als Liste getrennter Wege liest (Pastete, Zitrone, Agrast, sonst). Der Satz trennt die Glieder nicht eindeutig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0803-orig" n="Agrastbeer" resp="#fyndling" subtype="lexical">Unreife, saure Weintrauben; Rumpolt verbindet Agrast an anderer Stelle selbst mit unreifen Trauben.<list type="alternatives"><item>Stachelbeeren<note type="rationale">Das Frühneuhochdeutsche Wörterbuch belegt „agrest“ auch für die Stachelbeere. Für die Küche ändert das wenig: Beide bringen dieselbe frische Säure.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0803-orig" n="Limonien: Verwendungsform" resp="#fyndling" subtype="contextual">Frische Zitronen; ob Saft, Scheiben oder Schale, lässt der Satz offen.<list type="alternatives"><item>Gesalzene Zitronen, die Rumpolt bei anderen Pasteten nennt.<note type="rationale">Dort schreibt er ausdrücklich „gesaltzen Limonien“; hier fehlt das Wort, deshalb nicht als Hauptlesart.</note></item><item>Praxis: Zitronensaft und Scheiben in die Sauce geben.<note type="rationale">Naheliegende moderne Ausführung der Sauce-Lesart; durch den Text weder belegt noch ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0803-orig" n="Teig der Pastete" resp="#fyndling" subtype="contextual">Eine Pastetenhülle, deren Teig Rumpolt hier nicht nennt. Ob die Wachteln roh oder vorgegart hineinkommen, bleibt offen.<list type="alternatives"><item>Praxis: ein fester Pastetenteig, kein Blätterteig.<note type="rationale">Hält beim Backen die Form; eine moderne Wahl, keine Vorgabe des Textes.</note></item></list></note>
       </div>
     </back>
   </text>

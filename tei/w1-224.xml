@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,8 +114,8 @@ Praxis. Zwei Eier zu einem hauchdünnen Fladen backen, wie einen sehr dünnen Ei
         <note type="gloss" target="#w1-224-orig" n="walczen" resp="#fyndling">Eine ‚Walze‘ ist ein Nudelholz oder Rollholz, das zum Ausrollen von Teig verwendet wird.</note>
         <note type="gloss" target="#w1-224-orig" n="dünn wie ein Halm" resp="#fyndling">Diese Metapher beschreibt die gewünschte, extrem dünne Konsistenz des ausgerollten Teigs, vergleichbar mit der Dicke eines Grashalms.</note>
         <note type="gloss" target="#w1-224-orig" n="doberis" resp="#fyndling">Ein eingekochtes Apfel-Honig-Mus, kein Eigelb: Im selben Buch erklärt ein eigenes Rezept das Wort weiter hinten - saure Äpfel nach Martini, dünn geschnitten, in Honigtrank braunschwarz eingesotten, mit dem Satz „Das Condiment haist doberis“. Zwei weitere Handschriften bestätigen dieselbe Bedeutung unabhängig, eine davon unter der Namensvariante dewericz.</note>
-        <note type="interpretive_choice" target="#w1-224-orig" n="zeuch es durich ein ayr taig" resp="#fyndling">ziehe es durch einen Eierteig</note>
-        <note type="interpretive_choice" target="#w1-224-orig" n="prat als ein kuchen" resp="#fyndling">breit wie ein Kuchen - „prat“ als Schreibvariante von „prait“ (breit). Die Parallelhandschriften b4-222 („praitt als ein Chuech“) und m5919-084 („prait als ain kuch“) lesen an derselben Stelle eindeutig „breit“, und der Satz ist parallel gebaut: dünn, „in einer dikch als ain halmm“ (dick wie ein Halm) und „prat als ein kuchen“ (breit wie ein Kuchen). Ein abschließender Garschritt wird damit nicht genannt.</note>
+        <note type="interpretive_choice" target="#w1-224-orig" n="zeuch es durich ein ayr taig" resp="#fyndling" subtype="contextual">ziehe es durch einen Eierteig<list type="alternatives"><item>ziehe es mittels eines Eierteigs<note type="rationale">‚Durich‘ kann auch ‚mittels‘ bedeuten, was implizieren könnte, dass der Eierteig als Hilfsmittel zum Ausrollen des Fladens dient, ohne dass der Fladen direkt in den Eierteig eingearbeitet wird. Die Lesart der Integration in den Teig ist jedoch im Kontext des Ausrollens zu extremer Dünne plausibler.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-224-orig" n="prat als ein kuchen" resp="#fyndling" subtype="philological">breit wie ein Kuchen - „prat“ als Schreibvariante von „prait“ (breit). Die Parallelhandschriften b4-222 („praitt als ein Chuech“) und m5919-084 („prait als ain kuch“) lesen an derselben Stelle eindeutig „breit“, und der Satz ist parallel gebaut: dünn, „in einer dikch als ain halmm“ (dick wie ein Halm) und „prat als ein kuchen“ (breit wie ein Kuchen). Ein abschließender Garschritt wird damit nicht genannt.<list type="alternatives"><item>brate es wie einen Kuchen<note type="rationale">Wörtlich als bairischer Imperativ von „braten“ lesbar, und der Text nennt sonst keinen Garschritt. Dagegen stehen zwei Parallelzeugen mit „prait“ und der Parallelbau Dicke/Breite.</note></item></list></note>
       </div>
     </back>
   </text>

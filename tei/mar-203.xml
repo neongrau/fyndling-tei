@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -105,8 +110,8 @@ Se la orata è grossa falla allessare et staionare molto bene. Et s'ella è picc
         <note type="gloss" target="#mar-203-orig" n="frigila" resp="#fyndling">frittiere sie</note>
         <note type="gloss" target="#mar-203-orig" n="arrostila" resp="#fyndling">brate oder röste sie</note>
         <note type="gloss" target="#mar-203-orig" n="al modo ordinato" resp="#fyndling">auf die übliche/vorgeschriebene Weise</note>
-        <note type="interpretive_choice" target="#mar-203-orig" n="staionare" resp="#fyndling">Würzen, salzen. Die Anweisung bezieht sich auf das geschmackliche Verfeinern des Fisches vor oder während des Garens.</note>
-        <note type="interpretive_choice" target="#mar-203-orig" n="al modo ordinato" resp="#fyndling">Auf die übliche Weise. Dies impliziert, dass die grundlegenden Kochtechniken des Frittierens oder Bratens dem Koch bekannt sind.</note>
+        <note type="interpretive_choice" target="#mar-203-orig" n="staionare" resp="#fyndling">Würzen, salzen. Die Anweisung bezieht sich auf das geschmackliche Verfeinern des Fisches vor oder während des Garens.<list type="alternatives"><item>Pökeln, konservieren.<note type="rationale">Das Verb ‚stagionare‘ kann auch das Reifen oder Konservieren von Lebensmitteln bedeuten. Im Kontext eines frisch zuzubereitenden Fisches ist jedoch das Würzen die primäre Absicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-203-orig" n="al modo ordinato" resp="#fyndling">Auf die übliche Weise. Dies impliziert, dass die grundlegenden Kochtechniken des Frittierens oder Bratens dem Koch bekannt sind.<list type="alternatives"><item>Nach den Regeln der Kochkunst.<note type="rationale">Die Formulierung kann auch eine formellere Anspielung auf etablierte kulinarische Praktiken sein, die der Koch beherrschen sollte.</note></item></list></note>
       </div>
     </back>
   </text>

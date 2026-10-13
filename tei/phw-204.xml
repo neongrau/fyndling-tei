@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,13 +134,13 @@ Praxis. Kleine Schollenfilets oder ganze kleine Plattfische mehrfach in heißem 
         <note type="gloss" target="#phw-204-orig" n="gliettlin" resp="#fyndling">Ein Diminutiv, vermutlich von ‚Glättlein‘, hier im Sinn eines kleinen Gefäßes. Für das Wort gibt es im zeitgenössischen Wörterverzeichnis zu diesem Buch keinen Eintrag; die Deutung bleibt offen.</note>
         <note type="gloss" target="#phw-204-orig" n="bregla" resp="#fyndling">Die Lesart ‚bräunen‘ wurde gewählt, da dies einen sinnvollen Kochschritt darstellt; das Wörterverzeichnis zu diesem Buch übersetzt dasselbe Verb an anderer Stelle mit ‚im Schmalz backen, schwach rösten‘.</note>
         <note type="gloss" target="#phw-204-orig" n="tychst dan mit der brye an" resp="#fyndling">‚Tychst‘ könnte von ‚decken‘ oder ‚tünchen‘ stammen. In diesem Kontext bedeutet die Phrase ‚dann bestreiche es mit der Brühe‘, um dem Gericht Glanz und Geschmack zu verleihen.</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="daus" resp="#fyndling">gib sie dann</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="flech [flesch] brye" resp="#fyndling">Fleischbrühe</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="gylbss" resp="#fyndling">färbe es gelb</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="gerenn" resp="#fyndling">wenn du magst (optionaler Schritt)</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="gliettlin" resp="#fyndling">kleines Gefäß/Förmchen</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="bregla" resp="#fyndling">bräunen</note>
-        <note type="interpretive_choice" target="#phw-204-orig" n="tychst dan mit der brye an" resp="#fyndling">dann bestreiche es mit der Brühe</note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="daus" resp="#fyndling" subtype="lexical">gib sie dann<list type="alternatives"><item>daraufhin<note type="rationale">‚Daus‘ ist eine frühneuhochdeutsche Form von ‚darauf‘ oder ‚daraus‘ und kann hier als zeitliche oder räumliche Angabe verstanden werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="flech [flesch] brye" resp="#fyndling" subtype="philological">Fleischbrühe<list type="alternatives"><item>Unbekannte Brühe<note type="rationale">Das Originalwort ‚flech‘ ist ein Hapax Legomenon. Die Emendation des Editors zu ‚flesch‘ (Fleisch) ist plausibel, aber nicht gesichert - und für ein Fischgericht semantisch auffällig.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="gylbss" resp="#fyndling" subtype="lexical">färbe es gelb<list type="alternatives"><item>gilb es<note type="rationale">‚Gilben‘ ist ein altes Verb für ‚gelb färben‘. Die Schreibweise ‚gylbss‘ ist eine dialektale Variante.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="gerenn" resp="#fyndling" subtype="lexical">wenn du magst (optionaler Schritt)<list type="alternatives"><item>gerinnen (fest werden)<note type="rationale">So wird dieselbe Wortform an anderer Stelle im Buch bei einem Eier-Tortenboden gelesen, wo Gerinnen strukturell Sinn ergibt. Hier fehlt jedoch ein Gerinnungsvorgang, dem die Farbe ursächlich zuarbeiten könnte.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="gliettlin" resp="#fyndling" subtype="lexical">kleines Gefäß/Förmchen<list type="alternatives"><item>Glättlein (kleine glatte Form)<note type="rationale">Die Endung '-lin' ist ein Diminutiv. Im zeitgenössischen Wörterverzeichnis zu diesem Buch findet sich kein Eintrag zu diesem Wort; die Deutung als kleines Gefäß bleibt eine Annahme aus dem Kontext.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="bregla" resp="#fyndling" subtype="lexical">bräunen<list type="alternatives"><item>Bröcklein (kleine Stücke)<note type="rationale">Die Lesart ‚Bröcklein‘ würde bedeuten, dass kleine Stücke geformt werden, was im Kontext von ‚fein‘ und dem folgenden ‚bestreichen‘ weniger plausibel ist als ein Bräunungsvorgang.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-204-orig" n="tychst dan mit der brye an" resp="#fyndling" subtype="lexical">dann bestreiche es mit der Brühe<list type="alternatives"><item>dann decke es mit der Brühe zu<note type="rationale">‚Tychst‘ könnte von ‚decken‘ stammen. ‚Anstreichen‘ oder ‚bestreichen‘ passt jedoch besser zum Abschluss eines Gerichts mit Brühe.</note></item></list></note>
       </div>
     </back>
   </text>

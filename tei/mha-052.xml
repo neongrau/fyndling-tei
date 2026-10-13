@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,9 +121,9 @@ Hühner braten und in zwölf Stücke teilen. Parallel Eier, Brühe, Schmalz, Wei
         <note type="gloss" target="#mha-052-orig" n="vierdung" resp="#fyndling">Historisches Viertel-Maß, ungefähr ein Viertelpfund. In manchen Quellen auch eine feste Gewichtseinheit von etwa 60 g, hier als Gewürzmenge grob mit 125 g angesetzt.</note>
         <note type="gloss" target="#mha-052-orig" n="weinper" resp="#fyndling">Wörtlich 'Weinbeeren' - ob getrocknete Rosinen oder frische Trauben gemeint sind, bleibt hier offen; der Text nennt keinen Einweich- oder Quellschritt, wie er bei Rosinen sonst oft vorkommt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
         <note type="gloss" target="#mha-052-orig" n="prue" resp="#fyndling">Brühe, hier als Grundlage der Eier-Schmalz-Tunke.</note>
-        <note type="interpretive_choice" target="#mha-052-orig" n="Reinischen honern" resp="#fyndling">Als 'Rheinische Hühner' übersetzt, eine regionale Herkunftsbezeichnung für hochwertiges Geflügel.</note>
-        <note type="interpretive_choice" target="#mha-052-orig" n="vierdung" resp="#fyndling">Als Viertelpfund-Maß gelesen und mit rund 125 g Gewürz umgerechnet.</note>
-        <note type="interpretive_choice" target="#mha-052-orig" n="weinper" resp="#fyndling">Als 'Weinbeeren' übersetzt, ohne Festlegung zwischen frischen Weintrauben und getrockneten Rosinen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
+        <note type="interpretive_choice" target="#mha-052-orig" n="Reinischen honern" resp="#fyndling">Als 'Rheinische Hühner' übersetzt, eine regionale Herkunftsbezeichnung für hochwertiges Geflügel.<list type="alternatives"><item>Könnte auch mit 'rein' (sauber, von guter Qualität) statt der Ortsbezeichnung 'Rhein' zusammenhängen.<note type="rationale">Die Schreibweise 'Reinisch' lässt sich lautlich auch an das Adjektiv 'rein' anlehnen, doch die typische Ortsadjektiv-Bildung auf -isch spricht stärker für die Rhein-Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-052-orig" n="vierdung" resp="#fyndling">Als Viertelpfund-Maß gelesen und mit rund 125 g Gewürz umgerechnet.<list type="alternatives"><item>Könnte auch die kleinere historische Gewichtseinheit 'Vierdung' (ca. 60 g, ein Viertel einer Mark) meinen.<note type="rationale">In manchen mittelalterlichen Maßsystemen war 'Vierdung' eine feste, kleinere Gewichtseinheit unabhängig vom Pfund - die genaue Bezugsgröße ist im Text nicht eindeutig.</note></item></list></note>
+        <note type="interpretive_choice" target="#mha-052-orig" n="weinper" resp="#fyndling">Als 'Weinbeeren' übersetzt, ohne Festlegung zwischen frischen Weintrauben und getrockneten Rosinen.<list type="alternatives"><item>Getrocknete Rosinen, der häufigeren Lesart im Korpus folgend.<note type="rationale">In vielen Rezepten des Korpus meint 'weinper' getrocknete Weinbeeren; ein Einweich- oder Quellschritt, wie er bei Rosinen sonst oft vorkommt, fehlt hier allerdings.</note></item><item>Frische Weintrauben.<note type="rationale">Die rezeptspezifische Sachglosse zu diesem Manuskript liest 'weinper' als 'Traube', nicht als 'Rosine'; da kein Einweichschritt im Text steht, ist auch frische Ware plausibel.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -110,9 +115,9 @@ Praxis. Knoblauch klein stoßen, den Braten damit und mit Salz einreiben, auf ei
         <note type="gloss" target="#rum-0353-orig" n="schier" resp="#fyndling">Fast, beinahe: kurz bevor du anrichtest.</note>
         <note type="gloss" target="#rum-0353-orig" n="geschwindt hinweg" resp="#fyndling">Zügig fertig: Der Braten wird am Feuer schnell fertiggebraten.</note>
         <note type="gloss" target="#rum-0353-orig" n="besonder" resp="#fyndling">Getrennt, für sich: in einer eigenen Schüssel.</note>
-        <note type="interpretive_choice" target="#rum-0353-orig" n="Räuchern: Art und Dauer" resp="#fyndling">Der Braten hängt am Spieß im Rauch, bis kurz vor dem Anrichten; Dauer und Temperatur des Rauchs nennt Rumpolt nicht. Offen bleibt damit auch, ob das Fleisch im Rauch schon gart.</note>
-        <note type="interpretive_choice" target="#rum-0353-orig" n="auff die Bruͤh / mit einer sauren braunen Bruͤh" resp="#fyndling">Beide Stellen meinen dieselbe saure braune Brühe: Rumpolt lässt nur offen, ob der Braten auf der Brühe liegt oder getrennt in einer eigenen Schüssel daneben steht. Der Schlusssatz spricht ebenfalls von nur einer Brühe.</note>
-        <note type="interpretive_choice" target="#rum-0353-orig" n="sauren braunen Bruͤh: Zusammensetzung" resp="#fyndling">Nur der Name ist belegt; Rumpolt beschreibt die Brühe hier nicht, deshalb wird keine Zusammensetzung ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0353-orig" n="Räuchern: Art und Dauer" resp="#fyndling" subtype="contextual">Der Braten hängt am Spieß im Rauch, bis kurz vor dem Anrichten; Dauer und Temperatur des Rauchs nennt Rumpolt nicht. Offen bleibt damit auch, ob das Fleisch im Rauch schon gart.<list type="alternatives"><item>Kurz kalträuchern und danach am Spieß durchgaren<note type="rationale">Heutige Annahme zum Nachkochen, keine Angabe des Textes.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0353-orig" n="auff die Bruͤh / mit einer sauren braunen Bruͤh" resp="#fyndling" subtype="contextual">Beide Stellen meinen dieselbe saure braune Brühe: Rumpolt lässt nur offen, ob der Braten auf der Brühe liegt oder getrennt in einer eigenen Schüssel daneben steht. Der Schlusssatz spricht ebenfalls von nur einer Brühe.<list type="alternatives"><item>„die Bruͤh“ ist eine andere, nicht genannte Brühe<note type="rationale">Grammatisch möglich, aber der Text nennt keine zweite Brühe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0353-orig" n="sauren braunen Bruͤh: Zusammensetzung" resp="#fyndling" subtype="contextual">Nur der Name ist belegt; Rumpolt beschreibt die Brühe hier nicht, deshalb wird keine Zusammensetzung ergänzt.<list type="alternatives"><item>Braune Brühe von einem Braten mit Essig und Pfeffer<note type="rationale">So macht Rumpolt die Brühe zur gespickten Kalbskeule (rum-0131). Die Übertragung auf dieses Rezept ist eine Lesart, kein Beleg.</note></item></list></note>
       </div>
     </back>
   </text>

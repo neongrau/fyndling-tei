@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -103,9 +108,9 @@ Praxis. Knödelmasse aus roher Putenbrust wie in Nr. 7, Knödel formen, in eine 
         <note type="gloss" target="#rum-0530-orig" n="Jndianische Henn (Kapitelüberschrift)" resp="#fyndling">Die „Indianische Henne“ ist die Pute, das nach der Entdeckung Amerikas nach Europa gelangte und im 16. Jahrhundert als exotisches Geflügel galt. Das Wort steht nicht im Satz selbst, sondern in der Überschrift des Kapitels „Von einer Jndianischen Henn seind zwantzigerley Speiß vnd Trachten zu machen“.</note>
         <note type="gloss" target="#rum-0530-orig" n="eynmachen" resp="#fyndling">„In Pasteten einmachen“: die Knödel in die Pastete setzen und darin fertig machen. Rumpolt gebraucht die Wendung gleichlautend bei der Gams und beim Damhirsch.</note>
         <note type="gloss" target="#rum-0530-orig" n="Knoͤdel" resp="#fyndling">Gemeint sind dem Kapitel nach die Knödel aus der rohen halben Brust, die Nr. 7 nennt, gelb oder weiß.</note>
-        <note type="interpretive_choice" target="#rum-0530-orig" n="eynmachen" resp="#fyndling">„einmachen“ beibehalten: die Knödel in die Pastete setzen und darin fertig machen. So steht das Wort im ganzen Kapitel und in der gleichlautenden Wendung bei der Gams (rum-0464).</note>
-        <note type="interpretive_choice" target="#rum-0530-orig" n="Knoͤdel" resp="#fyndling">Die Knödel aus der rohen halben Putenbrust aus Nr. 7 desselben Kapitels (rum-0527); das „auch“ und die Kapitelzugehörigkeit stellen den Bezug her.</note>
-        <note type="interpretive_choice" target="#rum-0530-orig" n="Knödel roh oder vorgegart" resp="#fyndling">Der Text lässt offen, ob die Knödel roh oder vorgegart in die Pastete kommen; möglich ist, sie vorher in Brühe zu garen und dann einzusetzen.</note>
+        <note type="interpretive_choice" target="#rum-0530-orig" n="eynmachen" resp="#fyndling" subtype="lexical">„einmachen“ beibehalten: die Knödel in die Pastete setzen und darin fertig machen. So steht das Wort im ganzen Kapitel und in der gleichlautenden Wendung bei der Gams (rum-0464).<list type="alternatives"><item>„einbacken“<note type="rationale">Kontextlesart: In der ausgeschriebenen Kalbsknödel-Pastete (rum-0137) werden die Knödel in der Pastete gebacken. Der Satz hier nennt das Backen aber nicht.</note></item><item>„zubereiten“<note type="rationale">Nicht falsch, aber zu blass; verliert Rumpolts Fachwort und die Verbindung zu den Nachbarrezepten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0530-orig" n="Knoͤdel" resp="#fyndling" subtype="contextual">Die Knödel aus der rohen halben Putenbrust aus Nr. 7 desselben Kapitels (rum-0527); das „auch“ und die Kapitelzugehörigkeit stellen den Bezug her.<list type="alternatives"><item>Beliebige Knödel, auch Mehlklöße<note type="rationale">„Knödel“ kann allgemein einen Kloß meinen; im Kapitel über die Indianische Henne spricht der Zusammenhang aber für Putenfleisch.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0530-orig" n="Knödel roh oder vorgegart" resp="#fyndling" subtype="contextual">Der Text lässt offen, ob die Knödel roh oder vorgegart in die Pastete kommen; möglich ist, sie vorher in Brühe zu garen und dann einzusetzen.<list type="alternatives"><item>Roh in die Pastete setzen und mit ihr durchbacken<note type="rationale">So in Rumpolts ausgeschriebener Kalbsknödel-Pastete (rum-0137); für das Nachkochen der naheliegende Weg.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,13 +120,13 @@ Praxis. Spieß über Glut, ein Topf, ein Sieb. Salz nennt der Text nicht; ist di
         <note type="gloss" target="#rum-0027-orig" n="mach sie ... ab" resp="#fyndling">‚abmachen‘ = eine Speise abschließend zubereiten, fertigstellen. Gemeint ist, die Zwiebeln mit Pfeffer und fetter Brühe fertig anzumachen, nicht bloß abzuschmecken.</note>
         <note type="gloss" target="#rum-0027-orig" n="feißt" resp="#fyndling">‚fett‘; die Brühe soll fett sein.</note>
         <note type="gloss" target="#rum-0027-orig" n="Also essens die Bauwren in Doͤrffern gern" resp="#fyndling">Rumpolts eigene Herkunftsangabe: So essen es die Bauern in den Dörfern gern.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="schneidt klein Zwibel darzu" resp="#fyndling">Zwiebeln klein schneiden: ‚klein‘ ist Adverb zu ‚schneiden‘, wie buchintern in rum-0016 und rum-0022.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="schuͤt sie auff ein Durchschlag / mach sie ... ab" resp="#fyndling">‚sie‘ = die Zwiebeln, die gerade in Brühe aufgesotten wurden; die Nieren werden erst danach ‚vom Spieß rab‘ geschnitten.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="mach sie ... ab" resp="#fyndling">fertig zubereiten (FWB ‚abmachen‘ 1): Pfeffer und fette Brühe werden als Zutaten zugegeben. So auch in rum-0016 und rum-0024.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="Vorbereitung der Niere" resp="#fyndling">Wie gedruckt: Die Niere kommt ganz an den Spieß; ob sie geputzt oder gewässert wurde, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="laß sie damit sieden" resp="#fyndling">Dauer offen; der Text nennt nur das Ergebnis ‚braun vnd wolgeschmack‘.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="schneidt die Nieren vom Spieß rab" resp="#fyndling">Scheibenweise vom Spieß abgeschnitten; Stückgröße nicht genannt.</note>
-        <note type="interpretive_choice" target="#rum-0027-orig" n="Salz" resp="#fyndling">Der Text nennt kein Salz; nicht als Rumpolts Angabe ergänzt.</note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="schneidt klein Zwibel darzu" resp="#fyndling" subtype="lexical">Zwiebeln klein schneiden: ‚klein‘ ist Adverb zu ‚schneiden‘, wie buchintern in rum-0016 und rum-0022.<list type="alternatives"><item>kleine Zwiebeln<note type="rationale">Grammatisch denkbar, aber die Wendung ‚klein schneiden‘ ist bei Rumpolt stehend; Zwiebelgröße spielt im Rezept keine Rolle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="schuͤt sie auff ein Durchschlag / mach sie ... ab" resp="#fyndling" subtype="contextual">‚sie‘ = die Zwiebeln, die gerade in Brühe aufgesotten wurden; die Nieren werden erst danach ‚vom Spieß rab‘ geschnitten.<list type="alternatives"><item>‚sie‘ = die Nieren<note type="rationale">Widerspricht der Abfolge: Die Nieren stecken zu diesem Zeitpunkt noch am Spieß.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="mach sie ... ab" resp="#fyndling" subtype="lexical">fertig zubereiten (FWB ‚abmachen‘ 1): Pfeffer und fette Brühe werden als Zutaten zugegeben. So auch in rum-0016 und rum-0024.<list type="alternatives"><item>abschmecken<note type="rationale">Zu eng: Es wird Brühe als Menge zugegeben, nicht nur nachgewürzt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="Vorbereitung der Niere" resp="#fyndling" subtype="contextual">Wie gedruckt: Die Niere kommt ganz an den Spieß; ob sie geputzt oder gewässert wurde, sagt der Text nicht.<list type="alternatives"><item>Halbieren, Strang und Fett herausschneiden, 1-2 Stunden wässern<note type="rationale">Heutige Praxis gegen Harngeschmack; als Kochempfehlung, nicht als Rumpolts Schritt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="laß sie damit sieden" resp="#fyndling" subtype="contextual">Dauer offen; der Text nennt nur das Ergebnis ‚braun vnd wolgeschmack‘.<list type="alternatives"><item>mindestens 30-45 Minuten schwach sieden<note type="rationale">Praxis: Durchgebratene Ochsenniere wird erst durch längeres Sieden wieder mürbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="schneidt die Nieren vom Spieß rab" resp="#fyndling" subtype="contextual">Scheibenweise vom Spieß abgeschnitten; Stückgröße nicht genannt.<list type="alternatives"><item>In Scheiben oder Würfel schneiden<note type="rationale">Moderne Umsetzung, gleiches Ergebnis.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0027-orig" n="Salz" resp="#fyndling" subtype="contextual">Der Text nennt kein Salz; nicht als Rumpolts Angabe ergänzt.<list type="alternatives"><item>Mit Salz abschmecken<note type="rationale">Sinnvoll, wenn die Brühe ungesalzen ist; gesalzene Brühe ist wahrscheinlich, aber nicht belegt.</note></item></list></note>
       </div>
     </back>
   </text>

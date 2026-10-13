@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -94,7 +99,7 @@ Geräuchert oder geselcht. Die beiden Wörter meinen dasselbe; geselcht ist das 
 Praxis. Nachkochen lässt sich nichts, denn der Text gibt keinen Arbeitsschritt. Geräuchertes Wildschwein, etwa Schinken oder Speck, bekommt man beim Wildhändler oder Jäger. Wie Rumpolt Geräuchertes in verwandten Einträgen anrichtet, steht dort: beim Spanferkel kalt oder warm (rum-0279), beim Damhirsch warm in Rindfleischbrühe oder unter grünem Spinat (rum-0352), bei der Wildschweinbrust mit grünem Kohl (rum-0412). Für diese Nummer selbst ist nichts davon überliefert.</note>
         <note type="gloss" target="#rum-0440-orig" n="Geselcht" resp="#fyndling">Geselcht ist das oberdeutsche Wort für geräuchert (DWB: geselchtes = geräuchertes Fleisch, zu selchen = räuchern). „Geräuchert oder geselcht“ stellt also zwei gleichbedeutende Wörter nebeneinander. Gemeint ist der Zustand der Zutat, kein Arbeitsschritt; über ein Pökeln sagt der Text nichts.</note>
         <note type="gloss" target="#rum-0440-orig" n="Schweinenfleisch" resp="#fyndling">Die Überschrift sagt nur „Schweinenfleisch“. Das Kapitel, in dem sie steht, handelt vom „Schweinen Wildpret“, also vom Wildschwein; deshalb ist hier Wildschweinfleisch gemeint.</note>
-        <note type="interpretive_choice" target="#rum-0440-orig" n="Schweinenfleisch" resp="#fyndling">Wildschweinfleisch: Die Überschrift steht im Kapitel „Vom Schweinen Wildpret“, und das Kapitel gibt das Tier vor.</note>
+        <note type="interpretive_choice" target="#rum-0440-orig" n="Schweinenfleisch" resp="#fyndling" subtype="contextual">Wildschweinfleisch: Die Überschrift steht im Kapitel „Vom Schweinen Wildpret“, und das Kapitel gibt das Tier vor.<list type="alternatives"><item>Fleisch vom Hausschwein<note type="rationale">Das Wort allein ließe es zu, aber Hausschwein und Spanferkel behandelt Rumpolt in eigenen Kapiteln; im Wildschwein-Kapitel ist es nicht gemeint.</note></item></list></note>
       </div>
     </back>
   </text>

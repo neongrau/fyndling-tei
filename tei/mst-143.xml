@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,8 +134,8 @@ Rote Bete waschen, gut trocknen, im Ganzen im geschlossenen Topf auf einem heiß
         <note type="gloss" target="#mst-143-orig" n="bix" resp="#fyndling">Eine Büchse oder ein fest verschließbares Gefäß, oft aus Zinn oder Keramik, zur Aufbewahrung von Lebensmitteln.</note>
         <note type="gloss" target="#mst-143-orig" n="krien" resp="#fyndling">Der Kren, auch Meerrettich genannt, ist eine scharfe Wurzel, die als Gewürz und Heilmittel verwendet wurde.</note>
         <note type="gloss" target="#mst-143-orig" n="Erbſich" resp="#fyndling">Hier sind Berberitzen (Sauerdornbeeren) gemeint, nicht Erbsen - ein „falscher Freund“ im Frühneuhochdeutschen.</note>
-        <note type="interpretive_choice" target="#mst-143-orig" n="Eſſig thu auch daran" resp="#fyndling">Die geschälten und geschnittenen Rübenscheiben vollständig mit Essig bedecken</note>
-        <note type="interpretive_choice" target="#mst-143-orig" n="Laſs alſo dempffen" resp="#fyndling">Garen, bis ein Messer leicht durch die Rübe dringt (ca. 45-90 Minuten je nach Größe)</note>
+        <note type="interpretive_choice" target="#mst-143-orig" n="Eſſig thu auch daran" resp="#fyndling">Die geschälten und geschnittenen Rübenscheiben vollständig mit Essig bedecken<list type="alternatives"><item>Nur ein Schuss Essig nach Gefühl, ohne vollständige Bedeckung<note type="rationale">Der Text nennt keine Menge und keinen Bedeckungsgrad; die Reifung im geschlossenen Gefäß beruhte dann auf Erfahrungswissen statt auf einer festen Regel.</note></item></list></note>
+        <note type="interpretive_choice" target="#mst-143-orig" n="Laſs alſo dempffen" resp="#fyndling">Garen, bis ein Messer leicht durch die Rübe dringt (ca. 45-90 Minuten je nach Größe)<list type="alternatives"><item>Garzustand rein nach Erfahrung und Fingerprobe beurteilt, ohne feste Zeitangabe<note type="rationale">Der Text nennt keine Zeit- oder Garzustandsangabe; das wäre historisch reines Erfahrungswissen ohne feste Regel gewesen.</note></item></list></note>
       </div>
     </back>
   </text>

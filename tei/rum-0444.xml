@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,10 +134,10 @@ Praxis. Ein Spieß über Glut und ein Topf am Feuer genügen; nach dem Anbraten 
         <note type="gloss" target="#rum-0444-orig" n="Hafenkessel" resp="#fyndling">Kochtopf: „Hafen“ heißt Topf, „Kessel“ das Kochgefäß.</note>
         <note type="gloss" target="#rum-0444-orig" n="Ruckenbrot" resp="#fyndling">Ruckenbrot ist Roggenbrot (Lexer: „rucken-brôt, roggenbrot“). Gerieben bindet es die Brühe beim Sieden zu einer dicklichen Sauce.</note>
         <note type="gloss" target="#rum-0444-orig" n="kurtze Bruͤh" resp="#fyndling">Eine knappe, wenig Flüssigkeit führende Brühe, eher Sauce als Suppe. Dass sie eigens eingekocht wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0444-orig" n="Eyngedaͤmpfft" resp="#fyndling">Gedünstet, in Flüssigkeit gar gemacht. So lesen es die Mundartwörterbücher (eindämpfen = dünsten, garen) und Rumpolts übrige Rezepte; hier gibt der Text das Verfahren selbst an: Brühe oder Wasser darübergießen und sieden lassen.</note>
-        <note type="interpretive_choice" target="#rum-0444-orig" n="Ruckenbrot" resp="#fyndling">Roggenbrot, gerieben (Lexer: rucken-brôt = roggenbrot; Mittelniederdeutsches Wörterbuch: s. roggenbrôt). Rumpolt verwendet das Wort in weiteren Rezepten im selben Sinn.</note>
-        <note type="interpretive_choice" target="#rum-0444-orig" n="kurtze Bruͤh" resp="#fyndling">Von Anfang an knapp bemessene Brühe, die das mitgesottene Roggenbrot zur Sauce bindet; ein eigenes Einkochen nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0444-orig" n="zeuch es ab vom Spieß/ thu es in den Hafenkessel" resp="#fyndling">Das halb gebratene Stück kommt im Ganzen in den Topf und gart dort weiter; der Text spricht durchgehend von „das Fleisch“ und „es“, ein Zerteilen nennt er nicht.</note>
+        <note type="interpretive_choice" target="#rum-0444-orig" n="Eyngedaͤmpfft" resp="#fyndling" subtype="lexical">Gedünstet, in Flüssigkeit gar gemacht. So lesen es die Mundartwörterbücher (eindämpfen = dünsten, garen) und Rumpolts übrige Rezepte; hier gibt der Text das Verfahren selbst an: Brühe oder Wasser darübergießen und sieden lassen.<list type="alternatives"><item>Gedämpft im heutigen Sinn (über Wasserdampf)<note type="rationale">Passt nicht: Das Fleisch liegt in Brühe oder Wasser und siedet darin.</note></item><item>Geschmort<note type="rationale">Kommt im Ergebnis nahe, der Text sagt aber nur „sieden“ und nennt keine lange, langsame Hitze.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0444-orig" n="Ruckenbrot" resp="#fyndling" subtype="lexical">Roggenbrot, gerieben (Lexer: rucken-brôt = roggenbrot; Mittelniederdeutsches Wörterbuch: s. roggenbrôt). Rumpolt verwendet das Wort in weiteren Rezepten im selben Sinn.<list type="alternatives"><item>Grobes dunkles Brot allgemein<note type="rationale">Möglich als weitere Bedeutung, aber die Wörterbücher führen das Wort auf Roggen zurück.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0444-orig" n="kurtze Bruͤh" resp="#fyndling" subtype="contextual">Von Anfang an knapp bemessene Brühe, die das mitgesottene Roggenbrot zur Sauce bindet; ein eigenes Einkochen nennt der Text nicht.<list type="alternatives"><item>Am Ende offen eingekocht<note type="rationale">Praktischer Ausweg, wenn die Sauce nach dem zweiten Sieden noch zu dünn ist; vom Text nicht verlangt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0444-orig" n="zeuch es ab vom Spieß/ thu es in den Hafenkessel" resp="#fyndling" subtype="contextual">Das halb gebratene Stück kommt im Ganzen in den Topf und gart dort weiter; der Text spricht durchgehend von „das Fleisch“ und „es“, ein Zerteilen nennt er nicht.<list type="alternatives"><item>Nach dem Anbraten in handliche Stücke geschnitten<note type="rationale">Heute die einfachere Ausführung, gart gleichmäßiger und schneller; im Text nicht vorgesehen, aber auch nicht ausgeschlossen.</note></item></list></note>
       </div>
     </back>
   </text>

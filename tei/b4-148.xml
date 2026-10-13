@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -139,9 +144,9 @@ Probe vorweg klärt die Fetthitze.</note>
         <note type="gloss" target="#b4-148-orig" n="poskugel" resp="#fyndling">Bezeichnet eine nicht sicher bestimmbare Kugel als Größenvergleich für das Gebäck. Eine Zuordnung zu einem bestimmten Spiel ist nicht belegt.</note>
         <note type="gloss" target="#b4-148-orig" n="ring" resp="#fyndling">Ist im Kontext am ehesten als „leicht“ zu verstehen und nennt ein Garzeichen; eine genaue physikalische Prüfung beschreibt der Text nicht.</note>
         <note type="interpretive_choice" target="#b4-148-orig" n="kesslein" resp="#fyndling">Kleiner Kessel oder Kochtopf, in dem der Teig mit heißem Wasser bereitet wird.</note>
-        <note type="interpretive_choice" target="#b4-148-orig" n="reib scherben" resp="#fyndling">Ein nicht näher bestimmtes Gefäß, in dem der Teig mit Eiern weiterbearbeitet wird.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#scherben"/></note>
-        <note type="interpretive_choice" target="#b4-148-orig" n="poskugel" resp="#fyndling">Eine nicht sicher bestimmbare Kugel als Größenvergleich.</note>
-        <note type="interpretive_choice" target="#b4-148-orig" n="ring" resp="#fyndling">Leicht im Gewicht, als Garzeichen für die hohlen Gebäckstücke.</note>
+        <note type="interpretive_choice" target="#b4-148-orig" n="reib scherben" resp="#fyndling">Ein nicht näher bestimmtes Gefäß, in dem der Teig mit Eiern weiterbearbeitet wird.<list type="alternatives"><item>Reibschale oder Mörser<note type="rationale">Die Bezeichnung kann auf ein Reibgefäß weisen, doch der Text sichert weder Größe noch genaue Funktion des Gefäßes.</note></item><item>Anderes Gefäß wie ein Topf oder eine Schüssel<note type="rationale">Der Wortlaut nennt nur „reib scherben“; die genaue Form bleibt offen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#scherben"/></note>
+        <note type="interpretive_choice" target="#b4-148-orig" n="poskugel" resp="#fyndling">Eine nicht sicher bestimmbare Kugel als Größenvergleich.<list type="alternatives"><item>Kugel eines bestimmten Spiels<note type="rationale">Eine spezifische Spiel- oder Größenzuordnung ist mit den vorliegenden lokalen Belegen nicht abgesichert.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-148-orig" n="ring" resp="#fyndling">Leicht im Gewicht, als Garzeichen für die hohlen Gebäckstücke.<list type="alternatives"><item>Allgemein fertig oder gar<note type="rationale">Der Backkontext erlaubt eine allgemeinere Garlesart; die Bedeutung „leicht“ passt jedoch genauer zum Wortlaut.</note></item></list></note>
       </div>
     </back>
   </text>

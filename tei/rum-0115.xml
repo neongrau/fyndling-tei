@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -115,11 +120,11 @@ Praxis. Lass den Braten nach dem Backen zügig abkühlen und bewahre ihn danach 
         <note type="gloss" target="#rum-0115-orig" n="RuckenTeig" resp="#fyndling">Roggenteig. Gelesen nach Rückenbrot = Roggenbrot (Lexer „rucken-brôt“, MNWB „ruckenbrôt s. roggenbrôt“); für das Wort Rückenteig selbst gibt es keinen Wörterbuchbeleg. Rumpolt verwendet es gleichlautend in rum-0059, Ruckenbrot in rum-0039.</note>
         <note type="gloss" target="#rum-0115-orig" n="Vberquell ... in einem gesotten Wasser" resp="#fyndling">In siedendem Wasser überbrühen. Ein „gesotten Wasser“ ist bereits kochendes Wasser. Die Lesart „überbrühen“ folgt dem Zusammenhang und Rumpolts übrigem Gebrauch (rum-0106, rum-0107).</note>
         <note type="gloss" target="#rum-0115-orig" n="einzuschlahen" resp="#fyndling">Einschlagen heißt hier: in den Teig einhüllen.</note>
-        <note type="interpretive_choice" target="#rum-0115-orig" n="RuckenTeig" resp="#fyndling">Roggenteig: Rückenbrot ist Roggenbrot (Lexer „rucken-brôt“, MNWB „ruckenbrôt s. roggenbrôt“), und Rumpolt löst Rückenteig und Rückenbrot im selben Buch so auf (rum-0039, rum-0059).</note>
-        <note type="interpretive_choice" target="#rum-0115-orig" n="Nierenbraten" resp="#fyndling">Lendenstück des Kalbs mit Niere und Nierenfett (DWB mit Maaler: lumbus vitulinus; Adelung; Rumpolt rum-0117 „hinder dem Nierenbraten“).</note>
-        <note type="interpretive_choice" target="#rum-0115-orig" n="drey stundt im Ofen (Hitze und Teigdicke)" resp="#fyndling">Brotofen mit abfallender Hitze, der über drei Stunden nachheizt; der Teig bildet eine dicke Kruste, die Zeit richtet sich nach der Größe des Bratens.</note>
-        <note type="interpretive_choice" target="#rum-0115-orig" n="Teigmantel essen oder abschlagen" resp="#fyndling">Der Text sagt nicht, ob der Rückenteig mitgegessen wird; sicher ist nur seine Rolle als Hülle beim Backen.</note>
-        <note type="interpretive_choice" target="#rum-0115-orig" n="Zusammensetzung des Rückenteigs" resp="#fyndling">Nur Roggenmehl und Wasser, wie Rumpolts Rückenteig sonst auch; der Text nennt keine weiteren Zutaten.</note>
+        <note type="interpretive_choice" target="#rum-0115-orig" n="RuckenTeig" resp="#fyndling" subtype="lexical">Roggenteig: Rückenbrot ist Roggenbrot (Lexer „rucken-brôt“, MNWB „ruckenbrôt s. roggenbrôt“), und Rumpolt löst Rückenteig und Rückenbrot im selben Buch so auf (rum-0039, rum-0059).<list type="alternatives"><item>Teig unbestimmter Art<note type="rationale">Für das Wort Rückenteig selbst fehlt ein Wörterbuchbeleg; die Deutung hängt am Rückenbrot. Solange kein direkter Beleg auftaucht, bleibt diese Unschärfe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0115-orig" n="Nierenbraten" resp="#fyndling" subtype="lexical">Lendenstück des Kalbs mit Niere und Nierenfett (DWB mit Maaler: lumbus vitulinus; Adelung; Rumpolt rum-0117 „hinder dem Nierenbraten“).<list type="alternatives"><item>Kalbsnieren als Organ<note type="rationale">Nicht gemeint: das Stück wird wie ein Braten gebacken, und die Wörterbücher führen Nierenbraten als Fleischstück vom Rücken.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0115-orig" n="drey stundt im Ofen (Hitze und Teigdicke)" resp="#fyndling" subtype="contextual">Brotofen mit abfallender Hitze, der über drei Stunden nachheizt; der Teig bildet eine dicke Kruste, die Zeit richtet sich nach der Größe des Bratens.<list type="alternatives"><item>Moderner Backofen mit Kerntemperatur-Kontrolle<note type="rationale">Rumpolt nennt nur die Zeit. Im heißen Ofen wären drei Stunden für ein Stück von 1-1,5 kg zu lang; wer nachkocht, gart nach Kerntemperatur.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0115-orig" n="Teigmantel essen oder abschlagen" resp="#fyndling" subtype="contextual">Der Text sagt nicht, ob der Rückenteig mitgegessen wird; sicher ist nur seine Rolle als Hülle beim Backen.<list type="alternatives"><item>Kruste als essbare Hülle wie bei einer Pastete<note type="rationale">Möglich, besonders kalt aufgeschnitten; im Text nicht gesagt.</note></item><item>Kruste als Backschutz, der abgeschlagen wird<note type="rationale">Ebenso möglich; im Text nicht gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0115-orig" n="Zusammensetzung des Rückenteigs" resp="#fyndling" subtype="contextual">Nur Roggenmehl und Wasser, wie Rumpolts Rückenteig sonst auch; der Text nennt keine weiteren Zutaten.<list type="alternatives"><item>Teig mit Fett, Speck oder Gewürz<note type="rationale">Nicht belegt; der Text nennt nur den Rückenteig.</note></item></list></note>
       </div>
     </back>
   </text>

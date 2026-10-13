@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -146,10 +151,10 @@ Hecht öffnen und wie beschrieben krümmen. In gesalzenem Wasser einmal kurz auf
         <note type="gloss" target="#phw-180-orig" n="negala" resp="#fyndling">Dies ist eine frühneuhochdeutsche Schreibweise für Nelken, ein häufig verwendetes Gewürz in der mittelalterlichen Küche.</note>
         <note type="gloss" target="#phw-180-orig" n="schepf lefel" resp="#fyndling">Ein Schöpflöffel ist ein Hohlmaß, deutlich größer als ein Esslöffel - eher eine kleine Kelle voll.</note>
         <note type="gloss" target="#phw-180-orig" n="hieps" resp="#fyndling">„Hieps“ ist eine frühneuhochdeutsche Form von „hübsch“, hier im Sinne von ansehnlich oder schön braun gefärbt.</note>
-        <note type="interpretive_choice" target="#phw-180-orig" n="dempfen" resp="#fyndling">Die Lesart „gedämpft“ oder „geschmort“ wurde gewählt, da die Zubereitung in einer zugedeckten Pfanne mit heißem Fett und Gewürzen dem Dämpfen und Schmoren entspricht.</note>
-        <note type="interpretive_choice" target="#phw-180-orig" n="hie" resp="#fyndling">„Hie“ wurde als Pronomen interpretiert, das sich auf den im Titel genannten Hecht bezieht.</note>
-        <note type="interpretive_choice" target="#phw-180-orig" n="krum syedenn" resp="#fyndling">„Krum syedenn“ wird als aktive Zubereitungsanweisung gelesen: der Fisch wird vor dem Sieden zu einem Ring gebogen, damit er ganz in den Topf passt - eine gängige historische Praxis für ganze Rundfische.</note>
-        <note type="interpretive_choice" target="#phw-180-orig" n="hieps" resp="#fyndling">„Hieps“ wurde als „hübsch“ übersetzt - eine allgemeine Zustimmungsformel für gute, ansehnliche Bräunung, wie sie an anderer Stelle im Buch für dasselbe Wort belegt ist.</note>
+        <note type="interpretive_choice" target="#phw-180-orig" n="dempfen" resp="#fyndling" subtype="lexical">Die Lesart „gedämpft“ oder „geschmort“ wurde gewählt, da die Zubereitung in einer zugedeckten Pfanne mit heißem Fett und Gewürzen dem Dämpfen und Schmoren entspricht.<list type="alternatives"><item>Eine alternative Lesart wäre „erstickt“ im Sinne von langsam und ohne viel Flüssigkeit gegart.<note type="rationale">Das Wort „dempfen“ kann auch „ersticken“ bedeuten, was eine sehr langsame Garmethode in einem geschlossenen Gefäß impliziert. Der Kontext der schnellen Zubereitung hier macht die Lesart „gedämpft/geschmort“ jedoch plausibler.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-180-orig" n="hie" resp="#fyndling" subtype="lexical">„Hie“ wurde als Pronomen interpretiert, das sich auf den im Titel genannten Hecht bezieht.</note>
+        <note type="interpretive_choice" target="#phw-180-orig" n="krum syedenn" resp="#fyndling" subtype="contextual">„Krum syedenn“ wird als aktive Zubereitungsanweisung gelesen: der Fisch wird vor dem Sieden zu einem Ring gebogen, damit er ganz in den Topf passt - eine gängige historische Praxis für ganze Rundfische.<list type="alternatives"><item>Der Satz könnte auch nur beschreiben, dass sich der Fisch beim Sieden von selbst krümmt, ohne dass der Koch aktiv eingreift.<note type="rationale">Der Text belegt keine eigene Handlung („biege“, „lege gekrümmt“) - beide Lesarten sind mit dem Wortlaut vereinbar und praktisch folgenlos, da der Fisch so oder so gekrümmt in den Topf kommt.</note></item></list></note>
+        <note type="interpretive_choice" target="#phw-180-orig" n="hieps" resp="#fyndling" subtype="lexical">„Hieps“ wurde als „hübsch“ übersetzt - eine allgemeine Zustimmungsformel für gute, ansehnliche Bräunung, wie sie an anderer Stelle im Buch für dasselbe Wort belegt ist.</note>
       </div>
     </back>
   </text>

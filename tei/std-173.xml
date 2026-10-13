@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,8 +129,8 @@ Rehschulter entbeinen und in Stücken scharf anbraten, bis sie mürbe ist. Mit w
         <note type="gloss" target="#std-173-orig" n="Lezelten" resp="#fyndling">Historische Bezeichnung für Lebkuchen oder ein gewürztes Gebäck, das hier als Bindemittel und Geschmacksgeber dient.</note>
         <note type="gloss" target="#std-173-orig" n="hafen" resp="#fyndling">Ein Topf oder Kochgefäß.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
         <note type="gloss" target="#std-173-orig" n="durchgang" resp="#fyndling">Nicht ein zweites Gefäß, sondern durchgeseiht/passiert: Die durch das Tuch gestrichene oder gewürfelte Masse geht direkt in den Topf, nicht in ein weiteres Behältnis im Wasserbad.</note>
-        <note type="interpretive_choice" target="#std-173-orig" n="Mengenangaben" resp="#fyndling">Der Text nennt keine Maßangaben für Fleisch, Wein, Wildblut, Lebzelten oder Gewürze. Als moderne Praxis-Richtwerte für 4-6 Personen: ca. 500-700 g Fleisch, 200 ml Wein, 200 ml Wildblut, 50-100 g Lebzelten.</note>
-        <note type="interpretive_choice" target="#std-173-orig" n="Frische des Wildbluts" resp="#fyndling">Moderne Praxis: Wildblut gekühlt beschaffen und lagern, die Mischung nach Zugabe des Bluts vollständig durcherhitzen, bevor abgeschmeckt wird.</note>
+        <note type="interpretive_choice" target="#std-173-orig" n="Mengenangaben" resp="#fyndling">Der Text nennt keine Maßangaben für Fleisch, Wein, Wildblut, Lebzelten oder Gewürze. Als moderne Praxis-Richtwerte für 4-6 Personen: ca. 500-700 g Fleisch, 200 ml Wein, 200 ml Wildblut, 50-100 g Lebzelten.<list type="alternatives"><item>Mengen nach Augenmaß und Erfahrung des Kochs, wie im Druck durchgängig üblich.<note type="rationale">Der Originaltext macht an keiner Stelle Maßangaben - das ist für gedruckte Kochbücher dieser Zeit die Regel, nicht die Ausnahme.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-173-orig" n="Frische des Wildbluts" resp="#fyndling">Moderne Praxis: Wildblut gekühlt beschaffen und lagern, die Mischung nach Zugabe des Bluts vollständig durcherhitzen, bevor abgeschmeckt wird.<list type="alternatives"><item>Historisch wurde das Schweiß direkt beim Erlegen und Zerwirken des Rehs aufgefangen und zeitnah verarbeitet.<note type="rationale">Der Text thematisiert weder Kühlung noch eine bestimmte Erhitzungsdauer des Bluts - das ist eine moderne Sicherheitsergänzung, keine Textaussage.</note></item></list></note>
       </div>
     </back>
   </text>

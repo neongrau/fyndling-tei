@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -136,10 +141,10 @@ Praxis. Das Blut gleich nach dem Auffangen kühlen und umrühren. Den Speck sehr
         <note type="gloss" target="#rum-0674-orig" n="quellen" resp="#fyndling">Hier: in Wasser abbrühen, bevor der Kropf fertig gekocht wird.</note>
         <note type="gloss" target="#rum-0674-orig" n="gar an die statt sieden" resp="#fyndling">Eine frühneuhochdeutsche Wendung für vollständig gar kochen.</note>
         <note type="gloss" target="#rum-0674-orig" n="Roßt" resp="#fyndling">Ein Rost, auf dem der gekochte Kropf abgebräunt wird.</note>
-        <note type="interpretive_choice" target="#rum-0674-orig" n="Schweiß vom Kappaunen" resp="#fyndling">Das Blut des Kapauns (Substantiv, jägersprachlich). Der Schweiß wird umgerührt, „daß er nicht gestehet“, durchs Sieb gegossen und mit Speck und Sahne gemischt, das passt nur auf Blut. Rumpolt gebraucht das Wort ebenso beim Kapaun mit Blutsauce.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
-        <note type="interpretive_choice" target="#rum-0674-orig" n="gar an die statt sieden" resp="#fyndling">Rumpolts Wendung für fertig gar kochen, nach dem Abbrühen. Eine Zeit nennt er nicht, der Garpunkt ist die feste Füllung.</note>
-        <note type="interpretive_choice" target="#rum-0674-orig" n="breun jhn ab" resp="#fyndling">Auf dem Rost am Feuer abbräunen oder abflämmen, sodass die Haut fest wird und Farbe bekommt. Dauer und Hitze nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0674-orig" n="mit einer guten Rindtfleischbruͤh wol angemacht/ warm geben" resp="#fyndling">Geriebener Meerrettich wird in warmer Rindfleischbrühe nur angemacht und warm gereicht. Ob die Brühe heiß war oder der Meerrettich mitgesotten wurde, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0674-orig" n="Schweiß vom Kappaunen" resp="#fyndling" subtype="lexical">Das Blut des Kapauns (Substantiv, jägersprachlich). Der Schweiß wird umgerührt, „daß er nicht gestehet“, durchs Sieb gegossen und mit Speck und Sahne gemischt, das passt nur auf Blut. Rumpolt gebraucht das Wort ebenso beim Kapaun mit Blutsauce.<list type="alternatives"><item>Verb schweißen = in Fett anschwitzen<note type="rationale">Diese Bedeutung gilt, wenn etwas in Fett geschweißt wird. Hier wird der Schweiß als Zutat dazugegeben und vor dem Gerinnen bewahrt, also scheidet das Verb aus.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schweiss"/></note>
+        <note type="interpretive_choice" target="#rum-0674-orig" n="gar an die statt sieden" resp="#fyndling" subtype="contextual">Rumpolts Wendung für fertig gar kochen, nach dem Abbrühen. Eine Zeit nennt er nicht, der Garpunkt ist die feste Füllung.<list type="alternatives"><item>Heutige Praxis: schwach sieden lassen, bis die Füllung durchgegart und fest ist<note type="rationale">Praktische Umsetzung, im Text nicht ausgeführt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0674-orig" n="breun jhn ab" resp="#fyndling" subtype="contextual">Auf dem Rost am Feuer abbräunen oder abflämmen, sodass die Haut fest wird und Farbe bekommt. Dauer und Hitze nennt der Text nicht.<list type="alternatives"><item>Heutige Praxis: kurz auf einem heißen Grillrost oder unter dem Backofengrill bräunen<note type="rationale">Moderner Ersatz für das offene Feuer, sachlich gleichwertig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0674-orig" n="mit einer guten Rindtfleischbruͤh wol angemacht/ warm geben" resp="#fyndling" subtype="contextual">Geriebener Meerrettich wird in warmer Rindfleischbrühe nur angemacht und warm gereicht. Ob die Brühe heiß war oder der Meerrettich mitgesotten wurde, sagt der Text nicht.<list type="alternatives"><item>Heutige Praxis: Meerrettich in heißer Brühe anrühren, warm halten, nicht lange kochen<note type="rationale">Hält die Schärfe und entspricht dem „warm“ des Textes.</note></item><item>Aufkochen wie bei Rumpolts Meerrettich zur Ochsenzunge<note type="rationale">Dort steht das Aufkochen ausdrücklich, hier nicht. Deshalb nicht ergänzt.</note></item></list></note>
       </div>
     </back>
   </text>

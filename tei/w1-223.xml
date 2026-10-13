@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -138,7 +143,7 @@ Praxis. Lammkopf weich kochen, entbeinen, Füllung aus hartem Ei, Salbei, rohem 
         <note type="gloss" target="#w1-223-orig" n="smalcz" resp="#fyndling">Tierisches Fett, meist Schweineschmalz, das hier zum Ausbacken des gefüllten Kopfes verwendet wird.</note>
         <note type="gloss" target="#w1-223-orig" n="rech haup" resp="#fyndling">Der Kopf eines Rehs, der als alternative Hauptzutat für dieses Rezept genannt wird und eine festliche, wildbretbasierte Variante darstellt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rech"/></note>
         <note type="gloss" target="#w1-223-orig" n="spenferch leins haupp" resp="#fyndling">Der Kopf eines Spanferkels, der ebenfalls als Alternative zum Lammkopf vorgeschlagen wird und ein beliebtes Festtagsgericht war.</note>
-        <note type="interpretive_choice" target="#w1-223-orig" n="huner schal" resp="#fyndling">‚Schädel(-höhle)‘ als Form für die Füllung. Gestützt durch die Parallelhandschrift B4, die an derselben Stelle hyernn schall liest - ein Kognat zu ‚Hirnschale‘ (mhd./fnhd. gut belegtes Wort für Schädel). ‚huner‘ in W1 ist demnach wahrscheinlich eine bairische Verschreibung von ‚hirn‘, nicht das eigenständige Wort ‚huner‘ (=Huhn).</note>
+        <note type="interpretive_choice" target="#w1-223-orig" n="huner schal" resp="#fyndling" subtype="philological">‚Schädel(-höhle)‘ als Form für die Füllung. Gestützt durch die Parallelhandschrift B4, die an derselben Stelle hyernn schall liest - ein Kognat zu ‚Hirnschale‘ (mhd./fnhd. gut belegtes Wort für Schädel). ‚huner‘ in W1 ist demnach wahrscheinlich eine bairische Verschreibung von ‚hirn‘, nicht das eigenständige Wort ‚huner‘ (=Huhn).<list type="alternatives"><item>‚Hühnerschale‘ als eigenständiges, wörtlich gemeintes Wort.<note type="rationale">Im Rezept ist ausschließlich von Lamm-, Reh- und Spanferkelköpfen die Rede, ein Hühnerbezug fehlt völlig; die B4-Parallelstelle stützt stattdessen die Lesart als Verschreibung von ‚hirn‘.</note></item></list></note>
       </div>
     </back>
   </text>

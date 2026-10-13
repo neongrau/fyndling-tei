@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,9 +106,9 @@ Rompi li cavoli torzoti con le mani secundo l'usanza, et mittigli in l'acqua qua
         <note type="gloss" target="#mar-096-orig" n="cavoli torzoti" resp="#fyndling">Wirsingkohl, eine Kohlsorte mit gekräuselten Blättern.</note>
         <note type="gloss" target="#mar-096-orig" n="lardo battuto" resp="#fyndling">Geschlagenes oder zerstoßenes Schweineschmalz.</note>
         <note type="gloss" target="#mar-096-orig" n="brodo grasso" resp="#fyndling">Fette Brühe, typischerweise aus Fleisch gekocht.</note>
-        <note type="interpretive_choice" target="#mar-096-orig" n="cavoli torzoti" resp="#fyndling">Wirsingkohl</note>
-        <note type="interpretive_choice" target="#mar-096-orig" n="lardo battuto" resp="#fyndling">Geschlagenes Schweineschmalz</note>
-        <note type="interpretive_choice" target="#mar-096-orig" n="bona et competente quantità" resp="#fyndling">In ausreichender Menge</note>
+        <note type="interpretive_choice" target="#mar-096-orig" n="cavoli torzoti" resp="#fyndling">Wirsingkohl<list type="alternatives"><item>Gedrehte Kohlköpfe<note type="rationale">Wirsing ist eine gängige Kohlsorte, die dem Begriff ‚gedreht‘ oder ‚gekräuselt‘ entspricht und in der italienischen Küche verbreitet ist.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-096-orig" n="lardo battuto" resp="#fyndling">Geschlagenes Schweineschmalz<list type="alternatives"><item>Fein gehackter Speck<note type="rationale">‚Battuto‘ kann sowohl ‚geschlagen‘ als auch ‚zerstoßen‘ bedeuten. Es impliziert eine feine Textur, die durch Hacken und Zerstoßen oder durch Schlagen von ausgelassenem Schmalz erreicht wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#mar-096-orig" n="bona et competente quantità" resp="#fyndling">In ausreichender Menge<list type="alternatives"><item>Nach Belieben<note type="rationale">Die genaue Menge wird dem Koch überlassen, was in mittelalterlichen Rezepten üblich ist. ‚Ausreichend‘ bedeutet hier so viel, dass der Kohl gut damit überzogen ist.</note></item></list></note>
       </div>
     </back>
   </text>

@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,12 +114,12 @@ Praxis. Die Kalbskeule beim Metzger bestellen und bis zum Braten kühl halten. B
         <note type="gloss" target="#rum-0130-orig" n="richts fein trucken an" resp="#fyndling">Schön trocken anrichten, also ohne Sauce oder Brühe.</note>
         <note type="gloss" target="#rum-0130-orig" n="Limonien" resp="#fyndling">Historische Bezeichnung für Zitronen. Nicht mit der heutigen „Limone“ im Sinn von Limette verwechseln.</note>
         <note type="gloss" target="#rum-0130-orig" n="walger es" resp="#fyndling">walgern = walzen, rollen. Die Zitronen werden auf dem Tisch hin und her gerollt, „biß daß es lindt vnd weich wirdt“.</note>
-        <note type="interpretive_choice" target="#rum-0130-orig" n="Limonien" resp="#fyndling">Zitronen. Das Wort bezeichnet im 16. Jahrhundert die Speisezitrone; im ganzen Buch wird es als Zitrone aufgelöst (auch die gesalzenen Limonien als Salzzitronen).</note>
-        <note type="interpretive_choice" target="#rum-0130-orig" n="Pomerantzen" resp="#fyndling">Bitterorange (Citrus aurantium), die im 16. Jahrhundert übliche Pomeranze.</note>
-        <note type="interpretive_choice" target="#rum-0130-orig" n="spick jn mit einer Pomerantzen" resp="#fyndling">Spicken wie sonst mit Speck: die Scheiben mit Messer oder Spicknadel in den Braten bringen. Ein Werkzeug nennt der Text nicht; „spicken“ trägt auch die Bedeutung „bestecken“.</note>
-        <note type="interpretive_choice" target="#rum-0130-orig" n="wenn er gebraten ist" resp="#fyndling">Am Spieß gebraten, wie Rumpolt Kalbfleisch in den benachbarten Rezepten brät; hier nennt er aber weder Gerät noch Dauer.</note>
-        <note type="interpretive_choice" target="#rum-0130-orig" n="wenn es schier zeit ist anzurichten/ so richts fein trucken an" resp="#fyndling">Die erkaltete, gespickte Keule wird ohne Wiedererwärmen trocken angerichtet; der Wortlaut spricht nur von Kaltwerden, Spicken und Anrichten.</note>
-        <note type="interpretive_choice" target="#rum-0130-orig" n="walger es" resp="#fyndling">Rollen, walzen: die Zitrone auf dem Tisch unter Druck hin und her rollen, bis sie weich wird. Dasselbe Wort steht bei Rumpolt für das Auswalgern von Teig.</note>
+        <note type="interpretive_choice" target="#rum-0130-orig" n="Limonien" resp="#fyndling" subtype="lexical">Zitronen. Das Wort bezeichnet im 16. Jahrhundert die Speisezitrone; im ganzen Buch wird es als Zitrone aufgelöst (auch die gesalzenen Limonien als Salzzitronen).<list type="alternatives"><item>Limetten (heute umgangssprachlich „Limonen“)<note type="rationale">Für diese Zeit und Region nicht belegt; die Buchkonvention ist Zitrone.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0130-orig" n="Pomerantzen" resp="#fyndling" subtype="lexical">Bitterorange (Citrus aurantium), die im 16. Jahrhundert übliche Pomeranze.<list type="alternatives"><item>Süße Orange<note type="rationale">Nur als moderner Ersatz, wenn keine Bitterorange zu bekommen ist; schmeckt milder als das Original.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0130-orig" n="spick jn mit einer Pomerantzen" resp="#fyndling" subtype="contextual">Spicken wie sonst mit Speck: die Scheiben mit Messer oder Spicknadel in den Braten bringen. Ein Werkzeug nennt der Text nicht; „spicken“ trägt auch die Bedeutung „bestecken“.<list type="alternatives"><item>Mit einem spitzen Messer schmale Taschen in den kalten Braten schneiden und die Scheiben hineinstecken<note type="rationale">Die einfachste heutige Umsetzung; im Text so nicht beschrieben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0130-orig" n="wenn er gebraten ist" resp="#fyndling" subtype="contextual">Am Spieß gebraten, wie Rumpolt Kalbfleisch in den benachbarten Rezepten brät; hier nennt er aber weder Gerät noch Dauer.<list type="alternatives"><item>Im Backofen bei 160-180 °C, bis die Keule gar ist<note type="rationale">Heutige Praxis; das Ergebnis, ein trocken angerichteter Braten, ist dasselbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0130-orig" n="wenn es schier zeit ist anzurichten/ so richts fein trucken an" resp="#fyndling" subtype="contextual">Die erkaltete, gespickte Keule wird ohne Wiedererwärmen trocken angerichtet; der Wortlaut spricht nur von Kaltwerden, Spicken und Anrichten.<list type="alternatives"><item>Kurz vor dem Anrichten am Spieß oder im Ofen wieder erwärmt<note type="rationale">Möglich, weil das Anrichten zeitlich eigens genannt wird; der Text sagt aber nichts von erneutem Erwärmen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0130-orig" n="walger es" resp="#fyndling" subtype="lexical">Rollen, walzen: die Zitrone auf dem Tisch unter Druck hin und her rollen, bis sie weich wird. Dasselbe Wort steht bei Rumpolt für das Auswalgern von Teig.<list type="alternatives"><item>Kneten oder walken<note type="rationale">Das Ziel „lind vnd weich“ passt dazu, das Wort selbst meint aber das Rollen.</note></item></list></note>
       </div>
     </back>
   </text>

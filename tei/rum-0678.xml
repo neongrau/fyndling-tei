@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,12 +121,12 @@ Praxis. Die Zubereitungszeit von etwa 90 Minuten ist eine Schätzung, der Text g
         <note type="gloss" target="#rum-0678-orig" n="schwartzen Rosein" resp="#fyndling">Dunkle getrocknete Weinbeeren, hier das einzige Würzmittel neben Salz. Ob kleine Korinthen oder größere dunkle Rosinen gemeint sind, lässt der Text offen.</note>
         <note type="gloss" target="#rum-0678-orig" n="Turten" resp="#fyndling">Torte: Teighülle mit Füllung, hier im Singular als Alternative zu den kleinen Pasteten, nicht „Törtchen“. Rumpolts Tortenkapitel gebraucht das Wort ebenso.</note>
         <note type="gloss" target="#rum-0678-orig" n="linde Speiß" resp="#fyndling">„Linde“ heißt weich, sanft, mild. Rumpolt nennt das Gericht selbst eine gute linde Speise für einen Kranken; eine Begründung gibt er nicht.</note>
-        <note type="interpretive_choice" target="#rum-0678-orig" n="Turten" resp="#fyndling">Eine Torte: statt der kleinen Pasteten eine einzelne Torte aus derselben Füllung. Der Text steht im Singular („ein Turten“) und nennt keine Größe; im Rumpolt-Korpus wird „Turten“ durchgehend mit „Torte“ wiedergegeben.</note>
-        <note type="interpretive_choice" target="#rum-0678-orig" n="mach es ab" resp="#fyndling">Würzen, abschmecken mit den schwarzen Rosinen. Rumpolt gebraucht „machs ab mit Pfeffer“ in derselben Funktion, gleich gefolgt von der Salzwarnung.</note>
-        <note type="interpretive_choice" target="#rum-0678-orig" n="schwartzen Rosein" resp="#fyndling">Schwarze, also dunkle Rosinen, wie im übrigen Rumpolt-Korpus übersetzt; praktisch kleine dunkle Rosinen.</note>
-        <note type="interpretive_choice" target="#rum-0678-orig" n="Teig der Pasteten und der Torte" resp="#fyndling">Nicht genannt. Rumpolt setzt einen Pasteten- oder Tortenteig voraus, ohne ihn hier festzulegen.</note>
-        <note type="interpretive_choice" target="#rum-0678-orig" n="Kaͤlbernfeißt" resp="#fyndling">Frisches Kalbsnierenfett, roh mit der gekochten Brust fein gehackt; der Text nennt kein Auslassen oder Anschwitzen.</note>
-        <note type="interpretive_choice" target="#rum-0678-orig" n="versaltz es nicht" resp="#fyndling">Salz wird verwendet, aber vorsichtig; die Menge und der Zeitpunkt bleiben offen. Praktisch: sparsam, am Ende abschmecken.</note>
+        <note type="interpretive_choice" target="#rum-0678-orig" n="Turten" resp="#fyndling" subtype="lexical">Eine Torte: statt der kleinen Pasteten eine einzelne Torte aus derselben Füllung. Der Text steht im Singular („ein Turten“) und nennt keine Größe; im Rumpolt-Korpus wird „Turten“ durchgehend mit „Torte“ wiedergegeben.<list type="alternatives"><item>Törtchen<note type="rationale">Eine Verkleinerung steht nicht im Text; „kleine“ bezieht sich nur auf die Pasteten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0678-orig" n="mach es ab" resp="#fyndling" subtype="contextual">Würzen, abschmecken mit den schwarzen Rosinen. Rumpolt gebraucht „machs ab mit Pfeffer“ in derselben Funktion, gleich gefolgt von der Salzwarnung.<list type="alternatives"><item>Die Masse fertig machen, vollenden<note type="rationale">Möglich als allgemeine Bedeutung, doch die Verbindung mit einer Würzzutat und der Salzwarnung spricht für Abschmecken.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0678-orig" n="schwartzen Rosein" resp="#fyndling" subtype="lexical">Schwarze, also dunkle Rosinen, wie im übrigen Rumpolt-Korpus übersetzt; praktisch kleine dunkle Rosinen.<list type="alternatives"><item>Korinthen<note type="rationale">Kleine dunkle Weinbeeren wären möglich, der Text unterscheidet Rosine und Korinthe aber nicht; keine Festlegung ohne Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0678-orig" n="Teig der Pasteten und der Torte" resp="#fyndling" subtype="contextual">Nicht genannt. Rumpolt setzt einen Pasteten- oder Tortenteig voraus, ohne ihn hier festzulegen.<list type="alternatives"><item>Eigelb-Butter-Teig nach rum-1795<note type="rationale">Rumpolt empfiehlt diesen Teig selbst für „allerley Turten“; für die Praxis ein naheliegender Vergleich, aber keine Vorgabe dieses Rezepts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0678-orig" n="Kaͤlbernfeißt" resp="#fyndling" subtype="contextual">Frisches Kalbsnierenfett, roh mit der gekochten Brust fein gehackt; der Text nennt kein Auslassen oder Anschwitzen.<list type="alternatives"><item>Butter<note type="rationale">Nur als moderner Ersatz, wenn kein Nierenfett zu bekommen ist; nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0678-orig" n="versaltz es nicht" resp="#fyndling" subtype="contextual">Salz wird verwendet, aber vorsichtig; die Menge und der Zeitpunkt bleiben offen. Praktisch: sparsam, am Ende abschmecken.<list type="alternatives"><item>Salz schon über die Kochbrühe der Brust<note type="rationale">Möglich, wenn die Brust in gesalzener Brühe gekocht wurde; dann erklärt sich die Warnung vor dem Versalzen besonders gut. Der Text sagt es nicht.</note></item></list></note>
       </div>
     </back>
   </text>

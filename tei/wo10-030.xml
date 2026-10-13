@@ -33,6 +33,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -101,8 +106,8 @@ Praxis. Das Eiweiß mit einer kleinen Schüssel Wasser (rund 150 ml, der Menge v
         <note type="gloss" target="#wo10-030-orig" n="beselin" resp="#fyndling">Ein kleiner Besen oder Quirl, heute als Schneebesen bekannt.</note>
         <note type="gloss" target="#wo10-030-orig" n="blass In den zucker" resp="#fyndling">Diese Anweisung beschreibt das Klärverfahren von Zucker. Der Eierschaum bindet Verunreinigungen im Zucker, die dann als Schaum abgeschöpft werden können, was zu einem klareren Sirup führt.</note>
         <note type="gloss" target="#wo10-030-orig" n="glutt" resp="#fyndling">Glut, also die heißen, glühenden Reste eines Feuers, die eine gleichmäßigere Hitze abgeben als offene Flammen.</note>
-        <note type="interpretive_choice" target="#wo10-030-orig" n="Weyxlen" resp="#fyndling">Weichseln (Sauerkirschen).</note>
-        <note type="interpretive_choice" target="#wo10-030-orig" n="Ayr guggen" resp="#fyndling">Eierschalen als Hohlmaß: "vier Eierschalen voll" [Wasser] - keine eigene Zutat, sondern eine Mengenangabe für das Wasser in der Schüssel, in der das Eiweiß aufgeschlagen wird.</note>
+        <note type="interpretive_choice" target="#wo10-030-orig" n="Weyxlen" resp="#fyndling">Weichseln (Sauerkirschen).<list type="alternatives"><item>Süßkirschen.<note type="rationale">Obwohl 'Weyxlen' auch Süßkirschen bezeichnen kann, sind Sauerkirschen aufgrund ihres höheren Säuregehalts und ihrer besseren Haltbarkeit für das Einmachen historisch plausibler.</note></item></list></note>
+        <note type="interpretive_choice" target="#wo10-030-orig" n="Ayr guggen" resp="#fyndling">Eierschalen als Hohlmaß: "vier Eierschalen voll" [Wasser] - keine eigene Zutat, sondern eine Mengenangabe für das Wasser in der Schüssel, in der das Eiweiß aufgeschlagen wird.<list type="alternatives"><item>Eigelb (frühere Übersetzung in diesem Rezept).<note type="rationale">Kein geprüftes Wörterbuch (Lexer, Idiotikon, Augsburgisch, Diefenbach, Grimm, Fränkisches Wörterbuch) belegt 'guggen' als Eigelb. Drei unabhängige Quellen stützen stattdessen die Schalen-Lesart: Grimm/DWB, der Fyndling-Korpus selbst (glossary_index.tsv, Beleg ri15632-007 'die gucken' = die leeren Schalen) und das Fränkische Wörterbuch ('Eiergucke'/'Eierguckel' = leere Eierschale, dreifach regional belegt, u.a. 'Öjegucka' Bergen/MF, 'Eiagucka' Großheubach/UF). Der frühere Gegeneinwand, ein zweites Vorkommen im selben Buch (wo10-096, 'souil Ayr souil guggen mit milch genomen') spreche für Eigelb, hat sich bei genauerer Prüfung als Irrtum erwiesen: Diese Stelle ist dieselbe Schalen-als-Hohlmaß-Konstruktion ('so viele Eierschalen voll Milch wie Eier') und bestätigt die Schalen-Lesart, statt ihr zu widersprechen. Kulinarisch passt Eigelb zudem schlecht: sein Fettanteil würde den hier verlangten, tragfähigen Eiweißschaum eher zum Zusammenfallen bringen als ihn zu unterstützen.</note></item></list></note>
       </div>
     </back>
   </text>

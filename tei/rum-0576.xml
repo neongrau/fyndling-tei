@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -109,10 +114,10 @@ Praxis. Ein ganzer Kapaun braucht im Kraut bei schwacher Hitze etwa 1,5 bis 2 St
         <note type="gloss" target="#rum-0576-orig" n="vnterwachsen" resp="#fyndling">Durchwachsen: Speck, in dem Fleisch und Fett in Schichten wechseln. Rumpolt gebraucht das Wort auch bei der geräucherten Ochsenzunge („wol vnterwachsen“).</note>
         <note type="gloss" target="#rum-0576-orig" n="Kappaunen" resp="#fyndling">Kapaun, ein kastrierter Masthahn. Hier ausdrücklich einer, „der nicht geräuchert ist“, als Gegenstück zum geräucherten Fasan.</note>
         <note type="gloss" target="#rum-0576-orig" n="saurem Kraut" resp="#fyndling">Eingesäuerter Weißkohl, also Sauerkraut. Rumpolt nennt saures Kraut im Buch auch bei geräucherter Gans und bei der Ente, jeweils mit Speck, und unterscheidet es vom frischen weißen und grünen Kohl.</note>
-        <note type="interpretive_choice" target="#rum-0576-orig" n="thu den Fasanen darein/ vnd den Kappaun" resp="#fyndling">Die Vögel kommen ganz ins Kraut; der Wortlaut nennt kein Zerteilen.</note>
-        <note type="interpretive_choice" target="#rum-0576-orig" n="setz jn zu mit saurem Kraut" resp="#fyndling">Keine eigene Flüssigkeit: Das Kraut siedet mit dem Speckfett und seinem eigenen Saft. Ob Wasser oder Brühe dazukam, lässt Rumpolt offen.</note>
-        <note type="interpretive_choice" target="#rum-0576-orig" n="laß auch sieden mit dem Kraut" resp="#fyndling">Sieden, bis die Vögel gar sind. Rumpolt nennt keine Zeit; „wol gesotten“ bezieht sich nur auf das Kraut vor der Zugabe.</note>
-        <note type="interpretive_choice" target="#rum-0576-orig" n="Würzung" resp="#fyndling">Keine Würzung außer Speck, Räucherfasan und Sauerkraut; der Text nennt kein Gewürz und kein Salz.</note>
+        <note type="interpretive_choice" target="#rum-0576-orig" n="thu den Fasanen darein/ vnd den Kappaun" resp="#fyndling" subtype="contextual">Die Vögel kommen ganz ins Kraut; der Wortlaut nennt kein Zerteilen.<list type="alternatives"><item>Fasan ganz, Kapaun halbiert, beide zum Servieren zerteilt<note type="rationale">Heutige Praxis, damit der größere Kapaun im Kraut gleichmäßig gar wird. Der Text schließt das nicht aus, sagt es aber auch nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0576-orig" n="setz jn zu mit saurem Kraut" resp="#fyndling" subtype="contextual">Keine eigene Flüssigkeit: Das Kraut siedet mit dem Speckfett und seinem eigenen Saft. Ob Wasser oder Brühe dazukam, lässt Rumpolt offen.<list type="alternatives"><item>Krautsaft und bei Bedarf etwas Wasser<note type="rationale">Heutige Vorsicht gegen Ansetzen über die lange Garzeit; nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0576-orig" n="laß auch sieden mit dem Kraut" resp="#fyndling" subtype="contextual">Sieden, bis die Vögel gar sind. Rumpolt nennt keine Zeit; „wol gesotten“ bezieht sich nur auf das Kraut vor der Zugabe.<list type="alternatives"><item>Etwa 1,5 bis 2 Stunden bei schwacher Hitze, Garprobe am Kapaunschenkel<note type="rationale">Heutige Erfahrung für einen ganzen Kapaun, nicht aus dem Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0576-orig" n="Würzung" resp="#fyndling" subtype="contextual">Keine Würzung außer Speck, Räucherfasan und Sauerkraut; der Text nennt kein Gewürz und kein Salz.<list type="alternatives"><item>Am Ende nach Geschmack salzen<note type="rationale">Heutige Praxis; Speck, Räucherfasan und Kraut sind selbst salzig, deshalb erst zum Schluss abschmecken.</note></item></list></note>
       </div>
     </back>
   </text>

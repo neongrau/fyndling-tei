@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -111,9 +116,9 @@ Praxis. Stoße Rosinen und Äpfel im Mörser oder mit dem Blitzhacker zu einer g
         <note type="gloss" target="#w1-235-orig" n="weinper" resp="#fyndling">Weinbeeren sind hier als getrocknete Rosinen zu verstehen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#weinper"/></note>
         <note type="gloss" target="#w1-235-orig" n="gwuercz" resp="#fyndling">Die Gewürze waren im Mittelalter eine Mischung aus Zimt, Ingwer, Nelken und Muskat, oft auch Galgant oder Paradieskörner. Für süße Speisen wurden bevorzugt helle Gewürze verwendet, um die Farbe nicht zu beeinträchtigen.</note>
         <note type="gloss" target="#w1-235-orig" n="gwuercz" resp="#fyndling">Anders als der eng verwandte Text in b4-233, der an dieser Stelle nur die Ellipse "tu darczu" (gib dazu, ohne Objekt) führt, benennt diese Handschrift die Gewürze ausdrücklich.</note>
-        <note type="interpretive_choice" target="#w1-235-orig" n="weachlisch" resp="#fyndling">welsch (im Sinne von importiert, aus romanischen Ländern)</note>
-        <note type="interpretive_choice" target="#w1-235-orig" n="gwuercz" resp="#fyndling">Gewürze (als allgemeine Bezeichnung für eine Mischung)</note>
-        <note type="interpretive_choice" target="#w1-235-orig" n="loszs es waichen" resp="#fyndling">lass es weichen/ruhen (der Text nennt keinen Zweck)</note>
+        <note type="interpretive_choice" target="#w1-235-orig" n="weachlisch" resp="#fyndling" subtype="lexical">welsch (im Sinne von importiert, aus romanischen Ländern)<list type="alternatives"><item>Das Wort könnte ‚weichlich‘ bedeuten, also weiche Rosinen.<note type="rationale">Obwohl ‚weichlich‘ eine mögliche Lesart ist, ist ‚welsch‘ (aus romanischen Ländern importiert) eine häufige mittelalterliche Bezeichnung für hochwertige oder exotische Zutaten wie Weinbeeren/Rosinen.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-235-orig" n="gwuercz" resp="#fyndling" subtype="lexical">Gewürze (als allgemeine Bezeichnung für eine Mischung)<list type="alternatives"><item>Es könnte sich um eine spezifische, aber nicht näher bezeichnete Gewürzmischung handeln.<note type="rationale">Im Mittelalter waren Gewürzmischungen wie die ‚Poudre Blanche‘ oder ‚Poudre Forte‘ üblich. Da hier keine spezifischen Gewürze genannt werden, bleibt die allgemeine Bezeichnung ‚Gewürze‘ die präziseste Übersetzung.</note></item></list></note>
+        <note type="interpretive_choice" target="#w1-235-orig" n="loszs es waichen" resp="#fyndling" subtype="contextual">lass es weichen/ruhen (der Text nennt keinen Zweck)<list type="alternatives"><item>Vermutlich ist eine kurze Ruhezeit der gefüllten Teiglinge vor dem Backen gemeint.<note type="rationale">Da im Rezept weder eine Flüssigkeit zum Einweichen noch ein konkreter Zweck genannt wird, bleibt dies eine vorsichtige Vermutung statt einer belegten Aussage - so auch im eng verwandten Text b4-233 gehandhabt.</note></item></list></note>
       </div>
     </back>
   </text>

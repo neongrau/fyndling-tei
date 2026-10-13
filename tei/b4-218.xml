@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -116,8 +121,8 @@ Der Teig. Das Rezept nennt nur den fertigen Teig und setzt ihn als bekannt vorau
         <note type="gloss" target="#b4-218-orig" n="walhischen weinperen" resp="#fyndling">Welsche Weinbeeren sind Rosinen, die aus romanischsprachigen Ländern importiert wurden.</note>
         <note type="gloss" target="#b4-218-orig" n="gewurcz" resp="#fyndling">Im Mittelalter waren Gewürze wie Pfeffer, Ingwer, Zimt und Nelken üblich. Für eine helle Füllung empfiehlt sich weißer Pfeffer und heller Ingwer.</note>
         <note type="gloss" target="#b4-218-orig" n="putternn" resp="#fyndling">Butter war in der mittelalterlichen Küche ein gängiges Fett, das je nach Region und Fastenzeit auch durch Schmalz oder Öl ersetzt wurde.</note>
-        <note type="interpretive_choice" target="#b4-218-orig" n="slach die in ein phann" resp="#fyndling">Die Phrase 'schlage sie in eine Pfanne' wurde als 'Eier in der Pfanne aufschlagen und stocken lassen' interpretiert, ähnlich der Zubereitung von Rührei. Dies ist plausibel, da die Eier später gehackt werden, was auf eine gestockte Form hindeutet.</note>
-        <note type="interpretive_choice" target="#b4-218-orig" n="sy" resp="#fyndling">Das Pronomen 'sy' wurde auf die zuvor genannten 'Eier' bezogen, da diese gehackt und mit den Weinbeeren vermischt werden sollen. Der nahezu wortgleiche Paralleltext in w1-221 bestätigt diese Lesung: Auch dort spricht der Fließtext selbst nur von Eiern, nie von Fleisch - obwohl die dortige Kapitelüberschrift 'Von vleisch kraphen' (Fleischkrapfen) lautet.</note>
+        <note type="interpretive_choice" target="#b4-218-orig" n="slach die in ein phann" resp="#fyndling" subtype="contextual">Die Phrase 'schlage sie in eine Pfanne' wurde als 'Eier in der Pfanne aufschlagen und stocken lassen' interpretiert, ähnlich der Zubereitung von Rührei. Dies ist plausibel, da die Eier später gehackt werden, was auf eine gestockte Form hindeutet.<list type="alternatives"><item>Eine alternative Lesart als 'Eier in eine Pfanne schlagen (ohne sofortiges Garen)' ist weniger wahrscheinlich.<note type="rationale">Die Anweisung, die Eier später zu hacken, deutet darauf hin, dass sie bereits eine feste Konsistenz haben sollten.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-218-orig" n="sy" resp="#fyndling" subtype="contextual">Das Pronomen 'sy' wurde auf die zuvor genannten 'Eier' bezogen, da diese gehackt und mit den Weinbeeren vermischt werden sollen. Der nahezu wortgleiche Paralleltext in w1-221 bestätigt diese Lesung: Auch dort spricht der Fließtext selbst nur von Eiern, nie von Fleisch - obwohl die dortige Kapitelüberschrift 'Von vleisch kraphen' (Fleischkrapfen) lautet.</note>
       </div>
     </back>
   </text>

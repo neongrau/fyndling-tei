@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,11 +117,11 @@ Praxis. Gerät: Reibschale oder Mörser und eine Schüssel, kein Feuer. Etwa 10 
         <note type="gloss" target="#rum-1574-orig" n="Reibstein" resp="#fyndling">Ein flacher Stein oder eine flache Schale mit leichter Vertiefung, auf der man Zutaten reibend zerkleinert. Für das Stoßen mit dem Stößel schreibt Rumpolt sonst „Mörsel“. Heute tut es eine Reibschale oder ein Mörser.</note>
         <note type="gloss" target="#rum-1574-orig" n="zerlaß" resp="#fyndling">Hier: mit Flüssigkeit anrühren, verdünnen. Nicht schmelzen.</note>
         <note type="gloss" target="#rum-1574-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend, gut im Geschmack.</note>
-        <note type="interpretive_choice" target="#rum-1574-orig" n="zerlaß" resp="#fyndling">Mit Weinessig auflösen, anrühren und dabei verdünnen. So gebraucht Rumpolt das Verb durchgängig mit Flüssigkeit: „zerstoß vnd zerlaß jhn mit Weinessig“ (Knoblauch), „stoß vnd zerlaß jn mit halb Essig vnd Wasser“, „zerlaß mit Maluasier/ so wirt es fein duͤnn“.</note>
-        <note type="interpretive_choice" target="#rum-1574-orig" n="Reibstein" resp="#fyndling">Flacher Stein oder flache Schale mit leichter Vertiefung zum reibenden Zerkleinern von Zutaten (FWB „reibstein“ 2). Im Text bleibt das Wort deshalb stehen.</note>
-        <note type="interpretive_choice" target="#rum-1574-orig" n="Verhältnis Kresse zu Essig, Konsistenz" resp="#fyndling">Offen. Rumpolt schreibt nur „zerlaß mit Weinessig“; der Kapitelkopf „eynzutuncken“ lässt ebenso eine dünne, saftige Tunke zum Eintunken zu.</note>
-        <note type="interpretive_choice" target="#rum-1574-orig" n="Gewürze gemahlen oder ganz" resp="#fyndling">Pfeffer und Ingwer fertig gemahlen unter die geriebene Kresse gerührt: Der Text trennt das Reiben („reibs“) vom Darunterrühren („ruͤr … darunter“).</note>
-        <note type="interpretive_choice" target="#rum-1574-orig" n="Wie fein die Kresse gerieben wird" resp="#fyndling">Offen. Der Text sagt nur „reibs“; vom groben Brei bis zum glatten Mus ist alles gedeckt.</note>
+        <note type="interpretive_choice" target="#rum-1574-orig" n="zerlaß" resp="#fyndling" subtype="lexical">Mit Weinessig auflösen, anrühren und dabei verdünnen. So gebraucht Rumpolt das Verb durchgängig mit Flüssigkeit: „zerstoß vnd zerlaß jhn mit Weinessig“ (Knoblauch), „stoß vnd zerlaß jn mit halb Essig vnd Wasser“, „zerlaß mit Maluasier/ so wirt es fein duͤnn“.<list type="alternatives"><item>Vermische mit Weinessig<note type="rationale">Trifft die Handlung grob, verliert aber das Verflüssigen und Verdünnen, das im Wort steckt; deshalb nicht gewählt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1574-orig" n="Reibstein" resp="#fyndling" subtype="lexical">Flacher Stein oder flache Schale mit leichter Vertiefung zum reibenden Zerkleinern von Zutaten (FWB „reibstein“ 2). Im Text bleibt das Wort deshalb stehen.<list type="alternatives"><item>Mörser mit Stößel<note type="rationale">Als heutiger Ersatz brauchbar, aber nicht dasselbe Gerät: Für das Stoßen im Mörser schreibt Rumpolt sonst „Moͤrsel“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1574-orig" n="Verhältnis Kresse zu Essig, Konsistenz" resp="#fyndling" subtype="contextual">Offen. Rumpolt schreibt nur „zerlaß mit Weinessig“; der Kapitelkopf „eynzutuncken“ lässt ebenso eine dünne, saftige Tunke zum Eintunken zu.<list type="alternatives"><item>Eine Handvoll Kresse auf etwa 2-3 Esslöffel Weinessig, dicklich-streichfähig<note type="rationale">Praktischer Ausgangspunkt für heute; in der Zubereitungsnotiz gewählt, mehr Essig ergibt die dünne Tunke.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1574-orig" n="Gewürze gemahlen oder ganz" resp="#fyndling" subtype="contextual">Pfeffer und Ingwer fertig gemahlen unter die geriebene Kresse gerührt: Der Text trennt das Reiben („reibs“) vom Darunterrühren („ruͤr … darunter“).<list type="alternatives"><item>Pfeffer und Ingwer ganz im Reibstein mit der Kresse zerreiben<note type="rationale">Denkbar, aber der Text nennt die Gewürze erst nach dem Essig und lässt sie nur einrühren.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1574-orig" n="Wie fein die Kresse gerieben wird" resp="#fyndling" subtype="contextual">Offen. Der Text sagt nur „reibs“; vom groben Brei bis zum glatten Mus ist alles gedeckt.<list type="alternatives"><item>Grober, feuchter Brei<note type="rationale">Moderner Ausgangspunkt, in der Zubereitungsnotiz gewählt; wer länger reibt, bekommt ein glattes Mus.</note></item></list></note>
       </div>
     </back>
   </text>

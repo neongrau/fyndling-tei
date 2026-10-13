@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -132,11 +137,11 @@ Praxis. Das Haartuch ersetzt heute ein feines Passiertuch oder Sieb. Wer keinen 
         <note type="gloss" target="#rum-0150-orig" n="Haͤrin Tuch" resp="#fyndling">Ein feines Seihtuch. Rumpolt schreibt „haͤrin Tuch“, ein Tuch aus Haar; Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Welches Haar, sagt keine Quelle. Heute tut es ein feines Passier- oder Mulltuch.</note>
         <note type="gloss" target="#rum-0150-orig" n="vnzerlassene Butter" resp="#fyndling">Nicht zerlassene, also nicht geschmolzene oder ausgelassene Butter: frische Butter statt Butterschmalz. Grimms Wörterbuch kennt „frische, unzerlassene butter“ als feste Wendung. Hier kommt sie in die Masse und schmilzt beim Aufkochen ein.</note>
         <note type="gloss" target="#rum-0150-orig" n="an die statt sieden" resp="#fyndling">Aus dem Zusammenhang: ‚gar sieden‘, so wie die Wendung auch in Rumpolts anderen Kopf- und Fleischrezepten steht.</note>
-        <note type="interpretive_choice" target="#rum-0150-orig" n="an die statt sieden" resp="#fyndling">„Gar sieden“: aus dem Zusammenhang erschlossen und im Buch einheitlich so übersetzt.</note>
-        <note type="interpretive_choice" target="#rum-0150-orig" n="frische vnzerlassene Butter" resp="#fyndling">Frische, nicht zerlassene Butter: gemeint ist die Sorte (frische Butter, kein Butterschmalz), wie Grimms Wendung „frische, unzerlassene butter“ belegt.</note>
-        <note type="interpretive_choice" target="#rum-0150-orig" n="nim̃ daß Hirn auch darzu" resp="#fyndling">Wörtlich: das Hirn kommt ohne eigenen Garschritt in den Mörser und gart erst beim abschließenden Aufkochen mit.</note>
-        <note type="interpretive_choice" target="#rum-0150-orig" n="seuber jhn auß einem kalten Wasser" resp="#fyndling">Den Kopf aus dem Sud in kaltes Wasser geben und dort säubern; „auß“ lässt offen, ob er darin liegt oder nur abgespült wird.</note>
-        <note type="interpretive_choice" target="#rum-0150-orig" n="wenn du vermeynest/ daß es zu dick wirt" resp="#fyndling">Brühe nur so viel, dass die Masse nicht ansetzt und ein Mus bleibt, keine Suppe.</note>
+        <note type="interpretive_choice" target="#rum-0150-orig" n="an die statt sieden" resp="#fyndling" subtype="contextual">„Gar sieden“: aus dem Zusammenhang erschlossen und im Buch einheitlich so übersetzt.<list type="alternatives"><item>Weich sieden<note type="rationale">Das Fleisch muss am Ende weich genug zum Stoßen sein, aber „weich“ steht nicht im Text; die Übersetzung bleibt deshalb bei „gar“.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0150-orig" n="frische vnzerlassene Butter" resp="#fyndling" subtype="lexical">Frische, nicht zerlassene Butter: gemeint ist die Sorte (frische Butter, kein Butterschmalz), wie Grimms Wendung „frische, unzerlassene butter“ belegt.<list type="alternatives"><item>Butter in festen Stücken zugeben<note type="rationale">Ergibt sich praktisch von selbst, weil nicht zerlassene Butter fest ist; der Text betont aber die Sorte, nicht den Zustand beim Zugeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0150-orig" n="nim̃ daß Hirn auch darzu" resp="#fyndling" subtype="contextual">Wörtlich: das Hirn kommt ohne eigenen Garschritt in den Mörser und gart erst beim abschließenden Aufkochen mit.<list type="alternatives"><item>Hirn vorher im Sud mitgaren oder kurz brühen<note type="rationale">Heutige Praxis und die sichere Wahl; der Text sagt dazu nichts, schließt es aber auch nicht aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0150-orig" n="seuber jhn auß einem kalten Wasser" resp="#fyndling" subtype="contextual">Den Kopf aus dem Sud in kaltes Wasser geben und dort säubern; „auß“ lässt offen, ob er darin liegt oder nur abgespült wird.<list type="alternatives"><item>Den gekochten Kopf in kaltem Wasser abspülen<note type="rationale">Die heute naheliegende Ausführung mit demselben Zweck; im Ergebnis kein Unterschied.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0150-orig" n="wenn du vermeynest/ daß es zu dick wirt" resp="#fyndling" subtype="contextual">Brühe nur so viel, dass die Masse nicht ansetzt und ein Mus bleibt, keine Suppe.<list type="alternatives"><item>So viel Brühe, dass eine streichfähige Masse entsteht<note type="rationale">Heutige Faustregel für dieselbe Anweisung; Rumpolt überlässt die Menge dem Urteil des Kochs.</note></item></list></note>
       </div>
     </back>
   </text>

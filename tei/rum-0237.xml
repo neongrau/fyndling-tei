@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -99,9 +104,9 @@ Praxis. Mengen und Vorbereitung nennt der Eintrag nicht. Bei den Hammel- und Boc
         <note type="gloss" target="#rum-0237-orig" n="Geil" resp="#fyndling">Hoden. Rumpolt gebraucht das Wort durchgehend so: im Hammelkapitel „Hammelsgeil oder Bockshoden“, im Hirschkapitel „Geil vom Hirsch … wie die vom Bock“. Lexer führt geile als „hode“. Warum hier „von der Geiß“ steht, also vom weiblichen Tier, erklärt der Text nicht; das Kapitel handelt von der jungen Geiß.</note>
         <note type="gloss" target="#rum-0237-orig" n="eynmachen" resp="#fyndling">Bei Rumpolt heißt „einmachen“ hier nicht konservieren, sondern in einer Soße oder Brühe anrichten.</note>
         <note type="gloss" target="#rum-0237-orig" n="gelb oder schwartz" resp="#fyndling">Die Farbe der Zubereitung. Womit gefärbt wird, sagt der Text nicht. Rumpolt gebraucht dieselbe Formel als Kurzverweis auf seine Soßen auch bei den Hirschhoden („es sey schwartz oder gelb, weiß mit Limonien“) und bei weichen Hirschhörnern samt Geil („in einem Pfeffer, gelb oder weiß“).</note>
-        <note type="interpretive_choice" target="#rum-0237-orig" n="Das Geil von der Geiß" resp="#fyndling">Hoden, wie Rumpolt das Wort bei Hammel, Bock und Hirsch gebraucht. Welches Tier genau gemeint ist, lässt der Text offen: Hoden hat nur das männliche Tier, der Text sagt aber „von der Geiß“.</note>
-        <note type="interpretive_choice" target="#rum-0237-orig" n="gelb oder schwartz" resp="#fyndling">Die Farbe der Soße oder Zubereitung; ein Farbmittel nennt der Text nicht, und es wird hier auch keins festgelegt.</note>
-        <note type="interpretive_choice" target="#rum-0237-orig" n="eynmachen" resp="#fyndling">In Soße oder Brühe anrichten, Rumpolts Sprachgebrauch bei Fleisch.</note>
+        <note type="interpretive_choice" target="#rum-0237-orig" n="Das Geil von der Geiß" resp="#fyndling" subtype="contextual">Hoden, wie Rumpolt das Wort bei Hammel, Bock und Hirsch gebraucht. Welches Tier genau gemeint ist, lässt der Text offen: Hoden hat nur das männliche Tier, der Text sagt aber „von der Geiß“.<list type="alternatives"><item>Hoden des jungen Bocks; „Geiß“ steht hier als Kapitelname für das Tier allgemein.<note type="rationale">Anatomisch naheliegend und für die Küche die praktische Lesart, für Rumpolts Sprachgebrauch aber nicht eigens belegt.</note></item><item>Eierstöcke des weiblichen Tiers.<note type="rationale">Ältere Wörterbücher (Adelung) kennen Geil beim Weibchen auch in diesem Sinn. Rumpolt selbst gebraucht das Wort aber nur für Hoden, daher nachrangig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0237-orig" n="gelb oder schwartz" resp="#fyndling" subtype="contextual">Die Farbe der Soße oder Zubereitung; ein Farbmittel nennt der Text nicht, und es wird hier auch keins festgelegt.<list type="alternatives"><item>„Schwarz“ als dunkler Pfeffer, Rumpolts gebundene Soße.<note type="rationale">Bei den Hammel- und Bockshoden macht Rumpolt einen Pfeffer, den Blut dunkel färbt. Ob er hier darauf verweist, sagt der Eintrag nicht.</note></item><item>Praxis heute: eine gelbe oder eine dunkle Soße nach Wahl.<note type="rationale">Der Text überlässt die Wahl dem Koch; wer nachkocht, entscheidet selbst, womit er färbt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0237-orig" n="eynmachen" resp="#fyndling" subtype="lexical">In Soße oder Brühe anrichten, Rumpolts Sprachgebrauch bei Fleisch.<list type="alternatives"><item>In einer Pastete einmachen.<note type="rationale">Rumpolt gebraucht „eynmachen“ auch für Pasteten, sagt dann aber ausdrücklich „in ein Pasteten“. Hier fehlt der Zusatz, und die Farbangabe gelb oder schwarz passt besser zu einer Soße.</note></item></list></note>
       </div>
     </back>
   </text>

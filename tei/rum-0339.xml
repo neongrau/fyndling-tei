@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -122,9 +127,9 @@ Praxis. Mengen nennt Rumpolt keine. Damhirschnieren gibt es beim Wildhändler od
         <note type="gloss" target="#rum-0339-orig" n="gar an die statt gesotten" resp="#fyndling">Gar gekocht. Die Wendung „an die statt“ steht bei Rumpolt oft neben „gar“ und meint, dass etwas fertig gegart ist.</note>
         <note type="gloss" target="#rum-0339-orig" n="sonderlich Boͤhemisch" resp="#fyndling">„Besonders auf böhmische Art“. Rumpolts eigene Herkunftsangabe; er beschreibt sie an dieser Stelle nicht eigens.</note>
         <note type="gloss" target="#rum-0339-orig" n="Weidwerck" resp="#fyndling">Weidwerk, die Jagd.</note>
-        <note type="interpretive_choice" target="#rum-0339-orig" n="sonderlich Boͤhemisch / Nim̃ Zwibeln" resp="#fyndling">Der Zwiebelabsatz beschreibt die böhmische Art: Er folgt unmittelbar auf „sonderlich Boͤhemisch“, und bei den Hirschnieren nennt Rumpolt dieselbe Art ausdrücklich „auff Boͤhemisch mit Zwibeln“.</note>
-        <note type="interpretive_choice" target="#rum-0339-orig" n="Wenn die Nieren gar an die statt gesotten" resp="#fyndling">Der Text sagt nur, dass die Nieren gar gesotten sind, bevor sie in die Zwiebeln geschnitten werden. Wo und worin, bleibt offen: Sie können vorher am Spieß oder auf dem Rost gegart oder in Wasser gesotten worden sein.</note>
-        <note type="interpretive_choice" target="#rum-0339-orig" n="so wirdt er gut" resp="#fyndling">Das maskuline „er“ hat kein eindeutiges Bezugswort; übersetzt als neutrales „so wird es gut“, bezogen auf das ganze Gericht im Kessel.</note>
+        <note type="interpretive_choice" target="#rum-0339-orig" n="sonderlich Boͤhemisch / Nim̃ Zwibeln" resp="#fyndling" subtype="contextual">Der Zwiebelabsatz beschreibt die böhmische Art: Er folgt unmittelbar auf „sonderlich Boͤhemisch“, und bei den Hirschnieren nennt Rumpolt dieselbe Art ausdrücklich „auff Boͤhemisch mit Zwibeln“.<list type="alternatives"><item>Der Zwiebelabsatz ist ein eigener, weiterer Weg neben Spieß und Rost; „sonderlich Böhmisch“ verweist auf eine hier nicht beschriebene Zubereitung.<note type="rationale">Der Druck verbindet beides nicht ausdrücklich, nach „Boͤhemisch“ beginnt ein neuer Satz. Gegen diese Lesart spricht der Hirschnieren-Beleg mit Zwiebeln.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0339-orig" n="Wenn die Nieren gar an die statt gesotten" resp="#fyndling" subtype="contextual">Der Text sagt nur, dass die Nieren gar gesotten sind, bevor sie in die Zwiebeln geschnitten werden. Wo und worin, bleibt offen: Sie können vorher am Spieß oder auf dem Rost gegart oder in Wasser gesotten worden sein.<list type="alternatives"><item>Praktische Ausführung: die Nieren vorab für sich in Wasser oder leicht gesalzener Brühe gar kochen, dann in Scheiben schneiden und in den Zwiebelansatz geben.<note type="rationale">Deckt sich mit dem Wort „gesotten“ und ergibt die einfachste Abfolge; ausdrücklich verlangt der Text es nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0339-orig" n="so wirdt er gut" resp="#fyndling" subtype="philological">Das maskuline „er“ hat kein eindeutiges Bezugswort; übersetzt als neutrales „so wird es gut“, bezogen auf das ganze Gericht im Kessel.<list type="alternatives"><item>Bezug auf „der Pfeffer“ als Name eines Gerichts in Pfefferbrühe.<note type="rationale">Nicht gedeckt: Der Pfeffer ist hier nur gestoßenes Gewürz, ein Gericht namens „Pfeffer“ kommt im Rezept nicht vor.</note></item></list></note>
       </div>
     </back>
   </text>

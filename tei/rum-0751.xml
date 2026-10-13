@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,11 +129,11 @@ Praxis. Die Rebhühner heute am Spieß, auf dem Rost oder im Ofen bei mittlerer 
         <note type="gloss" target="#rum-0751-orig" n="Limonien" resp="#fyndling">Zitronen. „Frische saure“ betont, dass frische Früchte gemeint sind; Rumpolt verwendet an anderen Stellen auch eingesalzene Limonien.</note>
         <note type="gloss" target="#rum-0751-orig" n="Feldhuͤnner" resp="#fyndling">Dasselbe Tier wie die Rebhühner der Überschrift; Rumpolt wechselt im selben Rezept zwischen beiden Namen.</note>
         <note type="gloss" target="#rum-0751-orig" n="Federwildpret" resp="#fyndling">Federwild, hier die Rebhühner.</note>
-        <note type="interpretive_choice" target="#rum-0751-orig" n="in einem Safft" resp="#fyndling">Wortnah als „in einem Saft“ übersetzt. Am wahrscheinlichsten ist der eigene Bratensaft gemeint, die Vögel werden also saftig und nicht trocken gebraten; so spricht Rumpolt auch beim Kalbsschlegel vom Braten „im Safft“. Die braune Brühe kommt erst danach dazu.</note>
-        <note type="interpretive_choice" target="#rum-0751-orig" n="braune Bruͤh" resp="#fyndling">Offen gelassen: Der Text sagt nur „darzu gemacht ein braune Bruͤh“ und nennt keine Grundlage. Im vorhergehenden Rezept desselben Kapitels stammt die braune Brühe von einem Kapaun.</note>
-        <note type="interpretive_choice" target="#rum-0751-orig" n="Limonien darein geschnitten" resp="#fyndling">Die Zitronen werden geschnitten, also in Scheiben oder Stücken samt Schale in die Brühe gegeben und mitgekocht, nicht nur ausgedrückt. Im vorhergehenden Rezept nimmt Rumpolt dagegen ausgedrückten Saft.</note>
-        <note type="interpretive_choice" target="#rum-0751-orig" n="mit Zimmet vnd Neglein gespickt" resp="#fyndling">Gewürze in Stücken ins Fleisch gesteckt: Nelken ganz, Zimt in kleinen Stangenstückchen, wie beim Rehschlegel im selben Buch.</note>
-        <note type="interpretive_choice" target="#rum-0751-orig" n="Garzeit" resp="#fyndling">Rumpolt nennt weder Garzeit noch Garpunkt, auch keine Menge.</note>
+        <note type="interpretive_choice" target="#rum-0751-orig" n="in einem Safft" resp="#fyndling" subtype="contextual">Wortnah als „in einem Saft“ übersetzt. Am wahrscheinlichsten ist der eigene Bratensaft gemeint, die Vögel werden also saftig und nicht trocken gebraten; so spricht Rumpolt auch beim Kalbsschlegel vom Braten „im Safft“. Die braune Brühe kommt erst danach dazu.<list type="alternatives"><item>in einer Sauce angerichtet<note type="rationale">Möglich, wenn „Saft“ die nachfolgende braune Brühe vorwegnimmt. Die Wendung „in einem Safft“ steht bei Rumpolt sonst nirgends, und ein Braten in einer Sauce widerspricht dem Satz, dass die Brühe erst dazu gemacht wird; deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0751-orig" n="braune Bruͤh" resp="#fyndling" subtype="contextual">Offen gelassen: Der Text sagt nur „darzu gemacht ein braune Bruͤh“ und nennt keine Grundlage. Im vorhergehenden Rezept desselben Kapitels stammt die braune Brühe von einem Kapaun.<list type="alternatives"><item>braune Fleisch- oder Geflügelbrühe, oder der Bratenfond der Rebhühner<note type="rationale">Praktische heutige Lösung (siehe Zubereitung); historisch nicht festgelegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0751-orig" n="Limonien darein geschnitten" resp="#fyndling" subtype="lexical">Die Zitronen werden geschnitten, also in Scheiben oder Stücken samt Schale in die Brühe gegeben und mitgekocht, nicht nur ausgedrückt. Im vorhergehenden Rezept nimmt Rumpolt dagegen ausgedrückten Saft.<list type="alternatives"><item>nur Zitronensaft<note type="rationale">Bequemer, aber der Text sagt „schneiden“; die Schale wird bei langem Kochen bitter, deshalb nur kurz aufsieden lassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0751-orig" n="mit Zimmet vnd Neglein gespickt" resp="#fyndling" subtype="lexical">Gewürze in Stücken ins Fleisch gesteckt: Nelken ganz, Zimt in kleinen Stangenstückchen, wie beim Rehschlegel im selben Buch.<list type="alternatives"><item>gestoßene Gewürze in Einschnitte gestreut<note type="rationale">Denkbar, aber „spicken“ meint das Einstecken von Stücken.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0751-orig" n="Garzeit" resp="#fyndling" subtype="contextual">Rumpolt nennt weder Garzeit noch Garpunkt, auch keine Menge.<list type="alternatives"><item>ganzes Rebhuhn etwa 35 bis 45 Minuten bei mittlerer Hitze, bis der Saft klar läuft<note type="rationale">Schätzung aus heutiger Praxis, nicht belegt; Grundlage der Zeitangabe.</note></item></list></note>
       </div>
     </back>
   </text>

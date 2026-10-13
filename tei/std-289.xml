@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -112,8 +117,8 @@ Praxis. Die angegebenen Mengen (Teig im Wert von zwei Pfennigen, acht Eiweiß, B
         <note type="gloss" target="#std-289-orig" n="acht ayer / nur das weiß" resp="#fyndling">Es werden acht Eier genannt, verwendet wird ausschließlich das Eiweiß.</note>
         <note type="gloss" target="#std-289-orig" n="für ein kreützer" resp="#fyndling">Der Kreuzer bezeichnet den damaligen Geldwert der vorgesehenen Branntweinmenge, kein modernes Volumenmaß.</note>
         <note type="gloss" target="#std-289-orig" n="vnders klar" resp="#fyndling">Diese Wortfolge ist nicht restlos gesichert. Die Übersetzung liest sie sinngemäß als „vermische beides gründlich“, weil im Anschluss Kügelchen geformt werden - dafür muss eine formbare Masse entstehen. Die genaue Wortbedeutung bleibt aber offen; es gibt dazu keine zweite Textquelle zum Abgleich.</note>
-        <note type="interpretive_choice" target="#std-289-orig" n="Menge des behandelten Weins" resp="#fyndling">Der Text nennt keine Fass- oder Eimergröße, sondern nur Geldwerte für Teig und Branntwein; vermutlich ist ein handelsübliches Kellerfass vorausgesetzt.</note>
-        <note type="interpretive_choice" target="#std-289-orig" n="Verbleib der Teigkügelchen nach acht Tagen" resp="#fyndling">Der Text endet mit „ſo wirt er guͦt“ und macht keine Angabe, ob die Kügelchen wieder aus dem Wein entfernt werden.</note>
+        <note type="interpretive_choice" target="#std-289-orig" n="Menge des behandelten Weins" resp="#fyndling">Der Text nennt keine Fass- oder Eimergröße, sondern nur Geldwerte für Teig und Branntwein; vermutlich ist ein handelsübliches Kellerfass vorausgesetzt.<list type="alternatives"><item>Für die eigene, meist kleinere Menge Wein die genannten Mengen anteilig herunterrechnen.<note type="rationale">Ohne eine textliche Bezugsgröße lässt sich die Dosierung nicht direkt übertragen; das ist eine praktische Annahme für die Nachkochbarkeit, kein Textbefund.</note></item></list></note>
+        <note type="interpretive_choice" target="#std-289-orig" n="Verbleib der Teigkügelchen nach acht Tagen" resp="#fyndling">Der Text endet mit „ſo wirt er guͦt“ und macht keine Angabe, ob die Kügelchen wieder aus dem Wein entfernt werden.<list type="alternatives"><item>Die Kügelchen vor weiterer Lagerung oder dem Ausschank aus dem Wein entfernen.<note type="rationale">Das ist eine praktische Vorsichtsmaßnahme gegen Schimmel- oder Fehlaromabildung durch die im Wein verbleibende Teig-/Eiweißmasse, im Text selbst aber nicht angeordnet.</note></item></list></note>
       </div>
     </back>
   </text>

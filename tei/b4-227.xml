@@ -34,6 +34,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -129,9 +134,9 @@ Praxis. Birnen und Äpfel weich braten, klein hacken und mit Pfeffer und rohem E
         <note type="gloss" target="#b4-227-orig" n="ayr tutternn" resp="#fyndling">Eidotter, das Eigelb des Hühnereis.</note>
         <note type="gloss" target="#b4-227-orig" n="putternn" resp="#fyndling">Butter, ein häufig verwendetes Bratfett.</note>
         <note type="gloss" target="#b4-227-orig" n="phann" resp="#fyndling">Eine Pfanne zum Braten.</note>
-        <note type="interpretive_choice" target="#b4-227-orig" n="roche ayr" resp="#fyndling">Rohe Eier. Zwei unabhängige Zwillingsrezepte (w1-229, bgs-010) haben an derselben Textstelle eindeutig 'rohe ayr' beziehungsweise 'ro eyer'.</note>
-        <note type="interpretive_choice" target="#b4-227-orig" n="von schonen" resp="#fyndling">Von schönem, also feinem Weißbrot. Die Stelle ist in b4-227 elliptisch (Bezugswort fehlt); zwei Zwillingsrezepte (w1-229: 'schon prot', bgs-010: 'schoenem brote') ergänzen es übereinstimmend.</note>
-        <note type="interpretive_choice" target="#b4-227-orig" n="Garprobe des rohen Eis in der Füllung" resp="#fyndling">Der Text nennt für das fertig gefüllte Brot keine Gardauer oder -temperatur, sondern ausschließlich die Bräunung der Außenseite ('bis das es Rott werd').</note>
+        <note type="interpretive_choice" target="#b4-227-orig" n="roche ayr" resp="#fyndling" subtype="philological">Rohe Eier. Zwei unabhängige Zwillingsrezepte (w1-229, bgs-010) haben an derselben Textstelle eindeutig 'rohe ayr' beziehungsweise 'ro eyer'.<list type="alternatives"><item>Rochen (Speisefisch)<note type="rationale">Wörterbuchbeleg (FWB) für 'roche' als eigenständiges Wort für den Fisch existiert, passt aber inhaltlich nicht zum Kontext (Ei neben Pfeffer als Zutat) und wird durch die Zwillinge nicht gestützt.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-227-orig" n="von schonen" resp="#fyndling" subtype="philological">Von schönem, also feinem Weißbrot. Die Stelle ist in b4-227 elliptisch (Bezugswort fehlt); zwei Zwillingsrezepte (w1-229: 'schon prot', bgs-010: 'schoenem brote') ergänzen es übereinstimmend.<list type="alternatives"><item>Von schönen (Eiern)<note type="rationale">Naheliegende Lesart ohne Zwillingsvergleich, wird aber durch beide unabhängigen Parallelzeugen nicht gestützt - keine Handschrift belegt 'Ei' an dieser Stelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#b4-227-orig" n="Garprobe des rohen Eis in der Füllung" resp="#fyndling" subtype="contextual">Der Text nennt für das fertig gefüllte Brot keine Gardauer oder -temperatur, sondern ausschließlich die Bräunung der Außenseite ('bis das es Rott werd').<list type="alternatives"><item>Nur bis zur äußeren Bräunung braten, wie wörtlich beschrieben, ohne separate Garprobe des Kerns.<note type="rationale">Historische Lesart nah am Wortlaut; moderne Praxis empfiehlt aus Lebensmittelsicherheit trotzdem, auch den Kern durchzugaren (siehe Zubereitungshinweis).</note></item></list></note>
       </div>
     </back>
   </text>

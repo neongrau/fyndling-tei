@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -134,12 +139,12 @@ Praxis. Mengen nennt Rumpolt nicht; Zucker nach Geschmack gegen die Säure der Z
         <note type="gloss" target="#rum-0833-orig" n="Limonien" resp="#fyndling">Zitronen; Limoniensafft ist Zitronensaft.</note>
         <note type="gloss" target="#rum-0833-orig" n="auffsieden" resp="#fyndling">Aufsieden, kurz aufkochen lassen. Bei der kalten Fassung der Zitronensauce sagt Rumpolt ausdrücklich, man solle sie nicht aufsieden.</note>
         <note type="gloss" target="#rum-0833-orig" n="wolgeschmack" resp="#fyndling">Wohlschmeckend.</note>
-        <note type="interpretive_choice" target="#rum-0833-orig" n="Pobrat" resp="#fyndling">Rumpolts eigener Saucenbegriff, nach seiner Erklärung beim gekochten Hammelziemer eine süß oder säuerlich gewürzte, eingekochte Sauce unter dem Braten. Die Druckform bleibt stehen.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pobrat"/></note>
-        <note type="interpretive_choice" target="#rum-0833-orig" n="Du magst sie auch von Limonien machen" resp="#fyndling">„sie“ meint die eben beschriebene Zitronensauce, die man ebenso kalt, ohne Aufsieden, unter den gebratenen Vogel geben kann.</note>
-        <note type="interpretive_choice" target="#rum-0833-orig" n="saure braune Brüh" resp="#fyndling">Rumpolt nennt nur sauren Zitronensaft; Farbe und Bindung bleiben offen und werden nicht ergänzt.</note>
-        <note type="interpretive_choice" target="#rum-0833-orig" n="fein breit geschnitten (Pomeranzen)" resp="#fyndling">Rumpolt sagt nur „fein breit geschnitten“; ob die ganze Frucht in Scheiben oder nur die Schale gemeint ist, lässt er offen.</note>
-        <note type="interpretive_choice" target="#rum-0833-orig" n="so seind sie gut vnd wolgeschmack" resp="#fyndling">Bezug offen: die Vögel samt Sauce.</note>
-        <note type="interpretive_choice" target="#rum-0833-orig" n="Bratweise und Bratzeit" resp="#fyndling">Der Text sagt nur „zum Braten“; Spieß oder Ofen bleiben offen.</note>
+        <note type="interpretive_choice" target="#rum-0833-orig" n="Pobrat" resp="#fyndling" subtype="lexical">Rumpolts eigener Saucenbegriff, nach seiner Erklärung beim gekochten Hammelziemer eine süß oder säuerlich gewürzte, eingekochte Sauce unter dem Braten. Die Druckform bleibt stehen.<list type="alternatives"><item>Ableitung aus einem Fremdwort<note type="rationale">Kein Wörterbuch verzeichnet das Wort; eine Herkunft lässt sich nicht belegen und wird deshalb nicht behauptet.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pobrat"/></note>
+        <note type="interpretive_choice" target="#rum-0833-orig" n="Du magst sie auch von Limonien machen" resp="#fyndling" subtype="philological">„sie“ meint die eben beschriebene Zitronensauce, die man ebenso kalt, ohne Aufsieden, unter den gebratenen Vogel geben kann.<list type="alternatives"><item>Eine eigene, schlichtere kalte Sauce nur aus Zitronen, ohne Zucker, Zimt und Wein<note type="rationale">„von Limonien machen“ nennt nur die Zitronen; der Text sagt nicht ausdrücklich, dass die übrigen Zutaten dazugehören.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0833-orig" n="saure braune Brüh" resp="#fyndling" subtype="contextual">Rumpolt nennt nur sauren Zitronensaft; Farbe und Bindung bleiben offen und werden nicht ergänzt.<list type="alternatives"><item>Bräunung durch eingebranntes Mehl, wie bei der säuerlichen Pobrat beim Hammelziemer<note type="rationale">Wäre eine naheliegende Erklärung der braunen Farbe, steht aber nicht in diesem Rezept.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0833-orig" n="fein breit geschnitten (Pomeranzen)" resp="#fyndling" subtype="contextual">Rumpolt sagt nur „fein breit geschnitten“; ob die ganze Frucht in Scheiben oder nur die Schale gemeint ist, lässt er offen.<list type="alternatives"><item>Praxis: Bitterorangen samt Schale in dünne, breite Scheiben<note type="rationale">Moderne Standardausführung; deckt den Wortlaut, ist aber nicht die einzige mögliche Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0833-orig" n="so seind sie gut vnd wolgeschmack" resp="#fyndling" subtype="contextual">Bezug offen: die Vögel samt Sauce.<list type="alternatives"><item>Bezug nur auf die Saucen<note type="rationale">„sie“ kann grammatisch ebenso die zuvor genannten Saucen meinen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0833-orig" n="Bratweise und Bratzeit" resp="#fyndling" subtype="contextual">Der Text sagt nur „zum Braten“; Spieß oder Ofen bleiben offen.<list type="alternatives"><item>Praxis: keine Zeitangabe, die Zubereitungszeit wird nur geschätzt<note type="rationale">Rumpolt nennt keine Zeit; jede Angabe wäre eine Ergänzung.</note></item></list></note>
       </div>
     </back>
   </text>

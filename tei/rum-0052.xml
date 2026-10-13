@@ -31,6 +31,11 @@
     <encodingDesc>
       <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
       <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
       <listPrefixDef>
         <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
           <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
@@ -124,14 +129,14 @@ Praxis. Braten waschen, salzen, anstecken und braten. Währenddessen das Brot in
         <note type="gloss" target="#rum-0052-orig" n="gesipff" resp="#fyndling">Rumpolts deutscher Name für diese weiße Sauce (‚das weisse gesipff‘). Einen Wörterbuchbeleg außerhalb dieser Stelle haben wir nicht gefunden; woher das Wort kommt, ist offen.</note>
         <note type="gloss" target="#rum-0052-orig" n="Maniade" resp="#fyndling">Den Namen gibt Rumpolt ‚auff Welsch‘, also in einer romanischen Sprache, meist ist Italienisch gemeint. Über die Herkunft des Rezepts sagt das nichts.</note>
         <note type="gloss" target="#rum-0052-orig" n="Moͤrsel" resp="#fyndling">Mörser; darin werden Nüsse, Mandeln, Knoblauch und das eingeweichte Brot zusammengestoßen.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="gesipff" resp="#fyndling">Name der weißen Sauce, so wie der Text ihn selbst setzt (‚man nennet es das weisse gesipff‘). Die Herkunft des Wortes bleibt offen, weil sich kein unabhängiger Wörterbuchbeleg findet.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="auff Welsch" resp="#fyndling">‚auf Welsch‘ wörtlich beibehalten: welsch heißt romanisch, im 16. Jahrhundert meist italienisch.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="new Nuͤß" resp="#fyndling">Frische Nüsse in der grünen Außenschale; ‚new‘ heißt frisch geerntet, die Nussart nennt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="gruͤne Mandeln/ die noch in Schalen seind" resp="#fyndling">Grüne Mandeln in der Fruchthülle. Wie sie zeitgleich mit den frischen Nüssen zu haben waren, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="beschneidt jn" resp="#fyndling">Das Brot zurechtschneiden; der Text nennt keine Rinde.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="laß miteinander kalt werden" resp="#fyndling">Brot und Brühe kühlen zusammen ab; ob die Brühe dafür warm oder schon kalt eingegossen wird, sagt der Text nicht.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="laß jn braten" resp="#fyndling">Der Text nennt weder Bratzeit noch Gargrad.</note>
-        <note type="interpretive_choice" target="#rum-0052-orig" n="wasch jn auß" resp="#fyndling">Den Braten auswaschen; wie gründlich, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="gesipff" resp="#fyndling" subtype="lexical" cert="unknown">Name der weißen Sauce, so wie der Text ihn selbst setzt (‚man nennet es das weisse gesipff‘). Die Herkunft des Wortes bleibt offen, weil sich kein unabhängiger Wörterbuchbeleg findet.<list type="alternatives"><item>Ableitung von einem Verb für Tunken oder Eintauchen<note type="rationale">Naheliegend, aber unbelegt; deshalb nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="auff Welsch" resp="#fyndling" subtype="contextual">‚auf Welsch‘ wörtlich beibehalten: welsch heißt romanisch, im 16. Jahrhundert meist italienisch.<list type="alternatives"><item>auf Italienisch<note type="rationale">Die wahrscheinlichste Auflösung, aber vom Wort allein nicht festgelegt; deshalb nur in der Anmerkung genannt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="new Nuͤß" resp="#fyndling" subtype="contextual">Frische Nüsse in der grünen Außenschale; ‚new‘ heißt frisch geerntet, die Nussart nennt der Text nicht.<list type="alternatives"><item>Frische Walnüsse (Nassnüsse), Häutchen abgezogen<note type="rationale">Wahrscheinlichste Nussart und heute die praktische Wahl; im Text nicht genannt.</note></item><item>Haselnüsse<note type="rationale">Ebenfalls grün zu ernten; unbelegt, bleibt als offene Lesart.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="gruͤne Mandeln/ die noch in Schalen seind" resp="#fyndling" subtype="contextual">Grüne Mandeln in der Fruchthülle. Wie sie zeitgleich mit den frischen Nüssen zu haben waren, sagt der Text nicht.<list type="alternatives"><item>Frische grüne Mandeln, sonst geschälte Mandelkerne ohne weitere Zusätze<note type="rationale">Moderne Praxis, wenn grüne Mandeln nicht zu bekommen sind.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="beschneidt jn" resp="#fyndling" subtype="lexical">Das Brot zurechtschneiden; der Text nennt keine Rinde.<list type="alternatives"><item>Rinde abschneiden, nur die Krume verwenden<note type="rationale">Passt zum Ziel einer weißen Sauce und ist die praktische Wahl, ist aber nicht ausdrücklich belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="laß miteinander kalt werden" resp="#fyndling" subtype="contextual">Brot und Brühe kühlen zusammen ab; ob die Brühe dafür warm oder schon kalt eingegossen wird, sagt der Text nicht.<list type="alternatives"><item>Brühe warm eingießen und im Brot abkühlen lassen<note type="rationale">Das ‚kalt werden lassen‘ legt eine warme Brühe nahe; so in der Praxis-Notiz.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="laß jn braten" resp="#fyndling" subtype="contextual">Der Text nennt weder Bratzeit noch Gargrad.<list type="alternatives"><item>Nach Kerntemperatur am Spieß garen<note type="rationale">Moderne Praxisangabe, keine Aussage Rumpolts.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-0052-orig" n="wasch jn auß" resp="#fyndling" subtype="contextual">Den Braten auswaschen; wie gründlich, sagt der Text nicht.<list type="alternatives"><item>Kurz abspülen und trockentupfen<note type="rationale">Moderne Praxis vor dem Salzen und Braten.</note></item></list></note>
       </div>
     </back>
   </text>
