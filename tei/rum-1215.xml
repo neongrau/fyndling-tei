@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Austernpastete</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-14">2026-10-14</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-1215/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-1215</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-1215">
+        <head>Austernpastete</head>
+        <div type="original" xml:id="rum-1215-orig" xml:lang="de-x-fnhd" corresp="#rum-1215-trans">
+          <p>2. Nim̃ Austern/ vnd thu sie also roh auff/ schneidt sie also roh auß/ nim̃ die Bruͤh/ die darinnen ist/ davon/ heb sie besonders auff/ vnnd die Austern wasch auß einem andern Wasser/ leg sie in ein Pasteten/ die du hast auffgetrieben von einem weissen Teig/ nim̃ die Bruͤh/ die du von Austern genommen hast/ seig sie durch ein Haͤrin Tuch in die Pasteten/ thu frische Butter/ ein wenig Pfeffer vnd Saltz darein/ vnd laß es damit backen/ so wirt es gut vnd wolgeschmack.</p>
+        </div>
+        <div type="translation" xml:id="rum-1215-trans" xml:lang="de" corresp="#rum-1215-orig">
+          <p>Nimm Austern und öffne sie roh. Schneide sie roh aus, nimm die Brühe ab, die darin ist, und hebe sie gesondert auf.</p>
+          <p>Wasche die Austern in einem anderen Wasser und lege sie in eine Pastete, die du aus einem weißen Teig aufgezogen hast. Nimm die Brühe, die du von den Austern genommen hast, und seihe sie durch ein Haartuch in die Pastete.</p>
+          <p>Gib frische Butter, ein wenig Pfeffer und Salz hinein und lass es damit backen. So wird es gut und wohlschmeckend.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Austern">Austern</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="die Bruͤh/ die darinnen ist" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Austernbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="einem andern Wasser" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="einem weissen Teig">Weißer Teig</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="frische Butter" commodity="wikidata:Q34172" source="#fyndling-ingredient-name">Butter</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="ein wenig Pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-1215-trans" resp="#fyndling">Welches Gericht ist das? Rohe, ausgelöste Austern in einer hochgezogenen Pastete aus weißem Teig, übergossen mit ihrer eigenen, durchgeseihten Brühe, dazu frische Butter, wenig Pfeffer und Salz, zusammen gebacken. Sahne, Wein oder Kräuter nennt Rumpolt nicht.
+
+Die Brühe. Die Flüssigkeit aus den Schalen wird beim Öffnen getrennt aufgefangen und später durch das Haartuch in die Pastete gegossen; das Tuch hält Schalensplitter und Sand zurück. Die Brühe würzt und hält die Austern beim Backen saftig. Die Austern selbst werden vorher in anderem Wasser abgewaschen, die Brühe bleibt unverdünnt.
+
+Der weiße Teig. Ein Teigrezept gibt Rumpolt hier nicht, „weiß“ steht für Teig aus weißem Mehl. Heute nimmst du einen einfachen Pastetenteig aus Weizenmehl, Fett und Wasser, der fest genug ist, um eine Wand hochzuziehen. Ob die Pastete einen Deckel bekommt, sagt der Text nicht; mit Deckel garen die Austern im eigenen Dampf.
+
+Backen. Zeit und Hitze nennt Rumpolt nicht, nur „laß es damit backen“. Austern werden schnell zäh: Back bei mittlerer bis starker Hitze, bis der Teig gar und gebräunt ist, und lass die Füllung nicht länger im Ofen als nötig. Die Butter gibst du in Flocken auf die Austern.
+
+Praxis. Kauf lebende, fest geschlossene Austern beim Fischhändler und öffne sie mit einem Austernmesser über einer Schüssel, damit die Brühe nicht verloren geht. Mengen nennt Rumpolt nicht. Die Zubereitungszeit von etwa einer Stunde ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#rum-1215-orig" n="Pasteten" resp="#fyndling">Hier die Teighülle, in die die Austern gelegt werden. Gefüllt und gebacken ist sie zugleich das fertige Gericht.</note>
+        <note type="gloss" target="#rum-1215-orig" n="auffgetrieben" resp="#fyndling">Aufgezogen, hochgezogen: Die Teighülle wird von Hand zu einer stehenden Wand hochgezogen und danach gefüllt. Rumpolt gebraucht das Wort so auch bei anderen Pasteten, etwa „treib die Pasteten so hoch auff“. Eine Backform nennt er nicht.</note>
+        <note type="gloss" target="#rum-1215-orig" n="weissen Teig" resp="#fyndling">Teig aus weißem Mehl. An anderer Stelle stellt Rumpolt weißes und dunkleres Mehl für Pastetenteig nebeneinander. Ein Teigrezept gibt er hier nicht.</note>
+        <note type="gloss" target="#rum-1215-orig" n="Haͤrin Tuch" resp="#fyndling">Ein Seihtuch aus Haar, meist aus Pferdehaar gewebt. Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Heute tut es ein feines Passier- oder Mulltuch.</note>
+        <note type="interpretive_choice" target="#rum-1215-orig" n="auffgetrieben" resp="#fyndling" subtype="lexical">Aufgezogen, hochgezogen: Die Pastetenhülle wird aus dem Teig zu einer stehenden Wand hochgezogen, bevor die Austern hineinkommen. Rumpolt gebraucht das Wort so bei der hohen Pastete mit „treib die Pasteten so hoch auff“ (rum-0502).<list type="alternatives"><item>Aufgegangen, aufgebacken<note type="rationale">Der Text nennt kein Triebmittel, und das Wort steht vor dem Füllen und Backen; die Lesart verlegt es in den Ofen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1215-orig" n="weissen Teig" resp="#fyndling" subtype="contextual">Ein heller Teig aus weißem Mehl, wie Rumpolt ihn für Pasteten nennt; Fett, Ei oder Flüssigkeit gibt er hier nicht an.<list type="alternatives"><item>Einfacher Pastetenteig aus Weizenmehl, Fett und Wasser<note type="rationale">Moderne Wahl zum Nachkochen, fest genug zum Hochziehen; ohne Beleg im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1215-orig" n="Deckel der Pastete" resp="#fyndling" subtype="contextual">Der Text nennt keinen Deckel; ob die Pastete offen oder verschlossen gebacken wird, bleibt offen.<list type="alternatives"><item>Mit Teigdeckel gebacken<note type="rationale">Moderne Praxis: Die Austern garen im eigenen Dampf und trocknen weniger aus. Rumpolt sagt es hier nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1215-orig" n="laß es damit backen" resp="#fyndling" subtype="contextual">Rumpolt gibt weder Backzeit noch Hitze an.<list type="alternatives"><item>Bei mittlerer bis starker Hitze backen, bis der Teig gar und gebräunt ist<note type="rationale">Moderne Praxis, damit die Austern nicht zäh werden; im Text nicht angegeben.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1215-orig" n="thu frische Butter" resp="#fyndling" subtype="contextual">Frische Butter kommt in die Pastete; ob in Stücken oder zerlassen, sagt der Text nicht.<list type="alternatives"><item>Butter in Flocken auf die Austern geben<note type="rationale">Naheliegende moderne Ausführung, nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1215-orig" n="Haͤrin Tuch" resp="#fyndling" subtype="lexical">Seihtuch aus Haar, meist Pferdehaar; Grimm: „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Rumpolt gebraucht es durchgängig zum Seihen.<list type="alternatives"><item>Haarsieb<note type="rationale">Ein Sieb mit Haarbespannung erfüllt denselben Zweck, Rumpolt schreibt aber ausdrücklich „Tuch“.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
