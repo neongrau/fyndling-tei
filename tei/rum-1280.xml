@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hollopotrida: gekochte und gebratene Fleisch-, Geflügel- und Wildstücke mit Gemüse in Brühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-15">2026-10-15</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-1280/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-1280</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-1280">
+        <head>Hollopotrida: gekochte und gebratene Fleisch-, Geflügel- und Wildstücke mit Gemüse in Brühe</head>
+        <div type="original" xml:id="rum-1280-orig" xml:lang="de-x-fnhd" corresp="#rum-1280-trans">
+          <p>Hollopotrida zu machen/ mit aller Zugehoͤrung.
+
+1. RJndtfleisch in einer Bruͤh abgesotten/ biß gar ist/ doch dz nit versotten/ auß der Bruͤh außgezogen/ vñ kalt lassen werden/ vnd die Bruͤh auffgehaben/ vnd sauber zugedeckt.
+
+2. Schweinenfleisch zugericht in einem Wasser/ vñ gar an die statt gesotten/ zeuchs auß der Bruͤh/ vnd laß kalt werden.
+
+3. Ruckgradt vom Schwein/ wol gesotten auß der Bruͤh gezogen/ vñ kalt lassen werden.
+
+4. Den Schwantz vom Schwein gesotten/ vnd kalt lassen werden.
+
+5. Schweinen Ohren gar gesotten.
+
+6. Die Wuͤrst auch gebraten.
+
+7. Seudt die Leberwuͤrst/ vnd schaw/ daß du sie nicht verseudest/ zeuch sie auff ein Bret/ vnd laß sie kalt werden.
+
+8. Zirwonada auff Welsch gemacht/ gesotten/ vnd kalt lassen werden.
+
+9. Gebraten Kappaunen.
+
+10. Gesotten Kappaunen/ der nur halb gesotten/ heb die Bruͤh darvon auff/ denn man braucht sie mit der Rindtfleischbruͤh.
+
+11. Gebraten Rephuͤnner oder Feldthuͤnner.
+
+12. Gesotten Rephuͤnner/ die halb gar seindt.
+
+13. Haselhuͤnner nicht gar an die statt gebraten.
+
+14. Gesotten Haselhuͤnner/ die halb gar seindt.
+
+15. Fasan der halb gebraten.
+
+16. Fasan der halb gesotten.
+
+17. Hattele vom Kalbfleisch/ halb gebraten.
+
+18. Hattele vom Rindtfleisch gar gebraten.
+
+19. Kaͤlbernwuͤrst halb gebraten.
+
+20. Geraͤuchert Rindtfleisch/ das nicht gar versotten.
+
+21. Geraͤuchert Kalbfleisch/ das man nicht starck leßt auffsieden/ vnnd kalt leßt werden.
+
+22. Geraͤucherte Hennen/ die nicht gar gesotten sind.
+
+23. Gaͤnß die nicht gar gebraten.
+
+24. Enten die halb gebraten.
+
+25. Gesotten Enten.
+
+26. Gebraten Kramatsvoͤgel/ die nicht verbraten.
+
+27. Allerley klein Voͤgel gebraten.
+
+28. Gesotten klein Voͤgel.
+
+29. Gesotten Kramatsvoͤgel.
+
+30. Knorren von Kalbfleisch/ die nicht versotten.
+
+31. Gesotten Castraun oder Hammelfleisch.
+
+32. Gebraten Castraun oder Hammelfleisch/ das gar ist.
+
+33. Kuttelfleck oder Suͤltzen/ die gar gesotten seyn/ daß man sie zerschneidt/ an ein Spieß steckt/ vnd braͤt/ sonderlich wenn sie sauber vnd zugericht seyn/ daß sie nicht nach der Herberg schmecken.
+
+34. Gelb Ruben fein grob geschnitten/ vnnd in gesottenem Wasser gequellt/ vnd kalt lassen werden.
+
+35. Spenat geklaubt/ ein wenig gequellt/ vnnd auß dem Wasser außgedruckt.
+
+36. Weisse Stickelruben sauber geschelet/ gequellt vnd außgekuͤlt.
+
+37. Gebraten Hasen/ die nicht gar seindt.
+
+38. Weisse Wasserruben grob geschnitten/ vnd in Wasser gequellt.
+
+39. Gebratene Aurhanen/ die nicht gar gebraten.
+
+40. Gebraten Jndianischer Han/ der auch nicht gar gebraten ist.
+
+41. Gebraten Birckhan/ oder Birckhenn.
+
+42. Gesotten Birckhan.
+
+43. Gebraten Drappen.
+
+44. Gesotten Drappen.
+
+45. Gebraten junge Huͤner/ die im Safft gebraten.
+
+46. Gesotten junge Huͤner.
+
+47. Braten von einem Hirsch/ nicht verbraten.
+
+48. Braten von einem Reh/ im Safft gebraten.
+
+49. Schweine Braten/ die nicht verbraten.
+
+50. Pettersilgen Wurtzel geschabt/ gequellt/ vñ voneinander geschnitẽ.
+
+51. Allerley wolschmeckende Kraͤuter gehackt/ vnd darvnter gethan.
+
+52. Auch ein wenig Knobloch.
+
+53. Origanum Kraut.
+
+54. Gerieben Parmesankaͤß.
+
+55. Gerieben Ruckenbrot.
+
+56. Geraͤuchert Schweinen Fleisch/ das nicht versotten.
+
+57. Weiß Kopffel Kraut/ das gequellt ist.
+
+58. Weiß Kopffel Salat auch gequellt.
+
+59. Hirschen Ohren/ die außgesaͤubert/ vnd an die statt gesotten seyn.
+
+60. Laͤmmernfuͤß auch nicht gar gesotten.
+
+61. Castraun oder Hammelsfuͤß/ die nicht gar seyn.
+
+62. Kaͤlbernfuͤß die geraͤuchert/ vnd nicht versotten.
+
+63. Ochsenfuͤß die nicht versotten.
+
+64. Geselcht Lambfleisch/ das nicht versotten.
+
+65. Gesotten Lambfleisch/ das nicht gar ist.
+
+66. Geraͤuchert Geißfleisch.
+
+67. Gesotten Geißfleisch.
+
+68. Gantzen Pfeffer.
+
+69. Muscatenbluͤt.
+
+70. Gestossen Pfeffer.
+
+71. Jngwer.
+
+72. Saffran/ vnter das geriebene Brot vnd Parmesankaͤß gemengt/ zwischen die Speiß gestraͤwt.
+
+73. Rindern Lungenbraten.
+
+74. Gebraten Braten von Gemßen.
+
+75. Braten von einem Steinbock.
+
+76. Gebraten Murmentel.
+
+77. Gesotten Murmentel.
+
+78. Gebratene Duckenten.
+
+79. Gesotten Schnepffen.
+
+80. Gebraten Schnepffen.
+
+81. Gesotten Spenfaͤrckel.
+
+82. Gebraten Spenfaͤrckel.
+
+83. Gebraten Kuͤniglein.
+
+84. Geraͤuchert Ochsenzungen.
+
+85. KuͤhEuter/ wenns gesottẽ ist/ so schneidt mans fein breit/ legts auff ein Roßt/ vnd breunt es sauber ab.
+
+86. Schweinenfuͤß vñ Ohren/ es sey võ zamen oder wildẽ Schweinẽ.
+
+87. Gruͤn Koͤl der vberquellt ist.
+
+88. Pastenackwurtzel geschabt vnd gequellt.
+
+89. KoͤlRuben grob geschnitten/ vnd gequellt.
+
+90. Pertrumkraut.
+
+Nim̃ ein breiten vberzindten Fischkessel/ vnnd richt das Kraͤuterwerck vnd Fleischwerck/ es sey gebratẽ oder gesotten/ wie zuvor beschrieben ist/ fein eyn nacheinander/ zettelweiß/ daß man gebratens vnd gesottens durcheinander mengt/ gruͤne Kraͤuter/ die klein gehackt seyn/ gerieben Brot/ vñ Parmesankeß/ den Knobloch/ der klein geschnitten ist/ vnnd das Gewuͤrtz/ so jetzt bemelt durcheinander gemengt/ daß nicht alles vber ein hauffen kompt. Vnd wenns eyngericht ist/ so nim̃ die Rindtfleisch/ Heñen vnd Kappaunenbruͤh/ die fein lindt gesaltzen/ seig sie daruͤber durch ein Haͤrin Tuch. Nim̃ auch ein eyngebrennt Mehl darein/ setz es auff Kolen/ doch auff kein brennendt Feuwer/ daß es nicht anbrennt/ vnnd schaw/ daß du es nicht versieden leßt/ daß du ein jeglich stuͤck auff ein Schuͤssel besonder kanst anrichten. Denn solche Speiß kan man nicht lang sieden/ weil sie vorhin fast gar ist. Vnd ein solche Speiß kanstu auff zehen oder zwoͤlff Tisch zurichten/ oder wol nur auff ein Tisch. Vnnd muß sich ein Koch flugs tummeln/ daß er diesen Zeug allen zusammen bringt. Wer es auch wil zurichten/ der muß es zween oder drey Tage zuvor anfahen/ daß er alles zusammen bringt/ vnnd sauber zuricht/ das wolgeschmack/ vnd nicht versaltzen wirt. Darumb nennet man es Hollopotrida/ daß vielerley zusammen kompt/ vnd ist gut fuͤr Koͤnig vnd Keyser/ fuͤr Fuͤrsten vnd Herrn zu geben.</p>
+        </div>
+        <div type="translation" xml:id="rum-1280-trans" xml:lang="de" corresp="#rum-1280-orig">
+          <p>Rindfleisch, in einer Brühe abgekocht, bis es gar ist, doch nicht zerkocht, aus der Brühe gezogen und kalt werden lassen; die Brühe aufgehoben und sauber zugedeckt.</p>
+          <p>Schweinefleisch, in Wasser zugerichtet und ganz gar gekocht. Zieh es aus der Brühe und lass es kalt werden.</p>
+          <p>Rückgrat vom Schwein, gut gekocht, aus der Brühe gezogen und kalt werden lassen.</p>
+          <p>Den Schwanz vom Schwein gekocht und kalt werden lassen.</p>
+          <p>Schweineohren, gar gekocht.</p>
+          <p>Die Würste, ebenfalls gebraten.</p>
+          <p>Koche die Leberwürste und sieh zu, dass du sie nicht zerkochst. Zieh sie auf ein Brett und lass sie kalt werden.</p>
+          <p>Zirwonada, auf welsche Art gemacht, gekocht und kalt werden lassen.</p>
+          <p>Gebratene Kapaune.</p>
+          <p>Gekochter Kapaun, der nur halb gekocht ist. Heb die Brühe davon auf, denn man braucht sie mit der Rindfleischbrühe.</p>
+          <p>Gebratene Rebhühner oder Feldhühner.</p>
+          <p>Gekochte Rebhühner, die halb gar sind.</p>
+          <p>Haselhühner, nicht ganz gar gebraten.</p>
+          <p>Gekochte Haselhühner, die halb gar sind.</p>
+          <p>Fasan, halb gebraten.</p>
+          <p>Fasan, halb gekocht.</p>
+          <p>Hattele vom Kalbfleisch, halb gebraten.</p>
+          <p>Hattele vom Rindfleisch, gar gebraten.</p>
+          <p>Kalbswürste, halb gebraten.</p>
+          <p>Geräuchertes Rindfleisch, das nicht ganz zerkocht ist.</p>
+          <p>Geräuchertes Kalbfleisch, das man nicht stark aufsieden und kalt werden lässt.</p>
+          <p>Geräucherte Hennen, die nicht ganz gar gekocht sind.</p>
+          <p>Gänse, die nicht ganz gar gebraten sind.</p>
+          <p>Enten, die halb gebraten sind.</p>
+          <p>Gekochte Enten.</p>
+          <p>Gebratene Krammetsvögel, die nicht verbraten sind.</p>
+          <p>Allerlei kleine Vögel, gebraten.</p>
+          <p>Gekochte kleine Vögel.</p>
+          <p>Gekochte Krammetsvögel.</p>
+          <p>Knorren vom Kalbfleisch, die nicht zerkocht sind.</p>
+          <p>Gekochtes Kastraun- oder Hammelfleisch.</p>
+          <p>Gebratenes Kastraun- oder Hammelfleisch, das gar ist.</p>
+          <p>Kuttelfleck oder Sülzen, die gar gekocht sind, sodass man sie zerschneidet, an einen Spieß steckt und brät, besonders wenn sie sauber und zugerichtet sind, damit sie nicht nach der Herberge schmecken.</p>
+          <p>Gelbe Rüben, fein grob geschnitten, in kochendem Wasser überbrüht und kalt werden lassen.</p>
+          <p>Spinat, verlesen, ein wenig überbrüht und aus dem Wasser ausgedrückt.</p>
+          <p>Weiße Stickelrüben, sauber geschält, überbrüht und ausgekühlt.</p>
+          <p>Gebratene Hasen, die nicht ganz gar sind.</p>
+          <p>Weiße Wasserrüben, grob geschnitten und in Wasser überbrüht.</p>
+          <p>Gebratene Auerhähne, die nicht ganz gar gebraten sind.</p>
+          <p>Gebratener Putenhahn, der auch nicht ganz gar gebraten ist.</p>
+          <p>Gebratener Birkhahn oder gebratene Birkhenne.</p>
+          <p>Gekochter Birkhahn.</p>
+          <p>Gebratene Trappen.</p>
+          <p>Gekochte Trappen.</p>
+          <p>Gebratene junge Hühner, die im Saft gebraten sind.</p>
+          <p>Gekochte junge Hühner.</p>
+          <p>Braten von einem Hirsch, nicht verbraten.</p>
+          <p>Braten von einem Reh, im Saft gebraten.</p>
+          <p>Schweinebraten, die nicht verbraten sind.</p>
+          <p>Petersilienwurzel, geschabt, überbrüht und zerschnitten.</p>
+          <p>Allerlei wohlschmeckende Kräuter, gehackt und daruntergetan.</p>
+          <p>Auch ein wenig Knoblauch.</p>
+          <p>Oreganokraut.</p>
+          <p>Geriebener Parmesankäse.</p>
+          <p>Geriebenes Roggenbrot.</p>
+          <p>Geräuchertes Schweinefleisch, das nicht zerkocht ist.</p>
+          <p>Weißes Kopfkraut, das überbrüht ist.</p>
+          <p>Weißer Kopfsalat, auch überbrüht.</p>
+          <p>Hirschohren, die ausgesäubert und gar gekocht sind.</p>
+          <p>Lämmerfüße, auch nicht ganz gar gekocht.</p>
+          <p>Kastraun- oder Hammelfüße, die nicht ganz gar sind.</p>
+          <p>Kalbsfüße, die geräuchert und nicht zerkocht sind.</p>
+          <p>Ochsenfüße, die nicht zerkocht sind.</p>
+          <p>Geräuchertes Lammfleisch, das nicht zerkocht ist.</p>
+          <p>Gekochtes Lammfleisch, das nicht ganz gar ist.</p>
+          <p>Geräuchertes Ziegenfleisch.</p>
+          <p>Gekochtes Ziegenfleisch.</p>
+          <p>Ganzer Pfeffer.</p>
+          <p>Muskatblüte.</p>
+          <p>Gestoßener Pfeffer.</p>
+          <p>Ingwer.</p>
+          <p>Safran, unter das geriebene Brot und den Parmesankäse gemengt und zwischen die Speisen gestreut.</p>
+          <p>Lungenbraten vom Rind.</p>
+          <p>Gebratener Braten von Gämsen.</p>
+          <p>Braten von einem Steinbock.</p>
+          <p>Gebratene Murmeltiere.</p>
+          <p>Gekochte Murmeltiere.</p>
+          <p>Gebratene Duckenten.</p>
+          <p>Gekochte Schnepfen.</p>
+          <p>Gebratene Schnepfen.</p>
+          <p>Gekochte Spanferkel.</p>
+          <p>Gebratene Spanferkel.</p>
+          <p>Gebratene Kaninchen.</p>
+          <p>Geräucherte Ochsenzungen.</p>
+          <p>Kuheuter: Wenn es gekocht ist, schneidet man es fein breit, legt es auf einen Rost und bräunt es sauber ab.</p>
+          <p>Schweinefüße und -ohren, sei es von zahmen oder von wilden Schweinen.</p>
+          <p>Grüner Kohl, der überbrüht ist.</p>
+          <p>Pastinakenwurzel, geschabt und überbrüht.</p>
+          <p>Kohlrüben, grob geschnitten und überbrüht.</p>
+          <p>Bertramkraut.</p>
+          <p>Nimm einen breiten, überzinnten Fischkessel und richte das Kräuterwerk und Fleischwerk, es sei gebraten oder gekocht, wie es zuvor beschrieben ist, fein nacheinander und vereinzelt ein, sodass man Gebratenes und Gekochtes durcheinander mengt; dazu grüne Kräuter, die klein gehackt sind, geriebenes Brot und Parmesankäse, den Knoblauch, der klein geschnitten ist, und die eben genannten Gewürze durcheinander gemengt, damit nicht alles auf einen Haufen kommt. Und wenn es eingerichtet ist, so nimm die Rindfleisch-, Hennen- und Kapaunenbrühe, die fein mild gesalzen ist, und seihe sie durch ein Haartuch darüber. Nimm auch ein eingebranntes Mehl hinein, setz es auf Kohlen, doch auf kein brennendes Feuer, damit es nicht anbrennt, und sieh zu, dass du es nicht zerkochen lässt, damit du jedes Stück für sich auf eine Schüssel anrichten kannst. Denn solche Speise kann man nicht lange sieden, weil sie vorher schon fast gar ist. Und eine solche Speise kannst du für zehn oder zwölf Tische zurichten oder auch nur für einen Tisch. Und ein Koch muss sich flink tummeln, damit er all diesen Zeug zusammenbringt. Wer es zurichten will, der muss zwei oder drei Tage vorher damit anfangen, damit er alles zusammenbringt und sauber zurichtet, sodass es wohlschmeckend und nicht versalzen wird. Darum nennt man es Hollopotrida, weil vielerlei zusammenkommt, und es ist gut für König und Kaiser, für Fürsten und Herren zu geben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="beef" orig="RJndtfleisch" commodity="wikidata:Q192628" source="#fyndling-ingredient-context">Rindfleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="pork" orig="Schweinenfleisch" commodity="wikidata:Q191768" source="#fyndling-ingredient-context">Schweinefleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Ruckgradt vom Schwein">Schweinerückgrat, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Schwantz vom Schwein">Schweineschwanz, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Schweinen Ohren">Schweineohren, gar gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Die Wuͤrst">Würste, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Leberwuͤrst">Leberwürste, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Zirwonada auff Welsch gemacht">Zirwonada (welsche Wurst aus Rind- und Schweinefleisch), gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Kappaunen">Kapaun, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Kappaunen">Kapaun, halb gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Rephuͤnner">Rebhühner, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Feldthuͤnner">Feldhühner, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Rephuͤnner">Rebhühner, halb gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Haselhuͤnner nicht gar">Haselhühner, nicht ganz gar gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Haselhuͤnner">Haselhühner, halb gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Fasan der halb gebraten">Fasan, halb gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Fasan der halb gesotten">Fasan, halb gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="veal" orig="Hattele vom Kalbfleisch" commodity="wikidata:Q957434" source="#fyndling-ingredient-context">Hattele vom Kalbfleisch, halb gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient en="beef" orig="Hattele vom Rindtfleisch" commodity="wikidata:Q192628" source="#fyndling-ingredient-context">Hattele vom Rindfleisch, gar gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Kaͤlbernwuͤrst">Kalbswürste, halb gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient en="beef" orig="Geraͤuchert Rindtfleisch" commodity="wikidata:Q192628" source="#fyndling-ingredient-context">Geräuchertes Rindfleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="veal" orig="Geraͤuchert Kalbfleisch" commodity="wikidata:Q957434" source="#fyndling-ingredient-context">Geräuchertes Kalbfleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Geraͤucherte Hennen">Geräucherte Hennen, nicht ganz gar gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gaͤnß">Gänse, nicht ganz gar gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Enten die halb gebraten">Enten, halb gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Enten">Enten, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Kramatsvoͤgel">Krammetsvögel, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Allerley klein Voͤgel">Kleine Vögel, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten klein Voͤgel">Kleine Vögel, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Kramatsvoͤgel">Krammetsvögel, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Knorren von Kalbfleisch">Kalbsknorren, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Castraun oder Hammelfleisch">Hammelfleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Castraun oder Hammelfleisch">Hammelfleisch, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Kuttelfleck">Kuttelfleck, gekocht und am Spieß gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Suͤltzen">Sülzen (Kutteln), gekocht und am Spieß gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gelb Ruben">Gelbe Rüben, grob geschnitten, überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Spenat">Spinat, verlesen, kurz überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weisse Stickelruben">Weiße Stickelrüben, geschält, überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Hasen">Hasen, nicht ganz gar gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weisse Wasserruben">Weiße Wasserrüben, grob geschnitten, überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebratene Aurhanen">Auerhähne, nicht ganz gar gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Jndianischer Han">Putenhahn, nicht ganz gar gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Birckhan">Birkhahn, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Birckhenn">Birkhenne, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Birckhan">Birkhahn, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Drappen">Trappen, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Drappen">Trappen, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten junge Huͤner">Junge Hühner, im Saft gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten junge Huͤner">Junge Hühner, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Braten von einem Hirsch">Hirschbraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Braten von einem Reh">Rehbraten, im Saft gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient en="pork" orig="Schweine Braten" commodity="wikidata:Q191768" source="#fyndling-ingredient-name">Schweinebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Pettersilgen Wurtzel">Petersilienwurzel, geschabt, überbrüht, zerschnitten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Allerley wolschmeckende Kraͤuter">Wohlschmeckende Kräuter, gehackt (Sorten nicht genannt)</ingredient>
+            </item>
+            <item>
+              <ingredient en="garlic" orig="Knobloch" commodity="wikidata:Q21546392" source="#corema-ingredient-index">Knoblauch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Origanum Kraut">Oregano (Dost)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gerieben Parmesankaͤß">Parmesankäse, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gerieben Ruckenbrot">Roggenbrot, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="pork" orig="Geraͤuchert Schweinen Fleisch" commodity="wikidata:Q191768" source="#fyndling-ingredient-context">Geräuchertes Schweinefleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weiß Kopffel Kraut">Weißes Kopfkraut (Weißkohl), überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weiß Kopffel Salat">Weißer Kopfsalat, überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Hirschen Ohren">Hirschohren, gesäubert, gar gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Laͤmmernfuͤß">Lammfüße, nicht ganz gar gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Castraun oder Hammelsfuͤß">Hammelfüße, nicht ganz gar gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Kaͤlbernfuͤß die geraͤuchert">Kalbsfüße, geräuchert, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Ochsenfuͤß">Ochsenfüße, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="lamb meat" orig="Geselcht Lambfleisch" commodity="wikidata:Q643419" source="#fyndling-ingredient-context">Geräuchertes Lammfleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="lamb meat" orig="Gesotten Lambfleisch" commodity="wikidata:Q643419" source="#fyndling-ingredient-context">Lammfleisch, nicht ganz gar gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat" orig="Geraͤuchert Geißfleisch" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Geräuchertes Ziegenfleisch</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat" orig="Gesotten Geißfleisch" commodity="wikidata:Q10990" source="#fyndling-ingredient-context">Ziegenfleisch, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gantzen Pfeffer">Pfeffer, ganz</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="Muscatenbluͤt" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Gestossen Pfeffer" commodity="wikidata:Q3143131" source="#fyndling-ingredient-name">Pfeffer, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Rindern Lungenbraten">Lungenbraten vom Rind (Rinderfilet)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Braten von Gemßen">Gämsbraten, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Braten von einem Steinbock">Steinbockbraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Murmentel">Murmeltiere, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Murmentel">Murmeltiere, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebratene Duckenten">Duckenten (Tauchenten), gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Schnepffen">Schnepfen, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Schnepffen">Schnepfen, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gesotten Spenfaͤrckel">Spanferkel, gekocht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Spenfaͤrckel">Spanferkel, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gebraten Kuͤniglein">Kaninchen, gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Geraͤuchert Ochsenzungen">Geräucherte Ochsenzungen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="KuͤhEuter">Kuheuter, gekocht, auf dem Rost abgebräunt</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Schweinenfuͤß vñ Ohren">Schweinefüße und -ohren (Haus- oder Wildschwein)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Gruͤn Koͤl">Grüner Kohl (Sorte offen), überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Pastenackwurtzel">Pastinakenwurzel, geschabt, überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="KoͤlRuben">Kohlrüben, grob geschnitten, überbrüht</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Pertrumkraut">Bertramkraut (Art offen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="Rindtfleisch/ Heñen vnd Kappaunenbruͤh" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Rindfleisch-, Hennen- und Kapaunenbrühe, mild gesalzen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eyngebrennt Mehl">Eingebranntes Mehl (Einbrenne)</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="(implied)" commodity="wikidata:Q11254" source="#fyndling-ingredient-registry">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-1280-trans" resp="#fyndling">Welches Gericht ist das? Eine Zusammenstellung, kein Schmorgericht. Rumpolt zählt neunzig Posten auf, jeder für sich vorbereitet: Rind und Schwein ganz gar gekocht und kalt gestellt, Geflügel und Wild halb gebraten oder halb gekocht, Würste gebraten oder gekocht, Gemüse nur überbrüht. Erst im Kessel kommt alles zusammen und wird kurz miteinander erhitzt.
+
+Die Brühen. Die Brühe vom Rindfleisch wird sauber zugedeckt aufgehoben, ebenso die vom halb gekochten Kapaun; dazu kommt Hennenbrühe. Diese Mischung, mild gesalzen, wird am Ende durch ein Haartuch über die eingerichteten Stücke geseiht. Eine Menge nennt Rumpolt nicht.
+
+Die vorbereiteten Posten. Kuttelfleck und Sülzen (beides Kutteln) werden gar gekocht, zerschnitten und am Spieß gebraten. Das Kuheuter wird gekocht, breit geschnitten und auf dem Rost gebräunt. Hattele und Zirwonada sind Rumpolts eigene Zubereitungen, die er an anderer Stelle beschreibt: das Hattele als geklopfte, mit Rinderfett und Kräutern bestrichene, gewickelte Fleischscheiben am Spieß, die Zirwonada als Wurst aus Rind- und Schweinefleisch. Die geräucherten Posten (Rindfleisch, Kalbfleisch, Hennen, Lamm, Ziege, Kalbsfüße, Ochsenzungen) sind fertige Rauchware; ein Räucherschritt gehört nicht zu diesem Rezept.
+
+Einrichten im Kessel. Ein breiter, überzinnter Fischkessel. Die Stücke werden einzeln und verteilt eingelegt, Gebratenes und Gekochtes gemischt; dazwischen kommt eine Streu aus gehackten grünen Kräutern, geriebenem Roggenbrot, Parmesan, klein geschnittenem Knoblauch und den Gewürzen (ganzer und gestoßener Pfeffer, Muskatblüte, Ingwer, Safran), damit „nicht alles vber ein hauffen kompt“. In der Praxis legt man im breiten Kessel am einfachsten Lage um Lage, die Fleischsorten gemischt.
+
+Brühe und Einbrenne. Rumpolt gibt „ein eyngebrennt Mehl darein“, ohne zu sagen, wie. Praktisch rührt man die Einbrenne mit etwas heißer Brühe glatt und gießt sie mit der übrigen Brühe über die Stücke, sonst klumpt sie. Eine Farbe nennt der Text nicht, die Einbrenne bleibt also hell.
+
+Erhitzen. Auf Kohlen, nicht über offenem Feuer, damit nichts anbrennt, und nur so lange, dass nichts zerkocht: Die Stücke sollen sich noch einzeln auf eine Schüssel legen lassen.
+
+Praxis. Rumpolt nennt keine Mengen, keine Brühemenge und keine Zeit, nur zwei bis drei Tage Vorlauf für das Vorbereiten. Wer das Gericht im Kleinen nachkocht, wählt aus den Posten aus, wie Rumpolt es für „nur auff ein Tisch“ selbst vorsieht, und hält sich an seine Ordnung: Fleisch gar, Geflügel halb gar, Gemüse überbrüht, alles im Kessel zusammen fertig. Als moderne Praxis gilt: Halb gegartes Geflügel muss im Kessel vollständig durchgaren, sonst gart man es vorher ganz.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Hollopotrida" resp="#fyndling">Rumpolt erklärt den Namen selbst: „Darumb nennet man es Hollopotrida/ daß vielerley zusammen kompt“. Das Wort entspricht dem spanischen olla podrida. Bei Rumpolt ist es kein langes Schmorgericht: Jeder Posten wird für sich vorgegart, im Kessel nur zusammengebracht, mit Brühe übergossen und kurz auf Kohlen erhitzt, denn die Speise „kan man nicht lang sieden“.</note>
+        <note type="gloss" target="#rum-1280-orig" n="an die statt gesotten" resp="#fyndling">Gar gekocht. Rumpolt unterscheidet in der Liste genau zwischen „gar“, „halb gar“ und „nicht gar“: Was nur halb gar ist, gart im Kessel fertig.</note>
+        <note type="gloss" target="#rum-1280-orig" n="versotten" resp="#fyndling">Zerkocht. „Nicht versotten“ heißt: gar, aber nicht zerfallen.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Zirwonada" resp="#fyndling">Rumpolts welsche Wurst aus Rind- und Schweinefleisch, im Buch auch Zurwonada und Ziewonada geschrieben; das Rezept dafür steht beim Ochsen (dort wird sie geräuchert). Hier wird sie nur gekocht und kalt gestellt, ist also eine fertige Zutat. In den Wörterbüchern ist das Wort nicht belegt, die Bedeutung des Namens bleibt offen.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Kappaunen" resp="#fyndling">Kapaune, kastrierte Masthähne.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Feldthuͤnner" resp="#fyndling">Feldhühner. Rumpolt schreibt „Rephuͤnner oder Feldthuͤnner“ und stellt beide Namen damit nebeneinander.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Hattele" resp="#fyndling">Rumpolts Name für eine Speise, kein Fleischstück. In den geprüften Wörterbüchern ist das Wort nicht belegt, die Bedeutung ist offen. Beim Kalb beschreibt Rumpolt die Zubereitung selbst: dünne, mit dem Messerrücken geklopfte Fleischscheiben, mit Rinderfett und Kräutern bestrichen, aufgewickelt und am Spieß gebraten. Auch Rontziers Kochbuch von 1598 führt in seiner Mischplatte ein „Hattelet von Rinderfleiſch“.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Kramatsvoͤgel" resp="#fyndling">Krammetsvögel, die Wacholderdrossel (FWB kranwitvogel).</note>
+        <note type="gloss" target="#rum-1280-orig" n="Castraun" resp="#fyndling">Kastraun ist das bairisch-österreichische Wort für den Hammel, den kastrierten Schafbock. „Castraun oder Hammelfleisch“ nennt also dasselbe Fleisch zweimal.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Suͤltzen" resp="#fyndling">Bei Rumpolt Kutteln, der gereinigte Magen, nicht Sülze oder Aspik. Sie werden hier wie der Kuttelfleck gar gekocht, zerschnitten und am Spieß gebraten.</note>
+        <note type="gloss" target="#rum-1280-orig" n="nach der Herberg schmecken" resp="#fyndling">Wörtlich „nach der Herberge schmecken“, wohl: nach schlechter Wirtshausküche. Rumpolt setzt dagegen „sauber vnd zugericht“: Gut geputzte Kutteln haben diesen Beigeschmack nicht.</note>
+        <note type="gloss" target="#rum-1280-orig" n="gequellt" resp="#fyndling">Überbrüht, kurz in kochendem Wasser vorgegart. Das Gemüse wird nicht fertig gekocht, es gart im Kessel nach.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Spenat geklaubt" resp="#fyndling">„Klauben“ heißt auslesen, verlesen: Der Spinat wird von schlechten Blättern und Stielen befreit.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Stickelruben" resp="#fyndling">Eine kleine, längliche Speiserübe. Grimms Wörterbuch (s. v. steckrübe) nennt die Steckrübe der Zeit wegen ihrer langgestreckten Form eine „lange rübe“, „stickelrübe“ ist bei Stieler eine Nebenform davon. Nach Campe heißen die Teltower Rübchen „Steckelrübe“. Welche Sorte Rumpolt genau meint, lässt sich nicht bestimmen; die große runde Kohlrübe, die heute Steckrübe heißt, ist es nicht.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Aurhanen, Birckhan, Drappen" resp="#fyndling">Auerhahn und Birkhahn sind Waldhühner, die Trappe ist ein großer Bodenvogel. Auer- und Birkhuhn sind heute nach der Bundesartenschutzverordnung besonders und streng geschützt, die Großtrappe steht in Anhang I der EU-Vogelschutzrichtlinie.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Jndianischer Han" resp="#fyndling">Die Pute. „Indianisch“ heißt hier „aus Übersee“; Rumpolt widmet der „Jndianischen Henn“ ein eigenes Kapitel. Gemeint ist hier der Hahn, also ein Putenhahn.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Origanum Kraut" resp="#fyndling">Origanum, der Dost, heute als Oregano im Handel.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Ruckenbrot" resp="#fyndling">Roggenbrot. „Rucken“ ist eine oberdeutsche Form von Roggen (Lexer).</note>
+        <note type="gloss" target="#rum-1280-orig" n="Weiß Kopffel Kraut / Weiß Kopffel Salat" resp="#fyndling">„Kopffel“ gehört zu „Kopf“: weißes Kopfkraut, also Weißkohl, und weißer Kopfsalat. Rumpolt nennt beide als eigene Posten, es sind also zwei verschiedene Gewächse; auch in Rumpolts Salatkapitel steht „Kopffel Salat“ für den Kopfsalat. Das Wort selbst ist in den Wörterbüchern nicht in dieser Bedeutung belegt.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Geselcht" resp="#fyndling">Geräuchert. „Selchen“ ist das bairisch-österreichische Wort für räuchern.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Rindern Lungenbraten" resp="#fyndling">Kein Lungenfleisch, sondern das Filet (die innere Lende) vom Rind. Der Name kommt über mittelhochdeutsch lumbel von lateinisch lumbus „Lende“ (Grimms Wörterbuch s. v. lummel); in Österreich heißt das Rinderfilet bis heute Lungenbraten.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Duckenten" resp="#fyndling">Tauchenten. Grimms Wörterbuch und das Schwäbische Wörterbuch führen duckente als „Tauchente“, das Pfälzische und das Rheinische Wörterbuch ebenso, das Rheinische auch allgemein als „kleine wilde Ente“. Welche Art Rumpolt meint, sagt der Text nicht.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Kuͤniglein" resp="#fyndling">Kaninchen. Das Wort sieht aus wie „Königlein“, kommt aber von lateinisch cuniculus.</note>
+        <note type="gloss" target="#rum-1280-orig" n="breunt es sauber ab" resp="#fyndling">Auf dem Rost bräunen, nicht abbrennen: Das gekochte Euter bekommt auf dem Rost Farbe.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Gruͤn Koͤl" resp="#fyndling">Grüner Kohl, also ein grüner Blattkohl. Welche Sorte Rumpolt meint, bleibt offen; Grünkohl liegt nahe, ist aber nicht gesichert.</note>
+        <note type="gloss" target="#rum-1280-orig" n="KoͤlRuben" resp="#fyndling">Kohlrüben. Ob die Rübe des Kohls (Kohlrübe) oder der Kohlrabi gemeint ist, sagt der Text nicht.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Pertrumkraut" resp="#fyndling">Bertram, hier ausdrücklich als Kraut. Welche Pflanze gemeint ist, bleibt offen: Der Name galt für verschiedene Pflanzen, darunter die Bertram-Schafgarbe. Rumpolt führt Bertram mehrfach als grünes Kraut.</note>
+        <note type="gloss" target="#rum-1280-orig" n="vberzindten Fischkessel" resp="#fyndling">Ein breiter Fischkessel, innen mit Zinn überzogen. Die Breite erlaubt, die vielen Stücke nebeneinander einzurichten.</note>
+        <note type="gloss" target="#rum-1280-orig" n="zettelweiß" resp="#fyndling">Grimms Wörterbuch erklärt zettelweise als „einzeln, vereinzelt“ (nach Schmeller). Rumpolt meint: die Stücke einzeln verteilt einlegen, Gebratenes und Gekochtes gemischt, „daß nicht alles vber ein hauffen kompt“.</note>
+        <note type="gloss" target="#rum-1280-orig" n="Haͤrin Tuch" resp="#fyndling">Ein feines Seihtuch. Rumpolt schreibt „Haͤrin Tuch“, ein Tuch aus Haar; Grimms Wörterbuch beschreibt das Haartuch als „gewebe aus haaren oder feinem wollenstoff … zum durchseihen von flüssigkeiten“. Meist war es aus Pferdehaar gewebt. Heute tut es ein feines Passier- oder Mulltuch.</note>
+        <note type="gloss" target="#rum-1280-orig" n="eyngebrennt Mehl" resp="#fyndling">Eine Einbrenne, in Fett angeschwitztes Mehl, das die Brühe bindet. Fett und Farbe nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Zirwonada" resp="#fyndling" subtype="lexical" cert="unknown">Als Name der Wurst beibehalten. Rumpolt beschreibt die Wurst beim Ochsen selbst als welsche Wurst aus Rind- und Schweinefleisch (dort Zurwonada, an anderer Stelle Ziewonada); hier ist sie „auff Welsch gemacht/ gesotten“. Ein Wörterbuchbeleg für den Namen fehlt.<list type="alternatives"><item>Zervelatwurst (ital. cervellata)<note type="rationale">Sachlich ähnlich (welsche Dauerwurst aus Rind und Schwein), lautlich aber nicht erklärt; nur Vermutung. Eine Hirnwurst ist durch Rumpolts eigenes Rezept nicht gedeckt.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Hattele" resp="#fyndling" subtype="lexical" cert="unknown">Druckform beibehalten, Bedeutung offen. Das Wort ist in den geprüften Wörterbüchern nicht belegt. Rumpolt beschreibt die Speise beim Kalb selbst (geklopfte Scheiben, mit Rinderfett und Kräutern bestrichen, aufgewickelt, am Spieß gebraten) und verwendet das Wort für Kalb, Rind, Wild und sogar Fisch, also eher für eine Zubereitungsart als für ein Fleischstück.<list type="alternatives"><item>Innereien (Bries, Herz) oder Pastete<note type="rationale">Durch Rumpolts eigene Beschreibung widerlegt: Hattele ist geklopftes, gewickeltes Fleisch am Spieß, weder Innerei noch Pastete.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Duckenten" resp="#fyndling" subtype="lexical">Duckente = Tauchente: so Grimms Wörterbuch, das Schwäbische, das Pfälzische und das Rheinische Wörterbuch. Im Text steht die Druckform; die Art bleibt offen.<list type="alternatives"><item>Krickente<note type="rationale">Kein Wörterbuch stützt diese Gleichsetzung; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Suͤltzen" resp="#fyndling" subtype="lexical">Kutteln, wie überall bei Rumpolt. Der Text behandelt sie genau wie den Kuttelfleck: gar kochen, zerschneiden, am Spieß braten.<list type="alternatives"><item>Sülze, Aspik oder Sülzfleisch<note type="rationale">Passt nicht zum Spießbraten und nicht zu Rumpolts Gebrauch des Wortes; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Jndianischer Han" resp="#fyndling" subtype="lexical">Putenhahn. Die „Jndianische Henn“ ist bei Rumpolt die Pute; „Han“ bezeichnet das männliche Tier.<list type="alternatives"><item>Ein anderes Geflügel aus Übersee<note type="rationale">Rumpolts eigenes Kapitel zur Jndianischen Henne zeigt, dass er die Pute meint; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Rindern Lungenbraten" resp="#fyndling" subtype="lexical">Rinderfilet. FWB verweist „lungenbrate“ auf „lumbel“ (Lende); Rumpolt verwendet den Lungenbraten auch beim Ochsen so, die Lunge heißt bei ihm „Lungenmuß“.<list type="alternatives"><item>Rinderlunge<note type="rationale">Von Wörterbuch und Buchgebrauch nicht gestützt; verworfen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Weiß Kopffel Kraut / Weiß Kopffel Salat" resp="#fyndling" subtype="lexical" cert="unknown">Weißes Kopfkraut (Weißkohl) und weißer Kopfsalat: „Kopffel“ als Verkleinerung von „Kopf“, also Gewächse mit festem Kopf. Rumpolts Salatkapitel gebraucht „Kopffel Salat“ ebenfalls für den Kopfsalat. In den Wörterbüchern ist „Kopffel“ in dieser Bedeutung nicht belegt.<list type="alternatives"><item>Beide Posten Weißkohl (Kohl und Kohlsalat)<note type="rationale">Dann wäre der zweite Posten eine Doppelung des ersten; Rumpolt führt Kraut und Salat aber als zwei Posten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Gruͤn Koͤl" resp="#fyndling" subtype="lexical">Grüner Kohl, ein grüner Blattkohl; die Sorte nennt Rumpolt nicht. So auch in seinen anderen Rezepten mit „grünem Köl“.<list type="alternatives"><item>Grünkohl<note type="rationale">Liegt nahe, ist aber nicht gesichert; als Praxiswahl brauchbar.</note></item><item>Wirsing<note type="rationale">Auch ein grüner Kohl der Zeit; vom Text weder gestützt noch ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="KoͤlRuben" resp="#fyndling" subtype="lexical">Kohlrüben, grob geschnitten und überbrüht, wie die anderen Rübenposten.<list type="alternatives"><item>Kohlrabi<note type="rationale">Ebenfalls eine Rübe des Kohls; der Text unterscheidet nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Stickelruben" resp="#fyndling" subtype="lexical">Eine kleine, längliche Speiserübe (Grimm s. v. steckrübe, Stieler „stickelrübe“; nach Campe auch die Teltower Rübchen). Sorte offen.<list type="alternatives"><item>Die runde Steckrübe (Kohlrübe) von heute<note type="rationale">Grimm führt diese Bedeutung nur am Rand; die Kohlrüben stehen in der Liste außerdem als eigener Posten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="zettelweiß" resp="#fyndling" subtype="contextual">Einzeln, vereinzelt (Grimm s. v. zettelweise, nach Schmeller): Die Stücke werden verstreut nacheinander eingelegt, Gebratenes und Gekochtes gemischt, „daß nicht alles vber ein hauffen kompt“.<list type="alternatives"><item>Lagenweise, in Schichten<note type="rationale">Praktisch naheliegend im breiten Kessel, aber kein Wörterbuch stützt „Lage“ als Bedeutung; der Satz betont das Mischen, nicht das Schichten.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="Nim̃ auch ein eyngebrennt Mehl darein" resp="#fyndling" subtype="contextual">Die Einbrenne kommt in die Brühe: Der Satz schließt an die durchgeseihte Brühe an, und „darein“ meint wohl die Flüssigkeit im Kessel. Eine Farbe nennt Rumpolt nicht.<list type="alternatives"><item>Einbrenne für sich mit etwas Brühe glattrühren und dann über die Stücke gießen<note type="rationale">Heutige Praxis, damit keine Klumpen entstehen; im Text nicht gesagt.</note></item><item>Einbrenne direkt zwischen die Stücke in den Kessel geben<note type="rationale">Wortlaut „darein“ lässt es zu, bindet aber ungleichmäßig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1280-orig" n="breunt es sauber ab" resp="#fyndling" subtype="lexical">Auf dem Rost bräunen. Rumpolt gebraucht „abbreunen auff dem Roßt“ auch sonst für das Anbräunen gekochter Stücke.<list type="alternatives"><item>Absengen, abflämmen<note type="rationale">„Brennen“ könnte auch Sengen meinen; beim gekochten, breit geschnittenen Euter ergibt das Bräunen mehr Sinn.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
