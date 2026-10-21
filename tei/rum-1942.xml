@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wein prüfen: Aufwallprobe und Windregeln</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-20">2026-10-20</date>
+        <idno type="url">https://fyndling.de/rezepte/rum-1942/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/rum-1942</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein new Kochbuch/ Das ist Ein gruͤndtliche beschreibung wie man recht vnd wol ... allerley Speiß ... auff Teutsche/ Vngerische/ Hispanische/ Jtalianische vnnd Frantzoͤsische weiß/ kochen vnd zubereiten solle</title>
+          <date when="1581">1581</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/rumpolt_kochbuch_1581</idno>
+          <note>Transkription: Sonja Bayer, Tom Bilodeau, Thomas Gloning, Martina Grasse, Tanja Kasten, Marc Kuse, Yvonne Ziegler, Justus-Liebig-Universität Gießen, bereitgestellt über das Deutsche Textarchiv (CC BY-NC 3.0 DE)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (Frankfurter Druckersprache mit oberdeutscher Schreibung, südwestdeutsch/rhein-mainischer Küchenwortschatz, 1581)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="rum-1942">
+        <head>Wein prüfen: Aufwallprobe und Windregeln</head>
+        <div type="original" xml:id="rum-1942-orig" xml:lang="de-x-fnhd" corresp="#rum-1942-trans">
+          <p>Ein ander stuͤck.
+
+Wenn man Wein mitten auß einem Faß nimpt/ vñ den vber ein Feuwer erwallen leßt/ vnnd was Geschmacks der Wein gewinnet/ wenn er kalt wirt/ dergleichen Geschmack gewinnet der Wein in dem Faß in seinem alter.
+
+Weñ der Sudwindt wehet/ so verwandelt sich der Wein gern/ so pruͤfet man wol/ ob der Wein etwas boͤß in jhm hab. Auch sol der Weinkaͤuffer den Wein offt pruͤfen/ oder in den Mundt nemmen/ vñ lang darinn halten/ darnach wirt er deß Weins Geschmacks desto baß bericht.
+
+Jtem in dem Meyen/ in dem Brachmonat/ vñ in dem Augst/ welcher Wein denn weiß ist/ der ist gut.
+
+Jtem/ wenn der Windt wehet von Orient/ so ist der Wein am aller schwaͤchsten vnnd kraͤnckesten/ vnnd erzeiget sich gern/ was schwachheit in jhm ist.
+
+Jst aber der Windt frischwehend/ so ist der Wein zu derselbigen zeit frisch/ vnd starck/ denn sol man jn zu versuchen geben/ vnd verkauffen.</p>
+        </div>
+        <div type="translation" xml:id="rum-1942-trans" xml:lang="de" corresp="#rum-1942-orig">
+          <p>Wenn man Wein aus der Mitte eines Fasses nimmt und ihn über einem Feuer aufwallen lässt: Welchen Geschmack der Wein bekommt, wenn er kalt wird, den gleichen Geschmack bekommt der Wein im Fass in seinem Alter.</p>
+          <p>Wenn der Südwind weht, verändert sich der Wein leicht. Dann kann man gut prüfen, ob der Wein etwas Böses in sich hat. Auch soll der Weinkäufer den Wein oft prüfen oder in den Mund nehmen und lange darin halten. Danach ist er über den Geschmack des Weins umso besser unterrichtet.</p>
+          <p>Im Mai, im Juni und im August: Welcher Wein dann weiß ist, der ist gut.</p>
+          <p>Wenn der Wind aus dem Osten weht, ist der Wein am allerschwächsten und kränksten, und es zeigt sich gern, welche Schwäche in ihm ist.</p>
+          <p>Weht der Wind aber frisch, so ist der Wein zu dieser Zeit frisch und stark. Dann soll man ihn zum Probieren geben und verkaufen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Wein mitten auß einem Faß">Wein, aus der Mitte des Fasses</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#rum-1942-trans" resp="#fyndling">Welcher Text ist das? Kein Gericht, sondern ein Prüfverfahren für Wein mit Kaufregeln. Das Stück verbindet drei Dinge: eine Aufwallprobe (Wein aus der Fassmitte erhitzen, abgekühlt kosten), die Mundprobe des Weinkäufers und Wind- und Monatsregeln für den richtigen Zeitpunkt zum Prüfen und Verkaufen. Es steht als zweites Stück unter der Überschrift „Wein prüfen und erkennen, wenn man sie kaufen oder verkaufen soll“.
+
+Die Aufwallprobe. Belegt sind drei Schritte: Wein „mitten auß einem Faß“ nehmen, „vber ein Feuwer erwallen“ lassen und den Geschmack beurteilen, „wenn er kalt wirt“. Dieser Kaltgeschmack soll laut Text dem Geschmack entsprechen, den der Wein im Fass „in seinem alter“ bekommt. Die Probe wird also als Vorhersage gelesen, wohin sich der Wein im Fass entwickelt. Die Entnahme aus der Fassmitte ist Teil der Probe: weder Hefegrund noch Oberfläche. Warum gerade die Mitte, sagt der Text nicht; naheliegend ist, dass man Trub und Kahm meiden wollte.
+
+Wie lange und womit? Der Text nennt weder Dauer noch Gefäß. „Erwallen“ heißt kurz zum Sieden kommen, kein langes Einkochen. Wer die Probe heute nachstellt, bringt eine kleine Menge kurz in einem Topf zum Aufwallen und lässt sie auf Raumtemperatur abkühlen. Das ist eine moderne Nachstellung, keine Angabe der Quelle.
+
+Die Mundprobe. Der Weinkäufer soll den Wein oft prüfen, in den Mund nehmen und lange darin halten. Gesucht wird „etwas boͤß“ und „schwachheit“, also Fehler und Verderbnisneigung. Heute würde man dabei an Fehlnoten wie Essigstich oder Böckser denken; der Text nennt keine einzelnen Fehler.
+
+Wind und Monat. Bei Südwind und Ostwind zeigt der Wein seine Schwächen, deshalb prüft man dann. Bei frischem Wind ist er frisch und stark, dann gibt man ihn zum Probieren und verkauft ihn. Eine Windrichtung für den frischen Wind nennt der Text nicht. Im Mai, Juni und August gilt der Wein, der „weiß“ ist, als gut; ob damit Weißwein oder ein heller, klarer Wein gemeint ist, bleibt offen.
+
+Praxis. Als Verständnishinweis: Erhitzen treibt Alkohol und flüchtige Aromen aus und verändert den Wein anders als die Zeit im Fass. Eine heutige Hitzeprobe im Keller prüft Eiweißstabilität und Trübung, nicht den künftigen Geschmack. Die Behauptung der Quelle ist damit nicht bestätigt. Eine Zeitangabe für die Probe gibt der Text nicht.</note>
+        <note type="gloss" target="#rum-1942-orig" n="erwallen" resp="#fyndling">Aufwallen, kurz zum Sieden kommen lassen. Gemeint ist ein kurzes Erhitzen der Weinprobe, kein langes Einkochen.</note>
+        <note type="gloss" target="#rum-1942-orig" n="in seinem alter" resp="#fyndling">„In seinem Alter“, also wenn der Wein im Fass alt geworden ist.</note>
+        <note type="gloss" target="#rum-1942-orig" n="Sudwindt" resp="#fyndling">Südwind. Im Weinanhang heißt derselbe Wind auch mit lateinischem Namen Auster; auch dort verwandelt er den Wein und lässt seine Mängel erkennen.</note>
+        <note type="gloss" target="#rum-1942-orig" n="Weinkaͤuffer" resp="#fyndling">Der Weinkäufer, also der Händler oder Einkäufer, der Wein prüft, bevor er ihn abnimmt.</note>
+        <note type="gloss" target="#rum-1942-orig" n="bericht" resp="#fyndling">Hier „unterrichtet, im Bilde“: Wer den Wein lange im Mund hält, ist über seinen Geschmack „desto baß“, also umso besser, unterrichtet.</note>
+        <note type="gloss" target="#rum-1942-orig" n="Brachmonat" resp="#fyndling">Alter deutscher Monatsname für den Juni. Der Mai heißt hier Meyen, der August Augst.</note>
+        <note type="gloss" target="#rum-1942-orig" n="Orient" resp="#fyndling">Hier die Himmelsrichtung Osten (Ostwind), nicht der Vordere Orient. Auch an anderer Stelle im Weinanhang gilt der Ostwind als schädlich für den Wein.</note>
+        <note type="gloss" target="#rum-1942-orig" n="kraͤnckesten" resp="#fyndling">„Am kränksten“, im alten Sinn von krank: schwach, kraftlos. Gemeint ist ein Wein, der zum Verderben neigt.</note>
+        <note type="gloss" target="#rum-1942-orig" n="frischwehend" resp="#fyndling">Der Wind weht frisch, also kräftig, im Gegensatz zu Süd- und Ostwind davor, bei denen der Wein schwächelt.</note>
+        <note type="interpretive_choice" target="#rum-1942-orig" n="weiß (welcher Wein denn weiß ist)" resp="#fyndling" subtype="lexical" cert="unknown">Wörtlich „weiß“ stehen gelassen. Am nächsten liegt Weißwein, ein Beleg dafür fehlt aber, und der Satz nennt sonst keine Farbe oder Sorte.<list type="alternatives"><item>Weiß im Sinn von hell und klar, also ein klarer, nicht trüber Wein.<note type="rationale">Möglich, weil der Satz keine Farbe oder Sorte sonst nennt. Belegt ist diese Bedeutung für die Stelle aber ebenso wenig.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1942-orig" n="erwallen (Dauer und Abkühlen)" resp="#fyndling" subtype="contextual">Der Text sagt nur „erwallen“ und „wenn er kalt wirt“, ohne Dauer und ohne Temperatur. Nichts ergänzt.<list type="alternatives"><item>Kurz zum Aufwallen bringen (wenige Minuten) und auf Raumtemperatur abkühlen lassen.<note type="rationale">Moderne Nachstellung für die Praxis, nicht aus der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1942-orig" n="vber ein Feuwer (Gefäß und Feuer)" resp="#fyndling" subtype="contextual">Über einem Feuer, ohne Gefäßangabe. Zu denken ist an ein kleines Gefäß über offenem Feuer; der Text nennt keines.<list type="alternatives"><item>Kleiner Topf auf dem Herd.<note type="rationale">Heutige Entsprechung für eine Nachstellung, nicht aus der Quelle.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1942-orig" n="frischwehend (Windrichtung)" resp="#fyndling" subtype="contextual">Ein frischer, kräftiger Wind ohne Richtungsangabe. Nicht auf eine Himmelsrichtung festgelegt.<list type="alternatives"><item>Nordwind.<note type="rationale">An anderer Stelle des Weinanhangs sind die Weine bei Nordwind am süßesten und mächtigsten, und die Kellertüren sollen nach Mitternacht gehen, weil die Winde dort frischer sind. Hier steht aber keine Richtung.</note></item></list></note>
+        <note type="interpretive_choice" target="#rum-1942-orig" n="etwas boͤß / schwachheit" resp="#fyndling" subtype="contextual">Fehler und Neigung zum Verderben, ohne dass der Text einzelne Fehler nennt.<list type="alternatives"><item>Bestimmte Fehlnoten wie Essigstich, Böckser oder Oxidation.<note type="rationale">Moderne Benennung zum Verständnis; die Quelle sagt nur „böß“ und „Schwachheit“.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
