@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Brotbrühe in Rosenwasser und mehrfarbige Formen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-032/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-032</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-032">
+        <head>Brotbrühe in Rosenwasser und mehrfarbige Formen</head>
+        <div type="original" xml:id="wec-032-orig" xml:lang="de-x-fnhd" corresp="#wec-032-trans">
+          <p>Die richte alſo zu.
+
+WEiche broſem von weiſſem brot in Roſenwaſſer/ treib zu rechter dicke mit durch/ es ſoll gar duͤnn ſeyn/ alſo daß manns kaum ſpuͤret/ bezuckere es/ faͤrbe es mit wenig Saffran oder rotem Triſanet/ ſchuͤtte es daran/ oder nimb Mandelmilch/ zuckers vnd faͤrbs ein wenig: Wilſtu ſo gibs alſo/ dann es gemeiniglich den krancken beſſer ſchmeckt/ wann ſie etwas zu duncken haben. Es iſt kalt vnd warm gut/ wiltu dann/ ſo nimb ein dortenhafen/ in denſelben mach vorigen zeug ein farb vmb die ander/ ſternen oder Roſenweiß/ oder ein Regenbogen/ mann ſol ſchoͤne glatte reiff oder bretlein haben/ oder von ſtuͤrtzen die verziehnet ſind/ wann es auſſen ſeyn form hat/ daß manns inwendig auch formieren kan/ wann es dañ anhelt vnd geſtehet/ ſo ziehe es herauß/ wann es etwan anhaͤnget/ ſo beſtrewe darnach denſelben ort mit Roſinlein/ daß eins an dem andern ſtehe/ ſo ſihet man alßdann nicht wie es vnderſcheiden iſt/ bache es recht: die krancken werden etwan luſtig/ wann ſie etwas ſeltzams ſehen. Vnnd gleichfals magſtu eine ſolche ruͤſtung von einem guten wolgetruckneten eyerzuͤger oder eyerkaͤß/ vnd klein geſtoſſene Mandeln/ eines ſo vil als des andern bereiten/ wie vorigen durchgetriebnen Reiß/ vnd all diſer ſachen formen machen/ vnd wann mans in dem moͤrſel brauchen wil/ ſo ſchneide es/ doch ſol es nach der laͤng geſchehen/ alßdann ſihet man eine farb vmb die ander/ lege es alſo inn der blatten herumb/ daß ſie inwendig zuſammen ſtechen/ vnd auſſen weit von einander. Das braun ſol inn der blatten ligen/ vnnd das ander ſol vber ſich ſtehen.</p>
+        </div>
+        <div type="translation" xml:id="wec-032-trans" xml:lang="de" corresp="#wec-032-orig">
+          <p>Diese richte so zu: Weiche Brösel von weißem Brot in Rosenwasser ein und streiche sie zur rechten Dicke durch. Es soll ganz dünn sein, so dass man es kaum spürt. Süße es mit Zucker, färbe es mit wenig Safran oder rotem Trisanet und gieße es daran. Oder nimm Mandelmilch und Zucker und färbe es ein wenig.</p>
+          <p>Wenn du willst, gib es so, denn den Kranken schmeckt es gewöhnlich besser, wenn sie etwas zum Eintunken haben. Es ist kalt und warm gut.</p>
+          <p>Wenn du willst, nimm einen Tortentopf und mache darin die vorige Masse, eine Farbe um die andere, als Sterne, nach Rosenart oder als Regenbogen. Man soll dafür schöne glatte Reifen oder Brettchen haben, oder solche von Stürzen, die verzinnt sind, damit man es, wenn es außen seine Form hat, auch innen formen kann.</p>
+          <p>Wenn es dann anhält und gestockt ist, ziehe die Reifen oder Brettchen heraus. Bleibt es irgendwo hängen, so bestreue danach diese Stelle mit Rosinen, eine neben der anderen. Dann sieht man nicht, wo es unterteilt ist. Backe es richtig. Die Kranken werden mitunter fröhlich, wenn sie etwas Seltsames sehen.</p>
+          <p>Ebenso kannst du eine solche Zubereitung aus einem guten, gut getrockneten Eierziger oder Eierkäse und klein gestoßenen Mandeln bereiten, von beidem gleich viel, wie den vorigen durchgestrichenen Reis, und aus all diesen Sachen Formen machen. Wenn man es im Mörser verwenden will, so schneide es, aber der Länge nach. Dann sieht man eine Farbe um die andere. Lege es so auf der Platte herum, dass die Stücke innen zusammenstoßen und außen weit voneinander stehen. Das Braune soll auf der Platte liegen, das andere soll nach oben stehen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="broſem von weiſſem brot">Weißbrotbrösel (Krume)</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="bezuckere es" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wenig Saffran oder rotem Triſanet">Safran oder roter Trisanet, wenig</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Roſinlein" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Für die Varianten: Mandelmilch bzw. Eierziger oder Eierkäse und gestoßene Mandeln zu gleichen Teilen (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-032-trans" resp="#fyndling">Praxis. Für die Brühe Weißbrotkrume in Rosenwasser einweichen, durchstreichen und so dünn halten, dass man das Brot kaum merkt. Nach Geschmack süßen, der Text nennt keine Menge, und mit wenig Safran färben. Für die Schichtform die Farben nacheinander in einen Tortentopf füllen, getrennt durch Reifen oder Brettchen, und diese ziehen, wenn die Masse steht. Hitze und Backzeit nennt der Text nicht. Moderne Annahme: 160-180 Grad Ober- und Unterhitze, 25-35 Minuten, bis die Masse gestockt ist.
+
+Was stockt? Eine Brühe aus Brot und Rosenwasser steht in der Form nicht. Die Reismasse aus wec-031 enthält dagegen Eier und wird dort auf dieselbe Weise geschichtet und gebacken. Deshalb ist „vorigen zeug“ als diese Masse gelesen.</note>
+        <note type="gloss" target="#wec-032-orig" n="Triſanet" resp="#fyndling">Ein Pulver aus Zucker und Gewürzen, das Wecker sonst zum Bestreuen nimmt (wec-007: „triſanet von zimmet/ roten Roſenblaͤttern“). Hier färbt „roter“ Trisanet die Brühe, wahlweise statt Safran. Woraus der rote bestand, sagt die Stelle nicht.</note>
+        <note type="gloss" target="#wec-032-orig" n="dortenhafen" resp="#fyndling">Tortentopf, ein Topf zum Backen von Torten. Hier dient er als Form für die Farbschichten.</note>
+        <note type="gloss" target="#wec-032-orig" n="ſtuͤrtzen die verziehnet ſind" resp="#fyndling">Ein Sturz ist ein Deckel (wec-031: „ein ſtuͤrtz oder deckel“), „verziehnet“ heißt verzinnt. Aus solchem glatten Blech lassen sich Trennwände setzen.</note>
+        <note type="gloss" target="#wec-032-orig" n="eyerzuͤger oder eyerkaͤß" resp="#fyndling">Ziger ist Molkenkäse. Einen Ziger „von eyern gemacht“ nennt Wecker auch in wec-034 und wec-042. Grimm erklärt Eierkäse als Masse aus Eiern und Milch.</note>
+        <note type="gloss" target="#wec-032-orig" n="moͤrſel" resp="#fyndling">„Mörsel“ ist eine alte Nebenform von „Mörser“ (FWB: mörsel s. mörser), kein eigenes Gerät. Wecker stößt und backt im Mörser, wie in wec-004 und wec-031.</note>
+        <note type="interpretive_choice" target="#wec-032-orig" n="Die richte alſo zu … ſchuͤtte es daran" resp="#fyndling" subtype="contextual">Der erste Teil ist die Brühe, die wec-031 im letzten Satz ankündigt („ſo mach eine bruͤh von Zucker/ Roſenwaſſer vnnd brot daruͤber“): „Die“ meint diese Brühe, und „ſchuͤtte es daran“ heißt, sie über den gebackenen Mandel-Reis zu gießen. Dafür sprechen dieselben drei Zutaten und das „gar duͤnn“.<list type="alternatives"><item>Ein eigenständiger Brotbrei, der selbst gefärbt und in die Form geschichtet wird<note type="rationale">So las es die erste Übersetzung. Ein Brei aus Brot und Rosenwasser enthält aber nichts, was beim Backen stockt, während die Reismasse aus wec-031 Eier enthält.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-032-orig" n="zu duncken haben" resp="#fyndling" subtype="lexical">„etwas zum Eintunken haben“ (FWB: eintunken). Die dünne Brühe gibt den Kranken etwas, worin sie tunken können.<list type="alternatives"><item>„zu dünken“, also etwas zum Betrachten oder Bedenken<note type="rationale">Würde zum Schaugericht am Ende passen. Die Schreibung „duncken“ und die dünne Brühe sprechen für Tunken.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-032-orig" n="eyerzuͤger oder eyerkaͤß" resp="#fyndling" subtype="lexical">Zwei Namen, die Wecker als austauschbar nebeneinanderstellt, für eine feste, gut getrocknete Masse, die sich mit Mandeln formen lässt. Im modernen Text beide Namen.<list type="alternatives"><item>Zwei verschiedene Massen: ein Ziger mit Eiern oder ein Eierkäse aus Eiern und Milch<note type="rationale">Grimm erklärt Eierkäse als „massa ex ovis et lacte coacta“. Wecker nennt den Eierziger in wec-042 eine eigene, zarte Zigersorte.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

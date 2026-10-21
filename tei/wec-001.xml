@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandelmilch: Grundrezept und Krankenkost</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-16">2026-10-16</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-001/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-001</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-001">
+        <head>Mandelmilch: Grundrezept und Krankenkost</head>
+        <div type="original" xml:id="wec-001-orig" xml:lang="de-x-fnhd" corresp="#wec-001-trans">
+          <p>Ein Mandelmilch mach alſo:
+
+ZV einer Maß Mandelmilch nim ein vierling eines pfunds/ oder ſo du ſie gern kraͤfftig haſt/ andert halben/ gute ſuͤſſe friſche Mandeln/ die leg in heiß waſſer/ vnnd ſo bald ſie ſich ſchaͤlen laſſen/ ſo zeuch jhnen die haut ab/ wirff ſie in friſch brunnenwaſſer/ laß ſie ein wenig ligen/ dañ waſche ſie ſchoͤn auß/ ſtampff oder ſtoß ſie inn einem ſteinern Moͤrſel/ mit einem hoͤltzenen ſtoͤſſel/ auffs aller kleineſt: (An etlichen orten hat man ſtein/ darauff man ſie reibt/ iſt wol gut/ wo die ſeynd/ wann die aber nicht verhanden/ behuͤlff dich wie du kanſt/ allein daß du mit keinem eyſern ſtoͤſſel ſtoſſeſt/ ſonſten wuͤrden ſie nicht allein ſchwartz/ ſondern auch bitter.) Jm ſtoſſen beſprengs mehr malen mit Roſen/ oder anderm waſſer/ damit du ſie durch zwingen wilt/ ſie werden ſonſt oͤlig vnnd ſchwartz. Thue jhm aber auch nicht zuvil/ dann wañ ſie zu naß werden/ laſſen ſie ſich nicht mehr klein ſtoſſen: Sie muͤſſen aber gar rein vnnd zart ſeyn/ es iſt ſonſten niche allein vnnuͤtz/ ſondern ſie geben jhre krafft auch nicht wie ſie ſollen.
+
+Wiltu nun die zum kochen brauchen/ ſo nimb ein gut friſch brunnenwaſſer oder Milch/ wie ſie von der Kuhe koͤmpt/ reibe die Mandeln im moͤrſel allgemach mit an/ leg darnach ein ſchoͤn weiß tuch in eine ſchuͤſſel/ geuß die Mandeln darein/ reibs ein wenig mit eim loͤffel hin vnd her/ faß das tuch zuſammen/ vnd winde ſie auß ſo hart du kanſt. Wiltu es aber fuͤr einen krancken/ es ſey zum kochen oder trincken/ ſo ſeud zuvor inn einem newen wolverglaſten hafen/ beheb zu gedeckt/ ein waſſer/ nach dem bindinn ein ſauber tuͤchlein ſchoͤne weitzene ſchrot kleihen/ oder wie mans an etlichen oꝛten heiſt/ grieß oder ein ſtuͤck weiß brodt/ oder Weinbeer/ etwan auch vngeſtampffte Gerſten eine hand oder halbe voll/ vnd ſeud es alles zuſammen in dem waſſer/ vnd zu mehrer ſterckung/ wann jetzt das waſſer genugſam geſotten/ ſo nimb ein quintlein Zimmet mehr oder minder/ nach dem du es gern ſtarck haben wilſt/ brichs dann zu kleinen ſtuͤcklin/ legs in den wall/ weil es noch ſeud/ thu es dann vom fewer/ laß wol bedeckt erkalten: dann brauchs.
+
+So du aber mit ſtopffen wilt/ alß in Durchlauff/ Ruhren vom ſchwachen Magen/ ſo thu wol Zim̃et darein. Jtem rote Roſenblaͤtter/ duͤrre kuͤtten/ darzu dann/ das von gezwungnen kuͤtten/ wann mann kuͤttenſafft macht/ im tuch bleibt/ gedoͤrꝛet/ faſt dienſtlich iſt. Etwann erfordert die noth/ daß mann die waſſer mit Goldt oder ſtahl ſtaͤhlet. Jnn Bruſtſuchten ſeud wol Anis/ Fenchel/ Weinbeer/ Feygen/ Suͤſſeholtz/ Bruſtbeer/ vnnd ſolche ſachen. Jn trincken vermiſche Violſyrup/ Roſenhonig/ oder Zuckerkandel darein/ Jn magenſchweche/ Kuͤttenſafft/ Weinbeerſafft darunter iſt ſehr gut. Vnnd wo du wilt daß ſie laxier/ da beſprengs im ſtoſſen nicht. Dann je oͤlig je beſſer. Mann ſtoͤſt auch etwann wo groſſe hitz iſt/ (alß inn ſtarcken hitzigen Febern/ Peſtilentz vñ Abnemẽ) Melonen/ Cucumer/ Kuͤrbißkerner/ weiſſen Magſamen/ Lattichſamen/ welche den ſchlaff bringen/ vnder die Mandeln: Etwann geriebne Perlein/ geriebne gute Goldblaͤtter. Es dienet wol fuͤr winde/ innſonders den jungen kindern/ den Lungenſichtigen vnd abnemenden dienet woll die Geißmilch fuͤr waſſer/ es ſeye zum trincken oder zum kochen.
+
+Wann du nun die Mandelmilch alſo bereitet haſt/ ſo thu ſie in ein ſaubere kandten oder ſteinern krug/ der nach dem außſchwancken wol vertropffen/ daß kein waſſer darin bleib/ ſtells an ein kuͤles ort/ vnd wann du davon wilt brauchen/ ſo ſchuͤtt es zuvoꝛ in ein ſaubern becher oder glaß einmal oder drey auß vnd ein/ dann ſie zeucht auff wie ein andere milch/ vnd iſt am letzten nichts mehr dann waſſer. Du ſolt auch nach dem trincken das vberbliebne nit wider in die kandten oder krug ſchuͤtten/ es machts gleich ſawer vnd rinnend.
+
+Vnd alſo wann du recht achtung drauff gibſt/ wirſtu dich inn allen kranckheiten in mehr nach geſchriebenen gekoͤchten zu halten wiſſen/ du kocheſt mit waſſer oder milch/ daß du daſſelbig zuvoꝛ darvon bereiteſt. Dann man auch einer kindbetterin/ die ſchwach vnd nichts eſſen mag/ durſt hat/ vnd uͤbel ſaͤuget/ jhre zeit zuviel oder zu wenig hat/ ein Mandelmilch geben kan/ vnnd den kindern/ ſo deß waſſers gewohnt/ mag mans wol mit friſchem bruñwaſſer machen/ vnd wol zuckern. Jn groſſer hitz iſts faſt dienſtlich.
+
+Vnd ob wol inn vilerley kranckheiten die Mandelmilch oder was darvon gekocht wirt/ geſchewet/ von wegen deß ſtopffens/ ſo iſt ſie doch ſchwachen leuten faſt nuͤtz: Aber einem jeden/ nach dem von noͤten/ vmb dieſer vrſach ich diß/ wie mann die Mandelmilch bereiten ſol/ zum eingang dieſes buchs geſetzt/ alß einen wegweiſer in allen dingen.
+
+Jch hab mir auch wol eine ſolche Milch mit allerhand gediſtilirten waſſern/ ſo das hertz vnnd haupt ſtercket/ reinigen vnnd innerlichen geſchwolſten dienen/ zugericht. Die krancken wollen etwan ſolche ſachen nicht brauchen/ ſo muß man ſehen wie mans verberge. Nun wollen wir mit der huͤlff Gottes wetter ſchreuten/ vnd beſchen/ wie man diß alles zum kochen brauchen ſol.</p>
+        </div>
+        <div type="translation" xml:id="wec-001-trans" xml:lang="de" corresp="#wec-001-orig">
+          <p>Die Mandeln vorbereiten: Für eine Maß Mandelmilch nimm einen Vierling eines Pfundes. Wenn du sie gern kräftig hast, nimm anderthalb Vierling gute, süße, frische Mandeln. Lege sie in heißes Wasser, und sobald sie sich schälen lassen, ziehe ihnen die Haut ab. Wirf sie in frisches Brunnenwasser, lass sie ein wenig liegen und wasche sie dann sauber aus. Stampfe oder stoße sie in einem steinernen Mörser mit einem hölzernen Stößel aufs Allerkleinste.</p>
+          <p>An manchen Orten hat man Steine, auf denen man die Mandeln reibt. Das ist gut, wo es sie gibt. Wo sie nicht vorhanden sind, hilf dir, wie du kannst. Nur stoße niemals mit einem eisernen Stößel, sonst würden die Mandeln nicht nur schwarz, sondern auch bitter.</p>
+          <p>Beim Stoßen besprenge sie mehrmals mit Rosenwasser oder anderem Wasser, mit dem du sie später durchpressen willst, sonst werden sie ölig und schwarz. Nimm aber nicht zu viel Wasser, denn wenn sie zu nass werden, lassen sie sich nicht mehr klein stoßen. Die Mandeln müssen ganz rein und zart sein. Sonst ist es nicht nur unnütz, sondern sie geben auch ihre Kraft nicht ab, wie sie sollen.</p>
+          <p>Für die Küche: Willst du die Mandeln zum Kochen verwenden, nimm gutes frisches Brunnenwasser oder Milch, wie sie von der Kuh kommt. Reibe die Mandeln im Mörser nach und nach damit an. Lege ein schönes weißes Tuch in eine Schüssel, gieße die Mandeln hinein und reibe sie ein wenig mit einem Löffel hin und her. Fasse das Tuch zusammen und winde die Milch so hart aus, wie du kannst.</p>
+          <p>Für Kranke: Willst du sie für einen Kranken, zum Kochen oder zum Trinken, dann koche zuvor in einem neuen, gut glasierten Topf, dicht zugedeckt, ein Wasser auf. Binde danach in ein sauberes Tüchlein schöne Weizen-Schrotkleie, oder wie man es an manchen Orten nennt, Grieß, oder ein Stück Weißbrot oder Rosinen. Manchmal kommt auch ungestampfte Gerste dazu, eine Hand oder eine halbe Hand voll. Koche alles zusammen im Wasser.</p>
+          <p>Für mehr Stärkung nimm, wenn das Wasser genug gekocht hat, ein Quentlein Zimt, mehr oder weniger, je nachdem, wie stark du es haben willst. Brich ihn zu kleinen Stückchen und lege ihn in das Aufwallende, solange es noch kocht. Nimm den Topf dann vom Feuer und lass es gut bedeckt erkalten. Dann gebrauche es.</p>
+          <p>Zusätze je nach Beschwerde: Willst du damit stopfen, etwa bei Durchlauf oder Ruhr vom schwachen Magen, dann gib reichlich Zimt hinein. Dazu kommen rote Rosenblätter und getrocknete Quitten. Sehr dienlich ist auch das, was beim Quittensaftmachen als Gepresstes im Tuch bleibt, wenn es getrocknet ist. Manchmal erfordert die Not, dass man die Wasser mit Gold oder Stahl stählt.</p>
+          <p>Bei Brustleiden koche gut Anis, Fenchel, Rosinen, Feigen, Süßholz, Brustbeeren und dergleichen mit. Im Getränk vermische Veilchensirup, Rosenhonig oder Kandiszucker darunter. Bei Magenschwäche ist Quittensaft oder Rosinensaft darunter sehr gut. Wo du willst, dass die Milch abführt, besprenge sie beim Stoßen nicht, denn je öliger, desto besser.</p>
+          <p>Wo große Hitze herrscht, etwa bei starken hitzigen Fiebern, Pest und Auszehrung, stößt man auch Melonen-, Gurken- und Kürbiskerne, weißen Mohnsamen und Lattichsamen unter die Mandeln, die den Schlaf bringen. Mancherorts kommen geriebene Perlen und geriebene gute Goldblättchen dazu. Sie dient gut gegen Blähungen, besonders den jungen Kindern. Den Lungenkranken und Auszehrenden dient Ziegenmilch statt Wasser gut, sei es zum Trinken oder zum Kochen.</p>
+          <p>Aufbewahren und Gebrauchen: Wenn du die Mandelmilch so bereitet hast, fülle sie in eine saubere Kanne oder einen steinernen Krug. Spüle das Gefäß vorher aus und lass es gut abtropfen, damit kein Wasser darin bleibt. Stelle es an einen kühlen Ort. Wenn du davon brauchen willst, schütte sie zuvor ein- bis dreimal in einen sauberen Becher oder ein Glas hin und her, denn sie setzt sich ab wie andere Milch und ist am Ende nichts mehr als Wasser. Gieße nach dem Trinken das Übriggebliebene nicht in die Kanne oder den Krug zurück, das macht die Milch gleich sauer und rinnend.</p>
+          <p>Anwendung: Wenn du richtig darauf achtest, wirst du dich in allen Krankheiten bei den weiter hinten beschriebenen Gerichten zu verhalten wissen. Ob du mit Wasser oder Milch kochst, bereite dasselbe zuvor so zu. Man kann auch einer Wöchnerin, die schwach ist, nichts essen mag, Durst hat, schlecht stillt oder ihre Zeit zu viel oder zu wenig hat, eine Mandelmilch geben. Kindern, die an Wasser gewöhnt sind, kann man sie mit frischem Brunnenwasser machen und gut zuckern. In großer Hitze ist sie sehr dienlich.</p>
+          <p>In vielerlei Krankheiten scheut man die Mandelmilch und alles, was damit gekocht wird, wegen des Stopfens. Dennoch ist sie schwachen Leuten sehr nützlich, jedem aber nach dem, was nötig ist. Aus diesem Grund habe ich die Bereitung der Mandelmilch an den Eingang dieses Buchs gesetzt, als Wegweiser in allen Dingen.</p>
+          <p>Schlusswort: Ich habe mir auch eine solche Milch mit allerhand destillierten Wassern zubereitet, die Herz und Haupt stärken, reinigen und bei inneren Geschwülsten dienen. Die Kranken wollen solche Sachen manchmal nicht gebrauchen, dann muss man sehen, wie man sie verbirgt. Nun wollen wir mit Gottes Hilfe weiterschreiten und sehen, wie man das alles zum Kochen verwenden soll.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="gute ſuͤſſe friſche Mandeln">süße Mandeln</ingredient>
+            </item>
+            <item>
+              <ingredient orig="friſch brunnenwaſſer oder Milch/ wie ſie von der Kuhe koͤmpt">frisches Brunnenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſen/ oder anderm waſſer" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchoͤne weitzene ſchrot kleihen/ oder wie mans an etlichen oꝛten heiſt/ grieß oder ein ſtuͤck weiß brodt/ oder Weinbeer/ etwan auch vngeſtampffte Gerſten">Weizenschrotkleie, Weißbrot, Rosinen oder Gerste (für Kranke)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="ein quintlein Zimmet mehr oder minder" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt (für Kranke)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Zusätze je nach Beschwerde (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-001-trans" resp="#fyndling">Praxis. Das Buch nennt nur das Verhältnis von Mandeln zur Ausbeute: ein Vierling, für kräftige Milch anderthalb, auf eine Maß. Wie viel Wasser oder Milch man beim Anreiben zugibt, sagt es nicht; man gibt nach und nach so viel dazu, dass sich die Masse im Tuch auswinden lässt.
+
+Für die Kranken-Variante wird der Sud „zuvor“ gekocht und mit dem Zimt bedeckt erkaltet. Nach dem Zusammenhang tritt er beim Anreiben an die Stelle des Brunnenwassers. Eine Siedezeit nennt der Text nicht, nur dass das Wasser „genugsam gesotten“ sein soll.</note>
+        <note type="gloss" target="#wec-001-orig" n="Vierling / Quintlein" resp="#fyndling">Vierling: ein Viertelpfund. Quintlein: ein Quentlein, ein Viertel Lot. Wie schwer das Pfund am Druckort war, ist nicht belegt.</note>
+        <note type="gloss" target="#wec-001-orig" n="beheb zu gedeckt" resp="#fyndling">„behäb“ heißt fest schließend, dicht: der Topf soll dicht zugedeckt sein.</note>
+        <note type="gloss" target="#wec-001-orig" n="Anis" resp="#fyndling">Im Druck steht „Anis“, das i ohne Punkt.</note>
+        <note type="gloss" target="#wec-001-orig" n="Peſtilentz" resp="#fyndling">Im Druck steht „Peſtilentz“, das i ohne Punkt und etwas unscharf; die DTA-Vorlage las „Peſttlentz“.</note>
+        <note type="gloss" target="#wec-001-orig" n="Kindbetterin" resp="#fyndling">Wöchnerin, eine Frau nach der Geburt.</note>
+        <note type="interpretive_choice" target="#wec-001-orig" n="nach dem" resp="#fyndling" subtype="contextual">Zeitlich „danach“: erst das Wasser aufsetzen, danach Kleie, Brot, Rosinen oder Gerste in ein Tüchlein binden und mitsieden. Der Satz beschreibt eine Abfolge („zuvor … nach dem … vnd ſeud es alles zuſammen“).<list type="alternatives"><item>„je nachdem“, also Auswahl der Zutaten nach Bedarf<note type="rationale">Derselbe Text gebraucht „nach dem“ wenige Zeilen später in diesem Sinn („nach dem du es gern ſtarck haben wilſt“), und die Zutaten sind mit „oder“ als Auswahl verbunden.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-001-orig" n="ſtaͤhlet" resp="#fyndling" subtype="lexical">Wörtlich belassen: das Wasser mit Gold oder Stahl „stählen“. Grimm kennt stählen als „mit Stahl versehen, hart machen“; wie das Wasser dabei behandelt wird, sagt der Text nicht.<list type="alternatives"><item>Glühendes Gold oder glühenden Stahl im Wasser ablöschen<note type="rationale">Naheliegende Ausführung nach dem Wortsinn, im Text aber nicht beschrieben.</note></item><item>Das Metall kalt ins Wasser legen<note type="rationale">Ebenso mit dem Wortlaut vereinbar; der Text nennt kein Erhitzen.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-001-orig" n="Bruſtbeer" resp="#fyndling" subtype="lexical">Wörtlich „Brustbeeren“: als Brustmittel gebrauchte getrocknete Früchte. Welche Art gemeint ist, lässt der Text offen.<list type="alternatives"><item>Jujube (Ziziphus jujuba)<note type="rationale">Grimm setzt brustbeere = Rhamnus zizyphus; das DWB2 nennt sie mit Beleg Henisch 1616.</note></item><item>Sebesten (Cordia myxa)<note type="rationale">DWB2 und Adelung führen auch Cordia als Brustbeere.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-001-orig" n="zeucht auff wie ein andere milch" resp="#fyndling" subtype="contextual">„Sie setzt sich ab wie andere Milch“: Die Mandelmilch entmischt sich, zuletzt bleibt nur Wasser, deshalb wird sie vor dem Gebrauch umgegossen.<list type="alternatives"><item>„Sie zieht (den Rahm) nach oben wie andere Milch“<note type="rationale">„aufziehen“ kann das Aufsteigen der fetten Schicht meinen. Gemeint ist in beiden Fällen die Entmischung.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ziger mit Rahm für Gäste</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-037/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-037</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-037">
+        <head>Ziger mit Rahm für Gäste</head>
+        <div type="original" xml:id="wec-037-orig" xml:lang="de-x-fnhd" corresp="#wec-037-trans">
+          <p>Ein anders in gemein fuͤr Gaͤſt/ iſt auch trefflich gut.
+
+NJmb einen friſchen ſuͤſſen zuͤger/ wie du jhn kanſt haben/ von feiſter Kuhe vnnd Schafmilch/ ſie ſeynd von Schafen ſonderlich gut/ dann preſſe das molcken wol auß/ darnach zutreib jn wol/ geuß allweg ein troͤpfflein von dickem Rahm darein/ biß er wol zart iſt/ darnach mache jhn vollend recht mit dem Milchrahm/ wañ der zuͤger gnug abgerhuͤrt iſt/ wie die andern/ vnnd alſo magſtu ein Reiß oder muß von kraffemeel machen fuͤr krancke/ denen man Milch erlaubt: Alſo etwan auch fuͤr ein krancken/ ſo groſſe begierd nach Milch hat/ daß er ſein kranckheit daran abbuͤſſet.</p>
+        </div>
+        <div type="translation" xml:id="wec-037-trans" xml:lang="de" corresp="#wec-037-orig">
+          <p>Eine andere, allgemein für Gäste, ist auch vortrefflich gut.</p>
+          <p>Nimm einen frischen, süßen Ziger, wie du ihn bekommen kannst, aus der Milch fetter Kühe und aus Schafmilch; die von Schafen sind besonders gut. Presse dann die Molke gut aus, danach zerreibe ihn gut. Gieße jeweils ein Tröpflein dicken Rahm hinein, bis er gut zart ist.</p>
+          <p>Danach mache ihn mit dem Milchrahm vollends recht, wenn der Ziger genug abgerührt ist, wie die anderen. Und so kannst du einen Reis oder ein Mus von Kraftmehl für Kranke machen, denen man Milch erlaubt. Ebenso etwa auch für einen Kranken, der so große Begierde nach Milch hat, dass er seine Krankheit damit abbüßt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="einen friſchen ſuͤſſen zuͤger">Ziger, frisch, aus Kuh- und Schafmilch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dickem Rahm">Dicker Rahm</ingredient>
+            </item>
+            <item>
+              <ingredient en="cream" orig="Milchrahm" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Milchrahm</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-037-trans" resp="#fyndling">Praxis. Ziger in einem Tuch gut auspressen, dann in einer Schüssel glatt reiben. Dicken Rahm löffelweise einarbeiten, bis die Masse zart ist, zum Schluss mit flüssigerem Milchrahm fertig rühren. Wecker nennt keine Mengen, das Maß ist die Konsistenz. Heute geht gut abgetropfter Quark oder Ricotta.
+
+Reis oder Mus von Kraftmehl. Für diese Krankenspeise gibt der Text weder Technik noch Mengen; ob Reis und Mus beide aus Kraftmehl sind, bleibt offen.</note>
+        <note type="gloss" target="#wec-037-orig" n="zuͤger" resp="#fyndling">Ziger: frischer, quarkartiger Käse; wec-034 nennt ihn „zuͤger oder kaͤß“.</note>
+        <note type="gloss" target="#wec-037-orig" n="kraffemeel" resp="#fyndling">Kraftmehl: feinstes Weizenmehl beziehungsweise Stärkemehl (Fischer: „kraftmehl, stärke“; FWB, Schmid).</note>
+        <note type="interpretive_choice" target="#wec-037-orig" n="abbuͤſſet" resp="#fyndling" subtype="lexical" cert="unknown">Wörtlich „abbüßt“ belassen, verstanden als „wiedergutmacht, ausgleicht“: Der Kranke mit großer Begierde nach Milch bekommt die Milchspeise und gleicht damit seine Krankheit aus. FWB „abbüssen“ = sühnen, wiedergutmachen; Stieler „besern, reficere, resarcire“.<list type="alternatives"><item>„dafür büßen müssen“, also eine Warnung: Er schadet sich mit der Milch.<note type="rationale">Abbüßen heißt auch „eine Strafe erleiden“ (FWB, Dialektwörterbücher). Der Satz beginnt aber mit „Alſo etwan auch fuͤr ein krancken“ und reiht die Stelle unter die erlaubten Anwendungen.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-037-orig" n="ein Reiß oder muß von kraffemeel" resp="#fyndling" subtype="contextual">Wörtlich übersetzt („einen Reis oder ein Mus von Kraftmehl“), die Zuordnung bleibt offen: Wecker sagt nicht, ob „von kraffemeel“ nur das Mus oder beide Gerichte bestimmt.<list type="alternatives"><item>Reis(gericht) und Kraftmehl-Mus als zwei getrennte Krankenspeisen, jeweils mit der Ziger-Rahm-Masse<note type="rationale">„alſo“ (so, auf diese Weise) knüpft an die Ziger-Rahm-Zubereitung an; „Reiß“ steht im Buch auch sonst für das Reisgericht (wec-041).</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

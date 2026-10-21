@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gerstenmus mit Mandelmilch für Kranke</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-16">2026-10-16</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-002/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-002</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-002">
+        <head>Gerstenmus mit Mandelmilch für Kranke</head>
+        <div type="original" xml:id="wec-002-orig" xml:lang="de-x-fnhd" corresp="#wec-002-trans">
+          <p>Folget ein faſt gut Muß oder Brey fuͤr die krancken.
+
+NJmb ſchoͤne gerolte Gerſten/ ſtoß ſie klein in einem moͤrſel/ beutel ſie darnach durch ein haͤrin ſieb oder beutel. Alßdañ habe zuvor eine gute Mandelmilch von geſottenem waſſer/ Geiß oder Kuhmilch (nach gelegenheit deß/ der es eſſen ſol) mercke durchauß wie oben ſtehet/ daß in keiner kranckheit die Milch/ vonwegen daß ſie fluͤſſig iſt/ nuͤtzlich mag gebrauchet werden. Dann bey den Lung vnd Schwindſuͤchtigen/ vnd in hitzigen Nierenſchmertzẽ/ in allerley Ruhren/ ſonderlich in derſcharpffen weiſſen Ruhr/ da die Daͤrm hefftig ſchwerẽ/ da blut vnnd eyter gehet/ da ſol allzeit Geiß vnd Schaffmilch voꝛgehen/ wann mans haben kan/ wañ aber nicht/ muß man ſich deß behelffen das zur hand iſt. Wann nun die milch zugericht/ ſo thu es zũ oder uͤber das fewer/ behalt dir ſo vil der kalten milch/ daß du das Meel mit kanſt antreiben/ oder iſt die milch wol ſtarck/ ſo nim nur geſotten waſſer/ vnnd womit die Mandelmilch zu gericht iſt/ alßdann nimb vom gerſtenmeel ſo vil du wilt/ daß ſie wanns gekocht iſt/ ſey wie ein feiner kindsbrey/ haſtu die milch auß waſſer gemacht/ ſo mach ein heiß ſchmaltz/ oder friſchen Butter auß Roſenwaſſer gewaſchen/ darein ruͤhre die milch biß ſie ſeud/ daß ſie nicht zuſam̃en lauffe/ vnd ſo die anhebt vnd wil ſieden/ ſo nimb das angericht gerſtenmeel/ vnnd geuß ſittiglich mit ſanfften ruͤhren darein/ ruͤhr es biß es kocht/ laß ſo lang kochen alß eyer die man ziemlich ſeudt. Dann alles was von Mandelmilch beſunder mit waſſer gemacht/ das darff nicht lang kochen/ dann es laufft oder geruͤnnet ſonſten zuſammen. Wanns nun gekocht/ ſo zuckers/ wiltu/ ſo thu Roſenwaſſer darein/ wiltu nit/ ſo laß auſſen. Aber von waſſer gemacht/ iſts vnlieblich/ wann kein zucker darin iſt. Bißweilen verbieten etliche Artzte den zucker/ alßdañ hab ein guten Roſenzucker/ mit zucker vnd Roſenwaſſer bereitet/ wie man den inn wolbeſtelten Apotecken findet/ thu davon darein/ oder nimb ziemhlich weinbeerlein/ ſaͤubere ſie vnnd waſchs/ vberſeuds in einem waſſer/ daß ſie wol lind werden/ dann ſtoß vnd reibs mit der Mandelmilch oder Roſenwaſſer durch/ thu es darein/ vnnd obs wol braunfarbig wird/ ligt nichts dran. Diß iſt trefflich gut inn allen hitzigen Kranckheiten/ es ſey Feber/ Peſtilentz vnd Bruſtſuchten/ oder verſtopffung deß leibs/ es oͤffnet/ heilet die geſchwer in Daͤrmen/ dienet in hitzigen grimmen wol/ vnnd den jungen kindern/ die das Darmgicht haben/ von wegen der reinigung/ ſaltze es gar wenig.</p>
+        </div>
+        <div type="translation" xml:id="wec-002-trans" xml:lang="de" corresp="#wec-002-orig">
+          <p>Ein sehr gutes Mus oder Brei für die Kranken: Nimm schöne gerollte Gerste und stoße sie klein in einem Mörser. Beutle sie danach durch ein Haarsieb oder einen Beutel.</p>
+          <p>Dann habe zuvor eine gute Mandelmilch bereit, aus gesottenem Wasser, Ziegen- oder Kuhmilch, je nach den Umständen dessen, der es essen soll. Merke durchaus, wie oben steht, dass in keiner Krankheit die Milch, weil sie flüssig ist, nützlich gebraucht werden mag. Denn bei den Lungen- und Schwindsüchtigen, bei hitzigen Nierenschmerzen, bei allerlei Ruhr, besonders bei der scharfen weißen Ruhr, wenn die Därme heftig schwären und Blut und Eiter abgehen, soll stets Ziegen- und Schafmilch vorgehen, wenn man sie haben kann. Wenn aber nicht, muss man sich mit dem behelfen, was zur Hand ist.</p>
+          <p>Wenn nun die Milch bereitet ist, so setze sie ans oder über das Feuer. Behalte dir so viel von der kalten Milch zurück, dass du das Mehl damit anrühren kannst; oder ist die Milch recht stark, so nimm nur gesottenes Wasser, und womit die Mandelmilch bereitet ist. Dann nimm vom Gerstenmehl so viel du willst, dass es, wenn es gekocht ist, wie ein feiner Kinderbrei sei.</p>
+          <p>Hast du die Milch aus Wasser gemacht, so mache heißes Schmalz oder frische Butter, in Rosenwasser gewaschen, und rühre die Milch darin ein, bis sie siedet, damit sie nicht zusammenläuft. Wenn sie anfängt und sieden will, so nimm das angerührte Gerstenmehl und gieße es behutsam unter sanftem Rühren hinein. Rühre, bis es kocht, und lass es so lange kochen wie Eier, die man mäßig siedet. Denn alles, was von Mandelmilch eigens mit Wasser gemacht ist, darf nicht lange kochen, sonst läuft oder gerinnt es zusammen.</p>
+          <p>Wenn es nun gekocht ist, so zuckere es. Willst du, so gib Rosenwasser hinein, willst du nicht, so lass es weg. Aber aus Wasser gemacht ist es unlieblich, wenn kein Zucker darin ist.</p>
+          <p>Bisweilen verbieten etliche Ärzte den Zucker. Dann nimm einen guten Rosenzucker, mit Zucker und Rosenwasser bereitet, wie man ihn in wohlbestellten Apotheken findet, und gib davon hinein. Oder nimm eine ordentliche Menge Rosinen, säubere und wasche sie, überbrühe sie in einem Wasser, dass sie gut weich werden. Dann stoße sie und reibe sie mit der Mandelmilch oder mit Rosenwasser durch und gib es hinein. Und ob es auch braunfarbig wird, es liegt nichts daran.</p>
+          <p>Dies ist trefflich gut in allen hitzigen Krankheiten, es sei Fieber, Pestilenz und Brustleiden oder Verstopfung des Leibes. Es öffnet, heilt die Geschwüre in den Därmen, dient gut bei hitzigem Grimmen und den jungen Kindern, die die Darmgicht haben, wegen der Reinigung. Salze es gar wenig.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ſchoͤne gerolte Gerſten">Rollgerste, zu Mehl gestoßen und gesiebt</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond milk" orig="eine gute Mandelmilch" commodity="wikidata:Q975953" source="#corema-ingredient-index">Mandelmilch, mit gesottenem Wasser, Ziegen- oder Kuhmilch bereitet (siehe wec-001)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein heiß ſchmaltz/ oder friſchen Butter auß Roſenwaſſer gewaſchen">Schmalz oder frische Butter, in Rosenwasser gewaschen (nur bei Mandelmilch aus Wasser)</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Roſenzucker">Rosenzucker oder Rosinen (statt Zucker, wenn der Arzt ihn verbietet)</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser (nach Wunsch)</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltze es gar wenig" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz, nur ganz wenig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-002-trans" resp="#fyndling">Praxis. Rollgerste im Mörser klein stoßen und durch ein feines Sieb geben; fertiges Gerstenmehl geht auch. Die Mandelmilch vorab nach wec-001 bereiten, einen Teil kalt zurückbehalten und das Mehl damit glatt anrühren, den Rest erhitzen. Ist die Mandelmilch mit Wasser bereitet, zuerst Schmalz oder Butter heiß machen und die Milch darin einrühren. Sobald sie zu sieden beginnt, das angerührte Mehl unter Rühren eingießen, aufkochen und nur kurz weiterkochen lassen, modern gesagt wenige Minuten: Bei langem Kochen gerinnt die Mandelmilch. Danach zuckern, nach Wunsch Rosenwasser zugeben, ganz wenig salzen.
+
+Wie viel Mehl? Der Text überlässt die Menge dem Koch, Ziel ist ein feiner, dünner Kinderbrei. Als moderner Startwert etwa 40 bis 60 g Gerstenmehl auf 500 ml Flüssigkeit, nach Sicht anpassen.</note>
+        <note type="gloss" target="#wec-002-orig" n="Roſenzucker" resp="#fyndling">Eine Apothekenzubereitung aus Zucker und Rosenwasser. Wecker nennt ihn als Ersatz, wenn ein Arzt den gewöhnlichen Zucker verbietet.</note>
+        <note type="gloss" target="#wec-002-orig" n="Darmgicht" resp="#fyndling">Zeitgenössisches Wort für Kolik (Lexer: colica). Das Grimmen im selben Satz meint Leibschmerzen. Eine moderne Diagnose lässt sich aus beiden Wörtern nicht ableiten.</note>
+        <note type="gloss" target="#wec-002-orig" n="hitzigen Kranckheiten" resp="#fyndling">Nach der Säftelehre ihrer Zeit Krankheiten mit Hitze, etwa Fieber.</note>
+        <note type="interpretive_choice" target="#wec-002-orig" n="mercke durchauß wie oben ſtehet/ daß in keiner kranckheit die Milch ... nuͤtzlich mag gebrauchet werden. Dann bey den Lung vnd Schwindſuͤchtigen ... da ſol allzeit Geiß vnd Schaffmilch voꝛgehen" resp="#fyndling" subtype="contextual">Wörtlich übersetzt, Dann als denn: Der Satz behält die Spannung des Originals, ohne sie zu entscheiden. Das Mandelmilch-Grundrezept (wec-001) empfiehlt Ziegenmilch für Lungensüchtige und Abnehmende; darauf zielt wie oben vermutlich.<list type="alternatives"><item>Dann als außer: Milch ist in keiner Krankheit nützlich, außer bei Lungen-, Schwindsüchtigen, Nierenschmerzen und Ruhr, wo Ziegen- und Schafmilch vorgehen soll.<note type="rationale">Frühneuhochdeutsches dann kann denn, außer, es sei denn bedeuten; so wäre der scheinbare Widerspruch aufgelöst.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-002-orig" n="laß ſo lang kochen alß eyer die man ziemlich ſeudt" resp="#fyndling" subtype="lexical">ziemlich als mäßig, angemessen (Lexer, EtymWb: ziemen = angemessen sein): eine kurze Kochzeit. Dafür spricht die Begründung im nächsten Satz, Mandelmilch mit Wasser dürfe nicht lange kochen.<list type="alternatives"><item>ziemlich als gehörig, recht: so lange wie Eier, die man richtig gar siedet.<note type="rationale">Die Grundbedeutung geziemend, wie es sich gehört lässt auch diese Lesart zu; der Text nennt keine Garstufe.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-002-orig" n="ein heiß ſchmaltz/ oder friſchen Butter auß Roſenwaſſer gewaſchen" resp="#fyndling" subtype="contextual">Schmalz oder Butter als Alternativen; gewaschen bezieht sich auf das unmittelbar vorangehende Fett, die Butter.<list type="alternatives"><item>Beide Fette sind in Rosenwasser gewaschen.<note type="rationale">Die Satzstellung lässt offen, ob auß Roſenwaſſer gewaſchen auch für das Schmalz gilt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
