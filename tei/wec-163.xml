@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rosinenmus, auch mit Zwetschgen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-22">2026-10-22</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-163/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-163</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-163">
+        <head>Rosinenmus, auch mit Zwetschgen</head>
+        <div type="original" xml:id="wec-163-orig" xml:lang="de-x-fnhd" corresp="#wec-163-trans">
+          <p>Ein Roſinleinmuß.
+
+NJmb ein halben vierling eines pfunds wolgereinigte Weinbeer/ daran geuß ein halb ſeidlein guten Wein vnd waſſer/ faſt gleich/ laß ſie ſiden biß ſie wol geſchwollen vñ lind ſind/ ſo laß die bruͤh wol darvon/ behe ein guten ſchnitten weiß brot/ weichs in der bruͤh/ vnder des ſtoß die Weinbeer wol inn eim moͤrſel/ treib das brot mit dem geſtoßnen durch/ machs rechter dicke/ mach inn ein meſſines pfaͤnnlein oder jrꝛdenes kaͤchelein ein wenig ſchmaltz heiß/ geuß es darein/ ruͤhr es biß es kocht: thu ziemlich Zimmetwaſſer darein/ haſtu es nicht/ ſonſt klein geſtoſſene Zimmet/ Zucker/ was es bedarff/ oder kuͤttenſafft/ wann es kocht ſo lang alß man Eyer ſeudet/ gibs. Vnd alſo koch ein Zwetzſchgenbrey oder Muß/ wann die geſotten/ thu die ſtein herauß/ bereits wie vor ſtehet/ noch beſſer ſind ſie/ wann man halb Zwetzſchgen vnnd Weinbeer nimb/ ſie ſparen nicht allein den Zucker/ ſie ſtaͤrcken auch den Magen/ vnd weichen darzu wo verſtopffung iſt.</p>
+        </div>
+        <div type="translation" xml:id="wec-163-trans" xml:lang="de" corresp="#wec-163-orig">
+          <p>Ein Rosinenmus: Nimm einen halben Vierling von einem Pfund gut gereinigte Rosinen. Gieße ein halbes Seidlein guten Wein und Wasser dazu, beides fast zu gleichen Teilen. Lass die Rosinen sieden, bis sie gut aufgequollen und weich sind.</p>
+          <p>Dann gieße die Brühe gut davon ab. Röste eine gute Scheibe Weißbrot und weiche sie in der Brühe ein. Stoße unterdessen die Rosinen gut im Mörser. Streiche das Brot mit den gestoßenen Rosinen durch und bringe es auf die rechte Dicke.</p>
+          <p>Erhitze in einem messingenen Pfännchen oder einem irdenen Töpfchen ein wenig Schmalz. Gieße das Mus hinein und rühre, bis es kocht. Gib Zimtwasser in angemessener Menge dazu. Hast du keines, nimm stattdessen fein gestoßenen Zimt. Süße mit Zucker, so viel es braucht, oder mit Quittensaft. Wenn es so lange gekocht hat, wie man Eier siedet, gib es zu Tisch.</p>
+          <p>Zwetschgenmus: Auf dieselbe Weise koche einen Zwetschgenbrei oder ein Zwetschgenmus. Wenn die Zwetschgen gesotten sind, nimm die Steine heraus und bereite alles zu, wie oben steht. Noch besser sind sie, wenn man halb Zwetschgen und halb Rosinen nimmt. Sie sparen dann nicht nur den Zucker, sie stärken auch den Magen und lösen dazu, wo Verstopfung ist.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="raisin" orig="ein halben vierling eines pfunds wolgereinigte Weinbeer" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein halb ſeidlein guten Wein vnd waſſer">Wein und Wasser</ingredient>
+            </item>
+            <item><ingredient en="white bread" orig="ein guten ſchnitten weiß brot" commodity="wikidata:Q1501889" source="#fyndling-ingredient-registry">Weißbrot</ingredient> - 1 Scheibe</item>
+            <item>
+              <ingredient en="animal fat" orig="ein wenig ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ziemlich Zimmetwaſſer">Zimtwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker/ was es bedarff/ oder kuͤttenſafft" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="zwetschge" orig="Zwetzſchgen" commodity="wikidata:Q20220348" source="#fyndling-ingredient-name">Zwetschgen (für die Variante)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-163-trans" resp="#fyndling">Praxis. Rosinen waschen und in Wein und Wasser, etwa zu gleichen Teilen, sieden, bis sie prall und weich sind. Die Brühe abgießen und aufheben, eine Scheibe Weißbrot ohne Fett leicht rösten und darin einweichen. Die Rosinen im Mörser stoßen und mit dem Brot durchstreichen, heute am einfachsten durch ein Sieb. Die Dicke („rechter dicke“) lässt Wecker offen: mit der übrigen Brühe auf löffelfeste Musdicke bringen. In wenig heißem Schmalz unter Rühren auf mittlerer Hitze aufkochen, Zimtwasser oder gestoßenen Zimt und Zucker oder Quittensaft dazugeben und schwach weiterköcheln.
+
+Mengen. Ein halber Vierling ist ein Achtelpfund, mit einem Pfund von rund 500 g also etwa 60 g Rosinen. Wie schwer das Pfund und wie groß das Seidlein am Druckort waren, ist nicht belegt; genug Flüssigkeit, dass die Rosinen gut bedeckt sind, reicht für den Anfang.
+
+Zwetschgen. Ob frische oder getrocknete gemeint sind, sagt der Text nicht. Beide werden gesotten, entsteint und dann wie die Rosinen weiterverarbeitet, nach Wecker am besten halb und halb mit Rosinen.</note>
+        <note type="gloss" target="#wec-163-orig" n="vierling" resp="#fyndling">Ein Vierling ist ein Viertelpfund, der halbe Vierling also ein Achtelpfund.</note>
+        <note type="gloss" target="#wec-163-orig" n="ſeidlein" resp="#fyndling">Seidlein, Verkleinerung zu Seidel: ein kleines Flüssigkeitsmaß.</note>
+        <note type="gloss" target="#wec-163-orig" n="behe" resp="#fyndling">bähen: Brot leicht rösten. Im vorigen Rezept stehen „im Schmalz brennen“ und „bähen“ als Alternativen nebeneinander, bähen geht also ohne Fett.</note>
+        <note type="gloss" target="#wec-163-orig" n="weichs" resp="#fyndling">„weichs“ = weiche es. Im Druck steht „weichs“, das i ohne Punkt.</note>
+        <note type="interpretive_choice" target="#wec-163-orig" n="ein halb ſeidlein guten Wein vnd waſſer/ faſt gleich" resp="#fyndling" subtype="contextual">Ein halbes Seidlein insgesamt, Wein und Wasser darin fast zu gleichen Teilen: Die Menge passt zum halben Vierling Rosinen.<list type="alternatives"><item>Ein halbes Seidlein Wein und dazu fast gleich viel Wasser, also etwa die doppelte Flüssigkeit.<note type="rationale">Der Satz lässt offen, ob sich das Maß auf beide Flüssigkeiten zusammen oder nur auf den Wein bezieht.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-163-orig" n="ſchmaltz" resp="#fyndling" subtype="lexical">Schmalz: Wecker schreibt hier schlichtes „ſchmaltz“ ohne „ſuͤß“, das sie sonst für Butterschmalz setzt.<list type="alternatives"><item>Butterschmalz oder Butter.<note type="rationale">Im Oberdeutschen kann Schmalz auch ausgelassene Butter meinen, und zu einem süßen Mus passt sie gut; der Text entscheidet es nicht.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
