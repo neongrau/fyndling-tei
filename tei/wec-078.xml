@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandeleier, in Eierschalen geformt</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-078/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-078</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-078">
+        <head>Mandeleier, in Eierschalen geformt</head>
+        <div type="original" xml:id="wec-078-orig" xml:lang="de-x-fnhd" corresp="#wec-078-trans">
+          <p>Ein ander ſchoͤn vnd nuͤtzlichs Eſſen von. Eyern vnnd Mandeln.
+
+NJmb klein geſtoſſene Mandeln/ ſo vil du wilt/ behalt den andern theil beſonders/ den dritten theil auch/ mach den andern theil an mit dem weiſſen vom Ey/ zuckers wol vnd Roſenwaſſer genug/ darnach mach den dritten theil mit dem gelben an/ es muß wol dick ſeyn/ alle beyde/ nimb dann Eyer/ ſo vil du der ſchalen bedarffſt/ thu ſie in der mitten auff/ vnnd gehe ſchoͤn mit vmb/ daß ſie dir nicht brechen/ thu alles darauff/ darnach behalt jede zu der andern/ vnnd truckne oder waſche ſie ſauber auß/ dann ſonſt kleben ſie. Nimb von den weiſſen Mandeln/ mach eine form der Eyerſchalen/ gleich einem hartgeſottenem Ey/ das man halbiert/ vnnd das gelbe herauß thut/ ſo dick dann das weiß iſt/ alſo forme auch das inn der ſchale/ fuͤlle darnach das inwendig mit dem gelben/ thu je zwo vnnd zwo vber einander/ binds mit einem groben faden zuſammen/ leg es gar weit vom fewer/ damit es der waͤrme bloß empfinde/ ſonſt ſpringen ſie auff/ vnnd dringt das gelbe herauß: kehr es jmmer vmb/ ſo du aber je beſorgeſt/ ſo mach ein teig feſt wie zu einer Paſteten/ den ſchlag darumb/ thu jhm gleich alſo/ vnd wañ ſie ſo lang drinnen gebraten/ biß der teig gar ſchwartz/ ſo loͤſe den darvon/ loͤſe die ſchalen auch ein wenig/ laſſen ſie ſich ſchaͤlen/ ſo thu es/ ſeynd ſie aber nicht genug trucken/ truckne ſie noch mehr: Wann du ſie dann geſchaͤlet haſt/ ſo netz ſie im Roſenwaſſer/ vnd walle ſie wol im Zucker/ daß es dick vom geſtoßnen Zucker iſt/ legs inn ein bachofen/ bald wider herauß/ wann der Zucker daran erhart/ ſo ſind ſie weiß wie Eyer/ oder nimb ein Gummitragant, weichs/ mach einen teig mit auß Zucker vnd Krafftmeel/ vnnd dem weiſſen vom Ey/ den ſchlag duͤnn darumb/ truckne es wider im bachofen/ er ſol nicht zu heiß ſeyn/ wann das brot herauß kompt/ iſts recht/ ſo ſind ſie noch ſchoͤner/ aber diſe ſind beſſer/ wiewol man muß das euſſerſt nicht eſſen/ doch wer wil/ vnd wem es gehoͤrt.</p>
+        </div>
+        <div type="translation" xml:id="wec-078-trans" xml:lang="de" corresp="#wec-078-orig">
+          <p>Noch ein schönes und nützliches Gericht aus Eiern und Mandeln.</p>
+          <p>Nimm klein gestoßene Mandeln, so viel du willst. Halte den zweiten Teil gesondert, den dritten Teil ebenfalls. Rühre den zweiten Teil mit dem Weißen vom Ei an, zuckere ihn gut und gib genug Rosenwasser dazu. Rühre danach den dritten Teil mit dem Gelben an. Beide müssen gut dick sein.</p>
+          <p>Nimm dann Eier, so viele du Schalen brauchst, und öffne sie in der Mitte. Geh behutsam damit um, damit sie dir nicht zerbrechen, und gib alles heraus. Halte danach jede Hälfte zu ihrer anderen und trockne oder wasche sie sauber aus, denn sonst kleben sie.</p>
+          <p>Nimm von den weißen Mandeln und forme sie wie die Eierschale, gleich einem hartgesottenen Ei, das man halbiert und dessen Gelbes man herausnimmt: So dick, wie das Weiße ist, so forme es auch in der Schale. Fülle danach das Innere mit dem Gelben. Setze je zwei und zwei übereinander und binde sie mit einem groben Faden zusammen.</p>
+          <p>Leg es ganz weit vom Feuer, damit es die Wärme nur spürt, sonst springen sie auf und das Gelbe dringt heraus. Wende es immer wieder. Wenn du dir aber doch Sorgen machst, so mach einen Teig, fest wie für eine Pastete, schlag ihn darum und verfahre ebenso damit. Und wenn sie so lange drinnen gebraten sind, bis der Teig ganz schwarz ist, so löse ihn ab. Löse auch die Schalen ein wenig; lassen sie sich schälen, so tu es. Sind sie aber nicht trocken genug, so trockne sie noch mehr.</p>
+          <p>Wenn du sie dann geschält hast, so netze sie in Rosenwasser und wälze sie gut im Zucker, so dass dick gestoßener Zucker daran ist. Leg sie in einen Backofen und bald wieder heraus. Wenn der Zucker daran erhärtet, so sind sie weiß wie Eier.</p>
+          <p>Oder nimm Tragant und weiche ihn ein. Mach damit einen Teig aus Zucker und Kraftmehl und dem Weißen vom Ei, schlag ihn dünn darum und trockne es wieder im Backofen. Er soll nicht zu heiß sein; wenn das Brot herauskommt, ist es recht. So werden sie noch schöner, aber die ersten sind besser. Das Äußerste muss man zwar nicht essen, doch wer will und wem es zusteht, der mag es tun.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="klein geſtoſſene Mandeln">Mandeln, fein gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="dem weiſſen vom Ey" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+            </item>
+            <item>
+              <ingredient en="yolk" orig="mit dem gelben" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eigelb</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zuckers wol" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer genug" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="Eyer/ ſo vil du der ſchalen bedarffſt" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier (für die Schalen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="einem groben faden">grober Faden</ingredient>
+            </item>
+            <item>
+              <ingredient en="pie crust" orig="ein teig feſt wie zu einer Paſteten" commodity="wikidata:Q5190246" source="#fyndling-ingredient-name">Pastetenteig (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein Gummitragant, weichs">Tragant (optional, eingeweicht)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Krafftmeel">Kraftmehl (optional, für die Tragant-Hülle)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-078-trans" resp="#fyndling">Praxis. Mengen nennt Wecker nicht. Fertig gemahlene Mandeln gehen anstelle der gestoßenen; beide Massen so dick anrühren, dass sie sich in der Schale andrücken lassen und nicht fließen. Küchengarn ersetzt den groben Faden. Statt „weit vom Feuer“ trocknet man heute im Backofen auf niedrigster Stufe oder an einem warmen Ort und wendet die Eier regelmäßig; die Dauer nennt der Text nicht, Maßstab ist sein eigener: Sie sind trocken genug, wenn sich die Schale lösen lässt. Für die Hülle nutzt Wecker die Restwärme des Ofens nach dem Brotbacken, heute die niedrigste Ofenstufe, nur bis der Zucker hart ist. Tragant nach Packungsangabe quellen lassen.
+
+Offene Stelle. Verwendet werden nur der zweite Teil der Mandeln (mit Eiweiß) und der dritte (mit Eigelb). Was mit dem ersten Teil geschieht, sagt der Text nicht.</note>
+        <note type="gloss" target="#wec-078-orig" n="vom fewer" resp="#fyndling">„fewer“ = Feuer. Der Querstrich des f ist im Druck nur schwach zu sehen.</note>
+        <note type="gloss" target="#wec-078-orig" n="Gummitragant" resp="#fyndling">Tragant: pflanzliches Gummi, das eingeweicht aufquillt; hier Bindemittel der zweiten, dünnen Hülle.</note>
+        <note type="gloss" target="#wec-078-orig" n="wann das brot herauß kompt" resp="#fyndling">Gemeint ist der Backofen nach dem Brotbacken, wenn er „nicht zu heiß“ ist.</note>
+        <note type="gloss" target="#wec-078-orig" n="das euſſerſt nicht eſſen" resp="#fyndling">Das Äußerste ist die Hülle aus Zucker oder Tragant; die Schale ist zu diesem Zeitpunkt schon abgelöst.</note>
+        <note type="interpretive_choice" target="#wec-078-orig" n="den andern theil / den dritten theil / den weiſſen Mandeln" resp="#fyndling" subtype="contextual">Gesondert gehalten und verwendet werden nur der zweite Teil (mit Eiweiß angemacht) und der dritte (mit Eigelb). „Die weißen Mandeln“ ist die Eiweißmasse, aus der das Weiße in der Schale geformt wird.<list type="alternatives"><item>Ein erster Teil wird als reine weiße Mandeln zum Auskleiden der Schalen verwendet.<note type="rationale">„den andern … den dritten“ setzt einen ersten Teil voraus, über den der Text schweigt; „weiße Mandeln“ könnte ihn bezeichnen.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-078-orig" n="thu alles darauff" resp="#fyndling" subtype="contextual">Den ganzen Inhalt der geöffneten Eier herausgeben, damit nur die Schalen bleiben; danach werden die Hälften ausgewaschen.<list type="alternatives"><item>Den Eiinhalt auf die eben angemachten Mandelmassen geben.<note type="rationale">„darauff“ kann auf die Massen zurückverweisen; dann stammten Eiweiß und Eigelb der Massen aus diesen Eiern. Der Text sagt das nicht ausdrücklich.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandelmus mit Hühnerfleisch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-082/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-082</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-082">
+        <head>Mandelmus mit Hühnerfleisch</head>
+        <div type="original" xml:id="wec-082-orig" xml:lang="de-x-fnhd" corresp="#wec-082-trans">
+          <p>Anders.
+
+SToß Mandeln/ vnnd das braͤt oder fleiſch von Huͤnern/ geſotten oder gebraten/ wildes oder zames/ junges oder altes/ treibs mit einer fleiſchbruͤh oder geſottenem waſſer durch nach gelegẽheit/ treib auch ein gebehet brot mit durch/ reib ein wenig Krafftmeel darein/ das gelb vom Ey/ ruͤſt es zu einem Muͤßlein/ wie zuvor/ oder inn ein blatten/ nach gelegenheit/ wiltu dann/ ſo nimb nur Mandeln/ braͤt vnnd Eyer/ oder auch/ das brot/ oder diſe alle zuſammen/ oder aber etliche mit einander/ oder ein jedes inſonderheit nach deiner gelegenheit/ nach dem dann ſtaͤrckens oder ſtopffens von noͤten iſt. Merck auff was du in blaͤtlein kochen wilt/ muſtu etwas mehr Eyer haben/ auch dicker vom zeug durchtreiben.</p>
+        </div>
+        <div type="translation" xml:id="wec-082-trans" xml:lang="de" corresp="#wec-082-orig">
+          <p>Stoße Mandeln und das Brät oder Fleisch von Hühnern, gekocht oder gebraten, wilden oder zahmen, jungen oder alten. Treibe es mit einer Fleischbrühe oder abgekochtem Wasser durch, je nach Bedarf. Treibe auch ein geröstetes Brot mit durch, reibe ein wenig Kraftmehl hinein, dazu das Eigelb.</p>
+          <p>Richte es zu einem Müslein zu, wie zuvor, oder in einer Platte, je nach Gelegenheit.</p>
+          <p>Wenn du willst, nimm nur Mandeln, Brät und Eier, oder auch das Brot, oder all dies zusammen, oder einige davon miteinander, oder jedes für sich, nach deiner Gelegenheit, je nachdem, ob Stärken oder Stopfen nötig ist.</p>
+          <p>Merke: Was du in Blättlein kochen willst, dazu brauchst du etwas mehr Eier und musst die Masse dicker durchtreiben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="Mandeln" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="das braͤt oder fleiſch von Huͤnern">Hühnerfleisch, gekocht oder gebraten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fleiſchbruͤh oder geſottenem waſſer">Fleischbrühe oder abgekochtes Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gebehet brot">Brot, geröstet</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein wenig Krafftmeel">Kraftmehl (Weizenstärke)</ingredient>
+            </item>
+            <item>
+              <ingredient en="yolk" orig="das gelb vom Ey" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eigelb</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-082-trans" resp="#fyndling">Praxis. Mandeln und das schon gegarte Hühnerfleisch im Mörser fein stoßen, mit Brühe oder abgekochtem Wasser durch ein Sieb streichen, das geröstete Brot mit durchstreichen, wenig Stärke und das Eigelb einrühren. Mengen nennt der Text nicht; etwa gleiche Teile Mandeln und Fleisch und ein Eigelb je Portion sind ein Anhaltspunkt.
+
+Mus oder Platte. Als Mus wie in wec-081 in heißes Fett geben und rühren, bis es kocht. Für die Platte nennt der Text keine Garart; wec-083 stellt eine gefettete Platte zugedeckt auf heißes Wasser und gibt sanfte Hitze von oben. Heute geht das in einer flachen Form im Wasserbad, bis die Masse stockt.</note>
+        <note type="gloss" target="#wec-082-orig" n="braͤt" resp="#fyndling">Hier das schon gegarte Hühnerfleisch, in der Doppelformel „Brät oder Fleisch“; „gesotten oder gebraten“ steht gleich dahinter. Ebenso wec-050: „ein gebraͤt oder das fleiſch von eim Hun“.</note>
+        <note type="gloss" target="#wec-082-orig" n="gebehet brot" resp="#fyndling">Gebäht = geröstet, wie in wec-050 („gebehten … ſchnitten brot“).</note>
+        <note type="gloss" target="#wec-082-orig" n="Krafftmeel" resp="#fyndling">Kraftmehl = Stärkemehl, siehe Stärke.</note>
+        <note type="gloss" target="#wec-082-orig" n="blatten / blaͤtlein" resp="#fyndling">„Blatten“ ist eine flache Platte oder Schüssel als Gefäß, nicht „platt“. „Blättlein“ sind kleine flache Stücke aus der dickeren, eireicheren Masse; wie sie gegart werden, sagt der Text nicht.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

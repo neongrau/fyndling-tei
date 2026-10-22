@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandelziger (Mandelkäse) mit Rosenwasser</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-060/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-060</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-060">
+        <head>Mandelziger (Mandelkäse) mit Rosenwasser</head>
+        <div type="original" xml:id="wec-060-orig" xml:lang="de-x-fnhd" corresp="#wec-060-trans">
+          <p>Mehr von allerhand herꝛlicher Eſſen von zuͤger/ zuvor aber ein Mandelzuͤger oder kaͤß.
+
+NJmb klein geſtoſſene Mandeln vnd bruñenwaſſer/ mach ein gute Mandelmilch/ diſe heng vber das fewer/ ruͤhr ſie biß ſie ſchier wil anhebẽ zu ſieden/ ſo thu ein wenig Lab oder Renne darein/ als wolſtu ſonſt ein kaͤß machen/ oder nimb Seydmilchen/ haſtu die auch nicht/ nimb Wein oder Eſſig/ ſo vil genug zum geruͤnnen/ oder laß jhn inn eim ſiedenden waſſer vber nacht ſtehen/ wie du eins haſt/ laß jhn ruͤnnen wie ein kaͤß oder zuͤger/ heb jhn dann vom fewer/ ſtell jhn auff ein ring/ ſpreng mit der hand friſch waſſer darauff herumb/ decke jhn mit eim weiſſen tuch/ wie ſonſt ein Eyerzuͤger oder kaͤß: bald heb jhn auch alſo auff mit eim loͤffel/ der vil loͤcher hat/ in koͤrblein oder andern formen/ wann das Molcken wol davon kompt/ ſpreng Roſenwaſſer vnd Zucker darauff/ wann es wol darein ſchleufft/ ſo kehre es vmb in ein ſaubere blatten/ darin du es fuͤrtragen wilt/ thu jhm wider alſo/ wiltu/ ſo mach mit Man delmilch oder Roſenwaſſer/ oder ſonſt/ eine gute bruͤh daruͤber. Diſer zuͤger wirt ſchoͤn weiß.</p>
+        </div>
+        <div type="translation" xml:id="wec-060-trans" xml:lang="de" corresp="#wec-060-orig">
+          <p>Weitere allerlei herrliche Speisen aus Ziger; zuvor aber ein Mandelziger oder Käse.</p>
+          <p>Nimm klein gestoßene Mandeln und Brunnenwasser und mach eine gute Mandelmilch. Häng sie über das Feuer und rühre sie, bis sie fast zu sieden beginnen will. Dann gib ein wenig Lab oder Renne hinein, als wolltest du sonst einen Käse machen. Oder nimm Scheidmolke; hast du die auch nicht, nimm Wein oder Essig, so viel, dass es zum Gerinnen genügt. Oder lass den Ziger über Nacht in einem siedenden Wasser stehen, wie du eins hast. Lass ihn gerinnen wie einen Käse oder Ziger und heb ihn dann vom Feuer.</p>
+          <p>Stell ihn auf einen Ring, sprenge mit der Hand frisches Wasser darauf herum und decke ihn mit einem weißen Tuch zu, wie sonst einen Eierziger oder Käse. Bald heb ihn ebenso mit einem Löffel, der viele Löcher hat, in Körbchen oder andere Formen. Wenn die Molke gut davon abgelaufen ist, sprenge Rosenwasser und Zucker darauf. Wenn es gut eingezogen ist, so stürze es auf eine saubere Platte, auf der du es auftragen willst. Tu ihm wieder ebenso. Willst du, so mach mit Mandelmilch oder Rosenwasser oder sonst eine gute Brühe darüber. Dieser Ziger wird schön weiß.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="klein geſtoſſene Mandeln" commodity="wikidata:Q184357" source="#fyndling-ingredient-registry">Mandeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="well water" orig="bruñenwaſſer" commodity="wikidata:Q1881858" source="#fyndling-ingredient-name">Brunnenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Lab oder Renne">Lab</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-060-trans" resp="#fyndling">Praxis. Wecker nennt keine Mengen. Als moderner Anhalt: etwa 1 Teil gemahlene Mandeln auf 3 bis 4 Teile Wasser zu Mandelmilch anreiben und auspressen. Unter Rühren erhitzen, bis sie fast siedet, dann das Gerinnungsmittel einrühren; Wein oder Essig nach und nach, bis die Milch flockt. Den Bruch auf einem Tuch abtropfen lassen, mit dem Lochlöffel in Körbchen oder Formen heben und, wenn keine Molke mehr abläuft, mit Rosenwasser und Zucker besprengen. Auf die Platte stürzen und ein zweites Mal besprengen. Die Brühe ist freigestellt: etwas Mandelmilch mit Rosenwasser.
+
+Über Nacht im siedenden Wasser. Der Text lässt offen, ob die Masse selbst oder ihr Gefäß im heißen Wasser steht. Naheliegend ist ein Gefäß im heißen Wasserbad, das über Nacht langsam abkühlt.</note>
+        <note type="gloss" target="#wec-060-orig" n="zuͤger" resp="#fyndling">Ziger: oberdeutsch für einen Käse aus geronnener Milch oder Molke, eine Art Quark. Hier wird er aus Mandelmilch nachgebildet; Wecker setzt ihn selbst mit Käse gleich („Mandelzuͤger oder kaͤß“).</note>
+        <note type="gloss" target="#wec-060-orig" n="Lab oder Renne" resp="#fyndling">Lab ist das Gerinnungsmittel der Käserei, „Renne“ ein zweites Wort dafür (zu „rennen“, gerinnen lassen; FWB). Die gesäuerte Scheidmolke, die Wecker in wec-061 und wec-065 nimmt, ist etwas anderes.</note>
+        <note type="gloss" target="#wec-060-orig" n="Eyerzuͤger" resp="#fyndling">Mit Eiern bereiteter Ziger. Wecker setzt ihn hier als bekannt voraus; die Rezepte dafür folgen ab wec-061.</note>
+        <note type="gloss" target="#wec-060-orig" n="Seydmilchen" resp="#fyndling">„Seydmilchen“ ist wohl die Scheidmilch, also die Scheidmolke, die Wecker in wec-065 aufbewahrt, bis sie „wie ein Eſſig“ wird, und mit der sie Milch zum Gerinnen bringt. Das Schweizerische Idiotikon kennt „Scheidmilch“ als Wort für Molke.</note>
+        <note type="interpretive_choice" target="#wec-060-orig" n="Seydmilchen" resp="#fyndling" subtype="lexical">Scheidmolke: die aufbewahrte, gesäuerte Molke, mit der Wecker Milch zum Gerinnen bringt. Sie steht hier in derselben Reihe wie in wec-061 und wec-065, dort als „ſcheid Molcken“: zuerst die Molke, wo keine ist, Wein oder Essig. Das Schweizerische Idiotikon führt „Scheidmilch“ als Wort für Molke.<list type="alternatives"><item>Sauermilch<note type="rationale">Passt in die Reihe der Gerinnungsmittel, ist aber nirgends als Bedeutung des Wortes belegt; Weckers eigene Parallelstellen nennen an diesem Platz die Scheidmolke.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

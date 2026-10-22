@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandelmus mit Schmalz, kalt gerührt</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-22">2026-10-22</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-140/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-140</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-140">
+        <head>Mandelmus mit Schmalz, kalt gerührt</head>
+        <div type="original" xml:id="wec-140-orig" xml:lang="de-x-fnhd" corresp="#wec-140-trans">
+          <p>Anders.
+
+TReib die Mandeln mit Roſenwaſſer durch/ oder einer gewaͤlten Milch/ inn rechter dicke/ oder einer| Mandelmilch: thu jm wie zuvoꝛ/ am beſten iſts/ waͤll die Milch/ vnnd geuß das durchgetriebne darein/ thu es in das geſchirꝛ/ in welchen du es bereiten wilt/ ruͤhrs biß es recht warm wirt/ ſo heb an das ſchmaltz darein zu thun/ geh mit an ein kalt ort/ wann das ſchmaltz wol zergangen iſt/ ruͤhrs genug/ biß wol erkalt vnd recht iſt. Das ſoltu allezeit mit allen gattungen thun. Nun/ wann du es recht bereiteſt wie vor/ ſchlags auß wie du kanſt/ du haſt vil gattung ſchuͤſſeln/ ſpritzen/ vnd was du kanſt oder haſt.</p>
+        </div>
+        <div type="translation" xml:id="wec-140-trans" xml:lang="de" corresp="#wec-140-orig">
+          <p>Die Mandeln mit Rosenwasser durchtreiben, oder mit einer aufgewallten Milch, in der rechten Dicke, oder mit einer Mandelmilch. Dann damit verfahren wie im vorigen Rezept. Am besten ist es, die Milch aufwallen zu lassen und das Durchgetriebene hineinzugießen.</p>
+          <p>Das Ganze in das Gefäß geben, in dem du es bereiten willst, und rühren, bis es richtig warm wird. Dann anfangen, das Schmalz hineinzugeben. Sobald das Schmalz gut zergangen ist, damit an einen kalten Ort gehen und genug rühren, bis es gut erkaltet und richtig ist. So sollst du es immer bei allen Arten machen.</p>
+          <p>Wenn du es nun richtig bereitet hast wie zuvor, schlag es aus, wie du kannst. Du hast viele Arten von Schüsseln, Spritzen und was du kannst oder hast.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="die Mandeln" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser, aufgewallte Milch oder Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="das ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-140-trans" resp="#fyndling">Praxis. Geschälte Mandeln wie in wec-139 fein stoßen und mit Rosenwasser oder Milch durchtreiben, am einfachsten durch ein feines Sieb oder Tuch (der Text nennt kein Gerät). Milch aufwallen lassen, das Durchgetriebene hineingießen und im Gefäß unter Rühren gut warm werden lassen, ohne zu kochen; der Text sagt nur "recht warm". Das Schmalz nach und nach einrühren, sobald es zergangen ist, das Gefäß an einen kalten Ort stellen und rühren, bis die Masse erkaltet und formbar ist. Dann in Schüsseln ausstreichen oder durch eine Spritze drücken.
+
+Mengen. Der Text nennt keine. Als Ausgangspunkt aus dem Vorrezept wec-139, nicht aus diesem Text: Fett etwa so schwer wie die Mandelmasse, Flüssigkeit nur so viel, dass ein dickes Mus entsteht.</note>
+        <note type="gloss" target="#wec-140-orig" n="gewaͤlten Milch" resp="#fyndling">Aufgewallte, also kurz aufgekochte Milch ("waͤll die Milch"). Nicht zu verwechseln mit "gewaͤllet" für ausgewalkten Teig.</note>
+        <note type="gloss" target="#wec-140-orig" n="ſchmaltz" resp="#fyndling">Schlichtes Schmalz, ohne den Zusatz "süß", der bei Wecker Butterschmalz anzeigt. Welches Schmalz gemeint ist, sagt der Text nicht; das Vorrezept wec-139 nimmt Butter.</note>
+        <note type="gloss" target="#wec-140-orig" n="ſchlags auß" resp="#fyndling">Ausschlagen heißt hier: die erkaltete Masse in Form bringen, in Schüsseln ausstreichen oder durch die Spritze drücken. Wecker gebraucht das Wort auch für Massen, die ausgestrichen und nach dem Erkalten geschnitten werden (wec-481).</note>
+        <note type="gloss" target="#wec-140-orig" n="ſpritzen" resp="#fyndling">Spritze zum Formen, wie man sie für die Butter auf dem Tisch benutzte (vgl. wec-057, wec-062).</note>
+        <note type="interpretive_choice" target="#wec-140-orig" n="geh mit an ein kalt ort/ wann das ſchmaltz wol zergangen iſt/ ruͤhrs genug" resp="#fyndling" subtype="contextual">Der Nebensatz gehört zum Gang an den kalten Ort: Das Schmalz zergeht noch in der Wärme, danach wird die Masse an einem kalten Ort kalt gerührt. Das entspricht der Reihenfolge Warmrühren, Fett zugeben, Kaltrühren.<list type="alternatives"><item>Gleich nach dem Zugeben des Schmalzes an den kalten Ort gehen und dort rühren, sobald das Schmalz zergangen ist.<note type="rationale">Grammatisch kann "wann das ſchmaltz wol zergangen iſt" ebenso zum folgenden "ruͤhrs genug" gehören.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

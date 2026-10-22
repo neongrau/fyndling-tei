@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mandeltorte mit Rahm</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-099/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-099</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-099">
+        <head>Mandeltorte mit Rahm</head>
+        <div type="original" xml:id="wec-099-orig" xml:lang="de-x-fnhd" corresp="#wec-099-trans">
+          <p>Ein Mandeldorten.
+
+NJmb ein halb pfund klein geſtoſſene Mandeln zu einer Dort auff einen tiſch/ klopff vier oder fuͤnff Eyer faſt wol/ thu die voͤgel darvon/ nimb ſo vil guten abgenommenen Milchrahm/ der ſol zuvor gewaͤlt ſeyn/ vnd wider kalt werden/ darvnter auch wol Roſenwaſſer vnnd Zucker/ auch ein wenig gerieben Semmelbrot/ es machts lucker/ mach ein hafen wie allezeit/ forme jhn nach deinem guten gefallen/ rund/ oder ein Hertz/ oder wie du es kanſt/ thu/ nach dem er hart/ den zeug darein/ bach es mit ſanffter hitz vnden vnd oben/ wann es dann geſtanden/ vnd ſchier gebachen/ ſo beſtreich es mit Roſenwaſſer/ vnd ſtrew wol Zucker darauff/ oder mache mit Eyerklar/ Zucker vnnd Roſenwaſſer ein Muͤßlein/ das ſtreich darauff herumb/ gib jm gute hitz/ ſo laufft es ſchoͤn auff/ glantzt wie ein Marcipã/ welche man auch alſo beſtreicht/ ſpart den Zucker/ wañ dz weiß vom Ey wol geklopfft daꝛunter iſt/ ſo magſt wol das Roſenwaſſer herauß laſſen/ oder faſt wenig nemen/ ſo du aber wilt vnnd kanſt ein wol zarten deckel ſchneiden/ der gar weitleufftig iſt/ oder ein ſchoͤnen ſtrick/ ſo mach mit dem gelben vom Ey/ Zucker vnnd Roſenwaſſer ein teig/ den waͤlge wol duͤnn: wann die Lart geſtanden/ ſo mache das wolgeſchnittene darauff/ gib jhm hitz/ daß das geſchnitten ſchoͤn braun vnnd gelb ſtehe/ vnnd der Dortenzeug weiß ſcheine: ſie muß aber weit anders geſchnitten ſeyn/ dann zu andern Dorten/ vnnd ſo mag man mehr Dorten/ ſo von milchſpeiß gemacht ſeyn/ decken. Wiltu es fuͤr einen krancken der kein Milch eſſen darff/ ſo mach ſo vil Mandelmilch mit Roſenwaſſer/ oder ſonſt geſottenem waſſer/ die ſonſt zu der krancken geſundheit dienen/ ſo vil du vnder die Eyer bedarffſt/ wie allezeit.</p>
+        </div>
+        <div type="translation" xml:id="wec-099-trans" xml:lang="de" corresp="#wec-099-orig">
+          <p>Nimm ein halbes Pfund klein gestoßene Mandeln für eine Torte auf einen Tisch. Verklopfe vier oder fünf Eier sehr gut und entferne die „Vögel“. Nimm so viel guten abgeschöpften Milchrahm, wie es braucht; der soll zuvor aufgewallt und wieder kalt geworden sein. Rühre auch gut Rosenwasser und Zucker darunter und ein wenig geriebenes Semmelbrot, das macht es locker.</p>
+          <p>Mache einen Tortenhafen wie immer und forme ihn nach deinem guten Gefallen, rund oder als Herz oder wie du es kannst. Wenn er hart ist, gib die Masse hinein und backe es mit sanfter Hitze unten und oben. Wenn es dann gestanden hat und fast gebacken ist, bestreiche es mit Rosenwasser und streue gut Zucker darauf.</p>
+          <p>Oder mache aus Eiweiß, Zucker und Rosenwasser ein Müslein, streiche das ringsum darauf und gib ihm gute Hitze, dann läuft es schön auf und glänzt wie ein Marzipan, das man auch so bestreicht. Das spart den Zucker. Wenn das Weiße vom Ei gut geschlagen darunter ist, kannst du das Rosenwasser auch weglassen oder sehr wenig nehmen.</p>
+          <p>Wenn du aber einen recht zarten Deckel schneiden willst und kannst, der ganz weit durchbrochen ist, oder einen schönen Strick, so mache aus dem Gelben vom Ei, Zucker und Rosenwasser einen Teig und rolle ihn gut dünn aus. Wenn die Torte gestanden hat, lege das gut Geschnittene darauf und gib ihm Hitze, sodass das Geschnittene schön braun und gelb steht und die Tortenmasse weiß scheint. Sie muss aber ganz anders geschnitten sein als bei anderen Torten. So kann man auch weitere Torten decken, die aus Milchspeise gemacht sind.</p>
+          <p>Willst du es für einen Kranken machen, der keine Milch essen darf, so mache Mandelmilch mit Rosenwasser oder sonst mit abgekochten Wässern, die sonst der Gesundheit der Kranken dienen, so viel du unter die Eier brauchst, wie immer.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="ein halb pfund klein geſtoſſene Mandeln">Mandeln, klein gestoßen</ingredient> - 0.5 Pfund</item>
+            <item><ingredient en="chicken egg" orig="vier oder fuͤnff Eyer" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 4</item>
+            <item>
+              <ingredient en="cream" orig="ſo vil guten abgenommenen Milchrahm" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Rahm</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="ein wenig gerieben Semmelbrot" commodity="wikidata:Q1501889" source="#fyndling-ingredient-name">Semmelbrot, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein hafen wie allezeit">Teig für den Tortenhafen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Je nach Abschluss Eiweiß oder Eigelb; Mandelmilch für die Krankenfassung</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-099-trans" resp="#fyndling">Praxis. Einen Teig für den Hafen nennt das Rezept nicht, nur „wie allezeit“; eine dünne Teigschale, die vor dem Füllen hart werden darf, entspricht dem Text. Die Rahmmenge fehlt ebenfalls: so viel, dass die Masse mit den Eiern dickflüssig bleibt. Temperatur und Backzeit nennt Wecker nicht; im Backofen sind etwa 180 °C Ober- und Unterhitze und 40 bis 50 Minuten ein Ausgangspunkt (Erfahrungswert, nicht aus dem Text), bis die Füllung gestanden hat. Erst dann Glasur oder Deckel auflegen und nochmals Hitze geben.
+
+Eiweiß. Ob das Eiweiß für das Müslein von den Eiern der Füllung stammt oder zusätzlich genommen wird, sagt der Text nicht; am einfachsten nimmt man es zusätzlich.</note>
+        <note type="gloss" target="#wec-099-orig" n="voͤgel" resp="#fyndling">Wörtlich „Vögel“. Wie in wec-020, wec-047 und wec-176 vermutlich die Fäden und Häutchen im verklopften Ei (Hagelschnüre); wec-176 seiht die Eier dafür durch. Ein Wörterbuchbeleg für diese Bedeutung fehlt.</note>
+        <note type="gloss" target="#wec-099-orig" n="Milchrahm / gewaͤlt" resp="#fyndling">Abgenommener Rahm ist abgeschöpfte Sahne. „Gewält“ heißt aufgewallt, also kurz aufgekocht.</note>
+        <note type="gloss" target="#wec-099-orig" n="hafen" resp="#fyndling">Hier der Tortenhafen, die Teigform, in der Wecker Torten bäckt (vgl. „dortenhafen“ in wec-069); „forme jhn … rund oder ein Hertz“ schließt den Kochtopf aus. Den Teig dafür setzt das Rezept mit „wie allezeit“ voraus.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+        <note type="gloss" target="#wec-099-orig" n="Lart" resp="#fyndling">So im Druck („wann die Lart geſtanden“), wohl ein Druckfehler für „Dort“ (Torte); Wecker schreibt sonst durchgehend Dort und Dorten.</note>
+        <note type="gloss" target="#wec-099-orig" n="ſtrick" resp="#fyndling">Wörtlich „Strick“, eine Zierform aus Teig. Wecker nennt „allerley ſchoͤne ſtrick“ unter den Formen aus Mandelteig (wec-091) und in wec-269 einen „Zweifelſtrick“ neben Rosen und Sternen.</note>
+        <note type="interpretive_choice" target="#wec-099-orig" n="welche man auch alſo beſtreicht" resp="#fyndling" subtype="contextual">Bezug auf das Marzipan des Vergleichs: Es glänzt wie Marzipan, das man ebenso mit Zucker und Rosenwasser bestreicht. „ſpart den Zucker“ meint dann, dass das Müslein das Aufstreuen von Zucker ersetzt.<list type="alternatives"><item>Bezug auf Torten allgemein: Torten, die man so bestreicht, sparen Zucker.<note type="rationale">„welche“ passt als Plural; ein Bezugswort „Torten“ steht im Satz aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-099-orig" n="geſottenem waſſer/ die ſonſt zu der krancken geſundheit dienen" resp="#fyndling" subtype="contextual">Abgekochte Wässer, wie sie sonst für Kranke verwendet werden; der Relativsatz im Plural bezieht sich auf diese Wässer. Welche gemeint sind, sagt der Text nicht.<list type="alternatives"><item>Schlicht abgekochtes Wasser; der Relativsatz bezieht sich auf die ganze Mandelmilch-Zubereitung.<note type="rationale">Wecker bereitet Mandelmilch auch sonst „von geſottenem waſſer“ (wec-002, wec-045), ohne weiteren Zusatz.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

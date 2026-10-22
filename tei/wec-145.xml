@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dottermus aus Weißbrot und Malvasier</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-22">2026-10-22</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-145/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-145</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-145">
+        <head>Dottermus aus Weißbrot und Malvasier</head>
+        <div type="original" xml:id="wec-145-orig" xml:lang="de-x-fnhd" corresp="#wec-145-trans">
+          <p>Ein Dottermuß.
+
+NJmb vier gute ſchnitten von weiſſem brot/ behe ſie/ aber nicht braun/ nimb eine halbe maß Malvaſier/ oder ſonſt den beſten Wein ſo du haben kanſt/ geuß jhn vber das brot/ daß es wol weich werde/ laß ein wall mit einander thun/ treibs mit einander durch/ nimb von vier vnd zweyntzig Eyern die Dotter/ zertreibs wol vnnd zart/ ruͤhr das durchgetriebne brot/ ſampt dem vbrigen Wein darein/ mach in eim tigel oder kachel auff einer glut ein ſchmaltz heiß/ nicht vil/ ſchuͤts darein/ friſch Mayenſchmaltz das were am beſten/ eins Eyes groß/ ruͤhr es biß es kocht/ vnnd laß nicht anbrennen/ wann es dick genug iſt/ ſo thu Saffran vnd Zucker darein/ laß ein wenig ſtehen: darnach ſchlags mit eim loͤffel ſchlechts in ein blatten/ wie man die kalten Bonen gibt/ vnnd laß kalt werden/ darnach geuß ſchoͤn geſotten Honig daruͤber/ oder gut kuͤttenſafft mit Zucker oder Honig geſotten/ oder ein dicke Mandelmilch/ oder ein feiſten Milchrahm vnnd Weinbeer/ nach dem du es eim zu eſſen gibſt/ es gehoͤren je zu einer ſchnitten brots ſechs Dotter/ zu einer halben aber das halb/ alſo auch des Weins. Wann du dann wilt/ ſo ſchlags auff ein teller wie ein Reiß/ ſo weit es ſich gibt/ ohn gefehr zween Finger dick/ vnnd wann es kalt wirt/ ſo ſchneids/ zuckers aber nicht/ nimbs vnnd bachs/ oder zeuchs durch Eyer/ wie du wilt/ du magſts auch wie Kroßeyer bachen. Wann du dann wilt/ ſo mach ein teiglein von ſuͤſſem Wein/ vnnd form es wie ſchnitz von groſſen Oepffeln vnd zeuchs dardurch/ aber fuͤr die krancken nicht: wie du es baͤchſt/ ſo beſtrew es/ darnach ſo bald du es auß dem ſchmaltz thuſt/ zuckers wol.</p>
+        </div>
+        <div type="translation" xml:id="wec-145-trans" xml:lang="de" corresp="#wec-145-orig">
+          <p>Das Dottermus: Vier gute Scheiben Weißbrot rösten, aber nicht braun werden lassen. Eine halbe Maß Malvasier oder sonst den besten Wein, den du bekommen kannst, über das Brot gießen, bis es gut durchweicht ist. Einmal miteinander aufwallen lassen und dann alles zusammen durchstreichen.</p>
+          <p>Von vierundzwanzig Eiern die Dotter nehmen und gut und fein verrühren. Das durchgestrichene Brot samt dem übrigen Wein hineinrühren. In einem Tiegel oder einer Kachel auf einer Glut ein Schmalz heiß machen, nicht viel. Frisches Maienschmalz ist am besten, eigroß. Die Masse hineinschütten und rühren, bis sie kocht, und nichts anbrennen lassen. Ist sie dick genug, Safran und Zucker daruntergeben und ein wenig stehen lassen.</p>
+          <p>Dann das Mus mit einem Löffel glatt auf eine Platte streichen, so wie man kalte Bohnen anrichtet, und kalt werden lassen. Danach schön gekochten Honig darübergießen. Oder guten Quittensaft, mit Zucker oder Honig gekocht. Oder eine dicke Mandelmilch. Oder einen fetten Milchrahm mit Rosinen, je nachdem, wem du es zu essen gibst.</p>
+          <p>Zu jeder Scheibe Brot gehören sechs Dotter, zu einer halben Scheibe die Hälfte, ebenso vom Wein.</p>
+          <p>Ausgebacken: Wenn du willst, streiche das Mus auf einen Teller wie einen Reis, so weit es sich ausbreitet, etwa zwei Finger dick. Wenn es kalt geworden ist, in Stücke schneiden, aber nicht zuckern. Nimm die Stücke und backe sie, oder zieh sie durch Eier, wie du willst. Du kannst sie auch wie krause Eier backen.</p>
+          <p>Mit Weinteig: Wenn du willst, mach ein Teiglein aus süßem Wein. Das Mus wie Schnitze von großen Äpfeln formen und durch den Teig ziehen. Das ist aber nichts für Kranke. Beim Backen bestreuen, und sobald du die Stücke aus dem Schmalz nimmst, reichlich zuckern.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="white bread" orig="vier gute ſchnitten von weiſſem brot" commodity="wikidata:Q1501889" source="#fyndling-ingredient-registry">Weißbrot</ingredient> - 4 Scheiben</item>
+            <item>
+              <ingredient en="malvasia" orig="eine halbe maß Malvaſier" commodity="wikidata:Q1165349" source="#fyndling-ingredient-name">Malvasier</ingredient>
+            </item>
+            <item><ingredient en="yolk" orig="von vier vnd zweyntzig Eyern die Dotter" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eidotter</ingredient> - 24</item>
+            <item>
+              <ingredient orig="friſch Mayenſchmaltz">Butterschmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchoͤn geſotten Honig daruͤber/ oder gut kuͤttenſafft mit Zucker oder Honig geſotten/ oder ein dicke Mandelmilch/ oder ein feiſten Milchrahm vnnd Weinbeer">Überguss nach Wahl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Für die Ausbackvarianten (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-145-trans" resp="#fyndling">Praxis. Die Brotscheiben nur leicht rösten, im Wein weichen, einmal aufwallen lassen und durch ein feines Sieb oder ein Tuch streichen; ein Gerät nennt der Text nicht. Die Dotter glatt verrühren, Brotmasse und restlichen Wein einrühren. Ein eigroßes Stück Butterschmalz im Topf heiß werden lassen (historisch auf der Glut, heute mittlere Hitze), die Masse hineingießen und ständig rühren, bis sie kocht und dick wird; sie brennt leicht an. Safran und Zucker nennt der Text ohne Menge: eine Prise Safran und zwei bis drei Esslöffel Zucker sind ein Ausgangspunkt. Glatt auf eine Platte streichen und ganz auskühlen lassen.
+
+Mengen. Der Text gibt das Verhältnis selbst: je Scheibe Brot sechs Dotter und der entsprechende Teil der halben Maß Wein. Wie groß die Maß in Amberg war, ist nicht belegt; nötig ist so viel Wein, dass das Brot ganz durchweicht.
+
+Weinteig. Mehl nennt der Text nicht. Für einen Teig, der an den Stücken haftet, Mehl nach Gefühl mit süßem Wein glatt anrühren.</note>
+        <note type="gloss" target="#wec-145-orig" n="Malvaſier" resp="#fyndling">Ein süßer, kräftiger Südwein. Der Text lässt ersatzweise den besten Wein zu, den man bekommt.</note>
+        <note type="gloss" target="#wec-145-orig" n="kachel" resp="#fyndling">Ein irdenes Gefäß (BMZ, Lexer: Topf, irdenes Geschirr), wie in wec-022. Nicht die Ofenkachel.</note>
+        <note type="gloss" target="#wec-145-orig" n="Mayenſchmaltz" resp="#fyndling">Maienschmalz ist im Mai gewonnene Butter bzw. daraus ausgelassenes Fett (FWB meienschmalz; Grimm: maienschmalz = Maibutter). Wecker nennt Maienschmalz und Butter auch nebeneinander (wec-042).</note>
+        <note type="gloss" target="#wec-145-orig" n="Kroßeyer" resp="#fyndling">Eine gebackene Eierspeise, die Wecker neben die „Ochsenaugen“ stellt (wec-071).</note>
+        <note type="interpretive_choice" target="#wec-145-orig" n="aber fuͤr die krancken nicht" resp="#fyndling" subtype="contextual">Der Ausschluss gilt der Weinteig-Variante, hinter der er steht. Die vorher genannte Ausbackweise ohne Teig nennt der Text ohne Einschränkung.<list type="alternatives"><item>Das Ausbacken in Schmalz insgesamt ist für Kranke ausgeschlossen.<note type="rationale">Auch die Weinteig-Stücke werden in Schmalz gebacken; der Satz grenzt nicht ausdrücklich ab, worauf er sich bezieht.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

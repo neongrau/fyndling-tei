@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kachelmus mit Asche und Oberhitze</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-21">2026-10-21</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-056/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-056</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-056">
+        <head>Kachelmus mit Asche und Oberhitze</head>
+        <div type="original" xml:id="wec-056-orig" xml:lang="de-x-fnhd" corresp="#wec-056-trans">
+          <p>Auff ein andere weiß
+
+NJmb den zeug wie du in zum ſchuͤſſelmuß bereiteſt/ mache ein irꝛdene oder aͤhrine kachel oder topff/ wie mans an einem jeden ort nennet/ beſtreichs mit ſchmaltz laß gar wol heiß werden/ hinden vnnd fornen/ vnd vberall/ ſchuͤtte den zeug darein/ gib jhm vnden nur ein heiſſe aſchen/ oben wolhitze/ kehre es jmmer von einem ort an das ander/ gegen dem fewer/ doch nicht gar zu nah/ daß es nicht einsmals verbrenne/ es ſol vberall braun ſeyn/ vnnd ſo du wilt daß es gantz herauß gehe/ ſo nimb Milch vnnd Eyer gleich/ oder vertreib ein gebehetes brot darunter/ vnnd nimb der Milch ein wenig mehr dann der Eyer/ es ſind die hoͤflichſten kachelmuͤſer/ die auch einer kindbetterin nicht ſchaden/ wiltu es dann in einem moͤrſel kochen/ ſo zertreib auch Krafftmeel drein.</p>
+        </div>
+        <div type="translation" xml:id="wec-056-trans" xml:lang="de" corresp="#wec-056-orig">
+          <p>Auf eine andere Weise: Nimm die Masse, wie du sie zum Schüsselmus zubereitest. Mach eine irdene oder eherne Kachel oder einen Topf bereit, wie man es an jedem Ort nennt. Bestreiche es mit Schmalz und lass es recht gut heiß werden, hinten und vorn und überall.</p>
+          <p>Schütte die Masse hinein. Gib ihr unten nur heiße Asche, oben aber gute Hitze. Wende es immer von einer Stelle zur anderen, dem Feuer zu, doch nicht allzu nah, damit es nicht auf einmal verbrennt. Es soll überall braun sein.</p>
+          <p>Willst du, dass es ganz herausgeht, so nimm Milch und Eier zu gleichen Teilen. Oder rühre ein geröstetes Brot darunter und nimm dabei ein wenig mehr Milch als Eier. Das sind die feinsten Kachelmuse, die auch einer Wöchnerin nicht schaden.</p>
+          <p>Willst du es dann in einem Mörser kochen, so rühre auch Kraftmehl darunter.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="den zeug wie du in zum ſchuͤſſelmuß bereiteſt">Masse wie zum Schüsselmus</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Milch vnnd Eyer gleich">Milch und Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Krafftmeel">Kraftmehl</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-056-trans" resp="#fyndling">Praxis. Die Masse aus dem vorigen Rezept ansetzen. Einen irdenen oder gusseisernen Topf mit Schmalz ausstreichen und von allen Seiten gut vorheizen, die Masse einfüllen und den Topf in heiße Asche setzen. Wie die Hitze von oben entsteht, sagt das Rezept nicht; naheliegend ist ein Deckel mit Glut wie im vorigen Rezept (modernes Hilfsmittel: Dutch Oven mit Kohlen auf dem Deckel). Den Topf in Abständen drehen, damit jede Seite dem Feuer zugewandt ist, und nicht zu nah ans Feuer stellen. Eine Backzeit nennt der Text nicht: fertig, wenn das Mus gestockt und überall braun ist.
+
+Wenden. „kehre es jmmer von einem ort an das ander“ lässt offen, ob das Gefäß gedreht oder die Masse gewendet wird. Weil das Mus als Ganzes braun backen und herausgehen soll, liegt das Drehen des Gefäßes näher.</note>
+        <note type="gloss" target="#wec-056-orig" n="irꝛdene oder aͤhrine kachel" resp="#fyndling">„Kachel“ ist hier ein irdenes Koch- und Backgefäß (BMZ, MNWB), keine Ofenkachel; „aͤhrine“ heißt ehern, also aus Metall, wie „eriner“ in wec-023.</note>
+        <note type="gloss" target="#wec-056-orig" n="gebehetes brot" resp="#fyndling">Leicht geröstetes Brot (bähen = leicht rösten).</note>
+        <note type="gloss" target="#wec-056-orig" n="moͤrſel" resp="#fyndling">„Mörsel“ ist eine alte Nebenform von „Mörser“, kein eigenes Gerät. Wecker backt auch sonst im Mörser (wec-004).</note>
+        <note type="gloss" target="#wec-056-orig" n="Krafftmeel" resp="#fyndling">Stärkemehl als Bindemittel.</note>
+        <note type="interpretive_choice" target="#wec-056-orig" n="ſo du wilt daß es gantz herauß gehe" resp="#fyndling" subtype="contextual">Das Mus soll sich im Ganzen aus dem Gefäß lösen; davor ist vom ausgestrichenen Gefäß die Rede, und Milch und Eier zu gleichen Teilen (oder Brot) geben die festere Bindung dafür.<list type="alternatives"><item>Das Mus soll gleichmäßig durchgaren oder aufgehen.<note type="rationale">„Herausgehen“ kann auch das Aufgehen der Masse meinen; der Text nennt kein Stürzen ausdrücklich.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Allemänlein: Dünne Mandelfladen aus der Pfanne</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-22">2026-10-22</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-135/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-135</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-135">
+        <head>Allemänlein: Dünne Mandelfladen aus der Pfanne</head>
+        <div type="original" xml:id="wec-135-orig" xml:lang="de-x-fnhd" corresp="#wec-135-trans">
+          <p>Ein gebachens/ Allemaͤnlein genant.
+
+SToß aber Mandeln faſt klein/ treibs mit Roſenwaſſer ziemlich dick durch/ ein gute Eyerſchalen voll/ darunter/ klopff zwey oder drey Eyer wol/ Zucker vnnd ein wenig ſaltz/ oder ſo du wilt/ laß den Zucker biß es gebachen/ mache ein ſchmaltz heiß in eim pfaͤnlein/ das man nicht reibt/ vnd ein flachen boden hat/ nicht vil/ wann es heiß/ ſo ſchuͤt es in ein anders/ die pfann ſol bloß ſchmutzig oder feiſt vnnd geſchmirt ſeyn: nimb bald/ weil die pfann heiß iſt/ ein loͤffel voll erklopfften zeugs/ geuß inn der pfann herumb/ daß es ein platz gibt wie ein Oflaten/ ſo duͤnn es ſeyn kan/ doch gantz/ an allen orten gleich/ heb es vber das fewer/ biß es ſich von der pfannen loͤſen laͤſt: dann ſtrewe vberall Zucker vnd Zimmet darauff herumb/ leg es allgemach wie Huͤppen vbereinander/ iſt die pfann noch ſchmutzig/ fahꝛe fort/ wo nicht/ ſo ſchuͤtt das erlaſſene ſchmaltz wider darein vnd darauß/ wie zuvor/ fahr abermal fort/ die pfann ſol weder zu heiß noch zu kalt ſeyn/ es geſtehet ſonſt ſo bald/ behalts warm oder gibs gleich.</p>
+        </div>
+        <div type="translation" xml:id="wec-135-trans" xml:lang="de" corresp="#wec-135-orig">
+          <p>Wieder Mandeln sehr klein stoßen und mit Rosenwasser ziemlich dick durchtreiben, eine gute Eierschale voll. Zwei oder drei Eier gut darunterschlagen, dazu Zucker und ein wenig Salz. Wer will, lässt den Zucker weg, bis es gebacken ist.</p>
+          <p>In einem Pfännlein, das man nicht ausreibt und das einen flachen Boden hat, Schmalz heiß machen, aber nicht viel. Sobald es heiß ist, das Schmalz in ein anderes Gefäß schütten. Die Pfanne soll nur schmierig oder fett und eingeschmiert sein.</p>
+          <p>Gleich, solange die Pfanne heiß ist, einen Löffel voll von der geschlagenen Masse nehmen und in der Pfanne herumgießen, sodass ein Fladen entsteht wie eine Oblate, so dünn wie möglich, aber ganz und an allen Stellen gleich. Über das Feuer halten, bis er sich von der Pfanne lösen lässt. Dann überall Zucker und Zimt darüberstreuen und die Fladen nach und nach wie Hüppen übereinanderlegen.</p>
+          <p>Ist die Pfanne noch schmierig, weitermachen. Wenn nicht, das zerlassene Schmalz wieder hinein- und herausgießen wie zuvor und abermals weitermachen. Die Pfanne soll weder zu heiß noch zu kalt sein, sonst stockt es sofort. Warm halten oder gleich auftragen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="Mandeln" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="zwey oder drey Eyer" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ein wenig ſaltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimmet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-135-trans" resp="#fyndling">Praxis. Die Mandeln im Mörser sehr fein stoßen oder fertig gemahlene nehmen. Eine Mandelmenge nennt der Text nicht, als Hausmaß (unsere Schätzung) etwa 150 g auf zwei bis drei Eier. Eine kleine Pfanne von 18 bis 20 cm und ein Esslöffel Schmalz reichen für die ganze Reihe. Als moderner Richtwert mittlere bis mittelstarke Hitze, die Pfanne heiß, das Fett nicht rauchend. Je Fladen wenige Minuten, bis er sich von der Pfanne lösen lässt.
+
+Dick und dünn. Der Teig soll „ziemlich dick“ sein und trotzdem oblatendünn verlaufen. Deshalb nur einen Löffel je Fladen nehmen und gleich in der Pfanne herumgießen, solange sie heiß ist.</note>
+        <note type="gloss" target="#wec-135-orig" n="Allemänlein" resp="#fyndling">Name des Gebäcks. Wecker erklärt ihn nicht, wir lassen ihn unübersetzt.</note>
+        <note type="gloss" target="#wec-135-orig" n="pfaͤnlein, das man nicht reibt" resp="#fyndling">Eine Pfanne, die man nicht blank ausreibt. Dazu passt, dass sie gleich darauf „schmutzig oder feist“ sein soll.</note>
+        <note type="gloss" target="#wec-135-orig" n="ſchmutzig oder feiſt" resp="#fyndling">Gemeint ist ein dünner Fettfilm, nicht Schmutz: Die Pfanne soll nur eingeschmiert sein, nicht in Fett schwimmen. „Schmutzig“ heißt hier fett, schmalzreich (DWB schmutzig 1, besonders im Alemannischen).</note>
+        <note type="gloss" target="#wec-135-orig" n="Oflaten" resp="#fyndling">Oblaten: hauchdünne, trockene Backblättchen. Sie sind das Maß für die Dünne der Fladen.</note>
+        <note type="gloss" target="#wec-135-orig" n="Hüppen" resp="#fyndling">Hüppen (Hippen): hauchdünne, oblatenartige Kuchen, oft zusammengerollt (DWB hippe, Lexer hipe). Wecker vergleicht mit ihrer Schichtung das Stapeln der Fladen; hier sind sie also flach gedacht.</note>
+        <note type="interpretive_choice" target="#wec-135-orig" n="ein gute Eyerſchalen voll" resp="#fyndling" subtype="contextual">Auf das Rosenwasser bezogen: Die Mengenangabe folgt unmittelbar auf „treibs mit Roſenwaſſer ziemlich dick durch“.<list type="alternatives"><item>Eine gute Eierschale voll von der durchgetriebenen Mandelmasse<note type="rationale">Der Satzbau lässt den Bezug offen. Dann bestimmte die Eierschale die Mandelmenge für die zwei oder drei Eier.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
