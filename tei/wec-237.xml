@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnenschnitze in Schmalz mit Rosinen und Ingwer</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-237/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-237</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-237">
+        <head>Birnenschnitze in Schmalz mit Rosinen und Ingwer</head>
+        <div type="original" xml:id="wec-237-orig" xml:lang="de-x-fnhd" corresp="#wec-237-trans">
+          <p>Andere eſſen von Birnen.
+
+NJm gute Birnen die kraͤfftig ſind/ ſchaͤl vnnd ſchneid ſie zu ſchnitzen/ wirffs in heiß ſchmaltz/ laß ſchoͤn kochen/ wirffs fein herumb/ Wenn ſie halber gekocht ſind/ ſo thu Weinbeer vnd Jngwer darzu/ laß geheb zugedeckt/ ſo geben ſie ſelbſt bruͤh: Wenn ſie dann nicht von jhnen ſelbſt rot werden/ ſo beſprengs mit wein/ ſo werden ſie ſchoͤn rot/ laß kochen/ daß ſie ein feines dickes bruͤhlein geben/ beſtrewe es mit Zimet. Wo aber die Birnen gar truckner art weren/ ſo geuß/ nach dem du ſie in das ſchmaltz thuſt/ halber wein vnnd halber waſſer daran/ daß ſie recht kochen moͤgen/ bereits wie vor oben. Vnd alſo magſtu die Birnen gantz laſſen/ vnd auff beyde weg bereiten/ du magſts auch wol zuvor im ſchmaltz gantz oder geſchnitzt braun bachen/ vnd darnach ein gute bruͤh bereiten/ aber vorgehende ſind fuͤr die krancken beſſer: Du magſts auch allezeit mit Zucker/ oder nicht verbeſſern/ fuͤr die krancken ſonderlich/ oder thu deſto mehr Weinbeer darein.</p>
+        </div>
+        <div type="translation" xml:id="wec-237-trans" xml:lang="de" corresp="#wec-237-orig">
+          <p>Nimm gute, kräftige Birnen, schäle sie und schneide sie in Schnitze. Wirf sie in heißes Schmalz und lass sie schön kochen. Wende sie gut hin und her.</p>
+          <p>Wenn sie halb gar sind, gib Rosinen und Ingwer dazu. Lass sie dicht zugedeckt, dann geben sie von selbst Brühe. Werden sie nicht von selbst rot, besprenge sie mit Wein, dann werden sie schön rot. Lass sie kochen, bis sie ein feines, dickes Brühlein geben, und bestreue das Ganze mit Zimt.</p>
+          <p>Sind die Birnen aber sehr trocken, gieße, nachdem du sie ins Schmalz gegeben hast, halb Wein und halb Wasser dazu, damit sie richtig kochen können. Bereite sie dann weiter zu wie oben.</p>
+          <p>So kannst du die Birnen auch ganz lassen und auf beide Weisen zubereiten. Du kannst sie auch zuvor im Schmalz ganz oder in Schnitzen braun backen und danach eine gute Brühe bereiten. Die vorigen Weisen sind aber für die Kranken besser.</p>
+          <p>Du kannst es immer mit Zucker verbessern oder auch nicht, besonders für die Kranken. Oder gib desto mehr Rosinen dazu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="gute Birnen die kraͤfftig ſind" commodity="wikidata:Q13099586" source="#fyndling-ingredient-name">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Weinbeer" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-237-trans" resp="#fyndling">Praxis. Einen weiten Topf oder eine tiefe Pfanne mit gut schließendem Deckel nehmen, reichlich Schmalz heiß werden lassen und die Schnitze bei mittlerer Hitze unter Wenden garen, damit nichts anbrennt. Rosinen und Ingwer erst zugeben, wenn die Birnen halb gar sind, dann zudecken. Den Wein esslöffelweise darübersprengen, wenn die Schnitze nicht von selbst rot werden. Garzeit und Mengen nennt der Text nicht; maßgeblich ist der Zustand: ein feines, dickes Brühlein.
+
+Welche Birnen? „kraͤfftig“ lesen wir als fest und gehaltvoll, ein Wörterbuchbeleg für die Bedeutung bei Obst fehlt. Für harte, trockene Sorten (Wecker nennt im nächsten Rezept die Regelbirnen) ist der Guss aus halb Wein, halb Wasser gedacht.</note>
+        <note type="gloss" target="#wec-237-orig" n="geheb" resp="#fyndling">„Dicht, gut schließend“ (FWB gehebe, BMZ gehebe 2 „dicht haltend, wol verschlossen“). Bei Wecker steht das Wort immer beim Deckel oder Gefäß, etwa „decks geheb“ (wec-228) oder „mit geheb vermachten haͤfen“ (wec-258); es meint nie ein Tempo.</note>
+        <note type="gloss" target="#wec-237-orig" n="wie vor oben" resp="#fyndling">Rückbezug auf die oben in diesem Rezept beschriebene Zubereitung mit Rosinen, Ingwer und eigener Brühe. Ein früheres Birnenrezept gibt es im Buch nicht.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

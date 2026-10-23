@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kolhauffen: gefüllter Topf aus Eierfladen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-180/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-180</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-180">
+        <head>Kolhauffen: gefüllter Topf aus Eierfladen</head>
+        <div type="original" xml:id="wec-180-orig" xml:lang="de-x-fnhd" corresp="#wec-180-trans">
+          <p>Ein Kolhauffen.
+
+KLopff zwey oder drey Eyer faſt wol/ thu ein loͤffelvoll milchrahm oder Fleiſchbruͤh darein/ ſchab wol Muſcatnuß vnnd Saffran darein/ ſaltz es recht. Darnach nim ein wol tieffes pfaͤnnlein/ mit einem gar flachen boden/ mach ein wenig ſchmaltz darin heiß/ ſchwancks wol darin/ vnd geuß widerumb herauß/ thu dann die Eyer hinein/ vnd ſchwangs in der pfannen herumb/ laß ſie auff dem bodem herumb lauffen/ vñ neben vmb den ranfft/ daß alſo geformiret wird wie ein Dortenhafen/ laß dann fein bachen/ wenn ſichs von der pfannen ſchelt/ nimbs herauß/ thu ſie in blatten/ die recht auff ein teller/ darnach leg darein was du wilt/ vnnd die bruͤh auch darein/ ſo du bereitet/ es ſey die nun von Huͤnern/ vnnd was du gutes gekocht/ gebachens oder gebratene ſachen/ daran man ſuͤſſe bruͤh macht: Vnd ſo du wilt/ ſo mach ein blat wie das vorige aber ohn ein ranfft/ legs daruͤber wie ein deckel uͤber ein Baſtetẽ/ diß iſt luſtig/ herꝛlich vnd auch gut/ wiltu dann/ ſo laß alſo/ wie es dir gefelt: So man denn ſolches fuͤr gaͤſte traͤgt/ ſol man weder den deckel noch den hafen anſchneiden/ vnnd wanns von dem tiſch kompt/ ſo thu darauß was drinn iſt/ vnd hab zuvor Zimetbruͤh/ nim den deckel oder hafen/ ſchneide es wie Eyerfleck/ ſo haſtu bald ein ander tracht/ mit ringem koſten.</p>
+        </div>
+        <div type="translation" xml:id="wec-180-trans" xml:lang="de" corresp="#wec-180-orig">
+          <p>Verquirle zwei oder drei Eier sehr gut. Gib einen Löffel voll Milchrahm oder Fleischbrühe dazu, schabe gut Muskatnuss und Safran hinein und salze es richtig.</p>
+          <p>Nimm danach ein recht tiefes Pfännlein mit ganz flachem Boden. Mach ein wenig Schmalz darin heiß, schwenke es gut darin herum und gieß es wieder heraus. Gib dann die Eier hinein und schwenke sie in der Pfanne herum. Lass sie auf dem Boden herumlaufen und seitlich um den Rand, sodass es geformt wird wie ein Tortentopf.</p>
+          <p>Lass es dann schön backen. Wenn es sich von der Pfanne löst, nimm es heraus und setze es auf eine Platte, richtig herum auf einen Teller.</p>
+          <p>Danach lege hinein, was du willst, und auch die Brühe, die du bereitet hast, sei sie nun von Hühnern und von dem, was du Gutes gekocht hast, Gebackenes oder gebratene Sachen, zu denen man süße Brühe macht.</p>
+          <p>Und wenn du willst, so mach ein Blatt wie das vorige, aber ohne Rand, und lege es darüber wie einen Deckel über eine Pastete. Das ist erquickend, herrlich und auch gut. Willst du aber, so lass es, wie es dir gefällt.</p>
+          <p>Trägt man das den Gästen auf, soll man weder den Deckel noch den Topf anschneiden. Und wenn es vom Tisch zurückkommt, nimm heraus, was darin ist, und halte zuvor Zimtbrühe bereit. Nimm den Deckel oder den Topf und schneide es wie Eierflecken. So hast du bald ein anderes Gericht mit geringen Kosten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="chicken egg" orig="zwey oder drey Eyer" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 2</item>
+            <item><ingredient en="cream" orig="ein loͤffelvoll milchrahm oder Fleiſchbruͤh" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Milchrahm</ingredient> - 1</item>
+            <item>
+              <ingredient en="nutmeg" orig="Muſcatnuß" commodity="wikidata:Q83165" source="#fyndling-ingredient-registry">Muskatnuss</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ein wenig ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="leg darein was du wilt">Füllung nach Wahl samt Brühe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-180-trans" resp="#fyndling">Praxis. Eine Pfanne von etwa 16 bis 18 cm mit hohem Rand und flachem Boden passt zu zwei oder drei Eiern; für eine größere Pfanne mehr Eier nehmen. Bei mittlerer Hitze ohne Wenden backen, bis sich der Fladen vom Rand löst und oben gestockt ist. Damit die Masse am Rand hochläuft, die Pfanne gleich nach dem Eingießen neigen und drehen; aus so wenig Ei wird der Rand nur niedrig. Wecker misst die Garzeit allein daran, dass sich der Fladen von der Pfanne löst.
+
+Füllung. Wecker lässt sie frei; gemeint ist bereits Gekochtes, Gebackenes oder Gebratenes mit seiner Brühe. Eine Zubereitung der Zimtbrühe für die Reste nennt sie nicht.</note>
+        <note type="gloss" target="#wec-180-orig" n="Kolhauffen" resp="#fyndling">Wörtlich „Kohlenhaufen“. So nennt Wecker diesen Topf aus Eierfladen; im Rezept davor (wec-179) legt sie die Nonne in einen solchen Kolhauffen. Warum er so heißt, sagt sie nicht. Mit Kohl hat das Gericht nichts zu tun.</note>
+        <note type="gloss" target="#wec-180-orig" n="Dortenhafen" resp="#fyndling">Tortentopf: bei Wecker der Mantel, in dem eine Torte gebacken wird, sonst aus Teig („ein dortenhafen von einem teig“, wec-004). Hier wird dieselbe Form aus Eiermasse gebildet.</note>
+        <note type="gloss" target="#wec-180-orig" n="Eyerfleck" resp="#fyndling">Eierflecken sind flache, in Schmalz gebackene Eierfladen; Wecker stellt sie neben den Pfannkuchen („wie man ein Eyerfleck oder Pfannkuchen“, wec-171). Topf und Deckel werden also wie solche Fladen in Stücke geschnitten.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

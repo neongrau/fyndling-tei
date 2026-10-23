@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**6315 Rezepte** aus **41 Rezeptsammlungen**, dazu
+**6390 Rezepte** aus **41 Rezeptsammlungen**, dazu
 41 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -58,11 +58,11 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 269 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 269 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
+| Ein köstlich new Kochbuch | 1598 | 243 |  |
 | Das Kochbuch der Philippine Welser | 1543-44 | 242 |  |
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
 | The Forme of Cury | ~1390 | 192 |  |
-| Ein köstlich new Kochbuch | 1598 | 168 |  |
 | Das Kochbuch der Maria Stenglerin | 1554 | 145 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |

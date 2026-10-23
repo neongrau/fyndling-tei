@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rahmschnee auf geröstetem Brot</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-220/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-220</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-220">
+        <head>Rahmschnee auf geröstetem Brot</head>
+        <div type="original" xml:id="wec-220-orig" xml:lang="de-x-fnhd" corresp="#wec-220-trans">
+          <p>Ein Schnee zumachen.
+
+NJm auff ein tiſch drey ſeidlein Milchrahm/ vnnd behe zwo ſemmel/ legs in ein ſchuͤſſel/ nim darnach ein halben vierling geſtoſſene Mandel/ legs auff das gebehte brot/ auch ſo vil Weinbeer die ſchoͤn ſauber gewaſchen/ vnd geklaubt ſeyn/ darunter thu den Milchrahm/ inn ein glaͤſſern hafen/ nim ein beßlein oder kochloͤffel/ ruͤhr den Milchrahm wol damit/ ſo gibt es ein groſſen geſt/ heb jhn herab/ thu jhn auff das gebehte brot/ vnd ruͤhrs ſo lang biß es mehr geſt gibt/ ſo heb jn wider herab/ das thu ſo lang/ biß kein Milchrahm mehr da iſt/ das mach ein halbe ſtund vor dem eſſen/ vñ ſetzs ein weil in ein keller.</p>
+        </div>
+        <div type="translation" xml:id="wec-220-trans" xml:lang="de" corresp="#wec-220-orig">
+          <p>Für eine Tafel nimm drei Seidlein Sahne. Röste zwei Semmeln und lege sie in eine Schüssel. Nimm danach einen halben Vierling gestoßene Mandeln und lege sie auf das geröstete Brot. Lege auch ebenso viele Rosinen darunter, die schön sauber gewaschen und verlesen sind.</p>
+          <p>Gib die Sahne in einen gläsernen Topf. Nimm einen kleinen Besen oder einen Kochlöffel und rühre die Sahne damit gut, so gibt es viel Schaum. Hebe ihn ab und lege ihn auf das geröstete Brot.</p>
+          <p>Rühre so lange weiter, bis es wieder Schaum gibt, und hebe ihn wieder ab. Das tu so lange, bis keine Sahne mehr da ist.</p>
+          <p>Mach das eine halbe Stunde vor dem Essen und stelle es eine Weile in den Keller.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="cream" orig="drey ſeidlein Milchrahm" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Sahne</ingredient>
+            </item>
+            <item><ingredient en="white bread" orig="zwo ſemmel" commodity="wikidata:Q1501889" source="#fyndling-ingredient-name">Semmeln</ingredient> - 2</item>
+            <item>
+              <ingredient en="almond" orig="ein halben vierling geſtoſſene Mandel" commodity="wikidata:Q184357" source="#fyndling-ingredient-name">Mandeln, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="ſo vil Weinbeer die ſchoͤn ſauber gewaſchen/ vnd geklaubt ſeyn" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-220-trans" resp="#fyndling">Praxis. Die Größe von Seidlein und Vierling ist nicht belegt, deshalb steht in der Zutatenliste keine Liter- oder Grammzahl. Als eigener Richtwert für einen Versuch: etwa 500 bis 750 ml Sahne und rund 60 g Mandeln, Rosinen in gleicher Menge. Mit einem Schneebesen gelingt der Schaum leichter als mit dem Kochlöffel (modernes Hilfsmittel). Statt des Kellers den Kühlschrank nehmen.</note>
+        <note type="gloss" target="#wec-220-orig" n="Schnee" resp="#fyndling">Name des Gerichts: aufgeschlagener Milchrahm. Eier kommen im Rezept nicht vor.</note>
+        <note type="gloss" target="#wec-220-orig" n="auff ein tiſch" resp="#fyndling">Wörtlich „auf einen Tisch“. Wie in wec-218 als Mengenbezug „für eine Tafel“ gedeutet; ein Wörterbuchbeleg für diese Bedeutung fehlt.</note>
+        <note type="gloss" target="#wec-220-orig" n="ſeidlein" resp="#fyndling">Seidlein, Verkleinerung zu Seidel: ein Hohlmaß für Flüssigkeiten, dessen Größe regional schwankte, grob ein Drittel bis ein halber Liter. Für Weckers Buch ist sie nicht eigens belegt.</note>
+        <note type="gloss" target="#wec-220-orig" n="vierling" resp="#fyndling">Ein Vierling ist ein Viertelpfund, der halbe Vierling also ein Achtelpfund. Das Pfund wog regional verschieden.</note>
+        <note type="gloss" target="#wec-220-orig" n="gebehte" resp="#fyndling">Von „bähen“: Brot leicht rösten.</note>
+        <note type="gloss" target="#wec-220-orig" n="geſt" resp="#fyndling">Schaum, Gischt (mhd. gëst, Schmeller).</note>
+        <note type="interpretive_choice" target="#wec-220-orig" n="darunter" resp="#fyndling" subtype="contextual">Auf die Rosinen bezogen: Sie kommen zu den Mandeln auf das Brot. Der Satz über die Sahne im gläsernen Topf beginnt danach neu.<list type="alternatives"><item>Überleitung zur Sahne („dann, dazu“): Die Rosinen kommen nur „auch“ dazu, „darunter“ eröffnet den Schritt mit dem Milchrahm.<note type="rationale">Die Virgel steht vor „darunter“, nicht danach; das Wort kann also auch zum folgenden Satz gehören. Am Ablauf ändert sich wenig, offen bleibt nur, ob die Rosinen ausdrücklich unter die Mandeln kommen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
