@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnentorte mit hoher Mitte, auch aus rohen Birnen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-259/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-259</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-259">
+        <head>Birnentorte mit hoher Mitte, auch aus rohen Birnen</head>
+        <div type="original" xml:id="wec-259-orig" xml:lang="de-x-fnhd" corresp="#wec-259-trans">
+          <p>Ein Dorten von Birnen.
+
+KOche die Birnen auff alleꝛley weiß vnd wege/ wie du hievor haſt/ welche gattung dir gefelt/ allein/ ſchneids zu Schnieten wie zu eim Apffel oder Birnenmuß/ darnach bereite es in den hafen alſo: Mache Jngwer/ Zimet vnnd Muſcatnuß vntereinander/ vnd beſtrewe den boden mit geſaͤuberten Weinbeern/ darnach leg die ſchnitzen/ daß alles wol bedeckt iſt/ ſo beſtrew es aber/ vnd widerumb ein leg Birnen/ das ein mal oder drey/ vnd zeuch je eine leg nach der andern vom Ranfft ein/ daß es in der mitte am hoͤchſten ſey: Alßdann beſtrew es wol vnd gnug/ mach es mit eim ſchoͤn geſchnitten deckel mit aller zier zu/ bachs/ im auffſetzen beſprengs mit Zucker. Alſo magſtus auch mit rauhen Birnen/ wie du von Aepffeln haſt/ bereiten/ es ſollen aber gar von geſchlachten Birnen ſeyn/ Speckbirnen ſind gut/ vnd andere mehr/ in dieſelben thu oben auff ſchmaltz/ vnd wol Zucker/ doch an dem ſie ſuͤß an jhnen ſelbſt ſind/ ſie ſollen allzeit vnter dem deckel auch roͤſch ſeyn.</p>
+        </div>
+        <div type="translation" xml:id="wec-259-trans" xml:lang="de" corresp="#wec-259-orig">
+          <p>Koche die Birnen auf allerlei Weise und Wege, wie du es zuvor hast, welche Sorte dir gefällt, nur schneide sie in Schnitze wie für ein Apfel- oder Birnenmus. Danach bereite es in dem Topf so: Mische Ingwer, Zimt und Muskatnuss untereinander und bestreue den Boden mit gesäuberten Rosinen. Danach lege die Schnitze, so dass alles gut bedeckt ist, dann bestreue es abermals und wieder eine Lage Birnen, das ein- oder dreimal. Ziehe jede Lage nach der anderen vom Rand her ein, so dass es in der Mitte am höchsten ist.</p>
+          <p>Dann bestreue es gut und genug, schließe es mit einem schön geschnittenen Deckel mit aller Zier, backe es und besprenge es beim Auftragen mit Zucker.</p>
+          <p>So kannst du es auch mit rohen Birnen bereiten, wie du es von den Äpfeln hast. Es sollen aber ganz edle Birnen sein; Speckbirnen sind gut und andere mehr. In diese gib oben Schmalz und eine gute Menge Zucker, doch danach, wie süß sie von sich selbst sind. Sie sollen auch unter dem Deckel immer knusprig sein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="Birnen" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="Muſcatnuß" commodity="wikidata:Q83165" source="#fyndling-ingredient-registry">Muskatnuss</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="geſaͤuberten Weinbeern" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Teig für Schale und Deckel</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz (nur bei rohen Birnen)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-259-trans" resp="#fyndling">Praxis. Mengen, Hitze, Zeit und Teig nennt der Text nicht. Die Birnen nach einem der vorangehenden Rezepte garen, etwa in Schmalz gedämpft wie in wec-257, in Schnitze schneiden und abkühlen lassen. Eine hohe Form mit festem Mürbteig auskleiden (moderner Behelf für den Tortenhafen), Ingwer, Zimt und Muskatnuss mischen, den Boden mit Rosinen bestreuen, Schnitze darauflegen, bestreuen und das ein- bis dreimal wiederholen; jede Lage etwas weiter innen ansetzen, so dass die Mitte am höchsten steht. Oben gut mit Gewürz bestreuen, einen verzierten Teigdeckel auflegen und bei etwa 180 Grad backen, bis der Deckel Farbe hat (Schätzung). Vor dem Auftragen mit Zucker bestreuen.
+
+Rohe Birnen. Edle Sorten roh schneiden und wie bei der Apfeltorte wec-227 vorbereiten, schichten, oben Schmalz und Zucker nach der Süße der Früchte geben.</note>
+        <note type="gloss" target="#wec-259-orig" n="Dorten" resp="#fyndling">Torte. Wecker schreibt das Wort durchgehend so („Dorten“, „Dortenhafen“).</note>
+        <note type="gloss" target="#wec-259-orig" n="hafen" resp="#fyndling">Topf. Bei Torten meint Wecker damit die aus Teig aufgezogene Schale, den Tortenhafen, der „nicht über eines fingers dick“ sein und im Ofen „erharten“ soll (wec-248, wec-227).<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+        <note type="gloss" target="#wec-259-orig" n="im auffſetzen" resp="#fyndling">Wohl beim Auftragen: Davor steht schon „bachs“, der Zucker kommt also auf die fertige Torte.</note>
+        <note type="gloss" target="#wec-259-orig" n="geſchlachten Birnen" resp="#fyndling">Edle, veredelte Sorten im Gegensatz zu wilden (DRW geschlacht: „veredelt, Gegensatz wild“).</note>
+        <note type="gloss" target="#wec-259-orig" n="Speckbirnen" resp="#fyndling">Weichfleischige, süße Birnensorte, „deren Fleisch wie Speck ist“ (DWB speckbirne); vgl. wec-247.</note>
+        <note type="gloss" target="#wec-259-orig" n="roͤſch" resp="#fyndling">Knusprig.</note>
+        <note type="interpretive_choice" target="#wec-259-orig" n="rauhen Birnen" resp="#fyndling" subtype="lexical">Rohe, ungekochte Birnen: Das Rezept setzt sie gegen die anfangs gekochten Birnen, und der Verweis „wie du von Aepffeln haſt“ führt auf die Apfeltorte wec-227, deren Variante rohe Äpfel verwendet. Die Lesart stützt sich auf diesen Zusammenhang, nicht auf einen Wörterbuchbeleg.<list type="alternatives"><item>Raue, herbe Birnen<note type="rationale">„Rauh“ steht bei Obst auch gegen „geschlacht“ (Fischer). Dagegen spricht, dass gleich darauf ausdrücklich edle Sorten verlangt werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-259-orig" n="ein mal oder drey" resp="#fyndling" subtype="contextual">Wörtlich: Gewürz und Birnenlage noch ein- oder dreimal wiederholen.<list type="alternatives"><item>Formelhaft für „ein paar Mal“, die Zahl der Lagen richtet sich nach der Höhe der Torte<note type="rationale">Die Paarung eins oder drei ist auffällig; als feste Wendung ist sie aber nicht belegt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

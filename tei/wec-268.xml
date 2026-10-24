@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Quittenmus mit geröstetem Brot</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-268/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-268</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-268">
+        <head>Quittenmus mit geröstetem Brot</head>
+        <div type="original" xml:id="wec-268-orig" xml:lang="de-x-fnhd" corresp="#wec-268-trans">
+          <p>Ein Muß von Quitten.
+
+SChaͤle Quitten/ ſchneid ſie klein/ duͤnſte ſie wol in halb wein vnnd waſſer/ oder ſafft/ wie vor gelehrt/ nach gelegenheit/ Darnach ſtampffs zu einem Muß/ behe brot auff eim roſt/ recht/ weichs in wein/ oder iñ der bruͤh ſo ſie gedaͤmpfft/ oder in eim kraͤfftigen waſſer/ treibs durch/ machs vntereinander/ machs recht dicke/ haſtu nit bruͤh genug vom daͤmpffen/ ſo nim wie gemeld/ wein/ ſafft/ gute waſſer/ jedes nach gelegenheit/ zu huͤlff/ wz zur ſach dienſtlich. Geuß in heiß ſchmaltz/ oder kochs ohn ſchmaltz/ nach notdurfft/ das ſchmaltz taug nicht allezeit fuͤr boͤſe vntuͤchtige Maͤgen/ wenns dann wol gezuckert/ ſo kan es wol ohne ſchmaltz geſſen werden: Wo aber der Zucker nicht fuͤgt/ ſo brauch ein wenig ſchmaltz/ Oder hab ein ſchoͤnen vngenoͤten Jungfrauwenhonig/ denſelben verſchaum mit Quitten oder Roſenwaſſer/ oder Bugloſſen vnnd dergleichen ſeud jhn wol. Diſer dient faſt wol zum kochen den krancken/ es weicht/ reinigt wol die Bruſt vnd Lungen/ heilet vnd reinigt alle innerliche glieder/ dient wol den lamen vnd kalten gliedern/ beſonders winterzeit. Ein wolbereiter Honig iſt ein koͤſtlich ding/ vnd iſt nicht zuſchewen/ wie es von etlichen vnverſtaͤndigen gehalten wird/ An dem aber ligt es/ daß er nicht recht bereitet wird. Auch die Apotecker ſelbſt gehen nicht recht mit vm̃. Diſe Muͤßlein/ ſtaͤrcken hefftig den Magen/ ſtopffen den uͤbermaͤſſigen ſtulgang/ der gemeiyniglich von eim ſchwachen vñ uͤberdaͤwigen Mag kompt. Wiltu dann/ daß es den Magen ſtaͤrcke/ vnd nit ſtopff/ ſo koche Weinbeer/ ſtoß/ treibs durch. Du magſt ſuͤß Aepffel mit kochen/ vnd durchzwingen halb vnd halb. Du magſts auch mit gutem gewuͤrtz anmachen/ vñ kalt fuͤr ein Sultz oder Soſt/ vnd wie du es wilt geben/ ſonderlich ſo ſie mit gutem wein ohne ſchmaltz bereit ſeynd/ beſtrewe ſie wol mit Zimmet.</p>
+        </div>
+        <div type="translation" xml:id="wec-268-trans" xml:lang="de" corresp="#wec-268-orig">
+          <p>Schäle Quitten, schneide sie klein und dünste sie gut in halb Wein und Wasser oder in Saft, wie zuvor gelehrt, je nach Gelegenheit. Danach stampfe sie zu einem Mus.</p>
+          <p>Röste Brot recht auf einem Rost und weiche es in Wein ein, oder in der Brühe, in der sie gedämpft wurden, oder in einem kräftigen Wasser. Treibe es durch, mische es untereinander und mache es recht dick. Hast du nicht genug Brühe vom Dämpfen, so nimm, wie gesagt, Wein, Saft oder gute Wasser zu Hilfe, jedes nach Gelegenheit, was der Sache dienlich ist.</p>
+          <p>Gieße es in heißes Schmalz oder koche es ohne Schmalz, nach Bedarf. Das Schmalz taugt nicht allezeit für schlechte, untüchtige Mägen. Ist es gut gezuckert, so kann es gut ohne Schmalz gegessen werden. Wo aber der Zucker nicht passt, so gebrauche ein wenig Schmalz. Oder nimm einen schönen, ungepressten Jungfernhonig, schäume ihn mit Quitten- oder Rosenwasser oder Ochsenzungenwasser und dergleichen ab und siede ihn gut.</p>
+          <p>Dieser dient sehr gut zum Kochen für die Kranken. Es erweicht, reinigt gut die Brust und die Lunge, heilt und reinigt alle inneren Glieder und tut den lahmen und kalten Gliedern gut, besonders zur Winterzeit. Ein wohlbereiteter Honig ist ein köstlich Ding und nicht zu scheuen, wie es etliche Unverständige halten. Es liegt aber daran, dass er nicht recht bereitet wird. Auch die Apotheker selbst gehen nicht recht damit um.</p>
+          <p>Diese Müslein stärken den Magen kräftig und stopfen den übermäßigen Stuhlgang, der gemeinhin von einem schwachen und überverdauenden Magen kommt. Willst du aber, dass es den Magen stärkt und nicht stopft, so koche Rosinen, stoße sie und treibe sie durch. Du kannst auch süße Äpfel mitkochen und halb und halb durchpressen.</p>
+          <p>Du kannst es auch mit gutem Gewürz anmachen und kalt als Sülze oder Soße geben, oder wie du es geben willst. Besonders wenn sie mit gutem Wein ohne Schmalz bereitet sind, bestreue sie gut mit Zimt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="quince" orig="Quitten" commodity="wikidata:Q2751465" source="#corema-ingredient-index">Quitten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb wein vnnd waſſer">Wein und Wasser, halb und halb (zum Dünsten und Einweichen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="brot" commodity="wikidata:Q7802" source="#corema-ingredient-index">Brot, auf dem Rost geröstet</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Jungfrauwenhonig">Honig, mit Quitten- oder Rosenwasser abgeschäumt (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimmet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt, gemahlen (zum Bestreuen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Zusätze je nach Wunsch: Rosinen, süße Äpfel, gutes Gewürz (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-268-trans" resp="#fyndling">Praxis. Quitten schälen, klein schneiden und in halb Wein, halb Wasser (oder Saft) dünsten, bis sie sich stampfen lassen. Brot auf dem Rost rösten, in der Dünstbrühe einweichen, durchtreiben (heute am einfachsten durch ein Sieb) und unter das Mus rühren, bis es dick ist. Schmalz und Zucker oder Honig nach Geschmack.
+
+Heißes Schmalz. Der Text sagt nur „Geuß in heiß ſchmaltz“ und nennt kein Gefäß. Praktisch: wenig Schmalz in Topf oder Pfanne erhitzen und das Mus hineingeben. Ob Wecker es darin backen oder nur mit dem Fett verbinden wollte, bleibt offen.
+
+Honig. Mit etwas Rosen- oder Quittenwasser aufkochen und den Schaum abschöpfen, dann gut sieden.</note>
+        <note type="gloss" target="#wec-268-orig" n="kraͤfftigen waſſer" resp="#fyndling">Wohl ein bereitetes, gesottenes oder gebranntes Wasser; auch in wec-051 bricht Wecker den Wein „mit guten kräftigen Wassern, wie du es hievor hast“.</note>
+        <note type="gloss" target="#wec-268-orig" n="Jungfrauwenhonig" resp="#fyndling">Jungfernhonig ist nach Grimms Wörterbuch „der beste und reinste Honig“ aus dem Bienenstock. „Vngenoͤt“ heißt ungenötigt, also ungepresst: Wecker beschreibt solchen Honig selbst als Honig, der „ungenötigt aus dem Wiffel oder Waben träufft“ (wec-122), und als „ungenötes Honig oder ungeleutert, das erst aus den Waben kommt“ (wec-313).</note>
+        <note type="gloss" target="#wec-268-orig" n="Bugloſſen" resp="#fyndling">Buglosse, die Ochsenzunge. Gemeint ist das Wasser davon, wie in wec-120 („ein Wasser … von Rosen oder Buglossen“).</note>
+        <note type="gloss" target="#wec-268-orig" n="Muͤßlein" resp="#fyndling">Verkleinerungsform von Mus, wie in wec-286 („Dieses Müslein stärkt den Magen kräftig“).</note>
+        <note type="interpretive_choice" target="#wec-268-orig" n="Diſer dient faſt wol zum kochen den krancken" resp="#fyndling" subtype="contextual">„Dieser“ meint den Honig: Das Pronomen ist maskulin, der Honig ist das nächste maskuline Bezugswort („denſelben … ſeud jhn wol“), und der Folgesatz lobt den wohlbereiteten Honig. text_modern behält das offene „Dieser“.<list type="alternatives"><item>Gemeint ist das Quittenmus<note type="rationale">Das anschließende „es weicht“ ist neutral, und die Wirkversprechen könnten dem ganzen Mus gelten, von dem der Abschnitt danach als „Diſe Muͤßlein“ weiterspricht.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-268-orig" n="uͤberdaͤwigen Mag" resp="#fyndling" subtype="lexical">Ein „überverdauender“, zu rasch durchlaufender Magen; die Lesart folgt aus dem Satz, der vom übermäßigen Stuhlgang spricht. Ein Wörterbuchbeleg für die Form fehlt.<list type="alternatives"><item>Ein überlasteter, schwer verdauender Magen<note type="rationale">„Über-“ kann auch Überlastung meinen; dagegen spricht, dass das Mus hier gegen Durchfall stopfen soll.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnen im Pastetentopf gebacken, weiche und harte</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-255/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-255</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-255">
+        <head>Birnen im Pastetentopf gebacken, weiche und harte</head>
+        <div type="original" xml:id="wec-255-orig" xml:lang="de-x-fnhd" corresp="#wec-255-trans">
+          <p>Mehr eſſen von Aepffeln vnd Birnen.
+
+NJm gute ſuͤſſe Birnen/ die ſich gerne kochen laſſen/ ſchaͤls/ thu es in eine Kachel/ laß mit geheben deckel gemach kochen/ biß ſie linde ſind/ ſchaw daß ſie dir weiß bleiben/ ſo thu wein vnd waſſer daran/ daß es uͤber die Birnen gehet/ laß gemach kochẽ/ ſtetig in einem ſud: Wenn ſie wol lind ſind/ ſo machs in ein Paſtetenhafen ein/ mit voͤlligem Zucker vnd weiſſem Jngwer/ gar wenig ſchmaltz/ vermachs bachs ſchnell: Sind es aber Regelbirnen/ oder ſonſt harte Birnen/ ſo wuͤrffs in das fewer/ wiltu ſie ſchoͤn roth haben/ ſo laß die ſchalen wol verbrennen/ dann ſo ſchaͤls/ mach es halb oder zu vierteln wie du wilt/ bereits mit Weinbeern vnnd Meerdraͤubeln/ wol Jngwer vnd Zucker/ thu Schmaltz in den hafen: Wann der hafen erhart in dem ofen/ vnnd ein viertel oder halbe ſtund gebachen/ ſo mache ein loͤchlein in deckel am ort/ halts auff ein ſeiten: Wenn du dann ſpuͤreſt/ daß ſie nicht rechte bruͤh haben/ ſo mach mit faſt gutem Wein/ Roſenwaſſer vnd Zucker ein bruͤhlein/ wenns ſeud/ geuß in den hafen. Du magſt Quittenlatwergen mit der bruͤh drein vertreiben/ oder zuvor drein thun/ damit die bruͤh ein wenig darvon dicker werde/ laß vollend kochen. Wiltu dann/ ſo ſeuds vnd bereits wie dꝛoben vor/ vnd machs alſo ein/ damit ſie weiß bleiben. Alſo magſtu Birnen/ die von jhn ſelbſten im kochen viel bruͤh geben/ bereiten/ vnd luͤck oder raum machen/ mit voͤlligem Zucker wol außfuͤllen.</p>
+        </div>
+        <div type="translation" xml:id="wec-255-trans" xml:lang="de" corresp="#wec-255-orig">
+          <p>Nimm gute, süße Birnen, die sich gern kochen lassen, schäle sie und gib sie in eine Kachel. Lass sie mit dicht schließendem Deckel gemächlich kochen, bis sie weich sind, und schau, dass sie dir weiß bleiben. Dann gib Wein und Wasser daran, so dass es über die Birnen geht, und lass sie gemächlich kochen, stetig in einem Sud. Wenn sie gut weich sind, so gib sie in einen Pastetentopf, mit reichlich Zucker und weißem Ingwer, ganz wenig Schmalz. Verschließe ihn und backe ihn schnell.</p>
+          <p>Sind es aber Regelbirnen oder sonst harte Birnen, so wirf sie in das Feuer. Willst du sie schön rot haben, so lass die Schalen gut verbrennen. Dann schäle sie, mach sie halb oder zu Vierteln, wie du willst, bereite sie mit Rosinen und großen Rosinen, gut Ingwer und Zucker und gib Schmalz in den Topf.</p>
+          <p>Wenn der Topf im Ofen fest geworden ist und eine Viertel- oder halbe Stunde gebacken hat, so mach ein Löchlein in den Deckel am Rand und halte ihn auf eine Seite. Wenn du dann spürst, dass sie nicht die rechte Brühe haben, so mach mit sehr gutem Wein, Rosenwasser und Zucker ein Brühlein; wenn es siedet, gieß es in den Topf. Du kannst Quittenlatwerge mit der Brühe darin verrühren oder sie vorher hineintun, damit die Brühe davon ein wenig dicker wird. Lass es vollends kochen.</p>
+          <p>Willst du dann, so siede sie und bereite sie wie oben und gib sie so in den Topf, dass sie weiß bleiben. So kannst du auch Birnen zubereiten, die von sich selbst beim Kochen viel Brühe geben, und Lücken oder Raum machen und sie mit reichlich Zucker gut ausfüllen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="gute ſuͤſſe Birnen" commodity="wikidata:Q13099586" source="#fyndling-ingredient-name">Birnen (süße Kochbirnen, oder harte wie Regelbirnen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein (für Sud und Brühlein)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="waſſer" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="voͤlligem Zucker" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="white ginger" orig="weiſſem Jngwer" commodity="wikidata:Q107262395" source="#fyndling-ingredient-name">Ingwer, weiß</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="gar wenig ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weinbeern vnnd Meerdraͤubeln">Rosinen, auch große (zu den harten Birnen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Quittenlatwergen">Quittenlatwerge (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-255-trans" resp="#fyndling">Praxis. Heutige Richtwerte, der Text nennt keine: Die geschälten Birnen bei kleiner Hitze mit leicht aufgelegtem Deckel weich kochen (je nach Sorte 20 bis 30 Minuten), dann knapp mit Wein und Wasser zu etwa gleichen Teilen bedecken und weiter sieden. In eine ofenfeste Form mit Deckel umfüllen, mit reichlich Zucker, hellem Ingwer und einem Stückchen Schmalz bei etwa 180 °C backen. Nach einer Viertel- bis halben Stunde am Deckelrand nachsehen; ist zu wenig Flüssigkeit da, ein heißes Brühlein aus Wein, Rosenwasser und Zucker nachgießen und noch 20 bis 30 Minuten fertig backen. Harte Birnen ungeschält ins Feuer oder in die Glut legen, bis die Schale schwarz ist, dann schälen und teilen.
+
+Verschluss. Wecker schreibt nur „vermachs“. Ob der Deckel allein oder mit einem Teigstrang abgedichtet wurde, bleibt offen; ein gut schließender Deckel genügt.</note>
+        <note type="gloss" target="#wec-255-orig" n="Mehr eſſen" resp="#fyndling">Gemeint sind weitere Gerichte von Äpfeln und Birnen. Der Text behandelt nur Birnen.</note>
+        <note type="gloss" target="#wec-255-orig" n="Kachel" resp="#fyndling">Irdenes Gefäß, ein Topf aus Ton (BMZ kachele „topf, irdenes geschirr“), nicht die Ofenkachel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#kachel"/></note>
+        <note type="gloss" target="#wec-255-orig" n="Paſtetenhafen" resp="#fyndling">Eine aus Teig aufgezogene Hülle; „vermachs“: mit einem Teigdeckel verschließen, „erhart“: sobald die Hülle im Ofen fest geworden ist. Ein Tongefäß wäre bei Wecker ausdrücklich „irden“ (wec-421). Im Lesetext „Pastetentopf“ wie „Tortentopf“.</note>
+        <note type="gloss" target="#wec-255-orig" n="Regelbirnen" resp="#fyndling">Eine benannte alte Birnensorte (FWB „eine Birnensorte“), bei Grimm und im Mittelniederdeutschen Wörterbuch der Königsbirne gleichgesetzt; eine harte Koch- und Dörrbirne.</note>
+        <note type="gloss" target="#wec-255-orig" n="Meerdraͤubeln" resp="#fyndling">Wecker setzt das Wort selbst mit Rosinen gleich: „Roſinlen/ die man ſonſten Meerdraͤublein heiſt“ und „Weinbeern der groſſen/ die man auch Meerdraͤubel nennet“ (an anderer Stelle im Buch). Gemeint sind große Rosinen, keine Korinthen.</note>
+        <note type="gloss" target="#wec-255-orig" n="vertreiben" resp="#fyndling">Fein verrühren und in der Brühe auflösen. Latwerge ist ein dick eingekochtes Fruchtmus.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

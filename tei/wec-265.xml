@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gedämpfte Zuckeräpfel in der Kachel</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-265/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-265</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-265">
+        <head>Gedämpfte Zuckeräpfel in der Kachel</head>
+        <div type="original" xml:id="wec-265-orig" xml:lang="de-x-fnhd" corresp="#wec-265-trans">
+          <p>Ein ander form von Aepffeln.
+
+NJm gute mirbe Aepffel/ weder ſuͤß noch ſawer/ die faſt truckner art/ vnd ſich nicht bald bemuͤſen/ ſchaͤls/ ſchneid ſie groß/ ſo magſtu ſie mitten entzwey ſchneiden/ wiltu/ ſo laß gantz/ raum die butzen wol herauß/ wenn du ſie gewaſchen/ ſo legs auff ein weiß tuch/ daß das waſſer wol darvon lauffe/ beſſer iſt es/ du geheſt ſchoͤn damit vmb/ damit du ſie nicht waſchen doͤrffeſt. Nu du ma cheſt ſie wie du wolſt/ gantz oder halb/ gewaſchen oder trocken/ ſo fuͤll es mit rein geſtoſſenem Zucker auß/ ſtell es in eine flache wol geglaͤſte kachel/ einen neben dem and’n/ decke es gehebe zu. Thu nicht mehr darauff oder darunder/ dann ein gluͤende aſchen/ laß ſie alſo gemach daͤmpffen/ biß daß ſie lind werden/ vnd der Zucker ſchmiltzt/ alsdann fuͤlls wider auß/ wenn ſie nun ein feines kleines bruͤhlein geben/ ſo ſind ſie recht. Wolten ſie ſich aber ſelbſten nicht ergeben/ ſo mach ein ſiedenden wein ſuͤß vom Zucker/ fuͤls mit eim loͤffel/ nicht zu voll/ du kanſt im̃ermehr darein thun/ ſie lauffen ſonſt auß. Verbrenn ſie nicht in der kachel/ ſie werden ſonſt rot vnd ſchwartz. Nach dem gib jhn wider rechte hitz/ vnden vnd oben. Wenn ſie nun recht ſind/ ſo leg ſie ſchoͤn auff einander in ein ſchuͤſſel/ haben ſie ſelbſt ein bruͤhlein/ ſo iſt es gut/ wo nicht/ ſo mach von Aepffeln ein ſafft/ wie du mehr haſt/ oder mit gutem Wein/ Zucker vnd Jngwer/ wiltu/ ſo laß alſo/ vnd beſtrewe es wol mit Zucker vnd Jngwer. Wiltu dañ/ ſo mach ein zarten Paſtetenhafen/ ſtells darein/ vermachs vñ bachs in ſchneller hitz/ daß der hafen bald erhartet/ in allweg ſollẽ die Aepffel weiß bleiben/ vnd Zuckers genug haben.</p>
+        </div>
+        <div type="translation" xml:id="wec-265-trans" xml:lang="de" corresp="#wec-265-orig">
+          <p>Nimm gute, mürbe Äpfel, weder süß noch sauer, von recht trockener Art, die nicht so schnell zu Mus zerfallen. Schäle sie und schneide sie groß. Du kannst sie in der Mitte halbieren oder, wenn du willst, ganz lassen. Räume die Kerngehäuse gut heraus.</p>
+          <p>Wenn du die Äpfel gewaschen hast, lege sie auf ein weißes Tuch, damit das Wasser gut ablaufen kann. Besser ist es, du gehst sauber mit ihnen um, sodass du sie gar nicht erst waschen musst.</p>
+          <p>Mach sie nun, wie du willst: ganz oder halb, gewaschen oder trocken. Fülle sie mit rein gestoßenem Zucker aus und stelle sie in eine flache, gut glasierte Kachel, einen neben den anderen. Decke sie dicht zu. Tu nichts weiter darauf oder darunter als glühende Asche. Lass sie so langsam dämpfen, bis sie weich werden und der Zucker schmilzt. Dann fülle sie wieder aus. Wenn sie nun ein feines, kleines Brühlein geben, sind sie recht.</p>
+          <p>Wollen sie von selbst keinen Saft geben, so mache einen siedenden Wein mit Zucker süß und fülle ihn mit einem Löffel ein, nicht zu voll. Du kannst immer noch mehr hineintun, sonst laufen sie über. Verbrenne sie nicht in der Kachel, sonst werden sie rot und schwarz. Danach gib ihnen wieder die rechte Hitze, unten und oben.</p>
+          <p>Wenn sie nun recht sind, lege sie schön aufeinander in eine Schüssel. Haben sie selbst ein Brühlein, so ist es gut. Wenn nicht, mache aus Äpfeln einen Saft, wie du es sonst auch tust, oder mit gutem Wein, Zucker und Ingwer. Willst du, so lass sie so und bestreue sie gut mit Zucker und Ingwer.</p>
+          <p>Willst du aber, so mache einen zarten Pastetenhafen, stelle die Äpfel hinein, verschließe ihn und backe ihn in schneller Hitze, damit der Hafen bald fest wird. In jedem Fall sollen die Äpfel weiß bleiben und Zucker genug haben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="gute mirbe Aepffel/ weder ſuͤß noch ſawer/ die faſt truckner art">Äpfel, mürbe, weder süß noch sauer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="rein geſtoſſenem Zucker">Zucker, fein gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein ſiedenden wein ſuͤß vom Zucker">Wein, mit Zucker gesüßt (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="pie crust" orig="ein zarten Paſtetenhafen" commodity="wikidata:Q5190246" source="#fyndling-ingredient-name">Pastetenteig (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-265-trans" resp="#fyndling">Praxis. Die Höhlungen randvoll mit fein gestoßenem Zucker füllen, die Äpfel dicht nebeneinander ins flache Gefäß setzen und gut zudecken. Schwache Glut darunter und auf den Deckel. Eine Garzeit nennt der Text nicht; als Richtwert 30 bis 45 Minuten bei schwacher Hitze, bis die Äpfel weich sind und der Zucker geschmolzen und eingesunken ist. Dann die Höhlungen nachfüllen. Fertig sind sie, wenn sich ein wenig Saft gebildet hat. Bleibt der Boden trocken, gesüßten heißen Wein löffelweise angießen, nur so viel, dass der Boden bedeckt ist.</note>
+        <note type="gloss" target="#wec-265-orig" n="kachel" resp="#fyndling">Ein irdenes Gefäß, ein Topf (BMZ, Lexer: kachel „Topf, irdenes Geschirr“), hier flach und gut glasiert. Nicht die Ofenkachel. Bei Wecker oft belegt, vgl. wec-228 und wec-230.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#kachel"/></note>
+        <note type="gloss" target="#wec-265-orig" n="bemuͤſen" resp="#fyndling">Zu Mus zerfallen. Präfixform zu muͤſen, das in wec-261 in derselben Bedeutung steht („Aepffel die ſich nicht muͤſen“). Ein Wörterbuchbeleg fehlt.</note>
+        <note type="gloss" target="#wec-265-orig" n="gehebe" resp="#fyndling">„Dicht, fest verschlossen“ (DRW gehebe „dicht, undurchlässig“), wie in wec-230: ein gut schließender Deckel.</note>
+        <note type="gloss" target="#wec-265-orig" n="Paſtetenhafen" resp="#fyndling">Hier eine Teighülle: Der Hafen ist „zart“ und soll beim Backen „erharten“. So auch in wec-228 und wec-255.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

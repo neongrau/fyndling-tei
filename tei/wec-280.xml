@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pfirsiche in Schmalz, Pasteten und Torten</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-280/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-280</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-280">
+        <head>Pfirsiche in Schmalz, Pasteten und Torten</head>
+        <div type="original" xml:id="wec-280-orig" xml:lang="de-x-fnhd" corresp="#wec-280-trans">
+          <p>Pferſichpaſteten.
+
+PFerſich iſt ein faſt ſchaͤdlich Obs/ vnd iſt kaum ein Obs daß da ehe im Magen fault/ derwegen es den krancken mehr dañ ander Obs verbotten wird/ wo aber groſſe hitz ohn faule Feber ſeynd/ mag etwas mit ſonderem zuſatz nachgelaſſen werden. Gute truckene Pferſig/ als da gemeiniglich die gelben/ ſeynd gut geſchaͤlt/ in ſchoͤnem meel gemelbet wie die Aepffel/ vnnd alſo im ſchmaltz gebachen/ wol mit Zucker beſtrewet/ halb oder gantz/ wie es dir fuͤgt/ am braͤuchlichſten aber gantz. Alſo magſtus vngemelb im ſchmaltz braun machen/ darnach mit Malvaſier/ Zimet/ Jngwer/ vnnd Zucker eine bruͤh daruͤber machen/ vnnd bloß davon erwallen laſſen/ wiltu Weinbeer vnnd ſolche Sachen/ beſtrewe es im anrichten wol/ oder machs darnach in ein Paſtetenhafen. Du magſt allerhand Muͤſſer gantz verꝛuͤhrt wie man von Aepffeln findet/ darauß bereiten. Wann du aber Dorten oder Paſteten machen wilt/ ſo ſchaͤls in die Paſteten/ loͤß an einem Ort auff/ daß du den ſtein herauß kanſt nemen. Wiltu/ ſo ſtoß geſchaͤlte Mandeln darein/ oder eingewaͤlte Datteln/ legs ein ſtund oder zwo in Malvaſier oder ſonſt ſtarckem Wein/ darnach bereits im hafen mit Zucker vnd Jngwer/ ſie brauchen wol Zucker. Wañ der hafen erhart/ geuß den Wein auch hinein/ du magſt auch ein wenig ſchmaltz mit anbereiten/ ſie werden ſehr lieblich vnnd gut. Zu der Dorten ſchneids zu ſchnitzen wie ein Aepffelmuß/ legs auch in Wein/ bereits im haſen wie ein Aepffeldorten. Thu Weinbeer dar zwiſchen/ Sie laſſen ſich auch bereiten zum behalten auff mancherley weiſe. Man baͤcht ſie auch gantz vnd halb/ vnnd ſie ſeynd dann zu dem kochen minder ſchaͤdlich dann die gruͤnen.</p>
+        </div>
+        <div type="translation" xml:id="wec-280-trans" xml:lang="de" corresp="#wec-280-orig">
+          <p>Der Pfirsich ist ein fast schädliches Obst, und kaum ein Obst fault eher im Magen. Deshalb wird er den Kranken mehr als anderes Obst verboten. Wo aber große Hitze ohne faule Fieber herrscht, kann man mit besonderem Zusatz etwas davon zulassen.</p>
+          <p>In Schmalz gebacken: Gute trockene Pfirsiche, wie gewöhnlich die gelben, sind gut, geschält, in schönem Mehl gewälzt wie die Äpfel und so im Schmalz gebacken, gut mit Zucker bestreut, halb oder ganz, wie es dir passt, am gebräuchlichsten aber ganz.</p>
+          <p>Mit Weinbrühe: So kannst du sie auch ungemehlt im Schmalz braun machen, danach mit Malvasier, Zimt, Ingwer und Zucker eine Brühe darüber machen und es nur davon aufwallen lassen. Willst du Rosinen und solche Sachen, so bestreue es beim Anrichten gut damit, oder gib es danach in einen Pastetentopf.</p>
+          <p>Mus: Du kannst allerhand Muse daraus bereiten, ganz verrührt, wie man es von den Äpfeln kennt.</p>
+          <p>Pasteten: Wenn du aber Torten oder Pasteten machen willst, so schäle sie für die Pasteten und löse sie an einer Stelle auf, damit du den Stein herausnehmen kannst. Willst du, so stoß geschälte Mandeln hinein oder eingeweichte Datteln. Leg sie eine Stunde oder zwei in Malvasier oder sonst starken Wein, danach bereite sie im Pastetentopf mit Zucker und Ingwer; sie brauchen gut Zucker. Wenn der Pastetentopf hart geworden ist, gieß den Wein auch hinein. Du kannst auch ein wenig Schmalz mit zubereiten, sie werden sehr lieblich und gut.</p>
+          <p>Torte: Für die Torte schneide sie zu Schnitzen wie für ein Apfelmus, leg sie auch in Wein und bereite sie im Tortentopf wie eine Apfeltorte. Gib Rosinen dazwischen.</p>
+          <p>Zum Aufbewahren: Man kann sie auch auf mancherlei Weise zum Aufbewahren bereiten. Man backt sie auch ganz und halb, und sie sind dann zum Kochen weniger schädlich als die grünen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Gute truckene Pferſig">Pfirsiche, trocken (gelbe)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchoͤnem meel">Mehl, fein</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="malvasia" orig="Malvaſier oder ſonſt ſtarckem Wein" commodity="wikidata:Q1165349" source="#fyndling-ingredient-name">Malvasier</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Zugaben nach Wahl: Rosinen, geschälte Mandeln, eingeweichte Datteln (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-280-trans" resp="#fyndling">Praxis. Mengen, Hitze und Zeiten nennt der Text nicht; die Werte hier sind heutige. Die geschälten Pfirsiche in feinem Mehl wenden, in reichlich heißem Schmalz bei mittlerer Hitze goldbraun backen und gut zuckern. Für die Weinbrühe die Pfirsiche ohne Mehl im Schmalz bräunen, Malvasier mit Zimt, Ingwer und Zucker darübergeben und nur aufwallen lassen. Für die Pastete die Steine herauslösen, nach Wunsch eine Mandel oder Dattel hineinstecken und die Früchte ein bis zwei Stunden in Wein legen. In eine mit Teig ausgekleidete Form setzen, mit Zucker und Ingwer bestreuen, etwas Schmalz dazu und bei Mittelhitze backen. Ist die Teigschale fest, den Einlegewein vorsichtig nachgießen (bei einem Teigdeckel durch eine kleine Öffnung, eine heutige Lösung) und fertig backen. Die Torte ebenso aus in Wein eingelegten Schnitzen mit Rosinen dazwischen.</note>
+        <note type="gloss" target="#wec-280-orig" n="Paſtetenhafen" resp="#fyndling">„Hafen“ ist sonst der Topf. Bei Pasteten und Torten meint Wecker damit die aus Teig aufgezogene Schale, im Lesetext „Pastetentopf“ und „Tortentopf“; „wann der hafen erhart“ heißt: sobald diese Schale beim Backen fest geworden ist. Ein Tongefäß nennt Wecker ausdrücklich „irden“. Vorbilder wec-255 und wec-270.</note>
+        <note type="gloss" target="#wec-280-orig" n="faule Feber" resp="#fyndling">Faulige Fieber, eine Fieberart der Säftelehre ihrer Zeit. Nur wo Hitze ohne solches Fieber herrscht, lässt Wecker den Pfirsich mit Zusatz etwas zu.</note>
+        <note type="gloss" target="#wec-280-orig" n="Malvaſier" resp="#fyndling">Kräftiger süßer Südwein (Malvasia).</note>
+        <note type="interpretive_choice" target="#wec-280-orig" n="baͤcht" resp="#fyndling" subtype="lexical">backt: Wecker schreibt backen sonst „bachen“, im selben Rezept „im ſchmaltz gebachen“. Im Zusammenhang „zum behalten“ ist wohl das Backen zum Trocknen gemeint; Campe nennt für backen auch das Trocknen durch Hitze.<list type="alternatives"><item>bähen (leicht rösten, erwärmen)<note type="rationale">So die Wörterbücher für bähen; das Wort hieße aber „bäht“, und Rösten passt nicht zum Aufbewahren.</note></item><item>dörren<note type="rationale">Sachlich naheliegend, aber Wecker hat dafür ein eigenes Verb (daͤrꝛen, wec-253); hier steht backen.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-280-orig" n="haſen" resp="#fyndling" subtype="philological">hafen, also der Tortentopf: Im selben Rezept steht dreimal „hafen“, ſ und f unterscheiden sich nur durch den Querstrich.<list type="alternatives"><item>„Hasen“ wörtlich<note type="rationale">Ergibt im Satz „bereits im haſen wie ein Aepffeldorten“ keinen Sinn.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dattelmus in Wein</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-283/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-283</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-283">
+        <head>Dattelmus in Wein</head>
+        <div type="original" xml:id="wec-283-orig" xml:lang="de-x-fnhd" corresp="#wec-283-trans">
+          <p>Ein Muß oder Brey von Datteln.
+
+NJmb newe ſuͤſſe oder ſawer Datteln/ nach gelegenheit/ ſeud ſie in Malvaſier oder anderm koͤſtlichen Wein/ biß ſie linde ſeynd/ ſo zeuh jhnen das weiſſe haͤutlein ab/ ſtoß vnd ſtreichs durch mit der bruͤh darinnen ſie geſotten ſind/ ſo du wilt magſtu ein ſchnitten brot behen/ weichen/ vnd mit durchzwingen/ thu ſie inn ein meſſine Pfann oder geglaͤſte kachel/ machs mit der bruͤh recht ſampt dem Roſenwaſſer/ thu gute Tryſanet dazu/ wie mans fuͤr eine kindbetterin bereitet/ oder wuͤrtz es fuͤr die krancken/ nimb darzu Zimet/ ſonſt Wuͤrtz/ Muſcatnuß vnnd Bluͤhe/ ein wenig Negelein/ Galgant/ Zucker/ etwan geriebne duͤrꝛe Reſen/ laß es kochen. Es ſol kein Schmaltz darzu kommen/ ſie ſtaͤrcken/ reinigen vnd purgieren auch/ nach dem ſie bereitet werden/ vnnd dann gehoͤrt nicht viel Gewuͤrtz darzu/ außgenommen Muſcatbluͤh darbey geſotten/ vnnd darnach darvon gethan. Dann der fuͤr ſich ſelbſt ſtopfft auch/ die bruͤh aber/ darein ſie geſotten ſind/ treibt vnd reiniget. Thu auch kein brot darzu/ ſo du wilt/ daß ſie purgieren/ auch purgierenden Roſenzucker fuͤr andern Zucker/ vnd ſolche ſachen/ ein Tryſanet von Holtz/ vnnd wie es etwan verſtaͤndige Aertzte zu ordnen wiſſen, darauff auch mein kochen gegruͤndet. Alſo mag man es inn ſolchen Fellen mit dienſtlichen Waſſern ſieden.</p>
+        </div>
+        <div type="translation" xml:id="wec-283-trans" xml:lang="de" corresp="#wec-283-orig">
+          <p>Nimm frische süße oder saure Datteln, je nachdem, was sich anbietet, und siede sie in Malvasier oder einem anderen edlen Wein, bis sie weich sind. Dann zieh ihnen das weiße Häutlein ab, stoße sie und streiche sie samt der Brühe, in der sie gesotten wurden, durch. Wenn du magst, kannst du eine Schnitte Brot rösten, einweichen und mit durchpressen.</p>
+          <p>Gib die Masse in eine Messingpfanne oder eine glasierte Kachel. Bring sie mit der Brühe samt dem Rosenwasser in die rechte Beschaffenheit. Gib gutes Trisanet dazu, so wie man es für eine Wöchnerin bereitet. Oder würze es für die Kranken: Nimm dazu Zimt, sonstiges Gewürz, Muskatnuss und Muskatblüte, ein wenig Nelken, Galgant und Zucker, bisweilen auch geriebene dürre Rosen. Lass es kochen.</p>
+          <p>Es soll kein Schmalz daran kommen. Die Datteln stärken, reinigen und purgieren auch, je nachdem, wie sie bereitet werden. Es gehört nicht viel Gewürz dazu, ausgenommen Muskatblüte: Sie wird mitgesotten und danach wieder herausgenommen. Denn sie stopft für sich selbst auch, die Brühe aber, in der die Datteln gesotten sind, treibt und reinigt.</p>
+          <p>Gib auch kein Brot dazu, wenn du willst, dass sie purgieren. Nimm dann auch purgierenden Rosenzucker anstelle anderen Zuckers und dergleichen Dinge, dazu ein Trisanet von Holz, und was verständige Ärzte sonst anzuordnen wissen. Darauf ist auch mein Kochen gegründet. So kann man es in solchen Fällen mit dienlichen Wässern sieden.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="date" orig="newe ſuͤſſe oder ſawer Datteln/ nach gelegenheit" commodity="wikidata:Q1652093" source="#fyndling-ingredient-name">Datteln</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Malvaſier oder anderm koͤſtlichen Wein">Malvasier oder anderer guter Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="ſchnitten brot" commodity="wikidata:Q7802" source="#fyndling-ingredient-registry">Brot (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gute Tryſanet">Trisanet (oder die Gewürze der nächsten Zeile)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Zimet/ ſonſt Wuͤrtz/ Muſcatnuß vnnd Bluͤhe/ ein wenig Negelein/ Galgant">Gewürze: Zimt, weitere Gewürze, Muskatnuss, Muskatblüte, wenig Nelken, Galgant</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="etwan geriebne duͤrꝛe Reſen">Rosen, getrocknet und gerieben (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="purgierenden Roſenzucker fuͤr andern Zucker/ vnd ſolche ſachen">Rosenzucker und weitere Zusätze der abführenden Fassung (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-283-trans" resp="#fyndling">Praxis. Die Datteln knapp mit Wein bedeckt sieden, bis sich das Häutlein löst (je nach Frucht etwa 15 bis 30 Minuten, geschätzt), Steine heraus, stoßen und mit der Brühe durch ein Sieb streichen. Mit Brühe und Rosenwasser auf ein streichfähiges Mus einstellen, sparsam würzen (Nelken nur eine Spur), die Muskatblüte ganz mitkochen und wieder herausnehmen, kurz aufkochen. Statt frischer Datteln gehen heute weiche getrocknete (modernes Hilfsmittel).
+
+Rosen oder Rosinen. Die „dürren Resen“ der Würzliste lesen wir als getrocknete Rosenblätter; wer Rosinen für richtig hält, nimmt diese. Beides ist optional.</note>
+        <note type="gloss" target="#wec-283-orig" n="Tryſanet" resp="#fyndling">Gesüßtes Gewürzpulver, auch als Arzneimittel gebraucht (FWB trisenet). Wecker streut und färbt damit oft rot; in wec-007 nennt sie Zimt und rote Rosenblätter als Bestandteile. Was das „Trisanet von Holz“ am Schluss meint, bleibt offen.</note>
+        <note type="gloss" target="#wec-283-orig" n="Malvaſier" resp="#fyndling">Süßer, schwerer Wein aus dem Mittelmeerraum, im 16. Jahrhundert ein teurer Importwein. Der Text lässt jeden anderen guten Wein zu.</note>
+        <note type="gloss" target="#wec-283-orig" n="purgieren" resp="#fyndling">Abführen. Wecker beschreibt, wie dieselbe Speise nach der Säftelehre ihrer Zeit je nach Zubereitung stärkt oder abführt.</note>
+        <note type="gloss" target="#wec-283-orig" n="geglaͤſte kachel" resp="#fyndling">Ein irdenes Gefäß (BMZ, Lexer: Topf, irdenes Geschirr), hier glasiert. Nicht die Ofenkachel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#kachel"/></note>
+        <note type="interpretive_choice" target="#wec-283-orig" n="etwan geriebne duͤrꝛe Reſen" resp="#fyndling" subtype="philological" cert="unknown">Getrocknete Rosen(blätter), gerieben: Sie stehen in einer Würzliste, Rosenwasser und Rosenzucker gehören zum selben Rezept, und Wecker mischt rote Rosenblätter auch ins Trisanet (wec-007). Gedruckt steht „Reſen“, ein Wort, das im Buch nur hier vorkommt; Rosen schreibt Wecker sonst „Roſen“.<list type="alternatives"><item>Getrocknete Rosinen, gerieben<note type="rationale">„dürr“ passt zu Trockenobst, und die Druckform steht Rosinen nicht ferner als Rosen. Rosinen heißen bei Wecker sonst aber „Roſinlen“ oder „Weinbeer“, und sie lassen sich schlecht reiben.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-283-orig" n="Dann der fuͤr ſich ſelbſt ſtopfft auch" resp="#fyndling" subtype="contextual">„der“ meint die Muskatblüte: Sie soll mitgesotten und wieder herausgenommen werden, weil sie stopft, während die Dattelbrühe treibt.<list type="alternatives"><item>„der“ meint das Brot<note type="rationale">Das Genus passt auf Muskatblüte nicht genau, und der folgende Satz schließt das Brot bei der abführenden Fassung aus. Der Satz begründet aber unmittelbar das Herausnehmen der Muskatblüte.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

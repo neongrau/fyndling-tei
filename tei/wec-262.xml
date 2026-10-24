@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rosinenbrühe zu Äpfeln</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-262/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-262</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-262">
+        <head>Rosinenbrühe zu Äpfeln</head>
+        <div type="original" xml:id="wec-262-orig" xml:lang="de-x-fnhd" corresp="#wec-262-trans">
+          <p>Ein Bruͤhlein mach alſo.
+
+SEud Weinbeerlein in Wein mit waſſer gebrochen/ behe ein ſchnitten brod die da nit verbrant/ geuß der bruͤh von Weinberlein daruͤber/ ſtampffe die Weinbeerlein wol/ zertreibs alles mit einander/ als wolteſtu ein Muͤßlein machẽ/ durchmachs mit Zimet oder andern koͤſtlichen waſſern/ ſo dem krancken nutz/ wol duͤnne wie ein wol duͤnner Senff/ laß in einem meſſinen pfaͤnnlein oder tiegel erwarmen oder einẽ wall thun/ ſchuͤtte es an die Aepffel. Ein ſolch ſoͤtlein brauch auch zu andern eſſen kalt vnnd warm/ weñs etwas ſonders iſt das an jhm ſelbſt trucknet. Du magſt auch mit einem Fleiſchbruͤhlein ſuͤß oder ſawr fuͤr ein ſuͤplein ruͤſten. Es ſtaͤrcket den Magen/ lindert den leib.</p>
+        </div>
+        <div type="translation" xml:id="wec-262-trans" xml:lang="de" corresp="#wec-262-orig">
+          <p>Ein Brühlein mache so: Koche Rosinen in Wein, der mit Wasser verdünnt ist. Röste eine Brotschnitte, aber lass sie nicht verbrennen.</p>
+          <p>Gieße die Brühe von den Rosinen darüber. Zerstoße die Rosinen gut und verrühre alles miteinander, als wolltest du ein Mus machen.</p>
+          <p>Rühre die Masse mit Zimtwasser oder anderen köstlichen Wässern durch, die dem Kranken nützen. Mache sie recht dünn, wie einen recht dünnen Senf. Lass sie in einem Messingpfännchen oder Tiegel warm werden oder einmal aufwallen und gieße sie über die Äpfel.</p>
+          <p>Ein solches Brühlein kannst du auch zu anderen Speisen verwenden, kalt und warm, wenn es etwas Besonderes ist, das von sich aus trocken ist. Du kannst auch mit einem Fleischbrühlein, süß oder sauer, ein Süpplein daraus bereiten.</p>
+          <p>Es stärkt den Magen und lindert den Leib.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="raisin" orig="Weinbeerlein" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Wein mit waſſer gebrochen">Wein, mit Wasser verdünnt</ingredient>
+            </item>
+            <item><ingredient en="bread" orig="ein ſchnitten brod" commodity="wikidata:Q7802" source="#fyndling-ingredient-registry">Brot</ingredient> - 1 Scheibe</item>
+            <item>
+              <ingredient orig="Zimet oder andern koͤſtlichen waſſern">Zimtwasser oder andere aromatische Wässer</ingredient>
+            </item>
+            <item>
+              <ingredient en="apple" orig="Aepffel" commodity="wikidata:Q89" source="#corema-ingredient-index">Äpfel zum Übergießen</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="Fleiſchbruͤhlein" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe, optional (für ein Süpplein)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-262-trans" resp="#fyndling">Praxis. Rosinen knapp mit Wein bedecken, der etwa zur Hälfte mit Wasser verdünnt ist (das Verhältnis ist unsere Wahl, Wecker sagt nur „gebrochen“), und kochen, bis sie weich sind. Eine Scheibe Brot leicht rösten, die Rosinenbrühe darübergießen, die Rosinen mit Stößel oder Löffel zerdrücken und alles zu einem glatten Mus verrühren; gesiebt wird nicht. Mit Zimtwasser verdünnen, bis die Masse gießfähig ist wie dünner Senf, dann kurz erwärmen oder einmal aufwallen lassen. Mengen nennt Wecker nicht.
+
+Zimet. Ohne Zimtwasser ersatzweise etwas gemahlenen Zimt einrühren und mit Wasser verdünnen; der Satz lässt beide Lesarten zu.</note>
+        <note type="gloss" target="#wec-262-orig" n="Weinbeerlein" resp="#fyndling">Getrocknete Weinbeeren, also Rosinen.</note>
+        <note type="gloss" target="#wec-262-orig" n="behe" resp="#fyndling">Zu bähen: Brot leicht rösten (MWB bæhen 2, Lexer brot baen). Der Zusatz „die da nit verbrant“ sagt, wie weit.</note>
+        <note type="gloss" target="#wec-262-orig" n="ſoͤtlein" resp="#fyndling">Brühlein, Verkleinerung zu Sod ‚Sud, Brühe‘ (Grimm sodlein: dünne Brühe; mhd. soedelin). „Ein solch“ weist auf das eben beschriebene Brühlein zurück.</note>
+        <note type="gloss" target="#wec-262-orig" n="lindert den leib" resp="#fyndling">Leib meint hier den Bauch. Welche Wirkung Wecker genau im Sinn hat, sagt sie nicht.</note>
+        <note type="interpretive_choice" target="#wec-262-orig" n="Zimet oder andern koͤſtlichen waſſern" resp="#fyndling" subtype="contextual">Zimtwasser oder andere aromatische Wässer: „andern … waſſern“ setzt voraus, dass auch Zimet ein Wasser ist; im Vorrezept wec-260 nennt Wecker Zimet ebenso in einer Reihe destillierter Wässer.<list type="alternatives"><item>Gemahlener Zimt als Gewürz, dazu andere Wässer<note type="rationale">„Zimet“ steht ohne „Wasser“ und kann bei Wecker auch das Gewürz meinen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

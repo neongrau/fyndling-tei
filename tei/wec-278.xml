@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnentorte mit Brot und Eiern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-278/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-278</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-278">
+        <head>Birnentorte mit Brot und Eiern</head>
+        <div type="original" xml:id="wec-278-orig" xml:lang="de-x-fnhd" corresp="#wec-278-trans">
+          <p>Noch ein Gattung von Birndorten.
+
+NJmb gute ſafftige Birnen/ ſchaͤls zu duͤnnen Schnuͤtzen/ waſch/ thu ſie in ein kachel wol gedeckt/ laß ſie daͤmpffen daß ſie wol linde ſind/ treibs durch ein Durchſchlag oder Seigepfann. Etliche zermuͤſen ſich ſelbſt/ die doͤrffen nicht vil durchtreibens. Nun wie es von noͤten/ ſo reib ſchoͤn harte Brot auff eim Reibeyſen/ beutels daß es gar rein ſey/ ruͤhr es darein/ wann es recht iſt/ daß es wol trucken/ vnd nit zu feſt werde/ thu es wider in ein kachel/ ſampt eim heiſſen ſchmaltz/ wanns recht gekocht/ ſo klopffe vier Eyer/ minder oder mehr/ nach dem des zeugs viel oder wenig iſt/ das gelb iſt am beſten/ wanns nicht wolgeklopfft ſind/ ſo wird das weiſſe lang/ es ſihet gar heßlich. Wañ du es dann alſo fuͤr ein gemuͤß geben wilt/ ſo ruͤhre Eyer darein/ wuͤrtz es mit Jngwer vnd Muſtatnuß wol. Wiltu es aber in ein Dortenhafen haben/ ſo laß ein wenig uͤberſchlagen/ dann bereits auß wie vor oben/ vnd leg in die Dorten am erſten ein wenig ſchmaltz/ vnd dann den zeug darauff/ vnd ſo ſie ſchier gebachen/ vnd obenher fein ſchmutzig/ (dann das ſchmaltz kocht fein dadurch) ſo beſtrewe ſie mit Jngwer/ Zimet vnnd Zucker wol/ bachs roͤſch. Wiltu ſie dann im Moͤrſel bachen/ ſo mach des brots vnnd der Birnen eins ſo viel als das ander/ vnd nimb mehr Eyer.</p>
+        </div>
+        <div type="translation" xml:id="wec-278-trans" xml:lang="de" corresp="#wec-278-orig">
+          <p>Nimm gute, saftige Birnen, schäle sie zu dünnen Schnitzen, wasche sie, gib sie in eine gut zugedeckte Kachel und lass sie dämpfen, bis sie ganz weich sind. Treib sie durch einen Durchschlag oder eine Seihpfanne. Manche zerfallen von selbst zu Mus, die brauchen nicht viel Durchtreiben.</p>
+          <p>Reibe nun, so viel nötig ist, schön hartes Brot auf einem Reibeisen, beutle es, bis es ganz rein ist, und rühre es darein, bis es recht ist: gut trocken, aber nicht zu fest. Gib es wieder in eine Kachel, zusammen mit heißem Schmalz. Wenn es recht gekocht ist, schlage vier Eier, weniger oder mehr, je nachdem, ob viel oder wenig Masse da ist. Das Gelbe ist das Beste. Sind die Eier nicht gut geschlagen, wird das Weiße fadenziehend, und es sieht ganz hässlich aus.</p>
+          <p>Willst du es so als Mus geben, rühre Eier darein und würze es gut mit Ingwer und Muskatnuss. Willst du es aber in einem Tortentopf haben, lass es ein wenig lau werden, bereite es dann aus wie vorher oben, und gib in die Torte zuerst ein wenig Schmalz und dann die Masse darauf. Wenn sie fast gebacken und oben schön fettig ist (denn das Schmalz kocht schön hindurch), bestreue sie gut mit Ingwer, Zimt und Zucker und backe sie knusprig. Willst du sie dann im Mörser backen, nimm vom Brot und von den Birnen gleich viel und nimm mehr Eier.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="gute ſafftige Birnen">Birnen, saftig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchoͤn harte Brot">Brot, hart</ingredient>
+            </item>
+            <item>
+              <ingredient orig="heiſſen ſchmaltz">Schmalz</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="vier Eyer" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 4</item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="Muſtatnuß" commodity="wikidata:Q83165" source="#fyndling-ingredient-registry">Muskatnuss</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-278-trans" resp="#fyndling">Praxis. Mengen, Zeiten und Hitze nennt der Text nicht. Die Birnenschnitze im geschlossenen Topf bei schwacher Hitze dämpfen, bis sie sich mit der Gabel zerdrücken lassen, dann durch ein Sieb streichen. Hartes Brot fein reiben, sieben und portionsweise einrühren, bis die Masse stichfest, aber nicht klumpig ist; nur für die Mörser-Fassung gibt Wecker ein Verhältnis an (Brot und Birnen gleich viel). Die Masse mit heißem Schmalz aufkochen, die Eier gründlich verklopfen. Als Mus die Eier einrühren und mit Ingwer und Muskatnuss würzen. Für die Torte die Masse lauwarm werden lassen, in die Teigschale erst etwas Schmalz, dann die Masse geben, bei mittlerer Hitze backen, kurz vor Ende mit Ingwer, Zimt und Zucker bestreuen und knusprig fertig backen.
+
+Den Teig beschreibt dieses Rezept nicht. „Wie vorher oben“ verweist vermutlich auf die vorangehenden Birnentorten, etwa wec-248, wo der Tortentopf beschrieben ist.</note>
+        <note type="gloss" target="#wec-278-orig" n="Dortenhafen" resp="#fyndling">Tortentopf: bei Wecker die aus Teig aufgezogene Schale der Torte, die beim Backen hart wird, nicht ein Kochtopf (so auch wec-248 und wec-259). Das zuerst eingelegte Schmalz kommt in diese Teigschale.</note>
+        <note type="gloss" target="#wec-278-orig" n="Seigepfann" resp="#fyndling">Seihpfanne: eine Pfanne mit durchlöchertem Boden, also ein Durchschlag mit Stiel, keine Bratpfanne.</note>
+        <note type="gloss" target="#wec-278-orig" n="Reibeyſen" resp="#fyndling">Reibeisen. Das i dieses Drucks hat oft keinen Punkt und sieht aus wie ein t; die Form „Retbeyſen“ ist so zu lesen.</note>
+        <note type="gloss" target="#wec-278-orig" n="beutels" resp="#fyndling">Beuteln heißt durch einen Tuchbeutel sieben; die Brösel werden so von groben Stücken befreit.</note>
+        <note type="gloss" target="#wec-278-orig" n="uͤberſchlagen" resp="#fyndling">Lau werden lassen, ein wenig abkühlen.</note>
+        <note type="gloss" target="#wec-278-orig" n="ſchmutzig" resp="#fyndling">Schmutz heißt hier Fett: Die Oberfläche ist vom durchkochenden Schmalz fettig, nicht unsauber (DWB schmutzig 1).</note>
+        <note type="gloss" target="#wec-278-orig" n="Moͤrſel" resp="#fyndling">„Mörsel“ ist eine alte Nebenform von Mörser (FWB: mörsel s. mörser). Wecker stößt im Mörser und backt auch darin, wie in wec-004.</note>
+        <note type="interpretive_choice" target="#wec-278-orig" n="Dortenhafen" resp="#fyndling" subtype="contextual">Tortentopf als Teigschale: Bei Wecker ist der Dortenhafen ohne den Zusatz „irden“ die aus Teig aufgezogene Schale (wec-248: „nicht über eines fingers dick“, im Ofen „erharten“). Das Schmalz wird in diese Schale gelegt, darauf die Masse.<list type="alternatives"><item>Teiglose Torte, die Masse direkt in einem gefetteten Backgefäß.<note type="rationale">Dieses Rezept erwähnt keinen Teig und lässt zuerst Schmalz einlegen. Ein irdenes Gefäß nennt Wecker aber sonst ausdrücklich, hier fehlt dieser Zusatz.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

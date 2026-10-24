@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ganze Birnen, andere Form: gedämpft oder in der Pastete</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-256/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-256</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-256">
+        <head>Ganze Birnen, andere Form: gedämpft oder in der Pastete</head>
+        <div type="original" xml:id="wec-256-orig" xml:lang="de-x-fnhd" corresp="#wec-256-trans">
+          <p>Ein ander form von gantzen Birnen.
+
+WEnn die Birnen geſchaͤlet vnd außgeraumt ſeyn/ ſo mach in eim tiegel oder hafẽ/ wie recht iſt/ ſchmaltz heiß/ wirff die Birnen darein/ vnnd merck was du von Birnen kochſt/ ſo wirff allzeit ein koͤrnlein etliche Saltz darein/ daß mans aber nicht mercke/ es gibt jhnen eine liebligkeit/ ſo fern daß man es nicht merckt. Alßdann decks geheb zu/ laß auff einer kolen wol vom fewer daͤmpffen/ ſo geben ſie gemeyniglich ſelbſt bruͤh. Wenn ſie dann halb gedaͤmpfft ſeyn/ ſo ſpreng einen Wein darauff/ ſo werden ſie gleich von jhnen ſelbſt bruͤh geben. Wiltus dann ohn ein hafen machen/ ſo bereits wie du mehr haſt mit Weinbern/ Zwibeln oder Traͤubelein/ Zucker/ Zimet vnd Jngwer ab vnd außgefuͤllt. Wiltu dann ein Paſteten darauß haben/ ſo fuͤlls aber mit diſen ſachen auß/ legs in bereiten hafen/ belegs vnd beſtrew es wol/ machs recht/ decks mit eim gantzen deckel ſchoͤn geziert/ wie allezeit/ bachs/ wenn der hafen erhartet/ ſo geuß die bruͤh dareiñ/ laß recht bachen. Alſo kanſt vnnd magſtu Quitten auff allerley weiß vnd weg/ duͤrꝛ vnd gruͤn/ wie du wilt/ auff diſe weiß/ gantz/ halb/ gevierteilt/ oder wie Ruben kochen/ vnnd in Paſteten vnd Dorten bereiten.</p>
+        </div>
+        <div type="translation" xml:id="wec-256-trans" xml:lang="de" corresp="#wec-256-orig">
+          <p>Wenn die Birnen geschält und entkernt sind, so mach in einem Tiegel oder Topf, wie es recht ist, Schmalz heiß und wirf die Birnen hinein. Und merke: Bei allem, was du von Birnen kochst, wirf jedes Mal ein paar Körnlein Salz hinein, so aber, dass man es nicht merkt. Es gibt ihnen eine Lieblichkeit, sofern man es nicht merkt. Dann deck es dicht zu und lass es auf einer Kohle, weit vom Feuer weg, dämpfen. So geben sie gewöhnlich selbst Brühe.</p>
+          <p>Wenn sie dann halb gedämpft sind, so sprenge einen Wein darauf. Dann geben sie sogleich von selbst Brühe.</p>
+          <p>Willst du es dann ohne Topf machen, so bereite es, wie du es oben schon hast, und fülle die Birnen mit Rosinen, Zibeben oder kleinen Rosinen, Zucker, Zimt und Ingwer aus.</p>
+          <p>Willst du dann eine Pastete daraus haben, so fülle sie wieder mit diesen Sachen aus und leg sie in den vorbereiteten Teigtopf. Belege und bestreue es gut, mach es recht und deck es mit einem ganzen Deckel, schön verziert, wie allezeit. Back es. Wenn der Teigtopf hart geworden ist, so gieß die Brühe hinein und lass es recht backen.</p>
+          <p>So kannst und magst du auch Quitten auf allerlei Art und Weise, getrocknet oder frisch, wie du willst, auf diese Weise ganz, halbiert, geviertelt oder wie Rüben kochen und in Pasteten und Torten zubereiten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="Birnen" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ſchmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ein koͤrnlein etliche Saltz" commodity="wikidata:Q11254" source="#fyndling-ingredient-registry">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="einen Wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weinbern/ Zwibeln oder Traͤubelein">Rosinen, Zibeben oder kleine Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="pie crust" orig="bereiten hafen" commodity="wikidata:Q5190246" source="#fyndling-ingredient-name">Pastetenteig (nur Pastetenvariante)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-256-trans" resp="#fyndling">Praxis. Birnen schälen und das Kerngehäuse ausräumen, sie bleiben ganz. In einem Topf mit dicht schließendem Deckel Schmalz erhitzen, die Birnen hineinlegen, ein paar Körnchen Salz dazu, zudecken und an den Rand der Glut auf schwache Hitze stellen. Eine Garzeit nennt Wecker nicht, sie hängt an der Größe der Birnen. Sind sie halb gar, einige Esslöffel Wein darübersprengen. Zum Füllen Rosinen, Zibeben, Zucker, Zimt und Ingwer nach Geschmack, Mengen stehen nicht im Text.
+
+Pastete. Die gefüllten Birnen in den Teigtopf legen, Deckel darauf und bei mäßiger Hitze backen, bis der Teig fest ist. Dann die Brühe vom Dämpfen hineingießen und fertig backen. Wie die Brühe hineinkommt, sagt der Text nicht; in wec-255 schneidet Wecker dafür ein Löchlein am Rand des Deckels.</note>
+        <note type="gloss" target="#wec-256-orig" n="Zwibeln" resp="#fyndling">Hier nicht Zwiebeln, sondern Zibeben, große Rosinen. Wecker setzt in einer anderen Fassung „Zibeben“ an die Stelle der „Zwibeln“ und schreibt die Zwiebel sonst „Zwifel“.</note>
+        <note type="gloss" target="#wec-256-orig" n="hafen" resp="#fyndling">Zuerst der Kochtopf („tiegel oder hafen“), in der Pastetenvariante der aus Teig geformte Topf, der erst hart werden muss, bevor die Brühe hineinkommt.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+        <note type="gloss" target="#wec-256-orig" n="wie Ruben" resp="#fyndling">Wohl die Schnittform: In den „Ruben von Aepffel vnd Birnen“ (wec-254) schneidet Wecker das Obst, „wie man Ruben ſchneid“. Gemeint ist also eher Rübenschnitt als eine eigene Garart.</note>
+        <note type="interpretive_choice" target="#wec-256-orig" n="Zwibeln" resp="#fyndling" subtype="lexical">Zibeben, große Rosinen. In einer Füllung aus Weinbeeren, Träubelein, Zucker, Zimt und Ingwer passen Zwiebeln nicht; Wecker setzt in wec-318 selbst „Zibeben“ an die Stelle der „Zwibeln“, schreibt die Zwiebel sonst „Zwifel“, und Fischers Schwäbisches Wörterbuch führt für Zibebe Formen mit „Zwib-“.<list type="alternatives"><item>Zwiebeln<note type="rationale">Wörtlich naheliegend, in dieser süßen Reihe getrockneter Früchte aber ohne Sinn.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-256-orig" n="Traͤubelein" resp="#fyndling" subtype="lexical">Kleine getrocknete Trauben, also kleine Rosinen (Korinthen). Grimm führt träublein als uvetta (Kramer 1702); die Reihe Weinbeeren, Zibeben, Träubelein nennt drei Sorten Trockentrauben.<list type="alternatives"><item>Johannisbeeren<note type="rationale">Fischers Schwäbisches Wörterbuch und Grimm (Johannisträublein) kennen Träublein auch für die Johannisbeere.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-256-orig" n="ohn ein hafen machen" resp="#fyndling" subtype="contextual">Ohne Teigtopf, also nicht als Pastete: Der nächste Satz setzt die Pastete dagegen, und das Vorrezept wec-255 backt die Birnen im Pastetentopf. „wie du mehr hast“ verweist dann auf die Füllung dort.<list type="alternatives"><item>Ohne Kochtopf<note type="rationale">Im ersten Satz heißt „hafen“ der Kochtopf; dann wären die gefüllten Birnen auf andere Weise zu garen, was der Text aber nicht sagt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

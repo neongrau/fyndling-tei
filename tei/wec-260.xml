@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Apfeltorte aus Apfelmus, Brot und Eigelb</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-23">2026-10-23</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-260/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-260</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-260">
+        <head>Apfeltorte aus Apfelmus, Brot und Eigelb</head>
+        <div type="original" xml:id="wec-260-orig" xml:lang="de-x-fnhd" corresp="#wec-260-trans">
+          <p>Ein ander Dort von Aepffeln.
+
+BEreit gute Aepffel/ kochs mit ziemlichem ſchmaltz/ wie ein ander gut Apffelmuß/ vnd wenns wol lind/ ſo zerꝛuͤhr swol vnd zart/ reibe ſchoͤn brot auff eim reibeiſen/ beutels durch ein enges ſieb/ daß nichts grobes darinn bleibe/ ruͤhre ein handvol darein/ nachmals vertreib in einem andern geſchirꝛ fuͤnff oder ſechs Eyerdotter zart/ minder oder mehꝛ/ nach dem die Doꝛten gꝛoß oder klein ſol werden/ darein von einem guten Milchrahm oder einer Mandelmilch/ oder Zimet/ oder Koppen/ vnd andern hertz vnnd magenſtaͤrckendẽ waſſern/ als beſonder von gediſtilirtem Quittenwaſſer/ nach gelegenheit deß der es eſſen ſol. Ruͤhr es mit einander in vorige Aepffel/ zeugs mit Saffran vnd Jngwer wol an/ es ſol von Jngwer zimlich herbe ſeyn/ bereits alſo in dem Dortenhafen/ weñs dañ im ofen oder pfañen faſt gebachen/ ſo beſtreichs wol oben mit einem guten wein/ Malvaſier/ oder vorigen waſſern. Habe Zucker mit voͤlligem zimet bereit/ daſſelbig ſtrewe wol dick darauff/ gib jhm gute hitz/ daß ſie roͤſch werden. Gib ſie/ ſie ſchaden keinem krancken/ der ſchon das grim̃en hat/ allein die haͤfen taugen nicht. Du magſts in eim tiegel bachen wie ein andere ruͤſtung/ deren du vil findeſt/ oder thu den Zimet vñ Zucker darein/ beſtreich das geſchirꝛ mit ſchmaltz/ daß es nicht mehr alſo ſchmutzig ſey. Du kanſt es in eim Moͤrſel bachen/ dann aber thu mehr Eyer darein/ ſampt Zimet/ Jngwer vnnd Zucker/ laß gantz oder ſchneid es zu rundẽ ſchnieten/ mache mit ſtar ckem Wein/ Zimet vnd Zucker eine bruͤh/ auch von Weinbern/ ſo ſtaͤrckt es den Magen/ wehret den kalten winden oder blaͤſten.</p>
+        </div>
+        <div type="translation" xml:id="wec-260-trans" xml:lang="de" corresp="#wec-260-orig">
+          <p>Gute Äpfel zubereiten. Mit angemessen viel Schmalz kochen wie ein anderes gutes Apfelmus. Wenn sie schön weich sind, gut und fein zerrühren. Schönes Brot auf einem Reibeisen reiben und durch ein enges Sieb streichen, damit nichts Grobes darin bleibt. Eine Handvoll davon in die Äpfel rühren.</p>
+          <p>Danach in einem anderen Gefäß fünf oder sechs Eigelb fein verrühren, weniger oder mehr, je nachdem, ob die Torte groß oder klein werden soll. Guten Milchrahm oder Mandelmilch dazugeben, oder Zimtwasser oder Kapaunwasser und andere herz- und magenstärkende Wässer, besonders destilliertes Quittenwasser, je nachdem, für wen die Speise bestimmt ist.</p>
+          <p>Alles miteinander unter die vorigen Äpfel rühren und mit Safran und Ingwer gut würzen. Vom Ingwer soll sie ziemlich herb sein. So im Tortentopf zurichten.</p>
+          <p>Wenn sie dann im Ofen oder in der Pfanne fast gebacken ist, oben gut mit gutem Wein, Malvasier oder den vorigen Wässern bestreichen. Zucker mit reichlich Zimt bereithalten, recht dick darüberstreuen und ihr gute Hitze geben, damit sie knusprig werden. Dann auftragen. Sie schaden keinem Kranken, der schon das Grimmen hat. Nur die Teigschalen taugen nicht.</p>
+          <p>Du kannst sie in einem Tiegel backen wie eine andere Zubereitung, von denen du viele findest. Oder gib den Zimt und Zucker darein und bestreiche das Geschirr mit Schmalz, damit es nicht mehr so schmutzig ist.</p>
+          <p>Du kannst sie auch in einem Mörser backen. Dann aber mehr Eier dazugeben, samt Zimt, Ingwer und Zucker. Ganz lassen oder in runde Scheiben schneiden. Aus starkem Wein, Zimt und Zucker eine Brühe machen, auch mit Rosinen. So stärkt es den Magen und wehrt den kalten Winden oder Blähungen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="apple" orig="gute Aepffel" commodity="wikidata:Q89" source="#corema-ingredient-index">Äpfel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ziemlichem ſchmaltz">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="ſchoͤn brot" commodity="wikidata:Q7802" source="#corema-ingredient-index">Brot, fein gerieben</ingredient>
+            </item>
+            <item><ingredient en="yolk" orig="fuͤnff oder ſechs Eyerdotter" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eigelb</ingredient> - 5</item>
+            <item>
+              <ingredient en="cream" orig="einem guten Milchrahm oder einer Mandelmilch" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Milchrahm</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="einem guten wein/ Malvaſier" commodity="wikidata:Q282" source="#fyndling-ingredient-registry">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="voͤlligem zimet" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-260-trans" resp="#fyndling">Praxis. Äpfel mit Schmalz zu Mus kochen und glatt rühren, eine Handvoll fein geriebenes, gesiebtes Brot unterrühren. Fünf bis sechs Eigelb mit Milchrahm, Mandelmilch oder einem Aromawasser verquirlen, unter das Mus rühren und mit Safran und so viel Ingwer würzen, dass es ziemlich scharf schmeckt. Im Tortentopf backen, bis die Masse fast gar ist, dann mit Wein bestreichen, dick mit Zimtzucker bestreuen und mit guter Hitze knusprig werden lassen. Mengen, Backzeit und Hitze nennt der Text nicht; mittlere Hitze, bis die Oberfläche knusprig ist, ist eine moderne Hilfe.
+
+Kapaunwasser. Ein destilliertes Wasser vom Kapaun, heute kein Handelsprodukt. Der Text lässt ohnehin die Wahl zwischen Milchrahm, Mandelmilch und den anderen Wässern.</note>
+        <note type="gloss" target="#wec-260-orig" n="Dort" resp="#fyndling">Torte. Hier eine Füllung aus Apfelmus, Brot und Eigelb, im Tortentopf gebacken.</note>
+        <note type="gloss" target="#wec-260-orig" n="Dortenhafen" resp="#fyndling">Tortentopf: bei Wecker die Teigschale, in der sie Torten bäckt; in wec-004 ist er „von einem teig“. Welchen Teig sie hier meint, sagt der Text nicht.</note>
+        <note type="gloss" target="#wec-260-orig" n="Koppen" resp="#fyndling">Kapaun, der verschnittene Masthahn. In der Reihe der Wässer ist das destillierte Kapaunwasser gemeint, das Wecker auch sonst neben Zimt- und Quittenwasser nennt („gediſtilliert Koppen oder Quittenwaſſer“, wec-350; „Zimetwaſſer/ Koppen vnd ſchwartze Haͤnnen“, wec-177).</note>
+        <note type="gloss" target="#wec-260-orig" n="herbe" resp="#fyndling">Vom Geschmack scharf, beißend; hier vom Ingwer.</note>
+        <note type="gloss" target="#wec-260-orig" n="Malvaſier" resp="#fyndling">Süßer, schwerer Südwein, hier zum Bestreichen der fast fertigen Torte.</note>
+        <note type="gloss" target="#wec-260-orig" n="grim̃en" resp="#fyndling">Bauchgrimmen, Leibschmerzen. Wecker sagt, die Torte schade solchen Kranken nicht.</note>
+        <note type="gloss" target="#wec-260-orig" n="ruͤſtung" resp="#fyndling">Zubereitung, zu rüsten ‚zurichten‘.</note>
+        <note type="gloss" target="#wec-260-orig" n="Moͤrſel" resp="#fyndling">Alte Nebenform von „Mörser“ (FWB: mörsel s. mörser), kein eigenes Gerät; Wecker backt auch sonst im Mörser (wec-004, wec-400).</note>
+        <note type="gloss" target="#wec-260-orig" n="kalten winden oder blaͤſten" resp="#fyndling">Blähungen, gegen die nach der Säftelehre ihrer Zeit wärmende Gewürze und Wein helfen.</note>
+        <note type="interpretive_choice" target="#wec-260-orig" n="allein die haͤfen taugen nicht" resp="#fyndling" subtype="contextual" cert="unknown">Wörtlich „Nur die Häfen taugen nicht“: Die Teigschalen des Tortentopfs taugen den Kranken nicht. Wecker rät auch in wec-228, ein Kranker solle „das euſſer/ ſo es im teig gebachen“ abtun, weil es den Magen beschwere; deshalb folgen gleich die Ausweichformen Tiegel und Mörser, die ohne Teig auskommen.<list type="alternatives"><item>Der gewöhnliche Kochtopf taugt nicht zum Backen dieser Torte<note type="rationale">„Hafen“ heißt bei Wecker auch der Kochtopf; die anschließenden Tiegel und Mörser wären dann bessere Backgefäße.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-260-orig" n="Zimet (in der Reihe der Wässer)" resp="#fyndling" subtype="contextual">Zimtwasser: „Zimet“ steht zwischen Mandelmilch und „Koppen … vnd andern … waſſern“; Wecker nennt Zimtwasser auch sonst (wec-177 „Zimetwaſſer“, wec-350 „weiche das Brot inn Zimetwaſſer“).<list type="alternatives"><item>Gemahlener Zimt in die Eiermasse<note type="rationale">Zimt steht im selben Rezept als Pulver zum Bestreuen; hier aber in der Reihe der Flüssigkeiten.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
