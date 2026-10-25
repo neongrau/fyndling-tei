@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hirn auf drei Arten: gehackt, ganz oder gebacken mit süßer Brühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-355/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-355</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-355">
+        <head>Hirn auf drei Arten: gehackt, ganz oder gebacken mit süßer Brühe</head>
+        <div type="original" xml:id="wec-355-orig" xml:lang="de-x-fnhd" corresp="#wec-355-trans">
+          <p>Ein gefuͤllt Hirn.
+
+LAß das Hirn inn halb Wein vnnd Waſſer ſieden/ aber nicht ſo lang als ſonſten/ darnach hacks vnnd bereit es/ wie du von der gefuͤlten Lebern haſt/ ſo mans hackt/ wiltu dann/ ſo laß gantz/ vnd bereit es wie du hernach von den gefuͤlten Milchlein oder Brißlein findeſt. Fuͤr das dritte/ ſo laß trucken abkochen/ darnach ſo es erkalt/ ſo zeuch es durch ein Ey/ bache es vnd mache ein gute ſuͤſſe Bruͤh daruͤber/ zum voreſſen/ darinnen etwan geſchnitten Mandeln vnd Weinbeern/ vnd gibs/ etwan mit einer Zimetbruͤh/ etwan von andern Suͤltzen bereit/ damit es von Naͤgelein braunfarb ſey/ alsdann die Suͤltzen von Aepffeln/ Birnen vnd rothen Kirſchen geben.</p>
+        </div>
+        <div type="translation" xml:id="wec-355-trans" xml:lang="de" corresp="#wec-355-orig">
+          <p>Das Hirn in halb Wein und halb Wasser sieden, aber nicht so lange wie sonst. Danach hacken und zubereiten, wie du es bei der gefüllten Leber hast, wenn man sie hackt.</p>
+          <p>Willst du es aber, so lass es ganz und bereite es zu, wie du es weiter unten bei den gefüllten Milchlein oder Brieslein findest.</p>
+          <p>Für das Dritte: Lass es trocken abkochen. Wenn es danach erkaltet ist, zieh es durch ein Ei, back es und mach eine gute süße Brühe darüber, zum Voressen, mit etwas geschnittenen Mandeln und Rosinen darin. Und gib es mal mit einer Zimtbrühe, mal mit einer Brühe, die aus anderen Sülzen bereitet ist, damit es von Nelken braun gefärbt ist. Danach die Sülzen von Äpfeln, Birnen und roten Kirschen dazu geben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="brain" orig="Hirn" commodity="wikidata:Q719458" source="#fyndling-ingredient-name">Hirn</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb Wein vnnd Waſſer">Wein und Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="Ey" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Ei</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geſchnitten Mandeln">Mandeln, geschnitten</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Weinbeern" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="Naͤgelein" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Suͤltzen von Aepffeln/ Birnen vnd rothen Kirſchen">Obstsülzen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-355-trans" resp="#fyndling">Praxis. Das Hirn in Wein und Wasser zu gleichen Teilen schwach sieden, deutlich kürzer als die ein bis drei Stunden des ersten Hirnrezepts (wec-351); als Vorschlag 20 bis 30 Minuten. Für die gebackene Form im Sud fertig garen, bis keine Brühe mehr bleibt, auskühlen lassen, in verquirltem Ei wenden und ausbacken, etwa in Schmalz oder Butterschmalz (das Fett nennt der Text nicht). Für die süße Brühe nennt Wecker nur Mandeln und Rosinen, keine Mengen und keine Bindung. Die Obstsülze lässt sich nach wec-312 machen: Äpfel reiben, auspressen, den Saft wie Sirup einkochen.</note>
+        <note type="gloss" target="#wec-355-orig" n="Hirn" resp="#fyndling">Welches Tier, sagt dieses Rezept nicht. In den vorangehenden Hirnrezepten nimmt Wecker Rinds- oder Kalbshirn.</note>
+        <note type="gloss" target="#wec-355-orig" n="Milchlein oder Brißlein" resp="#fyndling">Beides meint das Bries (Thymusdrüse) junger Tiere, heute auch Kalbsmilch. Das Rezept für die gefüllten Milchlein steht in wec-379.</note>
+        <note type="gloss" target="#wec-355-orig" n="zeuch es durch ein Ey" resp="#fyndling">In Ei wenden und dann ausbacken. Das Fett nennt der Text nicht.</note>
+        <note type="gloss" target="#wec-355-orig" n="Suͤltzen" resp="#fyndling">Bei Wecker ist Sülze hier kein Fleischaspik, sondern eine eingekochte Obstzubereitung: Für die Apfelsülze presst sie geriebene Äpfel aus und kocht den Saft wie Sirup ein (wec-312). Ein anderes Rezept nennt „Soß oder Suͤltzen“ in einem Atemzug (wec-462).</note>
+        <note type="gloss" target="#wec-355-orig" n="wie du von der gefuͤlten Lebern haſt/ ſo mans hackt" resp="#fyndling">Gemeint ist wohl die gefüllte Leber in wec-374, mit einer gehackten Eierfülle mit Speck oder Mark; die ganz gehackte Leber im Netz folgt gleich danach (wec-375). Beide stehen erst weiter hinten im Buch, obwohl Wecker „wie du … haſt“ schreibt.</note>
+        <note type="interpretive_choice" target="#wec-355-orig" n="laß trucken abkochen" resp="#fyndling" subtype="lexical">Gar kochen, bis keine Brühe mehr übrig ist. Abkochen heißt frühneuhochdeutsch „gar kochen“ (FWB abkochen), und „trocken“ steht bei Wecker gegen „naß“, also ohne Brühe (wec-379 „legs trocken oder naß in eine Schuͤſſel“). Die Nachbarvariante wec-356 verlangt dagegen ausdrücklich, dass eine Schüssel Brühe bleibt.<list type="alternatives"><item>Nach dem Sieden aus dem Sud nehmen und abtropfen lassen.<note type="rationale">Darauf haftet das Ei besser. Abkochen heißt aber nicht abtropfen, das Wort trägt diese Lesart nur schwach.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-355-orig" n="Suͤltzen / andern Suͤltzen" resp="#fyndling" subtype="contextual">Eingekochte, dickliche Obstzubereitungen, wie Wecker die Apfelsülze in wec-312 beschreibt. Für die Schlussgabe ist Obst durch den Satz selbst gesichert („von Aepffeln/ Birnen vnd rothen Kirſchen“).<list type="alternatives"><item>Gestocktes Obstgelee.<note type="rationale">Wecker kennt auch die feste Form, etwa die Quittensülze in wec-276.</note></item><item>Bei den „andern Suͤltzen“, aus denen die Brühe bereitet wird, auch Fleisch- oder Geflügelsülze.<note type="rationale">Wecker führt Sülzen aus Huhn und Ferkel (wec-348, wec-349). Für diese Brühenbasis sagt der Satz das Obst nicht ausdrücklich.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

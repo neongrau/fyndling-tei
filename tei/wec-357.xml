@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Nelkenbrühe zu Hirn, Geflügel und Bries</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-357/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-357</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-357">
+        <head>Nelkenbrühe zu Hirn, Geflügel und Bries</head>
+        <div type="original" xml:id="wec-357-orig" xml:lang="de-x-fnhd" corresp="#wec-357-trans">
+          <p>Das Hirn/ ein Hun/ alte oder junge Dauben/ Voͤgel/ Milchlein oder Bruͤßlein mit einer Naͤgeleinbruͤh zubereiten.
+
+SEtz es zu in halb Wein vnd Waſſer/ jedoch mehr Wein dann Waſſer/ daß es in dem abſieden nicht verſaltzen ſey/ wann es geſotten/ vnnd die Bruͤh eben recht/ ſo habe ein gebehet Brot/ faſt braun gebehet/ oder Pfefferbrot/ wie hievor/ thu es in das Schmaltz/ vermeinſtu daß es nicht ſchwartz gnug ſey/ oder werden als es ſeyn ſolle/ gar zu ſchwartz/ ſo thu ein wenig gedoͤrte Nußſchalen gepuͤlvert (welches nicht ſchaͤdlich) darzu/ mache alſo ein feines Bruͤhlein/ nicht zu dick oder duͤnn/ machs wie ein Eyerſuppen: Nimb geſtoſſene Naͤgelein/ ein wenig Jngwer vnnd Pfeffer/ thu es mit eim wenig Eſſig darein/ es were dann die Bruͤh zuvor ſawer/ wilt du dann daß es ein wenig ſuͤß werde/ vnnd doch nicht gar Zuckerſuͤß/ ſo wirff ein wenig Weinbeer oder gar wenig Zucker darein/ vnnd dann ein wenig Muſcatnuß. Diß ſind die beſten Naͤgeleinbruͤh. Du magſt auch wol geriebnen Leckuchen/ der offt gebachen/ fuͤr das Brot nemen/ nach dem der es eſſen ſolle. Dann auch nicht alle krancken von Gewuͤrtz eſſen doͤrffen.</p>
+        </div>
+        <div type="translation" xml:id="wec-357-trans" xml:lang="de" corresp="#wec-357-orig">
+          <p>Das Hirn, ein Huhn, alte oder junge Tauben, Vögel, Milchlein oder Bries mit einer Nelkenbrühe zubereiten.</p>
+          <p>Setz es in halb Wein, halb Wasser zu, jedoch mehr Wein als Wasser, damit es beim Absieden nicht versalzen ist. Wenn es gesotten und die Brühe eben recht ist, halte ein geröstetes Brot bereit, fast braun geröstet, oder Pfefferbrot, wie zuvor, und tu es in das Schmalz. Meinst du, sie sei nicht schwarz genug oder werde nicht, wie sie sein soll, nämlich ganz schwarz, dann tu ein wenig gedörrte, gepulverte Nussschalen dazu, was nicht schädlich ist. Mach so ein feines Brühlein, nicht zu dick oder dünn, mach es wie eine Eiersuppe.</p>
+          <p>Nimm gestoßene Nelken, ein wenig Ingwer und Pfeffer und tu es mit ein wenig Essig hinein, es sei denn, die Brühe ist vorher schon sauer. Willst du, dass es ein wenig süß wird und doch nicht ganz zuckersüß, dann wirf ein wenig Rosinen oder ganz wenig Zucker hinein, und dann ein wenig Muskatnuss.</p>
+          <p>Das sind die besten Nelkenbrühen. Du kannst auch geriebenen Lebkuchen, der oft gebacken ist, statt des Brotes nehmen, je nachdem, wer es essen soll. Denn auch nicht alle Kranken dürfen Gewürz essen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Das Hirn/ ein Hun/ alte oder junge Dauben/ Voͤgel/ Milchlein oder Bruͤßlein">Hirn, Huhn, Tauben, Vögel, Milchlein oder Bries (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb Wein vnd Waſſer">Wein und Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein gebehet Brot/ faſt braun gebehet/ oder Pfefferbrot">Brot, fast braun geröstet, oder Pfefferbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein wenig gedoͤrte Nußſchalen gepuͤlvert">Nussschalen, gedörrt und gepulvert (nur falls die Brühe nicht schwarz genug wird)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geſtoſſene Naͤgelein/ ein wenig Jngwer vnnd Pfeffer">Gewürznelken (gestoßen), Ingwer, Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="eim wenig Eſſig" commodity="wikidata:Q41354" source="#fyndling-ingredient-registry">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="grape or unrefined cane sugar" orig="ein wenig Weinbeer oder gar wenig Zucker" commodity="wikidata:Q10978 wikidata:Q57656231" cert="low" source="#fyndling-ingredient-context">Rosinen oder Zucker (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="ein wenig Muſcatnuß" commodity="wikidata:Q83165" source="#fyndling-ingredient-registry">Muskatnuss</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-357-trans" resp="#fyndling">Praxis. Huhn oder Taube in etwa zwei Teilen Wein und einem Teil Wasser sanft gar sieden, Hirn oder Bries nur kurz ziehen lassen. Salz erst nach dem Einkochen abschmecken. Das Brot in Scheiben fast braun rösten. Gestoßene Nelken, Ingwer und Pfeffer je eine Prise mit einem Schuss Essig zugeben, dann ein paar Rosinen oder wenig Zucker, zuletzt Muskat. Die Brühe soll dicklich sein wie eine Eiersuppe. Mengen, Zeiten und Hitze nennt der Text nicht.
+
+Das Brot im Schmalz. Der Text sagt nur „thu es in das Schmaltz“. Im Vorrezept wec-356 wird Schmalz heiß gemacht, das in Brühe geweichte und durchgestrichene Brot darin kurz geröstet und mit der Brühe verrührt; so lässt es sich auch hier machen. Das ist aus dem Vorrezept übernommen, nicht aus diesem Text.</note>
+        <note type="gloss" target="#wec-357-orig" n="Naͤgeleinbruͤh" resp="#fyndling">Nelkenbrühe, Nägelein sind Gewürznelken. Am Ende von wec-356 nennt Wecker sie nur, hier folgt die Ausführung.</note>
+        <note type="gloss" target="#wec-357-orig" n="gebehet" resp="#fyndling">Gebäht, also leicht geröstet (bähen, nicht backen); im Vorrezept wec-356 kommt das Brot dafür auf den Rost.</note>
+        <note type="gloss" target="#wec-357-orig" n="Milchlein oder Bruͤßlein" resp="#fyndling">Innereien vom Jungtier: Brüßlein ist das Bries, Milchlein wie in wec-379 die Kalbsmilch, ebenfalls die Thymusdrüse. Ob Wecker damit zwei verschiedene Stücke meint oder ein Wortpaar setzt, sagt der Text nicht.</note>
+        <note type="gloss" target="#wec-357-orig" n="Pfefferbrot" resp="#fyndling">Weckers vorrätiges Saucenbrot: Brot, im Ofen glashart gebacken, gestoßen und gesiebt, zum Binden von Pfefferbrühen; ohne Honig und Gewürz. Beschrieben wird es erst später im Buch (wec-368), obwohl der Text „wie hievor“ sagt. Den Lebkuchen nennt Wecker unten als eigene Alternative.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfefferbrot"/></note>
+        <note type="gloss" target="#wec-357-orig" n="Leckuchen" resp="#fyndling">Lebkuchen, „der offt gebachen“, also hart und trocken, gerieben als Ersatz für das Brot; die Wahl richtet sich nach dem Esser.</note>
+        <note type="interpretive_choice" target="#wec-357-orig" n="thu es in das Schmaltz" resp="#fyndling" subtype="contextual">Wörtlich übersetzt: das geröstete Brot kommt in das Schmalz. Ein Schmalz ist in diesem Rezept vorher nicht genannt; „wie hievor“ verweist auf wec-356, wo Schmalz heiß gemacht, das in Brühe geweichte und durchgestrichene Brot darin kurz geröstet und mit der Brühe verrührt wird.<list type="alternatives"><item>Das Schmalz kommt als Fett in die Brühe, das Brot wird nur hineingegeben<note type="rationale">Der knappe Satz schließt das nicht aus; ein Durchstreichen nennt dieses Rezept selbst nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-357-orig" n="gar zu schwartz" resp="#fyndling" subtype="philological">Als Ziel gelesen: die Brühe soll werden, wie sie sein soll, nämlich ganz schwarz (gar = sehr); fehlt das, kommen gepulverte Nussschalen dazu.<list type="alternatives"><item>„oder (zu) schwarz werden, als sie sein soll“: Warnung vor zu dunkler Farbe<note type="rationale">Wörtlich denkbar, passt aber nicht zur Zugabe eines Färbemittels im selben Satz.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-357-orig" n="Milchlein / Brüßlein" resp="#fyndling" subtype="lexical">Kalbsmilch und Bries, beides Thymusdrüse vom Jungtier, wie in wec-379; im Lesetext als „Milchlein oder Bries“ belassen.<list type="alternatives"><item>Zwei verschiedene Drüsenstücke<note type="rationale">Die Aufzählung mit „oder“ kann auch zwei unterschiedliche Teile meinen; die Wörterbücher geben dafür keinen sicheren Unterschied.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

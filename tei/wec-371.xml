@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Leber vom Rost mit Pfefferlein und Speckgrieben</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-371/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-371</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-371">
+        <head>Leber vom Rost mit Pfefferlein und Speckgrieben</head>
+        <div type="original" xml:id="wec-371-orig" xml:lang="de-x-fnhd" corresp="#wec-371-trans">
+          <p>Wie man ein Rehe vnd gute Kalbsleber zubereiten ſolle.
+
+SChneid ſie zu ſchoͤnen breiten Schnitten/ ſo dick die Leber iſt/ ohn gefehr eines kleinen Fingers dick/ Pfeffers wol/ vnd ſaltz es recht/ mache feine klein Spißlein/ ſtoß je eins daran/ legs auff den Roſt/ daß allgemach ein wenig truckne/ vnder deſſen ſchneid Speck als wolſtu Grieben auff Kraut oder Fiſch habẽ/ laß allgemach auß/ vnd treiff jm̃er die Leber mit/ biß die Leber ziemlich gebraten/ aber nicht zu faſt oder zu duͤrꝛe/ vnter deſſen bereit ein faſt gutes Pfefferlein/ mit gebeheten Brot/ daß ſchoͤn braun/ inn Fleiſchbruͤh geweicht/ durchgetrieben/ wie du jhr wol findeſt/ oder mit Meel bereit/ vnnd wol abgezeuget/ mit Pfeffer/ wol Naͤgelein/ Zimet/ Muſcatnuß vnnd ſonſten ſuͤſſer Wuͤrtz/ laß wol kochen/ thu auch ein wenig Eſſig darein/ du habſt dann eine Bruͤh ſo zuvor ſawer were/ als etwan von einer ſawren Suppen/ oder wanns von dem Fleiſch ſawer gekocht wird/ alsdann zeuch die Spießlein auß der Leber/ lege die Leber in ein Blatten oder Schuͤſſel/ wie es ein jedes mag/ trags auff den Tiſch/ lege je eines neben das ander/ geuß das Pfefferlein daruͤber/ ſtells auff eine Glutpfann/ laß eine viertheil oder halbe Stund darauff kochen/ laß den außgelaſſenen Speck wol heiß werden/ thu jhn ſampt den grieben darauff/ beſtrewe es wol mit Jngwer/ wiltu es aber fuͤr ein krancken/ ſo nimb fuͤr den Speck gut Rindern marck/ vnd damit du auch Grieben habeſt/ ſo ſchneid Aepffel/ die gantz bleiben inn dem kochen wie Grieben/ wirffs in das außgelaſſẽ Marck/ mach es bꝛaun/ vnd thu es darnach darauff.</p>
+        </div>
+        <div type="translation" xml:id="wec-371-trans" xml:lang="de" corresp="#wec-371-orig">
+          <p>Die Leber vorbereiten: Die Leber in schöne, breite Schnitten schneiden, so dick die Leber ist, ungefähr einen kleinen Finger dick. Gut pfeffern und richtig salzen. Feine kleine Spießchen zurechtmachen und in jede Schnitte eines stecken. Auf den Rost legen, damit sie langsam ein wenig abtrocknen.</p>
+          <p>Braten mit Speck: Unterdessen Speck schneiden, wie man ihn als Grieben zu Kraut oder Fisch haben möchte, und langsam auslassen. Die Leber immer wieder damit beträufeln, bis sie ziemlich gebraten ist, aber nicht zu stark und nicht zu trocken.</p>
+          <p>Das Pfefferlein: Unterdessen ein recht gutes Pfefferlein bereiten: mit geröstetem Brot, das schön braun ist, in Fleischbrühe eingeweicht und durchgestrichen, so dick, wie du es für gut hältst, oder mit Mehl zubereiten. Gut angemacht mit Pfeffer, reichlich Nelken, Zimt, Muskatnuss und sonstigen süßen Gewürzen. Gut kochen lassen und auch ein wenig Essig dazugeben, es sei denn, du hast eine Brühe, die schon vorher sauer war, etwa von einer sauren Suppe, oder wenn sie vom Fleisch her sauer gekocht wird.</p>
+          <p>Anrichten: Dann die Spießchen aus der Leber ziehen und die Leber in eine Platte oder Schüssel legen, wie es jedem gefällt. Zu Tisch tragen und je ein Stück neben das andere legen. Das Pfefferlein darübergießen, auf eine Glutpfanne stellen und eine Viertel- oder halbe Stunde darauf kochen lassen. Den ausgelassenen Speck gut heiß werden lassen, samt den Grieben darübergeben und gut mit Ingwer bestreuen.</p>
+          <p>Für einen Kranken: Willst du es aber für einen Kranken, nimm statt des Specks gutes Rindermark. Und damit du auch Grieben hast, Äpfel schneiden, die beim Kochen ganz bleiben wie Grieben. Sie in das ausgelassene Mark werfen, braun machen und danach darübergeben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="calf liver" orig="gute Kalbsleber" commodity="wikidata:Q64065384" source="#fyndling-ingredient-context">Kalbsleber</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltz es recht" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Pfeffers wol" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="Speck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gebeheten Brot">Brot, braun geröstet</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="Fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wol Naͤgelein/ Zimet/ Muſcatnuß vnnd ſonſten ſuͤſſer Wuͤrtz">Nelken (reichlich), Zimt, Muskatnuss, weitere süße Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="ein wenig Eſſig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gut Rindern marck">Rindermark (Variante für Kranke, statt Speck)</ingredient>
+            </item>
+            <item>
+              <ingredient en="apple" orig="Aepffel" commodity="wikidata:Q89" source="#corema-ingredient-index">Äpfel, die beim Kochen ganz bleiben (Variante für Kranke)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-371-trans" resp="#fyndling">Praxis. Mengen nennt Wecker nicht. Die Schnitten über mittlerer Glut je Seite wenige Minuten braten und innen nicht ganz durchgaren, weil die Leber danach noch eine Viertel- bis halbe Stunde im Pfefferlein auf der Glutpfanne kocht und sonst hart wird. Als Anhalt für das Pfefferlein: eine dicke Scheibe geröstetes Brot auf etwa 250 ml Brühe; die Dicke gibt der Text frei.
+
+Leber putzen. Häuten und Entadern nennt dieses Rezept nicht; wec-369 beschreibt es für die Leberpastete.</note>
+        <note type="gloss" target="#wec-371-orig" n="Rehe" resp="#fyndling">Gemeint ist die Rehleber. Am Anfang der Leberrezepte (wec-369) nennt Wecker die Kalbsleber als einzig gute, „ſie were dann von einem Rehe oder jungen Schwein“.</note>
+        <note type="gloss" target="#wec-371-orig" n="Pfefferlein" resp="#fyndling">Kleine gebundene Tunke aus der Familie der Pfeffersaucen, nicht das Gewürz. Hier aus braun geröstetem Brot in Fleischbrühe oder mit Mehl, gewürzt mit Pfeffer und süßen Gewürzen.</note>
+        <note type="gloss" target="#wec-371-orig" n="Glutpfann" resp="#fyndling">Eine Warmhaltepfanne mit Glut (FWB glutpfanne, Lexer warmetopf), auf die man Topf oder Schüssel stellt; hier kocht das angerichtete Gericht darauf weiter.</note>
+        <note type="gloss" target="#wec-371-orig" n="Grieben" resp="#fyndling">Ausgelassene Speckstückchen. In der Variante für Kranke übernehmen im Mark gebräunte Apfelstücke ihre Stelle.</note>
+        <note type="interpretive_choice" target="#wec-371-orig" n="abgezeuget" resp="#fyndling" subtype="lexical">„Angemacht“, also mit der Würze zugerichtet: Es folgt die Gewürzreihe „mit Pfeffer/ wol Naͤgelein …“. Wecker nennt eine Würzmischung sonst „Zeug“ (wec-369 „mit vorigem Zeug/ Wuͤrtz vnd Speck“, wec-372 „deß Zeuge mache genug“). Die Wörterbücher (FWB, DWB) kennen „abzeugen“ nur als Rechtswort ‚durch Zeugenbeweis abgewinnen‘; ein Küchenbeleg für das Verb fehlt.<list type="alternatives"><item>„Abgeschmeckt“.<note type="rationale">Gleicher Sinn, enger auf das Abschmecken bezogen; ebenso unbelegt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

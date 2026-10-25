@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pastete vom Milchlein (Bries) mit Eierguss</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-380/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-380</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-380">
+        <head>Pastete vom Milchlein (Bries) mit Eierguss</head>
+        <div type="original" xml:id="wec-380-orig" xml:lang="de-x-fnhd" corresp="#wec-380-trans">
+          <p>Ein Paſteten von einem Milchlein.
+
+SChwell es ein wenig in halb Wein vnnd Waſſer/ mach es in den Paſtetenhafen mit ſuͤſſer Wuͤrtz vnnd Saffran/ ſchmaltz es mit Feiſten von den Nieren oder Marck/ haſt du es nicht/ ſo nimb Suppenſchmaltz/ wann es ſich ſchickt/ ſo nimb klein geſchnitten Speck/ ruͤhre ein Broſen von den Semmeln an den boden/ wiltu/ Weinbeer/ vnd ſolche ſachen/ ſtehets in deinem gefallen/ oder wann es die zeit gibt/ kreuſel oder ſtichbeer/ oder vnzeitige Drauben/ gantz oder abgezupfft/ friſch ab dem ſtecken/ oder auß der beiß allezeit wol gereiniget/ gnug geſchmaltzen/ recht geſaltzen/ oder ſo du wilt/ waſch ein gute Hand voll Kraut/ ſchneids ziemlich/ thu es darzu an den Boden/ aber thu Pfeffer darzu/ dieſe Gattung magſt du ein jede beſonder/ oder alle zumal nemen/ deines Gefallens/ mache den Deckel geheb vnd wol zu/ laß auff ander halb Stund bachen/ vnnd ſo du ſie ein Stund im Ofen/ vnd du vermeineſt/ du werdeſt nicht genug Bruͤh haben/ ſo geuß mehr Bruͤh darzu/ von der/ dariñen es geſchwelt iſt. Diſes aber merck zuvor/ kehrs an ein Seiten/ loͤß zuvor den Deckel an einem Ort inwendig an dem Ranfft/ ſo weit das Meſſer breit hat/ hat ſie vil Bruͤh/ ſo laufft ſie ſchnell herauß/ kompt es aber gemach vnd faſt nur feyſt/ ſo laß daſelbſt bruͤh hienein/ was recht iſt/ beſtreich das oͤrtlein wider mit einem Ey/ bachs ein halbe Stund/ vnd ſo du ſawre Drauben oder Stichelbeerlein hinein thuſt/ ſo ſchwels nur in dem Waſſer/ oder gar nicht/ wie du wilt/ vnnd nach dem du den Hafen machen kanſt/ wañ du es aber auff die erſte Gattung mit der ſuͤſſen Wuͤrtz/ Weinbeer/ vnd was dir geliebet/ zubereiteſt/ magſtu auch vor eine Form damit zuruͤſten/ thu keine Bruͤh darein/ ſie haben zu wenig oder genug/ laß auff ſeine Stadt bachen/ Alsdann klopffe Eyer deines gefallens fuͤnff oder ſechs nach dem es groß/ klopffs faſt wol/ richts od ſeige es durch ein Seigepfann/ ſchneid geſchmackte Kraͤuter mit Peterlein faſt klein darein/ wiltu/ Saffran vnd ſuͤſſe Wuͤrtz/ nach dem wie du gehoͤrt loͤß den Deckel an den Orten/ daß du jhn hoͤflich ohn Schaden abnemen kanſt/ hat ſie vil Bruͤh auff das halbe theil ohn gefehr/ ſo laß herab in eine Schuͤſſel/ ruͤhr es allgemach vnder die Eyer/ hat ſie aber nicht genug/ ſo thu von der Bruͤh darinnen es geſchuͤpfft iſt/ auch mehr darein/ damit dir die Eyer nicht ruͤnnen/ wann ſie in Hafen kommen/ iſt ſie zuvor faſt gewuͤrtzt/ ſo darffſt du nicht mehr in die Eyer thun/ dann Muſcatbluͤh mit dem Kraut geſchnitten/ oder ein jedes allein geuß alles mit einander uͤber das Milchlein/ thu den Deckel wideꝛ daruͤber/ thu es noch ein Viertheilſtund in den Ofen/ alsdann ruͤnnen die Eyer wie ein Kaͤß. Vnd alſo mag man junge vñ alte Huͤner/ oder ander klein Fleiſch zubereiten welchen Weg man wil/ allezeit ſollen ſie ſchoͤn beſtrichen ſeyn/ oben auff aber an dem Ranfft auſſen/ je weiſſer je ſchoͤneꝛ. Jch habe offt mit Papir verbunden/ das ſie ſchoͤn weiß auſſen hervmb bleiben.</p>
+        </div>
+        <div type="translation" xml:id="wec-380-trans" xml:lang="de" corresp="#wec-380-orig">
+          <p>Grundrezept: Überbrühe das Milchlein ein wenig in halb Wein, halb Wasser. Richte es im Pastetentopf mit süßen Gewürzen und Safran zu. Schmalze es mit dem Fett von den Nieren oder mit Mark. Hast du das nicht, so nimm Suppenfett, und wenn es sich schickt, klein geschnittenen Speck. Rühre Semmelbrösel an den Boden. Wenn du willst, gib Rosinen und dergleichen dazu, das steht in deinem Belieben.</p>
+          <p>Mit Beeren oder Kraut: Oder, wenn es die Jahreszeit hergibt, Stachelbeeren oder unreife Trauben, ganz oder abgezupft, frisch vom Stock oder aus der Beize, stets gut gereinigt, genug geschmalzt und richtig gesalzen. Oder, wenn du willst, wasche eine gute Handvoll Kraut, schneide es ziemlich klein und gib es auch an den Boden, gib aber Pfeffer dazu. Diese Arten kannst du jede für sich oder alle zusammen nehmen, wie es dir gefällt.</p>
+          <p>Backen: Mach den Deckel dicht und gut zu und lass es anderthalb Stunden backen. Ist die Pastete eine Stunde im Ofen und meinst du, du habest nicht genug Brühe, so gieß mehr Brühe dazu, und zwar von der, in der das Milchlein gebrüht wurde. Das aber merke dir vorher: Kehre sie auf eine Seite und löse zuvor den Deckel an einer Stelle innen am Rand, so weit, wie das Messer breit ist. Hat sie viel Brühe, so läuft sie schnell heraus. Kommt es aber nur langsam und fast nur Fett, so lass an derselben Stelle Brühe hinein, so viel recht ist. Bestreiche das Stellchen wieder mit einem Ei und backe es eine halbe Stunde.</p>
+          <p>Saure Früchte oder Form: Gibst du saure Trauben oder Stachelbeeren hinein, so brühe sie nur im Wasser oder gar nicht, wie du willst und je nachdem, wie du den Pastetentopf machen kannst. Richtest du es aber nach der ersten Art mit den süßen Gewürzen, Rosinen und was dir gefällt zu, so kannst du damit auch eine Form herrichten. Gib keine Brühe hinein, sie haben zu wenig oder genug. Lass es an seiner Stelle backen.</p>
+          <p>Mit Eierguss: Dann klopfe nach Belieben fünf oder sechs Eier, je nachdem, wie groß die Pastete ist, und klopfe sie sehr gut. Richte sie zu oder seihe sie durch eine Seihpfanne. Schneide würzige Kräuter mit Petersilie sehr fein hinein, wenn du willst auch Safran und süße Gewürze, wie du gehört hast. Löse den Deckel an den Stellen, sodass du ihn vorsichtig und ohne Schaden abnehmen kannst. Hat die Pastete viel Brühe, so lass ungefähr die Hälfte in eine Schüssel ab und rühre sie langsam unter die Eier. Hat sie aber nicht genug, so gib auch mehr von der Brühe dazu, in der das Milchlein gebrüht wurde, damit dir die Eier nicht gerinnen, wenn sie in den Pastetentopf kommen. Ist die Pastete vorher schon stark gewürzt, so brauchst du in die Eier nichts weiter zu geben als Muskatblüte, mit den Kräutern geschnitten, oder jedes für sich. Gieß alles miteinander über das Milchlein, lege den Deckel wieder darüber und gib es noch eine Viertelstunde in den Ofen. Dann stocken die Eier wie ein Käse.</p>
+          <p>Hinweis: Und so kann man junge und alte Hühner oder anderes kleines Fleisch zubereiten, auf welche Weise man will. Immer sollen sie oben schön bestrichen sein, aber am Rand außen gilt: je weißer, desto schöner. Ich habe sie oft mit Papier umbunden, damit sie außen ringsum schön weiß bleiben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Milchlein">Bries (Milchlein), vom Kalb</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb Wein vnnd Waſſer">Wein und Wasser, halb und halb</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Paſtetenhafen">Pastetenteig für Schale und Deckel</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="ſuͤſſer Wuͤrtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Süße Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Feiſten von den Nieren oder Marck">Nierenfett oder Mark</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein Broſen von den Semmeln">Semmelbrösel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Zusätze nach Wahl (siehe Text)</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="Eyer deines gefallens fuͤnff oder ſechs" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geſchmackte Kraͤuter mit Peterlein">Würzige Kräuter und Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="Muſcatbluͤh" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte (nach Wahl)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-380-trans" resp="#fyndling">Praxis. Das Bries in halb Wein, halb Wasser nur kurz überbrühen und den Sud aufheben, er wird zweimal gebraucht. Einen Teig nennt Wecker nicht; ein fester Pastetenteig, der als Schale mit Deckel steht, ist eine moderne Hilfe. Brösel an den Boden, darauf Bries, Gewürz und Fett, den Deckel dicht schließen. Als Ofenhitze sind rund 180 °C ein moderner Richtwert.
+
+Brühe prüfen und ablassen. Wie die halbe Brühe vor dem Eierguss herauskommt, sagt der Text nicht. Am einfachsten die Pastete leicht kippen und die Brühe an der gelösten Stelle in eine Schüssel laufen lassen; nur nach und nach unter die geklopften Eier rühren.</note>
+        <note type="gloss" target="#wec-380-orig" n="Milchlein" resp="#fyndling">Das Bries (Thymus) junger Tiere; das Vorrezept wec-379 ist überschrieben „Von Milchlein oder Bruͤßlein“. Die Tierart nennt Wecker nicht, Kalb ist naheliegend.</note>
+        <note type="gloss" target="#wec-380-orig" n="Paſtetenhafen" resp="#fyndling">„Hafen“ ist sonst der Topf. Bei Pasteten meint Wecker die aus Teig aufgezogene Schale mit Teigdeckel, im Lesetext „Pastetentopf“; hier wird der Deckel mit dem Messer gelöst und mit Ei bestrichen. Ein Tongefäß nennt Wecker ausdrücklich „irden“.</note>
+        <note type="gloss" target="#wec-380-orig" n="ſchwell / geſchuͤpfft" resp="#fyndling">Kurz in heißer Flüssigkeit überbrühen, nicht garkochen (vgl. wec-379 „ſchuͤpffe es nur“). Beide Wörter meinen hier denselben Sud, der später nachgegossen wird.</note>
+        <note type="gloss" target="#wec-380-orig" n="kreuſel / ſtichbeer / Stichelbeerlein" resp="#fyndling">Alle drei Formen meinen Stachelbeeren (Grimm: stichelbeere, Nebenform zu Stachelbeere); vgl. wec-306.</note>
+        <note type="gloss" target="#wec-380-orig" n="beiß" resp="#fyndling">Beize: Einlegeflüssigkeit. „Auß der beiß“ meint eingelegte Beeren oder Trauben im Gegensatz zu frischen.</note>
+        <note type="gloss" target="#wec-380-orig" n="Seigepfann" resp="#fyndling">Seihpfanne: Pfanne mit durchlöchertem Boden, ein Durchschlag mit Stiel, keine Bratpfanne.</note>
+        <note type="interpretive_choice" target="#wec-380-orig" n="Kraut" resp="#fyndling" subtype="contextual">In der Füllung (gewaschen, ziemlich klein geschnitten, mit Pfeffer an den Boden) wohl Kohl, wie Wecker „Kraut“ sonst gebraucht (wec-345 „Krautskopff“). Im Eierguss („Muſcatbluͤh mit dem Kraut geſchnitten“) sind die zuvor genannten Kräuter gemeint; im Lesetext deshalb „mit den Kräutern“.<list type="alternatives"><item>Auch in der Füllung grüne Gartenkräuter<note type="rationale">„Kraut“ kann allgemein Blattgrün meinen, und der Text bestimmt es an dieser Stelle nicht näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-380-orig" n="magſtu auch vor eine Form damit zuruͤſten … laß auff ſeine Stadt bachen" resp="#fyndling" subtype="contextual">Die Füllung der ersten Art kann auch in einer Form gebacken werden, dann ohne Brühe; „auff ſeine Stadt“ = an seiner Stelle (FWB stat 1 ‚Stelle, Platz‘), also ohne Brühe wie gehabt backen.<list type="alternatives"><item>„Form“ als Vorbereitung für den folgenden Eierguss<note type="rationale">Der nächste Satz beginnt mit „Alsdann klopffe Eyer“ und könnte an diese Form anschließen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

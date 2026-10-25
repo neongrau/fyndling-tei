@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllter Kohlkopf, in Schmalz gebräunt</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-345/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-345</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-345">
+        <head>Gefüllter Kohlkopf, in Schmalz gebräunt</head>
+        <div type="original" xml:id="wec-345-orig" xml:lang="de-x-fnhd" corresp="#wec-345-trans">
+          <p>Ein faſt guten Krautskopff zu machen.
+
+NJmb einen ſchoͤnen geſunden Krautskopff/ je kecker je beſſer/ thu ein kurtzes Schnitlein dahindẽ an den Kopff darein/ daß das Waſſer ein wenig durchziehe/ leg jhn in ein keſſel oder Hafen/ daß das Waſſer wol daruͤber gehe/ thu friſch Waſſer daruͤber/ ſtelle jhn zum Fewer/ decke den zu/ auch ein Kohlen darvnder/ daß der an allen Orten gleiche Hitz habe/ laß den faſt gemach in gleicher Hitz zum ſieden kommen/ vnd doch nicht ſtrudeln/ damit er auſſen vnnd innen gleich lind werde: Wann er nun recht genug/ vnd nicht zu lind/ nimb den auß dem Waſſer auff ein ſauber Bret/ daß das Waſſer wol darvon lauffe/ dann blat die Blaͤtter ſchoͤn vñ ſeuberlich von einander biß auff den Dorſchen/ vnder deſſen bereit mit Eyern ein gute Fuͤlle/ wie du es bey den gefuͤlten Milchlein haſt/ oder nimb ein Blat oder vier von einem andern Kopff wol innen herauß/ nicht die euſſerſten/ ſeuds vorher lind/ hack es klein/ als were es geſtoſſen/ laß in heiſſem Schmaltz geheb zugedeckt/ ein wenig auff einer Glut kochẽ/ wann es dann genug/ laß uͤberſchlagen/ klopff vnder deß ein Ey ſechs oder acht/ mindeꝛ oder mehr/ nach dem der kopff groß/ es mag leicht ein kleines Koͤpfflein ſeyn zu ſechs Eyern/ klopffs faſt wol/ ruͤrhs in das gehackte Kraut/ ſampt aller hand Zibebẽ/ Roſinlein vñ geſchnitne Mandeln/ vnd wol ſuͤſſe Wuͤrtz/ laß ein wenig vnter einander kochen/ oder nimb einen guten jungen Pinetſch/ gereiniget/ gewaſchen vnnd wol geſchwungen/ hacks dann alſo rohe/ koche den auch wolbedeckt im Schmaltz auff einer Glut/ biß es lind wird/ ſo zeugs an wie vor/ allein die Mandeln laß herauß/ aber wol Saffran/ ſaltz es recht/ welche Gattung dir geliebt/ ſo ſchneid im Kopff den Dorſchen ein wenig herauß/ darnach lege die nechſten Blaͤtter daruͤber/ zwey oder drey/ wie es ſich ſchickt/ beſtreich es wol mit der fuͤlle/ leg andere/ die nechſten alſo durchauß/ biß an eins oder ſechs/ die euſſerſten da fuͤlle nichts mache es alles wol uͤbereinander geheb/ lege den in heiß Schmaltz in eine Kachel/ da er wol weite hat/ laß jhn ſchoͤn braun werden/ mach eine gute Bruͤh von Jngwer/ fleiſchbruͤh mit wein od’ eim wenig Weineſſig/ einbroͤſamlein brot/ geſtoſſene Lemonien/ wie du ſie findeſt/ daruͤber/ geuß daß ſchmaltz ab/ vnd thu es daran/ laß wol daruͤber ſieden.</p>
+        </div>
+        <div type="translation" xml:id="wec-345-trans" xml:lang="de" corresp="#wec-345-orig">
+          <p>Nimm einen schönen, gesunden Kohlkopf, je fester, desto besser. Schneide hinten am Kopf ein kurzes Schnittlein ein, damit das Wasser ein wenig durchziehen kann. Lege den Kopf in einen Kessel oder Topf, sodass das Wasser gut darüber steht, und gieße frisches Wasser darüber. Stelle ihn zum Feuer und decke ihn zu. Gib auch eine Kohle darunter, damit er an allen Stellen gleichmäßige Hitze hat.</p>
+          <p>Lass ihn sehr gemächlich bei gleichbleibender Hitze zum Sieden kommen, aber nicht sprudelnd kochen, damit er außen und innen gleichmäßig weich wird. Wenn er gerade gar und nicht zu weich ist, nimm ihn aus dem Wasser auf ein sauberes Brett und lass das Wasser gut ablaufen. Dann löse die Blätter schön und sauber voneinander ab, bis auf den Strunk.</p>
+          <p>Bereite währenddessen mit Eiern eine gute Füllung, wie du sie bei den gefüllten Milchlein findest. Oder nimm ein Blatt oder vier von einem anderen Kopf, gut aus dem Inneren, nicht die äußersten. Siede sie vorher weich und hacke sie so klein, als wären sie gestoßen. Lass sie in heißem Schmalz dicht zugedeckt auf einer Glut ein wenig kochen. Wenn sie gar sind, lass sie abkühlen.</p>
+          <p>Schlage unterdessen sechs oder acht Eier auf, weniger oder mehr, je nachdem, wie groß der Kopf ist. Ein kleines Köpflein kommt wohl mit sechs Eiern aus. Verquirle sie sehr gut und rühre sie unter das gehackte Kraut, dazu allerlei Zibeben, Rosinen, geschnittene Mandeln und gut süße Gewürze. Lass alles ein wenig miteinander kochen.</p>
+          <p>Oder mit Spinat: Nimm guten, jungen Spinat, gereinigt, gewaschen und gut trockengeschwenkt. Hacke ihn roh und koche ihn ebenfalls gut zugedeckt im Schmalz auf einer Glut, bis er weich wird. Mache ihn dann an wie zuvor, nur lass die Mandeln weg, aber gib gut Safran dazu. Salze ihn richtig.</p>
+          <p>Zusammensetzen: Welche der beiden Füllungen dir gefällt, nimm. Schneide im Kopf den Strunk ein wenig heraus. Danach lege die nächsten Blätter darüber, zwei oder drei, wie es sich fügt, und bestreiche sie gut mit der Füllung. Lege andere darauf, die nächsten, und so fort durchweg bis auf eines oder sechs, die äußersten; die fülle nicht. Setze alles gut und dicht übereinander zusammen.</p>
+          <p>Lege den Kopf in heißes Schmalz in eine Kachel, in der er reichlich Platz hat, und lass ihn schön braun werden. Mache eine gute Brühe aus Ingwer, Fleischbrühe mit Wein oder ein wenig Weinessig, ein Brösamlein Brot und gestoßenen Zitronen, so wie du sie bekommst. Gieße das Schmalz ab, gib die Brühe daran und lass alles gut darüber sieden.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="einen ſchoͤnen geſunden Krautskopff">Kohlkopf, fest</ingredient> - 1</item>
+            <item>
+              <ingredient en="animal fat" orig="Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein Blat oder vier von einem andern Kopff wol innen herauß">Kohlblätter von innen, von einem weiteren Kopf (nur Kohlfüllung)</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="ein Ey ſechs oder acht" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 6</item>
+            <item>
+              <ingredient en="raisin" orig="Zibebẽ" commodity="wikidata:Q11730807" source="#fyndling-ingredient-name">Zibeben</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Roſinlein" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geſchnitne Mandeln">Mandeln, geschnitten (nur Kohlfüllung)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wol ſuͤſſe Wuͤrtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Süße Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient orig="einen guten jungen Pinetſch">Junger Spinat (statt der Kohlfüllung)</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="wol Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran (nur Spinatfüllung)</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltz es recht" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fleiſchbruͤh mit wein od’ eim wenig Weineſſig">Fleischbrühe mit Wein oder wenig Weinessig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="einbroͤſamlein brot">Brotbrösel, ein wenig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geſtoſſene Lemonien">Zitronen, gestoßen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-345-trans" resp="#fyndling">Praxis. Den Kopf ganz und zugedeckt im Wasser nur sanft ziehen lassen, ohne sprudelndes Kochen, bis sich die Blätter ohne Reißen lösen; eine Zeit nennt Wecker nicht, nur „recht genug, vnd nicht zu lind“. Gerät: großer Kessel oder Topf, ein Brett und eine Kachel, in der der ganze Kopf Platz hat. Für das Bräunen genügt so viel Schmalz, dass der Boden bedeckt ist. Mengen für Ingwer, Brühe, Brösel und Zitronen fehlen: Fleischbrühe mit etwas Wein, Essig nur wenig, den Rest nach Geschmack. Die gedünstete Kohlfüllung erst abkühlen lassen, dann die verquirlten Eier unterrühren.
+
+Die Außenblätter. Wie viele äußere Blätter ungefüllt bleiben, lässt „biß an eins oder ſechs“ offen. Praktisch so viele frei lassen, dass sie den gefüllten Kopf wieder geschlossen umhüllen.</note>
+        <note type="gloss" target="#wec-345-orig" n="Krautskopff" resp="#fyndling">Ein Kopf frischer Weißkohl, kein Sauerkraut.</note>
+        <note type="gloss" target="#wec-345-orig" n="kecker" resp="#fyndling">Von „keck“; hier aus dem Zusammenhang als fest, straff gedeutet: ein dichter Kopf, der beim Schichten hält.</note>
+        <note type="gloss" target="#wec-345-orig" n="Dorschen" resp="#fyndling">Der Kohlstrunk (Fischer: Kraut-dorsche), nicht der Fisch.</note>
+        <note type="gloss" target="#wec-345-orig" n="überschlagen" resp="#fyndling">Abkühlen, lau werden lassen, nicht aufkochen.</note>
+        <note type="gloss" target="#wec-345-orig" n="Pinetsch" resp="#fyndling">Spinat; die Schreibung schwankt (Binätsch, Pinätsch).</note>
+        <note type="gloss" target="#wec-345-orig" n="geheb" resp="#fyndling">Dicht, fest verschlossen (BMZ gehebe ‚dicht haltend, wohl verschlossen‘): „geheb zugedeckt“ = dicht zugedeckt, „übereinander geheb“ = dicht aufeinander.</note>
+        <note type="gloss" target="#wec-345-orig" n="Kachel" resp="#fyndling">Ein irdenes Gefäß (BMZ, Lexer: Topf, irdenes Geschirr), nicht die Ofenkachel. Hier so groß, dass der ganze Kopf darin Platz hat.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#kachel"/></note>
+        <note type="gloss" target="#wec-345-orig" n="gefüllten Milchlein" resp="#fyndling">Verweis auf das gefüllte Milchlein (Bries) weiter hinten im Buch, dessen Füllung ihrerseits auf das gefüllte Hirn verweist. Die Eierfüllung steht nicht in diesem Rezept.</note>
+        <note type="interpretive_choice" target="#wec-345-orig" n="biß an eins oder ſechs" resp="#fyndling" subtype="contextual">Wörtlich übernommen: geschichtet wird bis auf eines oder sechs, die äußersten Blätter, die ungefüllt bleiben. Die Zahl steht so im Druck und wird nicht geglättet; gemeint ist wohl, dass je nach Kopf ein bis sechs Außenblätter frei bleiben.<list type="alternatives"><item>Setzfehler schon im Druck, etwa für „fünf oder sechs“.<note type="rationale">Die Spanne „eins oder sechs“ ist ungewöhnlich, ein Beleg für eine andere Zahl fehlt aber; der Druck zeigt eindeutig „eins oder ſechs“.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

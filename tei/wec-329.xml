@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Käsesuppe für die Wöchnerin</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-24">2026-10-24</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-329/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-329</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-329">
+        <head>Käsesuppe für die Wöchnerin</head>
+        <div type="original" xml:id="wec-329-orig" xml:lang="de-x-fnhd" corresp="#wec-329-trans">
+          <p>Ein Kaͤſeſup/ ſo man einer Kindbetterin geben darff.
+
+REibe von dem beſten Kaͤß/ wie vor gemeldet/ eine gute Hand voll zwo oder drey/ nach dem du viel oder wenig machen wilt in ein Geſchirꝛ daß da gut darzu/ haſtu keine Fleiſchbruͤh/ oder jſſet jrgend eines kein Fleiſch/ ſo nimb ein Waſſer daß da wol ſeud/ ſo vil du zu der Suppen bedarffſt/ geuß uͤber den geriebnen Kaͤß/ er laufft zuſammen/ ſo trucke jhn mit dem Loͤffel/ laß die Bruͤh darvon in ein Haͤfelein/ geuß mehr daran/ truck vnd knitt den Kaͤß wol/ biß du ſiheſt daß gar kein Krafft mehr darinnen iſt/ dann ſetz es zum Fewer/ mach ein heiß Schmaltz darein/ Saffran vnd Muſcatbluͤh/ ſaltz es recht/ ruͤhrs allgemach biß es ſeud/ wiltu dann/ ſo laß alſo/ wann auch etwan eins nicht gern gewuͤrtzt jſſet/ nimb ein wenig geſtoſſen Pfeffer oder Kuͤmmel/ etwa das Gelb von einem Ey/ je nach gelegenheit/ vnd dieweil alle grobe Materia darvon kompt/ ſind ſie vnſchaͤdlich. Vnnd alſo macht man ſie von den weiſſen vnd gruͤnen Schweizerkaͤß. Noch andere vil vñ mancherley Eſſen werden von Kaͤß vnd Zuͤger bereit/ aber von wegen jhrer grobheit laß ich ſie vnbeſchrieben. Dann wie vor mehr gemelt/ iſt meines Vorhabens nicht/ alle ſeltzame Schleckerey zu beſchreiben/ der ich noch wol ein Buch zuſammen bringen wolt/ ſondern nur diſe/ ſo fuͤr Krancke vnd Schwangere dienen/ auch fuͤr Alte/ ſo bißweilen auch mancherley Geluͤſt haben/ was daſelbſt mag zugelaſſen werden.</p>
+        </div>
+        <div type="translation" xml:id="wec-329-trans" xml:lang="de" corresp="#wec-329-orig">
+          <p>Reibe vom besten Käse, wie vorher beschrieben, zwei oder drei gute Handvoll, je nachdem, wie viel oder wie wenig du machen willst, in ein passendes Gefäß. Hast du keine Fleischbrühe, oder isst jemand kein Fleisch, so nimm Wasser, das gut kocht, so viel, wie du für die Suppe brauchst.</p>
+          <p>Gieße die kochende Flüssigkeit über den geriebenen Käse. Er läuft zusammen. Drücke ihn dann mit dem Löffel aus und lass die Brühe davon in ein Häfelein laufen. Gieße mehr Flüssigkeit daran, drücke und knete den Käse gut durch, bis du siehst, dass gar keine Kraft mehr darin ist.</p>
+          <p>Dann setze die Brühe zum Feuer. Gib heißes Schmalz hinein, dazu Safran und Muskatblüte, und salze sie recht. Rühre sie langsam, bis sie siedet. Willst du, so lass sie so.</p>
+          <p>Wenn jemand nicht gern gewürzt isst, nimm ein wenig gestoßenen Pfeffer oder Kümmel, dazu etwa das Gelb von einem Ei, je nach Gelegenheit. Weil alles Grobe davon abgeht, sind diese Suppen unschädlich. So macht man sie vom weißen und vom grünen Schweizerkäse.</p>
+          <p>Noch viele andere und mancherlei Speisen werden aus Käse und Ziger bereitet. Wegen ihrer Grobheit lasse ich sie unbeschrieben. Denn wie schon mehrfach gesagt, ist es nicht mein Vorhaben, alle seltsame Schleckerei zu beschreiben, von der ich noch wohl ein Buch zusammenbringen könnte. Ich beschreibe nur das, was für Kranke und Schwangere dient, auch für Alte, die bisweilen mancherlei Gelüste haben, soweit es dort erlaubt werden kann.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="cheese" orig="dem beſten Kaͤß" commodity="wikidata:Q10943" source="#fyndling-ingredient-name">Käse, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="Fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="ein heiß Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="Muſcatbluͤh" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltz es recht" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein wenig geſtoſſen Pfeffer oder Kuͤmmel/ etwa das Gelb von einem Ey">Pfeffer oder Kümmel, gestoßen, und 1 Eigelb (optional, für wenig Gewürztes)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-329-trans" resp="#fyndling">Praxis. Als Richtwert auf zwei Handvoll geriebenen Hartkäse etwa 1 l kochende Brühe oder Wasser, in mehreren Portionen aufgegossen; der Text nennt keine Menge. Zum Würzen ein bis zwei Esslöffel Schmalz, eine Prise Safranfäden, eine Messerspitze Muskatblüte und Salz nach Geschmack, ebenfalls Richtwerte. Nur bis zum ersten Sieden rühren. Heraus kommt eine dünne, gelbe, würzige Brühe, keine sämige Käsesuppe.
+
+Pfeffer, Kümmel, Eigelb. Ob Pfeffer oder Kümmel statt Safran und Muskatblüte oder zusätzlich kommen, lässt der Satz offen. Das Eigelb nennt Wecker ohne Verfahren; am schlichtesten rührt man es in die siedende Brühe. Wer Flocken vermeiden will, verquirlt es vorher mit einer Kelle heißer Brühe (modernes Hilfsmittel).</note>
+        <note type="gloss" target="#wec-329-orig" n="Kindbetterin" resp="#fyndling">Wöchnerin, eine Frau nach der Geburt.</note>
+        <note type="gloss" target="#wec-329-orig" n="Haͤfelein" resp="#fyndling">Kleiner Topf (Verkleinerung zu „Hafen“), hier das Sammelgefäß für die ausgedrückte Brühe.</note>
+        <note type="gloss" target="#wec-329-orig" n="weiſſen vnd gruͤnen Schweizerkaͤß" resp="#fyndling">Der Text nennt nur die Farbe. Welche Sorten gemeint sind, bleibt offen.</note>
+        <note type="gloss" target="#wec-329-orig" n="Zuͤger" resp="#fyndling">Ziger, ein Molkenkäse.</note>
+        <note type="interpretive_choice" target="#wec-329-orig" n="truck vnd knitt den Kaͤß wol/ biß du ſiheſt daß gar kein Krafft mehr darinnen iſt" resp="#fyndling" subtype="contextual">Nur die ausgedrückte Brühe kommt ans Feuer, der ausgelaugte Käse bleibt zurück. Das folgt aus „gar kein Krafft mehr“ und aus der Begründung, dass „alle grobe Materia“ abgeht. Ausdrücklich sagt der Text nicht, was mit der Käsemasse geschieht.<list type="alternatives"><item>Die Käsemasse kommt am Ende mit in die Suppe.<note type="rationale">Wörtlich nicht ausgeschlossen, widerspricht aber Weckers Begründung, die Suppe sei unschädlich, weil das Grobe abgeht.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-329-orig" n="nimb ein wenig geſtoſſen Pfeffer oder Kuͤmmel" resp="#fyndling" subtype="contextual">Anstelle von Safran und Muskatblüte, für alle, die „nicht gern gewuͤrtzt“ essen: „ein wenig“ deutet auf eine schwächere Würzung.<list type="alternatives"><item>Zusätzlich zu Safran und Muskatblüte.<note type="rationale">Der Satz schließt lose mit „wann auch etwan“ an und kann eine Ergänzung einleiten.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>
