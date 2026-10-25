@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rebhuhnpastete mit Pomeranzen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-418/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-418</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-418">
+        <head>Rebhuhnpastete mit Pomeranzen</head>
+        <div type="original" xml:id="wec-418-orig" xml:lang="de-x-fnhd" corresp="#wec-418-trans">
+          <p>Folgen die Paſteten.
+
+NJmb Rebhuͤner vnnd andere/ welche du wilt oder haſt/ bereits an einem Spieß/ brats ſchoͤn/ ſchneid zuvor Pomerantzen zu viertheilen vnd halben viertheilen/ verſaltzs nit/ ſtoß Rindern marck in die Huͤner/ vermachs wie oben gehoͤrt/ wann ſie gebraten/ legs in einen bereiten Paſtetenhafen/ zuvor aber habe in wenig Zimet vund gerieben Brot/ vnnd ein wenig Jngwer vntereinander/ damit beſtrewe den Boden wol im Paſtetenhafen/ dann lege die Huͤner darein/ vnnd betreuffe ſie wol mit einer oder zwo friſchen Pomerantzen/ darnach thu ſie in den Ofen/ inn dem aber der hafen verhartet/ nimb die bruͤh ſo in der Bratpfannen geweſen/ iſt der nicht genug/ daß gemeiniglich geſchicht/ nimb darunder ein Malvaſier oder andern ſolchen Wein/ thu darzu was recht iſt auch bruͤh von ſolchen vorgeſchꝛiebnen Aepffeln/ darnach ein wenig Fleiſchbruͤh/ laß vndereinander ſieden mache in den Paſtetendeckel oben ein Loͤchlein/ daß ein Truͤchterlein mit einem kleinen Roͤhrlein hinein moͤge/ geuß die ſiedende Bruͤh darein/ ſtells wider in den ofen ein halbe ſtund/ als dann nimb ſie wider herauß/ thu ſie auff/ ſtell von den bereiten Aepffeln zwiſchen die Huͤner/ rings vmb vnd einen in die mitten/ begeuß mit der bruͤh/ laß auff ein halb viertheilſtund noch in dem ofen/ darnach trags fuͤr.</p>
+        </div>
+        <div type="translation" xml:id="wec-418-trans" xml:lang="de" corresp="#wec-418-orig">
+          <p>Nimm Rebhühner und andere Vögel, welche du willst oder hast, bereite sie an einem Spieß und brate sie schön. Schneide zuvor Pomeranzen in Viertel und halbe Viertel. Versalze es nicht. Stoße Rindermark in die Hühner und verschließe sie, wie oben gehört.</p>
+          <p>Wenn sie gebraten sind, lege sie in einen vorbereiteten Pastetentopf. Zuvor aber vermische ein wenig Zimt und geriebenes Brot und ein wenig Ingwer und bestreue damit den Boden im Pastetentopf gut. Dann lege die Hühner hinein, beträufle sie gut mit einer oder zwei frischen Pomeranzen und schiebe sie danach in den Ofen.</p>
+          <p>Während der Pastetentopf hart wird, nimm die Brühe, die in der Bratpfanne gewesen ist. Ist sie nicht genug, was gewöhnlich geschieht, nimm einen Malvasier oder einen anderen solchen Wein darunter, gib so viel dazu, wie recht ist, auch Brühe von den zuvor beschriebenen Äpfeln, danach ein wenig Fleischbrühe, und lass alles miteinander sieden.</p>
+          <p>Mache oben in den Pastetendeckel ein kleines Loch, sodass ein kleiner Trichter mit einem kleinen Röhrchen hineinpasst. Gieße die siedende Brühe hinein und stelle die Pastete wieder für eine halbe Stunde in den Ofen.</p>
+          <p>Nimm sie dann wieder heraus und öffne sie. Stelle von den vorbereiteten Äpfeln zwischen die Hühner, rundherum, und einen in die Mitte. Begieße alles mit der Brühe, lass die Pastete noch eine halbe Viertelstunde im Ofen und trage sie danach auf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="partridge" orig="Rebhuͤner vnnd andere/ welche du wilt oder haſt" commodity="wikidata:Q26106" source="#fyndling-ingredient-name">Rebhühner (oder anderes Geflügel)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Pomerantzen zu viertheilen vnd halben viertheilen">Pomeranzen (Bitterorangen), frisch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Rindern marck">Rindermark</ingredient>
+            </item>
+            <item>
+              <ingredient orig="in wenig Zimet vund gerieben Brot/ vnnd ein wenig Jngwer">Zimt, geriebenes Brot und Ingwer (für den Boden)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="von den bereiten Aepffeln">Pomeranzen in Zuckersirup (nach wec-417), mit ihrem Sirup</ingredient>
+            </item>
+            <item>
+              <ingredient en="malvasia" orig="ein Malvaſier oder andern ſolchen Wein" commodity="wikidata:Q1165349" source="#fyndling-ingredient-name">Malvasier</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="ein wenig Fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="einen bereiten Paſtetenhafen">Pastetenteig für Schale und Deckel</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-418-trans" resp="#fyndling">Praxis. Die Vögel am Spieß braten und die Bratbrühe in der Pfanne auffangen. Einen Teig nennt der Text nicht: Schale und Deckel aus festem Pastetenteig (Mehl, Fett, Wasser) formen, den Deckel nach dem Einlegen der Vögel auflegen und ein Loch für einen kleinen Trichter lassen. Als Anhalt bei etwa 180 bis 200 °C backen, bis die Schale fest ist, dann die siedende Brühe eingießen und eine halbe Stunde weiterbacken; nach dem Öffnen und Belegen noch eine halbe Viertelstunde, also 7 bis 8 Minuten. Die Brühmenge so bemessen, dass sie durch das Loch einzieht und nicht überläuft.
+
+Pomeranzenviertel. Wohin die vorab geschnittenen Viertel kommen, sagt der Text nicht. Naheliegend ist, sie mit dem Rindermark in die Vögel zu stecken.</note>
+        <note type="gloss" target="#wec-418-orig" n="Aepffeln" resp="#fyndling">Gemeint sind die in Zucker haltbar gemachten Pomeranzen aus wec-417, die Wecker dort durchgehend „Äpfel“ nennt (der „innere Apfel“ in seiner Rinde); die „Brühe“ davon ist ihr Zuckersirup. Auch wec-419 schneidet „Pomeranzen, wie vorher zu dem Einmachen gelehrt“, und stellt dann „die Äpfel“ dazwischen.</note>
+        <note type="gloss" target="#wec-418-orig" n="Pomerantzen" resp="#fyndling">Bitterorangen (Sevilla-Orangen), deutlich saurer als heutige Süßorangen.</note>
+        <note type="gloss" target="#wec-418-orig" n="Paſtetenhafen" resp="#fyndling">„Hafen“ ist sonst der Topf. Bei Pasteten meint Wecker die aus Teig aufgezogene Schale mit Teigdeckel, im Lesetext „Pastetentopf“; hier wird sie im Ofen hart („verhartet“), bevor die Brühe durch ein Loch im Deckel eingegossen wird. Ein Tongefäß nennt Wecker ausdrücklich „irden“.</note>
+        <note type="gloss" target="#wec-418-orig" n="vermachs wie oben gehoͤrt" resp="#fyndling">Wohl Verweis auf den Kapaun in wec-413: Dort wird Rindermark in den Vogel gestoßen und die Öffnung mit einer guten Handvoll Petersilie zugesetzt, „daß das Feiste nicht heraus treiffe“; auch „versalz ihn nicht“ steht dort und bezieht sich auf den Vogel.</note>
+        <note type="interpretive_choice" target="#wec-418-orig" n="vorgeſchꝛiebnen Aepffeln / bereiten Aepffeln" resp="#fyndling" subtype="contextual">Die in Zucker haltbar gemachten Pomeranzen aus wec-417 und deren Sirup. Wecker nennt die Pomeranzen dort durchgehend „Äpfel“, wec-413 setzt an dieselbe Stelle (rings um das Geflügel) ausdrücklich „eingemachte Pomeranzen“ mit ihrer Brühe, und wec-419 spricht im selben Satzzusammenhang erst von Pomeranzen, dann von „den Äpfeln“. Im Lesetext bleibt wörtlich „Äpfel“.<list type="alternatives"><item>Gewöhnliche Äpfel, nach einem anderen Rezept vorbereitet.<note type="rationale">So liest man das Wort heute. Dagegen spricht, dass das unmittelbar vorausgehende Rezept die Pomeranzen selbst „Äpfel“ nennt und kein Apfelrezept als „vorgeschrieben“ genannt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-418-orig" n="Pomerantzen zu viertheilen vnd halben viertheilen" resp="#fyndling" subtype="contextual">Wörtlich übersetzt; wohin die vor dem Braten geschnittenen Stücke kommen, sagt der Text nicht. Naheliegend ist die Füllung der Vögel zusammen mit dem Rindermark, weil beides vor dem Braten steht.<list type="alternatives"><item>Die Stücke dienen zum Beträufeln der Vögel in der Pastete.<note type="rationale">Kurz darauf werden die Hühner „mit einer oder zwei frischen Pomeranzen“ beträufelt; beim Kapaun in wec-413 wird der Saft ebenfalls auf den Vogel geträufelt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

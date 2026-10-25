@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Durchgetriebenes Gerstenmus für Kranke</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-008/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-008</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-008">
+        <head>Durchgetriebenes Gerstenmus für Kranke</head>
+        <div type="original" xml:id="wec-008-orig" xml:lang="de-x-fnhd" corresp="#wec-008-trans">
+          <p>Ein ander form diſes Eſſens.
+
+WAnn jetzt die Gerſten bereit/ vnd wie vorgelehrt/ geſotten iſt (ſie darff auch ſo gar genaw nicht abgeſottẽ ſeyn als zuvor/ vnnd je glaͤtter je beſſer/ dann die groß iſt an jhr ſelbſt nicht viel nuͤtz/ ein ſchwacher magen kans nicht wol deuwen/ der ſchleim iſt das beſte/ vnd wo man die nach dem ſieden abwaͤſcht/ iſt ſie nit viel nuͤtz/ der halben ſol ſie zuvoꝛ/ wie gehoͤrt/ wol abgebruͤht vnd gerieben werden) ſo thu ſie in ein ſauber tuch/ das nicht zu dick/ auch nicht zu duͤnn/ treibs durch/ was durch gehet/ haſtu genug/ wol gut/ haſtu nicht genug/ ſo nimb von der gerſten/ ſo im durchſchlag bleibt in ein moͤrſel/ ſtampffs wol darvon/ treibs mit der ſachen/ damit du es kochen wilt/ beſſer durch/ daß das grobe dahinden bleibet. Vnd dann hab ein wolzugerichte Mandelmilch/ der thu ein klein wenig vnder die durchtriebne gerſten/ die halte vber das fewer/ vnnd treib ein eyerdotter zween oder drey/ nach dem du vil oder wenig machſt/ darein/ wann die milch ſieden wil/ ſo geuß angemachten zeug darein/ ruͤhres biß es kocht/ ſaltze es ein wenig (es ſol auch voꝛher wann die milch mit waſſer zubereit iſt/ ein ſchmaltz in der pfann heiß gemacht werden/ wann man die milch darein thut) ſo es dann kochet/ ſo zuckers auch thu ein wenig wild Roſenwaſſer daran/ es iſt allezeit deſto kraͤfftiger/ jedoch muß mann ein ding zu zeiten veraͤndern daß die krancken nicht vnluſtig werden/ dann es ligt nicht wenig daran/ daß der krancken koch wiſſe/ zu mindern vnnd zu mehren/ daß es doch ſeine art nicht verliere. Alſo magſtu zu zeiten/ wann man die eyer verbeut/ dieſelben auch her auſſen laſſen/ wiewol der gerſten an jhr ſelſt ſo viel iſt/ daß ein doͤtterlein nicht viel thun mag/ beſondern wo man Roſenwaſſer darein thut/ das den eyern die krafft nim̃t (ich hab offt nur ein halbes genommen/ dann den krancken darff man nicht groſſe haͤfen voll kochen/ ſie werden ſonſt vnluſtig) vnd alſo magſtu es mit einer fleiſch bruͤh zurichten/ vnd wo groſſe verſtopffung iſt auch in der Ruhr/ ſo ſeud Kalbfleiſch/ die knoden oder fuͤß ſeynd am beſten/ dann von wegen jhrer ſchlipffrigkeit lindern ſie/ heilen vnnd fuͤren auß/ darumb ſie auch in Bruſt vnd Lungenſucht nuͤtzlich ſein: So du aber gute Koppen oder Huͤner bruͤh haſt/ vnnd die hitze groß were/ ſo ſeud Lattich/ Saurampffer vnd Burrabey darmit/ welche kuͤhlet/ reiniget das gebluͤt/ vnd machet wol ſchlaffen/ vnd dañ richte es gleichfals zu Alſo kanſtu es mit einer gar laͤutern erbesbruͤ zurichten/ wie je ein ding zur hand/ oder die krancken aͤſſig oder vnaͤſſig ſeynd (man muß manchs fuͤr die hand nemen mit vnaͤſſigen kranckẽ/ daß man ſie bey kraͤfften behalte.) Vnd ſo kanſtu es zu einem ſuͤplein zurichten/ vnd wann die krancken kein brot eſſen/ ſo ſeihe vnnd treib allzeit ein broͤſelein brot/ welches zuvoꝛ geweicht ſeyn ſol mit angezeigten ſachen/ mit durch/ es gibt groſſe krafft.</p>
+        </div>
+        <div type="translation" xml:id="wec-008-trans" xml:lang="de" corresp="#wec-008-orig">
+          <p>Wenn die Gerste fertig ist und wie zuvor beschrieben gekocht wurde, braucht sie nicht ganz so genau ausgekocht zu sein wie beim ersten Mal, und je glatter, desto besser. Denn die grobe Gerste ist an sich nicht viel nütze, ein schwacher Magen kann sie nicht gut verdauen. Der Schleim ist das Beste. Wäscht man die Gerste nach dem Sieden ab, taugt sie nicht viel. Deshalb soll sie vorher, wie gehört, gut abgebrüht und gerieben werden.</p>
+          <p>Gib die Gerste in ein sauberes Tuch, das nicht zu dick und nicht zu dünn ist, und treibe sie durch. Hast du von dem, was durchgeht, genug, ist es gut. Hast du nicht genug, so nimm von der Gerste, die im Durchschlag bleibt, in einen Mörser und stampfe sie gut. Treibe sie dann mit dem, womit du es kochen willst, noch besser durch, sodass das Grobe zurückbleibt.</p>
+          <p>Dann halte eine gut zubereitete Mandelmilch bereit und gib ein klein wenig davon unter die durchgetriebene Gerste. Halte sie über das Feuer und rühre zwei oder drei Eidotter hinein, je nachdem, ob du viel oder wenig machst. Wenn die Milch sieden will, gieße die angemachte Masse hinein und rühre, bis es kocht. Salze es ein wenig. Ist die Milch mit Wasser angesetzt, soll vorher in der Pfanne ein Schmalz heiß gemacht werden, wenn man die Milch hineingibt. Wenn es dann kocht, zuckere es und gib auch ein wenig wildes Rosenwasser daran. Es ist allezeit umso kräftiger.</p>
+          <p>Doch muss man ein Gericht bisweilen abwandeln, damit die Kranken nicht lustlos werden. Denn es liegt nicht wenig daran, dass der Krankenkoch zu mindern und zu mehren weiß, ohne dass das Gericht seine Art verliert. So kannst du bisweilen, wenn man die Eier verbietet, sie auch weglassen, obwohl an der Gerste selbst so viel ist, dass ein Dötterlein nicht viel ausmacht, besonders wenn man Rosenwasser dazugibt, das den Eiern die Kraft nimmt. Ich habe oft nur ein halbes genommen, denn den Kranken darf man nicht große Töpfe voll kochen, sonst werden sie lustlos.</p>
+          <p>So kannst du es auch mit einer Fleischbrühe zubereiten. Bei starker Verstopfung und auch bei der Ruhr siede Kalbfleisch, die Knoden oder Füße sind am besten. Denn wegen ihrer Schlüpfrigkeit lindern sie, heilen und führen aus, und deshalb sind sie auch bei Brust- und Lungensucht nützlich. Hast du aber gute Kapaun- oder Hühnerbrühe und ist die Hitze groß, so siede Lattich, Sauerampfer und Borretsch darin mit. Das kühlt, reinigt das Blut und lässt gut schlafen. Danach richte es ebenso zu.</p>
+          <p>So kannst du es auch mit einer ganz klaren Erbsenbrühe zubereiten, je nachdem, was gerade zur Hand ist und ob die Kranken Appetit haben oder nicht. Bei Kranken ohne Appetit muss man vieles zur Hand nehmen, um sie bei Kräften zu halten. Und so kannst du es auch zu einem Süpplein zurichten. Essen die Kranken kein Brot, so seihe und treibe immer ein Bröslein Brot mit durch, das zuvor mit den genannten Zutaten eingeweicht sein soll. Es gibt große Kraft.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="barley" orig="die Gerſten" commodity="wikidata:Q27660203" source="#corema-ingredient-index">Gerste, gebrüht, gerieben und gesotten (wie in wec-007)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein wolzugerichte Mandelmilch">Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient en="yolk" orig="ein eyerdotter zween oder drey" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eidotter</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein ſchmaltz in der pfann heiß gemacht">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltze es ein wenig" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="ſo zuckers" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="ein wenig wild Roſenwaſſer" commodity="wikidata:Q900450" source="#corema-ingredient-index">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Abwandlungen je nach Zustand der Kranken (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-008-trans" resp="#fyndling">Praxis. Die Gerste wie in wec-007 brühen, reiben und weich sieden, dann portionsweise durch ein mittelfeines Tuch drücken; den Rest im Mörser stampfen und mit der Kochflüssigkeit nachtreiben. Die Mengen nennt der Text nicht: Als moderner Anhaltspunkt etwa ein Teil durchgetriebene Gerste auf zwei Teile Mandelmilch, ein Löffel Schmalz und Zucker nach Geschmack. Die Dotter über dem Feuer in die Gerste rühren, die Masse in die gerade siedende Mandelmilch geben und unter ständigem Rühren nur kurz aufkochen lassen (moderner Rat, damit die Dotter nicht gerinnen). Rosenwasser zuletzt.</note>
+        <note type="gloss" target="#wec-008-orig" n="knoden" resp="#fyndling">Knoten, Gelenkknorren (Lexer knode; Fischer „knoden oder knorren“): das Gelenkende, hier vom Kalb neben den Füßen.</note>
+        <note type="gloss" target="#wec-008-orig" n="Koppen" resp="#fyndling">Kapaune (Lexer kappûn, koppe); das Buch nennt sie oft neben Hühnern als Brühenfleisch.</note>
+        <note type="interpretive_choice" target="#wec-008-orig" n="wild Roſenwaſſer" resp="#fyndling" subtype="lexical" cert="unknown">Wörtlich „wildes Rosenwasser“. Das Wort steht im Buch nur hier, und kein Wörterbuch erklärt die Verbindung; was „wild“ meint, bleibt offen.<list type="alternatives"><item>Rosenwasser aus wilden Rosen (Heckenrosen)<note type="rationale">Naheliegender Wortsinn, aber nirgends belegt.</note></item><item>besonders starkes, kräftiges Rosenwasser<note type="rationale">Passt zu „es ist allezeit umso kräftiger“ im selben Satz, ist aber ebenfalls unbelegt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

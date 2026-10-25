@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gerste in Milch, gewöhnliche Form</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-010/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-010</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-010">
+        <head>Gerste in Milch, gewöhnliche Form</head>
+        <div type="original" xml:id="wec-010-orig" xml:lang="de-x-fnhd" corresp="#wec-010-trans">
+          <p>Ein Gerſten mit Milch in gemein.
+
+WAnn die Gerſten wol geſotten/ ſo waſche ſie ab/ wie ſonſt/ vnd thu ſie in ein ſiedende Milch/ ſeyhe ſie ab von Mandeln/ oder ſonſt eine gute Milch/ vnd dann kanſtu ein klein ſchoͤn meel darein brennen/ wanns rocht magſtu es zuckern/ ſo du wilt/ auch wol in einer Milch ſieden biß auff jhr ſtatt/ darnach in eine ſchuͤſſel thun/ vnd ein gute wol zubereite Mandelmilch alſo ſiedend daruͤber gieſſen/ biß dienet wol denen die grober natur/ ſo nicht mit geringen ſubtilen ſachen zuerſpeiſen ſeynd/ denen kompt offt ein dicker haberbrey recht/ ſonſten wann die Gerſten abgewaſchen/ ſo iſt die beſte krafft vnd nuͤtz darvon/ wañ das Korn vom halm faͤlt/ bleibt dir nichts dann ein leer ſtro zum ſtrewen/ wanns gleich das viech bißweilen eſſen muß/ gibts nicht vil Milch noch ſchmaltz.</p>
+        </div>
+        <div type="translation" xml:id="wec-010-trans" xml:lang="de" corresp="#wec-010-orig">
+          <p>Wenn die Gerste gut gesotten ist, so wasche sie ab wie sonst und gib sie in eine siedende Milch - seihe sie von den Mandeln ab, oder sonst eine gute Milch. Dann kannst du ein wenig feines Mehl hineingeben. Wenn es kocht, magst du es zuckern, wenn du willst.</p>
+          <p>Man kann sie auch in einer Milch sieden, bis sie so weit ist, danach in eine Schüssel geben und eine gute, wohlzubereitete Mandelmilch siedend darübergießen.</p>
+          <p>Das dient gut denen, die von grober Natur sind und mit geringen, feinen Sachen nicht zu sättigen sind. Denen kommt oft ein dicker Haferbrei recht.</p>
+          <p>Sonst: Wenn die Gerste abgewaschen ist, so ist die beste Kraft und der Nutzen davon. Wenn das Korn vom Halm fällt, bleibt dir nichts als ein leeres Stroh zum Streuen; auch wenn das Vieh es bisweilen fressen muss, gibt es nicht viel Milch noch Schmalz.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="barley" orig="die Gerſten wol geſotten" commodity="wikidata:Q27660203" source="#corema-ingredient-index">Gerste, gesotten und abgewaschen</ingredient>
+            </item>
+            <item>
+              <ingredient en="milk" orig="ein ſiedende Milch" commodity="wikidata:Q8495" source="#fyndling-ingredient-registry">Milch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein gute wol zubereite Mandelmilch">Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein klein ſchoͤn meel">Mehl, fein</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="magſtu es zuckern/ ſo du wilt" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker (nach Belieben)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-010-trans" resp="#fyndling">Praxis. Gerste wie in wec-006 bis wec-008 vorbereiten und weich sieden, waschen und in siedende Milch oder Mandelmilch geben. Mengen nennt der Text nicht: Mehl nur „ein klein“, als leichte Bindung, Zucker nach Belieben, wenn es kocht. Für die zweite Form die Gerste in Milch gar sieden, in eine Schüssel geben und siedende Mandelmilch darübergießen.
+
+Mehl. Ob es roh in die Milch kommt oder vorher angeröstet wird, sagt der Text nicht. Ohne genanntes Fett liegt das direkte Einstreuen in die siedende Milch am nächsten.</note>
+        <note type="gloss" target="#wec-010-orig" n="in gemein" resp="#fyndling">Im Allgemeinen, auf gewöhnliche Art.</note>
+        <note type="gloss" target="#wec-010-orig" n="biß dienet wol" resp="#fyndling">Gelesen als „diß“ (dies): Mit „bis“ hätte „dienet“ kein Subjekt.</note>
+        <note type="gloss" target="#wec-010-orig" n="grober natur" resp="#fyndling">Nach der Säftelehre ihrer Zeit Leute von kräftiger Konstitution, die von feiner Kost nicht satt werden.</note>
+        <note type="gloss" target="#wec-010-orig" n="zuerſpeiſen" resp="#fyndling">Aus dem Satz als „sättigen, mit Speise versorgen“ gelesen; ein Wörterbuchbeleg für das Wort fehlt.</note>
+        <note type="interpretive_choice" target="#wec-010-orig" n="meel darein brennen" resp="#fyndling" subtype="lexical">Das Mehl kommt in die siedende Milch („darein“) und bindet sie; der Text nennt hier kein Fett.<list type="alternatives"><item>Das Mehl wird vorher angeröstet, trocken oder in Fett, und dann zugegeben.<note type="rationale">Sonst „brennt“ Wecker Mehl im Schmalz, „nicht braun“ (wec-104, wec-148, wec-185); Lexer „ane brennen“: durch geröstetes Mehl schmackhaft machen.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-010-orig" n="wanns rocht" resp="#fyndling" subtype="philological">„rocht“ als Druckfehler für „kocht“ (r für k): erst zuckern, wenn es kocht. So auch wec-006 „wilt du es zuckern/ wanns gekocht iſt“ und wec-008 „ſo es dann kochet/ ſo zuckers“.<list type="alternatives"><item>„wenn es recht ist“, also nach Belieben.<note type="rationale">„rocht“ als Lautform von „recht“; der Druck zeigt ein r. Eine solche Form ist im Buch sonst nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-010-orig" n="ſo iſt die beſte krafft vnd nuͤtz darvon" resp="#fyndling" subtype="contextual" cert="unknown">„darvon“ = weg: Ist die Gerste abgewaschen, ist die beste Kraft dahin, wie beim Korn, das vom Halm fällt und nur leeres Stroh zurücklässt. In wec-008 nennt Wecker nach dem Sieden abgewaschene Gerste „nit viel nuͤtz“, der Schleim sei das Beste.<list type="alternatives"><item>„darvon“ = daraus: Von der abgewaschenen Gerste kommt die beste Kraft und der Nutzen.<note type="rationale">Das Rezept selbst lässt die gesottene Gerste „wie ſonſt“ abwaschen; das Strohbild hieße dann, die Kraft liege im Korn, nicht in der Hülle.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hühnlein mit Kräutern und Semmelbröseln für Kranke</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-404/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-404</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-404">
+        <head>Hühnlein mit Kräutern und Semmelbröseln für Kranke</head>
+        <div type="original" xml:id="wec-404-orig" xml:lang="de-x-fnhd" corresp="#wec-404-trans">
+          <p>Anderſt.
+
+WAnn du das Huͤnlein zuſetzeſt/ ſo thu es mit lauterm Waſſer zu/ vnd wanns verſchaumbt/ ſo reib weiß brot/ es iſt allzeit nuͤtzer/ man ſey mit gedoͤrtem vnnd geſtoſſenem Semmelbrot gefaſt/ ein halbe Eyerſchalen voll/ vnnd wirffs in heiß Schmaltz/ laß nicht lang roͤſten/ thu es gleich daran/ wann es dann halb geſotten/ ſo reinig vñ waſch aber Kraͤuter/ ſo gut du ſie haſt/ in allweg ſchwing das Waſſer wol darvon/ es macht ſonſt ein ding krafftloß/ hacks mit Peterlein vnnd Thimion klein/ thu es an das Huͤnlein/ vnd wuͤrtz es mit ſuͤſſer Wuͤrtz vnd Saffran/ oder Pfeffer vnnd Saffran allein/ wiltu dann/ ſo thu halb Wein vnnd Waſſer daran/ in allweg in ein Haͤfelein das eben recht/ vnd wann das ab ſeud/ ſo gehet das kraut darzu/ darnach ſeuds vollends/ ſo wird dañ die bruͤh auch recht. Nu ſo du das mit halb Wein zugeſetzt/ ſo bereits darnach wie zuvor/ vnd thu auch Weinberlein vnd Roſinlein darzu/ gibs demkrancken.</p>
+        </div>
+        <div type="translation" xml:id="wec-404-trans" xml:lang="de" corresp="#wec-404-orig">
+          <p>Wenn du das Hühnlein aufsetzt, so setze es mit klarem Wasser zu, und wenn es abgeschäumt ist, so reibe Weißbrot. Es ist immer nützlicher, wenn man mit gedörrtem und zerstoßenem Semmelbrot versehen ist: eine halbe Eierschale voll, und wirf es in heißes Schmalz. Lass es nicht lange rösten, gib es gleich daran.</p>
+          <p>Wenn es dann halb gesotten ist, so putze und wasche aber Kräuter, so gut du sie hast. Schwinge auf jeden Fall das Wasser gut davon ab, sonst macht es ein Ding kraftlos. Hacke sie mit Petersilie und Thymian klein, gib es an das Hühnlein und würze es mit süßen Gewürzen und Safran oder mit Pfeffer und Safran allein.</p>
+          <p>Willst du dann, so gib halb Wein und Wasser daran, auf jeden Fall in ein Töpfchen, das gerade recht ist, und wenn das einkocht, so kommt das Kraut dazu. Danach siede es vollends, so wird dann auch die Brühe recht.</p>
+          <p>Wenn du es nun mit halb Wein aufgesetzt hast, so bereite es danach wie zuvor und gib auch Weinbeeren und Rosinen dazu. Gib es dem Kranken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken" orig="Huͤnlein" commodity="wikidata:Q864693" source="#corema-ingredient-index">Huhn</ingredient>
+            </item>
+            <item>
+              <ingredient orig="weiß brot">Weißbrot, gerieben, oder gedörrtes, zerstoßenes Semmelbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="heiß Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Kraͤuter">Kräuter, dazu Petersilie und Thymian</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſuͤſſer Wuͤrtz">Süße Gewürze oder Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="halb Wein vnnd Waſſer" commodity="wikidata:Q282" source="#fyndling-ingredient-registry">Wein (für die Weinfassung, halb mit Wasser)</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Weinberlein vnd Roſinlein" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen (für die Weinfassung)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-404-trans" resp="#fyndling">Praxis. Das Hühnlein knapp mit Wasser bedeckt aufsetzen und abschäumen. Weißbrot reiben oder vorrätige, gedörrte und zerstoßene Semmel nehmen, so viel wie eine halbe Eierschale fasst, kurz in heißem Schmalz rösten und gleich in den Topf geben. Ist das Huhn halb gar, die gewaschenen und gut abgeschwungenen Kräuter mit Petersilie und Thymian hacken, dazugeben, mit süßen Gewürzen und Safran oder mit Pfeffer und Safran würzen und fertig sieden. Mengen, Garzeit und Hitze nennt der Text nicht; ein junges Huhn braucht bei schwacher Hitze etwa eine Stunde (Schätzung).
+
+Mit Wein. Statt mit Wasser setzt man das Huhn mit halb Wein, halb Wasser in einem passend kleinen Topf auf. Laut Text kommt das Kraut hier erst, wenn die Flüssigkeit eingekocht ist; danach fertig sieden und Weinbeeren und Rosinen dazugeben.</note>
+        <note type="gloss" target="#wec-404-orig" n="Eyerſchalen" resp="#fyndling">Maß: so viel, wie eine halbe Eierschale fasst.</note>
+        <note type="gloss" target="#wec-404-orig" n="ſuͤſſer Wuͤrtz" resp="#fyndling">Süße Gewürze im Gegensatz zum Pfeffer. Welche, sagt der Text nicht.</note>
+        <note type="gloss" target="#wec-404-orig" n="Weinberlein vnd Roſinlein" resp="#fyndling">Weinbeeren sind bei Wecker getrocknete Trauben, also Rosinen; sie nennt hier beide Verkleinerungsformen nebeneinander, wie in wec-304.</note>
+        <note type="interpretive_choice" target="#wec-404-orig" n="reib weiß brot … Semmelbrot" resp="#fyndling" subtype="contextual">Eine Brotzugabe: geriebenes Weißbrot, besser noch vorrätiges, gedörrtes und zerstoßenes Semmelbrot, eine halbe Eierschale voll, kurz in heißem Schmalz geröstet und gleich an das Huhn gegeben. „es ist allzeit nützer“ schließt an das Weißbrot an und nennt die bessere Form desselben Brots.<list type="alternatives"><item>Zwei Zugaben: rohes geriebenes Weißbrot nach dem Abschäumen in die Brühe, dazu die in Schmalz gerösteten Semmelbrösel<note type="rationale">„so reib weiß brot“ steht als eigener Satz, und der Text sagt nicht, wohin das geriebene Brot kommt.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-404-orig" n="ab ſeud" resp="#fyndling" subtype="lexical">„einkochen“: FWB absieden ‚etw. durch Sieden eindicken‘. Erst wenn Wein und Wasser eingekocht sind, kommt das Kraut dazu.<list type="alternatives"><item>„aufkochen, abkochen“: das Kraut kommt, sobald die Flüssigkeit siedet<note type="rationale">DWB absieden ‚decoquere‘, Laschborchling ‚abkochen‘; der Unterschied betrifft nur den Zeitpunkt der Kräuter.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
