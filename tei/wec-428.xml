@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hasenpastete, alt und jung</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-428/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-428</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-428">
+        <head>Hasenpastete, alt und jung</head>
+        <div type="original" xml:id="wec-428-orig" xml:lang="de-x-fnhd" corresp="#wec-428-trans">
+          <p>Paſteten von alten vnd jungen Haſen.
+
+DJe Haſen bruͤh auch mit halb Wein vnd Eſſig ab/ wie den Rehſchlegel/ ſpick ſie/ aber laß nicht fuͤr das Fleiſch gehen/ bloß daß man den ſpeck ſihet/ du wollſt jhn dann warm eſſen wuͤrtz jhn wol mit Pfeffer/ vnd ein wenig Naͤgelein/ du magſt Lemonien darzu thun/ wiltu/ mach jhn zu/ ſchoͤn wie ein Haß ſeyn ſolle. Merck/ daß man gemeiniglich einem das hinder nimbt/ daß man ſonſt bratet/ doch auch etwann gantz/ man ſol es auch zuvor haͤuten als wolt mans braten. Es iſt keine ſpeis fuͤr die krancken/ darvmb ſchreib ich nicht gern lang von zweyen vnd ſolchen ſachen/ es nimbt vil zeit/ vnd triffts doch der zehende im wenigſten nit/ wañ es gut/ mag es leicht huͤbſch ſeyn/ vermachs/ bachs auff zwo ſtundẽ/ alle Paſteten beſtreich mit eim wol zerklopfften Ey vnd Saffran/ aber wann es im ſchwartzen teighafen/ nur mit Schmaltz/ oder vertreib ein wenig weiß Meel mit warmen waſſer/ vnd ſchmirs/ wann ſie halb gebachen/ wie die Becken das Brot. Die jungen Haͤßlein mache gantz ein in hohe haͤfen/ wie die Tauben vnd Zungen.</p>
+        </div>
+        <div type="translation" xml:id="wec-428-trans" xml:lang="de" corresp="#wec-428-orig">
+          <p>Die Hasen brühe auch mit halb Wein und Essig ab, wie den Rehschlegel. Spicke sie, aber lass den Speck nicht über das Fleisch hinausgehen, nur so, dass man den Speck sieht. Willst du ihn dann warm essen, so würze ihn gut mit Pfeffer und ein wenig Nelken. Du kannst Zitronen dazutun, wenn du willst. Schließe ihn ein, schön, wie ein Hase sein soll.</p>
+          <p>Merke: Gewöhnlich nimmt man von einem Hasen das Hinterteil, das man sonst brät, manchmal aber auch den ganzen. Man soll ihn auch vorher häuten, als wollte man ihn braten.</p>
+          <p>Das ist keine Speise für die Kranken. Darum schreibe ich nicht gern lang von zweien und solchen Sachen: Es braucht viel Zeit, und doch trifft es nicht einmal der Zehnte auch nur im Geringsten. Wenn es gut ist, mag es vielleicht hübsch sein. Verschließe es und backe es zwei Stunden.</p>
+          <p>Alle Pasteten bestreiche mit einem gut verklopften Ei und Safran; ist es aber im schwarzen Teigtopf, nur mit Schmalz. Oder verrühre ein wenig weißes Mehl mit warmem Wasser und bestreiche sie damit, wenn sie halb gebacken sind, wie die Bäcker das Brot.</p>
+          <p>Die jungen Häschen schließe ganz in hohe Pastetentöpfe ein, wie die Tauben und Zungen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="hare" orig="Haſen" commodity="wikidata:Q55557452" source="#fyndling-ingredient-context">Hase</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb Wein vnd Eſſig">Wein und Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="bacon" orig="ſpeck" commodity="wikidata:Q11106" source="#corema-ingredient-index">Speck</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Pfeffer" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="ein wenig Naͤgelein" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="lemon" orig="du magſt Lemonien darzu thun" commodity="wikidata:Q1093742" source="#fyndling-ingredient-name">Zitronen (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="pie crust" orig="ſchwartzen teighafen" commodity="wikidata:Q5190246" source="#fyndling-ingredient-name">Pastetenteig</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="wol zerklopfften Ey" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Ei</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-428-trans" resp="#fyndling">Praxis. Teig und Abbrühen setzt das Rezept aus der Wildbretpastete wec-426 voraus: ein fester, gut gesalzener Teig aus Wasser, Mehl und Schmalz, für den „schwarzen“ Teigtopf aus dunklem Mehl. Wein und Essig zu gleichen Teilen aufkochen und über den gehäuteten Hasen gießen; in wec-426 wird ein junges Tier so drei- bis viermal überbrüht. Flach spicken, mit Pfeffer gut und mit Nelken sparsam würzen, Mengen nennt Wecker nicht. Die zwei Stunden Backzeit gelten für den alten Hasen; eine Hitze nennt der Text nicht, mittlere Hitze (etwa 180 °C) ist ein moderner Behelf. Junge Häschen nach Größe früher prüfen.</note>
+        <note type="gloss" target="#wec-428-orig" n="Rehſchlegel" resp="#fyndling">Rehkeule. Der Verweis zielt auf die Wildbretpastete wec-426: Dort wird der Schlegel von Hirsch oder Reh in Essig oder halb Wein, halb Essig gedünstet, ein junges Tier gehäutet und mehrmals mit siedendem Essig übergossen.</note>
+        <note type="gloss" target="#wec-428-orig" n="ſchwartzen teighafen" resp="#fyndling">„Hafen“ ist sonst der Topf. Bei Pasteten meint Wecker die aus Teig aufgezogene Schale, im Lesetext „Teigtopf“ bzw. „Pastetentopf“; ein Tongefäß nennt sie ausdrücklich „irden“, hier nicht. „Schwarz“ ist ein Teig aus dunklem Mehl, vgl. „pappen von ſchwartzen Meel“ in wec-426. Die „hohen häfen“ der jungen Häschen sind ebenso Teigschalen.</note>
+        <note type="gloss" target="#wec-428-orig" n="Lemonien" resp="#fyndling">Zitronen (FWB alemonie). Welchen Teil der Frucht Wecker meint, sagt sie nicht.</note>
+        <note type="gloss" target="#wec-428-orig" n="Becken" resp="#fyndling">Bäcker (Beck).</note>
+        <note type="interpretive_choice" target="#wec-428-orig" n="mach jhn zu/ ſchoͤn wie ein Haß ſeyn ſolle" resp="#fyndling" subtype="contextual">Die Pastete in Gestalt eines Hasen schließen. Der Vergleich gilt dem Tier („wie ein Hase sein soll“), und in der Wildbretpastete wec-426, auf die das Rezept verweist, sagt Wecker, man könne dem Schlegel eine Form geben, „daß er ſihet wie ein lebendiger Hirſch“. „Haß“ ist der Hase, wie „Haſen“ und „Haͤßlein“ im selben Rezept.<list type="alternatives"><item>Nur sauber und ordentlich verschließen, „schön“ im Sinn von gelungen.<note type="rationale">Der Satz nennt keinen eigenen Formungsschritt, und „mag es leicht huͤbſch ſeyn“ stellt das schöne Aussehen nur als Möglichkeit hin.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-428-orig" n="von zweyen vnd ſolchen ſachen" resp="#fyndling" subtype="contextual">Wörtlich „von zweien und solchen Sachen“, bezogen auf die beiden Pasteten dieses Rezepts, von alten und von jungen Hasen.<list type="alternatives"><item>Die Wildbret- und die Hasenpastete, oder allgemein „von zweierlei und dergleichen“.<note type="rationale">„zweyen“ hat im Satz kein Bezugswort; auch die unmittelbar vorangehende Wildbretpastete kommt in Frage.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

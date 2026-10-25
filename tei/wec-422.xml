@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kleine und große Vögel mit Äpfeln und Safran</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-422/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-422</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-422">
+        <head>Kleine und große Vögel mit Äpfeln und Safran</head>
+        <div type="original" xml:id="wec-422-orig" xml:lang="de-x-fnhd" corresp="#wec-422-trans">
+          <p>Ein faſt gut Eſſen von kleinen vnd groſſen Voͤgeln/ ſonderlich wann ſie alt ſeynd.
+
+NJmb die Voͤgelein/ ſo man Spießvoͤgelein heiſt/ als Fincken vnd dergleichen/ bereit vnd waſch ſie ſauber auß/ thu halb Wein vnd Waſſer daran/ vnnd laß einen wall th un darnach wirffs in heiß Schmaltz/ machs braun/ vnder deſſen ſchaͤle ſuͤſſe Aepffel/ oder andere die ſo hart ſind/ daß ſie nicht leichtlich zu einem Brey werden: Du magſt auch wol Birnen nemen/ die gar ſuͤß vnd geſchlacht ſind/ ſchneits wie Ruben/ nit groͤſſer/ wirffs darnach ins heiſſe Schmaltz/ vnd machs ſchoͤn Braun/ nach demſelben einwenig weiß brot/ thu den Zeug allen miteinander in eine kachel die recht/ vnd thu ſuͤſſe Wuͤrtz/ ſampt Saffran vnd der bruͤh darin du die Voͤgel geſchupfft darzu/ iſt der nit genug/ mehr es mit Wein vnd Fleiſchbruͤh/ laß kochen wie recht iſt/ daß ſie ein bruͤhlein haben/ als wann man ein zarte bruͤh von geſchnittenẽ Mandeln vnd ſolchs Zeugs machen woͤlle/ thu auch Weinbeer vnnd etwas ſuͤſſes darzu/ wiltu/ ſo laß alſo. Du magſt es auch alſo in ein Zwifel die rund geſchnitten einmachen/ auch in ein Lebkuchenbruͤhlein/ auch in ein ſchwartz Naͤgelbruͤhlein oder Pfefferlein: Alſo auch mit gebehetem Brot vnnd einer Huͤnerleber/ wie du von den Huͤnern findeſt/ auch in gruͤnes Kraut/ beſtrewe es mit Zimet/ alle gattung die gelb vnd ſuͤß ſind/ machs recht in dem Saltz.</p>
+        </div>
+        <div type="translation" xml:id="wec-422-trans" xml:lang="de" corresp="#wec-422-orig">
+          <p>Die Vöglein, die man Spießvöglein nennt, wie Finken und dergleichen, herrichten und sauber auswaschen. Halb Wein und halb Wasser daraufgeben und einmal aufwallen lassen. Danach in heißes Schmalz geben und braun braten.</p>
+          <p>Unterdessen süße Äpfel schälen, oder andere, die so fest sind, dass sie nicht leicht zu Brei werden. Du kannst auch Birnen nehmen, die ganz süß und mild sind. Sie wie Rüben schneiden, nicht größer, danach ins heiße Schmalz geben und schön braun machen. Danach ein wenig Weißbrot.</p>
+          <p>Alles miteinander in eine passende Kachel geben. Süße Gewürze samt Safran und die Brühe, in der du die Vögel kurz hast aufwallen lassen, dazutun. Ist die Brühe nicht genug, mit Wein und Fleischbrühe auffüllen. Kochen lassen, wie es sich gehört, bis sie ein Brühlein haben, wie wenn man eine zarte Brühe aus geschnittenen Mandeln und dergleichen machen wollte. Gib auch Rosinen und etwas Süßes dazu, wenn du willst, sonst lass es so.</p>
+          <p>Du kannst es auch so in rund geschnittener Zwiebel zubereiten, auch in einem Lebkuchenbrühlein, auch in einem schwarzen Nelkenbrühlein oder Pfefferlein. Ebenso mit geröstetem Brot und einer Hühnerleber, wie du es bei den Hühnern findest, auch in grünem Kraut. Bestreue es mit Zimt, alle Arten, die gelb und süß sind. Salze es richtig.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="small poultry" orig="Voͤgelein/ ſo man Spießvoͤgelein heiſt/ als Fincken vnd dergleichen" commodity="wikidata:Q107262076" source="#fyndling-ingredient-name">Kleine Vögel (Spießvöglein, Finken und dergleichen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb Wein vnd Waſſer">Wein und Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="heiß Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſuͤſſe Aepffel/ oder andere die ſo hart ſind/ daß ſie nicht leichtlich zu einem Brey werden">Süße, feste Äpfel</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="einwenig weiß brot" commodity="wikidata:Q1501889" source="#fyndling-ingredient-registry">Weißbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="ſuͤſſe Wuͤrtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Süße Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="Wein vnd Fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Wein und Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Weinbeer vnnd etwas ſuͤſſes">Rosinen und etwas Süßes (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Zusätze der Abwandlungen (siehe Text)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-422-trans" resp="#fyndling">Praxis. Die Vögel kurz in halb Wein, halb Wasser aufwallen lassen und die Brühe aufheben, dann in Schmalz braun braten. Äpfel in rübengroße Stücke schneiden und ebenso bräunen, danach etwas Weißbrot. Alles mit süßer Würze, Safran und der Aufwallbrühe in die Kachel geben und schwach kochen, bis die Brühe leicht bindet wie eine zarte Mandelbrühe.
+
+Zeit und Brot. Wecker nennt keine Garzeit, nur „wie recht ist“. Als heutiger Anhalt, nicht aus dem Text: kleine Vögel 20 bis 30 Minuten, Tauben oder Hühnerteile 45 bis 60 Minuten. Ob das Weißbrot mitgebräunt wird, sagt der Text nicht; in Würfeln kurz mit den Äpfeln angeröstet bindet es die Brühe.</note>
+        <note type="gloss" target="#wec-422-orig" n="Spießvoͤgelein" resp="#fyndling">Kleine Vögel, wie man sie am Spieß briet (DWB spieszvogel); hier Finken und dergleichen.</note>
+        <note type="gloss" target="#wec-422-orig" n="einen wall thun / geſchupfft" resp="#fyndling">Einmal kurz aufwallen lassen, sodass das Fleisch weiß und fest bleibt. So gebraucht Wecker „ſchupffen“ durchgehend, etwa „laß nur ſchupffen vnd behalts weiß“ (wec-396).</note>
+        <note type="gloss" target="#wec-422-orig" n="geſchlacht" resp="#fyndling">Bei den Birnen: von guter, milder Art (DRW geschlacht: weich; veredelt, Gegensatz wild).</note>
+        <note type="gloss" target="#wec-422-orig" n="kachel" resp="#fyndling">Ein irdenes Gefäß (BMZ, Lexer: Topf, irdenes Geschirr), nicht die Ofenkachel.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#kachel"/></note>
+        <note type="gloss" target="#wec-422-orig" n="gebehetem Brot" resp="#fyndling">Gebäht, von „bähen“: leicht geröstet.</note>
+        <note type="gloss" target="#wec-422-orig" n="gruͤnes Kraut" resp="#fyndling">Blattgemüse; im vorigen Rezept nennt Wecker dafür Spinat, Mangold und im Winter Wirsing (wec-421).</note>
+        <note type="interpretive_choice" target="#wec-422-orig" n="alle gattung die gelb vnd ſuͤß ſind" resp="#fyndling" subtype="contextual">Der Satz hat kein ausdrückliches Bezugswort; die Übersetzung bleibt wörtlich. Am ehesten sind die gelben, süßen Zubereitungen gemeint (die Grundform mit Safran und süßer Würze, das Lebkuchenbrühlein), die mit Zimt bestreut werden, nicht die Pfeffer-, Nelken- oder Kräuterbrühen.<list type="alternatives"><item>Alle Früchte, die gelb und süß sind<note type="rationale">Der Satz könnte auf die Äpfel und Birnen der Grundzubereitung zurückgreifen: Man nimmt alle gelben, süßen Sorten.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

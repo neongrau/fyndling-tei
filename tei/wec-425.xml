@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllte Brote mit kleinen Vögeln</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-425/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-425</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-425">
+        <head>Gefüllte Brote mit kleinen Vögeln</head>
+        <div type="original" xml:id="wec-425-orig" xml:lang="de-x-fnhd" corresp="#wec-425-trans">
+          <p>Gefuͤlte brot von kleinen Voͤgeln.
+
+BEreite die Voͤgelein/ ſchwells in halb Wein vnnd Waſſer/ machs braun/ geuß die bruͤh wider dran/ Fuͤß vnd Schnaͤbel ſchneid jnen mit den augen allzeit ab/ thu gelbe Wuͤrtz vnnd Zimet/ auch wol Weinbeer daran/ ſie ſollen wol Bruͤhen vnnd Zucker genug/ wenig Saltz/ laß wol an einander ſieden/ fuͤlls ein/ wie du von den Kirſchen oder Amarellen haſt/ eins/ zwey/ drey/ nach dem ſie groß. Vnnd alſo fuͤllet man auch die groſſer verbruͤhten Kuͤchlein/ vnnd ſo du keine Voͤgel haſt/ bereite Fleiſch/ wie du vorher vom gehackten Lendenbraten oder Paſteten haſt.</p>
+        </div>
+        <div type="translation" xml:id="wec-425-trans" xml:lang="de" corresp="#wec-425-orig">
+          <p>Bereite die Vögelchen vor und lass sie in halb Wein, halb Wasser kurz aufwallen. Mach sie braun und gieße die Brühe wieder daran. Füße und Schnäbel schneide ihnen immer samt den Augen ab.</p>
+          <p>Gib gelbes Gewürz und Zimt dazu, gern auch Rosinen. Sie sollen gut Brühe haben und genug Zucker, wenig Salz. Lass alles gut miteinander sieden.</p>
+          <p>Fülle sie ein, wie du es von den Kirschen oder Amarellen hast: eins, zwei, drei, je nachdem sie groß sind.</p>
+          <p>Auf diese Weise füllt man auch die größeren gebrühten Küchlein, also das hohle Brandteiggebäck. Und hast du keine Vögel, so bereite Fleisch zu, wie du es vorher vom gehackten Lendenbraten oder von den Pasteten hast.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="small poultry" orig="Voͤgelein" commodity="wikidata:Q107262076" source="#fyndling-ingredient-name">Kleine Vögel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="halb Wein vnnd Waſſer">Wein und Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="gelbe Wuͤrtz" commodity="wikidata:Q25434" source="#fyndling-ingredient-registry">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Zimet" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Weinbeer" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Zucker genug" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="wenig Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="brot" commodity="wikidata:Q7802" source="#corema-ingredient-index">Weißbrote</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-425-trans" resp="#fyndling">Praxis. Die Vögel (heute Wachteln oder Stubenküken) in halb Wein, halb Wasser einmal aufwallen lassen und herausnehmen. Zum Braunmachen nennt der Text kein Fett; im Schwesterrezept wec-422 geschieht es in heißem Schmalz, Butterschmalz ist ein brauchbares Hilfsmittel. Dann die Brühe wieder angießen, mit Safran, Zimt, Rosinen, Zucker und wenig Salz würzen und sieden lassen, bis die Vögel gar sind und die Brühe gut schmeckt; eine Zeit nennt Wecker nicht.
+
+Die Brote. Nach wec-291 nimmt man Weißbrot, am besten Ortbrot, schneidet oben ein Stück ab oder unten ein Loch hinein, höhlt es aus, füllt es, setzt das Stück wieder auf und bäckt es rasch knusprig; die Brühe wird danach durch ein kleines Loch nachgegossen, damit sie das Brot durchzieht. Je nach Größe kommen ein bis drei Vögel in ein Brot.</note>
+        <note type="gloss" target="#wec-425-orig" n="ſchwells" resp="#fyndling">Schwellen heißt bei Wecker kurz in heißer Flüssigkeit aufwallen lassen, wie „ſchupffen“: „laß einen wall thun“ (wec-422), „in halb Wein vnd Waſſer geſchwellt“ (wec-474).</note>
+        <note type="gloss" target="#wec-425-orig" n="gelbe Wuͤrtz" resp="#fyndling">Wörtlich „gelbes Gewürz“, gemeint ist Safran. Die Nachbarrezepte nennen ihn ausdrücklich (wec-422 „ſuͤſſe Wuͤrtz ſampt Saffran“, wec-424).</note>
+        <note type="interpretive_choice" target="#wec-425-orig" n="verbruͤhten Kuͤchlein" resp="#fyndling" subtype="lexical">Brühteig- oder Brandteigküchlein: hohles Gebäck, dessen Teig mit heißem Wasser oder Schmalz abgebrüht wird und das wie die Brote als Hülle gefüllt wird. Wecker schreibt „kuͤchlein“ sonst immer für Gebackenes (wec-386, 402, 441 „brante kuͤchlein“), junge Hühner heißen bei ihr „Huͤnlein“ (wec-389, 403-407). Das Abbrühen des Mehls kennt der Korpus auch beim Pastetenteig (m5919-008 „prue … mit heyssem wasser“).<list type="alternatives"><item>Junge Hühnchen (Küken), die zum Rupfen gebrüht wurden<note type="rationale">Küchlein heißt frühneuhochdeutsch auch ‚junges Huhn‘ (DWB küchlein 1, Lexer küchel ‚pullus‘), und verbrühen ist das Abbrühen von Geflügel (DWB). Dagegen spricht Weckers eigener Sprachgebrauch: Hühner heißen bei ihr „Huͤnlein“.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

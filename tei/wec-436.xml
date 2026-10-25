@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Krapfen aus Fleischresten in Tierformen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-436/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-436</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-436">
+        <head>Krapfen aus Fleischresten in Tierformen</head>
+        <div type="original" xml:id="wec-436-orig" xml:lang="de-x-fnhd" corresp="#wec-436-trans">
+          <p>Krapffen von dem vbergebliebnen Fleiſch.
+
+NJmb ſolchen zeug/ wie du haſt/ wasſonſten nit mehr tauglich auff den tiſch/ iſt zu ſolchen ſachen gut/ ſchneid das Fleiſch von den bein/ hacks wol/ mach einen teig von ſchoͤnem Meel vnnd Eyern/ wenig Schmaltz/ ſaltz es recht/ oder wie man jhn zu Dorten macht/ deines gefallens/ mache zwey duͤnner blaͤtter/ eins ſo groß als das ander/ forms wie du wilt/ vnd wie du es kanſt/ rund/ dreyecket oder vierecket/ Hertz/ Roſen/ Sternen/ thu dann inn das Fleiſch gut gewuͤrtz/ Weinbeer/ vnnd von dem du es gern gut haſt/ ſuͤß oder ſawer/ deines gefallens/ gnugſam feyſt von dem Suppenſchmaltz/ Rindern marck/ nach dem der zeug von jhm ſelbſten feyſt oder mager/ ſo du wilt/ magſtu auch gute kraͤuter darein thun/ mit vnd ohne wuͤrtz/ oder aber Eyer/ als wolteſtu Klobwuͤrſte machen/ du magſt auch wol Mandeln grob geſtoſſen nemen/ geſchabt ſind ſie beſſer/ beſonder wañ du Eyer darein thuſt/ auch ein wenig harte Semmel reiben/ wie es dir geliebt/ ein wenig fleiſchbruͤh in allweg/ vnd wie du es dann angemacht wilt haben/ bereits/ vnd thu es auff ein theil der voꝛgemelten Blaͤtter/ nach dem du dañ gern was haſt/ von Thieren/ Voͤgel/ Hund/ Haſen/ wie oben gemelt/ forms mit angemachtem zeug/ darnach leg das ander darauff/ trucks nach geformten zuſam̃en/ vermachs herumb ſo ſubtil du kanſt/ vnnd gib iedem ſeine form/ der Saw mit den Redlein wie Boͤrſten/ mache allẽ Augen mit ſchwartzen duͤrꝛen Kirſchen/ oder Wacholderbeern/ das Heutlein vom Ey ein wenig darumb/ oder von roten Aepffeln/ oder Roſenblaͤttern/ nach eins jeden art/ trucks ein/ vnd was dañ weiter gehoͤrt: Jch habe wol die kleinen Schaffzeen behalten/ zu ſolchẽ ſachen/ auch die jungen Haſenfuͤßlein/ wer kunſtreich/ darff nicht vil beſchreibens/ wer ſo nit/ ſo iſt es vmb ſonſt/ ſchlecht vnd recht machts nit deſto boͤſer noch beſſer/ vermachs/ ſchmirs wie allzeit mit Eyern/ bachs ſchnell weg/ trags warm fuͤr/ am beſten ſind ſie on Eyer/ doch wie es einem jedẽ ſchmeckt/ Mandeln vñ ein wenig brot machts gut.</p>
+        </div>
+        <div type="translation" xml:id="wec-436-trans" xml:lang="de" corresp="#wec-436-orig">
+          <p>Teig und Blätter: Nimm solches Zeug, wie du es hast; was sonst nicht mehr tauglich für den Tisch ist, ist zu solchen Sachen gut. Schneide das Fleisch von den Knochen und hacke es gut. Mache einen Teig aus feinem Mehl und Eiern mit wenig Schmalz und salze ihn recht, oder mache ihn so, wie man ihn für Torten macht, ganz nach deinem Gefallen. Mache daraus zwei dünne Blätter, das eine so groß wie das andere. Forme sie, wie du willst und wie du es kannst: rund, dreieckig oder viereckig, als Herz, Rosen oder Sterne.</p>
+          <p>Füllung: Gib dann in das Fleisch gutes Gewürz, Rosinen und was du sonst gern darin hast, süß oder sauer, ganz nach Gefallen. Dazu genug Fett vom Suppenschmalz oder Rindermark, je nachdem, ob das Zeug von sich aus fett oder mager ist. Wenn du willst, kannst du auch gute Kräuter hineingeben, mit oder ohne Gewürz, oder aber Eier, als wolltest du Klobwürste machen. Du kannst auch Mandeln grob gestoßen nehmen, geschabt sind sie besser, besonders wenn du Eier hineingibst. Reibe auch ein wenig harte Semmel dazu, wie es dir gefällt, und gib auf jeden Fall ein wenig Fleischbrühe dazu. Und wie du es dann angemacht haben willst, so bereite es.</p>
+          <p>Formen und Verschließen: Gib es auf eines der vorgenannten Blätter, je nachdem, was du gern haben willst, von Tieren, Vögeln, Hunden, Hasen, wie oben erwähnt. Forme es mit dem angemachten Zeug. Danach lege das andere Blatt darauf und drücke es nahe an der geformten Füllung zusammen. Verschließe es ringsherum so fein, wie du kannst, und gib jedem seine Form. Der Sau mache mit den Rädlein etwas wie Borsten.</p>
+          <p>Verzieren: Mache ihnen allen Augen aus schwarzen, dürren Kirschen oder Wacholderbeeren, das Häutlein vom Ei ein wenig darum, oder eines von roten Äpfeln oder von Rosenblättern, je nach der Art eines jeden. Drücke es ein, und was dann weiter dazugehört. Ich habe wohl die kleinen Schafzehen für solche Sachen aufbewahrt, auch die jungen Hasenfüßlein. Wer kunstreich ist, braucht nicht viel Beschreibung; wer es nicht ist, dem ist sie umsonst. Schlicht und recht gemacht, wird es davon weder schlechter noch besser.</p>
+          <p>Fertigmachen: Verschließe sie, bestreiche sie wie immer mit Eiern, backe sie schnell fertig und trage sie warm auf. Am besten sind sie ohne Eier, doch wie es einem jeden schmeckt. Mandeln und ein wenig Brot machen sie gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ſchneid das Fleiſch von den bein">Fleischreste</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchoͤnem Meel">Weizenmehl, fein</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="Eyern" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="wenig Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ſaltz es recht" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gut gewuͤrtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürz</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Weinbeer" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gnugſam feyſt von dem Suppenſchmaltz/ Rindern marck">Suppenschmalz oder Rindermark</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="(implied)">Füllungszusätze nach Belieben</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchwartzen duͤrꝛen Kirſchen/ oder Wacholderbeern">Dürre schwarze Kirschen oder Wacholderbeeren</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-436-trans" resp="#fyndling">Praxis. Übrig gebliebenes Fleisch vom Knochen schneiden und fein hacken, mit Gewürz, Rosinen, etwas Suppenschmalz oder Rindermark (je nachdem, wie fett das Fleisch ist) und einem Schuss Brühe anmachen; Kräuter, Mandeln oder geriebene Semmel nach Belieben. Einen Teig aus feinem Mehl, Eiern, wenig Schmalz und Salz kneten oder einen Tortenteig nehmen und zwei gleich große Blätter von etwa 2 bis 3 mm ausrollen. Auf dem einen Blatt die Füllung zur gewünschten Figur formen, das zweite darüberlegen, nahe an der Füllung andrücken, den Rand sorgfältig verschließen und mit Ei bestreichen. Im vorgeheizten Ofen bei etwa 200 °C 20 bis 25 Minuten backen, bis der Teig goldbraun ist, warm auftragen.
+
+Mengen und Hitze. Wecker nennt keine. Als Anhalt etwa 300 g Mehl und 2 Eier auf 300 g Fleisch; Temperatur und Backzeit sind moderne Vorschläge. In heißem Schmalz rasch ausgebacken geht es nach ihren anderen Krapfenrezepten ebenso.</note>
+        <note type="gloss" target="#wec-436-orig" n="Dorten" resp="#fyndling">Torten: gemeint ist der Teig, den man für Torten macht. Wecker stellt ihn frei neben den einfachen Teig aus Mehl, Eiern und wenig Schmalz.</note>
+        <note type="gloss" target="#wec-436-orig" n="Klobwuͤrſte" resp="#fyndling">Nach Heyne eine in den Fettdarm (Klobdarm) gefüllte Wurst; Grimm setzt zu dieser Deutung ein Fragezeichen. Im folgenden Rezept wec-437 füllt Wecker dieselbe Masse in Bratdärme.</note>
+        <note type="gloss" target="#wec-436-orig" n="Redlein" resp="#fyndling">Rädlein, das Teigrad: ein kleines gezacktes Rad am Stiel, mit dem man Teig schneidet und rändelt (Adelung, Campe, DWB „Teigrad“). In der zweiten Fassung wec-444 heißt es „redels ab“; hier macht man damit der Sau die Borsten.</note>
+        <note type="gloss" target="#wec-436-orig" n="Heutlein vom Ey" resp="#fyndling">Das Eihäutchen. Ob vom rohen oder gekochten Ei, sagt der Text nicht, ebenso wenig, was von den roten Äpfeln genommen wird.</note>
+        <note type="gloss" target="#wec-436-orig" n="Schaffzeen" resp="#fyndling">Schafzehen, gelesen nach der Nachbarschaft zu den Hasenfüßlein; ein Wörterbuchbeleg für diese Schreibung fehlt. Wozu Wecker sie aufhebt, sagt sie nicht.</note>
+        <note type="interpretive_choice" target="#wec-436-orig" n="bachs ſchnell weg" resp="#fyndling" subtype="contextual">Rasch backen wie eine Torte: Der Teig ist Torten- oder Eierteig und wird mit Ei bestrichen; die zweite Fassung wec-444 sagt ausdrücklich „bachs wie andere Dortẽ/ es darff nit lang bachens“.<list type="alternatives"><item>In Schmalz ausbacken<note type="rationale">Bei Krapfen lässt Wecker die Garart sonst frei: „bachs im ſchmaltz vnnd ofen/ wie du wilt“ (wec-244), „bachs in dem Ofen oder Pfann“ (wec-335).</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

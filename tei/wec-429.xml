@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pastete von gehacktem Kalbfleisch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-25">2026-10-25</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-429/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-429</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-429">
+        <head>Pastete von gehacktem Kalbfleisch</head>
+        <div type="original" xml:id="wec-429-orig" xml:lang="de-x-fnhd" corresp="#wec-429-trans">
+          <p>Eine Paſteten von gehacktem Kalbfleiſch.
+
+NJmb einen guten Qualen oder Schlegel von eim Kalbe/ ſchneid das fleiſchicht darvon/ waſch vnd ſchaͤl die haut vber all darvon/ mache ein ſiedenden Wein/ oder halb Wein vñ Eſſig/ es durchkreucht deſto beſſer/ ſchuͤtt jhn daran/ decks/ laß ein wenig ſtehen/ darnach hacks klein/ vnd nimbs in ein ſchuͤſſel/ nimb gewuͤrtz ſo vil du bedarffſt/ nach dem die Paſteten groß/ daß ſol ſein ſuͤſſe wuͤrtz vnd wol Saffran/ wol Naͤgelein vnd Zimet/ daß halb knete darein/ ſampt Saltz vnd dem Wein/ damit du es vber bruͤhet haſt/ mach es aber nicht zu duͤnne/ daß es nicht von einander ruͤnne/ alſo nimb auch Weinbeer vnnd Roſinlein genugſam/ die thu auch halb darein/ wann ſie wol gereiniget vnd gewaſchen/ das wird ein jeder wol wiſſen/ du ſolt auch Rindern marck oder Nierenfeyſt darein hacken/ wanns anbereitet vnd der hafen geruͤſtet/ vnd auffgetrieben/ ſo thu den zeug darein/ fuͤlls an den orten nicht gar zu voll/ es ſol fein haͤuffig gemacht ſeyn/ daß es in der mitten hoch/ vnd dann tupff mit einem Daumen darein/ daß ein wenig in die hoͤhe vnd mitte ein tuͤpfflein habe/ ſo koch davon die bruͤh fein herauß/ ſtoß vberall ſtuͤcklein Zucker darein/ oder knete jhn auch mit in der wuͤrtz darein/ wann du es dann alſo bereiteſt/ ſo beſtrewe es vberall mit vbrigem gewuͤrtz/ daß dz Fleiſch bedeckt iſt/ auch mit den vbrigen Weinbeern/ vnd was mehr/ mache den deckel ſchoͤn vnd beheb daruͤber/ allezeit habe Eyerklar/ vnnd vmbfahr den ranfft von dem hafen mit einem penſel/ wie auch den deckel/ ſo helts an einander/ bachs auff anderthalbe ſtund/ vnnd wann du meineſt der bruͤh ſey zu wenig/ wie gemeiniglich geſchicht/ ſo nimb ſie herauß/ wañ ſie eine ſtunde im ofen/ vnd habe ein ſiedende bruͤh/ halb Wein vnd fleiſchbruͤh gegilbt vnd ein wenig gewuͤrtzt/ da mach aber neben ein loͤchlein/ daß du ſie drein gieſſen kanſt/ dann ſie ſollen wol bruͤh haben wann du es auffſetzt/ das Fleiſch kompt hart zuſammen/ ſo ſol man es dañ wol mit einem loͤffel begieſſen/ ob man davon fuͤrlegt. Vnnd alſo magſtu es von vberbliebnem Fleiſch geſotten oder gebraten/ wie vorher auch gelehrt/ bereiten/ du magſt auch ein jung Hun/ Tauben oder Voͤgel vnder das fleiſch legen/ ſo du gern wilt.</p>
+        </div>
+        <div type="translation" xml:id="wec-429-trans" xml:lang="de" corresp="#wec-429-orig">
+          <p>Das Fleisch vorbereiten: Nimm eine gute Keule vom Kalb. Schneide das Fleisch davon ab, wasche es und schäle überall die Haut ab. Bring Wein zum Sieden, oder halb Wein und halb Essig, so dringt er besser ein. Gieß ihn darüber, deck es zu und lass es ein wenig stehen. Danach hacke es klein und gib es in eine Schüssel.</p>
+          <p>Würzen: Nimm so viel Gewürz, wie du brauchst, je nachdem, wie groß die Pastete ist. Es sollen süße Gewürze sein und gut Safran, gut Nelken und Zimt. Knete die Hälfte davon hinein, samt Salz und dem Wein, mit dem du es überbrüht hast. Mach es aber nicht zu dünn, damit es nicht auseinanderläuft. Nimm ebenso Weinbeeren und Rosinen in ausreichender Menge und gib auch davon die Hälfte hinein, wenn sie gut gereinigt und gewaschen sind. Das wird jeder wissen. Hacke auch Rindermark oder Nierenfett hinein.</p>
+          <p>Füllen und backen: Wenn es angemacht und der Pastetentopf bereitet und hochgezogen ist, gib die Masse hinein. Füll ihn an den Rändern nicht zu voll, es soll schön gehäuft sein, sodass es in der Mitte hoch ist. Dann drück mit dem Daumen hinein, sodass es oben in der Mitte ein Grübchen hat, so kocht die Brühe davon schön heraus. Drück überall Zuckerstückchen hinein oder knete den Zucker mit in das Gewürz. Wenn du es so bereitet hast, bestreu es überall mit dem übrigen Gewürz, bis das Fleisch bedeckt ist, auch mit den übrigen Weinbeeren und was sonst noch dazugehört. Mach den Deckel schön und verschließe ihn darüber. Halte stets Eiklar bereit und fahr mit einem Pinsel um den Rand des Pastetentopfs und ebenso um den Deckel, so hält es aneinander. Back es anderthalb Stunden.</p>
+          <p>Brühe nachgießen: Wenn du meinst, es sei zu wenig Brühe darin, wie es gewöhnlich geschieht, nimm die Pastete heraus, wenn sie eine Stunde im Ofen war. Halte eine siedende Brühe bereit, halb Wein und halb Fleischbrühe, gelb gefärbt und ein wenig gewürzt. Mach daneben ein Löchlein, damit du sie hineingießen kannst. Denn die Pasteten sollen gut Brühe haben, wenn du sie aufträgst. Das Fleisch rückt hart zusammen, darum soll man es gut mit einem Löffel begießen, wenn man davon vorlegt.</p>
+          <p>Variante: Ebenso kannst du sie aus übrig gebliebenem Fleisch bereiten, gesotten oder gebraten, wie vorher auch gelehrt. Du kannst auch ein junges Huhn, Tauben oder Vögel unter das Fleisch legen, wenn du magst.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="einen guten Qualen oder Schlegel von eim Kalbe">Kalbskeule</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="ſiedenden Wein/ oder halb Wein vñ Eſſig" commodity="wikidata:Q282" source="#fyndling-ingredient-registry">Wein (oder halb Wein, halb Essig)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="ſuͤſſe wuͤrtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Süße Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wol Saffran/ wol Naͤgelein vnd Zimet">Safran, Nelken und Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="Weinbeer vnnd Roſinlein" commodity="wikidata:Q13186" source="#fyndling-ingredient-registry">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Rindern marck oder Nierenfeyſt">Rindermark oder Nierenfett</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſtuͤcklein Zucker">Zucker in Stückchen</ingredient>
+            </item>
+            <item>
+              <ingredient en="pie crust" orig="(implied)" commodity="wikidata:Q5190246" source="#fyndling-ingredient-name">Pastetenteig (im Text nicht beschrieben)</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="Eyerklar" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiklar</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="halb Wein vnd fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe mit Wein (halb und halb, zum Nachgießen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein jung Hun/ Tauben oder Voͤgel">Junges Huhn, Tauben oder Vögel (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-429-trans" resp="#fyndling">Praxis. Mengen nennt Wecker nicht, das Gewürz richtet sich nach der Größe der Pastete. Eine Backtemperatur fehlt ebenfalls; als heutiger Anhalt etwa 180 °C für die anderthalb Stunden. Wo das Löchlein sitzt, sagt der Text nur mit „daneben“; praktisch ist ein kleines Loch im Deckel neben der Mitte.
+
+Hitze im Ofen. Wecker sagt nur „im ofen“. Historisch naheliegend ist ein Holzofen mit abfallender Hitze, etwa nach dem Brotbacken.</note>
+        <note type="gloss" target="#wec-429-orig" n="Qualen" resp="#fyndling">Quallen, mundartlich die Hinterkeule vom Hammel oder Kalb, auch vom Schwein (Elsässisches Wörterbuch; Pfälzisches Wörterbuch: „Kalbskeule, Kalbsschlegel“; Rheinisches Wörterbuch). Wecker setzt es gleichbedeutend neben Schlegel.</note>
+        <note type="gloss" target="#wec-429-orig" n="hafen" resp="#fyndling">„Hafen“ ist sonst der Topf. Bei Pasteten meint Wecker die aus Teig aufgezogene Schale mit Teigdeckel, im Lesetext „Pastetentopf“: Sie wird „aufgetrieben“, also hochgezogen, und ihr Rand mit Eiklar an den Deckel geklebt. Ein Tongefäß nennt Wecker ausdrücklich „irden“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#hafen"/></note>
+        <note type="gloss" target="#wec-429-orig" n="Weinbeer vnnd Roſinlein" resp="#fyndling">Beides getrocknete Weinbeeren, also Rosinen.</note>
+      </div>
+    </back>
+  </text>
+</TEI>
