@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Halbfisch in Erbsenbrühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-26">2026-10-26</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-458/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-458</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-458">
+        <head>Halbfisch in Erbsenbrühe</head>
+        <div type="original" xml:id="wec-458-orig" xml:lang="de-x-fnhd" corresp="#wec-458-trans">
+          <p>Anderſt.
+
+WAnn ſie geſotten/ ſo nimbs inn eine Pfann oder kache trucken auß dem Waſſer/ darinnen ſie geſotten/ thu ein gute Erbeißbruͤh daruͤber/ vnd ein heiß oder Mayenſchmaltz/ nach gelegenheit/ ſampt eim wenig brotmeel/ wuͤrtz es wol/ auch ein geſtoſſene Muſcatbluͤh/ vnnd duͤrꝛen Roßmarin/ laß an ein ander wol ſieden/ wiltu dann/ ſchneid Peterlein/ Wann ein kranck es kein Gewuͤrtz eſſen darff/ nimb den Roßmarin allein mit eim wenig Salvep/ etwan auch Muſcatbluͤh: Alſo ſeud man auch die duͤrꝛen Fohren vnd andere duͤrꝛe Fiſch.</p>
+        </div>
+        <div type="translation" xml:id="wec-458-trans" xml:lang="de" corresp="#wec-458-orig">
+          <p>Wenn sie gesotten sind, nimm sie trocken aus dem Wasser, in dem sie gesotten wurden, in eine Pfanne oder Kachel. Gieß eine gute Erbsenbrühe darüber und gib heißes Schmalz oder Butterschmalz dazu, nach Bedarf, samt ein wenig Brotmehl. Würze es gut, auch mit gestoßener Muskatblüte und getrocknetem Rosmarin, und lass es miteinander gut sieden. Wenn du willst, schneide Petersilie dazu.</p>
+          <p>Wenn ein Kranker keine Gewürze essen darf, nimm den Rosmarin allein mit ein wenig Salbei, gegebenenfalls auch Muskatblüte.</p>
+          <p>So siedet man auch die getrockneten Forellen und andere getrocknete Fische.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="(implied)">Halbfisch (getrocknete Scholle), gewässert und gesotten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein gute Erbeißbruͤh">Erbsenbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein heiß oder Mayenſchmaltz">Schmalz oder Butterschmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eim wenig brotmeel">Brotmehl (geriebenes Brot)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wuͤrtz es wol" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient orig="geſtoſſene Muſcatbluͤh">Muskatblüte, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="duͤrꝛen Roßmarin">Rosmarin, getrocknet</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="ſchneid Peterlein" commodity="wikidata:Q25284" source="#fyndling-ingredient-registry">Petersilie (nach Belieben)</ingredient>
+            </item>
+            <item>
+              <ingredient en="common sage" orig="eim wenig Salvep" commodity="wikidata:Q1111359" source="#fyndling-ingredient-registry">Salbei (für Kranke)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-458-trans" resp="#fyndling">Praxis. Den Trockenfisch je nach Stärke ein bis zwei Tage wässern, das Wasser öfter wechseln, dann in frischem Wasser gar sieden. Für die Erbsenbrühe getrocknete gelbe Erbsen in reichlich Wasser weich kochen und die Brühe abgießen. Den abgetropften Fisch in Pfanne oder Kachel legen, mit Brühe knapp bedecken, ein bis zwei Esslöffel Butterschmalz und eine Handvoll geriebenes Brot dazugeben, mit Muskatblüte und zerriebenem Rosmarin würzen und 10 bis 15 Minuten schwach sieden lassen, bis die Brühe leicht bindet. Eine Kachel auf die Glut stellen, nicht in die Flamme.
+
+Gewürze. „wuͤrtz es wol“ nennt keine Gewürze; vorgegeben sind nur Muskatblüte und Rosmarin.</note>
+        <note type="gloss" target="#wec-458-orig" n="kache" resp="#fyndling">Bei Wecker sonst immer kachel, hier ohne l gedruckt. Ein irdenes Gefäß (BMZ, Lexer: Topf, irdenes Geschirr), nicht die Ofenkachel.</note>
+        <note type="gloss" target="#wec-458-orig" n="Erbeißbruͤh" resp="#fyndling">Die Brühe, in der Erbsen gekocht wurden; Erbeiß ist eine oberdeutsche Form von Erbse.</note>
+        <note type="gloss" target="#wec-458-orig" n="Mayenſchmaltz" resp="#fyndling">Maienschmalz ist im Mai gewonnene Butter bzw. daraus ausgelassenes Fett (FWB meienschmalz; Grimm: maienschmalz = Maibutter). Wecker nennt Maienschmalz und Butter auch nebeneinander (wec-042). Übersetzt wird es wie „ſuͤß ſchmaltz“ als Butterschmalz.</note>
+        <note type="gloss" target="#wec-458-orig" n="brotmeel" resp="#fyndling">Zu Mehl gestoßenes Brot zum Binden der Brühe. Wecker spricht selbst von „brotmeel von geſtoßnem Semmelmelbrot“ (wec-434).</note>
+        <note type="gloss" target="#wec-458-orig" n="Fohren" resp="#fyndling">Forellen (mhd. forhe, DWB forhe).</note>
+        <note type="gloss" target="#wec-458-orig" n="Salvep" resp="#fyndling">Druckfehler für Salvey, Salbei, wie Wecker sonst schreibt.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

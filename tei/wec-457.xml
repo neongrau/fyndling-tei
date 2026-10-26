@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Plattfisch mit Agrest und Kräutern</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-26">2026-10-26</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-457/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-457</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-457">
+        <head>Plattfisch mit Agrest und Kräutern</head>
+        <div type="original" xml:id="wec-457-orig" xml:lang="de-x-fnhd" corresp="#wec-457-trans">
+          <p>Ein ander Form.
+
+WAnn ſie wie zuvor bereit/ ſo nimb Agreſt vnnd Drauben/ oder Safft von Sawrampffer/ vnd ein Steudlein Serin/ Peterlein/ laß jhn ſitzen/ geuß jhn inn die Halbfiſch mit Mayenſchmaltz vnnd wol Pfeffer/ laß aneinander auff der Kohlpfannenkochen/ in allweg beſpreng es mit Jngwer/ es iſt hoͤfflich vnd gut/ auch den krancken nuͤtzlich.</p>
+        </div>
+        <div type="translation" xml:id="wec-457-trans" xml:lang="de" corresp="#wec-457-orig">
+          <p>Wenn die Halbfische wie zuvor zubereitet sind, nimm Agrest und Trauben oder den Saft von Sauerampfer, dazu ein Stäudlein Serin und Petersilie. Lass ihn sich setzen und gieße ihn mit Butterschmalz und reichlich Pfeffer zu den Halbfischen.</p>
+          <p>Lass alles miteinander auf der Kohlpfanne kochen und bestreue es auf jeden Fall mit Ingwer. Es ist fein und gut, auch den Kranken nützlich.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Halbfiſch">Halbfische (Plattfische), wie zuvor zubereitet</ingredient>
+            </item>
+            <item>
+              <ingredient en="verjuice" orig="Agreſt" commodity="wikidata:Q1060458" source="#fyndling-ingredient-name">Agrest (Verjus)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Drauben">Trauben</ingredient>
+            </item>
+            <item>
+              <ingredient en="hyssop" orig="ein Steudlein Serin" commodity="wikidata:Q137931" source="#fyndling-ingredient-name">Ysop (Serin)</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="Peterlein" commodity="wikidata:Q25284" source="#fyndling-ingredient-registry">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Mayenſchmaltz">Butterschmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="wol Pfeffer" commodity="wikidata:Q3143131" source="#fyndling-ingredient-registry">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Jngwer" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwer, gemahlen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-457-trans" resp="#fyndling">Praxis. Die Fische wie in wec-455 vorbereiten: getrocknete Scholle gründlich wässern, in Wasser sieden, von den Gräten lösen und in eine flache, feuerfeste Schüssel legen; frische Scholle oder Flunder braucht kein Wässern. Agrest mit den Trauben, dem Ysop und der Petersilie kurz stehen lassen, dann mit Butterschmalz und reichlich Pfeffer zu den Fischen geben und bei schwacher Hitze einige Minuten miteinander köcheln lassen, bis alles heiß ist. Zum Schluss mit gemahlenem Ingwer bestreuen.
+
+Mengen. Wecker nennt keine. Als Ausgangspunkt für zwei Fische: etwa 100 ml Agrest, eine Handvoll Trauben, 2 EL Butterschmalz, je ein Zweig Ysop und Petersilie. Ob die Kräuter gehackt oder als Zweig mitgezogen werden, sagt der Text nicht.</note>
+        <note type="gloss" target="#wec-457-orig" n="Halbfiſch" resp="#fyndling">Ein Plattfisch, im Handel vor allem getrocknet: Adelung nennt die getrockneten Schollen „im gemeinen Leben“ Halbfische, das FWB den Halbfisch „in getrockneter Form häufiges Nahrungsmittel“. Das Vorrezept wec-455 überschreibt ihn mit „Plateißlein oder Halbfiſch“ und wässert ihn vor dem Sieden.</note>
+        <note type="gloss" target="#wec-457-orig" n="Agreſt" resp="#fyndling">Saurer Saft aus unreifen Weintrauben, heute als Verjus erhältlich. Hier eine der Säuerungen neben dem Sauerampfersaft.</note>
+        <note type="gloss" target="#wec-457-orig" n="Serin" resp="#fyndling">Serin ist bei Wecker der Ysop; sie setzt die Namen selbst gleich („Jſopen oder Serin“, wec-352; „Serin oder Gartenhyſop“, wec-435).</note>
+        <note type="gloss" target="#wec-457-orig" n="Mayenſchmaltz" resp="#fyndling">Maienschmalz ist im Mai gewonnene Butter bzw. daraus ausgelassenes Fett (FWB meienschmalz; Grimm: maienschmalz = Maibutter). Übersetzt wird es wie „ſuͤß ſchmaltz“ als Butterschmalz.</note>
+        <note type="gloss" target="#wec-457-orig" n="Kohlpfannen" resp="#fyndling">Glutpfanne, Pfanne für Kohlenfeuer (DWB kohlpfanne). Das Wort ist im Druck ohne Abstand an „kochen“ gesetzt.</note>
+        <note type="gloss" target="#wec-457-orig" n="hoͤfflich" resp="#fyndling">Hier: fein, einer gepflegten Tafel angemessen. Sonst steht das Wort bei Wecker meist als ‚behutsam‘ beim Arbeiten (wec-276).</note>
+      </div>
+    </back>
+  </text>
+</TEI>
