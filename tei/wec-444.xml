@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Krapfen aus Fleischresten mit Safran und Essig</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-26">2026-10-26</date>
+        <idno type="url">https://fyndling.de/rezepte/wec-444/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/wec-444</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ein Köstlich new Kochbuch Von allerhand Speisen/ an Gemüsen/ Obs/ Fleisch/ Geflügel/ Wildpret/ Fischen vnd Gebachens. Nicht allein vor Gesunde: sondern auch vnd fürnemlich vor Krancke ... auch Schwangere Weiber/ Kindbetterinnen/ vnd alte schwache Leut</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://www.deutschestextarchiv.de/book/show/wecker_kochbuch_1598</idno>
+          <note>Transkription: Deutsches Textarchiv (Kernkorpus), Berlin-Brandenburgische Akademie der Wissenschaften (CC BY-SA 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (oberdeutsche Druckersprache, Amberg/Oberpfalz 1597/98; Schreibung ohne ai-/kh-Formen, Küchenwortschatz oberdeutsch: Hafen, Zwetschken, Semmel, Diminutiv -lein; Verfasserin lebte in Colmar und Altdorf bei Nürnberg)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="wec-444">
+        <head>Krapfen aus Fleischresten mit Safran und Essig</head>
+        <div type="original" xml:id="wec-444-orig" xml:lang="de-x-fnhd" corresp="#wec-444-trans">
+          <p>Krapffen von vbergebliebnem Fleiſch.
+
+NJmb ein ſolchen zeug/ nach dem es vil oder wenig iſt/ loͤſe das Fleiſch von den Beinen/ mach einen | Teig von Eyern vnnd ſchoͤnem Meel/ wircke wol Schmaltz darein/ od’ wiltu/ mach den wie einen andern Dortenteig/ brich jhn wol vnd offt/ formire diſen lang/ rund/ drey oder vierecket/ wie es dir gefellt/ vnd du wol kanſt/ nimb das Fleiſch/ wuͤrtz es mit ſuͤſſer wuͤrtz/ Pfeffers/ vnnd thu wol Saffran daran/ machs mit Eſſig vnnd Fleiſchbruͤh wol durcheinander/ thu wol Weinbeer darzu/ wiltu/ ſo laß herauſſen was ſuͤß iſt/ vnnd zur zeit wann ſawre Drauben ſeynd/ thu darfuͤr Weinbeer darein/ oder ſawre Zwetzſchgen/ ein wenig geweicht oder geſchwellt/ vnnd dann aber kein gewuͤrtz mit den ſawren Drauben/ dann Pfeffer inn allweg/ wol Suppenſchmaltz/ beſonders zu den Drauben/ es were dañ der zeug an jm ſelbſten faſt feyſt/ wiltu dañ/ ſo zeugs wol mit wolerklopfften Eyern an/ wie es dir dann geliebt/ ſo bereits/ darnach thu es auff den gewelgerten Teig/ mitten wol ein theil Teig/ wie das vnder/ legs darauff/ beſtreich das vnder wol mi: Eyerklar/ ſo hebts das ober/ machs ſo ſchoͤn zu als du kanſt/ mache daꝛauff was du wilt. Vnd alſo magſtu Roſen/ Sternen/ Lilien/ Hunde/ Haſen/ Schweine vnd Voͤgel bereiten. Du ſolt aber wiſſen/ daß du ein groß Blat muſt welgern/ vnd daſſelbe forme mit dem zeug/ was du haben wilt/ darnach mach ein andern Teig daruͤber/ truck jhn fein den geformten nahe zuſammen/ redels ab/ darnach beſtreichs/ bachs wie andere Dortẽ/ es darff nit lang bachens.</p>
+        </div>
+        <div type="translation" xml:id="wec-444-trans" xml:lang="de" corresp="#wec-444-orig">
+          <p>Nimm solche Reste, so viel oder so wenig davon da ist, und löse das Fleisch von den Knochen. Mache einen Teig aus Eiern und feinem Mehl und knete reichlich Schmalz hinein. Oder, wenn du magst, mache ihn wie einen anderen Tortenteig. Arbeite den Teig gut und oft durch. Forme ihn lang, rund, drei- oder viereckig, wie es dir gefällt und wie du es gut kannst.</p>
+          <p>Würze nun das Fleisch mit süßen Gewürzen und Pfeffer und gib reichlich Safran daran. Vermenge es gut mit Essig und Fleischbrühe und gib reichlich Rosinen dazu. Wenn du magst, lass das Süße weg. Zur Zeit, wenn es saure Trauben gibt, nimm dann stattdessen frische Weinbeeren oder saure Zwetschgen, die du ein wenig eingeweicht oder kurz überbrüht hast. Dann aber kein Gewürz zu den sauren Trauben, nur in jedem Fall Pfeffer, und dazu reichlich Suppenschmalz, besonders zu den Trauben, es sei denn, die Masse ist von sich aus schon recht fett.</p>
+          <p>Wenn du magst, rühre die Masse mit gut verquirlten Eiern an, so wie es dir beliebt. Ist sie so bereitet, gib sie danach auf den ausgewalzten Teig, gut in die Mitte. Ein Stück Teig wie das untere lege darauf. Bestreiche den unteren Teig gut mit Eiweiß, dann hält der obere. Verschließe es so sauber, wie du kannst, und gestalte die Oberseite, wie du willst.</p>
+          <p>Auf diese Weise kannst du Rosen, Sterne, Lilien, Hunde, Hasen, Schweine und Vögel machen. Dazu musst du ein großes Teigblatt auswalzen und darauf mit der Füllung die gewünschte Form setzen. Lege einen zweiten Teig darüber und drücke ihn zwischen den geformten Stücken fein fest zusammen. Schneide mit dem Teigrädchen die Figuren ab. Danach bestreiche sie und backe sie wie andere Torten. Sie brauchen nicht lange zu backen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="vbergebliebnem Fleiſch">Fleischreste</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="Eyern" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſchoͤnem Meel">Weizenmehl, fein</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="wol Schmaltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="ſuͤſſer wuͤrtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Süße Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="Pfeffers" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="wol Saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="Eſſig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="meat stock" orig="Fleiſchbruͤh" commodity="wikidata:Q67860017" source="#fyndling-ingredient-context">Fleischbrühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="raisin" orig="wol Weinbeer" commodity="wikidata:Q13186" source="#fyndling-ingredient-context">Rosinen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wol Suppenſchmaltz">Suppenschmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#wec-444-trans" resp="#fyndling">Praxis. Das Fleisch vom Knochen lösen und klein schneiden, mit Pfeffer, süßen Gewürzen, reichlich Safran und Rosinen würzen und mit Essig und Brühe nur so feucht anmachen, dass die Füllung formbar bleibt und den Teig nicht durchweicht; wer will, bindet sie mit verquirlten Eiern. Aus feinem Mehl, Eiern und reichlich Schmalz einen festen Teig kneten, gut durcharbeiten und zwei gleich große Blätter ausrollen. Die Füllung auf das untere Blatt setzen oder zu Figuren formen, den Teig um die Füllung mit Eiweiß bestreichen, das zweite Blatt auflegen, dicht an der Füllung andrücken und mit dem Teigrädchen ausschneiden. Mit verquirltem Ei bestreichen und bei etwa 190 bis 200 °C 20 bis 30 Minuten backen, bis der Teig goldbraun ist; im Lager unter Glut oben und unten.
+
+Mengen und Hitze. Wecker nennt keine. Als Anhalt etwa 300 g Mehl, 2 Eier und 100 bis 150 g Schmalz, Wasser nach Bedarf; Temperatur, Backzeit und das Ei zum Bestreichen (sie schreibt nur „beſtreichs“) sind moderne Vorschläge. Die Fleischfüllung ist schon gar, deshalb reicht kurzes Backen.</note>
+        <note type="gloss" target="#wec-444-orig" n="Krapffen" resp="#fyndling">Hier ein gefülltes, im Ofen gebackenes Teiggebäck: Wecker sagt selbst „bachs wie andere Dortẽ“, also wie Torten.</note>
+        <note type="gloss" target="#wec-444-orig" n="Weinbeer" resp="#fyndling">Rosinen. In der Traubensaison („zur zeit wann ſawre Drauben ſeynd“) setzt Wecker frische Weinbeeren an die Stelle des Süßen.</note>
+        <note type="gloss" target="#wec-444-orig" n="Suppenſchmaltz" resp="#fyndling">Das Fett von der Fleischbrühe. Wecker erklärt das Wort nicht; die Lesung folgt der Wortbildung und wec-438, wo sie ersatzweise gehacktes Rinderfett nimmt.</note>
+        <note type="gloss" target="#wec-444-orig" n="redels ab" resp="#fyndling">Mit dem Teigrad ausradeln, dem kleinen Rad am Stiel, das in wec-436 „Redlein“ heißt (Adelung, Campe, DWB „Teigrad“).</note>
+        <note type="interpretive_choice" target="#wec-444-orig" n="Weinbeer (in der Traubensaison)" resp="#fyndling" subtype="contextual">Frische Weinbeeren: Wecker nennt die Zeit, „wann ſawre Drauben ſeynd“, und setzt sie „darfuͤr“, an die Stelle des Süßen. Beim ersten Vorkommen („thu wol Weinbeer darzu“) sind es Rosinen.<list type="alternatives"><item>Auch hier Rosinen<note type="rationale">Das Wort ist an beiden Stellen dasselbe; Rosinen widersprächen aber dem Weglassen des Süßen und dem Saison-Marker.</note></item></list></note>
+        <note type="interpretive_choice" target="#wec-444-orig" n="geſchwellt" resp="#fyndling" subtype="lexical">„kurz überbrüht“: Das schwache Partizip gehört zum kausativen schwellen, das im Elsässischen „sieden“ heißt (ElsWB, mit Colmarer Beleg „Geschwellti Hërdepfel“). Wecker lässt auch Speck „zuvor vberſchwelt“ sein (wec-437, dort „überbrüht“).<list type="alternatives"><item>„aufgequollen“, gleichbedeutend mit „geweicht“<note type="rationale">Getrocknete Früchte „geſchwellen“ bei Wecker in heißem Schmalz (wec-120, wec-122), und FWB und Lexer kennen schwellen nur als „anschwellen“. Dann wären getrocknete Zwetschgen gemeint.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
