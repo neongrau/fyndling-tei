@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rote Füße mit Johannisbeeren</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-28">2026-10-28</date>
+        <idno type="url">https://fyndling.de/rezepte/ron-0202/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/ron-0202</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Kunstbuch Von mancherley Essen, Gesotten, Gebraten, Posteten, von Hirschen, Vogelen, Wildtprat, vnd andern Schawessen, so auff Fürstlichen, vnd andern Pancketen zuzurichten gehörich</title>
+          <date when="1598">1598</date>
+          <idno type="URI">https://iiif.onb.ac.at/presentation/ABO/Z180803003/resource/NNNNNNNN.txt</idno>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (braunschweigische Druckersprache, 16. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="ron-0202">
+        <head>Rote Füße mit Johannisbeeren</head>
+        <div type="original" xml:id="ron-0202-orig" xml:lang="de-x-fnhd" corresp="#ron-0202-trans">
+          <p>Auff vorige weiſe machet man ſie mit Sanc Johansbirn roht ab / vnd gibt rotenZucker daruͤber/ bringt ſie kalt oder warm zu diſche / etc.</p>
+        </div>
+        <div type="translation" xml:id="ron-0202-trans" xml:lang="de" corresp="#ron-0202-orig">
+          <p>Die Füße auf die vorige Weise mit Johannisbeeren rot abmachen und roten Zucker darübergeben. Kalt oder warm zu Tisch bringen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="(implied)">Füße vom Ochsen, Schwein, Schaf oder Lamm</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Sanc Johansbirn">Johannisbeeren</ingredient>
+            </item>
+            <item>
+              <ingredient orig="rotenZucker">roter Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#ron-0202-trans" resp="#fyndling">Welches Gericht ist das? Gegarte Füße in einer mit Johannisbeeren rot gefärbten Sauce, mit rotem Zucker bestreut. Warm sind es Füße in Sauce, kalt stehen sie als Gallert, ähnlich einer süß-säuerlichen Fußsülze.
+
+Die vorige Weise. Der Text nennt nur, was hier anders ist: rot statt braun. Die Zubereitung steht in den Rezepten davor. In ron-0201 werden die Füße braun abgemacht und erkalten zum Gallert, die braune Sauce aus Weißbrot, Wein und Gewürzen ist in ron-0197 ausgeführt; ron-0200 kocht gegarte, mit Nelken gespickte Ochsenfüße mit Wein, ganzem Ingwer, Zimt und Zucker durch. Welche Würzung Rontzier für die rote Fassung übernimmt, sagt er nicht. Die Johannisbeeren bringen Farbe und Säure.
+
+Die Johannisbeeren. Wie sie in die Sauce kommen, steht nicht da. In ron-0059 werden sie mit Wein durch ein Haartuch gestrichen; so verteilt sich die Farbe gleichmäßig. Ganze Beeren in der Sauce sind ebenso denkbar.
+
+Praxis. Die Füße vorher weich garen, Ochsenfüße brauchen dafür mehrere Stunden, dann in der roten Sauce durchkochen und den roten Zucker erst beim Anrichten darübergeben. Für die kalte Fassung in Schüsseln kühl stellen, bis alles steht. Mengen nennt der Text nicht. Die Zubereitungszeit von etwa 4 Stunden ist eine Schätzung, der Text gibt keine Zeit an; das Erkalten ist nicht mitgerechnet.</note>
+        <note type="gloss" target="#ron-0202-orig" n="Auff vorige weiſe" resp="#fyndling">Verweis auf das Rezept davor (ron-0201): Dort werden die Füße braun abgemacht und stehen kalt wie ein Gallert; die braune Sauce ist in ron-0197 ausgeführt. Statt braun werden sie hier mit Johannisbeeren rot abgemacht.</note>
+        <note type="gloss" target="#ron-0202-orig" n="rotenZucker" resp="#fyndling">Rot gefärbter Zucker zum Bestreuen. In derselben Reihe streut Rontzier „Rotenſtrewzucker“ über Ochsenfüße (ron-0192). Womit der Zucker gefärbt ist, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#ron-0202-orig" n="Sanc Johansbirn" resp="#fyndling" subtype="lexical">Rote Johannisbeeren; „Sanc“ steht für Sankt, wie „S. Johansbiern“ in ron-0059. Rontzier schreibt „-birn“ regelmäßig für Beeren: Wacholderbirn (Wacholderbeeren), Maulbirn (Maulbeeren), Erdtbirn (Erdbeeren), Heydelbirn (Heidelbeeren). Mit „S. Johansbirn“ macht er auch eine Brühe „roth“ (ron-1625), nennt „Johansbirnſafft“ und „rote S. Johansbirnbletter“ und überschreibt die Suppen damit „Johansbern⸗Suppen“. Hier färben sie die Füße „roht“ - das passt zu roten Johannisbeeren und nicht zu Birnen.<list type="alternatives"><item>Johannisbirnen, eine um den Johannistag reifende Frühbirne<note type="rationale">Die Frühbirne ist in den Wörterbüchern nur aus dem Südwesten belegt (Pfälzisches Wörterbuch, Schweizerisches Idiotikon), ein norddeutscher Beleg fehlt. Gegen sie sprechen Rontziers Gebrauch von „-birn“ für Beeren und die Rotfärbung. Die Johannisbeere ist seit dem 16. Jahrhundert belegt (Etymologisches Wörterbuch; Schottelius: „ribesum. johansbeer.“).</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#johansbirn"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>
