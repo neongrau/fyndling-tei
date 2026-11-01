@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wermutwein auf Metbasis</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-01">2026-11-01</date>
+        <idno type="url">https://fyndling.de/rezepte/clu-024/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/clu-024</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Van de Byen, Hare wonderlicke oorspronc, Natuer, Eygenschap, crachtige, ongehoorde ende seltsame wercken ... Gestelt in forme van een Tsamen-sprekinge (Het derde Boec: Vanden Honich)</title>
+          <date when="1597">1597</date>
+          <idno type="URI">https://books.google.com/books?id=Y0NnAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Google-Digitalisat, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuniederländisch (Leiden 1597), Fraktur; Gespräch zwischen Theodorus Clutius und Carolus Clusius</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="clu-024">
+        <head>Wermutwein auf Metbasis</head>
+        <div type="original" xml:id="clu-024-orig" xml:lang="und" corresp="#clu-024-trans">
+          <p>Om Alſem Wijn te maken.
+Neemt Meede vande tweede ſcoꝛte 2. ſtoopen/ doet daer by dꝛogen gebꝛoken Alſem/ in een doecxken gebonden 3. Oncen/ ſtellet te weycken 5. ofte 6. dagen/ alle dagen den Alſem uyt dꝛuckende/ daer nae claert den Wijn van zijn grondicheyt/ deſe Wijn is ſeer diẽſtelic/ de vꝛouwen die haer ſtonden niet wel en connen crijgen/ ſy verwarmt die Moeder eñ Mage/ doet die ſpijſe verteeren/ eñ neemt wech alle coꝛruptien die inde Mage groeyen. In deſer wijſe machmẽ ooc Wijn van Roſmarijn/ Lavendel/ Hyſop/ van Stychas cruyt/ ende andere bloemẽ ende cruyden maken.</p>
+        </div>
+        <div type="translation" xml:id="clu-024-trans" xml:lang="de" corresp="#clu-024-orig">
+          <p>Um Wermutwein zu machen: Nimm Met von der zweiten Sorte, 2 Stoop, und gib getrockneten, gebrochenen Wermut dazu, in ein Tüchlein gebunden, 3 Unzen. Stelle es 5 oder 6 Tage zum Weichen hin und drücke den Wermut alle Tage aus. Danach kläre den Wein von seinem Bodensatz.</p>
+          <p>Dieser Wein ist sehr dienlich den Frauen, die ihre Monatsblutung nicht recht bekommen können. Er erwärmt die Gebärmutter und den Magen, lässt die Speise verdauen und nimmt alle Verderbnis fort, die im Magen wächst.</p>
+          <p>Andere Kräuter: Auf diese Weise kann man auch Wein von Rosmarin, Lavendel, Ysop, von Stoechaskraut und von anderen Blumen und Kräutern machen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Meede vande tweede ſcoꝛte 2. ſtoopen">Met, zweite Sorte (2 Stoop)</ingredient>
+            </item>
+            <item><ingredient orig="dꝛogen gebꝛoken Alſem/ in een doecxken gebonden 3. Oncen">Wermut, getrocknet und gebrochen</ingredient> - 3 ounce</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#clu-024-trans" resp="#fyndling">Was ist das? Fertiger Met, in dem Wermut weicht. Gesotten wird nichts, und außer dem Wermut kommt nichts dazu. „Wein“ heißt es trotzdem: Kiliaan führt den „alssen-wijn“ als Absinthites. Traubenwein steht hier nicht im Text.
+
+Zweite Sorte. Das Buch beschreibt vorher zwei Mete, das rote Honigwasser spricht von den „twee ſooꝛten hier boven verhaelt“. Nach der Reihenfolge wäre die zweite Sorte der zugemessene Met, nicht der aus dem Spülwasser. Ausdrücklich sagt Clutius das nicht. Seine Stärke bestimmt die des Wermutweins, eine eigene Rechnung gibt es hier deshalb nicht.
+
+Tüchlein und Ausdrücken. Das Tuch hält den gebrochenen Wermut zusammen, das tägliche Ausdrücken presst heraus, was sich darin vollgesogen hat. Ob das Tuch hängt oder liegt und ob das Gefäß verschlossen steht, sagt der Text nicht. Dass es vor dem Klären herauskommt, setzt er voraus.
+
+Klären. Ein Mittel nennt Clutius nicht. Die einfachste Lesart ist, den Wein stehen zu lassen und vom Satz abzuziehen.
+
+Wermut heute. Heutiges Wissen, nicht bei Clutius: Wermut enthält Thujon und gilt in größeren Mengen als bedenklich, in der Schwangerschaft wird von ihm abgeraten. Die Wirkungen im Text sind Clutius' Angaben, kein Rat.
+
+Praxis. Nimm fertigen, klaren Met und ein Gefäß, in dem das Tuch Platz hat. Heutiger Hinweis: Da sich der Stoop nicht sicher umrechnen lässt, beginne bei einem kleinen Ansatz mit wenig Wermut und koste täglich. Für die anderen Kräuter nennt Clutius keine Mengen.</note>
+        <note type="gloss" target="#clu-024-orig" n="ſcoꝛte" resp="#fyndling">Sorte. So gedruckt, wohl verdruckt für „ſooꝛte“, das Clutius sonst für die Mete schreibt. Nach Kiliaan „soorte“: qualitas, genus, species.</note>
+        <note type="gloss" target="#clu-024-orig" n="ſtoopen" resp="#fyndling">Stoop, ein Hohlmaß für Flüssigkeiten. Clutius nennt keinen Literwert, hier bleibt das Maß wie gedruckt.</note>
+        <note type="interpretive_choice" target="#clu-024-orig" n="grondicheyt" resp="#fyndling" subtype="lexical" cert="unknown">Bodensatz: abgeleitet von „gront“ (MNW: Boden, unterer Teil), dazu passend „claert ... van“. Als Substantiv in dieser Bedeutung ist das Wort weder bei Kiliaan noch in MNW und Verdam zu finden, dort heißt „grondich“ nur vollkommen, tief.<list type="alternatives"><item>Trübung im Wein überhaupt<note type="rationale">Vom Wort her möglich, die Praxis bleibt dieselbe: Der Wein soll klar werden.</note></item></list></note>
+        <note type="interpretive_choice" target="#clu-024-orig" n="Stychas cruyt" resp="#fyndling" subtype="lexical">Stoechas, wohl Schopflavendel (Lavandula stoechas): Gerard nennt für Stoechas den deutschen Namen „Stichas kraut“, und Clutius stellt anderswo im Buch Stoechas neben Lavendel.<list type="alternatives"><item>Gelbe Strohblume (Helichrysum stoechas)<note type="rationale">Fischer führt „Stichas citrina“. Dann stünde hier ein gelbes Kraut, doch nichts im Text deutet darauf.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

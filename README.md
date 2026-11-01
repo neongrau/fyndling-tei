@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**7333 Rezepte** aus **44 Rezeptsammlungen**, dazu
-44 Dateien auf Sammlungsebene mit den Quellenangaben.
+**7377 Rezepte** aus **45 Rezeptsammlungen**, dazu
+45 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -80,6 +80,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Le Viandier de Taillevent | ~1300 | 49 |  |
+| Clutius: Von den Bienen (Buch 3: Vom Honig) | 1597 | 44 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |

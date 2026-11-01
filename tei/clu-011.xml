@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rob von Sauerkirschen, Johannisbeeren und Berberitzen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-01">2026-11-01</date>
+        <idno type="url">https://fyndling.de/rezepte/clu-011/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/clu-011</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Van de Byen, Hare wonderlicke oorspronc, Natuer, Eygenschap, crachtige, ongehoorde ende seltsame wercken ... Gestelt in forme van een Tsamen-sprekinge (Het derde Boec: Vanden Honich)</title>
+          <date when="1597">1597</date>
+          <idno type="URI">https://books.google.com/books?id=Y0NnAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Google-Digitalisat, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuniederländisch (Leiden 1597), Fraktur; Gespräch zwischen Theodorus Clutius und Carolus Clusius</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="clu-011">
+        <head>Rob von Sauerkirschen, Johannisbeeren und Berberitzen</head>
+        <div type="original" xml:id="clu-011-orig" xml:lang="und" corresp="#clu-011-trans">
+          <p>Om Rob van Amarellen, van Aelbeſſen, ende Berberis te maken.
+Neemt het ſap van Amarellen verſch uytgedꝛuckt/ eñ dooꝛ een ſifte gegooten ofte een doec gewꝛeven 2. pont/ geſuyverden witten Honich een pont. Dit ſtelt ’tſamen over een glat coolen vyer ſoetelic te ſieden/ tot der dicte van dicken Honich/ ’twelc ghy bepꝛoeven meucht op eẽ tinnen telloir ofte in een ſaucier met een lepel: daer nae ſo gietet ſo warm inde potten/ ende latet vercouwen eñ verbintſe met eẽ frãcijn dicht toe. Op deſer wijſe machmen ooc het Rob van Aelbeſſen ende Berberis maken: dan die vꝛuchtkens moetmen vande ſteel ſuyveren/ eñ daer na tſap uyt perſſen ende wꝛijven dooꝛ een ſifte ofte tenen doec. Dees Rob machmen ooc in maeltijden ende inder Medicijnen gebꝛuycken/ ende is van naturen ſeer vercoelende/ ende den mont ververſchende/ gelijc wy vã de geheele vꝛuchten geſeyt hebben.</p>
+        </div>
+        <div type="translation" xml:id="clu-011-trans" xml:lang="de" corresp="#clu-011-orig">
+          <p>Um einen Rob von Sauerkirschen, von Johannisbeeren und von Berberitzen zu machen: Nimm den Saft von Sauerkirschen, frisch ausgepresst und durch ein Sieb gegossen oder durch ein Tuch gerieben, 2 Pfund, dazu geläuterten weißen Honig, ein Pfund. Setze dies zusammen über ein gleichmäßiges Kohlenfeuer und lass es sanft sieden bis zur Dicke von dickem Honig. Das kannst du auf einem zinnernen Teller oder in einer Saucenschale mit einem Löffel prüfen. Danach gieße ihn warm, wie er ist, in die Töpfe, lass ihn erkalten und verbinde sie dicht mit einem Pergament.</p>
+          <p>Auf diese Weise kann man auch den Rob von Johannisbeeren und Berberitzen machen. Nur muss man die Früchtchen vom Stiel säubern und danach den Saft auspressen und durch ein Sieb oder ein Tuch reiben.</p>
+          <p>Diesen Rob kann man auch bei Mahlzeiten und in der Arznei gebrauchen. Er ist von Natur sehr kühlend und erfrischt den Mund, wie wir es von den ganzen Früchten gesagt haben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="het ſap van Amarellen verſch uytgedꝛuckt">Sauerkirschsaft, frisch ausgepresst</ingredient> - 2 Pfund</item>
+            <item><ingredient orig="geſuyverden witten Honich">Honig, geläutert und weiß</ingredient> - 1 Pfund</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#clu-011-trans" resp="#fyndling">Was ist das? Fruchtsaft, mit geläutertem Honig dick eingekocht: zwei Pfund Saft auf ein Pfund Honig. Fruchtstücke bleiben nicht darin, das unterscheidet ihn von den eingemachten ganzen Früchten in clu-010.
+
+Der Saft. Sauerkirschen werden frisch ausgepresst, der Saft durch ein Sieb gegossen oder durch ein Tuch gerieben. Johannisbeeren und Berberitzen kommen zuerst vom Stiel, dann erst wird gepresst. Womit gepresst wird und was mit den Kirschsteinen geschieht, sagt Clutius nicht. Auch der Saft wird in Pfund angegeben.
+
+Der Honig. Er ist vorher geläutert (clu-001) und kommt so zum Saft.
+
+Feuer und Endpunkt. Sanftes Sieden über gleichmäßigem Kohlenfeuer, ruhige Glut ist unsere Deutung. Worin es siedet und wie lange, nennt der Text nicht. Maßstab ist allein die Dicke von dickem Honig. Geprüft wird auf einem Zinnteller oder in einer Saucenschale mit einem Löffel, die Handgriffe dazu fehlen.
+
+Abfüllen. Warm in die Töpfe, damit er noch läuft, erkalten lassen und erst dann mit Pergament dicht verbinden. Eine Haltbarkeit nennt Clutius für den Rob nicht.
+
+Praxis. Alles Folgende ist heutiger Rat. Wegen der Säure einen Topf aus Edelstahl oder Emaille nehmen, und weil Honig schäumt, mit Luft nach oben. Zur Probe wenig auf einen kalten Teller geben und erkalten lassen, denn heiß wirkt der Rob dünner. Statt Pergament tut es ein sauberes Glas mit Deckel. Bleibt er zu dünn, kann er gären, dann kühl aufbewahren und bald verbrauchen.</note>
+        <note type="gloss" target="#clu-011-orig" n="Rob" resp="#fyndling">Eingedickter Fruchtsaft. Kiliaan und das Mittelniederländische Wörterbuch führen das Wort in dieser Bedeutung nicht. Das Register des Buchs setzt es mit Clutius' eigenem Wort gleich: „Amarellecruyt ofte Rob Amarellorum“. In Krünitz' viel späterer Enzyklopädie heißen bis zur Honigdicke eingedickte Pflanzensäfte Roob oder Mus.</note>
+        <note type="gloss" target="#clu-011-orig" n="frãcijn" resp="#fyndling">Pergament. Kiliaan (1599) erklärt Francijn als membrana Francica, pergamena; das Mittelniederländische Wörterbuch ebenso. Beim Einmachen der ganzen Früchte heißt derselbe Verschluss „perckement“.</note>
+        <note type="gloss" target="#clu-011-orig" n="geſuyverden witten Honich" resp="#fyndling">Geläutert heißt: mit Eiweiß und Wasser aufgewallt und durchgeseiht, wie in clu-001. „Weiß“ ist Clutius' Wort; eine Honigsorte nennt er nicht.</note>
+        <note type="interpretive_choice" target="#clu-011-orig" n="tenen doec" resp="#fyndling" subtype="lexical" cert="unknown">„ein Tuch“, ohne Attribut. Das Wort „tenen“ ist am Druck klar lesbar, aber hier nicht geklärt. Im ersten Satz steht an derselben Stelle „een doec“, die Sache ist also dieselbe.<list type="alternatives"><item>ein dünnes Tuch<note type="rationale">Dem Sinn nach möglich, aber ohne Beleg: Kiliaan führt „dun“ als tenuis, nicht „tenen“.</note></item><item>aus Weidenruten<note type="rationale">Das Mittelniederländische Wörterbuch kennt „tenen, teenen“ als „von Weidenruten gemacht“, Kiliaan vimineus. Zu einem Tuch passt das schlecht.</note></item><item>ein offenes Tuch, verdruckt<note type="rationale">Im nächsten Rezept steht „ſifte ofte opene doec“ (clu-012). Das stützt ein durchlässiges Tuch, ein Druckfehler lässt sich aber nicht beweisen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

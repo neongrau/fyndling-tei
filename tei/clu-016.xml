@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Met aus ausgewaschenen Honigresten</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-01">2026-11-01</date>
+        <idno type="url">https://fyndling.de/rezepte/clu-016/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/clu-016</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Van de Byen, Hare wonderlicke oorspronc, Natuer, Eygenschap, crachtige, ongehoorde ende seltsame wercken ... Gestelt in forme van een Tsamen-sprekinge (Het derde Boec: Vanden Honich)</title>
+          <date when="1597">1597</date>
+          <idno type="URI">https://books.google.com/books?id=Y0NnAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Google-Digitalisat, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuniederländisch (Leiden 1597), Fraktur; Gespräch zwischen Theodorus Clutius und Carolus Clusius</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="clu-016">
+        <head>Met aus ausgewaschenen Honigresten</head>
+        <div type="original" xml:id="clu-016-orig" xml:lang="und" corresp="#clu-016-trans">
+          <p>Om Meede te maken.
+Men ſal nemen die reſte die inde mande gebleven is vant darlecken[?] vande ongepijndẽ Honich ofte Seem/ ende ſpoelen dat af met heet water/ ſo dat alle die ſoeticheyt int water ga/ tot dat ghy eẽ tobbẽ vol of twe hebt/ of ſoveel als ghy wilt: Dan doet dit nat inde keetel eñ latet in ſieden tot datter een eye int nat can dꝛijvẽ/ Dan ſtellet vant vyer/ ende gietet inde vaten ende latet coude werden/ daer by doende wat giſt van bier/ ende ſtellet te rijſen ofte werchen/ ende altoos het vadt opvollende/ dat die vuylicheit mach overcomen/ ende alſt niet meer en ſiet/ ofte werct/ ſo ſalmen het vat dicht toeſluyten/ eñ latent beruſten. Dit is de manier van Meede te makẽ/ ſommige doen in een doecxken gebonden wat Caneel/ Gember/ Muſchaten/ Nagelẽ eñ diergelijcke ſpecerien: om dat de Meede een goede ſmaec eñ reuc ſoude hebbẽ.</p>
+        </div>
+        <div type="translation" xml:id="clu-016-trans" xml:lang="de" corresp="#clu-016-orig">
+          <p>Um Met zu machen: Nimm den Rest, der vom Durchtropfen des Jungfernhonigs oder Honigseims im Korb geblieben ist, und spüle ihn mit heißem Wasser ab, sodass alle Süße ins Wasser übergeht, bis du einen Zuber voll hast oder zwei oder so viel, wie du willst.</p>
+          <p>Gib dann diese Flüssigkeit in den Kessel und lass sie einsieden, bis ein Ei darin schwimmen kann. Nimm sie dann vom Feuer, gieße sie in die Fässer und lass sie kalt werden. Gib etwas Bierhefe dazu und stelle sie zum Gären hin.</p>
+          <p>Fülle das Fass dabei immer wieder auf, damit der Schmutz überlaufen kann. Wenn es nicht mehr siedet oder gärt, verschließe das Fass dicht und lass es ruhen.</p>
+          <p>So macht man Met. Manche binden etwas Zimt, Ingwer, Muskatnüsse, Nelken und ähnliche Gewürze in ein Tüchlein und tun es hinein, damit der Met einen guten Geschmack und Geruch bekommt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="die reſte die inde mande gebleven is">Honigrückstand aus dem Korb (nach dem Abtropfen von Jungfernhonig)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="heet water">Wasser, heiß</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="een eye" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Ei (nur für die Probe)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wat giſt van bier">Bierhefe</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Caneel" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Gember" commodity="wikidata:Q15046077" source="#fyndling-ingredient-registry">Ingwer (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="Muſchaten" commodity="wikidata:Q83165" source="#corema-ingredient-index">Muskatnüsse (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="Nagelẽ" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken (optional)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#clu-016-trans" resp="#fyndling">Was ist das? Ein Met ohne abgewogenen Honig. Die Süße kommt aus dem Wasser, mit dem der Rückstand im Honigkorb abgespült wird, die Stärke aus dem Einsieden.
+
+Der Rückstand. Was im Korb bleibt, beschreibt Clutius in clu-042: die zerstoßene Masse aus den Bienenkörben, von der der ungepresste Honig abgetropft ist. Dort wird sie für groben Honig gepresst, hier abgespült. Sein Maß ist die Süße: Sie soll ganz ins Wasser übergehen. Eine Temperatur nennt er nicht, auch nicht, ob das Wasser danach geseiht wird.
+
+Einsieden und Eiprobe. Spülwasser ist dünn, deshalb wird es eingesotten, bis ein Ei darin schwimmen kann. Je mehr Honig gelöst ist, desto eher trägt die Flüssigkeit das Ei. Wie hoch das Ei stehen soll und wie man es im Kessel handhabt, sagt Clutius nicht. Weil auch keine Honigmenge genannt ist, lässt sich die Stärke dieses Mets nicht berechnen; die beziffert erst clu-017.
+
+Hefe. Die Flüssigkeit kommt heiß in die Fässer und kühlt dort ab, erst dann folgt die Bierhefe, ohne Mengenangabe. Heute würde man sagen: Das Sieden hat die Hefen abgetötet, und in heißer Flüssigkeit stürbe auch die zugesetzte.
+
+Das randvolle Fass. Das Fass wird während der Gärung immer wieder aufgefüllt, damit der Schmutz oben austritt. Gemeint sind Schaum und Trub, die die Gärung nach oben treibt. Das ist das Gegenteil von Steigraum: Das Fass bleibt voll, und was hochkommt, läuft ab. Womit aufgefüllt wird, sagt Clutius nicht. Dicht verschlossen wird erst, wenn die Flüssigkeit nicht mehr „siedet oder gärt“; Tage nennt er keine. „Sieden“ meint an dieser Stelle das Aufwallen der Gärung. Heute gilt: Ein vor dem Gärende dicht verschlossenes Gefäß baut Druck auf.
+
+Die Gewürze. Das Tüchlein ist ein Zusatz mancher Leute. Clutius nennt keine Mengen und keinen Zeitpunkt, und auch nicht, ob das Tüchlein wieder herauskommt.
+
+Praxis. Der Ausgangsstoff fällt nur bei der Honigernte an, heute also beim Imker oder am eigenen Volk; dabei nimmt man brutfreie Waben. Bierhefe gibt es als Brauhefe im Brauereibedarf, und Mostwaage oder Refraktometer messen an einer abgekühlten Probe genauer als das Ei. Beides ist heutige Hilfe, nicht Clutius. Wer im Gärgefäß statt im Fass arbeitet, fängt den Überlauf auf. Ohne Rückstand führt clu-017 zum Ziel, dort mit Honig und Wasser in festen Teilen.</note>
+        <note type="gloss" target="#clu-016-orig" n="ongepijndẽ Honich" resp="#fyndling">Jungfernhonig: Honig, der ohne Pressen aus den Waben läuft. Clutius nennt ihn in clu-043 den besten.</note>
+        <note type="gloss" target="#clu-016-orig" n="Seem" resp="#fyndling">Honigseim. Das Wort steht hier gleichwertig neben dem Jungfernhonig; in clu-043 führt Clutius „Seemhonich“ als weiteren Namen für ihn.</note>
+        <note type="gloss" target="#clu-016-orig" n="ſtellet te rijſen ofte werchen" resp="#fyndling">Zwei Wörter für dasselbe: gären.</note>
+        <note type="interpretive_choice" target="#clu-016-orig" n="vant darlecken" resp="#fyndling" subtype="philological" cert="unknown">„Vom Durchtropfen“. Der Wortanfang ist im Druck verschmiert, sicher ist nur der Ausgang -lecken. Lecken heißt tropfen (Mnw, Kiliaan: stillare), und Clutius schreibt selbst vom Honig, den man durch den Korb „lecken“ lässt (clu-043). Die Bedeutung trägt also, die Wortform bleibt offen.<list type="alternatives"><item>dooꝛlecken<note type="rationale">Passt zu Clutius' „loopt dooꝛ de manden“ und ergäbe denselben Sinn; am Druck nicht von darlecken zu unterscheiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#clu-016-orig" n="ſiet" resp="#fyndling" subtype="contextual">„Siedet“: In „alſt niet meer en ſiet ofte werct“ steht das Wort für das Aufwallen der Gärung, neben „werct“. Das Feuer ist zu diesem Zeitpunkt längst aus.<list type="alternatives"><item>sieht (man)<note type="rationale">Dieselbe Schreibung kann „sieht“ sein, wie in clu-042 „alſmen ſiet“. Dort steht aber „men“; hier ist „'t“ das Subjekt, und das passt nur zu „siedet“.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
