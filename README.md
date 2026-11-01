@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**7173 Rezepte** aus **42 Rezeptsammlungen**, dazu
-42 Dateien auf Sammlungsebene mit den Quellenangaben.
+**7333 Rezepte** aus **44 Rezeptsammlungen**, dazu
+44 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
-| Kunstbuch von mancherley Essen | 1598 | 543 |  |
+| Kunstbuch von mancherley Essen | 1598 | 593 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
@@ -68,8 +68,9 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
-| Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
+| Das geöffnete Kabinett des Sir Kenelm Digby | 1669 | 105 |  |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
+| Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
@@ -82,15 +83,16 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
-| Alemannisches Büchlein von guter Speise (N1) | 1492-1494 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
 | Solothurner Küchenmeisterei | um 1487 | 26 | [So1](https://gams.uni-graz.at/o:corema.so1) |
+| Alemannisches Büchlein von guter Speise (N1) | 1492-1494 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 24 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
-| Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
+| Hohberg: Georgica Curiosa (Vom Met-Sieden) | 1682 | 5 |  |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |
+| Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
 | Hausbuch aus Dietramszell (Cgm 467) | um 1477 | 3 | [M4](https://gams.uni-graz.at/o:corema.m4) |
 | Haus- und Arzneibuch im Codex Donaueschingen 792 | um 1450/1452 (Hoffmann/Sturm 2025) | 2 |  |
 

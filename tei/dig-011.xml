@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Met nach Digbys eigenen Überlegungen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-10-31">2026-10-31</date>
+        <idno type="url">https://fyndling.de/rezepte/dig-011/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/dig-011</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>The Closet of the Eminently Learned Sir Kenelme Digbie Kt. Opened: Whereby is Discovered Several ways for making of Metheglin, Sider, Cherry-Wine, &amp;c. Together with Excellent Directions for Cookery: As also for Preserving, Conserving, Candying, &amp;c.</title>
+          <date when="1669">1669</date>
+          <idno type="URI">https://www.gutenberg.org/cache/epub/16441/pg16441.txt</idno>
+          <note>Text: Project Gutenberg #16441 (Ausgabe Anne Macdonell 1910)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuenglisch (London 1669, Restaurationszeit), Rezeptsammlung des Naturphilosophen Sir Kenelm Digby (1603-1665) mit vielen namentlich genannten Gewährsleuten aus England und vom Festland (Lüttich, Antwerpen); Maße nach englischem Weinmaß (Gallon, Pottle, Quart)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="dig-011">
+        <head>Met nach Digbys eigenen Überlegungen</head>
+        <div type="original" xml:id="dig-011-orig" xml:lang="und" corresp="#dig-011-trans">
+          <p>MY OWN CONSIDERATIONS FOR MAKING OF MEATHE
+
+Boil what quantity of Spring-water you please, three or four walms, and then let it set the twenty four hours, and pour the clear from the settling. Take sixteen Gallons of the clear, and boil in it ten handfuls of Eglantine-leaves, five of Liverwort, five of Scabious, four of Baulm, four of Rosemary; two of Bay-leaves; one of Thyme, and one of Sweet-marjoram, and five Eringo-roots splitted. When the water hath drawn out the vertue of the herbs (which it will do in half an hours boiling,) let it run through a strainer or sieve, and let it settle so, that you may pour the clear from the Dregs. To every three Gallons of the Clear, take one of Honey, and with clean Arms stripped up, lade it for two or three hours, to dissolve the honey in the water; lade it twice or thrice that day. The next day boil it very gently to make the scum rise, and scum it all the while, and now and then pour to it a ladle full of cold water, which will make the scum rise more: when it is very clear from scum, you may boil it the more strongly, till it bear an Egge very high, that the breadth of a groat be out of the water, and that it boil high with great walms in the middle of the Kettle: which boiling with great Bubbles in the middle is a sign it is boiled to it's height. Then let it cool till it be Lukewarm, at which time put some Ale yest into it, to make it work, as you would do Ale. And then put it up into a fit Barrel first seasoned with some good sweet White-wine (as Canary-sack) and keep the bung open, till it have done working, filling it up with some such honey-drink warmed, as you find it sink down by working over. When it hath almost done working, put into it a bag of thin stuff (such as Bakers use to bolt in) fastened by a Cord at the bung, containing two parts of Ginger-sliced, and one apiece of Cinamon, Cloves and Nutmegs, with a Pebble-stone in it to make it sink; And stop it up close for six Months or a year, and then you may draw it into bottles. If you like Cardamon-seeds, you may adde some of them to the spices. Some do like Mint exceedingly to be added to the other herbs. Where no yeast is to be had, The Liquor will work if you set it some days in the hot Sun (with a cover, like the roof of a house over it, to keep wet out, if it chance to rain) but then you must have great care, to fill it up, as it consumeth, and to stop it close a little before it hath done working, and to set it then presently in a Cool Cellar. I am told that the Leaven of bread will make it work as well as yest, but I have not tryed it. If you will not have it so strong, it will be much sooner ready to drink; As if you take six parts of water to one of Honey. Some do like the drink better without either herbs or spices, and it will be much the whiter. If you will have it stronger, put but four Gallons and a half of water to one of honey.
+
+You may use what Herbs or Roots you please, either for their tast or vertue, after the manner here set down.
+
+If you make it work with yeast, you must have great care, to draw it into bottles soon after it hath done working, as after a fortnight or three weeks. For that will make it soon grow stale, and it will thence grow sower and dead before you are aware. But if it work singly of itself, and by help of the Sun without admixtion of either Leaven or Yeast, it may be kept long in the Barrel, so it be filled up to the top, and kept very close stopp'd.
+
+I conceive it will be exceeding good thus: when you have a strong Honey-liquor of three parts of water to one of Honey, well-boiled and scummed, put into it Lukewarm, or better (as soon as you take it from the fire) some Clove-gilly-flowers, first wiped, and all the whites clipped off, one good handful or two to every Gallon of Liquor. Let these infuse 30 or 40 hours. Then strain it from the flowers, and either work it with yeast, or set it in the Sun to work; when it hath almost done working, put into it a bag of like Gilly-flowers (and if they are duly dried, I think they are the better) hanging it in at the bung. And if you will put into it some spirit of wine, that hath drawn a high Tincture from Clove-gilly-flowers (dried I conceive is best) and some other that hath done the like from flowers and tops of Rosemary, and some that hath done the like from Cinnamon and Ginger, I believe it will be much the nobler, and last the longer.
+
+I conceive, that bitter and strong herbs, as Rosemary, Bayes, Sweet-marjoram, Thyme, and the like, do conserve Meathe the better and longer, being as it were in stead of hops. But neither must they, no more than Clove-gilly-flowers, be too much boiled: For the Volatil pure Spirit flies away very quickly. Therefore rather infuse them. Beware of infusing Gillyflower in any vessel of Metal, (excepting silver:) For all Metals will spoil and dead their colour. Glased earth is best.</p>
+        </div>
+        <div type="translation" xml:id="dig-011-trans" xml:lang="de" corresp="#dig-011-orig">
+          <p>Koche so viel Quellwasser, wie du magst, drei- oder viermal zum Aufwallen. Lass es dann vierundzwanzig Stunden stehen und gieße das Klare vom Bodensatz ab. Nimm sechzehn Gallonen von dem Klaren und koche darin zehn Handvoll Weinrosenblätter, fünf Handvoll Leberkraut, fünf Skabiose, vier Melisse, vier Rosmarin, zwei Lorbeerblätter, eine Handvoll Thymian, eine Majoran und fünf gespaltene Mannstreu-Wurzeln. Hat das Wasser die Kraft der Kräuter ausgezogen, was in einer halben Stunde Kochen geschieht, lass es durch ein Seihtuch oder Sieb laufen und absetzen, so dass du das Klare vom Bodensatz abgießen kannst.</p>
+          <p>Nimm auf je drei Gallonen des Klaren eine Gallone Honig. Schöpfe das Ganze mit sauberen, hochgekrempelten Armen zwei oder drei Stunden lang um, damit sich der Honig im Wasser auflöst. An diesem Tag schöpfst du es zwei- oder dreimal um.</p>
+          <p>Am nächsten Tag koche es ganz sanft, damit der Schaum aufsteigt, und schäume die ganze Zeit ab. Gieße ab und zu eine Kelle kaltes Wasser dazu, das den Schaum noch stärker steigen lässt. Ist die Flüssigkeit ganz klar vom Schaum, darfst du kräftiger kochen, bis sie ein Ei sehr hoch trägt, so dass die Breite eines Groat aus der Flüssigkeit ragt. Sie muss dabei hoch kochen, mit großem Aufwallen in der Mitte des Kessels. Dieses Kochen mit großen Blasen in der Mitte ist das Zeichen, dass sie auf ihre Höhe gekocht ist.</p>
+          <p>Lass sie dann abkühlen, bis sie lauwarm ist. Gib in diesem Augenblick etwas Bierhefe hinein, damit sie gärt, so wie du es bei Ale tun würdest. Fülle sie dann in ein passendes Fass, das du zuvor mit gutem süßem Weißwein, etwa Canary-Sack, behandelt hast. Lass das Spundloch offen, bis die Gärung abgeschlossen ist. Fülle dabei mit einem ebensolchen Honiggetränk nach, angewärmt, so wie du es durch das Überschäumen absinken siehst.</p>
+          <p>Gegen Ende der Gärung hängst du einen Beutel aus dünnem Tuch, wie es Bäcker zum Beuteln des Mehls benutzen, mit einer Schnur am Spund ins Fass. Darin sind zwei Teile geschnittener Ingwer und je ein Teil Zimt, Gewürznelken und Muskatnüsse, dazu ein Kieselstein, damit der Beutel sinkt. Verspunde das Fass fest für sechs Monate oder ein Jahr, dann kannst du den Met auf Flaschen ziehen.</p>
+          <p>Magst du Kardamomsamen, kannst du etwas davon zu den Gewürzen geben. Manche mögen es sehr, wenn Minze zu den anderen Kräutern kommt.</p>
+          <p>Gärung ohne Hefe: Ist keine Hefe zu haben, gärt die Flüssigkeit auch, wenn du sie einige Tage in die heiße Sonne stellst. Setze ein Dach wie ein Hausdach darüber, das den Regen abhält. Dann musst du aber sorgfältig nachfüllen, wie sie schwindet, und das Fass etwas vor Ende der Gärung fest verspunden und es sofort in einen kühlen Keller stellen. Mir wurde erzählt, dass der Sauerteig von Brot ebenso gut zum Gären bringt wie Hefe, aber ich habe es nicht erprobt.</p>
+          <p>Stärke und Machart: Willst du ihn nicht so stark, ist er viel früher trinkfertig, etwa wenn du sechs Teile Wasser auf einen Teil Honig nimmst. Manche mögen das Getränk lieber ganz ohne Kräuter und Gewürze, und es wird dann viel weißer. Willst du ihn stärker, nimm nur vier Gallonen und eine halbe Wasser auf eine Honig.</p>
+          <p>Du kannst Kräuter oder Wurzeln nach Belieben nehmen, ob wegen ihres Geschmacks oder ihrer Kraft, und zwar auf die hier beschriebene Weise.</p>
+          <p>Hefe oder Sonne, und die Haltbarkeit: Lässt du den Met mit Hefe gären, musst du darauf achten, ihn bald nach Ende der Gärung auf Flaschen zu ziehen, etwa nach zwei oder drei Wochen. Denn das lässt ihn bald schal werden, und davon wird er sauer und leblos, ehe du es merkst. Gärt er aber ganz von selbst mit Hilfe der Sonne, ohne Sauerteig und ohne Hefe, so hält er sich lange im Fass, wenn es bis oben gefüllt und sehr fest verspundet bleibt.</p>
+          <p>Mit Nelkenblüten: Ich denke, er wird außerordentlich gut so: Hast du ein kräftiges Honiggetränk aus drei Teilen Wasser auf einen Teil Honig, gut gekocht und abgeschäumt, gib lauwarm hinein, besser noch gleich vom Feuer genommen, Gartennelkenblüten. Sie sind zuvor abgewischt, und alles Weiße ist abgeschnitten. Nimm auf jede Gallone eine gute Handvoll oder zwei. Lass sie dreißig oder vierzig Stunden ziehen. Seihe dann den Met von den Blüten ab und lass ihn entweder mit Hefe oder in der Sonne gären. Gegen Ende der Gärung hängst du einen Beutel mit ebensolchen Nelkenblüten am Spund hinein. Sind sie richtig getrocknet, sind sie, glaube ich, noch besser. Gibst du noch Weingeist hinein, der eine kräftige Tinktur aus Gartennelkenblüten gezogen hat (getrocknete halte ich für die besten), dazu einen, der das Gleiche aus Blüten und Spitzen von Rosmarin gezogen hat, und einen, der es aus Zimt und Ingwer gezogen hat, so wird der Met meines Erachtens viel edler und hält länger.</p>
+          <p>Kräuter statt Hopfen: Ich meine, dass bittere und kräftige Kräuter wie Rosmarin, Lorbeer, Majoran, Thymian und ähnliche den Met besser und länger konservieren, gleichsam an Stelle von Hopfen. Sie dürfen aber, ebenso wenig wie die Nelkenblüten, zu viel gekocht werden, denn der flüchtige reine Geist fliegt sehr schnell davon. Lass sie darum lieber ziehen. Hüte dich, Nelkenblüten in einem Metallgefäß ziehen zu lassen, Silber ausgenommen, denn alle Metalle verderben und dämpfen ihre Farbe. Glasierte Erde ist am besten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Take sixteen Gallons of the clear">Quellwasser, aufgewallt und klar abgegossen</ingredient> - 16 gallon</item>
+            <item><ingredient orig="ten handfuls of Eglantine-leaves">Weinrosenblätter</ingredient> - 10 Handvoll</item>
+            <item><ingredient orig="five of Liverwort">Leberkraut</ingredient> - 5 Handvoll</item>
+            <item><ingredient orig="five of Scabious">Skabiose</ingredient> - 5 Handvoll</item>
+            <item><ingredient orig="four of Baulm">Melisse</ingredient> - 4 Handvoll</item>
+            <item><ingredient en="rosemary" orig="four of Rosemary" commodity="wikidata:Q122679" source="#fyndling-ingredient-name">Rosmarin</ingredient> - 4 Handvoll</item>
+            <item><ingredient orig="two of Bay-leaves">Lorbeerblätter</ingredient> - 2 Handvoll</item>
+            <item><ingredient orig="one of Thyme">Thymian</ingredient> - 1 Handvoll</item>
+            <item><ingredient en="marjoram" orig="one of Sweet-marjoram" commodity="wikidata:Q22694" source="#fyndling-ingredient-registry">Majoran</ingredient> - 1 Handvoll</item>
+            <item><ingredient orig="five Eringo-roots splitted">Mannstreu-Wurzeln, gespalten</ingredient> - 5</item>
+            <item><ingredient en="honey" orig="To every three Gallons of the Clear, take one of Honey" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient> - 1 gallon</item>
+            <item>
+              <ingredient orig="a ladle full of cold water">Kaltes Wasser zum Abschäumen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="some Ale yest">Bierhefe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="some good sweet White-wine (as Canary-sack)">Süßer Weißwein (Canary-Sack) für das Fass</ingredient>
+            </item>
+            <item>
+              <ingredient orig="two parts of Ginger-sliced">Ingwer, in Scheiben (zwei Teile)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="one apiece of Cinamon" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt (ein Teil)</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="Cloves" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken (ein Teil)</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="Nutmegs" commodity="wikidata:Q83165" source="#fyndling-ingredient-name">Muskatnüsse (ein Teil)</ingredient>
+            </item>
+            <item><ingredient orig="a Pebble-stone">Kieselstein als Gewicht für den Beutel</ingredient> - 1</item>
+            <item>
+              <ingredient orig="If you like Cardamon-seeds">Kardamomsamen (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient en="mint" orig="Mint" commodity="wikidata:Q27640062" source="#fyndling-ingredient-registry">Minze (optional)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="one good handful or two to every Gallon of Liquor">Gartennelkenblüten, abgewischt, Weißes abgeschnitten (Variante)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="some spirit of wine">Weingeist mit gezogener Tinktur (optional, Variante)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#dig-011-trans" resp="#fyndling">Was ist das? Digbys eigenes Verfahren für einen Kräutermet: ein Kräutersud, darin der Honig, gekocht bis zur Eierprobe, mit Bierhefe vergoren, mit einem Gewürzbeutel im Fass. Dazu kommen Varianten und Überlegungen, die er als Vermutung kennzeichnet („I conceive“), vor allem die Fassung mit Nelkenblüten.
+
+Kräutersud. Das Wasser wallt zuerst nur auf und setzt sich vierundzwanzig Stunden, dann wird das Klare abgegossen. Einen Grund nennt Digby nicht. Die Kräuter kochen eine halbe Stunde, danach setzt sich der Sud noch einmal. Am Schluss warnt er selbst davor, starke Kräuter zu viel zu kochen, und rät eher zum Ziehenlassen. Das Grundrezept kocht sie trotzdem, der Text gleicht das nicht aus.
+
+Lösen und Abschäumen. Der Honig wird mit den Armen im Sud umgeschöpft, bis er sich löst, gekocht wird erst am nächsten Tag. Zuerst ganz sanft, damit der Schaum steigt; die Kelle kaltes Wasser lässt ihn nach Digby noch stärker steigen. Erst wenn der Sud klar vom Schaum ist, darf er kräftiger kochen.
+
+Eierprobe. Digby gibt zwei Endzeichen: Das Ei ragt um die Breite eines Groat heraus, und der Sud wallt in der Mitte des Kessels mit großen Blasen auf. Die Verhältnisse von Honig und Wasser sind also nur der Ansatz, die Probe am Ende des Kochens entscheidet über die Stärke.
+
+Gärung und Fass. Die Hefe kommt in den lauwarmen Sud, eine Menge nennt Digby nicht. Das Spundloch bleibt offen, was überschäumt, wird mit warmem Honiggetränk ersetzt; woher es kommt, sagt er nicht. Gegen Ende der Gärung kommt der Gewürzbeutel hinein, der Kieselstein zieht ihn nach unten. Die Teile der Gewürze haben keine Einheit.
+
+Fass oder Flasche. Das Grundrezept lässt den Met sechs Monate oder ein Jahr im Fass, der spätere Absatz will Hefemet zwei oder drei Wochen nach der Gärung auf Flaschen und nur den ohne Hefe vergorenen lange im Fass. Digby löst das nicht auf.
+
+Stärke. Sechs Teile Wasser ergeben die schwächste Fassung, der Grundansatz mit drei Teilen die stärkste der sicher genannten. Der Satz „stronger“ mit vier und einem halben Teil ergibt nur gegenüber den sechs Teilen Sinn, siehe die Lesarten.
+
+Gärung mit der Fasshefe. Ist keine Hefe zu haben, lässt Digby den Met einige Tage in der heißen Sonne gären, ohne Sauerteig und ohne Hefe („singly of itself“). Der gekochte Sud bringt selbst keine Hefe mit, die Gärung kommt aus dem Fass: Ein Fass, das immer wieder für Met oder Wein dient, trägt im Holz eine eingefahrene Hefe. Über die vielen Ansätze haben sich darin die gärkräftigen Stämme durchgesetzt, und sie gären den Ansatz zuverlässig durch. Die Sonne gibt die Wärme dazu. Weil das Fass kurz vor dem Ende der Gärung fest verspundet wird, gärt der Met unter Druck zu Ende.
+
+Für Metmacher: die Zahlen
+
+Modellrechnung mit Literaturwerten für Honig (Dichte, Zuckergehalt), keine Messung an einem angesetzten Met.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| 1 Gallone Honig auf 3 Gallonen Kräutersud (1 : 3), gekocht bis zur Eierprobe | 309-476 g/l | 1,119-1,184 | 119-184 | 27,9-41,0 | 18,4-28,3 % |
+| Schwächere Fassung: 1 Teil Honig auf 6 Teile Wasser | 177-272 g/l | 1,068-1,105 | 68-105 | 16,6-24,9 | 10,5-16,2 % |
+| Stärkere Fassung: 1 Teil Honig auf 4½ Teile Wasser | 225-346 g/l | 1,087-1,134 | 87-134 | 20,9-30,9 | 13,4-20,6 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Annahmen: Honig und Wasser stehen jeweils im selben Maß, die Frage nach der Größe der Gallone kürzt sich daher heraus. Digby beziffert das Einkochen nicht, beim Grundansatz bestimmt die Eierprobe das Ende; die Rechnung setzt deshalb einen Einkochverlust von 15-40 % an, der die Spanne erzeugt. Für die schwächere und die stärkere Fassung nennt Digby keine Eierprobe, gerechnet ist dasselbe Einkochen. Die Fassung mit Nelkenblüten hat dasselbe Verhältnis wie der Grundansatz, drei Teile Wasser auf einen Teil Honig. Nicht eingerechnet sind Kräuter, Gewürze, Nelkenblüten, der Weingeist mit den Tinkturen, die Hefe, der Wein aus dem Fass und das Nachfüllen mit Honiggetränk.
+
+Praxis. Die einzige Zeit am Feuer, die Digby nennt, ist die halbe Stunde Kräutersud; dazu kommen zwei oder drei Stunden Umschöpfen und das Kochen bis zur Eierprobe ohne Zeitangabe. Heutiges Wissen: Gärt ein Honigsud im fest verschlossenen Gefäß, baut er Druck auf und kann das Gefäß sprengen. Wer die Sonnengärung nachmacht, verspundet deshalb nicht vor dem Ende der Gärung, sondern lässt den Met unter einem Gärspund gären und verschließt erst, wenn die Gärung ruht. Wer ohne Bierhefe und ohne ein eingefahrenes Fass arbeitet, setzt heute Weinhefe zu.</note>
+        <note type="gloss" target="#dig-011-orig" n="Gallon" resp="#fyndling">Englisches Hohlmaß, deutsch Gallone. Digby sagt nicht, welche Gallone er meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Hier kürzt sich das heraus, weil Honig und Wasser im selben Maß stehen.</note>
+        <note type="gloss" target="#dig-011-orig" n="groat" resp="#fyndling">Englische Silbermünze zu vier Pence. Die Eierprobe gibt die Größe des herausragenden Eistücks nur über diese Münze an, deshalb steht hier keine Zahl in Millimetern.</note>
+        <note type="gloss" target="#dig-011-orig" n="Canary-sack" resp="#fyndling">Sack ist ein süßer, gespriteter Weißwein aus Spanien oder von den Kanaren. Digby behandelt damit das Fass vor dem Einfüllen.</note>
+        <note type="gloss" target="#dig-011-orig" n="Eringo-roots" resp="#fyndling">Wurzeln des Mannstreus (Eryngium), bei Ludwig 1706 „Mannstreu, Brackendistel“. Hier werden sie gespalten im Sud mitgekocht.</note>
+        <note type="gloss" target="#dig-011-orig" n="bolt" resp="#fyndling">Bäcker beuteln (bolten) das Mehl durch ein feines Gewebe. Ein solches Beuteltuch dient hier als Beutel für die Gewürze.</note>
+        <note type="gloss" target="#dig-011-orig" n="Clove-gilly-flowers" resp="#fyndling">Gartennelken (Dianthus caryophyllus), die nach Gewürznelken duften. „The whites clipped off“ meint, dass die weißen Ansätze der Blütenblätter weggeschnitten werden.</note>
+        <note type="gloss" target="#dig-011-orig" n="spirit of wine" resp="#fyndling">Weingeist, aus Wein destillierter Alkohol. Digby lässt darin Nelkenblüten, Rosmarin, Zimt und Ingwer ziehen.</note>
+        <note type="interpretive_choice" target="#dig-011-orig" n="Liverwort" resp="#fyndling" subtype="lexical" cert="unknown">Leberkraut, wie in den anderen Digby-Rezepten dieser Sammlung. Welche Pflanze gemeint ist, bleibt offen: Unter dem Namen laufen bei Britten mehrere Pflanzen, auch Lebermoose.<list type="alternatives"><item>Leberblümchen (Anemone hepatica)<note type="rationale">Passt zu den übrigen Kräutern. Digby nennt Odermennig in dig-013 getrennt neben Liverwort, der ist also nicht gemeint.</note></item><item>Brunnenlebermoos (Marchantia polymorpha)<note type="rationale">Ebenfalls liverwort genannt, als Kraut unter Handvollen von Blättern aber weniger naheliegend.</note></item></list></note>
+        <note type="interpretive_choice" target="#dig-011-orig" n="four Gallons and a half" resp="#fyndling" subtype="philological">Ausgabe 1910: „put but four Gallons and a half of water to one of honey“. Der Text folgt dieser Fassung. Erstdruck 1669: „put but Gallons and a half of water to one of honey“, die Zahl fehlt dort beim Seitenwechsel von S. 19 auf S. 20. „Stronger“ passt zu vier und einem halben nur im Vergleich mit den unmittelbar davor genannten sechs Teilen, denn der Grundansatz von drei Teilen ist stärker.<list type="alternatives"><item>Zweieinhalb Gallonen („Two Gallons and a half“)<note type="rationale">Wäre stärker als der Grundansatz und ist bei Digby als Verhältnis belegt (dig-013: „To every two gallons and a half of this decoction, put one gallon of honey“). Für diese Stelle aber nicht überliefert.</note></item></list></note>
+        <note type="interpretive_choice" target="#dig-011-orig" n="first seasoned with some good sweet White-wine" resp="#fyndling" subtype="contextual">Das Fass wird vor dem Befüllen mit dem Wein behandelt, wörtlich „gewürzt“. Wie, sagt Digby nicht.<list type="alternatives"><item>Wein einige Zeit im Fass stehen lassen<note type="rationale">Auch das kann „season“ meinen. Heute würde man das Fass am ehesten mit dem Wein ausschwenken, das ist aber nicht Digbys Angabe.</note></item></list></note>
+        <note type="interpretive_choice" target="#dig-011-orig" n="For that will make it soon grow stale" resp="#fyndling" subtype="contextual">„That“ meint die Hefe bzw. das Vergären mit Hefe: Der folgende Satz stellt dem die Gärung „without admixtion of either Leaven or Yeast“ gegenüber.<list type="alternatives"><item>Das zu späte Abfüllen<note type="rationale">Grammatisch möglich und in der Sache ähnlich, aber der Gegensatz im nächsten Satz spricht für die Hefe.</note></item></list></note>
+        <note type="interpretive_choice" target="#dig-011-orig" n="by help of the Sun without admixtion of either Leaven or Yeast" resp="#fyndling" subtype="contextual">Ohne Hefe und Sauerteig trägt die Fasshefe die Gärung, also die im Holz eingefahrene Hefe des Fasses; die heiße Sonne liefert die Wärme. Der gekochte Sud selbst bringt keine Hefe mit.<list type="alternatives"><item>Digby setzt eine Hefegabe stillschweigend voraus.<note type="rationale">Der Text schließt Hefe und Sauerteig für diese Fassung ausdrücklich aus. Daher wird nichts ergänzt.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#or"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>
