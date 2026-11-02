@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**7377 Rezepte** aus **45 Rezeptsammlungen**, dazu
-45 Dateien auf Sammlungsebene mit den Quellenangaben.
+**7466 Rezepte** aus **46 Rezeptsammlungen**, dazu
+46 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
-| Kunstbuch von mancherley Essen | 1598 | 593 |  |
+| Kunstbuch von mancherley Essen | 1598 | 676 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
@@ -91,6 +91,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
+| Glauber: Reicher Schatz- und Sammelkasten, Zweite Centuria (Gefrierkonzentration) | 1660 | 6 |  |
 | Hohberg: Georgica Curiosa (Vom Met-Sieden) | 1682 | 5 |  |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |
 | Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
