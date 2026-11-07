@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Schneeschaum aus Sahne und Sack</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-06">2026-11-06</date>
+        <idno type="url">https://fyndling.de/rezepte/lon-001/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/lon-001</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Rezeptbuch der Sarah Longe, Folger Shakespeare Library MS V.a.425</title>
+          <date notBefore="1600" notAfter="1699">17. Jh., Nachträge bis 18. Jh.</date>
+          <idno type="URI">https://folgerpedia.folger.edu/images/8/89/V.a.425.docx</idno>
+          <note>Text: Folger Shakespeare Library, MS V.a.425 (Transkription EMROC)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuenglisch, englische Haushaltshandschrift des 17. Jahrhunderts mit Nachträgen bis ins 18. Jahrhundert; Mrs Sarah Longe und spätere Hände</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="lon-001">
+        <head>Schneeschaum aus Sahne und Sack</head>
+        <div type="original" xml:id="lon-001-orig" xml:lang="und" corresp="#lon-001-trans">
+          <p>To make Snow.
+Take a pint of thicke sweete Creame, and halfe a pint of Sack, and halfe a pound of Sugar, and the white of two Eggs well beaten, and a pretty deale of limon, and mingle all this together, and put it into a pretty big earthen Pan, or Bason, and take a pretty big birchen rod, and beate it till the froth doth rise, and then take it of with a stirre, and put it into the thing you would have it goe in, (it should bee a glasse Sillibubbe pot, if you have it, if not, a white creame dish will serve: you should lett it stand a pretty while before you eate it, because it should settle with a little kinde of drinke at the bottome, like a Sillibubbe.</p>
+        </div>
+        <div type="translation" xml:id="lon-001-trans" xml:lang="de" corresp="#lon-001-orig">
+          <p>Schnee machen: Nimm etwa 0,5 l (ein Pint) dicke, süße Sahne, etwa 250 ml (ein halbes Pint) Sack, etwa 225 g (ein halbes Pfund) Zucker, das Weiße von zwei Eiern, gut geschlagen, und ziemlich viel Zitrone. Vermische das alles und gib es in eine ziemlich große irdene Schüssel oder ein Becken.</p>
+          <p>Nimm eine ziemlich große Birkenrute und schlage damit, bis der Schaum aufsteigt. Dann nimm ihn mit einem Rührlöffel ab und gib ihn in das Gefäß, in dem du ihn haben willst.</p>
+          <p>Es sollte ein gläserner Sillibub-Topf sein, wenn du einen hast; wenn nicht, tut es auch eine weiße Sahneschale. Lass ihn eine ganze Weile stehen, bevor du ihn isst, denn er soll sich setzen, mit ein wenig Trank am Boden, wie ein Sillibub.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="a pint of thicke sweete Creame">Sahne, dick und süß</ingredient> - 500 ml</item>
+            <item><ingredient orig="halfe a pint of Sack">Sack</ingredient> - 250 ml</item>
+            <item><ingredient en="unrefined cane sugar" orig="halfe a pound of Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 225 g</item>
+            <item><ingredient orig="the white of two Eggs well beaten">Eiweiß, gut geschlagen</ingredient> - 2 Stück</item>
+            <item>
+              <ingredient en="lemon" orig="a pretty deale of limon" commodity="wikidata:Q1093742" source="#fyndling-ingredient-name">Zitrone</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#lon-001-trans" resp="#fyndling">Was ist das? Ein Schnee: Sahne, Sack, Zucker, geschlagenes Eiweiß und Zitrone werden zusammen mit einer Birkenrute geschlagen, bis Schaum aufsteigt; den Schaum nimmt man ab und richtet ihn im Serviergefäß an. Die Handschrift vergleicht das Ergebnis selbst mit einem Sillibub: Beim Stehen setzt sich der Schaum, und am Boden sammelt sich ein wenig Trank. Das Absetzen ist gewollt, kein Fehler.
+
+Die Birkenrute. Ludwig (1706) übersetzt birch mit „eine ruthe von birckenreiß“, gemeint ist ein Bündel Birkenzweige als Schlaggerät. Rumpolt beschreibt 1581 für seine Schneemilch dasselbe Gerät: „kleine Besem von Birckenholtz gemacht/ vnd fein sauber außgewaschen“. Heute leistet ein großer Schneebesen dasselbe (modern).
+
+Die Zitrone. A pretty deale of limon nennt nur die Menge, nicht die Form. Saft mischt sich ohne Weiteres unter, abgeriebene Schale würzt, ohne zu verdünnen; die Handschrift entscheidet das nicht.
+
+Das Gefäß. Glas oder eine weiße Schale: Einen Grund nennt die Handschrift nicht. Naheliegend ist, dass man die Schichtung aus Schaum und Trank sehen soll.
+
+Praxis. Das Eiweiß zuerst gut schlagen, dann mit Sahne, Sack, Zucker und Zitrone in einer großen Schüssel vermischen und mit der Rute schlagen, bis Schaum aufsteigt. Den Schaum abnehmen und ins Glas geben. Wie lange er stehen soll, sagt der Text nur mit „a pretty while“; die zweite Fassung im Buch (‚Another way to make snow‘) nennt knapp eine halbe Stunde. Sahne und rohes Eiweiß bei Wärme kühl stellen und den Schnee bald essen.</note>
+        <note type="gloss" target="#lon-001-orig" n="Sack" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanaren, eine Sherry-Art. Blount (1656) nennt den Málaga-Sack nach der Stadt in Andalusien, wo er gemacht wurde. Über seine Süße sagt die Handschrift nichts.</note>
+        <note type="gloss" target="#lon-001-orig" n="Sillibubbe pot" resp="#fyndling">Gefäß für den Sillibub (Syllabub), eine Speise aus Sahne oder Milch mit Wein oder Cider und Zucker. Ludwig (1706): „ein gewisser Englischer kühlender dicker tranck, der da sonderlich aus milch, und etwas altem biere oder weine, und zucker bestehet“.</note>
+        <note type="interpretive_choice" target="#lon-001-orig" n="a pretty deale of limon" resp="#fyndling" subtype="contextual">Ziemlich viel Zitrone, ohne festgelegte Form: Der Text nennt nur die Menge, deshalb steht im Lesertext schlicht „Zitrone“.<list type="alternatives"><item>Nur der Saft<note type="rationale">Mischt sich ohne Weiteres unter Sahne, Wein und Eiweiß; der Text sagt es aber nicht.</note></item><item>Vor allem die abgeriebene Schale<note type="rationale">Würzt, ohne die Masse zu verdünnen; ebenfalls nicht im Text.</note></item></list></note>
+        <note type="interpretive_choice" target="#lon-001-orig" n="take it of with a stirre" resp="#fyndling" subtype="lexical" cert="unknown">„Stirre“ als Rührgerät, hier Rührlöffel: zum Verb to stir (Ludwig 1706: „etwas regen, bewegen“). Als Name eines Geräts ist das Nomen in den Wörterbüchern nicht belegt.<list type="alternatives"><item>Schaumlöffel oder Seiher<note type="rationale">Passt zum Abheben des Schaums, ist aber durch das Wort nicht gestützt.</note></item><item>Rührholz oder Spatel<note type="rationale">Ebenso möglich; die Handschrift beschreibt das Gerät nicht.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Metheglin mit Kräutern und Ingwer</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-06">2026-11-06</date>
+        <idno type="url">https://fyndling.de/rezepte/lon-019/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/lon-019</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Rezeptbuch der Sarah Longe, Folger Shakespeare Library MS V.a.425</title>
+          <date notBefore="1600" notAfter="1699">17. Jh., Nachträge bis 18. Jh.</date>
+          <idno type="URI">https://folgerpedia.folger.edu/images/8/89/V.a.425.docx</idno>
+          <note>Text: Folger Shakespeare Library, MS V.a.425 (Transkription EMROC)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuenglisch, englische Haushaltshandschrift des 17. Jahrhunderts mit Nachträgen bis ins 18. Jahrhundert; Mrs Sarah Longe und spätere Hände</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="lon-019">
+        <head>Metheglin mit Kräutern und Ingwer</head>
+        <div type="original" xml:id="lon-019-orig" xml:lang="und" corresp="#lon-019-trans">
+          <p>To make Metheglen.
+Take of the best Condit-water, and the best and purest hony you can gett, put them together in a tub, and beate them together till it bee strong enough to beare a new lade Egg from the bottome, then sett it over the fire, and put into it a little rose-mary, Time, mariorum, and winter savery ty'd up in a bundle, (if you please you may put in Maiden-haire, Liver-wort, or any other herbs, as you thinke fitt) then make a little fine bagg of linnen, and put into it 3. or 4. races of ginger, 2. or 3. nutmeggs, a little Cloves, and mace, and if you will a little Cinamon, sow it up, and put it into the boyling, lett it boyle one whole hour, skiming it all the while, then poure it out into Earthen pans, and soe lett it stand till next morning, then poure all the cleare of the pans into a good vessell, one that hath binn used with sacke or white-wine, and hang your bag of spice in it, soe stop it close, and lett it stand at least 2 moneths before you drinke of it, then draw it into bottles if you please it will ^be beater; you ^may make it with a lemon pill put into the vessell; if you intend to keepe it, make it the stronger of hony, and spice, if to drinke at 2 moneths End, lett the Egg only rise from the bottome without swiming.</p>
+        </div>
+        <div type="translation" xml:id="lon-019-trans" xml:lang="de" corresp="#lon-019-orig">
+          <p>Nimm das beste Röhrenwasser und den besten und reinsten Honig, den du bekommen kannst, gib beides zusammen in einen Bottich und schlage es miteinander, bis es stark genug ist, ein frisch gelegtes Ei vom Boden zu heben. Dann setze es über das Feuer und gib ein wenig Rosmarin, Thymian, Majoran und Winter-Bohnenkraut hinein, zu einem Bund gebunden. Wenn du willst, kannst du auch Frauenhaarfarn, Leberkraut oder andere Kräuter dazugeben, wie du es für richtig hältst.</p>
+          <p>Dann mach einen kleinen, feinen Beutel aus Leinen und gib 3 oder 4 Wurzelstücke Ingwer, 2 oder 3 Muskatnüsse, ein wenig Nelken und Muskatblüte hinein, und wenn du willst, ein wenig Zimt. Näh ihn zu und gib ihn in den kochenden Sud. Lass es eine ganze Stunde kochen und schäume es die ganze Zeit ab.</p>
+          <p>Dann gieß es in irdene Schüsseln und lass es so bis zum nächsten Morgen stehen. Dann gieß alles Klare aus den Schüsseln in ein gutes Fass, eines, in dem schon Sack oder Weißwein war, und häng deinen Gewürzbeutel hinein. Verschließ es fest und lass es mindestens 2 Monate stehen, ehe du davon trinkst. Dann zieh ihn, wenn du willst, auf Flaschen, so wird er besser.</p>
+          <p>Du kannst ihn auch mit einer Zitronenschale machen, die du ins Fass gibst.</p>
+          <p>Willst du ihn aufbewahren, mach ihn stärker an Honig und Gewürz. Soll er nach 2 Monaten getrunken werden, lass das Ei nur vom Boden aufsteigen, ohne dass es schwimmt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="the best Condit-water">Röhrenwasser (Conduit-Wasser)</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="the best and purest hony you can gett" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="rosemary" orig="a little rose-mary" commodity="wikidata:Q122679" source="#fyndling-ingredient-name">Rosmarin</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Time">Thymian</ingredient>
+            </item>
+            <item>
+              <ingredient en="marjoram" orig="mariorum" commodity="wikidata:Q22694" source="#fyndling-ingredient-registry">Majoran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="winter savery">Winter-Bohnenkraut</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Maiden-haire">Frauenhaarfarn (nach Belieben)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Liver-wort">Leberkraut (nach Belieben)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="3. or 4. races of ginger">Ingwer, Wurzelstücke</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="2. or 3. nutmeggs" commodity="wikidata:Q83165" source="#fyndling-ingredient-name">Muskatnüsse</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="a little Cloves" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="mace" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte (Macis)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="a little Cinamon" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt (nach Belieben)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="a lemon pill">Zitronenschale (Variante)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#lon-019-trans" resp="#fyndling">Was ist das? Ein Metheglin, also ein Met, der mit einem Kräuterbund und einem Gewürzbeutel gekocht wird. Mengen für Honig und Wasser nennt die Handschrift nicht, die Stärke bestimmt allein die Eierprobe.
+
+Eierprobe. Honig und Wasser werden kalt im Bottich geschlagen, bis sich der Honig löst und die Lösung ein frisch gelegtes Ei vom Boden hebt. Erst dann kommt der Ansatz aufs Feuer. Am Schluss stuft der Text die Stärke nach dem Zweck ab: zum Aufbewahren stärker an Honig und Gewürz, für das Trinken nach zwei Monaten nur so stark, dass das Ei vom Boden aufsteigt, ohne zu schwimmen. Die Parallelfassung bei Digby (1669) beschreibt dieselbe Probe: Schwimmt das Ei oben, ist der Ansatz sehr stark.
+
+Kochen und Abschäumen. Der Kräuterbund und der zugenähte Leinenbeutel mit Ingwer, Muskatnüssen, Nelken, Muskatblüte und nach Wunsch Zimt kochen eine ganze Stunde mit, der aufsteigende Schaum wird die ganze Zeit abgenommen. Über Nacht in irdenen Schüsseln setzt sich der Bodensatz ab, am Morgen kommt nur das Klare ins Fass. Der Gewürzbeutel hängt danach im Fass weiter.
+
+Fass und Hefe. Eine Hefe nennt die Handschrift nicht. Nach einer Stunde Kochen enthält der Most keine lebende Hefe mehr, die Gärung kommt aus dem Fass, in dem schon Sack oder Weißwein lag: Im Holz eines solchen immer wieder benutzten Fasses sitzt Hefe. Fest verschlossen steht der Met mindestens zwei Monate, ehe er getrunken wird. Danach darf er nach Belieben auf Flaschen, Zucker kommt dabei nicht hinzu.
+
+Praxis. Heute, ohne ein eingefahrenes Weinfass: Weinhefe zusetzen, wenn der Most abgekühlt und vom Bodensatz abgegossen ist. Ein starker Met kann nach zwei Monaten noch gären. Wer abfüllt, nimmt druckfeste Flaschen und lagert sie kühl, sonst können sie platzen. Die Gewürzmengen der Handschrift (3 oder 4 Wurzelstücke Ingwer, 2 oder 3 Muskatnüsse) gelten für einen Fassansatz, dessen Größe sie nicht nennt.</note>
+        <note type="gloss" target="#lon-019-orig" n="Metheglen" resp="#fyndling">Met mit Kräutern und Gewürzen. Phillips (1658) nennt Metheglin ein Getränk aus Kräutern, Honig und Gewürzen, Ludwig (1706) übersetzt „eine Art Meth“.</note>
+        <note type="gloss" target="#lon-019-orig" n="Condit-water" resp="#fyndling">Conduit water: Wasser aus einer Röhrenleitung oder einem Röhrbrunnen. Ludwig (1706) übersetzt conduit mit „Röhre, Wasserleitung“.</note>
+        <note type="gloss" target="#lon-019-orig" n="new lade Egg" resp="#fyndling">Ein frisch gelegtes Ei (new laid egg). Es dient als Maß für die Stärke der Honiglösung.</note>
+        <note type="gloss" target="#lon-019-orig" n="sacke" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanaren, eine Sherry-Art. Ludwig (1706) übersetzt „Spanischer oder Canarien-Seckt“, Blount (1656) nennt den Málaga-Sack nach der Stadt in Andalusien. Über seine Süße sagt die Handschrift nichts.</note>
+        <note type="interpretive_choice" target="#lon-019-orig" n="Liver-wort" resp="#fyndling" subtype="lexical" cert="unknown">Leberkraut, wie Ludwig (1706) übersetzt („leberkraut, hepatique“). Welche Pflanze gemeint ist, bleibt offen: Der Name galt in der Zeit für mehrere Arten, und der Text lässt die Wahl der Zusatzkräuter ohnehin frei.<list type="alternatives"><item>Leberblümchen (Anemone hepatica)<note type="rationale">Britten und Holland belegen liverwort dafür (nach Lyte); im Text nicht von den anderen Arten zu unterscheiden.</note></item><item>Lebermoos (Marchantia polymorpha)<note type="rationale">Nach Gerard in den Apotheken Hepatica genannt (Britten und Holland).</note></item><item>Odermennig (Agrimonia eupatoria)<note type="rationale">Phillips (1658) nennt Eupatorie „a kind of Herb, called Liverwort“, Minsheu ebenso Agrimony.</note></item></list></note>
+        <note type="interpretive_choice" target="#lon-019-orig" n="spice it to drinke at 2 moneths End" resp="#fyndling" subtype="philological">In der Handschrift steht „and spice, if to drinke at 2 moneths End“: Komma nach spice, dann „if“. Der Satz nennt zwei Stärkestufen, zum Aufbewahren stärker an Honig und Gewürz, für das Trinken nach zwei Monaten die schwächere Eierprobe. Die Übersetzung folgt dieser Lesung. Die Parallelfassung bei Digby (1669) trennt ebenso: „If it be strong of the honey, you may keep it a year or two. If weak, drink it in two or three months.“<list type="alternatives"><item>„spice it to drinke at 2 moneths End“: würze ihn, damit er nach zwei Monaten trinkbar ist<note type="rationale">Entspricht nicht der Handschrift und macht aus der Stärkestufe eine Würzanweisung.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

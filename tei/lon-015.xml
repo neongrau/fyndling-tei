@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Klare Stachelbeertäfelchen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-06">2026-11-06</date>
+        <idno type="url">https://fyndling.de/rezepte/lon-015/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/lon-015</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Rezeptbuch der Sarah Longe, Folger Shakespeare Library MS V.a.425</title>
+          <date notBefore="1600" notAfter="1699">17. Jh., Nachträge bis 18. Jh.</date>
+          <idno type="URI">https://folgerpedia.folger.edu/images/8/89/V.a.425.docx</idno>
+          <note>Text: Folger Shakespeare Library, MS V.a.425 (Transkription EMROC)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuenglisch, englische Haushaltshandschrift des 17. Jahrhunderts mit Nachträgen bis ins 18. Jahrhundert; Mrs Sarah Longe und spätere Hände</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="lon-015">
+        <head>Klare Stachelbeertäfelchen</head>
+        <div type="original" xml:id="lon-015-orig" xml:lang="und" corresp="#lon-015-trans">
+          <p>To make cleare Cakes of Gooseberies.
+Take your Gooseberies, and pick them, and put them into a Gally pot, and stop it close, and then set it in a Skillet of water (but lett the water boyle before you put in your pot) and when it hath stood about a quarter of an hour, or more, you may try if any of the cleare will poure from them, through a strainer, but you must doe it very carefully, not brusing the Gooseberies at all for feare it will bee thicke, and you must keepe your iuice warme till you use it, then take dubble refine sugar, finely beaten, and wett it, and boyle it, then put in your ieuce and sett it on the fire, when it is ready to boyle (but it must not boyle) then put it into sacers, and soe dry it as you doe white marmelet; you must take a pound and an halfe ^ of sugar to a pound of ieuce, and if it bee a hot sun shine day you may set it in the sun, and when you thinke they bee dry enough, you may cut them off what fashion you please.</p>
+        </div>
+        <div type="translation" xml:id="lon-015-trans" xml:lang="de" corresp="#lon-015-orig">
+          <p>Nimm deine Stachelbeeren, verlies sie und gib sie in einen Salbentopf. Verschließe ihn dicht und stelle ihn in einen Kochtopf mit Wasser, aber lass das Wasser kochen, bevor du deinen Topf hineinstellst. Wenn er etwa eine Viertelstunde oder länger gestanden hat, kannst du prüfen, ob sich schon etwas von dem Klaren durch einen Seiher von ihnen abgießen lässt. Das musst du aber sehr behutsam tun und die Stachelbeeren überhaupt nicht quetschen, sonst wird es trüb. Halte deinen Saft warm, bis du ihn brauchst.</p>
+          <p>Dann nimm doppelt raffinierten Zucker, fein gestoßen, befeuchte ihn und koche ihn. Dann gib deinen Saft hinein und setze es aufs Feuer. Wenn es kurz vor dem Kochen ist - kochen darf es aber nicht -, gieße es in Saucenschälchen und trockne es so, wie du es bei der weißen Marmelade tust.</p>
+          <p>Du musst auf etwa 450 g (ein Pfund) Saft etwa 675 g (anderthalb Pfund) Zucker nehmen. Ist es ein heißer Sonnentag, kannst du die Schälchen in die Sonne stellen. Und wenn du meinst, dass sie trocken genug sind, kannst du sie in jede Form schneiden, die dir gefällt.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Gooseberies">Stachelbeeren</ingredient>
+            </item>
+            <item><ingredient orig="dubble refine sugar, finely beaten">Doppelt raffinierter Zucker, fein gestoßen</ingredient> - 675 g</item>
+            <item>
+              <ingredient en="water" orig="a Skillet of water" commodity="wikidata:Q283" source="#fyndling-ingredient-name">Wasser für das Wasserbad</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#lon-015-trans" resp="#fyndling">Was ist das? Klare Täfelchen aus dem freien Saft der Stachelbeeren und Zucker: Der Saft wird mit dem gekochten Zucker bis kurz vor das Kochen gebracht, in flachen Schälchen getrocknet und dann in beliebige Formen geschnitten.
+
+Der klare Saft. Die Beeren geben ihren Saft im dicht verschlossenen Topf im Wasserbad ab; das Wasser soll schon kochen, wenn der Topf hineinkommt. Nach etwa einer Viertelstunde oder länger wird probiert, ob schon Klares abläuft. Gequetscht wird nicht, sonst wird der Saft trüb. Bis zum Gebrauch bleibt er warm.
+
+Zucker und Saft. Der Zucker wird befeuchtet und gekocht; womit, sagt der Text nicht. Die weiße Marmelade desselben Buchs (lon-008) befeuchtet ihren Zucker mit 2 oder 3 Löffeln Wasser. Das Verhältnis richtet sich nach dem Gewicht des gewonnenen Saftes: anderthalb Teile Zucker auf einen Teil Saft. Das Endzeichen ist der Punkt kurz vor dem Kochen; kochen darf die Masse nicht.
+
+Trocknen. Der Text verweist auf die weiße Marmelade: Dort kommt die Masse in eine Trockenstube, bis sie kandiert ist (lon-008). An einem heißen Sonnentag dürfen die Schälchen in die Sonne. Eine Dauer nennt der Text nicht; fertig ist es, wenn die Köchin es für trocken genug hält.
+
+Praxis. Siedender Zuckersirup verbrüht stark; das Wasserbad kocht bereits, wenn der verschlossene Topf hineinkommt, deshalb vorsichtig einsetzen. Heute dient als verschließbares Gefäß ein Steinguttopf oder ein Glas mit Deckel (moderner Ersatz für den Salbentopf).</note>
+        <note type="gloss" target="#lon-015-orig" n="Gally pot" resp="#fyndling">Gallipot, nach Ludwig (1706) „ein weiß irdenes geschirre oder töpffgen, darein man salben, latwergen ꝛc. thut“: ein weißer Irdenwarentopf, hier als verschlossenes Gefäß im Wasserbad.</note>
+        <note type="gloss" target="#lon-015-orig" n="sacers" resp="#fyndling">Saucers, nach Ludwig (1706) „ein brüheschüßlein“: kleine, flache Schälchen für Soße, nicht die Untertasse einer Tasse.</note>
+        <note type="gloss" target="#lon-015-orig" n="white marmelet" resp="#fyndling">Die weiße Quittenmarmelade weiter vorn im Buch (lon-008): Quittenmus mit Zucker, in Gläsern in einer Trockenstube getrocknet, bis es kandiert ist. Gemeint ist eine schnittfeste Fruchtpaste, kein Brotaufstrich.</note>
+        <note type="interpretive_choice" target="#lon-015-orig" n="for feare it will bee thicke" resp="#fyndling" subtype="lexical">„thicke“ = trüb. Ludwig (1706) führt unter „Thick“ ausdrücklich „truͤbe, trouble“; das Rezept will klaren Saft.<list type="alternatives"><item>dick, dickflüssig<note type="rationale">Grundbedeutung bei Ludwig; ein gequetschter Saft wäre zugleich trüber und dicker, die Lesarten laufen in der Sache zusammen.</note></item></list></note>
+        <note type="interpretive_choice" target="#lon-015-orig" n="wett it" resp="#fyndling" subtype="contextual">„befeuchte ihn“ ohne Angabe der Flüssigkeit, weil der Text keine nennt.<list type="alternatives"><item>mit wenig Wasser befeuchten<note type="rationale">So macht es die weiße Marmelade desselben Buchs (lon-008: „wet your sugar with 2 or 3. sponefulls of water“); hier nicht ausgesprochen.</note></item><item>mit Saft befeuchten<note type="rationale">Unwahrscheinlich, der Saft kommt erst im nächsten Schritt („then put in your ieuce“).</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

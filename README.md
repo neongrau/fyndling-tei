@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**7696 Rezepte** aus **48 Rezeptsammlungen**, dazu
-48 Dateien auf Sammlungsebene mit den Quellenangaben.
+**7855 Rezepte** aus **50 Rezeptsammlungen**, dazu
+50 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -55,8 +55,8 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kunstbuch von mancherley Essen | 1598 | 726 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
-| Ménagier de Paris | ~1393 | 289 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
+| Ménagier de Paris | ~1393 | 289 |  |
 | Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 269 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 269 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
@@ -67,6 +67,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Rasch: Weinbuch | um 1580 | 147 |  |
 | Das Kochbuch der Maria Stenglerin | 1554 | 145 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
+| Rezeptbuch der Sarah Longe | 17. Jh., Nachträge bis 18. Jh. | 141 |  |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Das geöffnete Kabinett des Sir Kenelm Digby | 1669 | 105 |  |
@@ -91,6 +92,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 24 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |
+| Butler: Die weibliche Monarchie (Met, Honig, Wachs) | 1623 | 18 |  |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Glauber: Reicher Schatz- und Sammelkasten, Zweite Centuria (Gefrierkonzentration) | 1660 | 6 |  |

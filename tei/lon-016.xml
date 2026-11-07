@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kirschmarmelade</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-06">2026-11-06</date>
+        <idno type="url">https://fyndling.de/rezepte/lon-016/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/lon-016</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Rezeptbuch der Sarah Longe, Folger Shakespeare Library MS V.a.425</title>
+          <date notBefore="1600" notAfter="1699">17. Jh., Nachträge bis 18. Jh.</date>
+          <idno type="URI">https://folgerpedia.folger.edu/images/8/89/V.a.425.docx</idno>
+          <note>Text: Folger Shakespeare Library, MS V.a.425 (Transkription EMROC)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuenglisch, englische Haushaltshandschrift des 17. Jahrhunderts mit Nachträgen bis ins 18. Jahrhundert; Mrs Sarah Longe und spätere Hände</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="lon-016">
+        <head>Kirschmarmelade</head>
+        <div type="original" xml:id="lon-016-orig" xml:lang="und" corresp="#lon-016-trans">
+          <p>To make Cherries Marmelet
+Take 5 pound of Cherries, you must weigh them with their stones in them, after stone them, then take one pound of sugar such as you make marmelet with, and put your Cherries and your sugar both together into the pan, or skillet which you will make it in, but beate your sugar very well: and soe lett it boyle as you doe other marmelett, and when you thinke it is boyled enough, put it into your Boxes or glasses as fast as you can.</p>
+        </div>
+        <div type="translation" xml:id="lon-016-trans" xml:lang="de" corresp="#lon-016-orig">
+          <p>Nimm etwa 2,25 kg (5 Pfund) Kirschen. Du musst sie mit ihren Steinen wiegen und sie danach entsteinen. Dann nimm etwa 450 g (ein Pfund) Zucker von der Sorte, mit der man Marmelade kocht, und gib deine Kirschen und deinen Zucker zusammen in die Pfanne oder den Kochtopf, in dem du sie kochen willst. Aber zerstoße deinen Zucker sehr gut.</p>
+          <p>Und so lass es kochen, wie du es bei anderer Marmelade tust. Wenn du meinst, dass es genug gekocht ist, fülle es so schnell du kannst in deine Schachteln oder Gläser.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="cherry" orig="5 pound of Cherries, you must weigh them with their stones in them, after stone them" commodity="wikidata:Q196" source="#fyndling-ingredient-name">Kirschen</ingredient> - 2.25 kg</item>
+            <item><ingredient en="unrefined cane sugar" orig="one pound of sugar such as you make marmelet with" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 450 g</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#lon-016-trans" resp="#fyndling">Was ist das? Eine fest eingekochte Kirschmasse, die in Schachteln oder Gläser kommt, keine Streichmarmelade im heutigen Sinn.
+
+Das Verhältnis. Auf fünf Pfund Kirschen, mit Stein gewogen, kommt ein Pfund Zucker. Die Quittenmarmeladen des Buchs nehmen Pfund zu Pfund (lon-007, lon-008). Mit so wenig Zucker muss die Masse lange einkochen, bis sie fest wird; eine Zeit nennt der Text nicht.
+
+Der Zucker. „beate your sugar very well“ heißt zerstoßen, so wie die weiße Quittenmarmelade „sugar finely beaten“ verlangt. Kenelm Digby schreibt beim gleichen Rezept „pure loaf Sugar, which beat into small Powder“: der feste Hutzucker wird zu Pulver gestoßen, damit er sich rasch in der Frucht löst.
+
+Der Garpunkt. „as you doe other marmelett“ verweist auf die übliche Kochweise. Die rote Quittenmarmelade des Buchs wird zügig gekocht und gerührt, bis sie genug ist, und dann in Schachteln gefüllt. „as fast as you can“ beim Abfüllen: die Masse soll noch heiß und gießbar verteilt werden, bevor sie anzieht.
+
+Praxis. Die Kirschen ungeteilt wiegen, dann entsteinen. Heute genügt feiner Kristallzucker statt zerstoßenem Hutzucker. Kirschen und Zucker in einem weiten Topf zügig unter Rühren dick einkochen. Als moderne Hilfe dient die Tellerprobe: ein Tropfen auf einem kalten Teller zerläuft nicht mehr. Die heiße Masse sofort in Gläser oder flache Formen füllen. Kochende Zuckermasse spritzt und verbrennt die Haut.</note>
+        <note type="gloss" target="#lon-016-orig" n="marmelet" resp="#fyndling">Keine Streichmarmelade, sondern eine fest eingekochte Fruchtmasse, die in Schachteln oder Gläser kam. Ludwigs englisch-deutsches Wörterbuch von 1706 erklärt marmalade als „mit zucker und waſſer eingemachte quitten, marillen, pfirſichen“.</note>
+        <note type="gloss" target="#lon-016-orig" n="pan, or skillet" resp="#fyndling">Skillet ist nach Ludwig (1706) „eine kleine muß- oder breypfanne“, ein Kochgefäß zum Einkochen von Mus.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#or"/></note>
+        <note type="interpretive_choice" target="#lon-016-orig" n="as you doe other marmelett" resp="#fyndling" subtype="contextual">Verweis auf die Kochweise der Marmeladen, wie sie das Buch selbst beschreibt: die rote Quittenmarmelade wird zügig gekocht und gerührt, „till they bee enough“ (lon-007). Übersetzt als „wie du es bei anderer Marmelade tust“, ohne Zeit oder Probe zu ergänzen.<list type="alternatives"><item>Allgemeiner Hinweis auf die gängige Praxis ohne bestimmtes Vorbild im Buch.<note type="rationale">Möglich, weil der Satz kein Rezept nennt; am Ergebnis ändert es nichts, denn auch dann bleibt der Garpunkt dem Urteil der Köchin überlassen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

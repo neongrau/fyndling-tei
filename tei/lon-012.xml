@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Posset ohne Milch mit Ale und Sack</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-06">2026-11-06</date>
+        <idno type="url">https://fyndling.de/rezepte/lon-012/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/lon-012</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Rezeptbuch der Sarah Longe, Folger Shakespeare Library MS V.a.425</title>
+          <date notBefore="1600" notAfter="1699">17. Jh., Nachträge bis 18. Jh.</date>
+          <idno type="URI">https://folgerpedia.folger.edu/images/8/89/V.a.425.docx</idno>
+          <note>Text: Folger Shakespeare Library, MS V.a.425 (Transkription EMROC)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Frühneuenglisch, englische Haushaltshandschrift des 17. Jahrhunderts mit Nachträgen bis ins 18. Jahrhundert; Mrs Sarah Longe und spätere Hände</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="lon-012">
+        <head>Posset ohne Milch mit Ale und Sack</head>
+        <div type="original" xml:id="lon-012-orig" xml:lang="und" corresp="#lon-012-trans">
+          <p>To make a Posset without milke.
+Take 12 or 14. Eggs, beate them very well with halfe a pound of sugar, saving from it soe much sugar as to straw on it when it is made, and with halfe a white-lofe grated stirre it well together, then take a pint of aile, and halfe a pint of Sack, a few cloves and mace, and halfe a nut-megge, breake it in 2.or 3. peeces, and put in the spice into the Sack and aile together in a Skillet on the fire, and as soone as it seetheth, put in the Eggs (the Skillet being still on the fire) and keeping it very well stirr'd till you perceive that it is as thicke as you will have it, the presently power it out into your bason, and if you thinke it too cleare, sett the bason on the Calles a little while, but stirre it about, then straw on the rest of the sugar with beaten Cinamon.</p>
+        </div>
+        <div type="translation" xml:id="lon-012-trans" xml:lang="de" corresp="#lon-012-orig">
+          <p>Nimm 12 oder 14 Eier und schlage sie sehr gut mit etwa 225 g (einem halben Pfund) Zucker; behalte davon so viel Zucker zurück, wie du zum Bestreuen brauchst, wenn es fertig ist. Verrühre sie mit einem halben geriebenen Weißbrot gut miteinander.</p>
+          <p>Nimm dann etwa 0,5 l (ein Pint) Ale und etwa 0,25 l (ein halbes Pint) Sack, einige Nelken und Muskatblüte und eine halbe Muskatnuss; brich sie in zwei oder drei Stücke. Gib die Gewürze zum Sack und zum Ale und setze alles zusammen in einem Kochtopf aufs Feuer.</p>
+          <p>Sobald es siedet, gib die Eier hinein, während der Topf weiter auf dem Feuer steht, und halte es sehr gut gerührt, bis du merkst, dass es so dick ist, wie du es haben willst. Dann gieß es gleich in deine Schüssel.</p>
+          <p>Wenn du meinst, es sei zu klar, stelle die Schüssel ein Weilchen auf die Kohlen, rühre es aber dabei um. Dann streue den restlichen Zucker mit gestoßenem Zimt darüber.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="12 or 14. Eggs" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="halfe a pound of sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-name">Zucker</ingredient> - 225 g</item>
+            <item><ingredient en="white bread" orig="halfe a white-lofe grated" commodity="wikidata:Q1501889" source="#fyndling-ingredient-name">Weißbrot (Laib), gerieben</ingredient> - 0.5 Stück</item>
+            <item><ingredient orig="a pint of aile">Ale</ingredient> - 500 ml</item>
+            <item><ingredient orig="halfe a pint of Sack">Sack</ingredient> - 250 ml</item>
+            <item>
+              <ingredient en="clove" orig="a few cloves" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="mace" orig="mace" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte (Macis)</ingredient>
+            </item>
+            <item><ingredient orig="halfe a nut-megge">Muskatnuss, in 2 oder 3 Stücke gebrochen</ingredient> - 0.5 Stück</item>
+            <item>
+              <ingredient en="cinnamon" orig="beaten Cinamon" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt, gestoßen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#lon-012-trans" resp="#fyndling">Was ist das? Ein Posset ohne Milch: Eier, mit Zucker sehr gut geschlagen und mit geriebenem Weißbrot verrührt, kommen in siedendes Ale mit Sack, das mit Nelken, Muskatblüte und einer halben, gebrochenen Muskatnuss gewürzt ist. Unter Rühren auf dem Feuer dickt die Masse ein und wird in einer Schüssel gereicht, mit Zimtzucker bestreut. Die Bindung tragen Eier und Brot, nicht Milch oder Rahm.
+
+Die Eier im siedenden Getränk. Der Text gibt die Eier hinein, sobald es siedet, und lässt den Topf auf dem Feuer. Eine Hitzeangabe macht er nicht; das einzige Endzeichen ist die Dicke, „as thicke as you will have it“. In der heißen Flüssigkeit stocken die Eier schnell. Flocken sind beim Posset kein Fehler: Woolley (1670) lässt ihren Posset ohne Milch eigens „till it arise to a Curd“ am Feuer. Das ständige Rühren hält die Masse gleichmäßig. Die Gewürze bleiben im Getränk, ein Herausnehmen nennt der Text nicht.
+
+„Zu klar“ und die Kohlen. Hat sich die Masse noch nicht genug gebunden, kommt die Schüssel selbst ein Weilchen auf die Kohlen, wobei weiter gerührt wird. Die Lesung „Calles“ als Kohlen stützt allein der Zusammenhang.
+
+Praxis. Die Eier mit dem Zucker sehr gut schlagen und vorher so viel Zucker beiseitestellen, wie zum Bestreuen nötig ist; das geriebene Weißbrot unterrühren. Ale und Sack mit den Gewürzen im Topf aufs Feuer setzen, und sobald es siedet, die Eiermasse hineingeben und ständig rühren, bis die gewünschte Dicke erreicht ist; gleich in eine Schüssel gießen. Bleibt es zu klar, die Schüssel kurz auf die Glut stellen und weiterrühren. Zum Schluss den restlichen Zucker mit gestoßenem Zimt darüberstreuen. Heutiger Hinweis: Wer eine glatte statt einer flockigen Creme will, nimmt den Topf nach dem Einrühren auf kleinere Hitze.</note>
+        <note type="gloss" target="#lon-012-orig" n="Posset" resp="#fyndling">Ludwig (1706) nennt den Posset „einen gewissen Englischen Milchtranck“: heiße Milch oder Rahm, mit Wein oder Ale gestockt. Diese Fassung kommt ausdrücklich ohne Milch aus, Eier und geriebenes Brot binden das Ale mit dem Sack.</note>
+        <note type="gloss" target="#lon-012-orig" n="Sack" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanaren, eine Sherry-Art. Ludwig (1706) übersetzt „Spanischer oder Canarien-Seckt“, Blount (1656) nennt den Málaga-Sack nach der Stadt in Andalusien. Über seine Süße sagt die Handschrift nichts.</note>
+        <note type="gloss" target="#lon-012-orig" n="Skillet" resp="#fyndling">Ludwig (1706) übersetzt skillet mit „eine kleine Muß- oder Breypfanne“: ein kleines Kochgefäß für Mus und Brei, hier mit „Kochtopf“ wiedergegeben.</note>
+        <note type="interpretive_choice" target="#lon-012-orig" n="Calles" resp="#fyndling" subtype="lexical" cert="unknown">„Kohlen“, als phonetische Schreibung von coals: Die Schüssel kommt ein Weilchen auf die Glut, damit die Masse nachdickt. Gestützt nur vom Zusammenhang; ein Wörterbuchbeleg für die Schreibung fehlt, und das Buch schreibt an anderen Stellen „Coales“ und „Embers“. Woolley (1670) stellt ihren Posset ohne Milch ebenfalls noch einmal ans Feuer, „till it arise to a Curd“.<list type="alternatives"><item>ein Untersatz, Dreifuß oder anderes Gestell über dem Feuer<note type="rationale">Ohne Beleg; Cotgrave (1611) kennt calles nur als französisches Wort für Hühneraugen, das hier nicht passt.</note></item></list></note>
+        <note type="interpretive_choice" target="#lon-012-orig" n="too cleare" resp="#fyndling" subtype="contextual">„zu klar“: noch nicht genug gebunden, als Gegensatz zu „as thicke as you will have it“. Ludwig (1706) gibt clear als „klar, lauter, durchsichtig“.<list type="alternatives"><item>„zu dünn“<note type="rationale">Trifft die Absicht, glättet aber das Wort der Handschrift; ein Posset, der sich nicht gebunden hat, bleibt klar und flüssig.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
