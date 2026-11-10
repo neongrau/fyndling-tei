@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gesülzte Krebse</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-10">2026-11-10</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-012/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-012</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.12</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-012">
+        <head>Gesülzte Krebse</head>
+        <div type="original" xml:id="k1-012-orig" xml:lang="de-x-fnhd" corresp="#k1-012-trans">
+          <p>Gesultzet Crebs zcu machen Ein hoifflichs verdeuwelichs essen Sued die Creps mit win ab vnd schele die scheren vnd zcagel vnd helse behalt das ander wurtz wurtz Isz besondern Nu mache dy brue ab also Nym bersig die klein sin Sued sie In win vnd essig als vil du Ire dan haben wilt ader bedarfest Schud sie vsz Vnd nym die gall vsz den kopffen Nym dan die buche Scheren vnde zcagel Stosz sie wol In eynem morsel Zcutrieb sie mit der brue dar Inn sie gesoten sin durch ein siech tuch Item Nym dar noch aber frisch krebis Vnd alleyn die gescheleten Scheren vnd ouch zcagel Thu sie In die durch getribben Creps In ein phan Erwelle si wol einen kleynen wall Mach sie ab mit guten wurtzenn vnd Saltz Versuch sie was Ine gebrech Vnd loisz sie erkaltenn</p>
+        </div>
+        <div type="translation" xml:id="k1-012-trans" xml:lang="de" corresp="#k1-012-orig">
+          <p>Gesülzte Krebse. Ein höfisches, verdauliches Essen.</p>
+          <p>Siede die Krebse mit Wein ab und schäle die Scheren, die Schwänze und die Hälse. Behalte das Übrige und würze es gesondert.</p>
+          <p>Nun bereite die Brühe so zu: Nimm Barsche, die klein sind, und siede sie in Wein und Essig, so viele du davon haben willst oder brauchst. Schütte sie aus und nimm die Galle aus den Köpfen. Nimm dann die Bäuche, Scheren und Schwänze und stoße sie gut in einem Mörser. Zertreibe sie mit der Brühe, in der sie gesotten sind, durch ein Seihtuch.</p>
+          <p>Nimm danach wieder frische Krebse und allein die geschälten Scheren und auch die Schwänze. Gib sie zu den durchgetriebenen Krebsen in eine Pfanne und lass sie gut einmal kurz aufwallen. Schmecke sie mit guten Gewürzen und Salz ab, probiere, was ihnen fehlt, und lass sie erkalten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="crayfish" orig="Creps" commodity="wikidata:Q210959" source="#corema-ingredient-index">Flusskrebse</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="bersig die klein sin">Barsche, klein</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+            <item>
+              <ingredient en="crayfish" orig="frisch krebis" commodity="wikidata:Q210959" source="#corema-ingredient-index">Flusskrebse, frisch (geschälte Scheren und Schwänze)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="guten wurtzenn" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-012-trans" resp="#fyndling">Was ist das? Gesottene Krebse, deren Bäuche, Scheren und Schwänze im Mörser gestoßen und mit einer Brühe aus kleinen, in Wein und Essig gesottenen Barschen durch ein Tuch getrieben werden. Dazu kommen die geschälten Scheren und Schwänze frischer Krebse als Einlage; alles wallt einmal kurz auf, wird abgeschmeckt und erkaltet.
+
+Warum „gesülzt“? Ein Geliermittel nennt das Rezept nicht, und es sagt auch nicht, dass die Masse fest wird, nur „loisz sie erkaltenn“. Der Träger dafür sind die kleinen Barsche: Bei den gesülzten Morcheln derselben Handschrift stehen „klein persig ader huszblosen“ nebeneinander, also Barsche oder Hausenblase für eine Brühe, die man stehen lässt. Wie fest die Krebsmasse werden soll, bleibt offen.
+
+Welche Teile? Zuerst werden Scheren, Schwänze und Hälse geschält, „das ander“ wird gesondert gewürzt beiseitegelegt. Ob die später gestoßenen „buche Scheren vnde zcagel“ das ausgelöste Fleisch oder die übrigen Körper mitsamt Schalen sind, sagt der Text nicht; ebenso wenig, wozu das gesondert Gewürzte dient. Die Galle stammt wahrscheinlich aus den Krebsköpfen; das Krebsmus derselben Handschrift wirft „die gallen vsz dem houbt“ vor dem Stoßen weg.
+
+Praxis. Die Krebse in Wein garen und schälen, die kleinen Barsche getrennt in Wein und Essig sieden und herausnehmen; die Brühe ist das, was bleibt. Das Gestoßene mit dieser Brühe durch ein Seihtuch treiben. Die frischen Krebse für die Einlage müssen gegart sein, damit man sie schälen kann; wie, sagt der Text nicht. Die Masse mit der Einlage nur kurz aufwallen lassen, abschmecken und an einem kühlen Ort erkalten lassen. Gekochte Krebse und Fischbrühe verderben warm schnell; die erkaltete Masse gehört kühl gestellt. Die Zubereitungszeit von etwa zwei Stunden ist eine Schätzung ohne das Erkalten, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#k1-012-orig" n="bersig" resp="#fyndling">Barsch, Flussbarsch (frühneuhochdeutsch bersich). Nicht Petersilie.</note>
+        <note type="gloss" target="#k1-012-orig" n="zcagel" resp="#fyndling">Schwanz, hier der Krebsschwanz (mittelhochdeutsch zagel).</note>
+        <note type="gloss" target="#k1-012-orig" n="wurtz wurtz" resp="#fyndling">Das Wort steht am Ende von Blatt 2r und noch einmal am Anfang von Blatt 2v; gemeint ist es einmal: „würze es gesondert“. Der Druck von 1487 hat „anderwurtz eß beſunder“.</note>
+        <note type="gloss" target="#k1-012-orig" n="siech tuch" resp="#fyndling">Seihtuch, ein Tuch zum Durchseihen; die Form siechdoch für lateinisch cola verzeichnen auch die spätmittelalterlichen Glossare.</note>
+        <note type="interpretive_choice" target="#k1-012-orig" n="Gesultzet" resp="#fyndling" subtype="contextual">Eine Sülze, die beim Erkalten steht: Die Brühe aus kleinen Barschen ist in der Küchenmeisterei-Tradition ein Sülzträger (k1-018 „klein persig ader huszblosen“; die Koch- und Kellermeisterei, kkm-060, siedet für „Wiltu das die Sültz hart gestehe“ Kalbsfüße und „vier kleiner Birsing“). Das Frühneuhochdeutsche Wörterbuch fasst sülze weit als salzhaltige, gallertartige Masse oder Brühe.<list type="alternatives"><item>Eine kalte, dicke Krebsmasse, die nicht fest wird.<note type="rationale">Das Rezept selbst sagt nur „loisz sie erkaltenn“ und nennt kein Festwerden; wie fest die Barschbrühe die gestoßene Masse macht, ist nicht gesagt.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-012-orig" n="verdeuwelichs" resp="#fyndling" subtype="philological">„verdaulich“: Grimms Wörterbuch führt verdeuwlich, das Mittelniederländische verduwelijc (digestibilis), das Mittelniederdeutsche vordouwelîk ›leicht verdaulich‹.<list type="alternatives"><item>Druck von 1487: „gar ey hoflichs dewigs eſſen on ſchaden“, ebenso die Koch- und Kellermeisterei („höflich vnd dewiges Essen/ on schaden“).<note type="rationale">Das Frühneuhochdeutsche Wörterbuch erklärt däuig als ›leicht verdaulich‹; den Zusatz „on schaden“ hat die Handschrift nicht, er wird nicht übernommen.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-012-orig" n="nym die gall vsz den kopffen" resp="#fyndling" subtype="contextual">Die Galle aus den Krebsköpfen: Das Krebsmus derselben Handschrift (k1-014) wirft „die gallen vsz dem houbt“ vor dem Stoßen weg, der Druck tut im folgenden Kapitel „dz bitter vß dē koͤpffen“ der Krebse.<list type="alternatives"><item>Die Galle aus den Köpfen der Barsche.<note type="rationale">Der Satz folgt unmittelbar auf das Ausschütten der Barsche; Fischgalle ist bitter und wird ebenfalls entfernt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

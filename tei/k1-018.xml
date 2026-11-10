@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gesülzte Morcheln</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-10">2026-11-10</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-018/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-018</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.18</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-018">
+        <head>Gesülzte Morcheln</head>
+        <div type="original" xml:id="k1-018-orig" xml:lang="de-x-fnhd" corresp="#k1-018-trans">
+          <p>Gesultzte morchen machen Hastu fisch brue als von gesultzten fischen die ist gut Hastu der nit So machs also Require ein wenig essig vnd wasser vnder enander Sued vier klein persig ader huszblosen vnd lorberr ader die bletter vnd trib isz durch ein tuch Loisz isz gefallen dan sygk isz ab Saltze vnd wurtz isz ab Dan schud isz vber die selbigen morchen Wiltu die brue gele haben So thu saffran dar Inne Loisz isz gestehen dan bestick esz man ge= schelten mandelkern vnd trag isz fur Item Solch Fulle mocht man ouch In krebsscha= len machen ader do mit fullen</p>
+        </div>
+        <div type="translation" xml:id="k1-018-trans" xml:lang="de" corresp="#k1-018-orig">
+          <p>Hast du Fischbrühe wie von gesülzten Fischen, die ist gut. Hast du die nicht, so mach es so:</p>
+          <p>Nimm ein wenig Essig und Wasser untereinander. Siede vier kleine Barsche oder Hausenblase und Lorbeeren oder die Blätter und treib es durch ein Tuch. Lass es sich setzen, dann seih es ab. Salze und würze es ab. Dann schütte es über dieselben Morcheln.</p>
+          <p>Willst du die Brühe gelb haben, so tu Safran hinein. Lass es fest werden, dann bestecke es mit geschälten Mandelkernen und trag es auf.</p>
+          <p>Eine solche Füllung könnte man auch in Krebsschalen machen oder damit füllen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="morel" orig="morchen" commodity="wikidata:Q1129282" source="#corema-ingredient-index">Morcheln</ingredient>
+            </item>
+            <item>
+              <ingredient en="fish stock" orig="fisch brue als von gesultzten fischen" commodity="wikidata:Q5454675" source="#fyndling-ingredient-context">Fischbrühe wie von gesülzten Fischen (falls vorhanden)</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig (ein wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item><ingredient orig="vier klein persig">kleine Barsche</ingredient> - 4</item>
+            <item>
+              <ingredient en="isinglass" orig="huszblosen" commodity="wikidata:Q1255331" source="#corema-ingredient-index">Hausenblase (anstelle der Barsche)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="lorberr ader die bletter">Lorbeeren oder Lorbeerblätter</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="Saltze" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurtz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="saffran" commodity="wikidata:Q25434" source="#corema-ingredient-index">Safran (nach Wunsch, für gelbe Brühe)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ge= schelten mandelkern">geschälte Mandelkerne</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-018-trans" resp="#fyndling">Was ist das? Morcheln, über die eine gewürzte Fischbrühe gegossen wird, die beim Erkalten fest wird. Obenauf kommen geschälte Mandelkerne. Das Rezept steht im ersten Teil der Handschrift, bei den Fastenspeisen.
+
+Die Brühe. Am liebsten nimmt der Text fertige Brühe, wie sie bei gesülzten Fischen anfällt. Sonst wird sie neu gesotten: Essig und Wasser, darin vier kleine Barsche oder stattdessen Hausenblase, dazu Lorbeeren oder Lorbeerblätter. Barsche wie Hausenblase sind das, was die Brühe später fest werden lässt. Danach wird alles durch ein Tuch getrieben, man lässt das Trübe sich setzen und seiht die klare Brühe ab, salzt und würzt sie. Wie viel Essig und Wasser, nennt der Text nicht, nur „ein wenig“; welche Gewürze, ebenfalls nicht.
+
+Die Morcheln. Wie sie vorbereitet werden und in welchem Gefäß sie liegen, sagt der Text nicht. Heutiges Wissen dazu: Morcheln sind roh giftig und müssen vor dem Übergießen gründlich gegart sein.
+
+Gelb und Mandeln. Safran ist eine Möglichkeit, keine Pflicht. Die Mandelkerne kommen erst in die fest gewordene Sülze.
+
+Krebsschalen. Der Schlusssatz erlaubt, dieselbe Füllung in Krebsschalen zu machen oder die Schalen damit zu füllen.
+
+Praxis. Die Barsche im Essigwasser mit dem Lorbeer sieden, bis die Brühe Kraft hat, durch ein Tuch treiben, ruhen lassen, klar abgießen und abschmecken. Über die gegarten Morcheln gießen und kühl stellen, bis die Sülze steht, dann mit Mandelkernen bestecken. Eine Fischsülze verdirbt in der Wärme schnell und gehört kühl aufbewahrt. Die Zubereitungszeit von etwa einer Stunde ist eine Schätzung, der Text gibt keine Zeit an; das Festwerden ist nicht eingerechnet.</note>
+        <note type="gloss" target="#k1-018-orig" n="Gesultzte" resp="#fyndling">Gesülzt: mit einer Brühe übergossen, die beim Erkalten fest wird (Sülze).</note>
+        <note type="gloss" target="#k1-018-orig" n="Require" resp="#fyndling">Lateinisch „man braucht“, hier als Formel vor den Zutaten im Sinn von „nimm“. Der Druck von 1487 hat an dieser Stelle „Nym“.</note>
+        <note type="gloss" target="#k1-018-orig" n="persig" resp="#fyndling">Barsch, Flussbarsch (Frühneuhochdeutsches Wörterbuch: bersich). Dass die Hausenblase als Alternative danebensteht, zeigt, wozu die kleinen Barsche mitgesotten werden: Sie machen die Brühe steif.</note>
+        <note type="gloss" target="#k1-018-orig" n="huszblosen" resp="#fyndling">Hausenblase: Fischleim aus der Schwimmblase des Hausens, eines Störs. In der Handschrift steht „ader huszblosen“ als Nachtrag am Rand, mit Einfügungszeichen hinter „persig“; der Druck von 1487 hat die Hausenblase im Satz.</note>
+        <note type="gloss" target="#k1-018-orig" n="Loisz isz gefallen dan sygk isz ab" resp="#fyndling">„Lass es fallen“, also sich setzen, bis das Trübe am Boden liegt, dann abseihen. So auch in der Schweinssülze der Handschrift: „Loisz gefallen Seig die bru reyn … Loisz das trube an dem boden“.</note>
+        <note type="gloss" target="#k1-018-orig" n="gestehen" resp="#fyndling">Fest werden, stocken.</note>
+        <note type="interpretive_choice" target="#k1-018-orig" n="bestick esz man ge= schelten mandelkern" resp="#fyndling" subtype="philological">„bestecke es mit geschälten Mandelkernen“: „man“ steht für „mit“, wie die CoReMA-Edition anmerkt („Wohl mit gemeint“); der Dativ „geschelten mandelkern“ passt dazu.<list type="alternatives"><item>„man“ als Rest von „mach“: „mach geschälte Mandelkerne und bestecke es“.<note type="rationale">Der Druck von 1487 hat „ſo mach geſchelt mandelkern vñ beſteck eß“. Die Handschrift stellt das Bestecken voran; das Ergebnis bleibt dasselbe.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

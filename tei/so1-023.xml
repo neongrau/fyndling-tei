@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Höfischer Mandelziger</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-10">2026-11-10</date>
+        <idno type="url">https://fyndling.de/rezepte/so1-023/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/so1-023</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Solothurn, Zentralbibliothek, Cod. S 490</title>
+          <date when="1487" cert="low">um 1487</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.so1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">so1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.so1</idno>
+          <idno type="corema-recipe">so1.23</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, vermutlich elsässisch, spätestens um 1487)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="so1-023">
+        <head>Höfischer Mandelziger</head>
+        <div type="original" xml:id="so1-023-orig" xml:lang="de-x-fnhd" corresp="#so1-023-trans">
+          <p>§ liiij Item wiltu machen ein hofflich tziger von mandel So nim mandel als uil du wilt stos denn klein vnd strich in durch ein tuoch mit wasser und mach die milch warm in einem haffenn Bru si gar wol nun ein gelepte bru von fischenn vnd bersig oder von kelbren oder schaff fussen gesoten wol luter gestanden ab ge saltzenn vnd die mandel milch damit verstrickt las er kaltenn vnd gestann Als ein sultz brich si damit uff in ein schuslen vnd Besee es mit zucker vnd setz es fur</p>
+        </div>
+        <div type="translation" xml:id="so1-023-trans" xml:lang="de" corresp="#so1-023-orig">
+          <p>Ein höfischer Mandelziger: Willst du einen höfischen Ziger von Mandeln machen, so nimm Mandeln, so viele du willst, stoße sie klein, streiche sie mit Wasser durch ein Tuch und mach die Milch in einem Topf warm. Brühe sie gut.</p>
+          <p>Nimm eine gestockte Brühe von Fischen und Barsch oder von Kalbs- oder Schafsfüßen, gesotten, gut klar abgestanden und abgesalzen, und verbinde die Mandelmilch damit. Lass es erkalten und fest werden wie eine Sülze.</p>
+          <p>Brich es dann auf in eine Schüssel, bestreue es mit Zucker und setze es vor.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="almond" orig="mandel" commodity="wikidata:Q184357" source="#corema-ingredient-index">Mandeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="fish stock" orig="fischenn vnd bersig" commodity="wikidata:Q5454675" source="#fyndling-ingredient-context">Fische und Barsch für die Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="ab ge saltzenn" commodity="wikidata:Q11254" source="#fyndling-ingredient-registry">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="cane sugar" orig="zucker" commodity="wikidata:Q18012503" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#so1-023-trans" resp="#fyndling">Was ist das? Eine gestockte Mandelspeise aus dem ersten Teil: Mandelmilch wird warm mit einer Brühe verbunden, die beim Erkalten stockt, und wird darin fest „als ein sultz“. „Ziger“ ist der Name dieser Masse; Milch, Lab oder Käse kommen nicht vor. Zum Anrichten wird sie aufgebrochen und mit Zucker bestreut.
+
+Die Brühe. „gelepte“ heißt geronnen, gestockt: Gemeint ist eine Brühe, die beim Erkalten fest wird. Der Text lässt die Wahl zwischen einer Brühe von Fischen und Barsch und einer von Kalbs- oder Schafsfüßen. Sie wird gesotten, steht, bis sie ganz klar ist, und wird abgesalzen. Wie viel Brühe auf wie viel Mandelmilch kommt, sagt der Text nicht.
+
+Warm oder gestockt? Die Milch wird zuerst warm gemacht und gut gebrüht, dann mit der Brühe verbunden. Ob die Brühe dabei noch flüssig ist oder schon gestockt, sodass die warme Milch sie löst, lässt der Text offen. Heute rührt man die Brühe am einfachsten warm und flüssig unter die warme Milch.
+
+Anrichten. Die feste Masse wird in eine Schüssel aufgebrochen, nicht gelöffelt, und mit Zucker bestreut. Gemacht ist sie mit Brühe und Salz; der Zucker liegt nur obenauf.
+
+Praxis. Barsch und andere Fische oder Kalbs- bzw. Schafsfüße sieden, die Brühe abseihen und stehen lassen, bis sie klar ist, dann klar abgießen und salzen. Eine Brühe aus Füßen stockt zuverlässiger als eine reine Fischbrühe; ob sie stockt, zeigt heute ein Löffel davon auf einem kalten Teller. Mandeln klein stoßen, mit Wasser durch ein Tuch streichen, die Milch im Topf erwärmen und mit der Brühe verbinden. Kühl stellen, bis die Masse fest ist. Eine Fischgallerte hält man kühl und isst sie bald. Die Zubereitungszeit von etwa anderthalb Stunden ist eine Schätzung für die Fischbrühe, der Text gibt keine Zeit an; eine Brühe aus Füßen braucht länger, Absetzen und Stocken sind nicht eingerechnet.</note>
+        <note type="gloss" target="#so1-023-orig" n="tziger" resp="#fyndling">Ziger ist eigentlich ein Erzeugnis aus Molke oder Milch, eine Art Quark (Schweizerisches Idiotikon). Hier ist es der Name einer gestockten Masse aus Mandelmilch und Brühe, ganz ohne Milch.</note>
+        <note type="interpretive_choice" target="#so1-023-orig" n="gelepte bru" resp="#fyndling" subtype="lexical">Eine gestockte Brühe, also eine, die beim Erkalten fest wird. Lexer führt mhd. „lëben“ als „gerinnen“ mit dem Beleg „gelebte milich“ aus dem Buch von guter Speise, zu „labe, lap“ (Lab); der Druck von 1487 schreibt „gelebte brů“.<list type="alternatives"><item>Eine mit Lab versetzte Brühe<note type="rationale">Das Wort gehört zur Wortfamilie von Lab, bedeutet hier aber das Ergebnis, das Gerinnen. Lab nennt der Text nicht, und eine Brühe aus Füßen oder Fisch stockt von selbst.</note></item><item>Eine gehaltvolle Brühe<note type="rationale">Die Kölner Schwesterhandschrift hat an dieser Stelle ein anderes Wort, „beleibt brue“. Für den Wortlaut dieser Handschrift trägt das nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-023-orig" n="Bru si gar wol" resp="#fyndling" subtype="philological">Brühe sie gut: Die Handschrift schreibt deutlich „brü“, die warme Mandelmilch wird gut erhitzt.<list type="alternatives"><item>Rühre sie gut<note type="rationale">So der Druck von 1487 („růr ſie gar wol“), die Kölner Schwesterhandschrift („Rure sie gar wol“) und die Frankfurter Ausgabe von 1574 („rüre es gar wol“). Das ist vermutlich die Vorlage; diese Handschrift weicht ab, und die Übersetzung folgt ihr.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-023-orig" n="brich si damit uff" resp="#fyndling" subtype="contextual">Brich es dann auf: „damit“ steht hier für „darauf, dann“. Der Druck von 1487 und die Kölner Schwesterhandschrift haben „dan“.<list type="alternatives"><item>Mit ihr (der Brühe) aufbrechen<note type="rationale">Die Brühe ist zu diesem Zeitpunkt schon in der festen Masse; ein zweites Werkzeug oder eine zweite Zutat nennt der Satz nicht.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

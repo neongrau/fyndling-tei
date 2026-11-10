@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnen im Brotpfeffer</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-10">2026-11-10</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-017/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-017</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.17</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-017">
+        <head>Birnen im Brotpfeffer</head>
+        <div type="original" xml:id="k1-017-orig" xml:lang="de-x-fnhd" corresp="#k1-017-trans">
+          <p>Item Solich pirrnn vsz eynem brod pheffer zcu essen Ist ein gut armen mannes kost drocken brod darInne gererit Das spieset wol vnd stercket den bosen magenn Abgemacht mit saltz vnd luter Ingber nit dan mit win vnd essig</p>
+        </div>
+        <div type="translation" xml:id="k1-017-trans" xml:lang="de" corresp="#k1-017-orig">
+          <p>Solche Birnen aus einem Brotpfeffer zu essen, ist eine gute Kost für arme Leute, trockenes Brot darin eingerührt. Das nährt gut und stärkt den kranken Magen. Abgeschmeckt mit Salz und reinem Ingwer, nur mit Wein und Essig.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="pirrnn" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen, gedörrt und gesotten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="drocken brod">Brot, trocken</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="luter Ingber" commodity="wikidata:Q15046077" source="#fyndling-ingredient-registry">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-017-trans" resp="#fyndling">Was ist das? Ein kurzer Eintrag, der mehr beschreibt als anleitet: Gedörrte, gesottene Birnen werden aus einem Brotpfeffer gegessen, einer Sauce aus Wein und Essig, in die trockenes Brot eingerührt ist, abgeschmeckt mit Salz und Ingwer. Die Handschrift empfiehlt das Gericht als gute Kost für arme Leute.
+
+Welche Birnen? „Solche Birnen“ setzt die beiden vorigen Einträge voraus. Dort werden gedörrte Birnen in warmem Wasser gewaschen, getrocknet und in Wein gesotten.
+
+Aufkochen. Ein mit Brot gebundener Pfeffer wird erst durch Aufkochen fertig: Das eingerührte Brot quillt und bindet die Sauce. Der Text nennt diesen Schritt nicht eigens, er gehört aber zur Sache.
+
+Was der Text offenlässt. Mengen und das Verhältnis von Wein zu Essig nennt er nicht, ebenso wenig, ob die Birnen in der Sauce mitsieden oder gesotten hineingelegt werden.
+
+Praxis. Die gedörrten Birnen waschen und in Wein sieden. Trockenes Brot in Wein und Essig einrühren und aufkochen, bis die Sauce bindet, mit Salz und Ingwer abschmecken und die Birnen darin anrichten. Die Zubereitungszeit von etwa 45 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#k1-017-orig" n="brod pheffer" resp="#fyndling">„Pfeffer“ heißt hier das Gericht: eine mit Brot gebundene Würzsauce, nicht das Gewürz. Pfefferkörner nennt der Text nicht.</note>
+        <note type="gloss" target="#k1-017-orig" n="Solich pirrnn" resp="#fyndling">„Solche Birnen“ meint die gedörrten, in Wein gesottenen Birnen der beiden vorigen Einträge. Das Register des Drucks von 1487 führt das Kapitel als „Durr byren in eynem pfeffer“, gedörrte Birnen in einem Pfeffer.</note>
+        <note type="interpretive_choice" target="#k1-017-orig" n="drocken brod" resp="#fyndling" subtype="philological">Trockenes Brot, wie die Handschrift an dieser Stelle deutlich schreibt („Drocken brod“); trockenes Brot ist auch sonst im Buch belegt („lois widder drock…“ k1-113).<list type="alternatives"><item>Roggenbrot<note type="rationale">Der Druck von 1487 hat „ruckēbrot darin gerert vn̄ geſſen“, die Koch und Kellermeisterei 1574 „Rockenbrot darein gerürt“. Die Handschrift kann „rocken“ als „drocken“ umgedeutet haben; übersetzt wird ihr eigener Wortlaut, nicht der des Drucks.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

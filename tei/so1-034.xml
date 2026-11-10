@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gestoßene Hühner</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-10">2026-11-10</date>
+        <idno type="url">https://fyndling.de/rezepte/so1-034/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/so1-034</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Solothurn, Zentralbibliothek, Cod. S 490</title>
+          <date when="1487" cert="low">um 1487</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.so1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">so1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.so1</idno>
+          <idno type="corema-recipe">so1.34</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, vermutlich elsässisch, spätestens um 1487)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="so1-034">
+        <head>Gestoßene Hühner</head>
+        <div type="original" xml:id="so1-034-orig" xml:lang="de-x-fnhd" corresp="#so1-034-trans">
+          <p>§ iiij Item wiltu machen gestossne huner so sud die alte geschmaltzten huner oder die faissen huner gar wol feim si gar woll vnd mach die bruo luter als ein bru von wasser vnd guß nicht mer daran saltz es versud es nicht duo daz huon vs vnd behalt die bru sige das fais ab in ein ander haffen vnd die mager bru in ein andern die las also stan dan wurff die hunner vff ein banck vnd zuch die grossen bein uß vnd hack sie dann gar klein weich ein klein wis Brossemlin Brots in der magern Bru gar wol vnd nim dann das brot vnd die huner vnd stos gar wol in einem mursing zwing es durch ein pfeffer tuoch mit der Altenn huner bru stos es ander wite vnd zwing es aber durch Ist es zuo dunn so tuo mer wis brotts darin zwing es durch ist es ze dick so zwing es an brott durch tuo es in ein pfannen erwelle es vnd mach es ab mit wurtzen vnd mit saltz als es nun durch ist gangen daz sin vnd heis gestossenn huner tuo daruff ein luter schmaltz vorhalten Also mercke allerley voglen gestossenn al= So gemacht vnd mit sid farb Abgesotenn</p>
+        </div>
+        <div type="translation" xml:id="so1-034-trans" xml:lang="de" corresp="#so1-034-orig">
+          <p>Willst du gestoßene Hühner machen, so siede die alten, gut genährten Hühner oder die fetten Hühner sehr gut, schäume sie gut ab und mach die Brühe klar wie eine Brühe von Wasser, und gieß nichts mehr daran. Salze es, verkoche es nicht.</p>
+          <p>Nimm das Huhn heraus und behalte die Brühe. Seihe das Fett ab in einen anderen Topf und die magere Brühe in einen anderen, und lass sie so stehen.</p>
+          <p>Dann wirf die Hühner auf eine Bank, zieh die großen Knochen heraus und hacke sie dann ganz klein. Weiche ein wenig weiße Brotbrösel gut in der mageren Brühe ein, nimm dann das Brot und die Hühner und stoße sie gut in einem Mörser. Treibe es mit der Brühe der alten Hühner durch ein Seihtuch, stoße es ein zweites Mal und treibe es wieder durch.</p>
+          <p>Ist es zu dünn, so gib mehr Weißbrot hinein und treibe es durch. Ist es zu dick, so treibe es ohne Brot durch. Gib es in eine Pfanne, lass es aufwallen und schmecke es mit Gewürzen und mit Salz ab.</p>
+          <p>Wenn es nun durchgegangen ist, so sind und heißen das gestoßene Hühner. Gib klares Fett darauf, das du zurückbehalten hast.</p>
+          <p>So merke: Allerlei Vögel werden auf diese Weise gestoßen gemacht und mit Seidenfarbe abgesotten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="alte geschmaltzten huner oder die faissen huner">Alte, fette Hühner (Suppenhühner)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="(implied)" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wis Brossemlin Brots">Weißbrotbrösel, ein wenig</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurtzen" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="saltz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="luter schmaltz">Klares Hühnerfett, zurückbehalten</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#so1-034-trans" resp="#fyndling">Was ist das? Ein Hühnermus: Alte, fette Hühner werden zu einer klaren Brühe gesotten, das Fleisch wird gehackt, mit in magerer Brühe geweichtem Weißbrot im Mörser gestoßen und zweimal mit Brühe durch ein Tuch getrieben. Zuletzt wallt das Mus in der Pfanne auf, wird mit Gewürzen und Salz abgeschmeckt und mit dem abgeseihten klaren Fett bedeckt.
+
+Brühe und Fett. Die Brühe soll so klar werden wie Wasser: abschäumen, nichts nachgießen, nicht verkochen lassen. Nach dem Sieden kommen das Fett und die magere Brühe in zwei Töpfe und bleiben stehen. Die magere Brühe weicht das Brot ein, das Fett kommt am Ende obenauf. Wie lange die Hühner sieden, sagt der Text nicht; „gar wol“ bei alten Hühnern heißt, bis das Fleisch weich ist.
+
+Stoßen und Durchtreiben. Fleisch und Brot werden zusammen gestoßen und mit der Brühe der alten Hühner durch das Tuch getrieben, zweimal. Die Dicke regelt der Text über das Brot: zu dünn, mehr Weißbrot; zu dick, ohne Brot durchtreiben. Mengen nennt er keine.
+
+Aufwallen. Erst beim Aufwallen in der Pfanne bindet das Brot das Mus. Gewürze nennt der Text nicht mit Namen.
+
+Die Schlussformel. „mit sid farb abgesotten“ steht so auch im Druck von 1487. Ob eine Farbe, ein Glanz oder etwas anderes gemeint ist, bleibt offen. Ein Farbmittel wird deshalb nicht ergänzt.
+
+Praxis. Heute entsprechen Suppenhühner den alten Hühnern des Textes. Das Fleisch vollständig gar sieden und das fertige Mus nicht lauwarm stehen lassen. Die Zubereitungszeit von etwa dreieinhalb Stunden ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#so1-034-orig" n="geschmaltzten" resp="#fyndling">Die Wörterbücher führen „geschmalzen“ für Speisen, die mit Schmalz bereitet sind (Frühneuhochdeutsches Wörterbuch), übertragen auch für „kräftig, üppig“ (Schweizerisches Idiotikon). Bei Hühnern, die erst gesotten werden, passt nur „fett, gut genährt“. Der Druck von 1487 hat an dieser Stelle nur „alten feyſten hůner“, die Solothurner Handschrift nennt beide Wörter.</note>
+        <note type="interpretive_choice" target="#so1-034-orig" n="mit sid farb Abgesotenn" resp="#fyndling" subtype="lexical" cert="unknown">„mit Seidenfarbe abgesotten“: „sid“ ist die alemannische Form von Seide, das Mittelhochdeutsche kennt „sîdevar“ für seidenfarbig (Lexer). Der Druck von 1487 hat ebenso „mit ſeid farb abgeſoten“, die Heidelberger Abschrift von 1580 „mit seit farb ab gesotten“. Was die Seidenfarbe beim Absieden bedeutet, bleibt offen; ein Farbmittel nennt der Text nicht.<list type="alternatives"><item>„mit gesottener Farbe abgemacht“<note type="rationale">So die Kölner Schwesterhandschrift: „mit soden farb ab gemacht“. Sie steht gegen Druck und Solothurn allein.</note></item><item>„mit seiner (eigenen) Farbe absieden“<note type="rationale">So die Koch- und Kellermeisterei von 1574: „vnd mit seiner farb absieden“, also ohne Färbung. Das kann eine spätere Glättung der dunklen Formel sein.</note></item><item>ein Ding, nicht eine Farbe<note type="rationale">Dasselbe Wort steht im Rezept davor beim Zunähen des gefüllten Huhns („mit einer seit far= b strich es zuo“, Druck „mit eyner ſeytfarb ſtrick es zu“), wo eine Farbe keinen Sinn ergibt. Belegt ist eine solche Bedeutung nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-034-orig" n="saltz es versud es nicht" resp="#fyndling" subtype="contextual">„Salze es, verkoche es nicht“: zwei Anweisungen. Der Druck von 1487 trennt sie mit einem Punkt („ſaltz eß · verſeud es nicht“), und „versieden“ heißt im Schweizerischen Idiotikon „zu stark sieden, durch Sieden verderben“.<list type="alternatives"><item>„Salze es nicht und verkoche es nicht“<note type="rationale">Die Kölner Handschrift schreibt „Saltz vnd versuds nicht“, dort könnte die Verneinung beide Verben tragen. Dagegen stehen der Druck und das spätere Abschmecken mit Salz.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#saltz"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>
