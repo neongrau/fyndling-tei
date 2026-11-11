@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**7947 Rezepte** aus **52 Rezeptsammlungen**, dazu
-52 Dateien auf Sammlungsebene mit den Quellenangaben.
+**7992 Rezepte** aus **53 Rezeptsammlungen**, dazu
+53 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -78,6 +78,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Registrum Coquine | ~1431-1435 | 70 |  |
 | Rheinfränkisches Kochbuch | ~1445 | 61 | [B1](https://gams.uni-graz.at/o:corema.b1) |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
+| Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 59 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
 | Solothurner Küchenmeisterei | um 1487 | 56 | [So1](https://gams.uni-graz.at/o:corema.so1) |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
@@ -86,13 +87,13 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Le Viandier de Taillevent | ~1300 | 49 |  |
 | Clutius: Von den Bienen (Buch 3: Vom Honig) | 1597 | 44 |  |
 | Anonimo Toscano - Libro della cocina | Ende 14. Jh. | 40 |  |
-| Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 34 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Königsberger Kochbuch | 15. Jh. | 34 | [B6](https://gams.uni-graz.at/o:corema.b6) |
 | Worlidge: Britischer Weingarten (Getränke) | 1676 | 33 |  |
 | Weinbuch im Codex Donaueschingen | um 1500 (nach Ankenbrand zwischen 1484 und 1509) | 28 |  |
 | Alemannisches Büchlein von guter Speise (N1) | 1492-1494 | 26 | [N1](https://gams.uni-graz.at/o:corema.n1) |
 | Kogebog (Harpestreng-Handschrift NKS 66) | ~1300 | 25 |  |
 | Kochbuch Meister Eberhards | Mitte 15. Jh. | 23 | [A1](https://gams.uni-graz.at/o:corema.a1) |
+| Royer: Gartengewächse in der Küche | 1648 | 20 |  |
 | Butler: Die weibliche Monarchie (Met, Honig, Wachs) | 1623 | 18 |  |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |

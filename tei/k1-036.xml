@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Holundermus aus Beeren</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-11">2026-11-11</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-036/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-036</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.36</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-036">
+        <head>Holundermus aus Beeren</head>
+        <div type="original" xml:id="k1-036-orig" xml:lang="de-x-fnhd" corresp="#k1-036-trans">
+          <p>Huldermusz van beren Require holderberen wesch sie schoen Nym dan wisz gebeheds brod Stosz die bere vnd brod mit gutem win ader huner bruhe Thu geribben lebkuchen ader honygk darzcu Machs ab mit wurtzenn Triebs durch ein tuch In einen haffenn oder In ein phannen Loisz wallen vnd sehe wurtz darvff</p>
+        </div>
+        <div type="translation" xml:id="k1-036-trans" xml:lang="de" corresp="#k1-036-orig">
+          <p>Holundermus von Beeren. Nimm Holunderbeeren und wasch sie sauber. Nimm dann geröstetes Weißbrot. Stoß die Beeren und das Brot mit gutem Wein oder Hühnerbrühe. Gib geriebenen Lebkuchen oder Honig dazu. Schmecke es mit Gewürzen ab.</p>
+          <p>Treib es durch ein Tuch in einen Topf oder in eine Pfanne. Lass es aufwallen und streu Gewürz darauf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="elderberry" orig="holderberen" commodity="wikidata:Q131448" source="#corema-ingredient-index">Holunderbeeren</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="wisz gebeheds brod" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Weißbrot, geröstet</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="gutem win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein, gut</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken stock" orig="huner bruhe" commodity="wikidata:Q96362076" source="#fyndling-ingredient-context">Hühnerbrühe (statt des Weins)</ingredient>
+            </item>
+            <item>
+              <ingredient en="gingerbread for sauce" orig="geribben lebkuchen" commodity="wikidata:Q1468150" source="#fyndling-ingredient-name">Lebkuchen, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honygk" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig (statt des Lebkuchens)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurtzenn" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-036-trans" resp="#fyndling">Was ist das? Ein süßes Fruchtmus aus Holunderbeeren, gebunden mit geröstetem Weißbrot und gesüßt mit geriebenem Lebkuchen oder Honig.
+
+Stoßen und Binden. Beeren und Brot werden zusammen mit der Flüssigkeit gestoßen; das Brot bindet das Mus. Einen Mörser nennt der Text nicht, das Stoßen setzt ihn voraus. Ob Wein oder Hühnerbrühe, lässt die Vorlage offen, ebenso, ob Lebkuchen oder Honig.
+
+Durchtreiben und Aufwallen. Gewürzt wird schon vor dem Durchtreiben. Das Tuch hält Kerne, Häute und Stielreste zurück, das Mus läuft gleich in Topf oder Pfanne. Dort lässt man es aufwallen, erst dabei dickt das Brot es an. Wie dick es werden soll und wie lange es kocht, sagt der Text nicht.
+
+Gewürze. Die Vorlage nennt keine Gewürze beim Namen, weder zum Abschmecken noch zum Bestreuen.
+
+Holunder. Nach heutigem Wissen sollen Holunderbeeren nicht roh gegessen werden: rohe, besonders unreife Beeren, Stiele und Kerne können Übelkeit auslösen, gegart gelten reife Beeren als unbedenklich. Der Zwergholunder (Attich) ist giftig und nicht zu verwenden.
+
+Praxis. Nur reife, schwarze Beeren nehmen und von den Dolden streifen; das nennt der Text nicht. Die Zubereitungszeit von etwa 45 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#k1-036-orig" n="Require" resp="#fyndling">Lateinisch, „nimm“: das Rezeptzeichen, mit dem hier die Zutaten beginnen. Der Druck von 1487 hat an derselben Stelle „Nym“.</note>
+        <note type="gloss" target="#k1-036-orig" n="gebeheds brod" resp="#fyndling">Gebähtes, also geröstetes Brot. Der Druck von 1487 schreibt gebets brot, die Koch- und Kellermeisterei gebehetem weis Brot.</note>
+        <note type="interpretive_choice" target="#k1-036-orig" n="sehe wurtz darvff" resp="#fyndling" subtype="lexical">Streu Gewürz darauf: sehen ist hier „säen“, ausstreuen, wie in den übrigen Musen des Buches („sehe Ingber darvff“). Der Druck von 1487 hat ebenfalls sehe, die Koch- und Kellermeisterei strewe.<list type="alternatives"><item>Gewürz darübersieben<note type="rationale">Die Solothurner Schwesterhandschrift schreibt seihe gewurtz daruff, was an „seihen“ denken lässt; der Kölner Wortlaut und die übrigen Zeugen sprechen für Streuen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
