@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Vergoldete Küchlein</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-12">2026-11-12</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-093/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-093</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.93</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-093">
+        <head>Vergoldete Küchlein</head>
+        <div type="original" xml:id="k1-093-orig" xml:lang="de-x-fnhd" corresp="#k1-093-trans">
+          <p>Vergulte kulchen zu backenn Nym geslagen golt wol geribben vf eym stein mit wasser als die golt farbe ader moler farbe Magstu gebranten win han ist besser Do mit wol getribben das isz starck wirt vnd glitzernn So nym dan eynen dottern von eym rohen ey dar zcu Riebs anderweit Mach kugelin zuckarat Rosat violat ader muscat hofelich klein als dumen gleder Slach die hende In eyn wasser welle vnd mach sie rondt zcuschen den henden Nym ein starcke phahen federen vnd bestrich die ku= lchen mit der goltfarbe behendlichen vmb vnd vmb Stos ein messer ader eyn hultz dar Inne das du die kulichen vber all mogst bestrichen Leig sie noch ein ander vf ein schon bred als vil du Ire han wilt vnd back ye eins noch dem andernn In fullem smaltze das isz dar Inne swymme ader weire das sie sich vnder ein ander nit ruren Nym sie mit eym lochereichten leffel vsz das sie wol ersien So bliben sie schoen dye gib vor gebrods als tracken</p>
+        </div>
+        <div type="translation" xml:id="k1-093-trans" xml:lang="de" corresp="#k1-093-orig">
+          <p>Vergoldete Küchlein backen. Nimm geschlagenes Gold, auf einem Stein mit Wasser gut gerieben wie die Goldfarbe oder Malerfarbe. Kannst du Branntwein haben, ist er besser: Damit gut gerieben, dass es kräftig wird und glitzert. Dann nimm einen Dotter von einem rohen Ei dazu und reib es noch einmal.</p>
+          <p>Mach Kügelchen aus Zuckerat, Rosat, Violat oder Muscat, zierlich klein wie Daumenglieder. Tauche die Hände in ein Wasser, roll sie und mach sie rund zwischen den Händen.</p>
+          <p>Nimm eine kräftige Pfauenfeder und bestreiche die Küchlein schnell rundum mit der Goldfarbe. Steck ein Messer oder ein Hölzchen hinein, damit du die Küchlein überall bestreichen kannst. Leg sie nacheinander auf ein sauberes Brett, so viele du davon haben willst.</p>
+          <p>Und back je eins nach dem anderen in vollem Schmalz, so dass es darin schwimmt, oder verhüte, dass sie einander berühren. Nimm sie mit einem durchlöcherten Löffel heraus, damit sie gut abtropfen, so bleiben sie schön. Die gib anstelle eines Gebratenen, so trocken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="gold" orig="geslagen golt" commodity="wikidata:Q897" source="#fyndling-ingredient-registry">Blattgold</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="brandy" orig="gebranten win" commodity="wikidata:Q146470" source="#corema-ingredient-index">Branntwein (wenn vorhanden, statt Wasser)</ingredient>
+            </item>
+            <item><ingredient orig="eynen dottern von eym rohen ey">Eigelb, roh</ingredient> - 1</item>
+            <item>
+              <ingredient orig="zuckarat Rosat violat ader muscat">Zuckerat, Rosat, Violat oder Muscat (Zuckerzubereitung für die Kügelchen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="fullem smaltze" commodity="wikidata:Q1423543" source="#fyndling-ingredient-name">Schmalz zum Ausbacken</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-093-trans" resp="#fyndling">Was ist das? Kleine Kugeln aus einer Zuckerzubereitung - Zuckerat, Rosat, Violat oder Muscat -, mit einer Goldfarbe aus angeriebenem Blattgold und Eigelb bestrichen und dann einzeln in Schmalz ausgebacken. Die Handschrift reicht sie trocken, also ohne Brühe oder Sauce, anstelle eines Gebratenen.
+
+Die Goldfarbe. Das geschlagene Gold wird auf dem Reibstein angerieben, wie man Goldfarbe oder Malerfarbe anreibt, mit Wasser oder besser mit Branntwein, wenn man ihn hat. Danach kommt ein roher Dotter dazu, und es wird noch einmal gerieben. Der Vergleich mit der Malerfarbe steht im Text; dass der Dotter dabei als Bindemittel dient, das die Farbe auf den Kugeln hält, ist eine Deutung nach der Malerpraxis, der Text begründet den Schritt nicht.
+
+Die Kugelmasse. Woraus Zuckerat, Rosat, Violat und Muscat genau bestehen, sagt der Text nicht. Violat ist im Mittelniederdeutschen Zucker, mit Veilchen gemengt; Rosat folgt demselben Muster mit Rosen; Zuckerat ist eine Zuckerspeise. Ob Muscat zu Muskat oder zu Moschus gehört, bleibt offen. Einen Teig oder ein Mehl nennt der Text nicht. Wie eine Kugel aus Zuckerzubereitung das Ausbacken in vollem Schmalz übersteht, bleibt die offene Stelle des Rezepts.
+
+Ausbacken. Je ein Stück nach dem anderen, in so viel Schmalz, dass es darin schwimmt, und so, dass die Stücke einander nicht berühren. Mit einem durchlöcherten Löffel herausheben und gut abtropfen lassen; dann, so die Handschrift, bleiben sie schön.
+
+Praxis. Nur Blattgold verwenden, das ausdrücklich für Lebensmittel verkauft wird; unechtes Blattgold (Schlagmetall) gehört nicht an Essen. Die Pfauenfeder ersetzt heute ein weicher Pinsel. Das heiße Fett am offenen Feuer braucht Aufsicht und einen Deckel in Reichweite. Eine Zubereitungszeit gibt der Text nicht an, die Stückzahl bleibt dem Koch überlassen.</note>
+        <note type="gloss" target="#k1-093-orig" n="geslagen golt" resp="#fyndling">Geschlagenes Gold: zu dünnem Blatt ausgeschlagenes Gold, also Blattgold. Hier wird es auf dem Reibstein zu einer Goldfarbe angerieben, wie Maler ihre Farben anrieben.</note>
+        <note type="gloss" target="#k1-093-orig" n="zuckarat, Rosat, violat" resp="#fyndling">Zuckerzubereitungen. Das Mittelniederdeutsche Wörterbuch belegt violât als „sucker mit fiolen gemenget“, Zucker mit Veilchen; Rosat ist nach demselben Muster mit Rosen gebildet. Zuckerat führt das Schwäbische Wörterbuch als „eine zuckerige Speise“, mit genau dieser Stelle der Küchenmeisterei als Beleg.</note>
+        <note type="gloss" target="#k1-093-orig" n="phahen federen" resp="#fyndling">Pfauenfeder; sie dient als Pinsel, mit dem die Goldfarbe aufgetragen wird.</note>
+        <note type="gloss" target="#k1-093-orig" n="lochereichten leffel" resp="#fyndling">Ein durchlöcherter Löffel, ein Schaumlöffel; die Koch- und Kellermeisterei von 1574 schreibt an derselben Stelle „Schaumlöffel“.</note>
+        <note type="gloss" target="#k1-093-orig" n="ersien" resp="#fyndling">Erseihen: abtropfen, die Flüssigkeit ablaufen lassen. Das Grimmsche Wörterbuch belegt das Wort mit dem Wortlaut der Küchenmeisterei „das si wol erseihen“.</note>
+        <note type="interpretive_choice" target="#k1-093-orig" n="ader weire das sie sich vnder ein ander nit ruren" resp="#fyndling" subtype="lexical">„weire“ = wehre, verhüte (mhd. weren, rhein. wehren = abhalten, verhindern); die doppelte Verneinung nach einem Verb des Verhinderns ist zeittypisch: „oder verhüte, dass sie einander berühren“. Die Koch- und Kellermeisterei von 1574 hat an derselben Stelle „wehre das einander nicht rüre“.<list type="alternatives"><item>„weire“ = sich regen, frei treiben<note type="rationale">Für diese Bedeutung fand sich kein Wörterbuchbeleg. Der Druck von 1487 hat das Wort nicht („vnd einander nit an ruͦren“), die Solothurner Schwesterhandschrift liest „erwe“.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-093-orig" n="muscat" resp="#fyndling" subtype="lexical" cert="unknown">Eine Zuckerzubereitung wie die drei vorher genannten; ob sie nach Muskat oder nach Moschus benannt ist, ist nicht entschieden. Die Glossen der Grazer Edition deuten „muscat“ in anderen Handschriften als Muskatnuss.<list type="alternatives"><item>Moschuszucker<note type="rationale">Die Wortform passt ebenso zu Moschus; ein Beleg für eine solche Zuckerzubereitung liegt nicht vor.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-093-orig" n="vor gebrods" resp="#fyndling" subtype="contextual">„anstelle eines Gebratenen“, wie in k1-088 („Gibs an fastagen vor ein gebrods“): die Küchlein nehmen in der Speisenfolge den Platz eines Bratens ein. Der Druck hat „fur gebrates“.<list type="alternatives"><item>„zum Gebratenen“, als Beilage<note type="rationale">So deutet die Übersetzung der Koch- und Kellermeisterei die Stelle; die Präposition „vor/für“ trägt diese Bedeutung aber nicht ohne Weiteres.</note></item><item>„vor dem Braten“<note type="rationale">Zeitliches „vor“; dann fehlte der Artikel, und k1-088 spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-093-orig" n="Mach kugelin / Riebs anderweit" resp="#fyndling" subtype="philological">Die Abschrift schreibt „kugelin“ (Kügelchen), wo der Druck von 1487 „kuͦchlyn“ und die Solothurner Schwesterhandschrift „kuchlin“ haben; die Überschrift kürzt die Druckfassung „braun kůchlein ... die vergult ſchynẽ“ auf „Vergulte kulchen“. „anderweit“ = noch einmal, wie der Druck „anderwerb“ und die Heidelberger Abschrift „ander weitt“.<list type="alternatives"><item>„ribe es an der witte“ (Solothurner Schwesterhandschrift)<note type="rationale">Lesart der Schwesterhandschrift, nicht dieser Abschrift; sie wird nicht übernommen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
