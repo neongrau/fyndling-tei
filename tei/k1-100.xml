@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Krapfenfüllung von Federvieh</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-13">2026-11-13</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-100/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-100</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.100</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-100">
+        <head>Krapfenfüllung von Federvieh</head>
+        <div type="original" xml:id="k1-100-orig" xml:lang="de-x-fnhd" corresp="#k1-100-trans">
+          <p>Ander krepphen full von feder vehe Nym kophe kragen darme Fusze vnd magenn Hacks alle klein Stois In eym morser Sued hart eiger hacke peterlin ader ander gute kruter Thu das alles In den morserr Stois wol wurtzs vnde saltzs ab Thu isz vsz In ein schusselnn knede ein ro= hes eye dar an Fulle die krepphen mit vnd alle warm furgetragen Also mag man kalbshirnn bereiden vnd Inn fullen vor wol gesodenn</p>
+        </div>
+        <div type="translation" xml:id="k1-100-trans" xml:lang="de" corresp="#k1-100-orig">
+          <p>Andere Krapfenfüllung von Federvieh. Nimm Köpfe, Hälse, Därme, Füße und Mägen. Hack alles klein und stoß es in einem Mörser.</p>
+          <p>Siede Eier hart, hacke Petersilie oder andere gute Kräuter. Tu das alles in den Mörser, stoß es gut, würze und salze es ab.</p>
+          <p>Tu es heraus in eine Schüssel und knete ein rohes Ei darunter. Fülle die Krapfen damit und trag sie alle warm auf.</p>
+          <p>So kann man Kalbshirn bereiten und einfüllen, zuvor gut gesotten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="poultry head" orig="kophe" commodity="wikidata:Q107307356" source="#corema-ingredient-index">Geflügelköpfe</ingredient>
+            </item>
+            <item>
+              <ingredient en="poultry neck" orig="kragen" commodity="wikidata:Q107307359" source="#corema-ingredient-index">Geflügelhälse</ingredient>
+            </item>
+            <item>
+              <ingredient en="poultry intestine" orig="darme" commodity="wikidata:Q107307358" source="#corema-ingredient-index">Geflügeldärme</ingredient>
+            </item>
+            <item>
+              <ingredient en="poultry feet" orig="Fusze" commodity="wikidata:Q107307355" source="#corema-ingredient-index">Geflügelfüße</ingredient>
+            </item>
+            <item>
+              <ingredient en="poultry stomach" orig="magenn" commodity="wikidata:Q107307360" source="#corema-ingredient-index">Geflügelmägen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="hart eiger">Eier, hart gesotten</ingredient>
+            </item>
+            <item>
+              <ingredient en="parsley" orig="peterlin" commodity="wikidata:Q25284" source="#corema-ingredient-index">Petersilie</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ander gute kruter">Andere gute Kräuter</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurtzs" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="saltzs" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="ein rohes eye" commodity="wikidata:Q15260613" source="#fyndling-ingredient-name">Ei, roh</ingredient> - 1</item>
+            <item>
+              <ingredient en="calf's brains" orig="kalbshirnn" commodity="wikidata:Q107246449" source="#corema-ingredient-index">Kalbshirn (für die Variante, vorher gesotten)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-100-trans" resp="#fyndling">Was ist das? Eine Füllung für Krapfen aus Köpfen, Hälsen, Därmen, Füßen und Mägen vom Geflügel. Die Teile werden klein gehackt und im Mörser gestoßen, dann kommen hart gesottene Eier und Petersilie oder andere Kräuter dazu, alles wird noch einmal gestoßen, gewürzt und gesalzen. In der Schüssel bindet ein rohes Ei die Masse. Der Schlusssatz erlaubt dasselbe mit Kalbshirn, das vorher gut gesotten ist.
+
+Roh oder gesotten? Für die Geflügelteile nennt der Abschnitt keinen Garschritt. Das allgemeine Krapfenrezept der Handschrift stellt aber die Regel voran, dass jede Fleisch- oder Fischfüllung vorher richtig und gut gesotten sein muss, und beim Kalbshirn wiederholt der Text sie. Die Teile sind also vorgesotten zu denken.
+
+Knochen. Köpfe und Füße haben Knochen. Ob sie ausgelöst werden, sagt der Text nicht. Bei der Füllung aus Fischköpfen kurz davor steht es ausdrücklich („so man die bein vsz thut“), hier fehlt es.
+
+Die Krapfen. Teig und Backen gehören nicht zu diesem Abschnitt. Den Teig beschreibt das Krapfenteig-Rezept der Serie; dass die Krapfen gebacken werden und man den Garpunkt an der Bräune erkennt, sagen die Nachbarrezepte. Aufgetragen wird warm.
+
+Praxis. Die Geflügelteile vorher gar sieden. Heute löst man die Knochen aus Köpfen und Füßen vor dem Hacken aus, ein moderner Schritt, den der Text nicht nennt. Das rohe Ei gart erst im Krapfen mit, die Füllung muss deshalb beim Backen vollständig durchgaren. Mengen nennt der Text nicht.</note>
+        <note type="gloss" target="#k1-100-orig" n="feder vehe" resp="#fyndling">Federvieh, das zahme Hausgeflügel. Das Deutsche Wörterbuch führt das Wort mit einem Kölner Beleg von 1437. Welche Vögel gemeint sind, sagt die Überschrift nicht.</note>
+        <note type="gloss" target="#k1-100-orig" n="kragen" resp="#fyndling">Der Hals des Geflügels, wie in den Hühnerrezepten derselben Handschrift („koph kragen“, Kopf und Hals).</note>
+        <note type="gloss" target="#k1-100-orig" n="krepphen" resp="#fyndling">Krapfen, gefüllte und gebackene Teigstücke. Dieser Abschnitt gibt nur die Füllung; den Teig beschreibt das Krapfenteig-Rezept kurz davor.</note>
+        <note type="interpretive_choice" target="#k1-100-orig" n="Nym kophe kragen darme Fusze vnd magenn Hacks alle klein" resp="#fyndling" subtype="contextual">Die Geflügelteile sind vorgesotten zu denken. Der Abschnitt nennt für sie keinen Garschritt, aber das Krapfenkapitel stellt die Regel voran: „Ein yde fleisch fulle ader vischfulle die musz vor recht vnd wol gesoden sin“, und beim Kalbshirn wiederholt der Text sie („vor wol gesodenn“). Die Übersetzung ergänzt den Schritt nicht.<list type="alternatives"><item>Roh gehackt, gar erst im gebackenen Krapfen<note type="rationale">Die Handschrift kennt ungesottene Innereien in einer Füllung, aber nur, wenn das Ganze danach gesotten wird (gefülltes Huhn). Für Krapfen schließt die Kapitelregel das aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-100-orig" n="Ander krepphen full von feder vehe" resp="#fyndling" subtype="philological">Übersetzt ist die Kölner Überschrift: „Andere Krapfenfüllung von Federvieh“, ohne Vogelart.<list type="alternatives"><item>Druck von 1487: „Itē vō hůner oder fogel magen der kramat fogel vñ ander fogel ſo mag man nemen die kopff. kregen derm fuß vñ magē“<note type="rationale">Der Druck, die Solothurner Schwesterhandschrift und die Heidelberger Abschrift beginnen mit Hühner- oder Vogelmagen und nennen den Krammetsvogel. Die Kölner Abschrift ersetzt diesen Kopf durch eine eigene Überschrift; die Vogelarten werden nicht übernommen. Die Solothurner Fassung hat außerdem keine Därme („Kkoppff kragenn vnd fusß magenn“), der Druck hat sie („derm“).</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
