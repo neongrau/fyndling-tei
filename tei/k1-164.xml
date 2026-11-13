@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Bieressig</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-13">2026-11-13</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-164/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-164</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.164</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-164">
+        <head>Bieressig</head>
+        <div type="original" xml:id="k1-164-orig" xml:lang="de-x-fnhd" corresp="#k1-164-trans">
+          <p>Ein Bieressig Gute bierwirtz die werme bie dem fuerr also warm dastu kume din handt magst dar Inne erliden Thu darInne ein wenig gute bierhebe von den die wirtz vff stoist Die wirt In essig gewandt Wirds nit balde zu essig So leige dar Inn ein wenig wies wieden hultz so wirt er besserr</p>
+        </div>
+        <div type="translation" xml:id="k1-164-trans" xml:lang="de" corresp="#k1-164-orig">
+          <p>Nimm gute Bierwürze und wärme sie am Feuer so warm, dass du deine Hand kaum darin ertragen kannst. Tu ein wenig gute Bierhefe hinein, von der die Würze aufsteigt. Die wird in Essig verwandelt.</p>
+          <p>Wird es nicht bald zu Essig, so lege ein wenig weißes Weidenholz hinein, so wird er besser.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="wort" orig="Gute bierwirtz" commodity="wikidata:Q14404476" source="#corema-ingredient-index">Bierwürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="ein wenig gute bierhebe" commodity="wikidata:Q12045459" source="#corema-ingredient-index">Bierhefe, ein wenig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein wenig wies wieden hultz">Weißes Weidenholz, ein wenig (nur wenn es nicht bald zu Essig wird)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-164-trans" resp="#fyndling">Was ist das? Ein Essigansatz aus Bierwürze, nicht aus fertigem Bier: Die Würze wird am Feuer handwarm gemacht, mit ein wenig Bierhefe angestellt und soll sich danach in Essig wandeln. Mengen, Gefäß und Dauer nennt der Text nicht.
+
+Handwärme. Die einzige Wärmeangabe ist die Handprobe: so warm, dass man die Hand kaum darin lassen kann. In dieser Wärme kommt Hefe zügig in Gang.
+
+Die Hefe. Der Text beschreibt die Hefe nach ihrer Wirkung: Es ist die, von der die Würze aufsteigt, also gärt und schäumt. Weil die Hefe ausdrücklich zugegeben wird, ist hier nicht an Fasshefe zu denken.
+
+Zwei Stufen in einem Satz. Nach heutigem Wissen geschieht zweierlei: Erst vergärt die Hefe den Malzzucker zu Alkohol, dann machen Essigbakterien unter Luftzutritt daraus Essig. Der Text fasst beides in „Die wird in Essig verwandelt“ zusammen und nennt für die zweite Stufe weder eine Zugabe noch ein Gefäß.
+
+Das Weidenholz. Es ist eine Bedingung, kein fester Schritt: Nur wenn es nicht bald zu Essig wird, kommt ein wenig weißes Weidenholz hinein. Die Begründung gibt die Handschrift im nächsten Kapitel selbst - der Weide sei die Eigenschaft eigen, Säure zu haben. Ob das Holz die Säuerung tatsächlich fördert, ist nicht geprüft.
+
+Praxis. Würze handwarm machen, ein wenig Bierhefe zugeben und stehen lassen, bis sie sauer geworden ist; kommt die Säuerung nicht in Gang, ein Stück weißes Weidenholz einlegen. Ein Zeichen für das Ende nennt der Text nicht. Heute nähme man ein offenes, mit einem Tuch abgedecktes Gefäß, weil Essigbakterien Luft brauchen, und prüfte am Geschmack - beides heutige Praxis, nicht Anweisung der Handschrift.</note>
+        <note type="gloss" target="#k1-164-orig" n="bierwirtz" resp="#fyndling">Bierwürze: der noch ungegorene Sud aus Malz, wie er beim Brauen vor der Gärung entsteht. Der Essig wird also aus Würze angesetzt, nicht aus fertigem Bier.</note>
+        <note type="gloss" target="#k1-164-orig" n="wies wieden hultz" resp="#fyndling">Weißes Weidenholz. Das folgende Kapitel der Handschrift begründet die Weide selbst: Ihr sei von natürlicher Kraft die Eigenschaft eigen, Säure zu haben; dort wird aus ihr ein Spund geschnitten, der Bier- wie Weinessig seine Säure erhält.</note>
+        <note type="interpretive_choice" target="#k1-164-orig" n="von den die wirtz vff stoist" resp="#fyndling" subtype="lexical">Hefe, von der die Würze aufsteigt, also gärt und aufschäumt. Ehlerts Glossar (2010, ab S. 395) deutet vffstossen mit dem Grimmschen Wörterbuch als Gären; der Druck von 1487 hat an der Stelle „vō den die wurtz vff ſtoßt“, Hirnkofens Weinbuch sagt, die Hefe mache das Biermalz „ieren“ (gären).<list type="alternatives"><item>Hefe von der Art, die die gärende Würze nach oben auswirft (abgeschöpfte Oberhefe)<note type="rationale">Grammatisch möglich, wenn man „von den“ teilend liest; gemeint wäre dieselbe Bierhefe, die Parallelfassungen beschreiben aber ihre Wirkung, nicht ihre Herkunft.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

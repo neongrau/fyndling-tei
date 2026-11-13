@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**8147 Rezepte** aus **53 Rezeptsammlungen**, dazu
+**8195 Rezepte** aus **53 Rezeptsammlungen**, dazu
 53 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -55,8 +55,8 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kunstbuch von mancherley Essen | 1598 | 806 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
-| Ménagier de Paris | ~1393 | 289 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
+| Ménagier de Paris | ~1393 | 289 |  |
 | Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 269 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 269 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
@@ -64,16 +64,16 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Libro de Arte Coquinaria | ~1465 | 225 |  |
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
 | The Forme of Cury | ~1390 | 192 |  |
+| Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 182 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Rasch: Weinbuch | um 1580 | 147 |  |
 | Das Kochbuch der Maria Stenglerin | 1554 | 145 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Rezeptbuch der Sarah Longe | 17. Jh., Nachträge bis 18. Jh. | 141 |  |
-| Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 134 | [K1](https://gams.uni-graz.at/o:corema.k1) |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Das geöffnete Kabinett des Sir Kenelm Digby | 1669 | 105 |  |
-| Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
+| Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Registrum Coquine | ~1431-1435 | 70 |  |

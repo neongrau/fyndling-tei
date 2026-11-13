@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gefüllte Morcheln vom Rost</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-13">2026-11-13</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-123/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-123</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.123</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-123">
+        <head>Gefüllte Morcheln vom Rost</head>
+        <div type="original" xml:id="k1-123-orig" xml:lang="de-x-fnhd" corresp="#k1-123-trans">
+          <p>Moeren zu backenn Mach ein full als man epphel full macht oder gesturtzt eyer vnd ye zcwene morchen vber ein ander gesturtzt beid teil gefult vnd verkleibt mit eym rohen eye an den ortenn das bye ein ander blibe Stoszs an eyn spiszlin Brod sie vff eym roist sitlichen vnd beguis sy mit milchsmalz vnd wende sie offt vmb</p>
+        </div>
+        <div type="translation" xml:id="k1-123-trans" xml:lang="de" corresp="#k1-123-orig">
+          <p>Morcheln zu backen. Mach eine Füllung, wie man die Apfelfüllung macht oder gestürzte Eier. Und je zwei Morcheln übereinander gestürzt, beide Teile gefüllt und mit einem rohen Ei an den Rändern verklebt, damit es beieinander bleibt.</p>
+          <p>Steck es an ein Spießchen. Brate sie behutsam auf einem Rost, begieß sie mit Butterschmalz und wende sie oft um.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="morel" orig="morchen" commodity="wikidata:Q1129282" source="#corema-ingredient-index">Morcheln</ingredient>
+            </item>
+            <item>
+              <ingredient en="stuffing" orig="full" commodity="wikidata:Q745361" source="#corema-ingredient-index">Füllung wie die Apfelfüllung</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="rohen eye" commodity="wikidata:Q15260613" source="#corema-ingredient-index">rohes Ei zum Verkleben</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="milchsmalz" commodity="wikidata:Q34172" source="#corema-ingredient-index">Butterschmalz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-123-trans" resp="#fyndling">Was ist das? Morcheln, je zwei übereinander gestürzt, mit einer Füllung gefüllt, an den Rändern mit rohem Ei verklebt, an ein Spießchen gesteckt und auf dem Rost gebraten, unter Begießen mit Butterschmalz. Die Überschrift sagt zu backen, das Verfahren ist Braten auf dem Rost.
+
+Die Füllung. Das Rezept gibt keine eigene, es verweist auf zwei andere Stellen des Buchs: die Apfelfüllung aus gebratenen Äpfeln, einem harten Ei und Petersilie, mit rohem Ei gebunden, gewürzt, gesalzen und gelb gefärbt (k1-114), oder die Füllung der gestürzten Eier aus Eidotter, geriebenem Semmelbrot, Muskat und Salz (k1-083). Welche, bleibt dir überlassen; Mengen nennt keine der Stellen für Morcheln.
+
+Verkleben und Braten. Das rohe Ei an den Rändern gerinnt in der Hitze und hält die beiden Hälften zusammen. Das Spießchen hält das Paar und macht das häufige Wenden möglich; es liegt auf dem Rost, wie bei den gestürzten Äpfeln am Spießlein (k1-115). Sitlichen heißt behutsam: langsam über mäßiger Glut, eine Hitze oder Zeit nennt der Text nicht. Das Begießen mit Butterschmalz hält die Pilze feucht.
+
+Praxis. Getrocknete Morcheln vorher einweichen und gut ausdrücken. Morcheln sind roh giftig und müssen ganz durchgaren; dasselbe gilt für das rohe Ei in Füllung und Naht. Selbst gesammelte Morcheln nur sicher bestimmt verwenden, die Frühjahrslorchel sieht ähnlich aus und ist giftig. Die Zubereitungszeit von etwa einer Stunde ist eine Schätzung, der Text gibt keine Zeit an; sie rechnet das Braten der Äpfel und das Hartkochen des Eis für die Apfelfüllung mit ein.</note>
+        <note type="gloss" target="#k1-123-orig" n="Moeren / morchen" resp="#fyndling">Die Überschrift schreibt Moeren, der Text morchen. Das alte Wort morhe, morche bezeichnete die Möhre und daneben den essbaren Erdschwamm (Grimms Wörterbuch). Gemeint sind Morcheln: Nur ihre hohlen Hüte lassen sich übereinander stürzen und füllen, und der Druck von 1487 überschreibt das Kapitel wiltu morchen mit eyern fullen.</note>
+        <note type="gloss" target="#k1-123-orig" n="als man epphel full macht" resp="#fyndling">Verweis auf die Apfelfüllung der Handschrift (k1-114): gebratene Äpfel, ein hartes Ei und Petersilie, mit einem rohen Ei vermengt, gewürzt, gesalzen und gelb gefärbt. Dort werden auch die gefüllten Apfelhälften übereinander gestürzt, also wieder zusammengesetzt, wie hier die Morcheln.</note>
+        <note type="gloss" target="#k1-123-orig" n="sitlichen" resp="#fyndling">Behutsam, allmählich: Dasypodius gibt sensim mit sitlich wieder. Dieselbe Handschrift wendet so auch Braten und Birnen am Spieß (k1-065, k1-117).</note>
+        <note type="interpretive_choice" target="#k1-123-orig" n="oder gesturtzt eyer" resp="#fyndling" subtype="contextual">Zweiter Verweis: die Füllung, wie man sie für die gestürzten Eier macht (k1-083: Eidotter, geriebenes Semmelbrot, Muskat und Salz in die Eierschale gefüllt, ein Schalenköpfchen darüber gestürzt). Die Krapfen in k1-096 nennen dasselbe Paar: mit der fulle als man gesturtzte eyer fullt vnd als man epphel ... fult.<list type="alternatives"><item>Eine Eierfüllung schlechthin<note type="rationale">Der Druck von 1487 und die Koch- und Kellermeisterei überschreiben das Rezept mit eyern fullen, und das Kapitel davor nennt für gefüllte Morcheln die full mit guͦten wurtzen schon abgemacht eytel eyer. Der Satzbau (als man ... macht oder gesturtzt eyer) stellt aber zwei Zubereitungen nebeneinander, nicht eine Zutat.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-123-orig" n="milchsmalz" resp="#fyndling" subtype="lexical">Butterschmalz, ausgelassene Butter (Frühneuhochdeutsches Wörterbuch milchschmalz); so auch sonst in der Handschrift (k1-053, k1-075).<list type="alternatives"><item>Rahm<note type="rationale">Grimms Wörterbuch setzt milchschmalz mit Sahne, Rahm an und zitiert dafür gerade die Küchenmeisterei (den broten begeust man auch mit milchschmalcz). In k1-053 wird das Milchschmalz aber luter (klar) gemacht, und k1-075 stellt es neben zerlassenen Speck; beides passt zu Fett, nicht zu Rahm.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

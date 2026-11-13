@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essigbrot für unterwegs</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-13">2026-11-13</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-162/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-162</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.162</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-162">
+        <head>Essigbrot für unterwegs</head>
+        <div type="original" xml:id="k1-162-orig" xml:lang="de-x-fnhd" corresp="#k1-162-trans">
+          <p>Ader also Nym hebe von essig kned sie mit rocken mel mach einen teig dar vsz vnd ein brod Backs Im offenn kum die helfft dan nym isz vsz dem ofen Legs In guten starcken essig das isz des essigs In sich zcihe So lois aber Im ofen backen zu der helfft Nyms vsz Legs widder In gutenn starcken essig das isz aber des essi= ges In sich zcihe als vil isz mag Thu isz widder In den ofen backs wol vnd behalts Vnd wan du essig haben wilt wo du bist vf dem wege Rere des brods enwenig In einen becher wins so hastu essig</p>
+        </div>
+        <div type="translation" xml:id="k1-162-trans" xml:lang="de" corresp="#k1-162-orig">
+          <p>Oder so: Nimm Hefe vom Essig, knete sie mit Roggenmehl, mach einen Teig daraus und ein Brot. Backe es im Ofen kaum bis zur Hälfte, dann nimm es aus dem Ofen und leg es in guten, starken Essig, damit es den Essig in sich zieht.</p>
+          <p>Dann lass es wieder im Ofen backen, bis zur Hälfte. Nimm es heraus, leg es wieder in guten, starken Essig, damit es abermals den Essig in sich zieht, so viel es kann. Tu es wieder in den Ofen, backe es gut und bewahre es auf.</p>
+          <p>Und wenn du Essig haben willst, wo du bist, auf dem Weg, so streue ein wenig von dem Brot in einen Becher Wein, so hast du Essig.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="hebe von essig">Essighefe (Satz aus dem Essigfass)</ingredient>
+            </item>
+            <item>
+              <ingredient en="rye flour" orig="rocken mel" commodity="wikidata:Q10658708" source="#corema-ingredient-index">Roggenmehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="vinegar" orig="guten starcken essig" commodity="wikidata:Q41354" source="#corema-ingredient-index">Essig, gut und stark</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="becher wins" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein, ein Becher</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-162-trans" resp="#fyndling">Was ist das?
+
+Kein Gericht, sondern ein Essigvorrat für die Reise in Form eines Brotes. Aus Hefe vom Essig und Roggenmehl wird ein Teig geknetet und zu einem Brot geformt. Es kommt dreimal in den Ofen: zuerst kaum bis zur Hälfte, dann bis zur Hälfte, zuletzt wird es gut gebacken. Zwischen den Backgängen liegt es zweimal in gutem, starkem Essig, beim zweiten Mal, bis es sich vollgesogen hat. Dann wird es aufbewahrt. Unterwegs streut man ein wenig davon in einen Becher Wein.
+
+Was der Text offen lässt.
+
+Mengen, Backzeiten, die Dauer des Einlegens und wie viel Brot auf einen Becher kommt, nennt der Text nicht. Das Ende der Backgänge gibt er nur als Stufe an, das Ende des zweiten Einlegens mit „als vil isz mag“, so viel es aufnimmt.
+
+Wie war das gedacht?
+
+Einen Grund nennt der Text nicht. Als historische Hypothese: Das Brot soll die Kraft des Essigs aufnehmen, speichern und im Becher sofort an den Wein weitergeben, „so hastu essig“. Dieselbe Denkfigur haben das Essigpulver aus Traubenkernen im Kapitel davor und die Weinstein-Küchlein im Kapitel danach.
+
+Heutiges Wissen.
+
+Essigsäurebakterien überleben das gründliche Ausbacken am Ende nicht. Was den Wein im Becher sauer macht, ist die Säure, die das Brot aus dem starken Essig aufgenommen hat; ein Teil davon geht beim Backen verloren. Der Wein wird dadurch saurer, aber nicht zu Essig umgesetzt; dafür bräuchte es lebende Bakterien, Luft und Zeit.
+
+Praxis.
+
+Nötig sind Roggenmehl, ein kräftiger Essig, als Essighefe der Satz oder die Essigmutter aus einem Essigansatz und ein Backofen für drei Backgänge. Wie viel Brot auf einen Becher kommt, steht nicht da („enwenig“): bröckeln, kosten, nachlegen.</note>
+        <note type="gloss" target="#k1-162-orig" n="hebe von essig" resp="#fyndling">Hebe ist die Hefe, im Frühneuhochdeutschen auch der Sauerteig und allgemein das Gärungsmittel, das als Bodensatz zurückbleibt (Frühneuhochdeutsches Wörterbuch). Gemeint ist der Satz aus einem Essigfass; heute kauft man ihn als Essigmutter.</note>
+        <note type="gloss" target="#k1-162-orig" n="kum die helfft / zu der helfft" resp="#fyndling">Kum heißt „kaum“ (mittelniederdeutsch kume, „mit Mühe und Not, kaum“). Das Brot wird also in drei Stufen gebacken: zuerst kaum bis zur Hälfte, dann bis zur Hälfte, zuletzt gut. Der Druck von 1487 hat „kaũ halb“ und „vff halb“.</note>
+        <note type="gloss" target="#k1-162-orig" n="Rere" resp="#fyndling">„Streue“, eigentlich „fallen lassen“: mittelhochdeutsch rêren (Lexer), nicht „rühren“. Der Druck von 1487 und die Solothurner Schwesterhandschrift haben an dieser Stelle dasselbe Wort.</note>
+        <note type="interpretive_choice" target="#k1-162-orig" n="hebe von essig kned sie mit rocken mel" resp="#fyndling" subtype="philological">So, wie die Kölner Handschrift schreibt: Hefe vom Essig, mit Roggenmehl geknetet.<list type="alternatives"><item>Der Druck von 1487 hat „nym heffen vñ eſſig knyt die mit rockē mel“, die Solothurner Handschrift „nim heffenn von essig vnd knite die mite essig vnd mit rogenn mall“.<note type="rationale">Im Druck sind Hefe und Essig zwei Zutaten des Teigs, Solothurn knetet die Essighefe zusätzlich mit Essig. Köln nennt nur die Hefe vom Essig und das Mehl; die anderen Fassungen werden nicht angeglichen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#mel"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

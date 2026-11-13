@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Birnenlatwerge</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-13">2026-11-13</date>
+        <idno type="url">https://fyndling.de/rezepte/k1-150/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/k1-150</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Köln, Historisches Archiv der Stadt Köln, Best. 7004, 27</title>
+          <date>2. Hälfte 15. Jh. oder 16. Jh. (umstritten)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.k1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">k1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.k1</idno>
+          <idno type="corema-recipe">k1.150</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ripuarisch/westmitteldeutsch, Köln) - Datierung umstritten: Menne (1931/1937) 2. Hälfte 15. Jh., Finger et al. (1993) 16. Jh. ohne Begründung; Wasserzeichen/Inhalt liefern laut TEI keine sichere Datierung</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="k1-150">
+        <head>Birnenlatwerge</head>
+        <div type="original" xml:id="k1-150-orig" xml:lang="de-x-fnhd" corresp="#k1-150-trans">
+          <p>Birn latwerge Nim gute birn Sued sie schon werff kernn vnd schalen hyn Thu die byrn In einen hafen Gusz Zcylig was= ser dar ane wan du sie zu stucklin gesnydden hast ver= deck den hafen das der dunst nit vsz moege Wan sie sy= dens gnug haben so zuknursche sie gar klein mit eym leffell Thu sie In ein kleyn kesselin Setz vff einen dryfusz vber ein klein fuer Dar noch ein gute glued Rure sie fur sich dar das sie nit werdenn als ein musz Thu ho= nig wurtz dar Inne Rure isz nach bas Du magst nemen Nelken Ingberr vnd Muscat groib gestoissen vnd vngereden thu sie darInne vnd rure sie noch bas vnd en= zcuch das fuer bisz die wurtz wol erhitzenn dan thu isz her abe So ist die lattwerge gereicht Slachs vsz vff eyn wieden teller oder schoens bret Trieb sie dan als eynen krepphen teick lois wol kalden vnd Snyd dan kleyne stucklin da von vnd legs Inn</p>
+        </div>
+        <div type="translation" xml:id="k1-150-trans" xml:lang="de" corresp="#k1-150-orig">
+          <p>Birnenlatwerge. Nimm gute Birnen, siede sie schön, wirf Kerne und Schalen weg. Gib die Birnen in einen Topf, gieß etwas Wasser daran, wenn du sie in Stückchen geschnitten hast. Deck den Topf zu, damit der Dampf nicht herauskann. Wenn sie genug gesotten haben, zerdrücke sie ganz klein mit einem Löffel.</p>
+          <p>Gib sie in einen kleinen Kessel, setz ihn auf einen Dreifuß über ein kleines Feuer, danach über eine gute Glut. Rühre sie immer weiter, damit sie nicht wie ein Mus werden. Gib Honig und Gewürz hinein, rühre es noch besser.</p>
+          <p>Du kannst Nelken, Ingwer und Muskat nehmen, grob gestoßen und ungesiebt; gib sie hinein und rühre sie noch besser. Zieh das Feuer weg, bis die Gewürze gut heiß werden, dann nimm es herab. So ist die Latwerge fertig.</p>
+          <p>Schlag sie auf einen weiten Teller oder ein sauberes Brett aus. Treib sie dann aus wie einen Krapfenteig, lass sie gut erkalten, schneide dann kleine Stückchen davon und leg sie ein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="gute birn" commodity="wikidata:Q13099586" source="#corema-ingredient-index">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Zcylig was= ser">Wasser, nur wenig</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="ho= nig" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="Nelken" commodity="wikidata:Q15622897" source="#corema-ingredient-index">Nelken, grob gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Ingberr" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer, grob gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="Muscat" commodity="wikidata:Q83165" source="#corema-ingredient-index">Muskatnuss, grob gestoßen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#k1-150-trans" resp="#fyndling">Was ist das? Eine Latwerge aus Birnen: Die Birnen werden gesotten, geschält und entkernt, in Stücken mit wenig Wasser zugedeckt weitergegart, mit dem Löffel zerdrückt und im kleinen Kessel unter Rühren eingedickt, bis die Masse fester ist als ein Mus. Honig, Nelken, Ingwer und Muskat kommen hinein. Dann wird sie ausgestrichen, nach dem Erkalten in kleine Stücke geschnitten und aufgehoben. Eine Wirkung nennt der Text nicht.
+
+Zweimal gegart. Der Text lässt die Birnen zuerst sieden und entfernt erst danach Kerne und Schalen. Die Stücke garen dann mit wenig Wasser im zugedeckten Topf weiter, damit sie im eigenen Dampf weich werden. Die verwandten Birnenlatwergen im Mondseer Kochbuch und bei Meister Hans schälen die Birnen roh.
+
+Eindicken. Erst über kleinem Feuer, dann über guter Glut, dabei immer weiterrühren. Die Masse soll kein Mus bleiben, sondern so fest werden, dass man sie danach wie einen Krapfenteig auswalken kann. Woran man das Ende erkennt, sagt der Text nicht. Heute nimmt man sie vom Feuer, wenn ein Löffelstrich über den Kesselboden kurz offen bleibt - das ist heutige Praxis, kein Wortlaut der Handschrift.
+
+Honig und Gewürz. Mengen nennt der Text weder für den Honig noch für die Gewürze. Nelken, Ingwer und Muskat sind ein Vorschlag (Du magst nemen). Sie werden nur grob gestoßen und nicht gesiebt. Danach wird die Glut weggezogen, die Gewürze werden in der verbleibenden Hitze heiß, und der Kessel kommt herab.
+
+Ausstreichen und Schneiden. Die Masse wird auf einen weiten Teller oder ein sauberes Brett ausgeschlagen, wie Teig ausgetrieben, gut ausgekühlt und in kleine Stücke geschnitten. Einlegen heißt: zum Aufheben in ein Gefäß legen. Welches Gefäß, sagt der Text nicht.
+
+Praxis. Die heiße, zähe Fruchtmasse spritzt beim Rühren. Die Zubereitungszeit von etwa zwei Stunden ist eine Schätzung, der Text gibt keine Zeit an; das Auskühlen ist nicht mitgerechnet.</note>
+        <note type="gloss" target="#k1-150-orig" n="latwerge" resp="#fyndling">Eine Latwerge ist ein eingedicktes Mus aus Früchten oder Gewürzen mit Honig; das Wort kommt aus der Arzneikunde (lat. electuarium). Diese hier wird so fest gekocht, dass man sie in Stücke schneiden kann.</note>
+        <note type="gloss" target="#k1-150-orig" n="Zcylig" resp="#fyndling">zcylig (im Druck von 1487 zilig) heißt gering, mäßig: nur etwas Wasser. Das Deutsche Wörterbuch führt genau diese Stelle unter zilig an.</note>
+        <note type="gloss" target="#k1-150-orig" n="vngereden" resp="#fyndling">vngereden heißt ungesiebt, zu reden = sieben. Der Druck von 1487 sagt es ausführlicher: du darffeſt ir nit durch reden.</note>
+        <note type="gloss" target="#k1-150-orig" n="krepphen teick" resp="#fyndling">Der Krapfenteig ist nur ein Vergleich für das Auswalken der Masse. Er gehört nicht zu den Zutaten.</note>
+        <note type="interpretive_choice" target="#k1-150-orig" n="Sued sie schon werff kernn vnd schalen hyn" resp="#fyndling" subtype="contextual">Die Birnen werden zuerst gesotten, erst danach werden Kerne und Schalen entfernt; dann garen die Stücke mit wenig Wasser im zugedeckten Topf weiter. So steht es auch im Druck von 1487 (ſeud die ſchō wurff die kern ſcheltzē hyn).<list type="alternatives"><item>Die Birnen roh schälen und entkernen, wie in den verwandten Rezepten des Mondseer Kochbuchs (mon-034) und des Meisters Hans (mha-259).<note type="rationale">Das ist eine andere Überlieferung. Die Handschrift und der Druck lassen ausdrücklich zuerst sieden.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="interpretive_choice" target="#k1-150-orig" n="Rure sie fur sich dar das sie nit werdenn als ein musz" resp="#fyndling" subtype="contextual">Immerfort weiterrühren (fürsich = vorwärts, weiter), bis die Masse fester ist als ein Mus, denn sie soll danach wie Teig ausgewalkt werden.<list type="alternatives"><item>Behutsam rühren, damit die Birnen nicht zu Mus zerfallen; so versteht es die Übersetzung bei Ehlert 2010, S. 326-328.<note type="rationale">Die Birnen sind zu diesem Zeitpunkt schon gar klein zerdrückt; das spätere Auswalken verlangt eine feste Masse.</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-150-orig" n="enzcuch das fuer" resp="#fyndling" subtype="contextual">Die Glut unter dem Kessel wegziehen (entziehen = wegziehen); die Gewürze werden in der verbleibenden Hitze heiß, danach wird der Kessel abgenommen.<list type="alternatives"><item>Den Kessel vom Feuer ziehen.<note type="rationale">Das Abnehmen nennt der Text danach eigens (dan thu isz her abe).</note></item></list></note>
+        <note type="interpretive_choice" target="#k1-150-orig" n="legs Inn" resp="#fyndling" subtype="contextual">Die geschnittenen Stücke werden eingelegt, also zum Aufheben in ein Gefäß gelegt. So enden auch der Druck von 1487 (legs ein) und die Koch- und Kellermeisterei (leg es ein); Ehlert 2010, S. 378 deutet es ebenso, mit Fragezeichen.<list type="alternatives"><item>In eine Flüssigkeit einlegen.<note type="rationale">Der Text nennt keine Flüssigkeit.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
