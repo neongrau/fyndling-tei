@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**8195 Rezepte** aus **53 Rezeptsammlungen**, dazu
-53 Dateien auf Sammlungsebene mit den Quellenangaben.
+**8233 Rezepte** aus **54 Rezeptsammlungen**, dazu
+54 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -76,11 +76,11 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
+| Solothurner Küchenmeisterei | um 1487 | 81 | [So1](https://gams.uni-graz.at/o:corema.so1) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
 | Rheinfränkisches Kochbuch | ~1445 | 61 | [B1](https://gams.uni-graz.at/o:corema.b1) |
 | Von guten und edlen Speisen (Wel ende edelike spijse) | ~1475 | 60 |  |
 | Haus- und Arzneibuch (Ka2) | 15. Jh. | 56 | [Ka2](https://gams.uni-graz.at/o:corema.ka2) |
-| Solothurner Küchenmeisterei | um 1487 | 56 | [So1](https://gams.uni-graz.at/o:corema.so1) |
 | Klosterkochbuch Rott am Inn (Clm 15632) | 1458/1464 | 55 | [M10](https://gams.uni-graz.at/o:corema.m10) |
 | Tegernseer Speisenbuch | 1453-1534 | 51 | [M13](https://gams.uni-graz.at/o:corema.m13) |
 | Ryff: Confect oder Latwergen büchlin | 1562 | 50 |  |
@@ -96,6 +96,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Royer: Gartengewächse in der Küche | 1648 | 20 |  |
 | Butler: Die weibliche Monarchie (Met, Honig, Wachs) | 1623 | 18 |  |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
+| Salzburg, Cod. M III 3 („Speyerer Kompendium“): Lautertränke und Bierbrauen | um 1460 | 13 |  |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Glauber: Reicher Schatz- und Sammelkasten, Zweite Centuria (Gefrierkonzentration) | 1660 | 6 |  |
 | Hohberg: Georgica Curiosa (Vom Met-Sieden) | 1682 | 5 |  |

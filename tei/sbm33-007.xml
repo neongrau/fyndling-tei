@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Malz für Bier bereiten</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-14">2026-11-14</date>
+        <idno type="url">https://fyndling.de/rezepte/sbm33-007/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/sbm33-007</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Salzburg, Universitätsbibliothek, Cod. M III 3 („Speyerer Kompendium“), Bl. 305va–306vb „Von sechser hande luter trang“ und Brauanleitungen; Einzelstücke Bl. 292vb, 321va, 322vb</title>
+          <date when="1460" cert="low">um 1460</date>
+          <idno type="URI">https://archive.org/details/Salzburg_UB_M_III_3</idno>
+          <note>Lesung: fyndling.de, am Digitalisat der Universitätsbibliothek Salzburg</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (rheinfränkisch, Speyer, um 1460)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="sbm33-007">
+        <head>Malz für Bier bereiten</head>
+        <div type="original" xml:id="sbm33-007-orig" xml:lang="de-x-fnhd" corresp="#sbm33-007-trans" subtype="excerpt">
+          <p>Wiltu güt maltz zu bier machen
+So nym gersten od[er] habern v[n]d weissen dar zü welches dü wilt od[er] sie beide alzo daz der gersten der merteil sy vnd tü die frucht in einen zober vnd wasser dar über daz es über die frucht gee in dem somer iij tage sten vnd ym wint[er] iiij tage vnd schüt dan daz wasser abe so dü geradest mihst [?] vnd lege die frucht vff ein bün vff einen huffen la sie lige iij tage oder iiij So griff in den huffen ist die frucht warm vnd kympt so brich den huffen vff vnd daz vßwendig vmb den huffen ist daz lege dan vnden vnd daz gekympt oben dar vff Biß daz es alles kymen wirt vnd zürdreches [?] Dan von ein vnd yglich frucht sal sünderlingen vff einem huffen lige
+nit vnder ein vnd solt die frucht allen dag zwirnent [?] werden biß daz der kern gantz zür brist vnd erstirbt Wan daz geschicht vnd drocken wirt san [?] drocken so lege vnd ob es zü drocken worde So soltü es bessprewen mit einem wedel daz es wider fucht w[er]de vnd mach klein gleymelin dar durch daz es nit alzo nahe bij ein ander lige vnd wan es vier woche alzo vff der bönnen [?] gelege ist So derre es dan wol vff einer darren vnd lass es danne maln so hastü güt maltz vnd so die bonnen aller my[n]st [?] lufft hant in dem somer so all[er] best ist vnd in dem winter aller lufftigist vnd ym winter einen warme hafen mit wasser der oben zü gedeckt sy vnd setze den in den huffe so es zü kalt ⟨gestrichen: wurde⟩ were vff daz die frucht dest[er] ee kymen wurde vnd auch decken ⟨gestrichen: Suche da hinden me[r] [?]</p>
+          <p><gap reason="editorial-excerpt"/>dar zü gehort⟩</p>
+        </div>
+        <div type="translation" xml:id="sbm33-007-trans" xml:lang="de" corresp="#sbm33-007-orig">
+          <p>Willst du gutes Malz für Bier machen, so nimm Gerste oder Hafer und Weizen dazu, welches du willst, oder beide, so dass die Gerste der größere Teil ist. Gib das Getreide in einen Zuber und gieße Wasser darüber, so dass es über dem Getreide steht. Im Sommer lass es drei Tage stehen und im Winter vier Tage. Dann schütte das Wasser ab, so schnell du kannst.</p>
+          <p>Leg das Getreide auf eine Bühne zu einem Haufen und lass es drei oder vier Tage liegen. Dann greif in den Haufen: Ist das Getreide warm und keimt es, so brich den Haufen auf. Was außen um den Haufen liegt, das lege nach unten, und das Gekeimte oben darauf, bis alles keimt und zürdreches. Und jede Getreideart soll gesondert auf einem eigenen Haufen liegen, nicht untereinander.</p>
+          <p>Und das Getreide soll alle Tage gedreht werden, bis der Kern ganz aufbricht und abstirbt. Wenn das geschieht und es trocken wird, so leg es trocken hin. Und wenn es zu trocken würde, so sollst du es mit einem Wedel besprengen, damit es wieder feucht wird. Und mach kleine gleymelin hindurch, damit es nicht so nahe beieinanderliegt.</p>
+          <p>Und wenn es vier Wochen so auf der Bühne gelegen hat, so darre es gut auf einer Darre und lass es dann mahlen. So hast du gutes Malz.</p>
+          <p>Und wenn die Bühnen im Sommer am allerwenigsten Luft haben, so ist es am allerbesten, und im Winter am allerluftigsten. Und im Winter einen warmen Topf mit Wasser, der oben zugedeckt ist: Den setze in den Haufen, wenn es zu kalt wäre, damit das Getreide desto eher keimt. Und auch zudecken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="barley" orig="gersten" commodity="wikidata:Q27660203" source="#corema-ingredient-index">Gerste (Hauptanteil)</ingredient>
+            </item>
+            <item>
+              <ingredient en="oats" orig="habern" commodity="wikidata:Q24265484" source="#corema-ingredient-index">Hafer (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wheat" orig="weissen" commodity="wikidata:Q15645384" source="#corema-ingredient-index">Weizen (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#sbm33-007-trans" resp="#fyndling">Was ist das? Eine Anleitung zum Mälzen: Getreide wird geweicht, auf einem Boden zum Keimen gebracht, gedarrt und gemahlen. Heute nennt man dieses Verfahren Tennenmälzerei. Das Malz ist der Rohstoff für die beiden Fassungen des Bierrezepts, die in der Handschrift unmittelbar folgen und für das Malz hierher verweisen.
+
+Weichen und Haufen. Das Wasser soll über dem Getreide stehen, im Sommer drei, im Winter vier Tage; danach wird es zügig abgeschüttet. Auf dem Haufen wird das nasse Korn warm. Die Hand im Haufen zeigt, wann es warm ist und zu keimen beginnt. Dann wird umgeschichtet: Was außen lag, kommt nach unten, das schon Gekeimte nach oben, bis alles keimt. Jede Getreideart bleibt auf ihrem eigenen Haufen; warum, sagt der Text nicht.
+
+Drehen, Besprengen, Auseinanderhalten. Das Getreide wird täglich bewegt, bis der Kern aufbricht und abstirbt. Das Wort zwirnent ist nicht sicher zu deuten: Mittelhochdeutsch zwir heißt zweimal, rheinisch zwirnen auch drehen. Beides läuft auf regelmäßiges Wenden hinaus, ob zweimal am Tag, bleibt offen. Wird das Korn zu trocken, sprengt man mit einem Wedel Wasser darüber. Was die gleymelin sind, ist ungeklärt; den Zweck nennt der Text selbst: Das Getreide soll nicht zu dicht liegen. Auch zürdreches ist ungeklärt.
+
+Luft und Wärme. Der Satz über die Luft lautet wörtlich: im Sommer am wenigsten Luft am besten, im Winter am luftigsten. Das steht quer zum Winterrat, einen warmen, zugedeckten Wassertopf in den Haufen zu setzen und den Haufen zuzudecken. Die Übersetzung bleibt wörtlich; ob etwas anderes gemeint war, ist offen. Wer heute mälzt, hält keimendes Korn im Sommer eher kühl und luftig - das ist heutige Praxis, nicht der Text.
+
+Vier Wochen. Vor dem Darren liegt das Getreide vier Wochen auf der Bühne. Ob das Trocknen dort in dieser Zeit eingeschlossen ist und wie stark gedarrt wird, sagt der Text nicht. Mengen nennt er ebenfalls keine.
+
+Praxis. Ganze, ungeschälte, keimfähige Körner verwenden, Gerste als Hauptteil, jede Getreideart für sich. Feuchtes, keimendes Korn kann schimmeln; schimmliges Korn heute nicht verwenden. Die Arbeit verteilt sich über Wochen, eine Zubereitungszeit lässt sich nicht sinnvoll angeben.</note>
+        <note type="gloss" target="#sbm33-007-orig" n="bün / bonnen" resp="#fyndling">Bühne: ein erhöhter Bretterboden, auch Dachboden oder oberer Raum eines Hauses. Hier liegt das Getreide zum Keimen.</note>
+        <note type="gloss" target="#sbm33-007-orig" n="darren" resp="#fyndling">Die Darre ist eine Vorrichtung, auf der Getreide mit Wärme getrocknet wird. Erst danach wird das Malz gemahlen.</note>
+        <note type="interpretive_choice" target="#sbm33-007-orig" n="allen dag zwirnent werden" resp="#fyndling" subtype="philological" cert="unknown">„alle Tage gedreht werden“: Die Handschrift hat „allen dag“ (alle Tage); zwirnent wird als Form zu zwirnen, drehen, gelesen (Rheinisches Wörterbuch, zwirnen 1b).<list type="alternatives"><item>„alle Tage zweimal (gewendet) werden“<note type="rationale">Mittelhochdeutsch zwir heißt zweimal (Lexer); dann fehlt aber das Verb, oder „werden“ steht für „wenden“.</note></item></list></note>
+        <note type="interpretive_choice" target="#sbm33-007-orig" n="zürdreches" resp="#fyndling" subtype="lexical" cert="unknown">Unübersetzt gelassen: Das Wort steht neben „bis alles keimt“, ein Wörterbuchbeleg fehlt.<list type="alternatives"><item>eine zer-Form, etwa zerdrehen oder zerbrechen<note type="rationale">würde zu „bis der Kern ganz aufbricht“ passen, ist aber nicht belegt</note></item></list></note>
+        <note type="interpretive_choice" target="#sbm33-007-orig" n="gleymelin" resp="#fyndling" subtype="lexical" cert="unknown">Unübersetzt gelassen: kleine Vorrichtungen oder Gassen, die das Getreide auseinanderhalten; der Zweck steht im Text, das Ding selbst nicht.<list type="alternatives"><item>Diminutiv zu mittelhochdeutsch gleim<note type="rationale">Lexer und FWB kennen gleim nur als Glühwürmchen oder Funke; das passt nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#sbm33-007-orig" n="san drocken so lege" resp="#fyndling" subtype="contextual" cert="unknown">„so leg es trocken hin“: san bleibt ungedeutet, der Satz trägt ohne das Wort.<list type="alternatives"><item>san als Verstärkung oder Vergleich (etwa „gleichsam trocken“)<note type="rationale">ohne Beleg</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

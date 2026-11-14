@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gutes Bier mit Sauerteig und Hefe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-14">2026-11-14</date>
+        <idno type="url">https://fyndling.de/rezepte/sbm33-009/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/sbm33-009</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Salzburg, Universitätsbibliothek, Cod. M III 3 („Speyerer Kompendium“), Bl. 305va–306vb „Von sechser hande luter trang“ und Brauanleitungen; Einzelstücke Bl. 292vb, 321va, 322vb</title>
+          <date when="1460" cert="low">um 1460</date>
+          <idno type="URI">https://archive.org/details/Salzburg_UB_M_III_3</idno>
+          <note>Lesung: fyndling.de, am Digitalisat der Universitätsbibliothek Salzburg</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (rheinfränkisch, Speyer, um 1460)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="sbm33-009">
+        <head>Gutes Bier mit Sauerteig und Hefe</head>
+        <div type="original" xml:id="sbm33-009-orig" xml:lang="de-x-fnhd" corresp="#sbm33-009-trans">
+          <p>Wie man güt Byer machen sol
+So nym des gemalen maltz j sumern vnd ny[m] vor xij eymer wasser vnd tü es in einen kessel vnd lass es heiß werden vnd tü die frucht dan dar inne vnd rüre es wol vnder einander vnd lasse es sieden vnd rüre es vast vnder einander vnd wan es gesüt [?] daz acht eymer do blibent so hat es genüg so sihe es dorch einen korp do stro inne sy vnd sihe es in einen zober vnd lass es kalten vnd nym süren deick nit follen ein eß schüssel vol vnd vom heffe dar ⟦zü⟧ daz vff ein j firt[el] sy vnd
+lass es warm w[er]den vnd schüde es dan in daz lawe biere vnd rüre es vast vnder einander daz es mascheln w[er]de vnd tů es in kelre vnd lass es gern Düstü [?] es in eyn vass daz zwen boden hat so decke ein schüssel vber die pont biß es vergirt Düstu ab[er] es in ein offen vass do vor so thon den einen bodem vß vnd setze daz vass vffrecht vnd mach einen bode dar inne der vff dem byer lige. Wan ma[n] dar vß lass daz der bode nit hin abe gehe vnd lege ey[n] tüch dar vber vnd ein hamen vnden dar inne ist</p>
+        </div>
+        <div type="translation" xml:id="sbm33-009-trans" xml:lang="de" corresp="#sbm33-009-orig">
+          <p>Wie man gutes Bier machen soll. Nimm einen Sümmer gemahlenes Malz und nimm dafür zwölf Eimer Wasser. Tu es in einen Kessel und lass es heiß werden. Tu dann das Getreide hinein, rühre es gut durcheinander, lass es sieden und rühre es kräftig durcheinander. Und wenn es so einsiedet, dass acht Eimer übrig bleiben, so hat es genug.</p>
+          <p>Dann seihe es durch einen Korb, in dem Stroh liegt, seihe es in einen Zuber und lass es abkühlen.</p>
+          <p>Nimm Sauerteig, nicht ganz eine Essschüssel voll, und von der Hefe dazu, sodass es ein Viertel ist, und lass es warm werden. Schütte es dann in das laue Bier und rühre es kräftig durcheinander, damit es sich durchmischt. Tu es in den Keller und lass es gären.</p>
+          <p>Tust du es in ein Fass, das zwei Böden hat, so decke eine Schüssel über das Spundloch, bis es vergoren ist.</p>
+          <p>Tust du es aber in ein offenes Fass, so tu zuvor den einen Boden heraus und stelle das Fass aufrecht. Mach einen Boden hinein, der auf dem Bier liegt. Wenn man daraus ablässt, soll der Boden nicht hinabgehen. Und lege ein Tuch darüber, und unten darin ist ein Netz.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="des gemalen maltz j sumern">Gemahlenes Malz (ein Sümmer)</ingredient> - 1</item>
+            <item><ingredient en="water" orig="xij eymer wasser" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser (zwölf Eimer)</ingredient> - 12</item>
+            <item>
+              <ingredient orig="süren deick nit follen ein eß schüssel vol">Sauerteig (nicht ganz eine Essschüssel voll)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="vom heffe">Hefe (mit dem Sauerteig zusammen ein Viertel)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#sbm33-009-trans" resp="#fyndling">Was ist das? Eine eigene, kürzere Bieranleitung: Ein Sümmer gemahlenes Malz wird in zwölf Eimern Wasser gesotten, bis acht Eimer übrig sind, durch einen Korb mit Stroh in einen Zuber geseiht und abgekühlt. Angesetzt wird mit gewärmtem Sauerteig und Hefe, gegoren im Keller im Fass.
+
+Kein Hopfen. Der Text nennt weder Hopfen noch eine andere Würzzutat; das Bier besteht aus Malz, Wasser, Sauerteig und Hefe. Ob der Schreiber Hopfen stillschweigend voraussetzt oder ein Bier ohne Hopfen meint, sagt er nicht. Die Anleitung unmittelbar davor siedet das Klare eigens mit angeröstetem Hopfen.
+
+Einkochen. Das Endzeichen ist eine Restmenge: Von zwölf Eimern sollen acht bleiben, also ein Drittel verkochen. Wie lange das dauert, sagt der Text nicht; verlangt wird nur kräftiges Rühren. Was im Kessel steht, nennen Brauer heute Maische, das abgeseihte Klare Würze. Das Stroh im Korb hält Spelzen und ausgezogenes Malz zurück.
+
+Sauerteig und Hefe. Sauerteig, nicht ganz eine Essschüssel voll, und Hefe sollen zusammen ein Viertel ergeben; beides wird warm gemacht und in das laue Bier geschüttet. Woher die Hefe kommt, sagt der Text nicht; die Anleitung davor nimmt die Hefe von dickem, gutem Bier. Heute würde man sagen: Das Bier muss abgekühlt sein, weil zu heiße Flüssigkeit die Hefe tötet; der Sauerteig bringt außer Hefen auch Milchsäurebakterien mit, so dass ein so angesetztes Bier säuerlich werden kann. Zum Geschmack sagt der Text nichts. Das Rühren, bis es mascheln wird, soll den Ansatz durchmischen; ob auch ein Aufschäumen gemeint ist, bleibt offen.
+
+Die zwei Fässer. Im Fass mit zwei Böden, also einem geschlossenen Fass, liegt bis zum Ende der Gärung nur eine Schüssel über dem Spundloch. Sie deckt ab, ohne dicht zu verschließen; heute würde man sagen: So kann das Gärgas entweichen. Ein dicht verschlossenes Fass gerät während der Gärung unter Druck. Im offenen Fass wird ein Boden herausgenommen, das Fass aufrecht gestellt und ein Boden eingelegt, der auf dem Bier liegt, darüber ein Tuch. Wie dieser Boden beim Ablassen oben gehalten wird, sagt der Text nicht. Unten im Fass ist ein hamen, ein Netz; wozu es dient, etwa als Seiher vor dem Ablass, sagt der Text ebenfalls nicht.
+
+Praxis. Sümmer, Eimer und Viertel waren von Ort zu Ort verschieden groß; ein Verhältnis von Malz zu Wasser lässt sich daraus nicht ableiten, sicher ist nur das Einkochen um ein Drittel. Wer nachbraut, braucht fertiges Malz, Bierhefe und Sauerteig; als heutige Ergänzung ein Gärgefäß mit Gärröhrchen. Wie lange die Gärung dauert, sagt der Text nicht, nur biß es vergirt.</note>
+        <note type="gloss" target="#sbm33-009-orig" n="sumern" resp="#fyndling">Sümmer (mhd. sumber): ein Getreidemaß, ein Scheffel; das Wort bedeutet ursprünglich Korb. Von Ort zu Ort verschieden groß.</note>
+        <note type="gloss" target="#sbm33-009-orig" n="firt[el]" resp="#fyndling">Viertel: ein Hohlmaß, von Ort zu Ort verschieden groß. Sauerteig und Hefe sollen zusammen so viel ergeben.</note>
+        <note type="gloss" target="#sbm33-009-orig" n="pont" resp="#fyndling">Spund, Spundloch (mhd. spunt, punt, pont): die Öffnung oben im Fass und ihr Verschluss.</note>
+        <note type="interpretive_choice" target="#sbm33-009-orig" n="mascheln" resp="#fyndling" subtype="lexical" cert="unknown">Sich durchmischen: Das Rheinische Wörterbuch führt mascheln 'mischen, quetschen, im Nassen wühlen'; die zweite Fassung des Brauteils schreibt an der entsprechenden Stelle myschel. So übersetzt auch die Anleitung davor ihr moscheln.<list type="alternatives"><item>Schäumen, Blasen werfen<note type="rationale">Passt zum kräftigen Rühren und zum Aufgießen aus der Höhe in den Nachbarfassungen, ist aber in keinem Wörterbuch belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#sbm33-009-orig" n="hamen" resp="#fyndling" subtype="lexical" cert="unknown">Ein Netz: Hamen ist ein beutelförmiges Netz (Lexer-Nachträge, DWB); das Pfälzische Wörterbuch belegt Hamen 'kescherartiges Fischnetz' ausdrücklich für Speyer. Wozu es unten im Fass dient, sagt der Text nicht; denkbar ist ein Seiher vor dem Ablass.<list type="alternatives"><item>Zapfhahn<note type="rationale">Würde zum Ablassen passen, aber kein Wörterbuch führt hamen in dieser Bedeutung; der Hahn heißt mhd. hane.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
