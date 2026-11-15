@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wermutwein und Wermut-Nusssalse</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/so1-135/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/so1-135</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Solothurn, Zentralbibliothek, Cod. S 490</title>
+          <date when="1487" cert="low">um 1487</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.so1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">so1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.so1</idno>
+          <idno type="corema-recipe">so1.136</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, vermutlich elsässisch, spätestens um 1487)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="so1-135">
+        <head>Wermutwein und Wermut-Nusssalse</head>
+        <div type="original" xml:id="so1-135-orig" xml:lang="de-x-fnhd" corresp="#so1-135-trans">
+          <p>§ xviiij Item wermuot win ist guot fur vnlust getruncken vnd vermist mit andrem win oder ein salssenn dauon ge macht
+
+_[Seitenkopf fol. 027v: von salsenn]_
+
+Mytt nus kernen vnd mit schonem brott geweicht in win vnd in die wermuot geton wol gestossen vnd durch getribenn mit guotem win ist ein salse damit ist guot zuo essenn Alle kost So der gebrest vnd sterbett vmb gatt oder vergiftunng des lufts ist oder von bossem wasser Es ist sit vnd ge wonlich in vngern da bose wasser sind vnd fil nebel das die richenn lutt wermuot win sieden vnd machennt recht als olant suß ist als ist wermuot bitter vnd sind die lut biterlich starck vnd gesund gar so in mossigenn landen</p>
+        </div>
+        <div type="translation" xml:id="so1-135-trans" xml:lang="de" corresp="#so1-135-orig">
+          <p>Wermutwein ist gut gegen Unlust, getrunken und mit anderem Wein vermischt, oder man macht eine Salse daraus.</p>
+          <p>Mit Nusskernen und mit feinem Brot, in Wein geweicht und in den Wermut getan, gut gestoßen und mit gutem Wein durchgetrieben: Das ist eine Salse. Mit ihr ist alle Speise gut zu essen, wenn Krankheit und Sterben umgehen oder wenn eine Vergiftung der Luft herrscht oder eine vom schlechten Wasser.</p>
+          <p>Es ist Sitte und Gewohnheit in Ungarn, wo schlechte Wasser sind und viel Nebel, dass die reichen Leute Wermutwein sieden und machen. Gerade wie Alant süß ist, so ist Wermut bitter, und die Leute sind überaus stark und gesund, selbst in sumpfigen Ländern.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="wermuot win">Wermutwein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="andrem win">Wein, anderer, zum Mischen</ingredient>
+            </item>
+            <item>
+              <ingredient en="nut" orig="nus kernen" commodity="wikidata:Q11009" source="#corema-ingredient-index">Nusskerne</ingredient>
+            </item>
+            <item>
+              <ingredient orig="schonem brott">Brot, fein</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein zum Einweichen</ingredient>
+            </item>
+            <item>
+              <ingredient en="wormwood" orig="wermuot" commodity="wikidata:Q25686" source="#corema-ingredient-index">Wermut (Kraut)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="guotem win" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein, guter, zum Durchtreiben</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#so1-135-trans" resp="#fyndling">Was ist das? Zwei Dinge in einem Eintrag: Wermutwein als Trank gegen Unlust, pur oder mit anderem Wein gemischt, und eine Salse aus Nusskernen, in Wein geweichtem Brot und Wermut, die in Zeiten von Krankheit und Sterben alle Speisen begleiten soll. Wie man den Wermutwein selbst macht, sagt der Eintrag nicht; die Kölner Schwesterhandschrift verweist dafür ausdrücklich auf ein medizinisches Buch.
+
+Kraut oder Wein? Brot und Nüsse werden in die wermuot getan und mit ihr gestoßen. Gestoßen wird Festes, und die Kölner Fassung zählt Wermut als eigene Zutat neben Walnüssen und Weißbrot auf. Gemeint ist also das Kraut. Ob frisch oder getrocknet und welcher Teil der Pflanze, sagt der Text nicht.
+
+Welche Nüsse? Die Handschrift sagt nur nus kernen. Die Kölner Fassung schreibt welsche Nüsse, also Walnüsse, und im Alemannischen meint Nuss meist die Walnuss. Haselnüsse sind damit nicht ausgeschlossen.
+
+Aufkochen. Eine mit Brot gebundene Salse wird erst durch kurzes Aufkochen fertig: Die Brotstärke verkleistert und bindet die durchgetriebene Masse.
+
+Der Anspruch. Der Text verspricht dreierlei: Wermutwein hilft gegen Widerwillen am Essen, die Salse macht Speise bekömmlich, wenn Krankheit umgeht oder Luft und Wasser verdorben sind, und die Ungarn bleiben durch Wermutwein stark und gesund, obwohl sie in nebligen, sumpfigen Gegenden leben. Das ist Diätetik des 15. Jahrhunderts: Luft und Wasser einer Gegend galten als Krankheitsquelle, Bitteres als Gegenmittel. Ein Rat für heute ist es nicht.
+
+Wermut ist kräftig. Wermut enthält Thujon, das in größeren Mengen giftig ist, und er ist sehr bitter. Der Text nennt keine Menge.
+
+Praxis. Feines Weißbrot in Wein einweichen. Nusskerne, das geweichte Brot und Wermut im Mörser gut stoßen. Mit gutem Wein durch ein Tuch oder Sieb treiben (die Kölner Fassung nimmt ein sauberes Leinentuch) und kurz aufkochen. Heute würde man getrockneten Wermut nehmen und mit sehr wenig beginnen, weil er schnell alles überdeckt. Die Zubereitungszeit von etwa 30 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#so1-135-orig" n="wermuot win" resp="#fyndling">Wein, in dem Wermut (Artemisia absinthium) gezogen oder gesotten ist. Nicht der heutige Wermut als Aperitif, auch wenn der Name daher kommt.</note>
+        <note type="gloss" target="#so1-135-orig" n="vnlust" resp="#fyndling">Widerwille, Ekel, hier gegen das Essen. Die Kölner Schwesterhandschrift sagt dafür, der Wermutwein rege den Appetit an.</note>
+        <note type="gloss" target="#so1-135-orig" n="olant" resp="#fyndling">Alant (Inula helenium), eine Heilpflanze mit süßlich-würziger Wurzel, aus der man ebenfalls Wein machte (siehe den Alantwein desselben Teils).</note>
+        <note type="gloss" target="#so1-135-orig" n="vergiftunng des lufts" resp="#fyndling">Verdorbene Luft galt im Spätmittelalter als Ursache von Seuchen; dagegen setzte man Bitteres und Würziges.</note>
+        <note type="interpretive_choice" target="#so1-135-orig" n="in die wermuot geton" resp="#fyndling" subtype="contextual">Wermutkraut: Brot und Nüsse kommen zum Wermut und werden mit ihm gestoßen; die Kölner Fassung nennt Absinthij partes conuenientes als eigene Zutat neben Walnüssen und Brot.<list type="alternatives"><item>Wermutwein<note type="rationale">Der Eingangssatz sagt, man könne aus dem Wermutwein eine Salse machen. Dagegen spricht das Stoßen, das auf Festes zielt, und die Kölner Aufzählung.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-135-orig" n="mossigenn landen" resp="#fyndling" subtype="lexical">sumpfige, moorige Länder: Idiotikon mosig 'moorig, sumpfig' (Bd. 4, Sp. 472), Lexer ein lant mosig und miesic; der Druck von 1487 hat in bösen mossigen landen, die Kölner Fassung begründet den Nebel mit der Menge der Gewässer.<list type="alternatives"><item>gemäßigte Länder (mäßig)<note type="rationale">Das Schriftbild erinnert an mässig, aber Nebel und schlechtes Wasser im selben Satz und alle Zeugen des Zweigs sprechen für sumpfig.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-135-orig" n="biterlich starck" resp="#fyndling" subtype="lexical">überaus stark: bitterlich als Verstärkung 'sehr' (FWB bitterlich 2); im Satz klingt das bittere Wermut nach.<list type="alternatives"><item>bitterlich (grimmig), stark und gesund<note type="rationale">Ehlert 2010 setzt ein Komma nach biterlich und übersetzt "sehr grimmig". Der Druck von 1487 hat nur starck, das Wort ist eine Zutat dieser Handschrift.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-135-orig" n="Abweichungen vom Druck 1487" resp="#fyndling" subtype="philological">Der Text folgt der Handschrift: Alle kost ohne Zusatz, sieden vnd machennt recht als olant suß ist ohne den Alantwein-Halbsatz, gar so in mossigenn landen.<list type="alternatives"><item>Druckform: alle koſt võ fleiſch vnd fiſch zu der zeyt; ſiedē vñ machē alſo gemeinlich als wir olant wein ſieden im herbſt recht als olant ſuͦß iſt; da bey in boͤſen moſſigen landen<note type="rationale">Petri 1486 liest ebenso, die Heidelberger Abschrift von 1580 bei den ersten beiden Stellen auch und bricht dann nach bitter ab; alle gehören zu einem Zweig. Ehlert 2010 verzeichnet die Stellen im Apparat und wertet die beiden ersten als Auslassungen der Handschrift.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Brustlatwerge aus Rettich, Ysop, Alant</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/so1-114/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/so1-114</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Solothurn, Zentralbibliothek, Cod. S 490</title>
+          <date when="1487" cert="low">um 1487</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.so1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">so1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.so1</idno>
+          <idno type="corema-recipe">so1.115</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, vermutlich elsässisch, spätestens um 1487)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="so1-114">
+        <head>Brustlatwerge aus Rettich, Ysop, Alant</head>
+        <div type="original" xml:id="so1-114-orig" xml:lang="de-x-fnhd" corresp="#so1-114-trans">
+          <p>§ xxv Item zuo der brust ein guote latwerge nim wissenn rettich ysop vnd allant diptan vnd ingwer daz stos zuo bulfer temperier si mit honig zuo einer latwerg als es gewonheit ist zuo latwergenn machen wiltu si besser haben so tuo dar zuo ziment vnd nusget oder ander spicirie Die guot sin du magst och nemen enziann venedisch zitwen langen pfaffer calmus galgan vnd stein wurtz oder andre ge= gewurtz nach dem vnd dir zimpt dienstlich dar zuo sin vnd vnder einandern temperiern wie ob= en statt zuo einer lattwergen</p>
+        </div>
+        <div type="translation" xml:id="so1-114-trans" xml:lang="de" corresp="#so1-114-orig">
+          <p>Eine gute Latwerge für die Brust: Nimm weißen Rettich, Ysop und Alant, Diptam und Ingwer und stoß das zu Pulver. Mische es mit Honig zu einer Latwerge, wie man gewöhnlich Latwergen macht.</p>
+          <p>Willst du sie besser haben, so gib Zimt und Muskat dazu oder andere Spezereien, die gut sind.</p>
+          <p>Du kannst auch Enzian, venezianischen Zitwer, Langen Pfeffer, Kalmus, Galgant und Steinwurz nehmen oder andere Gewürze, je nachdem, was dir dazu dienlich scheint, und sie untereinander mischen, wie oben steht, zu einer Latwerge.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="wissenn rettich">Weißer Rettich</ingredient>
+            </item>
+            <item>
+              <ingredient en="hyssop" orig="ysop" commodity="wikidata:Q137931" source="#corema-ingredient-index">Ysop</ingredient>
+            </item>
+            <item>
+              <ingredient en="elecampane" orig="allant" commodity="wikidata:Q697416" source="#corema-ingredient-index">Alant</ingredient>
+            </item>
+            <item>
+              <ingredient en="white dittany" orig="diptan" commodity="wikidata:Q157755" source="#corema-ingredient-index">Diptam</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="ingwer" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="ziment" commodity="wikidata:Q28165" source="#corema-ingredient-index">Zimt (für die bessere Fassung)</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg or mace" orig="nusget" commodity="wikidata:Q83165 wikidata:Q1882876" cert="low" source="#fyndling-ingredient-context">Muskat (für die bessere Fassung)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ander spicirie">Andere gute Spezereien (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="great yellow gentian" orig="enziann" commodity="wikidata:Q158572" source="#corema-ingredient-index">Enzian (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="venedisch zitwen">Venezianischer Zitwer (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="long pepper" orig="langen pfaffer" commodity="wikidata:Q685336" source="#corema-ingredient-index">Langer Pfeffer (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="sweet flag" orig="calmus" commodity="wikidata:Q158008" source="#corema-ingredient-index">Kalmus (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="lesser galangal" orig="galgan" commodity="wikidata:Q27653540" source="#corema-ingredient-index">Galgant (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="stein wurtz">Steinwurz (nach Wahl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="andre ge= gewurtz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Andere Gewürze (nach Wahl)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#so1-114-trans" resp="#fyndling">Was ist das? Eine Latwerge für die Brust: gepulverte Wurzeln und Gewürze, mit Honig gebunden. Die Latwerge ist eine Arznei der Zeit und wird hier als Zeugnis wiedergegeben, nicht als Mittel gegen Brustbeschwerden zum Nachmachen.
+
+Zwei Stufen. Die Grundmischung besteht aus weißem Rettich, Ysop, Alant, Diptam und Ingwer. Wer sie besser haben will, gibt Zimt und Muskat oder andere Spezereien dazu; danach folgt eine freie Liste weiterer Wurzeln und Gewürze, aus der man nach eigenem Urteil wählt. Mengen nennt der Text an keiner Stelle, auch kein Verhältnis von Pulver zu Honig. Dass der Rettich zu Pulver gestoßen wird, setzt eine getrocknete Wurzel voraus; gesagt wird das nicht.
+
+Wie wird angerührt? Der Text sagt nur, man mische das Pulver mit Honig, wie man gewöhnlich Latwergen macht. Ob der Honig dabei erhitzt wird, bleibt offen. Die Magenlatwerge unmittelbar davor in der Handschrift lässt die gestoßenen Gewürze eine gute Weile im Honig sieden, bis es dick wird; ob dasselbe hier gemeint ist, sagt das Rezept nicht.
+
+Steinwurz. Welche Pflanze gemeint ist, lässt sich nicht sicher sagen: Die mittelhochdeutschen Wörterbücher glossieren das Wort mit Steinbrech, das Deutsche Wörterbuch meist mit dem Engelsüß-Farn. Druck und Kölner Schwesterhandschrift schreiben ebenfalls nur Steinwurz.
+
+Vorsicht. Mehrere Zutaten sind Apothekendrogen. Der Weiße Diptam reizt bei Berührung die Haut, besonders unter Sonnenlicht. Der Wurzelstock des Kalmus kann Beta-Asaron enthalten, von dessen innerlicher Einnahme heute abgeraten wird.</note>
+        <note type="gloss" target="#so1-114-orig" n="latwerge" resp="#fyndling">Latwerge (lateinisch electuarium): eine Zubereitung aus fein gestoßenen Drogen und Gewürzen, die mit Honig zu einer dicken Masse gebunden wird.</note>
+        <note type="gloss" target="#so1-114-orig" n="allant" resp="#fyndling">Alant, der Echte Alant (Inula helenium). Die Volksmedizin verwendete die Wurzel bei Lungen- und Magenleiden (Ehlert 2010, S. 202).</note>
+        <note type="gloss" target="#so1-114-orig" n="venedisch zitwen" resp="#fyndling">Zitwer, der Wurzelstock von Curcuma zedoaria. 'Venedisch' meint den Handelsweg über Venedig, nicht den Ort, an dem er wächst.</note>
+        <note type="interpretive_choice" target="#so1-114-orig" n="ziment vnd nusget" resp="#fyndling" subtype="philological">Zimt und Muskat, wie die Handschrift schreibt. Die Handschrift schreibt Muskat durchgehend mit n im Anlaut (nusgat in so1-057, so1-059, so1-143), am Bild fol. 23r steht deutlich nußget.<list type="alternatives"><item>Kubeben, Zimt und Muskatblüte<note type="rationale">So der Druck von 1487 ('kubeben zymet vñ maſcat bluͤe'), ebenso die Koch- und Kellermeisterei 1574; die Kölner Handschrift hat 'Cubeben Canehil vnd bloemen'. Das ist ein Zweig der Überlieferung; die Solothurner Fassung lässt die Kubeben weg und nennt die Nuss statt der Blüte. Wir übersetzen ihren Wortlaut.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-114-orig" n="diptan" resp="#fyndling" subtype="lexical">Weißer Diptam (Dictamnus albus): FWB 'Diptam, Dictamus albus L., eine Heilpflanze', MNWB 'dictamnus albis', Ehlert 2010 Glossar nach Baufeld.<list type="alternatives"><item>Kretischer Diptam (Origanum dictamnus)<note type="rationale">Campe führt auch den Kretischen Diptam unter diesem Namen. Die frühneuhochdeutschen Belege setzen aber den Weißen Diptam an; für den kretischen gibt es hier keinen Hinweis.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-114-orig" n="stein wurtz" resp="#fyndling" subtype="lexical" cert="unknown">Steinwurz, ohne sichere Pflanzenbestimmung. Geprüft: BMZ und Lexer 'saxifraga' (Steinbrech); Ehlert 2010 nach Lexer und Marzell Steinbrech; DWB 'meist für polypodium vulgare' (Engelsüß), daneben saxifraga; Adelung Steinwurzel = Engelsüß; Schweizerisches Idiotikon Dürrwurz, Augenwurz oder Engelsüß; FWB 'eine Pflanze nicht bestimmbarer Art, möglicherweise Steinbrech'. Druck, Kölner Handschrift und Koch- und Kellermeisterei schreiben alle Steinwurz.<list type="alternatives"><item>Steinbrech (Saxifraga)<note type="rationale">Mittelhochdeutsche Glossen und Ehlert; der Name wurde mit der Steinlösung erklärt.</note></item><item>Engelsüß (Polypodium vulgare)<note type="rationale">DWB, Adelung und Idiotikon; Engelsüß ist ein Wurzelstock und passt zu den übrigen Wurzeldrogen der Liste.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

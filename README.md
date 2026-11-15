@@ -5,7 +5,7 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**8315 Rezepte** aus **55 Rezeptsammlungen**, dazu
+**8376 Rezepte** aus **55 Rezeptsammlungen**, dazu
 55 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
-| Kunstbuch von mancherley Essen | 1598 | 831 |  |
+| Kunstbuch von mancherley Essen | 1598 | 861 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
@@ -65,11 +65,11 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Das Kochbuch der Sabina Welserin | 1553 | 206 |  |
 | The Forme of Cury | ~1390 | 192 |  |
 | Kölner Küchenmeisterei | 2. Hälfte 15. Jh. oder 16. Jh. (umstritten) | 182 | [K1](https://gams.uni-graz.at/o:corema.k1) |
+| Solothurner Küchenmeisterei | um 1487 | 152 | [So1](https://gams.uni-graz.at/o:corema.so1) |
 | Rasch: Weinbuch | um 1580 | 147 |  |
 | Das Kochbuch der Maria Stenglerin | 1554 | 145 |  |
 | Böhmisches Kochbuch - Kuchařství o rozličných krměch | 1535 | 144 |  |
 | Rezeptbuch der Sarah Longe | 17. Jh., Nachträge bis 18. Jh. | 141 |  |
-| Solothurner Küchenmeisterei | um 1487 | 121 | [So1](https://gams.uni-graz.at/o:corema.so1) |
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Das geöffnete Kabinett des Sir Kenelm Digby | 1669 | 105 |  |
