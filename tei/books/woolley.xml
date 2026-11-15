@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Woolley: Das königliche Kabinett (Getränke) (The Queen-like Closet; or, Rich Cabinet (London 1670))</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <idno type="url">https://fyndling.de/rezepte/quellen/woolley/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>The Queen-like Closet; or, Rich Cabinet (London 1670)</title>
+          <date when="1670">1670</date>
+          <idno type="URI">https://github.com/textcreationpartnership/A66847</idno>
+          <note>Text: Text Creation Partnership, EEBO-TCP A66847, CC0 1.0</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Englisch der Restaurationszeit (London 1670); Hannah Woolley</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="woo-001">
+        <head>Rosinenwein oder Stepony</head>
+        <div type="original" xml:id="woo-001-orig" xml:lang="und" corresp="#woo-001-trans">
+          <p>LV. To make Raisin Wine or Stepony.
+Take four Gallons of Spring-water, four pounds of Raisins of the Sun stoned, the juice of four good Limons, and the Rind of two cut thin boil the Raisins, and Pill in the Water for half an hour or more, then put in the Iuice of Limon, and a little Spice, Sugar and Rosewater, and let it stand but a little more over the fire; then put it into an earthen pot, and beat it together till it be cold, then bottle it up, it will keep but a few days.</p>
+        </div>
+        <div type="translation" xml:id="woo-001-trans" xml:lang="de" corresp="#woo-001-orig">
+          <p>Nimm etwa 16 l (vier Gallonen) Quellwasser, etwa 1,8 kg (vier Pfund) sonnengetrocknete Rosinen, entsteint, den Saft von vier guten Zitronen und die Schale von zweien, dünn geschnitten.</p>
+          <p>Koche die Rosinen und die Schale eine halbe Stunde oder länger im Wasser. Dann gib den Zitronensaft hinein, dazu ein wenig Gewürz, Zucker und Rosenwasser, und lass es nur noch kurz über dem Feuer stehen.</p>
+          <p>Dann füll es in einen irdenen Topf und schlage alles miteinander, bis es kalt ist. Danach füll es in Flaschen. Es hält nur wenige Tage.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="four Gallons of Spring-water">Quellwasser</ingredient> - 16 l</item>
+            <item><ingredient orig="four pounds of Raisins of the Sun stoned">Rosinen, sonnengetrocknet, entsteint</ingredient> - 1.8 kg</item>
+            <item><ingredient en="lemon" orig="the juice of four good Limons" commodity="wikidata:Q1093742" source="#fyndling-ingredient-name">Zitronen (Saft)</ingredient> - 4 Stück</item>
+            <item><ingredient orig="the Rind of two cut thin">Zitronenschale, dünn geschnitten</ingredient> - 2 Stück</item>
+            <item>
+              <ingredient en="spice" orig="a little Spice" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürz</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Rosewater" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-002">
+        <head>Besonders feines Ale mit Orangen und Koriander</head>
+        <div type="original" xml:id="woo-002-orig" xml:lang="und" corresp="#woo-002-trans">
+          <p>LXV. To make very rare Ale.
+When your Ale is tunned into a Vessel that will hold eight or nine Gallons, and that hath done working, ready to be stopped up, then take a Pound and half of Raisins of the Sun stoned and cut in pieces, and two great Oranges, Meat and Rind, and sliced thin, with the Rind of one Limon, and a few Cloves, one Ounce of Coriander seeds bruised, put all these in a Bag, and hang them in the Vessel, and stop it up close, when it hath stood four days, bottle it up; Fill the Bottles but a little above the Neck, and put into every one a Lump of fine sugar, and stop them close, and let it be three Weeks or a Moneth before you drink it.</p>
+        </div>
+        <div type="translation" xml:id="woo-002-trans" xml:lang="de" corresp="#woo-002-orig">
+          <p>Wenn dein Ale in ein Fass gefüllt ist, das etwa 32 bis 36 l (acht oder neun Gallonen) fasst, und es ausgegoren hat und bereit zum Verschließen ist, dann nimm etwa 675 g (anderthalb Pfund) sonnengetrocknete Rosinen, entsteint und in Stücke geschnitten, und zwei große Orangen, Fruchtfleisch und Schale, dünn geschnitten, dazu die Schale einer Zitrone, ein paar Gewürznelken und etwa 30 g (eine Unze) angestoßene Koriandersamen. Gib all das in einen Beutel, häng ihn in das Fass und verschließ es fest.</p>
+          <p>Wenn es vier Tage gestanden hat, füll es in Flaschen. Füll die Flaschen nur bis wenig über den Halsansatz, gib in jede ein Stück feinen Zucker und verschließ sie fest. Lass drei Wochen oder einen Monat vergehen, bevor du es trinkst.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="When your Ale is tunned into a Vessel that will hold eight or nine Gallons">Ale, ausgegoren (ein Fass für etwa 32-36 l, acht oder neun Gallonen)</ingredient>
+            </item>
+            <item><ingredient orig="a Pound and half of Raisins of the Sun stoned and cut in pieces">sonnengetrocknete Rosinen, entsteint und in Stücke geschnitten</ingredient> - 675 g</item>
+            <item><ingredient orig="two great Oranges, Meat and Rind, and sliced thin">große Orangen, Fruchtfleisch und Schale, dünn geschnitten</ingredient> - 2 Stück</item>
+            <item><ingredient orig="the Rind of one Limon">Zitrone, nur die Schale</ingredient> - 1 Stück</item>
+            <item>
+              <ingredient orig="a few Cloves">Gewürznelken, ein paar</ingredient>
+            </item>
+            <item><ingredient orig="one Ounce of Coriander seeds bruised">Koriandersamen, angestoßen</ingredient> - 30 g</item>
+            <item><ingredient orig="a Lump of fine sugar">feiner Zucker, je Flasche ein Stück</ingredient> - 1 Stück</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-003">
+        <head>Ale, in einer Woche trinkfertig</head>
+        <div type="original" xml:id="woo-003-orig" xml:lang="und" corresp="#woo-003-trans">
+          <p>LXVI. To make Ale to drink within a Week.
+Tun it into a Vessel which will hold eight Gallons, and when it hath done working, ready to bottle, put in some Ginger sliced, and an Orange stuck with Cloves, and cut here and there with a Knife, and a pound and half of Sugar, and with a stick stir it well together, and it will work afresh; when it hath done working, stop it close, and let it stand till it be clear, then bottle it up and put a Lump of Sugar into every Bottle, and then stop it close, and knock down the Corks, and turn the Bottles the Bottoms upwards, and it will be fit to drink in a Weeks time.</p>
+        </div>
+        <div type="translation" xml:id="woo-003-trans" xml:lang="de" corresp="#woo-003-orig">
+          <p>Fülle das Ale in ein Fass, das etwa 32 l (acht Gallonen) fasst. Wenn es ausgegoren hat und bereit ist für die Flaschen, gib etwas Ingwer in Scheiben hinein, dazu eine Orange, mit Nelken gespickt und hier und da mit einem Messer eingeschnitten, und etwa 675 g (anderthalb Pfund) Zucker. Rühre es mit einem Stock gut durch, dann gärt es von Neuem.</p>
+          <p>Wenn es wieder ausgegoren hat, verschließe das Fass fest und lass es stehen, bis das Ale klar ist. Dann fülle es in Flaschen und gib in jede Flasche ein Stück Zucker. Verschließe sie fest, klopfe die Korken fest und dreh die Flaschen um, mit dem Boden nach oben. In einer Woche ist das Ale trinkfertig.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Ale">Ale</ingredient> - 32 l</item>
+            <item>
+              <ingredient orig="some Ginger sliced">Ingwer, in Scheiben</ingredient>
+            </item>
+            <item><ingredient orig="an Orange stuck with Cloves">Orange, wohl Bitterorange</ingredient> - 1 Stück</item>
+            <item>
+              <ingredient en="clove" orig="Cloves" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="a pound and half of Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 675 g</item>
+            <item>
+              <ingredient orig="a Lump of Sugar into every Bottle">Zucker, ein Stück je Flasche</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-004">
+        <head>Sack-Posset mit Eiern und Sahne im Wasserbad</head>
+        <div type="original" xml:id="woo-004-orig" xml:lang="und" corresp="#woo-004-trans">
+          <p>LXVIII. To make a Sack Posset.
+Take twelve Eggs beaten very well, and put to them a Pint of Sack, stir them well that they curd not, then put to them three Pints of Cream, half a pound of fine Sugar stirring them well together, when they are hot over the fire, put them into a Bason, and set the Bason over a boiling pot of water, until the Posset be like a Custard, then take it off, and when it is cool enough to eat, serve it in with beaten Spice strewed over it very thick,</p>
+        </div>
+        <div type="translation" xml:id="woo-004-trans" xml:lang="de" corresp="#woo-004-orig">
+          <p>Nimm zwölf sehr gut geschlagene Eier und gib etwa 0,5 l (ein Pint) Sack dazu. Rühre sie gut, damit sie nicht gerinnen. Dann gib etwa 1,5 l (drei Pints) Sahne und etwa 225 g (ein halbes Pfund) feinen Zucker dazu und rühre alles gut zusammen.</p>
+          <p>Wenn die Masse über dem Feuer heiß ist, gib sie in eine Schüssel und setze die Schüssel über einen Topf mit kochendem Wasser, bis der Posset wie eine Eiercreme ist. Dann nimm ihn herunter.</p>
+          <p>Wenn er kühl genug zum Essen ist, trage ihn auf, sehr dick mit gestoßenem Gewürz bestreut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="chicken egg" orig="twelve Eggs beaten very well" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 12 Stück</item>
+            <item><ingredient orig="a Pint of Sack">Sack</ingredient> - 500 ml</item>
+            <item><ingredient en="cream" orig="three Pints of Cream" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Sahne</ingredient> - 1.5 l</item>
+            <item><ingredient orig="half a pound of fine Sugar">feiner Zucker</ingredient> - 225 g</item>
+            <item>
+              <ingredient orig="beaten Spice">gestoßenes Gewürz</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-005">
+        <head>Sack-Posset ohne Milch</head>
+        <div type="original" xml:id="woo-005-orig" xml:lang="und" corresp="#woo-005-trans">
+          <p>LXXI. A Sack Posset without Milk.
+Take thirteen Eggs and beat them very well, and while they are beating, take a quart of Sack, half a pound of fine Sugar, and a Pint of Ale, and let them boil a very little while, then put these Eggs to them, and stir them till they be hot, then take it
+from the fire, and keep it stirring a while, then put it into a fit Bason, and cover it close with a Dish, then set'it over the fire again till it arise to a Curd, then serve it in with some beaten spice.</p>
+        </div>
+        <div type="translation" xml:id="woo-005-trans" xml:lang="de" corresp="#woo-005-orig">
+          <p>Nimm dreizehn Eier und schlage sie sehr gut. Während sie geschlagen werden, nimm etwa 1 l Sack (ein Quart), etwa 225 g feinen Zucker (ein halbes Pfund) und etwa 0,5 l Ale (ein Pint) und lass sie nur ganz kurz kochen.</p>
+          <p>Dann gib die Eier dazu und rühre, bis alles heiß ist. Nimm es vom Feuer und rühre noch eine Weile weiter.</p>
+          <p>Gieße es dann in eine passende Schüssel, decke sie dicht mit einem Teller zu und stelle sie wieder über das Feuer, bis es zu einem Gerinnsel aufgeht. Dann trage es mit etwas gestoßenem Gewürz auf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="chicken egg" orig="thirteen Eggs" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 13 Stück</item>
+            <item><ingredient orig="a quart of Sack">Sack</ingredient> - 1 l</item>
+            <item><ingredient orig="half a pound of fine Sugar">Zucker, fein</ingredient> - 225 g</item>
+            <item><ingredient orig="a Pint of Ale">Ale</ingredient> - 500 ml</item>
+            <item>
+              <ingredient orig="some beaten spice">Gewürz, gestoßen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-006">
+        <head>Stachelbeerwein</head>
+        <div type="original" xml:id="woo-006-orig" xml:lang="und" corresp="#woo-006-trans">
+          <p>LXXXIII. To make Gooseberry wine.
+Bruise ripe Goosberries with an Apple-Beater, but do not beat them too small, then strain them through a hair strainer, and put your Iuice into an earthen Pot, keep it covered four or five days till it be clear, then draw it out into another Vessel, letting it run into a hair sieve, stop it close, and let it stand one fortnight, then draw it out into quart Bottles, putting one Pound of sugar into eight Bottles, stop them up close, and in a week or fortnights time you may drink them.</p>
+        </div>
+        <div type="translation" xml:id="woo-006-trans" xml:lang="de" corresp="#woo-006-orig">
+          <p>Zerdrücke reife Stachelbeeren mit einem Apfelstampfer, aber schlage sie nicht zu klein. Dann seihe sie durch ein Haarsieb und gib den Saft in einen irdenen Topf. Halte ihn vier oder fünf Tage zugedeckt, bis er klar ist.</p>
+          <p>Dann zieh ihn in ein anderes Gefäß ab und lass ihn dabei in ein Haarsieb laufen. Verschließ es fest und lass es vierzehn Tage stehen.</p>
+          <p>Dann zieh ihn auf Flaschen zu etwa 1 l (ein Quart) ab und gib etwa 450 g (ein Pfund) Zucker auf acht Flaschen. Verschließ sie fest. Nach einer Woche oder vierzehn Tagen kannst du sie trinken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ripe Goosberries">Stachelbeeren, reif</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="one Pound of sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 450 g</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-007">
+        <head>Wein aus Damaszenerpflaumen</head>
+        <div type="original" xml:id="woo-007-orig" xml:lang="und" corresp="#woo-007-trans">
+          <p>LXXXIV. To make Damson wine.
+Take four Gallons of Water, and put to every Gallon of Water four Pounds of Malago Raisins, and half a Peck of Damsons:
+Put the Raisins and Damsons into a Vessel without a head, cover the Vessel and let them steep six days, stirring them twice every day, then let them stand as long without stirring, then draw the Wine out of the
+Vessel, and colour it with the infused juice of Damsons sweetned with sugar, till it be like Claret Wine, then put it into a Wine-Vessel for a fortnight, and then bottle it up.</p>
+        </div>
+        <div type="translation" xml:id="woo-007-trans" xml:lang="de" corresp="#woo-007-orig">
+          <p>Nimm etwa 16 l (vier Gallonen) Wasser und gib auf je etwa 4 l (eine Gallone) Wasser etwa 1,8 kg (vier Pfund) Malaga-Rosinen und etwa 4,5 l (einen halben Peck) Damaszenerpflaumen.</p>
+          <p>Gib die Rosinen und die Damaszenerpflaumen in ein Fass ohne Deckel, deck das Fass zu und lass sie sechs Tage ziehen. Rühre sie dabei jeden Tag zweimal um. Dann lass sie ebenso lange stehen, ohne zu rühren, und zieh danach den Wein aus dem Fass ab.</p>
+          <p>Färbe ihn mit dem ausgezogenen Saft von Damaszenerpflaumen, mit Zucker gesüßt, bis er einem Claret gleicht. Dann gib ihn für vierzehn Tage in ein Weinfass und füll ihn danach in Flaschen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="water" orig="four Gallons of Water" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 16 l</item>
+            <item><ingredient orig="four Pounds of Malago Raisins">Malaga-Rosinen</ingredient> - 7.2 kg</item>
+            <item><ingredient en="damson" orig="half a Peck of Damsons" commodity="wikidata:Q106691054" source="#fyndling-ingredient-registry">Damaszenerpflaumen</ingredient> - 18 l</item>
+            <item>
+              <ingredient orig="the infused juice of Damsons">Auszug von Damaszenerpflaumen, zum Färben</ingredient>
+            </item>
+            <item>
+              <ingredient orig="sugar">Zucker, zum Süßen des Auszugs</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-008">
+        <head>Himbeerwein mit Weißwein</head>
+        <div type="original" xml:id="woo-008-orig" xml:lang="und" corresp="#woo-008-trans">
+          <p>CXXXVI. To make Rasberrie Wine.
+Take Rasberries and bruise them with the back of a spoon, and strain them and fill a bottle with the juyce, stop it, but not very close, let it stand four or five daies, then pour it from the Grounds into a Bason, and put as much White-wine or Rhenish as your juyce will well colour, then sweeten it with Loaf Sugar, then bottle it and keep it, and when you drink it you may perfume some of it with one of the Lozenges spoken of before.</p>
+        </div>
+        <div type="translation" xml:id="woo-008-trans" xml:lang="de" corresp="#woo-008-orig">
+          <p>Nimm Himbeeren, zerdrücke sie mit dem Rücken eines Löffels und seihe sie durch. Fülle eine Flasche mit dem Saft und verschließe sie, aber nicht sehr fest. Lass sie vier oder fünf Tage stehen.</p>
+          <p>Dann gieß den Saft vom Bodensatz ab in eine Schüssel und gib so viel Weißwein oder Rheinwein dazu, wie dein Saft gut färben kann. Dann süße ihn mit Hutzucker, fülle ihn in Flaschen und bewahre ihn auf.</p>
+          <p>Wenn du ihn trinkst, kannst du einen Teil davon mit einer der Duftpastillen parfümieren, von denen weiter vorn die Rede war.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Rasberries">Himbeeren</ingredient>
+            </item>
+            <item>
+              <ingredient orig="White-wine or Rhenish">Weißwein oder Rheinwein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Loaf Sugar">Hutzucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="one of the Lozenges spoken of before">Duftpastille (nach Belieben)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-009">
+        <head>Posset aus Weißwein und Eiern</head>
+        <div type="original" xml:id="woo-009-orig" xml:lang="und" corresp="#woo-009-trans">
+          <p>CLXV. To make a Posset.
+Take a Quart of white Wine and a quart of Water, boil whole Spice in them, then take twelve Eggs and put away half the Whites, beat them very well, and take the Wine from the fire, then put in your Eggs, and stir them very well, then set it on a slow fire, and stir it till it be thick, sweeten it with Sugar, and strew beaten Spice thereon, then serve it in.
+You may put in Ambergreece if you like it, or one perfumed Lozenge.</p>
+        </div>
+        <div type="translation" xml:id="woo-009-trans" xml:lang="de" corresp="#woo-009-orig">
+          <p>Nimm etwa 1 l (ein Quart) Weißwein und etwa 1 l (ein Quart) Wasser und koche ganzes Gewürz darin.</p>
+          <p>Dann nimm zwölf Eier, lass die Hälfte der Eiweiße beiseite und schlage sie sehr gut. Nimm den Wein vom Feuer, gib dann deine Eier hinein und rühre sie sehr gut um.</p>
+          <p>Dann setze es auf ein kleines Feuer und rühre, bis es dick ist. Süße es mit Zucker, streue gestoßenes Gewürz darüber und trage es dann auf.</p>
+          <p>Du kannst Ambra hineingeben, wenn du es magst, oder eine Duftpastille.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="wine" orig="a Quart of white Wine" commodity="wikidata:Q282" source="#fyndling-ingredient-registry">Weißwein</ingredient> - 1 l</item>
+            <item><ingredient en="water" orig="a quart of Water" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 1 l</item>
+            <item>
+              <ingredient orig="whole Spice">ganzes Gewürz</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="twelve Eggs" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 12 Stück</item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="beaten Spice">gestoßenes Gewürz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Ambergreece">Ambra (nach Belieben)</ingredient>
+            </item>
+            <item><ingredient orig="one perfumed Lozenge">Duftpastille (nach Belieben)</ingredient> - 1 Stück</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-010">
+        <head>Sack-Posset aus Gewürzsahne</head>
+        <div type="original" xml:id="woo-010-orig" xml:lang="und" corresp="#woo-010-trans">
+          <p>CLXVI. To make a Sack Posset.
+Take two quarts of Cream and boil it with whole Spice, then take twelve Eggs well beaten and strained, take the Cream from the fire, and stir in the Eggs and as much Sugar as will sweeten it, then put in so much Sack as will make it taste well, and set it on the fire again, and let it stand a while, then take a Ladle and raise it up gently
+from the bottom of the Skillet you make it in, and break it as little as you can, and so do till you see it be thick enough; then put it into a Bason with the Ladle gently, if you do it too much it will whey, and that is not good.</p>
+        </div>
+        <div type="translation" xml:id="woo-010-trans" xml:lang="de" corresp="#woo-010-orig">
+          <p>Nimm etwa 2 l (zwei Quart) Sahne und koche sie mit ganzem Gewürz. Dann nimm zwölf gut geschlagene und durchgeseihte Eier. Nimm die Sahne vom Feuer und rühre die Eier ein und so viel Zucker, wie es zum Süßen braucht. Dann gib so viel Sack hinein, dass es gut schmeckt, setze es wieder aufs Feuer und lass es eine Weile stehen.</p>
+          <p>Dann nimm eine Kelle und hebe es sachte vom Boden der Pfanne an, in der du es machst, und zerteile es so wenig wie möglich. So fahre fort, bis du siehst, dass es dick genug ist.</p>
+          <p>Dann gib es mit der Kelle sachte in eine Schüssel. Übertreibst du es, setzt es Molke ab, und das ist nicht gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="cream" orig="two quarts of Cream" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Sahne</ingredient> - 2 l</item>
+            <item>
+              <ingredient orig="whole Spice">ganzes Gewürz</ingredient>
+            </item>
+            <item><ingredient en="chicken egg" orig="twelve Eggs well beaten and strained" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 12 Stück</item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="as much Sugar as will sweeten it" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="so much Sack as will make it taste well">Sack</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-011">
+        <head>Posset auf andere Art mit Eigelb und Sack</head>
+        <div type="original" xml:id="woo-011-orig" xml:lang="und" corresp="#woo-011-trans">
+          <p>CLXVII. Another way for a Posset.
+Boil a Quart of Cream as for the other, then take the Yolks of fourteen Eggs and four Whites, beat them and strain them, take the Cream from the fire, and stir in your Eggs, then have your Sack warmed in a Bason, and when the Cream and Eggs are well mixed, put it to the Sack, and sweeten it to your taste with fine Sugar, and let it stand over a Skillet of seething water for a while.</p>
+        </div>
+        <div type="translation" xml:id="woo-011-trans" xml:lang="de" corresp="#woo-011-orig">
+          <p>Koche etwa 1 l (ein Quart) Sahne wie für den vorigen Posset. Nimm dann das Eigelb von vierzehn Eiern und vier Eiweiß, schlage sie und seihe sie durch. Nimm die Sahne vom Feuer und rühre die Eier ein.</p>
+          <p>Halte deinen Sack in einer Schüssel angewärmt bereit. Wenn Sahne und Eier gut vermischt sind, gib sie zum Sack und süße nach deinem Geschmack mit feinem Zucker. Lass es dann eine Weile über einer kleinen Pfanne mit siedendem Wasser stehen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="cream" orig="a Quart of Cream" commodity="wikidata:Q13228" source="#fyndling-ingredient-name">Sahne</ingredient> - 1 l</item>
+            <item><ingredient en="yolk" orig="the Yolks of fourteen Eggs" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eigelb</ingredient> - 14 Stück</item>
+            <item><ingredient en="egg white" orig="four Whites" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient> - 4 Stück</item>
+            <item>
+              <ingredient orig="your Sack">Sack</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fine Sugar">Zucker, fein</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-012">
+        <head>Cider oder Perry, klar wie Felsenwasser</head>
+        <div type="original" xml:id="woo-012-orig" xml:lang="und" corresp="#woo-012-trans">
+          <p>CLXXXIV. To make Cider or Perry as clear as Rock water.
+Take to two Quarts of Cider, half a Pint of Milk, put them both in an Hipocras bag, and when it runs clear, bottle it up, and when it is a Month old, it will sparkle in the Glass as you drink it.</p>
+        </div>
+        <div type="translation" xml:id="woo-012-trans" xml:lang="de" corresp="#woo-012-orig">
+          <p>Nimm zu etwa 2 l (zwei Quarts) Cider etwa 250 ml (ein halbes Pint) Milch und gib beides zusammen in einen Hippocras-Beutel. Wenn er klar durchläuft, fülle ihn in Flaschen. Wenn er einen Monat alt ist, perlt er im Glas, während du ihn trinkst.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="two Quarts of Cider">Cider oder Perry</ingredient> - 2 l</item>
+            <item><ingredient en="milk" orig="half a Pint of Milk" commodity="wikidata:Q8495" source="#fyndling-ingredient-registry">Milch</ingredient> - 250 ml</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-013">
+        <head>Hippocras, mit Milch geklärt</head>
+        <div type="original" xml:id="woo-013-orig" xml:lang="und" corresp="#woo-013-trans">
+          <p>CCVI. To make Hipocras.
+Take to every Gallon of Sack or white Wine, one Pound of Sugar, one Ounce of Cinamon, one Ounce of Ginger, one quarter of an Ounce of Nutmegs, a quarter of an Ounce of Coriander seed, with a few Cloves, and a little Long Pepper or a few Grains, let all these steep together four and twenty hours, stir it twice or thrice in that time; then put to every Gallon one Pint of Milk, and run it through a Ielly-Bag, and then bottle it, and let them be stopped very close, set them in a cool place, it will keep a Moneth.</p>
+        </div>
+        <div type="translation" xml:id="woo-013-trans" xml:lang="de" corresp="#woo-013-orig">
+          <p>Nimm auf je etwa 4 l (eine Gallone) Sack oder Weißwein etwa 450 g (ein Pfund) Zucker, etwa 30 g (eine Unze) Zimt, etwa 30 g (eine Unze) Ingwer, etwa 7 g (eine Viertelunze) Muskatnüsse, etwa 7 g (eine Viertelunze) Koriandersamen, dazu ein paar Gewürznelken und ein wenig Langen Pfeffer oder ein paar Paradieskörner. Lass das alles vierundzwanzig Stunden zusammen ziehen und rühre es in dieser Zeit zwei- oder dreimal um.</p>
+          <p>Dann gib auf je etwa 4 l (eine Gallone) etwa 0,5 l (ein Pint) Milch dazu und lass es durch einen Seihbeutel laufen. Danach füll es in Flaschen und verschließe sie sehr fest. Stell sie an einen kühlen Ort; so hält sich der Hippocras einen Monat.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="every Gallon of Sack or white Wine">Sack oder Weißwein</ingredient> - 4 l</item>
+            <item><ingredient en="unrefined cane sugar" orig="one Pound of Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 450 g</item>
+            <item><ingredient en="cinnamon" orig="one Ounce of Cinamon" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient> - 30 g</item>
+            <item><ingredient en="ginger" orig="one Ounce of Ginger" commodity="wikidata:Q15046077" source="#fyndling-ingredient-registry">Ingwer</ingredient> - 30 g</item>
+            <item><ingredient en="nutmeg" orig="one quarter of an Ounce of Nutmegs" commodity="wikidata:Q83165" source="#fyndling-ingredient-name">Muskatnüsse</ingredient> - 7 g</item>
+            <item><ingredient orig="a quarter of an Ounce of Coriander seed">Koriandersamen</ingredient> - 7 g</item>
+            <item>
+              <ingredient orig="a few Cloves">Gewürznelken, ein paar</ingredient>
+            </item>
+            <item>
+              <ingredient orig="a little Long Pepper or a few Grains">Langer Pfeffer, ein wenig</ingredient>
+            </item>
+            <item><ingredient en="milk" orig="one Pint of Milk" commodity="wikidata:Q8495" source="#fyndling-ingredient-registry">Milch</ingredient> - 500 ml</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-014">
+        <head>Schaum-Posset mit Sack</head>
+        <div type="original" xml:id="woo-014-orig" xml:lang="und" corresp="#woo-014-trans">
+          <p>CCXIX. To make the Froth Posset.
+Take three Pints of Cream or new Milk, set it on the fire, then take sixteen Eggs and put the Whites into a Bason very deep, and beat the Yolks by themselves, make a Custard with them, and the Cream which is on the fire, then beat the Yolks to a Froth with a little Sack, and a little Sugar, when it is a thick Froth, cast it into another Dish with a Spoon, then take half a Pint of Sack, and sweeten it with Sugar, set it on a Chafing-dish of Coals in a large Bason, when it is hot, put in as much Froth as the Sack will receive, stir it in very well, then take your Custard and poure upon it, stir it all one way when you put it in, then if the Froth do not cover the top of the Posset, put in more, and stir it very well, and cover it close with a warm Dish, let it stand a while
+upon Coals, but not too hot; you may know when it is enough by putting your Spoon into the Bason, for then it will be clear in the bottom, Curd in the middle, and Froth on the top.</p>
+        </div>
+        <div type="translation" xml:id="woo-014-trans" xml:lang="de" corresp="#woo-014-orig">
+          <p>Nimm etwa 1,5 l (drei Pints) Sahne oder frische Milch und setze sie aufs Feuer. Dann nimm sechzehn Eier, gib die Eiweiße in eine sehr tiefe Schüssel und schlage die Eigelbe für sich. Mach aus ihnen und der Sahne, die auf dem Feuer steht, eine Eiercreme.</p>
+          <p>Dann schlage die Eiweiße mit ein wenig Sack und ein wenig Zucker zu Schaum. Ist es ein dicker Schaum, gib ihn mit einem Löffel in eine andere Schüssel.</p>
+          <p>Dann nimm etwa 250 ml (ein halbes Pint) Sack, süße ihn mit Zucker und setze ihn in einer großen Schüssel auf ein Kohlenbecken mit Glut. Ist er heiß, gib so viel Schaum hinein, wie der Sack aufnehmen kann, und rühre ihn sehr gut ein.</p>
+          <p>Dann nimm deine Eiercreme und gieße sie darauf. Rühre dabei immer in dieselbe Richtung, während du sie hineingibst. Bedeckt der Schaum dann die Oberfläche des Possets nicht, gib mehr hinein und rühre sehr gut. Decke ihn dicht mit einem warmen Teller zu und lass ihn eine Weile auf der Glut stehen, aber nicht zu heiß.</p>
+          <p>Ob er fertig ist, erkennst du, wenn du deinen Löffel in die Schüssel steckst: Dann ist er unten klar, in der Mitte ein Gerinnsel, und oben liegt der Schaum.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="three Pints of Cream or new Milk">Sahne oder frische Milch</ingredient> - 1.5 l</item>
+            <item><ingredient en="chicken egg" orig="sixteen Eggs" commodity="wikidata:Q15260613" source="#fyndling-ingredient-registry">Eier</ingredient> - 16 Stück</item>
+            <item><ingredient orig="half a Pint of Sack">Sack</ingredient> - 250 ml</item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="a little Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-015">
+        <head>Sack-Posset mit Mandeln, ohne Milch und Brot</head>
+        <div type="original" xml:id="woo-015-orig" xml:lang="und" corresp="#woo-015-trans">
+          <p>CCXXII. To make a Sack Posset without Milk or Bread.
+Take a Quart of Ale and half a Pint of Sack, boil them with what spice you please, then take three quarters of a pound of sugar, and twenty Eggs, Yolks and Whites well beaten and strained, then take four Ounces of Almonds blanched and beaten with Rosewater, put them to the Eggs, and put them to the other things in the Posnet upon the fire, and keep them stirring, and when it boileth up, put it into a Bason, and strew on beaten spice and sugar; you must also sweeten it when the Eggs go in.</p>
+        </div>
+        <div type="translation" xml:id="woo-015-trans" xml:lang="de" corresp="#woo-015-orig">
+          <p>Nimm etwa 1 l (ein Quart) Ale und etwa 250 ml (ein halbes Pint) Sack und koche sie mit Gewürz nach Belieben auf.</p>
+          <p>Nimm dann etwa 340 g (drei Viertel Pfund) Zucker und zwanzig Eier, Eigelb und Eiweiß, gut geschlagen und durchgeseiht. Nimm dann etwa 120 g (vier Unzen) geschälte Mandeln, mit Rosenwasser gestoßen, und gib sie zu den Eiern.</p>
+          <p>Gib die Eier zu den übrigen Dingen in den Posnet auf dem Feuer und rühre ständig. Wenn es aufkocht, gieße es in eine Schüssel und streue gestoßenes Gewürz und Zucker darüber.</p>
+          <p>Du musst es auch süßen, wenn die Eier hineinkommen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="a Quart of Ale">Ale</ingredient> - 1 l</item>
+            <item><ingredient orig="half a Pint of Sack">Sack</ingredient> - 250 ml</item>
+            <item>
+              <ingredient orig="what spice you please">Gewürz nach Belieben</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="three quarters of a pound of sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 340 g</item>
+            <item><ingredient orig="twenty Eggs">Eier, Eigelb und Eiweiß</ingredient> - 20 Stück</item>
+            <item><ingredient en="almond" orig="four Ounces of Almonds blanched" commodity="wikidata:Q184357" source="#fyndling-ingredient-name">Mandeln, geschält</ingredient> - 120 g</item>
+            <item>
+              <ingredient en="rose water" orig="Rosewater" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="beaten spice and sugar">Gewürz, gestoßen, und Zucker zum Bestreuen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-016">
+        <head>Metheglin, braun oder weiß</head>
+        <div type="original" xml:id="woo-016-orig" xml:lang="und" corresp="#woo-016-trans">
+          <p>II. To make Metheglin, either Brown or White, but White is best.
+Take what quantity you please of Spring-Water, and make it so strong with Honey, that it will bear an Egg, then boil it very well, till a good part be wasted, and put in to it boiling a good quantity of whole Spice Rosemary, Balm, and other cordial and pleasant Herbs or Flowers.
+When it is very well boiled, set it to cool, it being strained from the Herbs, and the bag of Spices taken out;
+When it is almost cold, put in a little Yeast and beat it well, then put it into Vessels when it is quite cold, and also the Bag of Spice, and when it hath stood a few days, bottle it up; if you would have it red, you must put the Honey to strong Ale Wort instead of Water.</p>
+        </div>
+        <div type="translation" xml:id="woo-016-trans" xml:lang="de" corresp="#woo-016-orig">
+          <p>Metheglin, braun oder weiß; der weiße ist aber der beste.</p>
+          <p>Nimm so viel Quellwasser, wie du willst, und mach es mit Honig so stark, dass es ein Ei trägt. Dann koche es sehr gut, bis ein guter Teil eingekocht ist, und gib in die kochende Flüssigkeit eine gute Menge ganzes Gewürz, Rosmarin, Melisse und andere herzstärkende und angenehme Kräuter oder Blüten.</p>
+          <p>Wenn es sehr gut gekocht hat, stelle es zum Abkühlen hin, nachdem du es von den Kräutern abgeseiht und den Gewürzbeutel herausgenommen hast.</p>
+          <p>Wenn es fast kalt ist, gib ein wenig Hefe hinein und schlage es gut durch. Dann fülle es in Gefäße, wenn es ganz kalt ist, und auch den Gewürzbeutel. Wenn es einige Tage gestanden hat, fülle es auf Flaschen.</p>
+          <p>Willst du ihn rot haben, musst du den Honig statt in Wasser in starke Bierwürze geben.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Spring-Water">Quellwasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="Honey" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="a good quantity of whole Spice">Gewürz, ganz</ingredient>
+            </item>
+            <item>
+              <ingredient en="rosemary" orig="Rosemary" commodity="wikidata:Q122679" source="#fyndling-ingredient-name">Rosmarin</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Balm">Melisse</ingredient>
+            </item>
+            <item>
+              <ingredient orig="other cordial and pleasant Herbs or Flowers">weitere Kräuter oder Blüten, herzstärkend und angenehm</ingredient>
+            </item>
+            <item>
+              <ingredient orig="a little Yeast">Hefe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="strong Ale Wort">Bierwürze, stark (nur für die rote Fassung, statt Wasser)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="woo-017">
+        <head>Melassewein (Vin de Molosso)</head>
+        <div type="original" xml:id="woo-017-orig" xml:lang="und" corresp="#woo-017-trans">
+          <p>CCLXXXV. To make Vin de Molosso; or Treacle Wine.
+Take fair Water and make it so strong with Molossoes, otherwise called Treacle, as that it will bear an Egg, then boil it with a Bag of all kinds of Spices, and a Branch or two of Rosemary, boil it and scum it, and put in some sweet herbs or flowers, according to the time of the year, boil it till a good part be consumed, and that it be very clear, then set it to cool in several things, &amp; when it is almost cold, work it with Yeast, as you do Beer, the next day put it into the Vessel, and so soon as it hath done working, stop it up close, and when it hath stood a fortnight, bottle it, this is a very wholesom Drink against any Infection, or for any that are troubled with the Ptisick</p>
+        </div>
+        <div type="translation" xml:id="woo-017-trans" xml:lang="de" corresp="#woo-017-orig">
+          <p>Nimm reines Wasser und mach es mit Melasse, die man auch Treacle nennt, so stark, dass es ein Ei trägt. Dann koche es mit einem Beutel mit allerlei Gewürzen und einem oder zwei Zweigen Rosmarin. Koche es und schäume es ab, und gib je nach Jahreszeit einige wohlriechende Kräuter oder Blüten hinein. Koche es, bis ein guter Teil eingekocht und es sehr klar ist.</p>
+          <p>Dann stell es in mehreren Gefäßen zum Abkühlen hin. Wenn es fast kalt ist, lass es mit Hefe gären, wie du es beim Bier machst. Am nächsten Tag füll es ins Fass. Sobald es ausgegoren hat, verschließ es fest. Wenn es vierzehn Tage gestanden hat, füll es auf Flaschen.</p>
+          <p>Das ist ein sehr heilsames Getränk gegen jede Ansteckung oder für alle, die an der Schwindsucht leiden.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="water" orig="fair Water" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Molossoes, otherwise called Treacle">Melasse</ingredient>
+            </item>
+            <item>
+              <ingredient orig="a Bag of all kinds of Spices">Gewürze aller Art, im Beutel</ingredient>
+            </item>
+            <item>
+              <ingredient en="rosemary" orig="a Branch or two of Rosemary" commodity="wikidata:Q122679" source="#fyndling-ingredient-name">Rosmarin</ingredient>
+            </item>
+            <item>
+              <ingredient orig="some sweet herbs or flowers, according to the time of the year">Wohlriechende Kräuter oder Blüten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Yeast">Hefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#woo-001-trans" resp="#fyndling">Was ist das? Ein gekochter Rosinen-Zitronen-Trunk zum baldigen Verbrauch. Trotz des Namens „Raisin Wine“ lässt Woolley ihn nicht gären: Sie kocht Rosinen und Zitronenschale aus, würzt und süßt, schlägt den Sud kalt und füllt ihn ab. Eine Gär- oder Standzeit kommt nicht vor, und nach ihren Worten hält das Getränk nur wenige Tage.
+
+Kochen und Würzen. Rosinen und dünn geschnittene Schale kochen eine halbe Stunde oder länger im Wasser und geben dabei ihren Geschmack ab. Saft, Gewürz, Zucker und Rosenwasser kommen erst danach dazu und bleiben nur noch kurz am Feuer. Welches Gewürz und wie viel Zucker und Rosenwasser, sagt Woolley nicht; das bleibt dem eigenen Geschmack überlassen.
+
+Kalt schlagen. Im irdenen Topf wird der heiße Sud geschlagen, bis er kalt ist; so kühlt er ab, und alles mischt sich. Ein Gerät nennt Woolley nicht. Ob Rosinen und Schale vor dem Abfüllen herauskommen, sagt sie ebenfalls nicht; Digby seiht sein ähnliches „Stepponi“ vor dem Abfüllen ausdrücklich ab.
+
+Haltbarkeit. Heute würde man sagen: Ein gezuckerter, abgekühlter Sud verdirbt in der Flasche nach einigen Tagen oder beginnt von selbst zu gären. Das passt zu Woolleys „it will keep but a few days“.
+
+Praxis. Für die volle Menge von rund 16 l braucht es einen großen Kessel; alle Zutaten lassen sich im selben Verhältnis verkleinern. Beim Umfüllen der heißen Flüssigkeit in den Tontopf vorsichtig sein. Als heutiger Rat: Rosinen und Schale vor dem Abfüllen abseihen, die Flaschen kühl stellen und das Getränk innerhalb weniger Tage trinken. Beginnt es in der verschlossenen Flasche zu gären, baut sich Druck auf; solche Flaschen vorsichtig öffnen.</note>
+        <note type="gloss" target="#woo-001-orig" n="Stepony" resp="#fyndling">Woolleys zweiter Name für diesen Rosinentrunk mit Zitrone. Das Wort steht in keinem der befragten englischen Wörterbücher der Zeit; Digby (1669) kennt ein ähnliches Getränk als „Stepponi“. Der Name bleibt deshalb stehen.</note>
+        <note type="gloss" target="#woo-001-orig" n="Gallons" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Hier ist mit rund 4 Litern je Gallone gerechnet; vier Gallonen sind also etwa 16 Liter, genau zwischen rund 15 und 18,5 Litern.</note>
+        <note type="gloss" target="#woo-001-orig" n="Pill" resp="#fyndling">Hier ein Hauptwort: die Zitronenschale, die kurz vorher als „Rind“ genannt ist. Ludwigs englisch-deutsches Wörterbuch von 1706 übersetzt „Pill“ mit „die schale, rinde“ und verweist auf „Peel“. Mit einer Pille hat das Wort hier nichts zu tun.</note>
+        <note type="interpretive_choice" target="#woo-001-orig" n="the Rind of two" resp="#fyndling" subtype="contextual">Die Schale von zwei der vier Zitronen, deren Saft genommen wird. So liest sich der Satz am einfachsten, und Longes Rosinenwein (lon-100) verfährt ebenso: Saft von zwei Zitronen, Schale von einer („the iuice of 2 lemons and one pill“).<list type="alternatives"><item>Zwei weitere Zitronen nur für die Schale.<note type="rationale">Der Satz schließt es nicht aus, aber nichts im Text spricht dafür.</note></item></list></note>
+        <note type="interpretive_choice" target="#woo-001-orig" n="then put it into an earthen pot … then bottle it up" resp="#fyndling" subtype="contextual">Woolley sagt nicht, ob Rosinen und Schale vor dem Abfüllen herauskommen; die Übersetzung lässt das offen und ergänzt keinen Seihschritt.<list type="alternatives"><item>Vor dem Abfüllen abseihen.<note type="rationale">Digby seiht beim ähnlichen Stepponi ausdrücklich ab („having first let it run through a strainer“, dig-113). Für Woolley ist es nicht gesagt, heute aber naheliegend; die Zubereitungshinweise nennen es als heutigen Rat.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-002-trans" resp="#fyndling">Was ist das? Woolley braut hier kein Ale, sie veredelt eines, das schon fertig und ausgegoren im Fass liegt. Ein Beutel mit Rosinen, Orangen, Zitronenschale, Nelken und Koriander hängt vier Tage im verschlossenen Fass, danach reift das Ale mit Zucker in der Flasche nach.
+
+Der Beutel im Fass. Die Zusätze geben im Fass ihr Aroma ab, die Rosinen auch Zucker; der Beutel hält Kerne, Schalen und Fruchtfleisch aus dem Ale heraus. Was nach den vier Tagen mit dem Beutel geschieht, sagt Woolley nicht.
+
+Flaschengärung. In jede Flasche kommt ein Stück feiner Zucker, dann wird sie fest verschlossen und drei Wochen bis einen Monat liegen gelassen. Woolley erklärt den Zucker nicht. Er gibt der Hefe, die noch im Ale ist, neues Futter: Das Ale gärt in der verschlossenen Flasche nach und wird spritzig. Die Flaschen füllt sie nur bis wenig über den Halsansatz, oben bleibt Luft.
+
+Praxis. Woolley nennt weder die Stärke des Ales noch Flaschenart, Verschluss oder Lagerort, und anders als im folgenden Ale-Rezept spricht sie hier nicht von Korken. Heutiger Hinweis: Nachgärung in der Flasche baut Druck auf, gewöhnliche Flaschen können platzen. Nimm druckfeste Flaschen mit sicherem Verschluss und lagere sie kühl. Ein unfiltriertes Ale, das seine Hefe noch trägt, gärt in der Flasche verlässlich nach. Wer kein ganzes Fass ansetzt, verkleinert alle Zutaten im selben Verhältnis.</note>
+        <note type="gloss" target="#woo-002-orig" n="very rare" resp="#fyndling">„Rare“ heißt in Woolleys Überschrift nicht „selten“. Ludwigs englisch-deutsches Wörterbuch von 1706 gibt dafür „vortrefflich, köstlich“, für „rare good“ „überaus herrlich“.</note>
+        <note type="gloss" target="#woo-002-orig" n="Ale" resp="#fyndling">Ludwigs Wörterbuch von 1706 erklärt Ale als „süß oder ungehopft bier“ und übersetzt „Beer and ale“ mit „gehöpfftes und ungehöpfftes bier“. Wie Woolleys Ale gebraut und gehopft war, sagt sie nicht; das Rezept setzt es fertig voraus.</note>
+        <note type="gloss" target="#woo-002-orig" n="Gallonen" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Ale-Gallone fasste rund 4,6 Liter, die Weingallone rund 3,8 Liter. Acht oder neun Gallonen sind damit rund 37 bis 42 l oder rund 30 bis 34 l; im Text ist gerundet mit 4 l je Gallone gerechnet.</note>
+        <note type="preparation_tip" target="#woo-003-trans" resp="#fyndling">Was ist das? Kein Braurezept: Woolley setzt das gebraute Ale voraus und beschreibt nur, was danach im Fass und in der Flasche geschieht. Das junge Ale gärt im Fass aus; erst dann kommen Ingwer in Scheiben, eine mit Nelken gespickte und eingeschnittene Orange und Zucker hinein.
+
+Zwei Gärungen. Der Zucker gibt der Hefe des Ales neue Nahrung: „it will work afresh“. Eine weitere Hefe nennt Woolley nicht, das Ale bringt seine eigene mit. Ihr Zeichen für das Ende ist beide Male dasselbe, das Ale hat „done working“. Danach steht das Fass fest verschlossen, bis das Ale klar ist. Wie lange Nachgärung und Klären dauern, sagt sie nicht.
+
+Flaschengärung. Das Stück Zucker in jeder Flasche vergärt in der fest verkorkten Flasche; die Kohlensäure kann nicht entweichen und bleibt im Ale. Darauf zielt die Überschrift: Nach einer Woche ist das Ale trinkfertig. Wie groß Flaschen und Zuckerstück sind und warum die Flaschen kopfüber liegen, sagt Woolley nicht.
+
+Für Brauer und Weinmacher: die Zahlen
+
+Modellrechnung, keine Messung. Gerechnet ist nur der Zucker, den Woolley ins Fass gibt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| anderthalb Pfund Zucker auf acht Weingallonen | 22,5 g/l | 1.009 | 9 | 2,2 | 1,3 % |
+| anderthalb Pfund Zucker auf acht Ale-Gallonen | 18,4 g/l | 1.007 | 7 | 1,8 | 1,1 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und das Getränk bleibt süß.
+
+Annahmen: Pfund zu 453,6 g, das Fass ist voll. Gerechnet ist nur der zugesetzte Zucker, die Werte sind also eine Untergrenze und kommen zu Zuckerrest und Alkohol des Ales selbst hinzu. Nicht eingerechnet sind die Orange und die Zuckerstücke in den Flaschen.
+
+Praxis. Heutiger Hinweis, nicht bei Woolley: Die Flaschengärung baut Druck auf, und gewöhnliche Flaschen können platzen. Man nimmt druckfeste Flaschen, lagert sie kühl und öffnet sie vorsichtig. Für den Ingwer nennt Woolley keine Menge und sagt nicht, ob er frisch oder getrocknet ist; wer nachbraut, beginnt mit wenigen Scheiben. Das Ale bleibt ein alkoholisches Getränk.</note>
+        <note type="gloss" target="#woo-003-orig" n="eight Gallons" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Ale-Gallone fasste rund 4,6 Liter, die Weingallone rund 3,8 Liter. Das Fass fasst also etwa 30 bis 37 l; die Übersetzung rechnet mit 4 l je Gallone, also etwa 32 l.</note>
+        <note type="gloss" target="#woo-003-orig" n="Ale" resp="#fyndling">Der Name bleibt stehen. Ludwigs englisch-deutsches Wörterbuch von 1706 unterscheidet „ale“ als ungehopftes von „beer“ als gehopftem Bier.</note>
+        <note type="gloss" target="#woo-003-orig" n="working" resp="#fyndling">„To work“ heißt hier gären (Ludwig 1706: „jären, verjären“). „When it hath done working“ heißt: wenn es ausgegoren hat; „it will work afresh“: es gärt von Neuem.</note>
+        <note type="interpretive_choice" target="#woo-003-orig" n="Tun it into a Vessel … when it hath done working" resp="#fyndling" subtype="contextual">Das Ale, im Text nur „it“ und vom Titel her benannt, kommt jung ins Fass und gärt dort aus; erst danach folgen die Zusätze. So beginnt auch Woolleys voriges Rezept („When your Ale is tunned into a Vessel … and that hath done working“), und Ludwig 1706 übersetzt „to tun“ mit „in ein faß thun“.<list type="alternatives"><item>Schon fertig vergorenes Ale wird nur umgefüllt.<note type="rationale">Der Text schließt es nicht aus. Digby gebraucht „tun“ aber für das Füllen des noch ungegorenen Mets ins Fass („for to Tun it, you must let it grow Luke-warm“), und das erste „done working“ steht nach dem Füllen.</note></item></list></note>
+        <note type="interpretive_choice" target="#woo-003-orig" n="Orange" resp="#fyndling" subtype="lexical">Orange, wohl die Bitterorange (Pomeranze): Ludwig 1706 übersetzt „Orange“ mit „eine pomerantze“ und führt die süße Frucht eigens als „China-orange“. Der Rezepttext bleibt bei „Orange“, weil Woolley nichts weiter sagt.<list type="alternatives"><item>Süße Orange<note type="rationale">Mit dem bloßen Wort nicht ausgeschlossen; Ludwigs Eintrag zeigt nur, dass die süße Frucht eigens benannt wurde.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-004-trans" resp="#fyndling">Was ist das? Ein Posset aus Eiern, Sack und Sahne, der in einer Schüssel über kochendem Wasser so weit stockt, dass er wie eine Eiercreme ist. Woolley lässt ihn abkühlen, bis man ihn essen kann, und streut erst dann das Gewürz darüber.
+
+Das Rühren am Anfang. „stir them well that they curd not“: Eier und Sack werden gut verrührt, damit die Eier nicht gerinnen. Erst danach kommen Sahne und Zucker dazu.
+
+Zwei Hitzestufen. Zuerst wird die ganze Masse über dem Feuer heiß gemacht und dabei gerührt. Woolley sagt nur „hot“, nicht wie heiß. Dann kommt sie in eine Schüssel über einem Topf mit kochendem Wasser, bis sie wie eine Eiercreme ist. Das ist ihr einziges Zeichen für das Ende, eine Zeit nennt sie nicht. Heutiger Rat, nicht bei Woolley: die Masse über dem Feuer nur erhitzen, nicht kochen lassen, und dabei weiterrühren.
+
+Gewürz. Woolley schreibt nur „beaten Spice“, gestoßenes Gewürz, und verlangt es „very thick“, sehr dick aufgestreut. Welche Gewürze, sagt sie nicht.
+
+Praxis. Für zwölf Eier, Sack und Sahne braucht es eine große, hitzefeste Schüssel, die sicher auf dem Topf sitzt. Beim Abheben über dem kochenden Wasser auf Dampf und heißes Gefäß achten. Der Sack bringt Alkohol mit, der im Wasserbad nicht verlässlich verkocht, und die Eier werden nur gestockt, nicht durchgekocht.</note>
+        <note type="gloss" target="#woo-004-orig" n="Posset" resp="#fyndling">Englisches Getränk aus Milch oder Sahne, Eiern, Sack oder Ale und Gewürz, das beim Erhitzen stockt; es wird gelöffelt und getrunken. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) nennt es „ein gewisser Englischer milchtranck“.</note>
+        <note type="gloss" target="#woo-004-orig" n="Sack" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanarischen Inseln. Ludwig (1706) übersetzt „Spanischer oder Canarien-seckt“. Mit dem Wort für einen Sack hat er nichts zu tun.</note>
+        <note type="gloss" target="#woo-004-orig" n="beaten Spice" resp="#fyndling">Gestoßenes Gewürz. Woolley nennt keine einzelnen Gewürze.</note>
+        <note type="preparation_tip" target="#woo-005-trans" resp="#fyndling">Was ist das? Ein Posset ohne Milch: Woolley lässt dreizehn geschlagene Eier in gesüßtem Sack mit Ale stocken. Sie nennt keine Kochzeit, keine Hitzestärke und keine Gewürzsorte.
+
+Zweimal erhitzen. Zuerst kochen Sack, Zucker und Ale nur ganz kurz. Dann kommen die Eier hinein und werden unter Rühren heiß. Vom Feuer genommen wird weitergerührt, damit die Eier nicht vorzeitig klumpen. Erst in der dicht zugedeckten Schüssel bringt das zweite Erhitzen das Stocken. Anders als bei Woolleys Sahne-Possets mit Wasserbad steht die Schüssel hier direkt über dem Feuer.
+
+Wann ist es fertig? Woolleys einziges Zeichen ist, dass es „zu einem Gerinnsel aufgeht“. Ob die ganze Masse durchstockt oder sich ein Gerinnsel über klarer Flüssigkeit hebt, sagt sie nicht. Heutiger Hinweis: Eiermasse über direkter Hitze stockt schnell und wird bei zu starker Hitze flockig, eine kleine Flamme ist sicherer.
+
+Gewürz. Woolley verlangt nur „etwas gestoßenes Gewürz“ zum Auftragen. Welches, bleibt offen.
+
+Praxis. Gebraucht werden ein Kochgefäß, eine Schüssel, die über dem Feuer stehen kann, und ein Teller zum Zudecken. Schüssel und Inhalt werden heiß. Sack und Ale kochen nur kurz, der Alkohol bleibt also zum guten Teil im Posset (heutiges Wissen). Die Eier werden nur bis zum Stocken erhitzt.</note>
+        <note type="gloss" target="#woo-005-orig" n="Posset" resp="#fyndling">Englische Speise aus Eiern, oft auch Milch oder Sahne, mit Sack, Wein oder Ale, die beim Erhitzen stockt und gelöffelt wie getrunken wird. Ludwig (1706) nennt den Posset einen englischen Milchtrank und den Sack-Posset einen dicken Trank aus Sack, Sahne, Muskat, Zucker und Eiern. Woolleys Fassung hier kommt ohne Milch aus. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-005-orig" n="Sack" resp="#fyndling">Kräftiger spanischer Weißwein. Ludwig (1706) gibt ihn als „Spanischer oder Canarien-Seckt“ wieder. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-005-orig" n="Quart / Pint / Pfund" resp="#fyndling">Woolley sagt nicht, welches Maß sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon (rund 0,95 bzw. 1,16 Liter), ein Pint ein Achtel (rund 0,47 bzw. 0,58 Liter). Das Pfund ist mit etwa 450 g gerechnet.</note>
+        <note type="interpretive_choice" target="#woo-005-orig" n="arise to a Curd" resp="#fyndling" subtype="lexical">„bis es zu einem Gerinnsel aufgeht“: Ludwig (1706) gibt „to arise“ mit „aufstehen, aufgehen, aufsteigen, entstehen“ wieder, „curd“ mit „geronnene milch, klumpen“. „Aufgehen“ lässt offen, ob die Masse durchstockt oder ein Gerinnsel aufsteigt.<list type="alternatives"><item>Das Gerinnsel steigt über eine klare Flüssigkeit auf<note type="rationale">Beim Schaum-Posset beschreibt Woolley das Ende als „clear in the bottom, Curd in the middle“; hier sagt sie das nicht.</note></item><item>Die ganze Masse stockt durch zu einer weichen Creme<note type="rationale">Heute naheliegend bei dreizehn Eiern auf rund 1,5 l Flüssigkeit, im Text aber nicht gesagt.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-006-trans" resp="#fyndling">Was ist das? Ein Stachelbeerwein aus reinem Saft: Woolley gibt kein Wasser dazu und zuckert erst beim Abfüllen. Der Ablauf hat drei Stufen, jede in einem eigenen Gefäß.
+
+Zerdrücken und Seihen. Die reifen Beeren werden mit dem Stampfer zerdrückt, aber nicht zu klein geschlagen, und durch ein Haarsieb geseiht. Warum nicht zu klein, sagt Woolley nicht.
+
+Klären im Topf. Der Saft steht vier oder fünf Tage zugedeckt im irdenen Topf, bis er klar ist. Das Zeichen für das Ende ist die Klarheit, nicht die Zahl der Tage. Der Saft ist ungekocht, und der Text nennt keine Hefe: Die Gärung kommt von der Frucht selbst und aus dem Gefäß. Vom Gären spricht Woolley nicht, sie nennt nur das Ergebnis.
+
+Abziehen und Ruhe. Der klare Saft wird vom Satz in ein zweites Gefäß abgezogen und läuft dabei in ein Haarsieb. Dann wird das Gefäß fest verschlossen und steht vierzehn Tage. Beim Himbeerwein verlangt Woolley ausdrücklich einen Verschluss „but not very close“, hier dagegen fest. Ob der Saft in dieser Zeit noch gärt, sagt sie nicht.
+
+Zucker in die Flasche. Erst beim Abfüllen kommt der Zucker dazu, ein Pfund auf acht Quartflaschen, und die Flaschen werden fest verschlossen. In der verschlossenen Flasche vergärt der Zucker, und die Kohlensäure bleibt im Wein: eine Flaschengärung. Nach einer Woche oder vierzehn Tagen ist der Wein trinkbar, also jung. Wie viele Flaschen ein Ansatz ergibt, sagt Woolley nicht; sie nennt weder die Menge der Beeren noch die des Safts.
+
+Für Brauer und Weinmacher: die Zahlen
+
+Modellrechnung, keine Messung. Gerechnet ist nur der Zucker, den Woolley in die Flaschen gibt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| ein Pfund auf acht Wein-Quart | 59.9 g/l | 1.023 | 23 | 5.9 | 3.6 % |
+| ein Pfund auf acht Ale-Quart | 49.0 g/l | 1.019 | 19 | 4.8 | 2.9 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und das Getränk bleibt süß.
+
+Annahmen: Pfund zu 453,6 g; acht Flaschen zu je einem Quart, das Weinquart zu 0,946 l, das Ale-Quart zu 1,156 l. Eingerechnet ist nur der zugesetzte Zucker, die Werte sind eine Untergrenze: Den Zucker des Safts beziffert Woolley nicht, und der Saft hat vor dem Abfüllen rund drei Wochen gestanden und ist vermutlich schon angegoren (Annahme). Die Zahlen zeigen, was der Flaschenzucker zum Wein beiträgt, nicht dessen Gesamtstärke.
+
+Praxis. Heutiger Hinweis, nicht bei Woolley: Ohne eingefahrenes Gefäß kann man dem Saft eine Weinhefe zusetzen. Ein Kartoffelstampfer aus Holz tut den Dienst des Apfelstampfers. Für die vierzehn Tage im verschlossenen Gefäß nimmt man heute einen Gärspund, solange der Saft noch gärt. Die Flaschengärung baut Druck auf, und gewöhnliche Flaschen können dabei platzen. Man nimmt druckfeste Flaschen (Bügel- oder Sektflaschen), lagert sie kühl und öffnet sie vorsichtig. Woolley sagt zu alldem nichts.</note>
+        <note type="gloss" target="#woo-006-orig" n="Apple-Beater" resp="#fyndling">Wörtlich „Apfelschläger“, ein Stampfer oder Stößel zum Zerdrücken. Ludwig (1706) übersetzt beater mit „Stößel, Stampfschlägel“. Woolley beschreibt das Gerät nicht näher.</note>
+        <note type="gloss" target="#woo-006-orig" n="hair strainer / hair sieve" resp="#fyndling">Haarsieb: ein Sieb mit einer Bespannung aus Haar, meist Pferdehaar.</note>
+        <note type="gloss" target="#woo-006-orig" n="quart Bottles" resp="#fyndling">Flaschen, die ein Quart fassen; Ludwig (1706) erklärt quart-bottle als „eine gläserne Flasche, so ein Maß hält“. Woolley sagt nicht, welches Quart sie meint: Das Weinquart fasste rund 0,95 Liter, das Ale-Quart rund 1,16 Liter.</note>
+        <note type="interpretive_choice" target="#woo-006-orig" n="stop it close, and let it stand one fortnight" resp="#fyndling" subtype="contextual">Das zweite Gefäß wird fest verschlossen, wie der Text sagt. Woolley unterscheidet das: Beim Himbeerwein schreibt sie „stop it, but not very close“, hier „close“.<list type="alternatives"><item>Locker verschlossen oder mit Luftloch, damit Gärgase entweichen.<note type="rationale">So würde man heute einen noch gärenden Saft behandeln (Gärspund). Der Text gibt dafür keinen Anhalt; der Saft hat sich nach vier oder fünf Tagen schon geklärt.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-007-trans" resp="#fyndling">Was ist das? Ein Hauswein aus Malaga-Rosinen und Damaszenerpflaumen, ungekocht in Wasser angesetzt. Der Ansatz steht sechs Tage unter täglichem Rühren und weitere sechs Tage ohne Rühren im zugedeckten, oben offenen Fass. Dann wird der Wein abgezogen, mit einem gesüßten Pflaumenauszug gefärbt, kommt vierzehn Tage in ein Weinfass und danach in Flaschen.
+
+Die Mengen. Woolley nennt vier Gallonen Wasser und „to every Gallon“ vier Pfund Rosinen und einen halben Peck Pflaumen. Liest man beide Angaben je Gallone, kommen auf etwa 16 l Wasser rund 7,2 kg Rosinen und etwa 18 l Pflaumen; die Zutatenliste folgt dieser Lesart. Gilt der halbe Peck für den ganzen Ansatz, sind es nur etwa 4,5 l Pflaumen. Der Text entscheidet das nicht.
+
+Woher die Gärung kommt. Woolley nennt keine Hefe und spricht nicht von Gärung, aber was nach zwölf Tagen aus dem Fass kommt, heißt bei ihr „Wine“. Der Ansatz ist nicht gekocht: Die Hefe kommt von den Früchten, Rosinen wie Pflaumen, und aus dem Fass. Heute würde man sagen: Das Rühren in den ersten sechs Tagen mischt Früchte und Wasser immer wieder durch, die sechs Tage Ruhe lassen den Trub sinken, bevor abgezogen wird. Woran man erkennt, dass der Wein so weit ist, sagt Woolley nicht; sie nennt nur die Tage.
+
+Das Färben. Woolleys Endzeichen ist die Farbe: Der Wein soll einem Claret gleichen. Worin und wie lange die Pflaumen für den Auszug ziehen und wie viel Zucker dazugehört, sagt sie nicht.
+
+Praxis. Ohne eingefahrenes Fass setzt man heute Weinhefe zu. Für den Färbeauszug kann man zerdrückte Damaszenerpflaumen in etwas vom abgezogenen Wein ziehen lassen und abseihen (moderner Vorschlag). Woolley nennt keinen Verschluss für das Weinfass und kein Zeichen, dass der Wein ausgegoren ist. Mit dem gesüßten Auszug kommt neuer Zucker in einen jungen Wein; gärt er in der Flasche weiter, baut sich Druck auf (heutiger Hinweis, Woolley sagt dazu nichts). Deshalb erst abfüllen, wenn sich im Weinfass nichts mehr regt, oder druckfeste Flaschen nehmen und kühl lagern; ob die Dichte noch fällt, zeigt heute eine Mostwaage. Das Ergebnis ist ein alkoholisches Getränk.</note>
+        <note type="gloss" target="#woo-007-orig" n="Damson" resp="#fyndling">Kleine, dunkle Pflaume. Britten und Holland (1886) führen den Namen auf eine Pflaume zurück, die „first brought from Damascus“ sei; Ludwig 1706 verdeutscht „damſon“ mit „eine zwetſchge“. Eine heutige Sorte lässt sich damit nicht gleichsetzen.</note>
+        <note type="gloss" target="#woo-007-orig" n="Vessel without a head" resp="#fyndling">„Head“ ist der Boden eines Fasses: Ludwig 1706 übersetzt „the two heads of a cask“ mit „die zwey böden an einem fasse“. Ein Fass ohne „head“ ist also oben offen; Woolley deckt es zu.</note>
+        <note type="gloss" target="#woo-007-orig" n="Gallon" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Gerechnet ist mit etwa 4 l.</note>
+        <note type="gloss" target="#woo-007-orig" n="Peck" resp="#fyndling">Englisches Trockenmaß, nach Ludwig 1706 „der vierdte theil eines Engliſchen ſcheffels“, rund 9 l. Ein halber Peck sind etwa 4,5 l Früchte, nach Volumen gemessen.</note>
+        <note type="gloss" target="#woo-007-orig" n="Claret" resp="#fyndling">Ludwig 1706: „röthlichter wein“. Woolley nennt ihn als Farbvorbild.</note>
+        <note type="interpretive_choice" target="#woo-007-orig" n="put to every Gallon of Water four Pounds of Malago Raisins, and half a Peck of Damsons" resp="#fyndling" subtype="contextual">Beide Mengen gelten je Gallone: „to every Gallon of Water“ regiert beide Glieder, die zweite Auflage von 1672 hat denselben Satz. Für vier Gallonen sind das rund 7,2 kg (sechzehn Pfund) Rosinen und etwa 18 l (zwei Pecks) Pflaumen; so rechnet die Zutatenliste.<list type="alternatives"><item>Nur die Rosinen gelten je Gallone, der halbe Peck Pflaumen (etwa 4,5 l) für den ganzen Ansatz.<note type="rationale">Das Komma vor „and half a Peck“ ließe die Pflaumen als eigene Gesamtangabe lesen; der Satzbau spricht eher dagegen, der Text entscheidet es aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#woo-007-orig" n="the infused juice of Damsons" resp="#fyndling" subtype="lexical">Ein durch Ziehenlassen gewonnener Auszug aus Damsons: Phillips 1658 erklärt „Infusion“ als „steeping … till the chiefest of their virtue be drawn out“. Worin die Pflaumen ziehen und wie lange, sagt Woolley nicht.<list type="alternatives"><item>Frisch ausgepresster Pflaumensaft.<note type="rationale">„infused“ spricht für Ziehenlassen, nicht für Pressen; ausgeschlossen ist es nicht, weil Woolley das Verfahren nicht beschreibt.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-008-trans" resp="#fyndling">Was ist das? Kein Wein, der aus den Himbeeren selbst vergoren wird, sondern ein Mischgetränk: Der Himbeersaft steht einige Tage in der Flasche, wird vom Bodensatz abgegossen und färbt dann gekauften Weißwein oder Rheinwein; gesüßt wird mit Hutzucker.
+
+Die Standzeit. Der Saft wird nicht gekocht. In den vier oder fünf Tagen beginnt er mit der Hefe, die von den Früchten und aus der Flasche kommt, zu gären. Deshalb wird die Flasche „not very close“ verschlossen: Das Gas kann entweichen, und die Flasche platzt nicht. Was sich absetzt, nennt Woolley „Grounds“; Ludwig übersetzt 1706 „the grounds of a liquor“ mit „die hefen“. Woran man erkennt, dass der Saft so weit ist, sagt Woolley nicht, sie nennt nur die Tage.
+
+Wie viel Wein und Zucker? Woolley nennt keine Mengen, weder für die Himbeeren noch für Wein oder Zucker. Den Wein bemisst sie nach der Farbe: so viel, wie der Saft gut färbt. Wer es nachmacht, gibt den Wein also nach und nach zu und hört auf, solange die Mischung noch kräftig gefärbt ist. Beim Zucker sagt sie nur „süßen“.
+
+Die Duftpastillen. Woolley verweist auf ihre eigenen Duftpastillen, die sie weiter vorn im Buch beschreibt; jenes Rezept gehört nicht zu dieser Auswahl. Der Schritt ist freigestellt („you may“) und gilt nur für einen Teil des Getränks, beim Trinken.
+
+Praxis. Für die Standzeit reicht eine saubere Flasche mit lose aufgesetztem Stopfen; heute leistet ein Gärröhrchen dasselbe (moderner Hinweis). Heutiges Wissen, bei Woolley nicht erwähnt: Saft, der schon zu gären begonnen hat, kann mit dem zugesetzten Zucker in der verschlossenen Flasche weitergären und Druck aufbauen. Wer das vermeiden will, nimmt druckfeste Flaschen und lagert kühl. Das Getränk besteht zum größten Teil aus Wein und enthält entsprechend Alkohol.</note>
+        <note type="gloss" target="#woo-008-orig" n="Grounds" resp="#fyndling">Der Bodensatz, der sich in den Tagen der Standzeit absetzt. Ludwig gibt 1706 „the grounds of a liquor“ mit „die hefen“ wieder: Gemeint ist der Satz aus Fruchtresten und Hefe.</note>
+        <note type="gloss" target="#woo-008-orig" n="Loaf Sugar" resp="#fyndling">Hutzucker (Ludwig 1706: „Sugar-loaf, ein zuckerbrod, hutzucker“), Zucker in Form eines festen Kegels, von dem man vor dem Gebrauch Stücke abschlug.</note>
+        <note type="gloss" target="#woo-008-orig" n="Lozenges" resp="#fyndling">Duftpastillen, kleines parfümiertes Zuckerwerk. Woolley beschreibt ihre Herstellung weiter vorn im Buch und setzt sie hier voraus.</note>
+        <note type="preparation_tip" target="#woo-009-trans" resp="#fyndling">Was ist das? Ein Posset ohne Milch und ohne Sack: Weißwein und Wasser zu gleichen Teilen, mit ganzem Gewürz aufgekocht und mit zwölf Eiern gebunden, von denen die Hälfte der Eiweiße beiseitebleibt. Woolley nennt keine Zeit, keine Zuckermenge und keine Gewürzsorte; zur Hitze sagt sie nur „a slow fire“.
+
+Die Eier in den heißen Wein. Der Wein kommt zuerst vom Feuer, dann werden die gut geschlagenen Eier hineingegeben und sehr gut verrührt. Erst danach geht der Topf zurück auf ein kleines Feuer, und es wird gerührt, bis die Masse dick ist. Das ist Woolleys einziges Zeichen für das Ende. Ein Wasserbad, wie sie es bei anderen Possets verlangt, kommt hier nicht vor: Der Topf steht direkt über dem Feuer. Heutiger Hinweis, nicht bei Woolley: Eiermasse über direkter Hitze stockt schnell und wird bei zu starker Hitze flockig, eine kleine Flamme und ständiges Rühren halten sie glatt.
+
+Gewürz. Woolley verlangt es zweimal und nennt beide Male keine Sorte: ganzes Gewürz im Sud, gestoßenes Gewürz zum Bestreuen. Ob das ganze Gewürz vor dem Einrühren der Eier herausgenommen wird, sagt sie nicht. Heute würde man es herausnehmen oder den Wein durchseihen (moderner Vorschlag).
+
+Ambra und Duftpastille. Beides ist freigestellt („if you like it“). Für die Ambra nennt Woolley keine Menge. Mit der Duftpastille meint sie die parfümierten Pastillen, die sie an anderer Stelle ihres Buches beschreibt; jenes Rezept gehört nicht zu dieser Auswahl. Ohne beides ist der Posset vollständig.
+
+Praxis. Gebraucht werden ein Topf, der Wein, Wasser und Eier fasst, und ein Feuer, dessen Hitze sich klein halten lässt. Beim Einrühren der Eier ist die Flüssigkeit heiß. Wie lange der Wein mit dem Gewürz kocht, sagt Woolley nicht; ein Teil des Alkohols bleibt im Posset (heutiges Wissen). Die Eier werden nur bis zum Dickwerden erhitzt.</note>
+        <note type="gloss" target="#woo-009-orig" n="Posset" resp="#fyndling">Englische Speise aus Eiern, meist auch Milch oder Sahne, mit Sack, Wein oder Ale, die beim Erhitzen stockt und gelöffelt wie getrunken wird. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) nennt es „ein gewisser Englischer milchtranck“. Diese Fassung kommt ohne Milch aus. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-009-orig" n="Quart" resp="#fyndling">Woolley sagt nicht, welches Maß sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon, rund 0,95 bzw. 1,16 Liter; im Lesertext ist es mit etwa 1 l gerechnet.</note>
+        <note type="gloss" target="#woo-009-orig" n="Ambergreece" resp="#fyndling">Ambra, ein wohlriechender, wachsartiger Stoff aus dem Darm des Pottwals. Ludwig (1706) übersetzt „Ambergreese“ mit „ambra“, Blount (1656) nennt sie „a sweet Aromatick juice or perfume“.</note>
+        <note type="gloss" target="#woo-009-orig" n="Lozenge" resp="#fyndling">Duftpastille, ein kleines parfümiertes Zuckertäfelchen. Ludwig (1706) gibt „Lozenge“ als „ein täfelein oder viereckicht küchlein von eingemachten bluhmen, kräutern“ wieder. Woolley beschreibt ihre Herstellung an anderer Stelle des Buches.</note>
+        <note type="preparation_tip" target="#woo-010-trans" resp="#fyndling">Was ist das? Ein Sack-Posset aus Sahne, die mit ganzem Gewürz gekocht wird, dazu Eier, Zucker und Sack. Die Masse stockt direkt über dem Feuer in der Pfanne und wird als dicke Masse in eine Schüssel gehoben. Woolley nennt weder die Gewürze noch Mengen für Zucker und Sack: gesüßt und abgeschmeckt wird nach Geschmack.
+
+Reihenfolge. Die Eier kommen erst in die Sahne, wenn sie vom Feuer genommen ist, danach Zucker und Sack. Erst dann geht alles zurück aufs Feuer und steht dort eine Weile. Einen Grund für diese Reihenfolge nennt Woolley nicht, eine Zeit auch nicht.
+
+Heben statt Rühren. „raise it up gently from the bottom“: Mit der Kelle wird die Masse vom Boden der Pfanne angehoben und dabei so wenig wie möglich zerteilt („break it as little as you can“). Das wiederholt man, bis sie dick genug ist. Das ist Woolleys einziges Zeichen für das Ende. Auch beim Umfüllen in die Schüssel arbeitet die Kelle sachte.
+
+Die Warnung. „if you do it too much it will whey“: Übertreibt man es, setzt der Posset Molke ab. Woolley sagt nicht, ob zu langes Garen oder zu viel Bewegung gemeint ist. An anderen Stellen ihres Buchs verbindet sie das Molkeabsetzen mit zu langem Backen („bake it, but not too much, for then it will whey“). Sicher ist nur: Die Masse soll dick werden, aber nicht darüber hinaus.
+
+Praxis. Die Pfanne muss etwa 2 l (zwei Quart) Sahne, zwölf Eier und den Sack fassen. Heutiger Rat, nicht bei Woolley: nach dem Zurücksetzen bei mäßiger Hitze arbeiten und die Masse nicht kochen lassen. Heiße Sahne und heiße Pfanne mit Vorsicht handhaben. Die Eier werden nur gestockt, nicht durchgekocht, und der Sack bringt Alkohol mit, der dabei nicht verlässlich verkocht.</note>
+        <note type="gloss" target="#woo-010-orig" n="Posset" resp="#fyndling">Englische Speise aus Sahne oder Milch, Eiern und Wein oder Ale, die beim Erhitzen stockt; sie wird gelöffelt wie getrunken. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) nennt den Sack-Posset „ein dicker tranck“.</note>
+        <note type="gloss" target="#woo-010-orig" n="Sack" resp="#fyndling">Kräftiger spanischer Weißwein. Ludwig (1706) übersetzt „Spanischer oder Canarien-seckt“. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-010-orig" n="Quart" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon, rund 0,95 bzw. 1,16 Liter; zwei Quart sind also rund 1,9 bis 2,3 Liter.</note>
+        <note type="gloss" target="#woo-010-orig" n="Skillet" resp="#fyndling">Ludwig (1706) übersetzt „eine kleine muß- oder breypfanne“: ein Kochgefäß für Mus und Brei, nicht die heutige Bratpfanne.</note>
+        <note type="interpretive_choice" target="#woo-010-orig" n="if you do it too much it will whey" resp="#fyndling" subtype="contextual">Offen als „Übertreibst du es“ übersetzt. Am wahrscheinlichsten ist zu langes oder zu starkes Garen gemeint: Woolley verbindet das Molkeabsetzen an anderen Stellen mit zu langem Backen („bake it, but not too much, for then it will whey“; „do not bake it too much for fear it Whey“).<list type="alternatives"><item>zu viel Bewegung beim Heben und Umfüllen<note type="rationale">Der Satz folgt direkt auf „with the Ladle gently“, und „break it as little as you can“ mahnt zur Schonung. Den Gegenstand von „do it“ nennt Woolley aber nicht.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-011-trans" resp="#fyndling">Was ist das? Ein zweiter Sahne-Posset, den Woolley direkt hinter ihren Sack-Posset stellt: Gekochte Sahne wird vom Feuer genommen und mit viel Eigelb und wenig Eiweiß gebunden, dann zum angewärmten Sack in die Schüssel gegeben, gesüßt und über siedendem Wasser stehen gelassen.
+
+„wie für den vorigen“. Für das Kochen der Sahne verweist Woolley auf das vorige Rezept. Dort wird die Sahne „with whole Spice“ gekocht, mit ganzem Gewürz, dessen Sorten sie auch dort nicht nennt. Ob der Verweis das Gewürz einschließt oder nur das Kochen meint, sagt sie nicht. Wer ihm ganz folgt, kocht die Sahne mit ganzem Gewürz.
+
+Die Eier. Vierzehn Eigelb und nur vier Eiweiß, geschlagen und durchgeseiht, kommen in die Sahne, nachdem sie vom Feuer genommen ist. Wie lange die Sahne vorher abkühlt, sagt Woolley nicht. Heutiger Hinweis: In sehr heißer Sahne können die Eier sofort flocken; sie werden unter stetem Rühren eingerührt.
+
+Über dem siedenden Wasser. Zuletzt steht die Schüssel „eine Weile“ über einer kleinen Pfanne mit siedendem Wasser. Ein Zeichen für das Ende nennt Woolley nicht, auch kein Stocken wie bei ihrem Posset, der im Wasserbad „wie eine Eiercreme“ werden soll. Das Wasserbad hält den Posset also mindestens warm; ob er dabei andickt, bleibt offen.
+
+Praxis. Gebraucht werden ein Kochgefäß für die Sahne, eine Schüssel für den Sack und eine kleine Pfanne mit siedendem Wasser, auf der die Schüssel sicher sitzt. Eine Menge für den Sack nennt Woolley nicht; im vorigen Rezept gibt sie so viel, dass es gut schmeckt. Beim Hantieren über dem siedenden Wasser auf Dampf und heißes Gefäß achten. Der Sack wird nur angewärmt, sein Alkohol bleibt im Posset, und die Eier werden nur erwärmt, nicht durchgekocht.</note>
+        <note type="gloss" target="#woo-011-orig" n="Posset" resp="#fyndling">Englischer Milchtrank mit Eiern und Sack, Wein oder Ale, der gelöffelt und getrunken wird. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) nennt ihn „ein gewisser Englischer milchtranck“. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-011-orig" n="Sack" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanarischen Inseln. Ludwig (1706) übersetzt „Spanischer oder Canarien-seckt“. Mit dem Wort für einen Sack hat er nichts zu tun.</note>
+        <note type="gloss" target="#woo-011-orig" n="Quart" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon, also rund 0,95 bzw. 1,16 Liter; im Text ist es mit etwa 1 l gerechnet.</note>
+        <note type="gloss" target="#woo-011-orig" n="Skillet" resp="#fyndling">Ludwig (1706) übersetzt „Skellet, skillet“ mit „eine kleine muß- oder breypfanne“. Hier hält sie das siedende Wasser, über dem die Schüssel steht.</note>
+        <note type="interpretive_choice" target="#woo-011-orig" n="as for the other" resp="#fyndling" subtype="contextual">Verweis auf das vorige Rezept, Woolleys Sack-Posset (CLXVI), wo die Sahne „with whole Spice“ gekocht wird. Übersetzt als „wie für den vorigen Posset“; das Gewürz steht nicht in den Zutaten, weil dieser Text es nicht nennt.<list type="alternatives"><item>Die Sahne wird wie dort mit ganzem Gewürz gekocht.<note type="rationale">Naheliegend, denn der Verweis steht genau beim Kochen der Sahne, und das Gewürz ist dort der einzige Zusatz. Woolley sagt es hier aber nicht ausdrücklich.</note></item></list></note>
+        <note type="interpretive_choice" target="#woo-011-orig" n="let it stand over a Skillet of seething water for a while" resp="#fyndling" subtype="contextual">Die Schüssel steht eine Weile über siedendem Wasser und hält den Posset warm; ein Stocken oder ein Zeichen für das Ende nennt Woolley nicht. Digby (1669) und May (1660) geben ihren verwandten Posset nach dem Zugießen der Sahne zum Sack ohne weiteres Erhitzen auf.<list type="alternatives"><item>Der Posset dickt im Wasserbad an, wie Woolleys Posset, der über kochendem Wasser „like a Custard“ werden soll.<note type="rationale">Möglich, aber dort nennt Woolley das Zeichen ausdrücklich, hier nicht.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-012-trans" resp="#fyndling">Was ist das? Ein fertiger Cider wird mit wenig Milch geklärt, auf Flaschen gezogen und reift dort einen Monat. Die Überschrift nennt Cider oder Perry, der Text selbst spricht nur vom Cider; das Verfahren gilt nach Woolleys Überschrift für beide. Wie der Cider gemacht wird, sagt sie hier nicht.
+
+Klären mit Milch. Auf zwei Quarts Cider kommt ein halbes Pint Milch, ein Teil Milch auf acht Teile Cider. Beides kommt zusammen in den Hippocras-Beutel und läuft hindurch. Das Zeichen für das Ende ist die Klarheit: „when it runs clear“. Eine Standzeit vor dem Seihen nennt Woolley nicht, ebenso wenig, ob der erste trübe Ablauf noch einmal aufgegossen wird. Wie die Milch wirkt, erklärt sie nicht. Heutiges Wissen, knapp: Im sauren Cider gerinnt die Milch, die Flocken bleiben im Tuch zurück und halten Trübstoffe fest. Milch und Milcheiweiß dienen bis heute zum Schönen von Wein.
+
+Flasche und Perlen. Der klare Cider kommt in Flaschen. Wenn er einen Monat alt ist, perlt er nach Woolley im Glas. Zucker, Hefe oder Verschluss nennt sie nicht. Heutiges Wissen: Das Perlen kommt aus einer Nachgärung in der Flasche; dafür muss der Cider noch vergärbaren Zucker und Hefe enthalten, und die Flaschen müssen dicht sein.
+
+Praxis. Heutiger Hinweis, nicht bei Woolley: Statt des Hippocras-Beutels tut es ein sauberes, ausgekochtes Seihtuch über einer Schüssel. Die Nachgärung baut Druck auf, und gewöhnliche Flaschen können platzen. Nimm druckfeste Flaschen (Bügel- oder Sektflaschen), lagere sie kühl und öffne sie vorsichtig. Ein ganz durchgegorener, trockener Cider perlt kaum nach.</note>
+        <note type="gloss" target="#woo-012-orig" n="Cider / Perry" resp="#fyndling">Cider ist vergorener Apfelsaft, Perry vergorener Birnensaft. Ludwig (1706) übersetzt cider mit „der äpffelwein“ und perry mit „birnwein, birnmost“.</note>
+        <note type="gloss" target="#woo-012-orig" n="Hipocras bag" resp="#fyndling">Ein Seihbeutel aus Tuch, benannt nach dem Gewürzwein Hippocras, der durch ihn geseiht wurde; das Glossar der Digby-Ausgabe (1910) erklärt ihn als „a bag used in making hippocras“. Ein sauberes, ausgekochtes Seihtuch tut denselben Dienst.</note>
+        <note type="gloss" target="#woo-012-orig" n="Rock water" resp="#fyndling">Wörtlich „Felsenwasser“; Ludwig (1706) übersetzt rock mit „ein felß, eine steinklippe“. Gemeint ist wohl Wasser, das klar aus dem Fels tritt, als Bild für völlige Klarheit.</note>
+        <note type="gloss" target="#woo-012-orig" n="Quart / Pint" resp="#fyndling">Woolley sagt nicht, welches Maß sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon (rund 0,95 bzw. 1,16 Liter), ein Pint ein Achtel (rund 0,47 bzw. 0,58 Liter). Das Verhältnis von Milch zu Cider bleibt in beiden Fällen gleich.</note>
+        <note type="interpretive_choice" target="#woo-012-orig" n="it will sparkle in the Glass as you drink it" resp="#fyndling" subtype="lexical">„perlt er im Glas“: Ludwig (1706) gibt für to sparkle neben „funckeln, glintzern“ ausdrücklich „lustig springen, (wie wein, wenn er eingeschencket wird,)“, französisch petiller. Dazu passen der Monat in der Flasche und „in the Glass as you drink it“.<list type="alternatives"><item>„funkelt er im Glas“: nur der Glanz des ganz klaren Getränks.<note type="rationale">Ludwig kennt auch diese Bedeutung, und die Überschrift zielt auf Klarheit. Die Monatsfrist erklärt sie aber nicht: Klar ist der Cider schon, wenn er aus dem Beutel läuft.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-013-trans" resp="#fyndling">Was ist das? Ein Hippocras, also ein gesüßter Gewürzwein, kalt angesetzt. Woolley lässt nichts gären: Zucker und Gewürze ziehen einen Tag lang im fertigen Wein, dann läuft der Wein mit Milch durch einen Seihbeutel und wird abgefüllt.
+
+Das Ziehen. Vierundzwanzig Stunden, in dieser Zeit zwei- oder dreimal umgerührt; dabei löst sich der Zucker, und die Gewürze geben ihr Aroma an den Wein ab. Ob die Gewürze ganz oder gestoßen hineinkommen, sagt Woolley nicht. Heutiger Rat: grob zerstoßen, dann ziehen sie in der Zeit gut aus und bleiben im Beutel zurück.
+
+Milch und Seihbeutel. Wozu die Milch dient, sagt Woolley hier nicht. Denselben Schritt beschreibt sie beim Cider oder Perry „as clear as Rock water“: Milch dazu, durch den Beutel, und abgefüllt wird, „when it runs clear“. Gemeint ist also eine Klärung. Heutiges Wissen, nicht bei Woolley: Milch flockt im Wein aus und nimmt beim Durchlaufen Trübstoffe mit; das Gerinnsel bleibt im Beutel. Wie oft sie durchseiht, sagt Woolley nicht.
+
+Praxis. Alle Mengen gelten je Gallone Wein und lassen sich im selben Verhältnis verkleinern. Als Seihbeutel dient ein Beutel aus dichtem, sauberem Tuch über einem Gefäß. Die Flaschen kühl lagern, wie Woolley es verlangt. Heutiger Hinweis: Wein mit viel zugesetztem Zucker kann in fest verschlossener Flasche nachgären, wenn noch lebende Hefe darin ist, und dann Druck aufbauen; solche Flaschen kühl halten und vorsichtig öffnen. Der Hippocras ist unverdünnter Wein und enthält entsprechend Alkohol.</note>
+        <note type="gloss" target="#woo-013-orig" n="Hipocras" resp="#fyndling">Gewürzwein: Wein mit Zucker und Gewürzen, durch ein Tuch geseiht. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) übersetzt „gewürtzter wein“. Der Name bleibt stehen.</note>
+        <note type="gloss" target="#woo-013-orig" n="Sack" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanarischen Inseln. Ludwig (1706) übersetzt „Spanischer oder Canarien-seckt“. Woolley lässt auch gewöhnlichen Weißwein zu.</note>
+        <note type="gloss" target="#woo-013-orig" n="Gallon / Pint" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Gerechnet ist mit etwa 4 l je Gallone und etwa 0,5 l je Pint. Ein Pint ist in beiden Maßen ein Achtel der Gallone; das Verhältnis von Milch zu Wein bleibt also gleich.</note>
+        <note type="gloss" target="#woo-013-orig" n="Ielly-Bag" resp="#fyndling">Wörtlich „Geleebeutel“: ein Beutel aus dichtem Tuch, durch den man Gelee und Getränke seiht. Beim Cider nennt Woolley denselben Beutel „Hipocras bag“.</note>
+        <note type="gloss" target="#woo-013-orig" n="Long Pepper" resp="#fyndling">Langer Pfeffer: die getrockneten Fruchtstände von Piper longum, einer Verwandten des schwarzen Pfeffers.</note>
+        <note type="interpretive_choice" target="#woo-013-orig" n="a few Grains" resp="#fyndling" subtype="lexical">Paradieskörner. „Grains“ steht allein, aber als Gewürzname: Halliwell verzeichnet „grains of Paradise, a sort of spice … Also simply called greins“, Ludwig (1706) übersetzt „Grains of paradice“ mit „paradießkoͤrner“, und ältere Hippocras-Rezepte führen sie als feste Zutat (Ryff: „Paradeiß koͤrner“, Ménagier und Viandier: „graine“).<list type="alternatives"><item>gewöhnliche Pfefferkörner<note type="rationale">„Grains“ kann schlicht „Körner“ heißen, und Robert May nimmt in seinem „Ipocras“ von 1660 „corns of pepper“. Woolley schreibt aber „Grains“, nicht „Pepper corns“, und stellt sie als Ersatz neben den Langen Pfeffer.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-014-trans" resp="#fyndling">Was ist das? Ein Posset aus Sahne oder frischer Milch, sechzehn Eiern und Sack, der am Ende in drei Schichten in der Schüssel steht: unten klar, in der Mitte ein Gerinnsel, oben Schaum. Woolley nennt keine Zeit und keine Temperatur.
+
+Eigelb oder Eiweiß? Der Druck sagt beim Schaumschlagen „beat the Yolks to a Froth“, also die Eigelbe. Die Eigelbe sind aber schon mit der Sahne zur Eiercreme verarbeitet, und die Eiweiße liegen in der sehr tiefen Schüssel, ohne dass sonst etwas mit ihnen geschieht. Der Schaum ist deshalb aus den Eiweißen übersetzt.
+
+Drei Teile, eine Schüssel. Zuerst die Eiercreme aus den geschlagenen Eigelben und der Sahne, die dabei auf dem Feuer steht. Wie heiß und wie lange, sagt Woolley nicht. Dann der Schaum aus Eiweiß mit ein wenig Sack und Zucker, geschlagen, bis er dick ist. Zuletzt ein halbes Pint gesüßter Sack in einer großen Schüssel auf dem Kohlenbecken: Ist er heiß, kommt so viel Schaum hinein, wie er aufnimmt, dann die Eiercreme, immer in dieselbe Richtung gerührt. Deckt der Schaum die Oberfläche nicht, kommt mehr dazu.
+
+Wann ist es fertig? Mit einem warmen Teller zugedeckt, steht der Posset eine Weile auf der Glut, „but not too hot“. Das Ende zeigt der Löffel: unten klar, in der Mitte das Gerinnsel, oben der Schaum. Was die klare Schicht unten ist, sagt Woolley nicht.
+
+Praxis. Gebraucht werden ein Topf für die Sahne auf dem Feuer, eine sehr tiefe Schüssel für die Eiweiße, eine zweite Schüssel für den Schaum, eine große, hitzefeste Schüssel, ein Kohlenbecken oder Rechaud und ein Teller zum Zudecken. Heutiger Hinweis, nicht bei Woolley: die Sahne mit dem Eigelb nicht kochen lassen und die Glut klein halten, sonst flockt das Eigelb. Schüssel und Inhalt werden heiß. Das Eiweiß im Schaum wird nur gewärmt, nicht durchgegart, und der Alkohol des Sacks verkocht auf der Glut nicht verlässlich (heutiges Wissen).</note>
+        <note type="gloss" target="#woo-014-orig" n="Posset" resp="#fyndling">Englisches Getränk aus Milch oder Sahne, Eiern, Sack oder Ale, das beim Erhitzen stockt; es wird gelöffelt und getrunken. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) nennt es „ein gewisser Englischer milchtranck“. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-014-orig" n="Sack" resp="#fyndling">Kräftiger Weißwein aus Spanien oder von den Kanarischen Inseln. Ludwig (1706) übersetzt „Spanischer oder Canarien-seckt“. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-014-orig" n="Chafing-dish of Coals" resp="#fyndling">Ein Kohlenbecken, auf dem ein Gefäß über Glut warm gehalten wird. Ludwig (1706) gibt „Chafing-dish“ mit „eine kohlpfanne, feuerpfanne“ wieder.</note>
+        <note type="gloss" target="#woo-014-orig" n="Pint" resp="#fyndling">Woolley sagt nicht, welches Pint sie meint: Das Wein-Pint fasste rund 0,47 Liter, das Ale-Pint rund 0,58 Liter. Im Lesertext ist mit etwa 0,5 l gerechnet.</note>
+        <note type="interpretive_choice" target="#woo-014-orig" n="then beat the Yolks to a Froth" resp="#fyndling" subtype="contextual">Die Eiweiße werden zu Schaum geschlagen. Die Eigelbe sind schon in der Eiercreme, die Eiweiße liegen in der sehr tiefen Schüssel und werden sonst nicht verwendet. Der Druck von 1670 sagt „Yolks“, die zweite Auflage von 1672 ebenso.<list type="alternatives"><item>Die Eigelbe, wie gedruckt.<note type="rationale">Dann wären die Eigelbe zweimal verwendet und die Eiweiße gar nicht; der Ablauf ginge nicht auf.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-015-trans" resp="#fyndling">Was ist das? Ein Posset ohne Milch und ohne Brot: Ale und Sack werden mit Gewürz aufgekocht, dann kommen zwanzig geschlagene Eier mit Zucker und mit Rosenwasser gestoßenen Mandeln dazu. Woolley nennt weder die Gewürze noch eine Zeit noch die Stärke des Feuers.
+
+Reihenfolge. Die Mandeln gehen zuerst zu den Eiern, die Eiermasse dann zu Ale und Sack in den Posnet, der auf dem Feuer steht. Gesüßt wird, wenn die Eier hineinkommen; Woolley trägt das erst im letzten Satz nach. Der Zucker zum Bestreuen kommt zum Schluss mit gestoßenem Gewürz obenauf.
+
+Wann ist es fertig? Woolleys Zeichen ist das Aufkochen: Sobald es aufkocht, kommt der Posset in die Schüssel. Bis dahin wird ständig gerührt. Anders als bei ihren Sahne-Possets mit Wasserbad steht der Posnet hier direkt auf dem Feuer. Wie dick der Posset wird, sagt sie nicht. Heutiger Hinweis: Eine Eiermasse über direkter Hitze stockt schnell und wird bei starkem Feuer flockig, eine kleine Flamme ist sicherer.
+
+Gewürz. Woolley lässt die Wahl offen: Gewürz nach Belieben beim Aufkochen, gestoßenes Gewürz zum Bestreuen. Keines ist benannt.
+
+Praxis. Gebraucht werden ein Gefäß mit Griff für das Feuer, etwas zum Durchseihen der Eier und eine Schüssel. Die aufkochende Eiermasse ist sehr heiß. Ale und Sack kochen nur kurz, der Alkohol bleibt also zum Teil im Posset (heutiges Wissen).</note>
+        <note type="gloss" target="#woo-015-orig" n="Posset" resp="#fyndling">Englisches Getränk aus Eiern, oft mit Milch oder Sahne, mit Sack, Wein oder Ale, das beim Erhitzen stockt; es wird getrunken und gelöffelt. Ludwigs englisch-deutsches Wörterbuch (Leipzig 1706) nennt den Sack-Posset „ein dicker tranck“. Dieser kommt ohne Milch aus. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-015-orig" n="Sack" resp="#fyndling">Kräftiger spanischer Weißwein. Ludwig (1706) gibt ihn als „Spanischer oder Canarien-Seckt“ wieder. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-015-orig" n="Posnet" resp="#fyndling">Ludwig (1706): „eine Mußpfanne, ein kleiner Kessel mit einer Handhabe“. Der Name bleibt.</note>
+        <note type="gloss" target="#woo-015-orig" n="Quart / Pint / Pfund / Unze" resp="#fyndling">Woolley sagt nicht, welches Maß sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon (rund 0,95 bzw. 1,16 Liter), ein Pint ein Achtel (rund 0,47 bzw. 0,58 Liter). Das Pfund ist mit etwa 450 g, die Unze mit etwa 30 g gerechnet.</note>
+        <note type="interpretive_choice" target="#woo-015-orig" n="you must also sweeten it when the Eggs go in" resp="#fyndling" subtype="contextual">Der Nachsatz sagt, wann die drei Viertel Pfund Zucker hineinkommen: zusammen mit den Eiern. Woolley nennt den Zucker im selben Satz wie die Eier und keine zweite Menge.<list type="alternatives"><item>Nachsüßen nach Geschmack über die genannte Menge hinaus<note type="rationale">Möglich, aber eine zweite Zuckermenge steht nicht da; zusätzlich genannt ist nur der Zucker zum Bestreuen.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-016-trans" resp="#fyndling">Was ist das? Ein Kräutermet: Honigwasser wird mit ganzem Gewürz, Rosmarin, Melisse und weiteren Kräutern oder Blüten gekocht, mit Hefe vergoren und nach einigen Tagen auf Flaschen gezogen. Woolley nennt keine einzige Menge: Wasser nach Belieben, Honig nach der Eiprobe, Gewürz „a good quantity“, Hefe „a little“.
+
+Die Stärke. Die Eiprobe steht vor dem Kochen. Danach kocht der Sud, „till a good part be wasted“, und wird dabei stärker, als er bei der Probe war; um wie viel, sagt Woolley nicht. Rechnen lässt sich daraus nichts. Wer heute die Stärke wissen will, misst sie mit einer Mostwaage (moderner Hinweis).
+
+Gewürz und Kräuter. Dass das ganze Gewürz in einem Beutel kocht, sagt Woolley erst, als sie ihn herausnehmen lässt („the bag of Spices taken out“); in ihrem Melassewein (woo-017) steht der Beutel von Anfang an da („a Bag of all kinds of Spices“). Die Kräuter kochen lose und werden abgeseiht. Welches Gewürz und welche Kräuter außer Rosmarin und Melisse, bleibt offen. Der Beutel kommt nach dem Abkühlen mit in die Gefäße und würzt dort weiter.
+
+Hefe und Gärung. Heute würde man sagen: Gekocht trägt der Sud keine lebende Hefe mehr. Woolley gibt „a little Yeast“ zu, wenn er fast kalt ist, und schlägt sie gut ein. Ludwigs englisch-deutsches Wörterbuch (1706) erklärt „Yest“ als „der schaum vom biere“, also Hefe aus dem Brauen. Ein Zeichen für das Ende der Gärung nennt Woolley nicht, nur „a few days“ im Gefäß; dann wird abgefüllt.
+
+Die rote Fassung. Für sie kommt der Honig statt in Wasser in starke Bierwürze. Die Überschrift spricht von braun und weiß, der Text am Ende von rot; eine eigene braune Fassung beschreibt Woolley nicht.
+
+Praxis. Der Ansatz lässt sich in jeder Größe machen, weil Woolley die Stärke nur über die Eiprobe bestimmt. Beim Kochen und Abseihen des heißen Honigsuds vorsichtig sein. Heute würde man sagen: Nach wenigen Tagen ist ein Honigansatz in der Regel noch nicht ausgegoren, er gärt in der Flasche weiter und baut Druck auf, gewöhnliche Flaschen können platzen. Wer es nachmacht, nimmt druckfeste Flaschen und lagert kühl oder lässt die Gärung im Gefäß länger auslaufen, als Woolley es tut (moderner Hinweis). Als Hefe eignet sich heute Ale- oder Weinhefe. Das fertige Getränk enthält Alkohol.</note>
+        <note type="gloss" target="#woo-016-orig" n="Metheglin" resp="#fyndling">Englischer Kräutermet. Phillips (1658) erklärt ihn als „a kinde of drink made of Herbs, Hony, Spice“, Ludwigs englisch-deutsches Wörterbuch (1706) als „eine art meth“. Der Name bleibt stehen.</note>
+        <note type="gloss" target="#woo-016-orig" n="bear an Egg" resp="#fyndling">Die Eiprobe: Es kommt so lange Honig ins Wasser, bis die Lösung ein Ei trägt. Wie weit das Ei herausragen soll, sagt Woolley nicht; Digby verlangt in einem seiner Rezepte „the breadth of a Groat“ (dig-067).</note>
+        <note type="gloss" target="#woo-016-orig" n="cordial" resp="#fyndling">Ludwig (1706) übersetzt „cordial“ mit „hertzstärckend“. Gemeint sind Kräuter, denen man eine stärkende Wirkung zuschrieb; das ist Woolleys Wort, kein heutiger Rat.</note>
+        <note type="gloss" target="#woo-016-orig" n="Ale Wort" resp="#fyndling">Bierwürze: der ungegorene Malzauszug, aus dem Bier wird. Ludwig (1706) sagt „laulichtes, ungegohrenes bier“, das Glossar der Digby-Ausgabe von 1910 „an infusion of malt which after fermentation becomes beer“.</note>
+        <note type="interpretive_choice" target="#woo-016-orig" n="either Brown or White … if you would have it red" resp="#fyndling" subtype="philological">Übersetzt wie gedruckt: Die Überschrift nennt braun und weiß, der Text beschreibt die Fassung mit Wasser und als einzige Abwandlung eine rote mit Bierwürze. Eine eigene braune Fassung beschreibt Woolley nicht; ihr Register führt den Eintrag auch unter „Brown Metheglin“.<list type="alternatives"><item>„Rot“ und „braun“ meinen dieselbe Fassung mit Bierwürze.<note type="rationale">Sie ist die einzige Abwandlung im Text, und Würze ist dunkler als Honigwasser; Woolley setzt die beiden Wörter aber nirgends gleich.</note></item><item>Braun ist eine dritte, nicht beschriebene Fassung.<note type="rationale">Nichts im Text beschreibt sie; Überschrift und Register nennen nur den Namen.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#or"/></note>
+        <note type="interpretive_choice" target="#woo-016-orig" n="whole Spice Rosemary, Balm" resp="#fyndling" subtype="philological">Drei Zutaten: ganzes Gewürz, Rosmarin, Melisse. Im Druck von 1670 steht nach „Spice“ am Zeilenende ein undeutliches Zeichen, die Ausgabe von 1672 setzt ein Komma, und der nächste Satz trennt die Kräuter, die abgeseiht werden, vom Gewürzbeutel.<list type="alternatives"><item>„Spice Rosemary“ als eine Zutat.<note type="rationale">Ohne Komma gelesen möglich, aber der Folgesatz trennt Gewürz im Beutel und lose Kräuter.</note></item></list></note>
+        <note type="preparation_tip" target="#woo-017-trans" resp="#fyndling">Was ist das? Ein Gärgetränk aus Wasser und Melasse: gewürzt und gekocht, mit Hefe vergoren, im Fass ausgegoren und nach vierzehn Tagen auf Flaschen gefüllt. Woolley nennt es „Wine“, obwohl keine Traube darin ist. Der Ablauf gleicht Schritt für Schritt ihrem Metheglin; die Süße kommt hier aus der Melasse statt aus Honig.
+
+Die Stärke. Woolley wiegt nichts ab. Die Melasse kommt so lange ins Wasser, bis ein Ei darin schwimmt; das ist ihre einzige Stärkeangabe. Mengen für Wasser, Melasse, Gewürz, Kräuter und Hefe nennt sie nicht, die Größe des Ansatzes bleibt frei. Wie weit das Ei herausragen soll, sagt sie ebenfalls nicht. Deshalb lässt sich aus dem Rezept weder ein Zucker- noch ein Alkoholgehalt berechnen.
+
+Kochen und Würzen. Gekocht wird mit einem Beutel voller Gewürze und ein oder zwei Zweigen Rosmarin, der Schaum wird abgenommen, dann kommen Kräuter oder Blüten der Jahreszeit dazu. Welche Gewürze und Kräuter, lässt Woolley offen. Das Kochen geht weiter, bis „a good part“ eingekocht und der Sud sehr klar ist; wie viel das ist, beziffert sie nicht. Ob Beutel und Kräuter vor dem Abkühlen herauskommen, sagt sie hier nicht. In ihrem Metheglin seiht sie ab und nimmt den Beutel heraus.
+
+Gären. Der heiße Sud wird zum Abkühlen auf mehrere Gefäße verteilt, so kühlt er schneller ab. Fast kalt wird er mit Hefe angesetzt, „as you do Beer“: Woolley setzt voraus, dass im Haushalt gebraut wird und Hefe da ist. Weil der Sud gekocht ist, kommt die Gärung aus dieser zugesetzten Hefe. Am nächsten Tag kommt er ins Fass; fest verschlossen wird es erst, wenn er ausgegoren hat. Woran man das Ende der Gärung erkennt, sagt Woolley nicht. Nach vierzehn Tagen im verschlossenen Fass wird abgefüllt.
+
+Die Wirkung. Woolley schließt mit einer Gesundheitsaussage: Das Getränk sei heilsam gegen Ansteckung und für alle, die an der Schwindsucht leiden. Das ist ihre Einordnung von 1670, kein Rat für heute.
+
+Praxis. Die Größe des Ansatzes frei wählen und die Eierprobe mit einem rohen Ei vor dem Kochen machen; heute zeigt eine Mostwaage die Dichte genauer (moderner Hinweis). Ohne eigene Brauhefe nimmt man heute Ale- oder Weinhefe. Beim Umfüllen des heißen Suds in die Gefäße vorsichtig sein. Das Fass erst verschließen und den Wein erst abfüllen, wenn sich nichts mehr regt: Gärt er in der Flasche weiter, baut sich Druck auf (heutiger Hinweis, Woolley sagt dazu nichts). Dann druckfeste Flaschen nehmen und kühl lagern. Das Ergebnis ist ein alkoholisches Getränk.</note>
+        <note type="gloss" target="#woo-017-orig" n="Molossoes, otherwise called Treacle" resp="#fyndling">Melasse. Ludwigs englisch-deutsches Wörterbuch von 1706 erklärt „Molosses“ als „die grundsuppe oder hefen vom zucker, der kramer syrop“, also den Sirup, der beim Zuckersieden zurückbleibt. „Treacle“ übersetzt Ludwig nur mit „theriack“, dem Arzneimittel Theriak; Woolley setzt das Wort hier aber ausdrücklich mit Melasse gleich. „Vin de Molosso“ ist ihr Name für den Wein daraus.</note>
+        <note type="gloss" target="#woo-017-orig" n="bear an Egg" resp="#fyndling">Die einzige Stärkeangabe: Ein Ei muss in der Flüssigkeit schwimmen. Wie weit es herausragen soll und wie viel Melasse dafür nötig ist, sagt Woolley nicht.</note>
+        <note type="gloss" target="#woo-017-orig" n="Infection" resp="#fyndling">Ludwig 1706 verdeutscht „Infection“ mit „der gestanck, die vergiffte lufft, eine ansteckende seuche“. Gemeint ist Ansteckung im Sinn der Zeit, nicht der heutige Begriff der Infektion.</note>
+        <note type="gloss" target="#woo-017-orig" n="Ptisick" resp="#fyndling">Schreibung für „Phthisick“: Blounts Glossographia (1656) erklärt das Wort als Geschwür der Lunge, „accompanied with a consumption of the whole body“, also die Schwindsucht.</note>
+      </div>
+    </back>
+  </text>
+</TEI>

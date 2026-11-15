@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ale, in einer Woche trinkfertig</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/woo-003/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/woo-003</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>The Queen-like Closet; or, Rich Cabinet (London 1670)</title>
+          <date when="1670">1670</date>
+          <idno type="URI">https://github.com/textcreationpartnership/A66847</idno>
+          <note>Text: Text Creation Partnership, EEBO-TCP A66847, CC0 1.0</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Englisch der Restaurationszeit (London 1670); Hannah Woolley</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="woo-003">
+        <head>Ale, in einer Woche trinkfertig</head>
+        <div type="original" xml:id="woo-003-orig" xml:lang="und" corresp="#woo-003-trans">
+          <p>LXVI. To make Ale to drink within a Week.
+Tun it into a Vessel which will hold eight Gallons, and when it hath done working, ready to bottle, put in some Ginger sliced, and an Orange stuck with Cloves, and cut here and there with a Knife, and a pound and half of Sugar, and with a stick stir it well together, and it will work afresh; when it hath done working, stop it close, and let it stand till it be clear, then bottle it up and put a Lump of Sugar into every Bottle, and then stop it close, and knock down the Corks, and turn the Bottles the Bottoms upwards, and it will be fit to drink in a Weeks time.</p>
+        </div>
+        <div type="translation" xml:id="woo-003-trans" xml:lang="de" corresp="#woo-003-orig">
+          <p>Fülle das Ale in ein Fass, das etwa 32 l (acht Gallonen) fasst. Wenn es ausgegoren hat und bereit ist für die Flaschen, gib etwas Ingwer in Scheiben hinein, dazu eine Orange, mit Nelken gespickt und hier und da mit einem Messer eingeschnitten, und etwa 675 g (anderthalb Pfund) Zucker. Rühre es mit einem Stock gut durch, dann gärt es von Neuem.</p>
+          <p>Wenn es wieder ausgegoren hat, verschließe das Fass fest und lass es stehen, bis das Ale klar ist. Dann fülle es in Flaschen und gib in jede Flasche ein Stück Zucker. Verschließe sie fest, klopfe die Korken fest und dreh die Flaschen um, mit dem Boden nach oben. In einer Woche ist das Ale trinkfertig.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Ale">Ale</ingredient> - 32 l</item>
+            <item>
+              <ingredient orig="some Ginger sliced">Ingwer, in Scheiben</ingredient>
+            </item>
+            <item><ingredient orig="an Orange stuck with Cloves">Orange, wohl Bitterorange</ingredient> - 1 Stück</item>
+            <item>
+              <ingredient en="clove" orig="Cloves" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="a pound and half of Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 675 g</item>
+            <item>
+              <ingredient orig="a Lump of Sugar into every Bottle">Zucker, ein Stück je Flasche</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#woo-003-trans" resp="#fyndling">Was ist das? Kein Braurezept: Woolley setzt das gebraute Ale voraus und beschreibt nur, was danach im Fass und in der Flasche geschieht. Das junge Ale gärt im Fass aus; erst dann kommen Ingwer in Scheiben, eine mit Nelken gespickte und eingeschnittene Orange und Zucker hinein.
+
+Zwei Gärungen. Der Zucker gibt der Hefe des Ales neue Nahrung: „it will work afresh“. Eine weitere Hefe nennt Woolley nicht, das Ale bringt seine eigene mit. Ihr Zeichen für das Ende ist beide Male dasselbe, das Ale hat „done working“. Danach steht das Fass fest verschlossen, bis das Ale klar ist. Wie lange Nachgärung und Klären dauern, sagt sie nicht.
+
+Flaschengärung. Das Stück Zucker in jeder Flasche vergärt in der fest verkorkten Flasche; die Kohlensäure kann nicht entweichen und bleibt im Ale. Darauf zielt die Überschrift: Nach einer Woche ist das Ale trinkfertig. Wie groß Flaschen und Zuckerstück sind und warum die Flaschen kopfüber liegen, sagt Woolley nicht.
+
+Für Brauer und Weinmacher: die Zahlen
+
+Modellrechnung, keine Messung. Gerechnet ist nur der Zucker, den Woolley ins Fass gibt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| anderthalb Pfund Zucker auf acht Weingallonen | 22,5 g/l | 1.009 | 9 | 2,2 | 1,3 % |
+| anderthalb Pfund Zucker auf acht Ale-Gallonen | 18,4 g/l | 1.007 | 7 | 1,8 | 1,1 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und das Getränk bleibt süß.
+
+Annahmen: Pfund zu 453,6 g, das Fass ist voll. Gerechnet ist nur der zugesetzte Zucker, die Werte sind also eine Untergrenze und kommen zu Zuckerrest und Alkohol des Ales selbst hinzu. Nicht eingerechnet sind die Orange und die Zuckerstücke in den Flaschen.
+
+Praxis. Heutiger Hinweis, nicht bei Woolley: Die Flaschengärung baut Druck auf, und gewöhnliche Flaschen können platzen. Man nimmt druckfeste Flaschen, lagert sie kühl und öffnet sie vorsichtig. Für den Ingwer nennt Woolley keine Menge und sagt nicht, ob er frisch oder getrocknet ist; wer nachbraut, beginnt mit wenigen Scheiben. Das Ale bleibt ein alkoholisches Getränk.</note>
+        <note type="gloss" target="#woo-003-orig" n="eight Gallons" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Ale-Gallone fasste rund 4,6 Liter, die Weingallone rund 3,8 Liter. Das Fass fasst also etwa 30 bis 37 l; die Übersetzung rechnet mit 4 l je Gallone, also etwa 32 l.</note>
+        <note type="gloss" target="#woo-003-orig" n="Ale" resp="#fyndling">Der Name bleibt stehen. Ludwigs englisch-deutsches Wörterbuch von 1706 unterscheidet „ale“ als ungehopftes von „beer“ als gehopftem Bier.</note>
+        <note type="gloss" target="#woo-003-orig" n="working" resp="#fyndling">„To work“ heißt hier gären (Ludwig 1706: „jären, verjären“). „When it hath done working“ heißt: wenn es ausgegoren hat; „it will work afresh“: es gärt von Neuem.</note>
+        <note type="interpretive_choice" target="#woo-003-orig" n="Tun it into a Vessel … when it hath done working" resp="#fyndling" subtype="contextual">Das Ale, im Text nur „it“ und vom Titel her benannt, kommt jung ins Fass und gärt dort aus; erst danach folgen die Zusätze. So beginnt auch Woolleys voriges Rezept („When your Ale is tunned into a Vessel … and that hath done working“), und Ludwig 1706 übersetzt „to tun“ mit „in ein faß thun“.<list type="alternatives"><item>Schon fertig vergorenes Ale wird nur umgefüllt.<note type="rationale">Der Text schließt es nicht aus. Digby gebraucht „tun“ aber für das Füllen des noch ungegorenen Mets ins Fass („for to Tun it, you must let it grow Luke-warm“), und das erste „done working“ steht nach dem Füllen.</note></item></list></note>
+        <note type="interpretive_choice" target="#woo-003-orig" n="Orange" resp="#fyndling" subtype="lexical">Orange, wohl die Bitterorange (Pomeranze): Ludwig 1706 übersetzt „Orange“ mit „eine pomerantze“ und führt die süße Frucht eigens als „China-orange“. Der Rezepttext bleibt bei „Orange“, weil Woolley nichts weiter sagt.<list type="alternatives"><item>Süße Orange<note type="rationale">Mit dem bloßen Wort nicht ausgeschlossen; Ludwigs Eintrag zeigt nur, dass die süße Frucht eigens benannt wurde.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rosinenwein oder Stepony</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/woo-001/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/woo-001</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>The Queen-like Closet; or, Rich Cabinet (London 1670)</title>
+          <date when="1670">1670</date>
+          <idno type="URI">https://github.com/textcreationpartnership/A66847</idno>
+          <note>Text: Text Creation Partnership, EEBO-TCP A66847, CC0 1.0</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Englisch der Restaurationszeit (London 1670); Hannah Woolley</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="woo-001">
+        <head>Rosinenwein oder Stepony</head>
+        <div type="original" xml:id="woo-001-orig" xml:lang="und" corresp="#woo-001-trans">
+          <p>LV. To make Raisin Wine or Stepony.
+Take four Gallons of Spring-water, four pounds of Raisins of the Sun stoned, the juice of four good Limons, and the Rind of two cut thin boil the Raisins, and Pill in the Water for half an hour or more, then put in the Iuice of Limon, and a little Spice, Sugar and Rosewater, and let it stand but a little more over the fire; then put it into an earthen pot, and beat it together till it be cold, then bottle it up, it will keep but a few days.</p>
+        </div>
+        <div type="translation" xml:id="woo-001-trans" xml:lang="de" corresp="#woo-001-orig">
+          <p>Nimm etwa 16 l (vier Gallonen) Quellwasser, etwa 1,8 kg (vier Pfund) sonnengetrocknete Rosinen, entsteint, den Saft von vier guten Zitronen und die Schale von zweien, dünn geschnitten.</p>
+          <p>Koche die Rosinen und die Schale eine halbe Stunde oder länger im Wasser. Dann gib den Zitronensaft hinein, dazu ein wenig Gewürz, Zucker und Rosenwasser, und lass es nur noch kurz über dem Feuer stehen.</p>
+          <p>Dann füll es in einen irdenen Topf und schlage alles miteinander, bis es kalt ist. Danach füll es in Flaschen. Es hält nur wenige Tage.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="four Gallons of Spring-water">Quellwasser</ingredient> - 16 l</item>
+            <item><ingredient orig="four pounds of Raisins of the Sun stoned">Rosinen, sonnengetrocknet, entsteint</ingredient> - 1.8 kg</item>
+            <item><ingredient en="lemon" orig="the juice of four good Limons" commodity="wikidata:Q1093742" source="#fyndling-ingredient-name">Zitronen (Saft)</ingredient> - 4 Stück</item>
+            <item><ingredient orig="the Rind of two cut thin">Zitronenschale, dünn geschnitten</ingredient> - 2 Stück</item>
+            <item>
+              <ingredient en="spice" orig="a little Spice" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürz</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="Sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="rose water" orig="Rosewater" commodity="wikidata:Q900450" source="#fyndling-ingredient-name">Rosenwasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#woo-001-trans" resp="#fyndling">Was ist das? Ein gekochter Rosinen-Zitronen-Trunk zum baldigen Verbrauch. Trotz des Namens „Raisin Wine“ lässt Woolley ihn nicht gären: Sie kocht Rosinen und Zitronenschale aus, würzt und süßt, schlägt den Sud kalt und füllt ihn ab. Eine Gär- oder Standzeit kommt nicht vor, und nach ihren Worten hält das Getränk nur wenige Tage.
+
+Kochen und Würzen. Rosinen und dünn geschnittene Schale kochen eine halbe Stunde oder länger im Wasser und geben dabei ihren Geschmack ab. Saft, Gewürz, Zucker und Rosenwasser kommen erst danach dazu und bleiben nur noch kurz am Feuer. Welches Gewürz und wie viel Zucker und Rosenwasser, sagt Woolley nicht; das bleibt dem eigenen Geschmack überlassen.
+
+Kalt schlagen. Im irdenen Topf wird der heiße Sud geschlagen, bis er kalt ist; so kühlt er ab, und alles mischt sich. Ein Gerät nennt Woolley nicht. Ob Rosinen und Schale vor dem Abfüllen herauskommen, sagt sie ebenfalls nicht; Digby seiht sein ähnliches „Stepponi“ vor dem Abfüllen ausdrücklich ab.
+
+Haltbarkeit. Heute würde man sagen: Ein gezuckerter, abgekühlter Sud verdirbt in der Flasche nach einigen Tagen oder beginnt von selbst zu gären. Das passt zu Woolleys „it will keep but a few days“.
+
+Praxis. Für die volle Menge von rund 16 l braucht es einen großen Kessel; alle Zutaten lassen sich im selben Verhältnis verkleinern. Beim Umfüllen der heißen Flüssigkeit in den Tontopf vorsichtig sein. Als heutiger Rat: Rosinen und Schale vor dem Abfüllen abseihen, die Flaschen kühl stellen und das Getränk innerhalb weniger Tage trinken. Beginnt es in der verschlossenen Flasche zu gären, baut sich Druck auf; solche Flaschen vorsichtig öffnen.</note>
+        <note type="gloss" target="#woo-001-orig" n="Stepony" resp="#fyndling">Woolleys zweiter Name für diesen Rosinentrunk mit Zitrone. Das Wort steht in keinem der befragten englischen Wörterbücher der Zeit; Digby (1669) kennt ein ähnliches Getränk als „Stepponi“. Der Name bleibt deshalb stehen.</note>
+        <note type="gloss" target="#woo-001-orig" n="Gallons" resp="#fyndling">Woolley sagt nicht, welche Gallone sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Hier ist mit rund 4 Litern je Gallone gerechnet; vier Gallonen sind also etwa 16 Liter, genau zwischen rund 15 und 18,5 Litern.</note>
+        <note type="gloss" target="#woo-001-orig" n="Pill" resp="#fyndling">Hier ein Hauptwort: die Zitronenschale, die kurz vorher als „Rind“ genannt ist. Ludwigs englisch-deutsches Wörterbuch von 1706 übersetzt „Pill“ mit „die schale, rinde“ und verweist auf „Peel“. Mit einer Pille hat das Wort hier nichts zu tun.</note>
+        <note type="interpretive_choice" target="#woo-001-orig" n="the Rind of two" resp="#fyndling" subtype="contextual">Die Schale von zwei der vier Zitronen, deren Saft genommen wird. So liest sich der Satz am einfachsten, und Longes Rosinenwein (lon-100) verfährt ebenso: Saft von zwei Zitronen, Schale von einer („the iuice of 2 lemons and one pill“).<list type="alternatives"><item>Zwei weitere Zitronen nur für die Schale.<note type="rationale">Der Satz schließt es nicht aus, aber nichts im Text spricht dafür.</note></item></list></note>
+        <note type="interpretive_choice" target="#woo-001-orig" n="then put it into an earthen pot … then bottle it up" resp="#fyndling" subtype="contextual">Woolley sagt nicht, ob Rosinen und Schale vor dem Abfüllen herauskommen; die Übersetzung lässt das offen und ergänzt keinen Seihschritt.<list type="alternatives"><item>Vor dem Abfüllen abseihen.<note type="rationale">Digby seiht beim ähnlichen Stepponi ausdrücklich ab („having first let it run through a strainer“, dig-113). Für Woolley ist es nicht gesagt, heute aber naheliegend; die Zubereitungshinweise nennen es als heutigen Rat.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

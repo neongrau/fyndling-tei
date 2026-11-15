@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Stachelbeerwein</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/woo-006/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/woo-006</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>The Queen-like Closet; or, Rich Cabinet (London 1670)</title>
+          <date when="1670">1670</date>
+          <idno type="URI">https://github.com/textcreationpartnership/A66847</idno>
+          <note>Text: Text Creation Partnership, EEBO-TCP A66847, CC0 1.0</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Englisch der Restaurationszeit (London 1670); Hannah Woolley</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="woo-006">
+        <head>Stachelbeerwein</head>
+        <div type="original" xml:id="woo-006-orig" xml:lang="und" corresp="#woo-006-trans">
+          <p>LXXXIII. To make Gooseberry wine.
+Bruise ripe Goosberries with an Apple-Beater, but do not beat them too small, then strain them through a hair strainer, and put your Iuice into an earthen Pot, keep it covered four or five days till it be clear, then draw it out into another Vessel, letting it run into a hair sieve, stop it close, and let it stand one fortnight, then draw it out into quart Bottles, putting one Pound of sugar into eight Bottles, stop them up close, and in a week or fortnights time you may drink them.</p>
+        </div>
+        <div type="translation" xml:id="woo-006-trans" xml:lang="de" corresp="#woo-006-orig">
+          <p>Zerdrücke reife Stachelbeeren mit einem Apfelstampfer, aber schlage sie nicht zu klein. Dann seihe sie durch ein Haarsieb und gib den Saft in einen irdenen Topf. Halte ihn vier oder fünf Tage zugedeckt, bis er klar ist.</p>
+          <p>Dann zieh ihn in ein anderes Gefäß ab und lass ihn dabei in ein Haarsieb laufen. Verschließ es fest und lass es vierzehn Tage stehen.</p>
+          <p>Dann zieh ihn auf Flaschen zu etwa 1 l (ein Quart) ab und gib etwa 450 g (ein Pfund) Zucker auf acht Flaschen. Verschließ sie fest. Nach einer Woche oder vierzehn Tagen kannst du sie trinken.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ripe Goosberries">Stachelbeeren, reif</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="one Pound of sugar" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 450 g</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#woo-006-trans" resp="#fyndling">Was ist das? Ein Stachelbeerwein aus reinem Saft: Woolley gibt kein Wasser dazu und zuckert erst beim Abfüllen. Der Ablauf hat drei Stufen, jede in einem eigenen Gefäß.
+
+Zerdrücken und Seihen. Die reifen Beeren werden mit dem Stampfer zerdrückt, aber nicht zu klein geschlagen, und durch ein Haarsieb geseiht. Warum nicht zu klein, sagt Woolley nicht.
+
+Klären im Topf. Der Saft steht vier oder fünf Tage zugedeckt im irdenen Topf, bis er klar ist. Das Zeichen für das Ende ist die Klarheit, nicht die Zahl der Tage. Der Saft ist ungekocht, und der Text nennt keine Hefe: Die Gärung kommt von der Frucht selbst und aus dem Gefäß. Vom Gären spricht Woolley nicht, sie nennt nur das Ergebnis.
+
+Abziehen und Ruhe. Der klare Saft wird vom Satz in ein zweites Gefäß abgezogen und läuft dabei in ein Haarsieb. Dann wird das Gefäß fest verschlossen und steht vierzehn Tage. Beim Himbeerwein verlangt Woolley ausdrücklich einen Verschluss „but not very close“, hier dagegen fest. Ob der Saft in dieser Zeit noch gärt, sagt sie nicht.
+
+Zucker in die Flasche. Erst beim Abfüllen kommt der Zucker dazu, ein Pfund auf acht Quartflaschen, und die Flaschen werden fest verschlossen. In der verschlossenen Flasche vergärt der Zucker, und die Kohlensäure bleibt im Wein: eine Flaschengärung. Nach einer Woche oder vierzehn Tagen ist der Wein trinkbar, also jung. Wie viele Flaschen ein Ansatz ergibt, sagt Woolley nicht; sie nennt weder die Menge der Beeren noch die des Safts.
+
+Für Brauer und Weinmacher: die Zahlen
+
+Modellrechnung, keine Messung. Gerechnet ist nur der Zucker, den Woolley in die Flaschen gibt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| ein Pfund auf acht Wein-Quart | 59.9 g/l | 1.023 | 23 | 5.9 | 3.6 % |
+| ein Pfund auf acht Ale-Quart | 49.0 g/l | 1.019 | 19 | 4.8 | 2.9 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und das Getränk bleibt süß.
+
+Annahmen: Pfund zu 453,6 g; acht Flaschen zu je einem Quart, das Weinquart zu 0,946 l, das Ale-Quart zu 1,156 l. Eingerechnet ist nur der zugesetzte Zucker, die Werte sind eine Untergrenze: Den Zucker des Safts beziffert Woolley nicht, und der Saft hat vor dem Abfüllen rund drei Wochen gestanden und ist vermutlich schon angegoren (Annahme). Die Zahlen zeigen, was der Flaschenzucker zum Wein beiträgt, nicht dessen Gesamtstärke.
+
+Praxis. Heutiger Hinweis, nicht bei Woolley: Ohne eingefahrenes Gefäß kann man dem Saft eine Weinhefe zusetzen. Ein Kartoffelstampfer aus Holz tut den Dienst des Apfelstampfers. Für die vierzehn Tage im verschlossenen Gefäß nimmt man heute einen Gärspund, solange der Saft noch gärt. Die Flaschengärung baut Druck auf, und gewöhnliche Flaschen können dabei platzen. Man nimmt druckfeste Flaschen (Bügel- oder Sektflaschen), lagert sie kühl und öffnet sie vorsichtig. Woolley sagt zu alldem nichts.</note>
+        <note type="gloss" target="#woo-006-orig" n="Apple-Beater" resp="#fyndling">Wörtlich „Apfelschläger“, ein Stampfer oder Stößel zum Zerdrücken. Ludwig (1706) übersetzt beater mit „Stößel, Stampfschlägel“. Woolley beschreibt das Gerät nicht näher.</note>
+        <note type="gloss" target="#woo-006-orig" n="hair strainer / hair sieve" resp="#fyndling">Haarsieb: ein Sieb mit einer Bespannung aus Haar, meist Pferdehaar.</note>
+        <note type="gloss" target="#woo-006-orig" n="quart Bottles" resp="#fyndling">Flaschen, die ein Quart fassen; Ludwig (1706) erklärt quart-bottle als „eine gläserne Flasche, so ein Maß hält“. Woolley sagt nicht, welches Quart sie meint: Das Weinquart fasste rund 0,95 Liter, das Ale-Quart rund 1,16 Liter.</note>
+        <note type="interpretive_choice" target="#woo-006-orig" n="stop it close, and let it stand one fortnight" resp="#fyndling" subtype="contextual">Das zweite Gefäß wird fest verschlossen, wie der Text sagt. Woolley unterscheidet das: Beim Himbeerwein schreibt sie „stop it, but not very close“, hier „close“.<list type="alternatives"><item>Locker verschlossen oder mit Luftloch, damit Gärgase entweichen.<note type="rationale">So würde man heute einen noch gärenden Saft behandeln (Gärspund). Der Text gibt dafür keinen Anhalt; der Saft hat sich nach vier oder fünf Tagen schon geklärt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

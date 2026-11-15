@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Brezeln und aufgegangene Küchlein aus Lappenteig</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/so1-080/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/so1-080</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Solothurn, Zentralbibliothek, Cod. S 490</title>
+          <date when="1487" cert="low">um 1487</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.so1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">so1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.so1</idno>
+          <idno type="corema-recipe">so1.81</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, vermutlich elsässisch, spätestens um 1487)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="so1-080">
+        <head>Brezeln und aufgegangene Küchlein aus Lappenteig</head>
+        <div type="original" xml:id="so1-080-orig" xml:lang="de-x-fnhd" corresp="#so1-080-trans">
+          <p>xxiiij Item mit dem selbenn teig abgesatzten mit der siden farbe mag man pretzen mach als ein hand wit kleiner vnd grosser vnd die also bachennes vnd mit einer fidern ein klein honig an strichenn vnd Also druckenn fur tragen fur gebrattes Auß denn selbenn lappischenn teig mag man erhaben kugelin machenn oder kuchlin eins alten kas darin geribenn oder aber mit bir heffen erhabenn oder mit mett Beseen die kuchlin gehorenn in kas bru furgetragen oder heis truckem gegebenn Man ysset si ouch uß salsenn</p>
+        </div>
+        <div type="translation" xml:id="so1-080-trans" xml:lang="de" corresp="#so1-080-orig">
+          <p>Mit demselben Teig, mit Safran abgesetzt, kann man Brezeln machen, eine Hand breit, kleiner und größer, und sie so backen und mit einer Feder ein wenig Honig daraufstreichen und sie so trocken auftragen, anstelle eines Gebratenen.</p>
+          <p>Aus demselben Lappenteig kann man aufgegangene Kügelchen machen oder Küchlein, mit altem Käse darin gerieben, oder aber mit Bierhefe aufgegangen oder mit Methefe. Die Küchlein gehören in Käsebrühe aufgetragen oder heiß und trocken gegeben. Man isst sie auch aus Salsen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="dem selbenn teig">Lappenteig (Teig der Lappenküchlein: Eier, ein Drittel Milch, weißes Mehl)</ingredient>
+            </item>
+            <item>
+              <ingredient en="saffron" orig="siden farbe" commodity="wikidata:Q25434" source="#fyndling-ingredient-name">Safran</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein klein honig">Honig, ein wenig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="eins alten kas darin geribenn">Alter Käse, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="bir heffen" commodity="wikidata:Q12045459" source="#corema-ingredient-index">Bierhefe</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="kas bru" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Käsebrühe zum Auftragen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#so1-080-trans" resp="#fyndling">Was ist das? Das Kapitel verwendet den Lappenteig aus dem Rezept für Lappenküchlein noch zweimal: für Brezeln, die mit Honig bestrichen werden, und für aufgegangene Kügelchen oder Küchlein. Eigene Teigzutaten und Mengen nennt es nicht.
+
+Der Teig. Im Bezugsrezept ist es ein fester Teig aus Eiern und einem Drittel Milch, auf dem Brett mit weißem Mehl ausgewellt. Für die Brezeln wird er „mit Safran abgesetzt“. Ob der ganze Teig gelb wird oder nur Teile farbig abgesetzt werden, sagt der Text nicht. Das Lappenküchlein-Rezept färbt gelb mit Safran, der in Wein oder Milch zerrieben ist.
+
+Die Brezeln. Eine Hand breit, kleiner und größer. Wie gebacken wird, steht nicht da: kein Fett, kein Ofen. Im selben Teil wird ein anderer Teig löffelweise in Schmalz ausgebacken; das ist eine Möglichkeit, kein Beleg für dieses Kapitel. Danach kommt mit einer Feder ein wenig Honig darauf, und die Brezeln werden trocken, ohne Brühe oder Tunke, anstelle eines Gebratenen aufgetragen.
+
+Die Küchlein. Aus dem Teig werden Kügelchen oder Küchlein, die „aufgegangen“ sein sollen. Der Text nennt zwei Wege, verbunden mit „oder aber“: geriebenen alten Käse darin, oder Bierhefe beziehungsweise Hefe vom Met. Ob der Käse statt der Hefe oder neben ihr gemeint ist, bleibt offen; aufgehen lässt den Teig nur die Hefe. Gehzeit und Backart nennt der Text nicht.
+
+Anrichten. In Käsebrühe, deren Zubereitung hier nicht steht, oder heiß und trocken; man isst sie auch mit Salsen.
+
+Praxis. Den Lappenteig nach dem Bezugsrezept ansetzen. Für die Brezeln einen Teil mit in Milch oder Wein zerriebenem Safran färben, handbreite Brezeln formen, backen und dünn mit Honig bestreichen. Für die Küchlein den Teig mit Hefe gehen lassen oder alten Käse hineinreiben. Statt Bierhefe nimmt man heute frische Backhefe, das ist ein moderner Ersatz. Wer in Schmalz ausbäckt, arbeitet mit heißem Fett.</note>
+        <note type="gloss" target="#so1-080-orig" n="xxiiij" resp="#fyndling">Kapitelnummer 24 im dritten Teil, keine Menge.</note>
+        <note type="gloss" target="#so1-080-orig" n="druckenn fur tragen" resp="#fyndling">Trocken auftragen, also ohne Brühe oder Tunke. Der Gegensatz steht im selben Kapitel: die Küchlein kommen in Käsebrühe oder heiß und trocken auf den Tisch.</note>
+        <note type="gloss" target="#so1-080-orig" n="fur gebrattes" resp="#fyndling">„für“ heißt hier „anstelle von“: Die Brezeln werden statt eines Gebratenen aufgetragen, wie eine Fastenspeise an anderer Stelle des Buchs „fur ein gebrattes“.</note>
+        <note type="gloss" target="#so1-080-orig" n="kas bru" resp="#fyndling">Käsebrühe. Wie sie gemacht wird, steht hier nicht.</note>
+        <note type="gloss" target="#so1-080-orig" n="salsenn" resp="#fyndling">Salsen sind würzige Tunken. „Aus Salsen essen“ heißt, die Küchlein in die Tunke zu tauchen.</note>
+        <note type="interpretive_choice" target="#so1-080-orig" n="abgesatzten mit der siden farbe" resp="#fyndling" subtype="lexical">„Mit Safran abgesetzt“: Seidfarbe ist ein alter Name des Safrans (Lexer sîde-varwe „seydvarb, crocus“ nach dem Vocabular von 1482; sîtvarwe bei Diefenbach; Pritzel/Jessen „Seidfarb: Crocus sativus“). Der Druck von 1487 hat „abgeſatzt mit der ſeytfarb“, die Heidelberger Abschrift von 1580 „abgesetzt mit der seit farbe“. „Abgesetzt“ bleibt wörtlich stehen, weil der Text nicht sagt, ob der ganze Teig gefärbt wird oder nur Teile davon.<list type="alternatives"><item>papageiengrün gefärbt<note type="rationale">Schmeller stellt „sitvarbe“ zu Sittich. Dagegen stehen die Glossen mit crocus.</note></item><item>„auf gesottene Weise abgesetzt“<note type="rationale">So steht es in der Kölner Handschrift („mit sodener wiese“). Das ist dort eine Verschreibung desselben Worts, wie „soden farb“ an anderer Stelle derselben Handschrift.</note></item><item>Seidenfarbe, Bedeutung ungeklärt<note type="rationale">Ehlert 2010 übersetzt „Seidenfarbe“ mit Fragezeichen und führt das Wort im Glossar als ungeklärt, mit Stopps Vermutung „Safran?“.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-080-orig" n="lappischenn teig" resp="#fyndling" subtype="lexical">Lappenteig: der Teig der Lappenküchlein zwei Kapitel vorher, die dort „lappischenn kuchlin“ heißen. Der Druck von 1487 schreibt „leppiſchen teig“, die Kölner Handschrift „lappen teige“; Ehlert 2010 übersetzt „lappenartig aussehend“.<list type="alternatives"><item>„fade, wenig gesalzen“<note type="rationale">Das Pfälzische Wörterbuch kennt „läppsch“ so von Speisen, aber als Mundart des 20. Jahrhunderts. Der Rückbezug auf die Lappenküchlein trägt besser.</note></item><item>„schlaff, weich“<note type="rationale">Grimm, läppisch 1 „nach lappen schlaff hangen“. Das Bezugsrezept verlangt aber ausdrücklich einen festen Teig.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-080-orig" n="mit mett Beseen" resp="#fyndling" subtype="philological">„Mit Methefe“: Die Handschrift hat nach „mett“ das Wort „Beseen“, das keinen Sinn ergibt. Der Druck von 1487 hat „medt hefen“, die Kölner Handschrift „mehid hebe“, und Ehlert 2010 setzt „hefen“ nach den Drucken in den Text. Der erste Buchstabe ist in der Handschrift so geformt wie das h von „heffen“ in derselben Zeile; gemeint ist „hefen“.<list type="alternatives"><item>„mit Met“ ohne Hefe, „Beseen“ als eigenes Wort<note type="rationale">Für „beseen“ findet sich keine passende Wortbedeutung, und alle Parallelen nennen die Hefe vom Met.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-080-orig" n="eins alten kas darin geribenn oder aber mit bir heffen erhabenn" resp="#fyndling" subtype="contextual">Zwei Wege zu aufgegangenen Küchlein, verbunden mit „oder aber“: mit geriebenem altem Käse darin, oder mit Bierhefe beziehungsweise Methefe aufgegangen. Der Druck von 1487 hat dieselbe Reihung („eins altē keſe darein geriebē oď mit byer od medt hefen erhaben“); die Übersetzung hält sie.<list type="alternatives"><item>Käse und Hefe zusammen<note type="rationale">Ehlert 2010 übersetzt „mit altem geriebenem Käse gefüllt und mit Bierhefe aufgegangen“. Der Wortlaut hat aber „oder“; aufgehen lässt den Teig in der Küche nur die Hefe.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#heffen"/></note>
+      </div>
+    </back>
+  </text>
+</TEI>

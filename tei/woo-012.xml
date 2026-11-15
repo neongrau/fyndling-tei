@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cider oder Perry, klar wie Felsenwasser</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-15">2026-11-15</date>
+        <idno type="url">https://fyndling.de/rezepte/woo-012/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/woo-012</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>The Queen-like Closet; or, Rich Cabinet (London 1670)</title>
+          <date when="1670">1670</date>
+          <idno type="URI">https://github.com/textcreationpartnership/A66847</idno>
+          <note>Text: Text Creation Partnership, EEBO-TCP A66847, CC0 1.0</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Englisch der Restaurationszeit (London 1670); Hannah Woolley</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="woo-012">
+        <head>Cider oder Perry, klar wie Felsenwasser</head>
+        <div type="original" xml:id="woo-012-orig" xml:lang="und" corresp="#woo-012-trans">
+          <p>CLXXXIV. To make Cider or Perry as clear as Rock water.
+Take to two Quarts of Cider, half a Pint of Milk, put them both in an Hipocras bag, and when it runs clear, bottle it up, and when it is a Month old, it will sparkle in the Glass as you drink it.</p>
+        </div>
+        <div type="translation" xml:id="woo-012-trans" xml:lang="de" corresp="#woo-012-orig">
+          <p>Nimm zu etwa 2 l (zwei Quarts) Cider etwa 250 ml (ein halbes Pint) Milch und gib beides zusammen in einen Hippocras-Beutel. Wenn er klar durchläuft, fülle ihn in Flaschen. Wenn er einen Monat alt ist, perlt er im Glas, während du ihn trinkst.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="two Quarts of Cider">Cider oder Perry</ingredient> - 2 l</item>
+            <item><ingredient en="milk" orig="half a Pint of Milk" commodity="wikidata:Q8495" source="#fyndling-ingredient-registry">Milch</ingredient> - 250 ml</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#woo-012-trans" resp="#fyndling">Was ist das? Ein fertiger Cider wird mit wenig Milch geklärt, auf Flaschen gezogen und reift dort einen Monat. Die Überschrift nennt Cider oder Perry, der Text selbst spricht nur vom Cider; das Verfahren gilt nach Woolleys Überschrift für beide. Wie der Cider gemacht wird, sagt sie hier nicht.
+
+Klären mit Milch. Auf zwei Quarts Cider kommt ein halbes Pint Milch, ein Teil Milch auf acht Teile Cider. Beides kommt zusammen in den Hippocras-Beutel und läuft hindurch. Das Zeichen für das Ende ist die Klarheit: „when it runs clear“. Eine Standzeit vor dem Seihen nennt Woolley nicht, ebenso wenig, ob der erste trübe Ablauf noch einmal aufgegossen wird. Wie die Milch wirkt, erklärt sie nicht. Heutiges Wissen, knapp: Im sauren Cider gerinnt die Milch, die Flocken bleiben im Tuch zurück und halten Trübstoffe fest. Milch und Milcheiweiß dienen bis heute zum Schönen von Wein.
+
+Flasche und Perlen. Der klare Cider kommt in Flaschen. Wenn er einen Monat alt ist, perlt er nach Woolley im Glas. Zucker, Hefe oder Verschluss nennt sie nicht. Heutiges Wissen: Das Perlen kommt aus einer Nachgärung in der Flasche; dafür muss der Cider noch vergärbaren Zucker und Hefe enthalten, und die Flaschen müssen dicht sein.
+
+Praxis. Heutiger Hinweis, nicht bei Woolley: Statt des Hippocras-Beutels tut es ein sauberes, ausgekochtes Seihtuch über einer Schüssel. Die Nachgärung baut Druck auf, und gewöhnliche Flaschen können platzen. Nimm druckfeste Flaschen (Bügel- oder Sektflaschen), lagere sie kühl und öffne sie vorsichtig. Ein ganz durchgegorener, trockener Cider perlt kaum nach.</note>
+        <note type="gloss" target="#woo-012-orig" n="Cider / Perry" resp="#fyndling">Cider ist vergorener Apfelsaft, Perry vergorener Birnensaft. Ludwig (1706) übersetzt cider mit „der äpffelwein“ und perry mit „birnwein, birnmost“.</note>
+        <note type="gloss" target="#woo-012-orig" n="Hipocras bag" resp="#fyndling">Ein Seihbeutel aus Tuch, benannt nach dem Gewürzwein Hippocras, der durch ihn geseiht wurde; das Glossar der Digby-Ausgabe (1910) erklärt ihn als „a bag used in making hippocras“. Ein sauberes, ausgekochtes Seihtuch tut denselben Dienst.</note>
+        <note type="gloss" target="#woo-012-orig" n="Rock water" resp="#fyndling">Wörtlich „Felsenwasser“; Ludwig (1706) übersetzt rock mit „ein felß, eine steinklippe“. Gemeint ist wohl Wasser, das klar aus dem Fels tritt, als Bild für völlige Klarheit.</note>
+        <note type="gloss" target="#woo-012-orig" n="Quart / Pint" resp="#fyndling">Woolley sagt nicht, welches Maß sie meint: Die Weingallone fasste rund 3,8 Liter, die Ale-Gallone rund 4,6 Liter. Ein Quart ist ein Viertel davon (rund 0,95 bzw. 1,16 Liter), ein Pint ein Achtel (rund 0,47 bzw. 0,58 Liter). Das Verhältnis von Milch zu Cider bleibt in beiden Fällen gleich.</note>
+        <note type="interpretive_choice" target="#woo-012-orig" n="it will sparkle in the Glass as you drink it" resp="#fyndling" subtype="lexical">„perlt er im Glas“: Ludwig (1706) gibt für to sparkle neben „funckeln, glintzern“ ausdrücklich „lustig springen, (wie wein, wenn er eingeschencket wird,)“, französisch petiller. Dazu passen der Monat in der Flasche und „in the Glass as you drink it“.<list type="alternatives"><item>„funkelt er im Glas“: nur der Glanz des ganz klaren Getränks.<note type="rationale">Ludwig kennt auch diese Bedeutung, und die Überschrift zielt auf Klarheit. Die Monatsfrist erklärt sie aber nicht: Klar ist der Cider schon, wenn er aus dem Beutel läuft.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

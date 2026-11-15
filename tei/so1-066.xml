@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Küchlein aus gerösteten Äpfeln oder Birnen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-14">2026-11-14</date>
+        <idno type="url">https://fyndling.de/rezepte/so1-066/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/so1-066</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Solothurn, Zentralbibliothek, Cod. S 490</title>
+          <date when="1487" cert="low">um 1487</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.so1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">so1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.so1</idno>
+          <idno type="corema-recipe">so1.67</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (alemannisch, vermutlich elsässisch, spätestens um 1487)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="so1-066">
+        <head>Küchlein aus gerösteten Äpfeln oder Birnen</head>
+        <div type="original" xml:id="so1-066-orig" xml:lang="de-x-fnhd" corresp="#so1-066-trans">
+          <p>§ x Item wenn du opfel oder birn welcherlei sie sind do= ch reigelbirn sind die bestenn vnder winter ops von opflenn gerost gronach in milch schmaltz vnd ein wiß brot darin gereret herte gesottenn eier dar in gehackt mit guotem win oder milch darasß ein teiglin gemacht Zuo rechter maß vnd klein kuchl= in daruß gemacht geschossenn vß der hant in das sch maltz oder mit einem kleinen loffel in ein guott geba= chens nasses in keß bru oder in pfaffer</p>
+        </div>
+        <div type="translation" xml:id="so1-066-trans" xml:lang="de" corresp="#so1-066-orig">
+          <p>Wenn du Äpfel oder Birnen nimmst, welcherlei sie sind - doch Regelbirnen sind die besten - und Winterobst von Äpfeln: geröstet … in Butter und ein Weißbrot darin eingestreut, hart gesottene Eier hineingehackt, mit gutem Wein oder Milch daraus ein Teiglein gemacht, im rechten Maß, und kleine Küchlein daraus gemacht, aus der Hand in das Schmalz geschossen oder mit einem kleinen Löffel.</p>
+          <p>Das ist ein gutes Gebackenes, nass in Käsebrühe oder in Pfeffer.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="apple or pear" orig="opfel oder birn" commodity="wikidata:Q89 wikidata:Q13099586" cert="low" source="#fyndling-ingredient-context">Äpfel oder Birnen, am besten Regelbirnen</ingredient>
+            </item>
+            <item>
+              <ingredient en="butter" orig="milch schmaltz" commodity="wikidata:Q34172" source="#corema-ingredient-index">Butter</ingredient>
+            </item>
+            <item>
+              <ingredient en="white bread" orig="ein wiß brot" commodity="wikidata:Q1501889" source="#corema-ingredient-index">Weißbrot</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="herte gesottenn eier" commodity="wikidata:Q15260613" source="#fyndling-ingredient-name">Eier, hart gesotten</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="guotem win oder milch" commodity="wikidata:Q282" source="#fyndling-ingredient-name">Wein, gut</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="in das sch maltz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-name">Schmalz zum Ausbacken</ingredient>
+            </item>
+            <item>
+              <ingredient orig="keß bru">Käsebrühe, zum Anrichten nach Wahl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="pfaffer">Pfeffer (Sauce), zum Anrichten nach Wahl</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#so1-066-trans" resp="#fyndling">Was ist das? Ausgebackene Küchlein aus geröstetem Obst: Äpfel oder Birnen werden in Butter geröstet, mit eingestreutem Weißbrot und gehackten hart gesottenen Eiern vermengt, mit Wein oder Milch zu einem weichen Teiglein angemacht und in Schmalz ausgebacken. Angerichtet wird das Gebackene nass, in Käsebrühe oder in einem Pfeffer. Der erste Satz hat in der Handschrift kein Verb; das „nimmst“ der Übersetzung ist für den Sinn ergänzt.
+
+Das Wort nach „geröstet“. Hinter „gerost“ steht „gronach“, ein Wort, das kein Wörterbuch kennt. Der Druck von 1487 und die Kölner Handschrift haben an dieser Stelle „schön geröstet“. Ob gemeint ist, das Obst danach in die Butter zu geben, es nur fast fertig zu rösten oder es schön zu rösten, bleibt offen; die Übersetzung lässt die Stelle frei.
+
+Brot und Eier. Das Weißbrot wird hineingestreut, also zerkrümelt, und bindet mit den gehackten Eiern die weiche Obstmasse. Wie viel Brot und wie viele Eier, sagt der Text nicht. Ob das Obst geschält und geschnitten wird, auch nicht.
+
+Ausbacken. „Aus der Hand geschossen“ heißt: die Teigstücke mit einem raschen Wurf ins Fett geben; wer das nicht will, nimmt einen kleinen Löffel. Wie heiß das Schmalz sein soll und wie lange gebacken wird, steht nicht da. Heißes Fett spritzt, wenn feuchter Teig hineinfällt.
+
+Praxis. Heute: Äpfel oder feste Birnen in Stücke schneiden und in Butter weich rösten, zerkrümeltes Weißbrot und gehackte hart gekochte Eier untermengen, so viel Wein oder Milch zugeben, dass sich ein weicher, formbarer Teig ergibt, kleine Küchlein abstechen und in heißem Schmalz ausbacken. Zum Anrichten Käsebrühe oder einen Pfeffer; wie beide gemacht werden, steht nicht in diesem Eintrag. Die Zubereitungszeit von etwa einer Stunde ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#so1-066-orig" n="reigelbirn" resp="#fyndling">Regelbirne, eine Birnensorte. Lexer nennt sie eine Abart der Königsbirne, das Schweizerische Idiotikon führt sie als Regelbir(en). Welcher heutigen Sorte sie entspricht, ist nicht gesichert.</note>
+        <note type="gloss" target="#so1-066-orig" n="keß bru" resp="#fyndling">Käsebrühe. Lexer und das Frühneuhochdeutsche Wörterbuch erklären das Wort als Molke, das Schweizerische Idiotikon kennt Chäsbrüej als Käsesuppe. Welche von beiden gemeint ist, sagt der Text nicht.</note>
+        <note type="gloss" target="#so1-066-orig" n="pfaffer" resp="#fyndling">Pfeffer als Gericht: eine gewürzte, gebundene Pfeffersauce, in die das Gebackene gelegt wird. Wie sie gemacht wird, steht in diesem Eintrag nicht.</note>
+        <note type="interpretive_choice" target="#so1-066-orig" n="gronach" resp="#fyndling" subtype="lexical" cert="unknown">Offen gelassen, in der Übersetzung „…“. Das Wort steht deutlich da, ist aber in keinem Wörterbuch belegt (so auch Ehlert 2010, Glossar S. 400). Der Druck von 1487 hat an dieser Stelle „die beſtē ſchon geroͤſt“, die Kölner Handschrift „Roist sie schon“, die Drucke von 1486 und 1490 haben das Wort nicht.<list type="alternatives"><item>„darnach“, danach: erst rösten, dann in die Butter.<note type="rationale">Ergibt Sinn, ist aber graphisch weit entfernt und widerspricht dem Druck, in dem das Obst in der Butter geröstet wird.</note></item><item>„garnach“, beinahe (Frühneuhochdeutsches Wörterbuch, Grimm): das Obst nur fast fertig rösten.<note type="rationale">Das Wort ist belegt, ein Beleg in Kochtexten fehlt; die Stellung nach „geröstet“ wäre ungewöhnlich.</note></item><item>Entstellung des „schon“ (schön) der Vorlage.<note type="rationale">Steht an genau der Stelle, an der Druck und Kölner Handschrift „schon“ haben; eine Verschreibung, die von „schon“ zu „gronach“ führt, ist nicht erkennbar.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-066-orig" n="vnder winter ops" resp="#fyndling" subtype="philological">Übersetzt nach dem Druck von 1487 „vñ wynter obß vō opfeln“: „doch Regelbirnen sind die besten - und Winterobst von Äpfeln“. So setzt auch Ehlert 2010 (S. 74) „vnd“ nach den Drucken von 1486 und 1490 in den Text; die Kölner Handschrift nennt ebenfalls Äpfel und Birnen nebeneinander („vom besten winter obis Epphel ader birnn“).<list type="alternatives"><item>Wörtlich nach der Handschrift „vnder“: „Regelbirnen sind die besten unter dem Winterobst“.<note type="rationale">Für sich verständlich, dann hängt aber „von opflenn gerost“ ohne Bezug, und die Äpfel fallen als eigene Wahl aus.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-066-orig" n="gereret" resp="#fyndling" subtype="lexical">„eingestreut“: rêren heißt „fallen machen oder lassen“ (Lexer), das Schweizerische Idiotikon führt rēren als „etwas fallen lassen“. Das Weißbrot wird also zerkrümelt hineingestreut. Die Kölner Handschrift hat „Rere wies brod dar Inne“; in diesem Buch steht „rere“ auch in so1-125 für streuen.<list type="alternatives"><item>„hineingerührt“, wie der Druck von 1487 („darein geruͦret“) und die Koch- und Kellermeisterei 1574 („darein gerürt“).<note type="rationale">Ergibt dasselbe Ergebnis in der Masse, aber „rühren“ erschiene in dieser Handschrift als „ruoren“ oder „rüren“.</note></item></list></note>
+        <note type="interpretive_choice" target="#so1-066-orig" n="in ein guott geba= chens nasses" resp="#fyndling" subtype="philological">„Das ist ein gutes Gebackenes, nass in Käsebrühe oder in Pfeffer“: das Anrichten nach dem Ausbacken. Die Kölner Handschrift hat an dieser Stelle „Ist eyn gut gebacken“. Gegenüber dem Druck von 1487 („in ein gůt gebacken trucken oder naß“) und der Kölner Handschrift fehlt hier „trocken oder“; die Handschrift kennt nur das nasse Anrichten.<list type="alternatives"><item>„mit einem kleinen Löffel in ein gutes Ausbackfett“, dann nass angerichtet (so Ehlert 2010, Übersetzung S. 75).<note type="rationale">Hält sich an das „in“, braucht aber „gebachens“ als Wort für das Fett, das sonst nirgends so steht; die Kölner Handschrift trennt mit „Ist“.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
