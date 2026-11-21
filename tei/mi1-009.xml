@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Grüne Torte unter dem Glutdeckel</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-009/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-009</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-009">
+        <head>Grüne Torte unter dem Glutdeckel</head>
+        <div type="original" xml:id="mi1-009-orig" xml:lang="de-x-fnhd" corresp="#mi1-009-trans">
+          <p>Item Ein grun Turken nym air vnd semel mel vnd streychs durch ain pfeffer pfann mit ein ander oder durch ain schons tuech vnd dy grun salssen dar mit vnd in den turt vnd spreng den turt mit mel So print ez nicht an vnd Dek ez zwe mit ainer Eysnen dekn vnd gluent kollen oben dar auf das dem andren geleich prat wann ez sich protten hat So nims her aus auf ain schons tuech in ain schussel das ez gancz pleyb vnd sneyd ez oben auf kreicz weys vnd tue zuker dar auf</p>
+        </div>
+        <div type="translation" xml:id="mi1-009-trans" xml:lang="de" corresp="#mi1-009-orig">
+          <p>Eine grüne Torte. Nimm Eier und Semmelmehl und streiche es miteinander durch eine Pfefferpfanne oder durch ein sauberes Tuch, und die grüne Salse damit. Gib es in die Tortenform und bestreue die Form mit Mehl, so brennt es nicht an.</p>
+          <p>Decke es mit einem eisernen Deckel zu und lege glühende Kohlen oben darauf, damit es dem anderen gleich brät.</p>
+          <p>Wenn es gebraten ist, so nimm es heraus auf ein sauberes Tuch in eine Schüssel, damit es ganz bleibt. Schneide es oben kreuzweise auf und gib Zucker darauf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="air" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="white breadcrumbs" orig="semel mel" commodity="wikidata:Q107262394" source="#fyndling-ingredient-context">Semmelmehl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dy grun salssen">Grüne Salse (Kräutersauce)</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#fyndling-ingredient-registry">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zuker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-009-trans" resp="#fyndling">Was ist das? Eine grüne Torte ohne Teig: Eier und Semmelmehl werden durchgestrichen, mit grüner Kräutersalse gefärbt, in einer ausgemehlten Form unter einem eisernen Deckel mit Glut gebacken, dann gestürzt, oben kreuzweise eingeschnitten und mit Zucker bestreut. Heute steht das einem gebackenen Kräuteromelett am nächsten.
+
+Durchstreichen. Eier und Semmelmehl gehen zusammen durch die Pfefferpfanne, einen Durchschlag, oder durch ein sauberes Tuch. So wird die Masse glatt und ohne Klümpchen. Ob die grüne Salse mit durchgestrichen oder nur dazugegeben wird, lässt „vnd dy grun salssen dar mit“ offen.
+
+Die grüne Salse. Das Rezept nennt sie mit bestimmtem Artikel und setzt sie als bekannt voraus; welche Kräuter hineingehören, sagt es nicht. Im Kochbuch des Meisters Hans besteht die grüne Salse aus Salbei, Petersilie und Sauerampfer mit Gewürzen und Brot, angemacht mit Wein oder Essig. Die Wahl der Kräuter ist beim Nachkochen eine eigene Entscheidung, keine Angabe dieses Textes.
+
+Form und Hitze. Die Form wird mit Mehl bestreut, damit nichts anbrennt; der Text nennt das nach dem Einfüllen. Auf den eisernen Deckel kommen glühende Kohlen, „das dem andren geleich prat“: damit die Torte oben so gart wie am anderen Teil, wohl dem Boden. Dass die Form selbst auf der Glut steht, setzt der Text damit voraus, sagt es aber nicht ausdrücklich. Ein Rezept derselben Art in den Kochbüchern aus Cpg 485 (Heidelberg, 1580) nennt beides: die Pfanne auf die Glut und Glut auch auf den Deckel.
+
+Wann fertig? „wann ez sich protten hat“, wenn sie durchgebacken ist. Ein Zeichen oder eine Zeit nennt der Text nicht; die Eier müssen ganz gestockt sein.
+
+Anrichten. Die Torte wird auf ein sauberes Tuch in einer Schüssel gestürzt, damit sie ganz bleibt, oben kreuzweise aufgeschnitten und mit Zucker bestreut.
+
+Praxis. Mengen nennt das Rezept nicht. Wer nachkocht, stellt die ausgemehlte Form auf schwache Glut und legt Kohlen auf den Deckel; das ist eine heutige Ergänzung. Die Zubereitungszeit von etwa 60 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-009-orig" n="pfeffer pfann" resp="#fyndling">Ein pfannenförmiger Seiher, ein Durchschlag. Das Frühneuhochdeutsche Wörterbuch erklärt die Pfefferpfanne als Seiher zum Durchseihen einer Brühe; das Grimmsche Wörterbuch zitiert die Küchenmeisterei: „ein pfefferpfann das ist ein durchschlag“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="Turken" resp="#fyndling" subtype="philological">Torte. In der Überschrift steht deutlich „Turken“, gemeint ist „Turten“; im Rezept selbst heißt das Gericht danach zweimal „turt“.<list type="alternatives"><item>„Turken“ als eigenes Wort<note type="rationale">Im Zusammenhang ohne Sinn; der Text beschreibt eine Torte und nennt sie gleich darauf „turt“.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="grun / dy grun salssen" resp="#fyndling" subtype="lexical">Grün als Farbe: „dy grun salssen“ ist die grüne Salse, eine Würzsauce aus grünen Kräutern, die als bekannt vorausgesetzt wird und der Torte Farbe und Namen gibt. Als feste Sauce kennt sie auch die Wiener Handschrift Cod. 2897 („mach ein gruene salsen“) und Meister Hans („Ain grune sals“ aus Salbei, Petersilie und Sauerampfer).<list type="alternatives"><item>Grün im Sinn von roh, ungekocht<note type="rationale">So steht „grün“ in einigen alemannischen Rezepten für rohe Zutaten. Vor „salssen“ mit bestimmtem Artikel passt der feste Saucenname besser, und die Überschrift nennt die ganze Torte grün.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="Eysnen dekn" resp="#fyndling" subtype="philological" cert="unknown">Eiserner Deckel. Der Satz beginnt mit „Dek ez zwe“, deck es zu. Das Transkript folgt hier Ehlert („dekn“) und dem Bild: Der erste Buchstabe hat Bauch und langen, nach links geschwungenen Oberstrich wie das runde d von „Dek“ in der Zeile darüber; oberhalb kann ein Kürzungszeichen stehen. Ganz eindeutig ist die Stelle nicht.<list type="alternatives"><item>„lek“, wie die CoReMA-Basistranskription liest<note type="rationale">Die CoReMA-Bearbeiter halten das l selbst für unsicher. Lexer, Benecke/Müller/Zarncke und Schmeller kennen „lecke“ nur als Leiste, Saum, Schicht oder Benetzung, nicht als Deckel. Als Verschreibung bliebe die Bedeutung dieselbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="den turt" resp="#fyndling" subtype="contextual">Die Tortenform: „in den turt“ ist das Gefäß, in das die Masse kommt, und „spreng den turt mit mel, so print ez nicht an“ spricht für das Ausmehlen der Form gegen das Anbrennen.<list type="alternatives"><item>Die Torte selbst<note type="rationale">„turt“ ist sonst das Gericht, und der Text nennt das Bestreuen erst nach dem Einfüllen. Dann würde die Masse oben mit Mehl bestreut; anbrennen kann sie aber vor allem am Boden.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

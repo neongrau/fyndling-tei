@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dreierlei aus einem ganzen Hecht</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-006/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-006</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-006">
+        <head>Dreierlei aus einem ganzen Hecht</head>
+        <div type="original" xml:id="mi1-006-orig" xml:lang="de-x-fnhd" corresp="#mi1-006-trans">
+          <p>wildu machen trey lay essen aus aim hechten oder visch das der visch gancz peleib So slach vmb das mitter des visch ein weiss tuech vnd lass daz haup vnd den swancz wol aus gen salcz in vnd leg in auf ain rost vnd laz in pratten das voder tail pegeuß mit haissen smalcz vnd sprengs mit mel daz tuech necz vnd mit haissem wein vnd der hintter tail prat sich selber vnd gib guete salsen dar zwe</p>
+        </div>
+        <div type="translation" xml:id="mi1-006-trans" xml:lang="de" corresp="#mi1-006-orig">
+          <p>Willst du dreierlei Speisen aus einem Hecht oder einem anderen Fisch machen, und zwar so, dass der Fisch ganz bleibt, dann schlage ein weißes Tuch um die Mitte des Fisches und lass Kopf und Schwanz gut herausstehen. Salze ihn, lege ihn auf einen Rost und lass ihn braten.</p>
+          <p>Das vordere Teil begieße mit heißem Schmalz und bestreue es mit Mehl. Das Tuch netze mit heißem Wein. Das hintere Teil brät sich selbst.</p>
+          <p>Gib eine gute Salse dazu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="aim hechten oder visch">Hecht oder ein anderer Fisch, ganz</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="salcz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="haissen smalcz">Schmalz, heiß</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#fyndling-ingredient-registry">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="haissem wein">Wein, heiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="guete salsen">Salse (im Text nicht beschrieben)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-006-trans" resp="#fyndling">Was ist das? Ein ganzer Hecht oder ein anderer Fisch liegt auf dem Rost und wird in drei Zonen verschieden behandelt, sodass an einem Fisch drei Speisen entstehen und der Fisch dennoch ganz bleibt. Die Mitte steckt in einem weißen Tuch, Kopf und Schwanz ragen heraus.
+
+Die drei Speisen. Der Text benennt sie nicht, er beschreibt nur, was mit jeder Zone geschieht: Vorne kommt heißes Schmalz und Mehl darauf, die Mitte gart im Tuch, das mit heißem Wein genetzt wird, hinten geschieht nichts. Eine verwandte Fassung im Innsbrucker Kochbuch spricht von einem Fisch, der gebacken, gesotten und gebraten ist. So gelesen ist das Vorderteil das Gebackene, die Mitte das Gesottene und das Hinterteil das Gebratene.
+
+Das Tuch. Wie oft das Tuch mit Wein genetzt wird, sagt der Text nicht. Die Mondseer und die Regensburger Fassung lassen das Tuch mit heißem Wein begießen. Heute ist es sinnvoll, nachzunetzen, sobald das Tuch trocken wird, damit es auf dem Rost nicht anbrennt; das ist ein heutiger Rat, kein Wortlaut.
+
+Offen. Schuppen und Ausnehmen nennt der Text nicht, ebenso wenig Wenden, Garzeit oder ein Zeichen, wann der Fisch fertig ist. Auch die Salse bleibt unbeschrieben.
+
+Praxis. Ein Rost über gleichmäßiger Glut, ein Tuch aus Leinen oder Baumwolle, heißes Schmalz und heißer Wein am Feuer. Frischen Fisch kühl halten und durchgaren; am dicksten Stück in der Tuchmitte prüfen, denn dort gart er am langsamsten. Die Zubereitungszeit von etwa 60 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-006-orig" n="salsen" resp="#fyndling">Salse ist eine würzige Tunke, die man zum Fisch reicht. Der Text nennt keine Zutaten dafür.</note>
+        <note type="interpretive_choice" target="#mi1-006-orig" n="trey lay essen" resp="#fyndling" subtype="contextual">Dreierlei Speisen an einem Fisch durch drei Garweisen: das Vorderteil mit heißem Schmalz und Mehl wie gebacken, die Mitte im mit Wein genetzten Tuch wie gesotten, das Hinterteil blank gebraten. Die verwandte Fassung im Innsbrucker Kochbuch (Cod. 5486) nennt die drei Speisen ausdrücklich: „In treierlay pachen gesoten vnd gepraten“.<list type="alternatives"><item>Drei Stücke desselben Fisches, die sich nur nach dem Körperteil unterscheiden.<note type="rationale">Dagegen spricht die verschiedene Behandlung der drei Zonen im Text selbst und die Benennung in der verwandten Fassung.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

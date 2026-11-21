@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hacharbaz: Geriebene Erbsenballen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-012/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-012</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-012">
+        <head>Hacharbaz: Geriebene Erbsenballen</head>
+        <div type="original" xml:id="mi1-012-orig" xml:lang="de-x-fnhd" corresp="#mi1-012-trans">
+          <p>Item wiltdw machen hacharbaz So nym weiß arbass vnd waich Sy in ain wasser vnd wann geswollen sein So seych sy ab vnd lass sy sten Ein nach vnd mach ein kaltgoz dy gar scharff sey seych sy sauber ab vnd tue sy in ain pfannen oder kessel als vil du machen wild vnd lass sy syeden pis sich paul gen wellen vnd heb sy her ab vnd seich sy das trukken werden vnd tue sy in ain haffen vnd reib sy mit ain stossel oder trit sy vnd waz sy albeg dy palg dar von pys gelb vnd schon werden vnd tue sy in ain haffen vnd laz sewden richt vnd seych sy ab vnd secz sy auf ain gluent kollar vnd lass sy wallen vnd von stund tue sy in ain haffen vnd reib sy gar wol ain stund oder iij vnd nym wein der sueß sey vnd reyb sy dar mit vnd vergeuss sy nicht dar zw nimm ain wennig Sennif vnd wann du sy gereibst das sy sein genueg habent So truk si zw train pallen auf ain</p>
+        </div>
+        <div type="translation" xml:id="mi1-012-trans" xml:lang="de" corresp="#mi1-012-orig">
+          <p>Willst du Hacharbaz machen, so nimm weiße Erbsen und weiche sie in Wasser ein. Und wenn sie gequollen sind, so seihe sie ab und lass sie eine Nacht stehen.</p>
+          <p>Und mach einen Kaltguss, der sehr scharf sein soll. Seihe sie sauber ab und gib sie in eine Pfanne oder einen Kessel, so viel du machen willst, und lass sie sieden, bis die Hülsen sich lösen wollen. Dann heb sie herab und seihe sie ab, dass sie trocken werden, gib sie in einen Topf und reibe sie mit einem Stößel oder tritt sie. Und wasche ihnen immer wieder die Hülsen ab, bis sie gelb und sauber werden.</p>
+          <p>Gib sie in einen Topf und lass sie sofort sieden, seihe sie ab, setze sie auf glühende Kohlen und lass sie aufwallen. Und sogleich gib sie in einen Topf und reibe sie gar gut, eine Stunde oder drei.</p>
+          <p>Und nimm Wein, der süß sein soll, reibe sie damit und verschütte sie nicht. Dazu nimm ein wenig Senf. Und wenn du sie so lange gerieben hast, dass sie genug davon haben, so drücke sie zu drei Ballen auf ein …</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="weiß arbass">Weiße Erbsen, getrocknet</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kaltgoz dy gar scharff sey">Kaltguss (scharfe Lauge aus Holzasche und Wasser)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wein der sueß sey">Süßer Wein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain wennig Sennif">Senf, ein wenig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-012-trans" resp="#fyndling">Was ist das? Geriebene Erbsen. Weiße Erbsen werden über Nacht eingeweicht, in einem scharfen Kaltguss gesotten, bis die Hülsen gehen, gestampft und gewaschen, bis sie gelb und sauber sind, noch einmal gesotten, auf der Glut nachgetrocknet und dann lange mit süßem Wein und etwas Senf gerieben. Am Ende sollen sie zu drei Ballen gedrückt werden; mitten in diesem Satz bricht der Text ab.
+
+Der Kaltguss. Gemeint ist eine scharfe Lauge aus Holzasche und Wasser. Wohin die Erbsen kommen, sagt der Text nicht ausdrücklich: „seych sy sauber ab“ kann die Lauge meinen, die klar abgeseiht wird, oder die eingeweichten Erbsen. Verwandte Rezepte sieden die Erbsen in der Lauge selbst, so das Mondseer Kochbuch: „mach von erst ein ckalt gossen vnd sewd die arbayssen dar im“. Dabei lösen sich die Hülsen; das Stampfen und das wiederholte Waschen entfernen Hülsen und Lauge zugleich. Der Text hört erst auf zu waschen, wenn die Erbsen „gelb vnd schon“ sind.
+
+Sieden und Trocknen auf der Glut. Die geschälten Erbsen werden im Topf noch einmal gesotten, abgeseiht und auf glühende Kohlen gesetzt, bis sie „wallen“. Gemeint ist wohl, dass das restliche Wasser verdampft, bevor gerieben wird. Ein Wolfenbütteler Kochbuch des 16. Jahrhunderts (Herzog August Bibliothek, Cod. Guelf. 42.6 Aug. 4°) beschreibt für seine „geribne Arbeiss“ denselben Schritt: den Kessel auf die Glut setzen, „biß wol druckhen wordten ist“.
+
+Reiben mit süßem Wein und Senf. Die Reibzeit nennt der Text selbst: „ain stund oder iij“, eine Stunde oder drei. Welcher süße Wein und wie viel, sagt er nicht. „vergeuss sy nicht“ heißt wörtlich „verschütte sie nicht“; es kann auch meinen, nicht zu viel Wein daranzugießen. Vom Senf soll es „ain wennig“ sein; ob als Saat, Mehl oder angerührter Senf, bleibt offen. Das Mondseer Kochbuch gibt zu seinen Erbsen „ein durchgeriben seniff vnd honig“, also einen durchgestrichenen, angerührten Senf. Der Schreiber hat hinter dem Senf zuerst „zukker“ geschrieben und es wieder gestrichen; Zucker gehört also nicht hinein.
+
+Wie ging es weiter? „So truk si zw train pallen auf ain …“: Die Masse soll so fest sein, dass man sie zu Ballen drücken kann. Worauf, und was danach mit ihnen geschieht, ist verloren. Verwandte Rezepte braten geformte Erbsen am Spieß (Mondseer Kochbuch) oder über der Glut (Klosterkochbuch Rott am Inn), das Churer Kochbuch zieht sie durch einen Apfelteig und bäckt sie in Butter. Ob die Ballen hier gebraten, gebacken oder einfach angerichtet wurden, sagt der Text nicht.
+
+Praxis. Getrocknete helle Erbsen über Nacht einweichen. Wer den Kaltguss selbst macht: Lauge ist ätzend, Haut und Augen schützen und die Erbsen sehr gründlich waschen, wie der Text es verlangt. Geschälte Erbsen aus dem Handel ersparen Lauge und Waschen - das ist ein heutiger Behelf. Gerieben wird im Topf mit einem schweren Stößel; den Wein gibt man heute am besten nach und nach zu, bis die Masse glatt ist und sich noch zu Ballen drücken lässt. Eine Zubereitungszeit geben wir nicht an, weil das Rezept abbricht.</note>
+        <note type="gloss" target="#mi1-012-orig" n="kaltgoz" resp="#fyndling">Kaltguss, eine scharfe Lauge aus Holzasche und Wasser; Fischers Schwäbisches Wörterbuch zitiert noch „ein Kaltguss oder Laug“. Darin lösen sich bei getrockneten Erbsen und Bohnen die Hülsen. Die Lauge ist ätzend, deshalb werden die Erbsen danach gründlich gewaschen.</note>
+        <note type="gloss" target="#mi1-012-orig" n="paul / palg" resp="#fyndling">Balg, hier die Hülse der Erbse. „pis sich paul gen wellen“ heißt „bis die Hülsen sich lösen wollen“. Eine Wiener Handschrift sagt es fast gleich: „sewd sie hincz daz sy dy pelg lassen“.</note>
+        <note type="gloss" target="#mi1-012-orig" n="trit sy" resp="#fyndling">Wörtlich „tritt sie“. Treten heißt im Mittelhochdeutschen auch „stampfen, zerstampfen“ (Lexer); der Text stellt es neben das Reiben mit dem Stößel.</note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="hacharbaz" resp="#fyndling" subtype="philological" cert="unknown">Gerichtsname, so stehen gelassen, wie er geschrieben ist. Sicher erkennbar ist nur der zweite Teil, arbaz = Erbsen; was hach- bedeutet, ist offen. Schmeller, das Salzburger Idiotikon, Höfer, Castelli, das Frühneuhochdeutsche Wörterbuch, Lexer und das Grimmsche Wörterbuch führen das Wort nicht. Der Anfangsbuchstabe ist in der Handschrift ein h, kein b: Das b in arbaz hat einen geschlossenen Bauch auf der Zeile, der erste Buchstabe einen offenen Bogen mit Unterlänge wie das h in ch. Der Titel verspricht deshalb nichts über die Zubereitung hinaus.<list type="alternatives"><item>pach- oder bach-arbaz, „gebackene Erbsen“, verderbt aus der Vorlage<note type="rationale">So hieße das Gericht wie im Churer Kochbuch „Gebachen Arbais“ (chu-079), wo die geformten Erbsen „durch ain dickhen opfl taig“ gezogen und in Butter gebacken werden; das Formen zu Ballen am Ende passte dazu. Dagegen spricht die Schreibweise dieses Schreibers: Kein Wort seiner Rezepte beginnt mit b, er schreibt „pachen“, „pleyb“, „pallen“, „palg“. Eine Vorlage „bachen“ hätte er als pach- geschrieben, und der erhaltene Text backt nichts.</note></item><item>hack-, „zerhackte“ oder zerstoßene Erbsen<note type="rationale">So setzt die Mittelhochdeutsche Begriffsdatenbank das Wort an (hackareweiʒ, unter Hülsenfrüchten). Der Text hackt aber nicht, er stampft und reibt, und der Eintrag dürfte aus eben dieser Stelle stammen, ist also kein zweiter Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="laz sewden richt" resp="#fyndling" subtype="lexical">„lass sie sofort sieden“: richt als Adverb „sofort, geradewegs“, wie es das Frühneuhochdeutsche Wörterbuch (richt) verzeichnet.<list type="alternatives"><item>„lass sie richtig, gründlich sieden“ (richt für recht)<note type="rationale">„recht sieden“ ist eine geläufige Formel. Die Schreibung richt ist im Grimmschen Wörterbuch aber nur als „gerade, aufrecht“ neben recht belegt, nicht als „gründlich“.</note></item><item>„lass sie nicht sieden“<note type="rationale">Am Zeilenanfang sehen r+i und n+i in dieser Hand fast gleich aus, vgl. trit zwei Zeilen höher. Ein „nicht“ passt aber schlecht: Danach werden die Erbsen abgeseiht, lagen also im Topf in Flüssigkeit über dem Feuer.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="reyb sy dar mit vnd vergeuss sy nicht" resp="#fyndling" subtype="lexical">„reibe sie damit und verschütte sie nicht“: vergießen im Sinn „ausschütten, verschütten“ (Frühneuhochdeutsches Wörterbuch, vergießen 1). Über reyb steht ein kleiner Haken, der wie ein Kürzungszeichen aussieht, aber nichts erkennbar abkürzt; das Wort bleibt „reibe“.<list type="alternatives"><item>„gieß nicht zu viel daran“: vergießen wie versalzen als „zu viel gießen“<note type="rationale">Passt zur Sache, der Wein soll die Masse geschmeidig machen, nicht verdünnen; ein Wolfenbütteler Kochbuch mahnt beim Wasser „doch nit zuuil“. Diese Bedeutung von vergießen steht in den geprüften Wörterbüchern aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="truk si zw train pallen auf ain" resp="#fyndling" subtype="philological">„drücke sie zu drei Ballen auf ein …“: train = drein, die gebeugte Form von drei; derselbe Schreiber setzt t für d auch in truk (drücke). Die Mittelhochdeutsche Begriffsdatenbank stellt train ebenfalls zu drî, möglicherweise nach eben dieser Stelle. Mit „auf ain“ endet der Text in der letzten Zeile von fol. 59v mitten im Satz; worauf die Ballen kommen, steht nicht da.<list type="alternatives"><item>„zu Ballen“ ohne Zahl, train als Verschreibung<note type="rationale">Dann bliebe train unerklärt; die Zahl ergibt sich zwanglos aus der bairischen Schreibung mit t für d.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

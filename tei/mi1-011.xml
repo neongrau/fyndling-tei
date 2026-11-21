@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Karpfen in schwarzer Brühe</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-011/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-011</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-011">
+        <head>Karpfen in schwarzer Brühe</head>
+        <div type="original" xml:id="mi1-011-orig" xml:lang="de-x-fnhd" corresp="#mi1-011-trans">
+          <p>karppfen in ainer swarczen prue zw machen So slach in auf vnd nim den Swaisz vnd wein dar ein vnd leg dy stuk dar ein daz dy gesotten sein zwifall oder saur oppfel sneid dar an vnd lass ez sewden oder ein wall tuen als mit ein ander vnd gar wol vnd wurcz ez auch wol So wirt ez guet</p>
+        </div>
+        <div type="translation" xml:id="mi1-011-trans" xml:lang="de" corresp="#mi1-011-orig">
+          <p>Karpfen in einer schwarzen Brühe zu machen: Schlag ihn auf und nimm das Blut und Wein hinein und lege die Stücke hinein, damit sie gesotten werden.</p>
+          <p>Schneide Zwiebeln oder saure Äpfel daran und lass es sieden oder einmal aufwallen, alles miteinander, und zwar gar gut. Und würze es auch gut, so wird es gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="carp" orig="karppfen" commodity="wikidata:Q83355448" source="#fyndling-ingredient-name">Karpfen</ingredient>
+            </item>
+            <item>
+              <ingredient en="blood" orig="den Swaisz" commodity="wikidata:Q494268" source="#fyndling-ingredient-context">Karpfenblut</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="onion" orig="zwifall" commodity="wikidata:Q3406628" source="#corema-ingredient-index">Zwiebeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-011-trans" resp="#fyndling">Was ist das? Karpfen in Stücken, in seinem eigenen Blut und Wein gesotten. Das Blut gibt der Brühe die schwarze Farbe, nach der das Gericht heißt. Zwiebeln oder saure Äpfel kommen dazu, gewürzt wird ohne Angabe.
+
+Das Blut. Swaisz ist das Blut. Wie man es gewinnt, sagt der Text nur mit „schlag ihn auf“: Der Fisch wird geöffnet und das Blut genommen. Blut und Wein kommen zusammen in die Brühe. Das Kochbuch des Balthasar Staindl (1545) sagt bei seinem schwarzen Süpplein zu Karpfen ausdrücklich, man müsse das Blut vorher in Wein auffangen, das gebe die Schwärze; Rumpolt fängt es in Essig auf. Frisches Blut verdirbt rasch: gleich weiterverarbeiten und Fisch und Brühe vollständig garen.
+
+Die Stücke. Dass der Karpfen zerteilt wird, setzt der Text mit „die Stücke“ voraus, ohne den Schritt zu nennen. Wie groß, bleibt offen.
+
+Sieden oder aufwallen. Der Text lässt die Wahl zwischen Sieden und einmaligem Aufwallen, alles miteinander. Die Stücke sollen darin gar werden; wie lange das dauert, sagt er nicht.
+
+Was fehlt. Mengen, die Art des Weins, die Gewürze und ein Bindemittel. Die späteren Parallelen binden mit geröstetem oder geriebenem Roggenbrot oder mit Pfefferkuchen und nennen Pfeffer, Nelken und Zimt. Ob die Michaelbeurer Fassung so gedacht war, bleibt offen; „würze es auch gut“ lässt die Wahl dem Koch.
+
+Praxis. Das Blut beim Öffnen des frisch geschlachteten Karpfens mit etwas Wein auffangen, wie Staindl es rät, den Fisch in Stücke teilen, mit Blut und Wein ansetzen, Zwiebeln oder säuerliche Äpfel dazuschneiden und sieden lassen, bis der Fisch gar ist; dann würzen. Die Zubereitungszeit von etwa 45 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-011-orig" n="Swaisz" resp="#fyndling">Blut, zunächst das von Tieren; die Jägersprache sagt heute noch Schweiß. Schmellers Bayerisches Wörterbuch führt Schwaiß ausdrücklich in dieser Bedeutung. Hier ist es das Blut des Karpfens, das der Brühe die schwarze Farbe gibt.</note>
+        <note type="gloss" target="#mi1-011-orig" n="slach in auf" resp="#fyndling">Aufschlagen heißt hier aufmachen, öffnen: Der Fisch wird geöffnet, dabei fällt das Blut an. Wie genau, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#mi1-011-orig" n="daz dy gesotten sein" resp="#fyndling" subtype="contextual">Zweckangabe: Die rohen Stücke kommen in Blut und Wein, damit sie darin gesotten werden. Das folgende „lass ez sewden … als mit ein ander“ siedet alles zusammen.<list type="alternatives"><item>Die Stücke sind schon vorher gesotten und kommen nur noch in die Brühe<note type="rationale">So macht es das Kochbuch des Balthasar Staindl: Der Fisch siedet dort getrennt „im saltz“, das schwarze Süpplein wird darübergegossen. Im Michaelbeurer Text ist „daz“ aber eine Konjunktion und kein Bezugswort, und vom getrennten Sieden steht nichts da.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

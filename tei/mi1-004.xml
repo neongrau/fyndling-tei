@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fastenmus aus Fisch und Mandelmilch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-004/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-004</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-004">
+        <head>Fastenmus aus Fisch und Mandelmilch</head>
+        <div type="original" xml:id="mi1-004-orig" xml:lang="de-x-fnhd" corresp="#mi1-004-trans">
+          <p>Wildu machen ain gemues daz an Ainem vastag guet ist So nim mandel millich vnd laz schieden ain michlein fisch vnd schuep in vnd seud vnd perait in an dew stat also daz er die grat lass das geprat hak klain vnd tue ez in die mandel millich So ez zw wenig ist So nim ein gestossen Reis dar vntter vnd lass ez sieden vnd nim sein mass vnd vergiß dez zukars nicht</p>
+        </div>
+        <div type="translation" xml:id="mi1-004-trans" xml:lang="de" corresp="#mi1-004-orig">
+          <p>Willst du ein Mus machen, das an einem Fasttag gut ist, so nimm Mandelmilch und lass einen recht großen Fisch sieden: Schuppe ihn, siede ihn und richte ihn sogleich so zu, dass er die Gräten loslässt.</p>
+          <p>Das Fischfleisch hacke klein und gib es in die Mandelmilch. Ist es zu wenig, so nimm gestoßenen Reis darunter und lass es sieden. Nimm das richtige Maß und vergiss den Zucker nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ain michlein fisch">Fisch, ein recht großer</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond milk" orig="mandel millich" commodity="wikidata:Q975953" source="#corema-ingredient-index">Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein gestossen Reis">Reis, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zukars" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-004-trans" resp="#fyndling">Was ist das? Ein Fastenmus: ein Fisch wird geschuppt und gesotten, bis sich das Fleisch von den Gräten löst, das Fischfleisch wird klein gehackt und in Mandelmilch gegeben. Reicht es nicht, kommt gestoßener Reis dazu, und das Mus siedet; zum Schluss gehört Zucker hinein. Den Zweck sagt der Text selbst: Das Mus ist für einen Fasttag gedacht.
+
+Der Fisch. Eine Fischart nennt der Text nicht, nur einen „michlein“, also recht großen Fisch. Das fast gleichlautende Mus im Kochbuch des Meisters Hans (mha-246) verlangt weißen Fisch. Der Satz beginnt mit „lass sieden“ und zählt danach die Schritte einzeln auf: Geschuppt wird vor dem Sieden. Gesotten wird, bis das Fleisch die Gräten loslässt; dann werden die Gräten ausgelesen, und das Fleisch wird klein gehackt.
+
+Die Mandelmilch. Der Text setzt sie fertig voraus und sagt nicht, wie sie gemacht wird.
+
+Der Reis. „Ist es zu wenig“ meint das Fischfleisch: Die Parallele bei Meister Hans sagt ausdrücklich, man solle gestoßenen Reis mit Zucker nehmen, wenn man vom Fischfleisch nicht genug hat. Der Reis streckt das Mus also und bindet es beim Sieden in der Mandelmilch. Wie viel, sagt der Text nicht: „sein Maß“ heißt so viel, wie es braucht. Auch die Menge des Zuckers bleibt offen; der Text verlangt nur, ihn nicht zu vergessen.
+
+Praxis. Fisch mit weißem, festem Fleisch, der sich nach dem Sieden gut entgräten lässt, am Tag des Einkaufs verarbeiten und die Gräten sorgfältig auslesen. Den Reis im Mörser zerstoßen; fertiges Reismehl ist ein heutiger Behelf. Die Zubereitungszeit von etwa 75 Minuten ist eine Schätzung, der Text gibt keine Zeit an; sie schließt das Anrühren der Mandelmilch ein.</note>
+        <note type="gloss" target="#mi1-004-orig" n="gemues" resp="#fyndling">Mus, ein breiig gekochtes Gericht, nicht Gemüse im heutigen Sinn.</note>
+        <note type="gloss" target="#mi1-004-orig" n="vastag" resp="#fyndling">Fasttag, ein Tag, an dem kein Fleisch gegessen wurde; deshalb hier Fisch und Mandelmilch.</note>
+        <note type="gloss" target="#mi1-004-orig" n="geprat" resp="#fyndling">Das Brät, hier das weiche Fleisch des gesottenen Fisches, nicht „das Gebratene“.</note>
+        <note type="gloss" target="#mi1-004-orig" n="gestossen Reis" resp="#fyndling">Im Mörser zu Mehl zerstoßener Reis; er bindet das Mus beim Sieden.</note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="ain michlein fisch" resp="#fyndling" subtype="lexical" cert="unknown">Ein recht großer Fisch: zu mhd. michel „groß“ (BMZ, Lexer, FWB, DWB; Schmeller „michel, groß“), hier mit der Endung -lein. Die Form „michlein“ selbst steht in keinem der geprüften Wörterbücher als Stichwort (Schmeller, BMZ, Lexer, FWB, DWB; nur die MHDBDB führt sie als Schreibvariante von michel).<list type="alternatives"><item>Ein kleiner Fisch<note type="rationale">Die Verkleinerungsendung könnte die Größe zurücknehmen; das Grundwort michel heißt aber groß.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="So ez zw wenig ist" resp="#fyndling" subtype="contextual">Wenn das Fischfleisch zu wenig ist, wird mit gestoßenem Reis gestreckt. So sagt es die Parallele bei Meister Hans: „ob du des gepraets von dem visch nit genuog hast So nym gestossnen reis mit zucker“.<list type="alternatives"><item>Wenn das Mus zu dünn ist, wird mit Reis gebunden<note type="rationale">Der Reis bindet zwar, der Paralleltext begründet ihn aber mit zu wenig Fischfleisch.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="nim sein mass" resp="#fyndling" subtype="contextual">Nimm vom Reis so viel, wie es braucht; die Wendung steht direkt nach dem Reis.<list type="alternatives"><item>Das Maß bezieht sich auf die Mandelmilch oder auf das ganze Mus<note type="rationale">Syntaktisch möglich, der Anschluss an den Reis liegt näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="laz schieden ain michlein fisch vnd schuep in vnd seud" resp="#fyndling" subtype="contextual">„Lass sieden“ kündigt den Arbeitsgang an, die folgenden Verben zählen ihn auf: erst schuppen, dann sieden.<list type="alternatives"><item>Die Mandelmilch soll sieden, der Fisch kommt danach<note type="rationale">„laz schieden“ steht direkt nach der Mandelmilch; dann hinge „ain michlein fisch“ aber ohne Verb, und die Parallelen lassen die Mandelmilch nicht sieden.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Michaelbeurer Kochbuch (Man. cart. 81) (Michaelbeuern, Stiftsbibliothek, Man. cart. 81)</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <idno type="url">https://fyndling.de/rezepte/quellen/corema_mi1/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-001">
+        <head>Gebackenes von Reis</head>
+        <div type="original" xml:id="mi1-001-orig" xml:lang="de-x-fnhd" corresp="#mi1-001-trans">
+          <p>Item wilt machen ain pachen von Reyß
+
+So sewd in in wasser vnd laz in nicht fast sieden vnd seich Es schon ab vnd tue ez in ain reib scherben oder stoz ez in ainnem morsar vnd Reib ez clain vnd Reib ayr dar vntter vnd mach ez nicht zwo dun vnd tue ein smalcz in ein pfann vnd laz ez durch die hend in ainnem geprantten kochel vnd ez gepachen ist vnd So tue ein zukkar dar auff vnd versalcz ez nicht</p>
+        </div>
+        <div type="translation" xml:id="mi1-001-trans" xml:lang="de" corresp="#mi1-001-orig">
+          <p>Willst du ein Gebackenes von Reis machen, so siede ihn in Wasser und lass ihn nicht stark sieden. Seihe es sauber ab und gib es in eine Reibschale, oder stoß es in einem Mörser, und reibe es klein. Reibe Eier darunter und mach es nicht zu dünn.</p>
+          <p>Tu Schmalz in eine Pfanne und lass es durch die Hände laufen, in einem gebrannten kochel. Und ist es gebacken, so tu Zucker darauf, und versalze es nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="rice" orig="Reyß" commodity="wikidata:Q5090" source="#corema-ingredient-index">Reis</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="chicken egg" orig="ayr" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="animal fat" orig="smalcz" commodity="wikidata:Q1423543" source="#fyndling-ingredient-context">Schmalz</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zukkar" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-002">
+        <head>Eidottermus mit welschem Wein</head>
+        <div type="original" xml:id="mi1-002-orig" xml:lang="de-x-fnhd" corresp="#mi1-002-trans">
+          <p>wildw machen ein gemuez von air totter So nym dar zwe walswein vnd ein wenig semel mel dar vntter vnd streich ez durch ain tuech mit ein ander vnd tue dar ein zukker oder honnig vnd lass ez pachen</p>
+        </div>
+        <div type="translation" xml:id="mi1-002-trans" xml:lang="de" corresp="#mi1-002-orig">
+          <p>Willst du ein Mus aus Eidottern machen, so nimm dazu welschen Wein und ein wenig Semmelmehl darunter und streiche es miteinander durch ein Tuch. Tu Zucker oder Honig hinein und lass es backen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="yolk" orig="air totter" commodity="wikidata:Q16336079" source="#fyndling-ingredient-registry">Eidotter</ingredient>
+            </item>
+            <item>
+              <ingredient en="southern wine" orig="walswein" commodity="wikidata:Q107262744" source="#fyndling-ingredient-registry">Welscher Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="white breadcrumbs" orig="ein wenig semel mel" commodity="wikidata:Q107262394" source="#fyndling-ingredient-context">Semmelmehl, ein wenig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="zukker oder honnig">Zucker oder Honig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-003">
+        <head>Hirschmus mit Wein und Zucker</head>
+        <div type="original" xml:id="mi1-003-orig" xml:lang="de-x-fnhd" corresp="#mi1-003-trans">
+          <p>wildw von einem hirssen ein gemuss machen So seud das wilbrat an die stat vnd wann ez gesotten ist So laz chalt werden vnd hak ez clain vnd nim ain kapswais oder ains lammpleis vnd sewd in mit wein vnd Reib ez durch ein pfeffer pfann gewurcz ez wol vnd mit zukker So du dez nicht hast So nymb honnig vnd lass ez wallen vnd gib ez auff den tisch</p>
+        </div>
+        <div type="translation" xml:id="mi1-003-trans" xml:lang="de" corresp="#mi1-003-orig">
+          <p>Willst du von einem Hirsch ein Mus machen, so siede das Wildbret sogleich. Und wenn es gesotten ist, so lass es kalt werden und hacke es klein.</p>
+          <p>Und nimm Kalbsblut oder ein lammpleis und siede es mit Wein und reibe es durch eine Pfefferpfanne. Würze es gut, auch mit Zucker. Hast du den nicht, so nimm Honig.</p>
+          <p>Und lass es aufwallen und gib es auf den Tisch.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="wilbrat">Hirschwildbret</ingredient>
+            </item>
+            <item>
+              <ingredient en="calf blood" orig="kapswais" commodity="wikidata:Q107246442" source="#fyndling-ingredient-context">Kalbsblut</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zukker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-004">
+        <head>Fastenmus aus Fisch und Mandelmilch</head>
+        <div type="original" xml:id="mi1-004-orig" xml:lang="de-x-fnhd" corresp="#mi1-004-trans">
+          <p>Wildu machen ain gemues daz an Ainem vastag guet ist So nim mandel millich vnd laz schieden ain michlein fisch vnd schuep in vnd seud vnd perait in an dew stat also daz er die grat lass das geprat hak klain vnd tue ez in die mandel millich So ez zw wenig ist So nim ein gestossen Reis dar vntter vnd lass ez sieden vnd nim sein mass vnd vergiß dez zukars nicht</p>
+        </div>
+        <div type="translation" xml:id="mi1-004-trans" xml:lang="de" corresp="#mi1-004-orig">
+          <p>Willst du ein Mus machen, das an einem Fasttag gut ist, so nimm Mandelmilch und lass einen recht großen Fisch sieden: Schuppe ihn, siede ihn und richte ihn sogleich so zu, dass er die Gräten loslässt.</p>
+          <p>Das Fischfleisch hacke klein und gib es in die Mandelmilch. Ist es zu wenig, so nimm gestoßenen Reis darunter und lass es sieden. Nimm das richtige Maß und vergiss den Zucker nicht.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="ain michlein fisch">Fisch, ein recht großer</ingredient>
+            </item>
+            <item>
+              <ingredient en="almond milk" orig="mandel millich" commodity="wikidata:Q975953" source="#corema-ingredient-index">Mandelmilch</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ein gestossen Reis">Reis, gestoßen</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zukars" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-005">
+        <head>Kletzenmus mit Honig und Nelken</head>
+        <div type="original" xml:id="mi1-005-orig" xml:lang="de-x-fnhd" corresp="#mi1-005-trans">
+          <p>Wildu machen ein muess von kleczen So mach dy kloczen schon vnd seud sy gar wol vnd stews sy in wein vnd streich sy durch ein pfann oder sibb vnd seud sy dan wol vnd tue dar ein honig vnd naglein genueg vnd stupp si wol vnd war es zw tuen So reib wenig prot dar an vnd tue ez in einen haffen so hastu fier wochen ge mues</p>
+        </div>
+        <div type="translation" xml:id="mi1-005-trans" xml:lang="de" corresp="#mi1-005-orig">
+          <p>Willst du ein Mus aus Kletzen machen, so mach die Kletzen sauber und siede sie gar gut. Zerstoße sie in Wein und streiche sie durch eine Pfanne oder ein Sieb.</p>
+          <p>Dann siede sie gut, gib Honig und genug Nelken hinein und bestäube sie gut. Wäre es zu dünn, so reibe ein wenig Brot daran.</p>
+          <p>Gib es in einen Topf, so hast du für vier Wochen Mus.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="dried pear" orig="kleczen" commodity="wikidata:Q1774262" source="#corema-ingredient-index">Kletzen (gedörrte Birnen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="naglein genueg" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="wenig prot" commodity="wikidata:Q7802" source="#corema-ingredient-index">Brot, gerieben (nur wenn das Mus zu dünn ist)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-006">
+        <head>Dreierlei aus einem ganzen Hecht</head>
+        <div type="original" xml:id="mi1-006-orig" xml:lang="de-x-fnhd" corresp="#mi1-006-trans">
+          <p>wildu machen trey lay essen aus aim hechten oder visch das der visch gancz peleib So slach vmb das mitter des visch ein weiss tuech vnd lass daz haup vnd den swancz wol aus gen salcz in vnd leg in auf ain rost vnd laz in pratten das voder tail pegeuß mit haissen smalcz vnd sprengs mit mel daz tuech necz vnd mit haissem wein vnd der hintter tail prat sich selber vnd gib guete salsen dar zwe</p>
+        </div>
+        <div type="translation" xml:id="mi1-006-trans" xml:lang="de" corresp="#mi1-006-orig">
+          <p>Willst du dreierlei Speisen aus einem Hecht oder einem anderen Fisch machen, und zwar so, dass der Fisch ganz bleibt, dann schlage ein weißes Tuch um die Mitte des Fisches und lass Kopf und Schwanz gut herausstehen. Salze ihn, lege ihn auf einen Rost und lass ihn braten.</p>
+          <p>Das vordere Teil begieße mit heißem Schmalz und bestreue es mit Mehl. Das Tuch netze mit heißem Wein. Das hintere Teil brät sich selbst.</p>
+          <p>Gib eine gute Salse dazu.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="aim hechten oder visch">Hecht oder ein anderer Fisch, ganz</ingredient>
+            </item>
+            <item>
+              <ingredient en="table salt" orig="salcz" commodity="wikidata:Q11254" source="#corema-ingredient-index">Salz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="haissen smalcz">Schmalz, heiß</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#fyndling-ingredient-registry">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="haissem wein">Wein, heiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="guete salsen">Salse (im Text nicht beschrieben)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-007">
+        <head>Rehbraten aus Fisch</head>
+        <div type="original" xml:id="mi1-007-orig" xml:lang="de-x-fnhd" corresp="#mi1-007-trans">
+          <p>wilt du machen ain Rech protten von vischen So nym visch prat welcher lay ez sey dy groz sind vnd tue dy grat dar aus vnd schueppen vnd hak dy clain vnd Reyb prot dar vntter vnd wuercz wol vnd tue ez zw samen mit ainem nassen messer auf ainer anricht pank in der gestalt ainnez rech pratten slach in in ein tuech daz er nicht her aus mueg vnd lass in nicht vast syeden da mit vnd er der stark etc.</p>
+        </div>
+        <div type="translation" xml:id="mi1-007-trans" xml:lang="de" corresp="#mi1-007-orig">
+          <p>Willst du einen Rehbraten aus Fisch machen, so nimm Fischbrät, gleich von welcher Art, von großen Fischen. Nimm die Gräten heraus und die Schuppen und hacke sie klein. Reibe Brot darunter und würze es gut.</p>
+          <p>Füge es mit einem nassen Messer auf einer Anrichtbank zusammen, in der Gestalt eines Rehbratens. Schlag ihn in ein Tuch, damit er nicht herauskann, und lass ihn nicht stark sieden, damit er fest wird, usw.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="visch prat welcher lay ez sey dy groz sind">Fischbrät von großen Fischen, gleich welcher Art</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="Reyb prot" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Brot, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wuercz wol" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-008">
+        <head>Gesottene Hennen in scharfer Brühe</head>
+        <div type="original" xml:id="mi1-008-orig" xml:lang="de-x-fnhd" corresp="#mi1-008-trans">
+          <p>wesotten hennen in ainer scharffen prue vnd mach Sy wol gell vnd wurcz sy wol</p>
+        </div>
+        <div type="translation" xml:id="mi1-008-trans" xml:lang="de" corresp="#mi1-008-orig">
+          <p>Gesottene Hennen in einer scharfen Brühe. Mach sie gut gelb und würze sie gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken" orig="hennen" commodity="wikidata:Q864693" source="#corema-ingredient-index">Hennen</ingredient>
+            </item>
+            <item>
+              <ingredient en="stock" orig="scharffen prue" commodity="wikidata:Q3075310" source="#fyndling-ingredient-context">Scharfe Brühe</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-009">
+        <head>Grüne Torte unter dem Glutdeckel</head>
+        <div type="original" xml:id="mi1-009-orig" xml:lang="de-x-fnhd" corresp="#mi1-009-trans">
+          <p>Item Ein grun Turken nym air vnd semel mel vnd streychs durch ain pfeffer pfann mit ein ander oder durch ain schons tuech vnd dy grun salssen dar mit vnd in den turt vnd spreng den turt mit mel So print ez nicht an vnd Dek ez zwe mit ainer Eysnen dekn vnd gluent kollen oben dar auf das dem andren geleich prat wann ez sich protten hat So nims her aus auf ain schons tuech in ain schussel das ez gancz pleyb vnd sneyd ez oben auf kreicz weys vnd tue zuker dar auf</p>
+        </div>
+        <div type="translation" xml:id="mi1-009-trans" xml:lang="de" corresp="#mi1-009-orig">
+          <p>Eine grüne Torte. Nimm Eier und Semmelmehl und streiche es miteinander durch eine Pfefferpfanne oder durch ein sauberes Tuch, und die grüne Salse damit. Gib es in die Tortenform und bestreue die Form mit Mehl, so brennt es nicht an.</p>
+          <p>Decke es mit einem eisernen Deckel zu und lege glühende Kohlen oben darauf, damit es dem anderen gleich brät.</p>
+          <p>Wenn es gebraten ist, so nimm es heraus auf ein sauberes Tuch in eine Schüssel, damit es ganz bleibt. Schneide es oben kreuzweise auf und gib Zucker darauf.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="chicken egg" orig="air" commodity="wikidata:Q15260613" source="#corema-ingredient-index">Eier</ingredient>
+            </item>
+            <item>
+              <ingredient en="white breadcrumbs" orig="semel mel" commodity="wikidata:Q107262394" source="#fyndling-ingredient-context">Semmelmehl</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dy grun salssen">Grüne Salse (Kräutersauce)</ingredient>
+            </item>
+            <item>
+              <ingredient en="flour" orig="mel" commodity="wikidata:Q36465" source="#fyndling-ingredient-registry">Mehl</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zuker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-010">
+        <head>Lamm in einer Pastete</head>
+        <div type="original" xml:id="mi1-010-orig" xml:lang="de-x-fnhd" corresp="#mi1-010-trans">
+          <p>Item ain lamb in ainer pastekken
+
+Seud in mit wein vnd mach in in ain pastekken auf daz aller kostleichist So stat ez wol vor fursten vnd heren etc.</p>
+        </div>
+        <div type="translation" xml:id="mi1-010-trans" xml:lang="de" corresp="#mi1-010-orig">
+          <p>Ein Lamm in einer Pastete.</p>
+          <p>Siede es mit Wein und mach es in eine Pastete, auf das Allerkostbarste. So steht es gut vor Fürsten und Herren usw.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="lamb">Lamm</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="pie crust" orig="(implied)" commodity="wikidata:Q5190246" source="#fyndling-ingredient-name">Pastetenteig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-011">
+        <head>Karpfen in schwarzer Brühe</head>
+        <div type="original" xml:id="mi1-011-orig" xml:lang="de-x-fnhd" corresp="#mi1-011-trans">
+          <p>karppfen in ainer swarczen prue zw machen So slach in auf vnd nim den Swaisz vnd wein dar ein vnd leg dy stuk dar ein daz dy gesotten sein zwifall oder saur oppfel sneid dar an vnd lass ez sewden oder ein wall tuen als mit ein ander vnd gar wol vnd wurcz ez auch wol So wirt ez guet</p>
+        </div>
+        <div type="translation" xml:id="mi1-011-trans" xml:lang="de" corresp="#mi1-011-orig">
+          <p>Karpfen in einer schwarzen Brühe zu machen: Schlag ihn auf und nimm das Blut und Wein hinein und lege die Stücke hinein, damit sie gesotten werden.</p>
+          <p>Schneide Zwiebeln oder saure Äpfel daran und lass es sieden oder einmal aufwallen, alles miteinander, und zwar gar gut. Und würze es auch gut, so wird es gut.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="carp" orig="karppfen" commodity="wikidata:Q83355448" source="#fyndling-ingredient-name">Karpfen</ingredient>
+            </item>
+            <item>
+              <ingredient en="blood" orig="den Swaisz" commodity="wikidata:Q494268" source="#fyndling-ingredient-context">Karpfenblut</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="onion" orig="zwifall" commodity="wikidata:Q3406628" source="#corema-ingredient-index">Zwiebeln</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mi1-012">
+        <head>Hacharbaz: Geriebene Erbsenballen</head>
+        <div type="original" xml:id="mi1-012-orig" xml:lang="de-x-fnhd" corresp="#mi1-012-trans">
+          <p>Item wiltdw machen hacharbaz So nym weiß arbass vnd waich Sy in ain wasser vnd wann geswollen sein So seych sy ab vnd lass sy sten Ein nach vnd mach ein kaltgoz dy gar scharff sey seych sy sauber ab vnd tue sy in ain pfannen oder kessel als vil du machen wild vnd lass sy syeden pis sich paul gen wellen vnd heb sy her ab vnd seich sy das trukken werden vnd tue sy in ain haffen vnd reib sy mit ain stossel oder trit sy vnd waz sy albeg dy palg dar von pys gelb vnd schon werden vnd tue sy in ain haffen vnd laz sewden richt vnd seych sy ab vnd secz sy auf ain gluent kollar vnd lass sy wallen vnd von stund tue sy in ain haffen vnd reib sy gar wol ain stund oder iij vnd nym wein der sueß sey vnd reyb sy dar mit vnd vergeuss sy nicht dar zw nimm ain wennig Sennif vnd wann du sy gereibst das sy sein genueg habent So truk si zw train pallen auf ain</p>
+        </div>
+        <div type="translation" xml:id="mi1-012-trans" xml:lang="de" corresp="#mi1-012-orig">
+          <p>Willst du Hacharbaz machen, so nimm weiße Erbsen und weiche sie in Wasser ein. Und wenn sie gequollen sind, so seihe sie ab und lass sie eine Nacht stehen.</p>
+          <p>Und mach einen Kaltguss, der sehr scharf sein soll. Seihe sie sauber ab und gib sie in eine Pfanne oder einen Kessel, so viel du machen willst, und lass sie sieden, bis die Hülsen sich lösen wollen. Dann heb sie herab und seihe sie ab, dass sie trocken werden, gib sie in einen Topf und reibe sie mit einem Stößel oder tritt sie. Und wasche ihnen immer wieder die Hülsen ab, bis sie gelb und sauber werden.</p>
+          <p>Gib sie in einen Topf und lass sie sofort sieden, seihe sie ab, setze sie auf glühende Kohlen und lass sie aufwallen. Und sogleich gib sie in einen Topf und reibe sie gar gut, eine Stunde oder drei.</p>
+          <p>Und nimm Wein, der süß sein soll, reibe sie damit und verschütte sie nicht. Dazu nimm ein wenig Senf. Und wenn du sie so lange gerieben hast, dass sie genug davon haben, so drücke sie zu drei Ballen auf ein …</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="weiß arbass">Weiße Erbsen, getrocknet</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wasser" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kaltgoz dy gar scharff sey">Kaltguss (scharfe Lauge aus Holzasche und Wasser)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wein der sueß sey">Süßer Wein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ain wennig Sennif">Senf, ein wenig</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-001-trans" resp="#fyndling">Was ist das? Ein in Schmalz ausgebackenes Gebäck aus gekochtem Reis: Der Reis wird in Wasser gesotten, klein gerieben, mit Eiern zu einer festen Masse verrieben, in der Pfanne in Schmalz gebacken und zum Schluss gezuckert.
+
+Den Reis sieden. Nicht fast sieden heißt: nicht stark sieden lassen. Der Reis soll gar werden, aber nicht zerfallen; die Mondseer Fassung sagt ausdrücklich, er solle nicht verkochen. Wie lange er siedet, sagt der Text nicht.
+
+Reiben und binden. Der abgeseihte Reis kommt in eine Reibschale oder in den Mörser und wird klein gerieben, dann werden die Eier daruntergerieben. Ein Verhältnis von Reis zu Eiern nennt der Text nicht, nur das Ziel nicht zu dünn: Die Masse muss im Fett zusammenhalten.
+
+Durch die Hände. Wie die Masse ins Schmalz kommt, sagt der Text nur mit durch die hend. Entweder wird sie aus der geschlossenen Hand zwischen den Fingern ins Fett gedrückt, oder sie wird mit den Händen zu kleinen Stücken geformt und hineingegeben. Die verwandten Fassungen vergleichen das Ergebnis mit gebrannten Küchlein, also kleinem, in Schmalz ausgebackenem Gebäck. Diese Handschrift schreibt dafür in ainnem geprantten kochel; ob das dasselbe meint, bleibt offen.
+
+Ausbacken und Zuckern. Ein Zeichen für das Ende nennt der Text nicht, nur ez gepachen ist. Der Zucker kommt erst auf das fertige Gebäck. Die Warnung versalcz ez nicht steht ohne Salzangabe; wo gesalzen wird, sagt der Text nicht.
+
+Praxis. Heute gibt man die Masse am einfachsten mit nassen Händen oder zwei Löffeln portionsweise ins heiße Schmalz; das ist ein moderner Behelf, nicht die Anweisung des Textes. Feuchte Masse lässt heißes Fett über offenem Feuer spritzen, darum kleine Portionen einlegen. Die Zubereitungszeit von etwa 60 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-001-orig" n="pachen" resp="#fyndling">„Ein Gebackenes“, zu bachen = backen. Gebacken wird hier nicht im Ofen, sondern in Schmalz in der Pfanne.</note>
+        <note type="gloss" target="#mi1-001-orig" n="reib scherben" resp="#fyndling">Reibschale, ein Küchengerät zum Zerreiben. Das Grimmsche Wörterbuch führt reibscherbe „wie reibeschale“ unter den Küchengeräten, neben dem Mörser.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#scherben"/></note>
+        <note type="interpretive_choice" target="#mi1-001-orig" n="geprantten kochel" resp="#fyndling" subtype="lexical" cert="unknown">kochel = Küchel, Küchlein: kleines, in Schmalz ausgebackenes Gebäck. Schmeller (Bayerisches Wörterbuch, Küechel) beschreibt den Küechel als in Schmalz gebackene, lockere Masse. Alle verwandten Fassungen vergleichen an dieser Stelle mit Küchlein: mon-002 „als prantew chuchlen“, ri15632-026 „als praten kuechel“, so1-085 „als gebratten kuchlin“, kkm-091 „als gebrennte Küchlin“. Offen bleibt, warum hier „in ainnem“ statt „als“ steht; im Text bleibt das Wort deshalb unübersetzt. Geprüft: Schmeller (Köchel nur als Kugel/Gugel), Rheinisches Wörterbuch (Tintenfass, Pilz), Lexer und Fischer (Geköchel = Leckerbissen); keines belegt kochel als Gefäß in der Küche.<list type="alternatives"><item>Kachel, ein gebranntes Tongefäß, in dem die Masse gebacken wird.<note type="rationale">Naheliegend nach geprantten (gebrannter Ton). Die Pfanne mit dem Schmalz ist aber schon genannt, und keine der verwandten Fassungen kennt ein zweites Gefäß.</note></item><item>Schreibversehen für „als ein gebranntes Küchel“.<note type="rationale">Ergäbe den Wortlaut der Parallelen, wäre aber ein Eingriff in den Text: In der Handschrift steht deutlich „in ainnem“.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-001-orig" n="zwo dun" resp="#fyndling" subtype="philological">„zu dünn“. Das d von dün ist in der Handschrift kräftiger nachgezogen, wohl vom Schreiber verbessert. Der Sinn ist durch die verwandten Fassungen gesichert: mon-002 „nicht cze dwnn“, so1-085 „nit ze dunn“.<list type="alternatives"><item>Ein anderes Wort, aus dem der Schreiber das d gemacht hat.<note type="rationale">Was zuerst dastand, ist nicht zu erkennen; an der Bedeutung „nicht zu dünn“ ändert es nichts.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-002-trans" resp="#fyndling">Was ist das? Ein süßes Mus aus Eidottern und welschem Wein, mit ein wenig Semmelmehl gebunden, durch ein Tuch gestrichen und mit Zucker oder Honig gesüßt. Das Rezept gehört zu einer Familie, die im bairisch-österreichischen Raum mehrfach überliefert ist; die Michaelbeurer Fassung ist die knappste.
+
+Durchstreichen. Dotter, Wein und Semmelmehl werden zusammen durch ein Tuch gestrichen. Dabei verbinden sie sich, und die Masse wird glatt, bevor sie ans Feuer kommt.
+
+Lass es backen - aber wie? Der Text nennt weder Gefäß noch Fett noch Feuer. Die verwandten Rezepte geben die Masse in ein kleines Töpfchen, setzen es auf die Glut und rühren, bis sie dick wird; dann nehmen sie es vom Feuer. Das ist die naheliegende Lesart. Ob „pachen“ hier dasselbe meint oder ein Backen in Fett oder im Ofen, bleibt offen.
+
+Praxis. Die Dotter brauchen milde Hitze und ständiges Rühren, sonst gerinnen sie. Zucker oder Honig lässt der Text frei, die Menge auch. Die Zubereitungszeit von etwa einer halben Stunde ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-002-orig" n="dar zwe" resp="#fyndling">„Darzu“, also „dazu“, nicht „zwei“. Der Schreiber dieser Handschrift schreibt „zu“ auch sonst so („gib guete salsen dar zwe“, „Dek ez zwe“), und die verwandten Rezepte haben an derselben Stelle „dar czw“. Eine Mengenangabe für den Wein gibt es also nicht.</note>
+        <note type="gloss" target="#mi1-002-orig" n="walswein" resp="#fyndling">Welscher Wein: Wein aus romanischsprachigen Ländern, besonders aus Italien. Welche Sorte oder Farbe gemeint war, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#mi1-002-orig" n="semel mel" resp="#fyndling" subtype="lexical">Semmelmehl, das feine Weizenmehl, aus dem man Semmeln backte. So das Grimmsche Wörterbuch (semmelmehl „feines mehl, besonders weizenmehl“, mit mittelhochdeutsch semelmel nach Lexer), ebenso Adelung und Campe. Das Grimmsche Wörterbuch zitiert dazu das Buch von guter Speise, das Eier „mit semel mele“ verschlägt. Auch die grüne Torte dieser Handschrift nimmt „air vnd semel mel“.<list type="alternatives"><item>Geriebene Semmel<note type="rationale">Die verwandten Rezepte nehmen an derselben Stelle eine Semmel, kein Mehl: „ein winczige semel“ und „ain wenig von ainer semel“ im Mondseer Kochbuch, eingeweichtes Semmelbrot in der Kölner und der Solothurner Küchenmeisterei. Heute heißt Semmelmehl regional auch geriebene Semmel. Beides bindet das Mus; der Wortlaut hier spricht für Mehl.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#semel"/></note>
+        <note type="preparation_tip" target="#mi1-003-trans" resp="#fyndling">Was ist das? Ein Wildmus: Hirschwildbret wird gesotten, ausgekühlt und klein gehackt. Kalbsblut wird mit Wein gesotten und durch eine Pfefferpfanne, einen Durchschlag, gerieben, dann gewürzt, gesüßt und aufgewallt.
+
+Blut oder Bries? Das Wort ‚kapswais‘ ist sonst nicht belegt. Kalbsblut ist die am besten gestützte Deutung, weil dasselbe Hirschmus in anderen bairisch-österreichischen Kochbüchern mit ‚swais von dem kalb‘ gemacht wird. Was die zweite Wahl ‚lammpleis‘ ist, bleibt offen; Lammbries ist eine Vermutung ohne Beleg.
+
+Wann kommt das Fleisch dazu? Der Text sagt es nicht. Er hackt das Fleisch, siedet das Blut mit Wein, reibt ‚es‘ durch und lässt ‚es‘ aufwallen. Das Kochbuch des Meisters Hans sagt an derselben Stelle ‚misch den schwaisz daran‘: Das Blut wird unter das Wildbret gemischt. Heute naheliegend: die durchgeriebene Blut-Wein-Mischung unter das gehackte Fleisch rühren, dann würzen, süßen und alles zusammen aufwallen lassen.
+
+Würzen. Der Text nennt keine Gewürze, nur ‚gewurcz ez wol‘. Zucker gehört ausdrücklich dazu, ersatzweise Honig.
+
+Offen bleibt auch, worin das Fleisch zuerst gesotten wird; der Text sagt nur ‚seud das wilbrat‘.
+
+Praxis. Das Durchreiben macht die gesottene Blut-Wein-Mischung glatt. Frisches Blut verdirbt schnell: gekühlt beim Metzger beschaffen, bald verarbeiten und gut durcherhitzen. Die Zubereitungszeit von etwa zweieinhalb Stunden ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-003-orig" n="pfeffer pfann" resp="#fyndling">Pfefferpfanne: ein pfannenförmiger Seiher, ein Durchschlag, durch den man Brühen und Saucen treibt. So erklären es das Frühneuhochdeutsche Wörterbuch, das Grimm'sche Wörterbuch und das Bayerische Wörterbuch.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#mi1-003-orig" n="kapswais" resp="#fyndling" subtype="lexical" cert="unknown">Kalbsblut, gelesen als ‚kalb(s)-swais‘: ‚swais‘ (Schweiß) ist das Blut, wie in der schwarzen Karpfenbrühe dieses Buches. Dafür spricht vor allem das Gericht selbst: Das Kochbuch des Meisters Hans (mha-245) und weitere bairisch-österreichische Handschriften nehmen an genau dieser Stelle ‚den swais von dem kalb‘ und sieden das Hirschwildbret in Wein. Auch das maskuline ‚sewd in‘ (siede ihn) passt zu ‚swais‘. Das Wort selbst steht in keinem Wörterbuch (geprüft: FWB, DWB, Lexer, Schmeller, Salzburger und weitere Mundartwörterbücher).<list type="alternatives"><item>‚kapfwais‘<note type="rationale">Die Bearbeiter der Grazer Ausgabe erwägen diese Form. In der Handschrift steht nach ‚kap‘ ein hoher Schaft in hellerer Tinte, der ein langes s oder ein f sein kann. ‚kapfwais‘ ist außerhalb dieser Handschrift nirgends belegt.</note></item><item>Kalbsbries<note type="rationale">Die frühere Deutung dieses Rezepts. ‚-wais‘ deckt ‚Bries‘ nicht, und keine der verwandten Fassungen hat an dieser Stelle Bries.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-003-orig" n="lammpleis" resp="#fyndling" subtype="lexical" cert="unknown">Etwas vom Lamm, das die Handschrift als zweite Wahl neben das Kalbsblut stellt; was ‚pleis‘ ist, bleibt offen. Das Wort ist in keinem Wörterbuch belegt (geprüft: FWB, DWB, Lexer, Schmeller und Mundartwörterbücher; ‚pleis‘ dort nur als Blei, Halde oder Schuhlasche). Die Bearbeiter der Grazer Ausgabe erwägen ‚lammpleins‘, weil bei ‚mm‘ ein Schaft fehlt.<list type="alternatives"><item>Lammbries<note type="rationale">Die frühere Deutung. Das Bries heißt in oberdeutschen Kochbüchern ‚prieß‘ oder ‚priesel‘; ein ‚pleis‘ dafür ist nicht belegt.</note></item><item>Lammblut, parallel zum Kalbsblut<note type="rationale">Würde zur ersten Wahl passen, hat aber im Wortbild keine Stütze; keine verwandte Fassung nennt das Lamm.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-004-trans" resp="#fyndling">Was ist das? Ein Fastenmus: ein Fisch wird geschuppt und gesotten, bis sich das Fleisch von den Gräten löst, das Fischfleisch wird klein gehackt und in Mandelmilch gegeben. Reicht es nicht, kommt gestoßener Reis dazu, und das Mus siedet; zum Schluss gehört Zucker hinein. Den Zweck sagt der Text selbst: Das Mus ist für einen Fasttag gedacht.
+
+Der Fisch. Eine Fischart nennt der Text nicht, nur einen „michlein“, also recht großen Fisch. Das fast gleichlautende Mus im Kochbuch des Meisters Hans (mha-246) verlangt weißen Fisch. Der Satz beginnt mit „lass sieden“ und zählt danach die Schritte einzeln auf: Geschuppt wird vor dem Sieden. Gesotten wird, bis das Fleisch die Gräten loslässt; dann werden die Gräten ausgelesen, und das Fleisch wird klein gehackt.
+
+Die Mandelmilch. Der Text setzt sie fertig voraus und sagt nicht, wie sie gemacht wird.
+
+Der Reis. „Ist es zu wenig“ meint das Fischfleisch: Die Parallele bei Meister Hans sagt ausdrücklich, man solle gestoßenen Reis mit Zucker nehmen, wenn man vom Fischfleisch nicht genug hat. Der Reis streckt das Mus also und bindet es beim Sieden in der Mandelmilch. Wie viel, sagt der Text nicht: „sein Maß“ heißt so viel, wie es braucht. Auch die Menge des Zuckers bleibt offen; der Text verlangt nur, ihn nicht zu vergessen.
+
+Praxis. Fisch mit weißem, festem Fleisch, der sich nach dem Sieden gut entgräten lässt, am Tag des Einkaufs verarbeiten und die Gräten sorgfältig auslesen. Den Reis im Mörser zerstoßen; fertiges Reismehl ist ein heutiger Behelf. Die Zubereitungszeit von etwa 75 Minuten ist eine Schätzung, der Text gibt keine Zeit an; sie schließt das Anrühren der Mandelmilch ein.</note>
+        <note type="gloss" target="#mi1-004-orig" n="gemues" resp="#fyndling">Mus, ein breiig gekochtes Gericht, nicht Gemüse im heutigen Sinn.</note>
+        <note type="gloss" target="#mi1-004-orig" n="vastag" resp="#fyndling">Fasttag, ein Tag, an dem kein Fleisch gegessen wurde; deshalb hier Fisch und Mandelmilch.</note>
+        <note type="gloss" target="#mi1-004-orig" n="geprat" resp="#fyndling">Das Brät, hier das weiche Fleisch des gesottenen Fisches, nicht „das Gebratene“.</note>
+        <note type="gloss" target="#mi1-004-orig" n="gestossen Reis" resp="#fyndling">Im Mörser zu Mehl zerstoßener Reis; er bindet das Mus beim Sieden.</note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="ain michlein fisch" resp="#fyndling" subtype="lexical" cert="unknown">Ein recht großer Fisch: zu mhd. michel „groß“ (BMZ, Lexer, FWB, DWB; Schmeller „michel, groß“), hier mit der Endung -lein. Die Form „michlein“ selbst steht in keinem der geprüften Wörterbücher als Stichwort (Schmeller, BMZ, Lexer, FWB, DWB; nur die MHDBDB führt sie als Schreibvariante von michel).<list type="alternatives"><item>Ein kleiner Fisch<note type="rationale">Die Verkleinerungsendung könnte die Größe zurücknehmen; das Grundwort michel heißt aber groß.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="So ez zw wenig ist" resp="#fyndling" subtype="contextual">Wenn das Fischfleisch zu wenig ist, wird mit gestoßenem Reis gestreckt. So sagt es die Parallele bei Meister Hans: „ob du des gepraets von dem visch nit genuog hast So nym gestossnen reis mit zucker“.<list type="alternatives"><item>Wenn das Mus zu dünn ist, wird mit Reis gebunden<note type="rationale">Der Reis bindet zwar, der Paralleltext begründet ihn aber mit zu wenig Fischfleisch.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="nim sein mass" resp="#fyndling" subtype="contextual">Nimm vom Reis so viel, wie es braucht; die Wendung steht direkt nach dem Reis.<list type="alternatives"><item>Das Maß bezieht sich auf die Mandelmilch oder auf das ganze Mus<note type="rationale">Syntaktisch möglich, der Anschluss an den Reis liegt näher.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-004-orig" n="laz schieden ain michlein fisch vnd schuep in vnd seud" resp="#fyndling" subtype="contextual">„Lass sieden“ kündigt den Arbeitsgang an, die folgenden Verben zählen ihn auf: erst schuppen, dann sieden.<list type="alternatives"><item>Die Mandelmilch soll sieden, der Fisch kommt danach<note type="rationale">„laz schieden“ steht direkt nach der Mandelmilch; dann hinge „ain michlein fisch“ aber ohne Verb, und die Parallelen lassen die Mandelmilch nicht sieden.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-005-trans" resp="#fyndling">Was ist das? Ein Mus aus Kletzen, also gedörrten Birnen. Die Früchte werden weich gesotten, in Wein zerstoßen, durchgestrichen, mit Honig und Nelken noch einmal gesotten und als Vorrat in einen Topf gefüllt.
+
+Zerstoßen in Wein. Das Wort stews ist ungewöhnlich geschrieben. Gemeint ist „stoße“: Das Mondseer Kochbuch sagt an derselben Stelle „stoz nach dem sieden chlain“, die Fassung in Pannonhalma „stoes sy chlain“. Die gekochten Kletzen werden also mit dem Wein zu Brei zerstoßen, damit sie durch Pfanne oder Sieb gehen.
+
+Pfanne oder Sieb. Der Text lässt die Wahl. Eine „Pfanne“ zum Durchstreichen muss gelocht gewesen sein, sonst ginge nichts hindurch. Heute tut es ein feines Sieb, ein Durchschlag oder eine Passiermühle.
+
+Bestäuben. stupp si wol heißt „bestäube sie gut“, mit einem Pulver. Welches, sagt der Text nicht. Naheliegend sind die eben genannten Nelken; eine verwandte Fassung nennt neben den Nelken „ander stupp“, also noch weiteres Gewürzpulver. Wer heute kocht, nimmt gemahlene Nelken - das ist eine heutige Entscheidung, keine Vorgabe der Handschrift.
+
+Aufkochen. Wird Brot zum Binden eingerieben, muss das Mus danach noch einmal aufkochen, sonst bindet es nicht und schmeckt nach rohem Brot.
+
+Vier Wochen. „so hastu fier wochen ge mues“ meint einen Vorrat, der hält. Die Parallelfassungen sagen es deutlicher: Das Mus „beleibt guet vier oder sex … wochen“. Für heute gilt das nicht ungeprüft: kühl lagern, sauber abfüllen und vor dem Essen ansehen.
+
+Praxis. Harte Dörrbirnen brauchen lange, bis sie weich sind. Stiele und Kerngehäuse erwähnt der Text nicht; eine andere Fassung schneidet sie vor dem Sieden ab, was beim Durchstreichen hilft. Mengen nennt der Text nicht: Honig, Nelken und Brot nach Geschmack und Dicke. Die Zubereitungszeit von etwa zwei Stunden ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-005-orig" n="kleczen / kloczen" resp="#fyndling">Kletzen sind gedörrte Birnen. Das Salzburger Idiotikon von 1796 kennt aus dem Pinzgau „Klotzen, anstatt Kletzen: gedorrte Birnen“ - beide Schreibungen im Text meinen dasselbe. Anderswo heißen sie Hutzeln.</note>
+        <note type="gloss" target="#mi1-005-orig" n="schon" resp="#fyndling">Hier „sauber“, nicht „schön“: Die Kletzen werden vor dem Sieden gesäubert.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="gloss" target="#mi1-005-orig" n="pfann oder sibb" resp="#fyndling">Eine Pfanne oder ein Sieb zum Durchstreichen. Gelochte Pfannen zum Seihen kennen die Mundarten als „Seihpfanne“; welches Gerät der Schreiber meinte, sagt er nicht.</note>
+        <note type="gloss" target="#mi1-005-orig" n="stupp" resp="#fyndling">Zu mittelhochdeutsch stüppe, Staub, Pulver. „stupp si wol“ heißt „bestäube sie gut“; womit, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#stupp"/></note>
+        <note type="interpretive_choice" target="#mi1-005-orig" n="stews" resp="#fyndling" subtype="philological">„stoße“ (zerstoße): stews als Schreibung für das Verb stoßen. Die Familienfassungen haben an derselben Stelle stoßen: Mondseer Kochbuch „stoz nach dem sieden chlain“, Pannonhalma, Cod. 118. J. 42, fol. 279r „stoes sy chlain“. Das Wort selbst steht unter dieser Form in keinem geprüften Wörterbuch (Schmeller, Lexer, FWB, DWB).<list type="alternatives"><item>„lass sie im Wein quellen“<note type="rationale">Frischs Teutsch-Lateinisches Wörterbuch kennt stewen als Wasser stauen oder quellen lassen, aber mit einem niederrheinischen Beleg und viel später. Keine Parallelfassung weicht die Kletzen hier ein; alle stoßen sie nach dem Sieden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-005-orig" n="fier wochen ge mues" resp="#fyndling" subtype="contextual">Ein Vorrat, der vier Wochen hält. Die Parallelfassungen sagen „so beleibt es guet vier oder sex … wochen“ (Mondseer Kochbuch) und „so peleibt es gut vyer oder sechs wochen“ (Pannonhalma).<list type="alternatives"><item>Eine Menge, die für vier Wochen reicht<note type="rationale">Wörtlich möglich, setzt aber ebenfalls voraus, dass das Mus so lange hält; die Parallelen sprechen ausdrücklich von Haltbarkeit.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-006-trans" resp="#fyndling">Was ist das? Ein ganzer Hecht oder ein anderer Fisch liegt auf dem Rost und wird in drei Zonen verschieden behandelt, sodass an einem Fisch drei Speisen entstehen und der Fisch dennoch ganz bleibt. Die Mitte steckt in einem weißen Tuch, Kopf und Schwanz ragen heraus.
+
+Die drei Speisen. Der Text benennt sie nicht, er beschreibt nur, was mit jeder Zone geschieht: Vorne kommt heißes Schmalz und Mehl darauf, die Mitte gart im Tuch, das mit heißem Wein genetzt wird, hinten geschieht nichts. Eine verwandte Fassung im Innsbrucker Kochbuch spricht von einem Fisch, der gebacken, gesotten und gebraten ist. So gelesen ist das Vorderteil das Gebackene, die Mitte das Gesottene und das Hinterteil das Gebratene.
+
+Das Tuch. Wie oft das Tuch mit Wein genetzt wird, sagt der Text nicht. Die Mondseer und die Regensburger Fassung lassen das Tuch mit heißem Wein begießen. Heute ist es sinnvoll, nachzunetzen, sobald das Tuch trocken wird, damit es auf dem Rost nicht anbrennt; das ist ein heutiger Rat, kein Wortlaut.
+
+Offen. Schuppen und Ausnehmen nennt der Text nicht, ebenso wenig Wenden, Garzeit oder ein Zeichen, wann der Fisch fertig ist. Auch die Salse bleibt unbeschrieben.
+
+Praxis. Ein Rost über gleichmäßiger Glut, ein Tuch aus Leinen oder Baumwolle, heißes Schmalz und heißer Wein am Feuer. Frischen Fisch kühl halten und durchgaren; am dicksten Stück in der Tuchmitte prüfen, denn dort gart er am langsamsten. Die Zubereitungszeit von etwa 60 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-006-orig" n="salsen" resp="#fyndling">Salse ist eine würzige Tunke, die man zum Fisch reicht. Der Text nennt keine Zutaten dafür.</note>
+        <note type="interpretive_choice" target="#mi1-006-orig" n="trey lay essen" resp="#fyndling" subtype="contextual">Dreierlei Speisen an einem Fisch durch drei Garweisen: das Vorderteil mit heißem Schmalz und Mehl wie gebacken, die Mitte im mit Wein genetzten Tuch wie gesotten, das Hinterteil blank gebraten. Die verwandte Fassung im Innsbrucker Kochbuch (Cod. 5486) nennt die drei Speisen ausdrücklich: „In treierlay pachen gesoten vnd gepraten“.<list type="alternatives"><item>Drei Stücke desselben Fisches, die sich nur nach dem Körperteil unterscheiden.<note type="rationale">Dagegen spricht die verschiedene Behandlung der drei Zonen im Text selbst und die Benennung in der verwandten Fassung.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-007-trans" resp="#fyndling">Was ist das? Ein Imitationsgericht: Fein gehacktes Fischfleisch wird mit geriebenem Brot gebunden, gewürzt und in die Gestalt eines Rehbratens gebracht. Anders als die verwandten Rezepte, die die Form in der Pfanne aufwallen lassen und dann auf einen Spieß stecken, schlägt diese Handschrift den geformten Braten in ein Tuch und lässt ihn darin sieden.
+
+Das Tuch. Es hält die weiche Masse zusammen, „daz er nicht her aus mueg“. Worin der Braten siedet, sagt der Text nicht. Sieden setzt eine Flüssigkeit voraus; ob Wasser oder etwas anderes gemeint ist, bleibt offen.
+
+Nicht stark sieden, bis er fest ist. „lass in nicht vast syeden“ verlangt schwaches Sieden. Das Ende nennt der Text selbst: Der Braten soll fest werden. „der stark“ ist bairisch für „erstarke“ (bairisch der- steht für er-), also: fest werden.
+
+Der Schluss. Mit „etc.“ kürzt der Schreiber ab. Was danach kommt, sagt der Text nicht. Die verwandten Rezepte fahren mit Spieß und Spicken fort, etwa w1-004 und mon-267, die den Braten mit Hechtbrät spicken. Ob der Schreiber das meint, ist offen.
+
+Würzen. „wuercz wol“ nennt keine Gewürze. Welche, bleibt dem Koch überlassen.
+
+Praxis. Den Fisch entgräten und entschuppen, das Fleisch fein hacken, geriebenes Brot einarbeiten und würzen. Mit einem nassen Messer auf dem Brett zur Bratenform zusammenfügen, fest in ein sauberes Tuch schlagen und schwach sieden lassen, bis die Masse fest ist. Heute würde man dafür leicht gesalzenes Wasser nehmen; der Text nennt keine Flüssigkeit. Der Fisch muss bis zum Verarbeiten kühl bleiben, und die Masse muss im Tuch ganz durchgaren - das Festwerden, das der Text verlangt, ist zugleich das Zeichen dafür. Die Zubereitungszeit von etwa einer Stunde ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-007-orig" n="Rech protten" resp="#fyndling">Rehbraten. „Rech“ ist mittelhochdeutsch rêch, das Reh, nicht das Rebhuhn.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rech"/></note>
+        <note type="gloss" target="#mi1-007-orig" n="visch prat" resp="#fyndling">Fischbrät: das rohe Fischfleisch als Masse, nicht gebratener Fisch. Im Bairischen heißt Brät das weiche Fleisch ohne Knochen.</note>
+        <note type="gloss" target="#mi1-007-orig" n="anricht pank" resp="#fyndling">Die Anrichtbank, der Tisch, auf dem Speisen zugerichtet und angerichtet werden.</note>
+        <note type="interpretive_choice" target="#mi1-007-orig" n="da mit vnd er der stark" resp="#fyndling" subtype="lexical">„damit er fest wird“: „der stark“ = derstark, bairisch für „erstarke“ (Schmeller: Präfix der- entspricht meistens hochdeutsch er-); erstarken von einer weichen Masse heißt „fest werden“ (Schweizerisches Idiotikon, erstarcheⁿ 1b „von Zähflüssigem, fest werden“; Prasmofsky, Nürnberg 1685: „laſſe es erſtarken“). Die verwandten Rezepte lassen die Masse an dieser Stelle in der Pfanne aufwallen, bevor sie auf den Spieß kommt - auch dort wird sie erst fest.<list type="alternatives"><item>„lass ihn darin nicht stark sieden, bis er fest wird“<note type="rationale">„da mit“ als „darin“ (im Tuch) und „vnd“ als bairisches unz „bis“ (Schmeller: unz für „bis“). Der Sinn bleibt derselbe, nur der Satzbau ist anders.</note></item><item>„stark“ als Adjektiv (kräftig, stark gewürzt)<note type="rationale">Ergibt nach „er der“ keinen Satz und passt nicht zum Sieden; das „der“ ist das Präfix.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-008-trans" resp="#fyndling">Was ist das? Gesottene Hennen in einer scharfen Brühe, gelb gefärbt und gut gewürzt. Die Zeile nennt das Gericht und gibt nur Farbe und Würze vor; wie lange die Hennen sieden, ob sie ganz oder zerteilt in den Topf kommen, womit gewürzt und womit gefärbt wird, setzt sie voraus.
+
+Scharfe Brühe. Die Hennen garen in der Brühe, die mit ihnen aufgetragen wird. Scharf heißt bei Speisen „stark gewürzt“, das Wort kann aber auch das Saure meinen. Der Text nennt weder Gewürze noch Essig oder Wein; was die Brühe scharf macht, bleibt offen.
+
+Gelb. Ein Färbemittel nennt der Text nicht. Die Farbregel des Berliner Kochbuchs aus derselben bairischen Überlieferung sagt „Gell das ist auch gut das machstu von Saffran“ (b4-207). Safran ist damit die naheliegende historische Lesart; im Rezept selbst steht er nicht.
+
+Praxis. Die Reihenfolge des Textes ist: sieden, gelb machen, würzen. Welche Gewürze und wie viel, ist eigene Wahl. Heute: Geflügel bis zum Kochen kühl halten und ganz durchgaren.</note>
+        <note type="gloss" target="#mi1-008-orig" n="gell" resp="#fyndling">Gelb. Ein Färbemittel nennt der Text nicht. Die Farbregel des Berliner Kochbuchs aus derselben bairischen Überlieferung macht Gelb mit Safran (b4-207).</note>
+        <note type="interpretive_choice" target="#mi1-008-orig" n="scharffen prue" resp="#fyndling" subtype="lexical" cert="unknown">Eine kräftig gewürzte Brühe. Scharf heißt bei Speisen „stark gewürzt“ (Etymologisches Wörterbuch des Deutschen: übertragen „stark gewürzt“; Frisch: „scharf, den Geschmack nach, acris saporis“). Welche Gewürze, sagt der Text nicht; „wurcz sy wol“ passt zu dieser Lesart.<list type="alternatives"><item>Eine saure Brühe mit Essig oder Wein<note type="rationale">Frisch kennt auch die „Schärfe des Eßigs“, und Lexer stellt scharpf zu lat. acer, acerbus (scharf, herb). Der Text nennt aber keine Säure; deshalb nur Alternative.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-009-trans" resp="#fyndling">Was ist das? Eine grüne Torte ohne Teig: Eier und Semmelmehl werden durchgestrichen, mit grüner Kräutersalse gefärbt, in einer ausgemehlten Form unter einem eisernen Deckel mit Glut gebacken, dann gestürzt, oben kreuzweise eingeschnitten und mit Zucker bestreut. Heute steht das einem gebackenen Kräuteromelett am nächsten.
+
+Durchstreichen. Eier und Semmelmehl gehen zusammen durch die Pfefferpfanne, einen Durchschlag, oder durch ein sauberes Tuch. So wird die Masse glatt und ohne Klümpchen. Ob die grüne Salse mit durchgestrichen oder nur dazugegeben wird, lässt „vnd dy grun salssen dar mit“ offen.
+
+Die grüne Salse. Das Rezept nennt sie mit bestimmtem Artikel und setzt sie als bekannt voraus; welche Kräuter hineingehören, sagt es nicht. Im Kochbuch des Meisters Hans besteht die grüne Salse aus Salbei, Petersilie und Sauerampfer mit Gewürzen und Brot, angemacht mit Wein oder Essig. Die Wahl der Kräuter ist beim Nachkochen eine eigene Entscheidung, keine Angabe dieses Textes.
+
+Form und Hitze. Die Form wird mit Mehl bestreut, damit nichts anbrennt; der Text nennt das nach dem Einfüllen. Auf den eisernen Deckel kommen glühende Kohlen, „das dem andren geleich prat“: damit die Torte oben so gart wie am anderen Teil, wohl dem Boden. Dass die Form selbst auf der Glut steht, setzt der Text damit voraus, sagt es aber nicht ausdrücklich. Ein Rezept derselben Art in den Kochbüchern aus Cpg 485 (Heidelberg, 1580) nennt beides: die Pfanne auf die Glut und Glut auch auf den Deckel.
+
+Wann fertig? „wann ez sich protten hat“, wenn sie durchgebacken ist. Ein Zeichen oder eine Zeit nennt der Text nicht; die Eier müssen ganz gestockt sein.
+
+Anrichten. Die Torte wird auf ein sauberes Tuch in einer Schüssel gestürzt, damit sie ganz bleibt, oben kreuzweise aufgeschnitten und mit Zucker bestreut.
+
+Praxis. Mengen nennt das Rezept nicht. Wer nachkocht, stellt die ausgemehlte Form auf schwache Glut und legt Kohlen auf den Deckel; das ist eine heutige Ergänzung. Die Zubereitungszeit von etwa 60 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-009-orig" n="pfeffer pfann" resp="#fyndling">Ein pfannenförmiger Seiher, ein Durchschlag. Das Frühneuhochdeutsche Wörterbuch erklärt die Pfefferpfanne als Seiher zum Durchseihen einer Brühe; das Grimmsche Wörterbuch zitiert die Küchenmeisterei: „ein pfefferpfann das ist ein durchschlag“.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="Turken" resp="#fyndling" subtype="philological">Torte. In der Überschrift steht deutlich „Turken“, gemeint ist „Turten“; im Rezept selbst heißt das Gericht danach zweimal „turt“.<list type="alternatives"><item>„Turken“ als eigenes Wort<note type="rationale">Im Zusammenhang ohne Sinn; der Text beschreibt eine Torte und nennt sie gleich darauf „turt“.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="grun / dy grun salssen" resp="#fyndling" subtype="lexical">Grün als Farbe: „dy grun salssen“ ist die grüne Salse, eine Würzsauce aus grünen Kräutern, die als bekannt vorausgesetzt wird und der Torte Farbe und Namen gibt. Als feste Sauce kennt sie auch die Wiener Handschrift Cod. 2897 („mach ein gruene salsen“) und Meister Hans („Ain grune sals“ aus Salbei, Petersilie und Sauerampfer).<list type="alternatives"><item>Grün im Sinn von roh, ungekocht<note type="rationale">So steht „grün“ in einigen alemannischen Rezepten für rohe Zutaten. Vor „salssen“ mit bestimmtem Artikel passt der feste Saucenname besser, und die Überschrift nennt die ganze Torte grün.</note></item></list><ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#grun"/></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="Eysnen dekn" resp="#fyndling" subtype="philological" cert="unknown">Eiserner Deckel. Der Satz beginnt mit „Dek ez zwe“, deck es zu. Das Transkript folgt hier Ehlert („dekn“) und dem Bild: Der erste Buchstabe hat Bauch und langen, nach links geschwungenen Oberstrich wie das runde d von „Dek“ in der Zeile darüber; oberhalb kann ein Kürzungszeichen stehen. Ganz eindeutig ist die Stelle nicht.<list type="alternatives"><item>„lek“, wie die CoReMA-Basistranskription liest<note type="rationale">Die CoReMA-Bearbeiter halten das l selbst für unsicher. Lexer, Benecke/Müller/Zarncke und Schmeller kennen „lecke“ nur als Leiste, Saum, Schicht oder Benetzung, nicht als Deckel. Als Verschreibung bliebe die Bedeutung dieselbe.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-009-orig" n="den turt" resp="#fyndling" subtype="contextual">Die Tortenform: „in den turt“ ist das Gefäß, in das die Masse kommt, und „spreng den turt mit mel, so print ez nicht an“ spricht für das Ausmehlen der Form gegen das Anbrennen.<list type="alternatives"><item>Die Torte selbst<note type="rationale">„turt“ ist sonst das Gericht, und der Text nennt das Bestreuen erst nach dem Einfüllen. Dann würde die Masse oben mit Mehl bestreut; anbrennen kann sie aber vor allem am Boden.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-010-trans" resp="#fyndling">Was ist das? Ein Lamm, mit Wein vorgesotten und als Pastete aufgetragen, also in einer Teighülle gebacken. Der Text gibt zwei Arbeitsschritte und ein Urteil; Teig, Würze, Backen, Mengen und Zeiten setzt er voraus.
+
+Ganz oder in Stücken. Die Überschrift sagt ain lamb, ein Lamm. Ob das Tier ganz in die Pastete kommt oder zerteilt, sagt der Text nicht. Ein ganzes junges Lamm passt zum Anspruch „vor fursten vnd heren“, Stücke sind die handlichere Lesart; beides bleibt offen.
+
+Sieden mit Wein. Das Fleisch wird mit Wein gesotten, bevor es in die Pastete kommt. Wie lange und ob dabei gewürzt wird, steht nicht da. Weil es vorgegart ist, muss die Pastete vor allem den Teig ausbacken.
+
+Die Pastete. Pastekken ist eine Form von Pastete, einer in einer Teighülle gebackenen Fleisch- oder Fischspeise. Welchen Teig und welche Backart der Schreiber meint, sagt er nicht. „Auf daz aller kostleichist“ verlangt die aufwendigste Ausführung, ohne sie zu beschreiben.
+
+Praxis. Heute: Lammfleisch bis zum Sieden kühl halten und ganz durchgaren. Teig, Würze und Backart sind eigene Wahl. Einen Pastetenteig aus dem 16. Jahrhundert gibt das Kochbuch der Sabina Welserin (saw-061); eine Angabe dieses Rezepts ist er nicht. Eine Zeit nennt der Text nicht; sie hängt davon ab, ob das Lamm ganz oder in Stücken gart.</note>
+        <note type="gloss" target="#mi1-010-orig" n="pastekken" resp="#fyndling">Form von Pastete: eine Fleisch- oder Fischspeise, die in einer Teighülle gebacken wird (Frühneuhochdeutsches Wörterbuch). Grimms Wörterbuch kennt die Nebenform pastecke.</note>
+        <note type="interpretive_choice" target="#mi1-010-orig" n="auf daz aller kostleichist" resp="#fyndling" subtype="lexical">„Auf das Allerkostbarste“: köstlich heißt im Frühneuhochdeutschen „viel Aufwand verlangend, kostspielig, teuer“, auch „wertvoll, erlesen, prächtig“ (Frühneuhochdeutsches Wörterbuch). Gemeint ist die aufwendigste Ausführung der Pastete.<list type="alternatives"><item>„Auf das Allerköstlichste“ im heutigen Sinn: so wohlschmeckend wie möglich<note type="rationale">„Sehr wohlschmeckend“ ist die heutige Bedeutung (DWDS-Wörterbuch); das Frühneuhochdeutsche Wörterbuch stellt Aufwand und Kostbarkeit voran. Der Geschmack ist eingeschlossen, aber nicht der Kern.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-011-trans" resp="#fyndling">Was ist das? Karpfen in Stücken, in seinem eigenen Blut und Wein gesotten. Das Blut gibt der Brühe die schwarze Farbe, nach der das Gericht heißt. Zwiebeln oder saure Äpfel kommen dazu, gewürzt wird ohne Angabe.
+
+Das Blut. Swaisz ist das Blut. Wie man es gewinnt, sagt der Text nur mit „schlag ihn auf“: Der Fisch wird geöffnet und das Blut genommen. Blut und Wein kommen zusammen in die Brühe. Das Kochbuch des Balthasar Staindl (1545) sagt bei seinem schwarzen Süpplein zu Karpfen ausdrücklich, man müsse das Blut vorher in Wein auffangen, das gebe die Schwärze; Rumpolt fängt es in Essig auf. Frisches Blut verdirbt rasch: gleich weiterverarbeiten und Fisch und Brühe vollständig garen.
+
+Die Stücke. Dass der Karpfen zerteilt wird, setzt der Text mit „die Stücke“ voraus, ohne den Schritt zu nennen. Wie groß, bleibt offen.
+
+Sieden oder aufwallen. Der Text lässt die Wahl zwischen Sieden und einmaligem Aufwallen, alles miteinander. Die Stücke sollen darin gar werden; wie lange das dauert, sagt er nicht.
+
+Was fehlt. Mengen, die Art des Weins, die Gewürze und ein Bindemittel. Die späteren Parallelen binden mit geröstetem oder geriebenem Roggenbrot oder mit Pfefferkuchen und nennen Pfeffer, Nelken und Zimt. Ob die Michaelbeurer Fassung so gedacht war, bleibt offen; „würze es auch gut“ lässt die Wahl dem Koch.
+
+Praxis. Das Blut beim Öffnen des frisch geschlachteten Karpfens mit etwas Wein auffangen, wie Staindl es rät, den Fisch in Stücke teilen, mit Blut und Wein ansetzen, Zwiebeln oder säuerliche Äpfel dazuschneiden und sieden lassen, bis der Fisch gar ist; dann würzen. Die Zubereitungszeit von etwa 45 Minuten ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-011-orig" n="Swaisz" resp="#fyndling">Blut, zunächst das von Tieren; die Jägersprache sagt heute noch Schweiß. Schmellers Bayerisches Wörterbuch führt Schwaiß ausdrücklich in dieser Bedeutung. Hier ist es das Blut des Karpfens, das der Brühe die schwarze Farbe gibt.</note>
+        <note type="gloss" target="#mi1-011-orig" n="slach in auf" resp="#fyndling">Aufschlagen heißt hier aufmachen, öffnen: Der Fisch wird geöffnet, dabei fällt das Blut an. Wie genau, sagt der Text nicht.</note>
+        <note type="interpretive_choice" target="#mi1-011-orig" n="daz dy gesotten sein" resp="#fyndling" subtype="contextual">Zweckangabe: Die rohen Stücke kommen in Blut und Wein, damit sie darin gesotten werden. Das folgende „lass ez sewden … als mit ein ander“ siedet alles zusammen.<list type="alternatives"><item>Die Stücke sind schon vorher gesotten und kommen nur noch in die Brühe<note type="rationale">So macht es das Kochbuch des Balthasar Staindl: Der Fisch siedet dort getrennt „im saltz“, das schwarze Süpplein wird darübergegossen. Im Michaelbeurer Text ist „daz“ aber eine Konjunktion und kein Bezugswort, und vom getrennten Sieden steht nichts da.</note></item></list></note>
+        <note type="preparation_tip" target="#mi1-012-trans" resp="#fyndling">Was ist das? Geriebene Erbsen. Weiße Erbsen werden über Nacht eingeweicht, in einem scharfen Kaltguss gesotten, bis die Hülsen gehen, gestampft und gewaschen, bis sie gelb und sauber sind, noch einmal gesotten, auf der Glut nachgetrocknet und dann lange mit süßem Wein und etwas Senf gerieben. Am Ende sollen sie zu drei Ballen gedrückt werden; mitten in diesem Satz bricht der Text ab.
+
+Der Kaltguss. Gemeint ist eine scharfe Lauge aus Holzasche und Wasser. Wohin die Erbsen kommen, sagt der Text nicht ausdrücklich: „seych sy sauber ab“ kann die Lauge meinen, die klar abgeseiht wird, oder die eingeweichten Erbsen. Verwandte Rezepte sieden die Erbsen in der Lauge selbst, so das Mondseer Kochbuch: „mach von erst ein ckalt gossen vnd sewd die arbayssen dar im“. Dabei lösen sich die Hülsen; das Stampfen und das wiederholte Waschen entfernen Hülsen und Lauge zugleich. Der Text hört erst auf zu waschen, wenn die Erbsen „gelb vnd schon“ sind.
+
+Sieden und Trocknen auf der Glut. Die geschälten Erbsen werden im Topf noch einmal gesotten, abgeseiht und auf glühende Kohlen gesetzt, bis sie „wallen“. Gemeint ist wohl, dass das restliche Wasser verdampft, bevor gerieben wird. Ein Wolfenbütteler Kochbuch des 16. Jahrhunderts (Herzog August Bibliothek, Cod. Guelf. 42.6 Aug. 4°) beschreibt für seine „geribne Arbeiss“ denselben Schritt: den Kessel auf die Glut setzen, „biß wol druckhen wordten ist“.
+
+Reiben mit süßem Wein und Senf. Die Reibzeit nennt der Text selbst: „ain stund oder iij“, eine Stunde oder drei. Welcher süße Wein und wie viel, sagt er nicht. „vergeuss sy nicht“ heißt wörtlich „verschütte sie nicht“; es kann auch meinen, nicht zu viel Wein daranzugießen. Vom Senf soll es „ain wennig“ sein; ob als Saat, Mehl oder angerührter Senf, bleibt offen. Das Mondseer Kochbuch gibt zu seinen Erbsen „ein durchgeriben seniff vnd honig“, also einen durchgestrichenen, angerührten Senf. Der Schreiber hat hinter dem Senf zuerst „zukker“ geschrieben und es wieder gestrichen; Zucker gehört also nicht hinein.
+
+Wie ging es weiter? „So truk si zw train pallen auf ain …“: Die Masse soll so fest sein, dass man sie zu Ballen drücken kann. Worauf, und was danach mit ihnen geschieht, ist verloren. Verwandte Rezepte braten geformte Erbsen am Spieß (Mondseer Kochbuch) oder über der Glut (Klosterkochbuch Rott am Inn), das Churer Kochbuch zieht sie durch einen Apfelteig und bäckt sie in Butter. Ob die Ballen hier gebraten, gebacken oder einfach angerichtet wurden, sagt der Text nicht.
+
+Praxis. Getrocknete helle Erbsen über Nacht einweichen. Wer den Kaltguss selbst macht: Lauge ist ätzend, Haut und Augen schützen und die Erbsen sehr gründlich waschen, wie der Text es verlangt. Geschälte Erbsen aus dem Handel ersparen Lauge und Waschen - das ist ein heutiger Behelf. Gerieben wird im Topf mit einem schweren Stößel; den Wein gibt man heute am besten nach und nach zu, bis die Masse glatt ist und sich noch zu Ballen drücken lässt. Eine Zubereitungszeit geben wir nicht an, weil das Rezept abbricht.</note>
+        <note type="gloss" target="#mi1-012-orig" n="kaltgoz" resp="#fyndling">Kaltguss, eine scharfe Lauge aus Holzasche und Wasser; Fischers Schwäbisches Wörterbuch zitiert noch „ein Kaltguss oder Laug“. Darin lösen sich bei getrockneten Erbsen und Bohnen die Hülsen. Die Lauge ist ätzend, deshalb werden die Erbsen danach gründlich gewaschen.</note>
+        <note type="gloss" target="#mi1-012-orig" n="paul / palg" resp="#fyndling">Balg, hier die Hülse der Erbse. „pis sich paul gen wellen“ heißt „bis die Hülsen sich lösen wollen“. Eine Wiener Handschrift sagt es fast gleich: „sewd sie hincz daz sy dy pelg lassen“.</note>
+        <note type="gloss" target="#mi1-012-orig" n="trit sy" resp="#fyndling">Wörtlich „tritt sie“. Treten heißt im Mittelhochdeutschen auch „stampfen, zerstampfen“ (Lexer); der Text stellt es neben das Reiben mit dem Stößel.</note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="hacharbaz" resp="#fyndling" subtype="philological" cert="unknown">Gerichtsname, so stehen gelassen, wie er geschrieben ist. Sicher erkennbar ist nur der zweite Teil, arbaz = Erbsen; was hach- bedeutet, ist offen. Schmeller, das Salzburger Idiotikon, Höfer, Castelli, das Frühneuhochdeutsche Wörterbuch, Lexer und das Grimmsche Wörterbuch führen das Wort nicht. Der Anfangsbuchstabe ist in der Handschrift ein h, kein b: Das b in arbaz hat einen geschlossenen Bauch auf der Zeile, der erste Buchstabe einen offenen Bogen mit Unterlänge wie das h in ch. Der Titel verspricht deshalb nichts über die Zubereitung hinaus.<list type="alternatives"><item>pach- oder bach-arbaz, „gebackene Erbsen“, verderbt aus der Vorlage<note type="rationale">So hieße das Gericht wie im Churer Kochbuch „Gebachen Arbais“ (chu-079), wo die geformten Erbsen „durch ain dickhen opfl taig“ gezogen und in Butter gebacken werden; das Formen zu Ballen am Ende passte dazu. Dagegen spricht die Schreibweise dieses Schreibers: Kein Wort seiner Rezepte beginnt mit b, er schreibt „pachen“, „pleyb“, „pallen“, „palg“. Eine Vorlage „bachen“ hätte er als pach- geschrieben, und der erhaltene Text backt nichts.</note></item><item>hack-, „zerhackte“ oder zerstoßene Erbsen<note type="rationale">So setzt die Mittelhochdeutsche Begriffsdatenbank das Wort an (hackareweiʒ, unter Hülsenfrüchten). Der Text hackt aber nicht, er stampft und reibt, und der Eintrag dürfte aus eben dieser Stelle stammen, ist also kein zweiter Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="laz sewden richt" resp="#fyndling" subtype="lexical">„lass sie sofort sieden“: richt als Adverb „sofort, geradewegs“, wie es das Frühneuhochdeutsche Wörterbuch (richt) verzeichnet.<list type="alternatives"><item>„lass sie richtig, gründlich sieden“ (richt für recht)<note type="rationale">„recht sieden“ ist eine geläufige Formel. Die Schreibung richt ist im Grimmschen Wörterbuch aber nur als „gerade, aufrecht“ neben recht belegt, nicht als „gründlich“.</note></item><item>„lass sie nicht sieden“<note type="rationale">Am Zeilenanfang sehen r+i und n+i in dieser Hand fast gleich aus, vgl. trit zwei Zeilen höher. Ein „nicht“ passt aber schlecht: Danach werden die Erbsen abgeseiht, lagen also im Topf in Flüssigkeit über dem Feuer.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="reyb sy dar mit vnd vergeuss sy nicht" resp="#fyndling" subtype="lexical">„reibe sie damit und verschütte sie nicht“: vergießen im Sinn „ausschütten, verschütten“ (Frühneuhochdeutsches Wörterbuch, vergießen 1). Über reyb steht ein kleiner Haken, der wie ein Kürzungszeichen aussieht, aber nichts erkennbar abkürzt; das Wort bleibt „reibe“.<list type="alternatives"><item>„gieß nicht zu viel daran“: vergießen wie versalzen als „zu viel gießen“<note type="rationale">Passt zur Sache, der Wein soll die Masse geschmeidig machen, nicht verdünnen; ein Wolfenbütteler Kochbuch mahnt beim Wasser „doch nit zuuil“. Diese Bedeutung von vergießen steht in den geprüften Wörterbüchern aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-012-orig" n="truk si zw train pallen auf ain" resp="#fyndling" subtype="philological">„drücke sie zu drei Ballen auf ein …“: train = drein, die gebeugte Form von drei; derselbe Schreiber setzt t für d auch in truk (drücke). Die Mittelhochdeutsche Begriffsdatenbank stellt train ebenfalls zu drî, möglicherweise nach eben dieser Stelle. Mit „auf ain“ endet der Text in der letzten Zeile von fol. 59v mitten im Satz; worauf die Ballen kommen, steht nicht da.<list type="alternatives"><item>„zu Ballen“ ohne Zahl, train als Verschreibung<note type="rationale">Dann bliebe train unerklärt; die Zahl ergibt sich zwanglos aus der bairischen Schreibung mit t für d.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

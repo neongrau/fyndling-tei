@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kletzenmus mit Honig und Nelken</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-005/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-005</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-005">
+        <head>Kletzenmus mit Honig und Nelken</head>
+        <div type="original" xml:id="mi1-005-orig" xml:lang="de-x-fnhd" corresp="#mi1-005-trans">
+          <p>Wildu machen ein muess von kleczen So mach dy kloczen schon vnd seud sy gar wol vnd stews sy in wein vnd streich sy durch ein pfann oder sibb vnd seud sy dan wol vnd tue dar ein honig vnd naglein genueg vnd stupp si wol vnd war es zw tuen So reib wenig prot dar an vnd tue ez in einen haffen so hastu fier wochen ge mues</p>
+        </div>
+        <div type="translation" xml:id="mi1-005-trans" xml:lang="de" corresp="#mi1-005-orig">
+          <p>Willst du ein Mus aus Kletzen machen, so mach die Kletzen sauber und siede sie gar gut. Zerstoße sie in Wein und streiche sie durch eine Pfanne oder ein Sieb.</p>
+          <p>Dann siede sie gut, gib Honig und genug Nelken hinein und bestäube sie gut. Wäre es zu dünn, so reibe ein wenig Brot daran.</p>
+          <p>Gib es in einen Topf, so hast du für vier Wochen Mus.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="dried pear" orig="kleczen" commodity="wikidata:Q1774262" source="#corema-ingredient-index">Kletzen (gedörrte Birnen)</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="naglein genueg" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="wenig prot" commodity="wikidata:Q7802" source="#corema-ingredient-index">Brot, gerieben (nur wenn das Mus zu dünn ist)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-005-trans" resp="#fyndling">Was ist das? Ein Mus aus Kletzen, also gedörrten Birnen. Die Früchte werden weich gesotten, in Wein zerstoßen, durchgestrichen, mit Honig und Nelken noch einmal gesotten und als Vorrat in einen Topf gefüllt.
+
+Zerstoßen in Wein. Das Wort stews ist ungewöhnlich geschrieben. Gemeint ist „stoße“: Das Mondseer Kochbuch sagt an derselben Stelle „stoz nach dem sieden chlain“, die Fassung in Pannonhalma „stoes sy chlain“. Die gekochten Kletzen werden also mit dem Wein zu Brei zerstoßen, damit sie durch Pfanne oder Sieb gehen.
+
+Pfanne oder Sieb. Der Text lässt die Wahl. Eine „Pfanne“ zum Durchstreichen muss gelocht gewesen sein, sonst ginge nichts hindurch. Heute tut es ein feines Sieb, ein Durchschlag oder eine Passiermühle.
+
+Bestäuben. stupp si wol heißt „bestäube sie gut“, mit einem Pulver. Welches, sagt der Text nicht. Naheliegend sind die eben genannten Nelken; eine verwandte Fassung nennt neben den Nelken „ander stupp“, also noch weiteres Gewürzpulver. Wer heute kocht, nimmt gemahlene Nelken - das ist eine heutige Entscheidung, keine Vorgabe der Handschrift.
+
+Aufkochen. Wird Brot zum Binden eingerieben, muss das Mus danach noch einmal aufkochen, sonst bindet es nicht und schmeckt nach rohem Brot.
+
+Vier Wochen. „so hastu fier wochen ge mues“ meint einen Vorrat, der hält. Die Parallelfassungen sagen es deutlicher: Das Mus „beleibt guet vier oder sex … wochen“. Für heute gilt das nicht ungeprüft: kühl lagern, sauber abfüllen und vor dem Essen ansehen.
+
+Praxis. Harte Dörrbirnen brauchen lange, bis sie weich sind. Stiele und Kerngehäuse erwähnt der Text nicht; eine andere Fassung schneidet sie vor dem Sieden ab, was beim Durchstreichen hilft. Mengen nennt der Text nicht: Honig, Nelken und Brot nach Geschmack und Dicke. Die Zubereitungszeit von etwa zwei Stunden ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-005-orig" n="kleczen / kloczen" resp="#fyndling">Kletzen sind gedörrte Birnen. Das Salzburger Idiotikon von 1796 kennt aus dem Pinzgau „Klotzen, anstatt Kletzen: gedorrte Birnen“ - beide Schreibungen im Text meinen dasselbe. Anderswo heißen sie Hutzeln.</note>
+        <note type="gloss" target="#mi1-005-orig" n="schon" resp="#fyndling">Hier „sauber“, nicht „schön“: Die Kletzen werden vor dem Sieden gesäubert.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#schon"/></note>
+        <note type="gloss" target="#mi1-005-orig" n="pfann oder sibb" resp="#fyndling">Eine Pfanne oder ein Sieb zum Durchstreichen. Gelochte Pfannen zum Seihen kennen die Mundarten als „Seihpfanne“; welches Gerät der Schreiber meinte, sagt er nicht.</note>
+        <note type="gloss" target="#mi1-005-orig" n="stupp" resp="#fyndling">Zu mittelhochdeutsch stüppe, Staub, Pulver. „stupp si wol“ heißt „bestäube sie gut“; womit, sagt der Text nicht.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#stupp"/></note>
+        <note type="interpretive_choice" target="#mi1-005-orig" n="stews" resp="#fyndling" subtype="philological">„stoße“ (zerstoße): stews als Schreibung für das Verb stoßen. Die Familienfassungen haben an derselben Stelle stoßen: Mondseer Kochbuch „stoz nach dem sieden chlain“, Pannonhalma, Cod. 118. J. 42, fol. 279r „stoes sy chlain“. Das Wort selbst steht unter dieser Form in keinem geprüften Wörterbuch (Schmeller, Lexer, FWB, DWB).<list type="alternatives"><item>„lass sie im Wein quellen“<note type="rationale">Frischs Teutsch-Lateinisches Wörterbuch kennt stewen als Wasser stauen oder quellen lassen, aber mit einem niederrheinischen Beleg und viel später. Keine Parallelfassung weicht die Kletzen hier ein; alle stoßen sie nach dem Sieden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-005-orig" n="fier wochen ge mues" resp="#fyndling" subtype="contextual">Ein Vorrat, der vier Wochen hält. Die Parallelfassungen sagen „so beleibt es guet vier oder sex … wochen“ (Mondseer Kochbuch) und „so peleibt es gut vyer oder sechs wochen“ (Pannonhalma).<list type="alternatives"><item>Eine Menge, die für vier Wochen reicht<note type="rationale">Wörtlich möglich, setzt aber ebenfalls voraus, dass das Mus so lange hält; die Parallelen sprechen ausdrücklich von Haltbarkeit.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

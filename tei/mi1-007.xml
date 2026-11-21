@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rehbraten aus Fisch</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-007/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-007</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-007">
+        <head>Rehbraten aus Fisch</head>
+        <div type="original" xml:id="mi1-007-orig" xml:lang="de-x-fnhd" corresp="#mi1-007-trans">
+          <p>wilt du machen ain Rech protten von vischen So nym visch prat welcher lay ez sey dy groz sind vnd tue dy grat dar aus vnd schueppen vnd hak dy clain vnd Reyb prot dar vntter vnd wuercz wol vnd tue ez zw samen mit ainem nassen messer auf ainer anricht pank in der gestalt ainnez rech pratten slach in in ein tuech daz er nicht her aus mueg vnd lass in nicht vast syeden da mit vnd er der stark etc.</p>
+        </div>
+        <div type="translation" xml:id="mi1-007-trans" xml:lang="de" corresp="#mi1-007-orig">
+          <p>Willst du einen Rehbraten aus Fisch machen, so nimm Fischbrät, gleich von welcher Art, von großen Fischen. Nimm die Gräten heraus und die Schuppen und hacke sie klein. Reibe Brot darunter und würze es gut.</p>
+          <p>Füge es mit einem nassen Messer auf einer Anrichtbank zusammen, in der Gestalt eines Rehbratens. Schlag ihn in ein Tuch, damit er nicht herauskann, und lass ihn nicht stark sieden, damit er fest wird, usw.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="visch prat welcher lay ez sey dy groz sind">Fischbrät von großen Fischen, gleich welcher Art</ingredient>
+            </item>
+            <item>
+              <ingredient en="bread" orig="Reyb prot" commodity="wikidata:Q7802" source="#fyndling-ingredient-name">Brot, gerieben</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="wuercz wol" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-007-trans" resp="#fyndling">Was ist das? Ein Imitationsgericht: Fein gehacktes Fischfleisch wird mit geriebenem Brot gebunden, gewürzt und in die Gestalt eines Rehbratens gebracht. Anders als die verwandten Rezepte, die die Form in der Pfanne aufwallen lassen und dann auf einen Spieß stecken, schlägt diese Handschrift den geformten Braten in ein Tuch und lässt ihn darin sieden.
+
+Das Tuch. Es hält die weiche Masse zusammen, „daz er nicht her aus mueg“. Worin der Braten siedet, sagt der Text nicht. Sieden setzt eine Flüssigkeit voraus; ob Wasser oder etwas anderes gemeint ist, bleibt offen.
+
+Nicht stark sieden, bis er fest ist. „lass in nicht vast syeden“ verlangt schwaches Sieden. Das Ende nennt der Text selbst: Der Braten soll fest werden. „der stark“ ist bairisch für „erstarke“ (bairisch der- steht für er-), also: fest werden.
+
+Der Schluss. Mit „etc.“ kürzt der Schreiber ab. Was danach kommt, sagt der Text nicht. Die verwandten Rezepte fahren mit Spieß und Spicken fort, etwa w1-004 und mon-267, die den Braten mit Hechtbrät spicken. Ob der Schreiber das meint, ist offen.
+
+Würzen. „wuercz wol“ nennt keine Gewürze. Welche, bleibt dem Koch überlassen.
+
+Praxis. Den Fisch entgräten und entschuppen, das Fleisch fein hacken, geriebenes Brot einarbeiten und würzen. Mit einem nassen Messer auf dem Brett zur Bratenform zusammenfügen, fest in ein sauberes Tuch schlagen und schwach sieden lassen, bis die Masse fest ist. Heute würde man dafür leicht gesalzenes Wasser nehmen; der Text nennt keine Flüssigkeit. Der Fisch muss bis zum Verarbeiten kühl bleiben, und die Masse muss im Tuch ganz durchgaren - das Festwerden, das der Text verlangt, ist zugleich das Zeichen dafür. Die Zubereitungszeit von etwa einer Stunde ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-007-orig" n="Rech protten" resp="#fyndling">Rehbraten. „Rech“ ist mittelhochdeutsch rêch, das Reh, nicht das Rebhuhn.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#rech"/></note>
+        <note type="gloss" target="#mi1-007-orig" n="visch prat" resp="#fyndling">Fischbrät: das rohe Fischfleisch als Masse, nicht gebratener Fisch. Im Bairischen heißt Brät das weiche Fleisch ohne Knochen.</note>
+        <note type="gloss" target="#mi1-007-orig" n="anricht pank" resp="#fyndling">Die Anrichtbank, der Tisch, auf dem Speisen zugerichtet und angerichtet werden.</note>
+        <note type="interpretive_choice" target="#mi1-007-orig" n="da mit vnd er der stark" resp="#fyndling" subtype="lexical">„damit er fest wird“: „der stark“ = derstark, bairisch für „erstarke“ (Schmeller: Präfix der- entspricht meistens hochdeutsch er-); erstarken von einer weichen Masse heißt „fest werden“ (Schweizerisches Idiotikon, erstarcheⁿ 1b „von Zähflüssigem, fest werden“; Prasmofsky, Nürnberg 1685: „laſſe es erſtarken“). Die verwandten Rezepte lassen die Masse an dieser Stelle in der Pfanne aufwallen, bevor sie auf den Spieß kommt - auch dort wird sie erst fest.<list type="alternatives"><item>„lass ihn darin nicht stark sieden, bis er fest wird“<note type="rationale">„da mit“ als „darin“ (im Tuch) und „vnd“ als bairisches unz „bis“ (Schmeller: unz für „bis“). Der Sinn bleibt derselbe, nur der Satzbau ist anders.</note></item><item>„stark“ als Adjektiv (kräftig, stark gewürzt)<note type="rationale">Ergibt nach „er der“ keinen Satz und passt nicht zum Sieden; das „der“ ist das Präfix.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

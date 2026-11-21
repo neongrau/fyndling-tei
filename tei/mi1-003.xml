@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hirschmus mit Wein und Zucker</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-20">2026-11-20</date>
+        <idno type="url">https://fyndling.de/rezepte/mi1-003/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mi1-003</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Michaelbeuern, Stiftsbibliothek, Man. cart. 81</title>
+          <date notBefore="1444" notAfter="1451">15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451)</date>
+          <idno type="URI">https://gams.uni-graz.at/o:corema.mi1/TEI_SOURCE</idno>
+          <idno type="corema-sigle">mi1</idno>
+          <idno type="corema-object">https://gams.uni-graz.at/o:corema.mi1</idno>
+          <note>Transkription: CoReMA - Cooking Recipes of the Middle Ages, Helmut W. Klug (Hg.), Universität Graz (CC BY 4.0)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (bairisch mit mittel- und südbairischer Färbung, Salzburg/Bayern?, 15. Jh.)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mi1-003">
+        <head>Hirschmus mit Wein und Zucker</head>
+        <div type="original" xml:id="mi1-003-orig" xml:lang="de-x-fnhd" corresp="#mi1-003-trans">
+          <p>wildw von einem hirssen ein gemuss machen So seud das wilbrat an die stat vnd wann ez gesotten ist So laz chalt werden vnd hak ez clain vnd nim ain kapswais oder ains lammpleis vnd sewd in mit wein vnd Reib ez durch ein pfeffer pfann gewurcz ez wol vnd mit zukker So du dez nicht hast So nymb honnig vnd lass ez wallen vnd gib ez auff den tisch</p>
+        </div>
+        <div type="translation" xml:id="mi1-003-trans" xml:lang="de" corresp="#mi1-003-orig">
+          <p>Willst du von einem Hirsch ein Mus machen, so siede das Wildbret sogleich. Und wenn es gesotten ist, so lass es kalt werden und hacke es klein.</p>
+          <p>Und nimm Kalbsblut oder ein lammpleis und siede es mit Wein und reibe es durch eine Pfefferpfanne. Würze es gut, auch mit Zucker. Hast du den nicht, so nimm Honig.</p>
+          <p>Und lass es aufwallen und gib es auf den Tisch.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="wilbrat">Hirschwildbret</ingredient>
+            </item>
+            <item>
+              <ingredient en="calf blood" orig="kapswais" commodity="wikidata:Q107246442" source="#fyndling-ingredient-context">Kalbsblut</ingredient>
+            </item>
+            <item>
+              <ingredient en="wine" orig="wein" commodity="wikidata:Q282" source="#corema-ingredient-index">Wein</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gewurcz" commodity="wikidata:Q42527" source="#corema-ingredient-index">Gewürze</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zukker" commodity="wikidata:Q57656231" source="#corema-ingredient-index">Zucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mi1-003-trans" resp="#fyndling">Was ist das? Ein Wildmus: Hirschwildbret wird gesotten, ausgekühlt und klein gehackt. Kalbsblut wird mit Wein gesotten und durch eine Pfefferpfanne, einen Durchschlag, gerieben, dann gewürzt, gesüßt und aufgewallt.
+
+Blut oder Bries? Das Wort ‚kapswais‘ ist sonst nicht belegt. Kalbsblut ist die am besten gestützte Deutung, weil dasselbe Hirschmus in anderen bairisch-österreichischen Kochbüchern mit ‚swais von dem kalb‘ gemacht wird. Was die zweite Wahl ‚lammpleis‘ ist, bleibt offen; Lammbries ist eine Vermutung ohne Beleg.
+
+Wann kommt das Fleisch dazu? Der Text sagt es nicht. Er hackt das Fleisch, siedet das Blut mit Wein, reibt ‚es‘ durch und lässt ‚es‘ aufwallen. Das Kochbuch des Meisters Hans sagt an derselben Stelle ‚misch den schwaisz daran‘: Das Blut wird unter das Wildbret gemischt. Heute naheliegend: die durchgeriebene Blut-Wein-Mischung unter das gehackte Fleisch rühren, dann würzen, süßen und alles zusammen aufwallen lassen.
+
+Würzen. Der Text nennt keine Gewürze, nur ‚gewurcz ez wol‘. Zucker gehört ausdrücklich dazu, ersatzweise Honig.
+
+Offen bleibt auch, worin das Fleisch zuerst gesotten wird; der Text sagt nur ‚seud das wilbrat‘.
+
+Praxis. Das Durchreiben macht die gesottene Blut-Wein-Mischung glatt. Frisches Blut verdirbt schnell: gekühlt beim Metzger beschaffen, bald verarbeiten und gut durcherhitzen. Die Zubereitungszeit von etwa zweieinhalb Stunden ist eine Schätzung, der Text gibt keine Zeit an.</note>
+        <note type="gloss" target="#mi1-003-orig" n="pfeffer pfann" resp="#fyndling">Pfefferpfanne: ein pfannenförmiger Seiher, ein Durchschlag, durch den man Brühen und Saucen treibt. So erklären es das Frühneuhochdeutsche Wörterbuch, das Grimm'sche Wörterbuch und das Bayerische Wörterbuch.<ptr type="glossary" target="https://fyndling.de/rezepte/glossar/#pfeffer"/></note>
+        <note type="interpretive_choice" target="#mi1-003-orig" n="kapswais" resp="#fyndling" subtype="lexical" cert="unknown">Kalbsblut, gelesen als ‚kalb(s)-swais‘: ‚swais‘ (Schweiß) ist das Blut, wie in der schwarzen Karpfenbrühe dieses Buches. Dafür spricht vor allem das Gericht selbst: Das Kochbuch des Meisters Hans (mha-245) und weitere bairisch-österreichische Handschriften nehmen an genau dieser Stelle ‚den swais von dem kalb‘ und sieden das Hirschwildbret in Wein. Auch das maskuline ‚sewd in‘ (siede ihn) passt zu ‚swais‘. Das Wort selbst steht in keinem Wörterbuch (geprüft: FWB, DWB, Lexer, Schmeller, Salzburger und weitere Mundartwörterbücher).<list type="alternatives"><item>‚kapfwais‘<note type="rationale">Die Bearbeiter der Grazer Ausgabe erwägen diese Form. In der Handschrift steht nach ‚kap‘ ein hoher Schaft in hellerer Tinte, der ein langes s oder ein f sein kann. ‚kapfwais‘ ist außerhalb dieser Handschrift nirgends belegt.</note></item><item>Kalbsbries<note type="rationale">Die frühere Deutung dieses Rezepts. ‚-wais‘ deckt ‚Bries‘ nicht, und keine der verwandten Fassungen hat an dieser Stelle Bries.</note></item></list></note>
+        <note type="interpretive_choice" target="#mi1-003-orig" n="lammpleis" resp="#fyndling" subtype="lexical" cert="unknown">Etwas vom Lamm, das die Handschrift als zweite Wahl neben das Kalbsblut stellt; was ‚pleis‘ ist, bleibt offen. Das Wort ist in keinem Wörterbuch belegt (geprüft: FWB, DWB, Lexer, Schmeller und Mundartwörterbücher; ‚pleis‘ dort nur als Blei, Halde oder Schuhlasche). Die Bearbeiter der Grazer Ausgabe erwägen ‚lammpleins‘, weil bei ‚mm‘ ein Schaft fehlt.<list type="alternatives"><item>Lammbries<note type="rationale">Die frühere Deutung. Das Bries heißt in oberdeutschen Kochbüchern ‚prieß‘ oder ‚priesel‘; ein ‚pleis‘ dafür ist nicht belegt.</note></item><item>Lammblut, parallel zum Kalbsblut<note type="rationale">Würde zur ersten Wahl passen, hat aber im Wortbild keine Stütze; keine verwandte Fassung nennt das Lamm.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
