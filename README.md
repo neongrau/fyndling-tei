@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**8758 Rezepte** aus **57 Rezeptsammlungen**, dazu
-57 Dateien auf Sammlungsebene mit den Quellenangaben.
+**8768 Rezepte** aus **59 Rezeptsammlungen**, dazu
+59 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -55,8 +55,8 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Kunstbuch von mancherley Essen | 1598 | 1217 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
-| Ménagier de Paris | ~1393 | 289 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |
+| Ménagier de Paris | ~1393 | 289 |  |
 | Berlin, Staatsbibliothek zu Berlin – Preußischer Kulturbesitz –, Handschriftenabteilung; Ms. germ. qu. 1187 | Mitte 15. Jh. | 269 | [B4](https://gams.uni-graz.at/o:corema.b4) |
 | Wien, Österr. Nationalbibl., Cod. 2897 | Mitte 15. Jh. (Teil I) | 269 | [W1](https://gams.uni-graz.at/o:corema.w1) |
 | Mondseer Kochbuch | 2. Hälfte 15. Jh. | 268 | [Gr1](https://gams.uni-graz.at/o:corema.gr1) |
@@ -73,8 +73,8 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Wolfenbüttel, Herzog-August-Bibliothek, Cod. Guelf. 42.3-5. Aug. 4° | 1543 | 116 | [Wo10](https://gams.uni-graz.at/o:corema.wo10) |
 | Koch und Kellermeisterei | 1574 | 110 |  |
 | Das geöffnete Kabinett des Sir Kenelm Digby | 1669 | 105 |  |
-| Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Regensburger Kochbuch (Cgm 5919) | um 1500 | 104 | [M9](https://gams.uni-graz.at/o:corema.m9) |
+| Reichenauer Kochbuch | 15. Jh. | 104 | [Ka1](https://gams.uni-graz.at/o:corema.ka1) |
 | Das Buch von guter Speise | ~1350 | 101 | [M11](https://gams.uni-graz.at/o:corema.m11) |
 | Münchner Kochbuchhandschriften (Cgm 384) | 2. Hälfte 15. Jh. | 83 | [M2](https://gams.uni-graz.at/o:corema.m2) |
 | Registrum Coquine | ~1431-1435 | 70 |  |
@@ -98,13 +98,15 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Woolley: Das königliche Kabinett (Getränke) | 1670 | 17 |  |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Wellcome MS.550: medizinische Sammelhandschrift, Abschnitt „de potibus“ (Getränke) | frühes 15. Jh. | 14 |  |
-| Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Salzburg, Cod. M III 3 („Speyerer Kompendium“): Lautertränke und Bierbrauen | um 1460 | 13 |  |
+| Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Michaelbeurer Kochbuch (Man. cart. 81) | 15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451) | 12 | [Mi1](https://gams.uni-graz.at/o:corema.mi1) |
+| Wellcome MS.144: Rezeptbuch (sechs Metrezepte) | um 1650 bis 1731 | 6 |  |
 | Glauber: Reicher Schatz- und Sammelkasten, Zweite Centuria (Gefrierkonzentration) | 1660 | 6 |  |
 | Hohberg: Georgica Curiosa (Vom Met-Sieden) | 1682 | 5 |  |
-| Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |
+| Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
+| Arzneibuch Wellcome MS.MSL.136 (Met und Honiggetränke) | Mitte 15. Jh. | 4 |  |
 | Hausbuch aus Dietramszell (Cgm 467) | um 1477 | 3 | [M4](https://gams.uni-graz.at/o:corema.m4) |
 | Hermann: Der livländische Landmann (Met) | 1695 | 2 |  |
 | Haus- und Arzneibuch im Codex Donaueschingen 792 | um 1450/1452 (Hoffmann/Sturm 2025) | 2 |  |
