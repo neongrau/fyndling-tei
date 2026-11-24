@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Alantwurzeln einmachen</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-23">2026-11-23</date>
+        <idno type="url">https://fyndling.de/rezepte/chu-400/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/chu-400</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ain Schön Kochpuch</title>
+          <date notBefore="1600" notAfter="1699">1559 (Grundstock; Nachträge bis ins späte 17. Jh.)</date>
+          <idno type="URI">https://www.e-periodica.ch/digbib/view?lang=de&amp;pid=qbg-001:2018:36::52</idno>
+          <note>Lesung: fyndling.de, am Bild der Benutzungskopien des Staatsarchivs Graubünden, Chur, NH.2; Nummerierung nach Walter Letsch, Ein schön Kochbuch 1559, Chur 2018 (QBG 36)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ab 1559, mehrere Hände: Grundstock bairisch-westtirolisch, spätere Hände hochalemannisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="chu-400">
+        <head>Alantwurzeln einmachen</head>
+        <div type="original" xml:id="chu-400-orig" xml:lang="de-x-fnhd" corresp="#chu-400-trans">
+          <p>Allendt würzel in zůmachen die grabt man aůch im abrallen ſchab ſie rein Vnd ſchnid ſie in klein ſchibli dan 3 od[er] 4 woch[en] in friſch waſſer weichen Vnd alle tag ein friſchs daran ſchütten Vnd machen wie die 2 obigen·</p>
+        </div>
+        <div type="translation" xml:id="chu-400-trans" xml:lang="de" corresp="#chu-400-orig">
+          <p>Alantwurzeln einzumachen. Die gräbt man auch im April. Schab sie sauber und schneid sie in kleine Scheiblein. Dann drei oder vier Wochen in frischem Wasser weichen und alle Tage ein frisches daran schütten und machen wie die zwei obigen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Allendt würzel">Alantwurzeln (Echter Alant)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="friſch waſſer" commodity="wikidata:Q283" source="#corema-ingredient-index">Wasser, frisch</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#chu-400-trans" resp="#fyndling">Was ist das? Die Vorbehandlung von Alantwurzeln, die danach eingemacht werden. Den Einmachschritt selbst nennt das Rezept nicht, es verweist auf „die zwei obigen“: Bibernellwurzeln einmachen und Eingemachte Pomeranzenschalen. Auch die Bibernelle wird im April gegraben, gewässert und dann „wie die Pomeranzen“ gemacht.
+
+Was heißt „machen wie die zwei obigen“? Nach dem Pomeranzenrezept siedet man die gewässerten Stücke in Wasser weich, gießt geläuterten Zucker oder Honig daran und lässt es sieden, bis eine Probe auf dem Teller nicht mehr fließt; die Stücke sollen dabei weder zu weich noch zu hart werden. Droht das, gießt man den Sud ab, siedet ihn allein zur rechten Dicke, schüttet ihn abgekühlt wieder darauf, beschwert und bewahrt auf. Mengen für Zucker oder Honig nennt keines der drei Rezepte.
+
+Warum so lange wässern? Der Text sagt es nicht. Die Alantwurzel ist scharf und bitter (Adelung, Artikel Alant); das täglich erneuerte Wasser zieht wohl davon etwas aus und hält das Wasser frisch. In der kleinen Reihe ist die Wässerzeit hier die längste: Bibernelle 8 Tage, Pomeranzenschalen 14 Tage, Alant drei oder vier Wochen. Auch Clutius (Leiden 1597) wässert Alantwurzel tagelang mit täglich erneuertem Wasser, nach einer Lauge oder leichten Lake, bevor er sie in Honig einmacht (Kalmus und Alantwurzel in Honig einmachen).
+
+Praxis. Frische Wurzeln des Echten Alants im Frühjahr graben, sauber schaben, in dünne Scheiben schneiden und drei oder vier Wochen wässern, das Wasser jeden Tag wechseln; danach weiter wie bei den Pomeranzenschalen. Heutiges Wissen: Alantwurzel enthält Alantolacton, das bei empfindlichen Menschen Kontaktallergien auslösen kann; beim Schaben und Schneiden helfen Handschuhe.</note>
+        <note type="gloss" target="#chu-400-orig" n="Allendt würzel" resp="#fyndling">Die Wurzel des Echten Alants (Inula helenium). Das Deutsche Wörterbuch (2. Aufl., Artikel Alant, nach Marzell) nennt unter dem Namen vor allem diese Heil- und Gewürzpflanze, Lexer führt mhd. alant als Pflanzennamen (lat. enula). Adelung (18. Jahrhundert) beschreibt die Wurzel als stark riechend und scharf bitter. Im Churer Kochbuch steht sie auch in den Alantweinen, etwa Gesunder Alantwein aus neuem Most.</note>
+        <note type="gloss" target="#chu-400-orig" n="im abrallen" resp="#fyndling">Im April. Das Schweizerische Idiotikon (Bd. 1, Stichwort Abrelle) führt Abrelle als Nebenform von April, das Frühneuhochdeutsche Wörterbuch verweist von abrellenwetter auf Aprilwetter. Dieselbe Grabzeit steht im Rezept davor, Bibernellwurzeln einmachen, als „im abrelen“; darauf bezieht sich das „auch“.</note>
+        <note type="interpretive_choice" target="#chu-400-orig" n="wie die 2 obigen" resp="#fyndling" subtype="contextual">Die beiden unmittelbar vorangehenden Rezepte, Bibernellwurzeln einmachen und Eingemachte Pomeranzenschalen. Beide wässern erst mit täglich frischem Wasser und machen dann in Zucker oder Honig ein; das Bibernellrezept verweist selbst auf die Pomeranzen, und das „auch“ der Grabzeit greift die Bibernelle auf.<list type="alternatives"><item>Die beiden Einmachrezepte davor auf demselben Blatt, Kirschen und Nüsse (chu-396, chu-397).<note type="rationale">Weniger wahrscheinlich: Sie kennen kein Wässern, die Kirschen liegen in Zucker und Gewürz, die Nüsse werden im gestürzten Topf gesotten. Für Wurzeln passt das Verfahren der Pomeranzenschalen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**8838 Rezepte** aus **59 Rezeptsammlungen**, dazu
-59 Dateien auf Sammlungsebene mit den Quellenangaben.
+**9361 Rezepte** aus **60 Rezeptsammlungen**, dazu
+60 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -53,6 +53,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
 | Kunstbuch von mancherley Essen | 1598 | 1287 |  |
+| Churer Kochbuch (Staatsarchiv Graubünden, NH.2) | 1559 (Grundstock; Nachträge bis ins späte 17. Jh.) | 523 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
 | Kochbuch des Meisters Hans | 1460 | 289 | [BS1](https://gams.uni-graz.at/o:corema.bs1) |

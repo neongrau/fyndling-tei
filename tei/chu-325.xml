@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Beeren-Latwerge</title>
+        <author>Anonymus</author>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-21">2026-11-21</date>
+        <idno type="url">https://fyndling.de/rezepte/chu-325/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/chu-325</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ain Schön Kochpuch</title>
+          <date notBefore="1600" notAfter="1699">1559 (Grundstock; Nachträge bis ins späte 17. Jh.)</date>
+          <idno type="URI">https://www.e-periodica.ch/digbib/view?lang=de&amp;pid=qbg-001:2018:36::52</idno>
+          <note>Lesung: fyndling.de, am Bild der Benutzungskopien des Staatsarchivs Graubünden, Chur, NH.2; Nummerierung nach Walter Letsch, Ein schön Kochbuch 1559, Chur 2018 (QBG 36)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-x-fnhd">Frühneuhochdeutsch (ab 1559, mehrere Hände: Grundstock bairisch-westtirolisch, spätere Hände hochalemannisch)</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="chu-325">
+        <head>Beeren-Latwerge</head>
+        <div type="original" xml:id="chu-325-orig" xml:lang="de-x-fnhd" corresp="#chu-325-trans">
+          <p>[?] lattwergen Nim berlin vnd pfle[mm/nn]e ſi wol dan thů ſi in ein ſack truck ſi wol uß laſſe die brü in eim eher[n/m]en haffen woll ſieden Vff einem koll fürlin bis dick iſt alls honig thůn darnach h[onig/ung] od[er] zůcker darin nach dinem belieben Vff diſſe wis macht man aůch v[on] St Johan[n/e]s trübli, hollder, ag[ſt/ſp]en ſpizber Vnd mülber, wan man nit gern wil, darff ſich weder honig noch zůcker darin zů thůn nur ſchauw das wol verſchůmeſt ⟦[i]n die mul ber darf: man kein hung thůn, nur zůcker man kan allerlei latwergen alſo machen etlich[e] thůn gwürz auch drin⟧</p>
+        </div>
+        <div type="translation" xml:id="chu-325-trans" xml:lang="de" corresp="#chu-325-orig">
+          <p>Nimm Beerlein und koche sie gut. Dann tu sie in einen Sack, drück sie gut aus und lass die Brühe in einem ehernen Topf auf einem Kohlenfeuerlein gut sieden, bis sie dick ist wie Honig. Tu danach Honig oder Zucker hinein, nach deinem Belieben.</p>
+          <p>Auf diese Weise macht man sie auch von Sankt Johannes Träublein, Holunder, Agsten-Spitzbeeren und Maulbeeren. Wenn man es nicht gern will, braucht man weder Honig noch Zucker hineinzutun. Schau nur, dass du es gut abschäumst.</p>
+          <p>In die Maulbeeren braucht man keinen Honig zu tun, nur Zucker. Man kann allerlei Latwergen so machen. Etliche tun auch Gewürze hinein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="berlin">Beerlein</ingredient>
+            </item>
+            <item>
+              <ingredient orig="St Johan[n/e]s trübli">Johannisbeeren (Variante)</ingredient>
+            </item>
+            <item>
+              <ingredient en="elder flower" orig="hollder" commodity="wikidata:Q67778134" source="#corema-ingredient-index">Holunderbeeren (Variante)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ag[ſt/ſp]en ſpizber">Agsten-Spitzbeeren (Variante)</ingredient>
+            </item>
+            <item>
+              <ingredient en="black mulberry" orig="mülber" commodity="wikidata:Q161040" source="#fyndling-ingredient-name">Maulbeeren (Variante)</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="honig" commodity="wikidata:Q10987" source="#corema-ingredient-index">Honig (nach Belieben)</ingredient>
+            </item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="zůcker" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker (nach Belieben; bei Maulbeeren nur Zucker)</ingredient>
+            </item>
+            <item>
+              <ingredient en="spice" orig="gwürz" commodity="wikidata:Q42527" source="#fyndling-ingredient-name">Gewürze (nach Belieben)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#chu-325-trans" resp="#fyndling">Was ist das? Ein eingesottener Beerensaft. Die Beeren werden heiß gemacht, in einem Sack ausgepresst, und der Saft siedet in einem Metalltopf auf kleinem Kohlenfeuer, bis er so dick ist wie Honig. Erst dann kommt nach Belieben Honig oder Zucker dazu; wer es nicht süß will, lässt beides weg. Der zweite Absatz überträgt das Verfahren auf Johannisbeeren, Holunder, Agsten-Spitzbeeren und Maulbeeren, ein Nachtrag am Rand nennt für Maulbeeren nur Zucker und erlaubt Gewürze, ohne sie zu nennen.
+
+Kochen oder zerdrücken? Das Verb pfle[mm/nn]e ist der Schlüssel zum ersten Schritt. Für „heiß machen, kochen“: Das Schweizerische Idiotikon (Bd. 1, Sp. 1197) führt flämmen, auch mit pfl-, in der Bedeutung „beim Kochen heiß machen“, Obst brühen, Kirschen kochen und das Wasser eindicken lassen; dieselbe Hand schreibt pflenne in der dicken Quittenlatwerge und der weißen Latwerge für Kochen bis zum Weichwerden, und in der Johannistrauben-Latwerge und der Maulbeer-Latwerge lässt sie die Beeren erst sieden oder warm werden, ehe sie ausgedrückt werden. Letsch 2018, S. 271, versteht es ebenso. Für „zerdrücken“: Ryff 1562 stößt die Holunderbeeren vor dem Auspressen im Mörser (Holunderbeer-Latwerge); ein Wort pflemmen dieser Bedeutung kennt aber kein Wörterbuch. Die Übersetzung folgt der ersten Lesart.
+
+Welche Beeren sind „agsten spizber“? Spitzbeeren sind Berberitzen: Stalder (Bd. 2, S. 385) für Graubünden und Glarus, das Deutsche Wörterbuch unter Spitzbeere, Durheim (1856) und Pritzel/Jessen (1882) für Graubünden und Appenzell. Für agsten findet sich kein Beleg als Frucht, weder in den deutschen und schweizerischen Wörterbüchern noch im Dicziunari Rumantsch Grischun; der nächste Anklang sind die Stachelbeernamen Agras, Agrestbeere bei Pritzel/Jessen, ein Beleg ist das nicht. Letsch 2018, S. 271, setzt „Agathen“ an, ohne Beleg für eine solche Frucht. Ob agsten eine eigene Frucht ist oder die Spitzbeeren näher bestimmt, bleibt offen. Berberitzen kocht auch Staindl 1545 ein (Preiselbeersalse).
+
+Der Topf. Ehern heißt aus Erz, also Messing oder Glockenmetall; dieselbe Hand nimmt einen solchen Topf für die dicke Quittenlatwerge.
+
+Praxis. Reife Beeren mit wenig Hitze aufkochen, bis sie platzen, dann in einem Tuch oder Beutel kräftig auspressen und den Saft auf kleiner Flamme einsieden, dabei immer wieder abschäumen. Die Probe ist die Dicke von Honig; erst dann nach Geschmack süßen. Heute nimmt man einen Topf aus Edelstahl oder Email, weil Fruchtsäure aus Messing und Bronze Kupfer löst. Holunderbeeren nie roh essen, sie verursachen Übelkeit; hier werden sie gekocht.</note>
+        <note type="gloss" target="#chu-325-orig" n="lattwergen" resp="#fyndling">Latwerge heißt hier ein Fruchtsaft, der bis zur Dicke von Honig eingesotten wird.</note>
+        <note type="gloss" target="#chu-325-orig" n="St Johan[n/e]s trübli" resp="#fyndling">Sankt-Johannes-Träublein sind Johannisbeeren. Ryff 1562 erklärt den Namen damit, dass sie gewöhnlich um den Johannistag reif werden (Johannisbeer-Latwerge); dasselbe Wort steht in der Johannisbeer-Torte dieses Buchs.</note>
+        <note type="gloss" target="#chu-325-orig" n="ſpizber" resp="#fyndling">Spitzbeeren sind Berberitzen (Sauerdorn, Berberis vulgaris). Stalder nennt den Namen für Graubünden und Glarus (Versuch eines Schweizerischen Idiotikon, Bd. 2, 1812, S. 385), ebenso das Deutsche Wörterbuch unter Spitzbeere, Durheims Schweizerisches Pflanzen-Idiotikon (1856) und Pritzel/Jessen (1882) für Graubünden und Appenzell. Staindl 1545 kocht die Berberitze als Saurach auf dieselbe Weise ein (Preiselbeersalse).</note>
+        <note type="gloss" target="#chu-325-orig" n="eher[n/m]en haffen" resp="#fyndling">Ein eherner Topf ist aus Erz gegossen, also aus Messing oder Glockenmetall, nicht aus Eisen. Dieselbe Hand nimmt ihn auch für die dicke Quittenlatwerge.</note>
+        <note type="interpretive_choice" target="#chu-325-orig" n="pfle[mm/nn]e ſi wol" resp="#fyndling" subtype="lexical">„koche sie gut“: pflennen als Nebenform von flämmen, das im Schweizerischen Idiotikon (Bd. 1, Sp. 1197) auch mit pfl- belegt ist und in der Küche „beim Kochen heiß machen“ heißt, Obst brühen, Kirschen kochen und das Kochwasser eindicken lassen. Dieselbe Hand gebraucht das Wort in der dicken Quittenlatwerge und der weißen Latwerge für Kochen bis zum Weichwerden, und in der Johannistrauben-Latwerge und der Maulbeer-Latwerge lässt sie die Beeren ausdrücklich erst sieden oder warm werden, bevor sie ausgedrückt werden. So versteht die Stelle auch Letsch 2018, S. 271.<list type="alternatives"><item>„zerdrücke sie gut“<note type="rationale">Der Ablauf ließe es zu, und Ryff 1562 stößt die Holunderbeeren vor dem Auspressen im Mörser (Holunderbeer-Latwerge). Ein Wort pflemmen mit dieser Bedeutung führt aber kein Wörterbuch (Idiotikon, Stalder, Maaler, Schmeller, Schöpf).</note></item><item>pflennen „weinen“<note type="rationale">Die Hauptbedeutung im Schweizerischen Idiotikon (Bd. 1, Sp. 1199), bei Maaler 1561 und Schöpf (Tirolisches Idiotikon, 1866); ergibt im Rezept keinen Sinn. Ob die Handschrift pflemme oder pflenne hat, lässt sich an den Schäften nicht entscheiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#chu-325-orig" n="ag[ſt/ſp]en" resp="#fyndling" subtype="lexical" cert="unknown">Unbestimmte Beerenart, vor Spitzbeeren ohne Komma geschrieben und deshalb als „Agsten-Spitzbeeren“ übersetzt. Als Frucht ist das Wort weder im Schweizerischen Idiotikon noch bei Stalder, Durheim, Schmeller, Schöpf, im Deutschen Wörterbuch oder im Dicziunari Rumantsch Grischun belegt; Lexer führt agst nur als Axt, Schöpf agstein als Bernstein. Die Handschrift kann auch agspen meinen.<list type="alternatives"><item>eigene Frucht neben den Spitzbeeren, etwa die Stachelbeere<note type="rationale">Pritzel/Jessen (1882) verzeichnen für die Stachelbeere Agras, Agres, Agrestbeere (Österreich) und Angster (Schwaben). Ein Anklang, kein Beleg für agsten.</note></item><item>„Agathen“<note type="rationale">So übersetzt Letsch 2018, S. 271, nach seiner Form agten; das lange s nach ag fehlt darin, und eine Frucht dieses Namens ist nirgends belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#chu-325-orig" n="[?] lattwergen" resp="#fyndling" subtype="philological">Der Titel „Beeren-Latwerge“ ist aus dem Inhalt gebildet. Das erste Wort der Überschrift liegt in der Handschrift unter einem Tintenfleck; erkennbar sind ein großer Anfangsbuchstabe, zwei hohe Schäfte und die Endung -en oder -rn.<list type="alternatives"><item>„Erdbeer-Latwerge“<note type="rationale">Letsch 2018, S. 270 f., liest und übersetzt Erdbeeren und vermerkt selbst, das Wort sei stark überarbeitet. Der Rezepttext nennt keine Erdbeeren, nur „Beerlein“ und die Sorten des zweiten Absatzes.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
