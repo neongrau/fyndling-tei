@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**9391 Rezepte** aus **61 Rezeptsammlungen**, dazu
-61 Dateien auf Sammlungsebene mit den Quellenangaben.
+**9442 Rezepte** aus **62 Rezeptsammlungen**, dazu
+62 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
-| Kunstbuch von mancherley Essen | 1598 | 1312 |  |
+| Kunstbuch von mancherley Essen | 1598 | 1362 |  |
 | Churer Kochbuch (Staatsarchiv Graubünden, NH.2) | 1559 (Grundstock; Nachträge bis ins späte 17. Jh.) | 523 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
@@ -112,6 +112,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Hausbuch aus Dietramszell (Cgm 467) | um 1477 | 3 | [M4](https://gams.uni-graz.at/o:corema.m4) |
 | Hermann: Der livländische Landmann (Met) | 1695 | 2 |  |
 | Haus- und Arzneibuch im Codex Donaueschingen 792 | um 1450/1452 (Hoffmann/Sturm 2025) | 2 |  |
+| Syreniusz: Kräuterbuch (Gerstenmet) | 1613 | 1 |  |
 
 ## Wie das Material entsteht - und was das bedeutet
 
