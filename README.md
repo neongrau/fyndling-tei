@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**9361 Rezepte** aus **60 Rezeptsammlungen**, dazu
-60 Dateien auf Sammlungsebene mit den Quellenangaben.
+**9391 Rezepte** aus **61 Rezeptsammlungen**, dazu
+61 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
-| Kunstbuch von mancherley Essen | 1598 | 1287 |  |
+| Kunstbuch von mancherley Essen | 1598 | 1312 |  |
 | Churer Kochbuch (Staatsarchiv Graubünden, NH.2) | 1559 (Grundstock; Nachträge bis ins späte 17. Jh.) | 523 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
@@ -105,6 +105,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Wellcome MS.144: Rezeptbuch (sechs Metrezepte) | um 1650 bis 1731 | 6 |  |
 | Glauber: Reicher Schatz- und Sammelkasten, Zweite Centuria (Gefrierkonzentration) | 1660 | 6 |  |
 | Hohberg: Georgica Curiosa (Vom Met-Sieden) | 1682 | 5 |  |
+| Wirsung: Arzneibuch (Met und Honiggetränke) | 1568 | 5 |  |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |
 | Münchner Kochbuchhandschriften (Cgm 349) | 16. Jh. (Nachtrag) | 4 | [M1](https://gams.uni-graz.at/o:corema.m1) |
 | Arzneibuch Wellcome MS.MSL.136 (Met und Honiggetränke) | Mitte 15. Jh. | 4 |  |
