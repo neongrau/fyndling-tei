@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**9457 Rezepte** aus **62 Rezeptsammlungen**, dazu
-62 Dateien auf Sammlungsebene mit den Quellenangaben.
+**9470 Rezepte** aus **63 Rezeptsammlungen**, dazu
+63 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -99,11 +99,12 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Woolley: Das königliche Kabinett (Getränke) | 1670 | 17 |  |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Wellcome MS.550: medizinische Sammelhandschrift, Abschnitt „de potibus“ (Getränke) | frühes 15. Jh. | 14 |  |
-| Salzburg, Cod. M III 3 („Speyerer Kompendium“): Lautertränke und Bierbrauen | um 1460 | 13 |  |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
+| Salzburg, Cod. M III 3 („Speyerer Kompendium“): Lautertränke und Bierbrauen | um 1460 | 13 |  |
+| Olaus Magnus: Geschichte der Völker des Nordens (Buch XIII: Nahrung) | 1555 | 13 |  |
 | Michaelbeurer Kochbuch (Man. cart. 81) | 15. Jh. (Sammelhandschrift, datierte Teile 1444 und 1451) | 12 | [Mi1](https://gams.uni-graz.at/o:corema.mi1) |
-| Wellcome MS.144: Rezeptbuch (sechs Metrezepte) | um 1650 bis 1731 | 6 |  |
 | Glauber: Reicher Schatz- und Sammelkasten, Zweite Centuria (Gefrierkonzentration) | 1660 | 6 |  |
+| Wellcome MS.144: Rezeptbuch (sechs Metrezepte) | um 1650 bis 1731 | 6 |  |
 | Hohberg: Georgica Curiosa (Vom Met-Sieden) | 1682 | 5 |  |
 | Wirsung: Arzneibuch (Met und Honiggetränke) | 1568 | 5 |  |
 | Münchner Kochbuchhandschriften (Cgm 811) | 2. Viertel 15. Jh. | 4 | [M7](https://gams.uni-graz.at/o:corema.m7) |

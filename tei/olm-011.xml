@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Bier in den Provinzen des Nordens: Wermutbier, Essig, Danziger Bier</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-011/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-011</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-011">
+        <head>Bier in den Provinzen des Nordens: Wermutbier, Essig, Danziger Bier</head>
+        <div type="original" xml:id="olm-011-orig" xml:lang="und" corresp="#olm-011-trans">
+          <p>Adhuc de frugum præparatione pro ceruiſia in diuerſis, &amp; diſtantibus prouinciis conficienda. CAP. XXVII.
+NEQVE tamen modus omnibus prouinciis in frugibus præparandis idem eſt: quia aliter apud Noruegianos in Occidente, aliter in Meridie apud Gothos, aliterqꝫ in Oriente verſus Moſchos, &amp; Finningos verſus Septentrionem: qui etiam optimè præparant hordeum, &amp; ex eo conficiunt fortiſsimum potum: vnde gens redditur robuſtiſsima, ad quodcunqꝫ exercitiũ, vel arduum opus ſubeundũ, &amp; perficiendũ. Quidam enim fruges pręparãt, vt ex iis decoquãt potionem imariorem, abſynthium addentes contra vermes, ſeu lumbricos: quidam, vt dulciorem faciant, ſcilicet ex induſtria non integrè coquentes, vt qui ex lactis eſu frequentius conſtipentur, ventris habeant liberiorem laxationem: quidam fruges parant, vt inde data opera conficiant maximam aceti quantitatem, pro arcibus conſeruandis, ac curiis inſignium dominorum: quidam præparata annona in Martio, &amp; Aprili, ceruiſiam decoquunt decem, vel XX. annis pro medicina duraturam. Aqua etenim illius temporis (hyemalis dicta) ad panem, vel potum conficiendum admixta, nunquàm aceſcere potum, vel putreſcere panem ſinit: hacqꝫ prouidentia vſi Gedanẽſis ceruiſiæ pluſquàm ſexcenti coctores, ſeu braxatores, multa millia vaſoꝝ nobiliſsimæ ac ſaniſsimę ceruiſiæ lucri cauſa, vel in ſuo portu honeſto pretio exoticis negotiatoribus vendunt, vel marino euentu ad exteras, &amp; lõginquas terras Portugalliæ, &amp; Indorum emittunt. Tantæqꝫ virtutis eſt hic liquor, vt eo poto ſanentur quicunqꝫ corporis peſsimi humores. Ideoqꝫ quocunqꝫ hæc ceruiſia venerit, nunquàm ingrata, ſed veluti efficaciſsima medicina illicò comparatur: meritoqꝫ palmam obtinet, vt in Septentrionalibus plagis omnibus cæteris præferatur.
+Non ita de quolibet genere vinorum, ſicuti Plinius lib. XIIII. cap. primo atteſtatur: quorum aliqua hominem in rabiem vertunt, &amp; fœminas partu infœcundas, &amp; quædam fœcundas faciunt: quæ diuerſitas formidanda non eſt in genere ceruiſiarum: nam in Finlandia adeò fœcundas facit mulieres, vt pleruncqꝫ gemellos pariant: è quibus, tanquam fortiſsima ſobole, Rex Suetiæ nouas prouincias dato felici principio inſtituere poſſet, vnde tributum fiſco, &amp; robur regno non modicum accreſcere poſſet. Sed neſcio qua ſtupida cæcitate prouenit, vt fortiſsimæ puellæ in maximo numero quotannis ad oras Germaniæ alienis miſeriis ſeruiturę exeant, vbi domi reſeruari poſſent ad vtilitatem regni. Vtqꝫ improuidentia notetur maior, certum genus equorum in regno Regis edicto remanet: at fœcundæ virgines laxantur, vt in terris non ſatis amicis procreent inimicos. Domi deſolantur agri, &amp; ædes, vbi regni ſoboles foris ædificant ciuitates, &amp; augent tributa.</p>
+        </div>
+        <div type="translation" xml:id="olm-011-trans" xml:lang="de" corresp="#olm-011-orig">
+          <p>Noch einmal über die Zubereitung des Getreides für das Bier, das in verschiedenen und weit voneinander entfernten Provinzen gemacht wird.</p>
+          <p>Doch ist die Weise, das Getreide zu bereiten, nicht in allen Provinzen dieselbe: anders bei den Norwegern im Westen, anders im Süden bei den Goten, und wieder anders im Osten gegen die Moskowiter hin und bei den Finnen gegen Norden. Diese bereiten auch die Gerste aufs beste und machen daraus ein sehr starkes Getränk. Davon wird das Volk überaus kräftig, jede Übung oder schwere Arbeit auf sich zu nehmen und zu vollenden.</p>
+          <p>Manche nämlich bereiten das Getreide so, dass sie daraus ein bittereres Getränk sieden, und geben Wermut dazu, gegen Würmer oder Spulwürmer. Andere wollen es süßer machen und kochen es deshalb mit Absicht nicht ganz durch, damit die, die vom Milchessen öfter verstopft sind, einen freieren Stuhlgang haben.</p>
+          <p>Wieder andere bereiten das Getreide, um daraus mit Absicht eine sehr große Menge Essig zu machen, zur Erhaltung der Burgen und der Höfe vornehmer Herren. Manche bereiten das Korn im März und April und sieden daraus ein Bier, das als Arznei zehn oder zwanzig Jahre halten soll. Denn das Wasser dieser Zeit, das winterliche genannt, lässt, wenn man es zum Brot- oder Getränkebereiten beimischt, das Getränk nie sauer und das Brot nie faul werden.</p>
+          <p>Diese Vorsorge nutzen die mehr als sechshundert Sieder oder Brauer des Danziger Biers: Sie verkaufen um des Gewinns willen viele tausend Fässer des edelsten und gesündesten Biers, teils in ihrem eigenen Hafen zu ehrlichem Preis an fremde Kaufleute, teils schicken sie sie auf das Wagnis der Seefahrt in fremde und ferne Länder, nach Portugal und zu den Indern.</p>
+          <p>Und dieser Trank soll so kräftig sein, dass durch seinen Genuss alle noch so schlimmen Säfte des Körpers geheilt werden. Deshalb ist dieses Bier, wohin es auch kommt, nie unwillkommen, sondern wird sogleich wie eine höchst wirksame Arznei gekauft. Mit Recht trägt es die Palme davon, sodass es in den Gegenden des Nordens allen anderen vorgezogen wird.</p>
+          <p>Nicht so verhält es sich mit jeder Art von Wein, wie Plinius im vierzehnten Buch, im ersten Kapitel, bezeugt: Manche Weine bringen den Menschen in Raserei und machen die Frauen unfruchtbar, manche machen sie fruchtbar. Diese Verschiedenheit ist bei den Bieren nicht zu fürchten. Denn in Finnland macht das Bier die Frauen so fruchtbar, dass sie meistens Zwillinge gebären. Aus ihnen, als einer überaus kräftigen Nachkommenschaft, könnte der König von Schweden nach glücklichem Anfang neue Provinzen gründen, wodurch der Staatskasse Steuern und dem Reich nicht wenig Stärke zuwachsen könnten.</p>
+          <p>Ich weiß aber nicht, aus welcher stumpfen Blindheit es kommt, dass die kräftigsten Mädchen jedes Jahr in größter Zahl an die Küsten Deutschlands ziehen, um in fremder Not zu dienen, wo man sie doch zum Nutzen des Reichs daheim behalten könnte. Und damit die Unvorsichtigkeit noch größer erscheint: Eine bestimmte Pferderasse bleibt auf königlichen Erlass im Reich, die fruchtbaren Jungfrauen aber lässt man ziehen, damit sie in nicht eben freundlichen Ländern Feinde zur Welt bringen. Daheim veröden Äcker und Häuser, während die Nachkommen des Reichs draußen Städte bauen und die Abgaben mehren.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="fruges">Getreide</ingredient>
+            </item>
+            <item>
+              <ingredient en="barley" orig="hordeum" commodity="wikidata:Q61665121" source="#fyndling-ingredient-name">Gerste</ingredient>
+            </item>
+            <item>
+              <ingredient en="wormwood" orig="abſynthium" commodity="wikidata:Q25686" source="#fyndling-ingredient-name">Wermut (für das bitterere Getränk)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Aqua">Wasser von März und April (Winterwasser)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-011-trans" resp="#fyndling">Was ist das? Kein Brauverfahren, sondern Olaus' Überblick, wie verschieden das Getreide in den Provinzen für Bier bereitet wird. Mengen, Zeiten und Gefäße nennt er hier nicht; wie gemälzt, gedarrt, gemaischt und gehopft wird, steht im Kapitel davor (olm-010), wie gesotten wird, im Kapitel danach (olm-012).
+
+Bitter oder süß. Für das bitterere Getränk kommt Wermut dazu, nach Olaus gegen Würmer. Für das süßere wird das Getränk mit Absicht nicht ganz durchgekocht; wie lange sonst gekocht wird und wie viel kürzer hier, sagt der Text nicht. Dass das süßere Bier denen hilft, die vom Milchessen verstopft sind, ist sein Anspruch.
+
+Essig und Langzeitbier. Manche bereiten das Getreide eigens für Essig, ohne dass Olaus das Verfahren beschreibt. Für das Bier, das zehn oder zwanzig Jahre halten soll, nennt er nur die Jahreszeit, März und April, und als Grund das Wasser dieser Zeit. Das ist seine Erklärung, kein Verfahren.
+
+Praxis. Nachbrauen lässt sich aus diesem Kapitel allein nichts; wer ein Bier nach Olaus versuchen will, hält sich an olm-010 und olm-012. Wermut ist sehr bitter und in größeren Mengen bedenklich; eine Menge nennt der Text nicht.</note>
+        <note type="gloss" target="#olm-011-orig" n="Moſchos" resp="#fyndling">Die Moskowiter, die Bewohner des Moskauer Reichs. Olaus nennt sie für den Osten, neben den Finnen für den Norden.</note>
+        <note type="gloss" target="#olm-011-orig" n="Finningos" resp="#fyndling">Die Finnen; die Randnotiz des Drucks schreibt dazu „Finni gens robuſtiſsima“, die Finnen, ein sehr kräftiges Volk.</note>
+        <note type="gloss" target="#olm-011-orig" n="hyemalis" resp="#fyndling">„Winterlich“ nennt Olaus das Wasser der Monate März und April. Mit ihm erklärt er, warum Bier und Brot so lange halten; dieselbe Begründung gibt er für das haltbare Fladenbrot der Frauen (olm-001), dort als Märzwasser. Das ist seine Theorie.</note>
+        <note type="gloss" target="#olm-011-orig" n="Gedanẽſis ceruiſiæ" resp="#fyndling">Danziger Bier; „Gedanẽſis“ ist das lateinische Adjektiv zu Danzig (heute Gdańsk).</note>
+        <note type="interpretive_choice" target="#olm-011-orig" n="illicò comparatur" resp="#fyndling" subtype="lexical">„wird sogleich gekauft“: comparare heißt im 16. Jahrhundert auch anschaffen, kaufen (Frisch: „anschaffen, einschaffen, verschaffen“; Baret: „Acheter“). Das passt zu „nunquàm ingrata“ und zum Handel mit Danziger Bier im Satz davor.<list type="alternatives"><item>„wird sogleich mit einer höchst wirksamen Arznei verglichen“<note type="rationale">Die Grundbedeutung vergleichen (Dasypodius: „Jch vergleiche“) ist möglich; „veluti“ (wie) macht den Vergleich aber schon, und die Gegenüberstellung mit „unwillkommen“ spricht für die Aufnahme beim Käufer.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-011-orig" n="pro arcibus conſeruandis, ac curiis inſignium dominorum" resp="#fyndling" subtype="contextual">„zur Erhaltung der Burgen und der Höfe vornehmer Herren“, wörtlich: Der Essig dient dem Unterhalt von Burgen und Herrenhöfen.<list type="alternatives"><item>Essig, um die Vorräte der Burgen und Höfe haltbar zu machen<note type="rationale">Liegt sachlich nahe, aber der Text nennt keine Vorräte; „conſeruandis“ steht bei den Burgen selbst.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

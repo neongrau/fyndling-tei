@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Met im Großansatz mit Gagel statt Hopfen</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-008/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-008</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-008">
+        <head>Met im Großansatz mit Gagel statt Hopfen</head>
+        <div type="original" xml:id="olm-008-orig" xml:lang="und" corresp="#olm-008-trans">
+          <p>Adhuc de cautelis hydromelis, vel medonis, ſiue mulſæ conficiendæ more Gothorum. CAP. XXV.
+FACTVRI grandem quantitatem medonis, maximè ad quęſtum &amp; lucrum, Septentrionales populi, quandoqꝫ capiunt mille libras, aut duo, vel tria millia librarum mellis puriſſimi cum àqua proportionata, &amp; myrto: quæ inſtar granorum iuniperi in humili frutice, vlnæ vnius longitudinis in loco paludinoſo creſcit, &amp; matureſcit in Auguſto: &amp; ſufficit apud prædictos populos loco lupuli, dummodò per integram horam &amp; amplius, forti igne coquatur, prout aliàs lupulus: ſed mixtura grandis mellis &amp; aquæ, bullire ſolet ad diem, &amp; noctem, &amp; demum appoſita fece ceruiſiæ, vel fermento piſtorum, quatuor, vel pluribus diebus dimitti in ſua operatione, &amp; coniunctione.</p>
+        </div>
+        <div type="translation" xml:id="olm-008-trans" xml:lang="de" corresp="#olm-008-orig">
+          <p>Weiteres über die Vorsichtsmaßregeln beim Bereiten von Met nach Art der Goten.</p>
+          <p>Wenn die Völker des Nordens eine große Menge Met herstellen wollen, vor allem zu Erwerb und Gewinn, nehmen sie bisweilen tausend Pfund oder zwei- oder dreitausend Pfund reinsten Honigs, mit Wasser im passenden Verhältnis und mit Gagel.</p>
+          <p>Der Gagel wächst wie Wacholderbeeren an einem niedrigen Strauch von einer Elle Länge an sumpfigen Stellen und reift im August. Bei den genannten Völkern genügt er anstelle des Hopfens, sofern er eine ganze Stunde und länger bei starkem Feuer gekocht wird, wie sonst der Hopfen.</p>
+          <p>Die große Mischung aus Honig und Wasser aber siedet gewöhnlich einen Tag und eine Nacht. Zuletzt wird Bierhefe oder das Gärmittel der Bäcker zugesetzt, und man überlässt sie vier oder mehr Tage ihrem Wirken und ihrer Verbindung.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="mille libras, aut duo, vel tria millia librarum mellis puriſſimi">Honig, reinster</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="cum àqua proportionata" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="myrto">Gagel</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="fece ceruiſiæ, vel fermento piſtorum" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-008-trans" resp="#fyndling">Was ist das? Ein Met im Großsud. Honig, Wasser und Gagel kommen zusammen, der Gagel kocht wie sonst der Hopfen eine ganze Stunde und länger bei starkem Feuer, die große Mischung aus Honig und Wasser siedet nach Olaus einen Tag und eine Nacht. Zuletzt kommt Bierhefe oder das Gärmittel der Bäcker dazu, und der Ansatz bleibt vier oder mehr Tage sich selbst überlassen.
+
+Gagel statt Hopfen. Der Gagel übernimmt die Aufgabe des Hopfens, mit dessen Bitterkeit Olaus im Grundkapitel die Süße des Honigwassers einstellt. Was dabei herauskommen soll, sagt Olaus im Kapitel davor: so lange kochen, bis ein reiner Geschmack mit gemäßigter Bitterkeit bleibt. „Wie sonst der Hopfen“ verweist auf das Hopfenverfahren der vorigen Kapitel, wo der Hopfen getrennt in einem Leinensäckchen kocht und dann zum Honigwasser kommt. Ob der Gagel hier ebenso getrennt oder mit der ganzen Mischung kocht, sagt der Text nicht; sein Wortlaut nennt ihn mit Honig und Wasser in einem Zug.
+
+Ein Tag und eine Nacht Sieden. Die Dauer ist Olaus' Angabe, ohne Begründung. Abschäumen, Einkochmaß und Kesselgröße nennt er hier nicht. Heute würde man sagen: Ein so langes Sieden verdampft viel Wasser, wie viel, hängt an Feuer und Kessel.
+
+Hefe. Bierhefe ist die erste Wahl, das Gärmittel der Bäcker der Ersatz; ob Sauerteig oder Hefe, bleibt offen. Wann genau sie dazukommt, sagt Olaus nur mit „zuletzt“. Im Grundkapitel wartet er, bis die Hitze fast zur Lauwärme abgeklungen ist, bevor die Hefe obenauf kommt; das liegt hier am nächsten. Heute gilt: In siedenden oder heißen Sud gegeben, stirbt die Hefe ab.
+
+Praxis. Für einen Nachbau fehlt das Wasserverhältnis. Wer klein ansetzt, kann sich am gewöhnlichen Met des Kapitels XXII halten (ein Teil Honig auf vier Teile Wasser); dass Olaus es hier meint, sagt er nicht. Gagel ist heute kein gängiges Lebensmittel. Der Sumpfporst, die Gegenlesung zu Olaus' myrtus, gilt als giftig und gehört nicht in den Kessel. Ein Verschließen der Gefäße nennt der Text nicht.</note>
+        <note type="gloss" target="#olm-008-orig" n="hydromelis, vel medonis, ſiue mulſæ" resp="#fyndling">Drei lateinische Namen für denselben Trank, die Olaus gleichsetzt: Met, ein vergorenes Honigwasser.</note>
+        <note type="interpretive_choice" target="#olm-008-orig" n="myrto" resp="#fyndling" subtype="lexical">Gagel (Myrica gale). Olaus' Merkmale passen: ein niedriger Strauch von einer Elle, an sumpfigen Stellen, mit Früchten wie Wacholderbeeren, reif im August, im Norden anstelle des Hopfens. Bauhins Pinax (1623) führt den Strauch als „Gagel Germanorum &amp; Myrtus Brabantica“, die mittelniederdeutschen Wörterbücher setzen gāgel mit lateinisch myrtus gleich und nennen ihn als Bierkraut.<list type="alternatives"><item>Sumpfporst (Rhododendron tomentosum)<note type="rationale">Ebenfalls ein Sumpfstrauch und im Norden ein Bierkraut, im Mittelniederdeutschen aber nicht als myrtus belegt. Er trägt Kapseln, keine Früchte, die Wacholderbeeren gleichen.</note></item><item>Myrte (Myrtus communis)<note type="rationale">Das klassische Wort meint die Myrte des Mittelmeerraums. Sie wächst nicht an nordischen Sumpfstellen und passt nicht zur Beschreibung.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-008-orig" n="fermento piſtorum" resp="#fyndling" subtype="lexical" cert="unknown">Gärmittel der Bäcker, ohne Festlegung. Das Wort fermentum deckt im Mittellatein Sauerteig wie Hefe ab; welches der Bäcker gemeint ist, sagt der Text nicht.<list type="alternatives"><item>Sauerteig<note type="rationale">Die Grundbedeutung von fermentum und das übliche Gärmittel des Brotbackens; für den gewöhnlichen Met nennt Olaus ersatzweise „fermentum panis“.</note></item><item>Bäckerhefe<note type="rationale">fermentum heißt auch Hefe; im Kapitel davor wird das Gärmittel der Bäcker in warmem Wasser aufgelöst und übergegossen, was zu beidem passt.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-008-orig" n="demum appoſita fece ceruiſiæ" resp="#fyndling" subtype="contextual">Die Hefe kommt „zuletzt“ dazu, nach dem Sieden; ein Abkühlen nennt der Text nicht. Für den gewöhnlichen Met verlangt Olaus, zu warten, bis die Hitze fast zur Lauwärme abgeklungen ist, und diese Reihenfolge ist hier am ehesten mitgemeint.<list type="alternatives"><item>Hefe unmittelbar in den heißen Sud<note type="rationale">Der Wortlaut schließt es nicht aus, doch der Bericht ist knapp und setzt das Verfahren aus dem Grundkapitel voraus.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

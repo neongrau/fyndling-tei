@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Nordischer Hopfenmet</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-005/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-005</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-005">
+        <head>Nordischer Hopfenmet</head>
+        <div type="original" xml:id="olm-005-orig" xml:lang="und" corresp="#olm-005-trans">
+          <p>De conficiendo hydromeli, mulſa, vel medone, ſecundum modum Septentrionalium. CAP. XXII.
+RECIPI ſolet vna pars boni mellis, &amp; quatuor partes aquæ bullientis in caldari vltra teporem: deinde medietas aquæ ſic calefactæ, infunditur in aliquod vas ligneum, ſuperius amplum, &amp; latum, in quo mel crudum immiſcetur: poſteà eadem aqua cum melle reſoluto pariter imponatur ad caldare, ſuppoſito bono igne, vt competenter bulliat, vſquequò appareat ſpuma: quæ lineo panno baculo longo alligato, vel cochleari perforato, paulatim deponetur. Hoc quoqꝫ continuè fiet, donec coctura mellis &amp; aquæ appareat depurata. Cumqꝫ iſta fiunt, coquantur ſeorſum eodem igne flores lupuli in ſacco lineo, proportionata quantitate, in olla cooperta, vſqꝫ ad decoctionem dimidiæ aquę, &amp; amplius, vt appareat eius amaritudo: qua temperabitur maior, vel minor dulcedo decocti mellis, &amp; aquę: ita tamen, quòd aqua cum melle taliter cocta, &amp; deſpumata, prius infundatur ad prædictum vas ligneum, ac ſtatim ſimul ſaccus lupuli imponatur, vt mutua virtute mellis, &amp; aquę, ac coniuncti lupuli, temperamentum fiat. Quo facto, pannis denſis cooperiatur vas, &amp; ſtare permittatur, vſquequò calor in teporem pene reſoluatur. Deinde capiatur fex ceruiſię (de qua infrà dicetur) iuxta quantitatem decoctionis: quaſi coagulum ſuperponatur, &amp; iterum vas cooperiatur, donec tota mixtura velut albiſsima ſpuma cooperiri videatur: vel fermentum panis, fece deficiente. Quo facto, ſequenti die coletur hæc mixtura per pannum lineum, &amp; in aliquod vas nudum, in quo reſeruari debeat, infundatur, &amp; ſeruetur clauſum: dieqꝫ octauo, vel prius neceſsitate vrgente, tutiſsimè bibi poterit: quantò tamen vetuſtior fuerit potus ille, tantò purior, melior, &amp; ſanior erit.</p>
+        </div>
+        <div type="translation" xml:id="olm-005-trans" xml:lang="de" corresp="#olm-005-orig">
+          <p>Wie man Met (hydromel, mulsa oder medo) nach Art der Nordvölker bereitet.</p>
+          <p>Man nimmt gewöhnlich einen Teil guten Honig und vier Teile Wasser, im Kessel über die Lauwärme hinaus erhitzt. Dann gießt man die Hälfte des so erwärmten Wassers in ein hölzernes Gefäß, das oben weit und breit ist, und rührt darin den rohen Honig ein.</p>
+          <p>Danach gib dasselbe Wasser mit dem gelösten Honig zusammen wieder in den Kessel, mit gutem Feuer darunter, damit es ordentlich siedet, bis sich Schaum zeigt. Den Schaum nimm nach und nach ab, mit einem Leinentuch, das an einen langen Stab gebunden ist, oder mit einem durchlöcherten Löffel. Das tu fortwährend, bis der Sud aus Honig und Wasser geklärt erscheint.</p>
+          <p>Während das geschieht, koche auf demselben Feuer getrennt Hopfenblüten in einem Leinensack, in angemessener Menge, in einem zugedeckten Topf, bis die Hälfte des Wassers und mehr eingekocht ist, damit seine Bitterkeit hervortritt. Mit ihr wird die größere oder geringere Süße des gekochten Honigwassers gemäßigt.</p>
+          <p>Gieß dabei aber zuerst das so gekochte und abgeschäumte Honigwasser in das genannte Holzgefäß und lege sogleich den Hopfensack hinein, damit aus der vereinten Kraft von Honig und Wasser und dem beigefügten Hopfen die rechte Mischung entsteht. Danach decke das Gefäß mit dichten Tüchern zu und lass es stehen, bis die Hitze fast in Lauwärme übergegangen ist.</p>
+          <p>Dann nimm Bierhefe (von der weiter unten die Rede sein wird), nach der Menge des Suds, und lege sie wie ein Lab obenauf. Decke das Gefäß wieder zu, bis die ganze Mischung wie von weißestem Schaum bedeckt erscheint. Fehlt die Hefe, nimm das Gärmittel vom Brot.</p>
+          <p>Danach seihe die Mischung am folgenden Tag durch ein Leinentuch, gieß sie in ein leeres Gefäß, in dem sie aufbewahrt werden soll, und halte es verschlossen. Am achten Tag, oder früher, wenn die Not drängt, kann man ihn ganz unbedenklich trinken. Je älter dieser Trank aber wird, desto reiner, besser und gesünder ist er.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="honey" orig="vna pars boni mellis" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient> - 1</item>
+            <item><ingredient en="water" orig="quatuor partes aquæ" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 4</item>
+            <item>
+              <ingredient orig="flores lupuli in ſacco lineo, proportionata quantitate">Hopfenblüten (Dolden)</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="fex ceruiſię" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-005-trans" resp="#fyndling">Was ist das? Ein Met, dessen Süße Olaus mit Hopfen mäßigt und den er mit Bierhefe anstellt. Verfahren und Hefe kommen aus dem Bierbrauen; Olaus nennt es die Art der Nordvölker.
+
+Honig lösen, sieden, abschäumen. Die Hälfte des heißen Wassers kommt in das weite Holzgefäß, dort wird der rohe Honig eingerührt, danach geht alles zurück in den Kessel. Dass die andere Hälfte so lange im Kessel blieb, sagt der Text nicht wörtlich; pariter (zusammen) legt es nahe. Gesotten wird, „bis sich Schaum zeigt“, abgeschäumt mit Tuch an der Stange oder Lochlöffel, „bis der Sud geklärt erscheint“. Ein Einkochmaß nennt Olaus für den Most nicht: Er siedet so lange, wie das Abschäumen dauert.
+
+Der Hopfen. Er kocht getrennt im Leinensack im zugedeckten Topf, bis die Hälfte des Wassers und mehr eingekocht ist. Das Zeichen ist der Geschmack: Die Bitterkeit muss hervortreten. Die Menge bleibt „angemessen“, denn sie richtet sich nach der Süße, die gemäßigt werden soll. Der Satz nennt nur den Sack, der in den Most kommt; ob der eingekochte Sud mitgeht, lässt er offen. Heute würde man den Sud mitgeben, damit die Bitterkeit nicht im Topf bleibt (moderne Lesart).
+
+Hefe und Gärung. Mit dichten Tüchern zugedeckt kühlt der Most ab, „bis die Hitze fast in Lauwärme übergegangen ist“. Erst dann kommt die Bierhefe obenauf, „wie ein Lab“: Olaus denkt die Hefe als das, was dem Trank seine Gestalt gibt, wie das Lab der Milch, so auch in seinem Bierkapitel. Dass die Gärung läuft, zeigt der weiße Schaum über der ganzen Fläche. Ersatz ist das Gärmittel vom Brot; ob Sauerteig oder Hefe gemeint ist, sagt der Text nicht. Nach einem Tag wird durch Leinen geseiht und verschlossen gelagert, trinkbar ist der Met am achten Tag.
+
+Für Metmacher: die Zahlen Modellrechnung, keine Messung. Gerechnet ist ein Teil Honig auf vier Teile Wasser als Raummaß angenommen; Olaus sagt nicht, ob er misst oder wiegt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| 1:4, ohne Einkochen | 210-228 g/l | 1.081-1.088 | 81-88 | 19.6-21.2 | 12.5-13.6 % |
+| 1:4, mit angenommenem Einkochen | 247-381 g/l | 1.096-1.147 | 96-147 | 22.8-33.7 | 14.7-22.6 % |
+
+Die erste Zeile setzt kein Einkochen an, weil Olaus den Most nur bis zum Abschäumen siedet; die zweite rechnet mit dem Einkochverlust, den das Modell ohne Angabe annimmt. Die Spannen sind die drei Bänder des Modells. Nicht gerechnet sind der Hopfen und ein mitgegebener Hopfensud. „Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Praxis. Die Hefe erst auf den fast lauwarmen Most geben, wie der Text es verlangt. Die Bitterkeit am Hopfensud abschmecken, bevor er zum Most kommt. Olaus hält das Gefäß schon nach einem Tag verschlossen; die Gärung läuft dann weiter und baut Druck auf, deshalb heute einen Gärverschluss statt eines festen Deckels nehmen (modernes Hilfsmittel). Der achte Tag ist Olaus' früheste Trinkreife; sein Schlusssatz, der Met werde mit dem Alter reiner und besser, rechnet selbst mit längerem Lagern.</note>
+        <note type="gloss" target="#olm-005-orig" n="hydromeli, mulſa, vel medone" resp="#fyndling">Drei Namen, die Olaus als ein Getränk nebeneinanderstellt: den Met.</note>
+        <note type="gloss" target="#olm-005-orig" n="flores lupuli" resp="#fyndling">Die Blüten des Hopfens, gemeint sind die Dolden, wie man sie heute zum Brauen kauft.</note>
+        <note type="gloss" target="#olm-005-orig" n="fermentum panis" resp="#fyndling">Das Gärmittel, mit dem Brot angesetzt wird. Ob Olaus an Sauerteig oder an Hefe denkt, sagt er nicht; das Wort deckt beides.</note>
+        <note type="interpretive_choice" target="#olm-005-orig" n="bullientis in caldari vltra teporem" resp="#fyndling" subtype="lexical">Wasser, im Kessel über die Lauwärme hinaus erhitzt. Olaus gibt die Lauwärme als Maß an, der rohe Honig wird danach in der Hälfte dieses Wassers gelöst, und gesotten wird erst im zweiten Schritt.<list type="alternatives"><item>Das Wasser siedet bereits.<note type="rationale">bulliens heißt wörtlich siedend; dann wäre „über die Lauwärme hinaus“ nur eine Verstärkung. Für den Ablauf ändert es wenig, weil der Most danach ohnehin gesotten wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-005-orig" n="quaſi coagulum ſuperponatur" resp="#fyndling" subtype="lexical">Wie ein Lab obenauf legen: coagulum ist das Gerinnungsmittel, und Olaus nennt die Bierhefe auch im Bierkapitel die Hefe, die das Ganze gerinnen lässt (coagulantis fecis).<list type="alternatives"><item>Wie einen Klumpen, als zusammenhängende Schicht obenauf legen.<note type="rationale">coagulum kann auch das Geronnene selbst meinen; dann beschriebe der Ausdruck nur die Form, in der die dicke Hefe aufgelegt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-005-orig" n="ac ſtatim ſimul ſaccus lupuli imponatur" resp="#fyndling" subtype="contextual">Nur der Hopfensack kommt in den Most, so sagt es der Satz; die Bitterkeit trägt der nasse Sack mit.<list type="alternatives"><item>Der Sack samt dem eingekochten Hopfensud.<note type="rationale">Der Sud wird eigens eingekocht, bis seine Bitterkeit hervortritt, und mit dieser Bitterkeit soll die Süße gemäßigt werden. Der polnische Met des Folgekapitels nennt ausdrücklich das Säckchen samt dem Wasser seines Absuds, und das Buch von guter Speise gießt den Hopfensud in den Most.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

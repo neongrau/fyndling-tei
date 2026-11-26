@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Met: Ersatz für Hopfen und Bierhefe, Sommermischung</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-006/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-006</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-006">
+        <head>Met: Ersatz für Hopfen und Bierhefe, Sommermischung</head>
+        <div type="original" xml:id="olm-006-orig" xml:lang="und" corresp="#olm-006-trans">
+          <p>De cautelis materialium. CAP. XXIII.
+AT ſi flores lupuli deficiunt, tunc recipiuntur legumina myrti, inſtar iuniperorum: quæ maxima diligentia coquenda ſunt, vſquequò purus ſapor cum temperata amaritudine relinquatur. Adeò omnia indigent temperamentis: opus enim eſt ſemina hæc myrti fortiſsimè coqui. Si etiam fex ceruiſiæ defuerit, capiatur fermentum piſtorum, illudqꝫ reſoluatur in aqua calida, ac ſuperinfundatur, &amp; ferè ſimilem operationem faciet, vti fex ſupradicta. Ad hoc hydromel, ſiue medonem, vel mulſam, vt delectabilior in ſapore, &amp; virtute fiat, poterit ſacculus (adhærente lapillo) contriti zinziberis per filum (vt natando cum liquore ſemper deſcendat) interius in vaſe ſuſpendi: mireqꝫ proderit, præcipuè tempore hyemis, contra vim frigoris coërcendi. Sed pro æſtate ſeruentur quinqꝫ partes aquæ, &amp; vna pars mellis: vel vt magis tenuis fiat, ſex partes aquæ, &amp; vna mellis: quia vtraqꝫ bona, &amp; potabilis, &amp; mirabilis erit in reprimenda ſiti, ac ſanitate conſeruanda. Sed hæc mixtura fidem vix meretur apud fortunatas gentes, quæ abundantiam vitium, &amp; vinorum habent, niſi tempeſtatibus grandinum vineis eorum deſolatis, ad ſupradictam mixturam, vel ceruiſiæ decoctionem (ſi ſiti periclitari non velint) ſeſe totaliter conuertere compellantur, prout ſępius contingit in Auſtria, Stiria, Carinthia, &amp; Germania, vbi prædictę tempeſtates incolas vrgent ad hydromel, &amp; ceruiſiam conficiendam: quia vtraqꝫ potio eſt ſaniſsima, eoqꝫ melior (aqua tamen Martiali cocta) quò maiorem habuerit vetuſtatem, vt inferius de eius virtute, &amp; vtilitate oſtendetur.</p>
+        </div>
+        <div type="translation" xml:id="olm-006-trans" xml:lang="de" corresp="#olm-006-orig">
+          <p>Von den Vorsichtsmaßregeln bei den Zutaten.</p>
+          <p>Fehlen aber die Hopfenblüten, so nimmt man die Früchte des Gagels (myrtus), die den Wacholderbeeren gleichen. Sie müssen mit größter Sorgfalt gekocht werden, bis ein reiner Geschmack mit gemäßigter Bitterkeit bleibt. So sehr bedarf alles des rechten Ausgleichs: Diese Samen des Gagels müssen nämlich sehr kräftig gekocht werden.</p>
+          <p>Fehlt auch die Bierhefe, so nimm das Gärmittel der Bäcker, löse es in warmem Wasser auf und gieße es darüber. Es wird fast dieselbe Wirkung tun wie die oben genannte Bierhefe.</p>
+          <p>Damit außerdem der Met (hydromel, medo oder mulsa) an Geschmack und Kraft angenehmer werde, kannst du ein Säckchen mit zerstoßenem Ingwer, an dem ein Steinchen hängt, an einem Faden innen im Gefäß aufhängen, damit es schwimmend mit der Flüssigkeit stets mit hinabgeht. Das wird wunderbar nützen, besonders zur Winterszeit, um die Gewalt der Kälte zu bändigen.</p>
+          <p>Für den Sommer aber halte fünf Teile Wasser und einen Teil Honig ein, oder, damit es dünner werde, sechs Teile Wasser und einen Teil Honig. Denn beides wird gut und trinkbar sein und wunderbar, den Durst zu stillen und die Gesundheit zu erhalten.</p>
+          <p>Diese Mischung findet freilich kaum Glauben bei den glücklichen Völkern, die Reben und Wein im Überfluss haben - es sei denn, Hagelstürme haben ihre Weinberge verwüstet und sie werden gezwungen, sich ganz der oben genannten Mischung oder dem Biersud zuzuwenden, wenn sie nicht durch Durst in Not geraten wollen. So geschieht es öfter in Österreich, der Steiermark, Kärnten und Deutschland, wo die genannten Unwetter die Bewohner dazu drängen, Met und Bier zu bereiten. Denn beide Getränke sind sehr gesund und umso besser, je älter sie sind - wenn sie jedoch mit Märzwasser gekocht sind. Von seiner Kraft und seinem Nutzen wird weiter unten die Rede sein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="water" orig="aquæ" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="mellis" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="flores lupuli">Hopfenblüten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="legumina myrti">Gagel, Früchte</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="fex ceruiſiæ" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fermentum piſtorum">Gärmittel der Bäcker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="contriti zinziberis">Ingwer, zerstoßen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-006-trans" resp="#fyndling">Was ist das? Kein eigenes Rezept, sondern ein Nachtrag zum nordischen Met des vorigen Kapitels: zwei Notbehelfe, wenn Hopfen oder Bierhefe fehlen, eine Würzung im Gefäß und zwei dünnere Mischungen für den Sommer. Kochen und Abschäumen, Abkühlen bis fast lauwarm, Anstellen, Abseihen am folgenden Tag und die Trinkreife am achten Tag setzt Olaus aus dem Grundverfahren voraus.
+
+Gagel statt Hopfen. Die Früchte des Gagels übernehmen die Aufgabe des Hopfens: Ihre Bitterkeit stellt die Süße des Honigwassers ein. Das Ende bestimmt Olaus am Geschmack - so lange kochen, bis ein reiner Geschmack mit gemäßigter Bitterkeit bleibt -, Dauer und Menge nennt er nicht. Im Grundverfahren kocht der Hopfen getrennt im Leinensäckchen im bedeckten Topf; dass der Gagel ebenso behandelt wird, liegt nahe, steht hier aber nicht. Gagel ist heute kein gängiges Lebensmittel, und eine sichere Menge nennt der Text nicht. Der Sumpfporst, die Gegenlesung zu Olaus' myrtus, gilt als giftig und gehört nicht in den Kessel.
+
+Gärmittel der Bäcker statt Bierhefe. Ob Sauerteig oder Hefe gemeint ist, sagt der Text nicht. Das Auflösen in warmem Wasser verteilt das Gärmittel, bevor es über den Ansatz kommt; Olaus verspricht nur „fast dieselbe Wirkung“. Heute würde man sagen: Sauerteig bringt neben Hefen auch Milchsäurebakterien mit, der Met wird damit eher säuerlich.
+
+Das Ingwersäckchen. Das Steinchen beschwert das Säckchen, damit es in der Flüssigkeit bleibt, der Faden hält es an seinem Platz. „Schwimmend mit der Flüssigkeit stets mit hinab“ heißt: Sinkt der Spiegel, weil aus dem Gefäß getrunken wird, geht das Säckchen mit und bleibt eingetaucht. Wie viel Ingwer, sagt Olaus nicht. Dass der Ingwer im Winter gegen die Gewalt der Kälte hilft, ist sein Anspruch, kein Gesundheitsrat.
+
+Sommermischung und Märzwasser. Für den Sommer nennt Olaus fünf und sechs Teile Wasser auf einen Teil Honig, dünner als die vier Teile Wasser des Grundverfahrens. Ob nach Raum oder Gewicht gemessen wird, sagt er nicht. Dass beide Mischungen den Durst stillen und die Gesundheit erhalten und dass Met und Bier mit Märzwasser gekocht im Alter besser werden, ist Olaus' Anspruch; das Märzwasser ist seine wiederkehrende Begründung für Haltbarkeit, die er im Bierkapitel weiter unten ausführt. Heute würde man bei einem so dünnen Met beim langen Lagern eher mit Säuerung rechnen.
+
+Für Metmacher: die Zahlen
+
+Modellrechnung, keine Messung. Annahmen: Teile als Raummaß, Honig und Wasser mit demselben Gefäß gemessen; Dichte und Zuckergehalt des Honigs als Spanne. Das Kapitel nennt kein Einkochmaß, das Grundverfahren kocht nur, bis der Sud abgeschäumt und klar ist. Deshalb je Lesart zwei Zeilen: ohne Einkochen und mit einem in der Rechnung angenommenen Einkochen von 15 bis 40 Prozent.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| 1:5, ohne Einkochen | 175-190 g/l | 1.068-1.074 | 68-74 | 16.5-17.9 | 10.4-11.3 % |
+| 1:5, Einkochen angenommen | 206-317 g/l | 1.080-1.122 | 80-122 | 19.2-28.6 | 12.3-18.9 % |
+| 1:6, ohne Einkochen | 150-163 g/l | 1.058-1.063 | 58-63 | 14.3-15.4 | 8.9-9.7 % |
+| 1:6, Einkochen angenommen | 177-272 g/l | 1.068-1.105 | 68-105 | 16.6-24.9 | 10.5-16.2 % |
+
+Nicht gerechnet sind Gagel, Hopfen, Ingwer und das warme Wasser, in dem das Gärmittel gelöst wird. „Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Praxis. Wer nachbaut, folgt dem Grundverfahren des vorigen Kapitels und tauscht nur, was fehlt: Gagel für Hopfen, das Gärmittel der Bäcker für Bierhefe. Heute würde man als Gärmittel der Bäcker frische Backhefe in lauwarmem Wasser lösen; Sauerteig ist die historisch ebenso mögliche Lesart. Den Ingwer im beschwerten Leinensäckchen ins Gefäß hängen. Ein Verschließen der Gefäße nennt dieses Kapitel nicht.</note>
+        <note type="gloss" target="#olm-006-orig" n="hydromel, ſiue medonem, vel mulſam" resp="#fyndling">Drei lateinische Namen für denselben Trank, die Olaus gleichsetzt: Met, ein vergorenes Honigwasser.</note>
+        <note type="gloss" target="#olm-006-orig" n="aqua tamen Martiali cocta" resp="#fyndling">Märzwasser. Olaus nennt es beim Fladenbrot „aqua Martialis, seu vernalis“, März- oder Frühlingswasser, und schreibt ihm zu, dass Brot und Getränke damit lange halten. Das ist seine Begründung, keine geprüfte Wirkung.</note>
+        <note type="interpretive_choice" target="#olm-006-orig" n="legumina myrti, inſtar iuniperorum" resp="#fyndling" subtype="lexical">Früchte des Gagels (Myrica gale). Olaus beschreibt den Strauch zwei Kapitel später: eine Elle hoch, an sumpfigen Stellen, mit Früchten wie Wacholderbeeren, reif im August, im Norden anstelle des Hopfens gekocht. Bauhins Pinax (1623) führt „Gagel Germanorum &amp; Myrtus Brabantica“, Lasch-Borchling setzt mittelniederdeutsch pors mit „Gagel, Myrica gale, (M)irtus latinsch“ gleich, und das Mittelniederländische Wörterbuch nennt den Gagel als Ersatz für Hopfen beim Bierbrauen.<list type="alternatives"><item>Sumpfporst (Rhododendron tomentosum)<note type="rationale">Ebenfalls ein Sumpfstrauch; Lübben-Walther erwägt für pors neben dem Gagel mit Fragezeichen auch ledum palustre. Der Sumpfporst trägt aber trockene Kapseln, keine Früchte wie Wacholderbeeren.</note></item><item>Myrte (Myrtus communis)<note type="rationale">Das klassische Wort meint die Myrte des Mittelmeerraums. Sie wächst nicht an nordischen Sumpfstellen und passt nicht zu Olaus' Beschreibung.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-006-orig" n="fermentum piſtorum" resp="#fyndling" subtype="lexical" cert="unknown">Gärmittel der Bäcker, ohne Festlegung. fermentum deckt im Mittellatein Gärstoff, Sauerteig und Hefe ab; welches der Bäcker gemeint ist, sagt der Text nicht.<list type="alternatives"><item>Sauerteig<note type="rationale">Grundbedeutung von fermentum und das übliche Gärmittel des Brotbackens; im Grundverfahren nennt Olaus ersatzweise „fermentum panis“, und die französische Fassung des Thresor de santé (1607) gibt die Stelle mit „leuain“ wieder.</note></item><item>Bäckerhefe<note type="rationale">fermentum heißt auch Hefe; das Auflösen in warmem Wasser und Übergießen passt zu beidem.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

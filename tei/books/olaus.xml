@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Olaus Magnus: Geschichte der Völker des Nordens (Buch XIII: Nahrung) (Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu))</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <idno type="url">https://fyndling.de/rezepte/quellen/olaus/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-001">
+        <head>Papierdünnes Fladenbrot auf Eisenplatten</head>
+        <div type="original" xml:id="olm-001-orig" xml:lang="und" corresp="#olm-001-trans">
+          <p>De variis modis formandi panes. CAP. XVI.
+HAC figura monſtratur varius modus formandi panes: qui tempore genitę prolis formati, vſqꝫ in diem ſponſalitium ſuũ ſine putrefactione reperiutur ſat integrè conſeruati, dum tali modo decoquũtur, &amp; conſeruantur: Mulieres, pręſertim regni Noruegiæ, littus Oceani, aut alios Sueticos, ac Gothicos montes regnorum Varmelandiæ, Daliæqꝫ inhabitantes, clara luce diurna tempore veris, ſtato loco, ac numero, vt mutuò ſe releuent, congregatæ, rotundas, ſed ſubtiles ferri laminas, magnitudine ac latitudine clypei militaris, in modum tripodum fabricatas, comportant: igneqꝫ lento ſub vnaquaqꝫ lamina inſtructo, continueqꝫ nutrito, paſtam è farina hordei, fabarum, vel piſorum rotundis fuſtibus, ſeu baculis, inſtar ſubtiliſsimæ papyri, ad capacitatem ferreæ laminæ ſeorſum in tabulis extenſam, celerrima alternatione in gyro ſedentes ſuperimponunt, citiſsimeqꝫ (inſtar chartarum in pręlo) ob tenuitatem, excoctum panem, &amp; dereptum, in ordine reponunt, certum cumulum in altum eleuatum grauitate ſaxorum deprimentes, vt vix ferro, minus dente corroſiui animalis cumulus ille infringi, vel conteri poſsit: ſicqꝫ, ſi viſum fuerit parentibus, modò ſub tecto (ob imbrem, &amp; niuem) permaneat, durare poterit ad XVI. XX. vel plures annos: idqꝫ efficit frigida natura regionis, &amp; aqua Martialis, ſeu vernalis: qua, arte fœminarum conficitur paſta, prout in ſimili inferius de confectione ceruiſiæ peramplius oſtendetur.</p>
+        </div>
+        <div type="translation" xml:id="olm-001-trans" xml:lang="de" corresp="#olm-001-orig">
+          <p>Diese Abbildung zeigt die verschiedene Art, Brote zu formen. Brote, die zur Zeit der Geburt eines Kindes geformt werden, findet man bis zu dessen Hochzeitstag ohne Fäulnis recht unversehrt erhalten, wenn sie auf folgende Weise ausgebacken und aufbewahrt werden.</p>
+          <p>Die Frauen, besonders im Königreich Norwegen, die an der Küste des Ozeans oder in anderen schwedischen und gotischen Bergen der Reiche Värmland und Dalsland wohnen, kommen bei hellem Tageslicht zur Frühlingszeit an einem festgesetzten Ort und in fester Zahl zusammen, damit sie einander ablösen können. Sie tragen runde, aber dünne Eisenplatten herbei, so groß und so breit wie ein Kriegsschild und nach Art von Dreifüßen gefertigt. Unter jeder Platte wird ein kleines Feuer angelegt und beständig genährt.</p>
+          <p>Den Teig aus Gersten-, Bohnen- oder Erbsenmehl rollen sie mit runden Stöcken oder Stäben wie feinstes Papier aus, jeden für sich auf Brettern und so groß wie die Eisenplatte. Im Kreis sitzend legen sie ihn in sehr schnellem Wechsel auf die Platten. Wegen seiner Dünne ist das Brot sehr rasch durchgebacken; sie nehmen es ab und legen es der Reihe nach übereinander, wie Papierbögen in der Presse.</p>
+          <p>Einen bestimmten, hoch aufgeschichteten Stapel drücken sie mit dem Gewicht von Steinen nieder, so dass man diesen Stapel kaum mit Eisen, noch weniger mit dem Zahn eines nagenden Tieres aufbrechen oder zerreiben kann. So kann er, wenn es den Eltern gefällt und er nur wegen Regen und Schnee unter einem Dach bleibt, XVI. XX. oder mehr Jahre halten.</p>
+          <p>Das bewirken die kalte Natur der Gegend und das Märzwasser oder Frühlingswasser, mit dem der Teig durch die Kunst der Frauen angemacht wird, wie bei Ähnlichem weiter unten bei der Bierbereitung ausführlicher gezeigt wird.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="farina hordei, fabarum, vel piſorum">Mehl aus Gerste, Ackerbohnen oder Erbsen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="aqua Martialis, ſeu vernalis">Märzwasser oder Frühlingswasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-003">
+        <head>Feinstes Krankenbrot vornehmer Damen</head>
+        <div type="original" xml:id="olm-003-orig" xml:lang="und" corresp="#olm-003-trans">
+          <p>De pane delicatiſſimo Illuſtrium fœminarum languentium in Septentrione, &amp; forſan aliarum. CAP. XVIII.
+CVM nullus, vel rarus ſit vſus librarum in Aquilonaribus terris, aut vnciarum in farina ponderanda, nec illarum terrarum menſura poſsit alibi comprehendi, niſi interpretatione facta in hoc caſu communi librarum, aut vnciarum: quæ ferè inter ſe conueniunt in omnì regione, exceptis minutiis aliquot addendis, vel ſubtrahendis. Recipiunt igitur mulieres (quibus ſolummodò, licet pauciſsimis, hæc ats eſt) XXV. libras triticeæ farinę ex prima cribratura, Flore dicta: demum ſex oua recentia, duos cyathos Maluaſię, (licet rarò ibidem reperiatur) vel loco eius tantundem de vino Hiſpanico, Baſtart dicto: item vnam libram ſacchari candididiſsimi, &amp; vnum cyathum aquæ roſę: de quibus ſimul coniunctis, fit paſta, in qualicunqꝫ forma placuerit ipſi piſtrici: ſed non denſior groſſo digito. Paſta ergo ſic formata, ac in partes diſtincta, deponitur in patella ferrea, ſuppoſitis carbonibus viuis, interpoſita craticula, &amp; ſuper patellam cooperta ferrea, vel ærea: in qua etiam viui carbones poſiti, vt æqualiter torreant panes interius coquendos, ſicuti infrà lento modo ſunt poſiti carbones: &amp; hoc faciendo, erit delicatiſsimus panis: qui ſolet languentibus ſecundum vſum (vt dictum eſt) illuſtrium fœminarum permitti: quæ etiam lacte, ouis, ſaccharo, cinnamomo, &amp; pauco zinzibere ſolent obſonia facere, ad lentum &amp; temperatum ignem, pro viribus reſtaurandis, non animaduertendo cauſam languoris, &amp; diętę, cum cęteris regulis prudentum medicorum: qui rariſsimè in toto Aquilone reperiuntur, prout infrà dicetur cap. de medicis, &amp; medicinis.</p>
+        </div>
+        <div type="translation" xml:id="olm-003-trans" xml:lang="de" corresp="#olm-003-orig">
+          <p>Vom allerfeinsten Brot der vornehmen kranken Frauen im Norden und vielleicht auch anderer.</p>
+          <p>In den Ländern des Nordens ist der Gebrauch von Pfunden oder Unzen beim Abwiegen des Mehls nicht üblich oder selten, und das Maß jener Länder kann anderswo nicht verstanden werden, wenn man es in diesem Fall nicht in das gemeine Pfund oder die Unze überträgt. Diese stimmen fast in jeder Gegend miteinander überein, abgesehen von einigen kleinen Zu- oder Abschlägen.</p>
+          <p>Die Frauen, denen allein, wenn auch nur sehr wenigen, diese Kunst eigen ist, nehmen also 25 Pfund Weizenmehl vom ersten Sieben, das „Flore“ genannt wird, dann sechs frische Eier und zwei Becher Malvasier, der dort allerdings selten zu finden ist, oder an seiner Stelle ebenso viel spanischen Wein, der Bastart heißt, ferner ein Pfund feinsten weißen Zucker und einen Becher Rosenwasser.</p>
+          <p>Aus alledem zusammen wird ein Teig gemacht, in jeder Form, die der Bäckerin selbst gefällt, aber nicht dicker als ein dicker Finger. Der so geformte und in Stücke geteilte Teig wird in eine eiserne Pfanne gelegt, unter die glühende Kohlen gesetzt sind, mit einem Rost dazwischen, und über der Pfanne liegt ein Deckel aus Eisen oder aus Erz. Auch auf ihm liegen glühende Kohlen, damit sie die drinnen zu backenden Brote gleichmäßig rösten, so wie unten die Kohlen maßvoll gelegt sind. Verfährt man so, wird es ein allerfeinstes Brot.</p>
+          <p>Dieses Brot pflegt man Kranken, wie gesagt, nach dem Brauch der vornehmen Frauen zu gestatten. Diese machen auch aus Milch, Eiern, Zucker, Zimt und wenig Ingwer Zuspeisen bei sanftem und gemäßigtem Feuer, um die Kräfte wiederherzustellen. Dabei achten sie weder auf die Ursache der Krankheit noch auf die Diät und die übrigen Regeln kluger Ärzte, die im ganzen Norden sehr selten zu finden sind, wie weiter unten im Kapitel über die Ärzte und die Arzneien gesagt werden wird.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="XXV. libras triticeæ farinę ex prima cribratura, Flore dicta">Weizenmehl vom ersten Sieben („Flore“)</ingredient> - 25</item>
+            <item><ingredient en="chicken egg" orig="ſex oua recentia" commodity="wikidata:Q15260613" source="#fyndling-ingredient-name">Eier, frisch</ingredient> - 6</item>
+            <item><ingredient en="malvasia" orig="duos cyathos Maluaſię" commodity="wikidata:Q1165349" source="#fyndling-ingredient-name">Malvasier</ingredient> - 2</item>
+            <item><ingredient orig="vnam libram ſacchari candididiſsimi">Zucker, feinster weißer</ingredient> - 1</item>
+            <item><ingredient en="rose water" orig="vnum cyathum aquæ roſę" commodity="wikidata:Q900450" source="#fyndling-ingredient-registry">Rosenwasser</ingredient> - 1</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-004">
+        <head>Obstweine und Kräuterweine</head>
+        <div type="original" xml:id="olm-004-orig" xml:lang="und" corresp="#olm-004-trans">
+          <p>Fiunt tamen factitia vina è pyris, pomis, meſpilis, ſorbis, per ſucci torcularem expreſsionem: quibus piper, zinziber, &amp; gariophylli adduntur, pro temperamento agreſtis ſaporis. Prętereà vinis imponuntur, aliis ſaluia, aliis abſynthium, aliis ruta, aliis lauendula: &amp; inde nomina ſortiuntur, vt cæteris omnibus in eſu, tanquam potus ſalubris &amp; medicinalis, præferantur.</p>
+        </div>
+        <div type="translation" xml:id="olm-004-trans" xml:lang="de" corresp="#olm-004-orig">
+          <p>Man macht jedoch auch künstliche Weine aus Birnen, Äpfeln, Mispeln und Speierlingen, indem man den Saft in der Kelter auspresst. Diesen Weinen setzt man Pfeffer, Ingwer und Gewürznelken zu, um den herben Geschmack zu mildern.</p>
+          <p>Außerdem gibt man Kräuter in die Weine, in die einen Salbei, in andere Wermut, in andere Raute, in andere Lavendel, und davon bekommen sie ihre Namen. So werden sie beim Trinken allen anderen vorgezogen, da sie als gesundes und heilkräftiges Getränk gelten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="pyris" commodity="wikidata:Q13099586" source="#fyndling-ingredient-name">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient en="apple" orig="pomis" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient>
+            </item>
+            <item>
+              <ingredient en="medlar" orig="meſpilis" commodity="wikidata:Q3092517" source="#fyndling-ingredient-name">Mispeln</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſorbis">Speierlinge</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="piper" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="zinziber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="gariophylli" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="common sage" orig="ſaluia" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+            </item>
+            <item>
+              <ingredient en="wormwood" orig="abſynthium" commodity="wikidata:Q25686" source="#fyndling-ingredient-name">Wermut</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ruta">Weinraute</ingredient>
+            </item>
+            <item>
+              <ingredient orig="lauendula">Lavendel</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-005">
+        <head>Nordischer Hopfenmet</head>
+        <div type="original" xml:id="olm-005-orig" xml:lang="und" corresp="#olm-005-trans">
+          <p>De conficiendo hydromeli, mulſa, vel medone, ſecundum modum Septentrionalium. CAP. XXII.
+RECIPI ſolet vna pars boni mellis, &amp; quatuor partes aquæ bullientis in caldari vltra teporem: deinde medietas aquæ ſic calefactæ, infunditur in aliquod vas ligneum, ſuperius amplum, &amp; latum, in quo mel crudum immiſcetur: poſteà eadem aqua cum melle reſoluto pariter imponatur ad caldare, ſuppoſito bono igne, vt competenter bulliat, vſquequò appareat ſpuma: quæ lineo panno baculo longo alligato, vel cochleari perforato, paulatim deponetur. Hoc quoqꝫ continuè fiet, donec coctura mellis &amp; aquæ appareat depurata. Cumqꝫ iſta fiunt, coquantur ſeorſum eodem igne flores lupuli in ſacco lineo, proportionata quantitate, in olla cooperta, vſqꝫ ad decoctionem dimidiæ aquę, &amp; amplius, vt appareat eius amaritudo: qua temperabitur maior, vel minor dulcedo decocti mellis, &amp; aquę: ita tamen, quòd aqua cum melle taliter cocta, &amp; deſpumata, prius infundatur ad prædictum vas ligneum, ac ſtatim ſimul ſaccus lupuli imponatur, vt mutua virtute mellis, &amp; aquę, ac coniuncti lupuli, temperamentum fiat. Quo facto, pannis denſis cooperiatur vas, &amp; ſtare permittatur, vſquequò calor in teporem pene reſoluatur. Deinde capiatur fex ceruiſię (de qua infrà dicetur) iuxta quantitatem decoctionis: quaſi coagulum ſuperponatur, &amp; iterum vas cooperiatur, donec tota mixtura velut albiſsima ſpuma cooperiri videatur: vel fermentum panis, fece deficiente. Quo facto, ſequenti die coletur hæc mixtura per pannum lineum, &amp; in aliquod vas nudum, in quo reſeruari debeat, infundatur, &amp; ſeruetur clauſum: dieqꝫ octauo, vel prius neceſsitate vrgente, tutiſsimè bibi poterit: quantò tamen vetuſtior fuerit potus ille, tantò purior, melior, &amp; ſanior erit.</p>
+        </div>
+        <div type="translation" xml:id="olm-005-trans" xml:lang="de" corresp="#olm-005-orig">
+          <p>Wie man Met (hydromel, mulsa oder medo) nach Art der Nordvölker bereitet.</p>
+          <p>Man nimmt gewöhnlich einen Teil guten Honig und vier Teile Wasser, im Kessel über die Lauwärme hinaus erhitzt. Dann gießt man die Hälfte des so erwärmten Wassers in ein hölzernes Gefäß, das oben weit und breit ist, und rührt darin den rohen Honig ein.</p>
+          <p>Danach gib dasselbe Wasser mit dem gelösten Honig zusammen wieder in den Kessel, mit gutem Feuer darunter, damit es ordentlich siedet, bis sich Schaum zeigt. Den Schaum nimm nach und nach ab, mit einem Leinentuch, das an einen langen Stab gebunden ist, oder mit einem durchlöcherten Löffel. Das tu fortwährend, bis der Sud aus Honig und Wasser geklärt erscheint.</p>
+          <p>Während das geschieht, koche auf demselben Feuer getrennt Hopfenblüten in einem Leinensack, in angemessener Menge, in einem zugedeckten Topf, bis die Hälfte des Wassers und mehr eingekocht ist, damit seine Bitterkeit hervortritt. Mit ihr wird die größere oder geringere Süße des gekochten Honigwassers gemäßigt.</p>
+          <p>Gieß dabei aber zuerst das so gekochte und abgeschäumte Honigwasser in das genannte Holzgefäß und lege sogleich den Hopfensack hinein, damit aus der vereinten Kraft von Honig und Wasser und dem beigefügten Hopfen die rechte Mischung entsteht. Danach decke das Gefäß mit dichten Tüchern zu und lass es stehen, bis die Hitze fast in Lauwärme übergegangen ist.</p>
+          <p>Dann nimm Bierhefe (von der weiter unten die Rede sein wird), nach der Menge des Suds, und lege sie wie ein Lab obenauf. Decke das Gefäß wieder zu, bis die ganze Mischung wie von weißestem Schaum bedeckt erscheint. Fehlt die Hefe, nimm das Gärmittel vom Brot.</p>
+          <p>Danach seihe die Mischung am folgenden Tag durch ein Leinentuch, gieß sie in ein leeres Gefäß, in dem sie aufbewahrt werden soll, und halte es verschlossen. Am achten Tag, oder früher, wenn die Not drängt, kann man ihn ganz unbedenklich trinken. Je älter dieser Trank aber wird, desto reiner, besser und gesünder ist er.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="honey" orig="vna pars boni mellis" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient> - 1</item>
+            <item><ingredient en="water" orig="quatuor partes aquæ" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 4</item>
+            <item>
+              <ingredient orig="flores lupuli in ſacco lineo, proportionata quantitate">Hopfenblüten (Dolden)</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="fex ceruiſię" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-006">
+        <head>Met: Ersatz für Hopfen und Bierhefe, Sommermischung</head>
+        <div type="original" xml:id="olm-006-orig" xml:lang="und" corresp="#olm-006-trans">
+          <p>De cautelis materialium. CAP. XXIII.
+AT ſi flores lupuli deficiunt, tunc recipiuntur legumina myrti, inſtar iuniperorum: quæ maxima diligentia coquenda ſunt, vſquequò purus ſapor cum temperata amaritudine relinquatur. Adeò omnia indigent temperamentis: opus enim eſt ſemina hæc myrti fortiſsimè coqui. Si etiam fex ceruiſiæ defuerit, capiatur fermentum piſtorum, illudqꝫ reſoluatur in aqua calida, ac ſuperinfundatur, &amp; ferè ſimilem operationem faciet, vti fex ſupradicta. Ad hoc hydromel, ſiue medonem, vel mulſam, vt delectabilior in ſapore, &amp; virtute fiat, poterit ſacculus (adhærente lapillo) contriti zinziberis per filum (vt natando cum liquore ſemper deſcendat) interius in vaſe ſuſpendi: mireqꝫ proderit, præcipuè tempore hyemis, contra vim frigoris coërcendi. Sed pro æſtate ſeruentur quinqꝫ partes aquæ, &amp; vna pars mellis: vel vt magis tenuis fiat, ſex partes aquæ, &amp; vna mellis: quia vtraqꝫ bona, &amp; potabilis, &amp; mirabilis erit in reprimenda ſiti, ac ſanitate conſeruanda. Sed hæc mixtura fidem vix meretur apud fortunatas gentes, quæ abundantiam vitium, &amp; vinorum habent, niſi tempeſtatibus grandinum vineis eorum deſolatis, ad ſupradictam mixturam, vel ceruiſiæ decoctionem (ſi ſiti periclitari non velint) ſeſe totaliter conuertere compellantur, prout ſępius contingit in Auſtria, Stiria, Carinthia, &amp; Germania, vbi prædictę tempeſtates incolas vrgent ad hydromel, &amp; ceruiſiam conficiendam: quia vtraqꝫ potio eſt ſaniſsima, eoqꝫ melior (aqua tamen Martiali cocta) quò maiorem habuerit vetuſtatem, vt inferius de eius virtute, &amp; vtilitate oſtendetur.</p>
+        </div>
+        <div type="translation" xml:id="olm-006-trans" xml:lang="de" corresp="#olm-006-orig">
+          <p>Von den Vorsichtsmaßregeln bei den Zutaten.</p>
+          <p>Fehlen aber die Hopfenblüten, so nimmt man die Früchte des Gagels (myrtus), die den Wacholderbeeren gleichen. Sie müssen mit größter Sorgfalt gekocht werden, bis ein reiner Geschmack mit gemäßigter Bitterkeit bleibt. So sehr bedarf alles des rechten Ausgleichs: Diese Samen des Gagels müssen nämlich sehr kräftig gekocht werden.</p>
+          <p>Fehlt auch die Bierhefe, so nimm das Gärmittel der Bäcker, löse es in warmem Wasser auf und gieße es darüber. Es wird fast dieselbe Wirkung tun wie die oben genannte Bierhefe.</p>
+          <p>Damit außerdem der Met (hydromel, medo oder mulsa) an Geschmack und Kraft angenehmer werde, kannst du ein Säckchen mit zerstoßenem Ingwer, an dem ein Steinchen hängt, an einem Faden innen im Gefäß aufhängen, damit es schwimmend mit der Flüssigkeit stets mit hinabgeht. Das wird wunderbar nützen, besonders zur Winterszeit, um die Gewalt der Kälte zu bändigen.</p>
+          <p>Für den Sommer aber halte fünf Teile Wasser und einen Teil Honig ein, oder, damit es dünner werde, sechs Teile Wasser und einen Teil Honig. Denn beides wird gut und trinkbar sein und wunderbar, den Durst zu stillen und die Gesundheit zu erhalten.</p>
+          <p>Diese Mischung findet freilich kaum Glauben bei den glücklichen Völkern, die Reben und Wein im Überfluss haben - es sei denn, Hagelstürme haben ihre Weinberge verwüstet und sie werden gezwungen, sich ganz der oben genannten Mischung oder dem Biersud zuzuwenden, wenn sie nicht durch Durst in Not geraten wollen. So geschieht es öfter in Österreich, der Steiermark, Kärnten und Deutschland, wo die genannten Unwetter die Bewohner dazu drängen, Met und Bier zu bereiten. Denn beide Getränke sind sehr gesund und umso besser, je älter sie sind - wenn sie jedoch mit Märzwasser gekocht sind. Von seiner Kraft und seinem Nutzen wird weiter unten die Rede sein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="water" orig="aquæ" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="mellis" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="flores lupuli">Hopfenblüten</ingredient>
+            </item>
+            <item>
+              <ingredient orig="legumina myrti">Gagel, Früchte</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="fex ceruiſiæ" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fermentum piſtorum">Gärmittel der Bäcker</ingredient>
+            </item>
+            <item>
+              <ingredient orig="contriti zinziberis">Ingwer, zerstoßen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-007">
+        <head>Met auf polnische oder litauische Art, mit Hopfen</head>
+        <div type="original" xml:id="olm-007-orig" xml:lang="und" corresp="#olm-007-trans">
+          <p>De modo coquendi medonem Polonico, vel Lithuanico more. CAP. XXIIII.
+CAPIATVR certa quantitas boni mellis puri &amp; integri, iuxta præmeditatam quantitatem conficientis, hoc ſcilicet exemplo: Decem libræ mellis, &amp; XL. libræ aquæ, aut plus aut minus, iuxta fortitudinem deſideratam. Calefiat aqua in caldari, ſeu cacabo cupreo, vel æreo magno, melqꝫ imponatur, vt bene coquatur, &amp; deſpumetur. Coquatur etiam lupulus ſeorſum in vno ſacculo (modo ſuperius dicto) ad quantitatem vnius libræ, vel minus, iuxta quantitatem mellis, &amp; aquę: quo decocto, &amp; aqua bullita, ac expumata, deponatur, vſquequò parum tepeſcat, &amp; imponatur ſaccus lupuli cum aqua ſuę decoctionis, ac fex ceruiſię (vel fermentum, vt ſuprà) beneqꝫ cooperiatur, vt ſtet per vnum diem, ac noctem: &amp; demum hæc decoctio, ſiue mixtura, valde planè reponatur ad vas mundum, &amp; erit delicatiſsimus, ac ſaniſsimus potus, qui vel vino æquiparari poterit, vel in neceſsitate vineis deſtructis, commodiſsimè deſeruire, immò dignitatem ſuam inter pretioſiſsimos quoſqꝫ liquores meritò obtinere. Omnem enim habet in ſuo genere colorem, ſaporem, odorem, &amp; ſecretam ſanandi vim, &amp; fortificandi naturam in robuſtiſsima gente, qualem vix habet vinum in ſua perfectiſsima æſtimatione. Si verò quis remiſsiorem medonem, vel fortiorem habere voluerit, ſecundum hoc addat, vel ſubtrahat mel in appoſitione decoctionis Et hæc veraciter relata ſunt mihi Romę M.D.XLIII. per venerabilem virum D. Martinum Polonum Pœnitentiarium Gneſnenſem, qui &amp; ſua manu talem medonem gratiſsimo ſapore, &amp; bonitate confecit: atqꝫ ita cariſtia vini ſurgente, in Roma commodiſsimè fieri poterit.</p>
+        </div>
+        <div type="translation" xml:id="olm-007-trans" xml:lang="de" corresp="#olm-007-orig">
+          <p>Nimm eine bestimmte Menge guten, reinen und unverfälschten Honigs, nach der Menge, die du dir vorgenommen hast, nämlich nach diesem Beispiel: zehn Pfund Honig und vierzig Pfund Wasser, mehr oder weniger, je nach gewünschter Stärke.</p>
+          <p>Erhitze das Wasser im Kessel, also in einem großen Kessel aus Kupfer oder Erz, und gib den Honig hinein, damit er gut kocht, und schäume ihn ab.</p>
+          <p>Koche auch den Hopfen für sich in einem Säckchen (auf die oben beschriebene Weise), in einer Menge von einem Pfund oder weniger, je nach der Menge von Honig und Wasser. Ist er ausgekocht und das Wasser gesotten und abgeschäumt, nimm es vom Feuer, bis es ein wenig lau geworden ist. Gib den Hopfensack mit dem Wasser seines Suds hinein und dazu Bierhefe (oder das Gärmittel, wie oben), decke es gut zu und lass es einen Tag und eine Nacht stehen. Zuletzt fülle diesen Sud oder diese Mischung sehr behutsam in ein sauberes Gefäß um.</p>
+          <p>So wird es ein überaus feiner und sehr gesunder Trank, der dem Wein gleichkommen oder in der Not, wenn die Weinberge zerstört sind, aufs Beste dienen kann, ja der seinen Rang unter den kostbarsten Getränken mit Recht behauptet. Denn er hat in seiner Art jede Farbe, jeden Geschmack und Geruch, dazu eine verborgene Heilkraft und eine stärkende Natur bei einem sehr kräftigen Volk, wie sie der Wein kaum hat, selbst wenn er am höchsten geschätzt wird.</p>
+          <p>Willst du aber einen milderen oder stärkeren Met haben, so gib danach beim Ansetzen des Suds Honig hinzu oder nimm davon weg.</p>
+          <p>Dies hat mir im Jahr 1543 in Rom der ehrwürdige Herr Martinus Polonus, Pönitentiar von Gnesen, wahrheitsgetreu berichtet, der auch mit eigener Hand einen solchen Met von höchst angenehmem Geschmack und guter Beschaffenheit bereitet hat. Und so lässt er sich, wenn die Teuerung des Weins steigt, auch in Rom aufs Beste herstellen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Decem libræ mellis">Honig, gut, rein und unverfälscht</ingredient> - 10</item>
+            <item><ingredient en="water" orig="XL. libræ aquæ, aut plus aut minus" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 40</item>
+            <item><ingredient orig="lupulus ſeorſum in vno ſacculo">Hopfen</ingredient> - 1</item>
+            <item>
+              <ingredient en="beer yeast" orig="fex ceruiſię (vel fermentum, vt ſuprà)" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-008">
+        <head>Met im Großansatz mit Gagel statt Hopfen</head>
+        <div type="original" xml:id="olm-008-orig" xml:lang="und" corresp="#olm-008-trans">
+          <p>Adhuc de cautelis hydromelis, vel medonis, ſiue mulſæ conficiendæ more Gothorum. CAP. XXV.
+FACTVRI grandem quantitatem medonis, maximè ad quęſtum &amp; lucrum, Septentrionales populi, quandoqꝫ capiunt mille libras, aut duo, vel tria millia librarum mellis puriſſimi cum àqua proportionata, &amp; myrto: quæ inſtar granorum iuniperi in humili frutice, vlnæ vnius longitudinis in loco paludinoſo creſcit, &amp; matureſcit in Auguſto: &amp; ſufficit apud prædictos populos loco lupuli, dummodò per integram horam &amp; amplius, forti igne coquatur, prout aliàs lupulus: ſed mixtura grandis mellis &amp; aquæ, bullire ſolet ad diem, &amp; noctem, &amp; demum appoſita fece ceruiſiæ, vel fermento piſtorum, quatuor, vel pluribus diebus dimitti in ſua operatione, &amp; coniunctione.</p>
+        </div>
+        <div type="translation" xml:id="olm-008-trans" xml:lang="de" corresp="#olm-008-orig">
+          <p>Weiteres über die Vorsichtsmaßregeln beim Bereiten von Met nach Art der Goten.</p>
+          <p>Wenn die Völker des Nordens eine große Menge Met herstellen wollen, vor allem zu Erwerb und Gewinn, nehmen sie bisweilen tausend Pfund oder zwei- oder dreitausend Pfund reinsten Honigs, mit Wasser im passenden Verhältnis und mit Gagel.</p>
+          <p>Der Gagel wächst wie Wacholderbeeren an einem niedrigen Strauch von einer Elle Länge an sumpfigen Stellen und reift im August. Bei den genannten Völkern genügt er anstelle des Hopfens, sofern er eine ganze Stunde und länger bei starkem Feuer gekocht wird, wie sonst der Hopfen.</p>
+          <p>Die große Mischung aus Honig und Wasser aber siedet gewöhnlich einen Tag und eine Nacht. Zuletzt wird Bierhefe oder das Gärmittel der Bäcker zugesetzt, und man überlässt sie vier oder mehr Tage ihrem Wirken und ihrer Verbindung.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="mille libras, aut duo, vel tria millia librarum mellis puriſſimi">Honig, reinster</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="cum àqua proportionata" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="myrto">Gagel</ingredient>
+            </item>
+            <item>
+              <ingredient en="beer yeast" orig="fece ceruiſiæ, vel fermento piſtorum" commodity="wikidata:Q12045459" source="#fyndling-ingredient-name">Bierhefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-009">
+        <head>Mulsum der südlichen Goten (Bier-Honig-Trank)</head>
+        <div type="original" xml:id="olm-009-orig" xml:lang="und" corresp="#olm-009-trans">
+          <p>Fit &amp; apud Gothos, præſertim Meridionales, quidam potus Mulſum appellatum, ex ceruiſia, &amp; melle, ac myrto: qui quarta parte in ſua appoſitione aſſumitur, id eſt, quatuor partes ceruiſię, &amp; quarta pars myrti: &amp; decoquitur hæc compoſitio igne forti, per vnam horam, vel duas, donec mel fuerit deſpumatum: &amp; tandem ſuperpoſita fece cooperitur, &amp; cooperta manet vno integro &amp; dimidio. die, &amp; exit potus fortiſsimus: qui ſicuti antiquum hydromel, aut medo, crateri, aut cyatho impletus, præ fortitudine radios mittit ſcintillantes, velut candens ferrum. Eo liquore gens illa frequentius vtitur in nuptialibus feſtis, &amp; honorabilium amicorum, ac hoſpitum receptione. Neqꝫ in hoc ſolo potu, ſed fortiſsima ceruiſia ſemper abundant: licet mulſum hoc mellis adulteratione artificioſa ſit excogitatum, prout &amp; aliorum cura ſemper aſcendit, vel ſerpit in diuerſorum fructuum muſto conficiendo: quod opus ingenii eſt, &amp; non naturæ. Vinum tamen omnibus his præfero in ſua natiua terra, vbi genti ſuæ redditur proportionatum &amp;c.</p>
+        </div>
+        <div type="translation" xml:id="olm-009-trans" xml:lang="de" corresp="#olm-009-orig">
+          <p>Auch bei den Goten, besonders den südlichen, bereitet man ein Getränk, das Mulsum genannt wird, aus Bier, Honig und Gagel (myrtus). Der Gagel wird beim Zusetzen zu einem vierten Teil genommen, das heißt: vier Teile Bier und ein vierter Teil Gagel. Diese Mischung wird bei starkem Feuer eine oder zwei Stunden lang gesotten, bis der Honig abgeschäumt ist. Schließlich wird Hefe obenauf gelegt und das Ganze zugedeckt. Zugedeckt bleibt es einen ganzen und einen halben Tag, und es entsteht ein sehr starkes Getränk.</p>
+          <p>Wie der alte Hydromel oder Met sendet es, in einen Mischkrug oder einen Becher gefüllt, vor Stärke funkelnde Strahlen aus, wie glühendes Eisen. Dieses Getränk gebraucht jenes Volk häufiger bei Hochzeitsfesten und beim Empfang geehrter Freunde und Gäste. Doch nicht allein an diesem Getränk haben sie Überfluss, sondern stets auch an sehr starkem Bier.</p>
+          <p>Freilich ist dieses Mulsum durch eine kunstreiche Verfälschung des Honigs ersonnen, so wie auch das Bemühen anderer immer weiter steigt oder kriecht, Most aus verschiedenen Früchten zu bereiten. Das ist ein Werk des Erfindungsgeistes und nicht der Natur. Den Wein jedoch ziehe ich all diesen vor, in seinem Heimatland, wo er seinem Volk angemessen zuteilwird, usw.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="beer" orig="ceruiſia" commodity="wikidata:Q44" source="#fyndling-ingredient-name">Bier</ingredient> - 4</item>
+            <item>
+              <ingredient en="honey" orig="melle" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="myrto">Gagel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fece">Hefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-010">
+        <head>Gerste mälzen und nordisches Bier brauen</head>
+        <div type="original" xml:id="olm-010-orig" xml:lang="und" corresp="#olm-010-trans">
+          <p>De præparatione hordei, &amp; aliarum frugum, pro ceruiſia decoquenda. CAP. XXVI.
+QVIA inter pręcipuos rerum naturalium ſcrutatores, &amp; ſcriptores, maximè in his, quæ ad ſalubriorem hominis victum pertinent, Hippocrates videtur habere de hordaceo potu rationem, &amp; cenſuram meliorem, prout in libris eius deſuper confectis, clariſsimè demonſtratur: propterea magnam vim facit de natura hordei, &amp; eius potione (cui multa, variaqꝫ imponit nomina) quòd omnibus annonis, ſeu frugibus ſanior, &amp; vtilior ſit, vbi eius vſus habetur pro optimo potu decoquendo. Nec tamen modum ob inexperientiam regionum exprimere potuit, qualis ſaltem generaliter in conficienda ceruiſia reſeruatur.
+Quocirca quibus placet, offeratur is modus Septentrionalium incolarum: qui decocturi ceruiſiam, quantò electius hordeum inuenerint, &amp; diligentius præparauerint, tantò ſaniorem exinde potum non dubitant euenturum. Sicqꝫ præparant, iuxta exigentiam familiæ maioris vel minoris, publicæ vel priuatæ domus: Eligunt pauimentum tabulatum, longum, &amp; amplum: ſuper quo impoſitum hordeum X. rugiorum, vel XXX. aut plurium modiorum, aqua ſparſum continuè voluunt: vnde fit, vt vna nocte &amp; die molleſcat, &amp; intumeſcat: hocqꝫ ſecundò &amp; tertiò ſimili reuolutione verſum, quaſi radicibus emiſsis germinare videtur, vt conglobatis manipulatim granis, illicò concreſcere velit: triduoqꝫ iam per pauimentum ampliatum, relinquitur exiccandum: quo viſo, clibanus adaptatur ſatis amplus: in cuius ampliore latitudine interpoſitis rarioribus pannis, ſuppoſitoqꝫ lento igne, hordeum apportatur diſpergendum, ac detorrendum. Induit enim eo torrore miram ſuauitatem, vt mellis videatur habere ſaporem. Demum aquatili, ſeu truſatili, vel ventorum mola parumper attritum (vnde Braſium dicitur) aquæ calefactæ, atqꝫ in amplum vas ligneum continua motione paulatim immiſſum, multò maiorem dulcedinem ſpargit, &amp; tumorem: hacqꝫ commixtione remiſsius deferuente, vaſculo pertuſo, quaſi cribro, vel craticulatis foraminibus, totus ille liquor fortiter coctus, exhauſtus, &amp; depuratus alteri imponitur vaſi: in quo decoctio amari lupuli pro tertia, vel quarta parte admiſcetur, iuxta maiorem ſuauitatem, vel amaritatem ceruiſiæ conficiendæ. Illicoqꝫ fex vetuſtioris ceruiſiæ, quaſi fermentum, non magna quantitate impoſita, totalem formam, &amp; perfectionem inducit: eaqꝫ compoſitione, ſeu incorporatione horum trium, ſcilicet ſuauis ſaporis hordei, amaritudinis lupuli, &amp; coagulantis fecis, lentè feruentibus ſub coopertis ceruiſia maturatur. De qua commixtione ſi quis pectorali ſtrictura preſſus, bonum hauſtum biberit, omnimodè reſtitutus euadet. Illeqꝫ liquor vulgari Gothico Buſka dicitur, quaſi hominem liberans ab oppilationum ſyluis. Similis etiam præparatio fit in tritico, &amp; auena: ſed rarò in ſiligine, quæ panibus excoquendis ſpecialiter reſeruatur, veluti frumentum delicatius omnium nutrimentum.</p>
+        </div>
+        <div type="translation" xml:id="olm-010-trans" xml:lang="de" corresp="#olm-010-orig">
+          <p>Unter den vornehmsten Erforschern und Beschreibern der natürlichen Dinge, besonders in dem, was zu einer gesünderen Ernährung des Menschen gehört, scheint Hippokrates über den Gerstentrank die bessere Begründung und das bessere Urteil zu haben, wie in seinen Büchern darüber aufs Klarste gezeigt wird. Darum legt er großen Nachdruck auf die Natur der Gerste und ihren Trank, dem er viele und verschiedene Namen gibt: Sie sei gesünder und nützlicher als jedes andere Getreide und jede andere Feldfrucht, wo man sie zum Sieden des besten Tranks gebraucht. Die Weise selbst aber konnte er aus Unkenntnis der Länder nicht beschreiben, wie sie wenigstens im Allgemeinen beim Bierbrauen eingehalten wird.</p>
+          <p>Deshalb sei denen, die es wünschen, die Weise der Bewohner des Nordens vorgelegt. Wenn sie Bier brauen wollen, zweifeln sie nicht: Je erlesener die Gerste ist, die sie finden, und je sorgfältiger sie sie bereiten, desto gesünder wird der Trank, der daraus hervorgeht. Und so bereiten sie sie, nach dem Bedarf einer größeren oder kleineren Hausgemeinschaft, eines öffentlichen oder privaten Hauses.</p>
+          <p>Weichen und Keimen. Sie wählen einen gedielten Boden, lang und weit. Die Gerste, die darauf geschüttet wird, zehn rugiorum oder dreißig oder mehr Scheffel, besprengen sie mit Wasser und wenden sie fortwährend. Dadurch geschieht es, dass sie in einer Nacht und einem Tag weich wird und aufquillt. Wird sie ein zweites und drittes Mal auf gleiche Weise umgewendet, so scheint sie zu keimen, als hätte sie Wurzeln getrieben, sodass die Körner sich büschelweise zusammenballen und sogleich zusammenwachsen wollen. Dann lässt man sie drei Tage lang, nun weiter über den Boden ausgebreitet, trocknen.</p>
+          <p>Darren. Ist das geschehen, richtet man einen hinreichend weiten Ofen her. In seinem weiteren Raum legt man locker gewebte Tücher dazwischen, macht darunter ein kleines Feuer, und die Gerste wird hineingebracht, um verteilt und gedörrt zu werden. Durch dieses Dörren nimmt sie nämlich eine wunderbare Süße an, sodass sie nach Honig zu schmecken scheint.</p>
+          <p>Schroten und Maischen. Zuletzt wird sie in einer Wassermühle, einer Handmühle oder einer Windmühle ein wenig zerrieben, daher heißt sie Malz (Brasium). In erwärmtes Wasser in einem weiten Holzgefäß unter ständigem Rühren nach und nach gegeben, gibt sie viel mehr Süße ab und quillt auf. Wenn diese Mischung schwächer wallt, wird die ganze, kräftig gekochte Flüssigkeit mit einem durchlöcherten Gefäß, wie mit einem Sieb oder mit gitterartigen Löchern, ausgeschöpft, geklärt und in ein zweites Gefäß gegeben.</p>
+          <p>Hopfen und Hefe. Darin mischt man den Sud des bitteren Hopfens zu einem Drittel oder einem Viertel bei, je nachdem, ob das Bier süßer oder bitterer werden soll. Sogleich gibt man Hefe von älterem Bier darauf, gleichsam als Sauerteig, in nicht großer Menge; sie gibt dem Ganzen seine Gestalt und Vollendung. Durch diese Zusammensetzung oder Vereinigung der drei, nämlich des süßen Geschmacks der Gerste, der Bitterkeit des Hopfens und der Hefe, die gerinnen macht, reift das Bier, während es zugedeckt langsam gärt.</p>
+          <p>Buska. Wer von Engigkeit der Brust bedrückt ist und von dieser Mischung einen guten Schluck trinkt, soll ganz und gar wiederhergestellt daraus hervorgehen. Dieser Trank heißt in der gotischen Volkssprache Buska, gleichsam einer, der den Menschen von den Wäldern der Verstopfungen befreit.</p>
+          <p>Andere Getreide. Eine ähnliche Bereitung geschieht auch mit Weizen und Hafer, selten aber mit Roggen, der eigens zum Brotbacken aufgespart wird, als das feinere Getreide, die Nahrung aller.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="barley" orig="hordeum" commodity="wikidata:Q61665121" source="#fyndling-ingredient-name">Gerste</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="aqua" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="decoctio amari lupuli">Hopfen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fex vetuſtioris ceruiſiæ">Hefe von älterem Bier</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-011">
+        <head>Bier in den Provinzen des Nordens: Wermutbier, Essig, Danziger Bier</head>
+        <div type="original" xml:id="olm-011-orig" xml:lang="und" corresp="#olm-011-trans">
+          <p>Adhuc de frugum præparatione pro ceruiſia in diuerſis, &amp; diſtantibus prouinciis conficienda. CAP. XXVII.
+NEQVE tamen modus omnibus prouinciis in frugibus præparandis idem eſt: quia aliter apud Noruegianos in Occidente, aliter in Meridie apud Gothos, aliterqꝫ in Oriente verſus Moſchos, &amp; Finningos verſus Septentrionem: qui etiam optimè præparant hordeum, &amp; ex eo conficiunt fortiſsimum potum: vnde gens redditur robuſtiſsima, ad quodcunqꝫ exercitiũ, vel arduum opus ſubeundũ, &amp; perficiendũ. Quidam enim fruges pręparãt, vt ex iis decoquãt potionem imariorem, abſynthium addentes contra vermes, ſeu lumbricos: quidam, vt dulciorem faciant, ſcilicet ex induſtria non integrè coquentes, vt qui ex lactis eſu frequentius conſtipentur, ventris habeant liberiorem laxationem: quidam fruges parant, vt inde data opera conficiant maximam aceti quantitatem, pro arcibus conſeruandis, ac curiis inſignium dominorum: quidam præparata annona in Martio, &amp; Aprili, ceruiſiam decoquunt decem, vel XX. annis pro medicina duraturam. Aqua etenim illius temporis (hyemalis dicta) ad panem, vel potum conficiendum admixta, nunquàm aceſcere potum, vel putreſcere panem ſinit: hacqꝫ prouidentia vſi Gedanẽſis ceruiſiæ pluſquàm ſexcenti coctores, ſeu braxatores, multa millia vaſoꝝ nobiliſsimæ ac ſaniſsimę ceruiſiæ lucri cauſa, vel in ſuo portu honeſto pretio exoticis negotiatoribus vendunt, vel marino euentu ad exteras, &amp; lõginquas terras Portugalliæ, &amp; Indorum emittunt. Tantæqꝫ virtutis eſt hic liquor, vt eo poto ſanentur quicunqꝫ corporis peſsimi humores. Ideoqꝫ quocunqꝫ hæc ceruiſia venerit, nunquàm ingrata, ſed veluti efficaciſsima medicina illicò comparatur: meritoqꝫ palmam obtinet, vt in Septentrionalibus plagis omnibus cæteris præferatur.
+Non ita de quolibet genere vinorum, ſicuti Plinius lib. XIIII. cap. primo atteſtatur: quorum aliqua hominem in rabiem vertunt, &amp; fœminas partu infœcundas, &amp; quædam fœcundas faciunt: quæ diuerſitas formidanda non eſt in genere ceruiſiarum: nam in Finlandia adeò fœcundas facit mulieres, vt pleruncqꝫ gemellos pariant: è quibus, tanquam fortiſsima ſobole, Rex Suetiæ nouas prouincias dato felici principio inſtituere poſſet, vnde tributum fiſco, &amp; robur regno non modicum accreſcere poſſet. Sed neſcio qua ſtupida cæcitate prouenit, vt fortiſsimæ puellæ in maximo numero quotannis ad oras Germaniæ alienis miſeriis ſeruiturę exeant, vbi domi reſeruari poſſent ad vtilitatem regni. Vtqꝫ improuidentia notetur maior, certum genus equorum in regno Regis edicto remanet: at fœcundæ virgines laxantur, vt in terris non ſatis amicis procreent inimicos. Domi deſolantur agri, &amp; ædes, vbi regni ſoboles foris ædificant ciuitates, &amp; augent tributa.</p>
+        </div>
+        <div type="translation" xml:id="olm-011-trans" xml:lang="de" corresp="#olm-011-orig">
+          <p>Noch einmal über die Zubereitung des Getreides für das Bier, das in verschiedenen und weit voneinander entfernten Provinzen gemacht wird.</p>
+          <p>Doch ist die Weise, das Getreide zu bereiten, nicht in allen Provinzen dieselbe: anders bei den Norwegern im Westen, anders im Süden bei den Goten, und wieder anders im Osten gegen die Moskowiter hin und bei den Finnen gegen Norden. Diese bereiten auch die Gerste aufs beste und machen daraus ein sehr starkes Getränk. Davon wird das Volk überaus kräftig, jede Übung oder schwere Arbeit auf sich zu nehmen und zu vollenden.</p>
+          <p>Manche nämlich bereiten das Getreide so, dass sie daraus ein bittereres Getränk sieden, und geben Wermut dazu, gegen Würmer oder Spulwürmer. Andere wollen es süßer machen und kochen es deshalb mit Absicht nicht ganz durch, damit die, die vom Milchessen öfter verstopft sind, einen freieren Stuhlgang haben.</p>
+          <p>Wieder andere bereiten das Getreide, um daraus mit Absicht eine sehr große Menge Essig zu machen, zur Erhaltung der Burgen und der Höfe vornehmer Herren. Manche bereiten das Korn im März und April und sieden daraus ein Bier, das als Arznei zehn oder zwanzig Jahre halten soll. Denn das Wasser dieser Zeit, das winterliche genannt, lässt, wenn man es zum Brot- oder Getränkebereiten beimischt, das Getränk nie sauer und das Brot nie faul werden.</p>
+          <p>Diese Vorsorge nutzen die mehr als sechshundert Sieder oder Brauer des Danziger Biers: Sie verkaufen um des Gewinns willen viele tausend Fässer des edelsten und gesündesten Biers, teils in ihrem eigenen Hafen zu ehrlichem Preis an fremde Kaufleute, teils schicken sie sie auf das Wagnis der Seefahrt in fremde und ferne Länder, nach Portugal und zu den Indern.</p>
+          <p>Und dieser Trank soll so kräftig sein, dass durch seinen Genuss alle noch so schlimmen Säfte des Körpers geheilt werden. Deshalb ist dieses Bier, wohin es auch kommt, nie unwillkommen, sondern wird sogleich wie eine höchst wirksame Arznei gekauft. Mit Recht trägt es die Palme davon, sodass es in den Gegenden des Nordens allen anderen vorgezogen wird.</p>
+          <p>Nicht so verhält es sich mit jeder Art von Wein, wie Plinius im vierzehnten Buch, im ersten Kapitel, bezeugt: Manche Weine bringen den Menschen in Raserei und machen die Frauen unfruchtbar, manche machen sie fruchtbar. Diese Verschiedenheit ist bei den Bieren nicht zu fürchten. Denn in Finnland macht das Bier die Frauen so fruchtbar, dass sie meistens Zwillinge gebären. Aus ihnen, als einer überaus kräftigen Nachkommenschaft, könnte der König von Schweden nach glücklichem Anfang neue Provinzen gründen, wodurch der Staatskasse Steuern und dem Reich nicht wenig Stärke zuwachsen könnten.</p>
+          <p>Ich weiß aber nicht, aus welcher stumpfen Blindheit es kommt, dass die kräftigsten Mädchen jedes Jahr in größter Zahl an die Küsten Deutschlands ziehen, um in fremder Not zu dienen, wo man sie doch zum Nutzen des Reichs daheim behalten könnte. Und damit die Unvorsichtigkeit noch größer erscheint: Eine bestimmte Pferderasse bleibt auf königlichen Erlass im Reich, die fruchtbaren Jungfrauen aber lässt man ziehen, damit sie in nicht eben freundlichen Ländern Feinde zur Welt bringen. Daheim veröden Äcker und Häuser, während die Nachkommen des Reichs draußen Städte bauen und die Abgaben mehren.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="fruges">Getreide</ingredient>
+            </item>
+            <item>
+              <ingredient en="barley" orig="hordeum" commodity="wikidata:Q61665121" source="#fyndling-ingredient-name">Gerste</ingredient>
+            </item>
+            <item>
+              <ingredient en="wormwood" orig="abſynthium" commodity="wikidata:Q25686" source="#fyndling-ingredient-name">Wermut (für das bitterere Getränk)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Aqua">Wasser von März und April (Winterwasser)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-012">
+        <head>Bierbrauen auf verschiedene Weise, mit Hopfenprobe</head>
+        <div type="original" xml:id="olm-012-orig" xml:lang="und" corresp="#olm-012-trans">
+          <p>De ceruiſiæ decoctione vario modo. CAP. XXVI.II.
+PRAEPARATIS, vt pręmiſſum eſt frugibus, diuerſę nationes proprium &amp; peculiarem modum retinent, aliter et aliter ceruiſiam conficiendi: quidam celerius, quidam tardius, quidam maiori, quidam minori quantitate, vti etiam in vindemiantibus eſt vſitatum. In Aquilone caldaribus, &amp; vaſis vtuntur ampliſsimis: vna tamen miranda conditione inſpecta, quòd ſolis mulieribus ceruiſiam paneſqꝫ coquendi, tanquam principalius officium, in toto Septentrione, exceptis curiis Principum, ac procerum, &amp; magnorum conuentuum, eſt attributum. Fœminę enim adeò mundè fideliterqꝫ ſingula negotia ſibi incumbentia tractant, vt nulla ſuſpicio oboriatur, quòd non omnia ſint bene facta, etiam in præparatione ciborum, vt nedum patronis offerantur in eſcam, ſed medicinalem præſeruationem. Magnam nanqꝫ experientiam habent cum arte coniunctam, quomodo hordeum ſit præparandum, aut alię fruges, quemqꝫ effectum &amp; vim ſit habiturum. Similiter &amp; lupulus: qui niſi naturali calore ſuo per decoctionem ſufficientem purgatus fuerit, non ſanitatem generat, ſed tormina ventris, &amp; ægritudines neruis nocituras. Quando autem lupulus (hortenſis dictus) ſufficienter coctus creditur, tunc probatio capitur per exiguum manipulum culmorum: qui immiſſus in decoctionem, &amp; extractus, ſecum viſcoſitatem retinet cum amaritudine amariſsima: &amp; hinc emerget ſalubrius temperamentum in omnibus rebus dulcibus, humano potui profuturis.</p>
+        </div>
+        <div type="translation" xml:id="olm-012-trans" xml:lang="de" corresp="#olm-012-orig">
+          <p>Wie man Bier auf verschiedene Weise siedet.</p>
+          <p>Ist das Getreide, wie vorausgeschickt, bereitet, so behalten die verschiedenen Völker ihre eigene, besondere Art, Bier zu machen, mal so, mal so: die einen schneller, die anderen langsamer, die einen in größerer, die anderen in kleinerer Menge, wie es auch bei den Winzern üblich ist. Im Norden gebraucht man Kessel und sehr große Gefäße.</p>
+          <p>Dabei ist jedoch ein bemerkenswerter Umstand zu beachten: Im ganzen Norden ist das Bierbrauen und das Brotbacken allein den Frauen zugewiesen, gleichsam als ihre vornehmere Pflicht, ausgenommen die Höfe der Fürsten und der Großen sowie große Versammlungen. Die Frauen besorgen nämlich alle Geschäfte, die ihnen obliegen, so sauber und gewissenhaft, dass kein Verdacht aufkommt, es sei nicht alles gut gemacht, auch bei der Zubereitung der Speisen, sodass diese den Hausherren nicht nur als Speise vorgesetzt werden, sondern als heilsame Vorbeugung. Sie haben nämlich große, mit Kunst verbundene Erfahrung darin, wie Gerste oder anderes Getreide zu bereiten ist und welche Wirkung und Kraft es haben wird.</p>
+          <p>Ebenso der Hopfen: Wird er nicht durch ausreichendes Kochen von seiner natürlichen Hitze gereinigt, bringt er keine Gesundheit hervor, sondern Bauchgrimmen und Leiden, die den Nerven schaden. Glaubt man aber, der Hopfen, Gartenhopfen genannt, sei ausreichend gekocht, so nimmt man die Probe mit einer kleinen Handvoll Halme: Sie wird in den Sud getaucht und wieder herausgezogen und behält eine Klebrigkeit mit äußerst bitterem Geschmack an sich. Daraus wird eine heilsamere Mäßigung in allen süßen Dingen hervorgehen, die dem menschlichen Trank nützen sollen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="hordeum ſit præparandum, aut alię fruges">Gerste oder anderes Getreide</ingredient>
+            </item>
+            <item>
+              <ingredient orig="lupulus (hortenſis dictus)">Gartenhopfen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-013">
+        <head>Äthiopisches Bier aus gesäuertem Zwieback und gekeimter Gerste</head>
+        <div type="original" xml:id="olm-013-orig" xml:lang="und" corresp="#olm-013-trans">
+          <p>De Aethiopum, ſeu Indorum more ceruiſiam conficiendi, ex inſtructione D. Ioannis Baptiſtæ Habaſciani Indorum presbyteri. CAP. XXX.
+CAPIATVR farina cribro non excuſſa tritici communis, vel hordei: inde enim melior fit ceruiſia. Fiat paſta, &amp; ingeratur fermentum, veluti conficitur panis cibarius: maneat dicta paſta per decem dies, antequàm coquatur: ſed quotidie bene miſceatur, &amp; inſpergatur ſingulis diebus exigua farina vſqꝫ ad decimum diem, ita vt dicta paſta aceſcat. Poſt decimum diem fiat inde panis: coquatur in furno, &amp; fiat biſcoctus: cùm acuerit, frangatur in fruſta, &amp; ponatur in vrna, ſuperponendo pauxillum hordei germinati: impleatur dicta vrna aqua: bene obturetur[?] vſqꝫ in triduum. Poſt aperiatur, &amp; manus ꝓtendatur vſqꝫ ad fundum vrnæ, miſcendo optimè, infringendo, &amp; liquefaciendo biſcoctum panem, qui non fuerit ab aqua liquefactus. Deinde ſtatim ingeratur panis ex hordeo factus eodem die, incidendo in offas: &amp; iterum immittatur hordeũ germinatum, pluſquàm prius: ſed tamen oportet diligenti vti menſura, &amp; ordine, pro quantitate ceruiſiæ: quod niſi factum fuerit, ceruiſia fiet aſperi. &amp; amari ſaporis: ſi verò parcius immittatur, fit inſipida, et inſulſa. Neceſſe eſt igitur vti prudentia, in qua eſt omnis vis. Et cùm omnia commixta fuerint, iterum obturanda eſt vrna, vſqꝫ ad quartum diem: inde aperienda, &amp; paulatim ſolidanda per pannum lineum: cumqꝫ bene fuerit expreſſa, &amp; cum fece[?] purgata, infunditur in aliud vas bene purum: &amp; qui voluerit bibete eodem, hoc eſt quarto die, poterit, licet inſipida ſit vſqꝫ in vigeſimum diem.</p>
+        </div>
+        <div type="translation" xml:id="olm-013-trans" xml:lang="de" corresp="#olm-013-orig">
+          <p>Wie die Äthiopier oder Inder Bier bereiten, nach der Unterweisung des Herrn Johannes Baptista Habascianus, Priesters der Inder.</p>
+          <p>Nimm Mehl, das nicht durch das Sieb geschüttelt ist, von gewöhnlichem Weizen oder von Gerste, denn daraus wird das Bier besser. Mache einen Teig und gib Sauerteig hinein, wie man gewöhnliches Brot macht. Lass den Teig zehn Tage stehen, bevor er gebacken wird. Rühre ihn aber jeden Tag gut durch und streue an jedem Tag ein wenig Mehl darauf, bis zum zehnten Tag, damit der Teig sauer wird.</p>
+          <p>Nach dem zehnten Tag mache daraus Brot, backe es im Ofen und mache Zwieback daraus. Wenn er scharf geworden ist, brich ihn in Stücke und lege sie in einen Krug, und gib ein klein wenig gekeimte Gerste obenauf. Fülle den Krug mit Wasser und verschließe[?] ihn gut für drei Tage.</p>
+          <p>Danach öffne ihn und strecke die Hand bis auf den Boden des Kruges, mische aufs Beste, brich und löse den Zwieback auf, soweit ihn das Wasser nicht aufgelöst hat. Gib dann sogleich Brot aus Gerste hinein, das am selben Tag gemacht ist, und schneide es dabei in Brocken. Gib wiederum gekeimte Gerste hinein, mehr als zuvor.</p>
+          <p>Doch muss man dabei sorgfältig Maß und Ordnung halten, nach der Menge des Biers. Geschieht das nicht, wird das Bier herb und bitter im Geschmack. Gibt man aber zu sparsam hinein, wird es fad und ohne Geschmack. Man muss also mit Klugheit vorgehen, in der die ganze Kraft liegt.</p>
+          <p>Wenn alles vermischt ist, verschließe den Krug wieder bis zum vierten Tag. Dann öffne ihn und seihe das Bier nach und nach durch ein Leinentuch. Ist es gut ausgepresst und vom Bodensatz[?] gereinigt, wird es in ein anderes, gut sauberes Gefäß gegossen. Wer davon trinken will, kann es am selben, das heißt am vierten Tag tun, auch wenn es bis zum zwanzigsten Tag fad ist.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="farina cribro non excuſſa tritici communis, vel hordei">Mehl, ungesiebt, von gewöhnlichem Weizen oder von Gerste</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fermentum">Sauerteig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="hordei germinati">Gekeimte Gerste (Grünmalz)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="aqua" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="panis ex hordeo factus eodem die">Gerstenbrot, am selben Tag gemacht</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="olm-014">
+        <head>Äthiopisches Bier mit Wabenhonig und Zwieback</head>
+        <div type="original" xml:id="olm-014-orig" xml:lang="und" corresp="#olm-014-trans">
+          <p>De eadem ceruiſia alio modo conficienda. CAP. XXXI.
+RECIPIATVR panis biſcoctus, &amp; hordeum germinatum, &amp; mittatur in vrnam grandem (vt ſuprà dictum eſt) vſqꝫ ad tertium diem: deinde capiatur olla magna, melle plena, vnà cum fauis, &amp; cera: poſteà ſumatur magnum vas, quod capiat quintuplicis liquoris plus, quàm ceperat olla mellis, &amp; bene lauetur: dumqꝫ adhuc humidum eſt, inuertitur ore inferius demiſſo, vt fumigetur aridis frondibus oliuarum: deinde infunditur totum mel prędictæ ollæ: eademqꝫ olla bis impletur[?] hordeo germinato, &amp; pane biſcocto mollito, tantundem aquæ in illud vas, vbi mel poſitum fuit, immittendo, etiam hordei germinati tantum, quantum oportebit. Cumqꝫ hæc omnia ſimul commixta fuerint in vaſe fumigato, cum melle, aqua ſcilicet, &amp; ceruiſia prædicta obturetur vehementer creta in triduum: deinde aperiatur, &amp; deſpumata omni fece, quæ inuenitur in ore vaſis, exprimatur, vt defluat, vt dictum eſt de ſuperiore potione: panno nitido diuidatur in diuerſa vaſcula pura, &amp; ſpecioſa: quæ bene obturentur. Et quoties volunt bibere, aperiunt vnum ex illis vaſculis: quo exhauſto, alia ſeriatim aperiuntur. Et hæc ceruiſia longè melior eſt ſuperiore: nam illa durat octo, vel decem dies: hæc verò viginti, vel triginta: hæcqꝫ fit in locis calidioribus: &amp; vaſa pannis calidis teguntur: immò arceri debent procul homines ſcelerati, fœminæ menſtruoſæ, viriqꝫ, &amp; fœminæ polluti proximo concubitu: quod obſeruatur per totam Aethiopiam. Illud autem, quod in ſuperficie vaſorum detrahitur, cùm voluerint vt defluat, ponunt ad ſolem, ſiccant, immittunt in ollam, ſiue ahenum, vt bulliat cum pauca aqua: deinde refrigerant, &amp; remanet ſuper aquam pulcherrima cera. Hordeum verò molliatur in aqua ad vnum diem, &amp; noctem: hinc detrahatur, &amp; mittatur in ſcyphum ligneum madefactum, ſuperius &amp; inferius compoſitis frondibus ficuum vel arundinum recentibus: &amp; ſemper humectetur vſquequò germinet: &amp; poſtquam germinauerit, bene ſiccetur in ſole, &amp; molatur mola truſatili: ſed non ita tenuiter, veluti farina, ſed tanquam far confractum in duo, vel tria fruſta: ſine quo bona ceruiſia fieri nequit.</p>
+        </div>
+        <div type="translation" xml:id="olm-014-trans" xml:lang="de" corresp="#olm-014-orig">
+          <p>Wie man dasselbe Bier auf andere Weise bereitet.</p>
+          <p>Nimm Zwieback und gekeimte Gerste und lege sie, wie oben gesagt, in einen großen Krug bis zum dritten Tag. Dann nimm einen großen Topf voll Honig, samt den Waben und dem Wachs. Danach nimm ein großes Gefäß, das fünffach mehr Flüssigkeit fasst, als der Honigtopf gefasst hatte, und wasche es gut aus.</p>
+          <p>Solange es noch feucht ist, stülpt man es mit der Öffnung nach unten um, damit es mit trockenem Olivenlaub ausgeräuchert wird. Dann gießt man den ganzen Honig aus dem genannten Topf hinein. Derselbe Topf wird zweimal mit gekeimter Gerste und aufgeweichtem Zwieback gefüllt, wobei man ebenso viel Wasser in das Gefäß gibt, in das der Honig gegeben wurde, und auch so viel gekeimte Gerste, wie nötig ist.</p>
+          <p>Wenn all dies im ausgeräucherten Gefäß zusammen vermischt ist, mit dem Honig, nämlich mit dem Wasser und dem vorgenannten Bier, verschließe das Gefäß fest mit Kreide für drei Tage. Dann öffne es, schäume alle Hefe ab, die sich an der Mündung des Gefäßes findet, und presse es aus, damit es abfließt, wie es beim vorigen Trank gesagt ist. Verteile es durch ein sauberes Tuch auf verschiedene reine und schöne Gefäßchen und verschließe sie gut.</p>
+          <p>Sooft sie trinken wollen, öffnen sie eines dieser Gefäßchen; ist es geleert, werden die anderen der Reihe nach geöffnet. Dieses Bier ist weit besser als das vorige, denn jenes hält acht oder zehn Tage, dieses aber zwanzig oder dreißig. Es wird an wärmeren Orten gemacht, und die Gefäße werden mit warmen Tüchern bedeckt. Ja sogar fernhalten muss man frevelhafte Menschen, menstruierende Frauen sowie Männer und Frauen, die durch den letzten Beischlaf befleckt sind. Das wird in ganz Äthiopien beachtet.</p>
+          <p>Das Wachs. Was man oben von den Gefäßen abnimmt, wenn man das Bier abfließen lassen will, legen sie in die Sonne, trocknen es und geben es in einen Topf oder Kessel, damit es mit wenig Wasser siedet. Dann lassen sie es abkühlen, und oben auf dem Wasser bleibt schönstes Wachs zurück.</p>
+          <p>Die Gerste. Die Gerste aber weiche einen Tag und eine Nacht in Wasser. Dann nimm sie heraus und gib sie in eine angefeuchtete Holzschale, oben und unten mit frischen Feigen- oder Schilfblättern belegt, und halte sie stets feucht, bis sie keimt. Wenn sie gekeimt hat, trockne sie gut in der Sonne und mahle sie auf der Handmühle, aber nicht so fein wie Mehl, sondern wie gebrochenen Dinkel, in zwei oder drei Stücke. Ohne dies kann kein gutes Bier entstehen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="panis biſcoctus">Zwieback</ingredient>
+            </item>
+            <item>
+              <ingredient orig="hordeum germinatum">Gekeimte Gerste (Malz)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="melle plena, vnà cum fauis, &amp; cera">Honig samt Waben und Wachs</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="aqua" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ceruiſia prædicta">Krug-Ansatz aus dem vorigen Kapitel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="aridis frondibus oliuarum">Trockenes Olivenlaub (zum Ausräuchern)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="creta">Kreide (zum Verschließen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="frondibus ficuum vel arundinum recentibus">Frische Feigen- oder Schilfblätter (zum Keimen)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-001-trans" resp="#fyndling">Was ist das? Ein dünnes Hartbrot von der heißen Eisenplatte, in großer Zahl gebacken, gestapelt und gepresst als Vorrat. Olaus berichtet, wie die Frauen es machen; Mengen, ein Verhältnis von Mehl und Wasser oder eine Backdauer nennt er nicht.
+
+Mehl und Wasser. Gerste, Bohnen (Ackerbohne) oder Erbsen; das „vel“ liest sich als Wahl, eine Mischung schließt der Satz aber nicht aus. Weitere Zutaten nennt Olaus nicht, weder Salz noch Fett noch ein Gärmittel. Angemacht wird der Teig mit Märzwasser.
+
+Platte und Feuer. Runde, dünne, schildgroße Eisenplatten auf Füßen („nach Art von Dreifüßen“), darunter ein kleines, beständig genährtes Feuer. Die kleine Hitze ist der Kern des Verfahrens: Der Teig ist dünn wie feinstes Papier und backt deshalb sehr rasch durch. Ein anderes Zeichen für das Ende nennt der Text nicht.
+
+Stapeln und Pressen. Die Brote kommen der Reihe nach übereinander wie Papierbögen in der Presse, der Stapel wird mit Steinen beschwert und so fest, dass ihn kaum Eisen bricht. Aufbewahrt wird er unter Dach, geschützt vor Regen und Schnee. Die Haltbarkeit von „XVI. XX. oder mehr Jahren“ ist Olaus' Angabe; seine Begründung, die Kälte des Landes und das Märzwasser, ist seine Theorie.
+
+Praxis. Heute genügt eine große, flache Eisenplatte oder schwere Pfanne über kleiner Glut, dazu Brett und Rollholz. Die Wassermenge bestimmt man selbst, so dass ein fester, eben noch rollbarer Teig entsteht; der Text sagt dazu nichts. Gersten- und Hülsenfruchtmehl haben kaum Kleber, der dünne Teig reißt leichter als Weizenteig; ein Anteil Weizenmehl erleichtert das Ausrollen, steht aber nicht im Text. Ackerbohnenmehl ist für Menschen mit angeborenem G6PD-Mangel (Favismus) ungeeignet. Wer Vorrat backt, lagert ganz trocken; Olaus' Jahresangaben sind kein Haltbarkeitsmaß.</note>
+        <note type="gloss" target="#olm-001-orig" n="aqua Martialis, ſeu vernalis" resp="#fyndling">Märzwasser oder Frühlingswasser, also Wasser aus dem März. Im Bierkapitel (Buch XIII, Kap. XXVII) sagt Olaus, das Wasser dieser Zeit lasse, dem Brot oder dem Trank beigemischt, den Trank nie sauer und das Brot nie faul werden. Das ist seine Begründung der Haltbarkeit, keine geprüfte Wirkung.</note>
+        <note type="gloss" target="#olm-001-orig" n="tripodum" resp="#fyndling">Genitiv Plural von tripus, Dreifuß; Dasypodius erklärt tripodes als eherne Töpfe mit drei Füßen. Die Platten stehen also auf Füßen über dem Feuer.</note>
+        <note type="gloss" target="#olm-001-orig" n="Daliæqꝫ" resp="#fyndling">Dalia ist bei Olaus Dalsland, die Nachbarlandschaft Värmlands. Dalarna nennt er Dalacarlia, die Leute dort Dalacarli.</note>
+        <note type="interpretive_choice" target="#olm-001-orig" n="farina hordei, fabarum, vel piſorum" resp="#fyndling" subtype="contextual">Mehl aus Gerste, Bohnen oder Erbsen als Wahl: Das „vel“ vor dem letzten Glied reiht Möglichkeiten.<list type="alternatives"><item>Eine Mischung der drei Mehle<note type="rationale">Der Satz schließt sie nicht aus; ein Hinweis auf Mischen fehlt aber, und „vel“ bezeichnet sonst die Wahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-001-orig" n="XVI. XX. vel plures annos" resp="#fyndling" subtype="philological">So gedruckt und so übernommen; gemeint sind wohl 16 bis 20 oder mehr Jahre. Die Randnotiz des Drucks nennt „Panis durat 20 vel pluribus annis“, also 20 oder mehr Jahre.<list type="alternatives"><item>16 oder 20 oder mehr Jahre<note type="rationale">Die zwei Zahlen ohne Bindewort lassen auch die Reihung zu; für die Sache ändert es nichts.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-003-trans" resp="#fyndling">Was ist das? Ein feines Weizenbrot, angemacht mit Eiern, süßem Wein, Zucker und Rosenwasser, fingerdick geformt und in einer zugedeckten Eisenpfanne mit Glut unten und oben gebacken. Olaus beschreibt es als Krankenkost vornehmer Frauen.
+
+Teig und Mengen. Der Text nennt 25 Pfund feinstes Weizenmehl, 6 Eier, 2 Becher Malvasier oder Bastart, 1 Pfund Zucker und 1 Becher Rosenwasser. Wasser und Triebmittel nennt er nicht. Mit den genannten Flüssigkeiten allein wird aus so viel Mehl kein formbarer Teig. Olaus sagt selbst, dass er nordische Maße ins Pfund überträgt; ob das Verhältnis dabei verrutscht ist oder weitere Flüssigkeit selbstverständlich war, lässt der Text offen. Die Form ist der Bäckerin freigestellt, nur dicker als ein dicker Finger soll der Teig nicht sein; er wird in Stücke geteilt.
+
+Backen. Die eiserne Pfanne steht über glühenden Kohlen, ein Rost liegt dazwischen und hält den Teig von der stärksten Hitze fern. Ob der Rost unter der Pfanne oder in ihr unter den Stücken liegt, sagt der Text nicht. Auf den Deckel aus Eisen oder Erz kommen ebenfalls glühende Kohlen, damit die Brote, wie Olaus sagt, gleichmäßig rösten; unten liegt die Glut maßvoll. Ein Zeichen, wann das Brot fertig ist, nennt er nicht.
+
+Die Zuspeisen. Der Nachsatz über Speisen aus Milch, Eiern, Zucker, Zimt und wenig Ingwer bei sanftem Feuer ist kein eigenes Rezept: Mengen und Verfahren fehlen.
+
+Praxis. Heute nachgebacken: Ein sehr feines, helles Weizenmehl (etwa Type 405) entspricht dem Mehl vom ersten Sieben am ehesten. Die Menge verkleinern, Eier, Wein, Zucker und Rosenwasser im Verhältnis zum Mehl beibehalten und, als moderne Ergänzung, so viel Flüssigkeit zugeben, bis sich der Teig formen lässt. Ein gusseiserner Topf mit Deckel, auf den man Glut legt, ersetzt Pfanne und Deckel; ein Rost oder Dreifuß im Topf hält die Stücke vom Boden fern. Statt Malvasier geht ein anderer süßer Wein.</note>
+        <note type="gloss" target="#olm-003-orig" n="Flore" resp="#fyndling">So heißt bei Olaus das Weizenmehl „vom ersten Sieben“, also das feinste, hellste Mehl; am Rand steht „Farina floris“, Blütenmehl.</note>
+        <note type="gloss" target="#olm-003-orig" n="Maluaſię" resp="#fyndling">Malvasier, ein süßer Wein aus dem Süden. Olaus sagt selbst, dass er im Norden selten zu finden ist.</note>
+        <note type="gloss" target="#olm-003-orig" n="Baſtart" resp="#fyndling">Ein süßer spanischer Wein, unter diesem Namen auch in Schweden belegt. Olaus nennt ihn als Ersatz für den Malvasier, eine Sorte gibt er nicht an.</note>
+        <note type="gloss" target="#olm-003-orig" n="cyathos" resp="#fyndling">Lateinisch cyathus, ein kleiner Schöpf- oder Trinkbecher, hier als Maßwort. Wie groß Olaus' Becher ist, sagt er nicht.</note>
+        <note type="interpretive_choice" target="#olm-003-orig" n="XXV. libras triticeæ farinę" resp="#fyndling" subtype="contextual">Die Mengen bleiben, wie sie gedruckt sind: 25 Pfund Mehl, 6 Eier, 2 Becher Wein, 1 Pfund Zucker, 1 Becher Rosenwasser. Mit diesen Flüssigkeiten allein wird aus so viel Mehl kein Teig; der Text nennt weder Wasser noch ein Triebmittel und sagt nicht, wie das aufgeht.<list type="alternatives"><item>Die 25 Pfund sind eine ungefähre Übertragung eines nordischen Maßes.<note type="rationale">Olaus sagt zu Beginn selbst, dass man im Norden das Mehl nicht nach Pfund wiegt und er die nordischen Maße für seine Leser ins gemeine Pfund überträgt. Ob dabei das Verhältnis verrutscht ist, lässt sich aus dem Text nicht entscheiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-003-orig" n="quæ etiam lacte, ouis, ſaccharo, cinnamomo, &amp; pauco zinzibere ſolent obſonia facere" resp="#fyndling" subtype="contextual">Ein eigenes Gericht der vornehmen Frauen: Zuspeisen (obsonia, Speisen neben dem Brot) aus Milch, Eiern, Zucker, Zimt und wenig Ingwer. Zimt und Ingwer gehören nicht in den Brotteig und stehen deshalb nicht bei den Zutaten.<list type="alternatives"><item>Zimt und Ingwer würzen auch das Brot.<note type="rationale">Der Teig ist vorher mit seinen Zutaten vollständig beschrieben; die Aufzählung beginnt einen neuen Relativsatz über die Frauen und nennt eigene Zutaten wie Milch.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-003-orig" n="interpoſita craticula" resp="#fyndling" subtype="contextual">Ein Rost zwischen den glühenden Kohlen und der Pfanne, als Untersatz.<list type="alternatives"><item>Ein Rost in der Pfanne unter den Teigstücken, damit sie nicht direkt auf dem heißen Boden liegen.<note type="rationale">„dazwischengelegt“ sagt nicht, zwischen was. Beide Lesarten halten den Teig von der stärksten Hitze fern.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-004-trans" resp="#fyndling">Was ist das? Kein Rezept mit Mengen, sondern ein Bericht über zwei Arten Wein: Weine aus gepresstem Obst, die man würzt, und Weine, in die man ein einzelnes Kraut gibt und die nach diesem Kraut heißen.
+
+Keltern und würzen. Der Text nennt zwei Schritte: Das Obst kommt in die Kelter, der Saft wird ausgepresst, und den Weinen werden Pfeffer, Ingwer und Gewürznelken zugesetzt, damit der herbe Geschmack milder wird. Dass Olaus sie Weine nennt, setzt die Gärung voraus. Wie lange sie gärt, womit sie in Gang kommt und ob die Gewürze vor oder nach der Gärung dazukommen, sagt er nicht.
+
+Kräuterweine. Salbei, Wermut, Raute und Lavendel kommen je für sich in einen Wein, und der Wein trägt dann den Namen des Krauts. Ob Obst- oder Traubenwein gemeint ist, bleibt offen. Olaus begründet die Vorliebe mit der Gesundheit; das ist sein Anspruch, keine heutige Wirkung. Wermut enthält Thujon und ist sehr bitter; Raute gilt in größeren Mengen als giftig, ihr Saft kann die Haut unter Sonnenlicht reizen.
+
+Praxis. Mengen, Gärführung und den Zeitpunkt des Würzens muss man selbst festlegen, denn der Text nennt nichts davon. Heute naheliegend (modern, nicht aus dem Text): Birnen- oder Apfelsaft pressen und mit Weinhefe vergären, die Gewürze sparsam in den fertigen Wein geben und kosten; Wermut und Raute nur in kleinen Mengen.</note>
+        <note type="gloss" target="#olm-004-orig" n="factitia vina" resp="#fyndling">Wörtlich „gemachte Weine“: Weine aus anderem Obst als Trauben. Im Deutschen heißt „gemachter Wein“ oft gepanschter Wein; das ist hier nicht gemeint, denn Olaus lobt die Kräuterweine ausdrücklich.</note>
+        <note type="gloss" target="#olm-004-orig" n="meſpilis" resp="#fyndling">Früchte der Echten Mispel. Sie sind frisch hart und herb und werden erst nach Frost oder längerem Liegen weich.</note>
+        <note type="gloss" target="#olm-004-orig" n="agreſtis ſaporis" resp="#fyndling">Der „ländliche“, herbe Geschmack des Obstweins. Die Gewürze sollen ihn mildern.</note>
+        <note type="gloss" target="#olm-004-orig" n="ruta" resp="#fyndling">Weinraute, ein stark riechendes Garten- und Heilkraut.</note>
+        <note type="interpretive_choice" target="#olm-004-orig" n="ſorbis" resp="#fyndling" subtype="lexical" cert="unknown">Speierlinge (Sorbus domestica): Im gelehrten Latein der Zeit meint sorbum ohne Zusatz die Frucht des Speierlings; Tabernaemontanus (1591) nennt die „Frucht oder Beer deß Speyerlings ... Lateiniſch Sorbum“, den wilden Sperberbaum dagegen „Sorbus ſylueſtris“. Auch Bauhin führt unter Sorbus zuerst „Sorbus domeſtica“. Die Reihe Birne, Apfel, Mispel, Speierling ist zudem die übliche Reihe gekelterten Obsts.<list type="alternatives"><item>Vogelbeeren (Sorbus aucuparia)<note type="rationale">Köbler übersetzt sorbum mit „Speierling, Arlesbeere, Vogelbeere“. Spricht Olaus vom heimischen Obst des Nordens, liegt die Eberesche näher, denn der Speierling wächst dort kaum. Einen Ort nennt der Satz aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-004-orig" n="vinis imponuntur" resp="#fyndling" subtype="contextual">„in die Weine“ allgemein: Der Satz schließt mit „Praeterea“ neu an, ohne hinweisendes Wort, und die Kräuterweine werden „allen anderen“ vorgezogen; gemeint sind Weine überhaupt, auch Traubenwein.<list type="alternatives"><item>nur in die Obstweine des vorigen Satzes<note type="rationale">Grammatisch kann „vinis“ an die eben genannten Obstweine anschließen; der Text entscheidet es nicht.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-005-trans" resp="#fyndling">Was ist das? Ein Met, dessen Süße Olaus mit Hopfen mäßigt und den er mit Bierhefe anstellt. Verfahren und Hefe kommen aus dem Bierbrauen; Olaus nennt es die Art der Nordvölker.
+
+Honig lösen, sieden, abschäumen. Die Hälfte des heißen Wassers kommt in das weite Holzgefäß, dort wird der rohe Honig eingerührt, danach geht alles zurück in den Kessel. Dass die andere Hälfte so lange im Kessel blieb, sagt der Text nicht wörtlich; pariter (zusammen) legt es nahe. Gesotten wird, „bis sich Schaum zeigt“, abgeschäumt mit Tuch an der Stange oder Lochlöffel, „bis der Sud geklärt erscheint“. Ein Einkochmaß nennt Olaus für den Most nicht: Er siedet so lange, wie das Abschäumen dauert.
+
+Der Hopfen. Er kocht getrennt im Leinensack im zugedeckten Topf, bis die Hälfte des Wassers und mehr eingekocht ist. Das Zeichen ist der Geschmack: Die Bitterkeit muss hervortreten. Die Menge bleibt „angemessen“, denn sie richtet sich nach der Süße, die gemäßigt werden soll. Der Satz nennt nur den Sack, der in den Most kommt; ob der eingekochte Sud mitgeht, lässt er offen. Heute würde man den Sud mitgeben, damit die Bitterkeit nicht im Topf bleibt (moderne Lesart).
+
+Hefe und Gärung. Mit dichten Tüchern zugedeckt kühlt der Most ab, „bis die Hitze fast in Lauwärme übergegangen ist“. Erst dann kommt die Bierhefe obenauf, „wie ein Lab“: Olaus denkt die Hefe als das, was dem Trank seine Gestalt gibt, wie das Lab der Milch, so auch in seinem Bierkapitel. Dass die Gärung läuft, zeigt der weiße Schaum über der ganzen Fläche. Ersatz ist das Gärmittel vom Brot; ob Sauerteig oder Hefe gemeint ist, sagt der Text nicht. Nach einem Tag wird durch Leinen geseiht und verschlossen gelagert, trinkbar ist der Met am achten Tag.
+
+Für Metmacher: die Zahlen Modellrechnung, keine Messung. Gerechnet ist ein Teil Honig auf vier Teile Wasser als Raummaß angenommen; Olaus sagt nicht, ob er misst oder wiegt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| 1:4, ohne Einkochen | 210-228 g/l | 1.081-1.088 | 81-88 | 19.6-21.2 | 12.5-13.6 % |
+| 1:4, mit angenommenem Einkochen | 247-381 g/l | 1.096-1.147 | 96-147 | 22.8-33.7 | 14.7-22.6 % |
+
+Die erste Zeile setzt kein Einkochen an, weil Olaus den Most nur bis zum Abschäumen siedet; die zweite rechnet mit dem Einkochverlust, den das Modell ohne Angabe annimmt. Die Spannen sind die drei Bänder des Modells. Nicht gerechnet sind der Hopfen und ein mitgegebener Hopfensud. „Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Praxis. Die Hefe erst auf den fast lauwarmen Most geben, wie der Text es verlangt. Die Bitterkeit am Hopfensud abschmecken, bevor er zum Most kommt. Olaus hält das Gefäß schon nach einem Tag verschlossen; die Gärung läuft dann weiter und baut Druck auf, deshalb heute einen Gärverschluss statt eines festen Deckels nehmen (modernes Hilfsmittel). Der achte Tag ist Olaus' früheste Trinkreife; sein Schlusssatz, der Met werde mit dem Alter reiner und besser, rechnet selbst mit längerem Lagern.</note>
+        <note type="gloss" target="#olm-005-orig" n="hydromeli, mulſa, vel medone" resp="#fyndling">Drei Namen, die Olaus als ein Getränk nebeneinanderstellt: den Met.</note>
+        <note type="gloss" target="#olm-005-orig" n="flores lupuli" resp="#fyndling">Die Blüten des Hopfens, gemeint sind die Dolden, wie man sie heute zum Brauen kauft.</note>
+        <note type="gloss" target="#olm-005-orig" n="fermentum panis" resp="#fyndling">Das Gärmittel, mit dem Brot angesetzt wird. Ob Olaus an Sauerteig oder an Hefe denkt, sagt er nicht; das Wort deckt beides.</note>
+        <note type="interpretive_choice" target="#olm-005-orig" n="bullientis in caldari vltra teporem" resp="#fyndling" subtype="lexical">Wasser, im Kessel über die Lauwärme hinaus erhitzt. Olaus gibt die Lauwärme als Maß an, der rohe Honig wird danach in der Hälfte dieses Wassers gelöst, und gesotten wird erst im zweiten Schritt.<list type="alternatives"><item>Das Wasser siedet bereits.<note type="rationale">bulliens heißt wörtlich siedend; dann wäre „über die Lauwärme hinaus“ nur eine Verstärkung. Für den Ablauf ändert es wenig, weil der Most danach ohnehin gesotten wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-005-orig" n="quaſi coagulum ſuperponatur" resp="#fyndling" subtype="lexical">Wie ein Lab obenauf legen: coagulum ist das Gerinnungsmittel, und Olaus nennt die Bierhefe auch im Bierkapitel die Hefe, die das Ganze gerinnen lässt (coagulantis fecis).<list type="alternatives"><item>Wie einen Klumpen, als zusammenhängende Schicht obenauf legen.<note type="rationale">coagulum kann auch das Geronnene selbst meinen; dann beschriebe der Ausdruck nur die Form, in der die dicke Hefe aufgelegt wird.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-005-orig" n="ac ſtatim ſimul ſaccus lupuli imponatur" resp="#fyndling" subtype="contextual">Nur der Hopfensack kommt in den Most, so sagt es der Satz; die Bitterkeit trägt der nasse Sack mit.<list type="alternatives"><item>Der Sack samt dem eingekochten Hopfensud.<note type="rationale">Der Sud wird eigens eingekocht, bis seine Bitterkeit hervortritt, und mit dieser Bitterkeit soll die Süße gemäßigt werden. Der polnische Met des Folgekapitels nennt ausdrücklich das Säckchen samt dem Wasser seines Absuds, und das Buch von guter Speise gießt den Hopfensud in den Most.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-006-trans" resp="#fyndling">Was ist das? Kein eigenes Rezept, sondern ein Nachtrag zum nordischen Met des vorigen Kapitels: zwei Notbehelfe, wenn Hopfen oder Bierhefe fehlen, eine Würzung im Gefäß und zwei dünnere Mischungen für den Sommer. Kochen und Abschäumen, Abkühlen bis fast lauwarm, Anstellen, Abseihen am folgenden Tag und die Trinkreife am achten Tag setzt Olaus aus dem Grundverfahren voraus.
+
+Gagel statt Hopfen. Die Früchte des Gagels übernehmen die Aufgabe des Hopfens: Ihre Bitterkeit stellt die Süße des Honigwassers ein. Das Ende bestimmt Olaus am Geschmack - so lange kochen, bis ein reiner Geschmack mit gemäßigter Bitterkeit bleibt -, Dauer und Menge nennt er nicht. Im Grundverfahren kocht der Hopfen getrennt im Leinensäckchen im bedeckten Topf; dass der Gagel ebenso behandelt wird, liegt nahe, steht hier aber nicht. Gagel ist heute kein gängiges Lebensmittel, und eine sichere Menge nennt der Text nicht. Der Sumpfporst, die Gegenlesung zu Olaus' myrtus, gilt als giftig und gehört nicht in den Kessel.
+
+Gärmittel der Bäcker statt Bierhefe. Ob Sauerteig oder Hefe gemeint ist, sagt der Text nicht. Das Auflösen in warmem Wasser verteilt das Gärmittel, bevor es über den Ansatz kommt; Olaus verspricht nur „fast dieselbe Wirkung“. Heute würde man sagen: Sauerteig bringt neben Hefen auch Milchsäurebakterien mit, der Met wird damit eher säuerlich.
+
+Das Ingwersäckchen. Das Steinchen beschwert das Säckchen, damit es in der Flüssigkeit bleibt, der Faden hält es an seinem Platz. „Schwimmend mit der Flüssigkeit stets mit hinab“ heißt: Sinkt der Spiegel, weil aus dem Gefäß getrunken wird, geht das Säckchen mit und bleibt eingetaucht. Wie viel Ingwer, sagt Olaus nicht. Dass der Ingwer im Winter gegen die Gewalt der Kälte hilft, ist sein Anspruch, kein Gesundheitsrat.
+
+Sommermischung und Märzwasser. Für den Sommer nennt Olaus fünf und sechs Teile Wasser auf einen Teil Honig, dünner als die vier Teile Wasser des Grundverfahrens. Ob nach Raum oder Gewicht gemessen wird, sagt er nicht. Dass beide Mischungen den Durst stillen und die Gesundheit erhalten und dass Met und Bier mit Märzwasser gekocht im Alter besser werden, ist Olaus' Anspruch; das Märzwasser ist seine wiederkehrende Begründung für Haltbarkeit, die er im Bierkapitel weiter unten ausführt. Heute würde man bei einem so dünnen Met beim langen Lagern eher mit Säuerung rechnen.
+
+Für Metmacher: die Zahlen
+
+Modellrechnung, keine Messung. Annahmen: Teile als Raummaß, Honig und Wasser mit demselben Gefäß gemessen; Dichte und Zuckergehalt des Honigs als Spanne. Das Kapitel nennt kein Einkochmaß, das Grundverfahren kocht nur, bis der Sud abgeschäumt und klar ist. Deshalb je Lesart zwei Zeilen: ohne Einkochen und mit einem in der Rechnung angenommenen Einkochen von 15 bis 40 Prozent.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| 1:5, ohne Einkochen | 175-190 g/l | 1.068-1.074 | 68-74 | 16.5-17.9 | 10.4-11.3 % |
+| 1:5, Einkochen angenommen | 206-317 g/l | 1.080-1.122 | 80-122 | 19.2-28.6 | 12.3-18.9 % |
+| 1:6, ohne Einkochen | 150-163 g/l | 1.058-1.063 | 58-63 | 14.3-15.4 | 8.9-9.7 % |
+| 1:6, Einkochen angenommen | 177-272 g/l | 1.068-1.105 | 68-105 | 16.6-24.9 | 10.5-16.2 % |
+
+Nicht gerechnet sind Gagel, Hopfen, Ingwer und das warme Wasser, in dem das Gärmittel gelöst wird. „Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Praxis. Wer nachbaut, folgt dem Grundverfahren des vorigen Kapitels und tauscht nur, was fehlt: Gagel für Hopfen, das Gärmittel der Bäcker für Bierhefe. Heute würde man als Gärmittel der Bäcker frische Backhefe in lauwarmem Wasser lösen; Sauerteig ist die historisch ebenso mögliche Lesart. Den Ingwer im beschwerten Leinensäckchen ins Gefäß hängen. Ein Verschließen der Gefäße nennt dieses Kapitel nicht.</note>
+        <note type="gloss" target="#olm-006-orig" n="hydromel, ſiue medonem, vel mulſam" resp="#fyndling">Drei lateinische Namen für denselben Trank, die Olaus gleichsetzt: Met, ein vergorenes Honigwasser.</note>
+        <note type="gloss" target="#olm-006-orig" n="aqua tamen Martiali cocta" resp="#fyndling">Märzwasser. Olaus nennt es beim Fladenbrot „aqua Martialis, seu vernalis“, März- oder Frühlingswasser, und schreibt ihm zu, dass Brot und Getränke damit lange halten. Das ist seine Begründung, keine geprüfte Wirkung.</note>
+        <note type="interpretive_choice" target="#olm-006-orig" n="legumina myrti, inſtar iuniperorum" resp="#fyndling" subtype="lexical">Früchte des Gagels (Myrica gale). Olaus beschreibt den Strauch zwei Kapitel später: eine Elle hoch, an sumpfigen Stellen, mit Früchten wie Wacholderbeeren, reif im August, im Norden anstelle des Hopfens gekocht. Bauhins Pinax (1623) führt „Gagel Germanorum &amp; Myrtus Brabantica“, Lasch-Borchling setzt mittelniederdeutsch pors mit „Gagel, Myrica gale, (M)irtus latinsch“ gleich, und das Mittelniederländische Wörterbuch nennt den Gagel als Ersatz für Hopfen beim Bierbrauen.<list type="alternatives"><item>Sumpfporst (Rhododendron tomentosum)<note type="rationale">Ebenfalls ein Sumpfstrauch; Lübben-Walther erwägt für pors neben dem Gagel mit Fragezeichen auch ledum palustre. Der Sumpfporst trägt aber trockene Kapseln, keine Früchte wie Wacholderbeeren.</note></item><item>Myrte (Myrtus communis)<note type="rationale">Das klassische Wort meint die Myrte des Mittelmeerraums. Sie wächst nicht an nordischen Sumpfstellen und passt nicht zu Olaus' Beschreibung.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-006-orig" n="fermentum piſtorum" resp="#fyndling" subtype="lexical" cert="unknown">Gärmittel der Bäcker, ohne Festlegung. fermentum deckt im Mittellatein Gärstoff, Sauerteig und Hefe ab; welches der Bäcker gemeint ist, sagt der Text nicht.<list type="alternatives"><item>Sauerteig<note type="rationale">Grundbedeutung von fermentum und das übliche Gärmittel des Brotbackens; im Grundverfahren nennt Olaus ersatzweise „fermentum panis“, und die französische Fassung des Thresor de santé (1607) gibt die Stelle mit „leuain“ wieder.</note></item><item>Bäckerhefe<note type="rationale">fermentum heißt auch Hefe; das Auflösen in warmem Wasser und Übergießen passt zu beidem.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-007-trans" resp="#fyndling">Was ist das? Ein Met, den Olaus nach dem Bericht eines Gewährsmanns beschreibt: Honig und Wasser nach Gewicht, ein für sich im Säckchen gekochter Hopfen und Bierhefe. Neu gegenüber dem nordischen Met des vorletzten Kapitels sind die Mengen nach Gewicht und das Umfüllen nach einem Tag und einer Nacht; das Verfahren mit dem Hopfensack übernimmt Olaus von dort ("modo superius dicto").
+
+Der Hopfen im Säckchen. Hier sagt der Text nur, der Hopfen werde für sich in einem Säckchen gekocht, "auf die oben beschriebene Weise". Oben kocht man die Hopfenblüten im Leinensack in einem zugedeckten Topf, bis das Wasser auf die Hälfte und mehr eingekocht ist und seine Bitterkeit hervortritt; mit ihr wird die Süße des Honigsuds abgestimmt. In diesem Kapitel kommt der Sack samt seinem Kochwasser in den lauen Most. Die Menge, ein Pfund oder weniger auf zehn Pfund Honig, richtet Olaus nach der Menge von Honig und Wasser.
+
+Wann die Hefe dazukommt. Das Zeichen des Texts: Der gekochte und abgeschäumte Most wird vom Feuer genommen, bis er ein wenig lau geworden ist ("parum tepescat"). Erst dann kommen Hopfensack und Bierhefe hinein. Heute prüft man das mit dem Thermometer; der Text kennt nur das Lau-Werden. Statt der Bierhefe nennt Olaus "fermentum, wie oben", also das Gärmittel der Bäcker aus den beiden Kapiteln davor; ob Sauerteig oder Hefe, lässt das Wort offen.
+
+Ein Tag und eine Nacht, dann umfüllen. Gut zugedeckt, nicht verschlossen, steht der Ansatz einen Tag und eine Nacht; dann wird er "valde planè" in ein sauberes Gefäß umgefüllt, am ehesten behutsam, damit der Satz zurückbleibt. Wie lange er danach gärt, ob das Gefäß verschlossen wird und wann der Met trinkfertig ist, sagt der Text nicht.
+
+Der Kessel. Olaus nennt einen großen Kessel aus Kupfer oder Erz. Unverzinntes Kupfer und Bronze nimmt man heute für säuerliche Sude nicht mehr; üblich ist Edelstahl.
+
+Für Metmacher: die Zahlen Modellrechnung, keine Messung. Olaus nennt zehn Pfund Honig auf vierzig Pfund Wasser, also Gewicht; gerechnet ist das Verhältnis 1:4 nach Gewicht, das Wasser ein Pfund wie ein Liter je Einheit gesetzt (für das Verhältnis spielt die Größe des Pfunds keine Rolle). Der Text kocht nur bis zum Abschäumen und nennt kein Einkochmaß; deshalb zwei Zeilen, ohne Einkochen und mit dem Einkochen, das das Rechenmodell annimmt.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| 1:4 nach Gewicht, ohne Einkochen | 161-168 g/l | 1.062-1.065 | 62-65 | 15,3-15,9 | 9,6-10,0 % |
+| 1:4 nach Gewicht, mit angenommenem Einkochen | 190-280 g/l | 1.073-1.108 | 73-108 | 17,8-25,5 | 11,3-16,6 % |
+
+Nicht gerechnet sind der Hopfen und sein Kochwasser, das zusätzlich in den Most kommt, und Olaus' Spielraum "mehr oder weniger" beim Wasser und beim Honig. „Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Praxis. Wer nachbraut, wiegt Honig und Wasser im Verhältnis 1:4 und verschiebt die Stärke, wie Olaus sagt, über den Honig. Beim Hopfen lässt der Text "oder weniger" ausdrücklich offen; wer die Bitterkeit nicht kennt, beginnt am unteren Ende und kostet den Hopfensud, wie es das Kapitel über den nordischen Met mit der Bitterkeit beschreibt. Die Hefe kommt erst in den lauen Most, nach einem Tag und einer Nacht wird vom Satz in ein sauberes Gefäß umgefüllt. Für die weitere Gärung gibt der Text nichts vor; heute lässt man sie in einem Gefäß mit Gärverschluss zu Ende laufen.</note>
+        <note type="gloss" target="#olm-007-orig" n="medonem" resp="#fyndling">Met. Olaus setzt die Wörter hydromel, mulsa und medo gleich und meint damit denselben vergorenen Honigtrank.</note>
+        <note type="gloss" target="#olm-007-orig" n="Pœnitentiarium Gneſnenſem" resp="#fyndling">Pönitentiar von Gnesen: ein vom Bischof bestellter Geistlicher, der in vorbehaltenen Fällen von Sünden lossprechen durfte. Gnesen ist das heutige Gniezno in Polen. Olaus nennt ihn als Gewährsmann.</note>
+        <note type="interpretive_choice" target="#olm-007-orig" n="valde planè reponatur ad vas mundum" resp="#fyndling" subtype="lexical">"sehr behutsam in ein sauberes Gefäß umfüllen". planus heißt eben, glatt (Diefenbach: planus = slecht, glat, eben); nach einem Tag und einer Nacht hat sich ein Satz gebildet, den ruhiges Umfüllen zurücklässt.<list type="alternatives"><item>"ganz und gar in ein sauberes Gefäß umfüllen"<note type="rationale">Klassisch heißt plane auch völlig, gänzlich; dann meinte valde planè nur, den ganzen Sud umzufüllen. Der Text sagt nicht, ob der Satz zurückbleiben soll.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-007-orig" n="fermentum, vt ſuprà" resp="#fyndling" subtype="lexical" cert="unknown">"das Gärmittel, wie oben": Verweis auf das Gärmittel aus den Kapiteln über den nordischen Met ("fermentum panis") und die Vorsichtsmaßregeln ("fermentum pistorum", Gärmittel der Bäcker). fermentum deckt Gärstoff, Sauerteig und Hefe (Köbler, Mittellatein).<list type="alternatives"><item>Sauerteig<note type="rationale">Beim Brot meint fermentum oft den Sauerteig; das Wort legt es aber nicht fest.</note></item><item>Hefe der Bäcker<note type="rationale">Ebenfalls vom Wort gedeckt; der Text sagt nur, das Gärmittel wirke fast wie die Bierhefe.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-008-trans" resp="#fyndling">Was ist das? Ein Met im Großsud. Honig, Wasser und Gagel kommen zusammen, der Gagel kocht wie sonst der Hopfen eine ganze Stunde und länger bei starkem Feuer, die große Mischung aus Honig und Wasser siedet nach Olaus einen Tag und eine Nacht. Zuletzt kommt Bierhefe oder das Gärmittel der Bäcker dazu, und der Ansatz bleibt vier oder mehr Tage sich selbst überlassen.
+
+Gagel statt Hopfen. Der Gagel übernimmt die Aufgabe des Hopfens, mit dessen Bitterkeit Olaus im Grundkapitel die Süße des Honigwassers einstellt. Was dabei herauskommen soll, sagt Olaus im Kapitel davor: so lange kochen, bis ein reiner Geschmack mit gemäßigter Bitterkeit bleibt. „Wie sonst der Hopfen“ verweist auf das Hopfenverfahren der vorigen Kapitel, wo der Hopfen getrennt in einem Leinensäckchen kocht und dann zum Honigwasser kommt. Ob der Gagel hier ebenso getrennt oder mit der ganzen Mischung kocht, sagt der Text nicht; sein Wortlaut nennt ihn mit Honig und Wasser in einem Zug.
+
+Ein Tag und eine Nacht Sieden. Die Dauer ist Olaus' Angabe, ohne Begründung. Abschäumen, Einkochmaß und Kesselgröße nennt er hier nicht. Heute würde man sagen: Ein so langes Sieden verdampft viel Wasser, wie viel, hängt an Feuer und Kessel.
+
+Hefe. Bierhefe ist die erste Wahl, das Gärmittel der Bäcker der Ersatz; ob Sauerteig oder Hefe, bleibt offen. Wann genau sie dazukommt, sagt Olaus nur mit „zuletzt“. Im Grundkapitel wartet er, bis die Hitze fast zur Lauwärme abgeklungen ist, bevor die Hefe obenauf kommt; das liegt hier am nächsten. Heute gilt: In siedenden oder heißen Sud gegeben, stirbt die Hefe ab.
+
+Praxis. Für einen Nachbau fehlt das Wasserverhältnis. Wer klein ansetzt, kann sich am gewöhnlichen Met des Kapitels XXII halten (ein Teil Honig auf vier Teile Wasser); dass Olaus es hier meint, sagt er nicht. Gagel ist heute kein gängiges Lebensmittel. Der Sumpfporst, die Gegenlesung zu Olaus' myrtus, gilt als giftig und gehört nicht in den Kessel. Ein Verschließen der Gefäße nennt der Text nicht.</note>
+        <note type="gloss" target="#olm-008-orig" n="hydromelis, vel medonis, ſiue mulſæ" resp="#fyndling">Drei lateinische Namen für denselben Trank, die Olaus gleichsetzt: Met, ein vergorenes Honigwasser.</note>
+        <note type="interpretive_choice" target="#olm-008-orig" n="myrto" resp="#fyndling" subtype="lexical">Gagel (Myrica gale). Olaus' Merkmale passen: ein niedriger Strauch von einer Elle, an sumpfigen Stellen, mit Früchten wie Wacholderbeeren, reif im August, im Norden anstelle des Hopfens. Bauhins Pinax (1623) führt den Strauch als „Gagel Germanorum &amp; Myrtus Brabantica“, die mittelniederdeutschen Wörterbücher setzen gāgel mit lateinisch myrtus gleich und nennen ihn als Bierkraut.<list type="alternatives"><item>Sumpfporst (Rhododendron tomentosum)<note type="rationale">Ebenfalls ein Sumpfstrauch und im Norden ein Bierkraut, im Mittelniederdeutschen aber nicht als myrtus belegt. Er trägt Kapseln, keine Früchte, die Wacholderbeeren gleichen.</note></item><item>Myrte (Myrtus communis)<note type="rationale">Das klassische Wort meint die Myrte des Mittelmeerraums. Sie wächst nicht an nordischen Sumpfstellen und passt nicht zur Beschreibung.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-008-orig" n="fermento piſtorum" resp="#fyndling" subtype="lexical" cert="unknown">Gärmittel der Bäcker, ohne Festlegung. Das Wort fermentum deckt im Mittellatein Sauerteig wie Hefe ab; welches der Bäcker gemeint ist, sagt der Text nicht.<list type="alternatives"><item>Sauerteig<note type="rationale">Die Grundbedeutung von fermentum und das übliche Gärmittel des Brotbackens; für den gewöhnlichen Met nennt Olaus ersatzweise „fermentum panis“.</note></item><item>Bäckerhefe<note type="rationale">fermentum heißt auch Hefe; im Kapitel davor wird das Gärmittel der Bäcker in warmem Wasser aufgelöst und übergegossen, was zu beidem passt.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-008-orig" n="demum appoſita fece ceruiſiæ" resp="#fyndling" subtype="contextual">Die Hefe kommt „zuletzt“ dazu, nach dem Sieden; ein Abkühlen nennt der Text nicht. Für den gewöhnlichen Met verlangt Olaus, zu warten, bis die Hitze fast zur Lauwärme abgeklungen ist, und diese Reihenfolge ist hier am ehesten mitgemeint.<list type="alternatives"><item>Hefe unmittelbar in den heißen Sud<note type="rationale">Der Wortlaut schließt es nicht aus, doch der Bericht ist knapp und setzt das Verfahren aus dem Grundkapitel voraus.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-009-trans" resp="#fyndling">Was ist das? Ein fertiges Bier wird mit Honig und Gagel eine bis zwei Stunden bei starkem Feuer gesotten, abgeschäumt und dann mit Hefe zugedeckt neu angestellt. Olaus nennt das Ergebnis Mulsum und hält es für sehr stark.
+
+Gagel statt Myrte. Das lateinische myrtus meint hier den Gagel, einen niedrigen Moorstrauch, den Olaus im vorigen Abschnitt beschreibt und der dort an Stelle des Hopfens gekocht wird. Die Myrte des Mittelmeers ist ausgeschlossen. Den Gagel nicht mit dem Sumpfporst verwechseln, der ebenfalls im Moor wächst und giftig ist.
+
+Das Verhältnis. Beziffert sind nur vier Teile Bier und „ein vierter Teil“ Gagel, ohne Angabe, ob nach Raum oder Gewicht. Der Honig steht ohne Maß. Ein Viertel Pflanzengut auf das Bier ist eine große Menge; ob Olaus wirklich vier zu eins meint, bleibt offen (siehe Lesarten).
+
+Sieden und Abschäumen. Das Zeichen für das Ende des Siedens nennt der Text selbst: Der Honig ist abgeschäumt, es steigt kein Schaum mehr auf. Das starke Feuer und die lange Kochzeit gleichen dem Auskochen des Gagels im Großansatz („per integram horam &amp; amplius“). Heute würde man ergänzen, dass beim langen Kochen ein Teil des Alkohols aus dem Bier verdampft.
+
+Hefe und Ruhe. Die Hefe wird obenauf gelegt, das Gefäß zugedeckt, nicht verschlossen. Ein Abkühlen vorher nennt Olaus hier nicht; beim nordischen Met wartet er damit, bis die Hitze fast in Lauwärme übergegangen ist. Modern gilt: Auf heißem Sud stirbt die Hefe, deshalb erst lauwarm werden lassen. Nach einem ganzen und einem halben Tag ist der zugesetzte Honig nach heutigem Wissen nicht ausgegoren, das Getränk also noch jung und süß; „sehr stark“ ist Olaus' Urteil.
+
+Praxis. Wer das Getränk nachbraut, legt die Honigmenge selbst fest und entscheidet sich beim Gagel für eine der Lesarten des Verhältnisses. Das Gefäß wird nach dem Text nur zugedeckt.</note>
+        <note type="gloss" target="#olm-009-orig" n="Mulsum" resp="#fyndling">Im klassischen Latein ein Honigwein (Köbler: „Weinmet, Met, Honigwein“). Olaus gibt den Namen hier einem Trank aus Bier und Honig, den er am Hydromel und am Met misst.</note>
+        <note type="gloss" target="#olm-009-orig" n="hydromel, medo" resp="#fyndling">Zwei Namen für den Met, die Olaus im ganzen Buch gleichsetzt.</note>
+        <note type="gloss" target="#olm-009-orig" n="crateri, cyatho" resp="#fyndling">Der Krater ist der große Mischkrug, der cyathus ein Becher. Hier stehen beide als Gefäße, aus denen getrunken wird, nicht als Maß.</note>
+        <note type="interpretive_choice" target="#olm-009-orig" n="myrto" resp="#fyndling" subtype="lexical">Gagel (Myrica gale). Bauhin führt „Gagel Germanorum &amp; Myrtus Brabantica“, Grimm unter GAGEL „myrica gale, myrtus brabantica“, Lasch-Borchling unter gāgel „zur Bierbereitung gebraucht, mirtus“. Olaus beschreibt den Strauch im vorigen Abschnitt desselben Kapitels: eine Elle hoch, an sumpfigen Stellen, mit Früchten wie Wacholderbeeren, reif im August, an Stelle des Hopfens gekocht.<list type="alternatives"><item>Myrte (Myrtus communis)<note type="rationale">Das Wort heißt klassisch Myrte. Die Myrte ist ein Strauch der Mittelmeerländer und passt nicht zu Olaus' Beschreibung eines niedrigen Sumpfstrauchs im Norden.</note></item><item>Sumpfporst (Rhododendron tomentosum)<note type="rationale">Wächst ebenfalls im Moor, und der Name Porst deckte im Mittelniederdeutschen auch den Gagel (Köbler: gāgelbōm „Porststrauch“). Der Sumpfporst trägt aber trockene Kapseln, keine Früchte wie Wacholderbeeren.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-009-orig" n="quatuor partes ceruiſię, &amp; quarta pars myrti" resp="#fyndling" subtype="contextual">Vier Teile Bier auf einen Teil Gagel: Der Gagel wird „zu einem vierten Teil“ des Biers genommen, und der Zusatz „id est“ erklärt das mit den vier Bierteilen. Ob Teile nach Raum oder Gewicht gemeint sind, sagt der Text nicht.<list type="alternatives"><item>Vier Teile Bier auf einen Viertelteil Gagel (16 zu 1)<note type="rationale">„quarta pars“ kann auch den vierten Teil eines Teils meinen. Für ein einfaches Verhältnis schreibt Olaus sonst „una pars“ (Sommer-Met: „quinque partes aquae, &amp; una pars mellis“); die abweichende Wortwahl hält diese Lesung offen.</note></item><item>Gagel als Viertel der ganzen Mischung (3 zu 1)<note type="rationale">Wäre „quarta parte“ auf die Gesamtmenge bezogen, ergäben sich drei Teile Bier. Der Zusatz „quatuor partes ceruisiae“ spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-009-orig" n="tandem ſuperpoſita fece" resp="#fyndling" subtype="contextual">Wörtlich „schließlich“: Ein Abkühlen vor dem Auflegen der Hefe nennt der Text nicht, die Übersetzung ergänzt es nicht.<list type="alternatives"><item>Abkühlen ist mitgemeint<note type="rationale">Beim nordischen Met wartet Olaus, „usquequo calor in teporem pene resolvatur“, bis die Hitze fast in Lauwärme übergegangen ist, und legt erst dann die Hefe auf. „tandem“ kann diese Wartezeit einschließen.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-010-trans" resp="#fyndling">Was ist das? Der ganze Weg vom Korn zum Bier in einem Zug: Gerste weichen und keimen lassen, trocknen, darren, schroten, maischen, läutern, den Hopfensud zumischen und mit Hefe von älterem Bier anstellen. Olaus beschreibt ein gehopftes Gerstenbier, wie es nach Bedarf eines kleinen oder großen Hauses gebraut wird; das Getreide für die Abwandlungen in fernen Provinzen und das Brauen selbst greift er in den beiden folgenden Kapiteln wieder auf.
+
+Mälzen. Die Gerste liegt auf einem gedielten Boden, wird mit Wasser besprengt und immer wieder gewendet. Das erste Zeichen ist, dass sie „weich wird und aufquillt“ (eine Nacht und ein Tag); das zweite, dass sie nach dem zweiten und dritten Wenden zu keimen scheint, „als hätte sie Wurzeln getrieben“, und die Körner sich büschelweise zusammenballen. Das Wenden hält das Keimgut gleichmäßig; ohne es verfilzen die Wurzelkeime, was Olaus’ „zusammenwachsen wollen“ beschreibt. Danach trocknet das Grünmalz drei Tage weiter ausgebreitet auf dem Boden. Wie lange es keimt, sagt Olaus nicht; das Zeichen ist der Wurzelansatz. Heute weiß man: Beim Keimen bildet das Korn die Enzyme, die später beim Maischen die Stärke in Zucker umsetzen.
+
+Darren und Schroten. Gedarrt wird in einem weiten Ofen auf locker gewebten Tüchern über kleinem Feuer. Das Zeichen für das Ende ist der Geschmack: Das Malz wird süß und schmeckt nach Honig. Geschrotet wird nur „ein wenig“, also grob, in der Wasser-, Hand- oder Windmühle.
+
+Maischen und Läutern. Das Schrot geht nach und nach unter ständigem Rühren in erwärmtes Wasser im großen Holzgefäß; dabei wird es deutlich süßer und quillt auf. Wenn das Wallen nachlässt, wird „die ganze, kräftig gekochte Flüssigkeit“ durch ein gelochtes Gefäß abgeschöpft und geklärt. Ein eigenes Kochen der Maische hat der Text vorher nicht genannt; entweder wurde die Maische selbst gekocht, wie es auch die Brauanweisung im Salzburger Cod. M III 3 tut („siede es wol“), oder Olaus fasst Erhitzen und Kochen in einem Wort zusammen. Heute kocht man die Würze nach dem Läutern (moderne Praxis).
+
+Hopfen und Hefe. Der Hopfen kommt als eigener Sud dazu, zu einem Drittel oder einem Viertel; der Anteil richtet sich danach, wie süß oder bitter das Bier werden soll. Die Hefe stammt von älterem Bier, wird „sogleich“ und nur in kleiner Menge aufgesetzt und wirkt nach Olaus wie ein Sauerteig. Ein Abkühlen nennt er hier nicht; beim Met (Kap. XXII) wartet er, bis die Hitze fast in Lauwärme übergegangen ist. Heute lässt man die Würze vor der Hefe auf Handwärme abkühlen (moderne Praxis). Das Bier gärt zugedeckt und langsam; von Verschließen ist keine Rede.
+
+Praxis. Wer das nachbraut, beginnt heute meist mit fertigem Gerstenmalz; wer selbst mälzt, wendet das feuchte Keimgut regelmäßig, damit es nicht schimmelt (moderne Praxis). Olaus nennt weder Wassermengen noch eine Gärdauer. Die Heilwirkung bei Brustenge ist Olaus’ Anspruch, kein Rat.</note>
+        <note type="gloss" target="#olm-010-orig" n="Braſium" resp="#fyndling">Mittellateinisch für Malz. Olaus nennt so die gekeimte, gedarrte und grob geschrotete Gerste.</note>
+        <note type="gloss" target="#olm-010-orig" n="Buſka" resp="#fyndling">Olaus’ Name für das Bier „in der gotischen Volkssprache“. Seine Erklärung, es befreie den Menschen „von den Wäldern der Verstopfungen“, ist seine eigene Wortdeutung; was das Wort tatsächlich bedeutet, bleibt offen.</note>
+        <note type="gloss" target="#olm-010-orig" n="clibanus" resp="#fyndling">Eigentlich der Backofen. Hier dient er als Darre: lockere Tücher als Auflage, kleines Feuer darunter.</note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="X. rugiorum" resp="#fyndling" subtype="lexical" cert="unknown">Als Wort stehen gelassen: zehn rugiorum neben „dreißig oder mehr Scheffel“. Das Wort steht als Maß parallel zu modiorum, ein Maß dieses Namens ist aber nicht belegt.<list type="alternatives"><item>Volksname, die Rugier<note type="rationale">Das einzige Stichwort ist Rugius = Rugier (Köbler, Mittellatein); als Mengenangabe ergibt ein Volksname keinen Sinn.</note></item><item>ein nordisches Getreidemaß in lateinischer Form<note type="rationale">Würde zur Reihe der Maße passen, ist aber ohne Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="totus ille liquor fortiter coctus" resp="#fyndling" subtype="contextual">Wörtlich „die ganze, kräftig gekochte Flüssigkeit“. Vorher ist nur von erwärmtem Wasser die Rede; die Maische wurde demnach gekocht, wie es auch sbm33-008 tut („siede es wol“).<list type="alternatives"><item>Olaus fasst Erhitzen und Kochen zusammen, gekocht wird eigentlich erst die abgeläuterte Würze<note type="rationale">Entspricht heutiger Praxis, steht aber so nicht im Satz.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="pro tertia, vel quarta parte" resp="#fyndling" subtype="contextual">Der Hopfensud macht ein Drittel oder ein Viertel der Mischung aus.<list type="alternatives"><item>ein Drittel oder Viertel bezogen auf die Würze allein<note type="rationale">Der Text nennt die Bezugsgröße nicht; pars lässt beides zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="Illicoqꝫ fex vetuſtioris ceruiſiæ" resp="#fyndling" subtype="contextual">„Sogleich“ wörtlich: Die Hefe kommt gleich nach dem Hopfensud dazu; ein Abkühlen nennt Olaus hier nicht.<list type="alternatives"><item>Abkühlen stillschweigend vorausgesetzt<note type="rationale">Beim Met (olm-005) wartet Olaus ausdrücklich, „bis die Hitze fast in Lauwärme übergegangen ist“.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="ſiligine" resp="#fyndling" subtype="lexical">Roggen. Weizen steht im selben Satz als triticum, und im schwedischen Latein steht siligo für Roggen (Söderwall); Kiliaan und Schiller-Lübben setzen siligo ebenfalls mit Roggen gleich.<list type="alternatives"><item>feiner Weizen, Winterweizen<note type="rationale">Klassische Bedeutung, Dasypodius: „Rocken / oder waitzen“; „das feinere Getreide“ passt dazu, aber Weizen ist schon genannt.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-011-trans" resp="#fyndling">Was ist das? Kein Brauverfahren, sondern Olaus' Überblick, wie verschieden das Getreide in den Provinzen für Bier bereitet wird. Mengen, Zeiten und Gefäße nennt er hier nicht; wie gemälzt, gedarrt, gemaischt und gehopft wird, steht im Kapitel davor (olm-010), wie gesotten wird, im Kapitel danach (olm-012).
+
+Bitter oder süß. Für das bitterere Getränk kommt Wermut dazu, nach Olaus gegen Würmer. Für das süßere wird das Getränk mit Absicht nicht ganz durchgekocht; wie lange sonst gekocht wird und wie viel kürzer hier, sagt der Text nicht. Dass das süßere Bier denen hilft, die vom Milchessen verstopft sind, ist sein Anspruch.
+
+Essig und Langzeitbier. Manche bereiten das Getreide eigens für Essig, ohne dass Olaus das Verfahren beschreibt. Für das Bier, das zehn oder zwanzig Jahre halten soll, nennt er nur die Jahreszeit, März und April, und als Grund das Wasser dieser Zeit. Das ist seine Erklärung, kein Verfahren.
+
+Praxis. Nachbrauen lässt sich aus diesem Kapitel allein nichts; wer ein Bier nach Olaus versuchen will, hält sich an olm-010 und olm-012. Wermut ist sehr bitter und in größeren Mengen bedenklich; eine Menge nennt der Text nicht.</note>
+        <note type="gloss" target="#olm-011-orig" n="Moſchos" resp="#fyndling">Die Moskowiter, die Bewohner des Moskauer Reichs. Olaus nennt sie für den Osten, neben den Finnen für den Norden.</note>
+        <note type="gloss" target="#olm-011-orig" n="Finningos" resp="#fyndling">Die Finnen; die Randnotiz des Drucks schreibt dazu „Finni gens robuſtiſsima“, die Finnen, ein sehr kräftiges Volk.</note>
+        <note type="gloss" target="#olm-011-orig" n="hyemalis" resp="#fyndling">„Winterlich“ nennt Olaus das Wasser der Monate März und April. Mit ihm erklärt er, warum Bier und Brot so lange halten; dieselbe Begründung gibt er für das haltbare Fladenbrot der Frauen (olm-001), dort als Märzwasser. Das ist seine Theorie.</note>
+        <note type="gloss" target="#olm-011-orig" n="Gedanẽſis ceruiſiæ" resp="#fyndling">Danziger Bier; „Gedanẽſis“ ist das lateinische Adjektiv zu Danzig (heute Gdańsk).</note>
+        <note type="interpretive_choice" target="#olm-011-orig" n="illicò comparatur" resp="#fyndling" subtype="lexical">„wird sogleich gekauft“: comparare heißt im 16. Jahrhundert auch anschaffen, kaufen (Frisch: „anschaffen, einschaffen, verschaffen“; Baret: „Acheter“). Das passt zu „nunquàm ingrata“ und zum Handel mit Danziger Bier im Satz davor.<list type="alternatives"><item>„wird sogleich mit einer höchst wirksamen Arznei verglichen“<note type="rationale">Die Grundbedeutung vergleichen (Dasypodius: „Jch vergleiche“) ist möglich; „veluti“ (wie) macht den Vergleich aber schon, und die Gegenüberstellung mit „unwillkommen“ spricht für die Aufnahme beim Käufer.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-011-orig" n="pro arcibus conſeruandis, ac curiis inſignium dominorum" resp="#fyndling" subtype="contextual">„zur Erhaltung der Burgen und der Höfe vornehmer Herren“, wörtlich: Der Essig dient dem Unterhalt von Burgen und Herrenhöfen.<list type="alternatives"><item>Essig, um die Vorräte der Burgen und Höfe haltbar zu machen<note type="rationale">Liegt sachlich nahe, aber der Text nennt keine Vorräte; „conſeruandis“ steht bei den Burgen selbst.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-012-trans" resp="#fyndling">Was ist das? Kein Rezept mit Mengen, sondern Olaus' Bericht über das Brauen im Norden, im Anschluss an die Getreidebereitung der beiden vorigen Kapitel: die Vielfalt der Brauweisen, das Brauen als Frauenarbeit und eine Garprobe für den Hopfen. Wie gemälzt, gemaischt und mit Hefe angestellt wird, beschreibt das Kapitel über das nordische Bier aus Gerstenmalz.
+
+Kessel und Gefäße. Olaus nennt Kessel und sehr große Gefäße, ohne Material und ohne Maß. Menge und Tempo richten sich nach dem Volk: mehr oder weniger, schneller oder langsamer.
+
+Der Hopfen muss gar sein. Olaus verlangt, den Hopfen ausreichend zu kochen. Seine Begründung gehört zur Medizin seiner Zeit: Das Kochen reinige den Hopfen von seiner „natürlichen Hitze“, ungenügend gekocht bringe er Bauchgrimmen und Nervenleiden. Das ist sein Anspruch, keine heutige Aussage. Eine Kochdauer nennt er nicht; das Zeichen für das Ende ist die Probe.
+
+Die Halmprobe. Hält man den Hopfen für gar, taucht man eine kleine Handvoll Halme in den Sud und zieht sie wieder heraus. Bleibt eine klebrige Schicht mit äußerst bitterem Geschmack daran haften, ist der Sud so weit. Geprüft wird mit Finger und Zunge am Sud selbst. Welche Halme gemeint sind, sagt Olaus nicht; Stroh- oder Getreidehalme liegen nahe.
+
+Bitter gegen süß. Den Zweck fasst der Schlusssatz: Aus dem gar gekochten Hopfen gehe eine heilsamere Mäßigung aller süßen Dinge hervor, die dem Trank dienen. Im Kapitel über den nordischen Met sagt Olaus dasselbe vom Honig: Die Bitterkeit des Hopfens mäßigt dessen Süße.
+
+Praxis. Die Probe lässt sich an jedem Hopfensud nachstellen: ein paar saubere, lange Halme eintauchen, herausziehen, die Klebrigkeit befühlen und nach kurzem Abkühlen vorsichtig abschmecken. Der Sud ist siedend heiß, darum mit ausreichend langen Halmen und mit Abstand zum Kessel arbeiten. Wie viel Hopfen und wie lange, sagt der Text nicht.</note>
+        <note type="gloss" target="#olm-012-orig" n="lupulus (hortenſis dictus)" resp="#fyndling">Gartenhopfen: der angebaute Hopfen im Unterschied zum wild wachsenden.</note>
+        <note type="gloss" target="#olm-012-orig" n="tormina ventris" resp="#fyndling">Bauchgrimmen, Leibschneiden; ein Kräuterbuch des 16. Jahrhunderts gibt „Tormina“ mit „Krimmen“ wieder.</note>
+        <note type="gloss" target="#olm-012-orig" n="temperamentum" resp="#fyndling">Mäßigung, Ausgleich. Gemeint ist, dass die Bitterkeit des Hopfens die Süße im Trank mäßigt, wie Olaus es im Kapitel über den nordischen Met vom Honig sagt.</note>
+        <note type="interpretive_choice" target="#olm-012-orig" n="magnorum conuentuum" resp="#fyndling" subtype="lexical">Große Versammlungen: In der Reihe mit den Höfen der Fürsten und der Großen liegt eine Zusammenkunft vieler Menschen nahe; conventus steht in den Wörterbüchern der Zeit auch für Versammlung und Tagung.<list type="alternatives"><item>Große Konvente, also Klöster<note type="rationale">Conventus heißt im Mittelalter auch die geistliche Gemeinschaft eines Klosters, und große Klöster brauten selbst. Der Satz entscheidet es nicht.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-013-trans" resp="#fyndling">Was ist das? Ein Bier ohne Hopfen aus gesäuertem Brot und gekeimter Gerste, das Olaus nach einem Gewährsmann aus Äthiopien beschreibt. Der Ablauf hat drei Stufen: ein zehn Tage gesäuerter Teig wird zu Zwieback gebacken, der Zwieback steht mit wenig gekeimter Gerste drei Tage in Wasser, dann kommen frisches Gerstenbrot und mehr gekeimte Gerste dazu, und nach dem vierten Tag wird abgepresst.
+
+Der Teig. Ungesiebtes Mehl aus Weizen oder Gerste, mit Sauerteig angesetzt wie gewöhnliches Brot. Zehn Tage lang wird täglich gerührt und ein wenig Mehl daraufgestreut; das Ziel nennt der Text selbst: der Teig soll sauer werden. Das Gärmittel des Eintrags ist dieser Sauerteig; in den Krug kommt er als gebackener Zwieback.
+
+Zwieback und Krug. Das Brot wird gebacken und zu Zwieback gemacht, „cùm acuerit“, wenn er scharf geworden ist, gebrochen. Im Krug liegt er mit „pauxillum“, einem klein wenig gekeimter Gerste, unter Wasser. Nach drei Tagen löst man mit der Hand bis zum Boden auf, was das Wasser noch nicht gelöst hat.
+
+Die zweite Beschickung. Frisches Gerstenbrot vom selben Tag in Brocken und mehr gekeimte Gerste als beim ersten Mal. Ein Maß gibt der Text nicht, nur das Zeichen am Geschmack: zu viel macht das Bier „asperi &amp; amari saporis“, herb und bitter, zu wenig „insipida, et insulsa“, fad.
+
+Abpressen. Am vierten Tag nach und nach durch ein Leinentuch, gut auspressen, vom Bodensatz trennen und in ein anderes sauberes Gefäß gießen. Trinkbar ist es laut Olaus schon an diesem Tag, auch wenn es bis zum zwanzigsten Tag fad bleibt; im folgenden Kapitel sagt er, es halte acht oder zehn Tage.
+
+Praxis. Mengen muss man selbst finden. Der Text verschließt den Krug zweimal gut; heute gilt: ein gärender Ansatz baut in einem fest verschlossenen Gefäß Druck auf, deshalb besser nur abdecken oder mit einem Gärröhrchen verschließen (modernes Hilfsmittel). Ein Teig, der zehn Tage steht, kann schimmeln; einen verschimmelten Ansatz verwerfen.</note>
+        <note type="gloss" target="#olm-013-orig" n="Habaſciani Indorum presbyteri" resp="#fyndling">Olaus nennt als Gewährsmann den Herrn („D.“) Johannes Baptista Habascianus, einen Priester der Inder, und gibt das Verfahren „ex instructione“, nach seiner Unterweisung, wieder. In der Überschrift setzt er Äthiopier und Inder gleich. Mehr sagt der Text über ihn nicht.</note>
+        <note type="gloss" target="#olm-013-orig" n="biſcoctus" resp="#fyndling">Zwieback, wörtlich „zweimal gebacken“. Hier wird das zehn Tage gesäuerte Brot so gebacken, dann gebrochen und im Krug in Wasser aufgelöst.</note>
+        <note type="gloss" target="#olm-013-orig" n="hordeum germinatum" resp="#fyndling">Gekeimte Gerste. Wie sie gemacht wird, beschreibt Olaus am Ende des folgenden Kapitels: einen Tag und eine Nacht in Wasser weichen, im feuchten Holzgefäß zwischen frischen Feigen- oder Schilfblättern keimen lassen, gut in der Sonne trocknen und grob schroten, jedes Korn in zwei oder drei Stücke.</note>
+        <note type="gloss" target="#olm-013-orig" n="vrna" resp="#fyndling">Krug. Der Text setzt voraus, dass man mit der Hand bis zum Boden greifen kann.</note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="ſolidanda per pannum lineum" resp="#fyndling" subtype="lexical" cert="unknown">„seihen“: Im Zusammenhang (durch ein Leinentuch, danach „bene expressa“, gut ausgepresst) ist das Durchseihen gemeint.<list type="alternatives"><item>„fest machen, festigen“<note type="rationale">So belegen die Wörterbücher solidare (Diefenbach: festigen, fest machen; Florio: fest, dicht machen). Für eine Flüssigkeit, die durch ein Tuch gepresst wird, ist diese Bedeutung in den geprüften Wörterbüchern nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="cùm acuerit" resp="#fyndling" subtype="lexical">„wenn er scharf geworden ist“: acuere heißt schärfen (Köbler: schärfen, wetzen, hart). Das Wort bleibt so offen wie im Text; der zehn Tage gesäuerte Teig spricht für einen scharfen, sauren Geschmack.<list type="alternatives"><item>„wenn er hart geworden ist“<note type="rationale">Dann ginge es um die Trockenheit des Zwiebacks nach dem zweiten Backen, nicht um die Säure.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="cum fece[?] purgata" resp="#fyndling" subtype="philological">„vom Bodensatz gereinigt“: fex ist hier der Rückstand, der abgetrennt wird, bevor das Bier in ein anderes, sauberes Gefäß kommt.<list type="alternatives"><item>„mit dem Bodensatz geklärt“<note type="rationale">Wörtliche Lesung von cum. Das Umgießen in ein reines Gefäß spricht für das Abtrennen des Satzes.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="licet inſipida ſit vſqꝫ in vigeſimum diem" resp="#fyndling" subtype="contextual">„auch wenn es bis zum zwanzigsten Tag fad ist“: eine Aussage über den Geschmack, nicht über die Haltbarkeit.<list type="alternatives"><item>„es hält sich bis zum zwanzigsten Tag, auch wenn es fad ist“<note type="rationale">Dagegen spricht Olaus selbst im folgenden Kapitel: Dieses Bier halte acht oder zehn Tage („illa durat octo, vel decem dies“), das Honigbier zwanzig oder dreißig.</note></item></list></note>
+        <note type="preparation_tip" target="#olm-014-trans" resp="#fyndling">Was ist das? Die zweite Art des äthiopischen Biers, das Olaus im vorigen Kapitel nach seinem Gewährsmann Johannes Baptista Habascianus beschreibt. Der Ansatz aus Zwieback und gekeimter Gerste im Krug kommt mit Honig samt Waben, Wasser und weiterer gekeimter Gerste in ein großes Gefäß und gärt dort drei Tage unter Verschluss. Olaus nennt das Getränk durchgehend Bier (ceruisia).
+
+Woher die Gärung kommt. Gärmittel ist das „vorgenannte Bier“, der Krug-Ansatz. Mit „wie oben gesagt“ verweist Olaus auf das vorige Kapitel: Dort wird der Zwieback aus einem Teig gebacken, der mit Sauerteig angesetzt und zehn Tage gesäuert ist, und der Krug wird mit Wasser gefüllt und drei Tage verschlossen. Nach den drei Tagen im großen Gefäß sitzt Hefe an dessen Mündung; sie wird abgeschäumt. Honig und Waben gehen ungekocht hinein, ein Sieden des Ansatzes nennt der Text nicht.
+
+Maß über Gefäße. Gewichte nennt der Text nicht. Das Maß ist der Honigtopf: Das große Gefäß fasst das Fünffache des Topfs (oder mehr, siehe Lesarten), derselbe Topf wird zweimal mit gekeimter Gerste und eingeweichtem Zwieback gefüllt, dazu kommen „ebenso viel“ Wasser und Gerste nach Bedarf. Ein Verhältnis von Honig zu Wasser lässt sich daraus nicht sicher ablesen, deshalb steht hier keine Modellrechnung.
+
+Ausräuchern. Das ausgewaschene Gefäß wird noch feucht über trockenem Olivenlaub umgestülpt, damit der Rauch hineinzieht. Einen Grund dafür nennt Olaus nicht.
+
+Verschließen und Wärme. Drei Tage bleibt das große Gefäß fest mit Kreide verschlossen, danach werden die Gefäßchen „gut verschlossen“. Gärt das Bier noch, baut sich in fest verschlossenen Gefäßen Druck auf; heute setzt man für die drei Tage einen Gärspund und füllt nur in druckfeste Flaschen ab oder verschließt erst nach dem Ende der Gärung (moderner Hinweis). Wärme verlangt der Text ausdrücklich: an wärmeren Orten, die Gefäße unter warmen Tüchern. Die Haltbarkeit von zwanzig oder dreißig Tagen ist Olaus' Angabe.
+
+Wachs aus dem Abschaum. Was beim Abschäumen oben abgenommen wird, wird in der Sonne getrocknet, mit wenig Wasser in Topf oder Kessel aufgesotten und abgekühlt. Das Wachs der Waben schwimmt dann oben auf dem Wasser und lässt sich abnehmen.
+
+Mälzen. Die Gerste weicht einen Tag und eine Nacht, keimt in einer angefeuchteten Holzschale zwischen frischen Feigen- oder Schilfblättern und wird dabei ständig feucht gehalten. Das Zeichen für das Ende ist das Keimen selbst („vſquequò germinet“). Getrocknet wird in der Sonne, eine Darre nennt der Text nicht; dann wird grob auf der Handmühle geschrotet, „wie gebrochener Dinkel“ in zwei oder drei Stücke, nicht wie Mehl. Olaus hält diesen Schritt für unverzichtbar.
+
+Praxis. Der Ansatz aus dem vorigen Kapitel geht voraus; er bringt das Gärmittel mit. Statt selbst gekeimter, sonnengetrockneter Gerste nimmt man heute helles Gerstenmalz, grob geschrotet (modern). Keimgut, das schimmelt, wird verworfen (modern). Die Mengen bleiben im Verhältnis zum Honigtopf, wie oben beschrieben.</note>
+        <note type="gloss" target="#olm-014-orig" n="panis biſcoctus" resp="#fyndling">Zwieback, wörtlich „zweimal Gebackenes“. Mit „wie oben gesagt“ verweist Olaus auf das vorige Kapitel, wo der Zwieback aus einem zehn Tage gesäuerten Teig gebacken wird.</note>
+        <note type="gloss" target="#olm-014-orig" n="mola truſatili" resp="#fyndling">Handmühle. Dasypodius (1535) übersetzt „Mola manuaria, uel Trusatilis“ mit „Ein handmüle“: eine Mühle, die man von Hand dreht.</note>
+        <note type="gloss" target="#olm-014-orig" n="far confractum" resp="#fyndling">Far ist der Dinkel: Dasypodius (1536) erklärt „Far, idem quod Ador, Dinckelkorn“. Olaus vergleicht das grob geschrotete Malz mit gebrochenem Dinkelkorn, nicht mit Mehl.</note>
+        <note type="interpretive_choice" target="#olm-014-orig" n="quod capiat quintuplicis liquoris plus, quàm ceperat olla mellis" resp="#fyndling" subtype="philological">Das große Gefäß fasst das Fünffache des Honigtopfs: „quintuplicis liquoris“ nennt die Füllmenge, „plus quàm“ den Vergleich mit dem Topf.<list type="alternatives"><item>Es fasst fünf Topffüllungen mehr als der Topf, also das Sechsfache<note type="rationale">„plus“ ließe sich als Zuschlag zum Topfinhalt lesen. Die Füllung (Honig, zwei Topf Gerste und Zwieback, Wasser, Krug-Ansatz) passt zu beiden Lesungen.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-014-orig" n="tantundem aquæ" resp="#fyndling" subtype="contextual">Ebenso viel Wasser wie die zwei Topffüllungen Gerste und Zwieback, auf die der Satz unmittelbar folgt.<list type="alternatives"><item>Ebenso viel Wasser wie Honig, also eine Topffüllung<note type="rationale">Das Bezugswort ist nicht ausgesprochen; auch der Honig kommt in Frage.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-014-orig" n="ceruiſia prædicta" resp="#fyndling" subtype="contextual">Der Krug-Ansatz aus dem ersten Satz: Zwieback und gekeimte Gerste, nach dem vorigen Kapitel mit Wasser gefüllt und drei Tage verschlossen.<list type="alternatives"><item>Fertiges Bier aus dem vorigen Kapitel als Zugabe<note type="rationale">Der Text sagt nicht, dass der Krug umgefüllt wird. Der Krug wird aber eigens bis zum dritten Tag angesetzt und sonst nirgends gebraucht.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-014-orig" n="creta" resp="#fyndling" subtype="lexical">Kreide: Dasypodius (1535) „Creta, Kreyd“, Lexer stellt krîde zu creta. Damit wird das Gefäß fest verschlossen.<list type="alternatives"><item>Ton oder Lehm als Verschlussmasse<note type="rationale">Als Verschluss wäre ein bindender Ton naheliegend; die Wörterbücher belegen für creta aber Kreide.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-014-orig" n="ſcyphum ligneum" resp="#fyndling" subtype="lexical">Holzschale: scyphus ist ein Trinkgefäß, Dasypodius (1536) „Ein becher / trinckgeſchier“. Für Gerste, die oben und unten mit Blättern belegt wird, liegt eine offene Schale nahe; die Größe nennt der Text nicht.<list type="alternatives"><item>Holzbecher<note type="rationale">Wörtlich; für eine Keimmenge, die zu einem Bieransatz reicht, eng.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

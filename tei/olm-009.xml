@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mulsum der südlichen Goten (Bier-Honig-Trank)</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-009/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-009</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-009">
+        <head>Mulsum der südlichen Goten (Bier-Honig-Trank)</head>
+        <div type="original" xml:id="olm-009-orig" xml:lang="und" corresp="#olm-009-trans">
+          <p>Fit &amp; apud Gothos, præſertim Meridionales, quidam potus Mulſum appellatum, ex ceruiſia, &amp; melle, ac myrto: qui quarta parte in ſua appoſitione aſſumitur, id eſt, quatuor partes ceruiſię, &amp; quarta pars myrti: &amp; decoquitur hæc compoſitio igne forti, per vnam horam, vel duas, donec mel fuerit deſpumatum: &amp; tandem ſuperpoſita fece cooperitur, &amp; cooperta manet vno integro &amp; dimidio. die, &amp; exit potus fortiſsimus: qui ſicuti antiquum hydromel, aut medo, crateri, aut cyatho impletus, præ fortitudine radios mittit ſcintillantes, velut candens ferrum. Eo liquore gens illa frequentius vtitur in nuptialibus feſtis, &amp; honorabilium amicorum, ac hoſpitum receptione. Neqꝫ in hoc ſolo potu, ſed fortiſsima ceruiſia ſemper abundant: licet mulſum hoc mellis adulteratione artificioſa ſit excogitatum, prout &amp; aliorum cura ſemper aſcendit, vel ſerpit in diuerſorum fructuum muſto conficiendo: quod opus ingenii eſt, &amp; non naturæ. Vinum tamen omnibus his præfero in ſua natiua terra, vbi genti ſuæ redditur proportionatum &amp;c.</p>
+        </div>
+        <div type="translation" xml:id="olm-009-trans" xml:lang="de" corresp="#olm-009-orig">
+          <p>Auch bei den Goten, besonders den südlichen, bereitet man ein Getränk, das Mulsum genannt wird, aus Bier, Honig und Gagel (myrtus). Der Gagel wird beim Zusetzen zu einem vierten Teil genommen, das heißt: vier Teile Bier und ein vierter Teil Gagel. Diese Mischung wird bei starkem Feuer eine oder zwei Stunden lang gesotten, bis der Honig abgeschäumt ist. Schließlich wird Hefe obenauf gelegt und das Ganze zugedeckt. Zugedeckt bleibt es einen ganzen und einen halben Tag, und es entsteht ein sehr starkes Getränk.</p>
+          <p>Wie der alte Hydromel oder Met sendet es, in einen Mischkrug oder einen Becher gefüllt, vor Stärke funkelnde Strahlen aus, wie glühendes Eisen. Dieses Getränk gebraucht jenes Volk häufiger bei Hochzeitsfesten und beim Empfang geehrter Freunde und Gäste. Doch nicht allein an diesem Getränk haben sie Überfluss, sondern stets auch an sehr starkem Bier.</p>
+          <p>Freilich ist dieses Mulsum durch eine kunstreiche Verfälschung des Honigs ersonnen, so wie auch das Bemühen anderer immer weiter steigt oder kriecht, Most aus verschiedenen Früchten zu bereiten. Das ist ein Werk des Erfindungsgeistes und nicht der Natur. Den Wein jedoch ziehe ich all diesen vor, in seinem Heimatland, wo er seinem Volk angemessen zuteilwird, usw.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="beer" orig="ceruiſia" commodity="wikidata:Q44" source="#fyndling-ingredient-name">Bier</ingredient> - 4</item>
+            <item>
+              <ingredient en="honey" orig="melle" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="myrto">Gagel</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fece">Hefe</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-009-trans" resp="#fyndling">Was ist das? Ein fertiges Bier wird mit Honig und Gagel eine bis zwei Stunden bei starkem Feuer gesotten, abgeschäumt und dann mit Hefe zugedeckt neu angestellt. Olaus nennt das Ergebnis Mulsum und hält es für sehr stark.
+
+Gagel statt Myrte. Das lateinische myrtus meint hier den Gagel, einen niedrigen Moorstrauch, den Olaus im vorigen Abschnitt beschreibt und der dort an Stelle des Hopfens gekocht wird. Die Myrte des Mittelmeers ist ausgeschlossen. Den Gagel nicht mit dem Sumpfporst verwechseln, der ebenfalls im Moor wächst und giftig ist.
+
+Das Verhältnis. Beziffert sind nur vier Teile Bier und „ein vierter Teil“ Gagel, ohne Angabe, ob nach Raum oder Gewicht. Der Honig steht ohne Maß. Ein Viertel Pflanzengut auf das Bier ist eine große Menge; ob Olaus wirklich vier zu eins meint, bleibt offen (siehe Lesarten).
+
+Sieden und Abschäumen. Das Zeichen für das Ende des Siedens nennt der Text selbst: Der Honig ist abgeschäumt, es steigt kein Schaum mehr auf. Das starke Feuer und die lange Kochzeit gleichen dem Auskochen des Gagels im Großansatz („per integram horam &amp; amplius“). Heute würde man ergänzen, dass beim langen Kochen ein Teil des Alkohols aus dem Bier verdampft.
+
+Hefe und Ruhe. Die Hefe wird obenauf gelegt, das Gefäß zugedeckt, nicht verschlossen. Ein Abkühlen vorher nennt Olaus hier nicht; beim nordischen Met wartet er damit, bis die Hitze fast in Lauwärme übergegangen ist. Modern gilt: Auf heißem Sud stirbt die Hefe, deshalb erst lauwarm werden lassen. Nach einem ganzen und einem halben Tag ist der zugesetzte Honig nach heutigem Wissen nicht ausgegoren, das Getränk also noch jung und süß; „sehr stark“ ist Olaus' Urteil.
+
+Praxis. Wer das Getränk nachbraut, legt die Honigmenge selbst fest und entscheidet sich beim Gagel für eine der Lesarten des Verhältnisses. Das Gefäß wird nach dem Text nur zugedeckt.</note>
+        <note type="gloss" target="#olm-009-orig" n="Mulsum" resp="#fyndling">Im klassischen Latein ein Honigwein (Köbler: „Weinmet, Met, Honigwein“). Olaus gibt den Namen hier einem Trank aus Bier und Honig, den er am Hydromel und am Met misst.</note>
+        <note type="gloss" target="#olm-009-orig" n="hydromel, medo" resp="#fyndling">Zwei Namen für den Met, die Olaus im ganzen Buch gleichsetzt.</note>
+        <note type="gloss" target="#olm-009-orig" n="crateri, cyatho" resp="#fyndling">Der Krater ist der große Mischkrug, der cyathus ein Becher. Hier stehen beide als Gefäße, aus denen getrunken wird, nicht als Maß.</note>
+        <note type="interpretive_choice" target="#olm-009-orig" n="myrto" resp="#fyndling" subtype="lexical">Gagel (Myrica gale). Bauhin führt „Gagel Germanorum &amp; Myrtus Brabantica“, Grimm unter GAGEL „myrica gale, myrtus brabantica“, Lasch-Borchling unter gāgel „zur Bierbereitung gebraucht, mirtus“. Olaus beschreibt den Strauch im vorigen Abschnitt desselben Kapitels: eine Elle hoch, an sumpfigen Stellen, mit Früchten wie Wacholderbeeren, reif im August, an Stelle des Hopfens gekocht.<list type="alternatives"><item>Myrte (Myrtus communis)<note type="rationale">Das Wort heißt klassisch Myrte. Die Myrte ist ein Strauch der Mittelmeerländer und passt nicht zu Olaus' Beschreibung eines niedrigen Sumpfstrauchs im Norden.</note></item><item>Sumpfporst (Rhododendron tomentosum)<note type="rationale">Wächst ebenfalls im Moor, und der Name Porst deckte im Mittelniederdeutschen auch den Gagel (Köbler: gāgelbōm „Porststrauch“). Der Sumpfporst trägt aber trockene Kapseln, keine Früchte wie Wacholderbeeren.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-009-orig" n="quatuor partes ceruiſię, &amp; quarta pars myrti" resp="#fyndling" subtype="contextual">Vier Teile Bier auf einen Teil Gagel: Der Gagel wird „zu einem vierten Teil“ des Biers genommen, und der Zusatz „id est“ erklärt das mit den vier Bierteilen. Ob Teile nach Raum oder Gewicht gemeint sind, sagt der Text nicht.<list type="alternatives"><item>Vier Teile Bier auf einen Viertelteil Gagel (16 zu 1)<note type="rationale">„quarta pars“ kann auch den vierten Teil eines Teils meinen. Für ein einfaches Verhältnis schreibt Olaus sonst „una pars“ (Sommer-Met: „quinque partes aquae, &amp; una pars mellis“); die abweichende Wortwahl hält diese Lesung offen.</note></item><item>Gagel als Viertel der ganzen Mischung (3 zu 1)<note type="rationale">Wäre „quarta parte“ auf die Gesamtmenge bezogen, ergäben sich drei Teile Bier. Der Zusatz „quatuor partes ceruisiae“ spricht dagegen.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-009-orig" n="tandem ſuperpoſita fece" resp="#fyndling" subtype="contextual">Wörtlich „schließlich“: Ein Abkühlen vor dem Auflegen der Hefe nennt der Text nicht, die Übersetzung ergänzt es nicht.<list type="alternatives"><item>Abkühlen ist mitgemeint<note type="rationale">Beim nordischen Met wartet Olaus, „usquequo calor in teporem pene resolvatur“, bis die Hitze fast in Lauwärme übergegangen ist, und legt erst dann die Hefe auf. „tandem“ kann diese Wartezeit einschließen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

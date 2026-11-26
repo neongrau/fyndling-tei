@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Obstweine und Kräuterweine</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-004/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-004</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-004">
+        <head>Obstweine und Kräuterweine</head>
+        <div type="original" xml:id="olm-004-orig" xml:lang="und" corresp="#olm-004-trans">
+          <p>Fiunt tamen factitia vina è pyris, pomis, meſpilis, ſorbis, per ſucci torcularem expreſsionem: quibus piper, zinziber, &amp; gariophylli adduntur, pro temperamento agreſtis ſaporis. Prętereà vinis imponuntur, aliis ſaluia, aliis abſynthium, aliis ruta, aliis lauendula: &amp; inde nomina ſortiuntur, vt cæteris omnibus in eſu, tanquam potus ſalubris &amp; medicinalis, præferantur.</p>
+        </div>
+        <div type="translation" xml:id="olm-004-trans" xml:lang="de" corresp="#olm-004-orig">
+          <p>Man macht jedoch auch künstliche Weine aus Birnen, Äpfeln, Mispeln und Speierlingen, indem man den Saft in der Kelter auspresst. Diesen Weinen setzt man Pfeffer, Ingwer und Gewürznelken zu, um den herben Geschmack zu mildern.</p>
+          <p>Außerdem gibt man Kräuter in die Weine, in die einen Salbei, in andere Wermut, in andere Raute, in andere Lavendel, und davon bekommen sie ihre Namen. So werden sie beim Trinken allen anderen vorgezogen, da sie als gesundes und heilkräftiges Getränk gelten.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="pear" orig="pyris" commodity="wikidata:Q13099586" source="#fyndling-ingredient-name">Birnen</ingredient>
+            </item>
+            <item>
+              <ingredient en="apple" orig="pomis" commodity="wikidata:Q89" source="#fyndling-ingredient-name">Äpfel</ingredient>
+            </item>
+            <item>
+              <ingredient en="medlar" orig="meſpilis" commodity="wikidata:Q3092517" source="#fyndling-ingredient-name">Mispeln</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ſorbis">Speierlinge</ingredient>
+            </item>
+            <item>
+              <ingredient en="pepper" orig="piper" commodity="wikidata:Q3143131" source="#corema-ingredient-index">Pfeffer</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="zinziber" commodity="wikidata:Q15046077" source="#corema-ingredient-index">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="gariophylli" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="common sage" orig="ſaluia" commodity="wikidata:Q1111359" source="#corema-ingredient-index">Salbei</ingredient>
+            </item>
+            <item>
+              <ingredient en="wormwood" orig="abſynthium" commodity="wikidata:Q25686" source="#fyndling-ingredient-name">Wermut</ingredient>
+            </item>
+            <item>
+              <ingredient orig="ruta">Weinraute</ingredient>
+            </item>
+            <item>
+              <ingredient orig="lauendula">Lavendel</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-004-trans" resp="#fyndling">Was ist das? Kein Rezept mit Mengen, sondern ein Bericht über zwei Arten Wein: Weine aus gepresstem Obst, die man würzt, und Weine, in die man ein einzelnes Kraut gibt und die nach diesem Kraut heißen.
+
+Keltern und würzen. Der Text nennt zwei Schritte: Das Obst kommt in die Kelter, der Saft wird ausgepresst, und den Weinen werden Pfeffer, Ingwer und Gewürznelken zugesetzt, damit der herbe Geschmack milder wird. Dass Olaus sie Weine nennt, setzt die Gärung voraus. Wie lange sie gärt, womit sie in Gang kommt und ob die Gewürze vor oder nach der Gärung dazukommen, sagt er nicht.
+
+Kräuterweine. Salbei, Wermut, Raute und Lavendel kommen je für sich in einen Wein, und der Wein trägt dann den Namen des Krauts. Ob Obst- oder Traubenwein gemeint ist, bleibt offen. Olaus begründet die Vorliebe mit der Gesundheit; das ist sein Anspruch, keine heutige Wirkung. Wermut enthält Thujon und ist sehr bitter; Raute gilt in größeren Mengen als giftig, ihr Saft kann die Haut unter Sonnenlicht reizen.
+
+Praxis. Mengen, Gärführung und den Zeitpunkt des Würzens muss man selbst festlegen, denn der Text nennt nichts davon. Heute naheliegend (modern, nicht aus dem Text): Birnen- oder Apfelsaft pressen und mit Weinhefe vergären, die Gewürze sparsam in den fertigen Wein geben und kosten; Wermut und Raute nur in kleinen Mengen.</note>
+        <note type="gloss" target="#olm-004-orig" n="factitia vina" resp="#fyndling">Wörtlich „gemachte Weine“: Weine aus anderem Obst als Trauben. Im Deutschen heißt „gemachter Wein“ oft gepanschter Wein; das ist hier nicht gemeint, denn Olaus lobt die Kräuterweine ausdrücklich.</note>
+        <note type="gloss" target="#olm-004-orig" n="meſpilis" resp="#fyndling">Früchte der Echten Mispel. Sie sind frisch hart und herb und werden erst nach Frost oder längerem Liegen weich.</note>
+        <note type="gloss" target="#olm-004-orig" n="agreſtis ſaporis" resp="#fyndling">Der „ländliche“, herbe Geschmack des Obstweins. Die Gewürze sollen ihn mildern.</note>
+        <note type="gloss" target="#olm-004-orig" n="ruta" resp="#fyndling">Weinraute, ein stark riechendes Garten- und Heilkraut.</note>
+        <note type="interpretive_choice" target="#olm-004-orig" n="ſorbis" resp="#fyndling" subtype="lexical" cert="unknown">Speierlinge (Sorbus domestica): Im gelehrten Latein der Zeit meint sorbum ohne Zusatz die Frucht des Speierlings; Tabernaemontanus (1591) nennt die „Frucht oder Beer deß Speyerlings ... Lateiniſch Sorbum“, den wilden Sperberbaum dagegen „Sorbus ſylueſtris“. Auch Bauhin führt unter Sorbus zuerst „Sorbus domeſtica“. Die Reihe Birne, Apfel, Mispel, Speierling ist zudem die übliche Reihe gekelterten Obsts.<list type="alternatives"><item>Vogelbeeren (Sorbus aucuparia)<note type="rationale">Köbler übersetzt sorbum mit „Speierling, Arlesbeere, Vogelbeere“. Spricht Olaus vom heimischen Obst des Nordens, liegt die Eberesche näher, denn der Speierling wächst dort kaum. Einen Ort nennt der Satz aber nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-004-orig" n="vinis imponuntur" resp="#fyndling" subtype="contextual">„in die Weine“ allgemein: Der Satz schließt mit „Praeterea“ neu an, ohne hinweisendes Wort, und die Kräuterweine werden „allen anderen“ vorgezogen; gemeint sind Weine überhaupt, auch Traubenwein.<list type="alternatives"><item>nur in die Obstweine des vorigen Satzes<note type="rationale">Grammatisch kann „vinis“ an die eben genannten Obstweine anschließen; der Text entscheidet es nicht.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

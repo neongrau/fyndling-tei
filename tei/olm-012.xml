@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Bierbrauen auf verschiedene Weise, mit Hopfenprobe</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-012/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-012</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-012">
+        <head>Bierbrauen auf verschiedene Weise, mit Hopfenprobe</head>
+        <div type="original" xml:id="olm-012-orig" xml:lang="und" corresp="#olm-012-trans">
+          <p>De ceruiſiæ decoctione vario modo. CAP. XXVI.II.
+PRAEPARATIS, vt pręmiſſum eſt frugibus, diuerſę nationes proprium &amp; peculiarem modum retinent, aliter et aliter ceruiſiam conficiendi: quidam celerius, quidam tardius, quidam maiori, quidam minori quantitate, vti etiam in vindemiantibus eſt vſitatum. In Aquilone caldaribus, &amp; vaſis vtuntur ampliſsimis: vna tamen miranda conditione inſpecta, quòd ſolis mulieribus ceruiſiam paneſqꝫ coquendi, tanquam principalius officium, in toto Septentrione, exceptis curiis Principum, ac procerum, &amp; magnorum conuentuum, eſt attributum. Fœminę enim adeò mundè fideliterqꝫ ſingula negotia ſibi incumbentia tractant, vt nulla ſuſpicio oboriatur, quòd non omnia ſint bene facta, etiam in præparatione ciborum, vt nedum patronis offerantur in eſcam, ſed medicinalem præſeruationem. Magnam nanqꝫ experientiam habent cum arte coniunctam, quomodo hordeum ſit præparandum, aut alię fruges, quemqꝫ effectum &amp; vim ſit habiturum. Similiter &amp; lupulus: qui niſi naturali calore ſuo per decoctionem ſufficientem purgatus fuerit, non ſanitatem generat, ſed tormina ventris, &amp; ægritudines neruis nocituras. Quando autem lupulus (hortenſis dictus) ſufficienter coctus creditur, tunc probatio capitur per exiguum manipulum culmorum: qui immiſſus in decoctionem, &amp; extractus, ſecum viſcoſitatem retinet cum amaritudine amariſsima: &amp; hinc emerget ſalubrius temperamentum in omnibus rebus dulcibus, humano potui profuturis.</p>
+        </div>
+        <div type="translation" xml:id="olm-012-trans" xml:lang="de" corresp="#olm-012-orig">
+          <p>Wie man Bier auf verschiedene Weise siedet.</p>
+          <p>Ist das Getreide, wie vorausgeschickt, bereitet, so behalten die verschiedenen Völker ihre eigene, besondere Art, Bier zu machen, mal so, mal so: die einen schneller, die anderen langsamer, die einen in größerer, die anderen in kleinerer Menge, wie es auch bei den Winzern üblich ist. Im Norden gebraucht man Kessel und sehr große Gefäße.</p>
+          <p>Dabei ist jedoch ein bemerkenswerter Umstand zu beachten: Im ganzen Norden ist das Bierbrauen und das Brotbacken allein den Frauen zugewiesen, gleichsam als ihre vornehmere Pflicht, ausgenommen die Höfe der Fürsten und der Großen sowie große Versammlungen. Die Frauen besorgen nämlich alle Geschäfte, die ihnen obliegen, so sauber und gewissenhaft, dass kein Verdacht aufkommt, es sei nicht alles gut gemacht, auch bei der Zubereitung der Speisen, sodass diese den Hausherren nicht nur als Speise vorgesetzt werden, sondern als heilsame Vorbeugung. Sie haben nämlich große, mit Kunst verbundene Erfahrung darin, wie Gerste oder anderes Getreide zu bereiten ist und welche Wirkung und Kraft es haben wird.</p>
+          <p>Ebenso der Hopfen: Wird er nicht durch ausreichendes Kochen von seiner natürlichen Hitze gereinigt, bringt er keine Gesundheit hervor, sondern Bauchgrimmen und Leiden, die den Nerven schaden. Glaubt man aber, der Hopfen, Gartenhopfen genannt, sei ausreichend gekocht, so nimmt man die Probe mit einer kleinen Handvoll Halme: Sie wird in den Sud getaucht und wieder herausgezogen und behält eine Klebrigkeit mit äußerst bitterem Geschmack an sich. Daraus wird eine heilsamere Mäßigung in allen süßen Dingen hervorgehen, die dem menschlichen Trank nützen sollen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="hordeum ſit præparandum, aut alię fruges">Gerste oder anderes Getreide</ingredient>
+            </item>
+            <item>
+              <ingredient orig="lupulus (hortenſis dictus)">Gartenhopfen</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-012-trans" resp="#fyndling">Was ist das? Kein Rezept mit Mengen, sondern Olaus' Bericht über das Brauen im Norden, im Anschluss an die Getreidebereitung der beiden vorigen Kapitel: die Vielfalt der Brauweisen, das Brauen als Frauenarbeit und eine Garprobe für den Hopfen. Wie gemälzt, gemaischt und mit Hefe angestellt wird, beschreibt das Kapitel über das nordische Bier aus Gerstenmalz.
+
+Kessel und Gefäße. Olaus nennt Kessel und sehr große Gefäße, ohne Material und ohne Maß. Menge und Tempo richten sich nach dem Volk: mehr oder weniger, schneller oder langsamer.
+
+Der Hopfen muss gar sein. Olaus verlangt, den Hopfen ausreichend zu kochen. Seine Begründung gehört zur Medizin seiner Zeit: Das Kochen reinige den Hopfen von seiner „natürlichen Hitze“, ungenügend gekocht bringe er Bauchgrimmen und Nervenleiden. Das ist sein Anspruch, keine heutige Aussage. Eine Kochdauer nennt er nicht; das Zeichen für das Ende ist die Probe.
+
+Die Halmprobe. Hält man den Hopfen für gar, taucht man eine kleine Handvoll Halme in den Sud und zieht sie wieder heraus. Bleibt eine klebrige Schicht mit äußerst bitterem Geschmack daran haften, ist der Sud so weit. Geprüft wird mit Finger und Zunge am Sud selbst. Welche Halme gemeint sind, sagt Olaus nicht; Stroh- oder Getreidehalme liegen nahe.
+
+Bitter gegen süß. Den Zweck fasst der Schlusssatz: Aus dem gar gekochten Hopfen gehe eine heilsamere Mäßigung aller süßen Dinge hervor, die dem Trank dienen. Im Kapitel über den nordischen Met sagt Olaus dasselbe vom Honig: Die Bitterkeit des Hopfens mäßigt dessen Süße.
+
+Praxis. Die Probe lässt sich an jedem Hopfensud nachstellen: ein paar saubere, lange Halme eintauchen, herausziehen, die Klebrigkeit befühlen und nach kurzem Abkühlen vorsichtig abschmecken. Der Sud ist siedend heiß, darum mit ausreichend langen Halmen und mit Abstand zum Kessel arbeiten. Wie viel Hopfen und wie lange, sagt der Text nicht.</note>
+        <note type="gloss" target="#olm-012-orig" n="lupulus (hortenſis dictus)" resp="#fyndling">Gartenhopfen: der angebaute Hopfen im Unterschied zum wild wachsenden.</note>
+        <note type="gloss" target="#olm-012-orig" n="tormina ventris" resp="#fyndling">Bauchgrimmen, Leibschneiden; ein Kräuterbuch des 16. Jahrhunderts gibt „Tormina“ mit „Krimmen“ wieder.</note>
+        <note type="gloss" target="#olm-012-orig" n="temperamentum" resp="#fyndling">Mäßigung, Ausgleich. Gemeint ist, dass die Bitterkeit des Hopfens die Süße im Trank mäßigt, wie Olaus es im Kapitel über den nordischen Met vom Honig sagt.</note>
+        <note type="interpretive_choice" target="#olm-012-orig" n="magnorum conuentuum" resp="#fyndling" subtype="lexical">Große Versammlungen: In der Reihe mit den Höfen der Fürsten und der Großen liegt eine Zusammenkunft vieler Menschen nahe; conventus steht in den Wörterbüchern der Zeit auch für Versammlung und Tagung.<list type="alternatives"><item>Große Konvente, also Klöster<note type="rationale">Conventus heißt im Mittelalter auch die geistliche Gemeinschaft eines Klosters, und große Klöster brauten selbst. Der Satz entscheidet es nicht.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

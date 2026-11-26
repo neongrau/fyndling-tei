@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gerste mälzen und nordisches Bier brauen</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-010/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-010</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-010">
+        <head>Gerste mälzen und nordisches Bier brauen</head>
+        <div type="original" xml:id="olm-010-orig" xml:lang="und" corresp="#olm-010-trans">
+          <p>De præparatione hordei, &amp; aliarum frugum, pro ceruiſia decoquenda. CAP. XXVI.
+QVIA inter pręcipuos rerum naturalium ſcrutatores, &amp; ſcriptores, maximè in his, quæ ad ſalubriorem hominis victum pertinent, Hippocrates videtur habere de hordaceo potu rationem, &amp; cenſuram meliorem, prout in libris eius deſuper confectis, clariſsimè demonſtratur: propterea magnam vim facit de natura hordei, &amp; eius potione (cui multa, variaqꝫ imponit nomina) quòd omnibus annonis, ſeu frugibus ſanior, &amp; vtilior ſit, vbi eius vſus habetur pro optimo potu decoquendo. Nec tamen modum ob inexperientiam regionum exprimere potuit, qualis ſaltem generaliter in conficienda ceruiſia reſeruatur.
+Quocirca quibus placet, offeratur is modus Septentrionalium incolarum: qui decocturi ceruiſiam, quantò electius hordeum inuenerint, &amp; diligentius præparauerint, tantò ſaniorem exinde potum non dubitant euenturum. Sicqꝫ præparant, iuxta exigentiam familiæ maioris vel minoris, publicæ vel priuatæ domus: Eligunt pauimentum tabulatum, longum, &amp; amplum: ſuper quo impoſitum hordeum X. rugiorum, vel XXX. aut plurium modiorum, aqua ſparſum continuè voluunt: vnde fit, vt vna nocte &amp; die molleſcat, &amp; intumeſcat: hocqꝫ ſecundò &amp; tertiò ſimili reuolutione verſum, quaſi radicibus emiſsis germinare videtur, vt conglobatis manipulatim granis, illicò concreſcere velit: triduoqꝫ iam per pauimentum ampliatum, relinquitur exiccandum: quo viſo, clibanus adaptatur ſatis amplus: in cuius ampliore latitudine interpoſitis rarioribus pannis, ſuppoſitoqꝫ lento igne, hordeum apportatur diſpergendum, ac detorrendum. Induit enim eo torrore miram ſuauitatem, vt mellis videatur habere ſaporem. Demum aquatili, ſeu truſatili, vel ventorum mola parumper attritum (vnde Braſium dicitur) aquæ calefactæ, atqꝫ in amplum vas ligneum continua motione paulatim immiſſum, multò maiorem dulcedinem ſpargit, &amp; tumorem: hacqꝫ commixtione remiſsius deferuente, vaſculo pertuſo, quaſi cribro, vel craticulatis foraminibus, totus ille liquor fortiter coctus, exhauſtus, &amp; depuratus alteri imponitur vaſi: in quo decoctio amari lupuli pro tertia, vel quarta parte admiſcetur, iuxta maiorem ſuauitatem, vel amaritatem ceruiſiæ conficiendæ. Illicoqꝫ fex vetuſtioris ceruiſiæ, quaſi fermentum, non magna quantitate impoſita, totalem formam, &amp; perfectionem inducit: eaqꝫ compoſitione, ſeu incorporatione horum trium, ſcilicet ſuauis ſaporis hordei, amaritudinis lupuli, &amp; coagulantis fecis, lentè feruentibus ſub coopertis ceruiſia maturatur. De qua commixtione ſi quis pectorali ſtrictura preſſus, bonum hauſtum biberit, omnimodè reſtitutus euadet. Illeqꝫ liquor vulgari Gothico Buſka dicitur, quaſi hominem liberans ab oppilationum ſyluis. Similis etiam præparatio fit in tritico, &amp; auena: ſed rarò in ſiligine, quæ panibus excoquendis ſpecialiter reſeruatur, veluti frumentum delicatius omnium nutrimentum.</p>
+        </div>
+        <div type="translation" xml:id="olm-010-trans" xml:lang="de" corresp="#olm-010-orig">
+          <p>Unter den vornehmsten Erforschern und Beschreibern der natürlichen Dinge, besonders in dem, was zu einer gesünderen Ernährung des Menschen gehört, scheint Hippokrates über den Gerstentrank die bessere Begründung und das bessere Urteil zu haben, wie in seinen Büchern darüber aufs Klarste gezeigt wird. Darum legt er großen Nachdruck auf die Natur der Gerste und ihren Trank, dem er viele und verschiedene Namen gibt: Sie sei gesünder und nützlicher als jedes andere Getreide und jede andere Feldfrucht, wo man sie zum Sieden des besten Tranks gebraucht. Die Weise selbst aber konnte er aus Unkenntnis der Länder nicht beschreiben, wie sie wenigstens im Allgemeinen beim Bierbrauen eingehalten wird.</p>
+          <p>Deshalb sei denen, die es wünschen, die Weise der Bewohner des Nordens vorgelegt. Wenn sie Bier brauen wollen, zweifeln sie nicht: Je erlesener die Gerste ist, die sie finden, und je sorgfältiger sie sie bereiten, desto gesünder wird der Trank, der daraus hervorgeht. Und so bereiten sie sie, nach dem Bedarf einer größeren oder kleineren Hausgemeinschaft, eines öffentlichen oder privaten Hauses.</p>
+          <p>Weichen und Keimen. Sie wählen einen gedielten Boden, lang und weit. Die Gerste, die darauf geschüttet wird, zehn rugiorum oder dreißig oder mehr Scheffel, besprengen sie mit Wasser und wenden sie fortwährend. Dadurch geschieht es, dass sie in einer Nacht und einem Tag weich wird und aufquillt. Wird sie ein zweites und drittes Mal auf gleiche Weise umgewendet, so scheint sie zu keimen, als hätte sie Wurzeln getrieben, sodass die Körner sich büschelweise zusammenballen und sogleich zusammenwachsen wollen. Dann lässt man sie drei Tage lang, nun weiter über den Boden ausgebreitet, trocknen.</p>
+          <p>Darren. Ist das geschehen, richtet man einen hinreichend weiten Ofen her. In seinem weiteren Raum legt man locker gewebte Tücher dazwischen, macht darunter ein kleines Feuer, und die Gerste wird hineingebracht, um verteilt und gedörrt zu werden. Durch dieses Dörren nimmt sie nämlich eine wunderbare Süße an, sodass sie nach Honig zu schmecken scheint.</p>
+          <p>Schroten und Maischen. Zuletzt wird sie in einer Wassermühle, einer Handmühle oder einer Windmühle ein wenig zerrieben, daher heißt sie Malz (Brasium). In erwärmtes Wasser in einem weiten Holzgefäß unter ständigem Rühren nach und nach gegeben, gibt sie viel mehr Süße ab und quillt auf. Wenn diese Mischung schwächer wallt, wird die ganze, kräftig gekochte Flüssigkeit mit einem durchlöcherten Gefäß, wie mit einem Sieb oder mit gitterartigen Löchern, ausgeschöpft, geklärt und in ein zweites Gefäß gegeben.</p>
+          <p>Hopfen und Hefe. Darin mischt man den Sud des bitteren Hopfens zu einem Drittel oder einem Viertel bei, je nachdem, ob das Bier süßer oder bitterer werden soll. Sogleich gibt man Hefe von älterem Bier darauf, gleichsam als Sauerteig, in nicht großer Menge; sie gibt dem Ganzen seine Gestalt und Vollendung. Durch diese Zusammensetzung oder Vereinigung der drei, nämlich des süßen Geschmacks der Gerste, der Bitterkeit des Hopfens und der Hefe, die gerinnen macht, reift das Bier, während es zugedeckt langsam gärt.</p>
+          <p>Buska. Wer von Engigkeit der Brust bedrückt ist und von dieser Mischung einen guten Schluck trinkt, soll ganz und gar wiederhergestellt daraus hervorgehen. Dieser Trank heißt in der gotischen Volkssprache Buska, gleichsam einer, der den Menschen von den Wäldern der Verstopfungen befreit.</p>
+          <p>Andere Getreide. Eine ähnliche Bereitung geschieht auch mit Weizen und Hafer, selten aber mit Roggen, der eigens zum Brotbacken aufgespart wird, als das feinere Getreide, die Nahrung aller.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="barley" orig="hordeum" commodity="wikidata:Q61665121" source="#fyndling-ingredient-name">Gerste</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="aqua" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="decoctio amari lupuli">Hopfen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fex vetuſtioris ceruiſiæ">Hefe von älterem Bier</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-010-trans" resp="#fyndling">Was ist das? Der ganze Weg vom Korn zum Bier in einem Zug: Gerste weichen und keimen lassen, trocknen, darren, schroten, maischen, läutern, den Hopfensud zumischen und mit Hefe von älterem Bier anstellen. Olaus beschreibt ein gehopftes Gerstenbier, wie es nach Bedarf eines kleinen oder großen Hauses gebraut wird; das Getreide für die Abwandlungen in fernen Provinzen und das Brauen selbst greift er in den beiden folgenden Kapiteln wieder auf.
+
+Mälzen. Die Gerste liegt auf einem gedielten Boden, wird mit Wasser besprengt und immer wieder gewendet. Das erste Zeichen ist, dass sie „weich wird und aufquillt“ (eine Nacht und ein Tag); das zweite, dass sie nach dem zweiten und dritten Wenden zu keimen scheint, „als hätte sie Wurzeln getrieben“, und die Körner sich büschelweise zusammenballen. Das Wenden hält das Keimgut gleichmäßig; ohne es verfilzen die Wurzelkeime, was Olaus’ „zusammenwachsen wollen“ beschreibt. Danach trocknet das Grünmalz drei Tage weiter ausgebreitet auf dem Boden. Wie lange es keimt, sagt Olaus nicht; das Zeichen ist der Wurzelansatz. Heute weiß man: Beim Keimen bildet das Korn die Enzyme, die später beim Maischen die Stärke in Zucker umsetzen.
+
+Darren und Schroten. Gedarrt wird in einem weiten Ofen auf locker gewebten Tüchern über kleinem Feuer. Das Zeichen für das Ende ist der Geschmack: Das Malz wird süß und schmeckt nach Honig. Geschrotet wird nur „ein wenig“, also grob, in der Wasser-, Hand- oder Windmühle.
+
+Maischen und Läutern. Das Schrot geht nach und nach unter ständigem Rühren in erwärmtes Wasser im großen Holzgefäß; dabei wird es deutlich süßer und quillt auf. Wenn das Wallen nachlässt, wird „die ganze, kräftig gekochte Flüssigkeit“ durch ein gelochtes Gefäß abgeschöpft und geklärt. Ein eigenes Kochen der Maische hat der Text vorher nicht genannt; entweder wurde die Maische selbst gekocht, wie es auch die Brauanweisung im Salzburger Cod. M III 3 tut („siede es wol“), oder Olaus fasst Erhitzen und Kochen in einem Wort zusammen. Heute kocht man die Würze nach dem Läutern (moderne Praxis).
+
+Hopfen und Hefe. Der Hopfen kommt als eigener Sud dazu, zu einem Drittel oder einem Viertel; der Anteil richtet sich danach, wie süß oder bitter das Bier werden soll. Die Hefe stammt von älterem Bier, wird „sogleich“ und nur in kleiner Menge aufgesetzt und wirkt nach Olaus wie ein Sauerteig. Ein Abkühlen nennt er hier nicht; beim Met (Kap. XXII) wartet er, bis die Hitze fast in Lauwärme übergegangen ist. Heute lässt man die Würze vor der Hefe auf Handwärme abkühlen (moderne Praxis). Das Bier gärt zugedeckt und langsam; von Verschließen ist keine Rede.
+
+Praxis. Wer das nachbraut, beginnt heute meist mit fertigem Gerstenmalz; wer selbst mälzt, wendet das feuchte Keimgut regelmäßig, damit es nicht schimmelt (moderne Praxis). Olaus nennt weder Wassermengen noch eine Gärdauer. Die Heilwirkung bei Brustenge ist Olaus’ Anspruch, kein Rat.</note>
+        <note type="gloss" target="#olm-010-orig" n="Braſium" resp="#fyndling">Mittellateinisch für Malz. Olaus nennt so die gekeimte, gedarrte und grob geschrotete Gerste.</note>
+        <note type="gloss" target="#olm-010-orig" n="Buſka" resp="#fyndling">Olaus’ Name für das Bier „in der gotischen Volkssprache“. Seine Erklärung, es befreie den Menschen „von den Wäldern der Verstopfungen“, ist seine eigene Wortdeutung; was das Wort tatsächlich bedeutet, bleibt offen.</note>
+        <note type="gloss" target="#olm-010-orig" n="clibanus" resp="#fyndling">Eigentlich der Backofen. Hier dient er als Darre: lockere Tücher als Auflage, kleines Feuer darunter.</note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="X. rugiorum" resp="#fyndling" subtype="lexical" cert="unknown">Als Wort stehen gelassen: zehn rugiorum neben „dreißig oder mehr Scheffel“. Das Wort steht als Maß parallel zu modiorum, ein Maß dieses Namens ist aber nicht belegt.<list type="alternatives"><item>Volksname, die Rugier<note type="rationale">Das einzige Stichwort ist Rugius = Rugier (Köbler, Mittellatein); als Mengenangabe ergibt ein Volksname keinen Sinn.</note></item><item>ein nordisches Getreidemaß in lateinischer Form<note type="rationale">Würde zur Reihe der Maße passen, ist aber ohne Beleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="totus ille liquor fortiter coctus" resp="#fyndling" subtype="contextual">Wörtlich „die ganze, kräftig gekochte Flüssigkeit“. Vorher ist nur von erwärmtem Wasser die Rede; die Maische wurde demnach gekocht, wie es auch sbm33-008 tut („siede es wol“).<list type="alternatives"><item>Olaus fasst Erhitzen und Kochen zusammen, gekocht wird eigentlich erst die abgeläuterte Würze<note type="rationale">Entspricht heutiger Praxis, steht aber so nicht im Satz.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="pro tertia, vel quarta parte" resp="#fyndling" subtype="contextual">Der Hopfensud macht ein Drittel oder ein Viertel der Mischung aus.<list type="alternatives"><item>ein Drittel oder Viertel bezogen auf die Würze allein<note type="rationale">Der Text nennt die Bezugsgröße nicht; pars lässt beides zu.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="Illicoqꝫ fex vetuſtioris ceruiſiæ" resp="#fyndling" subtype="contextual">„Sogleich“ wörtlich: Die Hefe kommt gleich nach dem Hopfensud dazu; ein Abkühlen nennt Olaus hier nicht.<list type="alternatives"><item>Abkühlen stillschweigend vorausgesetzt<note type="rationale">Beim Met (olm-005) wartet Olaus ausdrücklich, „bis die Hitze fast in Lauwärme übergegangen ist“.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-010-orig" n="ſiligine" resp="#fyndling" subtype="lexical">Roggen. Weizen steht im selben Satz als triticum, und im schwedischen Latein steht siligo für Roggen (Söderwall); Kiliaan und Schiller-Lübben setzen siligo ebenfalls mit Roggen gleich.<list type="alternatives"><item>feiner Weizen, Winterweizen<note type="rationale">Klassische Bedeutung, Dasypodius: „Rocken / oder waitzen“; „das feinere Getreide“ passt dazu, aber Weizen ist schon genannt.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

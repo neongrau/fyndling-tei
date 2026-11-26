@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Äthiopisches Bier aus gesäuertem Zwieback und gekeimter Gerste</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/olm-013/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/olm-013</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Historia de gentibus septentrionalibus, earumque diversis statibus, conditionibus, moribus, ritibus ... (Liber XIII: De humano victu)</title>
+          <date when="1555">1555</date>
+          <idno type="URI">https://archive.org/details/bub_gb_O9lEAAAAcAAJ</idno>
+          <note>Transkription: eigene Texterkennung (Kraken) aus dem Digitalisat der Universitätsbibliothek Gent, je Rezept am Scan korrigiert (fyndling.de)</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Humanistenlatein (Rom 1555) des Schweden Olaus Magnus; nordische Sachen latinisiert (hydromel, medo, ceruiſia, Buſka), Abkürzungszeichen wie gedruckt</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="olm-013">
+        <head>Äthiopisches Bier aus gesäuertem Zwieback und gekeimter Gerste</head>
+        <div type="original" xml:id="olm-013-orig" xml:lang="und" corresp="#olm-013-trans">
+          <p>De Aethiopum, ſeu Indorum more ceruiſiam conficiendi, ex inſtructione D. Ioannis Baptiſtæ Habaſciani Indorum presbyteri. CAP. XXX.
+CAPIATVR farina cribro non excuſſa tritici communis, vel hordei: inde enim melior fit ceruiſia. Fiat paſta, &amp; ingeratur fermentum, veluti conficitur panis cibarius: maneat dicta paſta per decem dies, antequàm coquatur: ſed quotidie bene miſceatur, &amp; inſpergatur ſingulis diebus exigua farina vſqꝫ ad decimum diem, ita vt dicta paſta aceſcat. Poſt decimum diem fiat inde panis: coquatur in furno, &amp; fiat biſcoctus: cùm acuerit, frangatur in fruſta, &amp; ponatur in vrna, ſuperponendo pauxillum hordei germinati: impleatur dicta vrna aqua: bene obturetur[?] vſqꝫ in triduum. Poſt aperiatur, &amp; manus ꝓtendatur vſqꝫ ad fundum vrnæ, miſcendo optimè, infringendo, &amp; liquefaciendo biſcoctum panem, qui non fuerit ab aqua liquefactus. Deinde ſtatim ingeratur panis ex hordeo factus eodem die, incidendo in offas: &amp; iterum immittatur hordeũ germinatum, pluſquàm prius: ſed tamen oportet diligenti vti menſura, &amp; ordine, pro quantitate ceruiſiæ: quod niſi factum fuerit, ceruiſia fiet aſperi. &amp; amari ſaporis: ſi verò parcius immittatur, fit inſipida, et inſulſa. Neceſſe eſt igitur vti prudentia, in qua eſt omnis vis. Et cùm omnia commixta fuerint, iterum obturanda eſt vrna, vſqꝫ ad quartum diem: inde aperienda, &amp; paulatim ſolidanda per pannum lineum: cumqꝫ bene fuerit expreſſa, &amp; cum fece[?] purgata, infunditur in aliud vas bene purum: &amp; qui voluerit bibete eodem, hoc eſt quarto die, poterit, licet inſipida ſit vſqꝫ in vigeſimum diem.</p>
+        </div>
+        <div type="translation" xml:id="olm-013-trans" xml:lang="de" corresp="#olm-013-orig">
+          <p>Wie die Äthiopier oder Inder Bier bereiten, nach der Unterweisung des Herrn Johannes Baptista Habascianus, Priesters der Inder.</p>
+          <p>Nimm Mehl, das nicht durch das Sieb geschüttelt ist, von gewöhnlichem Weizen oder von Gerste, denn daraus wird das Bier besser. Mache einen Teig und gib Sauerteig hinein, wie man gewöhnliches Brot macht. Lass den Teig zehn Tage stehen, bevor er gebacken wird. Rühre ihn aber jeden Tag gut durch und streue an jedem Tag ein wenig Mehl darauf, bis zum zehnten Tag, damit der Teig sauer wird.</p>
+          <p>Nach dem zehnten Tag mache daraus Brot, backe es im Ofen und mache Zwieback daraus. Wenn er scharf geworden ist, brich ihn in Stücke und lege sie in einen Krug, und gib ein klein wenig gekeimte Gerste obenauf. Fülle den Krug mit Wasser und verschließe[?] ihn gut für drei Tage.</p>
+          <p>Danach öffne ihn und strecke die Hand bis auf den Boden des Kruges, mische aufs Beste, brich und löse den Zwieback auf, soweit ihn das Wasser nicht aufgelöst hat. Gib dann sogleich Brot aus Gerste hinein, das am selben Tag gemacht ist, und schneide es dabei in Brocken. Gib wiederum gekeimte Gerste hinein, mehr als zuvor.</p>
+          <p>Doch muss man dabei sorgfältig Maß und Ordnung halten, nach der Menge des Biers. Geschieht das nicht, wird das Bier herb und bitter im Geschmack. Gibt man aber zu sparsam hinein, wird es fad und ohne Geschmack. Man muss also mit Klugheit vorgehen, in der die ganze Kraft liegt.</p>
+          <p>Wenn alles vermischt ist, verschließe den Krug wieder bis zum vierten Tag. Dann öffne ihn und seihe das Bier nach und nach durch ein Leinentuch. Ist es gut ausgepresst und vom Bodensatz[?] gereinigt, wird es in ein anderes, gut sauberes Gefäß gegossen. Wer davon trinken will, kann es am selben, das heißt am vierten Tag tun, auch wenn es bis zum zwanzigsten Tag fad ist.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="farina cribro non excuſſa tritici communis, vel hordei">Mehl, ungesiebt, von gewöhnlichem Weizen oder von Gerste</ingredient>
+            </item>
+            <item>
+              <ingredient orig="fermentum">Sauerteig</ingredient>
+            </item>
+            <item>
+              <ingredient orig="hordei germinati">Gekeimte Gerste (Grünmalz)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="aqua" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="panis ex hordeo factus eodem die">Gerstenbrot, am selben Tag gemacht</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#olm-013-trans" resp="#fyndling">Was ist das? Ein Bier ohne Hopfen aus gesäuertem Brot und gekeimter Gerste, das Olaus nach einem Gewährsmann aus Äthiopien beschreibt. Der Ablauf hat drei Stufen: ein zehn Tage gesäuerter Teig wird zu Zwieback gebacken, der Zwieback steht mit wenig gekeimter Gerste drei Tage in Wasser, dann kommen frisches Gerstenbrot und mehr gekeimte Gerste dazu, und nach dem vierten Tag wird abgepresst.
+
+Der Teig. Ungesiebtes Mehl aus Weizen oder Gerste, mit Sauerteig angesetzt wie gewöhnliches Brot. Zehn Tage lang wird täglich gerührt und ein wenig Mehl daraufgestreut; das Ziel nennt der Text selbst: der Teig soll sauer werden. Das Gärmittel des Eintrags ist dieser Sauerteig; in den Krug kommt er als gebackener Zwieback.
+
+Zwieback und Krug. Das Brot wird gebacken und zu Zwieback gemacht, „cùm acuerit“, wenn er scharf geworden ist, gebrochen. Im Krug liegt er mit „pauxillum“, einem klein wenig gekeimter Gerste, unter Wasser. Nach drei Tagen löst man mit der Hand bis zum Boden auf, was das Wasser noch nicht gelöst hat.
+
+Die zweite Beschickung. Frisches Gerstenbrot vom selben Tag in Brocken und mehr gekeimte Gerste als beim ersten Mal. Ein Maß gibt der Text nicht, nur das Zeichen am Geschmack: zu viel macht das Bier „asperi &amp; amari saporis“, herb und bitter, zu wenig „insipida, et insulsa“, fad.
+
+Abpressen. Am vierten Tag nach und nach durch ein Leinentuch, gut auspressen, vom Bodensatz trennen und in ein anderes sauberes Gefäß gießen. Trinkbar ist es laut Olaus schon an diesem Tag, auch wenn es bis zum zwanzigsten Tag fad bleibt; im folgenden Kapitel sagt er, es halte acht oder zehn Tage.
+
+Praxis. Mengen muss man selbst finden. Der Text verschließt den Krug zweimal gut; heute gilt: ein gärender Ansatz baut in einem fest verschlossenen Gefäß Druck auf, deshalb besser nur abdecken oder mit einem Gärröhrchen verschließen (modernes Hilfsmittel). Ein Teig, der zehn Tage steht, kann schimmeln; einen verschimmelten Ansatz verwerfen.</note>
+        <note type="gloss" target="#olm-013-orig" n="Habaſciani Indorum presbyteri" resp="#fyndling">Olaus nennt als Gewährsmann den Herrn („D.“) Johannes Baptista Habascianus, einen Priester der Inder, und gibt das Verfahren „ex instructione“, nach seiner Unterweisung, wieder. In der Überschrift setzt er Äthiopier und Inder gleich. Mehr sagt der Text über ihn nicht.</note>
+        <note type="gloss" target="#olm-013-orig" n="biſcoctus" resp="#fyndling">Zwieback, wörtlich „zweimal gebacken“. Hier wird das zehn Tage gesäuerte Brot so gebacken, dann gebrochen und im Krug in Wasser aufgelöst.</note>
+        <note type="gloss" target="#olm-013-orig" n="hordeum germinatum" resp="#fyndling">Gekeimte Gerste. Wie sie gemacht wird, beschreibt Olaus am Ende des folgenden Kapitels: einen Tag und eine Nacht in Wasser weichen, im feuchten Holzgefäß zwischen frischen Feigen- oder Schilfblättern keimen lassen, gut in der Sonne trocknen und grob schroten, jedes Korn in zwei oder drei Stücke.</note>
+        <note type="gloss" target="#olm-013-orig" n="vrna" resp="#fyndling">Krug. Der Text setzt voraus, dass man mit der Hand bis zum Boden greifen kann.</note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="ſolidanda per pannum lineum" resp="#fyndling" subtype="lexical" cert="unknown">„seihen“: Im Zusammenhang (durch ein Leinentuch, danach „bene expressa“, gut ausgepresst) ist das Durchseihen gemeint.<list type="alternatives"><item>„fest machen, festigen“<note type="rationale">So belegen die Wörterbücher solidare (Diefenbach: festigen, fest machen; Florio: fest, dicht machen). Für eine Flüssigkeit, die durch ein Tuch gepresst wird, ist diese Bedeutung in den geprüften Wörterbüchern nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="cùm acuerit" resp="#fyndling" subtype="lexical">„wenn er scharf geworden ist“: acuere heißt schärfen (Köbler: schärfen, wetzen, hart). Das Wort bleibt so offen wie im Text; der zehn Tage gesäuerte Teig spricht für einen scharfen, sauren Geschmack.<list type="alternatives"><item>„wenn er hart geworden ist“<note type="rationale">Dann ginge es um die Trockenheit des Zwiebacks nach dem zweiten Backen, nicht um die Säure.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="cum fece[?] purgata" resp="#fyndling" subtype="philological">„vom Bodensatz gereinigt“: fex ist hier der Rückstand, der abgetrennt wird, bevor das Bier in ein anderes, sauberes Gefäß kommt.<list type="alternatives"><item>„mit dem Bodensatz geklärt“<note type="rationale">Wörtliche Lesung von cum. Das Umgießen in ein reines Gefäß spricht für das Abtrennen des Satzes.</note></item></list></note>
+        <note type="interpretive_choice" target="#olm-013-orig" n="licet inſipida ſit vſqꝫ in vigeſimum diem" resp="#fyndling" subtype="contextual">„auch wenn es bis zum zwanzigsten Tag fad ist“: eine Aussage über den Geschmack, nicht über die Haltbarkeit.<list type="alternatives"><item>„es hält sich bis zum zwanzigsten Tag, auch wenn es fad ist“<note type="rationale">Dagegen spricht Olaus selbst im folgenden Kapitel: Dieses Bier halte acht oder zehn Tage („illa durat octo, vel decem dies“), das Honigbier zwanzig oder dreißig.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
