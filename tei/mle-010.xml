@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Guter Branntwein oder Anisbranntwein</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/mle-010/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mle-010</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v</title>
+          <date when="1630" cert="low">um 1630</date>
+          <idno type="URI">https://doi.org/10.15407/rksu.24.281</idno>
+          <note>mle-001/002: Text nach S. Bulatova 2019 (DOI 10.15407/rksu.24.281), CC BY-NC 4.0; mle-003 bis mle-014: eigene Lesung am Digitalisat der Vernadsky-Nationalbibliothek der Ukraine</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Mittelpolnisch des 17. Jahrhunderts mit ostslawischen/litauischen Regionalformen (Großfürstentum Litauen, um 1630); Maße ceber, uszatek, łut</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mle-010">
+        <head>Guter Branntwein oder Anisbranntwein</head>
+        <div type="original" xml:id="mle-010-orig" xml:lang="und" corresp="#mle-010-trans">
+          <p>Gorzałka dobra abo Wodka Hanyżowa
+Prostą dobrą gorzałkę ktora by nie śmierdziała przepisać wprzod na aquavitę raz abo dwa tey przepisowaney żeby nie przypadła[?] wziąć do garcow trzech, Hanyżu funty dwa abo połtora napoł przetłuczone abo całkiem wsypać y moczyć przedenydzi[?] potym Alębik
+piękne {y trabki} wyszorowawszy przepuścić dobędzie spolgarca[?], potym Cukru takowym że sposobem dobrze odszumowawszy[?] y osłodziwszy do gorzałki wlać.</p>
+        </div>
+        <div type="translation" xml:id="mle-010-trans" xml:lang="de" corresp="#mle-010-orig">
+          <p>Guter Branntwein oder Anisbranntwein</p>
+          <p>Einfachen guten Branntwein, der nicht stinkt, zuerst ein- oder zweimal zu Aquavit umbrennen. Von diesem umgebrannten, damit er nicht przypadła, auf drei Garniec nehmen: Anis, zwei oder anderthalb Pfund, halb zerstoßen oder ganz, hineinschütten und przedenydzi weichen lassen.</p>
+          <p>Danach den Alembik und die Röhren schön sauber scheuern und überbrennen. Man gewinnt etwa einen halben Garniec.</p>
+          <p>Danach den Zucker auf dieselbe Weise gut abschäumen, damit süßen und in den Branntwein gießen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Prostą dobrą gorzałkę">Einfacher guter Branntwein, ein- oder zweimal zu Aquavit umgebrannt (drei Garniec)</ingredient> - 3</item>
+            <item><ingredient orig="Hanyżu funty dwa abo połtora napoł przetłuczone abo całkiem">Anis, zwei oder anderthalb Pfund, halb zerstoßen oder ganz</ingredient> - 2</item>
+            <item>
+              <ingredient orig="Cukru">Zucker, gut abgeschäumt (Menge nicht genannt)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mle-010-trans" resp="#fyndling">Was ist das? Ein Anisbranntwein in mehreren Bränden. Der einfache Branntwein wird zuerst ein- oder zweimal umgebrannt, dann mit Anis angesetzt und noch einmal über den Alembik gebrannt; erst am Ende kommt der Zucker dazu. Die Nachbarn auf derselben Seite (Rosmarin-, Kalmus- und Zitwerbranntwein) nennen nur Würze und Zucker auf drei Garniec, dieser Eintrag den ganzen Ablauf.
+
+Umbrennen. przepisać na aquavitę heißt: den schon gebrannten Branntwein noch einmal brennen, bis er Aquavit ist. Der Text verlangt dafür einen Branntwein, „der nicht stinkt“, und vor dem letzten Brand einen sauber gescheuerten Helm samt Röhren. Beides zielt auf einen reinen Geschmack; einen Grund nennt der Text nicht.
+
+Der Anisansatz. Zwei oder anderthalb Pfund Anis kommen auf drei Garniec des umgebrannten Branntweins, halb zerstoßen oder ganz. Wie lange er weicht, steht in einem Wort, das sich nicht sicher deuten lässt (przedenydzi); ein Wort für Woche steckt nicht darin. Auch der Zusatz „damit er nicht przypadła“ bleibt dunkel. Heute würde man einen solchen Ansatz einige Tage stehen lassen; das ist eine moderne Annahme, keine Angabe des Textes.
+
+Die Ausbeute. Aus den drei Garniec gewinnt man „etwa einen halben Garniec“: z vor einer Maßangabe heißt bei Linde 1807 „ungefähr“. Nach heutigem Verständnis nimmt ein so knapper Brand nur den stärksten Teil des Destillats ab; der Text sagt nur die Menge.
+
+Der Zucker. „Auf dieselbe Weise“ verweist auf ein Verfahren, das hier nicht steht. Direkt davor regelt der Zitwerbranntwein derselben Seite, dass der Zucker erst nach dem Brennen dazukommt, über dem Feuer gelöst und abgekühlt in den Branntwein gegossen. Wie man Zucker abschäumt, zeigt der Rosolis des Konvoluts: langsam sieden lassen, nicht rühren, bis der Schaum oben steht, und durch ein Tuch seihen. Eine Zuckermenge und eine Wassermenge nennt dieser Eintrag nicht.
+
+Vorsicht. Alkoholdampf an offener Flamme ist brennbar; siedender Zucker verbrüht.
+
+Praxis. Ohne Brennen lässt sich das Rezept nicht nachstellen, denn das Anisaroma kommt durch den letzten Brand in den Branntwein. Eine heutige Annäherung, ausdrücklich modern: fertigen klaren Branntwein mit halb zerstoßenem Anis ansetzen, abseihen, Zucker in wenig Wasser lösen, abschäumen und abgekühlt zugießen. Das schmeckt nach Anis, ist aber ein Ansatz, kein Brand.</note>
+        <note type="gloss" target="#mle-010-orig" n="Gorzałka, wódka" resp="#fyndling">Die Überschrift nennt zwei Wörter für dasselbe: gorzałka und wódka, beide Branntwein. Prosta gorzałka ist der einfache, einmal gebrannte Branntwein, von dem der Eintrag ausgeht. Wódka meint im 17. Jahrhundert den gebrannten Branntwein, nicht den heutigen Wodka.</note>
+        <note type="gloss" target="#mle-010-orig" n="aquavitę" resp="#fyndling">Aquavit, bei Linde 1807 akwawita: nochmals getriebener, gewürzter Branntwein (wódka przepędzona, korzenna gorzałka), im Gegensatz zum einfachen Branntwein. Przepisać na aquavitę heißt also: zu Aquavit umbrennen. Nicht der heutige skandinavische Aquavit.</note>
+        <note type="gloss" target="#mle-010-orig" n="garcow" resp="#fyndling">Garniec (Mehrzahl garcy, garców), Hohlmaß Polen-Litauens. Nach Linde 1807 hat ein Garniec zwei Halbgarniec oder vier Quart. Der Wert schwankte nach Ort und Zeit; hier wird nicht umgerechnet.</note>
+        <note type="gloss" target="#mle-010-orig" n="Alębik / trabki" resp="#fyndling">Der Alembik ist der Helm, den man zum Brennen auf das Gefäß setzt; die tschechischen Wörterbücher von Jungmann und Kott beschreiben ihn mit langem Schnabel oder Rohr. Die trąbki (Röhrchen) sind diese Röhren am Helm. Der Schreiber hat sie über der Zeile nachgetragen: auch sie sollen sauber gescheuert sein.</note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="przedenydzi[?]" resp="#fyndling" subtype="philological" cert="unknown">Eine Zeitangabe zum Weichen des Anis, deren Länge sich nicht lesen lässt. Die Buchstaben sind deutlich (p-r-z-e-d-e-n-y-d, dann ein Buchstabe, der eher n als z ist, und i); ein Wort für Woche (tydzień, niedziela) steckt nicht darin. In der Übersetzung bleibt das Wort stehen.<list type="alternatives"><item>przez jeden dzień: einen Tag<note type="rationale">Passt zu prze… und …dzi, setzt aber eine starke Verkürzung voraus.</note></item><item>przez … dni: einige Tage<note type="rationale">Liest man den vorletzten Buchstaben als n, endet das Wort auf dni (Tage); die Zahl davor bleibt unklar.</note></item><item>eine Woche<note type="rationale">Verworfen: keine Buchstabenstütze.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="żeby nie przypadła[?]" resp="#fyndling" subtype="lexical" cert="unknown">Die Buchstaben sind lesbar, der Sinn nicht. Bezug ist der umgebrannte Branntwein (tey przepisowaney, weiblich wie przypadła). In der Übersetzung bleibt das Wort stehen.<list type="alternatives"><item>damit er nicht abfällt oder nachlässt<note type="rationale">Linde 1807 führt przypaść auch vom Sinken des Wasserstands; die Übertragung auf die Stärke des Branntweins ist eine Vermutung.</note></item><item>damit er nicht (übel) gerät<note type="rationale">Linde 1807: przypadać do czego = passen, taugen, do smaku = gefallen; mit der Verneinung ergäbe das keinen glatten Satz.</note></item><item>damit er nicht anbrennt<note type="rationale">Verworfen: das wäre przypalić, nicht przypaść.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="dobędzie spolgarca[?]" resp="#fyndling" subtype="lexical">s połgarca = etwa einen halben Garniec: Linde 1807 (Z, § b) gibt z vor Zahl- und Maßangaben als „ungefähr, etwa“ („z pólgodziny … etwa eine halbe Stunde“). Dobędzie = man gewinnt. Gemeint ist die Ausbeute des letzten Brandes aus den drei Garniec.<list type="alternatives"><item>je Garniec Ansatz ein halber Garniec<note type="rationale">Verworfen: kein Wort für „je“ im Text.</note></item><item>brennen, bis ein halber Garniec im Gefäß bleibt<note type="rationale">Verworfen: dobyć heißt gewinnen, herausholen, nicht übrig lassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="Cukru takowym że sposobem dobrze odszumowawszy[?]" resp="#fyndling" subtype="contextual">Den Zucker „auf dieselbe Weise“ gut abschäumen. Das Verfahren steht nicht im Eintrag; nächstliegend ist die Zuckerregel direkt davor beim Zitwerbranntwein (Zucker erst nach dem Brennen, über dem Feuer gelöst, abgekühlt zugegossen). Die Buchstaben von odszumowawszy sehen eher wie odsiamowawszy aus, das kein Wort ist; szumować (abschäumen) passt zum Zucker und zu den szumowiny (Schaum) im Rosolis.<list type="alternatives"><item>auf dieselbe Weise wie im Rosolis: sieden lassen, bis der Schaum oben steht, durchs Tuch seihen<note type="rationale">Dort ist das Abschäumen beschrieben, aber auf einem anderen Blatt des Konvoluts.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

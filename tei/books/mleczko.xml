@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mleczko-Konvolut: Met, Branntwein und Bier (Litauen) (Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v)</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <idno type="url">https://fyndling.de/rezepte/quellen/mleczko/</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v</title>
+          <date when="1630" cert="low">um 1630</date>
+          <idno type="URI">https://doi.org/10.15407/rksu.24.281</idno>
+          <note>mle-001/002: Text nach S. Bulatova 2019 (DOI 10.15407/rksu.24.281), CC BY-NC 4.0; mle-003 bis mle-014: eigene Lesung am Digitalisat der Vernadsky-Nationalbibliothek der Ukraine</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Mittelpolnisch des 17. Jahrhunderts mit ostslawischen/litauischen Regionalformen (Großfürstentum Litauen, um 1630); Maße ceber, uszatek, łut</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mle-001">
+        <head>Met aus Mir nach Herrn Skorulski</head>
+        <div type="original" xml:id="mle-001-orig" xml:lang="und" corresp="#mle-001-trans">
+          <p>Sycenia miodu w Mirze, przepis od p[ana] Skorulskiego
+Octobra, gdy miesiąc w pełnią wchodzi, weźmi 5 abo 6 cebrów chmielu, wsyp w kocieł i waru gorącego wlej, aż się zakryje, nakryjże deszczkami chędogimi, a pomału niechaj wre, jako będzie do połowice wywirało, tedy zaś przylać waru i tak warz dzień i noc cały tydzień, warem gorącym zalewając, ażby nie był gorzki. Potym odejmi onę chmielnicę do kubła, a drugiego waru dolewaj, a co przywre trochę, zaraz odlewaj do kubła tak wiele, ile będzie potrzeba do odbierania miodu. Namoczywszy miód, rano we troje, przez sito wosk [Anm. Bulatova 2019: „Miód“ verbessert zu „wosk“, wodurch der Sinn unklar wird.] cedząc do kotła miód i warz, coby na dobrą dłoń wywrzało. Tak odlej do drugiego kubła, a potym nazajutr[z] noś do dru[giej] izby i tak nieprawie chłodno zadać mu, aby kisł cały tydzień w cieple. Potym do piwnice wnoś, i tak w beczkach niechaj stoi aż do novembra. Potym w pełni miesiąca novembris odtocz albo śpuść, a osobno drożdże, wypłukawszy beczkę jakim piwem abo prostym miodem (co się przygodzi na ocet), wlejesz do beczki i zamaż beczki gliną, aż do marca. Marca zaś w pełni weźmi miodu przaśnego ile, tyle chcesz, uszatków 5 abo 6, ze wszytkiem i z woskiem włóż to do kotła, nalejże tego miodu abo trójniku uszatek pełen i barzo mało ognia, polan dwie abo trzy pod kocioł podłożywszy, niechaj wre pomału, aż się zarumieni miód i będzie gęsty tak, jakoby kropie ostawały na papierze. Niechajże tak stoi przez noc, aż skrzepnie, potym kowszem zszumuj on wosk zwierzchu, że sama patoka zostanie, jeśli będzie więcej niż pół kotła, tedy napoły rozdzielisz, a onego trójniku wlej, aż kocioł będzie pełen i warzyć, aż uwre na trzy palce, potym do beczki wlej, a we czytyry niedziele włożyć korzenia do beczki ad placitum i tak, in nomine D[omi]ni, będzie miód dobry.
+
+Korzenia kłaść: Cynamonu łutów 4, imbieru łut[ów] 4, cytwaru łut[ów] 3, tatarskiego ziela łut[ów] 2, fiołkowego korzenia łut[ów] 2, muszkatowych gałek łut[ów] 4, gozdźików łut[ów] 3, gałganu łut[ów] 3, kwiatu muszkatowego - łut 1. Kożdego worek osobny zawiesiwszy, wpuść do beczki.</p>
+        </div>
+        <div type="translation" xml:id="mle-001-trans" xml:lang="de" corresp="#mle-001-orig">
+          <p>Met-Bereitung in Mir, Rezept von Herrn Skorulski</p>
+          <p>Der Hopfensud: Im Oktober, wenn der Mond voll wird, nimm 5 oder 6 Ceber Hopfen, schütte ihn in einen Kessel und gieße siedendes Wasser darauf, bis er bedeckt ist. Decke ihn mit sauberen Brettchen zu und lass ihn langsam sieden. Ist er bis zur Hälfte eingekocht, gieße wieder siedendes Wasser nach, und so koche ihn Tag und Nacht eine ganze Woche, immer mit siedendem Wasser auffüllend, bis er nicht mehr bitter ist. Dann nimm diesen Hopfensud ab in einen Kübel und gieße weiteres siedendes Wasser nach, und was ein wenig aufgekocht hat, gieße gleich in den Kübel ab, so viel, wie zum Lösen des Honigs nötig ist.</p>
+          <p>Der Honig: Hast du den Honig eingeweicht, so seihe am Morgen zu dritt das Wachs durch ein Sieb ab, den Honig in den Kessel, und koche ihn, bis er um eine gute Handbreit eingekocht ist. Dann gieße ihn in einen zweiten Kübel, trage ihn am nächsten Tag in eine andere Stube und setze ihn dort an, wenn er noch nicht ganz kühl ist, damit er eine ganze Woche in der Wärme gärt. Danach trage ihn in den Keller und lass ihn dort in Fässern stehen bis zum November.</p>
+          <p>Abziehen im November: Zum Vollmond im November zapfe ihn ab oder lass ihn ab, die Hefe für sich. Spüle das Fass mit irgendeinem Bier oder einfachem Met aus (was zu Essig taugt), gieße ihn wieder ins Fass und verschmiere die Fässer mit Lehm, bis zum März.</p>
+          <p>Im März: Zum Vollmond im März nimm ungegorenen Honig, so viel du willst, 5 oder 6 Uszatek, und gib ihn mit allem, auch mit dem Wachs, in den Kessel. Gieße von diesem Met oder von Trójnik einen vollen Uszatek dazu, mach nur sehr wenig Feuer, zwei oder drei Scheite unter den Kessel gelegt, und lass es langsam sieden, bis sich der Honig rötet und so dick wird, dass Tropfen auf Papier stehen bleiben. Dann lass es so über Nacht stehen, bis es fest wird. Danach schöpfe mit einer Kelle das Wachs oben ab, so dass nur der Seim bleibt. Ist es mehr als ein halber Kessel, so teile es in zwei Hälften, gieße von jenem Trójnik zu, bis der Kessel voll ist, und koche, bis es um drei Finger eingekocht ist. Dann gieße es ins Fass, und nach vier Wochen lege nach Belieben Gewürze ins Fass, und so wird im Namen des Herrn (in nomine Domini) der Met gut.</p>
+          <p>Gewürze zum Hineinlegen: Zimt 4 Lot, Ingwer 4 Lot, Zitwer 3 Lot, Tatarenkraut 2 Lot, Veilchenwurzel 2 Lot, Muskatnüsse 4 Lot, Nelken 3 Lot, Galgant 3 Lot, Muskatblüte 1 Lot. Hänge jedes in einem eigenen Säckchen auf und lass es ins Fass hinab.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="5 abo 6 cebrów chmielu">Hopfen</ingredient> - 5</item>
+            <item>
+              <ingredient orig="waru gorącego">Wasser, siedend</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="miód" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item><ingredient orig="miodu przaśnego ile, tyle chcesz, uszatków 5 abo 6, ze wszytkiem i z woskiem">Honig, ungegoren, samt Wachs</ingredient> - 5</item>
+            <item><ingredient orig="tego miodu abo trójniku uszatek pełen">Met aus dem Fass oder Trójnik</ingredient> - 1</item>
+            <item>
+              <ingredient orig="onego trójniku wlej, aż kocioł będzie pełen">Trójnik zum Auffüllen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="jakim piwem abo prostym miodem">Bier oder einfacher Met (zum Spülen des Fasses)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gliną">Lehm (zum Verschmieren der Fässer)</ingredient>
+            </item>
+            <item><ingredient en="cinnamon" orig="Cynamonu łutów 4" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient> - 4</item>
+            <item><ingredient en="ginger" orig="imbieru łut[ów] 4" commodity="wikidata:Q15046077" source="#fyndling-ingredient-registry">Ingwer</ingredient> - 4</item>
+            <item><ingredient en="zedoary" orig="cytwaru łut[ów] 3" commodity="wikidata:Q206733" source="#fyndling-ingredient-name">Zitwer</ingredient> - 3</item>
+            <item><ingredient en="sweet flag" orig="tatarskiego ziela łut[ów] 2" commodity="wikidata:Q158008" source="#fyndling-ingredient-name">Kalmus (Tatarenkraut)</ingredient> - 2</item>
+            <item><ingredient orig="fiołkowego korzenia łut[ów] 2">Veilchenwurzel (Iriswurzel)</ingredient> - 2</item>
+            <item><ingredient en="nutmeg" orig="muszkatowych gałek łut[ów] 4" commodity="wikidata:Q83165" source="#fyndling-ingredient-name">Muskatnüsse</ingredient> - 4</item>
+            <item><ingredient en="clove" orig="gozdźików łut[ów] 3" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient> - 3</item>
+            <item><ingredient en="lesser galangal" orig="gałganu łut[ów] 3" commodity="wikidata:Q27653540" source="#fyndling-ingredient-registry">Galgant</ingredient> - 3</item>
+            <item><ingredient en="mace" orig="kwiatu muszkatowego - łut 1" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient> - 1</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-002">
+        <head>Alter Gewürzmet mit Hopfen</head>
+        <div type="original" xml:id="mle-002-orig" xml:lang="und" corresp="#mle-002-trans">
+          <p>Nastawować miód stary, właśnie stary
+Miodu przaśnego, samej patoki, bez wosku rozsycić go w miar trzy, nie więcej, i warzyć według zdania jako i insze miody godzinę abo półtory. Chmiel osobno od godziny do godziny warzyć i zadać to, zlawszy drożdżami niewielą, żeby się nie przelał zlawszy, na miejścu go postawiwszy. Włożyć weń korzenia rozmaite w workach, to jest imbieru funtów 4, goździków pół funta, cynamonu pół funta, kwiatu muszkatowego ćwierć, gałganu, cytwaru po niewielu, wszystko tłuczone ma być. Wsypać w beczkę i dziarstwy, i jaje kokosze wpuścić w beczkę, że tak będzie dobry za niedzielę jako i za rok.</p>
+        </div>
+        <div type="translation" xml:id="mle-002-trans" xml:lang="de" corresp="#mle-002-orig">
+          <p>Alten Met ansetzen, und zwar wirklich alten.</p>
+          <p>Ungegorenen Honig, nur reinen Seim ohne Wachs, mit drei Maß Wasser zu Met versetzen, nicht mehr, und nach Ermessen wie die anderen Mete eine Stunde oder anderthalb kochen.</p>
+          <p>Den Hopfen gesondert einen Tag und eine Nacht lang kochen. Dann beides zusammengießen und mit wenig Hefe anstellen, damit er nicht überläuft.</p>
+          <p>Ist er umgegossen und an seinen Platz gestellt, verschiedene Gewürze in Säckchen hineinlegen, und zwar 4 Pfund Ingwer, ein halbes Pfund Gewürznelken, ein halbes Pfund Zimt, ein Viertel Muskatblüte, Galgant und Zitwer je ein wenig. Alles soll gestoßen sein.</p>
+          <p>Auch Kies ins Fass schütten und ein Hühnerei ins Fass gleiten lassen, dann wird er nach einer Woche so gut sein wie nach einem Jahr.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="honey" orig="Miodu przaśnego, samej patoki, bez wosku" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig (ungegorener Seim, ohne Wachs)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="(implied)" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser (drei Maß auf den Seim)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Chmiel">Hopfen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="drożdżami niewielą">Hefe (wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="imbieru funtów 4" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwer, gestoßen (4 Pfund)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="goździków pół funta">Gewürznelken, gestoßen (ein halbes Pfund)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="cynamonu pół funta" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt, gestoßen (ein halbes Pfund)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kwiatu muszkatowego ćwierć">Muskatblüte (Macis), gestoßen (ein Viertel)</ingredient>
+            </item>
+            <item>
+              <ingredient en="lesser galangal" orig="gałganu" commodity="wikidata:Q27653540" source="#fyndling-ingredient-name">Galgant, gestoßen (ein wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="cytwaru po niewielu">Zitwerwurzel, gestoßen (ein wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dziarstwy">Kies</ingredient>
+            </item>
+            <item>
+              <ingredient orig="jaje kokosze">Hühnerei</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-003">
+        <head>Eiweiß-Zuckersirup für Wein</head>
+        <div type="original" xml:id="mle-003-orig" xml:lang="und" corresp="#mle-003-trans" subtype="excerpt">
+          <p>Syrop do wina.
+3 kwarty. wody fu[n]t cukru. y iaiowey[?] białek [</p>
+          <p><gap reason="editorial-excerpt"/>]bic y stłuc[?] &amp; warzyc az[?] bedzie gesto iak chiroz[?]. &amp; potym przecedzic prz[ez] chusteczky[?] y chowac to.
+Albo raczey[?] tak.
+Cukru funty 2. wody pułgarca. białek od iednego swieze iaia warzyc to pospołu dobrze wpanewce y przecedzic. przecedziwszy znowu przysmazyc. Hałunu palone[go] kęs wsypac y ostudzic. syrop bedzie bardzo dobry do wina.</p>
+        </div>
+        <div type="translation" xml:id="mle-003-trans" xml:lang="de" corresp="#mle-003-orig">
+          <p>Sirup zum Wein. 3 Quart Wasser, ein Pfund Zucker, und das Eiweiß […]schlagen und zerschlagen und kochen, bis es dick ist wie chiroz. Und danach durch ein Tüchlein seihen und aufbewahren.</p>
+          <p>Oder lieber so. 2 Pfund Zucker, einen halben Garniec Wasser, das Eiweiß von einem frischen Ei: das zusammen in einer kleinen Pfanne gut kochen und seihen. Nach dem Seihen noch einmal etwas einkochen. Ein Stück gebrannten Alaun hineingeben und abkühlen lassen. Der Sirup wird sehr gut zum Wein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="water" orig="3 kwarty. wody" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 3</item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="fu[n]t cukru" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="iaiowey[?] białek" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="Cukru funty 2." commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 2</item>
+            <item>
+              <ingredient en="water" orig="wody pułgarca" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="białek od iednego swieze iaia" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Hałunu palone[go] kęs">Alaun, gebrannt</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-004">
+        <head>Rosolis, feiner Gewürzbranntwein mit Anis</head>
+        <div type="original" xml:id="mle-004-orig" xml:lang="und" corresp="#mle-004-trans" subtype="excerpt">
+          <p>Rosam solis przednią tak robią[?].
+Prostey Gorzałki garcy 4 przepuscic na Aquavitę[?] włożywszy z prostą gorzałką Hanyżu funty 2. Lukreciy pułfunta. A potym Aquavitę[?] włożyc Kardomony łoty 2. napoł przetłukszy ktore tylko ziarna bez Łupin[?]. także Kubeby łoty 2. galganu łoty 2. gozdzikow łoty 2. Cynamonu łoty 2. pomaranczowy skurek 2 łoty. niech tak moknie[?] w konwi zakrytey przez trzy dni potym przez chustę przecedzic potym wziąc 2 funty cukru albo 2 kwarty lipcu y klarefikowac takim sposobem cukier abo lipiec dodziwi[?] funtu cukru abo do dwu kwart lipcu wody czystey wlac pułgarca w panewke[?] zeby lekko wrzało a cukru ani lipcu nie mieszac[?] ale tak samo {niech[?]} wrze pomału do[?] szumowiny na wierzch poyda[?] potym kiedy ochłodnie[?] przez chustę przecedzic zeby szumowiny zostały w chustce[?] y tak kiedy ostygnie wlac do gorzałki y gorzałka gotowa bedzie.
+Jesli zechce[?] czerwoney gorzałki wziąc Sandału {czerwoney łoty [</p>
+          <p><gap reason="editorial-excerpt"/>] cztyry[?]} y włożyc do gorzałki a potym przecedzic a ale Sandału y korzenie[?] wziąwszy zgodzi sie w drugi raz znowu do gorzałki abo bedzie sama naprzedniejsza rosasolis [</p>
+          <p><gap reason="editorial-excerpt"/>] czarnko[?] rozstardzy[?] [</p>
+          <p><gap reason="editorial-excerpt"/>].</p>
+        </div>
+        <div type="translation" xml:id="mle-004-trans" xml:lang="de" corresp="#mle-004-orig">
+          <p>Rosolis, vorzüglich, macht man so. Vier Garniec einfachen Branntwein zu Aquavit überbrennen, nachdem man zum einfachen Branntwein zwei Pfund Anis und ein halbes Pfund Süßholz gelegt hat. Danach in den Aquavit legen: Kardamom, 2 Lot, halb zerstoßen, und zwar nur die Körner ohne die Hülsen; ebenso Kubeben, 2 Lot; Galgant, 2 Lot; Gewürznelken, 2 Lot; Zimt, 2 Lot; Pomeranzenschale, 2 Lot. Das soll so drei Tage in einer zugedeckten Kanne weichen, danach durch ein Tuch seihen.</p>
+          <p>Danach 2 Pfund Zucker oder 2 Quart Lindenhonig nehmen und auf diese Weise klären: Zum Zucker oder zum Lindenhonig, zu den Pfund Zucker oder zu zwei Quart Lindenhonig, einen halben Garniec reines Wasser in eine Pfanne gießen, so dass es leicht siedet. Den Zucker oder den Lindenhonig nicht rühren, sondern es so von selbst langsam sieden lassen, bis der Schaum nach oben kommt. Danach, wenn es abkühlt, durch ein Tuch seihen, damit der Schaum im Tuch bleibt. Und wenn es so erkaltet ist, in den Branntwein gießen, und der Branntwein ist fertig.</p>
+          <p>Roter Branntwein. Will man roten Branntwein, rotes Sandelholz nehmen, Lot […] vier, in den Branntwein legen und danach seihen. Das Sandelholz und die Gewürze aber taugen, wenn man sie herausgenommen hat, ein zweites Mal wieder für Branntwein, oder es wird der allervorzüglichste Rosolis […] czarnko rozstardzy […].</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Prostey Gorzałki garcy 4">Einfacher Branntwein</ingredient> - 4</item>
+            <item><ingredient en="anise" orig="Hanyżu funty 2" commodity="wikidata:Q33873455" source="#fyndling-ingredient-name">Anis</ingredient> - 2</item>
+            <item><ingredient orig="Lukreciy pułfunta">Süßholz</ingredient> - 0.5</item>
+            <item><ingredient orig="Kardomony łoty 2">Kardamom, nur die Körner ohne Hülsen, halb zerstoßen</ingredient> - 2</item>
+            <item><ingredient en="cubeb" orig="Kubeby łoty 2" commodity="wikidata:Q161927" source="#fyndling-ingredient-name">Kubeben</ingredient> - 2</item>
+            <item><ingredient en="lesser galangal" orig="galganu łoty 2" commodity="wikidata:Q27653540" source="#fyndling-ingredient-registry">Galgant</ingredient> - 2</item>
+            <item><ingredient en="clove" orig="gozdzikow łoty 2" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient> - 2</item>
+            <item><ingredient en="cinnamon" orig="Cynamonu łoty 2" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient> - 2</item>
+            <item><ingredient orig="pomaranczowy skurek 2 łoty">Pomeranzenschale</ingredient> - 2</item>
+            <item><ingredient en="unrefined cane sugar" orig="2 funty cukru" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 2</item>
+            <item><ingredient orig="2 kwarty lipcu">Lindenhonig (lipiec), statt des Zuckers</ingredient> - 2</item>
+            <item><ingredient orig="wody czystey wlac pułgarca">Reines Wasser</ingredient> - 0.5</item>
+            <item>
+              <ingredient orig="Sandału {czerwoney łoty […] cztyry[?]}">Rotes Sandelholz, nur für die rote Fassung</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-005">
+        <head>Bestes Lebenswasser mit Gewürzen, Moschus und Ambra</head>
+        <div type="original" xml:id="mle-005-orig" xml:lang="und" corresp="#mle-005-trans">
+          <p>Aqua uitæ Optima.
+℞ Cinnamomi electi ʒ.x. Ligni Aloes ʒ.V Cardamomi, Cubebarum Caryophillorum ana ʒ.iij.ß. Galangæ ʒ.iij. Santali citrini ʒ.ij.ß. Ros[arum] rub[rarum] sicc[arum] ʒ.iij.ß Nucis moschatæ, Macis ana. ʒ.ß. Moschi ʒ.j. Ambræ. G[ran]. xl. Aquæ uitæ Circulatæ ℔. j. Puluerizanda Puluerizentur, et misceantur in uitro optimè obturato, agitandoque quotidie bis uel ter. Et cùm per mensem sic steterint, coletur. et seruetur ad usum. Amissam memoriam restituit, sensus, cor, stomachum, et cerebrum corroborat: mæstitiam fugat: præseruat a peste: at apoplexia: omnibusdeniq[ue] morbis frigis subuenit[?]. Lucas Chinus.</p>
+        </div>
+        <div type="translation" xml:id="mle-005-trans" xml:lang="de" corresp="#mle-005-orig">
+          <p>Das beste Aqua vitae. Nimm 10 Drachmen ausgesuchten Zimt, 5 Drachmen Aloeholz, je 3½ Drachmen Kardamom, Kubeben und Gewürznelken, 3 Drachmen Galgant, 2½ Drachmen gelbes Sandelholz, 3½ Drachmen getrocknete rote Rosen, je ½ Drachme Muskatnuss und Muskatblüte, 1 Drachme Moschus, 40 Gran Ambra und 1 Pfund zirkuliertes Aqua vitae.</p>
+          <p>Pulvere, was zu pulvern ist, mische alles in einem aufs beste verschlossenen Glas und schüttle es täglich zwei- oder dreimal. Wenn es so einen Monat gestanden hat, seihe es ab und bewahre es zum Gebrauch auf.</p>
+          <p>Es gibt das verlorene Gedächtnis wieder und stärkt die Sinne, das Herz, den Magen und das Gehirn. Es vertreibt die Traurigkeit, bewahrt vor der Pest und vor dem Schlagfluss und kommt schließlich allen kalten Krankheiten zu Hilfe. Lucas Chinus.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Cinnamomi electi ʒ.x.">Drachmen Zimt, ausgesucht</ingredient> - 10</item>
+            <item><ingredient orig="Ligni Aloes ʒ.V">Drachmen Aloeholz (Paradiesholz)</ingredient> - 5</item>
+            <item><ingredient en="cardamom" orig="Cardamomi" commodity="wikidata:Q14625808" source="#corema-ingredient-index">Drachmen Kardamom</ingredient> - 3.5</item>
+            <item><ingredient orig="Cubebarum">Drachmen Kubeben</ingredient> - 3.5</item>
+            <item><ingredient orig="Caryophillorum ana ʒ.iij.ß.">Drachmen Gewürznelken</ingredient> - 3.5</item>
+            <item><ingredient orig="Galangæ ʒ.iij.">Drachmen Galgant</ingredient> - 3</item>
+            <item><ingredient orig="Santali citrini ʒ.ij.ß.">Drachmen gelbes Sandelholz</ingredient> - 2.5</item>
+            <item><ingredient orig="Ros[arum] rub[rarum] sicc[arum] ʒ.iij.ß">Drachmen rote Rosen, getrocknet</ingredient> - 3.5</item>
+            <item><ingredient orig="Nucis moschatæ">Drachme Muskatnuss</ingredient> - 0.5</item>
+            <item><ingredient orig="Macis ana. ʒ.ß.">Drachme Muskatblüte</ingredient> - 0.5</item>
+            <item><ingredient orig="Moschi ʒ.j.">Drachme Moschus</ingredient> - 1</item>
+            <item><ingredient orig="Ambræ. G[ran]. xl.">Gran Ambra (wohl graue Ambra)</ingredient> - 40</item>
+            <item><ingredient orig="Aquæ uitæ Circulatæ ℔. j.">Pfund Branntwein (Aqua vitae), zirkuliert</ingredient> - 1</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-006">
+        <head>Bestes Lebenswasser (Aqua vitae) mit Gewürzen und Salbei, destilliert</head>
+        <div type="original" xml:id="mle-006-orig" xml:lang="und" corresp="#mle-006-trans">
+          <p>Aqua uitæ Optima.
+℞ Cubebarum, Cinnamomi, Galangæ, Nucis moschatæ, Caryophillorum, Zingiberis ana partes æquales. Saluiæ, seu Athanasiæ, aut ambrosiæ, quadruplum, Aquæ Ardentis optimæ, Circulatæ, quantu[m] est[?] pondus omnium. Misce, et distila. Huius aquæ usu M. Gallum Caroli Imp[eratoris]: medicum annos centum uiginti quatuor uixisse refert. Gesnerus.</p>
+        </div>
+        <div type="translation" xml:id="mle-006-trans" xml:lang="de" corresp="#mle-006-orig">
+          <p>Das beste Lebenswasser.</p>
+          <p>Nimm Kubeben, Zimt, Galgant, Muskatnuss, Gewürznelken und Ingwer, von jedem gleich viel. Von Salbei, oder Rainfarn, oder Ambrosienkraut das Vierfache. Vom besten zirkulierten Branntwein so viel, wie alles zusammen wiegt. Mische es und destilliere.</p>
+          <p>Durch den Gebrauch dieses Wassers habe M. Gallus, der Arzt Kaiser Karls, hundertvierundzwanzig Jahre gelebt, berichtet Gesner.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="cubeb" orig="Cubebarum" commodity="wikidata:Q161927" source="#fyndling-ingredient-name">Kubeben</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="Cinnamomi" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient>
+            </item>
+            <item>
+              <ingredient en="lesser galangal" orig="Galangæ" commodity="wikidata:Q27653540" source="#fyndling-ingredient-registry">Galgant</ingredient>
+            </item>
+            <item>
+              <ingredient en="nutmeg" orig="Nucis moschatæ" commodity="wikidata:Q83165" source="#fyndling-ingredient-registry">Muskatnuss</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="Caryophillorum" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="Zingiberis" commodity="wikidata:Q15046077" source="#fyndling-ingredient-registry">Ingwer</ingredient>
+            </item>
+            <item>
+              <ingredient en="common sage" orig="Saluiæ, seu Athanasiæ, aut ambrosiæ, quadruplum" commodity="wikidata:Q1111359" source="#fyndling-ingredient-registry">Salbei</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Aquæ Ardentis optimæ, Circulatæ">Branntwein (aqua ardens), zirkuliert</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-007">
+        <head>Rosmarinbranntwein mit Lavendel, Anis und Engelwurz</head>
+        <div type="original" xml:id="mle-007-orig" xml:lang="und" corresp="#mle-007-trans">
+          <p>Wodka Rozmarynową iako gotowac
+Lawendy połćwierci Wziąć do trzech garcy gorzałki prostey rozmarynu. Ćwierć funta Hanyżu połfunta dzięgielu połćwierci funta Cukru do osłodzenia funt Kanairu[?] tey gorzałki</p>
+        </div>
+        <div type="translation" xml:id="mle-007-trans" xml:lang="de" corresp="#mle-007-orig">
+          <p>Rosmarinbranntwein, wie man ihn bereitet</p>
+          <p>Lavendel ein halbes Viertel. Auf drei Garniec einfachen Branntwein nehmen: Rosmarin ein Viertelpfund, Anis ein halbes Pfund, Engelwurz ein halbes Viertelpfund. Zucker zum Süßen dieses Branntweins: ein Pfund Kanarienzucker.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="trzech garcy gorzałki prostey">Einfacher Branntwein</ingredient> - 3</item>
+            <item><ingredient en="rosemary" orig="rozmarynu. Ćwierć funta" commodity="wikidata:Q122679" source="#fyndling-ingredient-name">Rosmarin</ingredient> - 0.25</item>
+            <item>
+              <ingredient orig="Lawendy połćwierci">Lavendel</ingredient>
+            </item>
+            <item><ingredient en="anise" orig="Hanyżu połfunta" commodity="wikidata:Q33873455" source="#fyndling-ingredient-name">Anis</ingredient> - 0.5</item>
+            <item><ingredient orig="dzięgielu połćwierci funta">Engelwurz</ingredient> - 0.125</item>
+            <item><ingredient orig="Cukru do osłodzenia funt Kanairu[?]">Kanarienzucker</ingredient> - 1</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-008">
+        <head>Kalmusbranntwein mit Anis, Nelken und Zucker</head>
+        <div type="original" xml:id="mle-008-orig" xml:lang="und" corresp="#mle-008-trans">
+          <p>Wodkę Aierową iako gotowac.
+Wziąć do trzech garcy gorzałki prostey Aieru Ćwierć funta Hanyżu połćwierci funta gozdikow połłota[?] do osłodzenia tey gorzałki Cukru funt kanariu[?].</p>
+        </div>
+        <div type="translation" xml:id="mle-008-trans" xml:lang="de" corresp="#mle-008-orig">
+          <p>Wie man Kalmusbranntwein bereitet.</p>
+          <p>Auf drei Garniec einfachen Branntwein nehmen: Kalmus ein Viertelpfund, Anis ein halbes Viertelpfund, Nelken ein halbes Lot. Zum Süßen dieses Branntweins ein Pfund Zucker, Kanarienzucker.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="trzech garcy gorzałki prostey">Einfacher Branntwein</ingredient>
+            </item>
+            <item>
+              <ingredient en="sweet flag" orig="Aieru Ćwierć funta" commodity="wikidata:Q158008" source="#fyndling-ingredient-name">Kalmus (Wurzel)</ingredient>
+            </item>
+            <item>
+              <ingredient en="anise" orig="Hanyżu połćwierci funta" commodity="wikidata:Q33873455" source="#fyndling-ingredient-name">Anis</ingredient>
+            </item>
+            <item>
+              <ingredient en="clove" orig="gozdikow połłota[?]" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Cukru funt kanariu[?]">Kanarienzucker</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-009">
+        <head>Zitwerbranntwein mit Rosmarin, Anis und Zucker</head>
+        <div type="original" xml:id="mle-009-orig" xml:lang="und" corresp="#mle-009-trans" subtype="excerpt">
+          <p>Wodkę Cytwarową iako gotowac
+Wziąć gorzałki prostey garcy trzy Cytwaru ćwierć rozmarynu połćwierci Hanyżu poł funta Cukru do osłodzenia tey gorzałki połtora funta kanairi[?].
+Toś iednak pamiętać że Cukru do gorzałki kłaść nie potrzeba natenczas kiedy się insze potrzeby kłaść będą, ale kiedy iuż aquavita przedzie[?] się odstawi przepisowana[?]: Ostatek[?] iuż słabey [</p>
+          <p><gap reason="editorial-excerpt"/>] Wodka gdy sie napędzi[?] to Cukier wonie[?] włożywszy[?] nad ogniem rospuścić y [</p>
+          <p><gap reason="editorial-excerpt"/>] wlac[?] w gorzałkę ochłodziwszy.</p>
+        </div>
+        <div type="translation" xml:id="mle-009-trans" xml:lang="de" corresp="#mle-009-orig">
+          <p>Wie man Zitwerbranntwein bereitet</p>
+          <p>Drei Garniec einfachen Branntwein nehmen, Zitwer ein Viertel, Rosmarin ein halbes Viertel, Anis ein halbes Pfund; Zucker zum Süßen dieses Branntweins anderthalb Pfund Kanarienzucker.</p>
+          <p>Dies jedoch bedenken: Den Zucker braucht man nicht in den Branntwein zu geben zu der Zeit, wenn die übrigen Zutaten hineinkommen, sondern wenn der Aquavit schon übergegangen ist und umgebrannt beiseitegestellt wird. Der Rest ist schon schwächer […]. Wenn der Branntwein abgezogen ist, dann den Zucker hineingeben, über dem Feuer auflösen und […] abgekühlt in den Branntwein gießen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="gorzałki prostey garcy trzy">Einfacher Branntwein</ingredient> - 3</item>
+            <item>
+              <ingredient en="zedoary" orig="Cytwaru ćwierć" commodity="wikidata:Q206733" source="#fyndling-ingredient-name">Zitwer (Zitwerwurzel)</ingredient>
+            </item>
+            <item>
+              <ingredient en="rosemary" orig="rozmarynu połćwierci" commodity="wikidata:Q122679" source="#fyndling-ingredient-name">Rosmarin</ingredient>
+            </item>
+            <item><ingredient en="anise" orig="Hanyżu poł funta" commodity="wikidata:Q33873455" source="#fyndling-ingredient-name">Anis</ingredient> - 0.5</item>
+            <item><ingredient orig="Cukru do osłodzenia tey gorzałki połtora funta kanairi[?]">Kanarienzucker</ingredient> - 1.5</item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-010">
+        <head>Guter Branntwein oder Anisbranntwein</head>
+        <div type="original" xml:id="mle-010-orig" xml:lang="und" corresp="#mle-010-trans">
+          <p>Gorzałka dobra abo Wodka Hanyżowa
+Prostą dobrą gorzałkę ktora by nie śmierdziała przepisać wprzod na aquavitę raz abo dwa tey przepisowaney żeby nie przypadła[?] wziąć do garcow trzech, Hanyżu funty dwa abo połtora napoł przetłuczone abo całkiem wsypać y moczyć przedenydzi[?] potym Alębik
+piękne {y trabki} wyszorowawszy przepuścić dobędzie spolgarca[?], potym Cukru takowym że sposobem dobrze odszumowawszy[?] y osłodziwszy do gorzałki wlać.</p>
+        </div>
+        <div type="translation" xml:id="mle-010-trans" xml:lang="de" corresp="#mle-010-orig">
+          <p>Guter Branntwein oder Anisbranntwein</p>
+          <p>Einfachen guten Branntwein, der nicht stinkt, zuerst ein- oder zweimal zu Aquavit umbrennen. Von diesem umgebrannten, damit er nicht przypadła, auf drei Garniec nehmen: Anis, zwei oder anderthalb Pfund, halb zerstoßen oder ganz, hineinschütten und przedenydzi weichen lassen.</p>
+          <p>Danach den Alembik und die Röhren schön sauber scheuern und überbrennen. Man gewinnt etwa einen halben Garniec.</p>
+          <p>Danach den Zucker auf dieselbe Weise gut abschäumen, damit süßen und in den Branntwein gießen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="Prostą dobrą gorzałkę">Einfacher guter Branntwein, ein- oder zweimal zu Aquavit umgebrannt (drei Garniec)</ingredient> - 3</item>
+            <item><ingredient orig="Hanyżu funty dwa abo połtora napoł przetłuczone abo całkiem">Anis, zwei oder anderthalb Pfund, halb zerstoßen oder ganz</ingredient> - 2</item>
+            <item>
+              <ingredient orig="Cukru">Zucker, gut abgeschäumt (Menge nicht genannt)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-011">
+        <head>Livländisches Bier, mit glühenden Steinen gemaischt</head>
+        <div type="original" xml:id="mle-011-orig" xml:lang="und" corresp="#mle-011-trans" subtype="excerpt">
+          <p>Piwo robic bir Inflantski takowym sposobem Vczył mie Pan Zolderbecht y Poseł Swedzki
+Jęczmienia dobrego y czystego wziąć wedlug ryie abo lazni abo osieci. kiedy iako naywięcey weźmie tym lepiey, owo kiedy dwie beczke weźmie jęczmienia wczas będzie. Y namoczyć wkadzi wsypawszy zboże a wody nalać, abo czyste jęczmienia zwara[?] wsko[?] wrzące y tak namokać aż do trzeciego dnia. Wybrawszy to zwody y wodę wysączywszy kiedy z kadzi, to do gromady złożyć y nakryć żeby się kęs zagrzał. iesli chłodno kryć, iesli ciepło nie potrzeba nakrywać y potym do roszczenia złożyć. A kiedy zworek[?] na kiiach wysączywszy wodę zaraz iako słód[?] do roszczenia[?] kładę tak grubo żeby palec mały położywszy na ziemi równo był, zwielkim palcem słód usłany.
+Kiedy wyrośnie dobrze, złożyć znowu do gromady y nakryć dobrze żeby się dobrze zagrzało żeby ręka[?] ledwo wytrwała, nad szesc abo osm godzin nie trzeba go trzymać, owo że by się dobrze zagrzał. Potym go znowu rozłożyć żeby on chłod[?], z go[dzi]nę[?] go tylko tak trzymać. Potym na gotowe usłanie deski wryi abo wlazni rozesłać do suszenia y zapalić wpierwy[?] olchowymi albo dębowymi drwami lepiey iednak olchowemi, drwami, żeby tak wdymie[?] schło, a potrzeba żeby było gorąco barzo. iesliby nie dobrze opatrzona[?] była ryia, wypalić ią rano dobrze żeby było gorąco. a ku wieczorowi wymieszawszy[?] słód zaraz znowu zapalić[?] y znowu tak że przez trzy dni choć y mniey uczynić aż wyschnie prawie dobrze, że się ziarno kruszy[?]. Y będzie tak wysuszywszy[?]. Zemleć grubo krapko[?] bo kiedy miałko to złe, ono tylko ukęs zetrzeć trzeba. Potym tę[?] mąkę włożyć wkadzi y nalać na nie wrzącą wodę nie barzo wiele wo-
+
+wody żeby się tylko zatarło[?], y tak wymieszać powoli dobrze, wymieszawszy nakryć dobrze żeby para nie wychodziła ya[?] żeby usłodział[?]. potrzymać tak godzin dwie albo trzy, potym powoli nalewać wrzącey wody aż do potrzeby żeby nie nazbyt rzadko było, tak potrzymać społ[?] godziny, abo pokis się kamienie rozpalą, potym kamienie gorące rozpalone kłaść do kadzi tak długo aż pocznie wrzeć dobrze, skoro wrzeć dobrze pocznie nakryć dobrze kadź żeby nakryto wrzało poki przestanie. Tym czasem skoro na kryniczy[?] chmiel zatarszy[?] wodę ciepłą odlewać z tey kadzi gdzie kamienie biorąc[?] y warzyć tak długo poki się znak ukaże, to iest słomkę na trzy granie uczyniwszy paszczać[?] wchmiel a kiedy się iako szkło między słomką ukaże y stoi długo dosyć będzie. To iednak wiedzieć potrzeba, nie[?] wbeczkę słodu trzy funty chmiela, a le do tak wiele beczek piwa iak wiele będziesz chciał mieć, zachować potrzeba po trzy funty. Potym kiedy wyciecze[?] wkoryt[</p>
+          <p><gap reason="editorial-excerpt"/>][?] pocznie naspodzie osychać[?], wziąć wody dobrze wrzącey żeby wtey wodzie chrost[?] Jałowcowy ziagodami ze wszystkiem[?] wywrzał dobrze, y pokrapiać[?] po onych[?] słodzinach tak długo aż weźmie[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] dosyć będzie[?], ale[?] lepsze piwo kiedy tak wiele będzie piwa iako wiele słodu, trzy kwarty[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] korzyst[</p>
+          <p><gap reason="editorial-excerpt"/>] [</p>
+          <p><gap reason="editorial-excerpt"/>].
+A dla Czelady zosobna na tey słodziny[?] w[</p>
+          <p><gap reason="editorial-excerpt"/>] gorącey dobrze wody poki zasmaku[?] naleway[?] a wybrawszy zkoryta wkadzi osobney zadać y ukwasić iak pierwsze. Wybrawszy to piwo zkoryta do kadzi[?] wlać[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] ⟨</p>
+          <p><gap reason="editorial-excerpt"/>⟩ gorących[?] wedlug potrzeby ciepłey dobrze. przez[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] let[</p>
+          <p><gap reason="editorial-excerpt"/>] nad drożdżami świeżemi zadać[?], A nalepsze drożdże kiedy z piwa młodego zwierzchu drożdże [</p>
+          <p><gap reason="editorial-excerpt"/>] kwasić bo poki będzie dobrze piana[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] się burzy[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] to kiedy opadnie, do beczki wlać. [</p>
+          <p><gap reason="editorial-excerpt"/>].
+
+Y tak zaniechać poki przestanie burzyć się potym ⟨potym[?]⟩ zaszpuntowawszy obmazać gliną abo popiołem dla wytchnienia[?] może to pić dnia czwartego, ale to nalepsze które stoi pełroka y rok bo się chmiel urze[?] że nie będzie gorzkie.
+Dla Zapachu y Zdrowia do tego piwa włożyć.
+Splotna woreczki poczyniwszy, y przetłukszy grubo kardymona Łot: ieden, Gozdzików pół łota, Muszkatowey gałki iedną abo dwie: włożyć może: do Beczki wpuścić.</p>
+        </div>
+        <div type="translation" xml:id="mle-011-trans" xml:lang="de" corresp="#mle-011-orig">
+          <p>Bier machen, livländisches Bier, auf folgende Weise. Gelehrt haben es mich Herr Zolderbecht und ein schwedischer Gesandter.</p>
+          <p>Gerste weichen: Gute und saubere Gerste nehmen, nach der Größe der Riege, der Badestube oder der Hopfendarre. Je mehr man nimmt, desto besser; nimmt man zwei Fass Gerste, ist es gerade recht. Und einweichen: das Korn in einen Bottich schütten und Wasser darübergießen, oder die saubere Gerste zwara wsko siedend; und so bis zum dritten Tag weichen lassen.</p>
+          <p>Keimen: Wenn man sie aus dem Wasser genommen und das Wasser aus dem Bottich hat ablaufen lassen, zu einem Haufen zusammenlegen und zudecken, damit sie sich ein wenig erwärmt. Ist es kühl, zudecken; ist es warm, braucht man nicht zuzudecken. Und danach zum Keimen auslegen. Und wenn ich zworek na kiiach das Wasser habe ablaufen lassen, lege ich es gleich als Malz zum Keimen aus, so dick, dass ein kleiner Finger, auf den Boden gelegt, gleich hoch ist; mit dem Daumen ist das Malz ausgebreitet.</p>
+          <p>Wenn es gut gekeimt ist, wieder zu einem Haufen zusammenlegen und gut zudecken, damit es sich gut erwärmt, so dass die Hand es kaum aushält. Länger als sechs oder acht Stunden braucht man es nicht so zu halten, nur so, dass es sich gut erwärmt. Danach wieder auseinanderlegen, damit es abkühlt, und es nur etwa eine Stunde so halten.</p>
+          <p>Darren: Danach auf das vorbereitete Lager aus Brettern in der Riege oder in der Badestube zum Trocknen ausbreiten und zuerst anheizen, mit Erlen- oder Eichenscheiten, besser jedoch mit Erlenscheiten, damit es so im Rauch trocknet; und es muss sehr heiß sein. Wäre die Riege nicht gut hergerichtet, sie am Morgen gut ausheizen, damit es heiß ist. Und gegen Abend das Malz durchmischen, sofort wieder anheizen und wieder so, drei Tage lang, auch weniger, bis es recht gut trocken ist, so dass das Korn bröckelt. Und so wird es getrocknet sein.</p>
+          <p>Maischen: Grob mahlen, krapko, denn fein ist es schlecht; man muss es nur ein wenig zerreiben. Danach dieses Mehl in einen Bottich geben und siedendes Wasser darübergießen, nicht sehr viel Wasser, nur so viel, dass es sich einmaischt, und so langsam gut durchmischen. Nach dem Mischen gut zudecken, damit der Dampf nicht entweicht und damit es süß wird. So zwei oder drei Stunden stehen lassen. Danach langsam siedendes Wasser nachgießen, so viel nötig ist, damit es nicht zu dünn wird; so etwa eine halbe Stunde stehen lassen, oder bis die Steine glühen. Danach die heißen, glühenden Steine in den Bottich legen, so lange, bis es gut zu sieden beginnt. Sobald es gut zu sieden beginnt, den Bottich gut zudecken, damit es zugedeckt siedet, bis es aufhört.</p>
+          <p>Hopfen: Inzwischen, sobald man den Hopfen na kryniczy angerieben hat, warmes Wasser aus dem Bottich, in dem die Steine sind, abgießen und nehmen und so lange kochen, bis sich das Zeichen zeigt: nämlich einen Strohhalm dreikantig zurichten und in den Hopfen tauchen; wenn sich zwischen dem Halm etwas wie Glas zeigt und lange stehen bleibt, ist es genug. Das muss man jedoch wissen: nicht auf ein Fass Malz drei Pfund Hopfen, sondern für so viele Fässer Bier, wie man haben will, muss man je drei Pfund einhalten.</p>
+          <p>Nachguss mit Wacholder: Danach, wenn es in den Trog […] ausgelaufen ist und unten zu trocknen beginnt, gut siedendes Wasser nehmen, in dem Wacholderreisig mit den Beeren, mit allem, gut ausgekocht wurde, und damit die Treber so lange besprengen, bis es […] nimmt, dann ist es genug. Aber das Bier ist besser, wenn es so viel Bier gibt wie Malz, drei Quart […] korzyst[…] […].</p>
+          <p>Für das Gesinde: Und für das Gesinde gesondert auf diese Treber […] gut heißes Wasser gießen, solange es nach etwas schmeckt; und wenn man es aus dem Trog genommen hat, in einem eigenen Bottich anstellen und säuern wie das erste.</p>
+          <p>Anstellen: Dieses Bier aus dem Trog nehmen und in den Bottich gießen […] heißen, nach Bedarf gut warm. Durch […] let[…] über frischer Hefe anstellen. Und die beste Hefe ist, wenn man vom jungen Bier oben die Hefe […] säuern; denn solange der Schaum gut […] braust […], und wenn er zusammenfällt, ins Fass gießen. […]</p>
+          <p>Lagern: Und so lassen, bis es aufhört zu brausen; danach verspunden und mit Lehm oder Asche verschmieren, wegen des Ausdünstens. Man kann es am vierten Tag trinken, aber am besten ist das, welches ein halbes Jahr und ein Jahr steht, denn der Hopfen wird gar, so dass es nicht bitter ist.</p>
+          <p>Für Duft und Gesundheit in dieses Bier geben: Säckchen aus Leinwand machen und grob zerstoßen: Kardamom ein Lot, Gewürznelken ein halbes Lot, Muskatnuss eine oder zwei. Hineingeben kann man sie: ins Fass hinablassen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Jęczmienia dobrego y czystego">Gerste, gut und sauber</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wody" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="olchowymi albo dębowymi drwami lepiey iednak olchowemi">Erlenholz zum Darren (oder Eichenholz)</ingredient>
+            </item>
+            <item><ingredient orig="trzy funty chmiela">Hopfen, drei Pfund je Fass Bier</ingredient> - 3</item>
+            <item>
+              <ingredient orig="Jałowcowy ziagodami">Wacholderreisig mit Beeren (für den Nachguss)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="drożdżami świeżemi">Hefe, frisch (am besten oben vom jungen Bier)</ingredient>
+            </item>
+            <item><ingredient orig="kardymona Łot: ieden">Kardamom, grob zerstoßen, ein Lot</ingredient> - 1</item>
+            <item><ingredient orig="Gozdzików pół łota">Gewürznelken, ein halbes Lot</ingredient> - 0.5</item>
+            <item>
+              <ingredient orig="Muszkatowey gałki iedną abo dwie">Muskatnuss, eine oder zwei</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-012">
+        <head>Schwarzbier nach dem Holländer in Szydłowicze, dazu Weißbier</head>
+        <div type="original" xml:id="mle-012-orig" xml:lang="und" corresp="#mle-012-trans" subtype="excerpt">
+          <p>Informatia Warzenia Piwa czarnego od Olędra który mieszka w Szydłowiczach. Maiętności Je[go] M[o]sci Pana Leona Sapiehi Woiewody Wilenskiego Hetmana W[ielkiego] Xiestwa Lit[ewskie]go spisana w Szydłowicza[ch] d[nia] 11 April[is] A° 1631.
+Wziąć Jęczmienia beczki dwie cudnego[?] zamoczyć to w korycie abo w kadzi dzień y noc potym wodę odcedziwszy Jęczmień złożyć do gromady a kiedy ociekły[?] ukaża[?] znowu włożyć do kadzi abo do koryta y wodą nalać y tak moczyć do trzeciego dnia a kiedy Jęczmień owaldo[?] suchy do czwartego dnia y odpuscić wodę: A potym czystą wodą wypłokać pięknie y zaraz odpuscić wodę y zarazem posadzić go do roszczenia na piędź grubo. tak niech leży do dnia trzeciego, iesli by nie rosł trzeba go przewracać y tak zaniechać aż wyroście[?] dobrze a kiedy wyro-
+ście złożyć go do kupy żeby tak poleżał godzin 5: abo 6. y żeby osłodniał potym poroskopać z gromady y dobrze schłodzić. A potym do suszenia na słodownią abo na l[</p>
+          <p><gap reason="editorial-excerpt"/>]sie[?] złożyć y palić drwami olchowemi abo dembowemi albo Iedlowemi a nalepiey Grabowymi y suszyć powoli nie popalić y przemieszywać kilka kroć żeby prawie[?] dobrze wyschł. A potym do gr[</p>
+          <p><gap reason="editorial-excerpt"/>]dzi[?] abo do wora złożyć a choćby rok leżał to ieszcze lepszy iednak go złożyć żeby nie wietrzał.
+Kiedy chcesz warzyć:
+Każ Młynarzowi na poły żeby kozde ziarno było zdarte.
+Kadź mieć dobrze wyparzoną, potym wodę warzyć dobrze y wrzącą[?] nalać w kadź. y chmielu dwie przygarści do kadzi wrzucić a potym słod wsypać y zatrzeć pięknie wymieszać dobrze żeby było mierno gęsto y tak niech stoi. A tym czasem warząc wodę w kotle trzeba odebrać wodę gorącą tyle troie iak wiele słodu na osobną kadkę odebrawszy tę wodę on słod zatarty w kadź drugą na szczeble słomy nasławszy[?] y mierno nie barzo gęsto y nie rzadko około gozdzia[?] wielkiego chmielu nasypać parę przygarści, y ten słod wszystek do tey kadzi włożyć, a dopiero oną wodę odebraną warząc wrzącą nach[</p>
+          <p><gap reason="editorial-excerpt"/>] słod nalewać y zaraz odtoczyć onę brzeczkę y w kocieł wlać a skoro będzie wrzało znowu na słodziny ⟨wlać[?]⟩ y takim sposobem po trzy kroć onę brzeczkę warząc do kotła odlewać, potym kocioł wypłokawszy dobrze oney brzeczki więcey niż poł kotła nalać. A chmielu dobrze przebranego żeby liscia nie było tylko głowki, kiedy dwie Beczki słodu to szanek[?] chmielu brzeczkę[?] kocioł sypać[?] iednak iesli mocny chmiel może chmielu mniey dać, y tak to warzyć, a raczey szdelecować[?] przez godzin siedm l[?] abo. 8. abo. 9. aż się dobrze chmiel urzi[?] y co będzie uwirało to trzeba dolewać brzeczką co z słodzie[?] spuscie[</p>
+          <p><gap reason="editorial-excerpt"/>]
+słodziny nalewać wrzącą wodą oną pierwszą[?] odebraną. A to potrzeba[?] wiedzieć, że ani mniey ani więcey nad słodzinach[?] wody mieć nie trzeba[?] żeby zawsze żeby zawsze w iedney[?] mierze [</p>
+          <p><gap reason="editorial-excerpt"/>] stały[?] A kiedy iusz słodkosci brzeczka nie będzie miała, to obrócić wszytek na piwo białe.
+To piwo warzone chmielem tak długo iako się napisało wylać w kadź do kwaszenia aż dobrze ochłodnie, potym zadać świeżymi drożdżami, a iesliby kysać[?] nie chciało, to kontrowi[?] po wierzchu drożdżami pomazawszy beczki kowsze[?] w piwo wparcić[?] y tak długo kwasić aż drożdże opadać poczną, a mianowicie znak do kwaszonego piwa kiedy przydzie z świecą do kadzi że to świecę zgasne[?] to czas do beczek zlewać, a nie potrzeba zlewać zaraz do iedna[?] beczek ale zliać[?] w trzy[?] abo 4 beczki żeby to chodziło w beczkach y ochłodło, potym zlawszy co do beczek nie pełno nalewaiąc[?] tylko po trosze dolewać trzeba we przestaniu chodzić [</p>
+          <p><gap reason="editorial-excerpt"/>] a potym zaszpuntować pięknie y postawić żeby stało niedziel zedzie[?] abo więcey choćby rok stało to lepsze.
+A białe piwo z onych słodzin spusciwszy brzeczkę dobrze warzyć z onym że chmielem co wyięty od czarnego piwa y ciepley go zadać niż czarne.</p>
+        </div>
+        <div type="translation" xml:id="mle-012-trans" xml:lang="de" corresp="#mle-012-orig">
+          <p>Unterweisung über das Brauen von schwarzem Bier, von einem Holländer, der in Szydłowicze wohnt, einem Gut Seiner Gnaden des Herrn Leon Sapieha, Wojewode von Wilna, Großhetman des Großfürstentums Litauen; niedergeschrieben in Szydłowicze am 11. April im Jahr 1631.</p>
+          <p>Zwei Fass schöne Gerste nehmen und in einem Trog oder Bottich einen Tag und eine Nacht einweichen. Danach das Wasser abgießen und die Gerste auf einen Haufen setzen. Wenn sie sich abgetropft zeigt, wieder in den Bottich oder Trog geben, mit Wasser übergießen und so bis zum dritten Tag weichen. Und wenn die Gerste owaldo trocken ist, bis zum vierten Tag, das Wasser ablassen. Dann mit sauberem Wasser schön ausspülen, das Wasser gleich ablassen und die Gerste sogleich zum Keimen eine Spanne dick aufsetzen. So soll sie bis zum dritten Tag liegen. Wächst sie nicht, muss man sie wenden und so lassen, bis sie gut ausgewachsen ist. Wenn sie ausgewachsen ist, auf einen Haufen setzen, damit sie so fünf oder sechs Stunden liegt und süß wird. Danach den Haufen auseinanderscharren und gut abkühlen lassen.</p>
+          <p>Dann zum Trocknen auf die Malzdarre oder auf […] legen und mit Erlen-, Eichen- oder Tannenholz feuern, am besten aber mit Hainbuche. Langsam trocknen, nicht anbrennen lassen und einige Male durchmischen, damit es recht gut trocken wird. Dann in […] oder in einen Sack füllen. Liegt es auch ein Jahr, ist es noch besser; man muss es nur so lagern, dass es seine Frische nicht verliert.</p>
+          <p>Wenn du brauen willst: Sag dem Müller: zur Hälfte, so dass jedes Korn aufgebrochen ist.</p>
+          <p>Den Bottich gut ausgebrüht haben, dann Wasser gut kochen und kochend in den Bottich gießen. Zwei Handvoll Hopfen in den Bottich werfen, dann das Malz einschütten und einmaischen, schön und gut durchmischen, so dass es mäßig dick ist, und so stehen lassen. Unterdessen, während man Wasser im Kessel kocht, muss man heißes Wasser abnehmen, dreimal so viel, wie Malz da ist, in einen eigenen kleinen Bottich. Ist dieses Wasser abgenommen, das eingemaischte Malz in einen zweiten Bottich geben, in dem man Stroh auf die Sprossen gebreitet hat, mäßig, nicht sehr dicht und nicht dünn. Um den großen Zapfen ein paar Handvoll Hopfen streuen und das ganze Malz in diesen Bottich füllen. Erst dann das abgenommene Wasser kochend auf […] das Malz gießen, die Würze sogleich abziehen und in den Kessel gießen, und sobald sie kocht, wieder auf den Treber. Auf diese Weise die Würze dreimal kochend in den Kessel zurückgießen. Danach den Kessel gut ausspülen und mehr als halb mit dieser Würze füllen.</p>
+          <p>Den Hopfen gut verlesen, so dass kein Blatt dabei ist, nur die Dolden. Bei zwei Fass Malz einen szanek Hopfen in die Würze, in den Kessel schütten; ist der Hopfen aber kräftig, kann man weniger nehmen. Und so kochen, oder eher szdelecować, sieben oder acht oder neun Stunden, bis der Hopfen gut ausgekocht ist. Was dabei einkocht, muss man mit Würze auffüllen, die vom Malz abgelassen […]. Den Treber mit dem kochenden Wasser übergießen, das zuerst abgenommen wurde. Dabei muss man wissen, dass man über dem Treber weder weniger noch mehr Wasser haben soll, damit es immer auf einem Stand […] steht. Und wenn die Würze keine Süße mehr hat, alles zu weißem Bier verwenden.</p>
+          <p>Dieses Bier, so lange mit Hopfen gekocht, wie geschrieben steht, in einen Bottich zum Gären gießen, bis es gut abgekühlt ist, dann mit frischer Hefe anstellen. Will es nicht gären, dann kontrowi obenauf mit Hefe bestreichen und beczki kowsze ins Bier wparcić, und so lange gären lassen, bis die Hefe zu sinken beginnt. Und zwar ist das Zeichen für das vergorene Bier: Kommt man mit einer Kerze an den Bottich und die Kerze erlischt, ist es Zeit, in die Fässer abzufüllen. Man soll aber nicht gleich alles in ein Fass füllen, sondern in drei oder vier Fässer, damit es in den Fässern arbeitet und abkühlt. Dann, wenn es in die Fässer gefüllt ist, sie nicht voll machen, sondern nur nach und nach nachfüllen, wenn es aufhört zu arbeiten […]. Danach schön verspunden und hinstellen, damit es zedzie Wochen oder länger steht; stünde es auch ein Jahr, ist es umso besser.</p>
+          <p>Und das weiße Bier aus jenem Treber: die Würze ablassen und gut kochen, mit demselben Hopfen, der aus dem schwarzen Bier genommen wurde, und es wärmer anstellen als das schwarze.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="barley" orig="Jęczmienia beczki dwie cudnego" commodity="wikidata:Q61665121" source="#fyndling-ingredient-name">Gerste (Fass)</ingredient> - 2</item>
+            <item>
+              <ingredient en="water" orig="wodę" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="chmielu dwie przygarści">Hopfen (Dolden)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="świeżymi drożdżami">Frische Hefe</ingredient>
+            </item>
+            <item>
+              <ingredient orig="szczeble słomy">Stroh (Läuterboden)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="drwami olchowemi abo dembowemi albo Iedlowemi a nalepiey Grabowymi">Holz zum Darren (Erle, Eiche, Tanne, am besten Hainbuche)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-013">
+        <head>Schwarzbier aus reiner Gerste mit Hopfensaft in der Maische</head>
+        <div type="original" xml:id="mle-013-orig" xml:lang="und" corresp="#mle-013-trans" subtype="excerpt">
+          <p>Robić Piwo czarne
+Jęczmień szczyry dobry żeby w nim namniey owsu nie było. To wziąwszy Beczkę Wilenską namoczyć[?] y [</p>
+          <p><gap reason="editorial-excerpt"/>] go do czystey wody wymoczywszy d wyrostkie[?] Tydn[</p>
+          <p><gap reason="editorial-excerpt"/>] żeby przyszło dniu[?] Słod roście[?] Iako zwyczay y potym suszyć przemieszać[?] na biało pilno[?] tylko to strzec żeby susząc[?] nieprzypalić[?] słodu ani przyd[</p>
+          <p><gap reason="editorial-excerpt"/>] niechay[?] wysuszywszy Cepem nabić[?] abo w stępie otłuc kostki[?] y odwiać a dopiero zemleć Iako zwyczay.
+Zawsze powinni[?] dać piwa białego dobrego beczek troy[?] z Beczki słodu takiey miary iak będzie w słod mierzy[?]
+Ten słod zmełty Beczkę mąką[?] zacierać y odbierać Iako białe piwo y tak wiele Brzeczki odbierać potrzeba Iako by mogło być Piwa białego Beczek troy[?] A to sobie wprzód y [</p>
+          <p><gap reason="editorial-excerpt"/>] wymierzyć[?] wody niż piwo w[</p>
+          <p><gap reason="editorial-excerpt"/>] poczęte[?] y w kotle naznaczyć c[</p>
+          <p><gap reason="editorial-excerpt"/>]li[?] Beczka poł dnia abo dłużey żeby warząc[?] wiedzieć iako przestać warzyć. Do beczki wilenskiey słodu Chmielu dobrego dobrze nachałoszy[?] pół czwierci Beczki wrzątk[iem][?] y parzyć[?] chmiel naprzod barzo dobrze by[?] dniem y dwiema żeby się uwarł[?]
+Chmiel. Gdy iuż będzie utarta[?] w Kubli mąka[?] kiedy się chmiel dobrze uparzy[?] Soku chmielowego wlać do zatartey w kubli. Ale [</p>
+          <p><gap reason="editorial-excerpt"/>] Kowsz drugi y trzeci, dla obrzaski[?] Beczki żeby nie obrzygła[?] A to [</p>
+          <p><gap reason="editorial-excerpt"/>]wodzi[?] probował[?]</p>
+        </div>
+        <div type="translation" xml:id="mle-013-trans" xml:lang="de" corresp="#mle-013-orig">
+          <p>Schwarzbier machen.</p>
+          <p>Reine, gute Gerste, in der nicht das Geringste an Hafer sein soll. Davon ein Wilnaer Fass nehmen, einweichen und […] es in klares Wasser; ist es ausgeweicht, bis zu den Keimen […], so dass es […] kommt. Das Malz wächst, wie es üblich ist. Danach trocknen, dabei wenden, sorgfältig auf hell; nur darauf achten, dass man das Malz beim Trocknen nicht anbrennt, noch […]. Ist es getrocknet, mit dem Dreschflegel schlagen oder in der Stampfe die kostki abstoßen, das Abgestoßene im Luftzug wegwehen lassen und erst dann mahlen, wie es üblich ist.</p>
+          <p>Immer sollen sie aus einem Fass Malz drei Fässer gutes Weißbier geben, im selben Maß, in dem man das Malz misst.</p>
+          <p>Dieses gemahlene Malz, ein Fass Mehl, einmaischen und abziehen wie beim Weißbier, und so viel Würze muss man abziehen, wie es drei Fässer Weißbier geben könnte. Dazu vorher […] das Wasser abmessen, bevor das Bier […] begonnen wird, und im Kessel […] ein Fass markieren; einen halben Tag oder länger, damit man beim Kochen weiß, wann man mit dem Kochen aufhören soll. Auf ein Wilnaer Fass Malz guten Hopfen, gut nachałoszy, ein halbes Viertel Fass, mit kochendem Wasser, und den Hopfen vorher sehr gut brühen, einen Tag oder zwei, damit er gar wird.</p>
+          <p>Hopfen. Wenn das Mehl im Bottich schon eingemaischt ist und der Hopfen gut gebrüht, vom Hopfensaft in das Eingemaischte im Bottich gießen. Aber […] eine zweite und dritte Kelle, wegen des rohen Beigeschmacks im Fass, damit es nicht obrzygła. Und das […] soll man probieren.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Jęczmień szczyry dobry">Gerste, rein und gut (ohne Hafer)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="do czystey wody">Wasser, klar (zum Einweichen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wymierzyć[?] wody">Wasser, abgemessen (zum Maischen und Kochen)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Chmielu dobrego dobrze nachałoszy[?] pół czwierci Beczki">Hopfen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="wrzątk[iem]">Wasser, kochend (zum Hopfenbrühen)</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+      <div type="recipe" xml:id="mle-014">
+        <head>Bier aus halb Gersten-, halb Weizenmalz</head>
+        <div type="original" xml:id="mle-014-orig" xml:lang="und" corresp="#mle-014-trans" subtype="excerpt">
+          <p>Robienie piwa w Colegium[?] Połockim[?]
+Słód ieczmienny na pół z pszennym ma być. Słód robiąc moczyć go[?] godziny do godziny. Kożde z osobna ⟨</p>
+          <p><gap reason="editorial-excerpt"/>⟩ ⟨</p>
+          <p><gap reason="editorial-excerpt"/>dzi[?]⟩ zbadę[?], to co spłynie[?], ostre[go][?] słodu zbirać, wodę spuściwszy kiedy się dobrze słodzi[</p>
+          <p><gap reason="editorial-excerpt"/>][?] [</p>
+          <p><gap reason="editorial-excerpt"/>] grzewać[?], przekopawszy go raz abo trzy, żeby iednako rosł. Potym gdy się pocznie kleić, woda iako y przedtym nalać[?], y niech trwa w wodzie[?] godziny. Potym spuścić wodę, wymieszawszy raz abo dwa. Potym go zgromadzić[?], złożywszy przykryć go, żeby się zagrzał trochę, potym go rozpostrzeć. Zimie nakrywać, lecie nie trzeba, który pocznie rość, przewracać go dwa kroć w dzień, potym y na noc, że[?]by się nazbyt nie zagrzał. Gdy dobrze wyrośnie, na lasach[?] kładąc[?] go ros[</p>
+          <p><gap reason="editorial-excerpt"/>]. Potem[?] rozkryć[?], tam go z pół godziny wygromadzić[?] aż z słodowni[?] potrzymać y wysuszyć dobrze, potym wysuszywszy[?] wymłócić, a potym abo przez arfę[?] albo wysiać[?] albo wywiać[?], potym go zmleć[?].
+Zacierając piwo, naprzód chmiela surowe[go][?] trochę wsypać do kadzi[?] naprzód niż słód. Zacierać bardzo gęsto, wymieszać dobrze, y żeby godzin ze dwie[?] słodniał, samą mąkę godzinę warzyć trzeba, a brzeczkę godzin dwie. Zadawać mu miernie ciepło. Chmiela bezmien do ośmin[?] sześci[?] słodu, chmiel warzyć godzin 5 abo 6. Zawarzyć [</p>
+          <p><gap reason="editorial-excerpt"/>] w wodzie gorącej a dolewać brzeczką[?]. Ponowić[?] y z dwoich[?] su[</p>
+          <p><gap reason="editorial-excerpt"/>] [</p>
+          <p><gap reason="editorial-excerpt"/>] zebrawszy[?] warzyć. Jednak pierwszą brzeczkę warzywszy na[</p>
+          <p><gap reason="editorial-excerpt"/>] [</p>
+          <p><gap reason="editorial-excerpt"/>] nalewać.</p>
+        </div>
+        <div type="translation" xml:id="mle-014-trans" xml:lang="de" corresp="#mle-014-orig">
+          <p>Bierbrauen im Kolleg zu Polozk</p>
+          <p>Das Gerstenmalz soll halb und halb mit Weizenmalz sein. Wenn man das Malz macht, es einen vollen Tag weichen, von einer Stunde bis zur selben Stunde. Jedes für sich zbadę; was abschwimmt, vom scharfen Malz abnehmen; das Wasser ablassen, wenn es gut süß wird […] […] wärmen und es dabei ein- oder dreimal umschaufeln, damit es gleichmäßig wächst.</p>
+          <p>Danach, wenn es zu kleben beginnt, Wasser wie zuvor aufgießen und es Stunden im Wasser stehen lassen. Danach das Wasser ablassen, nachdem man es ein- oder zweimal durchgemischt hat. Danach es zusammenhäufen, aufgeschichtet zudecken, damit es sich ein wenig erwärmt, danach es ausbreiten. Im Winter zudecken, im Sommer ist es nicht nötig. Wenn es zu wachsen beginnt, es zweimal am Tag wenden, später auch in der Nacht, damit es sich nicht zu sehr erhitzt.</p>
+          <p>Wenn es gut ausgewachsen ist, es auf die Darrhorden legen […]. Danach aufdecken, es dort etwa eine halbe Stunde zusammenhäufen, bis von der Malzdarre; es eine Weile so halten und gut trocknen. Danach, wenn es getrocknet ist, ausdreschen, und danach entweder durch die Harfe geben oder aussieben oder im Luftzug ausblasen, danach es mahlen.</p>
+          <p>Beim Einmaischen des Biers zuerst ein wenig rohen Hopfen in den Bottich schütten, noch vor dem Malz. Sehr dick einmaischen, gut durchmischen; und damit es etwa zwei Stunden süß wird, muss man das Mehl allein eine Stunde kochen, die Würze aber zwei Stunden. Es mäßig warm anstellen.</p>
+          <p>An Hopfen einen bezmian auf sechs ośmin Malz; den Hopfen fünf oder sechs Stunden kochen. […] in heißem Wasser aufkochen und mit Würze nachgießen. Das wiederholen und, aus zwei […] […] gesammelt, kochen. Die erste Würze aber, wenn sie gekocht ist, […] […] eingießen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Słód ieczmienny">Gerstenmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="z pszennym">Weizenmalz</ingredient>
+            </item>
+            <item>
+              <ingredient orig="chmiela surowe[go]">Hopfen</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wodę" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mle-001-trans" resp="#fyndling">Was ist das? Ein Met in drei Stufen, jede an den Mond gebunden. Im Oktober wird Hopfen eine Woche lang gesotten, bis er nicht mehr bitter ist; in diesem Hopfensud wird der Honig gelöst, das Wachs abgeseiht, eingekocht und das Ganze eine Woche in einer warmen Stube vergoren, dann im Keller gelagert. Zum Vollmond im November wird abgezogen, zum Vollmond im März mit eingedicktem Honig und Trójnik nachgesüßt und aufgefüllt, vier Wochen später kommen neun Gewürze in eigenen Säckchen ins Fass. „Sycić“ heißt nach Linde 1807 Met brauen, den Honig mit Wasser lösen; die Überschrift meint die ganze Bereitung.
+
+Der Hopfen. Fünf oder sechs Ceber Hopfen, eine Woche Tag und Nacht in immer wieder nachgefülltem siedendem Wasser: Das steht so da, und das Ziel nennt der Text selbst, bis der Sud nicht mehr bitter ist. Siedendes Wasser ist „war“, nach Linde 1807 „Sud, siedend Wasser“. Mit dem Hopfensud und einem kurzen zweiten Aufkochen wird so viel Flüssigkeit gewonnen, wie zum Lösen des Honigs nötig ist. Wie viel Honig diese erste Stufe braucht, sagt der Text nicht.
+
+Wachs und Sieb. Der Honig wird im Sud eingeweicht, am Morgen bleibt das Wachs im Sieb. Bulatova 2019 merkt in ihrer Übersetzung an, gemeint sei Honig mit den Waben; dazu passt das Wachs. Eingekocht wird „um eine gute Handbreit“.
+
+Das Anstellen. „Zadać“ ist das Wort der Brauer für das Anstellen: Knapski 1643 erklärt „zadaię piwu“ als das Vergären frisch gekochten Biers, „was bei uns mit Hefe geschieht“, Linde 1807 übersetzt „dem Biere die Hefen geben“. Was hier gegeben wird, sagt der Text nicht; Hefe nennt er erst beim Abziehen im November, als Satz im Fass. Ohne Zugabe käme die Gärung eines gekochten Ansatzes nur aus der Luft und den Gefäßen (heutige Sicht). „Nieprawie chłodno“ heißt: noch nicht ganz abgekühlt. Haur verlangt beim Bier dasselbe (bei Linde 1807): Die Hefe gebe man, wenn das Bier weder zu heiß noch zu kalt sei.
+
+Abziehen und Spülen. Zum Vollmond im November wird der Met von der Hefe getrennt und das Fass mit irgendeinem Bier oder einfachem Met ausgespült. Die Klammer „was zu Essig taugt“ sagt, dass dieses Spülgetränk danach nur noch für Essig gut ist (Linde 1807: „przygodny“, tauglich). Dann kommt der Met zurück, und die Fässer werden mit Lehm verschmiert. Dieselbe Folge - abfüllen, Gefäß spülen, zurückgießen - steht bei Syreniusz 1613 (syr-001).
+
+Der März. Honig samt Wachs wird mit einem Uszatek Met oder Trójnik bei kleinem Feuer langsam eingekocht, bis er sich rötet („zarumienić“, nach Linde 1807 röten; Bulatova 2019 liest einen dunkleren, rötlichen Ton) und so dick ist, dass Tropfen auf Papier stehen bleiben. Über Nacht wird er fest, dann wird das Wachs abgeschöpft, und der Seim bleibt. Mehr als ein halber Kessel wird halbiert; wohin die zweite Hälfte kommt, sagt der Text nicht. Mit Trójnik wird bis zum vollen Kessel aufgefüllt und um drei Finger eingekocht („uwrzeć“, nach Linde 1807 einkochen, weniger werden). Heute würde man sagen: Der gelagerte Met wird nachgesüßt und aufgestärkt; ob er danach noch einmal gärt, sagt der Text nicht.
+
+Die Gewürze. Neun Gewürze, in Lot gewogen, jedes in einem eigenen Säckchen ins Fass gehängt. „We czytyry niedziele“ heißt „nach vier Wochen“ (niedziela ist nach Linde 1807 auch die Woche); Bulatova 2019 übersetzt „für vier Wochen“. Wie lange die Säckchen hängen, sagt der Text nicht. Lot und Pfund hatten regional eigene Werte, deshalb wird nichts umgerechnet. Kalmuswurzel enthält je nach Herkunft Beta-Asaron, das heute als gesundheitlich bedenklich gilt; auch Muskatnuss gilt in großer Menge als bedenklich.
+
+Der Mond. Jeder Schritt hängt am Mond: im Oktober, wenn der Mond voll wird, im November und im März jeweils zum Vollmond. Das ist die Anweisung des Textes; eine Begründung gibt er nicht.
+
+Praxis. Wer den Met nachstellen will, braucht einen Winter, einen großen Kessel und ein Fass. Ein Verhältnis von Honig zu Wasser nennt der Text nicht, die Stärke lässt sich daher nicht berechnen, und auch für die Hopfenmenge gibt es keinen heutigen Wert. Heutige Wahl, nicht im Text: Hopfendolden aus dem Brauhandel, eine Reinzuchthefe zum Anstellen, statt Lehm ein Spund mit Gärverschluss, denn ein Met, der im verschmierten Fass nachgärt, baut Druck auf; die Gewürzsäckchen nach Geschmack prüfen und herausnehmen. Den Honig samt Wachs nur bei kleinem Feuer einkochen, wie der Text es verlangt: Siedender Honig verbrennt schwer.</note>
+        <note type="gloss" target="#mle-001-orig" n="cebrów" resp="#fyndling">Ceber ist ein Zuber, nach Linde 1807 eines der größten hölzernen Gefäße zum Tragen von Wasser oder Getränken. Hier misst er den Hopfen; wie viel er fasste, ist nicht überliefert.</note>
+        <note type="gloss" target="#mle-001-orig" n="uszatków" resp="#fyndling">Uszatek ist ein Gefäß mit Henkeln (wörtlich „Ohren“), so Linde 1807. Die Wilanów-Fassung und Bulatova 2019 deuten es als übliches Honigmaß; seine Größe ist nicht überliefert.</note>
+        <note type="gloss" target="#mle-001-orig" n="patoka" resp="#fyndling">Seim: der reine Honig ohne Wachs und Bodensatz. Knapski 1643 setzt „patoka“ gleich mit „treść miodu“, dem Kern des Honigs.</note>
+        <note type="gloss" target="#mle-001-orig" n="cytwaru" resp="#fyndling">Zitwer, der Wurzelstock einer ingwerartigen Pflanze aus Südasien (Curcuma zedoaria). Linde 1807 nennt ihn eine Apothekenwurzel mit kampferartigem Duft; den Zitwersamen führt er gesondert.</note>
+        <note type="gloss" target="#mle-001-orig" n="tatarskiego ziela" resp="#fyndling">„Tatarenkraut“ ist der Kalmus (Acorus calamus): Knapski 1643 setzt „tatarskie ziele“ gleich mit lateinisch Acorus, Linde 1807 mit „tatarak, der Kalmus“, dessen Wurzel man auch in Zucker kandierte.</note>
+        <note type="gloss" target="#mle-001-orig" n="fiołkowego korzenia" resp="#fyndling">Veilchenwurzel ist nicht die Wurzel des Veilchens, sondern der nach Veilchen duftende Wurzelstock einer Schwertlilie (Iris). Linde 1807 verweist unter „fiołkowy korzeń“ auf „kosaciec“, die Schwertlilie.</note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="przez sito wosk cedząc" resp="#fyndling" subtype="philological">Edition Bulatova 2019 und die Handschrift: „przez sito wosk cedząc do kotła miód“ - das Wachs wird durch das Sieb abgeseiht, der Honig kommt in den Kessel. Am Blatt steht „wosk“ über einem getilgten Wort; Bulatova 2019 vermerkt, „miód“ sei zu „wosk“ verbessert und der Sinn dadurch unklar. Mit „wosk“ als dem, was im Sieb bleibt, und „miód“ als dem, was in den Kessel geht, ergibt der Satz einen Sinn.<list type="alternatives"><item>Wilanów 2022: „przez sito cedząc do kotła miód“ (ohne „wosk“) - den Honig durch das Sieb in den Kessel seihen<note type="rationale">Die Fußnote dort lässt offen, ob „miód“ zu „wosk“ verbessert ist oder umgekehrt. Das Weglassen hat am Blatt keine Stütze; im Ergebnis bleibt auch so das Wachs im Sieb.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="rano we troje" resp="#fyndling" subtype="lexical">„Zu dritt“: Linde 1807 belegt „troje“ für drei Personen („troie nas było“, drei waren wir). Bulatova 2019 liest ebenso drei Arbeiter, die das schwere Seihen besorgen.<list type="alternatives"><item>dreifach, also mehrmals durchseihen<note type="rationale">Linde 1807 führt „we troie“ auch als „dreyfach“; der Satz hat aber kein Verb des Wiederholens.</note></item><item>in drei Portionen<note type="rationale">Frühere Fassung dieser Seite; ohne Wörterbuchbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="chmielnicę" resp="#fyndling" subtype="lexical" cert="unknown">Der Hopfensud: „chmielnica“ ist das, was in den Kübel kommt, ehe weiteres siedendes Wasser nachgegossen und ebenfalls in den Kübel abgegossen wird; mit diesem Sud wird der Honig gelöst. Das Wort steht weder bei Knapski 1643 noch bei Linde 1807.<list type="alternatives"><item>die Hopfenreste<note type="rationale">So übersetzt Bulatova 2019 (im Wörterverzeichnis „chmieliny“, Hopfenreste nach dem Kochen). Kämen die Reste in den Kübel, bliebe offen, worauf das weitere Wasser gegossen wird.</note></item><item>Hopfengarten<note type="rationale">Linde 1807 kennt „chmielnik“ und tschechisch „chmelnice“ als Hopfengarten; das passt hier nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="trójniku" resp="#fyndling" subtype="lexical">„Trójnik“ bleibt als Name stehen: ein mit Wasser versetzter Met, nach der Zahl drei benannt. Knapski 1643 umschreibt ihn als „hydromeli ter coctum“ (dreimal gekocht, „decoctum ad tertias“) und als mäßig mit Wasser versetzten Met, der dem polnischen Wort nach drei Teile Wasser enthalte, während einfacher Met viel mehr Wasser nehme; Linde 1807 übersetzt „guter Meth, nur von drey Theilen Wasser“. Wie viel Honig auf drei Teile Wasser kommt, sagt keiner der beiden.<list type="alternatives"><item>ein Teil Seim auf zwei Teile Wasser<note type="rationale">So Bulatova 2019 im Wörterverzeichnis, nach dem Schema bei Ciesielski 1898 (Półtorak, Dwójniak, Trójniak). Das ist das heutige Schema und rund 270 Jahre jünger als die Handschrift; das Rezept selbst nennt kein Verhältnis.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="a osobno drożdże" resp="#fyndling" subtype="contextual">Der Met wird abgezogen, die Hefe bleibt für sich; nach dem Spülen kommt der Met in das Fass zurück. So läuft das Abziehen auch bei Syreniusz 1613 (syr-001): in ein anderes Gefäß abfüllen, dann nach dem Ausspülen in dasselbe erste zurückgießen.<list type="alternatives"><item>die Hefe wird gesondert wieder ins Fass gegossen<note type="rationale">So übersetzt Bulatova 2019, die „drożdże“ zu „wlejesz“ (du gießt ein) zieht. Grammatisch möglich, widerspricht aber dem Zweck von Abziehen und Spülen.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-002-trans" resp="#fyndling">Was ist das? Ein Met aus reinem, ungegorenem Seim, der mit Wasser kurz gekocht, mit gesondert gekochtem Hopfen zusammengegossen und mit wenig Hefe angestellt wird. Die Gewürze kommen gestoßen in Säckchen dazu, ins Fass außerdem Kies und ein Hühnerei. Der Text verspricht, der Met sei nach einer Woche so gut wie nach einem Jahr; eine Begründung gibt er nicht.
+
+Drei Maß. An „w miar trzy, nie więcej“ hängt die Stärke. Wir lesen einen Teil Seim auf drei Teile Wasser: Knapski 1643 erklärt den trójnik als Met mit gleichsam drei Teilen Wasser, im Gegensatz zum einfachen Met, der viel mehr Wasser nimmt; „nicht mehr“ begrenzt dann das Wasser. Bulatova 2019 übersetzt „nach dem Maß des Trójniak“ und rechnet ihn als einen Teil Seim auf zwei Teile Wasser. Das Wort trójnik steht in diesem Rezept nicht.
+
+Der Hopfen. „od godziny do godziny“ kennt Linde 1807 auch als „von Tag zu Tag“, und Syreniusz 1613 setzt den Ausdruck gleich mit „Tag und Nacht“. Der Hopfen kocht also gesondert und lange, wie im Rezept auf der Vorderseite des Blattes, wo er eine ganze Woche kocht. Wie viel Hopfen und wie viel Hopfensud zum Honig kommen, sagt der Text nicht.
+
+Die Hefe. Der Text nennt sie ausdrücklich: wenig davon, „żeby się nie przelał“, damit er nicht überläuft. Heute würde man sagen: ein junger Ansatz mit viel Hefe schäumt in der stürmischen Gärung stark auf, mit wenig Hefe beginnt sie ruhiger. Welche Hefe, sagt der Text nicht.
+
+Die Gewürze. Die Mengen stehen in Pfund: vier Pfund Ingwer, je ein halbes Pfund Nelken und Zimt. Das Pfund des Großfürstentums hatte einen eigenen Wert, und die Größe des Fasses nennt der Text nicht; eine Würzung je Liter lässt sich daraus nicht ableiten. Bei der Muskatblüte steht nur „ćwierć“, ein Viertel; nach den halben Pfunden liegt ein Viertelpfund nahe. Kräuter mit dem Hopfen zu kochen und in Säcken in die Fässer zu hängen, beschreibt Syreniusz 1613 auch fürs Bier, unter anderem mit Zitwer und Galgant. Ob die Säckchen wieder herauskommen, sagt das Rezept nicht.
+
+Kies und Ei. „dziarstwy“ ist in der Handschrift von einem Fleck verdeckt. Knapski 1643 und Linde 1807 erklären dziarstwo als groben Sand, Kies, so auch die Wilanów-Fassung 2022; Bulatova 2019 deutet das Wort als alten, körnig gewordenen Honig, den Linde unter dem eigenen Wort dziarnina führt. Wozu der Kies ins Fass kommt, sagt der Text nicht. Dasselbe gilt für das Hühnerei. Bulatova 2019 deutet es als Probe der Stärke: Ein frisches Ei schwimme im fertigen Most halb eingetaucht. Ihr Gewährsmann ist Ciesielski 1898, rund 270 Jahre nach dem Rezept; das Rezept selbst nennt keine Probe.
+
+Für Metmacher: die Zahlen
+
+Modellrechnung, keine Messung: gerechnet mit Literaturwerten für Honig, nicht an einem angesetzten Met.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| „w miar trzy“ als ein Teil Seim auf drei Teile Wasser | 309-476 g/l | 1,119-1,184 | 119-184 | 27,9-41,0 | 18,4-28,3 % |
+| „w miar trzy“ als drei Maß insgesamt (ein Teil Seim auf zwei Teile Wasser) | 412-635 g/l | 1,159-1,245 | 159-245 | 36,1-52,4 | 24,5-37,7 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Annahmen: Seim und Wasser im selben Hohlmaß, Seim wie Honig gerechnet. Der Text kocht eine Stunde oder anderthalb, ohne Endmenge zu nennen; die Spannen reichen von geringem bis starkem Einkochen. Nicht eingerechnet sind der gesondert gekochte Hopfensud, der den Most verdünnt und dessen Menge der Text nicht nennt, sowie Gewürze, Kies und Ei; der echte Most ist also eher schwächer als die Rechnung.
+
+Praxis. Heutige Hinweise, nicht im Text: Ein siedender Honigsud schäumt stark und kocht leicht über. Den Most lässt man abkühlen, bevor die Hefe dazukommt. Ein gärender Met baut im verschlossenen Fass Druck auf; verschlossen wird erst, wenn er ruht. Ein rohes Ei und Kies im Getränk lässt man heute weg; wer die Stärke prüfen will, misst sie mit der Spindel. Muskatblüte enthält wie die Muskatnuss Myristicin und ist in großer Menge bedenklich. Vier Pfund Ingwer auf ein Fass unbekannter Größe lassen sich nicht in eine heutige Menge übertragen: deutlich niedriger anfangen und abschmecken.</note>
+        <note type="gloss" target="#mle-002-orig" n="miód stary" resp="#fyndling">Alter Met war eine Sorte: Linde 1807 zitiert aus den Volumina Legum eine Abgabe, die man für trójnik und Himbeermet „jak od starego miodu“ zahlte, wie für alten Met. Bulatova 2019 versteht den Titel anders, als Anweisung, alten Honig zu verarbeiten.</note>
+        <note type="gloss" target="#mle-002-orig" n="przaśnego" resp="#fyndling">Ungegoren und noch nicht mit Wasser versetzt: Linde 1807 gibt przaśny mit „ungesäuert“ wieder, Bulatova 2019 erklärt miód przaśny als natürlichen, nicht versetzten Honig.</note>
+        <note type="gloss" target="#mle-002-orig" n="patoki" resp="#fyndling">Patoka ist reiner, flüssiger Honig, bei Linde 1807 nach Kluk der „Jungfernhonig“, also Honig ohne Wachs und Wabe.</note>
+        <note type="gloss" target="#mle-002-orig" n="rozsycić" resp="#fyndling">Honig mit Wasser zu Met ansetzen; Linde 1807: „Honig zu Meth machen, den Honig zerlassen“. Gemeint ist der Most vor der Gärung.</note>
+        <note type="gloss" target="#mle-002-orig" n="korzenia" resp="#fyndling">Gewürze, nicht Wurzeln: korzenia sind die teuren Würzwaren aus dem Fernhandel, so auch Bulatova 2019 in ihrem Wörterverzeichnis.</note>
+        <note type="gloss" target="#mle-002-orig" n="cytwaru" resp="#fyndling">Zitwer, die Wurzel der Apotheke (Curcuma zedoaria), nach Linde 1807 mit kampferartigem Geruch. Nicht zu verwechseln mit dem Zitwersamen, einer anderen Droge.</note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="w miar trzy, nie więcej" resp="#fyndling" subtype="lexical">Ein Teil Seim auf drei Teile Wasser, und nicht mehr Wasser. Knapski 1643 erklärt den trójnik als Met, der gleichsam drei Teile Wasser enthält, und setzt ihn gegen den einfachen Met, der viel mehr Wasser nimmt; Linde 1807 übersetzt „guter Meth, nur von drey Theilen Wasser“. In text_modern: „mit drei Maß Wasser zu Met versetzen, nicht mehr“.<list type="alternatives"><item>Drei Maß insgesamt, also ein Teil Seim auf zwei Teile Wasser<note type="rationale">So Bulatova 2019: Sie übersetzt „nach dem Maß des Trójniak“ und setzt den trójnik als 1 zu 2 an, nach heutigem Schema. Das Wort trójnik steht hier nicht, und Knapski spricht von drei Teilen Wasser.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="od godziny do godziny" resp="#fyndling" subtype="lexical">Einen Tag und eine Nacht. Linde 1807 führt neben „von einer Stunde zur anderen“ die Bedeutung „von Tag zu Tag“ (od doby do doby), und Syreniusz 1613 setzt den Ausdruck ausdrücklich gleich mit „przez dzień i noc“. Im Rezept auf der Vorderseite des Blattes kocht der Hopfen sogar eine Woche.<list type="alternatives"><item>Etwa eine Stunde<note type="rationale">So der frühere Entwurf; kein Wörterbuch belegt diese Bedeutung.</note></item><item>Von Zeit zu Zeit, nach und nach<note type="rationale">So Bulatova 2019 in ihrer Übersetzung; bei Linde nicht belegt.</note></item><item>Ununterbrochen, von einer Stunde zur anderen<note type="rationale">Lindes erste Bedeutung; sie nennt keine Dauer, nur das stetige Kochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="zlawszy, na miejścu go postawiwszy" resp="#fyndling" subtype="philological">Satzgrenze nach „przelał“, wie Wilanów 2022: „żeby się nie przelał. Zlawszy, na miejscu go postawiwszy, włożyć weń“. Die beiden Partizipien gehören zum folgenden „włożyć“: Ist er umgegossen und an seinen Platz gestellt, kommen die Gewürze hinein. Die Handschrift setzt hier keine Satzzeichen.<list type="alternatives"><item>Bulatova 2019: „żeby się nie przelał zlawszy, na miejścu go postawiwszy. Włożyć weń“, also: damit er beim Zusammengießen nicht überläuft, und an seinen Platz gestellt<note type="rationale">Sprachlich möglich, lässt aber „postawiwszy“ ohne eigenes Verb am Satzende stehen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="kwiatu muszkatowego ćwierć" resp="#fyndling" subtype="contextual">Ein Viertel, ohne Einheit. Im Anschluss an die halben Pfunde liegt ein Viertelpfund nahe; dasselbe Hausbuch schreibt bei einem Zitwerbranntwein „Cytwaru ćwierć … Hanyżu poł funta“ ebenso ohne Einheit neben Pfunden. text_modern bleibt bei „ein Viertel“.<list type="alternatives"><item>Viertel eines anderen Maßes<note type="rationale">Linde 1807 kennt ćwierć auch als Hohlmaß für Getreide; bei einem Gewürz unwahrscheinlich, vom Text aber nicht ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="dziarstwy" resp="#fyndling" subtype="lexical">Kies. Knapski 1643 erklärt dziarstwo als Tuffstein und groben Sand, Linde 1807 als „Kies, grober Sand“; so auch die Fußnote der Wilanów-Fassung 2022 („Żwiru“). In der Handschrift ist das Wort von einem Fleck verdeckt.<list type="alternatives"><item>Alter, durch Lagern körnig gewordener Honig<note type="rationale">So Bulatova 2019 in ihrem Wörterverzeichnis, nach Linde 1854 und Potocki 1877. Linde führt diese Bedeutung aber unter dem eigenen Wort dziarnina, nicht unter dziarstwo. „Wsypać“ (einschütten) passt zu beidem.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-003-trans" resp="#fyndling">Was ist das? Ein Zuckersirup, der mit Eiweiß gekocht und durch ein Tüchlein geseiht wird, in zwei Fassungen. Die zweite leitet der Text mit „oder lieber so“ ein und zieht sie damit vor. Wozu der Sirup im Wein dient, ob er ihn süßen, verbessern oder klären soll, sagt der Text nicht, nur, dass er „sehr gut zum Wein“ wird.
+
+Zwei Verhältnisse. Die erste Fassung nimmt ein Pfund Zucker auf 3 Quart Wasser und kocht, bis die Masse dick ist; das Vergleichswort dafür, chiroz, ist nicht zu deuten. Die zweite nimmt 2 Pfund Zucker auf einen halben Garniec Wasser, nach Linde 1807 zwei Quart. Sie setzt also von vornherein weit süßer an, kocht, seiht und kocht danach noch einmal etwas ein. Dasselbe Verhältnis und dieselbe kleine Pfanne nennt die Handschrift beim Klären des Zuckers für den Rosolis (mle-004).
+
+Das Eiweiß. Die erste Fassung schlägt das Eiweiß vor dem Kochen; die Vorsilbe des Verbs ist unleserlich, so dass offen bleibt, ob es zu Schaum geschlagen oder nur hineingeschlagen und verklopft wird. Die zweite gibt das Eiweiß eines frischen Eis einfach mit in die Pfanne. Heute würde man sagen: Das Eiweiß gerinnt in der Hitze, schließt Trübstoffe ein, und das Tuch hält es zurück. Der Text selbst nennt nur Kochen und Seihen, kein Abschäumen.
+
+Der Alaun. Nur die zweite Fassung gibt am Ende ein Stück gebrannten Alaun hinein und lässt den Sirup abkühlen. Alaun ist ein Mineralsalz; Linde 1807 belegt mit einem Crescentius-Zitat, dass Alaun trübes Wasser klar macht, und vermerkt zugleich, das Versetzen von Branntwein mit Alaun sei schädlich. Was er im Sirup bewirken soll, sagt der Text nicht.
+
+Praxis. Zucker und Wasser mit dem Eiweiß in einer Pfanne aufkochen und gut kochen lassen, dann durch ein feines, sauberes Tuch seihen. Für die erste Fassung weiter einkochen, bis der Sirup dick wird, für die zweite nach dem Seihen kurz noch einmal einkochen. Den Alaun lässt man beim Nachkochen weg; die erste Fassung zeigt, dass der Sirup ohne ihn auskommt. Kochender Zuckersirup verbrüht stark und klebt an der Haut, also mit Abstand und langem Löffel arbeiten. Wie viel Sirup in welchen Wein kommt, steht nicht da.</note>
+        <note type="gloss" target="#mle-003-orig" n="Hałun palony" resp="#fyndling">Gebrannter Alaun. Linde 1807 führt alun oder hałun als „gatunek soli ziemnej“, eine Art Erdsalz, und belegt mit einem Crescentius-Zitat, dass Alaun trübes Wasser klar macht. Die Abschrift auf Bl. 25v schreibt „palonego“ (gebrannt) aus.</note>
+        <note type="gloss" target="#mle-003-orig" n="kwarta, pułgarca" resp="#fyndling">Quart und Garniec sind Hohlmaße für Getränke. Nach Linde 1807 hat ein Garniec zwei halbe Garnce oder vier Quart; der halbe Garniec der zweiten Fassung sind also zwei Quart. Einen heutigen Wert nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#mle-003-orig" n="chiroz" resp="#fyndling" subtype="lexical" cert="unknown">Das Vergleichswort für die gewünschte Dicke („gesto iak chiroz“, dick wie chiroz) bleibt unübersetzt stehen. Die Buchstaben c-h-i-r-o-z sind in der Handschrift deutlich, das Wort ist aber weder bei Knapski 1643 noch bei Linde 1807 noch in den tschechischen Wörterbüchern von Jungmann und Kott belegt, auch nicht als chyroz oder kiroz.<list type="alternatives"><item>Verschreibung für eine bekannte dickflüssige Sache (etwa Honig oder Sirup)<note type="rationale">Das Schriftbild stützt keine andere Lesung; ohne Beleg wäre jede Gleichsetzung geraten.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-003-orig" n="[…]bic y stłuc[?]" resp="#fyndling" subtype="philological" cert="unknown">Das Eiweiß „[…]schlagen und zerschlagen“: der erste Buchstabe ist verkleckst (w, u oder z), danach steht „bic“. stłuc heißt nach Linde 1807 zerstoßen, zerschlagen, auch vom Ei („iaie stłuc“). Ob das Eiweiß zu Schaum geschlagen oder nur verklopft wird, sagt der Text damit nicht.<list type="alternatives"><item>wbić: das Eiweiß hineinschlagen (in das Zuckerwasser)<note type="rationale">Linde 1807 WBIĆ = einschlagen, hineinschlagen; passt zum Ablauf, wenn das Eiweiß erst im Wasser zerschlagen wird.</note></item><item>zbić oder ubić: das Eiweiß schlagen<note type="rationale">Linde 1807 ZBIĆ = abschlagen, zerschlagen; ubić ist das spätere Wort für Eischnee. Am Bild nicht von w zu unterscheiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-003-orig" n="przysmazyc" resp="#fyndling" subtype="lexical">„przecedziwszy znowu przysmazyc“: nach dem Seihen noch einmal etwas einkochen. smażyć heißt in Vorschriften der Zeit auch einkochen, bis es dick wird (Syreniusz 1613: „warzyć abo smażyć aż zgęstnieje“), und der Sirup wird danach nur noch mit Alaun versetzt und abgekühlt.<list type="alternatives"><item>kurz anrösten, leicht bräunen<note type="rationale">Linde 1807 PRZYSMAŻYĆ: „trochę smażąc przypiec, in der Pfanne ein wenig pregeln“. Beim Zucker hieße das eine leichte Bräunung; der Text nennt aber keine Farbe.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-004-trans" resp="#fyndling">Was ist das? Ein Rosolis, also ein gesüßter Gewürzbranntwein, in drei Stufen: Zuerst wird einfacher Branntwein mit Anis und Süßholz noch einmal gebrannt, dann ziehen sieben Würzposten drei Tage in diesem Aquavit, zuletzt kommt ein geklärter Sirup aus Zucker oder Lindenhonig hinein. Eine rote Fassung färbt mit Sandelholz. Krünitz' Oekonomische Encyklopädie (Bd. 127) beschreibt den Rossoli später mit demselben Aufbau: Gewürze im Weingeist, Zucker in Wasser gekocht und geläutert, unter den Geist gegossen, dann gefärbt.
+
+Das Brennen. „Przepuścić na aquavitę“ heißt durch den Brennhelm schicken; Linde 1807 erklärt akwawita als nochmals gebrannten, gewürzten Branntwein. Anis und Süßholz liegen schon im einfachen Branntwein, wenn er in den Helm geht. Gerät, Feuer, Dauer und wie viel vom Ablauf man nimmt, sagt der Eintrag nicht; der Anisbranntwein derselben Handschrift (mle-010) nennt Destillierhelm und Röhren. Heutiges Wissen, nicht im Text: Der erste Ablauf wird beim Brennen verworfen, und Alkoholdampf an offener Flamme ist brandgefährlich.
+
+Der Gewürzansatz. Vom Kardamom nur die Körner ohne die Hülsen, halb zerstoßen; „napoł“ heißt hier grob, wie in mle-010 („napoł przetłuczone abo całkiem“, halb zerstoßen oder ganz). Bei der Pomeranzenschale kennt Linde saure und süße Pomeranzen; welche gemeint ist, sagt der Text nicht. Drei Tage in einer zugedeckten Kanne, dann durch ein Tuch.
+
+Der Sirup. Leicht und langsam sieden, nicht rühren, bis der Schaum oben steht, dann beim Abkühlen durch ein Tuch, das den Schaum zurückhält. Ein Eiweiß zum Klären nennt dieser Eintrag nicht, anders als der Weinsirup auf Blatt 22 (mle-003). Der Sirup geht erst kalt in den Branntwein. Die Wassermenge ist ein halber Garniec; nach Linde hat ein Garniec vier Quart, das Wasser entspricht also den zwei Quart Lindenhonig. Ob der halbe Garniec für die ganze Menge gilt oder je Pfund Zucker, entscheidet ein unsicher gelesenes Wort nicht sicher (siehe Lesarten).
+
+Rot und zweiter Aufguss. Rotes Sandelholz war Färbeholz: Linde verzeichnet beim Sandał das Färben mit Sandelholzspänen, Krünitz setzt einem Lavendelgeist „der Farbe wegen“ rotes Sandelholz zu. Wie viel Lot, ist unter einem Tintenfleck verloren. Sandelholz und Gewürze werden danach ein zweites Mal angesetzt. Der Schluss des Eintrags ist unleserlich.
+
+Praxis. Wer heute nicht selbst brennt, setzt die Gewürze in einem fertigen Anisbranntwein an; das ist ein moderner Notbehelf, nicht das Verfahren des Textes. Alle Mengen beziehen sich auf vier Garniec Branntwein; kleiner ansetzen heißt, jeden Posten im selben Verhältnis teilen. Süßholz enthält Glycyrrhizin und gehört in Maßen in einen Ansatz (heutiges Wissen). Den Sirup nur kalt zugießen, wie der Text es will.</note>
+        <note type="gloss" target="#mle-004-orig" n="Rosam solis" resp="#fyndling">Rosolis, ein gesüßter Gewürzbranntwein. Der Name kommt vom Sonnentau (ros solis, Tau der Sonne). Krünitz nennt Rossoli einen Likör aus dieser Pflanze mit anderen Kräutern und Gewürzen, aber auch jeden anderen feinen Gewürzlikör; Linde 1807 nennt den Rosolis einen italienischen Branntwein. Sonnentau steht in diesem Eintrag nicht.</note>
+        <note type="gloss" target="#mle-004-orig" n="Aquavitę" resp="#fyndling">Aquavit, bei Linde 1807 akwawita: nochmals gebrannter, gewürzter Branntwein, im Gegensatz zum einfachen Branntwein (prosta gorzałka), aus dem er hier mit Anis und Süßholz gebrannt wird. Nicht der heutige skandinavische Aquavit.</note>
+        <note type="gloss" target="#mle-004-orig" n="garcy" resp="#fyndling">Garniec (Mehrzahl garcy), Hohlmaß Polen-Litauens. Nach Linde 1807 hat ein Garniec zwei Halbgarniec oder vier Quart (kwarty). Der Wert schwankte nach Ort und Zeit; hier wird nicht umgerechnet.</note>
+        <note type="gloss" target="#mle-004-orig" n="Kubeby" resp="#fyndling">Kubeben (Kubebenpfeffer), bei Linde 1807 die getrocknete Frucht eines ostindischen Strauchs, ein scharf-würziges Gewürz.</note>
+        <note type="gloss" target="#mle-004-orig" n="klarefikowac" resp="#fyndling">Klären: Den Sirup langsam sieden lassen, bis der Schaum oben steht, und ihn durch ein Tuch seihen, in dem der Schaum bleibt. Ein Eiweiß nennt dieser Eintrag dafür nicht.</note>
+        <note type="gloss" target="#mle-004-orig" n="korzenie" resp="#fyndling">Gewürze, nicht Wurzeln: Linde 1807 verweist beim Wort Aroma auf korzenie. Gemeint sind die Gewürze des Ansatzes, die mit dem Sandelholz ein zweites Mal dienen.</note>
+        <note type="interpretive_choice" target="#mle-004-orig" n="lipcu / lipiec" resp="#fyndling" subtype="lexical">Lindenhonig: Linde 1807 führt lipiec (Genitiv lipcu, wie hier) als miód przaśny, den Jungfernhonig, den die Biene nur zur Lindenblüte macht; Knapski 1643 ebenso „Lipiec / miód przaśny“. Er wird wie Zucker mit Wasser geklärt und in Quart gemessen, das passt zu flüssigem Honig.<list type="alternatives"><item>Lipiec als Met (Lindenmet).<note type="rationale">Linde nennt unter lipiec auch den miód pity, „Jungfernmeth“, Knapski ebenso. Ein fertiger Met würde aber kaum wie Zucker mit Wasser verkocht und abgeschäumt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-004-orig" n="dodziwi[?] funtu cukru abo do dwu kwart lipcu" resp="#fyndling" subtype="philological" cert="unknown">Ein halber Garniec Wasser auf die ganze Menge, also zu den zwei Pfund Zucker oder zu den zwei Quart Lindenhonig. Das erste Wort ist anders geformt als das folgende „do dwu“; der Gleichlauf beider Satzhälften spricht für „do dwu“. Nach Linde sind ein halber Garniec zwei Quart, das Wasser wäre so viel wie der Honig.<list type="alternatives"><item>Ein halber Garniec Wasser je Pfund Zucker.<note type="rationale">Würde „do kożdego funtu“ voraussetzen; ein solches Wort ist am Blatt nicht zu sehen, und die zweite Satzhälfte nennt ausdrücklich zwei Quart.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-004-orig" n="Sandału {czerwoney łoty […] cztyry[?]}" resp="#fyndling" subtype="philological" cert="unknown">Rotes Sandelholz, vier Lot: Die Zahl „cztyry“ (vier) steht am Ende des Nachtrags über der Zeile.<list type="alternatives"><item>Zwei bis vier Lot.<note type="rationale">Vor „cztyry“ liegt ein Wort unter einem Tintenfleck, daneben ist „do“ zu erkennen; möglich wäre „dwa do cztyry“. Das Blatt entscheidet es nicht, die Zutat steht deshalb ohne Menge.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-004-orig" n="abo bedzie sama naprzedniejsza rosasolis […] czarnko[?] rozstardzy[?] […]" resp="#fyndling" subtype="philological" cert="unknown">„Oder es wird der allervorzüglichste Rosolis“; sama verstärkt den Superlativ. Der Rest ist nicht sicher lesbar und bleibt als Lücke stehen, die zwei unsicheren Wörter unübersetzt.<list type="alternatives"><item>sama als „allein“: der Rosolis wird auch ohne die zweite Verwendung der Gewürze der beste.<note type="rationale">Möglich, aber sam vor einem Superlativ ist die übliche Verstärkung.</note></item><item>czarnko und rozstardzy als weitere Zutat oder Arbeitsschritt.<note type="rationale">Kein Wörterbuch kennt die Formen; jede Deutung wäre geraten.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-005-trans" resp="#fyndling">Was ist das? Eine lateinische Apothekervorschrift: Hölzer, Rinde, Früchte, Blüten und zwei tierische Duftstoffe werden kalt in Branntwein angesetzt, einen Monat lang, und dann abgeseiht. Gekocht oder gebrannt wird dabei nicht; der Branntwein, das zirkulierte Aqua vitae, ist schon fertig. Die zweite Vorschrift gleichen Namens auf derselben Seite, das Lebenswasser nach Gesner, destilliert dagegen.
+
+Pulvern. Puluerizanda Puluerizentur heißt: Gepulvert wird, was sich pulvern lässt, also die trockenen Hölzer, Rinden, Früchte und Blüten. Ob Moschus und Ambra mitgerieben oder nur dazugegeben werden, sagt der Text nicht.
+
+Glas und Schütteln. Das Glas soll optimè, aufs beste, verschlossen sein, damit Branntwein und Duft nicht entweichen. Das tägliche Schütteln, zwei- oder dreimal, verteilt den Bodensatz im Branntwein. Wo und wie warm der Ansatz einen Monat steht, nennt der Text nicht; heute stellt man so etwas kühl und dunkel (moderne Annahme, nicht aus der Vorschrift). Auch womit abgeseiht wird, steht nicht da.
+
+Die Mengen. Gewogen wird mit Apothekergewicht, Drachmen und Gran auf ein Pfund Branntwein. Am meisten ist es Zimt mit 10 Drachmen; Moschus steht mit einer ganzen Drachme, Ambra mit 40 Gran.
+
+Die Wirkungsliste. Gedächtnis, Sinne und Gehirn, Herz und Magen, Traurigkeit, Pest, Schlagfluss und am Ende „alle kalten Krankheiten“: Das ist die Sprache der Humoralpathologie, in der warme, duftende Mittel gegen Leiden kalter Natur stehen. Sommerhoff (Lexicon pharmaceutico-chymicum, 1701) führt Mittel für Herz und Kopf als Cordialia und Cephalica und zählt die roten Rosen zu den vier Herzblumen. Das ist der Anspruch der Handschrift, keine Empfehlung.
+
+Praxis. Ohne Moschus und Ambra lässt sich nur der Gewürzteil nachstellen: Zimt, Aloeholz, Kardamom, Kubeben, Nelken, Galgant, gelbes Sandelholz, rote Rosen, Muskatnuss und Muskatblüte, gepulvert in hochprozentigem Branntwein als heutigem Ersatz für das zirkulierte Aqua vitae. Hochprozentiger Branntwein ist leicht entzündlich, Muskatnuss und Muskatblüte sind in großer Menge bedenklich. Als Arznei taugt der Ansatz nicht.</note>
+        <note type="gloss" target="#mle-005-orig" n="ʒ" resp="#fyndling">Apothekerzeichen für die Drachme. Nach Sommerhoff (Lexicon pharmaceutico-chymicum, 1701) ist eine Drachme ein Quintlein, ein Viertel Lot, und hat 60 Gran. ℔ ist das Arzneipfund zu 12 Unzen oder 24 Lot, nicht das Handelspfund zu 32 Lot; der Rahmen mit ℞, Drachmen und Gran spricht für das Arzneipfund. ß steht für semis, halb. G[ran] ist das Gran, nach Sommerhoff so schwer wie ein kleines Gerstenkorn; die 40 Gran Ambra sind also zwei Drittel einer Drachme. Die Mengen sind nicht in heutige Gewichte umgerechnet.</note>
+        <note type="gloss" target="#mle-005-orig" n="Aquæ uitæ Circulatæ" resp="#fyndling">Aqua vitae, Lebenswasser, ist der Branntwein (Sommerhoff 1701: „Wasser des Lebens“). Circulata meint die Circulatio der Apotheker: Der Branntwein wird in einem geschlossenen Gefäß, dem Pelikan, unter Wärme immer wieder aufsteigen und zurückfließen gelassen und so von Unreinem getrennt (Sommerhoff 1701).</note>
+        <note type="gloss" target="#mle-005-orig" n="Ligni Aloes" resp="#fyndling">Aloeholz, auch Paradiesholz (Sommerhoff 1701: Agallochum seu Lignum Aloes, „Paradiß-Holtz“), ein Duftholz. Mit der Aloe-Pflanze hat es nichts zu tun.</note>
+        <note type="gloss" target="#mle-005-orig" n="Santali citrini" resp="#fyndling">Gelbes Sandelholz (Sommerhoff 1701: „Gelber Sandel“), ein Duftholz. Die Apotheke unterschied davon den weißen und den roten Sandel.</note>
+        <note type="gloss" target="#mle-005-orig" n="Moschi" resp="#fyndling">Moschus, auch Bisam, ein tierischer Duftstoff. Sommerhoff 1701 beschreibt ihn als eingetrockneten Saft aus einer Tasche am Nabel des Moschustiers.</note>
+        <note type="gloss" target="#mle-005-orig" n="Lucas Chinus" resp="#fyndling">So steht der Name am Schluss, als Gewährsmann der Vorschrift. Mattiolis Kräuterbuch (deutsch von Handsch, Prag 1563) nennt einen „weitberühmten“ Lucas Ghinus in Pisa; dass er gemeint ist, liegt nahe, ist aber nicht belegt.</note>
+        <note type="interpretive_choice" target="#mle-005-orig" n="Ambræ" resp="#fyndling" subtype="lexical">Graue Ambra. Der Text sagt nur Ambræ, aber sie steht neben Moschus in einer Duftformel, und die gleichartige Herzlatwerge schreibt ausdrücklich Ambræ Grisa neben Mosci.<list type="alternatives"><item>Bernstein<note type="rationale">Sommerhoff 1701 führt den Bernstein als Ambarum citrinum. Ohne Zusatz und neben Moschus ist er die weniger wahrscheinliche Lesart.</note></item><item>Walrat<note type="rationale">Sommerhoff 1701 nennt auch den Walrat Ambarum subalbidum. Der Text gibt keinen Zusatz, der dafür spräche.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-005-orig" n="at apoplexia: omnibusdeniq[ue] morbis frigis subuenit[?]" resp="#fyndling" subtype="philological">at ist für ab verschrieben, parallel zu a peste: Es bewahrt vor der Pest und vor dem Schlagfluss. frigis steht für frigidis, kalt; subuenit heißt „kommt zu Hilfe“, das s sieht in dieser Hand wie ein b aus.<list type="alternatives"><item>at für ac (und)<note type="rationale">Gibt denselben Sinn: und vor dem Schlagfluss.</note></item><item>at als „aber“<note type="rationale">Ergibt keinen Satz: „aber Schlagfluss“ passt nicht in die Reihe der Wirkungen.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-006-trans" resp="#fyndling">Was ist das? Ein gebranntes Gewürz- und Kräuterwasser in der Form einer Apothekervorschrift: Das Zeichen ℞ steht für recipe, „nimm“. Sechs Gewürze zu gleichen Teilen, ein Kraut nach Wahl, Branntwein im Gewicht des Ganzen, gemischt und destilliert. Mehr Arbeitsschritte nennt der Text nicht: kein Zerkleinern, kein Vorweichen, kein Gerät, keine Dauer und kein Zeichen, wann das Destillieren endet.
+
+Das Vierfache. „quadruplum“ sagt nicht, wovon. Gemeint sein kann das Vierfache eines einzelnen Gewürzteils oder das Vierfache aller sechs Gewürze zusammen; dann überwiegt das Kraut deutlich. Wer es heute nachstellt, nimmt meist die kleinere Lesart, das Vierfache eines Teils; das ist eine heutige Entscheidung, keine Angabe des Textes.
+
+Das Kraut. Salbei steht an erster Stelle, Rainfarn und Ambrosienkraut sind gleichrangige Wahl. Athanasia ist in den Kräuterbüchern und Wörterbüchern der Zeit der Rainfarn. Ambrosia führt Tabernaemontanus 1588 als „Ambrosienkraut“ oder „klein Traubenkraut“; welche heutige Pflanze das ist, lässt sich aus dem Text nicht sicher sagen.
+
+Der Branntwein. „Aqua ardens“ ist das gebrannte Wasser, „circulata“ heißt, dass es im geschlossenen Gefäß umgetrieben, also mehrmals hochgetrieben und zurückgeflossen ist. Der Text verlangt davon das Beste, in der Menge so schwer wie Gewürze und Kraut zusammen. Im Destillat landen die flüchtigen Duftstoffe; die festen Reste bleiben zurück.
+
+Praxis. Heute destilliert man so etwas in einer Brennblase mit Helm und Kühler und trennt den ersten Ablauf ab (heutige Praxis, nicht im Text). Alkoholdampf ist brennbar, darum kein offenes Feuer an Helm und Vorlage. Rainfarn gilt heute innerlich als bedenklich, Muskatnuss in größerer Menge ebenso; wer nachstellt, wählt den Salbei, den der Text ohnehin zuerst nennt.</note>
+        <note type="gloss" target="#mle-006-orig" n="Aqua ardens" resp="#fyndling">Wörtlich „brennendes Wasser“, das gebrannte Wasser. Das Apothekerlexikon von Sommerhoff (1701) setzt es dem Spiritus vini gleich, dem Weingeist.</note>
+        <note type="gloss" target="#mle-006-orig" n="Circulata" resp="#fyndling">„Zirkuliert“: Nach Sommerhoff (1701) wird die Flüssigkeit in einem geschlossenen Gefäß, dem Pelikan oder einem blinden Helm, über Wärme umgetrieben, so dass sie aufsteigt und wieder zurückfließt, wie im Kreis. So sollte sie reiner und stärker werden.</note>
+        <note type="gloss" target="#mle-006-orig" n="Gesnerus" resp="#fyndling">Wahrscheinlich der Zürcher Arzt und Naturforscher Conrad Gessner, dessen Buch über gebrannte Wasser (Thesaurus Euonymi) schon 1565 englisch erschien und den Tabernaemontanus 1588 als „Gesnerus“ anführt. Ob die Vorschrift aus seinem Buch selbst oder aus zweiter Hand stammt, bleibt offen.</note>
+        <note type="interpretive_choice" target="#mle-006-orig" n="quadruplum" resp="#fyndling" subtype="contextual">Wörtlich „das Vierfache“, ohne Bezugsgröße übersetzt: Der Satz folgt auf „ana partes æquales“ (je ein gleicher Teil), sagt aber nicht, ob ein einzelner Teil oder die ganze Gewürzmenge gemeint ist.<list type="alternatives"><item>Das Vierfache eines einzelnen Gewürzteils (sechs Teile Gewürz, vier Teile Kraut)<note type="rationale">Liest „quadruplum“ als Fortsetzung der Teilrechnung; ergibt ein gewürzbetontes Wasser.</note></item><item>Das Vierfache aller sechs Gewürze zusammen (sechs Teile Gewürz, vierundzwanzig Teile Kraut)<note type="rationale">Liest „quadruplum“ auf das Vorangehende insgesamt; dann ist das Kraut die Hauptsache und Salbei gibt den Ton.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-006-orig" n="Saluiæ, seu Athanasiæ, aut ambrosiæ" resp="#fyndling" subtype="lexical">Drei Kräuter zur Wahl: Salbei, Rainfarn, Ambrosienkraut. Athanasia ist Rainfarn nach Baret 1574 („Officinis Tanacetum &amp; Athanasia dicitur“), Bauhin 1623 („Athanasia seu Tanacetum“), Sommerhoff 1701 („Athanasia vid. Tanacetum. Germ. Rheinfahren“) und Knapski (Wrotycz = Athanasia, Tanacetum). Ambrosia ist bei Tabernaemontanus 1588 „Ambrosienkraut/ klein Traubenkraut“, das er ausdrücklich von Botrys trennt; die heutige Art bleibt offen.<list type="alternatives"><item>„seu“ als Gleichsetzung: Salbei, auch Athanasia genannt<note type="rationale">„seu“ kann einen zweiten Namen einleiten, aber kein geprüftes Wörterbuch setzt Salbei und Athanasia gleich; verworfen.</note></item><item>Athanasia als Frauenminze (Balsamkraut)<note type="rationale">In keinem der geprüften Wörterbücher und Kräuterbücher belegt; verworfen.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-007-trans" resp="#fyndling">Was ist das? Ein gesüßter Kräuterbranntwein: einfacher Branntwein mit Rosmarin, Lavendel, Anis und Engelwurz, dazu Kanarienzucker. Der Eintrag ist eine reine Zutatenliste. Er nennt kein Gefäß, keine Zeit, kein Feuer und keinen Arbeitsschritt.
+
+Gebrannt oder angesetzt? Die Überschrift sagt nur „wie man ihn bereitet“. Auf derselben Seite steht ein Anisbranntwein, der das Verfahren ausschreibt: einfachen Branntwein ein- oder zweimal zu Aquavit umbrennen, Anis darin einweichen, Helm und Röhren sauber scheuern und den Ansatz durchlaufen lassen, zuletzt den Zucker abgeschäumt in den Branntwein geben. Ein Absatz nach dem Zitwerbranntwein, der wohl für alle drei Zuckerbranntweine der Seite gilt, sagt, der Zucker komme nicht hinein, solange die übrigen Zutaten eingelegt werden, sondern erst, wenn der Branntwein abgezogen ist. Dann wird er über dem Feuer gelöst und abgekühlt in den Branntwein gegossen. Mehrere Wörter dieses Absatzes sind schwer lesbar. Für den Rosmarinbranntwein liegt deshalb das Abziehen am nächsten, belegt ist es für diesen Eintrag nicht.
+
+Die Zutaten. Rosmarin, Anis und Engelwurz stehen in Pfund, der Lavendel steht als „halbes Viertel“ ohne Maß am Kopf, noch vor der Branntweinmenge. Von der Engelwurz nennt der Text den Teil nicht. Der Kanarienzucker ist Zucker von den Kanarischen Inseln; der Text verlangt ihn ausdrücklich „zum Süßen dieses Branntweins“.
+
+Praxis. Wer eine Destille hat, folgt dem Muster der Nachbarn: Kräuter in den Branntwein, abziehen, den Zucker über dem Feuer lösen und abgekühlt zugeben. Beim Brennen entweicht leicht entzündlicher Alkoholdampf, deshalb muss der Helm dicht sitzen. Heutige Behelfslösung ohne Destille: die Kräuter im Branntwein ziehen lassen, abseihen und mit gelöstem Zucker süßen. Eine Ziehzeit nennt der Text dafür nicht. Lavendel und Rosmarin in Lebensmittelqualität kaufen.</note>
+        <note type="gloss" target="#mle-007-orig" n="Wodka" resp="#fyndling">Wódka heißt hier ein gebranntes Wasser, kein heutiger Wodka. Linde 1807 führt das Wort zuerst als „abgezogenes Wasser“ und bucht die aus Kräutern gebrannten Wässer darunter.</note>
+        <note type="gloss" target="#mle-007-orig" n="gorzałki prostey" resp="#fyndling">Einfacher Branntwein (gorzałka, bei Linde 1807 „der Branntwein“), also nicht noch einmal gebrannt. Der Anisbranntwein derselben Seite brennt ihn erst „zu Aquavit“ um, dieser Eintrag nicht. Eine Stärke nennt der Text nicht.</note>
+        <note type="gloss" target="#mle-007-orig" n="garcy" resp="#fyndling">Garniec (Genitiv Plural garcy) ist eigentlich ein großer Topf (Linde 1807) und war das gängige Hohlmaß Polen-Litauens. Sein Wert schwankte nach Ort und Zeit; der Text rechnet nur in diesem Maß.</note>
+        <note type="gloss" target="#mle-007-orig" n="Ćwierć funta" resp="#fyndling">Funt ist das Pfund, ćwierć ein Viertel, połćwierci ein halbes Viertel, also ein Achtel. Das Lavendelmaß steht ohne funta da.</note>
+        <note type="gloss" target="#mle-007-orig" n="dzięgielu" resp="#fyndling">Engelwurz (Angelica). Linde 1807 und Knapski 1643 führen sie unter Namen der Wurzel (Heiliggeistwurzel, Radix S. Spiritus); welchen Teil der Eintrag meint, sagt er nicht.</note>
+        <note type="interpretive_choice" target="#mle-007-orig" n="Kanairu[?]" resp="#fyndling" subtype="lexical">Kanarienzucker: Cukru do osłodzenia funt Kanairu tey gorzałki heißt „Zucker zum Süßen dieses Branntweins: ein Pfund Kanarienzucker“. Linde 1807 (KANAR 2) führt kanar als „Canarienzucker“, Genitiv kanaru. Die beiden folgenden Branntweine derselben Seite setzen das Wort ebenso direkt hinter die Zuckermenge („Cukru funt kanariu“, „połtora funta kanairi“). Unsicher sind nur einzelne Buchstaben (i oder r), nicht das Wort.<list type="alternatives"><item>Kanarienwein (Linde 1807, KANAR 3)<note type="rationale">Das Wort kann auch den Wein von den Kanaren meinen. Hier steht es aber unmittelbar bei der Zuckermenge, und eine eigene Menge für Wein fehlt.</note></item><item>Kandis<note type="rationale">So war das Wort in einer früheren Lesung des Nachbareintrags aufgefasst. Am Bild steht kein d; der vermeintliche Schaft gehört zur Zeile darüber.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-007-orig" n="iako gotowac (Verfahren)" resp="#fyndling" subtype="contextual">Abziehen: Die Kräuter kommen in den einfachen Branntwein und werden mit ihm über den Destillierhelm abgezogen; der Zucker kommt erst danach, über dem Feuer gelöst und abgekühlt. So beschreibt es der Anisbranntwein derselben Seite, und ein Absatz nach dem Zitwerbranntwein sagt es für den Zucker der Zuckerbranntweine. Der Eintrag selbst nennt nur Zutaten und Mengen.<list type="alternatives"><item>Nur ansetzen: Kräuter im Branntwein ziehen lassen, abseihen, süßen<note type="rationale">Ohne Destille die naheliegende heutige Lösung. Kein Wort davon steht im Eintrag, und die Nachbarn derselben Seite brennen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-007-orig" n="Lawendy połćwierci" resp="#fyndling" subtype="contextual">Lavendel ein halbes Viertel, ohne Maß. Nach der Engelwurz-Zeile dzięgielu połćwierci funta liegt ein halbes Viertelpfund nahe; der Text sagt es nicht, deshalb bleibt die Menge ohne Einheit. Die Zeile steht vor der Branntweinmenge am Kopf des Eintrags.<list type="alternatives"><item>Ein halbes Viertel eines anderen Maßes<note type="rationale">Ohne Maßwort nicht auszuschließen. Alle anderen Kräuter des Eintrags stehen in Pfund.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-008-trans" resp="#fyndling">Was ist das? Ein gewürzter und gesüßter Branntwein: Auf drei Garniec einfachen Branntwein kommen Kalmus als Leitwürze, dazu Anis und Nelken, und ein Pfund Kanarienzucker. Mehr sagt der Eintrag nicht. Er nennt kein Verfahren, keine Zeit und kein Gerät.
+
+Brennen oder ansetzen? Der Kalmusbranntwein steht zwischen einem Rosmarin- und einem Zitwerbranntwein derselben Bauart. Nach dem Zitwerbranntwein folgt ein Absatz ohne eigene Überschrift, der sich wohl auf alle drei bezieht: Den Zucker gebe man nicht hinein, solange die übrigen Zutaten hineinkommen, sondern erst, wenn der umgebrannte Branntwein, die aquavita, abgestellt ist. Dann löse man den Zucker über dem Feuer und gieße ihn abgekühlt in den Branntwein. Das spricht dafür, dass die Würzen mit dem einfachen Branntwein noch einmal gebrannt wurden, so wie es der Anisbranntwein auf derselben Seite ausdrücklich beschreibt. Einige Wörter jenes Absatzes sind unsicher gelesen, und für den Kalmusbranntwein selbst bleibt es ein Schluss aus der Nachbarschaft.
+
+Der Zucker. Kanar ist nach Linde 1807 Kanarienzucker, Rohrzucker von den Kanarischen Inseln. Ein Pfund kommt auf drei Garniec. Wann und wie er hineinkommt, sagt nicht dieser Eintrag, sondern die Regel beim Zitwerbranntwein: über dem Feuer lösen, abkühlen lassen, eingießen.
+
+Kalmus heute. Die Kalmuswurzel gilt heute wegen ihres Gehalts an β-Asaron als bedenklich, und der Gehalt schwankt je nach Herkunft der Pflanze. Wer den Branntwein nachmacht, geht mit dem Kalmus sparsam um.
+
+Praxis. Historisch, nach der Regel der Nachbareinträge: Kalmus, Anis und Nelken in den einfachen Branntwein geben und noch einmal brennen, danach den Zucker über dem Feuer lösen, abkühlen lassen und in den Branntwein gießen. Beim Brennen gehören offene Flamme und Alkoholdampf nicht zusammen, und heiße Zuckerlösung kommt erst abgekühlt in den Branntwein, wie es die Regel selbst verlangt. Heute üblich und nicht im Text ist das bloße Ansetzen: die Würzen in fertigem Branntwein ziehen lassen, abseihen und mit dem gelösten Zucker süßen. Die Mengen bleiben im Verhältnis des Textes: ein Viertelpfund Kalmus, ein halbes Viertelpfund Anis, ein halbes Lot Nelken und ein Pfund Zucker auf drei Garniec.</note>
+        <note type="gloss" target="#mle-008-orig" n="Wodkę" resp="#fyndling">Wódka heißt um 1630 Branntwein, ein gebranntes Wasser, nicht der heutige Wodka. Die Hand gebraucht wódka in der Überschrift und gorzałka im Text für dasselbe Getränk.</note>
+        <note type="gloss" target="#mle-008-orig" n="Aier" resp="#fyndling">Kalmus (Acorus calamus). Linde 1807 führt Agier als fehlerhafte Form für tatarak oder tatarskie ziele und erklärt es mit „Kalmus, Ackerwurz“. Der Text nennt nur die Pflanze; als Ware gehandelt wurde die gewürzhafte Wurzel.</note>
+        <note type="gloss" target="#mle-008-orig" n="gorzałka prosta" resp="#fyndling">Einfacher Branntwein, einmal gebrannt. Der Anisbranntwein auf derselben Seite lässt solchen Branntwein erst na aquavitę umbrennen, also stärker machen; prosta ist der Gegenbegriff dazu.</note>
+        <note type="gloss" target="#mle-008-orig" n="garcy" resp="#fyndling">Mehrzahl von garniec, einem polnisch-litauischen Hohlmaß. Krünitz berichtet, dass man in Polen auch den Getreidescheffel in Garniec rechnete. Die Mengen bleiben hier im Maß des Textes.</note>
+        <note type="interpretive_choice" target="#mle-008-orig" n="Wziąć do trzech garcy gorzałki prostey (Verfahren)" resp="#fyndling" subtype="contextual">Die Würzen kommen in den einfachen Branntwein, der noch einmal gebrannt wird; der Zucker kommt erst danach, über dem Feuer gelöst und abgekühlt. Der Eintrag selbst nennt kein Verfahren; die Lesart folgt der Regel nach dem Zitwerbranntwein auf derselben Seite, die den Zucker erst zugibt, wenn die umgebrannte aquavita abgestellt ist, und dem Anisbranntwein derselben Seite, der einfachen Branntwein ausdrücklich umbrennt.<list type="alternatives"><item>Nur ansetzen: die Würzen in fertigem Branntwein ziehen lassen und dann süßen.<note type="rationale">Der Eintrag schließt das nicht aus, und so macht man Kräuterbranntwein heute. Dagegen spricht die Zuckerregel der Nachbareinträge, die von umgebranntem Branntwein spricht; sie ist allerdings teils unsicher gelesen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-008-orig" n="kanariu[?]" resp="#fyndling" subtype="philological">kanariu, Kanarienzucker. Am Bild stehen k-a-n-a, ein Strich von oben, dann r-i-u; der Strich ist die Unterlänge des g von gozdikow aus der Zeile darüber. Die beiden Nachbareinträge schreiben Kanairu und kanairi, und Linde 1807 belegt kanar cukier als Canarienzucker.<list type="alternatives"><item>kandiu, Kandiszucker<note type="rationale">Eine frühere Lesung; sie nahm die Unterlänge aus der Vorzeile für ein d. Ohne diesen Strich bleibt kein d, und ein Wort für Kandis ist in den drei Einträgen nirgends sicher zu lesen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-008-orig" n="połłota[?]" resp="#fyndling" subtype="philological">pół łota, ein halbes Lot Nelken. Am Bild folgen auf poł ein zweiter hoher Buchstabe, o, ein kurzes t und a. Im Bierrezept desselben Konvoluts werden Nelken ebenso pół łota gemessen.<list type="alternatives"><item>połtora, anderthalb<note type="rationale">Dann folgte auf poł ein kurzes t und ein r wie in tora funta des Zitwerbranntweins auf derselben Seite. Hier steht ein Buchstabe mit Oberlänge und kein r.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-009-trans" resp="#fyndling">Was ist das? Ein gewürzter Branntwein: einfacher Branntwein mit Zitwer, Rosmarin und Anis, hinterher mit Kanarienzucker gesüßt. Das Brennen schreibt der Text nicht als eigenen Schritt aus, setzt es aber voraus: Der Aquavit „geht über“, wird „umgebrannt“ beiseitegestellt, der Branntwein wird „abgezogen“. Gewürze und Branntwein kommen also zusammen ins Brenngerät, nur der Zucker bleibt draußen.
+
+Die Zuckerregel. Der Absatz „Dies jedoch bedenken“ steht ohne eigene Überschrift unter diesem Eintrag. Er passt ebenso auf die zwei gleich gebauten Branntweine davor, mit Rosmarin und mit Kalmus. Einen Grund nennt der Text nicht. Heute weiß man: Zucker verdampft nicht und ginge beim Brennen nicht mit über, er bliebe in der Blase zurück.
+
+Aquavit und Rest. Was nach dem Aquavit noch kommt, nennt der Text „schon schwächer“; das Wort danach ist unleserlich, ebenso eins vor „abgekühlt in den Branntwein gießen“. Was mit dem schwächeren Rest geschieht, sagt der erhaltene Text nicht.
+
+Worin der Zucker gelöst wird. Die Stelle ist unsicher gelesen, am ehesten steht dort „hinein“. Wasser nennt der Text nicht. Heute löst man Zucker für einen Likör meist in wenig Wasser; das ist eine moderne Lösung, keine Angabe der Handschrift. Ob der Sirup oder der Branntwein abkühlen soll, lässt der Satz offen; in beiden Fällen kommen beide kalt zusammen.
+
+Mengen. Zitwer „ein Viertel“ und Rosmarin „ein halbes Viertel“ stehen ohne Einheit; die zwei Schwestereinträge schreiben an vergleichbarer Stelle „ein Viertelpfund“. Brennzeit, Hitze und Ausbeute nennt der Text nicht.
+
+Praxis. Das Verhältnis bleibt das des Textes: auf drei Garniec Branntwein ein halbes Pfund Anis und anderthalb Pfund Zucker, Zitwer und Rosmarin in kleineren Teilen. Umbrennen braucht ein Destilliergerät; Alkoholdampf an offener Flamme ist brennbar, das Gerät muss dicht sein. Heißen Zuckersirup nicht in Branntwein gießen: Der Text kühlt vorher ab, und das schützt auch vor Verbrühungen.</note>
+        <note type="gloss" target="#mle-009-orig" n="Wodkę" resp="#fyndling">Wódka heißt um 1630 ein gebranntes Wasser, also Branntwein, nicht der heutige Wodka. Linde 1807 erklärt das Wort als abgezogenen Branntwein. Die Überschrift sagt wódka, der Text gorzałka und aquavita.</note>
+        <note type="gloss" target="#mle-009-orig" n="gorzałki prostey" resp="#fyndling">Einfacher Branntwein (gorzałka prosta), noch nicht umgebrannt. Erst das Umbrennen über den Gewürzen ergibt den Aquavit des zweiten Absatzes.</note>
+        <note type="gloss" target="#mle-009-orig" n="garcy" resp="#fyndling">Mehrzahl von garniec, dem polnisch-litauischen Hohlmaß. Sein Wert schwankte nach Ort: Doursther 1840 gibt für das Flüssigmaß in polnischen Städten Werte zwischen etwa 1,8 Litern (Lublin) und 3,8 Litern (Krakau) an, einen Wert für das Großfürstentum Litauen nennt er nicht. Der Text rechnet nur in diesem Maß.</note>
+        <note type="gloss" target="#mle-009-orig" n="aquavita" resp="#fyndling">Lateinisch aqua vitae, Lebenswasser. Hier der umgebrannte, stärkere Branntwein, der beim Brennen übergeht; der Anisbranntwein derselben Seite sagt dafür, man solle den Branntwein „zu Aquavit umbrennen“.</note>
+        <note type="gloss" target="#mle-009-orig" n="Cytwaru" resp="#fyndling">Zitwer, der Wurzelstock von Curcuma zedoaria, einer Verwandten des Ingwers. Linde 1807 führt ihn als Wurzel aus der Apotheke mit kampferartigem Geruch.</note>
+        <note type="interpretive_choice" target="#mle-009-orig" n="Cytwaru ćwierć / rozmarynu połćwierci" resp="#fyndling" subtype="contextual">Ein Viertel Zitwer und ein halbes Viertel (ein Achtel) Rosmarin, ohne Einheit; so übersetzt. Wahrscheinlich ist das Pfund gemeint: Die Schwestereinträge derselben Seite schreiben „Ćwierć funta“ und „połćwierci funta“ aus, und hier folgt „poł funta“ für den Anis. In den Zutaten bleibt die Menge ohne Zahl.<list type="alternatives"><item>Viertel eines anderen Maßes, etwa eines Garniec<note type="rationale">Nicht auszuschließen, weil die Einheit fehlt; ein Viertel Garniec Zitwer neben einem halben Pfund Anis passt aber nicht zu den Schwestereinträgen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-009-orig" n="kanairi[?]" resp="#fyndling" subtype="lexical">Kanarienzucker. Linde 1807 führt kanar ausdrücklich als „Canarienzucker“, und dasselbe Wort steht in den zwei Schwestereinträgen (Kanairu, kanariu). Am Bild ist der vermeintliche d-Schaft die Unterlänge des p aus der Zeile darüber.<list type="alternatives"><item>Kandiszucker<note type="rationale">Eine frühere Lesung mit d; am Bild steht kein d, und Linde stützt kanar.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-009-orig" n="przedzie[?] … przepisowana[?] … napędzi[?]" resp="#fyndling" subtype="contextual">Der Branntwein wird mit den Gewürzen umgebrannt: Der Aquavit „geht über“ (przedzie für przeydzie, Linde 1807 PRZEYŚĆ: übergehen), wird „umgebrannt“ beiseitegestellt (przepisowana wie tey przepisowaney im Anisbranntwein derselben Seite), und der Branntwein wird „abgezogen“ (Linde 1807 unter PĘDZIĆ: „Wódkę pędzić … Branntwein abziehen, destilliren“).<list type="alternatives"><item>Nur angesetzt, nicht gebrannt: die Gewürze ziehen im Branntwein, der Zucker kommt zum fertigen Ansatz<note type="rationale">Dagegen sprechen alle drei Verben und das Wort aquavita; die Schwestereinträge nennen kein Verfahren und entscheiden nicht.</note></item><item>przepisowana als „vorgeschrieben“<note type="rationale">Ergibt im Satz keinen Sinn; das Wort steht auf derselben Seite für das Umbrennen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-009-orig" n="wonie[?]" resp="#fyndling" subtype="philological" cert="unknown">„hinein“, gelesen als w nie: den Zucker hineingeben und über dem Feuer lösen. Worauf sich nie bezieht, sagt der Satz nicht.<list type="alternatives"><item>w wodzie oder w wodę, in Wasser<note type="rationale">Sachlich naheliegend, aber am Bild steht kein d; Wasser nennt der Text nirgends.</note></item><item>woni, Duft<note type="rationale">Buchstäblich lesbar, ergibt mit włożywszy keinen Satz.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-010-trans" resp="#fyndling">Was ist das? Ein Anisbranntwein in mehreren Bränden. Der einfache Branntwein wird zuerst ein- oder zweimal umgebrannt, dann mit Anis angesetzt und noch einmal über den Alembik gebrannt; erst am Ende kommt der Zucker dazu. Die Nachbarn auf derselben Seite (Rosmarin-, Kalmus- und Zitwerbranntwein) nennen nur Würze und Zucker auf drei Garniec, dieser Eintrag den ganzen Ablauf.
+
+Umbrennen. przepisać na aquavitę heißt: den schon gebrannten Branntwein noch einmal brennen, bis er Aquavit ist. Der Text verlangt dafür einen Branntwein, „der nicht stinkt“, und vor dem letzten Brand einen sauber gescheuerten Helm samt Röhren. Beides zielt auf einen reinen Geschmack; einen Grund nennt der Text nicht.
+
+Der Anisansatz. Zwei oder anderthalb Pfund Anis kommen auf drei Garniec des umgebrannten Branntweins, halb zerstoßen oder ganz. Wie lange er weicht, steht in einem Wort, das sich nicht sicher deuten lässt (przedenydzi); ein Wort für Woche steckt nicht darin. Auch der Zusatz „damit er nicht przypadła“ bleibt dunkel. Heute würde man einen solchen Ansatz einige Tage stehen lassen; das ist eine moderne Annahme, keine Angabe des Textes.
+
+Die Ausbeute. Aus den drei Garniec gewinnt man „etwa einen halben Garniec“: z vor einer Maßangabe heißt bei Linde 1807 „ungefähr“. Nach heutigem Verständnis nimmt ein so knapper Brand nur den stärksten Teil des Destillats ab; der Text sagt nur die Menge.
+
+Der Zucker. „Auf dieselbe Weise“ verweist auf ein Verfahren, das hier nicht steht. Direkt davor regelt der Zitwerbranntwein derselben Seite, dass der Zucker erst nach dem Brennen dazukommt, über dem Feuer gelöst und abgekühlt in den Branntwein gegossen. Wie man Zucker abschäumt, zeigt der Rosolis des Konvoluts: langsam sieden lassen, nicht rühren, bis der Schaum oben steht, und durch ein Tuch seihen. Eine Zuckermenge und eine Wassermenge nennt dieser Eintrag nicht.
+
+Vorsicht. Alkoholdampf an offener Flamme ist brennbar; siedender Zucker verbrüht.
+
+Praxis. Ohne Brennen lässt sich das Rezept nicht nachstellen, denn das Anisaroma kommt durch den letzten Brand in den Branntwein. Eine heutige Annäherung, ausdrücklich modern: fertigen klaren Branntwein mit halb zerstoßenem Anis ansetzen, abseihen, Zucker in wenig Wasser lösen, abschäumen und abgekühlt zugießen. Das schmeckt nach Anis, ist aber ein Ansatz, kein Brand.</note>
+        <note type="gloss" target="#mle-010-orig" n="Gorzałka, wódka" resp="#fyndling">Die Überschrift nennt zwei Wörter für dasselbe: gorzałka und wódka, beide Branntwein. Prosta gorzałka ist der einfache, einmal gebrannte Branntwein, von dem der Eintrag ausgeht. Wódka meint im 17. Jahrhundert den gebrannten Branntwein, nicht den heutigen Wodka.</note>
+        <note type="gloss" target="#mle-010-orig" n="aquavitę" resp="#fyndling">Aquavit, bei Linde 1807 akwawita: nochmals getriebener, gewürzter Branntwein (wódka przepędzona, korzenna gorzałka), im Gegensatz zum einfachen Branntwein. Przepisać na aquavitę heißt also: zu Aquavit umbrennen. Nicht der heutige skandinavische Aquavit.</note>
+        <note type="gloss" target="#mle-010-orig" n="garcow" resp="#fyndling">Garniec (Mehrzahl garcy, garców), Hohlmaß Polen-Litauens. Nach Linde 1807 hat ein Garniec zwei Halbgarniec oder vier Quart. Der Wert schwankte nach Ort und Zeit; hier wird nicht umgerechnet.</note>
+        <note type="gloss" target="#mle-010-orig" n="Alębik / trabki" resp="#fyndling">Der Alembik ist der Helm, den man zum Brennen auf das Gefäß setzt; die tschechischen Wörterbücher von Jungmann und Kott beschreiben ihn mit langem Schnabel oder Rohr. Die trąbki (Röhrchen) sind diese Röhren am Helm. Der Schreiber hat sie über der Zeile nachgetragen: auch sie sollen sauber gescheuert sein.</note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="przedenydzi[?]" resp="#fyndling" subtype="philological" cert="unknown">Eine Zeitangabe zum Weichen des Anis, deren Länge sich nicht lesen lässt. Die Buchstaben sind deutlich (p-r-z-e-d-e-n-y-d, dann ein Buchstabe, der eher n als z ist, und i); ein Wort für Woche (tydzień, niedziela) steckt nicht darin. In der Übersetzung bleibt das Wort stehen.<list type="alternatives"><item>przez jeden dzień: einen Tag<note type="rationale">Passt zu prze… und …dzi, setzt aber eine starke Verkürzung voraus.</note></item><item>przez … dni: einige Tage<note type="rationale">Liest man den vorletzten Buchstaben als n, endet das Wort auf dni (Tage); die Zahl davor bleibt unklar.</note></item><item>eine Woche<note type="rationale">Verworfen: keine Buchstabenstütze.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="żeby nie przypadła[?]" resp="#fyndling" subtype="lexical" cert="unknown">Die Buchstaben sind lesbar, der Sinn nicht. Bezug ist der umgebrannte Branntwein (tey przepisowaney, weiblich wie przypadła). In der Übersetzung bleibt das Wort stehen.<list type="alternatives"><item>damit er nicht abfällt oder nachlässt<note type="rationale">Linde 1807 führt przypaść auch vom Sinken des Wasserstands; die Übertragung auf die Stärke des Branntweins ist eine Vermutung.</note></item><item>damit er nicht (übel) gerät<note type="rationale">Linde 1807: przypadać do czego = passen, taugen, do smaku = gefallen; mit der Verneinung ergäbe das keinen glatten Satz.</note></item><item>damit er nicht anbrennt<note type="rationale">Verworfen: das wäre przypalić, nicht przypaść.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="dobędzie spolgarca[?]" resp="#fyndling" subtype="lexical">s połgarca = etwa einen halben Garniec: Linde 1807 (Z, § b) gibt z vor Zahl- und Maßangaben als „ungefähr, etwa“ („z pólgodziny … etwa eine halbe Stunde“). Dobędzie = man gewinnt. Gemeint ist die Ausbeute des letzten Brandes aus den drei Garniec.<list type="alternatives"><item>je Garniec Ansatz ein halber Garniec<note type="rationale">Verworfen: kein Wort für „je“ im Text.</note></item><item>brennen, bis ein halber Garniec im Gefäß bleibt<note type="rationale">Verworfen: dobyć heißt gewinnen, herausholen, nicht übrig lassen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-010-orig" n="Cukru takowym że sposobem dobrze odszumowawszy[?]" resp="#fyndling" subtype="contextual">Den Zucker „auf dieselbe Weise“ gut abschäumen. Das Verfahren steht nicht im Eintrag; nächstliegend ist die Zuckerregel direkt davor beim Zitwerbranntwein (Zucker erst nach dem Brennen, über dem Feuer gelöst, abgekühlt zugegossen). Die Buchstaben von odszumowawszy sehen eher wie odsiamowawszy aus, das kein Wort ist; szumować (abschäumen) passt zum Zucker und zu den szumowiny (Schaum) im Rosolis.<list type="alternatives"><item>auf dieselbe Weise wie im Rosolis: sieden lassen, bis der Schaum oben steht, durchs Tuch seihen<note type="rationale">Dort ist das Abschäumen beschrieben, aber auf einem anderen Blatt des Konvoluts.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-011-trans" resp="#fyndling">Was ist das? Ein Bier vom Korn bis zum Fass: Die Gerste wird geweicht, gekeimt und im Rauch gedarrt, das Malz grob geschrotet und mit siedendem Wasser eingemaischt; zum Sieden bringen es glühende Steine, die in den Bottich gelegt werden. Der Hopfen kocht gesondert in Würze aus diesem Bottich, ein Nachguss mit Wacholderwasser zieht die Treber aus, aus denselben Trebern entsteht ein Gesindebier. Angestellt wird auf frischer Hefe vom jungen Bier, ins Fass kommt ein Leinensäckchen mit Kardamom, Nelken und Muskat.
+
+Mälzen und Darren. Der Text gibt die Endzeichen selbst: Beim zweiten Haufen soll es so warm werden, dass die Hand es kaum aushält, gedarrt wird, bis das Korn bröckelt. Darrorte sind Riege, Badestube oder Hopfendarre; geheizt wird mit Erle, notfalls Eiche, ausdrücklich so, dass das Malz im Rauch trocknet. Das Malz wird also rauchig. Wie dick die Keimschicht liegt, beschreibt der Text mit kleinem Finger und Daumen; die Stelle davor (zworek na kiiach) ist nicht sicher gelesen. Ebenso unklar ist ein zweites Weichverfahren mit siedendem Wasser (zwara wsko) und ein Wort neben "grob" beim Mahlen (krapko).
+
+Steinmaischen. Zuerst wird das Schrot mit wenig siedendem Wasser angerührt und zwei bis drei Stunden zugedeckt gehalten, damit es süß wird, dann mit weiterem siedendem Wasser verdünnt. Währenddessen glühen die Steine im Feuer; sie kommen in den Bottich, bis die Maische gut siedet, danach bleibt der Bottich zugedeckt, bis das Sieden von selbst aufhört. Warum Steine statt eines Kessels, sagt der Text nicht. Heute ordnet man das als Steinbier ein.
+
+Hopfen und Halmprobe. Der Hopfen wird vorher angerieben (wo, ist mit na kryniczy nicht sicher gelesen) und in warmer Würze aus dem Steinbottich gekocht, bis die Probe gelingt: Zwischen den Kanten eines dreikantig zugerichteten Strohhalms soll sich etwas wie Glas zeigen und stehen bleiben. Die Menge bezieht der Text ausdrücklich nicht auf das Malz, sondern auf das fertige Bier: drei Pfund je Fass Bier. Wie schwer dieses Pfund und wie groß das Fass war, sagt er nicht.
+
+Nachguss, Gesindebier, Gärung. Ist die Würze in den Trog gelaufen, werden die Treber mit siedendem Wasser besprengt, in dem Wacholderreisig samt Beeren ausgekocht wurde. Danach kommt ein weiterer Aufguss für das Gesinde, so lange, wie er noch Geschmack zieht, und wird gesondert angestellt. Das Anstellen auf frischer Hefe, die man oben vom jungen Bier nimmt, ist nur bruchstückhaft lesbar; sicher ist: Wenn der Schaum zusammenfällt, kommt das Bier ins Fass. Das Wort für das Gären ist "säuern" (kwasić); gemeint ist das Angären mit Hefe. Mehrere Stellen dieses Abschnitts und eine Zahl ("drei Quart") sind unleserlich oder unsicher.
+
+Lagern. Verspundet wird erst, wenn das Brausen aufgehört hat; dann wird der Spund mit Lehm oder Asche verschmiert, "wegen des Ausdünstens" - ob das Ausdünsten verhindert werden soll, sagt der Text nicht wörtlich. Trinkbar ist es am vierten Tag, am besten nach einem halben oder ganzen Jahr, weil dann, so der Text, der Hopfen "gar" ist und das Bier nicht mehr bitter.
+
+Praxis. Glühende Steine in einem Holzbottich bedeuten Dampfstöße und Verbrennungsgefahr; sie gehören mit Zange und Abstand in die Maische. Darren über offenem Feuer in einem Holzbau ist brandgefährlich. Ein Fass erst verspunden, wenn die Gärung wirklich ruht, sonst baut sich Druck auf. Für den Nachguss nur den gemeinen Wacholder nehmen; andere Wacholderarten wie der Sadebaum gelten als giftig. Muskat steht hier mit einer oder zwei Nüssen für ein ganzes Fass im Säckchen, nicht als Löffelmaß.</note>
+        <note type="gloss" target="#mle-011-orig" n="bir Inflantski" resp="#fyndling">Livländisches Bier. Inflanty ist der polnische Name für Livland. Das Wort "bir" ist das deutsche Bier, hier neben "piwo" gesetzt, als Name der Art.</note>
+        <note type="gloss" target="#mle-011-orig" n="ryia, łaźnia, osieć" resp="#fyndling">Drei Orte zum Darren: die Riege (Campe: in Liv- und Estland eine Darre für Getreide), die Badestube und die osieć, nach Linde 1807 eine Darre für Hopfen und Korn. Das Malz liegt dort auf Brettern.</note>
+        <note type="gloss" target="#mle-011-orig" n="kamienie gorące rozpalone" resp="#fyndling">Glühende Steine, die in den Bottich gelegt werden, bis die Maische siedet. Heute heißt ein so gebrautes Bier Steinbier. Hermanns livländisches Hausbuch (Riga 1695) maischt seinen Malzmet auf dieselbe Weise.</note>
+        <note type="gloss" target="#mle-011-orig" n="słomkę na trzy granie" resp="#fyndling">Einen Strohhalm "auf drei Kanten" zurichten: Linde 1807 führt trzygraniec als Dreieck. Wie der Halm genau gespalten oder gefaltet wird, sagt der Text nicht; die Probe gilt als bestanden, wenn sich dazwischen etwas wie Glas zeigt und stehen bleibt.</note>
+        <note type="gloss" target="#mle-011-orig" n="słodziny, dla Czelady" resp="#fyndling">Słodziny sind nach Linde 1807 die Treber vom Bierbrauen. Czeladź ist das Gesinde: Auf dieselben Treber kommt noch einmal heißes Wasser, das dünnere Bier daraus ist für die Dienstleute.</note>
+        <note type="gloss" target="#mle-011-orig" n="urze (uwrzeć)" resp="#fyndling">Linde 1807: gar kochen, auch einkochen. Der Text sagt, der Hopfen werde mit der Lagerung "gar", so dass das Bier nicht mehr bitter ist; das Nachbarrezept des Holländers benutzt dasselbe Wort beim Hopfenkochen.</note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="abo czyste jęczmienia zwara[?] wsko[?] wrzące" resp="#fyndling" subtype="philological" cert="unknown">Unübersetzt stehen gelassen: Die Buchstaben sind z-w-a-r-a und w-s-k-o gelesen, "wrzące" (siedend) ist sicher. Gemeint ist offenbar ein zweites Weichverfahren mit siedendem Wasser. Linde 1807 führt "zwara" nur mit einem unklaren Beleg, "wsko" gar nicht.<list type="alternatives"><item>Die saubere Gerste mit siedendem Wasser überbrühen<note type="rationale">Passt zu "wrzące" und zum "abo" (oder) nach dem kalten Weichen, ist aber nicht aus den Wörtern belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="A kiedy zworek[?] na kiiach wysączywszy wodę … z wielkim palcem słód usłany" resp="#fyndling" subtype="philological" cert="unknown">Gedruckte Lesung übersetzt: Wenn "zworek na kiiach" das Wasser abgelaufen ist, lege ich es als Malz zum Keimen aus, so dick wie ein kleiner Finger, mit dem Daumen ausgebreitet. "zworek na kiiach" ist nicht gedeutet.<list type="alternatives"><item>"z worków na kijach": aus Säcken, die an Stöcken hängen, abtropfen lassen<note type="rationale">Gibt Sinn, aber die Buchstaben tragen "worków" nicht sicher.</note></item><item>"z wielkim palcem" als Schichtdicke: bis zur Dicke des Daumens<note type="rationale">Der Satz nennt erst den kleinen Finger als Maß, der Daumen kann Werkzeug oder zweites Maß sein.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="skoro na kryniczy[?] chmiel zatarszy[?]" resp="#fyndling" subtype="philological" cert="unknown">Gedruckte Lesung: sobald man den Hopfen "na kryniczy" angerieben hat. Linde 1807: krynica = Zisterne, kleiner Wasserbehälter, Quelle; zatrzeć = verreiben. Ort und Handgriff bleiben offen.<list type="alternatives"><item>"an der Quelle" bzw. am Wasserbehälter<note type="rationale">Wörtlich naheliegend, im Ablauf aber ohne erkennbaren Sinn.</note></item><item>"zatarłszy" als Einmaischen des Hopfens in etwas Würze<note type="rationale">Im Nachbarrezept heißt zatrzeć einmaischen; für den Hopfen ist das nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="trzy kwarty[?] […] korzyst[…] […]" resp="#fyndling" subtype="philological" cert="unknown">Gedruckte Lesung übersetzt ("drei Quart […]"); die Zeile ist blass und verkleckst, die Zahl nicht gesichert.<list type="alternatives"><item>"a wybrawszy z koryta" (und wenn man es aus dem Trog genommen hat)<note type="rationale">Die Buchstabenfolge der Zeile ähnelt stark dem gleich folgenden "a wybrawszy z koryta"; dann stünde hier keine Zahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="zadać y ukwasić / drożdże … kwasić" resp="#fyndling" subtype="lexical">"säuern", gemeint ist das Angären: Linde 1807 gibt kwasić als säuern, einsäuern und für das Tschechische ausdrücklich "gären"; im Text steht es mit "zadać" (anstellen) und mit frischer Hefe.<list type="alternatives"><item>Bewusst sauer werden lassen<note type="rationale">Kein Hinweis im Text; die Hefe wird ausdrücklich genannt und der Schaum beobachtet.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-012-trans" resp="#fyndling">Was ist das? Eine vollständige Brauanweisung: Gerste mälzen und darren, das Malz einmaischen, läutern und die Würze sehr lange mit Hopfen kochen, dann mit frischer Hefe gären lassen und auf Fässer ziehen. Aus dem ausgelaugten Treber entsteht zum Schluss ein zweites, weißes Bier. Mengen nennt der Text nur in Fass und Handvoll; wie groß Kessel und Fässer sind, sagt er nicht.
+
+Mälzen. Die Gerste wird mit Wasserwechsel bis zum dritten, dann bis zum vierten Tag geweicht, ausgespült und eine Spanne dick zum Keimen gelegt; wächst sie nicht, wird gewendet. Nach dem Keimen liegt sie fünf oder sechs Stunden im Haufen, „damit sie süß wird“, dann wird sie auseinandergezogen und abgekühlt. Was der Schreiber mit owaldo vor „trocken“ meint, ist ungeklärt. Getrocknet wird langsam über Erlen-, Eichen-, Tannen- oder am liebsten Hainbuchenholz. Das Wort für den zweiten Trockenplatz ist unleserlich; ein weiteres Bier desselben Konvoluts legt das Malz na lasach ab, was an Darrhorden denken lässt. Auch der Behälter vor dem Sack ist unleserlich. Ob Rauch an das Malz kommt, sagt der Text nicht.
+
+Maischen und Läutern. Eingemaischt wird mit kochendem Wasser im ausgebrühten Bottich, zwei Handvoll Hopfen gleich dazu. Der zweite Bottich dient zum Abläutern: Stroh auf Sprossen bildet den Boden, und um den großen Zapfen im Ablauf liegen ein paar Handvoll Hopfen, die - so die naheliegende Deutung - beim Abziehen mitfiltern. Darüber kommt das dreifache Maß kochenden Wassers. Die ablaufende Würze wird dreimal im Kessel aufgekocht und wieder über das Malz gegossen. Der Wasserstand über dem Treber soll dabei immer gleich bleiben.
+
+Hopfenkochen. Die Würze kocht sieben, acht oder neun Stunden mit verlesenen Dolden, bis der Hopfen „gut ausgekocht“ ist; was einkocht, wird mit Würze aus dem Malz ersetzt. Die Hopfenmenge für den Kessel steht als szanek auf zwei Fass Malz, ein Wort, das in keinem der geprüften Wörterbücher steht; bei kräftigem Hopfen soll es weniger sein. Heute kocht man Würze weit kürzer; der Text begründet die lange Dauer nicht. Woher das Bier „schwarz“ ist, sagt er ebenfalls nicht: Darren über Holz und langes Kochen sind heutige Vermutungen, keine Angabe der Anweisung.
+
+Gären und Fass. Abgekühlt wird mit frischer Hefe angestellt. Stockt die Gärung, hilft der Text mit einem Handgriff nach, dessen Wörter (kontrowi, wparcić) ungeklärt sind; erkennbar ist nur, dass obenauf Hefe gestrichen und etwas ins Bier gedrückt wird. Reif zum Abfüllen ist das Bier, wenn eine Kerze am Bottich erlischt. Es kommt auf drei oder vier Fässer, die zunächst nicht voll werden und erst nach und nach nachgefüllt werden, wenn die Gärung nachlässt; danach wird verspundet. Eine Stelle am Ende dieses Satzes ist unleserlich, ebenso die Zahl der Wochen im Fass.
+
+Weißes Bier. Wenn die Würze keine Süße mehr hat, geht der ganze Rest in ein weißes Bier aus dem Treber, gekocht mit dem schon gebrauchten Hopfen und wärmer angestellt als das schwarze.
+
+Praxis. Kochendes Wasser und kochende Würze werden mehrfach zwischen Kessel und Holzbottichen umgefüllt: nur mit festem Stand und geeigneten Schöpfgefäßen arbeiten. Über einem gärenden Bottich sammelt sich Kohlendioxid - das ist es, was heute erklärt, warum die Kerze erlischt -, und in einem geschlossenen Raum ist das auch für Menschen gefährlich; also gut lüften und den Kopf nicht über den Bottich halten. Fässer, die noch arbeiten, erst verspunden, wenn die Gärung nachgelassen hat, wie der Text es vorsieht.</note>
+        <note type="gloss" target="#mle-012-orig" n="Olędra" resp="#fyndling">Linde 1807 verweist „Oleder“ auf „Holender“, den Holländer; dort heißen so auch die aus Holland geholten Siedler, die vor allem Viehzucht trieben.</note>
+        <note type="gloss" target="#mle-012-orig" n="beczki" resp="#fyndling">Fass als Maß für Gerste und Malz. Der Text gibt keine Größe an.</note>
+        <note type="gloss" target="#mle-012-orig" n="piędź" resp="#fyndling">Spanne, die gespreizte Hand als Längenmaß; hier die Schütthöhe der keimenden Gerste.</note>
+        <note type="gloss" target="#mle-012-orig" n="gozdzia" resp="#fyndling">Linde 1807 (Gożdź, Gwóźdź) kennt neben dem Nagel auch den Zapfen am Fass. Hier wohl der Zapfen im Ablauf des Läuterbottichs, um den der Hopfen gestreut wird.</note>
+        <note type="gloss" target="#mle-012-orig" n="uwirało" resp="#fyndling">Linde 1807 (Uwrzeć): gar kochen, und beim Kochen weniger werden, einkochen, mit einem Beleg vom Bierkochen. Daher „gut ausgekocht“ beim Hopfen und „was einkocht“ bei der Würze.</note>
+        <note type="gloss" target="#mle-012-orig" n="piwo białe" resp="#fyndling">Weißes Bier, hier ein Nachbier aus dem schon ausgelaugten Treber (słodziny) mit dem gebrauchten Hopfen. Linde 1807 beschreibt unter „Cienkusz“ nach Kluk dasselbe Verfahren - kochendes Wasser auf den Treber, mit Hopfen gekocht - als Bier für das Gesinde. Nicht das heutige Weizenbier.</note>
+        <note type="interpretive_choice" target="#mle-012-orig" n="owaldo[?] suchy" resp="#fyndling" subtype="lexical" cert="unknown">Das Wort bleibt im Text stehen, wie es dasteht: „wenn die Gerste owaldo trocken ist, bis zum vierten Tag, das Wasser ablassen“. Die Buchstaben sind gut zu sehen, ein Wort dieser Form steht weder bei Linde 1807 noch bei Knapski 1643.<list type="alternatives"><item>„twardo suchy“, hart und trocken<note type="rationale">Der erste Buchstabe ließe sich vielleicht als t lesen; das ist bei dieser Auflösung nicht eindeutig, und beim Weichen ist „trocken“ ohnehin befremdlich.</note></item><item>eine Angabe, dass die Gerste vollgesogen sein soll<note type="rationale">Das wäre beim Weichen das Ziel, steht aber nicht da.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-012-orig" n="szanek[?] chmielu" resp="#fyndling" subtype="lexical" cert="unknown">Übersetzt als „einen szanek Hopfen“ auf zwei Fass Malz: wohl ein Maß, wie viel Hopfen in den Kessel kommt. Das Wort steht in keinem der geprüften Wörterbücher (Linde 1807, Knapski 1643, Jungmann, Kott); eine Menge lässt sich daraus nicht ableiten.<list type="alternatives"><item>ein verschriebenes oder verlesenes geläufiges Maß<note type="rationale">Möglich, aber am Bild nicht zu entscheiden; keine Zahl erfinden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-012-orig" n="szdelecować[?]" resp="#fyndling" subtype="lexical" cert="unknown">Das Wort bleibt stehen („so kochen, oder eher szdelecować, sieben oder acht oder neun Stunden“). Es ist deutlich geschrieben, aber in keinem der geprüften Wörterbücher belegt. Der Zusammenhang verlangt ein Wort für langes Sieden.<list type="alternatives"><item>„ausziehen, auskochen“ (Hopfen in der Würze auslaugen)<note type="rationale">Deutung des Entwurfs aus dem Zusammenhang, ohne Beleg.</note></item><item>„sieden lassen, einkochen“<note type="rationale">Ebenso nur aus dem Zusammenhang; am Ablauf ändert keine der Deutungen etwas.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-012-orig" n="kontrowi[?] … beczki kowsze[?] w piwo wparcić[?]" resp="#fyndling" subtype="lexical" cert="unknown">Wortlaut im Text belassen. Erkennbar ist: Will das Bier nicht gären, wird obenauf Hefe gestrichen und etwas ins Bier gedrückt. „Kowsz“ ist die Schöpfkelle (so auch im Met desselben Konvoluts, „kowszem“); „kontrowi“ und „wparcić“ stehen in keinem der geprüften Wörterbücher.<list type="alternatives"><item>eine Kelle obenauf mit Hefe bestreichen und ins Bier tauchen<note type="rationale">Deutung des Entwurfs; passt zu „kowsze“, erklärt aber „beczki“ nicht.</note></item><item>Fässer bzw. Fassdauben mit Hefe bestreichen und ins Bier drücken<note type="rationale">„beczki“ heißt Fässer; die Verbindung zu „kowsze“ bleibt unklar. Am Bild ist auch „brzegi“ (Ränder) statt „beczki“ nicht ganz auszuschließen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-012-orig" n="niedziel zedzie[?]" resp="#fyndling" subtype="philological" cert="unknown">Übersetzt als „damit es zedzie Wochen oder länger steht“: „niedziel“ ist sicher (Wochen), das folgende Wort trägt wohl die Zahl, ist aber unter dem Durchschlag nicht sicher zu lesen.<list type="alternatives"><item>„ze dwie“, etwa zwei Wochen<note type="rationale">Naheliegend nach Buchstabenbild und Sprache, aber nicht gesichert.</note></item><item>„mehrere Wochen“<note type="rationale">Glättung des Entwurfs; streicht die vermutete Zahl.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-013-trans" resp="#fyndling">Was ist das? Eine knappe Brauanweisung für Schwarzbier: reine Gerste mälzen, darren, entkeimen, mahlen, einmaischen „wie beim Weißbier“, Würze für drei Fässer Weißbier je Fass Malz abziehen, lange kochen, den Hopfen vorab brühen und seinen Saft in die Maische geben. Dreimal verweist der Schreiber auf das Übliche („Iako zwyczay“), einmal auf das Weißbier: Er schreibt für jemanden, der brauen kann. Der Text endet vor dem Anstellen; Hefe, Gärung und Fass kommen nicht vor. Einige Stellen sind unleserlich und stehen als […].
+
+Mälzen. Die Gerste soll frei von Hafer sein. Sie wird eingeweicht und in klarem Wasser gehalten, bis sie keimt; die Zeitangabe ist unleserlich, das Wort beginnt mit „Tydn…“ (vielleicht tydzień, eine Woche; das ist eine Vermutung). Beim Darren wird das Malz gewendet und „auf hell“ getrocknet, und es darf nicht anbrennen. Eine zweite Warnung beginnt mit „przyd…“; Knapski 1643 führt przydymić (anräuchern), was passen würde, lesbar ist es nicht. Danach wird das Malz mit dem Dreschflegel geschlagen oder in der Stampfe gestoßen, um die kostki abzustoßen; das Abgestoßene wird im Luftzug weggeweht (odwiać, nach Linde 1807 die Spreu vom Korn wehen), dann wird gemahlen. Was kostki sind, ist offen; heute würde man an die Wurzelkeime denken, die man vom gedarrten Malz abschlägt (heutige Einordnung).
+
+Die Rechnung. Ein Fass Malz soll drei Fässer gutes Weißbier geben, gemessen im selben Fassmaß. „Sie sollen geben“ kann eine Brauregel sein oder eine Vorgabe an die Brauer, wie viel sie abzuliefern haben. Für das Schwarzbier zieht man so viel Würze ab, wie für drei Fässer Weißbier reichte, misst vorher das Wasser ab und markiert im Kessel ein Fass; gekocht wird einen halben Tag oder länger, „damit man beim Kochen weiß, wann man aufhören soll“. Am ehesten heißt das: Die Würze wird bis zur Ein-Fass-Marke eingekocht. Das gäbe eine starke, dunkle Würze und erklärte den Namen, denn das Malz selbst ist hell. Der Text sagt das nicht ausdrücklich, und das Wort vor der Marke ist unlesbar.
+
+Hopfen. Auf ein Wilnaer Fass Malz kommt ein halbes Viertel Fass Hopfen, als Hohlmaß gemessen. Er wird mit kochendem Wasser überbrüht, „vorher sehr gut, einen Tag oder zwei“: Das kann heißen, einen bis zwei Tage lang, oder einen bis zwei Tage im Voraus; beides verträgt sich mit „naprzód“ (zuvor). Der Hopfensaft kommt schon in die Maische im Bottich, nicht erst in die gekochte Würze; auch ein weiteres Bier desselben Konvoluts gibt rohen Hopfen in den Bottich, bevor das Malz kommt. Nach einer Lücke folgen eine zweite und dritte Kelle, wohl ebenfalls Hopfensaft, „wegen des obrzask im Fass“: Linde 1807 kennt obrzask als den rohen, süßlich-herben Beigeschmack junger, nicht ausgegorener Biere. Der Hopfen soll ihn offenbar verhindern; das letzte Wort dieses Satzes ist nicht gedeutet.
+
+Gefahren. Das Darren über Feuer verlangt Aufsicht, der Text warnt selbst vor dem Anbrennen. Kochendes Wasser zum Hopfenbrühen und eine große Menge Würze, die einen halben Tag kocht, sind die übrigen Gefahrenstellen.
+
+Praxis. Wer das nachbrauen will, muss Anstellen, Gärung und Lagerung selbst ergänzen; dazu sagt der Text nichts, und jede Hefe oder Gärdauer wäre eine heutige Entscheidung. Belegt sind die Reihenfolge Malz, Maische mit Hopfensaft, langes Kochen bis zur Marke und das Verhältnis ein Fass Malz zu einem halben Viertel Fass Hopfen.</note>
+        <note type="gloss" target="#mle-013-orig" n="Beczka Wilenska" resp="#fyndling">Wilnaer Fass, ein nach Wilna benanntes Hohlmaß. Der Text misst damit Gerste, Malz, Hopfen und Bier, ausdrücklich im selben Maß. Eine heutige Größe nennt er nicht.</note>
+        <note type="gloss" target="#mle-013-orig" n="piwo białe" resp="#fyndling">Weißbier. Der Text setzt sein Verfahren als bekannt voraus („wie beim Weißbier“) und rechnet die Würze des Schwarzbiers in Fässern Weißbier. Woraus es gebraut wurde, sagt er nicht.</note>
+        <note type="gloss" target="#mle-013-orig" n="Cep / stępa" resp="#fyndling">Dreschflegel und Stampfe (Linde 1807, STĘPA). Damit wird das gedarrte Malz geschlagen, bevor das Abgeschlagene im Luftzug weggeweht und das Malz gemahlen wird.</note>
+        <note type="gloss" target="#mle-013-orig" n="Brzeczka" resp="#fyndling">Würze, der aus der Maische abgezogene Sud vor der Gärung. Knapski 1643 gibt das Wort lateinisch als Bier-Most (mustum cervisiarium) wieder.</note>
+        <note type="interpretive_choice" target="#mle-013-orig" n="na biało pilno" resp="#fyndling" subtype="contextual">„Trocknen, wenden, sorgfältig auf hell“: Das Malz soll hell bleiben, und derselbe Satz warnt vor dem Anbrennen. Die Farbe des Schwarzbiers kommt danach nicht aus dem Malz.<list type="alternatives"><item>„na biało“ im Sinn von gründlich, bis es blank ist<note type="rationale">Für diese Bedeutung beim Darren fand sich kein Beleg; die Warnung vor dem Anbrennen stützt die Farblesung.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-013-orig" n="kostki" resp="#fyndling" subtype="lexical" cert="unknown">Die Handschrift hat deutlich „Kostki“. Gelesen als harte Teile, die vom gedarrten Malz abgeschlagen werden, am ehesten Keime und Wurzelchen. Linde 1807, Jungmann und Kott führen kostka als Knöchelchen, Würfel und Obstkern (Jungmann: mährisch, slowakisch); für Malz fand sich kein Beleg.<list type="alternatives"><item>harte Klumpen verklebter Körner<note type="rationale">Vom Wortsinn Würfel, Stückchen her möglich; der Text erklärt es nicht.</note></item><item>„kaszy“ (Grütze)<note type="rationale">Frühere Lesung; die Buchstaben sind K-o-s-t-k-i.</note></item><item>Grannenreste oder andere spitze, harte Teile am Korn<note type="rationale">Linde 1807 setzt unter KOSTKA „kostki rybie“ mit „ości“ (Fischgräten) gleich und führt unter OŚĆ „ość u kłosa“ als die Achel, die Granne an der Ähre. Der Schluss von kostki über ości auf Grannen ist nur eine Brücke: Linde nennt die Gleichsetzung allein für Fische.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-013-orig" n="nachałoszy" resp="#fyndling" subtype="lexical" cert="unknown">Die Buchstaben sind deutlich, die Bedeutung ist offen. Linde 1807, Knapski 1643, Jungmann und Kott haben keinen Eintrag zu nachałoszyć oder chałaszyć. Der Satzbau (guter Hopfen, gut …, ein halbes Viertel Fass) lässt eine Mengen- oder Zubereitungsangabe vermuten; das Wort bleibt im Text stehen.<list type="alternatives"><item>gut gehäuft<note type="rationale">Bisherige Übersetzung, nur aus dem Satzbau erschlossen, ohne Wörterbuchbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-013-orig" n="w kotle naznaczyć c[…]li Beczka poł dnia abo dłużey" resp="#fyndling" subtype="contextual" cert="unknown">Würze für drei Fässer Weißbier wird abgezogen, im Kessel ein Fass markiert und einen halben Tag oder länger gekocht, „damit man beim Kochen weiß, wann man aufhören soll“: gelesen als Einkochen bis zur Ein-Fass-Marke. Das würde die Würze stark und dunkel machen und den Namen erklären. Das Wort vor „Beczka“ ist unlesbar.<list type="alternatives"><item>Die Marke zeigt nur, wie viel Wasser ein Fass ist, ohne Einkochziel.<note type="rationale">Möglich, weil der Satz mit dem Abmessen des Wassers beginnt; dann bliebe offen, warum einen halben Tag gekocht wird und woher die Farbe kommt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-013-orig" n="dla obrzaski Beczki żeby nie obrzygła" resp="#fyndling" subtype="lexical" cert="unknown">Linde 1807 führt obrzask (auch brzazg, obrzazg) als den rohen, süßlich-herben Beigeschmack junger, nicht ausgegorener Biere und Moste; nach Haur wird Bier obrzazgowate, wenn man die Hefe auf zu heiße Würze gibt. „dla obrzaski Beczki“ heißt danach: wegen dieses Beigeschmacks im Fass. obrzygła steht in keinem der geprüften Wörterbücher (Linde, Knapski, Jungmann, Kott) und bleibt stehen.<list type="alternatives"><item>damit das Fass nicht überschäumt<note type="rationale">Bisherige Übersetzung aus obrzygać (bespeien); dafür fand sich kein Wörterbucheintrag, und Lindes Brauwortschatz weist auf den Geschmack.</note></item></list></note>
+        <note type="preparation_tip" target="#mle-014-trans" resp="#fyndling">Was ist das? Eine Brauanweisung vom Korn an: Gerste und Weizen werden zu gleichen Teilen gemälzt, gedarrt, gedroschen, gesiebt und gemahlen, dann sehr dick gemaischt. Maische und Würze werden gekocht, der Hopfen kommt zweimal vor - roh in den Bottich vor dem Malz und eigens fünf bis sechs Stunden gekocht. Über das Anstellen hinaus sagt der Text nichts zur Gärung, zum Fass oder zur Lagerung, und mehrere Stellen sind unleserlich.
+
+Mälzen. Das Korn weicht einen vollen Tag („godziny do godziny“). Was dabei abschwimmt, wird abgenommen; die Wörter davor sind zum Teil gestrichen und nicht zu deuten. Das Zeichen zum zweiten Wässern ist, dass das Korn „zu kleben beginnt“. Danach wird es gehäuft und zugedeckt, „damit es sich ein wenig erwärmt“, wieder ausgebreitet und beim Keimen zweimal am Tag, später auch nachts gewendet, „damit es sich nicht zu sehr erhitzt“ - beide Begründungen stehen im Text. Im Winter wird zugedeckt, im Sommer nicht.
+
+Darren und Mahlen. Das gewachsene Malz kommt auf die Darrhorden; Linde 1807 beschreibt solche Malzdarren nach Kluk als Flechtwerk, oft aus Erle. Wie lange und bei welchem Feuer gedarrt wird, sagt der Text nicht, der Satz ist an zwei Stellen unleserlich. Das trockene Malz wird gedroschen, wohl um die Keime abzuschlagen (mle-013 stößt sie ebenso mit Flegel oder Stampfe ab), dann durch die Harfe gegeben, gesiebt oder im Luftzug ausgeblasen und gemahlen. Das „Mehl“, das beim Maischen gekocht wird, ist dieses gemahlene Malz.
+
+Maische und Würze. Vor dem Malz kommt ein wenig roher Hopfen in den Bottich; „roh“ (surowy) kann ungekocht oder frisch, also nicht getrocknet heißen, und wozu er dient, sagt der Text nicht. Dann wird sehr dick gemaischt. Die Maische soll etwa zwei Stunden „süß werden“, danach kocht das Mehl eine Stunde und die Würze zwei Stunden. Heute würde man sagen: die Süße entsteht, solange die Maische warm, aber nicht kochend steht, und Kochen beendet das. Eine Temperatur nennt der Text nicht.
+
+Anstellen. „Zadawać mu miernie ciepło“ - das Bier mäßig warm anstellen. Linde 1807 erklärt „zadać piwu“ als Hefe ins frisch gebraute Bier geben; die Hefe selbst nennt dieser Text nicht. Der Satz steht vor dem Absatz über den Hopfen, die Reihenfolge des Textes ist hier also nicht sicher die der Arbeit.
+
+Hopfen. Ein bezmian Hopfen auf sechs ośmin Malz, fünf oder sechs Stunden gekocht. Danach wird etwas, wohl dieser Hopfen, in heißem Wasser aufgekocht und mit Würze nachgegossen, das wiederholt und gesammelt; die erste Würze wird nach dem Kochen eingegossen. Wohin und in welcher Folge, ist an den unleserlichen Stellen verloren.
+
+Praxis. Heute nimmt man fertiges Gersten- und Weizenmalz zu gleichen Teilen. Die Hopfenmenge lässt sich aus dem Text nicht übertragen, dafür braucht es ein heutiges Rezept, ebenso für die Hefe. Beim Darren brennt Feuer unter Flechtwerk und trockenem Malz; stundenlanges Kochen großer Mengen und das Umgießen siedender Würze verlangen feste Gefäße und Vorsicht. Für die Lagerküche taugt das Bier nicht: es gärt, und schon das Mälzen braucht Tage.</note>
+        <note type="gloss" target="#mle-014-orig" n="lasy" resp="#fyndling">Linde 1807 (Lasa) nennt nach Kluk „lasy do suszenia słodu“, Malzdarren, oft aus Erlenholz: geflochtene Horden, auf denen das gekeimte Malz trocknet. Mit dem Wald (las) hat das Wort nichts zu tun.</note>
+        <note type="gloss" target="#mle-014-orig" n="arfa" resp="#fyndling">Linde 1807 kennt „arfa“ nur als Harfe. Im Deutschen heißt aber auch ein Getreidegerät so: Adelung nennt eine Kornfege oder Kornrolle eine Harfe, das Rheinische Wörterbuch ein Feinsieb für Körner. Neben „wysiać“ (aussieben) und „wywiać“ (im Luftzug ausblasen, worfeln) ist hier wohl ein solches Sieb gemeint.</note>
+        <note type="gloss" target="#mle-014-orig" n="bezmian / ośmina" resp="#fyndling">Der bezmian ist nach der Schnellwaage benannt (Jungmann, Grimm: poln. bezmian), also ein Gewicht. Die ośmina ist nach Linde 1807 das Achtel eines Maßes; für Litauen gehen dort zwei ośmin auf die ćwierć, die ośmina zu 18 garcy. Welches Gewicht ein Bezmian Hopfen hier hatte, sagt kein Beleg.</note>
+        <note type="gloss" target="#mle-014-orig" n="brzeczka" resp="#fyndling">Die Würze. Linde 1807 erklärt sie als „essencya ze słodu“ beim Bierbrauer; nach Kluk läuft sie vom gekochten Malz ab, während der Treber (słodziny) zurückbleibt.</note>
+        <note type="interpretive_choice" target="#mle-014-orig" n="godziny do godziny" resp="#fyndling" subtype="lexical">Ein voller Tag, von einer Stunde bis zur selben Stunde: Knapski 1643 gibt „Od godziny do godziny“ als „uno integro die, totis viginti quatuor horis“, Linde 1807 als „od doby do doby“ und „przez dzień i noc“. mle-012 weicht die Gerste ebenso „dzień y noc“.<list type="alternatives"><item>von Stunde zu Stunde, also wiederholt weichen<note type="rationale">Linde führt auch „von einer Stunde zur andern“, beim Weichen gibt aber eine Dauer den Sinn. Das Wort davor („go“) liegt unter einem Tintenfleck; eine Zahl ist dort nicht ganz ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-014-orig" n="zbadę, to co spłynie, ostre[go] słodu zbirać … słodzi[…] […] grzewać" resp="#fyndling" subtype="philological" cert="unknown">Übersetzt nach der wahrscheinlichsten Lesung: was beim Weichen abschwimmt, vom „scharfen“ Malz abnehmen, das Wasser ablassen und […] wärmen. „zbadę“ steht nach zwei gestrichenen Wörtern klar da, ist aber weder bei Knapski 1643 noch bei Linde 1807 zu finden; was „ostre[go] słodu“ meint, sagen die Wörterbücher nicht.<list type="alternatives"><item>„oście słodu zbirać“ - die Grannen des Malzes abnehmen<note type="rationale">Das erste Wort der Zeile kann auch „Oście“ heißen; Linde 1807 nennt „ość u kłosia“ die Achel (Granne) der Ähre. Das passte zum Abnehmen beim Weichen, ist aber nicht sicher zu lesen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-014-orig" n="wygromadzić aż z słodowni potrzymać" resp="#fyndling" subtype="contextual" cert="unknown">Nach der wahrscheinlichsten Lesung: nach dem Aufdecken etwa eine halbe Stunde aufhäufen, „bis von der Malzdarre“, eine Weile so halten und gut trocknen. Der Satz davor bricht mit „ros[…]“ ab, und wie Aufhäufen, Malzdarre und Trocknen zusammengehören, sagt er nicht. „słodownia“ fehlt bei Knapski 1643 und Linde 1807; mle-012 trocknet „na słodownią abo na l[…]sie“, auf der Malzdarre oder auf Horden.<list type="alternatives"><item>„aż z słodowni“ = bis man es aus der Malzdarre nimmt<note type="rationale">Das gäbe einen glatten Ablauf, ergänzt aber ein Verb, das nicht dasteht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-014-orig" n="Zadawać mu miernie ciepło" resp="#fyndling" subtype="contextual">Mäßig warm anstellen: Linde 1807 erklärt unter „Podmłoda“ „zadać piwu, żeby robiło“ als Hefe („drożdże“) ins frisch gebraute Bier geben; „mu“ ist dieser Dativ. Eine Hefe nennt der Text nicht.<list type="alternatives"><item>„ihm mäßig Wärme geben“ - die Maische mäßig erhitzen<note type="rationale">„ciepło“ kann auch Substantiv sein, und der Satz steht noch vor dem Hopfenabsatz; die feste Brauwendung „zadać piwu“ bei Linde spricht für das Anstellen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-014-orig" n="Zawarzyć […] w wodzie gorącej a dolewać brzeczką … na[…] […] nalewać" resp="#fyndling" subtype="contextual" cert="unknown">Nach dem Lesbaren: etwas, wohl der eben gekochte Hopfen, wird in heißem Wasser aufgekocht und mit Würze nachgegossen, das wird wiederholt, aus zweien gesammelt gekocht, und die erste Würze wird nach dem Kochen eingegossen. Das Wort nach „Zawarzyć“, das Wort nach „dwoich“ und der Anfang der letzten Zeile sind nicht zu lesen.<list type="alternatives"><item>eine Folge von Güssen, bei der eine zweite Würze mit der ersten vereint wird<note type="rationale">„z dwoich … zebrawszy“ (aus zweien gesammelt) passt dazu, und mle-012 gießt die Würze mehrmals; die Lücken lassen es nicht entscheiden.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

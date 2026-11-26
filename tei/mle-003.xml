@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Eiweiß-Zuckersirup für Wein</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/mle-003/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mle-003</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v</title>
+          <date when="1630" cert="low">um 1630</date>
+          <idno type="URI">https://doi.org/10.15407/rksu.24.281</idno>
+          <note>mle-001/002: Text nach S. Bulatova 2019 (DOI 10.15407/rksu.24.281), CC BY-NC 4.0; mle-003 bis mle-014: eigene Lesung am Digitalisat der Vernadsky-Nationalbibliothek der Ukraine</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Mittelpolnisch des 17. Jahrhunderts mit ostslawischen/litauischen Regionalformen (Großfürstentum Litauen, um 1630); Maße ceber, uszatek, łut</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mle-003">
+        <head>Eiweiß-Zuckersirup für Wein</head>
+        <div type="original" xml:id="mle-003-orig" xml:lang="und" corresp="#mle-003-trans" subtype="excerpt">
+          <p>Syrop do wina.
+3 kwarty. wody fu[n]t cukru. y iaiowey[?] białek [</p>
+          <p><gap reason="editorial-excerpt"/>]bic y stłuc[?] &amp; warzyc az[?] bedzie gesto iak chiroz[?]. &amp; potym przecedzic prz[ez] chusteczky[?] y chowac to.
+Albo raczey[?] tak.
+Cukru funty 2. wody pułgarca. białek od iednego swieze iaia warzyc to pospołu dobrze wpanewce y przecedzic. przecedziwszy znowu przysmazyc. Hałunu palone[go] kęs wsypac y ostudzic. syrop bedzie bardzo dobry do wina.</p>
+        </div>
+        <div type="translation" xml:id="mle-003-trans" xml:lang="de" corresp="#mle-003-orig">
+          <p>Sirup zum Wein. 3 Quart Wasser, ein Pfund Zucker, und das Eiweiß […]schlagen und zerschlagen und kochen, bis es dick ist wie chiroz. Und danach durch ein Tüchlein seihen und aufbewahren.</p>
+          <p>Oder lieber so. 2 Pfund Zucker, einen halben Garniec Wasser, das Eiweiß von einem frischen Ei: das zusammen in einer kleinen Pfanne gut kochen und seihen. Nach dem Seihen noch einmal etwas einkochen. Ein Stück gebrannten Alaun hineingeben und abkühlen lassen. Der Sirup wird sehr gut zum Wein.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient en="water" orig="3 kwarty. wody" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient> - 3</item>
+            <item>
+              <ingredient en="unrefined cane sugar" orig="fu[n]t cukru" commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="iaiowey[?] białek" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+            </item>
+            <item><ingredient en="unrefined cane sugar" orig="Cukru funty 2." commodity="wikidata:Q57656231" source="#fyndling-ingredient-registry">Zucker</ingredient> - 2</item>
+            <item>
+              <ingredient en="water" orig="wody pułgarca" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient en="egg white" orig="białek od iednego swieze iaia" commodity="wikidata:Q796758" source="#fyndling-ingredient-name">Eiweiß</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Hałunu palone[go] kęs">Alaun, gebrannt</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mle-003-trans" resp="#fyndling">Was ist das? Ein Zuckersirup, der mit Eiweiß gekocht und durch ein Tüchlein geseiht wird, in zwei Fassungen. Die zweite leitet der Text mit „oder lieber so“ ein und zieht sie damit vor. Wozu der Sirup im Wein dient, ob er ihn süßen, verbessern oder klären soll, sagt der Text nicht, nur, dass er „sehr gut zum Wein“ wird.
+
+Zwei Verhältnisse. Die erste Fassung nimmt ein Pfund Zucker auf 3 Quart Wasser und kocht, bis die Masse dick ist; das Vergleichswort dafür, chiroz, ist nicht zu deuten. Die zweite nimmt 2 Pfund Zucker auf einen halben Garniec Wasser, nach Linde 1807 zwei Quart. Sie setzt also von vornherein weit süßer an, kocht, seiht und kocht danach noch einmal etwas ein. Dasselbe Verhältnis und dieselbe kleine Pfanne nennt die Handschrift beim Klären des Zuckers für den Rosolis (mle-004).
+
+Das Eiweiß. Die erste Fassung schlägt das Eiweiß vor dem Kochen; die Vorsilbe des Verbs ist unleserlich, so dass offen bleibt, ob es zu Schaum geschlagen oder nur hineingeschlagen und verklopft wird. Die zweite gibt das Eiweiß eines frischen Eis einfach mit in die Pfanne. Heute würde man sagen: Das Eiweiß gerinnt in der Hitze, schließt Trübstoffe ein, und das Tuch hält es zurück. Der Text selbst nennt nur Kochen und Seihen, kein Abschäumen.
+
+Der Alaun. Nur die zweite Fassung gibt am Ende ein Stück gebrannten Alaun hinein und lässt den Sirup abkühlen. Alaun ist ein Mineralsalz; Linde 1807 belegt mit einem Crescentius-Zitat, dass Alaun trübes Wasser klar macht, und vermerkt zugleich, das Versetzen von Branntwein mit Alaun sei schädlich. Was er im Sirup bewirken soll, sagt der Text nicht.
+
+Praxis. Zucker und Wasser mit dem Eiweiß in einer Pfanne aufkochen und gut kochen lassen, dann durch ein feines, sauberes Tuch seihen. Für die erste Fassung weiter einkochen, bis der Sirup dick wird, für die zweite nach dem Seihen kurz noch einmal einkochen. Den Alaun lässt man beim Nachkochen weg; die erste Fassung zeigt, dass der Sirup ohne ihn auskommt. Kochender Zuckersirup verbrüht stark und klebt an der Haut, also mit Abstand und langem Löffel arbeiten. Wie viel Sirup in welchen Wein kommt, steht nicht da.</note>
+        <note type="gloss" target="#mle-003-orig" n="Hałun palony" resp="#fyndling">Gebrannter Alaun. Linde 1807 führt alun oder hałun als „gatunek soli ziemnej“, eine Art Erdsalz, und belegt mit einem Crescentius-Zitat, dass Alaun trübes Wasser klar macht. Die Abschrift auf Bl. 25v schreibt „palonego“ (gebrannt) aus.</note>
+        <note type="gloss" target="#mle-003-orig" n="kwarta, pułgarca" resp="#fyndling">Quart und Garniec sind Hohlmaße für Getränke. Nach Linde 1807 hat ein Garniec zwei halbe Garnce oder vier Quart; der halbe Garniec der zweiten Fassung sind also zwei Quart. Einen heutigen Wert nennt der Text nicht.</note>
+        <note type="interpretive_choice" target="#mle-003-orig" n="chiroz" resp="#fyndling" subtype="lexical" cert="unknown">Das Vergleichswort für die gewünschte Dicke („gesto iak chiroz“, dick wie chiroz) bleibt unübersetzt stehen. Die Buchstaben c-h-i-r-o-z sind in der Handschrift deutlich, das Wort ist aber weder bei Knapski 1643 noch bei Linde 1807 noch in den tschechischen Wörterbüchern von Jungmann und Kott belegt, auch nicht als chyroz oder kiroz.<list type="alternatives"><item>Verschreibung für eine bekannte dickflüssige Sache (etwa Honig oder Sirup)<note type="rationale">Das Schriftbild stützt keine andere Lesung; ohne Beleg wäre jede Gleichsetzung geraten.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-003-orig" n="[…]bic y stłuc[?]" resp="#fyndling" subtype="philological" cert="unknown">Das Eiweiß „[…]schlagen und zerschlagen“: der erste Buchstabe ist verkleckst (w, u oder z), danach steht „bic“. stłuc heißt nach Linde 1807 zerstoßen, zerschlagen, auch vom Ei („iaie stłuc“). Ob das Eiweiß zu Schaum geschlagen oder nur verklopft wird, sagt der Text damit nicht.<list type="alternatives"><item>wbić: das Eiweiß hineinschlagen (in das Zuckerwasser)<note type="rationale">Linde 1807 WBIĆ = einschlagen, hineinschlagen; passt zum Ablauf, wenn das Eiweiß erst im Wasser zerschlagen wird.</note></item><item>zbić oder ubić: das Eiweiß schlagen<note type="rationale">Linde 1807 ZBIĆ = abschlagen, zerschlagen; ubić ist das spätere Wort für Eischnee. Am Bild nicht von w zu unterscheiden.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-003-orig" n="przysmazyc" resp="#fyndling" subtype="lexical">„przecedziwszy znowu przysmazyc“: nach dem Seihen noch einmal etwas einkochen. smażyć heißt in Vorschriften der Zeit auch einkochen, bis es dick wird (Syreniusz 1613: „warzyć abo smażyć aż zgęstnieje“), und der Sirup wird danach nur noch mit Alaun versetzt und abgekühlt.<list type="alternatives"><item>kurz anrösten, leicht bräunen<note type="rationale">Linde 1807 PRZYSMAŻYĆ: „trochę smażąc przypiec, in der Pfanne ein wenig pregeln“. Beim Zucker hieße das eine leichte Bräunung; der Text nennt aber keine Farbe.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

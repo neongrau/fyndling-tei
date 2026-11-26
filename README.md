@@ -5,8 +5,8 @@ Mittelalterliche Kochrezepte in TEI-P5, aus dem Bestand von
 Übersetzung, Anmerkungen zu Lesarten und erschlossene Zutaten mit
 Wikidata-Bezug.
 
-**9470 Rezepte** aus **63 Rezeptsammlungen**, dazu
-63 Dateien auf Sammlungsebene mit den Quellenangaben.
+**9509 Rezepte** aus **64 Rezeptsammlungen**, dazu
+64 Dateien auf Sammlungsebene mit den Quellenangaben.
 
 Die Sammlungen sind überwiegend handschriftlich überliefert; einige der
 späteren sind Drucke. „Buch" wäre für die Handschriften falsch: gedruckt
@@ -52,7 +52,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Sammlung | Datierung | Rezepte | CoReMA |
 |---|---|---:|---|
 | Ein new Kochbuch | 1581 | 2028 |  |
-| Kunstbuch von mancherley Essen | 1598 | 1377 |  |
+| Kunstbuch von mancherley Essen | 1598 | 1402 |  |
 | Churer Kochbuch (Staatsarchiv Graubünden, NH.2) | 1559 (Grundstock; Nachträge bis ins späte 17. Jh.) | 523 |  |
 | Ein köstlich new Kochbuch | 1598 | 483 |  |
 | Das Kochbuch des Balthasar Staindl | 1545 | 294 |  |
@@ -99,6 +99,7 @@ Wo die Lesart nicht entschieden ist, stehen mehrere Kandidaten und
 | Woolley: Das königliche Kabinett (Getränke) | 1670 | 17 |  |
 | Nürnberg, Germanisches Nationalmuseum, Hs 3227a | um 1389 | 15 | [N2](https://gams.uni-graz.at/o:corema.n2) |
 | Wellcome MS.550: medizinische Sammelhandschrift, Abschnitt „de potibus“ (Getränke) | frühes 15. Jh. | 14 |  |
+| Mleczko-Konvolut: Met, Branntwein und Bier (Litauen) | um 1630 | 14 |  |
 | Münchner Kochbuchhandschriften (Cgm 725) | spätes 15. Jh. | 13 | [M5](https://gams.uni-graz.at/o:corema.m5) |
 | Salzburg, Cod. M III 3 („Speyerer Kompendium“): Lautertränke und Bierbrauen | um 1460 | 13 |  |
 | Olaus Magnus: Geschichte der Völker des Nordens (Buch XIII: Nahrung) | 1555 | 13 |  |

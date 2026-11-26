@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Met aus Mir nach Herrn Skorulski</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/mle-001/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mle-001</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v</title>
+          <date when="1630" cert="low">um 1630</date>
+          <idno type="URI">https://doi.org/10.15407/rksu.24.281</idno>
+          <note>mle-001/002: Text nach S. Bulatova 2019 (DOI 10.15407/rksu.24.281), CC BY-NC 4.0; mle-003 bis mle-014: eigene Lesung am Digitalisat der Vernadsky-Nationalbibliothek der Ukraine</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Mittelpolnisch des 17. Jahrhunderts mit ostslawischen/litauischen Regionalformen (Großfürstentum Litauen, um 1630); Maße ceber, uszatek, łut</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mle-001">
+        <head>Met aus Mir nach Herrn Skorulski</head>
+        <div type="original" xml:id="mle-001-orig" xml:lang="und" corresp="#mle-001-trans">
+          <p>Sycenia miodu w Mirze, przepis od p[ana] Skorulskiego
+Octobra, gdy miesiąc w pełnią wchodzi, weźmi 5 abo 6 cebrów chmielu, wsyp w kocieł i waru gorącego wlej, aż się zakryje, nakryjże deszczkami chędogimi, a pomału niechaj wre, jako będzie do połowice wywirało, tedy zaś przylać waru i tak warz dzień i noc cały tydzień, warem gorącym zalewając, ażby nie był gorzki. Potym odejmi onę chmielnicę do kubła, a drugiego waru dolewaj, a co przywre trochę, zaraz odlewaj do kubła tak wiele, ile będzie potrzeba do odbierania miodu. Namoczywszy miód, rano we troje, przez sito wosk [Anm. Bulatova 2019: „Miód“ verbessert zu „wosk“, wodurch der Sinn unklar wird.] cedząc do kotła miód i warz, coby na dobrą dłoń wywrzało. Tak odlej do drugiego kubła, a potym nazajutr[z] noś do dru[giej] izby i tak nieprawie chłodno zadać mu, aby kisł cały tydzień w cieple. Potym do piwnice wnoś, i tak w beczkach niechaj stoi aż do novembra. Potym w pełni miesiąca novembris odtocz albo śpuść, a osobno drożdże, wypłukawszy beczkę jakim piwem abo prostym miodem (co się przygodzi na ocet), wlejesz do beczki i zamaż beczki gliną, aż do marca. Marca zaś w pełni weźmi miodu przaśnego ile, tyle chcesz, uszatków 5 abo 6, ze wszytkiem i z woskiem włóż to do kotła, nalejże tego miodu abo trójniku uszatek pełen i barzo mało ognia, polan dwie abo trzy pod kocioł podłożywszy, niechaj wre pomału, aż się zarumieni miód i będzie gęsty tak, jakoby kropie ostawały na papierze. Niechajże tak stoi przez noc, aż skrzepnie, potym kowszem zszumuj on wosk zwierzchu, że sama patoka zostanie, jeśli będzie więcej niż pół kotła, tedy napoły rozdzielisz, a onego trójniku wlej, aż kocioł będzie pełen i warzyć, aż uwre na trzy palce, potym do beczki wlej, a we czytyry niedziele włożyć korzenia do beczki ad placitum i tak, in nomine D[omi]ni, będzie miód dobry.
+
+Korzenia kłaść: Cynamonu łutów 4, imbieru łut[ów] 4, cytwaru łut[ów] 3, tatarskiego ziela łut[ów] 2, fiołkowego korzenia łut[ów] 2, muszkatowych gałek łut[ów] 4, gozdźików łut[ów] 3, gałganu łut[ów] 3, kwiatu muszkatowego - łut 1. Kożdego worek osobny zawiesiwszy, wpuść do beczki.</p>
+        </div>
+        <div type="translation" xml:id="mle-001-trans" xml:lang="de" corresp="#mle-001-orig">
+          <p>Met-Bereitung in Mir, Rezept von Herrn Skorulski</p>
+          <p>Der Hopfensud: Im Oktober, wenn der Mond voll wird, nimm 5 oder 6 Ceber Hopfen, schütte ihn in einen Kessel und gieße siedendes Wasser darauf, bis er bedeckt ist. Decke ihn mit sauberen Brettchen zu und lass ihn langsam sieden. Ist er bis zur Hälfte eingekocht, gieße wieder siedendes Wasser nach, und so koche ihn Tag und Nacht eine ganze Woche, immer mit siedendem Wasser auffüllend, bis er nicht mehr bitter ist. Dann nimm diesen Hopfensud ab in einen Kübel und gieße weiteres siedendes Wasser nach, und was ein wenig aufgekocht hat, gieße gleich in den Kübel ab, so viel, wie zum Lösen des Honigs nötig ist.</p>
+          <p>Der Honig: Hast du den Honig eingeweicht, so seihe am Morgen zu dritt das Wachs durch ein Sieb ab, den Honig in den Kessel, und koche ihn, bis er um eine gute Handbreit eingekocht ist. Dann gieße ihn in einen zweiten Kübel, trage ihn am nächsten Tag in eine andere Stube und setze ihn dort an, wenn er noch nicht ganz kühl ist, damit er eine ganze Woche in der Wärme gärt. Danach trage ihn in den Keller und lass ihn dort in Fässern stehen bis zum November.</p>
+          <p>Abziehen im November: Zum Vollmond im November zapfe ihn ab oder lass ihn ab, die Hefe für sich. Spüle das Fass mit irgendeinem Bier oder einfachem Met aus (was zu Essig taugt), gieße ihn wieder ins Fass und verschmiere die Fässer mit Lehm, bis zum März.</p>
+          <p>Im März: Zum Vollmond im März nimm ungegorenen Honig, so viel du willst, 5 oder 6 Uszatek, und gib ihn mit allem, auch mit dem Wachs, in den Kessel. Gieße von diesem Met oder von Trójnik einen vollen Uszatek dazu, mach nur sehr wenig Feuer, zwei oder drei Scheite unter den Kessel gelegt, und lass es langsam sieden, bis sich der Honig rötet und so dick wird, dass Tropfen auf Papier stehen bleiben. Dann lass es so über Nacht stehen, bis es fest wird. Danach schöpfe mit einer Kelle das Wachs oben ab, so dass nur der Seim bleibt. Ist es mehr als ein halber Kessel, so teile es in zwei Hälften, gieße von jenem Trójnik zu, bis der Kessel voll ist, und koche, bis es um drei Finger eingekocht ist. Dann gieße es ins Fass, und nach vier Wochen lege nach Belieben Gewürze ins Fass, und so wird im Namen des Herrn (in nomine Domini) der Met gut.</p>
+          <p>Gewürze zum Hineinlegen: Zimt 4 Lot, Ingwer 4 Lot, Zitwer 3 Lot, Tatarenkraut 2 Lot, Veilchenwurzel 2 Lot, Muskatnüsse 4 Lot, Nelken 3 Lot, Galgant 3 Lot, Muskatblüte 1 Lot. Hänge jedes in einem eigenen Säckchen auf und lass es ins Fass hinab.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item><ingredient orig="5 abo 6 cebrów chmielu">Hopfen</ingredient> - 5</item>
+            <item>
+              <ingredient orig="waru gorącego">Wasser, siedend</ingredient>
+            </item>
+            <item>
+              <ingredient en="honey" orig="miód" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig</ingredient>
+            </item>
+            <item><ingredient orig="miodu przaśnego ile, tyle chcesz, uszatków 5 abo 6, ze wszytkiem i z woskiem">Honig, ungegoren, samt Wachs</ingredient> - 5</item>
+            <item><ingredient orig="tego miodu abo trójniku uszatek pełen">Met aus dem Fass oder Trójnik</ingredient> - 1</item>
+            <item>
+              <ingredient orig="onego trójniku wlej, aż kocioł będzie pełen">Trójnik zum Auffüllen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="jakim piwem abo prostym miodem">Bier oder einfacher Met (zum Spülen des Fasses)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="gliną">Lehm (zum Verschmieren der Fässer)</ingredient>
+            </item>
+            <item><ingredient en="cinnamon" orig="Cynamonu łutów 4" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt</ingredient> - 4</item>
+            <item><ingredient en="ginger" orig="imbieru łut[ów] 4" commodity="wikidata:Q15046077" source="#fyndling-ingredient-registry">Ingwer</ingredient> - 4</item>
+            <item><ingredient en="zedoary" orig="cytwaru łut[ów] 3" commodity="wikidata:Q206733" source="#fyndling-ingredient-name">Zitwer</ingredient> - 3</item>
+            <item><ingredient en="sweet flag" orig="tatarskiego ziela łut[ów] 2" commodity="wikidata:Q158008" source="#fyndling-ingredient-name">Kalmus (Tatarenkraut)</ingredient> - 2</item>
+            <item><ingredient orig="fiołkowego korzenia łut[ów] 2">Veilchenwurzel (Iriswurzel)</ingredient> - 2</item>
+            <item><ingredient en="nutmeg" orig="muszkatowych gałek łut[ów] 4" commodity="wikidata:Q83165" source="#fyndling-ingredient-name">Muskatnüsse</ingredient> - 4</item>
+            <item><ingredient en="clove" orig="gozdźików łut[ów] 3" commodity="wikidata:Q15622897" source="#fyndling-ingredient-name">Gewürznelken</ingredient> - 3</item>
+            <item><ingredient en="lesser galangal" orig="gałganu łut[ów] 3" commodity="wikidata:Q27653540" source="#fyndling-ingredient-registry">Galgant</ingredient> - 3</item>
+            <item><ingredient en="mace" orig="kwiatu muszkatowego - łut 1" commodity="wikidata:Q1882876" source="#fyndling-ingredient-name">Muskatblüte</ingredient> - 1</item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mle-001-trans" resp="#fyndling">Was ist das? Ein Met in drei Stufen, jede an den Mond gebunden. Im Oktober wird Hopfen eine Woche lang gesotten, bis er nicht mehr bitter ist; in diesem Hopfensud wird der Honig gelöst, das Wachs abgeseiht, eingekocht und das Ganze eine Woche in einer warmen Stube vergoren, dann im Keller gelagert. Zum Vollmond im November wird abgezogen, zum Vollmond im März mit eingedicktem Honig und Trójnik nachgesüßt und aufgefüllt, vier Wochen später kommen neun Gewürze in eigenen Säckchen ins Fass. „Sycić“ heißt nach Linde 1807 Met brauen, den Honig mit Wasser lösen; die Überschrift meint die ganze Bereitung.
+
+Der Hopfen. Fünf oder sechs Ceber Hopfen, eine Woche Tag und Nacht in immer wieder nachgefülltem siedendem Wasser: Das steht so da, und das Ziel nennt der Text selbst, bis der Sud nicht mehr bitter ist. Siedendes Wasser ist „war“, nach Linde 1807 „Sud, siedend Wasser“. Mit dem Hopfensud und einem kurzen zweiten Aufkochen wird so viel Flüssigkeit gewonnen, wie zum Lösen des Honigs nötig ist. Wie viel Honig diese erste Stufe braucht, sagt der Text nicht.
+
+Wachs und Sieb. Der Honig wird im Sud eingeweicht, am Morgen bleibt das Wachs im Sieb. Bulatova 2019 merkt in ihrer Übersetzung an, gemeint sei Honig mit den Waben; dazu passt das Wachs. Eingekocht wird „um eine gute Handbreit“.
+
+Das Anstellen. „Zadać“ ist das Wort der Brauer für das Anstellen: Knapski 1643 erklärt „zadaię piwu“ als das Vergären frisch gekochten Biers, „was bei uns mit Hefe geschieht“, Linde 1807 übersetzt „dem Biere die Hefen geben“. Was hier gegeben wird, sagt der Text nicht; Hefe nennt er erst beim Abziehen im November, als Satz im Fass. Ohne Zugabe käme die Gärung eines gekochten Ansatzes nur aus der Luft und den Gefäßen (heutige Sicht). „Nieprawie chłodno“ heißt: noch nicht ganz abgekühlt. Haur verlangt beim Bier dasselbe (bei Linde 1807): Die Hefe gebe man, wenn das Bier weder zu heiß noch zu kalt sei.
+
+Abziehen und Spülen. Zum Vollmond im November wird der Met von der Hefe getrennt und das Fass mit irgendeinem Bier oder einfachem Met ausgespült. Die Klammer „was zu Essig taugt“ sagt, dass dieses Spülgetränk danach nur noch für Essig gut ist (Linde 1807: „przygodny“, tauglich). Dann kommt der Met zurück, und die Fässer werden mit Lehm verschmiert. Dieselbe Folge - abfüllen, Gefäß spülen, zurückgießen - steht bei Syreniusz 1613 (syr-001).
+
+Der März. Honig samt Wachs wird mit einem Uszatek Met oder Trójnik bei kleinem Feuer langsam eingekocht, bis er sich rötet („zarumienić“, nach Linde 1807 röten; Bulatova 2019 liest einen dunkleren, rötlichen Ton) und so dick ist, dass Tropfen auf Papier stehen bleiben. Über Nacht wird er fest, dann wird das Wachs abgeschöpft, und der Seim bleibt. Mehr als ein halber Kessel wird halbiert; wohin die zweite Hälfte kommt, sagt der Text nicht. Mit Trójnik wird bis zum vollen Kessel aufgefüllt und um drei Finger eingekocht („uwrzeć“, nach Linde 1807 einkochen, weniger werden). Heute würde man sagen: Der gelagerte Met wird nachgesüßt und aufgestärkt; ob er danach noch einmal gärt, sagt der Text nicht.
+
+Die Gewürze. Neun Gewürze, in Lot gewogen, jedes in einem eigenen Säckchen ins Fass gehängt. „We czytyry niedziele“ heißt „nach vier Wochen“ (niedziela ist nach Linde 1807 auch die Woche); Bulatova 2019 übersetzt „für vier Wochen“. Wie lange die Säckchen hängen, sagt der Text nicht. Lot und Pfund hatten regional eigene Werte, deshalb wird nichts umgerechnet. Kalmuswurzel enthält je nach Herkunft Beta-Asaron, das heute als gesundheitlich bedenklich gilt; auch Muskatnuss gilt in großer Menge als bedenklich.
+
+Der Mond. Jeder Schritt hängt am Mond: im Oktober, wenn der Mond voll wird, im November und im März jeweils zum Vollmond. Das ist die Anweisung des Textes; eine Begründung gibt er nicht.
+
+Praxis. Wer den Met nachstellen will, braucht einen Winter, einen großen Kessel und ein Fass. Ein Verhältnis von Honig zu Wasser nennt der Text nicht, die Stärke lässt sich daher nicht berechnen, und auch für die Hopfenmenge gibt es keinen heutigen Wert. Heutige Wahl, nicht im Text: Hopfendolden aus dem Brauhandel, eine Reinzuchthefe zum Anstellen, statt Lehm ein Spund mit Gärverschluss, denn ein Met, der im verschmierten Fass nachgärt, baut Druck auf; die Gewürzsäckchen nach Geschmack prüfen und herausnehmen. Den Honig samt Wachs nur bei kleinem Feuer einkochen, wie der Text es verlangt: Siedender Honig verbrennt schwer.</note>
+        <note type="gloss" target="#mle-001-orig" n="cebrów" resp="#fyndling">Ceber ist ein Zuber, nach Linde 1807 eines der größten hölzernen Gefäße zum Tragen von Wasser oder Getränken. Hier misst er den Hopfen; wie viel er fasste, ist nicht überliefert.</note>
+        <note type="gloss" target="#mle-001-orig" n="uszatków" resp="#fyndling">Uszatek ist ein Gefäß mit Henkeln (wörtlich „Ohren“), so Linde 1807. Die Wilanów-Fassung und Bulatova 2019 deuten es als übliches Honigmaß; seine Größe ist nicht überliefert.</note>
+        <note type="gloss" target="#mle-001-orig" n="patoka" resp="#fyndling">Seim: der reine Honig ohne Wachs und Bodensatz. Knapski 1643 setzt „patoka“ gleich mit „treść miodu“, dem Kern des Honigs.</note>
+        <note type="gloss" target="#mle-001-orig" n="cytwaru" resp="#fyndling">Zitwer, der Wurzelstock einer ingwerartigen Pflanze aus Südasien (Curcuma zedoaria). Linde 1807 nennt ihn eine Apothekenwurzel mit kampferartigem Duft; den Zitwersamen führt er gesondert.</note>
+        <note type="gloss" target="#mle-001-orig" n="tatarskiego ziela" resp="#fyndling">„Tatarenkraut“ ist der Kalmus (Acorus calamus): Knapski 1643 setzt „tatarskie ziele“ gleich mit lateinisch Acorus, Linde 1807 mit „tatarak, der Kalmus“, dessen Wurzel man auch in Zucker kandierte.</note>
+        <note type="gloss" target="#mle-001-orig" n="fiołkowego korzenia" resp="#fyndling">Veilchenwurzel ist nicht die Wurzel des Veilchens, sondern der nach Veilchen duftende Wurzelstock einer Schwertlilie (Iris). Linde 1807 verweist unter „fiołkowy korzeń“ auf „kosaciec“, die Schwertlilie.</note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="przez sito wosk cedząc" resp="#fyndling" subtype="philological">Edition Bulatova 2019 und die Handschrift: „przez sito wosk cedząc do kotła miód“ - das Wachs wird durch das Sieb abgeseiht, der Honig kommt in den Kessel. Am Blatt steht „wosk“ über einem getilgten Wort; Bulatova 2019 vermerkt, „miód“ sei zu „wosk“ verbessert und der Sinn dadurch unklar. Mit „wosk“ als dem, was im Sieb bleibt, und „miód“ als dem, was in den Kessel geht, ergibt der Satz einen Sinn.<list type="alternatives"><item>Wilanów 2022: „przez sito cedząc do kotła miód“ (ohne „wosk“) - den Honig durch das Sieb in den Kessel seihen<note type="rationale">Die Fußnote dort lässt offen, ob „miód“ zu „wosk“ verbessert ist oder umgekehrt. Das Weglassen hat am Blatt keine Stütze; im Ergebnis bleibt auch so das Wachs im Sieb.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="rano we troje" resp="#fyndling" subtype="lexical">„Zu dritt“: Linde 1807 belegt „troje“ für drei Personen („troie nas było“, drei waren wir). Bulatova 2019 liest ebenso drei Arbeiter, die das schwere Seihen besorgen.<list type="alternatives"><item>dreifach, also mehrmals durchseihen<note type="rationale">Linde 1807 führt „we troie“ auch als „dreyfach“; der Satz hat aber kein Verb des Wiederholens.</note></item><item>in drei Portionen<note type="rationale">Frühere Fassung dieser Seite; ohne Wörterbuchbeleg.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="chmielnicę" resp="#fyndling" subtype="lexical" cert="unknown">Der Hopfensud: „chmielnica“ ist das, was in den Kübel kommt, ehe weiteres siedendes Wasser nachgegossen und ebenfalls in den Kübel abgegossen wird; mit diesem Sud wird der Honig gelöst. Das Wort steht weder bei Knapski 1643 noch bei Linde 1807.<list type="alternatives"><item>die Hopfenreste<note type="rationale">So übersetzt Bulatova 2019 (im Wörterverzeichnis „chmieliny“, Hopfenreste nach dem Kochen). Kämen die Reste in den Kübel, bliebe offen, worauf das weitere Wasser gegossen wird.</note></item><item>Hopfengarten<note type="rationale">Linde 1807 kennt „chmielnik“ und tschechisch „chmelnice“ als Hopfengarten; das passt hier nicht.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="trójniku" resp="#fyndling" subtype="lexical">„Trójnik“ bleibt als Name stehen: ein mit Wasser versetzter Met, nach der Zahl drei benannt. Knapski 1643 umschreibt ihn als „hydromeli ter coctum“ (dreimal gekocht, „decoctum ad tertias“) und als mäßig mit Wasser versetzten Met, der dem polnischen Wort nach drei Teile Wasser enthalte, während einfacher Met viel mehr Wasser nehme; Linde 1807 übersetzt „guter Meth, nur von drey Theilen Wasser“. Wie viel Honig auf drei Teile Wasser kommt, sagt keiner der beiden.<list type="alternatives"><item>ein Teil Seim auf zwei Teile Wasser<note type="rationale">So Bulatova 2019 im Wörterverzeichnis, nach dem Schema bei Ciesielski 1898 (Półtorak, Dwójniak, Trójniak). Das ist das heutige Schema und rund 270 Jahre jünger als die Handschrift; das Rezept selbst nennt kein Verhältnis.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-001-orig" n="a osobno drożdże" resp="#fyndling" subtype="contextual">Der Met wird abgezogen, die Hefe bleibt für sich; nach dem Spülen kommt der Met in das Fass zurück. So läuft das Abziehen auch bei Syreniusz 1613 (syr-001): in ein anderes Gefäß abfüllen, dann nach dem Ausspülen in dasselbe erste zurückgießen.<list type="alternatives"><item>die Hefe wird gesondert wieder ins Fass gegossen<note type="rationale">So übersetzt Bulatova 2019, die „drożdże“ zu „wlejesz“ (du gießt ein) zieht. Grammatisch möglich, widerspricht aber dem Zweck von Abziehen und Spülen.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

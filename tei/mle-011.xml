@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Livländisches Bier, mit glühenden Steinen gemaischt</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/mle-011/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mle-011</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v</title>
+          <date when="1630" cert="low">um 1630</date>
+          <idno type="URI">https://doi.org/10.15407/rksu.24.281</idno>
+          <note>mle-001/002: Text nach S. Bulatova 2019 (DOI 10.15407/rksu.24.281), CC BY-NC 4.0; mle-003 bis mle-014: eigene Lesung am Digitalisat der Vernadsky-Nationalbibliothek der Ukraine</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Mittelpolnisch des 17. Jahrhunderts mit ostslawischen/litauischen Regionalformen (Großfürstentum Litauen, um 1630); Maße ceber, uszatek, łut</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mle-011">
+        <head>Livländisches Bier, mit glühenden Steinen gemaischt</head>
+        <div type="original" xml:id="mle-011-orig" xml:lang="und" corresp="#mle-011-trans" subtype="excerpt">
+          <p>Piwo robic bir Inflantski takowym sposobem Vczył mie Pan Zolderbecht y Poseł Swedzki
+Jęczmienia dobrego y czystego wziąć wedlug ryie abo lazni abo osieci. kiedy iako naywięcey weźmie tym lepiey, owo kiedy dwie beczke weźmie jęczmienia wczas będzie. Y namoczyć wkadzi wsypawszy zboże a wody nalać, abo czyste jęczmienia zwara[?] wsko[?] wrzące y tak namokać aż do trzeciego dnia. Wybrawszy to zwody y wodę wysączywszy kiedy z kadzi, to do gromady złożyć y nakryć żeby się kęs zagrzał. iesli chłodno kryć, iesli ciepło nie potrzeba nakrywać y potym do roszczenia złożyć. A kiedy zworek[?] na kiiach wysączywszy wodę zaraz iako słód[?] do roszczenia[?] kładę tak grubo żeby palec mały położywszy na ziemi równo był, zwielkim palcem słód usłany.
+Kiedy wyrośnie dobrze, złożyć znowu do gromady y nakryć dobrze żeby się dobrze zagrzało żeby ręka[?] ledwo wytrwała, nad szesc abo osm godzin nie trzeba go trzymać, owo że by się dobrze zagrzał. Potym go znowu rozłożyć żeby on chłod[?], z go[dzi]nę[?] go tylko tak trzymać. Potym na gotowe usłanie deski wryi abo wlazni rozesłać do suszenia y zapalić wpierwy[?] olchowymi albo dębowymi drwami lepiey iednak olchowemi, drwami, żeby tak wdymie[?] schło, a potrzeba żeby było gorąco barzo. iesliby nie dobrze opatrzona[?] była ryia, wypalić ią rano dobrze żeby było gorąco. a ku wieczorowi wymieszawszy[?] słód zaraz znowu zapalić[?] y znowu tak że przez trzy dni choć y mniey uczynić aż wyschnie prawie dobrze, że się ziarno kruszy[?]. Y będzie tak wysuszywszy[?]. Zemleć grubo krapko[?] bo kiedy miałko to złe, ono tylko ukęs zetrzeć trzeba. Potym tę[?] mąkę włożyć wkadzi y nalać na nie wrzącą wodę nie barzo wiele wo-
+
+wody żeby się tylko zatarło[?], y tak wymieszać powoli dobrze, wymieszawszy nakryć dobrze żeby para nie wychodziła ya[?] żeby usłodział[?]. potrzymać tak godzin dwie albo trzy, potym powoli nalewać wrzącey wody aż do potrzeby żeby nie nazbyt rzadko było, tak potrzymać społ[?] godziny, abo pokis się kamienie rozpalą, potym kamienie gorące rozpalone kłaść do kadzi tak długo aż pocznie wrzeć dobrze, skoro wrzeć dobrze pocznie nakryć dobrze kadź żeby nakryto wrzało poki przestanie. Tym czasem skoro na kryniczy[?] chmiel zatarszy[?] wodę ciepłą odlewać z tey kadzi gdzie kamienie biorąc[?] y warzyć tak długo poki się znak ukaże, to iest słomkę na trzy granie uczyniwszy paszczać[?] wchmiel a kiedy się iako szkło między słomką ukaże y stoi długo dosyć będzie. To iednak wiedzieć potrzeba, nie[?] wbeczkę słodu trzy funty chmiela, a le do tak wiele beczek piwa iak wiele będziesz chciał mieć, zachować potrzeba po trzy funty. Potym kiedy wyciecze[?] wkoryt[</p>
+          <p><gap reason="editorial-excerpt"/>][?] pocznie naspodzie osychać[?], wziąć wody dobrze wrzącey żeby wtey wodzie chrost[?] Jałowcowy ziagodami ze wszystkiem[?] wywrzał dobrze, y pokrapiać[?] po onych[?] słodzinach tak długo aż weźmie[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] dosyć będzie[?], ale[?] lepsze piwo kiedy tak wiele będzie piwa iako wiele słodu, trzy kwarty[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] korzyst[</p>
+          <p><gap reason="editorial-excerpt"/>] [</p>
+          <p><gap reason="editorial-excerpt"/>].
+A dla Czelady zosobna na tey słodziny[?] w[</p>
+          <p><gap reason="editorial-excerpt"/>] gorącey dobrze wody poki zasmaku[?] naleway[?] a wybrawszy zkoryta wkadzi osobney zadać y ukwasić iak pierwsze. Wybrawszy to piwo zkoryta do kadzi[?] wlać[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] ⟨</p>
+          <p><gap reason="editorial-excerpt"/>⟩ gorących[?] wedlug potrzeby ciepłey dobrze. przez[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] let[</p>
+          <p><gap reason="editorial-excerpt"/>] nad drożdżami świeżemi zadać[?], A nalepsze drożdże kiedy z piwa młodego zwierzchu drożdże [</p>
+          <p><gap reason="editorial-excerpt"/>] kwasić bo poki będzie dobrze piana[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] się burzy[?] [</p>
+          <p><gap reason="editorial-excerpt"/>] to kiedy opadnie, do beczki wlać. [</p>
+          <p><gap reason="editorial-excerpt"/>].
+
+Y tak zaniechać poki przestanie burzyć się potym ⟨potym[?]⟩ zaszpuntowawszy obmazać gliną abo popiołem dla wytchnienia[?] może to pić dnia czwartego, ale to nalepsze które stoi pełroka y rok bo się chmiel urze[?] że nie będzie gorzkie.
+Dla Zapachu y Zdrowia do tego piwa włożyć.
+Splotna woreczki poczyniwszy, y przetłukszy grubo kardymona Łot: ieden, Gozdzików pół łota, Muszkatowey gałki iedną abo dwie: włożyć może: do Beczki wpuścić.</p>
+        </div>
+        <div type="translation" xml:id="mle-011-trans" xml:lang="de" corresp="#mle-011-orig">
+          <p>Bier machen, livländisches Bier, auf folgende Weise. Gelehrt haben es mich Herr Zolderbecht und ein schwedischer Gesandter.</p>
+          <p>Gerste weichen: Gute und saubere Gerste nehmen, nach der Größe der Riege, der Badestube oder der Hopfendarre. Je mehr man nimmt, desto besser; nimmt man zwei Fass Gerste, ist es gerade recht. Und einweichen: das Korn in einen Bottich schütten und Wasser darübergießen, oder die saubere Gerste zwara wsko siedend; und so bis zum dritten Tag weichen lassen.</p>
+          <p>Keimen: Wenn man sie aus dem Wasser genommen und das Wasser aus dem Bottich hat ablaufen lassen, zu einem Haufen zusammenlegen und zudecken, damit sie sich ein wenig erwärmt. Ist es kühl, zudecken; ist es warm, braucht man nicht zuzudecken. Und danach zum Keimen auslegen. Und wenn ich zworek na kiiach das Wasser habe ablaufen lassen, lege ich es gleich als Malz zum Keimen aus, so dick, dass ein kleiner Finger, auf den Boden gelegt, gleich hoch ist; mit dem Daumen ist das Malz ausgebreitet.</p>
+          <p>Wenn es gut gekeimt ist, wieder zu einem Haufen zusammenlegen und gut zudecken, damit es sich gut erwärmt, so dass die Hand es kaum aushält. Länger als sechs oder acht Stunden braucht man es nicht so zu halten, nur so, dass es sich gut erwärmt. Danach wieder auseinanderlegen, damit es abkühlt, und es nur etwa eine Stunde so halten.</p>
+          <p>Darren: Danach auf das vorbereitete Lager aus Brettern in der Riege oder in der Badestube zum Trocknen ausbreiten und zuerst anheizen, mit Erlen- oder Eichenscheiten, besser jedoch mit Erlenscheiten, damit es so im Rauch trocknet; und es muss sehr heiß sein. Wäre die Riege nicht gut hergerichtet, sie am Morgen gut ausheizen, damit es heiß ist. Und gegen Abend das Malz durchmischen, sofort wieder anheizen und wieder so, drei Tage lang, auch weniger, bis es recht gut trocken ist, so dass das Korn bröckelt. Und so wird es getrocknet sein.</p>
+          <p>Maischen: Grob mahlen, krapko, denn fein ist es schlecht; man muss es nur ein wenig zerreiben. Danach dieses Mehl in einen Bottich geben und siedendes Wasser darübergießen, nicht sehr viel Wasser, nur so viel, dass es sich einmaischt, und so langsam gut durchmischen. Nach dem Mischen gut zudecken, damit der Dampf nicht entweicht und damit es süß wird. So zwei oder drei Stunden stehen lassen. Danach langsam siedendes Wasser nachgießen, so viel nötig ist, damit es nicht zu dünn wird; so etwa eine halbe Stunde stehen lassen, oder bis die Steine glühen. Danach die heißen, glühenden Steine in den Bottich legen, so lange, bis es gut zu sieden beginnt. Sobald es gut zu sieden beginnt, den Bottich gut zudecken, damit es zugedeckt siedet, bis es aufhört.</p>
+          <p>Hopfen: Inzwischen, sobald man den Hopfen na kryniczy angerieben hat, warmes Wasser aus dem Bottich, in dem die Steine sind, abgießen und nehmen und so lange kochen, bis sich das Zeichen zeigt: nämlich einen Strohhalm dreikantig zurichten und in den Hopfen tauchen; wenn sich zwischen dem Halm etwas wie Glas zeigt und lange stehen bleibt, ist es genug. Das muss man jedoch wissen: nicht auf ein Fass Malz drei Pfund Hopfen, sondern für so viele Fässer Bier, wie man haben will, muss man je drei Pfund einhalten.</p>
+          <p>Nachguss mit Wacholder: Danach, wenn es in den Trog […] ausgelaufen ist und unten zu trocknen beginnt, gut siedendes Wasser nehmen, in dem Wacholderreisig mit den Beeren, mit allem, gut ausgekocht wurde, und damit die Treber so lange besprengen, bis es […] nimmt, dann ist es genug. Aber das Bier ist besser, wenn es so viel Bier gibt wie Malz, drei Quart […] korzyst[…] […].</p>
+          <p>Für das Gesinde: Und für das Gesinde gesondert auf diese Treber […] gut heißes Wasser gießen, solange es nach etwas schmeckt; und wenn man es aus dem Trog genommen hat, in einem eigenen Bottich anstellen und säuern wie das erste.</p>
+          <p>Anstellen: Dieses Bier aus dem Trog nehmen und in den Bottich gießen […] heißen, nach Bedarf gut warm. Durch […] let[…] über frischer Hefe anstellen. Und die beste Hefe ist, wenn man vom jungen Bier oben die Hefe […] säuern; denn solange der Schaum gut […] braust […], und wenn er zusammenfällt, ins Fass gießen. […]</p>
+          <p>Lagern: Und so lassen, bis es aufhört zu brausen; danach verspunden und mit Lehm oder Asche verschmieren, wegen des Ausdünstens. Man kann es am vierten Tag trinken, aber am besten ist das, welches ein halbes Jahr und ein Jahr steht, denn der Hopfen wird gar, so dass es nicht bitter ist.</p>
+          <p>Für Duft und Gesundheit in dieses Bier geben: Säckchen aus Leinwand machen und grob zerstoßen: Kardamom ein Lot, Gewürznelken ein halbes Lot, Muskatnuss eine oder zwei. Hineingeben kann man sie: ins Fass hinablassen.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient orig="Jęczmienia dobrego y czystego">Gerste, gut und sauber</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="wody" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser</ingredient>
+            </item>
+            <item>
+              <ingredient orig="olchowymi albo dębowymi drwami lepiey iednak olchowemi">Erlenholz zum Darren (oder Eichenholz)</ingredient>
+            </item>
+            <item><ingredient orig="trzy funty chmiela">Hopfen, drei Pfund je Fass Bier</ingredient> - 3</item>
+            <item>
+              <ingredient orig="Jałowcowy ziagodami">Wacholderreisig mit Beeren (für den Nachguss)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="drożdżami świeżemi">Hefe, frisch (am besten oben vom jungen Bier)</ingredient>
+            </item>
+            <item><ingredient orig="kardymona Łot: ieden">Kardamom, grob zerstoßen, ein Lot</ingredient> - 1</item>
+            <item><ingredient orig="Gozdzików pół łota">Gewürznelken, ein halbes Lot</ingredient> - 0.5</item>
+            <item>
+              <ingredient orig="Muszkatowey gałki iedną abo dwie">Muskatnuss, eine oder zwei</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mle-011-trans" resp="#fyndling">Was ist das? Ein Bier vom Korn bis zum Fass: Die Gerste wird geweicht, gekeimt und im Rauch gedarrt, das Malz grob geschrotet und mit siedendem Wasser eingemaischt; zum Sieden bringen es glühende Steine, die in den Bottich gelegt werden. Der Hopfen kocht gesondert in Würze aus diesem Bottich, ein Nachguss mit Wacholderwasser zieht die Treber aus, aus denselben Trebern entsteht ein Gesindebier. Angestellt wird auf frischer Hefe vom jungen Bier, ins Fass kommt ein Leinensäckchen mit Kardamom, Nelken und Muskat.
+
+Mälzen und Darren. Der Text gibt die Endzeichen selbst: Beim zweiten Haufen soll es so warm werden, dass die Hand es kaum aushält, gedarrt wird, bis das Korn bröckelt. Darrorte sind Riege, Badestube oder Hopfendarre; geheizt wird mit Erle, notfalls Eiche, ausdrücklich so, dass das Malz im Rauch trocknet. Das Malz wird also rauchig. Wie dick die Keimschicht liegt, beschreibt der Text mit kleinem Finger und Daumen; die Stelle davor (zworek na kiiach) ist nicht sicher gelesen. Ebenso unklar ist ein zweites Weichverfahren mit siedendem Wasser (zwara wsko) und ein Wort neben "grob" beim Mahlen (krapko).
+
+Steinmaischen. Zuerst wird das Schrot mit wenig siedendem Wasser angerührt und zwei bis drei Stunden zugedeckt gehalten, damit es süß wird, dann mit weiterem siedendem Wasser verdünnt. Währenddessen glühen die Steine im Feuer; sie kommen in den Bottich, bis die Maische gut siedet, danach bleibt der Bottich zugedeckt, bis das Sieden von selbst aufhört. Warum Steine statt eines Kessels, sagt der Text nicht. Heute ordnet man das als Steinbier ein.
+
+Hopfen und Halmprobe. Der Hopfen wird vorher angerieben (wo, ist mit na kryniczy nicht sicher gelesen) und in warmer Würze aus dem Steinbottich gekocht, bis die Probe gelingt: Zwischen den Kanten eines dreikantig zugerichteten Strohhalms soll sich etwas wie Glas zeigen und stehen bleiben. Die Menge bezieht der Text ausdrücklich nicht auf das Malz, sondern auf das fertige Bier: drei Pfund je Fass Bier. Wie schwer dieses Pfund und wie groß das Fass war, sagt er nicht.
+
+Nachguss, Gesindebier, Gärung. Ist die Würze in den Trog gelaufen, werden die Treber mit siedendem Wasser besprengt, in dem Wacholderreisig samt Beeren ausgekocht wurde. Danach kommt ein weiterer Aufguss für das Gesinde, so lange, wie er noch Geschmack zieht, und wird gesondert angestellt. Das Anstellen auf frischer Hefe, die man oben vom jungen Bier nimmt, ist nur bruchstückhaft lesbar; sicher ist: Wenn der Schaum zusammenfällt, kommt das Bier ins Fass. Das Wort für das Gären ist "säuern" (kwasić); gemeint ist das Angären mit Hefe. Mehrere Stellen dieses Abschnitts und eine Zahl ("drei Quart") sind unleserlich oder unsicher.
+
+Lagern. Verspundet wird erst, wenn das Brausen aufgehört hat; dann wird der Spund mit Lehm oder Asche verschmiert, "wegen des Ausdünstens" - ob das Ausdünsten verhindert werden soll, sagt der Text nicht wörtlich. Trinkbar ist es am vierten Tag, am besten nach einem halben oder ganzen Jahr, weil dann, so der Text, der Hopfen "gar" ist und das Bier nicht mehr bitter.
+
+Praxis. Glühende Steine in einem Holzbottich bedeuten Dampfstöße und Verbrennungsgefahr; sie gehören mit Zange und Abstand in die Maische. Darren über offenem Feuer in einem Holzbau ist brandgefährlich. Ein Fass erst verspunden, wenn die Gärung wirklich ruht, sonst baut sich Druck auf. Für den Nachguss nur den gemeinen Wacholder nehmen; andere Wacholderarten wie der Sadebaum gelten als giftig. Muskat steht hier mit einer oder zwei Nüssen für ein ganzes Fass im Säckchen, nicht als Löffelmaß.</note>
+        <note type="gloss" target="#mle-011-orig" n="bir Inflantski" resp="#fyndling">Livländisches Bier. Inflanty ist der polnische Name für Livland. Das Wort "bir" ist das deutsche Bier, hier neben "piwo" gesetzt, als Name der Art.</note>
+        <note type="gloss" target="#mle-011-orig" n="ryia, łaźnia, osieć" resp="#fyndling">Drei Orte zum Darren: die Riege (Campe: in Liv- und Estland eine Darre für Getreide), die Badestube und die osieć, nach Linde 1807 eine Darre für Hopfen und Korn. Das Malz liegt dort auf Brettern.</note>
+        <note type="gloss" target="#mle-011-orig" n="kamienie gorące rozpalone" resp="#fyndling">Glühende Steine, die in den Bottich gelegt werden, bis die Maische siedet. Heute heißt ein so gebrautes Bier Steinbier. Hermanns livländisches Hausbuch (Riga 1695) maischt seinen Malzmet auf dieselbe Weise.</note>
+        <note type="gloss" target="#mle-011-orig" n="słomkę na trzy granie" resp="#fyndling">Einen Strohhalm "auf drei Kanten" zurichten: Linde 1807 führt trzygraniec als Dreieck. Wie der Halm genau gespalten oder gefaltet wird, sagt der Text nicht; die Probe gilt als bestanden, wenn sich dazwischen etwas wie Glas zeigt und stehen bleibt.</note>
+        <note type="gloss" target="#mle-011-orig" n="słodziny, dla Czelady" resp="#fyndling">Słodziny sind nach Linde 1807 die Treber vom Bierbrauen. Czeladź ist das Gesinde: Auf dieselben Treber kommt noch einmal heißes Wasser, das dünnere Bier daraus ist für die Dienstleute.</note>
+        <note type="gloss" target="#mle-011-orig" n="urze (uwrzeć)" resp="#fyndling">Linde 1807: gar kochen, auch einkochen. Der Text sagt, der Hopfen werde mit der Lagerung "gar", so dass das Bier nicht mehr bitter ist; das Nachbarrezept des Holländers benutzt dasselbe Wort beim Hopfenkochen.</note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="abo czyste jęczmienia zwara[?] wsko[?] wrzące" resp="#fyndling" subtype="philological" cert="unknown">Unübersetzt stehen gelassen: Die Buchstaben sind z-w-a-r-a und w-s-k-o gelesen, "wrzące" (siedend) ist sicher. Gemeint ist offenbar ein zweites Weichverfahren mit siedendem Wasser. Linde 1807 führt "zwara" nur mit einem unklaren Beleg, "wsko" gar nicht.<list type="alternatives"><item>Die saubere Gerste mit siedendem Wasser überbrühen<note type="rationale">Passt zu "wrzące" und zum "abo" (oder) nach dem kalten Weichen, ist aber nicht aus den Wörtern belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="A kiedy zworek[?] na kiiach wysączywszy wodę … z wielkim palcem słód usłany" resp="#fyndling" subtype="philological" cert="unknown">Gedruckte Lesung übersetzt: Wenn "zworek na kiiach" das Wasser abgelaufen ist, lege ich es als Malz zum Keimen aus, so dick wie ein kleiner Finger, mit dem Daumen ausgebreitet. "zworek na kiiach" ist nicht gedeutet.<list type="alternatives"><item>"z worków na kijach": aus Säcken, die an Stöcken hängen, abtropfen lassen<note type="rationale">Gibt Sinn, aber die Buchstaben tragen "worków" nicht sicher.</note></item><item>"z wielkim palcem" als Schichtdicke: bis zur Dicke des Daumens<note type="rationale">Der Satz nennt erst den kleinen Finger als Maß, der Daumen kann Werkzeug oder zweites Maß sein.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="skoro na kryniczy[?] chmiel zatarszy[?]" resp="#fyndling" subtype="philological" cert="unknown">Gedruckte Lesung: sobald man den Hopfen "na kryniczy" angerieben hat. Linde 1807: krynica = Zisterne, kleiner Wasserbehälter, Quelle; zatrzeć = verreiben. Ort und Handgriff bleiben offen.<list type="alternatives"><item>"an der Quelle" bzw. am Wasserbehälter<note type="rationale">Wörtlich naheliegend, im Ablauf aber ohne erkennbaren Sinn.</note></item><item>"zatarłszy" als Einmaischen des Hopfens in etwas Würze<note type="rationale">Im Nachbarrezept heißt zatrzeć einmaischen; für den Hopfen ist das nicht belegt.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="trzy kwarty[?] […] korzyst[…] […]" resp="#fyndling" subtype="philological" cert="unknown">Gedruckte Lesung übersetzt ("drei Quart […]"); die Zeile ist blass und verkleckst, die Zahl nicht gesichert.<list type="alternatives"><item>"a wybrawszy z koryta" (und wenn man es aus dem Trog genommen hat)<note type="rationale">Die Buchstabenfolge der Zeile ähnelt stark dem gleich folgenden "a wybrawszy z koryta"; dann stünde hier keine Zahl.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-011-orig" n="zadać y ukwasić / drożdże … kwasić" resp="#fyndling" subtype="lexical">"säuern", gemeint ist das Angären: Linde 1807 gibt kwasić als säuern, einsäuern und für das Tschechische ausdrücklich "gären"; im Text steht es mit "zadać" (anstellen) und mit frischer Hefe.<list type="alternatives"><item>Bewusst sauer werden lassen<note type="rationale">Kein Hinweis im Text; die Hefe wird ausdrücklich genannt und der Schaum beobachtet.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>

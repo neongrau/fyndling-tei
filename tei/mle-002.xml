@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Alter Gewürzmet mit Hopfen</title>
+        <author>Anonymus</author>
+        <editor>
+          <persName ref="https://orcid.org/0009-0007-4677-5679">Ralf René Vitasek</persName>
+        </editor>
+        <respStmt>
+          <resp>Modernisierung, Übersetzung, Anmerkungen</resp>
+          <name xml:id="fyndling">Fyndling.de</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Fyndling.de</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (Übersetzung, Anmerkungen, Zutatenerschließung; die historische Vorlage ist gemeinfrei)</licence>
+        </availability>
+        <date when="2026-11-26">2026-11-26</date>
+        <idno type="url">https://fyndling.de/rezepte/mle-002/</idno>
+        <idno type="w3id">https://w3id.org/fyndling/mle-002</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Konvolut des Mikołaj Mleczko (Chołopienicze, Großfürstentum Litauen), Kyiv, Vernadsky-Nationalbibliothek, Fond I Nr. 5962, Bl. 66-66v</title>
+          <date when="1630" cert="low">um 1630</date>
+          <idno type="URI">https://doi.org/10.15407/rksu.24.281</idno>
+          <note>mle-001/002: Text nach S. Bulatova 2019 (DOI 10.15407/rksu.24.281), CC BY-NC 4.0; mle-003 bis mle-014: eigene Lesung am Digitalisat der Vernadsky-Nationalbibliothek der Ukraine</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <schemaRef type="interchangeODD" url="https://fyndling.de/rezepte-data/tei/fyndling.odd"/>
+      <schemaRef type="interchangeRNG" url="https://fyndling.de/rezepte-data/tei/fyndling.rng"/>
+      <editorialDecl>
+        <interpretation>
+          <p>Lesart-Entscheidungen stehen als note[@type='interpretive_choice'] im back-Teil, @n nennt die Stelle im Originaltext, @subtype die Art (lexical, philological, contextual, orthographic), list[@type='alternatives'] die erwogenen Lesarten. @cert='unknown' markiert eine ungeklärte Lesart: Die Stelle ist offen, der Text der Note gibt nur den Stand der Diskussion wieder.</p>
+        </interpretation>
+      </editorialDecl>
+      <listPrefixDef>
+        <prefixDef ident="wikidata" matchPattern="(Q[0-9]+)" replacementPattern="http://www.wikidata.org/entity/$1">
+          <p>Wikidata-Entitaeten, z.B. wikidata:Q42527 = http://www.wikidata.org/entity/Q42527</p>
+        </prefixDef>
+      </listPrefixDef>
+      <appInfo>
+        <application ident="corema-ingredient-index" version="1" xml:id="corema-ingredient-index">
+          <label>CoReMA-Zutatenindex</label>
+          <p>Zutaten mit source="#corema-ingredient-index" tragen @en und @commodity unveraendert aus dem Zutatenindex von CoReMA (Corpus of Recipes of the Middle Ages, Universität Graz, CC BY 4.0), zugeordnet über die exakte historische Schreibung. Der Index erfasst nur deutschsprachiges Vokabular und deckt genau die Handschriften ab, die CoReMA selbst führt. Wo wir ihn darüber hinaus angewandt haben, steht nicht dieses Ziel, sondern #fyndling-corema-index. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-name" version="1" xml:id="fyndling-ingredient-name">
+          <label>Namensbasierte Zuordnung Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-name" haben ihre Normdaten nicht über die historische Schreibung, sondern über den von uns vergebenen modernen Zutatennamen erhalten: wo dieselbe Zutat anderswo im Korpus bereits mit einem Wikidata-Konzept verknüpft war, wurde diese Verknüpfung übernommen. Voraussetzung waren mindestens zwei unabhängige Belege im Korpus und ein deutschsprachiger Ausgangsbeleg. Die Zuordnung ist damit unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+        <application ident="fyndling-ingredient-registry" version="1" xml:id="fyndling-ingredient-registry">
+          <label>Zuordnung aus der Fyndling-Zutatenregistry</label>
+          <p>Zutaten mit source="#fyndling-ingredient-registry" haben ihre Normdaten aus unserer handgepflegten Zutatenregistry erhalten: einer redaktionell gefuehrten Tabelle, die je Wikidata-Konzept die modernen Namensvarianten festhaelt, unter denen wir es im Korpus fuehren. Sie greift genau dort, wo der Korpus selbst keine Mehrheit hergibt - etwa weil derselbe Name je nach Rezept verschieden aufgeloest wurde. Die Entscheidung ist unsere und nicht CoReMA zuzurechnen. Wo eine kontextabhaengige Regel zustaendig ist (Tierart, Fastengebot), gilt nicht diese Tabelle, sondern #fyndling-ingredient-context.</p>
+        </application>
+        <application ident="fyndling-corema-index" version="1" xml:id="fyndling-corema-index">
+          <label>CoReMA-Zutatenindex, angewandt von Fyndling</label>
+          <p>Zutaten mit source="#fyndling-corema-index" tragen Werte aus dem Zutatenindex von CoReMA, angewandt aber von uns auf eine Handschrift, die CoReMA nicht führt. Die Verantwortung für diese Zuordnungen liegt deshalb bei uns, nicht beim Projekt. Besondere Vorsicht gilt bei nicht deutschsprachigen Vorlagen: der Index ist eine deutsche Wortliste, und gleich geschriebene Wörter anderer Sprachen kollidieren mit ihr (mittelenglisch „oile" ist Öl, nicht Aal; französisch „pain" ist Brot, nicht Bein). Diese Stellen sind in Durchsicht. <ptr target="https://gams.uni-graz.at/context:corema"/></p>
+        </application>
+        <application ident="fyndling-ingredient-context" version="1" xml:id="fyndling-ingredient-context">
+          <label>Kontextregeln Fyndling</label>
+          <p>Zutaten mit source="#fyndling-ingredient-context" weichen bewusst vom Index ab, weil dessen Zuordnung im Rezeptzusammenhang nicht trägt. Beispiel: CoReMA legt alle Schreibungen von „smaltz" auf Schweineschmalz fest; in Fastenrezepten ist das kirchenrechtlich ausgeschlossen, dort stehen mehrere Kandidaten mit @cert="low" statt einer Festlegung. Diese Entscheidungen sind unsere Arbeit und nicht CoReMA zuzurechnen.</p>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">Mittelpolnisch des 17. Jahrhunderts mit ostslawischen/litauischen Regionalformen (Großfürstentum Litauen, um 1630); Maße ceber, uszatek, łut</language>
+        <language ident="de">Neuhochdeutsch (Übersetzung)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="recipe" xml:id="mle-002">
+        <head>Alter Gewürzmet mit Hopfen</head>
+        <div type="original" xml:id="mle-002-orig" xml:lang="und" corresp="#mle-002-trans">
+          <p>Nastawować miód stary, właśnie stary
+Miodu przaśnego, samej patoki, bez wosku rozsycić go w miar trzy, nie więcej, i warzyć według zdania jako i insze miody godzinę abo półtory. Chmiel osobno od godziny do godziny warzyć i zadać to, zlawszy drożdżami niewielą, żeby się nie przelał zlawszy, na miejścu go postawiwszy. Włożyć weń korzenia rozmaite w workach, to jest imbieru funtów 4, goździków pół funta, cynamonu pół funta, kwiatu muszkatowego ćwierć, gałganu, cytwaru po niewielu, wszystko tłuczone ma być. Wsypać w beczkę i dziarstwy, i jaje kokosze wpuścić w beczkę, że tak będzie dobry za niedzielę jako i za rok.</p>
+        </div>
+        <div type="translation" xml:id="mle-002-trans" xml:lang="de" corresp="#mle-002-orig">
+          <p>Alten Met ansetzen, und zwar wirklich alten.</p>
+          <p>Ungegorenen Honig, nur reinen Seim ohne Wachs, mit drei Maß Wasser zu Met versetzen, nicht mehr, und nach Ermessen wie die anderen Mete eine Stunde oder anderthalb kochen.</p>
+          <p>Den Hopfen gesondert einen Tag und eine Nacht lang kochen. Dann beides zusammengießen und mit wenig Hefe anstellen, damit er nicht überläuft.</p>
+          <p>Ist er umgegossen und an seinen Platz gestellt, verschiedene Gewürze in Säckchen hineinlegen, und zwar 4 Pfund Ingwer, ein halbes Pfund Gewürznelken, ein halbes Pfund Zimt, ein Viertel Muskatblüte, Galgant und Zitwer je ein wenig. Alles soll gestoßen sein.</p>
+          <p>Auch Kies ins Fass schütten und ein Hühnerei ins Fass gleiten lassen, dann wird er nach einer Woche so gut sein wie nach einem Jahr.</p>
+        </div>
+        <div type="ingredients">
+          <list type="ingredients">
+            <item>
+              <ingredient en="honey" orig="Miodu przaśnego, samej patoki, bez wosku" commodity="wikidata:Q10987" source="#fyndling-ingredient-registry">Honig (ungegorener Seim, ohne Wachs)</ingredient>
+            </item>
+            <item>
+              <ingredient en="water" orig="(implied)" commodity="wikidata:Q283" source="#fyndling-ingredient-registry">Wasser (drei Maß auf den Seim)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="Chmiel">Hopfen</ingredient>
+            </item>
+            <item>
+              <ingredient orig="drożdżami niewielą">Hefe (wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient en="ginger" orig="imbieru funtów 4" commodity="wikidata:Q15046077" source="#fyndling-ingredient-name">Ingwer, gestoßen (4 Pfund)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="goździków pół funta">Gewürznelken, gestoßen (ein halbes Pfund)</ingredient>
+            </item>
+            <item>
+              <ingredient en="cinnamon" orig="cynamonu pół funta" commodity="wikidata:Q28165" source="#fyndling-ingredient-name">Zimt, gestoßen (ein halbes Pfund)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="kwiatu muszkatowego ćwierć">Muskatblüte (Macis), gestoßen (ein Viertel)</ingredient>
+            </item>
+            <item>
+              <ingredient en="lesser galangal" orig="gałganu" commodity="wikidata:Q27653540" source="#fyndling-ingredient-name">Galgant, gestoßen (ein wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="cytwaru po niewielu">Zitwerwurzel, gestoßen (ein wenig)</ingredient>
+            </item>
+            <item>
+              <ingredient orig="dziarstwy">Kies</ingredient>
+            </item>
+            <item>
+              <ingredient orig="jaje kokosze">Hühnerei</ingredient>
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="annotations">
+        <note type="preparation_tip" target="#mle-002-trans" resp="#fyndling">Was ist das? Ein Met aus reinem, ungegorenem Seim, der mit Wasser kurz gekocht, mit gesondert gekochtem Hopfen zusammengegossen und mit wenig Hefe angestellt wird. Die Gewürze kommen gestoßen in Säckchen dazu, ins Fass außerdem Kies und ein Hühnerei. Der Text verspricht, der Met sei nach einer Woche so gut wie nach einem Jahr; eine Begründung gibt er nicht.
+
+Drei Maß. An „w miar trzy, nie więcej“ hängt die Stärke. Wir lesen einen Teil Seim auf drei Teile Wasser: Knapski 1643 erklärt den trójnik als Met mit gleichsam drei Teilen Wasser, im Gegensatz zum einfachen Met, der viel mehr Wasser nimmt; „nicht mehr“ begrenzt dann das Wasser. Bulatova 2019 übersetzt „nach dem Maß des Trójniak“ und rechnet ihn als einen Teil Seim auf zwei Teile Wasser. Das Wort trójnik steht in diesem Rezept nicht.
+
+Der Hopfen. „od godziny do godziny“ kennt Linde 1807 auch als „von Tag zu Tag“, und Syreniusz 1613 setzt den Ausdruck gleich mit „Tag und Nacht“. Der Hopfen kocht also gesondert und lange, wie im Rezept auf der Vorderseite des Blattes, wo er eine ganze Woche kocht. Wie viel Hopfen und wie viel Hopfensud zum Honig kommen, sagt der Text nicht.
+
+Die Hefe. Der Text nennt sie ausdrücklich: wenig davon, „żeby się nie przelał“, damit er nicht überläuft. Heute würde man sagen: ein junger Ansatz mit viel Hefe schäumt in der stürmischen Gärung stark auf, mit wenig Hefe beginnt sie ruhiger. Welche Hefe, sagt der Text nicht.
+
+Die Gewürze. Die Mengen stehen in Pfund: vier Pfund Ingwer, je ein halbes Pfund Nelken und Zimt. Das Pfund des Großfürstentums hatte einen eigenen Wert, und die Größe des Fasses nennt der Text nicht; eine Würzung je Liter lässt sich daraus nicht ableiten. Bei der Muskatblüte steht nur „ćwierć“, ein Viertel; nach den halben Pfunden liegt ein Viertelpfund nahe. Kräuter mit dem Hopfen zu kochen und in Säcken in die Fässer zu hängen, beschreibt Syreniusz 1613 auch fürs Bier, unter anderem mit Zitwer und Galgant. Ob die Säckchen wieder herauskommen, sagt das Rezept nicht.
+
+Kies und Ei. „dziarstwy“ ist in der Handschrift von einem Fleck verdeckt. Knapski 1643 und Linde 1807 erklären dziarstwo als groben Sand, Kies, so auch die Wilanów-Fassung 2022; Bulatova 2019 deutet das Wort als alten, körnig gewordenen Honig, den Linde unter dem eigenen Wort dziarnina führt. Wozu der Kies ins Fass kommt, sagt der Text nicht. Dasselbe gilt für das Hühnerei. Bulatova 2019 deutet es als Probe der Stärke: Ein frisches Ei schwimme im fertigen Most halb eingetaucht. Ihr Gewährsmann ist Ciesielski 1898, rund 270 Jahre nach dem Rezept; das Rezept selbst nennt keine Probe.
+
+Für Metmacher: die Zahlen
+
+Modellrechnung, keine Messung: gerechnet mit Literaturwerten für Honig, nicht an einem angesetzten Met.
+
+| Lesart | Zucker | SG (OG) | °Oe | °Brix | Alkohol bis trocken |
+|---|---|---|---|---|---|
+| „w miar trzy“ als ein Teil Seim auf drei Teile Wasser | 309-476 g/l | 1,119-1,184 | 119-184 | 27,9-41,0 | 18,4-28,3 % |
+| „w miar trzy“ als drei Maß insgesamt (ein Teil Seim auf zwei Teile Wasser) | 412-635 g/l | 1,159-1,245 | 159-245 | 36,1-52,4 | 24,5-37,7 % |
+
+„Alkohol bis trocken“ gilt, wenn aller Zucker vergärt. Liegt der Wert über dem, was die Hefe verträgt, hört die Gärung früher auf, und der Met bleibt süß.
+
+Annahmen: Seim und Wasser im selben Hohlmaß, Seim wie Honig gerechnet. Der Text kocht eine Stunde oder anderthalb, ohne Endmenge zu nennen; die Spannen reichen von geringem bis starkem Einkochen. Nicht eingerechnet sind der gesondert gekochte Hopfensud, der den Most verdünnt und dessen Menge der Text nicht nennt, sowie Gewürze, Kies und Ei; der echte Most ist also eher schwächer als die Rechnung.
+
+Praxis. Heutige Hinweise, nicht im Text: Ein siedender Honigsud schäumt stark und kocht leicht über. Den Most lässt man abkühlen, bevor die Hefe dazukommt. Ein gärender Met baut im verschlossenen Fass Druck auf; verschlossen wird erst, wenn er ruht. Ein rohes Ei und Kies im Getränk lässt man heute weg; wer die Stärke prüfen will, misst sie mit der Spindel. Muskatblüte enthält wie die Muskatnuss Myristicin und ist in großer Menge bedenklich. Vier Pfund Ingwer auf ein Fass unbekannter Größe lassen sich nicht in eine heutige Menge übertragen: deutlich niedriger anfangen und abschmecken.</note>
+        <note type="gloss" target="#mle-002-orig" n="miód stary" resp="#fyndling">Alter Met war eine Sorte: Linde 1807 zitiert aus den Volumina Legum eine Abgabe, die man für trójnik und Himbeermet „jak od starego miodu“ zahlte, wie für alten Met. Bulatova 2019 versteht den Titel anders, als Anweisung, alten Honig zu verarbeiten.</note>
+        <note type="gloss" target="#mle-002-orig" n="przaśnego" resp="#fyndling">Ungegoren und noch nicht mit Wasser versetzt: Linde 1807 gibt przaśny mit „ungesäuert“ wieder, Bulatova 2019 erklärt miód przaśny als natürlichen, nicht versetzten Honig.</note>
+        <note type="gloss" target="#mle-002-orig" n="patoki" resp="#fyndling">Patoka ist reiner, flüssiger Honig, bei Linde 1807 nach Kluk der „Jungfernhonig“, also Honig ohne Wachs und Wabe.</note>
+        <note type="gloss" target="#mle-002-orig" n="rozsycić" resp="#fyndling">Honig mit Wasser zu Met ansetzen; Linde 1807: „Honig zu Meth machen, den Honig zerlassen“. Gemeint ist der Most vor der Gärung.</note>
+        <note type="gloss" target="#mle-002-orig" n="korzenia" resp="#fyndling">Gewürze, nicht Wurzeln: korzenia sind die teuren Würzwaren aus dem Fernhandel, so auch Bulatova 2019 in ihrem Wörterverzeichnis.</note>
+        <note type="gloss" target="#mle-002-orig" n="cytwaru" resp="#fyndling">Zitwer, die Wurzel der Apotheke (Curcuma zedoaria), nach Linde 1807 mit kampferartigem Geruch. Nicht zu verwechseln mit dem Zitwersamen, einer anderen Droge.</note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="w miar trzy, nie więcej" resp="#fyndling" subtype="lexical">Ein Teil Seim auf drei Teile Wasser, und nicht mehr Wasser. Knapski 1643 erklärt den trójnik als Met, der gleichsam drei Teile Wasser enthält, und setzt ihn gegen den einfachen Met, der viel mehr Wasser nimmt; Linde 1807 übersetzt „guter Meth, nur von drey Theilen Wasser“. In text_modern: „mit drei Maß Wasser zu Met versetzen, nicht mehr“.<list type="alternatives"><item>Drei Maß insgesamt, also ein Teil Seim auf zwei Teile Wasser<note type="rationale">So Bulatova 2019: Sie übersetzt „nach dem Maß des Trójniak“ und setzt den trójnik als 1 zu 2 an, nach heutigem Schema. Das Wort trójnik steht hier nicht, und Knapski spricht von drei Teilen Wasser.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="od godziny do godziny" resp="#fyndling" subtype="lexical">Einen Tag und eine Nacht. Linde 1807 führt neben „von einer Stunde zur anderen“ die Bedeutung „von Tag zu Tag“ (od doby do doby), und Syreniusz 1613 setzt den Ausdruck ausdrücklich gleich mit „przez dzień i noc“. Im Rezept auf der Vorderseite des Blattes kocht der Hopfen sogar eine Woche.<list type="alternatives"><item>Etwa eine Stunde<note type="rationale">So der frühere Entwurf; kein Wörterbuch belegt diese Bedeutung.</note></item><item>Von Zeit zu Zeit, nach und nach<note type="rationale">So Bulatova 2019 in ihrer Übersetzung; bei Linde nicht belegt.</note></item><item>Ununterbrochen, von einer Stunde zur anderen<note type="rationale">Lindes erste Bedeutung; sie nennt keine Dauer, nur das stetige Kochen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="zlawszy, na miejścu go postawiwszy" resp="#fyndling" subtype="philological">Satzgrenze nach „przelał“, wie Wilanów 2022: „żeby się nie przelał. Zlawszy, na miejscu go postawiwszy, włożyć weń“. Die beiden Partizipien gehören zum folgenden „włożyć“: Ist er umgegossen und an seinen Platz gestellt, kommen die Gewürze hinein. Die Handschrift setzt hier keine Satzzeichen.<list type="alternatives"><item>Bulatova 2019: „żeby się nie przelał zlawszy, na miejścu go postawiwszy. Włożyć weń“, also: damit er beim Zusammengießen nicht überläuft, und an seinen Platz gestellt<note type="rationale">Sprachlich möglich, lässt aber „postawiwszy“ ohne eigenes Verb am Satzende stehen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="kwiatu muszkatowego ćwierć" resp="#fyndling" subtype="contextual">Ein Viertel, ohne Einheit. Im Anschluss an die halben Pfunde liegt ein Viertelpfund nahe; dasselbe Hausbuch schreibt bei einem Zitwerbranntwein „Cytwaru ćwierć … Hanyżu poł funta“ ebenso ohne Einheit neben Pfunden. text_modern bleibt bei „ein Viertel“.<list type="alternatives"><item>Viertel eines anderen Maßes<note type="rationale">Linde 1807 kennt ćwierć auch als Hohlmaß für Getreide; bei einem Gewürz unwahrscheinlich, vom Text aber nicht ausgeschlossen.</note></item></list></note>
+        <note type="interpretive_choice" target="#mle-002-orig" n="dziarstwy" resp="#fyndling" subtype="lexical">Kies. Knapski 1643 erklärt dziarstwo als Tuffstein und groben Sand, Linde 1807 als „Kies, grober Sand“; so auch die Fußnote der Wilanów-Fassung 2022 („Żwiru“). In der Handschrift ist das Wort von einem Fleck verdeckt.<list type="alternatives"><item>Alter, durch Lagern körnig gewordener Honig<note type="rationale">So Bulatova 2019 in ihrem Wörterverzeichnis, nach Linde 1854 und Potocki 1877. Linde führt diese Bedeutung aber unter dem eigenen Wort dziarnina, nicht unter dziarstwo. „Wsypać“ (einschütten) passt zu beidem.</note></item></list></note>
+      </div>
+    </back>
+  </text>
+</TEI>
